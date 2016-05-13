@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Baidu Cloud
+Type=Application
+
+Icon=/home/joeky/BaiduYunGuanjia/guanjia_logo.ico
+Exec=wine "/home/joeky/BaiduYunGuanjia/BaiduYunGuanjia.exe"
+Terminal=false
+Actions=Dropdown;
