@@ -11,7 +11,7 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 set encoding=utf-8
 set fileencodings=utf-8
-set guifont=Consolas:h11
+set guifont=Ubuntu\ Mono:h14
 colorscheme darkblue
 syntax on
 set backspace=2
