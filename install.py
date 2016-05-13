@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Install dot files for Windows
+# Install dotfiles for Windows
 # $ ./install.py windows
-# Install dot files for Linux
+# Install dotfiles for Linux
 # $ ./install.py linux
 
 import sys, os, site
@@ -20,15 +20,22 @@ def windows():
     commands.append("echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab");
     commands.append("mount -a");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
-    commands.append("git clone --depth=1 https://j16180339887@bitbucket.org/j16180339887/dotfile.git ~/dotfile");
+    commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
+    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
-    commands.append("curl -L -O -C - 'https://bootstrap.pypa.io/get-pip.py'");
+    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("python3 get-pip.py");
+    commands.append("rm get-pip.py");
     commands.append("echo y | pip3 install youtube-dl");
     commands.append("echo y | pip3 install you-get");
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
-        commands.append("cp ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
     commands.append("ln -s ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
@@ -40,7 +47,12 @@ def linux():
     commands.append("find ~/.config/openbox/ -name '*.xml' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
-    commands.append("git clone --depth=1 https://j16180339887@bitbucket.org/j16180339887/dotfile.git ~/dotfile")
+    commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
+    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("ln -s ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
