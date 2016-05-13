@@ -22,6 +22,7 @@ def windows():
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.minttyrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
@@ -40,6 +41,7 @@ def windows():
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -s ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -s ~/dotfile/Windows/.minttyrc ~/.minttyrc")
     
 def linux():
     commands.append("sudo apt-get update")
