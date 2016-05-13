@@ -25,6 +25,8 @@ def windows():
     commands.append("find ~/ -maxdepth 1 -name '.minttyrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
@@ -41,6 +43,8 @@ def windows():
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -s ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -s ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("ln -s ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -s ~/dotfile/Windows/.minttyrc ~/.minttyrc")
     
 def linux():
@@ -51,6 +55,8 @@ def linux():
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
@@ -59,6 +65,8 @@ def linux():
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -s ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -s ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("ln -s ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -s ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("openbox --reconfigure")
     
