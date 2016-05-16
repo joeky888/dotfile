@@ -44,6 +44,7 @@ Linux
 Good Software Design
 =====
 * Support "Ctrl + T" New Tab
+* Customizable hotkeys
 * Support Private Tabs/Windows
 * Support Font-Family (Multiple fonts in an area)
 * Cross Platform
