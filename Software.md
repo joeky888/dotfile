@@ -45,8 +45,8 @@ Good Software Design
 =====
 * Support "Ctrl + T" New Tab
 * Customizable hotkeys
+* Customizable theming (and Font-Family) with json format
 * Support Private Tabs/Windows
-* Support Font-Family (Multiple fonts in an area)
 * Cross Platform
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
