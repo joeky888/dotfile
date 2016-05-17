@@ -15,7 +15,7 @@ try:
 except subprocess.CalledProcessError as e:
     print("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
-outdir = "../ffConvert" + time.strftime("%Y-%m-%d-%H-%M-%S", time.gmtime()) + "/"
+outdir = "../ffConvert" + time.strftime("-%Y-%m-%d-%H-%M-%S") + "/"
 os.system("mkdir " + outdir)
 Error_List = []
 
@@ -34,7 +34,7 @@ for file in Files:
     file1  = "\"" + file + "1\""
     file   = "\"" + file + "\""
     
-    if os.path.exists(targetFolder) != True:
+    if not os.path.exists(targetFolder):
         os.system("mkdir " + targetFolder)
     
     if sys.argv[1].lower() == sys.argv[2].lower():
