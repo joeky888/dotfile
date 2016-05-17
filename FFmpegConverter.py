@@ -15,6 +15,7 @@ try:
 except subprocess.CalledProcessError as e:
     print("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
+os.system("mkdir ../ffConvert")
 Error_List = []
 
 def run(commands, file):
@@ -27,9 +28,13 @@ for file in Files:
     # ffmpeg -i "$file" "${file%.wav}".mp3
     file = file.decode(encoding='UTF-8')
     commands = []
+    target = "\"../ffConvert/" + os.path.splitext(file)[0] + "." + sys.argv[2] + "\""
+    targetFolder = "\"../ffConvert/" +  os.path.dirname(file) + "\""
     file1  = "\"" + file + "1\""
-    target = "\"" + os.path.splitext(file)[0] + "." + sys.argv[2] + "\""
     file   = "\"" + file + "\""
+    
+    if os.path.exists(targetFolder) != True:
+        os.system("mkdir " + targetFolder)
     
     if sys.argv[1].lower() == sys.argv[2].lower():
         # Same type
