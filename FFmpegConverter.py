@@ -4,7 +4,7 @@
 # $ ./FFmpegConverter.py wav mp3
 # $ python3 FFmpegConverter.py wav mp3
 
-import subprocess, sys, os, codecs
+import subprocess, sys, os, codecs, time
 
 if len(sys.argv) == 1:
     print("Usage: ./FFmpegConverter.py <format> <format>")
@@ -15,7 +15,8 @@ try:
 except subprocess.CalledProcessError as e:
     print("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
-os.system("mkdir ../ffConvert")
+outdir = "../ffConvert" + time.strftime("%Y-%m-%d-%H-%M-%S", time.gmtime()) + "/"
+os.system("mkdir " + outdir)
 Error_List = []
 
 def run(commands, file):
@@ -28,8 +29,8 @@ for file in Files:
     # ffmpeg -i "$file" "${file%.wav}".mp3
     file = file.decode(encoding='UTF-8')
     commands = []
-    target = "\"../ffConvert/" + os.path.splitext(file)[0] + "." + sys.argv[2] + "\""
-    targetFolder = "\"../ffConvert/" +  os.path.dirname(file) + "\""
+    target = "\"" + outdir + os.path.splitext(file)[0] + "." + sys.argv[2] + "\""
+    targetFolder = "\"" + outdir +  os.path.dirname(file) + "\""
     file1  = "\"" + file + "1\""
     file   = "\"" + file + "\""
     
