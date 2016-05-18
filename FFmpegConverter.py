@@ -15,8 +15,9 @@ try:
 except subprocess.CalledProcessError as e:
     print("command '{}' return with error (code {}): {}".format(e.cmd, e.returncode, e.output))
 
-outdir = "../ffConvert" + time.strftime("-%Y-%m-%d-%H-%M-%S") + "/"
+outdir = "../" + os.path.relpath(".","..") + time.strftime("-%Y-%m-%d-%H-%M-%S") + "/"
 os.system("mkdir " + outdir)
+print(outdir)
 Error_List = []
 
 def run(commands, file):
@@ -29,25 +30,17 @@ for file in Files:
     # ffmpeg -i "$file" "${file%.wav}".mp3
     file = file.decode(encoding='UTF-8')
     commands = []
-    target = "\"" + outdir + os.path.splitext(file)[0] + "." + sys.argv[2] + "\""
-    targetFolder = "\"" + outdir +  os.path.dirname(file) + "\""
+    target = "\"" + outdir + os.path.splitext(file)[0][2:] + "." + sys.argv[2] + "\""
+    targetFolder = "\"" + os.path.dirname(outdir + file[2:]) + "\""
     file1  = "\"" + file + "1\""
     file   = "\"" + file + "\""
     
-    if not os.path.exists(targetFolder):
-        os.system("mkdir " + targetFolder)
+    if not os.path.isdir(targetFolder):
+        os.system("mkdir -p " + targetFolder)
     
-    if sys.argv[1].lower() == sys.argv[2].lower():
-        # Same type
-        commands.append("chmod 755 " + file)
-        commands.append("mv " + file + " " + file1)
-        commands.append("ffmpeg -i " + file1 + " -threads 8 " + target)
-        commands.append("rm " + file1)
-        run(commands, file)
-    else:
-        commands.append("chmod 755 " + file)
-        commands.append("ffmpeg -i " + file + " -threads 8 " + target)
-        run(commands, file)
+    commands.append("chmod 755 " + file)
+    commands.append("ffmpeg -i " + file + " -threads 8 " + target)
+    run(commands, file)
 
 for file in Error_List:
     print("Conver Error: " + file)
