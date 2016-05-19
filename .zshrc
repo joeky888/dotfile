@@ -16,6 +16,7 @@ if [[ $OSTYPE == cygwin ]] ; then
     export DISPLAY=:0.0
 fi
 
+alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
 
 # For cygwin
