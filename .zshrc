@@ -12,6 +12,10 @@ bindkey "OC" forward-word
 bindkey "OD" backward-word
 bindkey "[3~" kill-word
 
+if [[ $OSTYPE == cygwin ]] ; then
+    export DISPLAY=:0.0
+fi
+
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
 
 # For cygwin
