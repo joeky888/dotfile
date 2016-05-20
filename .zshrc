@@ -14,10 +14,8 @@ bindkey "[3~" kill-word
 
 if [[ $OSTYPE == cygwin ]] ; then
     export DISPLAY=:0.0
+    alias upgradeCygwin="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --upgrade-also --delete-orphans"
 fi
 
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
-
-# For cygwin
-alias upgradeCygwin="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --upgrade-also --delete-orphans"
