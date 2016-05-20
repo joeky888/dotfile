@@ -71,7 +71,7 @@ def linux():
     
 def bsd():
     commands.append("sudo pkg update")
-    commands.append("sudo pkg install tmux zsh git -y")
+    commands.append("sudo pkg install tmux zsh git")
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
