@@ -69,6 +69,25 @@ def linux():
     commands.append("ln -s ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("openbox --reconfigure")
     
+def bsd():
+    commands.append("sudo pkg update")
+    commands.append("sudo pkg install tmux zsh git -y")
+    commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
+    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("ln -s ~/dotfile/.bashrc ~/.bashrc")
+    commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
+    commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
+    commands.append("ln -s ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -s ~/dotfile/.vimrc ~/.vimrc")
+    
 def install():
     for cmd in commands:
         if os.system(cmd) != 0:
@@ -82,6 +101,9 @@ if   target == "windows":
     install()
 elif target == "linux":
     linux()
+    install()
+elif target == "bsd":
+    bsd()
     install()
 else:
     print("System not support")
