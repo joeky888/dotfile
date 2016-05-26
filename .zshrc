@@ -7,6 +7,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 source $ZSH/oh-my-zsh.sh
 
+setopt NO_NOMATCH # disable zsh match filename
+
 # alt + arrow key to move
 bindkey "OC" forward-word
 bindkey "OD" backward-word
