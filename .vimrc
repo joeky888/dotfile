@@ -11,8 +11,8 @@ set ttyfast " Faster refraw
 set mouse=nv " Mouse activated in Normal and Visual Mode
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
-set softtabstop=4 " ... and insert two spaces
-set shiftwidth=4 " Indent with two spaces
+set softtabstop=4 " ... and insert 4 spaces
+set shiftwidth=4 " Indent with 4 spaces
 set incsearch " Search as typing
 set hlsearch " Highlight search results
 set cursorline " Highligt the cursor line
