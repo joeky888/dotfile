@@ -12,12 +12,13 @@ inoremap <S-Tab> <C-d>
 set encoding=utf-8
 set fileencodings=utf-8
 set guifont=Ubuntu\ Mono:h14
-colorscheme darkblue
+highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
 imap <C-BS> <C-W>
 map  <C-Del> dw
 imap <C-Del> <ESC>dwi
+" colorscheme darkblue
 " set number
 " " set smartindent
 " " set ai
