@@ -11,7 +11,11 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 set encoding=utf-8
 set fileencodings=utf-8
-set guifont=Ubuntu\ Mono:h14
+if has('gui_win32')
+    set guifont=Ubuntu\ Mono:h14
+else
+    set guifont=Ubuntu\ Mono\ 14
+endif
 highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
