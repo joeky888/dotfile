@@ -2,7 +2,7 @@ Install
 =====
 * sudo add-apt-repository ppa:wine/wine-builds -y
 * sudo apt-get update
-* sudo apt-get install --install-recommends winehq-devel
+* sudo apt-get install --install-recommends winehq-devel -y
 * winecfg # Configure OS
 * winetricks # Install wqy-microhei.ttc
 
