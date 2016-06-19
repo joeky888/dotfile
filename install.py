@@ -49,7 +49,7 @@ def windows():
     
 def linux():
     commands.append("sudo apt-get update")
-    commands.append("sudo apt-get install tmux zsh git -y")
+    commands.append("sudo apt-get install tmux zsh git curl -y")
     commands.append("find ~/.config/openbox/ -name '*.xml' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
@@ -68,6 +68,14 @@ def linux():
     commands.append("ln -s ~/dotfile/.vimrc ~/.vimrc")
     commands.append("ln -s ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("openbox --reconfigure")
+    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
+    commands.append("sudo python3 get-pip.py");
+    commands.append("rm get-pip.py");
+    commands.append("echo y | sudo pip3 install youtube-dl");
+    commands.append("echo y | sudo pip3 install you-get");
+    pkgLocation = site.getsitepackages()
+    for location in pkgLocation:
+        commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
     
 def bsd():
     commands.append("sudo pkg update")
