@@ -8,7 +8,7 @@ let UseCustomKeyBindings = 1
 start " Start in Insert mode
 syntax enable " Enable syntax highlights
 set ttyfast " Faster refraw
-set mouse=nv " Mouse activated in Normal and Visual Mode
+" set mouse=nv " Mouse activated in Normal and Visual Mode
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set softtabstop=4 " ... and insert two spaces
