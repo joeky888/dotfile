@@ -49,7 +49,7 @@ def windows():
     
 def linux():
     commands.append("sudo apt-get update")
-    commands.append("sudo apt-get install tmux zsh git curl gnome-system-monitor -y")
+    commands.append("sudo apt-get install tmux zsh git curl p7zip-full p7zip-rar gnome-system-monitor -y")
     commands.append("find ~/.config/openbox/ -name '*.xml' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
