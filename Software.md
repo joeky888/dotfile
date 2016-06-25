@@ -29,6 +29,7 @@ Software
 * ffmpeg
 * Zulu
 * JComicDownloader
+* JDownloader
 * youtube-dl
 * you-get
 
