@@ -2,7 +2,7 @@
 Description=Auto reconnect to network
 
 [Service]
-Type=forking
+Type=simple
 ExecStart=/usr/bin/reconnect
 
 [Install]
