@@ -1,6 +1,7 @@
 #!/bin/sh
 
 while true; do                                                             
+  sleep 20s                                                                 
   if ping -c 1 8.8.8.8 | grep -q -i "ttl"; then                               
     echo "ok" >> /home/Reconnect.log
   else                                                                     
@@ -8,5 +9,4 @@ while true; do
     service network-manager restart
     echo $(date +"%m/%d/%Y %l:%M:%p") >> /home/Reconnect.log                                      
   fi                                                                       
-  sleep 5s                                                                 
 done                                                                       
