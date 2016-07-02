@@ -70,8 +70,8 @@ def linux():
     commands.append("openbox --reconfigure")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
     commands.append("sudo chmod 755 /usr/bin/reconnect")
-    commands.append("sudo install ~/dotfile/Linux/reconnect.service /etc/systemd/system/reconnect.service")
-    commands.append("sudo chmod 755 /etc/systemd/system/reconnect.service")
+    commands.append("sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service")
+    commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");
