@@ -3,7 +3,7 @@
 while true; do                                                             
   sleep 20s                                                                 
   if ping -c 1 8.8.8.8 | grep -q -i "ttl"; then                               
-    #echo "ok" >> /home/Reconnect.log
+    echo "ok"
   else                                                                     
     systemctl restart NetworkManager.service
     systemctl restart networking.service
