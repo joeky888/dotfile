@@ -1,0 +1,9 @@
+[Unit]
+Description=Auto reconnect to network
+
+[Service]
+Type=forking
+ExecStart=/usr/bin/reconnect
+
+[Install]
+WantedBy=multi-user.target

@@ -68,6 +68,10 @@ def linux():
     commands.append("ln -s ~/dotfile/.vimrc ~/.vimrc")
     commands.append("ln -s ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("openbox --reconfigure")
+    commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
+    commands.append("sudo chmod 755 /usr/bin/reconnect")
+    commands.append("sudo install ~/dotfile/Linux/reconnect.service /etc/systemd/system/reconnect.service")
+    commands.append("sudo chmod 755 /etc/systemd/system/reconnect.service")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");
