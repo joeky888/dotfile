@@ -23,3 +23,8 @@ Install Mono for dotnet
     * sudo apt-get update
     * sudo apt-get install --install-recommends wine-mono4.5.6
     * wine *.exe
+3. Using Wine32 Mono
+    * rm ~/.wine
+    * export WINEARCH=win32
+    * winetricks dotnet40
+    * wine *.exe
