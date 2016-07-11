@@ -5,7 +5,7 @@ while true; do
   if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then                               
     systemctl restart NetworkManager.service
     systemctl restart networking.service
-    #systemctl restart teamviewerd.service
+    systemctl restart teamviewerd.service
     echo $(date +"%m/%d/%Y %I:%M:%p") >> /home/Reconnect.log                                      
   fi                                                                       
 done                                                                       
