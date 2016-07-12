@@ -1,18 +1,16 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MiniVim
 " Details on : https://github.com/sd65/MiniVim
-let MiniVimVersion = "1.3"
-let UseCustomKeyBindings = 1
+let g:UseCustomKeyBindings = get(g:, 'UseCustomKeyBindings', "1")
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 """ General options
-start " Start in Insert mode
 syntax enable " Enable syntax highlights
 set ttyfast " Faster refraw
-" set mouse=nv " Mouse activated in Normal and Visual Mode
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
-set softtabstop=4 " ... and insert two spaces
-set shiftwidth=4 " Indent with two spaces
+set softtabstop=4 " ... and insert four spaces
+set shiftwidth=4 " Indent with four spaces
 set incsearch " Search as typing
 set hlsearch " Highlight search results
 set cursorline " Highligt the cursor line
@@ -52,6 +50,20 @@ function! GetFileInfo()
   let permissions = getfperm(expand('%:p'))
   echon  &filetype . ", " . GetFileSize() . ", " . permissions
 endfunction
+function! GetFileSize()
+  let bytes = getfsize(expand('%:p'))
+  if bytes <= 0
+     return ""
+  elseif bytes > 1024*1000*1000
+    return (bytes / 1024*1000*1000) . "GB"
+  elseif bytes > 1024*1000
+    return (bytes / 1024*1000) . "MB"
+  elseif bytes > 1024
+    return (bytes / 1024) . "KB"
+  else
+     return bytes . "B"
+  endif
+endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 
 """ Custom backup and swap files
@@ -73,8 +85,24 @@ let &directory = mySwapDir
 let &backupdir = myBackupDir
 set writebackup
 
+""" Smart Paste
+let &t_ti .= "\<Esc>[?2004h"
+let &t_te .= "\<Esc>[?2004l"
+function! XTermPasteBegin(ret)
+  set pastetoggle=<f29>
+  set paste
+  return a:ret
+endfunction
+execute "set <f28>=\<Esc>[200~"
+execute "set <f29>=\<Esc>[201~"
+map <expr> <f28> XTermPasteBegin("i")
+imap <expr> <f28> XTermPasteBegin("")
+vmap <expr> <f28> XTermPasteBegin("c")
+cmap <f28> <nop>
+cmap <f29> <nop>
+
 """ Key mappings
-if UseCustomKeyBindings
+if g:UseCustomKeyBindings
 
 " Helper functions
 function! CreateShortcut(keys, cmd, where, ...)
@@ -154,20 +182,6 @@ function! MySave()
   echohl iGreen | echon "    SAVED     "
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
-endfunction
-function! GetFileSize()
-  let bytes = getfsize(expand('%:p'))
-  if bytes <= 0
-     return ""
-  elseif bytes > 1024*1000*1000
-    return (bytes / 1024*1000*1000) . "GB"
-  elseif bytes > 1024*1000
-    return (bytes / 1024*1000) . "MB"
-  elseif bytes > 1024
-    return (bytes / 1024) . "KB"
-  else
-     return bytes . "B"
-  endif
 endfunction
 function! OpenLastBufferInNewTab()
     redir => ls_output
@@ -321,7 +335,7 @@ call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 let g:netrw_banner=0 " Hide banner
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
-autocmd filetype netrw call KeysInNetrw()
+autocmd FileType netrw call KeysInNetrw()
 function! KeysInNetrw()
   " Right to enter
   nmap <buffer> <Right> <CR>
@@ -517,3 +531,5 @@ hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE g
 hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill cterm=bold ctermbg=0
+" Final redraw
+call ChangeAccentColor()
