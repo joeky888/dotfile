@@ -18,6 +18,13 @@ Create an app by using eclipse
 * $ activator compile
 * $ activator eclipse
 * Using Eclipse(with Scala IDE installed) import -> General -> Existing Projects into Workspace -> myapp
+
+Run app
+=====
+* $ cd myapp
+* Reload on refreshing webpage
+* $ activator "run 80"
+* Reload on the fly (recommended)
 * $ activator "~run 80"
 
 Debug by using eclipse
