@@ -32,3 +32,10 @@ Debug by using eclipse
 * $ activator -jvm-debug 9999 "run 80"
 * Right click project -> Debug As -> Debug Configuration -> Remote Java Application -> Right Click and new -> change port to 9999 -> Debug
 * After debugging, press Ctrl-F8 to change ui back
+
+eclipse setting
+=====
+* eclipse.ini is setting for java stack size
+* Eclipse > Preferences > Java > Editor > Content Assist
+* Auto Activation > Auto activation triggers for Java
+* Enter "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._" instead of "."
