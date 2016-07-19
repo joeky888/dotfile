@@ -12,7 +12,7 @@ Create an app by using eclipse
 * Install Eclipse Java EE IDE for Web Developers
 * Open Eclipse -> Help -> Install New Software -> Add -> Name:Scala IDE, Location:(see http://scala-ide.org/download/current.html) -> OK
 * $ activator new myapp play-java
-* Add 'addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "latest.integration")' to myapp/project/plugins.sbt
+* Add 'addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")' to myapp/project/plugins.sbt
 * $ cd myapp
 * $ activator clean
 * $ activator compile
