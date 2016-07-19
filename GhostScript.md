@@ -9,3 +9,11 @@ Merging 1.pdf, 2.pdf and 3.pdf
 Remove password from input.pdf
 =====
 * gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf -c .setpdfwrite -f input.pdf
+
+Invert input.pdf color
+=====
+* gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.pdf -c "{1 exch sub}{1 exch sub}{1 exch sub}{1 exch sub} setcolortransfer" -f input.pdf
+
+Convert a input.pdf to greyscale
+=====
+* gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -sOutputFile=output.pdf Course01.pdf

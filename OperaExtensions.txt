@@ -11,3 +11,4 @@ Full Page Screen Capture
 DotVPN — better than VPN
 DevTools Theme: Zero Dark Matrix
 AutoScroll
+Chrome PDF Viewer
