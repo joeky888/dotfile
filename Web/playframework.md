@@ -23,8 +23,6 @@ Run app
 =====
 * $ cd myapp
 * Reload on refreshing webpage
-* $ activator "run 80"
-* Reload on the fly (recommended)
 * $ activator "~run 80"
 
 Debug by using eclipse
