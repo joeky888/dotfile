@@ -16,7 +16,7 @@ commands = []
 def windows():
     commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
     commands.append("install apt-cyg /bin && rm apt-cyg");
-    commands.append("apt-cyg install wget curl tar p7zip git openssh sed wget vim tmux zsh make automake gcc-core gcc-g++ python3");
+    commands.append("apt-cyg install wget curl tar p7zip git openssh sed wget vim tmux zsh make automake gcc-core gcc-g++");
     commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab");
     commands.append("mount -a");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
@@ -49,7 +49,7 @@ def windows():
     
 def linux():
     commands.append("sudo apt-get update")
-    commands.append("sudo apt-get install tmux zsh git curl p7zip-full p7zip-rar build-essential vim gnome-system-monitor -y")
+    commands.append("sudo apt-get install tmux zsh git curl p7zip-full p7zip-rar build-essential vim ffmpeg software-properties-gtk gnome-system-monitor -y")
     commands.append("find ~/.config/openbox/ -name '*.xml' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
