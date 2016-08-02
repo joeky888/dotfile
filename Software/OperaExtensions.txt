@@ -1,4 +1,5 @@
 Adblock Plus
+ad-safe
 Black Menu for Google
 Bookmark Sentry (scanner)
 Download Chrome Extension
