@@ -31,6 +31,11 @@ Debug by using eclipse
 * Right click project -> Debug As -> Debug Configuration -> Remote Java Application -> Right Click and new -> change port to 9999 -> Debug
 * After debugging, press Ctrl-F8 to change ui back
 
+Refresh if eclipse does not recognize some symbols
+=====
+* Start with "eclipse.exe -clean"
+* Right click and select refresh(F5) OR Right click and select Close Project and import it again
+
 eclipse setting
 =====
 * eclipse.ini is setting for java stack size
