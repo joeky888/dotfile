@@ -33,6 +33,9 @@ Debug by using eclipse
 
 Refresh if eclipse does not recognize some symbols
 =====
+* $ activator clean
+* $ activator compile
+* $ activator eclipse
 * Start with "eclipse.exe -clean"
 * Right click and select refresh(F5) OR Right click and select Close Project and import it again
 
