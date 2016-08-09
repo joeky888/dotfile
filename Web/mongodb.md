@@ -18,6 +18,10 @@ Insert and Create "hi" collection
 * $ db.hi.insert({"Hi" : {"text" : "this is first hi"}})
 * If collection "db.hi" is not exist, it will automatically created one
 
+Show all collections in a db
+=====
+* $ db.getCollectionNames()
+
 Show all data in a collection
 =====
 * $ show db.hi.find()
@@ -25,3 +29,7 @@ Show all data in a collection
 Kill a collection
 =====
 * $ show db.hi.drop()
+
+Kill current db
+=====
+* db.dropDatabase()
