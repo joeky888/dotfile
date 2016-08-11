@@ -24,11 +24,11 @@ Show all collections in a db
 
 Show all data in a collection
 =====
-* $ show db.hi.find()
+* $ db.hi.find()
 
 Kill a collection
 =====
-* $ show db.hi.drop()
+* $ db.hi.drop()
 
 Kill current db
 =====
