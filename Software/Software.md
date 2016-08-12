@@ -52,3 +52,4 @@ Good Software Design
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
+* Proxy setting
