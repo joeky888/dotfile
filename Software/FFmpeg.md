@@ -18,3 +18,9 @@ Swap audio track order (1, 2 -> 2, 1)
 * The first part before the colon is the input ID. Since we only have one input, it's 0
 * The second part is the ID of the input stream. 0 will probably be the video track, and 1 and 2 will be your audio tracks.
 * The order of the -map options determines the order of the streams in the output file.
+
+Extract part of a video
+=====
+* ffmpeg -i input_file -ss start_seconds -t duration_seconds -c copy output_file
+* extract 5 seconds start with 00:00:30
+* $ ffmpeg -i orginalfile -ss 00:00:30 -t 00:00:05 -c copy newfile
