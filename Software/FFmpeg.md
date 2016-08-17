@@ -21,9 +21,9 @@ Swap audio track order (1, 2 -> 2, 1)
 
 Extract part of a video
 =====
-* ffmpeg -i input_file -ss start_seconds -t duration_seconds -vcodec copy -acodec copy output_file
+* ffmpeg -i input_file -ss start_seconds -t duration_seconds output_file
 * extract 5 seconds start with 00:00:30
-* $ ffmpeg -i orginalfile -ss 00:00:30 -t 00:00:05 -vcodec copy -acodec copy newfile
+* $ ffmpeg -i orginalfile -ss 00:00:30 -t 00:00:05 newfile
 
 Speed up / Slow down a video
 =====
