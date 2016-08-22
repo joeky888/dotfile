@@ -3,7 +3,7 @@ var title = document.querySelector("div.headline > h1").innerHTML;
 console.log(title);
 var tags = document.querySelectorAll("#youku > a[href]");
 for (var i = 0; i < tags.length; i++) {
-    var str = tags[i].getAttribute("onclick").replace("getplayParas('", '').replace("','youku');", '');
+    var str = tags[i].getAttribute("onclick").replace("getplayParas('", '').replace("_youku','wwe100');", '');
     str = "http://v.youku.com/v_show/id_" + str + ".html";
     console.log(str);
     links.push(str);
