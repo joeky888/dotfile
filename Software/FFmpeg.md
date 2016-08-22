@@ -31,3 +31,17 @@ Speed up / Slow down a video
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
 * 1.25x speed
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
+
+Set default audio track
+=====
+* Set second audio track as default
+* $ ffmpeg -i input.mkv -disposition:a:1 default output.mkv
+* Set first audio track as default
+* $ ffmpeg -i input.mkv -disposition:a:0 default output.mkv
+
+Set default subtitle track
+=====
+* Set second subtitle track as default
+* $ ffmpeg -i input.mkv -disposition:s:1 default output.mkv
+* Set first subtitle track as default
+* $ ffmpeg -i input.mkv -disposition:s:0 default output.mkv
