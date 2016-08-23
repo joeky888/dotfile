@@ -18,6 +18,6 @@ find and exec multiple commands
 
 find all utf8 files
 =====
-* $ find . -type f -exec file --mime {} \; | grep utf
+* $ find . -type f -exec bash -c 'file --mime $0' {} \; | grep utf
 * find all non-utf8 files
-* $ find . -type f -exec file --mime {} \; | grep -v utf
+* $ find . -type f -exec bash -c 'file --mime $0' {} \; | grep -v utf
