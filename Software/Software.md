@@ -21,6 +21,7 @@ Software
 * Aegisub
 * Audacity
 * Qt
+* Cheat Engine
 * WPS Office
 * Libre Office
 * Popcorn Time
