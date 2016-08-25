@@ -5,6 +5,7 @@ Software
 * Opera Developer
 * Chome Developer
 * Firefox Developer
+* Wireshark
 * Teamviewer
 * Baidu Pan
 * Gimp
@@ -29,6 +30,7 @@ Software
 * Virtualbox
 * ffmpeg
 * Zulu
+* MegaDownloader
 * JComicDownloader
 * JDownloader
 * youtube-dl
