@@ -30,4 +30,4 @@ find without leading path such as ./ and exec a command
 =====
 * Remove all jpg files
 * Set % as variable/file name
-* $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % rm %
+* $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % bash -c 'rm $0' %
