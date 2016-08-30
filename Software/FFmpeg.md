@@ -45,3 +45,36 @@ Set default subtitle track
 * $ ffmpeg -i input.mkv -disposition:s:1 default output.mkv
 * Set first subtitle track as default
 * $ ffmpeg -i input.mkv -disposition:s:0 default output.mkv
+
+Compile ffmpeg on Cygwin
+=====
+* Install -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+* Install libmp3
+    * Download http://cas.ee.ic.ac.uk/people/dt10/teaching/2013/hpce/cw2/lame-3.99.5-alt.tar.gz
+    * $ ./configure --enable-static --disable-shared
+    * $ make -j 8 && make install
+* Install libaac
+    * $ git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
+    * $ ./autogen.sh
+    * $ ./configure --enable-static --disable-shared
+    * $ make -j 8 && make install
+* Install libh264
+    * $ git clone --depth=1 git://git.videolan.org/x264.git
+    * $ ./configure --enable-static --enable-shared
+    * $ make -j 8 && make install
+* Install libh265
+    * $ Download https://bitbucket.org/multicoreware/x265/downloads
+    * $ cd build/linux
+    * $ cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source
+    * $ make -j 8 && make install
+* Install libass (not necessarily)
+    * $ git clone --depth=1 https://github.com/libass/libass.git
+    * $ ./autogen.sh
+    * $ ./configure --enable-static --disable-shared
+    * $ make -j 8 && make install
+* Install ffmpeg
+    * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
+    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffprobe --disable-ffserver --disable-debug --disable-doc --disable-network --disable-protocols --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
+    * $ make -j 8 && make install
+* If ./configure failed
+    * check the error message at end of the file 'config.log'
