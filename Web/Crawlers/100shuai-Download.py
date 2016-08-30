@@ -15,9 +15,11 @@ Error_List.append("http://v.youku.com/v_show/id_XMTY3ODQ4Nzk1Mg==.html")
 Error_List.append("http://v.youku.com/v_show/id_XMTY3ODQ4MjAwNA==.html")
 
 # Retry
-i = 1
-for url in Error_List:
-    url = "\"" + url + "\""
-    if os.system("you-get -y proxy.uku.im:443 " + url) != 0:
-        print("Download Error: " + url)
-    i += 1
+while len(Error_List) != 0:
+    NewError_List = []
+    for url in Error_List:
+        if os.system("you-get -y proxy.uku.im:443 " + url) != 0:
+            print("Download Error: " + url)
+            NewError_List.append(url)
+    Error_List = []
+    Error_List = NewError_List[:]
