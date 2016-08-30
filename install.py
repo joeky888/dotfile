@@ -43,6 +43,7 @@ def windows():
     commands.append("ln -s ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -s ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -s ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -s /cygdrive/c/Windows/Fonts /usr/share/fonts/win-fonts")
     commands.append("cp ~/dotfile/.vimrc ~/.vimrc")
     commands.append("cp ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -s ~/dotfile/Windows/.minttyrc ~/.minttyrc")
