@@ -22,6 +22,14 @@ for (var i = 0; i < tags.length; i++) {
     links.push(str);
 }
 
+tags = document.querySelectorAll("#pptv > a[href]");
+for (var i = 0; i < tags.length; i++) {
+    var str = tags[i].getAttribute("onclick").replace("getplayParas('", '').replace("','pptv');", '');
+    str = "http://player.pptv.com/v/" + str + ".swf";
+    console.log(str);
+    links.push(str);
+}
+
 (function downloadAsFile(){
     var textToSave = "";
     if(links.length == 0) {
