@@ -74,7 +74,7 @@ Compile ffmpeg on Cygwin
     * $ make -j 8 && make install
 * Install ffmpeg
     * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
-    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffprobe --disable-ffserver --disable-debug --disable-doc --disable-network --disable-protocols --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
+    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffprobe --disable-ffserver --disable-debug --disable-doc --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
     * $ make -j 8 && make install
 * If ./configure failed
     * check the error message at end of the file 'config.log'
