@@ -47,6 +47,7 @@ def windows():
     commands.append("cp ~/dotfile/.vimrc ~/.vimrc")
     commands.append("cp ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -s ~/dotfile/Windows/.minttyrc ~/.minttyrc")
+    commands.append("fc-cache -fv")
     
 def linux():
     commands.append("sudo apt-get update")
