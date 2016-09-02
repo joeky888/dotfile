@@ -23,7 +23,8 @@ Extract part of a video
 =====
 * ffmpeg -i input_file -ss start_seconds -t duration_seconds output_file
 * extract 5 seconds start with 00:00:30
-* $ ffmpeg -i orginalfile -ss 00:00:30 -t 00:00:05 newfile
+* Time format HH:MM:SS.xxx where xxx are milliseconds
+* $ ffmpeg -i orginalfile -ss 00:00:30.000 -t 00:00:05.000 newfile
 
 Speed up / Slow down a video
 =====
@@ -31,6 +32,14 @@ Speed up / Slow down a video
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
 * 1.25x speed
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
+
+Delay / Hasten audio track
+=====
+* Time format HH:MM:SS.xxx where xxx are milliseconds
+* Delay 5 Second
+* $ ffmpeg -i input.mp4 -itsoffset 00:00:05.000 -i input.mp4 -map 0:v -map 1:a output.mp4
+* Hasten 5 Second
+* $ ffmpeg -i input.mp4 -itsoffset -00:00:05.000 -i input.mp4 -map 0:v -map 1:a output.mp4
 
 Set default audio track
 =====
