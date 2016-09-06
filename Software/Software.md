@@ -28,6 +28,7 @@ Software
 * Popcorn Time
 * GeoGebra
 * Virtualbox
+* Docker
 * ffmpeg
 * Zulu
 * MegaDownloader
