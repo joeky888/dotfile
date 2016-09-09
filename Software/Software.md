@@ -29,6 +29,7 @@ Software
 * GeoGebra
 * Virtualbox
 * Docker
+* Sikuli / SikuliX
 * ffmpeg
 * Zulu
 * MegaDownloader
@@ -45,6 +46,14 @@ Windows
 Linux
 =====
 * Qupzilla
+
+Android
+=====
+* Firefox with addons
+* Sogou input method
+* VLC
+* WPS office
+* WiFiAnalyzer open source
 
 Good Software Design
 =====

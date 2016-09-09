@@ -31,3 +31,8 @@ find without leading path such as ./ and exec a command
 * Remove all jpg files
 * Set % as variable/file name
 * $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % bash -c 'rm $0' %
+
+find and convert file to UTF-8
+=====
+* Make sure to install libiconv
+* $ find . -type f -iname '*.txt' -exec bash -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 $0 > $0.converted && mv $0.converted $0' {} \;
