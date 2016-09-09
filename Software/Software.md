@@ -42,6 +42,7 @@ Windows
 =====
 * build-extra (git for Windows) or msys2
 * Cygwin
+* Greenshot
 
 Linux
 =====
