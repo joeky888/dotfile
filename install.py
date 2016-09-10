@@ -21,13 +21,6 @@ def windows():
     commands.append("grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab");
     commands.append("mount -a");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
-    #commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.minttyrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
@@ -53,13 +46,6 @@ def windows():
 def linux():
     commands.append("sudo apt-get update")
     commands.append("sudo apt-get install tmux zsh git curl p7zip-full p7zip-rar build-essential vim ffmpeg software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y")
-    #commands.append("find ~/.config/openbox/ -name '*.xml' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
@@ -89,12 +75,6 @@ def linux():
 def bsd():
     commands.append("sudo pkg update")
     commands.append("sudo pkg install tmux zsh git")
-    #commands.append("find ~/ -maxdepth 1 -name '.bashrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.bash_profile' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.zshrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.tmux.conf' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.vimrc' -delete")
-    #commands.append("find ~/ -maxdepth 1 -name '.gvimrc' -delete")
     commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
