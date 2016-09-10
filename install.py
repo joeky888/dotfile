@@ -16,7 +16,7 @@ commands = []
 def windows():
     commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
     commands.append("install apt-cyg /bin && rm apt-cyg");
-    commands.append("apt-cyg install wget curl tar p7zip git openssh sed wget vim tmux zsh fontconfig ghostscript make automake cmake gcc-core gcc-g++");
+    commands.append("apt-cyg install wget curl tar p7zip git openssh sed wget vim tmux zsh fontconfig ghostscript openssl-devel make automake cmake gcc-core gcc-g++");
     commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab");
     commands.append("grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab");
     commands.append("mount -a");
