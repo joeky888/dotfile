@@ -22,8 +22,10 @@ def windows():
     commands.append("grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab");
     commands.append("mount -a");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
-    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
-    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("rm -rf ~/dotfile")
+    commands.append("rm -rf ~/oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
@@ -47,8 +49,10 @@ def windows():
 def linux():
     commands.append("sudo apt-get update")
     commands.append("sudo apt-get install tmux zsh git curl p7zip-full p7zip-rar build-essential vim ffmpeg software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y")
-    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
-    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("rm -rf ~/dotfile")
+    commands.append("rm -rf ~/oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
@@ -76,8 +80,10 @@ def linux():
 def bsd():
     commands.append("sudo pkg update")
     commands.append("sudo pkg install tmux zsh git")
-    commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
-    commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
+    #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
+    commands.append("rm -rf ~/dotfile")
+    commands.append("rm -rf ~/oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
