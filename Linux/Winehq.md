@@ -34,3 +34,9 @@ Install Mono for dotnet
     * export WINEARCH=win32
     * winetricks dotnet40
     * wine *.exe
+    
+Issues
+=====
+* If winecfg/winecfg-development can not create .wine/ successfully
+    * $ export WINEARCH=win32
+    * $ winecfg
