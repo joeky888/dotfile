@@ -36,3 +36,9 @@ find and convert file to UTF-8
 =====
 * Make sure to install libiconv
 * $ find . -type f -iname '*.txt' -exec bash -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 $0 > $0.converted && mv $0.converted $0' {} \;
+
+find with multiple conditions
+=====
+* -o means OR, -a means AND, -not means NOT
+* find all jpg or png or gif
+* $ find . -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif'
