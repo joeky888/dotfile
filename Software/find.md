@@ -22,11 +22,11 @@ find all utf8 files
 * find all non-utf8 files
 * $ find . -type f -exec bash -c 'file --mime $0' {} \; | grep -v utf
 
-find without leading path such as ./
+find without leading path such as ./ (which means getting basename only)
 =====
 * $ find . -iname '*.jpg' -printf '%P\n'
 
-find without leading path such as ./ and exec a command
+find without leading path such as ./ and exec a command (which means getting basename only)
 =====
 * Remove all jpg files
 * Set % as variable/file name
