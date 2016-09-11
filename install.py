@@ -25,7 +25,7 @@ def windows():
     #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("rm -rf ~/dotfile")
-    commands.append("rm -rf ~/oh-my-zsh")
+    commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
@@ -52,7 +52,7 @@ def linux():
     #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("rm -rf ~/dotfile")
-    commands.append("rm -rf ~/oh-my-zsh")
+    commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
@@ -83,7 +83,7 @@ def bsd():
     #commands.append("find ~/ -maxdepth 1 -name 'dotfile' -exec rm -rf '{}' \;")
     #commands.append("find ~/ -maxdepth 1 -name '.oh-my-zsh' -exec rm -rf '{}' \;")
     commands.append("rm -rf ~/dotfile")
-    commands.append("rm -rf ~/oh-my-zsh")
+    commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
