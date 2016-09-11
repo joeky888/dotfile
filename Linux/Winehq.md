@@ -4,7 +4,7 @@ Install without ppa
 * sudo apt-get install --install-recommends wine64-development wine64-development-tools wine64-development-preloader -y
 * winecfg-development # Configure OS
 
-Install from ppa
+Install from ppa (Recommend)
 =====
 * sudo add-apt-repository ppa:wine/wine-builds -y
 * sudo apt-get update
