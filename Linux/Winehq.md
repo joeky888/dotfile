@@ -1,13 +1,19 @@
-Install
+Install without ppa
+=====
+* sudo apt-get update
+* sudo apt-get install --install-recommends wine64-development wine64-development-tools wine64-development-preloader -y
+* winecfg-development # Configure OS
+
+Install from ppa
 =====
 * sudo add-apt-repository ppa:wine/wine-builds -y
 * sudo apt-get update
 * sudo apt-get install --install-recommends winehq-devel -y
 * winecfg # Configure OS
-* winetricks # Install wqy-microhei.ttc
 
 Install CJK font
 =====
+* winetricks # Install wqy-microhei.ttc
 * Install a Chinese input method on Linux
 * Using Winetricks install wqy-microhei.ttc 
 * Run $ wine regedit cjk.reg
