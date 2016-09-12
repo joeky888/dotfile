@@ -19,7 +19,6 @@ def windows():
     commands.append("apt-cyg install wget curl tar p7zip git openssh sed wget vim tmux zsh fontconfig ghostscript make automake cmake gcc-core gcc-g++");
     commands.append("apt-cyg install openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel");
     commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab");
-    commands.append("grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab");
     commands.append("mount -a");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
     commands.append("rm -rf ~/dotfile")
