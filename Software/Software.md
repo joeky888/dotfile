@@ -8,6 +8,7 @@ Software
 * Wireshark
 * Teamviewer
 * Baidu Pan
+* UNetbootin
 * Gimp
 * Inkscape
 * Blender
@@ -43,6 +44,7 @@ Windows
 * build-extra (git for Windows) or msys2
 * Cygwin
 * Greenshot
+* Rufus
 
 Linux
 =====
