@@ -4,12 +4,18 @@ Install without ppa
 * sudo apt-get install --install-recommends wine64-development wine64-development-tools wine64-development-preloader -y
 * winecfg-development # Configure OS
 
-Install from ppa (Recommend)
+Install from ppa
 =====
 * sudo add-apt-repository ppa:wine/wine-builds -y
 * sudo apt-get update
 * sudo apt-get install --install-recommends winehq-devel -y
 * winecfg # Configure OS
+
+Issues
+=====
+* If winecfg/winecfg-development can not create .wine/ successfully
+    * $ export WINEARCH=win32
+    * $ winecfg
 
 Install CJK font
 =====
@@ -33,9 +39,3 @@ Install Mono for dotnet
     * export WINEARCH=win32
     * winetricks dotnet40
     * wine *.exe
-    
-Issues
-=====
-* If winecfg/winecfg-development can not create .wine/ successfully
-    * $ export WINEARCH=win32
-    * $ winecfg
