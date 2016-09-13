@@ -17,6 +17,14 @@ Settings
             * Right button + CTRL -> Do nothing
             * Mouse wheel -> Scroll up/down
             * Mouse wheel + CTRL -> Zoom in/out
+        * Switching mode
+            * Use double click to switch between -> Do nothing
+            * Use middle click to switch between -> Do nothing
+            * Use ENTER click to switch between -> Browser <> Viewer
+    * View
+        * View
+            * Background color -> set to black
+            * Reset XY (No fit) -> check
     * Fullscreen
         * Fullscreen -> Show info -> uncheck
 * View -> Auto image size -> fit image to window width or height
