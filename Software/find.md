@@ -5,40 +5,45 @@ find
 find and exec a command
 =====
 * Rename all .jpg to .jpg.backup
-* $ find . -iname '*.jpg' -exec bash -c 'mv $0 $0.backup' {} \;
+* $ find . -iname '*.jpg' -exec bash -c 'mv "$0" "$0".backup' {} \;
 
 find and exec multiple commands
 =====
 * Add multiple -exec for each command
 * Copy all .jpg to .jpg.backup
 * Remove all .jpg
-* $ find . -iname '*.jpg' -exec bash -c 'mv $0 $0.backup && rm $0' {} \;
+* $ find . -iname '*.jpg' -exec bash -c 'mv "$0" "$0".backup && rm "$0"' {} \;
 * OR
-* $ find . -iname '*.jpg' -exec bash -c 'cp $0 $0.backup' {} \; -exec bash -c 'rm $0' {} \;
+* $ find . -iname '*.jpg' -exec bash -c 'cp "$0" "$0".backup' {} \; -exec bash -c 'rm "$0"' {} \;
 
 find all utf8 files
 =====
-* $ find . -type f -exec bash -c 'file --mime $0' {} \; | grep utf
+* $ find . -type f -exec bash -c 'file --mime "$0"' {} \; | grep utf
 * find all non-utf8 files
-* $ find . -type f -exec bash -c 'file --mime $0' {} \; | grep -v utf
-
-find without leading path such as ./ (which means getting basename only)
-=====
-* $ find . -iname '*.jpg' -printf '%P\n'
+* $ find . -type f -exec bash -c 'file --mime "$0"' {} \; | grep -v utf
 
 find without leading path such as ./ and exec a command (which means getting basename only)
 =====
 * Remove all jpg files
 * Set % as variable/file name
-* $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % bash -c 'rm $0' %
+* $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % bash -c 'rm "$0"' %
 
 find and convert file to UTF-8
 =====
 * Make sure to install libiconv
-* $ find . -type f -iname '*.txt' -exec bash -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 $0 > $0.converted && mv $0.converted $0' {} \;
+* $ find . -type f -iname '*.txt' -exec bash -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 "$0" > "$0.converted" && mv "$0.converted" "$0"' {} \;
 
 find with multiple conditions
 =====
 * -o means OR, -a means AND, -not means NOT
 * find all jpg or png or gif
 * $ find . -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif'
+
+find with file size
+=====
+* KB
+* $ find . -iname '*.jpg' -exec bash -c 'ls -s --block-size=K "$0"' {} \;
+* MB
+* $ find . -iname '*.jpg' -exec bash -c 'ls -s --block-size=M "$0"' {} \;
+* GB
+* $ find . -iname '*.jpg' -exec bash -c 'ls -s --block-size=G "$0"' {} \;
