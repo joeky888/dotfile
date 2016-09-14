@@ -55,6 +55,13 @@ Set default subtitle track
 * Set first subtitle track as default
 * $ ffmpeg -i input.mkv -disposition:s:0 default output.mkv
 
+Add subtitle track to .mkv
+=====
+* 0:0 means first video track
+* 0:1 means first audio track
+* 1:0 means sub.srt first subtitle track
+* $ ffmpeg -i input.mkv -i sub.srt -map 0:0 -map 0:1 -map 1:0 -c copy output.mkv
+
 Compile ffmpeg on Cygwin
 =====
 * Install -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
