@@ -1,6 +1,6 @@
 # Install Chinese language using gnome-language-selector
 # Install a package "fonts-droid" from Internet
-$ sudo fc-cache -f -v
+$ sudo fc-cache -fv
 $ sudo apt-get install fcitx
 $ sudo dpkg -i sogou*.deb
 $ im-config -n fcitx
