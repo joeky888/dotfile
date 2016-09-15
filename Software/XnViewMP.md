@@ -26,5 +26,6 @@ Settings
             * Background color -> set to black
             * Reset XY (No fit) -> check
     * Fullscreen
+        * Fullscreen -> Auto image size -> Fit image to window width or height
         * Fullscreen -> Show info -> uncheck
-* View -> Auto image size -> fit image to window width or height
+* View -> Auto image size -> Fit image to window width or height
