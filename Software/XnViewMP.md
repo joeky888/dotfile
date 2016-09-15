@@ -18,7 +18,7 @@ Settings
             * Mouse wheel -> Scroll up/down
             * Mouse wheel + CTRL -> Zoom in/out
         * Switching mode
-            * Use double click to switch between -> Do nothing
+            * Use double click to switch between -> Browser <> Fullscreen | Viewer <> Fullscreen
             * Use middle click to switch between -> Do nothing
             * Use ENTER click to switch between -> Browser <> Viewer
     * View
