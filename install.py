@@ -58,6 +58,7 @@ def linux():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("mkdir -p ~/.config/openbox")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("openbox --reconfigure")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
