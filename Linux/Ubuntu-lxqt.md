@@ -1,3 +1,7 @@
+Config tty font
+=====
+* sudo dpkg-reconfigure console-setup
+
 Connect network using static ip
 =====
 * Get netword card name
