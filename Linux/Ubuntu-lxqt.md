@@ -1,6 +1,19 @@
-Config tty font
+Config CJK font in tty
 =====
-* sudo dpkg-reconfigure console-setup
+* $ sudo apt-get install ttf-ubuntu-font-family fonts-droid-fallback fbterm -y
+* $ sudo apt-get install virtualbox-guest-dkms -y # for virtualbox
+* $ sudo fc-cache -fv
+* $ fc-list # Check font is installed or not
+* $ sudo chmod u+s $(which fbterm)
+* $ sudo usermod -a -G video $(whoami)
+* $ vim ~/.bash_profile, replace "exec tmux" to "fbterm tmux"
+* Ctrl+D to logout
+* $ vim ~/.fbtermrc
+````
+font-name=Ubuntu Mono, Droid Sans Fallback
+font-size=18
+````
+* $ sudo reboot
 
 Connect network using static ip
 =====
