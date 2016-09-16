@@ -6,7 +6,7 @@ Config CJK font in tty
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u+s $(which fbterm)
 * $ sudo usermod -a -G video $(whoami)
-* $ vim ~/.bash_profile, replace "exec tmux" to "fbterm tmux"
+* $ vim ~/.bashrc, replace "exec tmux" to "SHELL=tmux fbterm"
 * Ctrl+D to logout
 * $ vim ~/.fbtermrc
 ````
