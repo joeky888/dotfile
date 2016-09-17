@@ -41,6 +41,8 @@ find with multiple conditions
 
 find with file size
 =====
+* Auto detect which unit to use
+* $ find . -iname '*.jpg' -exec sh -c 'ls -lh "$0"' {} \;
 * KB
 * $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=K "$0"' {} \;
 * MB
