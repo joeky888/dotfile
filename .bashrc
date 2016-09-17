@@ -1,4 +1,4 @@
-alias ll='ls -all'
+alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
 whichTTY=$(tty | sed -e "s:/dev/::")
