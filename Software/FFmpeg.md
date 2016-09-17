@@ -66,7 +66,7 @@ Compile ffmpeg on Cygwin
 =====
 * Install -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
 * Install libmp3
-    * Download http://cas.ee.ic.ac.uk/people/dt10/teaching/2013/hpce/cw2/lame-3.99.5-alt.tar.gz
+    * $ git clone --depth=1 https://github.com/j16180339887/lame.git
     * $ ./configure --enable-static --disable-shared
     * $ make -j 8 && make install
 * Install libaac

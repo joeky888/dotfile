@@ -4,7 +4,7 @@ Config CJK font in tty
 * $ sudo apt-get install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
-* $ sudo chmod u+s $(which fbterm)
+* $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
 * $ sudo usermod -a -G video $(whoami)
 * $ vim ~/.bashrc, replace "exec tmux" to "SHELL=tmux fbterm"
 * Ctrl+D to logout
