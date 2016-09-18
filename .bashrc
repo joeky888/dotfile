@@ -5,6 +5,10 @@ alias fbterm='fbterm --cursor-shape=1 --cursor-interval=500'
 whichTTY=$(tty | sed -e "s:/dev/::")
 
 if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* ]] ; then
-    exec tmux
+    if [[ $(uname -a | grep -i -q 'linux') ]] ; then
+        SHELL=tmux fbterm
+    else
+        exec tmux
+    fi
 fi
 
