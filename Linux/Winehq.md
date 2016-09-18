@@ -13,12 +13,6 @@ Install from ppa
 * $ sudo apt-get install --install-recommends winehq-devel -y
 * $ winecfg # Configure OS
 
-Issues
-=====
-* If winecfg/winecfg-development can not create .wine/ successfully
-    * $ export WINEARCH=win32
-    * $ winecfg
-
 Install CJK font
 =====
 * $ winetricks # Install wqy-microhei.ttc
@@ -41,3 +35,9 @@ Install Mono for dotnet
     * $ export WINEARCH=win32
     * $ winetricks dotnet40
     * $ wine *.exe
+    
+Issues
+=====
+* If winecfg/winecfg-development can not create .wine/ successfully
+    * $ export WINEARCH=win32
+    * $ winecfg
