@@ -25,6 +25,7 @@ def windows():
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("git config --global core.editor vim");
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("python3 get-pip.py");
     commands.append("rm get-pip.py");
@@ -67,6 +68,7 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
+    commands.append("git config --global core.editor vim")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");
@@ -78,7 +80,7 @@ def linux():
     
 def bsd():
     commands.append("sudo pkg update")
-    commands.append("sudo pkg install tmux zsh git")
+    commands.append("sudo pkg install tmux zsh git vim")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
@@ -88,6 +90,7 @@ def bsd():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("git config --global core.editor vim")
     
 def install():
     for cmd in commands:
