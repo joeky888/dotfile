@@ -62,6 +62,18 @@ Add subtitle track to .mkv
 * 1:0 means sub.srt first subtitle track
 * $ ffmpeg -i input.mkv -i sub.srt -map 0:0 -map 0:1 -map 1:0 -c copy output.mkv
 
+Show all codes
+=====
+* $ ffmpeg -codecs
+* Or
+* $ ffmpeg -formats
+
+Show media info
+=====
+* $ ffprobe input.mkv
+* Or
+* $ ffprobe -i input.mkv
+
 Compile ffmpeg on Cygwin
 =====
 * Install -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
@@ -85,7 +97,7 @@ Compile ffmpeg on Cygwin
     * $ make -j 8 && make install
 * Install ffmpeg
     * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
-    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffprobe --disable-ffserver --disable-debug --disable-doc --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
+    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
     * $ make -j 8 && make install
 * If ./configure failed
     * check the error message at end of the file 'config.log'
