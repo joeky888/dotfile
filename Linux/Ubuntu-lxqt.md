@@ -15,6 +15,14 @@ font-size=18
 ````
 * $ sudo reboot
 
+Listen to music without x
+=====
+* $ sudo apt-get install alsa alsa-tools vlc-nox -y
+* $ sudo usermod -a -G audio $(whoami)
+* $ sudo reboot
+* $ alsamixer # Adjust volume
+* $ vlc -I ncurses --random ~/Music/*.mp3
+
 Connect network using static ip
 =====
 * Get netword card name
