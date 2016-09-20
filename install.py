@@ -125,7 +125,7 @@ elif target == "bsd":
     bsd()
     install()
 elif target == "container":
-    bsd()
+    container()
     install()
 else:
     print("System not support")
