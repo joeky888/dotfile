@@ -124,6 +124,9 @@ elif target == "linux":
 elif target == "bsd":
     bsd()
     install()
+elif target == "container":
+    bsd()
+    install()
 else:
     print("System not support")
     sys.exit(1)
