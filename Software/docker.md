@@ -26,6 +26,12 @@ Remove a installed container / just like remove a .vmdk on virtualbox
 =====
 * $ docker rm container_id
 
+Run a exist container
+=====
+* $ docker ps -a # get the name of the container
+* $ docker restart container_name
+* $ docker exec -it container_name bash
+
 Install ubuntu container on docker
 =====
 * use C:\cygwin64\Cygwin.bat
