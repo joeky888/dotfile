@@ -15,6 +15,22 @@ font-size=18
 ````
 * $ sudo reboot
 
+Change tty resolution 
+=====
+* $ sudo apt-get install virtualbox-guest-dkms -y
+* Reboot OS, when it shows boot menu, type "c" switch to grub mode
+* $ grub> vbeinfo
+* Pick one from stdout, ex: 1024x768x32
+* $ grub> reboot
+* $ sudo vim /etc/default/grub && sudo update-grub && sudo update-grub2
+````
+# In this order
+GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+GRUB_GFXMODE=1024x768x32
+GRUB_GFXPAYLOAD_LINUX=1024x768x32
+````
+* $ sudo reboot
+
 Listen to music without x
 =====
 * $ sudo apt-get install alsa alsa-tools vlc-nox -y
