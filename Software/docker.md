@@ -18,11 +18,11 @@ Check if docker is running correctly
 =====
 * $ docker run hello-world
 
-Show all installed container
+Show all installed container / just like showing all .vmdk on virtualbox
 =====
 * $ docker ps -a
 
-Remove a installed container
+Remove a installed container / just like remove a .vmdk on virtualbox
 =====
 * $ docker rm container_id
 
