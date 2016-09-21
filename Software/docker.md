@@ -23,9 +23,24 @@ Show all installed container / just like showing all .vmdk on virtualbox
 =====
 * $ docker ps -a
 
+All container stored at
+=====
+* Windows: "C:\Users\Public\Documents\Hyper-V\Virtual hard disks"
+
 Remove a installed container / just like remove a .vmdk on virtualbox
 =====
 * $ docker rm container_id
+
+Create a ubuntu container on docker
+=====
+* use C:\cygwin64\Cygwin.bat
+* $ zsh
+* name it to "ubuntu1"
+* $ docker run -it --name ubuntu1 ubuntu bash
+* dpkg-reconfigure tzdata # Set packages server location
+* edit /etc/apt/sources.list # Use devel packages
+* Download and run dotfiles
+* $ locale-gen en_US.UTF-8
 
 Run a exist ubuntu container
 =====
@@ -35,13 +50,3 @@ Run a exist ubuntu container
 * Or if trying to run container with tmux support
 * $ docker exec -it container_name script -q -c "/bin/bash" /dev/null
 
-Create a ubuntu container on docker
-=====
-* use C:\cygwin64\Cygwin.bat
-* $ zsh
-* name it to "ubuntu1"
-* $ docker run -it --name ubuntu1 ubuntu bash
-* edit /etc/apt/sources.list
-* Replace all "http://archive.ubuntu.com" to "http://tw.archive.ubuntu.com"
-* Download and run dotfiles
-* $ locale-gen en_US.UTF-8
