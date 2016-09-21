@@ -43,3 +43,5 @@ Create a ubuntu container on docker
 * $ docker run -it --name ubuntu1 ubuntu bash
 * edit /etc/apt/sources.list
 * Replace all "http://archive.ubuntu.com" to "http://tw.archive.ubuntu.com"
+* Download and run dotfiles
+* $ locale-gen en_US.UTF-8
