@@ -31,6 +31,8 @@ Run a exist container
 * $ docker ps -a # get the name of the container
 * $ docker restart container_name
 * $ docker exec -it container_name bash
+* Or if trying to run container with tmux support
+* $ docker exec -it container_name script -q -c "/bin/bash" /dev/null
 
 Create a ubuntu container on docker
 =====
