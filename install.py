@@ -95,17 +95,17 @@ def bsd():
 
 def container():
     commands.append("apt-get update")
-    commands.append("apt-get install tmux zsh git curl vim -y")
-    commands.append("rm -rf /dotfile")
-    commands.append("rm -rf /.oh-my-zsh")
-    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git /dotfile")
-    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /.oh-my-zsh");
-    commands.append("ln -sf /dotfile/.bashrc /.bashrc")
-    commands.append("ln -sf /dotfile/.bash_profile /.bash_profile")
-    commands.append("ln -sf /dotfile/.tmux.conf /.tmux.conf")
-    commands.append("ln -sf /dotfile/.zshrc /.zshrc")
-    commands.append("ln -sf /dotfile/.vimrc /.vimrc")
-    commands.append("ln -sf /dotfile/.fbtermrc /.fbtermrc")
+    commands.append("apt-get install tmux zsh git curl vim wget nano -y")
+    commands.append("rm -rf ~/dotfile")
+    commands.append("rm -rf ~/.oh-my-zsh")
+    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
+    commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
+    commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
+    commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
+    commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
 
 def install():
     for cmd in commands:
