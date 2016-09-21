@@ -32,8 +32,10 @@ Run a exist container
 * $ docker restart container_name
 * $ docker exec -it container_name bash
 
-Install ubuntu container on docker
+Create a ubuntu container on docker
 =====
 * use C:\cygwin64\Cygwin.bat
 * $ zsh
 * $ docker run -it ubuntu bash
+* Or name it to "ubuntu1"
+* $ docker run -it --name ubuntu1 ubuntu bash
