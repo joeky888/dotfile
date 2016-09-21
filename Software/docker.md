@@ -50,3 +50,15 @@ Run a exist ubuntu container
 * Or if trying to run container with tmux support
 * $ docker exec -it container_name script -q -c "/bin/bash" /dev/null
 
+Take a snapshot of container and restore
+=====
+* Take a snapshot
+* $ docker export container_name > ~/snapshot1.tar
+* Restore a snapshot to a docker image called "backup/ubuntu"
+* $ cat ~/snapshot1.tar | docker import - backup/ubuntu:v1.0
+* $ docker run -it --name ubuntu1 backup/ubuntu:v1.0 bash
+* $ docker restart ubuntu1
+
+Remove a commit / snapshot1 image
+=====
+* $ docker rmi image_id
