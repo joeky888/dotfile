@@ -16,7 +16,8 @@ Turn off Hyper-V
 
 Check if docker is running correctly
 =====
-* $ docker run hello-world
+* name it to hello-world then remove it
+* $ docker run --name hello-world hello-world && docker rm hello-world
 
 Show all installed container / just like showing all .vmdk on virtualbox
 =====
@@ -26,7 +27,7 @@ Remove a installed container / just like remove a .vmdk on virtualbox
 =====
 * $ docker rm container_id
 
-Run a exist container
+Run a exist ubuntu container
 =====
 * $ docker ps -a # get the name of the container
 * $ docker restart container_name
@@ -38,6 +39,7 @@ Create a ubuntu container on docker
 =====
 * use C:\cygwin64\Cygwin.bat
 * $ zsh
-* $ docker run -it ubuntu bash
-* Or name it to "ubuntu1"
+* name it to "ubuntu1"
 * $ docker run -it --name ubuntu1 ubuntu bash
+* edit /etc/apt/sources.list
+* Replace all "http://archive.ubuntu.com" to "http://tw.archive.ubuntu.com"
