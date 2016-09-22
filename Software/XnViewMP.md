@@ -7,7 +7,7 @@ Settings
 * Tools -> Settings
     * General
         * General -> One instance of program only -> check
-        * General -> Startup -> Fullscreen when starting with a file -> uncheck
+        * General -> Startup -> Mode when starting with a file -> Normal
     * Interface
         * Mouse
             * Left button -> Move picture
