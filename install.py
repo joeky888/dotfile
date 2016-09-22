@@ -106,6 +106,7 @@ def container():
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
+    commands.append("git config --global core.editor vim")
 
 def install():
     for cmd in commands:
