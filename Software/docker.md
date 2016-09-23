@@ -52,14 +52,16 @@ Run a exist ubuntu container
 * $ docker restart container_name
 * $ docker exec -it container_name bash
 * Or if trying to run container with tmux support
-* $ docker exec -it container_name script -q -c "/bin/bash" /dev/null
+* $ docker exec -it ubuntu1 script -q -c "/bin/bash" /dev/null # ubuntu1 is container_name
 
 Take a snapshot of container and restore
 =====
 * Take a snapshot
-* $ docker export container_name > ~/snapshot1.tar
+* $ docker export container_name > ~/ubuntu1.tar
 * Restore a snapshot to a docker image called "backup/ubuntu"
-* $ cat ~/snapshot1.tar | docker import - backup/ubuntu:v1.0
+* $ docker stop ubuntu1 # ubuntu1 is container_name
+* $ docker rm --force ubuntu1 # ubuntu1 is container_name
+* $ cat ~/ubuntu1.tar | docker import - backup/ubuntu:v1.0
 * $ docker run -it --name ubuntu1 backup/ubuntu:v1.0 bash
 * $ docker restart ubuntu1
 
