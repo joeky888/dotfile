@@ -84,7 +84,7 @@ Get latest ubuntu package
 
 Install LXQT
 =====
-* $ sudo apt-get install lxqt
+* $ sudo apt-get install lxqt xorg
 * Or using ppa
 * $ sudo add-apt-repository ppa:lxqt/ppa -y 
 * $ sudo apt-get update
