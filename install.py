@@ -82,7 +82,7 @@ def linux():
 def bsd():
     commands.append("sudo pkg update")
     commands.append("sudo pkg install tmux zsh git vim bash")
-    commands.append("chsh -s zsh $(whoami)")
+    commands.append("chsh -s bash $(whoami)")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
