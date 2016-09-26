@@ -16,21 +16,21 @@ commands = []
 def windows():
     #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
     #commands.append("install apt-cyg /bin && rm apt-cyg");
-    commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe");
-    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed wget vim tmux zsh fontconfig fontforge ghostscript make automake cmake gcc-core gcc-g++");
-    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel");
-    commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab");
-    commands.append("mount -a");
+    commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe")
+    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed wget vim tmux zsh fontconfig fontforge ghostscript make automake cmake gcc-core gcc-g++")
+    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel")
+    commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab")
+    commands.append("mount -a")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
-    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile");
-    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
-    commands.append("git config --global core.editor vim");
-    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
-    commands.append("python3 get-pip.py");
-    commands.append("rm get-pip.py");
-    commands.append("echo y | pip3 install youtube-dl");
-    commands.append("echo y | pip3 install you-get");
+    commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
+    commands.append("git config --global core.editor vim")
+    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'")
+    commands.append("python3 get-pip.py")
+    commands.append("rm get-pip.py")
+    commands.append("echo y | pip3 install youtube-dl")
+    commands.append("echo y | pip3 install you-get")
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
@@ -53,7 +53,7 @@ def linux():
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
-    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
@@ -85,7 +85,8 @@ def bsd():
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
-    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
+    commands.append("grep -q -F 'Control Mod1 t :Exec qterminal' ~/.lumina/fluxbox-keys || echo 'Control Mod1 t :Exec qterminal' >> ~/.lumina/fluxbox-keys");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
@@ -99,7 +100,7 @@ def container():
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
-    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh");
+    commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
