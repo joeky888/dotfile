@@ -82,12 +82,13 @@ def linux():
 def bsd():
     commands.append("sudo pkg update")
     commands.append("sudo pkg install tmux zsh git vim bash")
-    commands.append("sudo usermod -s $(whereis bash) $(whoami)")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("grep -q -F 'Control Mod1 t :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 t :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
+    commands.append("grep -q -F 'setenv SHELL /bin/bash' ~/.cshrc || echo 'setenv SHELL /bin/bash' >> ~/.cshrc");
+    commands.append("grep -q -F 'exec /bin/bash --login' ~/.cshrc || echo 'exec /bin/bash --login' >> ~/.cshrc");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
