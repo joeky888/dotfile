@@ -87,7 +87,7 @@ def bsd():
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
-    commands.append("grep -q -F 'Control Mod1 t :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 t :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
+    commands.append("grep -q -F 'Control Mod1 T :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 T :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
