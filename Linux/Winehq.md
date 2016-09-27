@@ -1,7 +1,9 @@
 Install without ppa
 =====
 * $ sudo apt-get update
-* $ sudo apt-get install --install-recommends wine64-development wine64-development-tools wine64-development-preloader -y
+* $ sudo apt-get install --install-recommends wine64-development-preloader -y
+* Or
+* $ sudo apt-get install --install-recommends wine32-development-preloader -y
 * $ export WINEARCH=win32
 * $ winecfg-development # Configure OS
 * DO NOT INSTALL winetricks
