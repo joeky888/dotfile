@@ -319,6 +319,10 @@ call CreateShortcut("A-Right", "gt", "inv")
 " Alt Left - Previous tab
 call CreateShortcut("A-Left", "gT", "inv")
 
+" Paste
+call CreateShortcut("C-S-v",":call paste#Paste()<CR>","n")
+call CreateShortcut("C-S-v",":call paste#Paste()<CR>","in")
+
 " F2 - Paste toggle
 call CreateShortcut("f2",":call MyPasteToggle()<CR>", "n")
 
