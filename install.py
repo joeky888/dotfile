@@ -53,6 +53,7 @@ def linux():
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
+    commands.append("git config --global core.editor vim")
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
@@ -69,7 +70,6 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
-    commands.append("git config --global core.editor vim")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");
@@ -87,6 +87,7 @@ def bsd():
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
+    commands.append("git config --global core.editor vim")
     commands.append("grep -q -F 'Control Mod1 T :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 T :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
@@ -94,7 +95,6 @@ def bsd():
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
     commands.append("ln -sf ~/dotfile/.gvimrc ~/.gvimrc")
-    commands.append("git config --global core.editor vim")
 
 def container():
     commands.append("apt-get update")
@@ -103,13 +103,13 @@ def container():
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
+    commands.append("git config --global core.editor vim")
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
-    commands.append("git config --global core.editor vim")
 
 def install():
     for cmd in commands:
