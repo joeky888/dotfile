@@ -14,7 +14,7 @@ has_fbterm=$(command -v fbterm)
 
 if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* ]] ; then
     # Check if fbterm installed
-    if [[ $has_fbterm ]] ; then
+    if [[ $has_fbterm ]] && [[ $whichTTY != pts* ]] ; then
         SHELL=tmux fbterm
     else
         exec tmux
