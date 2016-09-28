@@ -320,7 +320,6 @@ call CreateShortcut("A-Right", "gt", "inv")
 call CreateShortcut("A-Left", "gT", "inv")
 
 " Paste
-call CreateShortcut("C-S-v",":call paste#Paste()<CR>","n")
 call CreateShortcut("C-S-v",":call paste#Paste()<CR>","in")
 
 " F2 - Paste toggle
