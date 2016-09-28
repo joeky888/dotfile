@@ -59,6 +59,7 @@ def linux():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("ln -sf ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
     commands.append("mkdir -p ~/.config/openbox")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
@@ -93,6 +94,7 @@ def bsd():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("ln -sf ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("git config --global core.editor vim")
 
 def container():
