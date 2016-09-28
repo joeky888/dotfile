@@ -43,8 +43,7 @@ def windows():
     commands.append("cp ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("rm -rf /usr/share/fonts/win-fonts")
     commands.append("mkdir /usr/share/fonts/win-fonts")
-    commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
-    commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
+    commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
     #commands.append("fc-cache -fv")
     
 def linux():
