@@ -16,7 +16,7 @@ find and exec multiple commands
 * OR
 * $ find . -iname '*.jpg' -exec sh -c 'cp "$0" "$0".backup' {} \; -exec sh -c 'rm "$0"' {} \;
 
-find all utf8 files
+find all UTF-8 files
 =====
 * $ find . -type f -exec sh -c 'file --mime "$0"' {} \; | grep utf
 * find all non-utf8 files
