@@ -155,7 +155,7 @@
         <command>qterminal -e tmux</command>
       </action>
     </keybind>
-    <keybind key="C-A-v">
+    <keybind key="C-A-g">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
