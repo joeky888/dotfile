@@ -32,7 +32,7 @@ set ignorecase " Search insensitive
 set smartcase " ... but smart
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8  " The encoding displayed.
-set fileencodings=utf-8  " The encoding written to file.
+set fileencodings=utf-8,big5,cp936,euc-jp,euc-kr,ucs-bom,utf-16le,default,latin1  " The encoding written to file.
 set synmaxcol=300 " Don't try to highlight long lines
 set guioptions-=T " Don't show toolbar in Gvim
 set iskeyword+=\- " Complete words containing a dash
