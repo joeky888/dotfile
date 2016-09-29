@@ -11,3 +11,12 @@ Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.9]
 "JavaHome"="C:\\zulu"
+
+/* Set to UTF-8, if something goes wrong, just delete it */
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor]
+"Autorun"="@chcp 65001>nul & cmd"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]
+"000"="Ubuntu Mono"
+"65001"="Ubuntu Mono"
+
