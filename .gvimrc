@@ -5,16 +5,18 @@ set writebackup
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 set encoding=utf-8
-set fileencodings=utf-8,big5,cp936,euc-jp,euc-kr,ucs-bom,utf-16le,default,latin1
-if has('gui_win32')
-    set backup
-    set backupskip=%TMP%
-    set undodir=%TMP%
-    set directory=%TMP%
-    set backupdir=%TMP%
-    set guifont=Ubuntu\ Mono:h14
-else
-    set guifont=Ubuntu\ Mono\ 14
+set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp936,utf-16le,default,latin1
+if has("gui_running")
+    if has('gui_win32')
+        set backup
+        set backupskip=%TMP%
+        set undodir=%TMP%
+        set directory=%TMP%
+        set backupdir=%TMP%
+        set guifont=Ubuntu\ Mono:h14
+    else
+        set guifont=Ubuntu\ Mono\ 14
+    endif
 endif
 highlight Normal guifg=white guibg=black
 syntax on
