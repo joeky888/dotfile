@@ -37,10 +37,8 @@ Install mono or dotnet
     * $ export WINEARCH=win32
     * $ winecfg # Configure OS
     * $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-    * $ sh winetricks dotnet40 # Dont click any button
-    * $ cp ~/dotfile/Linux/mscoree.dll ~/.wine/drive_c/windows/system32/mscoree.dll
-    * Continue installing dotnet
-    * $ sh winetricks xna40
+    * $ sh winetricks dotnet46
+    * $ sh winetricks xna40 # Optional
     * $ wine *.exe
     
 Issues
