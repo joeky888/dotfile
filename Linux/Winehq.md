@@ -33,7 +33,7 @@ Install mono or dotnet
     * $ sudo apt-get install --install-recommends wine-mono4.5.6
     * $ wine *.exe
 3. Using winetricks dotnet (Best way to go)
-    * $ rm ~/.wine
+    * $ rm -rf ~/.wine
     * $ export WINEARCH=win32
     * $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
     * $ sh winetricks dotnet40 # Dont click any button
