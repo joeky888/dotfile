@@ -17,12 +17,12 @@ Install from ppa
 
 Install CJK font
 =====
-* $ winetricks # Install wqy-microhei.ttc
+* Download wqy-zenhei.ttc and place it to ~/.wine/drive_c/windows/Fonts/
 * Install a Chinese input method on Linux
-* $ wine regedit cjk.reg
+* $ wine regedit ~/dotfile/Linux/cjk.reg
 * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
 
-Install Mono for dotnet
+Install mono or dotnet
 =====
 1. Using Linux Mono
     * $ sudo apt-get install --install-recommends mono-complete mono-runtime -y
@@ -32,10 +32,11 @@ Install Mono for dotnet
     * $ sudo apt-get update
     * $ sudo apt-get install --install-recommends wine-mono4.5.6
     * $ wine *.exe
-3. Using Wine32 Mono (Best way to go)
+3. Using winetricks dotnet (Best way to go)
     * $ rm ~/.wine
     * $ export WINEARCH=win32
-    * $ winetricks dotnet40
+    * $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+    * $ sh winetricks dotnet40
     * $ wine *.exe
     
 Issues
