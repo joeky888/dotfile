@@ -49,3 +49,10 @@ find with file size
 * $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=M "$0"' {} \;
 * GB
 * $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=G "$0"' {} \;
+
+Replace / Remove a string in a file
+=====
+* Replace all "\n\r" with ","
+* $ tr "\n\r" "," < input.txt  > output.txt
+* Remove all "\n\r"
+* $ tr -d "\n\r" < input.txt  > output.txt
