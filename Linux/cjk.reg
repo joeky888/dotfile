@@ -207,7 +207,7 @@ REGEDIT4
 
 /* ┤└┤лжrлм1 */
 /* │o╕╠еH WenQuanYi Micro Hei м░и╥бA╜╨ж█жцзяжизAнnк║жrлмжW║┘ */
-/* з┌л▄├iбAй╥еHРmзяжижPд@║╪жrлмбCзAд]еiеHзяжижh║╪дгжPк║жrлм */
+/* з┌л▄├iбAй╥еH│гзяжижPд@║╪жrлмбCзAд]еiеHзяжижh║╪дгжPк║жrлм */
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
 "Arial Baltic,186"="WenQuanYi Micro Hei"
 "Arial CE,238"="WenQuanYi Micro Hei"
@@ -237,6 +237,13 @@ REGEDIT4
 "╖sз║┼щ"="WenQuanYi Micro Hei"
 "ещз║┼щ"="WenQuanYi Micro Hei"
 "╖в┼щ"="WenQuanYi Micro Hei"
+"╖s?й·╩^"="WenQuanYi Micro Hei"
+"?й·╩^"="WenQuanYi Micro Hei"
+"?╖в╩^"="WenQuanYi Micro Hei"
+"╖L?е┐╢┬╩^"="WenQuanYi Micro Hei"
+"╖L?е┐╢┬"="WenQuanYi Micro Hei"
+"╖L?╢о╢┬╩^"="WenQuanYi Micro Hei"
+"╖L?╢о╢┬"="WenQuanYi Micro Hei"
 "╢┬╩^"="WenQuanYi Micro Hei"
 "з║╩^"="WenQuanYi Micro Hei"
 "╖sз║╩^"="WenQuanYi Micro Hei"
@@ -252,7 +259,7 @@ REGEDIT4
 "Tms Rmn"="WenQuanYi Micro Hei"
 
 /* ┤└┤лжrлм2 */
-/* з┌л▄├iбAй╥еHРmзяжижPд@║╪жrлмбCзAд]еiеHзяжижh║╪дгжPк║жrлм */
+/* з┌л▄├iбAй╥еH│гзяжижPд@║╪жrлмбCзAд]еiеHзяжижh║╪дгжPк║жrлм */
 [HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
 @="WenQuanYi Micro Hei"
 "Arial"="WenQuanYi Micro Hei"
