@@ -62,6 +62,13 @@ Add subtitle track to .mkv
 * 1:0 means sub.srt first subtitle track
 * $ ffmpeg -i input.mkv -i sub.srt -map 0:0 -map 0:1 -map 1:0 -c copy output.mkv
 
+Set audio track title
+=====
+* Set first track title to "國語"
+* $ ffmpeg -i input.mp4 -map 0 -metadata:s:a:0 title="國語" output.mp4
+* Set second track title to "粵語"
+* $ ffmpeg -i input.mp4 -map 0 -metadata:s:a:1 title="粵語" output.mp4
+
 Show all codes
 =====
 * $ ffmpeg -codecs
