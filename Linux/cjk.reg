@@ -258,3 +258,13 @@ REGEDIT4
 "Tahoma"="wqy-microhei.ttf,WenQuanYi Micro Hei"
 "PMingLiU"="wqy-microhei.ttf,WenQuanYi Micro Hei"
 "Lucida Sans Unicode"="wqy-microhei.ttf,WenQuanYi Micro Hei"
+
+/* Replace default fonts */
+[HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FontAssoc\Associated DefaultFonts]
+"FontPackage"="WenQuanYi Micro Hei"
+"FontPackageDecorative"="WenQuanYi Micro Hei"
+"FontPackageDontCare"="WenQuanYi Micro Hei"
+"FontPackageModern"="WenQuanYi Micro Hei"
+"FontPackageRoman"="WenQuanYi Micro Hei"
+"FontPackageScript"="WenQuanYi Micro Hei"
+"FontPackageSwiss"="WenQuanYi Micro Hei"
