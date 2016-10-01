@@ -284,6 +284,7 @@ REGEDIT4
 
 /* Replace default fonts */
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FontAssoc\Associated DefaultFonts]
+"AssocSystemFont"="wqy-microhei.ttc""
 "FontPackage"="WenQuanYi Micro Hei"
 "FontPackageDecorative"="WenQuanYi Micro Hei"
 "FontPackageDontCare"="WenQuanYi Micro Hei"
