@@ -207,7 +207,7 @@ REGEDIT4
 
 /* ´À´«¦r«¬1 */
 /* ³o¸Ì¥H WenQuanYi Micro Hei ¬°¨Ò¡A½Ğ¦Û¦æ§ï¦¨§A­nªº¦r«¬¦WºÙ */
-/* §Ú«ÜÃi¡A©Ò¥H³£§ï¦¨¦P¤@ºØ¦r«¬¡C§A¤]¥i¥H§ï¦¨¦hºØ¤£¦Pªº¦r«¬ */
+/* §Ú«ÜÃi¡A©Ò¥Hm§ï¦¨¦P¤@ºØ¦r«¬¡C§A¤]¥i¥H§ï¦¨¦hºØ¤£¦Pªº¦r«¬ */
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
 "Arial Baltic,186"="WenQuanYi Micro Hei"
 "Arial CE,238"="WenQuanYi Micro Hei"
@@ -226,6 +226,29 @@ REGEDIT4
 "PMingLiU"="WenQuanYi Micro Hei"
 "·s²Ó©úÅé"="WenQuanYi Micro Hei"
 "²Ó©úÅé"="WenQuanYi Micro Hei"
+"¼Ğ·¢Åé"="WenQuanYi Micro Hei"
+"·L³n¥¿¶ÂÅé"="WenQuanYi Micro Hei"
+"·L³n¥¿¶Â"="WenQuanYi Micro Hei"
+"·L³n¶®¶ÂÅé"="WenQuanYi Micro Hei"
+"·L³n¶®¶Â"="WenQuanYi Micro Hei"
+"¶ÂÅé"="WenQuanYi Micro Hei"
+"§ºÅé"="WenQuanYi Micro Hei"
+"©úÅé"="WenQuanYi Micro Hei"
+"·s§ºÅé"="WenQuanYi Micro Hei"
+"¥é§ºÅé"="WenQuanYi Micro Hei"
+"·¢Åé"="WenQuanYi Micro Hei"
+"·s?©úÊ^"="WenQuanYi Micro Hei"
+"?©úÊ^"="WenQuanYi Micro Hei"
+"?·¢Ê^"="WenQuanYi Micro Hei"
+"·L?¥¿¶ÂÊ^"="WenQuanYi Micro Hei"
+"·L?¥¿¶Â"="WenQuanYi Micro Hei"
+"·L?¶®¶ÂÊ^"="WenQuanYi Micro Hei"
+"·L?¶®¶Â"="WenQuanYi Micro Hei"
+"¶ÂÊ^"="WenQuanYi Micro Hei"
+"§ºÊ^"="WenQuanYi Micro Hei"
+"·s§ºÊ^"="WenQuanYi Micro Hei"
+"¥é§ºÊ^"="WenQuanYi Micro Hei"
+"·¢Ê^"="WenQuanYi Micro Hei"
 "Tahoma"="WenQuanYi Micro Hei"
 "Times"="WenQuanYi Micro Hei"
 "Times New Roman Baltic,186"="WenQuanYi Micro Hei"
@@ -236,7 +259,7 @@ REGEDIT4
 "Tms Rmn"="WenQuanYi Micro Hei"
 
 /* ´À´«¦r«¬2 */
-/* §Ú«ÜÃi¡A©Ò¥H³£§ï¦¨¦P¤@ºØ¦r«¬¡C§A¤]¥i¥H§ï¦¨¦hºØ¤£¦Pªº¦r«¬ */
+/* §Ú«ÜÃi¡A©Ò¥Hm§ï¦¨¦P¤@ºØ¦r«¬¡C§A¤]¥i¥H§ï¦¨¦hºØ¤£¦Pªº¦r«¬ */
 [HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
 @="WenQuanYi Micro Hei"
 "Arial"="WenQuanYi Micro Hei"
