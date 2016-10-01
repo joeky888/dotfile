@@ -5,7 +5,7 @@ set writebackup
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 set encoding=utf-8
-set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp936,utf-16le,default,latin1
+set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
 if has("gui_running")
     if has('gui_win32')
         set backup
