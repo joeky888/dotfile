@@ -1,9 +1,9 @@
 Install without ppa
 =====
 * $ sudo apt-get update
-* $ sudo apt-get install --install-recommends wine32-development-preloader winbind -y
+* $ sudo apt-get install --install-recommends --install-suggests wine32-development-preloader winbind -y
 * Or
-* $ sudo apt-get install --install-recommends wine64-development-preloader winbind -y
+* $ sudo apt-get install --install-recommends --install-suggests wine64-development-preloader winbind -y
 * $ export WINEARCH=win32
 * $ winecfg-development # Configure OS
 * DO NOT INSTALL winetricks
@@ -12,7 +12,7 @@ Install from ppa
 =====
 * $ sudo add-apt-repository ppa:wine/wine-builds -y
 * $ sudo apt-get update
-* $ sudo apt-get install --install-recommends winehq-devel winbind -y
+* $ sudo apt-get install --install-recommends --install-suggests winehq-devel winbind -y
 * $ winecfg # Configure OS
 
 Install CJK font
