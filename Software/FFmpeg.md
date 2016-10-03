@@ -69,6 +69,15 @@ Set audio track title
 * Set second track title to "粵語"
 * $ ffmpeg -i input.mp4 -map 0 -metadata:s:a:1 title="粵語" output.mp4
 
+Copy encoding if convert coding is not available
+=====
+* Video
+* $ ffmpeg -i input.mkv -c:v copy output.mkv
+* Audio
+* $ ffmpeg -i input.mkv -c:a copy output.mkv
+* Subtitle
+* $ ffmpeg -i input.mkv -c:s copy output.mkv
+
 Show all codes
 =====
 * $ ffmpeg -codecs
