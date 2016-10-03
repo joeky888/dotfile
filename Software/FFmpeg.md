@@ -93,20 +93,24 @@ Compile ffmpeg on Cygwin
     * $ git clone --depth=1 https://github.com/j16180339887/lame.git
     * $ ./configure --enable-static --disable-shared
     * $ make -j 8 && make install
+    * $ ffmpeg -i input -c:a libmp3lame output
 * Install libaac
     * $ git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
     * $ ./autogen.sh
     * $ ./configure --enable-static --disable-shared
     * $ make -j 8 && make install
+    * $ ffmpeg -i input -c:a libfdk_aac output
 * Install libh264
     * $ git clone --depth=1 git://git.videolan.org/x264.git
     * $ ./configure --enable-static --enable-shared
     * $ make -j 8 && make install
+    * $ ffmpeg -i input -c:v libx264 output
 * Install libh265
     * $ Download https://bitbucket.org/multicoreware/x265/downloads
     * $ cd build/linux
     * $ cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source
     * $ make -j 8 && make install
+    * $ ffmpeg -i input -c:v libx265 output
 * Install ffmpeg
     * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
     * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
