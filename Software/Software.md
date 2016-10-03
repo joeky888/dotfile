@@ -6,6 +6,7 @@ Software
 * Chome Developer
 * Firefox Developer
 * Wireshark
+* Nmap / Zenmap
 * Teamviewer
 * Baidu Pan
 * UNetbootin
