@@ -19,6 +19,7 @@ if has("gui_running")
     endif
 endif
 set guicursor=a:blinkon0
+set nowrap
 highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
