@@ -18,6 +18,7 @@ if has("gui_running")
         set guifont=Ubuntu\ Mono\ 14
     endif
 endif
+set guicursor=a:blinkon0
 highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
