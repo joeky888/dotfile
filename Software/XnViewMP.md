@@ -7,6 +7,7 @@ Settings
 * Tools -> Settings
     * General
         * General -> One instance of program only -> check
+        * General -> Save session on program exit -> Never
         * General -> Startup -> Mode when starting with a file -> Normal
     * Interface
         * Mouse
