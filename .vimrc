@@ -538,7 +538,7 @@ hi TabLineFill cterm=bold ctermbg=0
 call ChangeAccentColor()
 
 set completeopt=menuone,noinsert,noselect,longest
-set complete-=i
+set complete-=w,b,u,t,i
 imap a a<Esc>:call AutoComplete()<CR>
 imap b b<Esc>:call AutoComplete()<CR>
 imap c c<Esc>:call AutoComplete()<CR>
