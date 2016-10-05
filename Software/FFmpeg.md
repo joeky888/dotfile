@@ -78,6 +78,14 @@ Copy encoding if convert coding is not available
 * Subtitle
 * $ ffmpeg -i input.mkv -c:s copy output.mkv
 
+Remove all audio tracks
+=====
+* $ ffmpeg -i input -an ouput
+* Remove all video tracks
+* $ ffmpeg -i input -vn ouput
+* Remove all subtitle tracks
+* $ ffmpeg -i input -sn ouput
+
 Show all codes
 =====
 * $ ffmpeg -codecs
