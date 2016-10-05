@@ -335,7 +335,7 @@ call CreateShortcut("f4","mzggg?G`z", "inv")
 call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 
 " Ctrl O - Netrw (:Explore)
-call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+"call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 let g:netrw_banner=0 " Hide banner
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
@@ -536,3 +536,61 @@ hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill cterm=bold ctermbg=0
 " Final redraw
 call ChangeAccentColor()
+
+set completeopt=menuone,noinsert,noselect,longest
+imap a a<Esc>:call GetCharBeforeCursor()<CR>
+imap b b<Esc>:call GetCharBeforeCursor()<CR>
+imap c c<Esc>:call GetCharBeforeCursor()<CR>
+imap d d<Esc>:call GetCharBeforeCursor()<CR>
+imap e e<Esc>:call GetCharBeforeCursor()<CR>
+imap f f<Esc>:call GetCharBeforeCursor()<CR>
+imap g g<Esc>:call GetCharBeforeCursor()<CR>
+imap h h<Esc>:call GetCharBeforeCursor()<CR>
+imap i i<Esc>:call GetCharBeforeCursor()<CR>
+imap j j<Esc>:call GetCharBeforeCursor()<CR>
+imap k k<Esc>:call GetCharBeforeCursor()<CR>
+imap l l<Esc>:call GetCharBeforeCursor()<CR>
+imap m m<Esc>:call GetCharBeforeCursor()<CR>
+imap n n<Esc>:call GetCharBeforeCursor()<CR>
+imap o o<Esc>:call GetCharBeforeCursor()<CR>
+imap p p<Esc>:call GetCharBeforeCursor()<CR>
+imap q q<Esc>:call GetCharBeforeCursor()<CR>
+imap r r<Esc>:call GetCharBeforeCursor()<CR>
+imap s s<Esc>:call GetCharBeforeCursor()<CR>
+imap t t<Esc>:call GetCharBeforeCursor()<CR>
+imap u u<Esc>:call GetCharBeforeCursor()<CR>
+imap v v<Esc>:call GetCharBeforeCursor()<CR>
+imap w w<Esc>:call GetCharBeforeCursor()<CR>
+imap x x<Esc>:call GetCharBeforeCursor()<CR>
+imap y y<Esc>:call GetCharBeforeCursor()<CR>
+imap z z<Esc>:call GetCharBeforeCursor()<CR>
+imap A A<Esc>:call GetCharBeforeCursor()<CR>
+imap B B<Esc>:call GetCharBeforeCursor()<CR>
+imap C C<Esc>:call GetCharBeforeCursor()<CR>
+imap D D<Esc>:call GetCharBeforeCursor()<CR>
+imap E E<Esc>:call GetCharBeforeCursor()<CR>
+imap F F<Esc>:call GetCharBeforeCursor()<CR>
+imap G G<Esc>:call GetCharBeforeCursor()<CR>
+imap H H<Esc>:call GetCharBeforeCursor()<CR>
+imap I I<Esc>:call GetCharBeforeCursor()<CR>
+imap J J<Esc>:call GetCharBeforeCursor()<CR>
+imap K K<Esc>:call GetCharBeforeCursor()<CR>
+imap L L<Esc>:call GetCharBeforeCursor()<CR>
+imap M M<Esc>:call GetCharBeforeCursor()<CR>
+imap N N<Esc>:call GetCharBeforeCursor()<CR>
+imap O O<Esc>:call GetCharBeforeCursor()<CR>
+imap P P<Esc>:call GetCharBeforeCursor()<CR>
+imap Q Q<Esc>:call GetCharBeforeCursor()<CR>
+imap R R<Esc>:call GetCharBeforeCursor()<CR>
+imap S S<Esc>:call GetCharBeforeCursor()<CR>
+imap T T<Esc>:call GetCharBeforeCursor()<CR>
+imap U U<Esc>:call GetCharBeforeCursor()<CR>
+imap V V<Esc>:call GetCharBeforeCursor()<CR>
+imap W W<Esc>:call GetCharBeforeCursor()<CR>
+imap X X<Esc>:call GetCharBeforeCursor()<CR>
+imap Y Y<Esc>:call GetCharBeforeCursor()<CR>
+imap Z Z<Esc>:call GetCharBeforeCursor()<CR>
+
+function! GetCharBeforeCursor()
+  call feedkeys("a\<C-n>")
+endfunction
