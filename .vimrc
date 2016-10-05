@@ -592,5 +592,5 @@ imap Y Y<Esc>:call AutoComplete()<CR>
 imap Z Z<Esc>:call AutoComplete()<CR>
 
 function! AutoComplete()
-  call feedkeys("a\<C-n>")
+  call feedkeys("a\<C-x>\<C-n>")
 endfunction
