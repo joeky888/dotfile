@@ -8,7 +8,9 @@ export LC_TIME="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 export LC_MONETARY="en_US.UTF-8"
 export LC_MESSAGES="en_US.UTF-8"
-#export TERM="xterm-256color"
+if [ "$TERM" = "xterm" ]; then
+  export TERM=xterm-256color
+fi
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 has_fbterm=$(command -v fbterm)
