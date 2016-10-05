@@ -20,7 +20,6 @@ if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichT
     if [[ $whichTTY == pts* || $whichTTY == pty* ]] ; then
         exec tmux
     elif [[ $has_fbterm ]] ; then
-        export TERM=xterm-256color
         SHELL=tmux fbterm
     fi
 fi
