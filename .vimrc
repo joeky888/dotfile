@@ -539,59 +539,61 @@ call ChangeAccentColor()
 
 set completeopt=menuone,noinsert,noselect,longest
 set complete-=w,b,u,t,i
-imap a a<Esc>:call AutoComplete()<CR>
-imap b b<Esc>:call AutoComplete()<CR>
-imap c c<Esc>:call AutoComplete()<CR>
-imap d d<Esc>:call AutoComplete()<CR>
-imap e e<Esc>:call AutoComplete()<CR>
-imap f f<Esc>:call AutoComplete()<CR>
-imap g g<Esc>:call AutoComplete()<CR>
-imap h h<Esc>:call AutoComplete()<CR>
-imap i i<Esc>:call AutoComplete()<CR>
-imap j j<Esc>:call AutoComplete()<CR>
-imap k k<Esc>:call AutoComplete()<CR>
-imap l l<Esc>:call AutoComplete()<CR>
-imap m m<Esc>:call AutoComplete()<CR>
-imap n n<Esc>:call AutoComplete()<CR>
-imap o o<Esc>:call AutoComplete()<CR>
-imap p p<Esc>:call AutoComplete()<CR>
-imap q q<Esc>:call AutoComplete()<CR>
-imap r r<Esc>:call AutoComplete()<CR>
-imap s s<Esc>:call AutoComplete()<CR>
-imap t t<Esc>:call AutoComplete()<CR>
-imap u u<Esc>:call AutoComplete()<CR>
-imap v v<Esc>:call AutoComplete()<CR>
-imap w w<Esc>:call AutoComplete()<CR>
-imap x x<Esc>:call AutoComplete()<CR>
-imap y y<Esc>:call AutoComplete()<CR>
-imap z z<Esc>:call AutoComplete()<CR>
-imap A A<Esc>:call AutoComplete()<CR>
-imap B B<Esc>:call AutoComplete()<CR>
-imap C C<Esc>:call AutoComplete()<CR>
-imap D D<Esc>:call AutoComplete()<CR>
-imap E E<Esc>:call AutoComplete()<CR>
-imap F F<Esc>:call AutoComplete()<CR>
-imap G G<Esc>:call AutoComplete()<CR>
-imap H H<Esc>:call AutoComplete()<CR>
-imap I I<Esc>:call AutoComplete()<CR>
-imap J J<Esc>:call AutoComplete()<CR>
-imap K K<Esc>:call AutoComplete()<CR>
-imap L L<Esc>:call AutoComplete()<CR>
-imap M M<Esc>:call AutoComplete()<CR>
-imap N N<Esc>:call AutoComplete()<CR>
-imap O O<Esc>:call AutoComplete()<CR>
-imap P P<Esc>:call AutoComplete()<CR>
-imap Q Q<Esc>:call AutoComplete()<CR>
-imap R R<Esc>:call AutoComplete()<CR>
-imap S S<Esc>:call AutoComplete()<CR>
-imap T T<Esc>:call AutoComplete()<CR>
-imap U U<Esc>:call AutoComplete()<CR>
-imap V V<Esc>:call AutoComplete()<CR>
-imap W W<Esc>:call AutoComplete()<CR>
-imap X X<Esc>:call AutoComplete()<CR>
-imap Y Y<Esc>:call AutoComplete()<CR>
-imap Z Z<Esc>:call AutoComplete()<CR>
+set shortmess+=c
+
+imap <silent> a a<Esc>:call AutoComplete()<CR>
+imap <silent> b b<Esc>:call AutoComplete()<CR>
+imap <silent> c c<Esc>:call AutoComplete()<CR>
+imap <silent> d d<Esc>:call AutoComplete()<CR>
+imap <silent> e e<Esc>:call AutoComplete()<CR>
+imap <silent> f f<Esc>:call AutoComplete()<CR>
+imap <silent> g g<Esc>:call AutoComplete()<CR>
+imap <silent> h h<Esc>:call AutoComplete()<CR>
+imap <silent> i i<Esc>:call AutoComplete()<CR>
+imap <silent> j j<Esc>:call AutoComplete()<CR>
+imap <silent> k k<Esc>:call AutoComplete()<CR>
+imap <silent> l l<Esc>:call AutoComplete()<CR>
+imap <silent> m m<Esc>:call AutoComplete()<CR>
+imap <silent> n n<Esc>:call AutoComplete()<CR>
+imap <silent> o o<Esc>:call AutoComplete()<CR>
+imap <silent> p p<Esc>:call AutoComplete()<CR>
+imap <silent> q q<Esc>:call AutoComplete()<CR>
+imap <silent> r r<Esc>:call AutoComplete()<CR>
+imap <silent> s s<Esc>:call AutoComplete()<CR>
+imap <silent> t t<Esc>:call AutoComplete()<CR>
+imap <silent> u u<Esc>:call AutoComplete()<CR>
+imap <silent> v v<Esc>:call AutoComplete()<CR>
+imap <silent> w w<Esc>:call AutoComplete()<CR>
+imap <silent> x x<Esc>:call AutoComplete()<CR>
+imap <silent> y y<Esc>:call AutoComplete()<CR>
+imap <silent> z z<Esc>:call AutoComplete()<CR>
+imap <silent> A A<Esc>:call AutoComplete()<CR>
+imap <silent> B B<Esc>:call AutoComplete()<CR>
+imap <silent> C C<Esc>:call AutoComplete()<CR>
+imap <silent> D D<Esc>:call AutoComplete()<CR>
+imap <silent> E E<Esc>:call AutoComplete()<CR>
+imap <silent> F F<Esc>:call AutoComplete()<CR>
+imap <silent> G G<Esc>:call AutoComplete()<CR>
+imap <silent> H H<Esc>:call AutoComplete()<CR>
+imap <silent> I I<Esc>:call AutoComplete()<CR>
+imap <silent> J J<Esc>:call AutoComplete()<CR>
+imap <silent> K K<Esc>:call AutoComplete()<CR>
+imap <silent> L L<Esc>:call AutoComplete()<CR>
+imap <silent> M M<Esc>:call AutoComplete()<CR>
+imap <silent> N N<Esc>:call AutoComplete()<CR>
+imap <silent> O O<Esc>:call AutoComplete()<CR>
+imap <silent> P P<Esc>:call AutoComplete()<CR>
+imap <silent> Q Q<Esc>:call AutoComplete()<CR>
+imap <silent> R R<Esc>:call AutoComplete()<CR>
+imap <silent> S S<Esc>:call AutoComplete()<CR>
+imap <silent> T T<Esc>:call AutoComplete()<CR>
+imap <silent> U U<Esc>:call AutoComplete()<CR>
+imap <silent> V V<Esc>:call AutoComplete()<CR>
+imap <silent> W W<Esc>:call AutoComplete()<CR>
+imap <silent> X X<Esc>:call AutoComplete()<CR>
+imap <silent> Y Y<Esc>:call AutoComplete()<CR>
+imap <silent> Z Z<Esc>:call AutoComplete()<CR>
 
 function! AutoComplete()
-  call feedkeys("a\<C-x>\<C-n>")
+   call feedkeys("a\<C-x>\<C-n>")
 endfunction
