@@ -3,8 +3,6 @@ Turn on Hyper-V
 * Make sure Windows feature Hyper-V checked
 * Run with admin cmd
 * $ bcdedit /set hypervisorlaunchtype auto
-* Or
-* $ bcdedit /set hypervisorlaunchtype on
 * Reboot
 
 Turn off Hyper-V 
