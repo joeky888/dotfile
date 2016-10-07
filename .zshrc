@@ -17,7 +17,7 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 
 if [[ $OSTYPE == cygwin ]] ; then
     export DISPLAY=:0.0
-    alias apt-Cygwin-Search='setup-x86_64.exe --package-manager'
+    alias apt-Cygwin-Search='setup-x86_64.exe --package-manager --wait'
     alias apt-Cygwin-Install='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages'
     alias apt-Cygwin-Uninstall='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --remove-packages'
     alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
