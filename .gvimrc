@@ -4,6 +4,9 @@ set shiftwidth=4
 set writebackup
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
+vmap <silent> <C-S-c> "+yi
+vmap <silent> <C-S-x> "+xi
+imap <silent> <C-S-v> "+gPi
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
