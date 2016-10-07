@@ -24,6 +24,11 @@ if [[ $OSTYPE == cygwin ]] ; then
     alias apt-Cygwin-Uninstall='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --remove-packages'
     alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
+    alias upgradeYoutubedl='pip3 install youtube-dl -U'
+    alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
+else
+    alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
+    alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
 fi
 
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
