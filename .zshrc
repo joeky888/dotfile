@@ -6,6 +6,8 @@ plugins=(git docker)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
+export KEYTIMEOUT=1 # Make ESC faster
+
 setopt NO_NOMATCH # disable zsh match filename
 
 # alt + arrow key to move
