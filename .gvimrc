@@ -7,6 +7,9 @@ inoremap <S-Tab> <C-d>
 vmap <silent> <C-S-c> "+yi
 vmap <silent> <C-S-x> "+xi
 imap <silent> <C-S-v> <Esc>:call paste#Paste()<CR>
+imap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
+vmap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
+nmap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
