@@ -24,6 +24,7 @@ if has("gui_running")
         set directory=%TMP%
         set backupdir=%TMP%
         set guifont=Ubuntu\ Mono:h14
+        set guifontwide=DroidMono:h13
     else
         set guifont=Ubuntu\ Mono\ 14
     endif
