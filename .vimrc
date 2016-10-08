@@ -542,7 +542,7 @@ set complete-=w,b,u,t,i
 set shortmess+=c
 
 let autocomp=0
-imap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>
+imap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>a
 vmap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>
 nmap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>
 
@@ -656,7 +656,6 @@ function! ToggleAutoComplete()
     imap <silent> Y Y
     imap <silent> Z Z
   endif
-  call feedkeys("a")
 endfunction
 
 function! AutoComplete()
