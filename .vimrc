@@ -542,9 +542,9 @@ set complete-=w,b,u,t,i
 set shortmess+=c
 
 let autocomp=0
-imap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>a
-vmap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>
-nmap <silent> <F12> <Esc>:call ToggleAutoComplete()<CR>
+imap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>a
+vmap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
+nmap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
 
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
