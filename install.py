@@ -11,7 +11,7 @@ if len(sys.argv) == 1:
     print("Usage: ./install.py <Operating System>")
     sys.exit(1)
 
-commands = []    
+commands = []
 
 def windows():
     #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
@@ -45,7 +45,7 @@ def windows():
     commands.append("mkdir /usr/share/fonts/win-fonts")
     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
     #commands.append("fc-cache -fv")
-    
+
 def linux():
     commands.append("sudo apt-get update")
     commands.append("sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg fontconfig vim-gnome network-manager file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y")
@@ -78,7 +78,7 @@ def linux():
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-    
+
 def bsd():
     commands.append("sudo pkg update")
     commands.append("sudo pkg install tmux zsh git vim wget bash ubuntu-font")

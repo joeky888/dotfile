@@ -661,3 +661,17 @@ endfunction
 function! AutoComplete()
   call feedkeys("a\<C-x>\<C-n>")
 endfunction
+
+set noerrorbells
+set vb t_vb=
+vmap <silent> <C-c> "+yi
+vmap <silent> <C-x> "+xi
+imap <silent> <C-v> <Esc>:call paste#Paste()<CR>
+nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>
+vmap <silent> <C-v> <Esc><Esc>:call paste#Paste()<CR>
+nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+nmap <silent> <C-b> <Esc><Esc>:browse confirm saveas<CR>
+imap <silent> <C-g> <Esc>ggVG<CR>
+nmap <silent> <C-g> <Esc>ggVG<CR>
+vmap <silent> <C-g> <Esc><Esc>ggVG<CR>
