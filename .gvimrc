@@ -13,6 +13,9 @@ nmap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
 imap <silent> <C-s> <Esc>:w<CR>a
 vmap <silent> <C-s> <Esc>:w<CR>
 nmap <silent> <C-s> <Esc>:w<CR>
+imap  <silent> <C-S-a> <Esc>ggVG<CR>
+vmap  <silent> <C-S-a> <Esc>ggVG<CR>
+nmap  <silent> <C-S-a> <Esc>ggVG<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
