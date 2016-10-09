@@ -4,18 +4,17 @@ set shiftwidth=4
 set writebackup
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
-vmap <silent> <C-S-c> "+yi
-vmap <silent> <C-S-x> "+xi
-imap <silent> <C-S-v> <Esc>:call paste#Paste()<CR>
-imap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
-vmap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
-nmap <silent> <C-S-s> <Esc>:browse confirm saveas<CR>
-imap <silent> <C-s> <Esc>:w<CR>a
-vmap <silent> <C-s> <Esc>:w<CR>
-nmap <silent> <C-s> <Esc>:w<CR>
-imap  <silent> <C-S-a> <Esc>ggVG<CR>
-vmap  <silent> <C-S-a> <Esc>ggVG<CR>
-nmap  <silent> <C-S-a> <Esc>ggVG<CR>
+vmap <silent> <C-c> "+yi
+vmap <silent> <C-x> "+xi
+imap <silent> <C-v> <Esc>:call paste#Paste()<CR>
+nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>
+vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>
+nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+imap <silent> <C-g> <Esc>ggVG<CR>
+vmap <silent> <C-g> <Esc>ggVG<CR>
+nmap <silent> <C-g> <Esc>ggVG<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
