@@ -18,9 +18,9 @@ imap <silent> <C-g> <Esc>ggVG<CR>
 vmap <silent> <C-g> <Esc>ggVG<CR>
 nmap <silent> <C-g> <Esc>ggVG<CR>
 command! VisualBlock execute "normal! \<C-v>" 
-imap <silent> <C-m> <Esc>l:VisualBlock<CR>
-vmap <silent> <C-m> <Esc>:VisualBlock<CR>
-nmap <silent> <C-m> <Esc>:VisualBlock<CR>
+imap <silent> <C-i> <Esc>l:VisualBlock<CR>
+vmap <silent> <C-i> <Esc>:VisualBlock<CR>
+nmap <silent> <C-i> <Esc>:VisualBlock<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
