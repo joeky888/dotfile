@@ -10,15 +10,15 @@ vmap <silent> <C-c> "+yi
 vmap <silent> <C-x> "+xi
 imap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
-vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
+"vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 imap <silent> <C-g> <Esc>ggVG<CR>
 vmap <silent> <C-g> <Esc>ggVG<CR>
 nmap <silent> <C-g> <Esc>ggVG<CR>
-command! VisualBlock execute "normal! \<C-v>" "Ctrl m for multi-line editing
-imap <silent> <C-m> <Esc>:VisualBlock<CR>
+command! VisualBlock execute "normal! \<C-v>" 
+imap <silent> <C-m> <Esc>l:VisualBlock<CR>
 vmap <silent> <C-m> <Esc>:VisualBlock<CR>
 nmap <silent> <C-m> <Esc>:VisualBlock<CR>
 set number
