@@ -2,6 +2,8 @@ set expandtab
 set tabstop=4
 set shiftwidth=4
 set writebackup
+set noerrorbells
+set vb t_vb=
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vmap <silent> <C-c> "+yi
