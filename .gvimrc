@@ -21,6 +21,15 @@ command! VisualBlock execute "normal! \<C-v>"
 imap <silent> <C-i> <Esc>l:VisualBlock<CR>
 vmap <silent> <C-i> <Esc>:VisualBlock<CR>
 nmap <silent> <C-i> <Esc>:VisualBlock<CR>
+imap <silent> <F2> <Esc>:tabnew<CR>
+nmap <silent> <F2> <Esc>:tabnew<CR>
+vmap <silent> <F2> <Esc>:tabnew<CR>
+imap <silent> <F3> <Esc>:tabp<CR>
+nmap <silent> <F3> <Esc>:tabp<CR>
+vmap <silent> <F3> <Esc>:tabp<CR>
+imap <silent> <F4> <Esc>:tabn<CR>
+nmap <silent> <F4> <Esc>:tabn<CR>
+vmap <silent> <F4> <Esc>:tabn<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
