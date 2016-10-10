@@ -20,3 +20,5 @@ Windows Registry Editor Version 5.00
 "000"="Ubuntu Mono"
 "65001"="Ubuntu Mono"
 
+[HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command]
+@="C:\\Program Files\\Vim\\vim74\\gvim.exe %1"
