@@ -33,6 +33,7 @@ vmap <silent> <F3> <Esc>:tabp<CR>
 imap <silent> <F4> <Esc>:tabn<CR>
 nmap <silent> <F4> <Esc>:tabn<CR>
 vmap <silent> <F4> <Esc>:tabn<CR>
+vmap <silent> <BS> d
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
