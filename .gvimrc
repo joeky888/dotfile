@@ -34,6 +34,9 @@ imap <silent> <F4> <Esc>:tabn<CR>
 nmap <silent> <F4> <Esc>:tabn<CR>
 vmap <silent> <F4> <Esc>:tabn<CR>
 vmap <silent> <BS> d
+imap <silent> <C-o> <Esc>:browse confirm e<CR>
+nmap <silent> <C-o> <Esc>:browse confirm e<CR>
+vmap <silent> <C-o> <Esc>:browse confirm e<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
@@ -57,5 +60,6 @@ highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
 imap <C-BS> <C-W>
+nmap <C-BS> a<C-W>
 map  <C-Del> dw
 imap <C-Del> <ESC>dwi
