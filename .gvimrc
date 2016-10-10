@@ -60,6 +60,6 @@ highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
 imap <C-BS> <C-W>
-nmap <C-BS> a<C-W>
+nmap <C-BS> i<C-W>
 map  <C-Del> dw
 imap <C-Del> <ESC>dwi
