@@ -58,3 +58,8 @@ Replace / Remove a string in a file
 * $ tr "\n\r" "," < input.txt  > output.txt
 * Remove all "\n\r"
 * $ tr -d "\n\r" < input.txt  > output.txt
+
+Find wihout/exclude a folder
+=====
+* Find jpg but not ./directory
+* $ find . -iname '*.jpg' -and -not -path "./directory*"
