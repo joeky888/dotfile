@@ -21,9 +21,12 @@ command! VisualBlock execute "normal! \<C-v>"
 imap <silent> <C-i> <Esc>l:VisualBlock<CR>
 vmap <silent> <C-i> <Esc>:VisualBlock<CR>
 nmap <silent> <C-i> <Esc>:VisualBlock<CR>
-imap <silent> <F2> <Esc>:tabnew<CR>
-nmap <silent> <F2> <Esc>:tabnew<CR>
-vmap <silent> <F2> <Esc>:tabnew<CR>
+imap <silent> <F2> <Esc>:Te<CR>
+nmap <silent> <F2> <Esc>:Te<CR>
+vmap <silent> <F2> <Esc>:Te<CR>
+imap <silent> <C-t> <Esc>:Te<CR>
+nmap <silent> <C-t> <Esc>:Te<CR>
+vmap <silent> <C-t> <Esc>:Te<CR>
 imap <silent> <F3> <Esc>:tabp<CR>
 nmap <silent> <F3> <Esc>:tabp<CR>
 vmap <silent> <F3> <Esc>:tabp<CR>
