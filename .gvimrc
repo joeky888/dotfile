@@ -17,10 +17,6 @@ nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 imap <silent> <C-g> <Esc>ggVG<CR>
 vmap <silent> <C-g> <Esc>ggVG<CR>
 nmap <silent> <C-g> <Esc>ggVG<CR>
-command! VisualBlock execute "normal! \<C-v>" 
-imap <silent> <C-i> <Esc>l:VisualBlock<CR>
-vmap <silent> <C-i> <Esc>:VisualBlock<CR>
-nmap <silent> <C-i> <Esc>:VisualBlock<CR>
 imap <silent> <F2> <Esc>:Te<CR>
 nmap <silent> <F2> <Esc>:Te<CR>
 vmap <silent> <F2> <Esc>:Te<CR>
