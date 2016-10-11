@@ -29,6 +29,7 @@ if [[ $OSTYPE == cygwin ]] ; then
 else
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
+    alias gvim='gvim --remote-tab-silent'
 fi
 
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
@@ -37,3 +38,4 @@ alias proxyUnset='unset http_proxy && unset https_proxy && unset ftp_proxy'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
+
