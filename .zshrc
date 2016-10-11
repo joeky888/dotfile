@@ -37,5 +37,3 @@ alias proxyUnset='unset http_proxy && unset https_proxy && unset ftp_proxy'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
-
-cd ~
