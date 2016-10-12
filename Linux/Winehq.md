@@ -5,7 +5,7 @@ Install without ppa
 * Or
 * $ sudo apt-get install --install-recommends wine64-development-preloader winbind -y
 * $ export WINEARCH=win32
-* $ winecfg-development # Configure OS
+* $ winecfg-development # Configure OS, Win7 is a good option
 * DO NOT INSTALL winetricks
 
 Install from ppa
@@ -45,4 +45,4 @@ Issues
 =====
 * If winecfg/winecfg-development can not create .wine/ successfully
     * $ export WINEARCH=win32
-    * $ winecfg
+    * $ winecfg # Win7 is a good option
