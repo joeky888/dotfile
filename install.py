@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-# Install dotfiles for Windows
+# Install dotfile for Windows
 # $ ./install.py windows
-# Install dotfiles for Linux
+# Install dotfile for Linux
 # $ ./install.py linux
 
 import sys, os, site
@@ -70,6 +70,8 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
+    commands.append("cp ~/dotfile/Linux/BaiduCloud.desktop ~/.local/share/applications/BaiduCloud.desktop")
+    commands.append("cp ~/dotfile/Linux/gvim.desktop ~/.local/share/applications/gvim.desktop")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");

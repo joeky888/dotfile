@@ -1,7 +1,9 @@
 [Desktop Entry]
+Encoding=UTF-8
 Name=Baidu Cloud
 Type=Application
-
+Categories=Network;FileTransfer;
+StartupNotify=true
 Icon=/home/joeky/BaiduYunGuanjia/guanjia_logo.ico
 Exec=wine "/home/joeky/BaiduYunGuanjia/BaiduYunGuanjia.exe"
 Terminal=false
