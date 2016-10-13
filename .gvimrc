@@ -33,16 +33,16 @@ vmap <silent> <BS> d
 imap <silent> <C-o> <Esc>:browse confirm e<CR>
 nmap <silent> <C-o> <Esc>:browse confirm e<CR>
 vmap <silent> <C-o> <Esc>:browse confirm e<CR>
-nmap <silent> <C-F1> <Esc>:e ++enc=utf-8<CR>
-nmap <silent> <C-F2> <Esc>:e ++enc=ucs-bom<CR>
-nmap <silent> <C-F3> <Esc>:e ++enc=big5<CR>
-nmap <silent> <C-F4> <Esc>:e ++enc=shift-jis<CR>
-nmap <silent> <C-F5> <Esc>:e ++enc=gbk<CR>
-nmap <silent> <C-F6> <Esc>:e ++enc=cp950<CR>
-nmap <silent> <C-F7> <Esc>:e ++enc=cp936<CR>
-nmap <silent> <C-F8> <Esc>:e ++enc=utf-16le<CR>
-nmap <silent> <C-F9> <Esc>:e ++enc=default<CR>
-nmap <silent> <C-F10> <Esc>:e ++enc=latin1<CR>
+nmap <silent> <S-F1> <Esc>:e ++enc=utf-8<CR>
+nmap <silent> <S-F2> <Esc>:e ++enc=ucs-bom<CR>
+nmap <silent> <S-F3> <Esc>:e ++enc=big5<CR>
+nmap <silent> <S-F4> <Esc>:e ++enc=shift-jis<CR>
+nmap <silent> <S-F5> <Esc>:e ++enc=gbk<CR>
+nmap <silent> <S-F6> <Esc>:e ++enc=cp950<CR>
+nmap <silent> <S-F7> <Esc>:e ++enc=cp936<CR>
+nmap <silent> <S-F8> <Esc>:e ++enc=utf-16le<CR>
+nmap <silent> <S-F9> <Esc>:e ++enc=default<CR>
+nmap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
