@@ -1,5 +1,5 @@
 @echo off
-chcp 65001
+REM chcp 65001
 set PYTHONIOENCODING=UTF-8
 C:
 chdir C:\cygwin64\bin
