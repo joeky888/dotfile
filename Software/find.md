@@ -59,6 +59,11 @@ Replace / Remove a string in a file
 * Remove all "\n\r"
 * $ tr -d "\n\r" < input.txt  > output.txt
 
+Rename all file types (filename extension)
+=====
+* Rename all jpg to png
+* $ find . -iname '*.jpg' -exec sh -c 'mv "$0" ${0%.jpg}.png"' {} \;
+
 Find wihout/exclude a folder
 =====
 * Find jpg but not ./directory
