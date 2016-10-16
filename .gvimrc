@@ -43,6 +43,12 @@ nmap <silent> <S-F7> <Esc>:e ++enc=cp936<CR>
 nmap <silent> <S-F8> <Esc>:e ++enc=utf-16le<CR>
 nmap <silent> <S-F9> <Esc>:e ++enc=default<CR>
 nmap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
+noremap  <M-LeftMouse> <4-LeftMouse>
+inoremap <M-LeftMouse> <4-LeftMouse>
+onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+noremap  <M-LeftDrag>  <LeftDrag>
+inoremap <M-LeftDrag>  <LeftDrag>
+onoremap <M-LeftDrag>  <C-C><LeftDrag>
 set number
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1
