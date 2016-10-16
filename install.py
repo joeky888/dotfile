@@ -17,7 +17,7 @@ def windows():
     #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
     #commands.append("install apt-cyg /bin && rm apt-cyg");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe")
-    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed vim tmux zsh procps fontconfig fontforge ghostscript make automake cmake gcc-core gcc-g++")
+    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++")
     commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages cygwin-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel")
     commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab")
     commands.append("mount -a")
