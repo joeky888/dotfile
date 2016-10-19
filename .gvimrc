@@ -4,6 +4,8 @@ set shiftwidth=4
 set writebackup
 set noerrorbells "disable error sound
 set vb t_vb= "disable visualbell
+set scrolloff& " unset scroll values
+set sidescrolloff&
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vmap <silent> <C-c> "+yi
