@@ -70,8 +70,8 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
-    commands.append("cp ~/dotfile/Linux/BaiduCloud.desktop ~/.local/share/applications/BaiduCloud.desktop")
-    commands.append("cp ~/dotfile/Linux/gvim.desktop ~/.local/share/applications/gvim.desktop")
+    commands.append("sudo cp ~/dotfile/Linux/BaiduCloud.desktop /usr/share/applications/BaiduCloud.desktop")
+    commands.append("sudo cp ~/dotfile/Linux/gvim.desktop /usr/share/applications/gvim.desktop")
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
     commands.append("sudo python3 get-pip.py");
     commands.append("rm get-pip.py");
