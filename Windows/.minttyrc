@@ -8,3 +8,4 @@ Locale=en_US
 Charset=UTF-8
 CursorType=line
 CursorBlinks=no
+BellType=0

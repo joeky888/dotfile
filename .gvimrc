@@ -82,5 +82,6 @@ syntax on
 set backspace=2
 imap <C-BS> <C-W>
 nmap <C-BS> i<C-W>
+cmap <C-BS> <C-W>
 imap <C-Del> <ESC>ldwi
 nmap <C-Del> <ESC>dwi
