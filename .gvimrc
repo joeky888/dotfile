@@ -6,13 +6,20 @@ set noerrorbells "disable error sound
 set vb t_vb= "disable visualbell
 set scrolloff& " unset scroll values
 set sidescrolloff&
+set ignorecase " Search insensitive
+set smartcase& " No smart
 nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vmap <silent> <C-c> "+yi
 vmap <silent> <C-x> "+xi
 imap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
-"vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
+vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
+cmap <C-v> <C-r>+
+cmap <S-Insert> <C-R>+
+imap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
+nmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
+vmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
