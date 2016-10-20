@@ -74,6 +74,7 @@ if has("gui_running")
         set guifont=Ubuntu\ Mono\ 14
     endif
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
+    set selection=exclusive
 endif
 set guicursor=a:blinkon0
 set nowrap
