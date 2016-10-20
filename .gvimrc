@@ -73,6 +73,7 @@ if has("gui_running")
     else
         set guifont=Ubuntu\ Mono\ 14
     endif
+    set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
 endif
 set guicursor=a:blinkon0
 set nowrap
