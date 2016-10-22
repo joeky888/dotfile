@@ -62,7 +62,7 @@ Replace / Remove a string in a file
 Rename all file types (filename extension)
 =====
 * Rename all jpg to png
-* $ find . -iname '*.jpg' -exec sh -c 'mv "$0" ${0%.jpg}.png"' {} \;
+* $ find . -name '*.jpg' -exec sh -c 'mv "$0" ${0%.jpg}.png"' {} \;
 
 Find wihout/exclude a folder
 =====
