@@ -73,8 +73,9 @@ if has("gui_running")
     else
         set guifont=Ubuntu\ Mono\ 14
     endif
+    set lines=999 columns=999 " set window Maximized
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
-    set selection=exclusive
+    set selection=exclusive " Don't select char under cursor
 endif
 set guicursor=a:blinkon0
 set nowrap
@@ -87,3 +88,5 @@ nmap <C-BS> i<C-W>
 cmap <C-BS> <C-W>
 imap <C-Del> <ESC>ldwi
 nmap <C-Del> <ESC>dwi
+
+command JsonPretty execute "%!python -m json.tool"
