@@ -18,6 +18,7 @@ Software
 * ngPlant
 * gVim x64
 * Brackets
+* Visual Studio Code Insiders
 * Vlc
 * Natron
 * OBS MP
