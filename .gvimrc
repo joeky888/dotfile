@@ -12,9 +12,9 @@ nnoremap <S-Tab> <<
 inoremap <S-Tab> <C-d>
 vmap <silent> <C-c> "+yi
 vmap <silent> <C-x> "+xi
-imap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
-nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
-vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>a
+imap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
 cmap <C-v> <C-r>+
 cmap <S-Insert> <C-R>+
 imap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
