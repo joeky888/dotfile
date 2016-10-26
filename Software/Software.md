@@ -47,6 +47,7 @@ Windows
 * Cygwin
 * Greenshot
 * Rufus
+* x64dbg / snowman
 
 Linux
 =====
