@@ -1,16 +1,22 @@
 #!/bin/sh
 
 while true; do
-  sleep 20s                                                                 
+  sleep 20s
   if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then
     systemctl restart NetworkManager.service
     systemctl restart networking.service
     systemctl restart teamviewerd.service
     echo $(date +"%m/%d/%Y %I:%M:%p") >> /home/Reconnect.log
+    if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
+      sed -i '1d' /home/Reconnect.log
+    fi
   fi
 
   if ! systemctl is-active teamviewerd.service >/dev/null 2>&1; then
     systemctl restart teamviewerd.service
     echo $(date +"%m/%d/%Y %I:%M:%p") "teamviewer" >> /home/Reconnect.log
+    if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
+      sed -i '1d' /home/Reconnect.log
+    fi
   fi
 done
