@@ -26,6 +26,7 @@ if [[ $OSTYPE == cygwin ]] ; then
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
     alias upgradeYoutubedl='pip3 install youtube-dl -U'
     alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
+    alias sudo='cygstart --action=runas "$@"'
 else
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
