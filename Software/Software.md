@@ -1,7 +1,7 @@
 Software
 =====
 * XnView MP
-* sogou pin yin
+* sogou pinyin
 * Opera Developer
 * Chome Developer
 * Firefox Developer
@@ -54,7 +54,7 @@ Linux
 
 Android
 =====
-* Firefox with addons
+* Firefox
 * Sogou input method
 * VLC
 * WPS office
