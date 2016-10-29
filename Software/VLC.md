@@ -25,4 +25,5 @@ Compile VLC (Ubuntu)
                 libtar-dev libgtk2.0-dev libdc1394-22-dev libopus-dev libmpg123-dev protobuf-c-compiler \
                 libdvdnav-dev libdvdnav4 libdvdread-dev libdvdread4 libalsa-ocaml-dev
 * $ git clone --depth=1 git://git.videolan.org/vlc.git
+* $ ./bootstrap
 * $ ./configure

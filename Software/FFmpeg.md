@@ -106,7 +106,6 @@ Convert a folder
 Compile ffmpeg on Cygwin
 =====
 * Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
-* Install (Ubuntu) -> libtool yasm binutils diffutils dos2unix libfontconfig1-dev libiconv-hook-dev libass-dev libfribidi-dev libfreetype6-dev libopenjpeg-dev libopus-dev libvorbis-dev libvpx-dev libwebp-dev libbz2-dev libmp3lame-dev
 * Install libmp3
     * $ git clone --depth=1 https://github.com/j16180339887/lame.git
     * $ ./configure --enable-static --disable-shared
@@ -133,5 +132,15 @@ Compile ffmpeg on Cygwin
     * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
     * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
     * $ make -j 8 && make install
+* If ./configure failed
+    * check the error message at end of the file 'config.log'
+
+Compile ffmpeg on Ubuntu
+=====
+* Install (Ubuntu) -> libtool yasm binutils diffutils dos2unix libfontconfig1-dev libiconv-hook-dev libass-dev libfribidi-dev libfreetype6-dev libopenjpeg-dev libopus-dev libvorbis-dev libvpx-dev libwebp-dev libbz2-dev libmp3lame-dev build-essential git-core checkinstall automake yasm cmake libx264-dev libx265-dev libfdk-aac-dev
+* Install ffmpeg
+    * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
+    * $ ./configure --pkg-config-flags="--static" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp
+    * $ make -j 8 && sudo make install
 * If ./configure failed
     * check the error message at end of the file 'config.log'
