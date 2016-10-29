@@ -105,7 +105,8 @@ Convert a folder
 
 Compile ffmpeg on Cygwin
 =====
-* Install -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+* Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+* Install (Ubuntu) -> libtool yasm binutils diffutils dos2unix libfontconfig1-dev libiconv-hook-dev libass-dev libfribidi-dev libfreetype6-dev libopenjpeg-dev libopus-dev libvorbis-dev libvpx-dev libwebp-dev libbz2-dev
 * Install libmp3
     * $ git clone --depth=1 https://github.com/j16180339887/lame.git
     * $ ./configure --enable-static --disable-shared
