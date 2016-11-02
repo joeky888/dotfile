@@ -52,6 +52,7 @@ Windows
 Linux
 =====
 * Qupzilla
+* NetworkManager / nmtui
 
 Android
 =====
