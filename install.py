@@ -83,7 +83,7 @@ def linux():
 
 def bsd():
     commands.append("sudo pkg update")
-    commands.append("sudo pkg install tmux zsh git vim wget bash ubuntu-font")
+    commands.append("echo y | sudo pkg install tmux zsh git vim wget bash ubuntu-font")
     commands.append("chsh -s bash $(whoami)")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
