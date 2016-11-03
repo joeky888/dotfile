@@ -33,9 +33,9 @@ else
     #alias gvim='gvim --remote-tab-silent'
     gvim () { 
         if [ "$#" -gt 0 ] ; then
-          gvim --remote-tab-silent "$@" &
+          gvim --remote-tab-silent "$@"
         else
-          gvim "$@" &
+          gvim "$@"
         fi
     }
 fi
