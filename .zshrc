@@ -32,7 +32,7 @@ else
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
     #alias gvim='gvim --remote-tab-silent'
     gvim () { 
-        if [ "$#" -gt 0 ] ; then
+        if [ "$#" -gt 0 ] then
           gvim --remote-tab-silent "$@"
         else
           gvim "$@"
