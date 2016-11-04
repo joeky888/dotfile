@@ -30,6 +30,8 @@ Speed up / Slow down a video
 =====
 * 2x speed
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
+* 1.5x speed
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666*PTS" -filter:a "atempo=1.5" output.mp4
 * 1.25x speed
 * $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
 
