@@ -6,7 +6,7 @@ Merge 1.mp4 2.mp4 3.mp4 to merge.mp4
 * file '/path/to/3.mp4'
 * $ ffmpeg -y -f concat -safe 0 -i list.txt -c copy merge.mp4
 
-Embed sub.srt to input.mp4
+Embed sub.srt to input.mp4 (hardsub)
 =====
 * $ ffmpeg -i sub.srt sub.ass
 * Then edit font and fontsize in sub.ass
@@ -21,7 +21,7 @@ Swap audio track order (1, 2 -> 2, 1)
 
 Extract part of a video
 =====
-* ffmpeg -i input_file -ss start_seconds -t duration_seconds output_file
+* ffmpeg -i inputfile -ss startseconds -t durationseconds outputfile
 * extract 5 seconds start with 00:00:30
 * Time format HH:MM:SS.xxx where xxx are milliseconds
 * $ ffmpeg -i orginalfile -ss 00:00:30.000 -t 00:00:05.000 newfile
@@ -57,7 +57,7 @@ Set default subtitle track
 * Set first subtitle track as default
 * $ ffmpeg -i input.mkv -disposition:s:0 default output.mkv
 
-Add subtitle track to .mkv
+Add subtitle track to .mkv (softsub)
 =====
 * 0:0 means first video track
 * 0:1 means first audio track
