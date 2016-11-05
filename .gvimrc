@@ -22,7 +22,7 @@ nmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 vmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
-nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
+imap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 imap <silent> <C-g> <Esc>ggVG<CR>
 vmap <silent> <C-g> <Esc>ggVG<CR>
 nmap <silent> <C-g> <Esc>ggVG<CR>
