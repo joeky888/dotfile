@@ -17,6 +17,8 @@ nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
 vmap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
 cmap <C-v> <C-r>+
 cmap <S-Insert> <C-R>+
+cmap <C-BS> <C-W>
+cmap <C-k> <C-e><C-u>
 imap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 vmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
@@ -87,7 +89,6 @@ syntax on
 set backspace=2
 imap <C-BS> <C-W>
 nmap <C-BS> i<C-W>
-cmap <C-BS> <C-W>
 imap <C-Del> <ESC>ldwi
 nmap <C-Del> <ESC>dwi
 
