@@ -91,5 +91,5 @@ imap <C-BS> <C-W>
 nmap <C-BS> i<C-W>
 imap <C-Del> <ESC>ldwi
 nmap <C-Del> <ESC>dwi
-
+set iskeyword-=-
 command JsonPretty execute "%!python -m json.tool"
