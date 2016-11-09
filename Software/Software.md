@@ -5,6 +5,7 @@ Software
 * Opera Developer
 * Chome Developer
 * Firefox Developer
+* Adobe Flash Player Beta
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
