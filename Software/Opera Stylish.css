@@ -1,7 +1,8 @@
 /* Black */
 *::selection, *[id]::selection, *[class]::selection, *[name]::selection{
-	background-color: #FF6666 !important;
-}	
+	background-color: #00afff !important;
+	color: #ffffff !important;
+}
 
 *, * *, *[id], *[class], *[name]{
     color: #AAA !important;
