@@ -93,5 +93,5 @@ imap <C-Del> <ESC>ldwi
 nmap <C-Del> <ESC>dwi
 set iskeyword-=-
 " Highlight selected color
-hi Visual term=reverse cterm=reverse gui=reverse guifg=#3f3f3f guibg=White
+hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 command JsonPretty execute "%!python -m json.tool"
