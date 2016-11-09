@@ -19,6 +19,9 @@ cmap <C-v> <C-r>+
 cmap <S-Insert> <C-R>+
 cmap <C-BS> <C-W>
 cmap <C-k> <C-e><C-u>
+imap <silent> <C-d> <Esc>yypA
+nmap <silent> <C-d> <Esc>yypA
+vmap <silent> <C-d> <Esc>yypA
 imap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 nmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
 vmap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
