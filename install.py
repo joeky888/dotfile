@@ -63,7 +63,6 @@ def linux():
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
     commands.append("mkdir -p ~/.config/openbox")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
-    commands.append("openbox --reconfigure")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
     commands.append("sudo chmod 755 /usr/bin/reconnect")
     commands.append("sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service")
@@ -80,6 +79,7 @@ def linux():
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+    commands.append("openbox --reconfigure")
 
 def bsd():
     commands.append("sudo pkg update")
