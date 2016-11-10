@@ -37,10 +37,11 @@ Install mono or dotnet
     * $ export WINEARCH=win32
     * $ winecfg # Configure OS
     * $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+    * $ sh winetricks wenquanyi
     * $ sh winetricks dotnet46
     * $ sh winetricks xna40 # Optional
     * $ wine *.exe
-    
+
 Issues
 =====
 * If winecfg/winecfg-development can not create .wine/ successfully
