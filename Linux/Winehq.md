@@ -32,7 +32,7 @@ Install mono or dotnet
     * $ sudo apt-get update
     * $ sudo apt-get install --install-recommends wine-mono4.5.6
     * $ wine *.exe
-3. Using winetricks dotnet (Best way to go)
+3. Using winetricks dotnet
     * $ rm -rf ~/.wine
     * $ export WINEARCH=win32
     * $ winecfg # Configure OS
@@ -40,6 +40,12 @@ Install mono or dotnet
     * $ sh winetricks wenquanyi
     * $ sh winetricks dotnet46
     * $ sh winetricks xna40 # Optional
+    * $ wine *.exe
+4. Install dotnet from Microsoft
+    * $ rm -rf ~/.wine
+    * $ export WINEARCH=win32
+    * $ winecfg # Select Win7
+    * Download dotnet4.0 32bits from Microsoft
     * $ wine *.exe
 
 Issues
