@@ -97,4 +97,7 @@ nmap <C-Del> <ESC>dwi
 set iskeyword-=-
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
+" Highlight pop-up window color
+hi Pmenu guifg=#00afff guibg=White
+hi PmenuSel guifg=White guibg=#00afff
 command JsonPretty execute "%!python -m json.tool"
