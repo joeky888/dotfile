@@ -289,8 +289,8 @@ call CreateShortcut("PageUp", "dkP", "v")
 call CreateShortcut("PageDown", ":m+<CR>", "in")
 call CreateShortcut("PageDown", "dp", "v")
 
-" Ctrl C - Quit
-call CreateShortcut("C-c", ":call MyQuit()<CR>", "inv", "cmdInVisual")
+" Ctrl W - Quit
+call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
