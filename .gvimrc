@@ -8,8 +8,8 @@ set scrolloff& " unset scroll values
 set sidescrolloff&
 set ignorecase " Search insensitive
 set smartcase& " No smart
-inoremap <silent> <C-c> <Esc><3-LeftMouse>"+yi
-nnoremap <silent> <C-c> <Esc><3-LeftMouse>"+yi
+inoremap <silent> <C-c> <Esc><S-v>"+yi
+nnoremap <silent> <C-c> <Esc><S-v>"+yi
 vnoremap <silent> <C-c> "+yi
 vnoremap <silent> <C-x> "+xi
 inoremap <silent> <C-v> <Esc>"+pa
