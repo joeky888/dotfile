@@ -90,10 +90,11 @@ if has("gui_running")
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
     set selection=exclusive " Don't select char under cursor
     set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
+    set guicursor=a:blinkon0
 endif
-set guicursor=a:blinkon0
 set nowrap
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
+set iskeyword-=- " '-' should not be one of the keywords
 highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
@@ -101,10 +102,10 @@ inoremap <C-BS> <C-W>
 nnoremap <C-BS> i<C-W>
 inoremap <C-Del> <ESC>ldwi
 nnoremap <C-Del> <ESC>dwi
-set iskeyword-=-
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
 hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
 command JsonPretty execute "%!python -m json.tool"
+command PrettyJson execute "%!python -m json.tool"
