@@ -89,6 +89,7 @@ if has("gui_running")
     set lines=999 columns=999 " set window Maximized
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
     set selection=exclusive " Don't select char under cursor
+    set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
 endif
 set guicursor=a:blinkon0
 set nowrap
