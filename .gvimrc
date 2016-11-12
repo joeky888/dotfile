@@ -12,25 +12,25 @@ inoremap <silent> <C-c> <Esc><S-v>"+yi
 nnoremap <silent> <C-c> <Esc><S-v>"+yi
 vnoremap <silent> <C-c> "+yi
 vnoremap <silent> <C-x> "+xi
-inoremap <silent> <C-v> <Esc>"+pa
-nnoremap <silent> <C-v> <Esc>"+pa
-vnoremap <silent> <C-v> <Esc>"+pa
-cnoremap <silent> <C-c> <C-y>
-cnoremap <silent> <C-v> <C-r>+
-cnoremap <silent> <C-x> <C-y><C-e><C-u>
-cnoremap <silent> <S-Insert> <C-r>+
-cnoremap <silent> <C-BS> <C-w>
-cnoremap <silent> <C-w> <C-c>
-cnoremap <silent> <C-k> <C-e><C-u>
+inoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+nnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+vnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+cnoremap <C-c> <C-y>
+cnoremap <C-v> <C-r>+
+cnoremap <C-x> <C-y><C-e><C-u>
+cnoremap <S-Insert> <C-r>+
+cnoremap <C-BS> <C-w>
+cnoremap <C-w> <C-c>
+cnoremap <C-k> <C-e><C-u>
 inoremap <silent> <C-d> <Esc>yypA
 nnoremap <silent> <C-d> <Esc>yypA
 vnoremap <silent> <C-d> <Esc>yypA
-inoremap <silent> <C-z> <Esc>ua
-nnoremap <silent> <C-z> <Esc>ua
-vnoremap <silent> <C-z> <Esc>ua
-inoremap <silent> <S-Insert> <Esc>"+pa
-nnoremap <silent> <S-Insert> <Esc>"+pa
-vnoremap <silent> <S-Insert> <Esc>"+pa
+inoremap <silent> <C-z> <Esc>ui
+nnoremap <silent> <C-z> <Esc>ui
+vnoremap <silent> <C-z> <Esc>ui
+inoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
+nnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
+vnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 inoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
@@ -107,5 +107,32 @@ hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
 hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
+
+" Commenting blocks of code.
+autocmd FileType c,cpp,java      let b:comment_leader = '\/\/'
+autocmd FileType arduino         let b:comment_leader = '\/\/'
+autocmd FileType sh,ruby,python  let b:comment_leader = '#'
+autocmd FileType conf,fstab      let b:comment_leader = '#'
+autocmd FileType matlab,tex      let b:comment_leader = '%'
+autocmd FileType vim             let b:comment_leader = '"'
+
+function! ToggleComment()
+" help with :h \v or pattern-atoms
+  if exists('b:comment_leader')
+    if getline('.') =~ '\v^\s*' .b:comment_leader
+      " uncomment the line
+      execute 'silent s/\v^\s*\zs' .b:comment_leader.'[ ]?//g'
+    else
+      " comment the line
+      execute 'silent s/\v^\s*\zs\ze(\S|\n)/' .b:comment_leader.' /g'
+    endif
+  else
+    echo 'No comment leader found for filetype'
+  end
+endfunction
+nnoremap <C-_> <ESC>:call ToggleComment()<CR>i
+inoremap <C-_> <ESC>:call ToggleComment()<CR>i
+vnoremap <C-_> <ESC>:call ToggleComment()<CR>i
+
 command JsonPretty execute "%!python -m json.tool"
 command PrettyJson execute "%!python -m json.tool"
