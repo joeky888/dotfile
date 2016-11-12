@@ -12,9 +12,9 @@ inoremap <silent> <C-c> <Esc><3-LeftMouse>"+yi
 nnoremap <silent> <C-c> <Esc><3-LeftMouse>"+yi
 vnoremap <silent> <C-c> "+yi
 vnoremap <silent> <C-x> "+xi
-inoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
-nnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
-vnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+inoremap <silent> <C-v> <Esc>"+pa
+nnoremap <silent> <C-v> <Esc>"+pa
+vnoremap <silent> <C-v> <Esc>"+pa
 cnoremap <silent> <C-c> <C-y>
 cnoremap <silent> <C-v> <C-r>+
 cnoremap <silent> <C-x> <C-y><C-e><C-u>
@@ -25,9 +25,12 @@ cnoremap <silent> <C-k> <C-e><C-u>
 inoremap <silent> <C-d> <Esc>yypA
 nnoremap <silent> <C-d> <Esc>yypA
 vnoremap <silent> <C-d> <Esc>yypA
-inoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
-nnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
-vnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>a
+inoremap <silent> <C-z> <Esc>ua
+nnoremap <silent> <C-z> <Esc>ua
+vnoremap <silent> <C-z> <Esc>ua
+inoremap <silent> <S-Insert> <Esc>"+pa
+nnoremap <silent> <S-Insert> <Esc>"+pa
+vnoremap <silent> <S-Insert> <Esc>"+pa
 nnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 inoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
