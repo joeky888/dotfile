@@ -14,7 +14,7 @@ vnoremap <silent> <C-c> "+yi
 vnoremap <silent> <C-x> "+xi
 inoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
-vnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
+vnoremap <silent> <C-v> d<Esc>h"+pi
 cnoremap <C-c> <C-y>
 cnoremap <C-v> <C-r>+
 cnoremap <C-x> <C-y><C-e><C-u>
@@ -22,6 +22,7 @@ cnoremap <S-Insert> <C-r>+
 cnoremap <C-BS> <C-w>
 cnoremap <C-w> <C-c>
 cnoremap <C-k> <C-e><C-u>
+cnoremap <C-f> <C-e><C-u>
 inoremap <silent> <C-d> <Esc>yypA
 nnoremap <silent> <C-d> <Esc>yypA
 vnoremap <silent> <C-d> <Esc>yypA
@@ -30,7 +31,7 @@ nnoremap <silent> <C-z> <Esc>ui
 vnoremap <silent> <C-z> <Esc>ui
 inoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
-vnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
+vnoremap <silent> <S-Insert> d<Esc>h"+pi
 nnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 inoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
@@ -65,10 +66,10 @@ nnoremap <silent> <S-F9> <Esc>:e ++enc=default<CR>
 nnoremap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-nnoremap  <M-LeftMouse> <4-LeftMouse>
+nnoremap <M-LeftMouse> <4-LeftMouse>
 inoremap <M-LeftMouse> <4-LeftMouse>
 onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-nnoremap  <M-LeftDrag>  <LeftDrag>
+nnoremap <M-LeftDrag>  <LeftDrag>
 inoremap <M-LeftDrag>  <LeftDrag>
 onoremap <M-LeftDrag>  <C-C><LeftDrag>
 set number
@@ -100,6 +101,7 @@ syntax on
 set backspace=2
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> i<C-W>
+vnoremap <C-BS> d
 inoremap <C-Del> <ESC>ldwi
 nnoremap <C-Del> <ESC>dwi
 " Highlight selected color
@@ -117,7 +119,6 @@ autocmd FileType matlab,tex      let b:comment_leader = '%'
 autocmd FileType vim             let b:comment_leader = '"'
 
 function! ToggleComment()
-" help with :h \v or pattern-atoms
   if exists('b:comment_leader')
     if getline('.') =~ '\v^\s*' .b:comment_leader
       " uncomment the line
@@ -130,9 +131,28 @@ function! ToggleComment()
     echo 'No comment leader found for filetype'
   end
 endfunction
+
+function! ToggleComments()
+    let [lnum1, col1] = getpos("'<")[1:2]
+    let [lnum2, col2] = getpos("'>")[1:2]
+    for i in range(lnum1, lnum2)
+      if exists('b:comment_leader')
+        if getline(i) =~ '\v^\s*' .b:comment_leader
+          " uncomment the line
+          execute 'silent '.i.'s/\v^\s*\zs' .b:comment_leader.'[ ]?//g'
+        else
+          " comment the line
+          execute 'silent '.i.'s/\v^\s*\zs\ze(\S|\n)/' .b:comment_leader.' /g'
+        endif
+      else
+        echo 'No comment leader found for filetype'
+      end
+    endfor
+endfunction
+
 nnoremap <C-_> <ESC>:call ToggleComment()<CR>i
 inoremap <C-_> <ESC>:call ToggleComment()<CR>i
-vnoremap <C-_> <ESC>:call ToggleComment()<CR>i
+vnoremap <C-_> <ESC>:call ToggleComments()<CR>i
 
 command JsonPretty execute "%!python -m json.tool"
 command PrettyJson execute "%!python -m json.tool"
