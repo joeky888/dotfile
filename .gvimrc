@@ -105,6 +105,67 @@ vnoremap <C-BS> d
 inoremap <C-Del> <ESC>ldwi
 nnoremap <C-Del> <ESC>dwi
 vnoremap <Space> di<Space>
+vnoremap a dia
+vnoremap b dib
+vnoremap c dic
+vnoremap d did
+vnoremap e die
+vnoremap f dif
+vnoremap g dig
+vnoremap h dih
+vnoremap i dii
+vnoremap j dij
+vnoremap k dik
+vnoremap l dil
+vnoremap m dim
+vnoremap n din
+vnoremap o dio
+vnoremap p dip
+vnoremap q diq
+vnoremap r dir
+vnoremap s dis
+vnoremap t dit
+vnoremap u diu
+vnoremap v div
+vnoremap w diw
+vnoremap x dix
+vnoremap y diy
+vnoremap z diz
+vnoremap A diA
+vnoremap B diB
+vnoremap C diC
+vnoremap D diD
+vnoremap E diE
+vnoremap F diF
+vnoremap G diG
+vnoremap H diH
+vnoremap I diI
+vnoremap J diJ
+vnoremap K diK
+vnoremap L diL
+vnoremap M diM
+vnoremap N diN
+vnoremap O diO
+vnoremap P diP
+vnoremap Q diQ
+vnoremap R diR
+vnoremap S diS
+vnoremap T diT
+vnoremap U diU
+vnoremap V diV
+vnoremap W diW
+vnoremap X diX
+vnoremap Y diY
+vnoremap Z diZ
+vnoremap 1 di1
+vnoremap 2 di2
+vnoremap 3 di3
+vnoremap 4 di4
+vnoremap 5 di5
+vnoremap 6 di6
+vnoremap 7 di7
+vnoremap 8 di8
+vnoremap 9 di9
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
@@ -152,9 +213,19 @@ function! ToggleComments()
     endfor
 endfunction
 
+if !exists("*ReloadConfigs")
+  function ReloadConfigs()
+      :source $MYVIMRC
+      if has("gui_running")
+          :source $MYGVIMRC
+      endif
+  endfunction
+endif
+
 nnoremap <C-\> <ESC>:call ToggleComment()<CR>i
 inoremap <C-\> <ESC>:call ToggleComment()<CR>i
 vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 
-command JsonPretty execute "%!python -m json.tool"
-command PrettyJson execute "%!python -m json.tool"
+command! JsonPretty  execute "%!python -m json.tool"
+command! PrettyJson  execute "%!python -m json.tool"
+command! ReloadVimrc call ReloadConfigs()
