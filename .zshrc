@@ -30,8 +30,16 @@ if [[ $OSTYPE == cygwin ]] ; then
 else
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    gvim () { if [ "$#" -gt 0 ] then command gvim --remote-tab-silent "$@" else command gvim "$@" fi }
-    # gvim () { command gvim --remote-silent "$@" || command gvim "$@"; }
+    # gvim () { if [ "$#" -gt 0 ] then command gvim --remote-tab-silent "$@" else command gvim "$@" fi }
+    gvim () { command gvim --servername VIM --remote-tab-wait-silent "$@" || command gvim "$@"; }
+    # gvim () { 
+        # if [ "$#" -gt 0 && $(pgrep "gvim") ]
+        # then
+          # gvim --remote-tab-silent "$@"
+        # else
+          # gvim "$@"
+        # fi
+    # }
 fi
 
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
