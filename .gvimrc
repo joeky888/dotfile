@@ -66,10 +66,10 @@ nnoremap <silent> <S-F9> <Esc>:e ++enc=default<CR>
 nnoremap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-nnoremap <M-LeftMouse> <4-LeftMouse>
+noremap <M-LeftMouse> <4-LeftMouse>
 inoremap <M-LeftMouse> <4-LeftMouse>
 onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-nnoremap <M-LeftDrag>  <LeftDrag>
+noremap <M-LeftDrag>  <LeftDrag>
 inoremap <M-LeftDrag>  <LeftDrag>
 onoremap <M-LeftDrag>  <C-C><LeftDrag>
 set number
