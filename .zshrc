@@ -30,7 +30,7 @@ if [[ $OSTYPE == cygwin ]] ; then
 else
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    alias gvim='gvim --remote-tab "$@"'
+    alias gvim='gvim --remote-tab "$@" || gvim "$@"'
     # gvim () { if [ "$#" -gt 0 ] then command gvim --remote-tab-silent "$@" else command gvim "$@" fi }
     # gvim () { command gvim --servername VIM --remote-tab-silent "$@" || command gvim "$@"; }
     # gvim() {
