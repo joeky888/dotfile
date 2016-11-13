@@ -2,7 +2,7 @@
 Encoding=UTF-8
 Name=GVim
 Comment=Edit text files in a new tab
-Exec=gvim --remote-tab %F
+Exec=gvim --remote-tab-silent %F
 Terminal=false
 Type=Application
 Keywords=Text;editor;
