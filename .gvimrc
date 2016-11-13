@@ -54,16 +54,6 @@ vnoremap <silent> <BS> d
 inoremap <silent> <C-o> <Esc>:browse confirm e<CR>
 nnoremap <silent> <C-o> <Esc>:browse confirm e<CR>
 vnoremap <silent> <C-o> <Esc>:browse confirm e<CR>
-nnoremap <silent> <S-F1> <Esc>:e ++enc=utf-8<CR>
-nnoremap <silent> <S-F2> <Esc>:e ++enc=ucs-bom<CR>
-nnoremap <silent> <S-F3> <Esc>:e ++enc=big5<CR>
-nnoremap <silent> <S-F4> <Esc>:e ++enc=shift-jis<CR>
-nnoremap <silent> <S-F5> <Esc>:e ++enc=gbk<CR>
-nnoremap <silent> <S-F6> <Esc>:e ++enc=cp950<CR>
-nnoremap <silent> <S-F7> <Esc>:e ++enc=cp936<CR>
-nnoremap <silent> <S-F8> <Esc>:e ++enc=utf-16le<CR>
-nnoremap <silent> <S-F9> <Esc>:e ++enc=default<CR>
-nnoremap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 noremap  <M-LeftMouse> <4-LeftMouse>
@@ -229,3 +219,13 @@ vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 command! JsonPretty  execute "%!python -m json.tool"
 command! PrettyJson  execute "%!python -m json.tool"
 command! ReloadVimrc call ReloadConfigs()
+command! EncodingUTF8    execute "e ++enc=utf-8"
+command! EncodingUcsBom  execute "e ++enc=ucs-bom"
+command! EncodingBig5    execute "e ++enc=big5"
+command! EncodingGBK     execute "e ++enc=gbk"
+command! EncodingJapan   execute "e ++enc=japan"
+command! EncodingKorea   execute "e ++enc=korea"
+command! EncodingUTF16   execute "e ++enc=utf-16"
+command! EncodingUTF16LE execute "e ++enc=utf-16le"
+command! EncodingUTF16BE execute "e ++enc=utf-16be"
+command! EncodingAnsi    execute "e ++enc=ansi"
