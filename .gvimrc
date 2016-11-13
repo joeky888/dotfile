@@ -150,9 +150,9 @@ function! ToggleComments()
     endfor
 endfunction
 
-nnoremap <C-_> <ESC>:call ToggleComment()<CR>i
-inoremap <C-_> <ESC>:call ToggleComment()<CR>i
-vnoremap <C-_> <ESC>:call ToggleComments()<CR>i
+nnoremap <C-\> <ESC>:call ToggleComment()<CR>i
+inoremap <C-\> <ESC>:call ToggleComment()<CR>i
+vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 
 command JsonPretty execute "%!python -m json.tool"
 command PrettyJson execute "%!python -m json.tool"
