@@ -14,7 +14,7 @@ vnoremap <silent> <C-c> "+yi
 vnoremap <silent> <C-x> "+xi
 inoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <C-v> <Esc>:call paste#Paste()<CR>i
-vnoremap <silent> <C-v> d<Esc>h"+pi
+vnoremap <silent> <C-v> dh"+pi
 cnoremap <C-c> <C-y>
 cnoremap <C-v> <C-r>+
 cnoremap <C-x> <C-y><C-e><C-u>
@@ -31,7 +31,7 @@ nnoremap <silent> <C-z> <Esc>ui
 vnoremap <silent> <C-z> <Esc>ui
 inoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
-vnoremap <silent> <S-Insert> d<Esc>h"+pi
+vnoremap <silent> <S-Insert> dh"+pi
 nnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 vnoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
 inoremap <silent> <C-b> <Esc>:browse confirm saveas<CR>
@@ -66,10 +66,10 @@ nnoremap <silent> <S-F9> <Esc>:e ++enc=default<CR>
 nnoremap <silent> <S-F10> <Esc>:e ++enc=latin1<CR>
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-noremap <M-LeftMouse> <4-LeftMouse>
+noremap  <M-LeftMouse> <4-LeftMouse>
 inoremap <M-LeftMouse> <4-LeftMouse>
 onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-noremap <M-LeftDrag>  <LeftDrag>
+noremap  <M-LeftDrag>  <LeftDrag>
 inoremap <M-LeftDrag>  <LeftDrag>
 onoremap <M-LeftDrag>  <C-C><LeftDrag>
 set number
@@ -104,6 +104,7 @@ nnoremap <C-BS> i<C-W>
 vnoremap <C-BS> d
 inoremap <C-Del> <ESC>ldwi
 nnoremap <C-Del> <ESC>dwi
+vnoremap <Space> di<Space>
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
