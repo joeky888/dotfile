@@ -216,6 +216,17 @@ nnoremap <C-\> <ESC>:call ToggleComment()<CR>i
 inoremap <C-\> <ESC>:call ToggleComment()<CR>i
 vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 
+noremenu Edit.Encoding.UTF8    <Esc>:e ++enc=utf-8<CR>
+noremenu Edit.Encoding.UcsBom  <Esc>:e ++enc=ucs-bom<CR>
+noremenu Edit.Encoding.Big5    <Esc>:e ++enc=big5<CR>
+noremenu Edit.Encoding.GBK     <Esc>:e ++enc=gbk<CR>
+noremenu Edit.Encoding.Japan   <Esc>:e ++enc=japan<CR>
+noremenu Edit.Encoding.Korea   <Esc>:e ++enc=korea<CR>
+noremenu Edit.Encoding.UTF16   <Esc>:e ++enc=utf-16<CR>
+noremenu Edit.Encoding.UTF16LE <Esc>:e ++enc=utf-16le<CR>
+noremenu Edit.Encoding.UTF16BE <Esc>:e ++enc=utf-16be<CR>
+noremenu Edit.Encoding.Ansi    <Esc>:e ++enc=ansi<CR>
+
 command! JsonPretty  execute "%!python -m json.tool"
 command! PrettyJson  execute "%!python -m json.tool"
 command! ReloadVimrc call ReloadConfigs()
