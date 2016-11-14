@@ -157,6 +157,8 @@ vnoremap 6 di6
 vnoremap 7 di7
 vnoremap 8 di8
 vnoremap 9 di9
+vnoremap <bar> <S-i>
+
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
