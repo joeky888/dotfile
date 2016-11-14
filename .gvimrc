@@ -86,7 +86,7 @@ if has("gui_running")
 endif
 set nowrap
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-set iskeyword-=- " '-' should not be one of the keywords
+set iskeyword& " '-' should not be one of the keywords
 highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
