@@ -17,11 +17,11 @@ whichTTY=$(tty | sed -e "s:/dev/::")
 has_fbterm=$(command -v fbterm)
 
 if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
+    cd ~
     # Check if fbterm installed
     if [[ $has_fbterm ]] ; then
         SHELL=tmux fbterm
     elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
-        cd ~
         exec tmux
     fi
 fi
