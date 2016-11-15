@@ -1,4 +1,4 @@
-[[ -e ~/.bashrc ]] && emulate sh -c '. ~/.bashrc' # source ~/.bashrc
+. ~/.bashrc # source ~/.bashrc
 
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="bira"
