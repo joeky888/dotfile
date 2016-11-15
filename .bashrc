@@ -8,6 +8,7 @@ export LC_TIME="en_US.UTF-8"
 export LC_COLLATE="en_US.UTF-8"
 export LC_MONETARY="en_US.UTF-8"
 export LC_MESSAGES="en_US.UTF-8"
+
 if [ "$TERM" = "xterm" ]; then
   export TERM=xterm-256color
 fi
@@ -17,11 +18,11 @@ has_fbterm=$(command -v fbterm)
 
 if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
     # Check if fbterm installed
-    if [[ $whichTTY == pts* || $whichTTY == pty* ]] ; then
+    if [[ $has_fbterm ]] ; then
+        SHELL=tmux fbterm
+    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
         cd ~
         exec tmux
-    elif [[ $has_fbterm ]] ; then
-        SHELL=tmux fbterm
     fi
 fi
 
