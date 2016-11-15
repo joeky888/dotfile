@@ -32,7 +32,7 @@ if [[ $OSTYPE == cygwin ]] ; then
 else
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    alias gvim='gvim --remote-tab-silent "$@"'
+    alias gvim='gvim --remote-tab-silent "$@" || gvim'
 fi
 
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
