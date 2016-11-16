@@ -27,9 +27,9 @@ cnoremap <C-f> <C-e><C-u>
 inoremap <silent> <C-d> <Esc>yypA
 nnoremap <silent> <C-d> <Esc>yypA
 vnoremap <silent> <C-d> <Esc>yypA
-inoremap <silent> <C-z> <Esc>ui
-nnoremap <silent> <C-z> <Esc>ui
-vnoremap <silent> <C-z> <Esc>ui
+inoremap <silent> <C-z> <Esc>ua
+nnoremap <silent> <C-z> <Esc>ua
+vnoremap <silent> <C-z> <Esc>ua
 inoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
 nnoremap <silent> <S-Insert> <Esc>:call paste#Paste()<CR>i
 vnoremap <silent> <S-Insert> dh"+pi
@@ -158,6 +158,14 @@ vnoremap 7 di7
 vnoremap 8 di8
 vnoremap 9 di9
 vnoremap <bar> <S-i>
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
 
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
