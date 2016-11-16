@@ -158,11 +158,6 @@ vnoremap 7 di7
 vnoremap 8 di8
 vnoremap 9 di9
 vnoremap <bar> <S-i>
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
