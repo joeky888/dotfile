@@ -19,7 +19,15 @@ bindkey "[3~" kill-word
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 
-if [[ $OSTYPE == cygwin ]] ; then
+if [[ "$OSTYPE" == "linux-gnu" ]]; then
+    # Ubuntu
+    alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
+    alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
+    alias gvim='gvim --remote-tab-silent "$@" || gvim'
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    # Mac OSX
+elif [[ "$OSTYPE" == "cygwin" ]]; then
+    # POSIX compatibility layer and Linux environment emulation for Windows
     export DISPLAY=:0.0
     alias apt-Cygwin-Search='setup-x86_64.exe --package-manager --wait'
     alias apt-Cygwin-Install='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages'
@@ -29,10 +37,14 @@ if [[ $OSTYPE == cygwin ]] ; then
     alias upgradeYoutubedl='pip3 install youtube-dl -U'
     alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
     alias sudo='cygstart --action=runas "$@"'
+elif [[ "$OSTYPE" == "msys" ]]; then
+    # Lightweight shell and GNU utilities compiled for Windows (part of MinGW)
+elif [[ "$OSTYPE" == "freebsd"* ]]; then
+    # FreeBSD or TrueOS
+    alias ls 2>/dev/null >/dev/null && unalias ls
+    alias ls='ls -G'
 else
-    alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
-    alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    alias gvim='gvim --remote-tab-silent "$@" || gvim'
+    # Unknown.
 fi
 
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
