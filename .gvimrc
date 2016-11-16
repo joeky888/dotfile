@@ -162,7 +162,7 @@ inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
 
-function ForceFoldmethodIndent()
+function! ForceFoldmethodIndent()
     if &foldenable
         set foldmethod=indent
     endif
@@ -188,12 +188,12 @@ autocmd FileType vim             let b:comment_leader = '"'
 
 function! ToggleComment()
   if exists('b:comment_leader')
-    if getline('.') =~ '\v^\s*' .b:comment_leader
+    if getline('.') =~ '^' .b:comment_leader
       " uncomment the line
-      execute 'silent s/\v^\s*\zs' .b:comment_leader.'[ ]?//g'
+      execute 'silent s/^' .b:comment_leader.' //g'
     else
       " comment the line
-      execute 'silent s/\v^\s*\zs\ze(\S|\n)/' .b:comment_leader.' /g'
+      execute 'silent s/^/' .b:comment_leader.' /g'
     endif
   else
     echo 'No comment leader found for filetype'
@@ -201,21 +201,21 @@ function! ToggleComment()
 endfunction
 
 function! ToggleComments()
-    let [lnum1, col1] = getpos("'<")[1:2]
-    let [lnum2, col2] = getpos("'>")[1:2]
-    for i in range(lnum1, lnum2)
+  let [lnum1, col1] = getpos("'<")[1:2]
+  let [lnum2, col2] = getpos("'>")[1:2]
+  for i in range(lnum1, lnum2)
       if exists('b:comment_leader')
-        if getline(i) =~ '\v^\s*' .b:comment_leader
+        if getline(i) =~ '^' .b:comment_leader
           " uncomment the line
-          execute 'silent '.i.'s/\v^\s*\zs' .b:comment_leader.'[ ]?//g'
+          execute 'silent '.i.'s/^' .b:comment_leader.' //g'
         else
           " comment the line
-          execute 'silent '.i.'s/\v^\s*\zs\ze(\S|\n)/' .b:comment_leader.' /g'
+          execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
         endif
       else
         echo 'No comment leader found for filetype'
       end
-    endfor
+  endfor
 endfunction
 
 if !exists("*ReloadConfigs")
