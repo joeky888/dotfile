@@ -191,6 +191,8 @@ function! ToggleComment()
     if getline('.') =~ '^' .b:comment_leader
       " uncomment the line
       execute 'silent s/^' .b:comment_leader.' //g'
+    elseif getline('.') =~ '^\s*$'
+      " empty lines
     else
       " comment the line
       execute 'silent s/^/' .b:comment_leader.' /g'
@@ -208,6 +210,8 @@ function! ToggleComments()
         if getline(i) =~ '^' .b:comment_leader
           " uncomment the line
           execute 'silent '.i.'s/^' .b:comment_leader.' //g'
+        elseif getline(i) =~ '^\s*$'
+          " empty lines
         else
           " comment the line
           execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
