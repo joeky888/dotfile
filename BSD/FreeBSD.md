@@ -9,15 +9,15 @@ Update ports tree
 
 Search and Install ports packages
 =====
-* $ whereis tmux
-* $ cd /usr/ports/sysutils/tmux
+* $ whereis zsh
+* $ cd /usr/ports/shells/zsh
 * $ export BATCH=yes
 * $ make install clean
 
 Uninstall paorts packages
 =====
-* $ whereis tmux
-* $ cd /usr/ports/sysutils/tmux
+* $ whereis zsh
+* $ cd /usr/ports/shells/zsh
 * $ make deinstall
 
 Upgrade all ports packages
