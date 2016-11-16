@@ -161,6 +161,8 @@ vnoremap <bar> <S-i>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
+nnoremap = :set foldmethod=syntax<CR>
+nnoremap - :set foldmethod=indent<CR>
 
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
