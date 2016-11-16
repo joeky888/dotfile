@@ -38,7 +38,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-    alias ls 2>/dev/null >/dev/null && unalias ls
     alias ls='ls -G'
 else
     # Unknown.
