@@ -44,5 +44,10 @@ alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
 
 forever()
 {
-    while true; do $* ; done
+    if [ "$#" == 0 ]; then
+        echo "Usage: forever [commands]"
+        echo "Run commands forever!"
+    else
+        while true; do $* ; done
+    fi
 }

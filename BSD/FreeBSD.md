@@ -23,3 +23,17 @@ Uninstall paorts packages
 Upgrade all ports packages
 =====
 * $ portupgrade -a
+
+Add user to sudoer
+=====
+* $ whereis sudo
+* $ cd /usr/ports/security/sudo
+* $ make install clean
+* $ visudo
+````
+##
+## User privilege specification
+##
+root  ALL=(ALL) ALL
+joeky ALL=(ALL) ALL
+````
