@@ -542,136 +542,122 @@ set complete-=w,b,u,t,i
 set shortmess+=c
 
 let autocomp=0
-imap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>a
-vmap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
-nmap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
+inoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>a
+vnoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
+nnoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
 
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
-    imap <silent> a a<Esc>:call AutoComplete()<CR>
-    imap <silent> b b<Esc>:call AutoComplete()<CR>
-    imap <silent> c c<Esc>:call AutoComplete()<CR>
-    imap <silent> d d<Esc>:call AutoComplete()<CR>
-    imap <silent> e e<Esc>:call AutoComplete()<CR>
-    imap <silent> f f<Esc>:call AutoComplete()<CR>
-    imap <silent> g g<Esc>:call AutoComplete()<CR>
-    imap <silent> h h<Esc>:call AutoComplete()<CR>
-    imap <silent> i i<Esc>:call AutoComplete()<CR>
-    imap <silent> j j<Esc>:call AutoComplete()<CR>
-    imap <silent> k k<Esc>:call AutoComplete()<CR>
-    imap <silent> l l<Esc>:call AutoComplete()<CR>
-    imap <silent> m m<Esc>:call AutoComplete()<CR>
-    imap <silent> n n<Esc>:call AutoComplete()<CR>
-    imap <silent> o o<Esc>:call AutoComplete()<CR>
-    imap <silent> p p<Esc>:call AutoComplete()<CR>
-    imap <silent> q q<Esc>:call AutoComplete()<CR>
-    imap <silent> r r<Esc>:call AutoComplete()<CR>
-    imap <silent> s s<Esc>:call AutoComplete()<CR>
-    imap <silent> t t<Esc>:call AutoComplete()<CR>
-    imap <silent> u u<Esc>:call AutoComplete()<CR>
-    imap <silent> v v<Esc>:call AutoComplete()<CR>
-    imap <silent> w w<Esc>:call AutoComplete()<CR>
-    imap <silent> x x<Esc>:call AutoComplete()<CR>
-    imap <silent> y y<Esc>:call AutoComplete()<CR>
-    imap <silent> z z<Esc>:call AutoComplete()<CR>
-    imap <silent> A A<Esc>:call AutoComplete()<CR>
-    imap <silent> B B<Esc>:call AutoComplete()<CR>
-    imap <silent> C C<Esc>:call AutoComplete()<CR>
-    imap <silent> D D<Esc>:call AutoComplete()<CR>
-    imap <silent> E E<Esc>:call AutoComplete()<CR>
-    imap <silent> F F<Esc>:call AutoComplete()<CR>
-    imap <silent> G G<Esc>:call AutoComplete()<CR>
-    imap <silent> H H<Esc>:call AutoComplete()<CR>
-    imap <silent> I I<Esc>:call AutoComplete()<CR>
-    imap <silent> J J<Esc>:call AutoComplete()<CR>
-    imap <silent> K K<Esc>:call AutoComplete()<CR>
-    imap <silent> L L<Esc>:call AutoComplete()<CR>
-    imap <silent> M M<Esc>:call AutoComplete()<CR>
-    imap <silent> N N<Esc>:call AutoComplete()<CR>
-    imap <silent> O O<Esc>:call AutoComplete()<CR>
-    imap <silent> P P<Esc>:call AutoComplete()<CR>
-    imap <silent> Q Q<Esc>:call AutoComplete()<CR>
-    imap <silent> R R<Esc>:call AutoComplete()<CR>
-    imap <silent> S S<Esc>:call AutoComplete()<CR>
-    imap <silent> T T<Esc>:call AutoComplete()<CR>
-    imap <silent> U U<Esc>:call AutoComplete()<CR>
-    imap <silent> V V<Esc>:call AutoComplete()<CR>
-    imap <silent> W W<Esc>:call AutoComplete()<CR>
-    imap <silent> X X<Esc>:call AutoComplete()<CR>
-    imap <silent> Y Y<Esc>:call AutoComplete()<CR>
-    imap <silent> Z Z<Esc>:call AutoComplete()<CR>
+    inoremap <silent> a a<Esc>:call AutoComplete()<CR>
+    inoremap <silent> b b<Esc>:call AutoComplete()<CR>
+    inoremap <silent> c c<Esc>:call AutoComplete()<CR>
+    inoremap <silent> d d<Esc>:call AutoComplete()<CR>
+    inoremap <silent> e e<Esc>:call AutoComplete()<CR>
+    inoremap <silent> f f<Esc>:call AutoComplete()<CR>
+    inoremap <silent> g g<Esc>:call AutoComplete()<CR>
+    inoremap <silent> h h<Esc>:call AutoComplete()<CR>
+    inoremap <silent> i i<Esc>:call AutoComplete()<CR>
+    inoremap <silent> j j<Esc>:call AutoComplete()<CR>
+    inoremap <silent> k k<Esc>:call AutoComplete()<CR>
+    inoremap <silent> l l<Esc>:call AutoComplete()<CR>
+    inoremap <silent> m m<Esc>:call AutoComplete()<CR>
+    inoremap <silent> n n<Esc>:call AutoComplete()<CR>
+    inoremap <silent> o o<Esc>:call AutoComplete()<CR>
+    inoremap <silent> p p<Esc>:call AutoComplete()<CR>
+    inoremap <silent> q q<Esc>:call AutoComplete()<CR>
+    inoremap <silent> r r<Esc>:call AutoComplete()<CR>
+    inoremap <silent> s s<Esc>:call AutoComplete()<CR>
+    inoremap <silent> t t<Esc>:call AutoComplete()<CR>
+    inoremap <silent> u u<Esc>:call AutoComplete()<CR>
+    inoremap <silent> v v<Esc>:call AutoComplete()<CR>
+    inoremap <silent> w w<Esc>:call AutoComplete()<CR>
+    inoremap <silent> x x<Esc>:call AutoComplete()<CR>
+    inoremap <silent> y y<Esc>:call AutoComplete()<CR>
+    inoremap <silent> z z<Esc>:call AutoComplete()<CR>
+    inoremap <silent> A A<Esc>:call AutoComplete()<CR>
+    inoremap <silent> B B<Esc>:call AutoComplete()<CR>
+    inoremap <silent> C C<Esc>:call AutoComplete()<CR>
+    inoremap <silent> D D<Esc>:call AutoComplete()<CR>
+    inoremap <silent> E E<Esc>:call AutoComplete()<CR>
+    inoremap <silent> F F<Esc>:call AutoComplete()<CR>
+    inoremap <silent> G G<Esc>:call AutoComplete()<CR>
+    inoremap <silent> H H<Esc>:call AutoComplete()<CR>
+    inoremap <silent> I I<Esc>:call AutoComplete()<CR>
+    inoremap <silent> J J<Esc>:call AutoComplete()<CR>
+    inoremap <silent> K K<Esc>:call AutoComplete()<CR>
+    inoremap <silent> L L<Esc>:call AutoComplete()<CR>
+    inoremap <silent> M M<Esc>:call AutoComplete()<CR>
+    inoremap <silent> N N<Esc>:call AutoComplete()<CR>
+    inoremap <silent> O O<Esc>:call AutoComplete()<CR>
+    inoremap <silent> P P<Esc>:call AutoComplete()<CR>
+    inoremap <silent> Q Q<Esc>:call AutoComplete()<CR>
+    inoremap <silent> R R<Esc>:call AutoComplete()<CR>
+    inoremap <silent> S S<Esc>:call AutoComplete()<CR>
+    inoremap <silent> T T<Esc>:call AutoComplete()<CR>
+    inoremap <silent> U U<Esc>:call AutoComplete()<CR>
+    inoremap <silent> V V<Esc>:call AutoComplete()<CR>
+    inoremap <silent> W W<Esc>:call AutoComplete()<CR>
+    inoremap <silent> X X<Esc>:call AutoComplete()<CR>
+    inoremap <silent> Y Y<Esc>:call AutoComplete()<CR>
+    inoremap <silent> Z Z<Esc>:call AutoComplete()<CR>
   else
     let g:autocomp=0
-    imap <silent> a a
-    imap <silent> b b
-    imap <silent> c c
-    imap <silent> d d
-    imap <silent> e e
-    imap <silent> f f
-    imap <silent> g g
-    imap <silent> h h
-    imap <silent> i i
-    imap <silent> j j
-    imap <silent> k k
-    imap <silent> l l
-    imap <silent> m m
-    imap <silent> n n
-    imap <silent> o o
-    imap <silent> p p
-    imap <silent> q q
-    imap <silent> r r
-    imap <silent> s s
-    imap <silent> t t
-    imap <silent> u u
-    imap <silent> v v
-    imap <silent> w w
-    imap <silent> x x
-    imap <silent> y y
-    imap <silent> z z
-    imap <silent> A A
-    imap <silent> B B
-    imap <silent> C C
-    imap <silent> D D
-    imap <silent> E E
-    imap <silent> F F
-    imap <silent> G G
-    imap <silent> H H
-    imap <silent> I I
-    imap <silent> J J
-    imap <silent> K K
-    imap <silent> L L
-    imap <silent> M M
-    imap <silent> N N
-    imap <silent> O O
-    imap <silent> P P
-    imap <silent> Q Q
-    imap <silent> R R
-    imap <silent> S S
-    imap <silent> T T
-    imap <silent> U U
-    imap <silent> V V
-    imap <silent> W W
-    imap <silent> X X
-    imap <silent> Y Y
-    imap <silent> Z Z
+    inoremap <silent> a a
+    inoremap <silent> b b
+    inoremap <silent> c c
+    inoremap <silent> d d
+    inoremap <silent> e e
+    inoremap <silent> f f
+    inoremap <silent> g g
+    inoremap <silent> h h
+    inoremap <silent> i i
+    inoremap <silent> j j
+    inoremap <silent> k k
+    inoremap <silent> l l
+    inoremap <silent> m m
+    inoremap <silent> n n
+    inoremap <silent> o o
+    inoremap <silent> p p
+    inoremap <silent> q q
+    inoremap <silent> r r
+    inoremap <silent> s s
+    inoremap <silent> t t
+    inoremap <silent> u u
+    inoremap <silent> v v
+    inoremap <silent> w w
+    inoremap <silent> x x
+    inoremap <silent> y y
+    inoremap <silent> z z
+    inoremap <silent> A A
+    inoremap <silent> B B
+    inoremap <silent> C C
+    inoremap <silent> D D
+    inoremap <silent> E E
+    inoremap <silent> F F
+    inoremap <silent> G G
+    inoremap <silent> H H
+    inoremap <silent> I I
+    inoremap <silent> J J
+    inoremap <silent> K K
+    inoremap <silent> L L
+    inoremap <silent> M M
+    inoremap <silent> N N
+    inoremap <silent> O O
+    inoremap <silent> P P
+    inoremap <silent> Q Q
+    inoremap <silent> R R
+    inoremap <silent> S S
+    inoremap <silent> T T
+    inoremap <silent> U U
+    inoremap <silent> V V
+    inoremap <silent> W W
+    inoremap <silent> X X
+    inoremap <silent> Y Y
+    inoremap <silent> Z Z
   endif
 endfunction
 
 function! AutoComplete()
   call feedkeys("a\<C-x>\<C-n>")
 endfunction
-
-set noerrorbells
-set vb t_vb=
-vmap <silent> <C-c> "+yi
-vmap <silent> <C-x> "+xi
-imap <silent> <C-v> <Esc>:call paste#Paste()<CR>
-nmap <silent> <C-v> <Esc>:call paste#Paste()<CR>
-vmap <silent> <C-v> <Esc><Esc>:call paste#Paste()<CR>
-nmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
-vmap <silent> <C-b> <Esc>:browse confirm saveas<CR>
-nmap <silent> <C-b> <Esc><Esc>:browse confirm saveas<CR>
-imap <silent> <C-g> <Esc>ggVG<CR>
-nmap <silent> <C-g> <Esc>ggVG<CR>
-vmap <silent> <C-g> <Esc><Esc>ggVG<CR>
