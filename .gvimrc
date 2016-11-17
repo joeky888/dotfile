@@ -178,13 +178,15 @@ hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
 
 " Commenting blocks of code.
-autocmd FileType c,cpp,java      let b:comment_leader = '\/\/'
-autocmd FileType arduino         let b:comment_leader = '\/\/'
-autocmd FileType sh,ruby,python  let b:comment_leader = '#'
-autocmd FileType conf,fstab,zsh  let b:comment_leader = '#'
-autocmd FileType make,Cmake      let b:comment_leader = '#'
-autocmd FileType matlab,tex      let b:comment_leader = '%'
-autocmd FileType vim             let b:comment_leader = '"'
+autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
+autocmd FileType javascript         let b:comment_leader = '\/\/'
+autocmd FileType arduino,registry   let b:comment_leader = '\/\/'
+autocmd FileType sh,ruby,python     let b:comment_leader = '#'
+autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
+autocmd FileType make,Cmake         let b:comment_leader = '#'
+autocmd FileType desktop            let b:comment_leader = '#'
+autocmd FileType matlab,tex         let b:comment_leader = '%'
+autocmd FileType vim                let b:comment_leader = '"'
 
 function! ToggleComment()
   if exists('b:comment_leader')
