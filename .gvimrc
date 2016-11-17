@@ -168,7 +168,6 @@ function! ForceFoldmethodIndent()
 endfunction
 
 nnoremap <silent> - <ESC>:normal zi<CR>:call ForceFoldmethodIndent()<CR>
-inoremap <silent> - <ESC>:normal zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White

@@ -549,59 +549,59 @@ nnoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
-    inoremap <silent> a a<Esc>:call AutoComplete()<CR>
-    inoremap <silent> b b<Esc>:call AutoComplete()<CR>
-    inoremap <silent> c c<Esc>:call AutoComplete()<CR>
-    inoremap <silent> d d<Esc>:call AutoComplete()<CR>
-    inoremap <silent> e e<Esc>:call AutoComplete()<CR>
-    inoremap <silent> f f<Esc>:call AutoComplete()<CR>
-    inoremap <silent> g g<Esc>:call AutoComplete()<CR>
-    inoremap <silent> h h<Esc>:call AutoComplete()<CR>
-    inoremap <silent> i i<Esc>:call AutoComplete()<CR>
-    inoremap <silent> j j<Esc>:call AutoComplete()<CR>
-    inoremap <silent> k k<Esc>:call AutoComplete()<CR>
-    inoremap <silent> l l<Esc>:call AutoComplete()<CR>
-    inoremap <silent> m m<Esc>:call AutoComplete()<CR>
-    inoremap <silent> n n<Esc>:call AutoComplete()<CR>
-    inoremap <silent> o o<Esc>:call AutoComplete()<CR>
-    inoremap <silent> p p<Esc>:call AutoComplete()<CR>
-    inoremap <silent> q q<Esc>:call AutoComplete()<CR>
-    inoremap <silent> r r<Esc>:call AutoComplete()<CR>
-    inoremap <silent> s s<Esc>:call AutoComplete()<CR>
-    inoremap <silent> t t<Esc>:call AutoComplete()<CR>
-    inoremap <silent> u u<Esc>:call AutoComplete()<CR>
-    inoremap <silent> v v<Esc>:call AutoComplete()<CR>
-    inoremap <silent> w w<Esc>:call AutoComplete()<CR>
-    inoremap <silent> x x<Esc>:call AutoComplete()<CR>
-    inoremap <silent> y y<Esc>:call AutoComplete()<CR>
-    inoremap <silent> z z<Esc>:call AutoComplete()<CR>
-    inoremap <silent> A A<Esc>:call AutoComplete()<CR>
-    inoremap <silent> B B<Esc>:call AutoComplete()<CR>
-    inoremap <silent> C C<Esc>:call AutoComplete()<CR>
-    inoremap <silent> D D<Esc>:call AutoComplete()<CR>
-    inoremap <silent> E E<Esc>:call AutoComplete()<CR>
-    inoremap <silent> F F<Esc>:call AutoComplete()<CR>
-    inoremap <silent> G G<Esc>:call AutoComplete()<CR>
-    inoremap <silent> H H<Esc>:call AutoComplete()<CR>
-    inoremap <silent> I I<Esc>:call AutoComplete()<CR>
-    inoremap <silent> J J<Esc>:call AutoComplete()<CR>
-    inoremap <silent> K K<Esc>:call AutoComplete()<CR>
-    inoremap <silent> L L<Esc>:call AutoComplete()<CR>
-    inoremap <silent> M M<Esc>:call AutoComplete()<CR>
-    inoremap <silent> N N<Esc>:call AutoComplete()<CR>
-    inoremap <silent> O O<Esc>:call AutoComplete()<CR>
-    inoremap <silent> P P<Esc>:call AutoComplete()<CR>
-    inoremap <silent> Q Q<Esc>:call AutoComplete()<CR>
-    inoremap <silent> R R<Esc>:call AutoComplete()<CR>
-    inoremap <silent> S S<Esc>:call AutoComplete()<CR>
-    inoremap <silent> T T<Esc>:call AutoComplete()<CR>
-    inoremap <silent> U U<Esc>:call AutoComplete()<CR>
-    inoremap <silent> V V<Esc>:call AutoComplete()<CR>
-    inoremap <silent> W W<Esc>:call AutoComplete()<CR>
-    inoremap <silent> X X<Esc>:call AutoComplete()<CR>
-    inoremap <silent> Y Y<Esc>:call AutoComplete()<CR>
-    inoremap <silent> Z Z<Esc>:call AutoComplete()<CR>
-  else
+    inoremap <silent> a a<Esc>a<C-x><C-p>
+    inoremap <silent> b b<Esc>a<C-x><C-p>
+    inoremap <silent> c c<Esc>a<C-x><C-p>
+    inoremap <silent> d d<Esc>a<C-x><C-p>
+    inoremap <silent> e e<Esc>a<C-x><C-p>
+    inoremap <silent> f f<Esc>a<C-x><C-p>
+    inoremap <silent> g g<Esc>a<C-x><C-p>
+    inoremap <silent> h h<Esc>a<C-x><C-p>
+    inoremap <silent> i i<Esc>a<C-x><C-p>
+    inoremap <silent> j j<Esc>a<C-x><C-p>
+    inoremap <silent> k k<Esc>a<C-x><C-p>
+    inoremap <silent> l l<Esc>a<C-x><C-p>
+    inoremap <silent> m m<Esc>a<C-x><C-p>
+    inoremap <silent> n n<Esc>a<C-x><C-p>
+    inoremap <silent> o o<Esc>a<C-x><C-p>
+    inoremap <silent> p p<Esc>a<C-x><C-p>
+    inoremap <silent> q q<Esc>a<C-x><C-p>
+    inoremap <silent> r r<Esc>a<C-x><C-p>
+    inoremap <silent> s s<Esc>a<C-x><C-p>
+    inoremap <silent> t t<Esc>a<C-x><C-p>
+    inoremap <silent> u u<Esc>a<C-x><C-p>
+    inoremap <silent> v v<Esc>a<C-x><C-p>
+    inoremap <silent> w w<Esc>a<C-x><C-p>
+    inoremap <silent> x x<Esc>a<C-x><C-p>
+    inoremap <silent> y y<Esc>a<C-x><C-p>
+    inoremap <silent> z z<Esc>a<C-x><C-p>
+    inoremap <silent> A A<Esc>a<C-x><C-p>
+    inoremap <silent> B B<Esc>a<C-x><C-p>
+    inoremap <silent> C C<Esc>a<C-x><C-p>
+    inoremap <silent> D D<Esc>a<C-x><C-p>
+    inoremap <silent> E E<Esc>a<C-x><C-p>
+    inoremap <silent> F F<Esc>a<C-x><C-p>
+    inoremap <silent> G G<Esc>a<C-x><C-p>
+    inoremap <silent> H H<Esc>a<C-x><C-p>
+    inoremap <silent> I I<Esc>a<C-x><C-p>
+    inoremap <silent> J J<Esc>a<C-x><C-p>
+    inoremap <silent> K K<Esc>a<C-x><C-p>
+    inoremap <silent> L L<Esc>a<C-x><C-p>
+    inoremap <silent> M M<Esc>a<C-x><C-p>
+    inoremap <silent> N N<Esc>a<C-x><C-p>
+    inoremap <silent> O O<Esc>a<C-x><C-p>
+    inoremap <silent> P P<Esc>a<C-x><C-p>
+    inoremap <silent> Q Q<Esc>a<C-x><C-p>
+    inoremap <silent> R R<Esc>a<C-x><C-p>
+    inoremap <silent> S S<Esc>a<C-x><C-p>
+    inoremap <silent> T T<Esc>a<C-x><C-p>
+    inoremap <silent> U U<Esc>a<C-x><C-p>
+    inoremap <silent> V V<Esc>a<C-x><C-p>
+    inoremap <silent> W W<Esc>a<C-x><C-p>
+    inoremap <silent> X X<Esc>a<C-x><C-p>
+    inoremap <silent> Y Y<Esc>a<C-x><C-p>
+    inoremap <silent> Z Z<Esc>a<C-x><C-p>
+  else 
     let g:autocomp=0
     inoremap <silent> a a
     inoremap <silent> b b
@@ -656,8 +656,4 @@ function! ToggleAutoComplete()
     inoremap <silent> Y Y
     inoremap <silent> Z Z
   endif
-endfunction
-
-function! AutoComplete()
-  call feedkeys("a\<C-x>\<C-n>")
 endfunction
