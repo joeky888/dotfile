@@ -87,7 +87,6 @@ endif
 set nowrap
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
-highlight Normal guifg=white guibg=black
 syntax on
 set backspace=2
 inoremap <C-BS> <C-W>
@@ -176,6 +175,8 @@ hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 " Highlight pop-up window color
 hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
+" Background color
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NONE
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
