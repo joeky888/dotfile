@@ -18,6 +18,7 @@ Install from ppa
 Install CJK font
 =====
 1. Using winetricks
+    * $ export WINEARCH=win32
     * $ wget https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
     * $ sh winetricks wenquanyi
     * $ wine regedit ~/dotfile/Linux/cjk.reg
