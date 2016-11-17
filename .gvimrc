@@ -176,7 +176,8 @@ hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
 " Background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NONE
-
+" Highlight matched when searching
+hi Search cterm=NONE ctermfg=grey ctermbg=blue guibg=yellow guifg=black
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
 autocmd FileType javascript         let b:comment_leader = '\/\/'
