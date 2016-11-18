@@ -808,7 +808,7 @@ inoremap <C-h> <C-w>
 nnoremap <C-h> i<C-w>
 cnoremap <C-h> <C-w>
 inoremap <C-BS> <C-W>
-nnoremap <C-BS> i<C-W>
+nnoremap <C-BS> db
 cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W>
 nnoremap <C-_> i<C-W>
