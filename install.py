@@ -40,7 +40,6 @@ def windows():
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/Windows/.minttyrc ~/.minttyrc")
     commands.append("cp ~/dotfile/.vimrc ~/.vimrc")
-    commands.append("cp ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("rm -rf /usr/share/fonts/win-fonts")
     commands.append("mkdir /usr/share/fonts/win-fonts")
     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
@@ -59,7 +58,6 @@ def linux():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
-    commands.append("ln -sf ~/dotfile/.gvimrc ~/.gvimrc")
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
     commands.append("mkdir -p ~/.config/openbox")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
@@ -97,7 +95,6 @@ def bsd():
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
-    commands.append("ln -sf ~/dotfile/.gvimrc ~/.gvimrc")
 
 def container():
     commands.append("apt-get update")
