@@ -15,7 +15,7 @@ set incsearch " Search as typing
 set hlsearch " Highlight search results
 set cursorline " Highligt the cursor line
 set showmatch " When a bracket is inserted, briefly jump to the matching one
-set matchtime=3 " ... during this time
+set matchtime=1 " ... during this time
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
 set history=100 " Keep 100 undo
 set wildmenu " Better command-line completion
@@ -27,7 +27,7 @@ set hidden " Hide the buffer instead of closing when switching
 set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
-set updatetime=1000
+set updatetime=750
 " set smartcase " ... but smart
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8
@@ -40,7 +40,7 @@ execute ":silent tab all"
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
-set timeoutlen=1000
+set timeoutlen=200
 au InsertEnter * set timeout
 au InsertLeave * set notimeout
 
@@ -540,7 +540,7 @@ set shortmess+=c
 let autocomp=0
 inoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>a
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
-nnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
+nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
 
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
@@ -685,11 +685,11 @@ if has("gui_running")
     set scrolloff& " unset scroll values
     set sidescrolloff&
     inoremap <silent> <C-c> <ESC><S-v>"+yi
-    nnoremap <silent> <C-c> <ESC><S-v>"+yi
+    nnoremap <silent> <C-c>      <S-v>"+yi
     vnoremap <silent> <C-c> "+yi
     vnoremap <silent> <C-x> "+xi
     inoremap <silent> <C-v> <ESC>:call paste#Paste()<CR>i
-    nnoremap <silent> <C-v> <ESC>:call paste#Paste()<CR>i
+    nnoremap <silent> <C-v>      :call paste#Paste()<CR>i
     vnoremap <silent> <C-v> dh"+pi
     cnoremap <C-c> <C-y>
     cnoremap <C-v> <C-r>+
@@ -699,35 +699,35 @@ if has("gui_running")
     cnoremap <C-k> <C-e><C-u>
     cnoremap <C-f> <C-e><C-u>
     inoremap <silent> <C-d> <ESC>yypA
-    nnoremap <silent> <C-d> <ESC>yypA
+    nnoremap <silent> <C-d>      yypA
     vnoremap <silent> <C-d> <ESC>yypA
     inoremap <silent> <C-z> <ESC>ua
-    nnoremap <silent> <C-z> <ESC>ua
+    nnoremap <silent> <C-z>      ua
     vnoremap <silent> <C-z> <ESC>ua
     inoremap <silent> <S-Insert> <ESC>:call paste#Paste()<CR>i
-    nnoremap <silent> <S-Insert> <ESC>:call paste#Paste()<CR>i
+    nnoremap <silent> <S-Insert>      :call paste#Paste()<CR>i
     vnoremap <silent> <S-Insert> dh"+pi
-    nnoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
+    nnoremap <silent> <C-b>      :browse confirm saveas<CR>
     vnoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
     inoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
     inoremap <silent> <C-g> <ESC>ggVG<CR>
     vnoremap <silent> <C-g> <ESC>ggVG<CR>
-    nnoremap <silent> <C-g> <ESC>ggVG<CR>
+    nnoremap <silent> <C-g>      ggVG<CR>
     inoremap <silent> <F2> <ESC>:tabnew<CR>
-    nnoremap <silent> <F2> <ESC>:tabnew<CR>
+    nnoremap <silent> <F2>      :tabnew<CR>
     vnoremap <silent> <F2> <ESC>:tabnew<CR>
     inoremap <silent> <C-t> <ESC>:tabnew<CR>
-    nnoremap <silent> <C-t> <ESC>:tabnew<CR>
+    nnoremap <silent> <C-t>      :tabnew<CR>
     vnoremap <silent> <C-t> <ESC>:tabnew<CR>
     inoremap <silent> <F3> <ESC>:tabp<CR>
-    nnoremap <silent> <F3> <ESC>:tabp<CR>
+    nnoremap <silent> <F3>      :tabp<CR>
     vnoremap <silent> <F3> <ESC>:tabp<CR>
     inoremap <silent> <F4> <ESC>:tabn<CR>
-    nnoremap <silent> <F4> <ESC>:tabn<CR>
+    nnoremap <silent> <F4>      :tabn<CR>
     vnoremap <silent> <F4> <ESC>:tabn<CR>
     vnoremap <silent> <BS> d
     inoremap <silent> <C-o> <ESC>:browse confirm e<CR>
-    nnoremap <silent> <C-o> <ESC>:browse confirm e<CR>
+    nnoremap <silent> <C-o>      :browse confirm e<CR>
     vnoremap <silent> <C-o> <ESC>:browse confirm e<CR>
     cnoremap <C-a> <Home>
     cnoremap <C-e> <End>
@@ -740,7 +740,7 @@ if has("gui_running")
     vnoremap <Space> di<Space>
     vnoremap <C-BS> d
     inoremap <C-Del> <ESC>ldwi
-    nnoremap <C-Del> <ESC>dwi
+    nnoremap <C-Del> dwi
     vnoremap a dia
     vnoremap b dib
     vnoremap c dic
@@ -821,7 +821,7 @@ function! ForceFoldmethodIndent()
     endif
 endfunction
 
-nnoremap <silent> - <ESC>:normal zi<CR>:call ForceFoldmethodIndent()<CR>
+nnoremap <silent> - :normal zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Highlight selected color
 hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
@@ -888,20 +888,20 @@ if !exists("*ReloadConfigs")
   endfunction
 endif
 
-nnoremap <C-\> <ESC>:call ToggleComment()<CR>i
+nnoremap <C-\>      :call ToggleComment()<CR>i
 inoremap <C-\> <ESC>:call ToggleComment()<CR>i
 vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 
-noremenu Edit.Encoding.UTF8      <ESC>:e ++enc=utf-8<CR>
-noremenu Edit.Encoding.UCS\ Bom  <ESC>:e ++enc=ucs-bom<CR>
-noremenu Edit.Encoding.Big5      <ESC>:e ++enc=big5<CR>
-noremenu Edit.Encoding.GBK       <ESC>:e ++enc=gbk<CR>
-noremenu Edit.Encoding.Japan     <ESC>:e ++enc=japan<CR>
-noremenu Edit.Encoding.Korea     <ESC>:e ++enc=korea<CR>
-noremenu Edit.Encoding.UTF16     <ESC>:e ++enc=utf-16<CR>
-noremenu Edit.Encoding.UTF16LE   <ESC>:e ++enc=utf-16le<CR>
-noremenu Edit.Encoding.UTF16BE   <ESC>:e ++enc=utf-16be<CR>
-noremenu Edit.Encoding.ANSI      <ESC>:e ++enc=ansi<CR>
+noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
+noremenu Edit.Encoding.UCS\ Bom  :e ++enc=ucs-bom<CR>
+noremenu Edit.Encoding.Big5      :e ++enc=big5<CR>
+noremenu Edit.Encoding.GBK       :e ++enc=gbk<CR>
+noremenu Edit.Encoding.Japan     :e ++enc=japan<CR>
+noremenu Edit.Encoding.Korea     :e ++enc=korea<CR>
+noremenu Edit.Encoding.UTF16     :e ++enc=utf-16<CR>
+noremenu Edit.Encoding.UTF16LE   :e ++enc=utf-16le<CR>
+noremenu Edit.Encoding.UTF16BE   :e ++enc=utf-16be<CR>
+noremenu Edit.Encoding.ANSI      :e ++enc=ansi<CR>
 
 command! JsonPretty  execute "%!python -m json.tool"
 command! PrettyJson  execute "%!python -m json.tool"
