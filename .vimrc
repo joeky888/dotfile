@@ -167,7 +167,11 @@ function! MySave()
     endif
   catch /:E32:/
     if (confirm("This buffer has no file to be saved in! Wanna choose it?", "&Yes\n&No", 2)==1)
-      call feedkeys("\<ESC>:w ")
+      if has("gui_running")
+        call feedkeys("\<ESC>:browse confirm saveas\<CR>")
+      else
+        call feedkeys("\<ESC>:w ")
+      endif
     else
       exe notSaved
     endif
@@ -239,7 +243,7 @@ call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
-call CreateShortcut("C-s", ":call MySave()<CR>i<Right>", "i", "noTrailingIInInsert")
+call CreateShortcut("C-s", ":call MySave()<CR>a", "i", "noTrailingIInInsert")
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
