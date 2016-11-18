@@ -804,8 +804,9 @@ if has("gui_running")
     vnoremap 9 di9
 endif
 
-noremap! <C-BS> <C-w>
-noremap! <C-h> <C-w>
+inoremap <C-h> <C-w>
+nnoremap <C-h> i<C-w>
+cnoremap <C-h> <C-w>
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> i<C-W>
 cnoremap <C-BS> <C-w>
