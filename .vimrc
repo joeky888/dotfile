@@ -335,7 +335,11 @@ call CreateShortcut("f4","mzggg?G`z", "inv")
 call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 
 " Ctrl O - Netrw (:Explore)
-"call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+if has("gui_running")
+    call CreateShortcut("C-o",":browse confirm e<CR>", "inv")
+else
+    call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+endif
 let g:netrw_banner=0 " Hide banner
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
@@ -688,63 +692,63 @@ if has("gui_running")
     set guicursor=a:blinkon0
     set scrolloff& " unset scroll values
     set sidescrolloff&
-    inoremap <silent> <C-c> <ESC><S-v>"+yi
-    nnoremap <silent> <C-c>      <S-v>"+yi
-    vnoremap <silent> <C-c> "+yi
-    vnoremap <silent> <C-x> "+xi
-    inoremap <silent> <C-v> <ESC>:call paste#Paste()<CR>i
-    nnoremap <silent> <C-v>      :call paste#Paste()<CR>i
-    vnoremap <silent> <C-v> dh"+pi
+
+    " Ctrl C is copying line if there is no word seleted
+    call CreateShortcut("C-c", "<S-v>\"+y", "in")
+    call CreateShortcut("C-c", "\"+y", "v")
     cnoremap <C-c> <C-y>
-    cnoremap <C-v> <C-r>+
+
+    " Ctrl X is cutting line if there is no word seleted
+    call CreateShortcut("C-x", "<S-v>\"+x", "in")
+    call CreateShortcut("C-x", "\"+x", "v")
     cnoremap <C-x> <C-y><C-e><C-u>
+
+    " Ctrl v is paste / override selected then paste
+    call CreateShortcut("C-v", ":call paste#Paste()<CR>", "in")
+    call CreateShortcut("C-v", "dh\"+p", "v")
+    cnoremap <C-v> <C-r>+
     cnoremap <S-Insert> <C-r>+
+
+    " Useful command mode mapping
     cnoremap <C-w> <C-c>
     cnoremap <C-k> <C-e><C-u>
-    cnoremap <C-f> <C-e><C-u>
-    inoremap <silent> <C-d> <ESC>yypA
-    nnoremap <silent> <C-d>      yypA
-    vnoremap <silent> <C-d> <ESC>yypA
-    inoremap <silent> <C-z> <ESC>ua
-    nnoremap <silent> <C-z>      ua
-    vnoremap <silent> <C-z> <ESC>ua
-    inoremap <silent> <S-Insert> <ESC>:call paste#Paste()<CR>i
-    nnoremap <silent> <S-Insert>      :call paste#Paste()<CR>i
-    vnoremap <silent> <S-Insert> dh"+pi
-    nnoremap <silent> <C-b>      :browse confirm saveas<CR>
-    vnoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
-    inoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
-    inoremap <silent> <C-g> <ESC>ggVG<CR>
-    vnoremap <silent> <C-g> <ESC>ggVG<CR>
-    nnoremap <silent> <C-g>      ggVG<CR>
-    inoremap <silent> <F2> <ESC>:tabnew<CR>
-    nnoremap <silent> <F2>      :tabnew<CR>
-    vnoremap <silent> <F2> <ESC>:tabnew<CR>
-    inoremap <silent> <C-t> <ESC>:tabnew<CR>
-    nnoremap <silent> <C-t>      :tabnew<CR>
-    vnoremap <silent> <C-t> <ESC>:tabnew<CR>
-    inoremap <silent> <F3> <ESC>:tabp<CR>
-    nnoremap <silent> <F3>      :tabp<CR>
-    vnoremap <silent> <F3> <ESC>:tabp<CR>
-    inoremap <silent> <F4> <ESC>:tabn<CR>
-    nnoremap <silent> <F4>      :tabn<CR>
-    vnoremap <silent> <F4> <ESC>:tabn<CR>
-    vnoremap <silent> <BS> d
-    inoremap <silent> <C-o> <ESC>:browse confirm e<CR>
-    nnoremap <silent> <C-o>      :browse confirm e<CR>
-    vnoremap <silent> <C-o> <ESC>:browse confirm e<CR>
+    cnoremap <C-f> <C-e><C-u>\c
+    cnoremap <C-r> <C-e><C-u>noh<CR>:%s/\c
     cnoremap <C-a> <Home>
     cnoremap <C-e> <End>
+
+    " Ctrl d is copying line
+    call CreateShortcut("C-d", "yyp", "in")
+
+    " Ctrl g is selecting all
+    call CreateShortcut("C-g", "ggVG", "inv")
+
+    " Byobu key binding
+    call CreateShortcut("F2", ":tabnew<CR>", "inv")
+    call CreateShortcut("C-t", ":tabnew<CR>", "inv")
+    call CreateShortcut("F3", ":tabp<CR>", "inv")
+    call CreateShortcut("F4", ":tabn<CR>", "inv")
+
+    " Ctrl \ is toggling comments
+    call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
+    vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
+
+    " Meta LeftMouse is block selecting
     noremap  <M-LeftMouse> <4-LeftMouse>
     inoremap <M-LeftMouse> <4-LeftMouse>
     onoremap <M-LeftMouse> <C-C><4-LeftMouse>
     noremap  <M-LeftDrag>  <LeftDrag>
     inoremap <M-LeftDrag>  <LeftDrag>
     onoremap <M-LeftDrag>  <C-C><LeftDrag>
-    vnoremap <Space> di<Space>
-    vnoremap <C-BS> d
-    inoremap <C-Del> <ESC>ldwi
-    nnoremap <C-Del> dwi
+
+
+    " Deleting words and Entering insert mode
+    call CreateShortcut("CR", "di<CR>", "v")
+    call CreateShortcut("BS", "d", "v")
+    call CreateShortcut("Space", "di<Space>", "v")
+    call CreateShortcut("C-BS", "d", "v")
+    call CreateShortcut("C-Del", "ldw", "i")
+    call CreateShortcut("C-Del", "dw", "n")
     vnoremap a dia
     vnoremap b dib
     vnoremap c dic
@@ -900,10 +904,6 @@ if !exists("*ReloadConfigs")
       endif
   endfunction
 endif
-
-nnoremap <C-\>      :call ToggleComment()<CR>i
-inoremap <C-\> <ESC>:call ToggleComment()<CR>i
-vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
 
 noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
 noremenu Edit.Encoding.UCS\ Bom  :e ++enc=ucs-bom<CR>
