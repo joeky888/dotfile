@@ -807,7 +807,8 @@ endif
 inoremap <C-h> <C-w>
 nnoremap <C-h> db
 cnoremap <C-h> <C-w>
-inoremap <C-BS> <C-W>
+" inoremap <C-BS> <C-W>
+inoremap <C-BS> <C-\><C-o>db
 nnoremap <C-BS> db
 cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W>
