@@ -805,7 +805,7 @@ if has("gui_running")
 endif
 
 inoremap <C-h> <C-w>
-nnoremap <C-h> i<C-w>
+nnoremap <C-h> db
 cnoremap <C-h> <C-w>
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> db
