@@ -28,18 +28,17 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set updatetime=1000
-set ignorecase " Search insensitive
-set smartcase " ... but smart
+" set smartcase " ... but smart
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
-set encoding=utf-8  " The encoding displayed.
-set fileencodings=utf-8,ucs-bom,big5,shift-jis,gbk,cp950,cp936,utf-16le,default,latin1  " The encoding written to file.
-set synmaxcol=1000 " Don't try to highlight long lines
+set encoding=utf-8
+set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,default,latin1
+set synmaxcol=2000 " Don't try to highlight long lines
 set guioptions-=T " Don't show toolbar in Gvim
-set iskeyword+=\- " Complete words containing a dash
+" set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
 
-""" Prevent lag when hitting escape
+""" Prevent lag when hitting ESC
 set ttimeoutlen=0
 set timeoutlen=1000
 au InsertEnter * set timeout
@@ -86,15 +85,15 @@ let &backupdir = myBackupDir
 set writebackup
 
 """ Smart Paste
-let &t_ti .= "\<Esc>[?2004h"
-let &t_te .= "\<Esc>[?2004l"
+let &t_ti .= "\<ESC>[?2004h"
+let &t_te .= "\<ESC>[?2004l"
 function! XTermPasteBegin(ret)
   set pastetoggle=<f29>
   set paste
   return a:ret
 endfunction
-execute "set <f28>=\<Esc>[200~"
-execute "set <f29>=\<Esc>[201~"
+execute "set <f28>=\<ESC>[200~"
+execute "set <f29>=\<ESC>[201~"
 map <expr> <f28> XTermPasteBegin("i")
 imap <expr> <f28> XTermPasteBegin("")
 vmap <expr> <f28> XTermPasteBegin("c")
@@ -109,7 +108,7 @@ function! CreateShortcut(keys, cmd, where, ...)
   let keys = "<" . a:keys . ">"
   if a:where =~ "i"
     let i = (index(a:000,"noTrailingIInInsert") > -1) ? "" : "i"
-    let e = (index(a:000,"noLeadingEscInInsert") > -1) ? "" : "<esc>"
+    let e = (index(a:000,"noLeadingESCInInsert") > -1) ? "" : "<ESC>"
     execute "imap " . keys . " " . e .  a:cmd . i
   endif
   if a:where =~ "n"
@@ -168,7 +167,7 @@ function! MySave()
     endif
   catch /:E32:/
     if (confirm("This buffer has no file to be saved in! Wanna choose it?", "&Yes\n&No", 2)==1)
-      call feedkeys("\<Esc>:w ")
+      call feedkeys("\<ESC>:w ")
     else
       exe notSaved
     endif
@@ -270,10 +269,10 @@ call CreateShortcut("C-Right", "w", "nv")
 call CreateShortcut("C-Left", "b", "nv")
 
 " Ctrl F - Find
-call CreateShortcut("C-f", "/", "in", "noTrailingIInInsert")
+call CreateShortcut("C-f", ":noh<CR>/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl H - Search and Replace
-call CreateShortcut("C-h", ":%s/", "in", "noTrailingIInInsert")
+call CreateShortcut("C-h", ":noh<CR>:%s/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl G - Search and Replace on the line only
 call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
@@ -307,7 +306,7 @@ call CreateShortcut("C-z", "u", "ni")
 call CreateShortcut("C-r", "<C-r>", "in")
 
 " Ctrl D - Suppr (the key)
-call CreateShortcut("C-d", "<del>", "iv", "noLeadingEscInInsert", "noTrailingIInInsert")
+call CreateShortcut("C-d", "<del>", "iv", "noLeadingESCInInsert", "noTrailingIInInsert")
 call CreateShortcut("C-d", "x", "n")
 
 " Ctrl T - New tab
@@ -318,9 +317,6 @@ call CreateShortcut("A-Right", "gt", "inv")
 
 " Alt Left - Previous tab
 call CreateShortcut("A-Left", "gT", "inv")
-
-" Paste
-" call CreateShortcut("C-S-v",":call paste#Paste()<CR>","in")
 
 " F2 - Paste toggle
 call CreateShortcut("f2",":call MyPasteToggle()<CR>", "n")
@@ -542,65 +538,65 @@ set complete-=w,b,u,t,i
 set shortmess+=c
 
 let autocomp=0
-inoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>a
-vnoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
-nnoremap <silent> <F10> <Esc>:call ToggleAutoComplete()<CR>
+inoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>a
+vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
+nnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
 
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
-    inoremap <silent> a a<Esc>a<C-x><C-p>
-    inoremap <silent> b b<Esc>a<C-x><C-p>
-    inoremap <silent> c c<Esc>a<C-x><C-p>
-    inoremap <silent> d d<Esc>a<C-x><C-p>
-    inoremap <silent> e e<Esc>a<C-x><C-p>
-    inoremap <silent> f f<Esc>a<C-x><C-p>
-    inoremap <silent> g g<Esc>a<C-x><C-p>
-    inoremap <silent> h h<Esc>a<C-x><C-p>
-    inoremap <silent> i i<Esc>a<C-x><C-p>
-    inoremap <silent> j j<Esc>a<C-x><C-p>
-    inoremap <silent> k k<Esc>a<C-x><C-p>
-    inoremap <silent> l l<Esc>a<C-x><C-p>
-    inoremap <silent> m m<Esc>a<C-x><C-p>
-    inoremap <silent> n n<Esc>a<C-x><C-p>
-    inoremap <silent> o o<Esc>a<C-x><C-p>
-    inoremap <silent> p p<Esc>a<C-x><C-p>
-    inoremap <silent> q q<Esc>a<C-x><C-p>
-    inoremap <silent> r r<Esc>a<C-x><C-p>
-    inoremap <silent> s s<Esc>a<C-x><C-p>
-    inoremap <silent> t t<Esc>a<C-x><C-p>
-    inoremap <silent> u u<Esc>a<C-x><C-p>
-    inoremap <silent> v v<Esc>a<C-x><C-p>
-    inoremap <silent> w w<Esc>a<C-x><C-p>
-    inoremap <silent> x x<Esc>a<C-x><C-p>
-    inoremap <silent> y y<Esc>a<C-x><C-p>
-    inoremap <silent> z z<Esc>a<C-x><C-p>
-    inoremap <silent> A A<Esc>a<C-x><C-p>
-    inoremap <silent> B B<Esc>a<C-x><C-p>
-    inoremap <silent> C C<Esc>a<C-x><C-p>
-    inoremap <silent> D D<Esc>a<C-x><C-p>
-    inoremap <silent> E E<Esc>a<C-x><C-p>
-    inoremap <silent> F F<Esc>a<C-x><C-p>
-    inoremap <silent> G G<Esc>a<C-x><C-p>
-    inoremap <silent> H H<Esc>a<C-x><C-p>
-    inoremap <silent> I I<Esc>a<C-x><C-p>
-    inoremap <silent> J J<Esc>a<C-x><C-p>
-    inoremap <silent> K K<Esc>a<C-x><C-p>
-    inoremap <silent> L L<Esc>a<C-x><C-p>
-    inoremap <silent> M M<Esc>a<C-x><C-p>
-    inoremap <silent> N N<Esc>a<C-x><C-p>
-    inoremap <silent> O O<Esc>a<C-x><C-p>
-    inoremap <silent> P P<Esc>a<C-x><C-p>
-    inoremap <silent> Q Q<Esc>a<C-x><C-p>
-    inoremap <silent> R R<Esc>a<C-x><C-p>
-    inoremap <silent> S S<Esc>a<C-x><C-p>
-    inoremap <silent> T T<Esc>a<C-x><C-p>
-    inoremap <silent> U U<Esc>a<C-x><C-p>
-    inoremap <silent> V V<Esc>a<C-x><C-p>
-    inoremap <silent> W W<Esc>a<C-x><C-p>
-    inoremap <silent> X X<Esc>a<C-x><C-p>
-    inoremap <silent> Y Y<Esc>a<C-x><C-p>
-    inoremap <silent> Z Z<Esc>a<C-x><C-p>
+    inoremap <silent> a a<ESC>a<C-x><C-p>
+    inoremap <silent> b b<ESC>a<C-x><C-p>
+    inoremap <silent> c c<ESC>a<C-x><C-p>
+    inoremap <silent> d d<ESC>a<C-x><C-p>
+    inoremap <silent> e e<ESC>a<C-x><C-p>
+    inoremap <silent> f f<ESC>a<C-x><C-p>
+    inoremap <silent> g g<ESC>a<C-x><C-p>
+    inoremap <silent> h h<ESC>a<C-x><C-p>
+    inoremap <silent> i i<ESC>a<C-x><C-p>
+    inoremap <silent> j j<ESC>a<C-x><C-p>
+    inoremap <silent> k k<ESC>a<C-x><C-p>
+    inoremap <silent> l l<ESC>a<C-x><C-p>
+    inoremap <silent> m m<ESC>a<C-x><C-p>
+    inoremap <silent> n n<ESC>a<C-x><C-p>
+    inoremap <silent> o o<ESC>a<C-x><C-p>
+    inoremap <silent> p p<ESC>a<C-x><C-p>
+    inoremap <silent> q q<ESC>a<C-x><C-p>
+    inoremap <silent> r r<ESC>a<C-x><C-p>
+    inoremap <silent> s s<ESC>a<C-x><C-p>
+    inoremap <silent> t t<ESC>a<C-x><C-p>
+    inoremap <silent> u u<ESC>a<C-x><C-p>
+    inoremap <silent> v v<ESC>a<C-x><C-p>
+    inoremap <silent> w w<ESC>a<C-x><C-p>
+    inoremap <silent> x x<ESC>a<C-x><C-p>
+    inoremap <silent> y y<ESC>a<C-x><C-p>
+    inoremap <silent> z z<ESC>a<C-x><C-p>
+    inoremap <silent> A A<ESC>a<C-x><C-p>
+    inoremap <silent> B B<ESC>a<C-x><C-p>
+    inoremap <silent> C C<ESC>a<C-x><C-p>
+    inoremap <silent> D D<ESC>a<C-x><C-p>
+    inoremap <silent> E E<ESC>a<C-x><C-p>
+    inoremap <silent> F F<ESC>a<C-x><C-p>
+    inoremap <silent> G G<ESC>a<C-x><C-p>
+    inoremap <silent> H H<ESC>a<C-x><C-p>
+    inoremap <silent> I I<ESC>a<C-x><C-p>
+    inoremap <silent> J J<ESC>a<C-x><C-p>
+    inoremap <silent> K K<ESC>a<C-x><C-p>
+    inoremap <silent> L L<ESC>a<C-x><C-p>
+    inoremap <silent> M M<ESC>a<C-x><C-p>
+    inoremap <silent> N N<ESC>a<C-x><C-p>
+    inoremap <silent> O O<ESC>a<C-x><C-p>
+    inoremap <silent> P P<ESC>a<C-x><C-p>
+    inoremap <silent> Q Q<ESC>a<C-x><C-p>
+    inoremap <silent> R R<ESC>a<C-x><C-p>
+    inoremap <silent> S S<ESC>a<C-x><C-p>
+    inoremap <silent> T T<ESC>a<C-x><C-p>
+    inoremap <silent> U U<ESC>a<C-x><C-p>
+    inoremap <silent> V V<ESC>a<C-x><C-p>
+    inoremap <silent> W W<ESC>a<C-x><C-p>
+    inoremap <silent> X X<ESC>a<C-x><C-p>
+    inoremap <silent> Y Y<ESC>a<C-x><C-p>
+    inoremap <silent> Z Z<ESC>a<C-x><C-p>
   else 
     let g:autocomp=0
     inoremap <silent> a a
@@ -657,3 +653,266 @@ function! ToggleAutoComplete()
     inoremap <silent> Z Z
   endif
 endfunction
+
+set noerrorbells "disable error sound
+set vb t_vb= "disable visualbell
+" set ignorecase " Search insensitive
+set smartcase& " No smart
+set autoindent " auto indent
+set nowrap
+set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
+set iskeyword& " '-' should not be one of the keywords
+" set backspace=2
+
+if has("gui_running")
+    if has('gui_win32')
+        set backup
+        set backupskip=%TMP%
+        set undodir=%TMP%
+        set directory=%TMP%
+        set backupdir=%TMP%
+        set guifont=Ubuntu\ Mono:h14
+        set guifontwide=DroidMono:h13
+    else
+        set guifont=Ubuntu\ Mono\ 14
+    endif
+    set number
+    set lines=999 columns=999 " set window Maximized
+    set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
+    set selection=exclusive " Don't select char under cursor
+    set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
+    set guicursor=a:blinkon0
+    set scrolloff& " unset scroll values
+    set sidescrolloff&
+    inoremap <silent> <C-c> <ESC><S-v>"+yi
+    nnoremap <silent> <C-c> <ESC><S-v>"+yi
+    vnoremap <silent> <C-c> "+yi
+    vnoremap <silent> <C-x> "+xi
+    inoremap <silent> <C-v> <ESC>:call paste#Paste()<CR>i
+    nnoremap <silent> <C-v> <ESC>:call paste#Paste()<CR>i
+    vnoremap <silent> <C-v> dh"+pi
+    cnoremap <C-c> <C-y>
+    cnoremap <C-v> <C-r>+
+    cnoremap <C-x> <C-y><C-e><C-u>
+    cnoremap <S-Insert> <C-r>+
+    cnoremap <C-w> <C-c>
+    cnoremap <C-k> <C-e><C-u>
+    cnoremap <C-f> <C-e><C-u>
+    inoremap <silent> <C-d> <ESC>yypA
+    nnoremap <silent> <C-d> <ESC>yypA
+    vnoremap <silent> <C-d> <ESC>yypA
+    inoremap <silent> <C-z> <ESC>ua
+    nnoremap <silent> <C-z> <ESC>ua
+    vnoremap <silent> <C-z> <ESC>ua
+    inoremap <silent> <S-Insert> <ESC>:call paste#Paste()<CR>i
+    nnoremap <silent> <S-Insert> <ESC>:call paste#Paste()<CR>i
+    vnoremap <silent> <S-Insert> dh"+pi
+    nnoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
+    vnoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
+    inoremap <silent> <C-b> <ESC>:browse confirm saveas<CR>
+    inoremap <silent> <C-g> <ESC>ggVG<CR>
+    vnoremap <silent> <C-g> <ESC>ggVG<CR>
+    nnoremap <silent> <C-g> <ESC>ggVG<CR>
+    inoremap <silent> <F2> <ESC>:tabnew<CR>
+    nnoremap <silent> <F2> <ESC>:tabnew<CR>
+    vnoremap <silent> <F2> <ESC>:tabnew<CR>
+    inoremap <silent> <C-t> <ESC>:tabnew<CR>
+    nnoremap <silent> <C-t> <ESC>:tabnew<CR>
+    vnoremap <silent> <C-t> <ESC>:tabnew<CR>
+    inoremap <silent> <F3> <ESC>:tabp<CR>
+    nnoremap <silent> <F3> <ESC>:tabp<CR>
+    vnoremap <silent> <F3> <ESC>:tabp<CR>
+    inoremap <silent> <F4> <ESC>:tabn<CR>
+    nnoremap <silent> <F4> <ESC>:tabn<CR>
+    vnoremap <silent> <F4> <ESC>:tabn<CR>
+    vnoremap <silent> <BS> d
+    inoremap <silent> <C-o> <ESC>:browse confirm e<CR>
+    nnoremap <silent> <C-o> <ESC>:browse confirm e<CR>
+    vnoremap <silent> <C-o> <ESC>:browse confirm e<CR>
+    cnoremap <C-a> <Home>
+    cnoremap <C-e> <End>
+    noremap  <M-LeftMouse> <4-LeftMouse>
+    inoremap <M-LeftMouse> <4-LeftMouse>
+    onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+    noremap  <M-LeftDrag>  <LeftDrag>
+    inoremap <M-LeftDrag>  <LeftDrag>
+    onoremap <M-LeftDrag>  <C-C><LeftDrag>
+    vnoremap <Space> di<Space>
+    vnoremap <C-BS> d
+    inoremap <C-Del> <ESC>ldwi
+    nnoremap <C-Del> <ESC>dwi
+    vnoremap a dia
+    vnoremap b dib
+    vnoremap c dic
+    vnoremap d did
+    vnoremap e die
+    vnoremap f dif
+    vnoremap g dig
+    vnoremap h dih
+    vnoremap i dii
+    vnoremap j dij
+    vnoremap k dik
+    vnoremap l dil
+    vnoremap m dim
+    vnoremap n din
+    vnoremap o dio
+    vnoremap p dip
+    vnoremap q diq
+    vnoremap r dir
+    vnoremap s dis
+    vnoremap t dit
+    vnoremap u diu
+    vnoremap v div
+    vnoremap w diw
+    vnoremap x dix
+    vnoremap y diy
+    vnoremap z diz
+    vnoremap A diA
+    vnoremap B diB
+    vnoremap C diC
+    vnoremap D diD
+    vnoremap E diE
+    vnoremap F diF
+    vnoremap G diG
+    vnoremap H diH
+    vnoremap I diI
+    vnoremap J diJ
+    vnoremap K diK
+    vnoremap L diL
+    vnoremap M diM
+    vnoremap N diN
+    vnoremap O diO
+    vnoremap P diP
+    vnoremap Q diQ
+    vnoremap R diR
+    vnoremap S diS
+    vnoremap T diT
+    vnoremap U diU
+    vnoremap V diV
+    vnoremap W diW
+    vnoremap X diX
+    vnoremap Y diY
+    vnoremap Z diZ
+    vnoremap 1 di1
+    vnoremap 2 di2
+    vnoremap 3 di3
+    vnoremap 4 di4
+    vnoremap 5 di5
+    vnoremap 6 di6
+    vnoremap 7 di7
+    vnoremap 8 di8
+    vnoremap 9 di9
+endif
+
+inoremap <C-BS> <C-W>
+nnoremap <C-BS> i<C-W>
+cnoremap <C-BS> <C-w>
+inoremap <C-_> <C-W>
+nnoremap <C-_> i<C-W>
+cnoremap <C-_> <C-w>
+vnoremap <bar> <S-i>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
+
+function! ForceFoldmethodIndent()
+    if &foldenable
+        set foldmethod=indent
+    endif
+endfunction
+
+nnoremap <silent> - <ESC>:normal zi<CR>:call ForceFoldmethodIndent()<CR>
+
+" Highlight selected color
+hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
+" Highlight pop-up window color
+hi Pmenu guifg=#00afff guibg=White
+hi PmenuSel guifg=White guibg=#00afff
+" Background color
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NONE
+hi Search cterm=NONE ctermfg=grey ctermbg=blue guibg=yellow guifg=black
+hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
+" Commenting blocks of code.
+autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
+autocmd FileType javascript         let b:comment_leader = '\/\/'
+autocmd FileType arduino,registry   let b:comment_leader = '\/\/'
+autocmd FileType sh,ruby,python     let b:comment_leader = '#'
+autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
+autocmd FileType make,Cmake         let b:comment_leader = '#'
+autocmd FileType desktop            let b:comment_leader = '#'
+autocmd FileType matlab,tex         let b:comment_leader = '%'
+autocmd FileType vim                let b:comment_leader = '"'
+
+function! ToggleComment()
+  if exists('b:comment_leader')
+    if getline('.') =~ '^' .b:comment_leader
+      " uncomment the line
+      execute 'silent s/^' .b:comment_leader.' //g'
+    elseif getline('.') =~ '^\s*$'
+      " empty lines
+    else
+      " comment the line
+      execute 'silent s/^/' .b:comment_leader.' /g'
+    endif
+  else
+    echo 'No comment leader found for filetype'
+  end
+endfunction
+
+function! ToggleComments()
+  let [lnum1, col1] = getpos("'<")[1:2]
+  let [lnum2, col2] = getpos("'>")[1:2]
+  for i in range(lnum1, lnum2)
+      if exists('b:comment_leader')
+        if getline(i) =~ '^' .b:comment_leader
+          " uncomment the line
+          execute 'silent '.i.'s/^' .b:comment_leader.' //g'
+        elseif getline(i) =~ '^\s*$'
+          " empty lines
+        else
+          " comment the line
+          execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
+        endif
+      else
+        echo 'No comment leader found for filetype'
+      end
+  endfor
+endfunction
+
+if !exists("*ReloadConfigs")
+  function ReloadConfigs()
+      :source $MYVIMRC
+      if has("gui_running")
+          :source $MYGVIMRC
+      endif
+  endfunction
+endif
+
+nnoremap <C-\> <ESC>:call ToggleComment()<CR>i
+inoremap <C-\> <ESC>:call ToggleComment()<CR>i
+vnoremap <C-\> <ESC>:call ToggleComments()<CR>i
+
+noremenu Edit.Encoding.UTF8      <ESC>:e ++enc=utf-8<CR>
+noremenu Edit.Encoding.UCS\ Bom  <ESC>:e ++enc=ucs-bom<CR>
+noremenu Edit.Encoding.Big5      <ESC>:e ++enc=big5<CR>
+noremenu Edit.Encoding.GBK       <ESC>:e ++enc=gbk<CR>
+noremenu Edit.Encoding.Japan     <ESC>:e ++enc=japan<CR>
+noremenu Edit.Encoding.Korea     <ESC>:e ++enc=korea<CR>
+noremenu Edit.Encoding.UTF16     <ESC>:e ++enc=utf-16<CR>
+noremenu Edit.Encoding.UTF16LE   <ESC>:e ++enc=utf-16le<CR>
+noremenu Edit.Encoding.UTF16BE   <ESC>:e ++enc=utf-16be<CR>
+noremenu Edit.Encoding.ANSI      <ESC>:e ++enc=ansi<CR>
+
+command! JsonPretty  execute "%!python -m json.tool"
+command! PrettyJson  execute "%!python -m json.tool"
+command! ReloadVimrc call ReloadConfigs()
+command! EncodingUTF8    execute "e ++enc=utf-8"
+command! EncodingUcsBom  execute "e ++enc=ucs-bom"
+command! EncodingBig5    execute "e ++enc=big5"
+command! EncodingGBK     execute "e ++enc=gbk"
+command! EncodingJapan   execute "e ++enc=japan"
+command! EncodingKorea   execute "e ++enc=korea"
+command! EncodingUTF16   execute "e ++enc=utf-16"
+command! EncodingUTF16LE execute "e ++enc=utf-16le"
+command! EncodingUTF16BE execute "e ++enc=utf-16be"
+command! EncodingAnsi    execute "e ++enc=ansi"
