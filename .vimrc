@@ -840,38 +840,17 @@ hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NON
 hi Search cterm=NONE ctermfg=grey ctermbg=blue guibg=yellow guifg=black
 hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
 " Commenting blocks of code.
-autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
-autocmd FileType c,cpp,java         let b:comment_ender = ''
-
-autocmd FileType javascript         let b:comment_leader = '\/\/'
-autocmd FileType javascript         let b:comment_ender = ''
-
-autocmd FileType arduino,registry   let b:comment_leader = '\/\/'
-autocmd FileType arduino,registry   let b:comment_ender = ''
-
-autocmd FileType sh,ruby,python     let b:comment_leader = '#'
-autocmd FileType sh,ruby,python     let b:comment_ender = ''
-
-autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
-autocmd FileType conf,fstab,zsh     let b:comment_ender = ''
-
-autocmd FileType make,Cmake         let b:comment_leader = '#'
-autocmd FileType make,Cmake         let b:comment_ender = ''
-
-autocmd FileType desktop            let b:comment_leader = '#'
-autocmd FileType desktop            let b:comment_ender = ''
-
-autocmd FileType matlab,tex         let b:comment_leader = '%'
-autocmd FileType matlab,tex         let b:comment_ender = ''
-
-autocmd FileType vim                let b:comment_leader = '"'
-autocmd FileType vim                let b:comment_ender = ''
-
-autocmd FileType css                let b:comment_leader = '\/\*'
-autocmd FileType css                let b:comment_ender = '\*\/'
-
-autocmd FileType html,xml           let b:comment_leader = '<!--'
-autocmd FileType html,xml           let b:comment_ender = '-->'
+autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
+autocmd FileType javascript         let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
+autocmd FileType arduino,registry   let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
+autocmd FileType sh,ruby,python     let b:comment_leader = '#'      |   let b:comment_ender = ''
+autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'      |   let b:comment_ender = ''
+autocmd FileType make,Cmake         let b:comment_leader = '#'      |   let b:comment_ender = ''
+autocmd FileType desktop            let b:comment_leader = '#'      |   let b:comment_ender = ''
+autocmd FileType matlab,tex         let b:comment_leader = '%'      |   let b:comment_ender = ''
+autocmd FileType vim                let b:comment_leader = '"'      |   let b:comment_ender = ''
+autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
+autocmd FileType html,xml           let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
 function! ToggleComment()
   if exists('b:comment_leader')
