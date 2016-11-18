@@ -109,10 +109,10 @@ function! CreateShortcut(keys, cmd, where, ...)
   if a:where =~ "i"
     let i = (index(a:000,"noTrailingIInInsert") > -1) ? "" : "i"
     let e = (index(a:000,"noLeadingESCInInsert") > -1) ? "" : "<ESC>"
-    execute "imap " . keys . " " . e .  a:cmd . i
+    execute "inoremap " . keys . " " . e .  a:cmd . i
   endif
   if a:where =~ "n"
-    execute "nmap " . keys . " " . a:cmd
+    execute "nnoremap " . keys . " " . a:cmd
   endif
   if a:where =~ "v"
     let k = (index(a:000,"restoreSelectionAfter") > -1) ? "gv" : ""
@@ -120,7 +120,7 @@ function! CreateShortcut(keys, cmd, where, ...)
     if index(a:000,"cmdInVisual") > -1
       let c = ":<C-u>" . strpart(a:cmd,1)
     endif
-    execute "vmap " . keys . " " . c . k
+    execute "vnoremap " . keys . " " . c . k
   endif
 endfunction
 function! TabIsEmpty()
@@ -271,8 +271,8 @@ call CreateShortcut("C-Left", "b", "nv")
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>/\\c", "in", "noTrailingIInInsert")
 
-" Ctrl H - Search and Replace
-call CreateShortcut("C-h", ":noh<CR>:%s/\\c", "in", "noTrailingIInInsert")
+" Ctrl R - Search and Replace
+call CreateShortcut("C-r", ":noh<CR>:%s/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl G - Search and Replace on the line only
 call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
@@ -303,7 +303,7 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 call CreateShortcut("C-z", "u", "ni")
 
 " Ctrl R - Redo
-call CreateShortcut("C-r", "<C-r>", "in")
+call CreateShortcut("C-y", "<C-r>", "in")
 
 " Ctrl D - Suppr (the key)
 call CreateShortcut("C-d", "<del>", "iv", "noLeadingESCInInsert", "noTrailingIInInsert")
@@ -804,6 +804,8 @@ if has("gui_running")
     vnoremap 9 di9
 endif
 
+noremap! <C-BS> <C-w>
+noremap! <C-h> <C-w>
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> i<C-W>
 cnoremap <C-BS> <C-w>
