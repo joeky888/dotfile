@@ -667,7 +667,6 @@ set noerrorbells "disable error sound
 set vb t_vb= "disable visualbell
 " set ignorecase " Search insensitive
 set smartcase& " No smart
-set autoindent " auto indent
 set nowrap
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
@@ -686,6 +685,7 @@ if has("gui_running")
         set guifont=Ubuntu\ Mono\ 14
     endif
     set number
+    set autoindent " auto indent
     set lines=999 columns=999 " set window Maximized
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
     set selection=exclusive " Don't select char under cursor
