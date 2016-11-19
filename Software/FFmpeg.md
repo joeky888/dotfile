@@ -80,6 +80,13 @@ Copy encoding if convert coding is not available
 * Subtitle
 * $ ffmpeg -i input.mkv -c:s copy output.mkv
 
+Attached font file to .mkv
+=====
+* Suppose there is a file input.mkv with a video track, an audio track and a subtitle track
+* Stream 0 of the file is video, stream 1 is audio, stream 2 is subtitle
+* So the font file should be attacked to stream 3, and the flag is -metadata:s:3
+* $ ffmpeg -i input.mkv -attach DejaVuSans.ttf -metadata:s:3 mimetype=application/x-truetype-font out.mkv
+
 Remove all audio tracks
 =====
 * $ ffmpeg -i input -an ouput
