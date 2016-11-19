@@ -29,6 +29,7 @@ set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set updatetime=750
 " set smartcase " ... but smart
+set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,default,latin1
@@ -273,10 +274,10 @@ call CreateShortcut("C-Right", "w", "nv")
 call CreateShortcut("C-Left", "b", "nv")
 
 " Ctrl F - Find
-call CreateShortcut("C-f", ":noh<CR>/\\c", "in", "noTrailingIInInsert")
+call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl R - Search and Replace
-call CreateShortcut("C-r", ":noh<CR>:%s/\\c", "in", "noTrailingIInInsert")
+call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl G - Search and Replace on the line only
 call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
@@ -815,6 +816,12 @@ endif
 inoremap <C-h> <C-w>
 nnoremap <C-h> db
 cnoremap <C-h> <C-w>
+""" Case insensitive when leaving command mode
+" cnoremap <CR> \|set ignorecase<CR> 
+nnoremap : :set ignorecase<CR>:
+nnoremap / :set ignorecase<CR>/
+cnoremap silent! <CR> <CR>:set ignorecase<CR>
+cnoremap silent! <ESC> <ESC>:set ignorecase<CR>
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> db
 cnoremap <C-BS> <C-w>
