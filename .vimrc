@@ -816,12 +816,9 @@ endif
 inoremap <C-h> <C-w>
 nnoremap <C-h> db
 cnoremap <C-h> <C-w>
-""" Case insensitive when leaving command mode
-" cnoremap <CR> \|set ignorecase<CR> 
+""" Case insensitive when entering command mode
 nnoremap : :set ignorecase<CR>:
 nnoremap / :set ignorecase<CR>/
-cnoremap silent! <CR> <CR>:set ignorecase<CR>
-cnoremap silent! <ESC> <ESC>:set ignorecase<CR>
 inoremap <C-BS> <C-W>
 nnoremap <C-BS> db
 cnoremap <C-BS> <C-w>
