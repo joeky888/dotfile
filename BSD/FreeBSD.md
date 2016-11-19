@@ -16,7 +16,7 @@ Search and Install ports packages
 * $ make install clean
 * $ chsh -s zsh root
 * For sudoers
-* $ sudo -E make install clean # -E means preserve env variables
+* $ sudo -E make install clean # -E means preserving env variables
 
 Uninstall paorts packages
 =====
