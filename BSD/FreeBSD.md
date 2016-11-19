@@ -13,6 +13,7 @@ Search and Install ports packages
 * $ cd /usr/ports/shells/zsh
 * $ export BATCH=yes
 * $ make install clean
+* $ chsh -s zsh root
 
 Uninstall paorts packages
 =====
