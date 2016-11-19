@@ -109,10 +109,10 @@ function! CreateShortcut(keys, cmd, where, ...)
   if a:where =~ "i"
     let i = (index(a:000,"noTrailingIInInsert") > -1) ? "" : "i"
     let e = (index(a:000,"noLeadingESCInInsert") > -1) ? "" : "<ESC>"
-    execute "inoremap " . keys . " " . e .  a:cmd . i
+    execute "inoremap <silent> " . keys . " " . e .  a:cmd . i
   endif
   if a:where =~ "n"
-    execute "nnoremap " . keys . " " . a:cmd
+    execute "nnoremap <silent> " . keys . " " . a:cmd
   endif
   if a:where =~ "v"
     let k = (index(a:000,"restoreSelectionAfter") > -1) ? "gv" : ""
@@ -120,7 +120,7 @@ function! CreateShortcut(keys, cmd, where, ...)
     if index(a:000,"cmdInVisual") > -1
       let c = ":<C-u>" . strpart(a:cmd,1)
     endif
-    execute "vnoremap " . keys . " " . c . k
+    execute "vnoremap <silent> " . keys . " " . c . k
   endif
 endfunction
 function! TabIsEmpty()
@@ -689,7 +689,7 @@ if has("gui_running")
     set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
     set selection=exclusive " Don't select char under cursor
     set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
-    set guicursor=a:blinkon0
+    set guicursor=a:blinkon0 " disable cursor flashing
     set scrolloff& " unset scroll values
     set sidescrolloff&
 
@@ -705,9 +705,8 @@ if has("gui_running")
 
     " Ctrl v is paste / override selected then paste
     call CreateShortcut("C-v", ":call paste#Paste()<CR>", "in")
-    call CreateShortcut("C-v", "dh\"+p", "v")
+    call CreateShortcut("C-v", "dh\"+p<Right>", "v")
     cnoremap <C-v> <C-r>+
-    cnoremap <S-Insert> <C-r>+
 
     " Useful command mode mapping
     cnoremap <C-w> <C-c>
@@ -832,6 +831,7 @@ function! ForceFoldmethodIndent()
     endif
 endfunction
 
+" minus key is folding/unfolding code in normal mode
 nnoremap <silent> - :normal zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Highlight selected color
