@@ -850,15 +850,15 @@ hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NON
 hi Search cterm=NONE ctermfg=grey ctermbg=blue guibg=yellow guifg=black
 hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
 " Commenting blocks of code.
-autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
-autocmd FileType javascript         let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
-autocmd FileType arduino,registry   let b:comment_leader = '\/\/'   |   let b:comment_ender = ''
-autocmd FileType sh,ruby,python     let b:comment_leader = '#'      |   let b:comment_ender = ''
-autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'      |   let b:comment_ender = ''
-autocmd FileType make,Cmake         let b:comment_leader = '#'      |   let b:comment_ender = ''
-autocmd FileType desktop            let b:comment_leader = '#'      |   let b:comment_ender = ''
-autocmd FileType matlab,tex         let b:comment_leader = '%'      |   let b:comment_ender = ''
-autocmd FileType vim                let b:comment_leader = '"'      |   let b:comment_ender = ''
+autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
+autocmd FileType javascript         let b:comment_leader = '\/\/'
+autocmd FileType arduino,registry   let b:comment_leader = '\/\/'
+autocmd FileType sh,ruby,python     let b:comment_leader = '#'
+autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
+autocmd FileType make,Cmake         let b:comment_leader = '#'
+autocmd FileType desktop            let b:comment_leader = '#'
+autocmd FileType matlab,tex         let b:comment_leader = '%'
+autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
 autocmd FileType html,xml           let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
@@ -867,13 +867,17 @@ function! ToggleComment()
     if getline('.') =~ '^' .b:comment_leader
       " uncomment the line
       execute 'silent s/^' .b:comment_leader.' //g'
-      execute 'silent s/ ' .b:comment_ender.'$//g'
+      if exists('b:comment_ender')
+        execute 'silent s/ ' .b:comment_ender.'$//g'
+      endif
     elseif getline('.') =~ '^\s*$'
       " empty lines
     else
       " comment the line
       execute 'silent s/^/' .b:comment_leader.' /g'
-      execute 'silent s/$/ ' .b:comment_ender.'/g'
+      if exists('b:comment_ender')
+        execute 'silent s/$/ ' .b:comment_ender.'/g'
+      endif
     endif
   else
     echo 'No comment leader found for filetype'
@@ -888,13 +892,17 @@ function! ToggleComments()
         if getline(i) =~ '^' .b:comment_leader
           " uncomment the line
           execute 'silent '.i.'s/^' .b:comment_leader.' //g'
-          execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
+          if exists('b:comment_ender')
+            execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
+          endif
         elseif getline(i) =~ '^\s*$'
           " empty lines
         else
           " comment the line
           execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
-          execute 'silent '.i.'s/$/\ ' .b:comment_ender.'/g'
+          if exists('b:comment_ender')
+            execute 'silent '.i.'s/$/\ ' .b:comment_ender.'/g'
+          endif
         endif
       else
         echo 'No comment leader found for filetype'
