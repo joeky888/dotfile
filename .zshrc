@@ -54,6 +54,7 @@ forever()
 {
     if [ "$#" == 0 ]; then
         echo "Usage: forever \"[commands]\""
+        echo "ex: forever \"ls -a\""
         echo "Run commands forever!"
     else
         while true; do eval $* ; done
