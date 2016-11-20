@@ -689,10 +689,9 @@ if has("gui_running")
     set number
     set autoindent " auto indent
     set lines=999 columns=999 " set window Maximized
-    set guicursor=n-v-c-ci-i:ver25-Cursor/lCursor
+    set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
     set selection=exclusive " Don't select char under cursor
     set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
-    set guicursor=a:blinkon0 " disable cursor flashing
     set scrolloff& " unset scroll values
     set sidescrolloff&
 
