@@ -3,7 +3,6 @@
 " Details on : https://github.com/sd65/MiniVim
 let g:UseCustomKeyBindings = get(g:, 'UseCustomKeyBindings', "1")
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
 """ General options
 syntax enable " Enable syntax highlights
 set ttyfast " Faster refraw
@@ -35,6 +34,7 @@ set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,default,latin1
 set synmaxcol=2000 " Don't try to highlight long lines
 set guioptions-=T " Don't show toolbar in Gvim
+au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
@@ -832,9 +832,9 @@ inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
 
 function! ForceFoldmethodIndent()
-    if &foldenable
-        set foldmethod=indent
-    endif
+  if &foldenable
+    set foldmethod=indent
+  endif
 endfunction
 
 " minus key is folding/unfolding code in normal mode
@@ -883,41 +883,41 @@ function! ToggleComment()
     endif
   else
     echo 'No comment leader found for filetype'
-  end
+  endif
 endfunction
 
 function! ToggleComments()
   let [lnum1, col1] = getpos("'<")[1:2]
   let [lnum2, col2] = getpos("'>")[1:2]
   for i in range(lnum1, lnum2)
-      if exists('b:comment_leader')
-        if getline(i) =~ '^' .b:comment_leader
-          " uncomment the line
-          execute 'silent '.i.'s/^' .b:comment_leader.' //g'
-          if exists('b:comment_ender')
-            execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
-          endif
-        elseif getline(i) =~ '^\s*$'
-          " empty lines
-        else
-          " comment the line
-          execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
-          if exists('b:comment_ender')
-            execute 'silent '.i.'s/$/\ ' .b:comment_ender.'/g'
-          endif
+    if exists('b:comment_leader')
+      if getline(i) =~ '^' .b:comment_leader
+        " uncomment the line
+        execute 'silent '.i.'s/^' .b:comment_leader.' //g'
+        if exists('b:comment_ender')
+          execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
         endif
+      elseif getline(i) =~ '^\s*$'
+        " empty lines
       else
-        echo 'No comment leader found for filetype'
-      end
+        " comment the line
+        execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
+        if exists('b:comment_ender')
+          execute 'silent '.i.'s/$/\ ' .b:comment_ender.'/g'
+        endif
+      endif
+    else
+      echo 'No comment leader found for filetype'
+    endif
   endfor
 endfunction
 
 if !exists("*ReloadConfigs")
   function ReloadConfigs()
-      :source $MYVIMRC
-      if has("gui_running")
-          :source $MYGVIMRC
-      endif
+    :source $MYVIMRC
+    if has("gui_running")
+      :source $MYGVIMRC
+    endif
   endfunction
 endif
 
