@@ -674,6 +674,11 @@ set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
 " set backspace=2
 
+function! SomeTime()
+  let [lnum1, col1] = getpos("'<")[1:2]
+"   just waste some time bro!
+endfunction
+
 if has("gui_running")
     if has('gui_win32')
         set backup
@@ -708,7 +713,7 @@ if has("gui_running")
     " Ctrl v is paste / override selected then paste
     call CreateShortcut("C-v", ":call paste#Paste()<CR>", "i")
     call CreateShortcut("C-v", "\"+gP", "n")
-    call CreateShortcut("C-v", "dh\"+p<Right>", "v")
+    call CreateShortcut("C-v", "d:call SomeTime()<CR>\"+gP", "v")
     cnoremap <C-v> <C-r>+
 
     " Useful command mode mapping
