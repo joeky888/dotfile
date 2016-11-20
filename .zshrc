@@ -53,9 +53,9 @@ alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc 
 forever()
 {
     if [ "$#" == 0 ]; then
-        echo "Usage: forever [commands]"
+        echo "Usage: forever \"[commands]\""
         echo "Run commands forever!"
     else
-        while true; do $* ; done
+        while true; do eval $* ; done
     fi
 }
