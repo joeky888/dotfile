@@ -449,7 +449,7 @@ hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
-hi LineNr ctermfg=102 ctermbg=237 cterm=NONE guifg=#90908a guibg=#3c3d37 gui=NONE
+hi LineNr ctermfg=102 ctermbg=237 cterm=NONE guifg=#465457 guibg=#232526 gui=NONE
 hi VertSplit ctermfg=241 ctermbg=241 cterm=NONE guifg=#64645e guibg=#64645e gui=NONE
 hi MatchParen ctermfg=197 ctermbg=NONE cterm=underline guifg=#f92672 guibg=NONE gui=underline
 hi StatusLine ctermfg=231 ctermbg=241 cterm=bold guifg=#f8f8f2 guibg=#64645e gui=bold
@@ -675,7 +675,7 @@ set iskeyword& " '-' should not be one of the keywords
 " set backspace=2
 
 function! SomeTime()
-  let [lnum1, col1] = getpos("'<")[1:2]
+"   let [lnum1, col1] = getpos("'<")[1:2]
 "   just waste some time bro!
 endfunction
 
@@ -851,7 +851,7 @@ hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
 hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
 " Background color
-hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NONE
+hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
 hi Search cterm=NONE ctermfg=yellow ctermbg=NONE guibg=yellow guifg=black
 hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
 " Commenting blocks of code.
