@@ -1,7 +1,6 @@
 Initialize ports tree (Do this for the first time)
 =====
-* $ portsnap fetch
-* $ portsnap extract
+* $ portsnap fetch extract
 
 Update ports tree
 =====
