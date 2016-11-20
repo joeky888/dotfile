@@ -847,7 +847,7 @@ hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
 " Background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#f8f8f2 guibg=#1B1D1E gui=NONE
-hi Search cterm=NONE ctermfg=grey ctermbg=blue guibg=yellow guifg=black
+hi Search cterm=NONE ctermfg=235 ctermbg=yellow guibg=yellow guifg=black
 hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
