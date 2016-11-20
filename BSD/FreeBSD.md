@@ -26,6 +26,7 @@ Uninstall paorts packages
 
 Upgrade all ports packages
 =====
+* $ portsnap fetch update
 * $ portupgrade -a
 
 Add user to sudoer
