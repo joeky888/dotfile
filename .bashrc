@@ -15,14 +15,16 @@ fi
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 has_fbterm=$(command -v fbterm)
+has_tmux=$(command -v tmux)
 
-if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
-    cd ~
-    # Check if fbterm installed
-    if [[ $has_fbterm ]] ; then
-        SHELL=tmux fbterm
-    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
-        exec tmux
+if [[ $has_tmux ]] ; then
+    if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
+        cd ~
+        # Check if fbterm installed
+        if [[ $has_fbterm ]] ; then
+            SHELL=tmux fbterm
+        elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
+            exec tmux
+        fi
     fi
 fi
-
