@@ -853,7 +853,9 @@ hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=unde
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
 autocmd FileType javascript         let b:comment_leader = '\/\/'
-autocmd FileType arduino,registry   let b:comment_leader = '\/\/'
+autocmd FileType arduino            let b:comment_leader = '\/\/'
+autocmd FileType registry           let b:comment_leader = ';'
+autocmd FileType dosbatch           let b:comment_leader = 'REM'
 autocmd FileType sh,ruby,python     let b:comment_leader = '#'
 autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
 autocmd FileType make,Cmake         let b:comment_leader = '#'
