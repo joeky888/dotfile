@@ -34,14 +34,13 @@ set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,default,latin1
 set synmaxcol=2000 " Don't try to highlight long lines
 set guioptions-=T " Don't show toolbar in Gvim
-au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
-set timeoutlen=200
+set timeoutlen=1000
 au InsertEnter * set timeout
 au InsertLeave * set notimeout
 
@@ -200,17 +199,17 @@ function! OpenLastBufferInNewTab()
       endif
     endfor
 endfunction
-function! ToggleColorColumn()
-    if &colorcolumn != 0
-        windo let &colorcolumn = 0
-    else
-        windo let &colorcolumn = 80
-    endif
-endfunction
-function! MyPasteToggle()
-  set invpaste
-  echo "Paste" (&paste) ? "On" : "Off"
-endfunction
+" function! ToggleColorColumn()
+"     if &colorcolumn != 0
+"         windo let &colorcolumn = 0
+"     else
+"         windo let &colorcolumn = 80
+"     endif
+" endfunction
+" function! MyPasteToggle()
+"   set invpaste
+"   echo "Paste" (&paste) ? "On" : "Off"
+" endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
     Explore
@@ -324,16 +323,16 @@ call CreateShortcut("A-Right", "gt", "inv")
 call CreateShortcut("A-Left", "gT", "inv")
 
 " F2 - Paste toggle
-call CreateShortcut("f2",":call MyPasteToggle()<CR>", "n")
+" call CreateShortcut("f2",":call MyPasteToggle()<CR>", "n")
 
 " F3 - Line numbers toggle
-call CreateShortcut("f3",":set nonumber!<CR>", "in")
+" call CreateShortcut("f3",":set nonumber!<CR>", "in")
 
 " F4 - Panic Button
-call CreateShortcut("f4","mzggg?G`z", "inv")
+" call CreateShortcut("f4","mzggg?G`z", "inv")
 
 " F6 - Toggle color column at 80th char
-call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
+" call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 
 " Ctrl O - Netrw (:Explore)
 if has("gui_running")
@@ -926,6 +925,10 @@ if !exists("*ReloadConfigs")
     endif
   endfunction
 endif
+
+" Indent by filetype
+au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
+au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
 noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
 noremenu Edit.Encoding.UCS\ Bom  :e ++enc=ucs-bom<CR>
