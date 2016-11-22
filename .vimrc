@@ -931,6 +931,15 @@ endif
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
+" Line ending format
+command! LineEndingUnix   execute "set fileformat=unix"
+command! LineEndingDos    execute "set fileformat=dos"
+command! LineEndingMac    execute "set fileformat=mac"
+noremenu Edit.Line\ ending.Unix  :set fileformat=unix<CR>
+noremenu Edit.Line\ ending.Dos   :set fileformat=dos<CR>
+noremenu Edit.Line\ ending.Mac   :set fileformat=mac<CR>
+
+" Encoding
 noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
 noremenu Edit.Encoding.UCS\ Bom  :e ++enc=ucs-bom<CR>
 noremenu Edit.Encoding.Big5      :e ++enc=big5<CR>
@@ -941,7 +950,6 @@ noremenu Edit.Encoding.UTF16     :e ++enc=utf-16<CR>
 noremenu Edit.Encoding.UTF16LE   :e ++enc=utf-16le<CR>
 noremenu Edit.Encoding.UTF16BE   :e ++enc=utf-16be<CR>
 noremenu Edit.Encoding.ANSI      :e ++enc=ansi<CR>
-
 command! JsonPretty  execute "%!python -m json.tool"
 command! PrettyJson  execute "%!python -m json.tool"
 command! ReloadVimrc call ReloadConfigs()
