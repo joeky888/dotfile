@@ -720,8 +720,8 @@ if has("gui_running")
     " Useful command mode mapping
     cnoremap <C-w> <C-c>
     cnoremap <C-k> <C-e><C-u>
-    cnoremap <C-f> <C-e><C-u>\c
-    cnoremap <C-r> <C-e><C-u>noh<CR>:%s/\c
+    cnoremap <C-f> <ESC>:noh<CR>/\c
+    cnoremap <C-r> <ESC>:noh<CR>:%s/\c
     cnoremap <C-a> <Home>
     cnoremap <C-e> <End>
 
