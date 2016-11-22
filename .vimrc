@@ -918,18 +918,23 @@ function! ToggleComments()
   endfor
 endfunction
 
-if !exists("*ReloadConfigs")
-  function ReloadConfigs()
-    :source $MYVIMRC
-    if has("gui_running")
-      :source $MYGVIMRC
-    endif
-  endfunction
-endif
+" if !exists("*ReloadConfigs")
+"   function ReloadConfigs()
+"     :source $MYVIMRC
+"     if has("gui_running")
+"       :source $MYGVIMRC
+"     endif
+"   endfunction
+" endif
 
 " Indent by filetype
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
+
+" Json pretty only
+au FileType json,javascript noremenu Edit.Json.Pretty  :%!python -m json.tool<CR>
+au FileType json,javascript command! JsonPretty  execute "%!python -m json.tool"
+au FileType json,javascript command! PrettyJson  execute "%!python -m json.tool"
 
 " Line ending format
 command! LineEndingUnix   execute "set fileformat=unix"
@@ -950,9 +955,8 @@ noremenu Edit.Encoding.UTF16     :e ++enc=utf-16<CR>
 noremenu Edit.Encoding.UTF16LE   :e ++enc=utf-16le<CR>
 noremenu Edit.Encoding.UTF16BE   :e ++enc=utf-16be<CR>
 noremenu Edit.Encoding.ANSI      :e ++enc=ansi<CR>
-command! JsonPretty  execute "%!python -m json.tool"
-command! PrettyJson  execute "%!python -m json.tool"
-command! ReloadVimrc call ReloadConfigs()
+
+" command! ReloadVimrc call ReloadConfigs()
 command! EncodingUTF8    execute "e ++enc=utf-8"
 command! EncodingUcsBom  execute "e ++enc=ucs-bom"
 command! EncodingBig5    execute "e ++enc=big5"
