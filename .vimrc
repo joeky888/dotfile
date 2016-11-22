@@ -931,10 +931,15 @@ endfunction
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
-" Json pretty only
+" Json pretty by python
 au FileType json,javascript noremenu Edit.Json.Pretty  :%!python -m json.tool<CR>
 au FileType json,javascript command! JsonPretty  execute "%!python -m json.tool"
 au FileType json,javascript command! PrettyJson  execute "%!python -m json.tool"
+
+" XML pretty by vim
+au FileType xml noremenu Edit.XML.Pretty  :set filetype=xml<CR>:filetype indent on<CR>gg=G<CR>
+au FileType xml command! XmlPretty  execute "set filetype=xml" | execute "filetype indent on" | execute "normal! gg=G"
+au FileType xml command! PrettyXml  execute "set filetype=xml" | execute "filetype indent on" | execute "normal! gg=G"
 
 " Line ending format
 command! LineEndingUnix   execute "set fileformat=unix"
