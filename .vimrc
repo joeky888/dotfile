@@ -868,7 +868,7 @@ autocmd FileType desktop            let b:comment_leader = '#'
 autocmd FileType matlab,tex         let b:comment_leader = '%'
 autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
-autocmd FileType html,xml           let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
+autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
 function! ToggleComment()
   if exists('b:comment_leader')
@@ -931,15 +931,55 @@ endfunction
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
+function! JsonBeautify()
+"   call JsonMinify()
+"   execute "%s/{\\s*\"/{\\r\"/e"
+"   execute "%s/\\[\\s*{/\\[\\r{/e"
+"   execute "%s/,/,\\r/e"
+"   execute "%s/\"\\s*}/\"\\r}/e"
+"   execute "%s/}\\s*\\]/}\\r\\]/e"
+"   execute "%left"
+"   execute "$s/}\\s*$/\\r}/e"
+"   execute "%s/\\s\\+$//e"
+"   normal! gg=G
+  execute "%!python -m json.tool"
+endfunction
+
+function! JsonMinify()
+  set filetype=json
+  filetype indent on
+  execute "%s/\\s\\+$//e"
+  execute "%left"
+  normal! ggVGJ
+endfunction
+
 " Json pretty by python
-au FileType json,javascript noremenu Edit.Json.Pretty  :%!python -m json.tool<CR>
-au FileType json,javascript command! JsonPretty  execute "%!python -m json.tool"
-au FileType json,javascript command! PrettyJson  execute "%!python -m json.tool"
+au FileType json,javascript noremenu Edit.Json.Beautify  :call JsonBeautify()<CR>
+au FileType json,javascript noremenu Edit.Json.Minify    :call JsonMinify()<CR>
+au FileType json,javascript command! JsonBeautify    execute "call JsonBeautify()"
+au FileType json,javascript command! JsonMinify      execute "call JsonMinify()"
 
 " XML pretty by vim
-au FileType xml noremenu Edit.XML.Pretty  :set filetype=xml<CR>:filetype indent on<CR>gg=G<CR>
-au FileType xml command! XmlPretty  execute "set filetype=xml" | execute "filetype indent on" | execute "normal! gg=G"
-au FileType xml command! PrettyXml  execute "set filetype=xml" | execute "filetype indent on" | execute "normal! gg=G"
+function! XmlBeautify()
+  call XmlMinify()
+  call XmlMinify()
+  execute "%s/></>\\r</e"
+  normal! gg=G
+endfunction
+
+function! XmlMinify()
+  set filetype=xml
+  filetype indent on
+  execute "%s/\\s\\+$//e"
+  normal! ggVGJ
+  execute "%s/>\\s\\+</></e"
+  execute "%s/\\n//e"
+endfunction
+
+au FileType xml noremenu Edit.XML.Beautify  :call XmlBeautify()<CR>
+au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
+au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
+au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
 " Line ending format
 command! LineEndingUnix   execute "set fileformat=unix"
