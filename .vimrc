@@ -720,14 +720,6 @@ if has("gui_running")
     call CreateShortcut("C-v", "d:call SomeTime()<CR>\"+gP", "v")
     cnoremap <C-v> <C-r>+
 
-    " Useful command mode mapping
-    cnoremap <C-w> <C-c>
-    cnoremap <C-k> <C-e><C-u>
-    cnoremap <C-f> <C-c>:noh<CR>/\c
-    cnoremap <C-r> <C-c>:noh<CR>:%s/\c
-    cnoremap <C-a> <Home>
-    cnoremap <C-e> <End>
-
     " Meta LeftMouse is block selecting
     noremap  <M-LeftMouse> <4-LeftMouse>
     inoremap <M-LeftMouse> <4-LeftMouse>
@@ -825,6 +817,14 @@ vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
 inoremap <C-h> <C-w>
 nnoremap <C-h> db
 cnoremap <C-h> <C-w>
+
+" Useful command mode mapping
+cnoremap <C-w> <C-c>
+cnoremap <C-k> <C-e><C-u>
+cnoremap <C-f> <C-c>:noh<CR>/\c
+cnoremap <C-r> <C-c>:noh<CR>:%s/\c
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
 
 """ Case insensitive when entering command mode
 nnoremap : :set ignorecase<CR>:
