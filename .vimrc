@@ -981,6 +981,36 @@ au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
 au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
 au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
+" Indent format
+function! IndentSpace(width)
+  set expandtab
+  execute "set tabstop=" . a:width
+  execute "set shiftwidth=" . a:width
+  execute "set softtabstop=" . a:width
+  retab
+endfunction
+
+function! IndentTab(width)
+  set noexpandtab
+  set softtabstop=0
+  execute "set tabstop=" . a:width
+  execute "set shiftwidth=" . a:width
+  retab
+endfunction
+
+command! IndentSpace2   execute "call IndentSpace(2)"
+command! IndentSpace4   execute "call IndentSpace(4)"
+command! IndentSpace8   execute "call IndentSpace(8)"
+command! IndentTab2     execute "call IndentTab(2)"
+command! IndentTab4     execute "call IndentTab(4)"
+command! IndentTab8     execute "call IndentTab(8)"
+noremenu Edit.Indent.Space\ 2   :call IndentSpace(2)<CR>
+noremenu Edit.Indent.Space\ 4   :call IndentSpace(4)<CR>
+noremenu Edit.Indent.Space\ 8   :call IndentSpace(8)<CR>
+noremenu Edit.Indent.Tab\ 2     :call IndentTab(2)<CR>
+noremenu Edit.Indent.Tab\ 4     :call IndentTab(4)<CR>
+noremenu Edit.Indent.Tab\ 8     :call IndentTab(8)<CR>
+
 " Line ending format
 command! LineEndingUnix   execute "set fileformat=unix"
 command! LineEndingDos    execute "set fileformat=dos"
