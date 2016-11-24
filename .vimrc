@@ -700,6 +700,9 @@ if has("gui_running")
     set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
     set scrolloff& " unset scroll values
     set sidescrolloff&
+    inoremap {<CR> {<CR>}<ESC>O
+    inoremap [<CR> [<CR>]<ESC>O
+    inoremap (<CR> (<CR>)<ESC>O
 
     " Ctrl C is copying line if there is no word seleted
     call CreateShortcut("C-c", "<S-v>\"+y", "in")
@@ -833,9 +836,6 @@ inoremap <C-_> <C-W>
 nnoremap <C-_> i<C-W>
 cnoremap <C-_> <C-w>
 vnoremap <bar> <S-i>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap [<CR> [<CR>]<ESC>O
-inoremap (<CR> (<CR>)<ESC>O
 
 function! ForceFoldmethodIndent()
   if &foldenable
