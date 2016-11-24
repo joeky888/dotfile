@@ -728,22 +728,6 @@ if has("gui_running")
     cnoremap <C-a> <Home>
     cnoremap <C-e> <End>
 
-    " Ctrl d is copying line
-    call CreateShortcut("C-d", "yyp", "in")
-
-    " Ctrl g is selecting all
-    call CreateShortcut("C-g", "ggVG", "inv")
-
-    " Byobu key binding
-    call CreateShortcut("F2", ":tabnew<CR>", "inv")
-    call CreateShortcut("C-t", ":tabnew<CR>", "inv")
-    call CreateShortcut("F3", ":tabp<CR>", "inv")
-    call CreateShortcut("F4", ":tabn<CR>", "inv")
-
-    " Ctrl \ is toggling comments
-    call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
-    vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
-
     " Meta LeftMouse is block selecting
     noremap  <M-LeftMouse> <4-LeftMouse>
     inoremap <M-LeftMouse> <4-LeftMouse>
@@ -751,7 +735,6 @@ if has("gui_running")
     noremap  <M-LeftDrag>  <LeftDrag>
     inoremap <M-LeftDrag>  <LeftDrag>
     onoremap <M-LeftDrag>  <C-C><LeftDrag>
-
 
     " Deleting words and Entering insert mode
     call CreateShortcut("CR", "di<CR>", "v")
@@ -823,9 +806,26 @@ if has("gui_running")
     vnoremap 9 di9
 endif
 
+" Byobu key binding
+call CreateShortcut("F2", ":tabnew<CR>", "inv")
+call CreateShortcut("C-t", ":tabnew<CR>", "inv")
+call CreateShortcut("F3", ":tabp<CR>", "inv")
+call CreateShortcut("F4", ":tabn<CR>", "inv")
+
+" Ctrl d is copying line
+call CreateShortcut("C-d", "yyp", "in")
+
+" Ctrl g is selecting all
+call CreateShortcut("C-g", "ggVG", "inv")
+
+" Ctrl \ is toggling comments
+call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
+vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
+
 inoremap <C-h> <C-w>
 nnoremap <C-h> db
 cnoremap <C-h> <C-w>
+
 """ Case insensitive when entering command mode
 nnoremap : :set ignorecase<CR>:
 nnoremap / :set ignorecase<CR>/
