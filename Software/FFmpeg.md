@@ -128,7 +128,7 @@ Compile ffmpeg on Cygwin
     * $ ffmpeg -i input -c:a libfdk_aac output
 * Install libh264
     * $ git clone --depth=1 git://git.videolan.org/x264.git
-    * $ ./configure --enable-static --enable-shared
+    * $ ./configure --enable-static
     * $ make -j 8 && make install
     * $ ffmpeg -i input -c:v libx264 output
 * Install libh265
