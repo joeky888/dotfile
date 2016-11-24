@@ -681,7 +681,7 @@ function! SomeTime()
 endfunction
 
 if has("gui_running")
-    if has('gui_win32')
+    if has('win32') || has('win64')
         set backup
         set backupskip=%TMP%
         set undodir=%TMP%
