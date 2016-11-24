@@ -918,30 +918,11 @@ function! ToggleComments()
   endfor
 endfunction
 
-" if !exists("*ReloadConfigs")
-"   function ReloadConfigs()
-"     :source $MYVIMRC
-"     if has("gui_running")
-"       :source $MYGVIMRC
-"     endif
-"   endfunction
-" endif
-
 " Indent by filetype
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
 function! JsonBeautify()
-"   call JsonMinify()
-"   execute "%s/{\\s*\"/{\\r\"/e"
-"   execute "%s/\\[\\s*{/\\[\\r{/e"
-"   execute "%s/,/,\\r/e"
-"   execute "%s/\"\\s*}/\"\\r}/e"
-"   execute "%s/}\\s*\\]/}\\r\\]/e"
-"   execute "%left"
-"   execute "$s/}\\s*$/\\r}/e"
-"   execute "%s/\\s\\+$//e"
-"   normal! gg=G
   execute "%!python -m json.tool"
 endfunction
 
