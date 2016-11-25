@@ -430,7 +430,7 @@ au CursorHold * let &ro = &ro
 """" Color Scheme
 
 "" Placed here for convenience.
-"" Copied from sickill Monokai on Github,
+"" Copied from sickill and tomasr Monokai on Github,
 "" and slightly modified.
 
 set background=dark
@@ -476,7 +476,6 @@ hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NO
 hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Label ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
 hi Debug ctermfg=225 cterm=NONE guifg=#BCA3A3 gui=NONE
-hi Delimiter ctermfg=241 guifg=#8F8F8F
 hi Exception ctermfg=118 cterm=NONE guifg=#A6E22E gui=NONE
 hi FoldColumn ctermfg=67  ctermbg=16 guifg=#465457 guibg=#000000
 hi Ignore ctermfg=244 ctermbg=232 guifg=#808080 guibg=bg
