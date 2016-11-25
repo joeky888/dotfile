@@ -22,7 +22,7 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    alias gvim='gvim -p --remote-tab-silent "$@"'
+#     alias gvim='gvim -p --remote-tab-silent "$@"'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
@@ -39,7 +39,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
-    alias gvim='gvim -p --remote-tab-silent "$@"'
+#     alias gvim='gvim -p --remote-tab-silent "$@"'
 else
     # Unknown.
 fi
@@ -50,6 +50,15 @@ alias proxyUnset='unset http_proxy && unset https_proxy && unset ftp_proxy'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
+
+gvim()
+{
+    if [[ $# -gt 0 ]]; then
+        gvim -p --remote-tab-silent "$@"
+    else
+        gvim
+    fi
+}
 
 forever()
 {
