@@ -214,16 +214,9 @@ endfunction
 " endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
-    Explore
+    execute has("gui_running") == 1 ? "browse confirm e" : "Explore"
   else
-    Texplore
-  endif
-endfunction
-function! OpenNetrwgui()
-  if TabIsEmpty() == 1
-    execute "browse confirm e"
-  else
-    execute "browse confirm tabe"
+    execute has("gui_running") == 1 ? "browse confirm tabe" : "Texplore"
   endif
 endfunction
 function! MenuNetrw()
@@ -344,11 +337,8 @@ call CreateShortcut("A-Left", "gT", "inv")
 " call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 
 " Ctrl O - Netrw (:Explore)
-if has("gui_running")
-    call CreateShortcut("C-o",":call OpenNetrwgui()<CR>", "inv")
-else
-    call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
-endif
+call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+
 let g:netrw_banner=0 " Hide banner
 let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
