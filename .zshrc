@@ -51,15 +51,18 @@ alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
 
-gv=$(which gvim)
-gvim()
-{
-    if [ "$#" == 0 ]; then
-        eval $gv
-    else
-        eval "$gv -p --remote-tab-silent '$@'"
-    fi
-}
+has_gvim=$(command -v gvim)
+if [[ $has_gvim ]]; then
+    gv=$(which gvim)
+    gvim()
+    {
+        if [ "$#" == 0 ]; then
+            eval $gv
+        else
+            eval "$gv -p --remote-tab-silent '$@'"
+        fi
+    }
+fi
 
 forever()
 {
