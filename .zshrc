@@ -39,6 +39,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
+    alias gvim='gvim -p --remote-tab-silent "$@" || gvim'
 else
     # Unknown.
 fi
