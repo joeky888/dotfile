@@ -53,10 +53,10 @@ alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc 
 
 gvim()
 {
-    if [[ $# -gt 0 ]]; then
-        gvim -p --remote-tab-silent "$@"
+    if [[ $# == 0 ]]; then
+        eval "gvim"
     else
-        gvim
+        eval "gvim -p --remote-tab-silent '$@'"
     fi
 }
 
