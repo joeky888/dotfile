@@ -440,7 +440,7 @@ set t_Co=256
 hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
 hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
 hi Cursor ctermfg=235 ctermbg=231 cterm=NONE guifg=#272822 guibg=#f8f8f0 gui=NONE
-hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
+" hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#49483e gui=NONE
 hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#293739 gui=NONE
 hi CursorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#293739 gui=NONE
 hi ColorColumn ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#293739 gui=NONE
@@ -842,13 +842,13 @@ endfunction
 nnoremap <silent> - :normal zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Highlight selected color
-hi Visual ctermfg=white ctermbg=39 gui=NONE guifg=#00afff guibg=White
+hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff gui=NONE
 " Highlight pop-up window color
-hi Pmenu guifg=#00afff guibg=White
-hi PmenuSel guifg=White guibg=#00afff
+hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
+hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 " Background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
-hi Search cterm=NONE ctermfg=yellow ctermbg=NONE guibg=yellow guifg=black
+hi Search ctermfg=yellow ctermbg=NONE cterm=NONE guibg=yellow guifg=black
 hi IncSearch ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=underline
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
