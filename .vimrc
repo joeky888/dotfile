@@ -169,11 +169,7 @@ function! MySave()
     endif
   catch /:E32:/
     if (confirm("This buffer has no file to be saved in! Wanna choose it?", "&Yes\n&No", 2)==1)
-      if has("gui_running")
-        call feedkeys("\<ESC>:browse confirm saveas\<CR>")
-      else
-        call feedkeys("\<ESC>:w ")
-      endif
+      execute has("gui_running") == 1 ? 'browse confirm saveas' : 'call feedkeys("\<ESC>:w ")'
     else
       exe notSaved
     endif
