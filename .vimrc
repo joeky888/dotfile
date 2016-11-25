@@ -467,6 +467,7 @@ hi DiffAdd ctermfg=231 ctermbg=64 cterm=bold guifg=#f8f8f2 guibg=#46830c gui=bol
 hi DiffDelete ctermfg=88 ctermbg=NONE cterm=NONE guifg=#8b0807 guibg=NONE gui=NONE
 hi DiffChange ctermfg=NONE ctermbg=NONE cterm=NONE guifg=#f8f8f2 guibg=#243955 gui=NONE
 hi DiffText ctermfg=231 ctermbg=24 cterm=bold guifg=#f8f8f2 guibg=#204a87 gui=bold
+hi Error ctermfg=219 ctermbg=89 cterm=NONE guifg=#E6DB74 guibg=#1E0010 gui=NONE
 hi ErrorMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi WarningMsg ctermfg=231 ctermbg=197 cterm=NONE guifg=#f8f8f0 guibg=#f92672 gui=NONE
 hi Float ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
@@ -474,8 +475,23 @@ hi Function ctermfg=148 ctermbg=NONE cterm=NONE guifg=#a6e22e guibg=NONE gui=NON
 hi Identifier ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
 hi Keyword ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Label ctermfg=186 ctermbg=NONE cterm=NONE guifg=#e6db74 guibg=NONE gui=NONE
-" hi NonText ctermfg=59 ctermbg=236 cterm=NONE guifg=#49483e guibg=#31322c gui=NONE
-hi NonText guifg=#465457
+hi Debug ctermfg=225 cterm=NONE guifg=#BCA3A3 gui=NONE
+hi Delimiter ctermfg=241 guifg=#8F8F8F
+hi Exception ctermfg=118 cterm=NONE guifg=#A6E22E gui=NONE
+hi FoldColumn ctermfg=67  ctermbg=16 guifg=#465457 guibg=#000000
+hi Ignore ctermfg=244 ctermbg=232 guifg=#808080 guibg=bg
+hi Macro ctermfg=193 guifg=#C4BE89 gui=NONE
+hi ModeMsg ctermfg=229 guifg=#E6DB74
+hi NonText cterm=NONE gui=NONE
+hi Question ctermfg=81 guifg=#66D9EF
+hi Repeat ctermfg=161 cterm=NONE guifg=#F92672 gui=NONE
+hi SpecialChar ctermfg=161 cterm=NONE guifg=#F92672 gui=NONE
+hi Structure ctermfg=81 guifg=#66D9EF
+hi TabLine guibg=#1B1D1E guifg=#808080 gui=none
+hi Typedef ctermfg=81 guifg=#66D9EF
+hi VisualNOS ctermbg=238 guibg=#403D3D
+hi WildMenu ctermfg=81  ctermbg=16 guifg=#66D9EF guibg=#000000
+hi iCursor guifg=#000000 guibg=#F8F8F0
 hi Number ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE gui=NONE
 hi Operator ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
