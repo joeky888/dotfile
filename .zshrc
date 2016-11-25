@@ -22,7 +22,7 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
-    alias gvim='gvim -p --remote-tab-silent "$@" || gvim'
+    alias gvim='gvim -p --remote-tab-silent "$@"'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
@@ -39,7 +39,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
-    alias gvim='gvim -p --remote-tab-silent "$@" || gvim'
+    alias gvim='gvim -p --remote-tab-silent "$@"'
 else
     # Unknown.
 fi
