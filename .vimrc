@@ -842,7 +842,7 @@ endfunction
 nnoremap <silent> - :normal zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Highlight selected color
-hi Visual term=reverse cterm=reverse gui=reverse guifg=#00afff guibg=White
+hi Visual ctermfg=white ctermbg=39 gui=NONE guifg=#00afff guibg=White
 " Highlight pop-up window color
 hi Pmenu guifg=#00afff guibg=White
 hi PmenuSel guifg=White guibg=#00afff
