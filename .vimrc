@@ -34,6 +34,8 @@ set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,utf-16be,default,latin1
 set synmaxcol=2000 " Don't try to highlight long lines
 set guioptions-=T " Don't show toolbar in Gvim
+let g:netrw_list_hide=''
+let g:netrw_hide=0
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
