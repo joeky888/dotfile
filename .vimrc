@@ -219,6 +219,13 @@ function! OpenNetrw()
     Texplore
   endif
 endfunction
+function! OpenNetrwgui()
+  if TabIsEmpty() == 1
+    execute "browse confirm e"
+  else
+    execute "browse confirm tabe"
+  endif
+endfunction
 function! MenuNetrw()
   let c = input("What to you want to do? (M)ake a dir, Make a (F)ile, (R)ename, (D)elete : ")
   if (c == "m" || c == "M")
@@ -338,7 +345,7 @@ call CreateShortcut("A-Left", "gT", "inv")
 
 " Ctrl O - Netrw (:Explore)
 if has("gui_running")
-    call CreateShortcut("C-o",":browse confirm e<CR>", "inv")
+    call CreateShortcut("C-o",":call OpenNetrwgui()<CR>", "inv")
 else
     call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 endif
