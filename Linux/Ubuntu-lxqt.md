@@ -73,6 +73,7 @@ Add dns server
 * Edit /etc/resolvconf/resolv.conf.d/head
 ````
 nameserver 8.8.8.8
+nameserver 8.8.4.4
 nameserver 223.5.5.5
 nameserver 140.118.31.31
 ````
