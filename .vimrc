@@ -479,7 +479,7 @@ hi Debug ctermfg=225 cterm=NONE guifg=#BCA3A3 gui=NONE
 hi Exception ctermfg=118 cterm=NONE guifg=#A6E22E gui=NONE
 hi FoldColumn ctermfg=67  ctermbg=16 guifg=#465457 guibg=#000000
 hi Ignore ctermfg=244 ctermbg=232 guifg=#808080 guibg=bg
-hi Macro ctermfg=193 guifg=#C4BE89 gui=NONE
+hi Macro ctermfg=39 guifg=#00afff gui=NONE
 hi ModeMsg ctermfg=229 guifg=#E6DB74
 hi NonText cterm=NONE gui=NONE
 hi Question ctermfg=81 guifg=#66D9EF
