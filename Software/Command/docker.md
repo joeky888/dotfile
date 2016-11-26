@@ -12,6 +12,13 @@ Turn off Hyper-V
 * $ bcdedit /set hypervisorlaunchtype off
 * Reboot
 
+Install docker on Linux
+=====
+* Install docker docker-engine
+* $ sudo usermod -aG docker $(whoami)
+* $ sudo reboot
+* $ systemctl status docker.service
+
 Check if docker is running correctly
 =====
 * name it to hello-world then remove it
