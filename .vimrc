@@ -254,9 +254,9 @@ call CreateShortcut("C-k", "dd", "in")
 call CreateShortcut("C-k", "d", "v")
 
 " Ctrl Q - Duplicate Line
-call CreateShortcut("C-q", "mjyyp`jjl", "i")
-call CreateShortcut("C-q", "mjyyp`jj", "n")
-call CreateShortcut("C-q", "y`]p", "v")
+call CreateShortcut("C-d", "mjyyp`jjl", "i")
+call CreateShortcut("C-d", "mjyyp`jj", "n")
+" call CreateShortcut("C-q", "y`]p", "v")
 
 " Ctrl Down - Pagedown
 call CreateShortcut("C-Down", "15j", "inv")
@@ -813,9 +813,6 @@ call CreateShortcut("F2", ":tabnew<CR>", "inv")
 call CreateShortcut("C-t", ":tabnew<CR>", "inv")
 call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
-
-" Ctrl d is copying line
-call CreateShortcut("C-d", "yyp", "in")
 
 " Ctrl g is selecting all
 call CreateShortcut("C-g", "ggVG", "inv")
