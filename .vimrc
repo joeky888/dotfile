@@ -308,8 +308,8 @@ call CreateShortcut("C-z", "u", "ni")
 call CreateShortcut("C-y", "<C-r>", "in")
 
 " Ctrl D - Suppr (the key)
-call CreateShortcut("C-d", "<del>", "iv", "noLeadingESCInInsert", "noTrailingIInInsert")
-call CreateShortcut("C-d", "x", "n")
+" call CreateShortcut("C-d", "<del>", "iv", "noLeadingESCInInsert", "noTrailingIInInsert")
+" call CreateShortcut("C-d", "x", "n")
 
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>i", "inv", "noTrailingIInInsert", "cmdInVisual")
