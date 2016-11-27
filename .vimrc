@@ -564,135 +564,19 @@ inoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>a
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
 nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
 
+let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
-    inoremap <silent> 0 0<ESC>a<C-x><C-p>
-    inoremap <silent> 1 1<ESC>a<C-x><C-p>
-    inoremap <silent> 2 2<ESC>a<C-x><C-p>
-    inoremap <silent> 3 3<ESC>a<C-x><C-p>
-    inoremap <silent> 4 4<ESC>a<C-x><C-p>
-    inoremap <silent> 5 5<ESC>a<C-x><C-p>
-    inoremap <silent> 6 6<ESC>a<C-x><C-p>
-    inoremap <silent> 7 7<ESC>a<C-x><C-p>
-    inoremap <silent> 8 8<ESC>a<C-x><C-p>
-    inoremap <silent> 9 9<ESC>a<C-x><C-p>
-    inoremap <silent> a a<ESC>a<C-x><C-p>
-    inoremap <silent> b b<ESC>a<C-x><C-p>
-    inoremap <silent> c c<ESC>a<C-x><C-p>
-    inoremap <silent> d d<ESC>a<C-x><C-p>
-    inoremap <silent> e e<ESC>a<C-x><C-p>
-    inoremap <silent> f f<ESC>a<C-x><C-p>
-    inoremap <silent> g g<ESC>a<C-x><C-p>
-    inoremap <silent> h h<ESC>a<C-x><C-p>
-    inoremap <silent> i i<ESC>a<C-x><C-p>
-    inoremap <silent> j j<ESC>a<C-x><C-p>
-    inoremap <silent> k k<ESC>a<C-x><C-p>
-    inoremap <silent> l l<ESC>a<C-x><C-p>
-    inoremap <silent> m m<ESC>a<C-x><C-p>
-    inoremap <silent> n n<ESC>a<C-x><C-p>
-    inoremap <silent> o o<ESC>a<C-x><C-p>
-    inoremap <silent> p p<ESC>a<C-x><C-p>
-    inoremap <silent> q q<ESC>a<C-x><C-p>
-    inoremap <silent> r r<ESC>a<C-x><C-p>
-    inoremap <silent> s s<ESC>a<C-x><C-p>
-    inoremap <silent> t t<ESC>a<C-x><C-p>
-    inoremap <silent> u u<ESC>a<C-x><C-p>
-    inoremap <silent> v v<ESC>a<C-x><C-p>
-    inoremap <silent> w w<ESC>a<C-x><C-p>
-    inoremap <silent> x x<ESC>a<C-x><C-p>
-    inoremap <silent> y y<ESC>a<C-x><C-p>
-    inoremap <silent> z z<ESC>a<C-x><C-p>
-    inoremap <silent> A A<ESC>a<C-x><C-p>
-    inoremap <silent> B B<ESC>a<C-x><C-p>
-    inoremap <silent> C C<ESC>a<C-x><C-p>
-    inoremap <silent> D D<ESC>a<C-x><C-p>
-    inoremap <silent> E E<ESC>a<C-x><C-p>
-    inoremap <silent> F F<ESC>a<C-x><C-p>
-    inoremap <silent> G G<ESC>a<C-x><C-p>
-    inoremap <silent> H H<ESC>a<C-x><C-p>
-    inoremap <silent> I I<ESC>a<C-x><C-p>
-    inoremap <silent> J J<ESC>a<C-x><C-p>
-    inoremap <silent> K K<ESC>a<C-x><C-p>
-    inoremap <silent> L L<ESC>a<C-x><C-p>
-    inoremap <silent> M M<ESC>a<C-x><C-p>
-    inoremap <silent> N N<ESC>a<C-x><C-p>
-    inoremap <silent> O O<ESC>a<C-x><C-p>
-    inoremap <silent> P P<ESC>a<C-x><C-p>
-    inoremap <silent> Q Q<ESC>a<C-x><C-p>
-    inoremap <silent> R R<ESC>a<C-x><C-p>
-    inoremap <silent> S S<ESC>a<C-x><C-p>
-    inoremap <silent> T T<ESC>a<C-x><C-p>
-    inoremap <silent> U U<ESC>a<C-x><C-p>
-    inoremap <silent> V V<ESC>a<C-x><C-p>
-    inoremap <silent> W W<ESC>a<C-x><C-p>
-    inoremap <silent> X X<ESC>a<C-x><C-p>
-    inoremap <silent> Y Y<ESC>a<C-x><C-p>
-    inoremap <silent> Z Z<ESC>a<C-x><C-p>
+    for l:char in split(g:CharSet, '\zs')
+      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
+    endfor
   else
     let g:autocomp=0
-    inoremap <silent> 0 0
-    inoremap <silent> 1 1
-    inoremap <silent> 2 2
-    inoremap <silent> 3 3
-    inoremap <silent> 4 4
-    inoremap <silent> 5 5
-    inoremap <silent> 6 6
-    inoremap <silent> 7 7
-    inoremap <silent> 8 8
-    inoremap <silent> 9 9
-    inoremap <silent> a a
-    inoremap <silent> b b
-    inoremap <silent> c c
-    inoremap <silent> d d
-    inoremap <silent> e e
-    inoremap <silent> f f
-    inoremap <silent> g g
-    inoremap <silent> h h
-    inoremap <silent> i i
-    inoremap <silent> j j
-    inoremap <silent> k k
-    inoremap <silent> l l
-    inoremap <silent> m m
-    inoremap <silent> n n
-    inoremap <silent> o o
-    inoremap <silent> p p
-    inoremap <silent> q q
-    inoremap <silent> r r
-    inoremap <silent> s s
-    inoremap <silent> t t
-    inoremap <silent> u u
-    inoremap <silent> v v
-    inoremap <silent> w w
-    inoremap <silent> x x
-    inoremap <silent> y y
-    inoremap <silent> z z
-    inoremap <silent> A A
-    inoremap <silent> B B
-    inoremap <silent> C C
-    inoremap <silent> D D
-    inoremap <silent> E E
-    inoremap <silent> F F
-    inoremap <silent> G G
-    inoremap <silent> H H
-    inoremap <silent> I I
-    inoremap <silent> J J
-    inoremap <silent> K K
-    inoremap <silent> L L
-    inoremap <silent> M M
-    inoremap <silent> N N
-    inoremap <silent> O O
-    inoremap <silent> P P
-    inoremap <silent> Q Q
-    inoremap <silent> R R
-    inoremap <silent> S S
-    inoremap <silent> T T
-    inoremap <silent> U U
-    inoremap <silent> V V
-    inoremap <silent> W W
-    inoremap <silent> X X
-    inoremap <silent> Y Y
-    inoremap <silent> Z Z
+    for l:char in split(g:CharSet, '\zs')
+      execute "inoremap <silent> ".l:char." ".l:char
+    endfor
   endif
 endfunction
 
@@ -768,67 +652,11 @@ if has("gui_running")
     call CreateShortcut("C-BS", "d", "v")
     call CreateShortcut("C-Del", "ldw", "i")
     call CreateShortcut("C-Del", "dw", "n")
-    vnoremap a dia
-    vnoremap b dib
-    vnoremap c dic
-    vnoremap d did
-    vnoremap e die
-    vnoremap f dif
-    vnoremap g dig
-    vnoremap h dih
-    vnoremap i dii
-    vnoremap j dij
-    vnoremap k dik
-    vnoremap l dil
-    vnoremap m dim
-    vnoremap n din
-    vnoremap o dio
-    vnoremap p dip
-    vnoremap q diq
-    vnoremap r dir
-    vnoremap s dis
-    vnoremap t dit
-    vnoremap u diu
-    vnoremap v div
-    vnoremap w diw
-    vnoremap x dix
-    vnoremap y diy
-    vnoremap z diz
-    vnoremap A diA
-    vnoremap B diB
-    vnoremap C diC
-    vnoremap D diD
-    vnoremap E diE
-    vnoremap F diF
-    vnoremap G diG
-    vnoremap H diH
-    vnoremap I diI
-    vnoremap J diJ
-    vnoremap K diK
-    vnoremap L diL
-    vnoremap M diM
-    vnoremap N diN
-    vnoremap O diO
-    vnoremap P diP
-    vnoremap Q diQ
-    vnoremap R diR
-    vnoremap S diS
-    vnoremap T diT
-    vnoremap U diU
-    vnoremap V diV
-    vnoremap W diW
-    vnoremap X diX
-    vnoremap Y diY
-    vnoremap Z diZ
-    vnoremap 1 di1
-    vnoremap 2 di2
-    vnoremap 3 di3
-    vnoremap 4 di4
-    vnoremap 5 di5
-    vnoremap 6 di6
-    vnoremap 7 di7
-    vnoremap 8 di8
-    vnoremap 9 di9
+
+    " Get into insert mode by pressing any keys in visual mode
+    for b:char in split(g:CharSet, '\zs')
+      execute "vnoremap ".b:char." di".b:char
+    endfor
 endif
 
 " Byobu key binding
