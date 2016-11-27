@@ -696,8 +696,10 @@ function! ToggleAutoComplete()
   endif
 endfunction
 
-set noerrorbells "disable error sound
-set vb t_vb= "disable visualbell
+set noerrorbells " disable error sound
+set vb t_vb= " disable visualbell
+set t_vb= " disable visualbell
+autocmd VimEnter * set vb t_vb= " disable visualbell
 " set ignorecase " Search insensitive
 set smartcase& " No smart
 set nowrap
