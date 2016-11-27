@@ -824,9 +824,9 @@ call CreateShortcut("C-g", "ggVG", "inv")
 call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
 vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
 
-inoremap <C-h> <C-w>
-nnoremap <C-h> db
-cnoremap <C-h> <C-w>
+inoremap <C-b> <C-w>
+nnoremap <C-b> db
+cnoremap <C-b> <C-w>
 
 " Useful command mode mapping
 cnoremap <C-w> <C-c>
