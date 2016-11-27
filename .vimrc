@@ -567,6 +567,7 @@ nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
 function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
+    inoremap <silent> 0 0<ESC>a<C-x><C-p>
     inoremap <silent> 1 1<ESC>a<C-x><C-p>
     inoremap <silent> 2 2<ESC>a<C-x><C-p>
     inoremap <silent> 3 3<ESC>a<C-x><C-p>
@@ -630,6 +631,7 @@ function! ToggleAutoComplete()
     inoremap <silent> Z Z<ESC>a<C-x><C-p>
   else
     let g:autocomp=0
+    inoremap <silent> 0 0
     inoremap <silent> 1 1
     inoremap <silent> 2 2
     inoremap <silent> 3 3
