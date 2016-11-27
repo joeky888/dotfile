@@ -64,6 +64,8 @@ if [[ $has_gvim ]]; then
     }
 fi
 
+killallproc() { eval 'kill -9 $(pgrep $@)' }
+
 forever()
 {
     if [ "$#" == 0 ]; then
