@@ -66,6 +66,7 @@ if [[ $has_gvim ]]; then
 fi
 
 vman() {
+    rm -rf /tmp/XXXXX.man # for FreeBSD
     tempo=$(mktemp /tmp/XXXXX.man) # Random file name
     man $@ > $tempo
     vim $tempo 
