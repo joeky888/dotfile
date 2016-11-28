@@ -16,6 +16,8 @@ setopt NO_NOMATCH # disable zsh match filename
 bindkey "OC" forward-word
 bindkey "OD" backward-word
 bindkey "[3~" kill-word
+bindkey "^Z" undo
+bindkey "^Y" redo
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 
