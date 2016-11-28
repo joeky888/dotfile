@@ -41,7 +41,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
-#     alias gvim='gvim -p --remote-tab-silent "$@"'
 else
     # Unknown.
 fi
@@ -65,6 +64,12 @@ if [[ $has_gvim ]]; then
         fi
     }
 fi
+
+vman() {
+    tempo=`mktemp`
+    man $@ > $tempo
+    vim $tempo 
+}
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
 
