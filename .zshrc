@@ -66,7 +66,7 @@ if [[ $has_gvim ]]; then
 fi
 
 vman() {
-    tempo=`mktemp /tmp/XXXXX.man` # Random file name
+    tempo=$(mktemp /tmp/XXXXX.man) # Random file name
     man $@ > $tempo
     vim $tempo 
 }
