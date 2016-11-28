@@ -66,11 +66,8 @@ if [[ $has_gvim ]]; then
 fi
 
 vman() {
-    rm -rf /tmp/XXXXX.man # for FreeBSD/MacOS
     export MANPAGER="col -b" # for FreeBSD/MacOS
-    tempo=$(mktemp /tmp/XXXXX.man) # Random file name
-    man $@ > $tempo
-    vim $tempo 
+    eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
 }
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
