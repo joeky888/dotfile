@@ -284,7 +284,7 @@ call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailin
 call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/\\c", "in", "noTrailingIInInsert")
 
 " Ctrl G - Search and Replace on the line only
-call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
+" call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
 
 " Ctrl L - Delete all lines
 call CreateShortcut("C-l", "ggdG", "in")
