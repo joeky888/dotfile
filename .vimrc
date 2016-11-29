@@ -243,6 +243,10 @@ call CreateShortcut("C-e", "$l", "inv")
 call CreateShortcut("C-c", "<S-v>:w! /tmp/vimbuffer<CR>", "n")
 call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all lines of selection
 
+" Ctrl X - Copy
+call CreateShortcut("C-x", "<S-v>:w! /tmp/vimbuffer<CR>gvd", "n")
+call CreateShortcut("C-x", ":w! /tmp/vimbuffer<CR>gvd", "v") " Vim still cut all lines of selection
+
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
 
