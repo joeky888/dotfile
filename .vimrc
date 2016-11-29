@@ -245,7 +245,7 @@ call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all l
 
 " Ctrl X - Copy
 call CreateShortcut("C-x", "<S-v>:w! /tmp/vimbuffer<CR>gvd", "ni")
-call CreateShortcut("C-x", ":w! /tmp/vimbuffer<CR>gvd", "v") " Vim still cut all lines of selection
+call CreateShortcut("C-x", ":w! /tmp/vimbuffer<CR>:call CutSelectedLines()<CR>", "v") " Vim still cut all lines of selection
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
@@ -358,6 +358,12 @@ function! KeysInNetrw()
   nmap <buffer> l qf
   " n - Menu
   nmap <buffer> n :call MenuNetrw()<CR>
+endfunction
+
+function! CutSelectedLines()
+  let l:begin = string(line("'<"))
+  let l:end = string(line("'>"))
+  execute l:begin.",".l:end."d"
 endfunction
 
 endif " End custom key bindings
