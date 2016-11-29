@@ -235,7 +235,7 @@ call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all l
 " Ctrl X - Copy
 call CreateShortcut("C-x", "<S-v>:w! /tmp/vimbuffer<CR>gvd", "ni")
 " Vim still cut all lines of selection
-vnoremap <C-x> :w! /tmp/vimbuffer<CR>:call DeleteSelectedLines()<CR>
+vnoremap <C-x> :w! /tmp/vimbuffer<CR><ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
@@ -252,7 +252,7 @@ call CreateShortcut("End", "G", "inv")
 
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", "dd", "in")
-vnoremap <C-k> :call DeleteSelectedLines()<CR>
+vnoremap <C-k> <ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl Q - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jjl", "i")
@@ -335,11 +335,9 @@ function! KeysInNetrw()
 endfunction
 
 function! DeleteSelectedLines()
-  let [lnum1, col1] = getpos("'<")[1:2]
-  let [lnum2, col2] = getpos("'>")[1:2]
-  let l:begin = string(lnum1)
-  let l:end = string(lnum2)
-  execute l:begin.",".l:end."d"
+  let l:lineBegin = line("'<")
+  let l:lineEnd = line("'>")
+  execute l:lineBegin.",".l:lineEnd."d"
 endfunction
 
 endif " End custom key bindings
@@ -656,8 +654,8 @@ call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
 " Ctrl \ is toggling comments
-call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
-vnoremap <silent> <C-\> <ESC>:call ToggleComments()<CR>
+call CreateShortcut("C-\\", ":call ToggleComments('.')<CR>", "in")
+vnoremap <silent> <C-\> <ESC>:call ToggleComments("")<CR>
 
 inoremap <C-b> <C-w>
 nnoremap <C-b> db
@@ -715,32 +713,16 @@ autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
 autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
-function! ToggleComment()
-  if exists('b:comment_leader')
-    if getline('.') =~ '^' .b:comment_leader
-      " uncomment the line
-      execute 'silent s/^' .b:comment_leader.' //g'
-      if exists('b:comment_ender')
-        execute 'silent s/ ' .b:comment_ender.'$//g'
-      endif
-    elseif getline('.') =~ '^\s*$'
-      " empty lines
-    else
-      " comment the line
-      execute 'silent s/^/' .b:comment_leader.' /g'
-      if exists('b:comment_ender')
-        execute 'silent s/$/ ' .b:comment_ender.'/g'
-      endif
-    endif
+function! ToggleComments(line)
+  if a:line =~ "."
+    let l:lineBegin = line(".")
+    let l:lineEnd = line(".")
   else
-    echo 'No comment leader found for filetype'
+    let l:lineBegin = line("'<")
+    let l:lineEnd = line("'>")
   endif
-endfunction
 
-function! ToggleComments()
-  let [lnum1, col1] = getpos("'<")[1:2]
-  let [lnum2, col2] = getpos("'>")[1:2]
-  for i in range(lnum1, lnum2)
+  for i in range(l:lineBegin, l:lineEnd)
     if exists('b:comment_leader')
       if getline(i) =~ '^' .b:comment_leader
         " uncomment the line
