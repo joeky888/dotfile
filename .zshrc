@@ -68,6 +68,7 @@ fi
 vman() {
     export MANPAGER="col -b" # for FreeBSD/MacOS
     eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
+    unset MANPAGER
 }
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
