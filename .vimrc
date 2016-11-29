@@ -197,17 +197,6 @@ function! OpenLastBufferInNewTab()
       endif
     endfor
 endfunction
-" function! ToggleColorColumn()
-"     if &colorcolumn != 0
-"         windo let &colorcolumn = 0
-"     else
-"         windo let &colorcolumn = 80
-"     endif
-" endfunction
-" function! MyPasteToggle()
-"   set invpaste
-"   echo "Paste" (&paste) ? "On" : "Off"
-" endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
     execute has("gui_running") == 1 ? "browse confirm e" : "Explore"
@@ -287,8 +276,8 @@ call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailin
 " Ctrl R - Search and Replace
 call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/\\c", "in", "noTrailingIInInsert")
 
-" Ctrl G - Search and Replace on the line only
-" call CreateShortcut("C-g", ":s/", "in", "noTrailingIInInsert")
+" Ctrl G - Select all
+call CreateShortcut("C-g", "ggVG", "inv")
 
 " Ctrl L - Delete all lines
 call CreateShortcut("C-l", "ggdG", "in")
@@ -318,10 +307,6 @@ call CreateShortcut("C-z", "u", "ni")
 " Ctrl R - Redo
 call CreateShortcut("C-y", "<C-r>", "in")
 
-" Ctrl D - Suppr (the key)
-" call CreateShortcut("C-d", "<del>", "iv", "noLeadingESCInInsert", "noTrailingIInInsert")
-" call CreateShortcut("C-d", "x", "n")
-
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>i", "inv", "noTrailingIInInsert", "cmdInVisual")
 
@@ -330,18 +315,6 @@ call CreateShortcut("A-Right", "gt", "inv")
 
 " Alt Left - Previous tab
 call CreateShortcut("A-Left", "gT", "inv")
-
-" F2 - Paste toggle
-" call CreateShortcut("f2",":call MyPasteToggle()<CR>", "n")
-
-" F3 - Line numbers toggle
-" call CreateShortcut("f3",":set nonumber!<CR>", "in")
-
-" F4 - Panic Button
-" call CreateShortcut("f4","mzggg?G`z", "inv")
-
-" F6 - Toggle color column at 80th char
-" call CreateShortcut("f6",":call ToggleColorColumn()<CR>", "inv")
 
 " Ctrl O - Netrw (:Explore)
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
@@ -602,15 +575,12 @@ autocmd VimEnter * set noerrorbells " disable error sound
 set vb t_vb= " disable visualbell
 set t_vb= " disable visualbell
 autocmd VimEnter * set vb t_vb= " disable visualbell
-" set ignorecase " Search insensitive
 set smartcase& " No smart
-set nowrap
+set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
-" set backspace=2
 
 function! SomeTime()
-"   let [lnum1, col1] = getpos("'<")[1:2]
 "   just waste some time bro!
 endfunction
 
@@ -681,9 +651,6 @@ call CreateShortcut("F2", ":tabnew<CR>", "inv")
 call CreateShortcut("C-t", ":tabnew<CR>", "inv")
 call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
-
-" Ctrl g is selecting all
-call CreateShortcut("C-g", "ggVG", "inv")
 
 " Ctrl \ is toggling comments
 call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "in")
