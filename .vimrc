@@ -713,8 +713,8 @@ autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
 autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
-function! ToggleComments(line)
-  if a:line =~ "."
+function! ToggleComments(n)
+  if a:n =~ "."
     let l:lineBegin = line(".")
     let l:lineEnd = line(".")
   else
@@ -731,7 +731,7 @@ function! ToggleComments(line)
           execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
         endif
       elseif getline(i) =~ '^\s*$'
-        " empty lines
+        " empty lines, ignore
       else
         " comment the line
         execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
