@@ -239,6 +239,13 @@ call CreateShortcut("C-a", "0", "inv")
 " Ctrl E - End Line
 call CreateShortcut("C-e", "$l", "inv")
 
+" Ctrl C - Copy
+call CreateShortcut("C-c", "<S-v>:w! /tmp/vimbuffer<CR>", "n")
+call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all lines of selection
+
+" Ctrl V - Paste
+call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
+
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
 call CreateShortcut("C-s", ":call MySave()<CR>a", "i", "noTrailingIInInsert")
