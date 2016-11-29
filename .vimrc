@@ -234,7 +234,8 @@ call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all l
 
 " Ctrl X - Copy
 call CreateShortcut("C-x", "<S-v>:w! /tmp/vimbuffer<CR>gvd", "ni")
-call CreateShortcut("C-x", ":w! /tmp/vimbuffer<CR>:call CutSelectedLines()<CR>", "v") " Vim still cut all lines of selection
+" Vim still cut all lines of selection
+vnoremap <C-x> :w! /tmp/vimbuffer<CR>:call DeleteSelectedLines()<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
@@ -251,7 +252,7 @@ call CreateShortcut("End", "G", "inv")
 
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", "dd", "in")
-call CreateShortcut("C-k", "d", "v")
+vnoremap <C-k> :call DeleteSelectedLines()<CR>
 
 " Ctrl Q - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jjl", "i")
@@ -333,9 +334,11 @@ function! KeysInNetrw()
   nmap <buffer> n :call MenuNetrw()<CR>
 endfunction
 
-function! CutSelectedLines()
-  let l:begin = string(line("'<"))
-  let l:end = string(line("'>"))
+function! DeleteSelectedLines()
+  let [lnum1, col1] = getpos("'<")[1:2]
+  let [lnum2, col2] = getpos("'>")[1:2]
+  let l:begin = string(lnum1)
+  let l:end = string(lnum2)
   execute l:begin.",".l:end."d"
 endfunction
 
