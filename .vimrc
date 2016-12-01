@@ -321,7 +321,7 @@ call CreateShortcut("A-Left", "gT", "inv")
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
 let g:netrw_banner=0 " Hide banner
-let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
+" let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
 function! KeysInNetrw()
   " Right to enter
