@@ -654,8 +654,7 @@ call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
 " Ctrl \ is toggling comments
-call CreateShortcut("C-\\", ":call ToggleComments('.')<CR>", "in")
-vnoremap <silent> <C-\> <ESC>:call ToggleComments("")<CR>
+call CreateShortcut("C-\\", ":call ToggleComments()<CR>", "inv")
 
 inoremap <C-b> <C-w>
 nnoremap <C-b> db
@@ -713,36 +712,26 @@ autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
 autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
-function! ToggleComments(n)
-  if a:n =~ "."
-    let l:lineBegin = line(".")
-    let l:lineEnd = line(".")
-  else
-    let l:lineBegin = line("'<")
-    let l:lineEnd = line("'>")
-  endif
-
-  for i in range(l:lineBegin, l:lineEnd)
-    if exists('b:comment_leader')
-      if getline(i) =~ '^' .b:comment_leader
-        " uncomment the line
-        execute 'silent '.i.'s/^' .b:comment_leader.' //g'
-        if exists('b:comment_ender')
-          execute 'silent '.i.'s/ ' .b:comment_ender.'$//g'
-        endif
-      elseif getline(i) =~ '^\s*$'
-        " empty lines, ignore
-      else
-        " comment the line
-        execute 'silent '.i.'s/^/' .b:comment_leader.' /g'
-        if exists('b:comment_ender')
-          execute 'silent '.i.'s/$/\ ' .b:comment_ender.'/g'
-        endif
+function! ToggleComments()
+  if exists('b:comment_leader')
+    if getline(".") =~ '^' .b:comment_leader
+      " uncomment the line
+      execute 'silent s/^' .b:comment_leader.' //g'
+      if exists('b:comment_ender')
+        execute 'silent s/ ' .b:comment_ender.'$//g'
       endif
+    elseif getline(".") =~ '^\s*$'
+      " empty lines, ignore
     else
-      echo 'No comment leader found for filetype'
+      " comment the line
+      execute 'silent s/^/' .b:comment_leader.' /g'
+      if exists('b:comment_ender')
+        execute 'silent s/$/\ ' .b:comment_ender.'/g'
+      endif
     endif
-  endfor
+  else
+    echo 'No comment leader found for filetype'
+  endif
 endfunction
 
 " Indent by filetype
