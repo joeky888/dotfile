@@ -52,6 +52,9 @@ alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
 
+zle -N pasteVimBuffer
+bindkey "^V" pasteVimBuffer
+
 has_gvim=$(command -v gvim)
 if [[ $has_gvim ]]; then
     gv=$(which gvim)
@@ -72,6 +75,11 @@ vman() {
 }
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
+
+pasteVimBuffer()
+{
+    LBUFFER="$(cat /tmp/vimbuffer)"
+}
 
 forever()
 {
