@@ -169,7 +169,7 @@ function! MySave()
     endif
   catch /:E32:/
     if (confirm("This buffer has no file to be saved in! Wanna choose it?", "&Yes\n&No", 2)==1)
-      execute has("gui_running") == 1 ? 'browse confirm saveas' : 'call feedkeys("\<ESC>:w ")'
+      execute has("gui_running") == 1 ? 'browse confirm saveas %:p:h' : 'call feedkeys("\<ESC>:w ")'
     else
       exe notSaved
     endif
@@ -199,9 +199,9 @@ function! OpenLastBufferInNewTab()
 endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
-    execute has("gui_running") == 1 ? "browse confirm e" : "Explore"
+    execute has("gui_running") == 1 ? "browse confirm e %:p:h" : "Explore %:p:h"
   else
-    execute has("gui_running") == 1 ? "browse confirm tabe" : "Texplore"
+    execute has("gui_running") == 1 ? "browse confirm tabe %:p:h" : "Texplore %:p:h"
   endif
 endfunction
 function! MenuNetrw()
