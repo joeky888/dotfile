@@ -78,7 +78,7 @@ killallproc() { eval 'kill -9 $(pgrep $@)' }
 
 pasteVimBuffer()
 {
-    LBUFFER="$(cat /tmp/vimbuffer)"
+    LBUFFER="$LBUFFER$(cat /tmp/vimbuffer)"
 }
 
 forever()
