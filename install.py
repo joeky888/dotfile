@@ -56,6 +56,8 @@ def linux():
     commands.append("ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc")
     commands.append("mkdir -p ~/.config/openbox")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
+    commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml")
+    commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
     commands.append("sudo chmod 755 /usr/bin/reconnect")
     commands.append("sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service")
