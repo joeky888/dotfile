@@ -39,6 +39,9 @@ let g:netrw_hide=0 " Show all hidden files when usding vim explorer
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
+" Open help to new tab
+cnoreabbrev help tab help
+cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
