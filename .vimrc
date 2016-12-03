@@ -32,7 +32,7 @@ set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,utf-16be,default,latin1
-set synmaxcol=2000 " Don't try to highlight long lines
+set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 let g:netrw_list_hide='' " Show all hidden files when usding vim explorer
 let g:netrw_hide=0 " Show all hidden files when usding vim explorer
