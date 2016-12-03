@@ -19,6 +19,7 @@ Change tty resolution
 ````
 # In this order
 GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
+GRUB_CMDLINE_LINUX=""
 GRUB_GFXMODE=1024x768x16
 GRUB_GFXPAYLOAD_LINUX=1024x768x16
 ````
