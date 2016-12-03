@@ -1,18 +1,11 @@
 Config CJK font in tty
 =====
-* $ sudo apt-get install ttf-ubuntu-font-family fonts-droid-fallback fbterm -y
+* $ sudo apt-get install ttf-ubuntu-font-family fonts-droid-fallback fbterm fontconfig -y # ttf-ubuntu-font-family.deb can be found on internet if use Debian
 * $ sudo apt-get install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
 * $ sudo usermod -a -G video $(whoami)
-* $ vim ~/.bashrc, replace "exec tmux" to "SHELL=tmux fbterm"
-* Ctrl+D to logout
-* $ vim ~/.fbtermrc
-````
-font-name=Ubuntu Mono, Droid Sans Fallback
-font-size=18
-````
 * $ sudo reboot
 
 Change tty resolution 
