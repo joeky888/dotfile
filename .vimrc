@@ -219,7 +219,16 @@ function! MenuNetrw()
     normal D
   endif
 endfunction
-
+function! PasteFromClipboard()
+  if line(".") == 1
+    normal O
+    execute "r /tmp/clipboard.txt"
+    execute "1d"
+  else
+    normal k
+    execute "r /tmp/clipboard.txt"
+  endif
+endfunction
 " Usefull shortcuts to enter insert mode
 nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
@@ -232,16 +241,16 @@ call CreateShortcut("C-a", "0", "inv")
 call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
-call CreateShortcut("C-c", "<S-v>:w! /tmp/vimbuffer<CR>", "ni")
-call CreateShortcut("C-c", ":w! /tmp/vimbuffer<CR>", "v") " Vim still copy all lines of selection
+call CreateShortcut("C-c", "<S-v>:w! /tmp/clipboard.txt<CR>", "ni")
+call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy all lines of selection
 
 " Ctrl X - Copy
-call CreateShortcut("C-x", "<S-v>:w! /tmp/vimbuffer<CR>gvd", "ni")
+call CreateShortcut("C-x", "<S-v>:w! /tmp/clipboard.txt<CR>gvd", "ni")
 " Vim still cut all lines of selection
-vnoremap <C-x> :w! /tmp/vimbuffer<CR><ESC>:call DeleteSelectedLines()<CR>
+vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl V - Paste
-call CreateShortcut("C-v", ":r /tmp/vimbuffer<CR>", "ni")
+call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "ni")
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
