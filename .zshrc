@@ -75,6 +75,7 @@ vman() {
 }
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
+killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' }
 
 pasteFromClipboard()
 {
