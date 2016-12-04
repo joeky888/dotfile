@@ -54,6 +54,7 @@ alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc 
 alias sudo="sudo -E "
 
 killallproc() { eval 'kill -9 $(pgrep $@)' }
+killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' }
 
 zle -N pasteFromClipboard
 bindkey "^V" pasteFromClipboard
