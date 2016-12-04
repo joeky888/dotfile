@@ -52,6 +52,7 @@ alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
 alias sudo="sudo -E"
+alias killallproc='kill -9 $(pgrep $@)'
 
 zle -N pasteFromClipboard
 bindkey "^V" pasteFromClipboard
@@ -74,9 +75,6 @@ vman() {
     eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
     unset MANPAGER
 }
-
-killallproc() { eval 'kill -9 $(pgrep $@)' }
-killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' }
 
 pasteFromClipboard()
 {
