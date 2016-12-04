@@ -51,8 +51,9 @@ alias proxyUnset='unset http_proxy && unset https_proxy && unset ftp_proxy'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
-alias sudo="sudo -E"
-alias killallproc='kill -9 $(pgrep $@)'
+alias sudo="sudo -E "
+
+killallproc() { eval 'kill -9 $(pgrep $@)' }
 
 zle -N pasteFromClipboard
 bindkey "^V" pasteFromClipboard
