@@ -791,7 +791,7 @@ function! IndentSpace(width)
   execute "set tabstop=" . a:width
   execute "set shiftwidth=" . a:width
   execute "set softtabstop=" . a:width
-  retab
+  execute "%retab!"
 endfunction
 
 function! IndentTab(width)
@@ -799,7 +799,7 @@ function! IndentTab(width)
   set softtabstop=0
   execute "set tabstop=" . a:width
   execute "set shiftwidth=" . a:width
-  retab
+  execute "%retab!"
 endfunction
 
 command! IndentSpace2   execute "call IndentSpace(2)"
