@@ -766,7 +766,6 @@ au FileType json,javascript command! JsonMinify      execute "call JsonMinify()"
 " XML pretty by vim
 function! XmlBeautify()
   call XmlMinify()
-  call XmlMinify()
   execute "%s/></>\\r</e"
   normal! gg=G
 endfunction
@@ -778,6 +777,7 @@ function! XmlMinify()
   normal! ggVGJ
   execute "%s/>\\s\\+</></e"
   execute "%s/\\n//e"
+  execute "%s/\\r//e"
 endfunction
 
 au FileType xml noremenu Edit.XML.Beautify  :call XmlBeautify()<CR>
