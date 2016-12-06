@@ -74,7 +74,6 @@ def linux():
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-    commands.append("sudo sh -c 'dumpkeys |grep -v cr_Console | loadkeys'") # Disable alt + arrow moving between ttys
     commands.append("openbox --reconfigure")
 
 def bsd():
