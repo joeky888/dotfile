@@ -65,7 +65,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
     alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
     alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-    echo "Mac OSX"
+    true
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     export DISPLAY=:0.0
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
@@ -77,11 +77,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
     alias sudo='cygstart --action=runas "$@"'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
-    echo "Msys"
+    true
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
 else # Unknown OS
-    echo "Unknown OS"
+    true
 fi
 
 vman() {
