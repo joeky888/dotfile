@@ -47,19 +47,21 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     source $ZSH/oh-my-zsh.sh
     export KEYTIMEOUT=1 # Make ESC faster
     setopt NO_NOMATCH # disable zsh match filename
-    zle -N pasteFromClipboardZsh # Bind function to command
+    zle -N ZshPasteFromClipboard # Bind function to command
+    zle -N ZshCutToClipboard # Bind function to command
     # alt + arrow key to move
     bindkey "OC" forward-word
     bindkey "OD" backward-word
     bindkey "[3~" kill-word
     bindkey "^Z" undo
     bindkey "^Y" redo
-    bindkey "^V" pasteFromClipboardZsh # Ctrl V to paste from Clipboard.txt
+    bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
+    bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
     stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
     bind '"\e[A": history-search-backward' # Up key is searching backward
     bind '"\e[B": history-search-forward'  # Down key is searching forward
-    bind -x '"\C-v": pasteFromClipboardBash'  # Ctrl V to paste from Clipboard.txt
+    bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
 fi
 
 
@@ -92,12 +94,18 @@ vman() {
     unset MANPAGER;
 }
 
-pasteFromClipboardZsh()
+ZshPasteFromClipboard()
 {
     LBUFFER="$LBUFFER$(cat /tmp/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
 }
 
-pasteFromClipboardBash()
+ZshCutToClipboard()
+{
+    echo "$LBUFFER" > /tmp/clipboard.txt
+    LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
+}
+
+BashPasteFromClipboard()
 {
     READLINE_LINE="$READLINE_LINE$(cat /tmp/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
 }
