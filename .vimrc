@@ -833,7 +833,6 @@ noremenu Edit.Encoding.UTF16LE   :e ++enc=utf-16le<CR>
 noremenu Edit.Encoding.UTF16BE   :e ++enc=utf-16be<CR>
 noremenu Edit.Encoding.ANSI      :e ++enc=ansi<CR>
 
-" command! ReloadVimrc call ReloadConfigs()
 command! EncodingUTF8    execute "e ++enc=utf-8"
 command! EncodingUcsBom  execute "e ++enc=ucs-bom"
 command! EncodingBig5    execute "e ++enc=big5"
