@@ -52,6 +52,10 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     # alt + arrow key to move
     bindkey "OC" forward-word
     bindkey "OD" backward-word
+    bindkey "^[[1;3C" forward-word
+    bindkey "^[[1;3D" backward-word
+    bindkey "[C" forward-word
+    bindkey "[D" backward-word
     bindkey "[3~" kill-word
     bindkey "^Z" undo
     bindkey "^Y" redo
