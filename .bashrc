@@ -92,8 +92,7 @@ vman() {
 
 pasteFromClipboard()
 {
-    echo "hi"
-    LBUFFER="$LBUFFER$(cat /tmp/clipboard.txt)" ;
+    LBUFFER="$LBUFFER$(cat /tmp/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
 }
 
 forever()
