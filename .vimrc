@@ -27,11 +27,10 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set updatetime=750
-" set smartcase " ... but smart
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8
-set fileencodings=utf-8,ucs-bom,gbk,big5,shift-jis,cp950,cp936,utf-16le,utf-16be,default,latin1
+set fileencodings=utf-8,ucs-bom,gbk,big5,utf-16le,utf-16be,default,latin1
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
