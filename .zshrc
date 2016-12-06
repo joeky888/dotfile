@@ -8,6 +8,9 @@ DISABLE_AUTO_UPDATE="true"
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 
+export VISUAL=vim # Set vim as default editor
+export EDITOR="$VISUAL"
+
 export KEYTIMEOUT=1 # Make ESC faster
 
 setopt NO_NOMATCH # disable zsh match filename
