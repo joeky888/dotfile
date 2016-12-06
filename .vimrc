@@ -623,6 +623,14 @@ if has("gui_running")
     inoremap {<CR> {<CR>}<ESC>O
     inoremap [<CR> [<CR>]<ESC>O
     inoremap (<CR> (<CR>)<ESC>O
+    vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
+    vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
+    vnoremap { <ESC>:call WrapSelected("{","}")<CR>
+    vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
+    vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
+    vnoremap } <ESC>:call WrapSelected("{","}")<CR>
+    vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
+    vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
 
     " Ctrl C is copying line if there is no word seleted
     call CreateShortcut("C-c", "<S-v>\"+y", "in")
@@ -661,6 +669,11 @@ if has("gui_running")
       execute "vnoremap ".b:char." di".b:char
     endfor
 endif
+
+function! WrapSelected(c1, c2)
+  execute "normal `<i".a:c1
+  execute "normal `>a".a:c2
+endfunction
 
 " Byobu key binding
 call CreateShortcut("F2", ":tabnew<CR>", "inv")
