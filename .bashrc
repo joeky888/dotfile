@@ -62,7 +62,6 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     bind '"\e[A": history-search-backward' # Up key is searching backward
     bind '"\e[B": history-search-forward'  # Down key is searching forward
     bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
-    bind -x '"\C-x": BashCutToClipboard'  # Ctrl X to cut to Clipboard.txt
 fi
 
 
@@ -109,12 +108,6 @@ ZshCutToClipboard()
 BashPasteFromClipboard()
 {
     READLINE_LINE="$READLINE_LINE$(cat /tmp/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
-}
-
-BashCutToClipboard()
-{
-    echo "$READLINE_LINE" > /tmp/clipboard.txt
-    READLINE_LINE="" ; # Bash only, C-v to paste from clipboard.txt
 }
 
 forever()
