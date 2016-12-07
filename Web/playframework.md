@@ -10,7 +10,7 @@ Create an app by using intellij(not recommended)
 Create an app by using eclipse
 =====
 * Install Eclipse Java EE IDE for Web Developers
-* Open Eclipse -> Help -> Install New Software -> Add -> Name:Scala IDE, Location:(see http://scala-ide.org/download/current.html) -> OK
+* Open Eclipse -> Help -> Install New Software -> Add -> Name:Scala IDE, Location:(see http://scala-ide.org/download/current.html or http://scala-ide.org/download/nightly.html) -> OK
 * $ activator new myapp play-java
 * Add 'addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")' to myapp/project/plugins.sbt
 * $ cd myapp
