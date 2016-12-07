@@ -41,8 +41,8 @@ let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python"
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
-" Open help to new tab
-cnoreabbrev help tab help
+" Open help in new tabs
+cnoreabbrev help <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
 cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 
 """ Prevent lag when hitting ESC
