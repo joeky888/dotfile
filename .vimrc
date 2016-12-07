@@ -36,6 +36,8 @@ set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 let g:netrw_list_hide='' " Show all hidden files when usding vim explorer
 let g:netrw_hide=0 " Show all hidden files when usding vim explorer
+" Highlight code area in markdown
+let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","sh","conf","zsh","debsources","resolv","sudoers"]
 " set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"

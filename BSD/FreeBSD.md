@@ -34,10 +34,10 @@ Add user to sudoer
 * $ cd /usr/ports/security/sudo
 * $ make install clean
 * $ visudo
-````
+```sudoers
 ##
 ## User privilege specification
 ##
 root  ALL=(ALL) ALL
 joeky ALL=(ALL) ALL
-````
+```

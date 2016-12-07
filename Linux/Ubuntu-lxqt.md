@@ -16,13 +16,13 @@ Change tty resolution
 * Pick one from stdout, ex: 1024x768x16
 * $ grub> reboot
 * $ sudo vim /etc/default/grub && sudo update-grub && sudo update-grub2
-````
+```conf
 # In this order
 GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
 GRUB_CMDLINE_LINUX=""
 GRUB_GFXMODE=1024x768x16
 GRUB_GFXPAYLOAD_LINUX=1024x768x16
-````
+```
 * $ sudo reboot
 
 Listen to music without x
@@ -39,13 +39,13 @@ Connect network using static ip
 * Get netword card name
 * $ ifconfig -a
 * if the name is wlan0
-````
+```conf
 auto wlan0
 iface wlan0 inet static
 address 192.168.1.150
 netmask 255.255.255.0
 gateway 192.168.1.1
-````
+```
 * $ sudo systemctl restart networking
 
 Connect network using dynamic ip
@@ -54,23 +54,23 @@ Connect network using dynamic ip
 * $ ifconfig -a
 * if the name is wlan0
 * Edit /etc/network/interfaces
-````
+```conf
 auto wlan0
 iface wlan0 inet dhcp
 wpa-ssid <your_router>
 wpa-psk <your_wpa_key>
-````
+```
 * $ sudo systemctl restart networking
 
 Add dns server
 =====
 * Edit /etc/resolvconf/resolv.conf.d/head
-````
+```resolv
 nameserver 8.8.8.8
 nameserver 8.8.4.4
 nameserver 223.5.5.5
 nameserver 140.118.31.31
-````
+```
 * $ sudo resolvconf -u
 
 Get latest ubuntu package
@@ -93,7 +93,7 @@ Install dotfile
 Disable suspend when closing laptop lid
 =====
 * Edit /etc/systemd/logind.conf
-````
+```conf
 HandleLidSwitch=ignore
-````
+```
 * $ sudo systemctl restart systemd-logind
