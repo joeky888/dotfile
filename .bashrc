@@ -27,7 +27,7 @@ if [[ $(command -v gvim) ]]; then
         if [ "$#" == 0 ]; then
             eval $gv
         else
-            for f in "$@"; do eval "$gv -p --remote-tab-silent '$f'" ; done
+            eval "$gv -p --remote-tab-silent $@"
         fi;
     }
 fi
