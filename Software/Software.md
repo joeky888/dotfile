@@ -26,6 +26,7 @@ Software
 * Aegisub
 * Audacity
 * Qt
+* PyCharm Community Edition
 * Cheat Engine
 * WPS Office
 * Libre Office
