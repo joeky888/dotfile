@@ -363,6 +363,8 @@ function! KeysInNetrw() " Map keys in file explorer
   vmap <buffer> <C-k> D
   " v - Enter to visual mode to select files
   nmap <buffer> v V
+  " Backspace - go back
+  nmap <buffer> <BS> u
 endfunction
 
 function! DeleteSelectedLines()
