@@ -148,7 +148,8 @@ if [[ $(command -v tmux) ]] ; then
             echo -en "\e]P7ffffff" #lightgrey
             echo -en "\e]PFdedede" #white
             FBTERM=1
-            SHELL=tmux fbterm
+            export TERM=fbterm
+            SHELL=tmux exec fbterm
         elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
             exec tmux
         fi
