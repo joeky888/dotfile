@@ -34,8 +34,10 @@ set fileencodings=utf-8,ucs-bom,gbk,big5,utf-16le,utf-16be,default,latin1
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
-let g:netrw_list_hide='' " Show all hidden files when usding vim explorer
-let g:netrw_hide=0 " Show all hidden files when usding vim explorer
+let g:netrw_list_hide='' " Show all hidden files when usding file explorer
+let g:netrw_hide=0 " Show all hidden files when usding file explorer
+let g:netrw_sizestyle="H" " Human-readable file size in file explorer
+let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 " Highlight code area in markdown
 let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","sh","conf","zsh","debsources","resolv","sudoers"]
 " set iskeyword+=\- " Complete words containing a dash
@@ -348,15 +350,18 @@ call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert",
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
-function! KeysInNetrw()
+function! KeysInNetrw() " Map keys in file explorer
   " Right to enter
   nmap <buffer> <Right> <CR>
   " Left to go up
   nmap <buffer> <Left> -
   " l - Display info
   nmap <buffer> l qf
-  " n - Menu
-  nmap <buffer> n :call MenuNetrw()<CR>
+  " C-k - Delete file(s)/directorie(s)
+  nmap <buffer> <C-k> D
+  vmap <buffer> <C-k> D
+  " v - Enter to visual mode to select files
+  nmap <buffer> v V
 endfunction
 
 function! DeleteSelectedLines()
@@ -571,6 +576,10 @@ hi cssValueLength ctermfg=141 ctermbg=NONE cterm=NONE guifg=#ae81ff guibg=NONE g
 hi cssCommonAttr ctermfg=81 ctermbg=NONE cterm=NONE guifg=#66d9ef guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi TabLineFill cterm=bold ctermbg=0
+
+" Highlight in file explorer, see $VIM_DIR/syntax/netrw.vim
+hi netrwDir ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
+
 " Final redraw
 call ChangeAccentColor()
 
