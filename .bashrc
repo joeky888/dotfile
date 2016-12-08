@@ -63,6 +63,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
     bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
+    bind 'set completion-ignore-case on' # Ignore case
     bind '"\e[A": history-search-backward' # Up key is searching backward
     bind '"\e[B": history-search-forward'  # Down key is searching forward
     bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
