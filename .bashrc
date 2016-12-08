@@ -93,7 +93,9 @@ else # Unknown OS
 fi
 
 vman() {
-    eval 'man -P cat $@ | vim -MR +"set filetype=man" -'
+    export MANPAGER="col -b" # for FreeBSD/MacOS
+    eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
+    unset MANPAGER;
 }
 
 ZshPasteFromClipboard()
