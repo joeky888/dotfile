@@ -284,6 +284,12 @@ call CreateShortcut("C-Down", "15j", "inv")
 " Ctrl Up - Pageup
 call CreateShortcut("C-Up", "15k", "inv")
 
+" Ctrl J - Pagedown, when Ctrl Down is not working
+call CreateShortcut("C-j", "15j", "inv")
+
+" Ctrl U - Pageup, when Ctrl Up is not working
+call CreateShortcut("C-u", "15k", "inv")
+
 " Ctrl Right - Next Word
 call CreateShortcut("C-Right", "w", "nv")
 
