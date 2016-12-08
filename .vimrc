@@ -246,11 +246,11 @@ call CreateShortcut("C-a", "0", "inv")
 call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
-call CreateShortcut("C-c", "<S-v>:w! /tmp/clipboard.txt<CR>", "ni")
+call CreateShortcut("C-c", "V:w! /tmp/clipboard.txt<CR>", "ni")
 call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy all lines of selection
 
 " Ctrl X - Copy
-call CreateShortcut("C-x", "<S-v>:w! /tmp/clipboard.txt<CR>gvd", "ni")
+call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvd", "ni")
 " Vim still cut all lines of selection
 vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:call DeleteSelectedLines()<CR>
 
@@ -640,12 +640,12 @@ if has("gui_running")
     vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
 
     " Ctrl C is copying line if there is no word seleted
-    call CreateShortcut("C-c", "<S-v>\"+y", "in")
+    call CreateShortcut("C-c", "V\"+y", "in")
     call CreateShortcut("C-c", "\"+y", "v")
     cnoremap <C-c> <C-y>
 
     " Ctrl X is cutting line if there is no word seleted
-    call CreateShortcut("C-x", "<S-v>\"+x", "in")
+    call CreateShortcut("C-x", "V\"+x", "in")
     call CreateShortcut("C-x", "\"+x", "v")
     cnoremap <C-x> <C-y><C-e><C-u>
 
