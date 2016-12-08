@@ -131,6 +131,8 @@ if [[ $(command -v tmux) ]] ; then
         cd ~
         # Check if fbterm installed
         if [[ $(command -v fbterm) ]] ; then
+            # setcap 'cap_sys_tty_config+ep' $(command -v fbterm)
+            # usermod -aG video USERNAME
             echo -en "\e]P0222222" #black
             echo -en "\e]P8222222" #darkgrey
             echo -en "\e]P1803232" #darkred
