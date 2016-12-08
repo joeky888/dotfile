@@ -268,10 +268,12 @@ call CreateShortcut("End", "G", "inv")
 call CreateShortcut("C-k", "dd", "in")
 vnoremap <C-k> <ESC>:call DeleteSelectedLines()<CR>
 
-" Ctrl Q - Duplicate Line
+" Ctrl D - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jjl", "i")
 call CreateShortcut("C-d", "mjyyp`jj", "n")
-" call CreateShortcut("C-q", "y`]p", "v")
+
+" Ctrl Q - Visual block selection
+call CreateShortcut("C-q", "<C-v>", "inv")
 
 " Ctrl Down - Pagedown
 call CreateShortcut("C-Down", "15j", "inv")
