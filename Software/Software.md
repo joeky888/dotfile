@@ -40,6 +40,7 @@ Software
 * MegaDownloader
 * JComicDownloader
 * JDownloader
+* Miniconda
 * youtube-dl
 * you-get
 
