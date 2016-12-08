@@ -236,6 +236,9 @@ nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
 nnoremap <Space> i<Space>
 
+" Backspace is deleting in visual mode
+call CreateShortcut("BS", "d", "v")
+
 " Ctrl A - Begin Line
 call CreateShortcut("C-a", "0", "inv")
 
@@ -662,7 +665,6 @@ if has("gui_running")
 
     " Deleting words and Entering insert mode
     call CreateShortcut("CR", "di<CR>", "v")
-    call CreateShortcut("BS", "d", "v")
     call CreateShortcut("Space", "di<Space>", "v")
     call CreateShortcut("C-BS", "d", "v")
     call CreateShortcut("C-Del", "ldw", "i")
