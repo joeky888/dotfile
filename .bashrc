@@ -32,8 +32,6 @@ if [[ $(command -v gvim) ]]; then
     }
 fi
 
-stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
-
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
 fi
@@ -62,6 +60,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
     bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
+    stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
     stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
     bind '"\e[A": history-search-backward' # Up key is searching backward
     bind '"\e[B": history-search-forward'  # Down key is searching forward
