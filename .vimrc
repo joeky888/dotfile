@@ -150,6 +150,10 @@ function! MyQuit()
   endif
 endfunction
 function! MySave()
+  " Remove trailing space
+  execute "%s/\\s\\+$//e"
+  " Remove empty lines at the end of the file
+  execute "%s/\\($\\n\\s*\\)\\+\\%$//e"
   let cantSave = "echo \"Can't save the file: \" . v:exception | return"
   let notSaved = "redraw | echo 'This buffer was NOT saved!' | return"
   try
