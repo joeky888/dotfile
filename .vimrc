@@ -365,6 +365,10 @@ function! KeysInNetrw() " Map keys in file explorer
   nmap <buffer> v V
   " Backspace - go back
   nmap <buffer> <BS> u
+  " Space to enter
+  nmap <buffer> <Space> <CR>
+  " Tab to go down an entry
+  nmap <buffer> <Tab> j
 endfunction
 
 function! DeleteSelectedLines()
@@ -820,6 +824,10 @@ au FileType xml noremenu Edit.XML.Beautify  :call XmlBeautify()<CR>
 au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
 au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
 au FileType xml command! XmlMinify      execute "call XmlMinify()"
+
+" Split view
+noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
+noremenu Edit.Split\ Window.Horizontal\ 2   :split<CR>
 
 " Indent format
 function! IndentSpace(width)
