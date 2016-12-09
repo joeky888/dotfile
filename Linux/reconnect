@@ -12,7 +12,7 @@ while true; do
     fi
   fi
 
-  if ! systemctl is-active teamviewerd.service >/dev/null 2>&1; then
+  if [[! systemctl is-active teamviewerd.service >/dev/null 2>&1]] && [[$(command -v teamviewer)]]; then
     systemctl restart teamviewerd.service
     echo $(date +"%m/%d/%Y %I:%M:%p") "teamviewer" >> /home/Reconnect.log
     if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
