@@ -827,7 +827,9 @@ au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
 " Split view
 noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
+noremenu Edit.Split\ Window.Vertical\ 3     :vsplit<CR>:vsplit<CR>:wincmd =<CR>
 noremenu Edit.Split\ Window.Horizontal\ 2   :split<CR>
+noremenu Edit.Split\ Window.Horizontal\ 3   :split<CR>:split<CR>:wincmd =<CR>
 
 " Indent format
 function! IndentSpace(width)
