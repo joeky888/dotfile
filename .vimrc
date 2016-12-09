@@ -287,17 +287,17 @@ call CreateShortcut("C-Down", "15j", "inv")
 " Ctrl Up - Pageup
 call CreateShortcut("C-Up", "15k", "inv")
 
-" Ctrl J - Pagedown, when Ctrl Down is not working
-call CreateShortcut("C-j", "15j", "inv")
-
-" Ctrl U - Pageup, when Ctrl Up is not working
-call CreateShortcut("C-u", "15k", "inv")
-
 " Ctrl Right - Next Word
 call CreateShortcut("C-Right", "w", "nv")
 
 " Ctrl Left - Previous Word
 call CreateShortcut("C-Left", "b", "nv")
+
+" Enhance the original mapping, jump more without chaning the direction
+nnoremap j 15j
+nnoremap k 15k
+nnoremap h b
+nnoremap l w
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
