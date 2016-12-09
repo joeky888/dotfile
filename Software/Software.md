@@ -41,6 +41,7 @@ Software
 * JComicDownloader
 * JDownloader
 * Miniconda
+* BusyBox / Toybox
 * youtube-dl
 * you-get
 
