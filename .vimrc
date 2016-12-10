@@ -342,8 +342,9 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 call CreateShortcut("C-z", "u", "n")
 call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 
-" Ctrl R - Redo
-call CreateShortcut("C-y", "<C-r>", "in")
+" Ctrl Y - Redo
+call CreateShortcut("C-y", "<C-r>", "n")
+call CreateShortcut("C-y", "<C-o><C-r>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>i", "inv", "noTrailingIInInsert", "cmdInVisual")
