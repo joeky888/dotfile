@@ -545,13 +545,13 @@ hi DiffAdd              ctermbg=24      guibg=#13354A
 hi DiffChange           ctermfg=181     ctermbg=239     guifg=#89807D     guibg=#4C4745
 hi DiffDelete           ctermfg=162     ctermbg=53      guifg=#960050     guibg=#1E0010
 hi DiffText             ctermbg=102     cterm=none      guibg=#4C4745     gui=none
-hi Directory            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
+hi Directory            ctermfg=81      cterm=none      guifg=#66D9EF     gui=none
 hi Error                ctermfg=219     ctermbg=89      guifg=#E6DB74     guibg=#1E0010
 hi ErrorMsg             ctermfg=199     ctermbg=16      cterm=none        guifg=#F92672       guibg=#232526     gui=none
 hi Exception            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
 hi Float                ctermfg=135     guifg=#AE81FF
 hi FoldColumn           ctermfg=67      ctermbg=16      guifg=#465457     guibg=#000000
-hi Folded               ctermfg=242 ctermbg=235 cterm=NONE guifg=#7E8E91 guibg=#272822 gui=NONE
+hi Folded               ctermfg=242     ctermbg=235     cterm=NONE        guifg=#7E8E91       guibg=#272822     gui=NONE
 hi Function             ctermfg=118     guifg=#A6E22E
 hi Identifier           ctermfg=208     cterm=none      guifg=#FD971F
 hi Ignore               ctermfg=244     ctermbg=232     guifg=#808080     guibg=bg
@@ -569,7 +569,7 @@ hi Pmenu                ctermfg=81      ctermbg=16      guifg=#66D9EF     guibg=
 hi PmenuSbar            ctermbg=232     guibg=#080808
 hi PmenuThumb           ctermfg=81      guifg=#66D9EF
 hi PreCondit            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
-hi PreProc              ctermfg=208     cterm=none      guifg=#A6E22E
+hi PreProc              ctermfg=118     cterm=none      guifg=#A6E22E
 hi Question             ctermfg=81      guifg=#66D9EF
 hi Repeat               ctermfg=161     cterm=none      guifg=#F92672     gui=none
 hi SignColumn           ctermfg=118     ctermbg=235     guifg=#A6E22E     guibg=#232526
