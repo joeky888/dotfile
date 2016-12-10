@@ -242,6 +242,10 @@ endfunction
 nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
 nnoremap <Space> i<Space>
+" Vim undo too much
+inoremap <Space> <Space><C-g>u
+inoremap <CR> <CR><C-g>u
+inoremap <Tab> <Tab><C-g>u
 
 " Backspace is deleting in visual mode
 call CreateShortcut("BS", "d", "v")
