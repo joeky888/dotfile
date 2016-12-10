@@ -48,7 +48,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     source $ZSH/oh-my-zsh.sh
     export KEYTIMEOUT=1 # Make ESC faster
     setopt NO_NOMATCH # disable zsh match filename
-    compinit # Init completion
     _comp_options+=(globdots) # Show hidden files when using completion
     zle -N ZshPasteFromClipboard # Bind function to command
     zle -N ZshCutToClipboard # Bind function to command
