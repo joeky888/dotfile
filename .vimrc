@@ -16,7 +16,7 @@ set cursorline " Highligt the cursor line
 set showmatch " When a bracket is inserted, briefly jump to the matching one
 set matchtime=1 " ... during this time
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
-set history=100 " Keep 100 undo
+set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
 set scrolloff=10 " Always keep 10 lines after or before when scrolling
 set sidescrolloff=5 " Always keep 5 lines after or before when side scrolling
@@ -670,6 +670,8 @@ if has("gui_running")
     vnoremap } <ESC>:call WrapSelected("{","}")<CR>
     vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
     vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
+    vnoremap < <ESC>:call WrapSelected("<",">")<CR>
+    vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
     " Ctrl C is copying line if there is no word seleted
     call CreateShortcut("C-c", "V\"+y", "in")
@@ -682,7 +684,7 @@ if has("gui_running")
     cnoremap <C-x> <C-y><C-e><C-u>
 
     " Ctrl v is paste / override selected then paste
-    call CreateShortcut("C-v", ":call paste#Paste()<CR>", "i")
+    call CreateShortcut("C-v", "<C-r><C-o>+<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
     call CreateShortcut("C-v", "\"+gP", "n")
     call CreateShortcut("C-v", "d:call SomeTime()<CR>\"+gP", "v")
     cnoremap <C-v> <C-r>+
@@ -711,6 +713,7 @@ endif
 function! WrapSelected(c1, c2)
   execute "normal `<i".a:c1
   execute "normal `>a".a:c2
+  execute "normal l"
 endfunction
 
 " Byobu key binding
