@@ -1,7 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MiniVim
 " Details on : https://github.com/sd65/MiniVim
-let g:UseCustomKeyBindings = get(g:, 'UseCustomKeyBindings', "1")
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ General options
 syntax enable " Enable syntax highlights
@@ -109,9 +108,6 @@ imap <expr> <f28> XTermPasteBegin("")
 vmap <expr> <f28> XTermPasteBegin("c")
 cmap <f28> <nop>
 cmap <f29> <nop>
-
-""" Key mappings
-if g:UseCustomKeyBindings
 
 " Helper functions
 function! CreateShortcut(keys, cmd, where, ...)
@@ -391,8 +387,6 @@ function! DeleteSelectedLines()
   let l:lineEnd = line("'>")
   execute l:lineBegin.",".l:lineEnd."d"
 endfunction
-
-endif " End custom key bindings
 
 """ Custom commands
 
