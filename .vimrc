@@ -192,17 +192,17 @@ function! MySave()
   echohl None
 endfunction
 function! OpenLastBufferInNewTab()
-    redir => ls_output
-    silent exec 'ls'
-    redir END
-    let ListBuffers = reverse(split(ls_output, "\n"))
-    for line in ListBuffers
-      let title = split(line, "\"")[1]
-      if title !~  "\[No Name"
-        execute "tabnew +" . split(line, " ")[0] . "buf"
-        break
-      endif
-    endfor
+  redir => ls_output
+  silent exec 'ls'
+  redir END
+  let ListBuffers = reverse(split(ls_output, "\n"))
+  for line in ListBuffers
+    let title = split(line, "\"")[1]
+    if title !~  "\[No Name"
+      execute "tabnew +" . split(line, " ")[0] . "buf"
+      break
+    endif
+  endfor
 endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
@@ -638,75 +638,75 @@ set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
 
 if has("gui_running")
-    if has('win32') || has('win64')
-        set backup
-        set backupskip=%TMP%
-        set undodir=%TMP%
-        set directory=%TMP%
-        set backupdir=%TMP%
-        set guifont=Ubuntu\ Mono:h14
-        set guifontwide=DroidMono:h13
-    else
-        set guifont=Ubuntu\ Mono\ 14
-    endif
-    set number
-    set autoindent " auto indent
-    set lines=999 columns=999 " set window Maximized
-    set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
-    set selection=exclusive " Don't select char under cursor
-    set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
-    set scrolloff& " unset scroll values
-    set sidescrolloff&
-    inoremap {<CR> {<CR>}<ESC>O
-    inoremap [<CR> [<CR>]<ESC>O
-    inoremap (<CR> (<CR>)<ESC>O
-    vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
-    vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
-    vnoremap { <ESC>:call WrapSelected("{","}")<CR>
-    vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
-    vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
-    vnoremap } <ESC>:call WrapSelected("{","}")<CR>
-    vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
-    vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
-    vnoremap < <ESC>:call WrapSelected("<",">")<CR>
-    vnoremap > <ESC>:call WrapSelected("<",">")<CR>
+  if has('win32') || has('win64')
+    set backup
+    set backupskip=%TMP%
+    set undodir=%TMP%
+    set directory=%TMP%
+    set backupdir=%TMP%
+    set guifont=Ubuntu\ Mono:h14
+    set guifontwide=DroidMono:h13
+  else
+    set guifont=Ubuntu\ Mono\ 14
+  endif
+  set number
+  set autoindent " auto indent
+  set lines=999 columns=999 " set window Maximized
+  set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
+  set selection=exclusive " Don't select char under cursor
+  set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
+  set scrolloff& " unset scroll values
+  set sidescrolloff&
+  inoremap {<CR> {<CR>}<ESC>O
+  inoremap [<CR> [<CR>]<ESC>O
+  inoremap (<CR> (<CR>)<ESC>O
+  vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
+  vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
+  vnoremap { <ESC>:call WrapSelected("{","}")<CR>
+  vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
+  vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
+  vnoremap } <ESC>:call WrapSelected("{","}")<CR>
+  vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
+  vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
+  vnoremap < <ESC>:call WrapSelected("<",">")<CR>
+  vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
-    " Ctrl C is copying line if there is no word seleted
-    call CreateShortcut("C-c", "V\"+y", "in")
-    call CreateShortcut("C-c", "\"+y", "v")
-    cnoremap <C-c> <C-y>
+  " Ctrl C is copying line if there is no word seleted
+  call CreateShortcut("C-c", "V\"+y", "in")
+  call CreateShortcut("C-c", "\"+y", "v")
+  cnoremap <C-c> <C-y>
 
-    " Ctrl X is cutting line if there is no word seleted
-    call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-    call CreateShortcut("C-x", "V\"+x", "n")
-    call CreateShortcut("C-x", "\"+x", "v")
-    cnoremap <C-x> <C-y><C-e><C-u>
+  " Ctrl X is cutting line if there is no word seleted
+  call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-x", "V\"+x", "n")
+  call CreateShortcut("C-x", "\"+x", "v")
+  cnoremap <C-x> <C-y><C-e><C-u>
 
-    " Ctrl v is paste / override selected then paste
-    call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-    call CreateShortcut("C-v", "\"+gP", "n")
-    call CreateShortcut("C-v", "d\"+gP", "v")
-    cnoremap <C-v> <C-r>+
+  " Ctrl v is paste / override selected then paste
+  call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-v", "\"+gP", "n")
+  call CreateShortcut("C-v", "d\"+gP", "v")
+  cnoremap <C-v> <C-r>+
 
-    " Meta LeftMouse is block selecting
-    noremap  <M-LeftMouse> <4-LeftMouse>
-    inoremap <M-LeftMouse> <4-LeftMouse>
-    onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-    noremap  <M-LeftDrag>  <LeftDrag>
-    inoremap <M-LeftDrag>  <LeftDrag>
-    onoremap <M-LeftDrag>  <C-C><LeftDrag>
+  " Meta LeftMouse is block selecting
+  noremap  <M-LeftMouse> <4-LeftMouse>
+  inoremap <M-LeftMouse> <4-LeftMouse>
+  onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+  noremap  <M-LeftDrag>  <LeftDrag>
+  inoremap <M-LeftDrag>  <LeftDrag>
+  onoremap <M-LeftDrag>  <C-C><LeftDrag>
 
-    " Deleting words and Entering insert mode
-    call CreateShortcut("CR", "di<CR>", "v")
-    call CreateShortcut("Space", "di<Space>", "v")
-    call CreateShortcut("C-BS", "d", "v")
-    call CreateShortcut("C-Del", "ldw", "i")
-    call CreateShortcut("C-Del", "dw", "n")
+  " Deleting words and Entering insert mode
+  call CreateShortcut("CR", "di<CR>", "v")
+  call CreateShortcut("Space", "di<Space>", "v")
+  call CreateShortcut("C-BS", "d", "v")
+  call CreateShortcut("C-Del", "ldw", "i")
+  call CreateShortcut("C-Del", "dw", "n")
 
-    " Get into insert mode by pressing any keys in visual mode
-    for b:char in split(g:CharSet, '\zs')
-      execute "vnoremap ".b:char." di".b:char
-    endfor
+  " Get into insert mode by pressing any keys in visual mode
+  for b:char in split(g:CharSet, '\zs')
+    execute "vnoremap ".b:char." di".b:char
+  endfor
 endif
 
 function! WrapSelected(c1, c2)
