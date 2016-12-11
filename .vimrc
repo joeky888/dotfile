@@ -12,8 +12,6 @@ set shiftwidth=4 " Indent with four spaces
 set incsearch " Search as typing
 set hlsearch " Highlight search results
 set cursorline " Highligt the cursor line
-set showmatch " When a bracket is inserted, briefly jump to the matching one
-set matchtime=1 " ... during this time
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
 set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
@@ -26,6 +24,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set updatetime=750
+set autoread " Auto reload content if it changed outside of vim
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set encoding=utf-8
