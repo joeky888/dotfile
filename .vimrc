@@ -261,12 +261,14 @@ call CreateShortcut("C-c", "V:w! /tmp/clipboard.txt<CR>", "ni")
 call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy all lines of selection
 
 " Ctrl X - Copy
-call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvd", "ni")
+call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvd", "n")
+call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvdi<C-g>u", "i", "noTrailingIInInsert")
 " Vim still cut all lines of selection
 vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl V - Paste
-call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "ni")
+call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
+call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
