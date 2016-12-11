@@ -638,10 +638,6 @@ set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword& " '-' should not be one of the keywords
 
-function! SomeTime()
-"   just waste some time bro!
-endfunction
-
 if has("gui_running")
     if has('win32') || has('win64')
         set backup
@@ -690,7 +686,7 @@ if has("gui_running")
     " Ctrl v is paste / override selected then paste
     call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
     call CreateShortcut("C-v", "\"+gP", "n")
-    call CreateShortcut("C-v", "d:call SomeTime()<CR>\"+gP", "v")
+    call CreateShortcut("C-v", "d\"+gP", "v")
     cnoremap <C-v> <C-r>+
 
     " Meta LeftMouse is block selecting
