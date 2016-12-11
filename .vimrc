@@ -279,7 +279,8 @@ call CreateShortcut("Home", "gg", "inv")
 call CreateShortcut("End", "G", "inv")
 
 " Ctrl K - Delete Line
-call CreateShortcut("C-k", "dd", "in")
+call CreateShortcut("C-k", "dd", "n")
+call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 vnoremap <C-k> <ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl D - Duplicate Line
@@ -685,7 +686,8 @@ if has("gui_running")
     cnoremap <C-c> <C-y>
 
     " Ctrl X is cutting line if there is no word seleted
-    call CreateShortcut("C-x", "V\"+x", "in")
+    call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+    call CreateShortcut("C-x", "V\"+x", "n")
     call CreateShortcut("C-x", "\"+x", "v")
     cnoremap <C-x> <C-y><C-e><C-u>
 
