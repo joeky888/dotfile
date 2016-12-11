@@ -281,7 +281,7 @@ call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrai
 vnoremap <C-k> <ESC>:call DeleteSelectedLines()<CR>
 
 " Ctrl D - Duplicate Line
-call CreateShortcut("C-d", "mjyyp`jjl", "i")
+call CreateShortcut("C-d", "mjyyp`jja<C-g>u", "i", "noTrailingIInInsert")
 call CreateShortcut("C-d", "mjyyp`jj", "n")
 
 " Ctrl Q - Visual block selection
@@ -338,7 +338,7 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 
 " Ctrl Z - Undo
 call CreateShortcut("C-z", "u", "n")
-call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+call CreateShortcut("C-z", "<C-o>u<Right>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 
 " Ctrl Y - Redo
 call CreateShortcut("C-y", "<C-r>", "n")
