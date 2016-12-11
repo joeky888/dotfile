@@ -692,7 +692,7 @@ if has("gui_running")
     cnoremap <C-x> <C-y><C-e><C-u>
 
     " Ctrl v is paste / override selected then paste
-    call CreateShortcut("C-v", "<C-r><C-o>+<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+    call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
     call CreateShortcut("C-v", "\"+gP", "n")
     call CreateShortcut("C-v", "d:call SomeTime()<CR>\"+gP", "v")
     cnoremap <C-v> <C-r>+
