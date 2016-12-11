@@ -13,6 +13,8 @@ export EDITOR="$VISUAL"
 alias proxyNtust='export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
 alias proxyYouku='export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy"'
 alias proxyUnset='unset http_proxy && unset https_proxy && unset ftp_proxy'
+alias upgradeYoutubedl='pip3 install youtube-dl -U'
+alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc && cd -"
@@ -64,6 +66,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
     bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
+    complete -cf sudo # complete sudo command
+    complete -cf man # complete man command
     bind 'set completion-ignore-case on' # Ignore case
     bind '"\e[A": history-search-backward' # Up key is searching backward
     bind '"\e[B": history-search-forward'  # Down key is searching forward
@@ -72,8 +76,7 @@ fi
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-    alias upgradeYoutubedl='sudo pip3 install youtube-dl -U'
-    alias upgradeYou-get='sudo pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
+    true
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
     true
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
@@ -83,8 +86,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     alias apt-Cygwin-Install='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages'
     alias apt-Cygwin-Uninstall='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --remove-packages'
     alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
-    alias upgradeYoutubedl='pip3 install youtube-dl -U'
-    alias upgradeYou-get='pip3 install --upgrade git+https://github.com/soimort/you-get@develop'
     alias sudo='cygstart --action=runas "$@"'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
     true
