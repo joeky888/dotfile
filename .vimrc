@@ -11,7 +11,7 @@ set softtabstop=4 " ... and insert four spaces
 set shiftwidth=4 " Indent with four spaces
 set incsearch " Search as typing
 set hlsearch " Highlight search results
-set cursorline " Highligt the cursor line
+set cursorline " Highlight the cursor line
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
 set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
@@ -601,6 +601,17 @@ hi iCursor              guifg=#000000   guibg=#F8F8F0
 
 " Final redraw
 call ChangeAccentColor()
+
+autocmd FileType text call HighlightTXT()
+
+function! HighlightTXT()
+  " Copy from $VIM/syntax/lua.vim
+  " integer number
+  syn match txtNumber "\<\d\+\>"
+  " floating point number, with dot, optional exponent
+  syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+  hi def link txtNumber		Number
+endfunction
 
 set completeopt=menuone,noinsert,noselect,longest
 set complete-=w,b,u,t,i
