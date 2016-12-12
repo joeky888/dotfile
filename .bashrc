@@ -51,6 +51,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export KEYTIMEOUT=1 # Make ESC faster
     setopt NO_NOMATCH # disable zsh match filename
     _comp_options+=(globdots) # Show hidden files when using completion
+    zstyle ':completion:*:sudo::' environ PATH="/sbin:/usr/sbin:$PATH" HOME="/root" # Completion for sudo
     zle -N ZshPasteFromClipboard # Bind function to command
     zle -N ZshCutToClipboard # Bind function to command
     # alt + arrow key to move
