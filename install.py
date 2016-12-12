@@ -30,9 +30,11 @@ def windows():
     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'")
     commands.append("python3 get-pip.py")
     commands.append("rm get-pip.py")
+    commands.append("echo y | pip install youtube-dl");
+    commands.append("echo y | pip install you-get");
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
-        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")s
+        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 #     commands.append("rm -rf /usr/share/fonts/win-fonts")
 #     commands.append("mkdir /usr/share/fonts/win-fonts")
 #     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
