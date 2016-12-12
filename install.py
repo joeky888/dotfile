@@ -74,7 +74,7 @@ def linux():
     commands.append("echo y | pip install you-get");
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
-        commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
     commands.append("openbox --reconfigure")
 
 def bsd():
