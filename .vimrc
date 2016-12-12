@@ -32,6 +32,7 @@ set fileencodings=utf-8,ucs-bom,gbk,big5,utf-16le,utf-16be,default,latin1
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
+set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
 let g:netrw_list_hide='' " Show all hidden files when usding file explorer
 let g:netrw_hide=0 " Show all hidden files when usding file explorer
 let g:netrw_sizestyle="H" " Human-readable file size in file explorer
@@ -616,35 +617,6 @@ function! HighlightTXT()
   syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
   hi def link txtNumber		Number
 endfunction
-
-" Set up tab tooltips with every buffer name
-function! GuiTabToolTip()
-  let tip = ''
-  let bufnrlist = tabpagebuflist(v:lnum)
-
-  for bufnr in bufnrlist
-    " Separate non-empty buffer entries
-    if tip!=''
-      let tip .= ' | '
-    endif
-
-    " Add name of buffer
-    let name=expand('%:p')
-"     let name=bufname(bufnr)
-    if name == ''
-      " give a name to no name documents
-      if getbufvar(bufnr,'&buftype')=='quickfix'
-        let name = '[Quickfix List]'
-      else
-        let name = '[No Name]'
-      endif
-    endif
-    let tip.=name
-
-  return tip
-endfunction
-
-set guitabtooltip=%{GuiTabToolTip()}
 
 set completeopt=menuone,noinsert,noselect,longest
 set complete-=w,b,u,t,i
