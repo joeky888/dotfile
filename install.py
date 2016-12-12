@@ -14,8 +14,8 @@ if len(sys.argv) == 1:
 commands = []
 
 def windows():
-    #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
-    #commands.append("install apt-cyg /bin && rm apt-cyg");
+#     commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
+#     commands.append("install apt-cyg /bin && rm apt-cyg");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe")
     commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++")
     commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages cygwin-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel")
@@ -27,7 +27,8 @@ def windows():
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("git config --global core.editor vim")
-    print("Make sure miniconda is installed!!!")
+    print("Run install.bat to install dotfiles.")
+    print("Make sure miniconda is installed.")
 #     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'")
 #     commands.append("python3 get-pip.py")
 #     commands.append("rm get-pip.py")
