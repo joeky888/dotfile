@@ -27,18 +27,17 @@ def windows():
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("git config --global core.editor vim")
-    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'")
-    commands.append("python3 get-pip.py")
-    commands.append("rm get-pip.py")
-    commands.append("echo y | pip3 install youtube-dl")
-    commands.append("echo y | pip3 install you-get")
-    pkgLocation = site.getsitepackages()
-    for location in pkgLocation:
-        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+    print("Make sure miniconda is installed!!!")
+#     commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'")
+#     commands.append("python3 get-pip.py")
+#     commands.append("rm get-pip.py")
+    commands.append("echo y | pip install youtube-dl")
+    commands.append("echo y | pip install you-get")
+    commands.append("install -D ~/dotfile/Windows/sitecustomize.py ~/Miniconda3/Lib/site-packages/sitecustomize.py")
     commands.append("rm -rf /usr/share/fonts/win-fonts")
     commands.append("mkdir /usr/share/fonts/win-fonts")
     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
-    #commands.append("fc-cache -fv")
+#     commands.append("fc-cache -fv")
 
 def linux():
     commands.append("sudo apt-get update")
@@ -66,14 +65,16 @@ def linux():
     commands.append("sudo systemctl enable reconnect.service")
     commands.append("sudo cp ~/dotfile/Linux/BaiduCloud.desktop /usr/share/applications/BaiduCloud.desktop")
     commands.append("sudo cp ~/dotfile/Linux/gvim.desktop /usr/share/applications/gvim.desktop")
-    commands.append("curl -LOC - 'https://bootstrap.pypa.io/get-pip.py'");
-    commands.append("sudo python3 get-pip.py");
-    commands.append("rm get-pip.py");
-    commands.append("echo y | sudo pip3 install youtube-dl");
-    commands.append("echo y | sudo pip3 install you-get");
+    commands.append("curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'");
+    commands.append("chmod 777 Miniconda3-latest-Linux-x86_64.sh");
+    commands.append("./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f");
+    commands.append("rm Miniconda3-latest-Linux-x86_64.sh");
+    commands.append("export PATH=~/Miniconda3/bin:$PATH");
+    commands.append("echo y | pip install youtube-dl");
+    commands.append("echo y | pip install you-get");
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
-        commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+        commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
     commands.append("openbox --reconfigure")
 
 def bsd():

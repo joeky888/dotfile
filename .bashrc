@@ -76,10 +76,11 @@ fi
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-    true
+    export PATH=~/Miniconda3/bin:$PATH
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
     true
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
+    export PATH=~/Miniconda3/Script:$PATH
     export DISPLAY=:0.0
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
     alias apt-Cygwin-Search='setup-x86_64.exe --package-manager --wait'
