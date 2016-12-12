@@ -136,6 +136,9 @@ elif target == "bsd":
 elif target == "container":
     container()
     install()
+elif target == "sudo":
+    sudo()
+    install()
 else:
     print("System not support")
     sys.exit(1)
