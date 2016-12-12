@@ -42,7 +42,7 @@ def windows():
 
 def linux():
     commands.append("sudo apt-get update")
-    commands.append("sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gnome network-manager file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y")
+    commands.append("sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gtk3 network-manager file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y")
     commands.append("rm -rf ~/dotfile")
     commands.append("rm -rf ~/.oh-my-zsh")
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
