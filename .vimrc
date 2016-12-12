@@ -617,6 +617,35 @@ function! HighlightTXT()
   hi def link txtNumber		Number
 endfunction
 
+" Set up tab tooltips with every buffer name
+function! GuiTabToolTip()
+  let tip = ''
+  let bufnrlist = tabpagebuflist(v:lnum)
+
+  for bufnr in bufnrlist
+    " Separate non-empty buffer entries
+    if tip!=''
+      let tip .= ' | '
+    endif
+
+    " Add name of buffer
+    let name=expand('%:p')
+"     let name=bufname(bufnr)
+    if name == ''
+      " give a name to no name documents
+      if getbufvar(bufnr,'&buftype')=='quickfix'
+        let name = '[Quickfix List]'
+      else
+        let name = '[No Name]'
+      endif
+    endif
+    let tip.=name
+
+  return tip
+endfunction
+
+set guitabtooltip=%{GuiTabToolTip()}
+
 set completeopt=menuone,noinsert,noselect,longest
 set complete-=w,b,u,t,i
 set shortmess+=c
