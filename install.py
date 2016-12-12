@@ -14,12 +14,12 @@ if len(sys.argv) == 1:
 commands = []
 
 def sudo():
-    commands.append("ln -sf /home/joeky/dotfile/.bashrc /root/.bashrc")
-    commands.append("ln -sf /home/joeky/dotfile/.bash_profile /root/.bash_profile")
-    commands.append("ln -sf /home/joeky/dotfile/.tmux.conf /root/.tmux.conf")
-    commands.append("ln -sf /home/joeky/dotfile/.zshrc /root/.zshrc")
-    commands.append("ln -sf /home/joeky/dotfile/.vimrc /root/.vimrc")
-    commands.append("ln -sf /home/joeky/dotfile/.fbtermrc /root/.fbtermrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.bashrc /root/.bashrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.bash_profile /root/.bash_profile")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.tmux.conf /root/.tmux.conf")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.zshrc /root/.zshrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.vimrc /root/.vimrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.fbtermrc /root/.fbtermrc")
 
 def windows():
     #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
