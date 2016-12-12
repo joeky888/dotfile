@@ -14,11 +14,11 @@ if len(sys.argv) == 1:
 commands = []
 
 def windows():
-#     commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
-#     commands.append("install apt-cyg /bin && rm apt-cyg");
+    commands.append("curl https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
+    commands.append("install apt-cyg /bin && rm apt-cyg");
     commands.append("curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe")
-    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages wget curl tar p7zip git openssh sed vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++")
-    commands.append("setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages cygwin-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel")
+    commands.append("apt-cyg install wget curl tar p7zip git openssh sed vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++")
+    commands.append("apt-cyg install cygwin-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel")
     commands.append("grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab")
     commands.append("grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab")
     commands.append("mount -a")
@@ -35,9 +35,9 @@ def windows():
     commands.append("echo y | pip install youtube-dl")
     commands.append("echo y | pip install you-get")
     commands.append("install -D ~/dotfile/Windows/sitecustomize.py ~/Miniconda3/Lib/site-packages/sitecustomize.py")
-    commands.append("rm -rf /usr/share/fonts/win-fonts")
-    commands.append("mkdir /usr/share/fonts/win-fonts")
-    commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
+#     commands.append("rm -rf /usr/share/fonts/win-fonts")
+#     commands.append("mkdir /usr/share/fonts/win-fonts")
+#     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
 #     commands.append("fc-cache -fv")
 
 def linux():
