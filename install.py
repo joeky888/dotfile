@@ -13,14 +13,6 @@ if len(sys.argv) == 1:
 
 commands = []
 
-def sudo():
-    commands.append("sudo ln -sf /home/joeky/dotfile/.bashrc /root/.bashrc")
-    commands.append("sudo ln -sf /home/joeky/dotfile/.bash_profile /root/.bash_profile")
-    commands.append("sudo ln -sf /home/joeky/dotfile/.tmux.conf /root/.tmux.conf")
-    commands.append("sudo ln -sf /home/joeky/dotfile/.zshrc /root/.zshrc")
-    commands.append("sudo ln -sf /home/joeky/dotfile/.vimrc /root/.vimrc")
-    commands.append("sudo ln -sf /home/joeky/dotfile/.fbtermrc /root/.fbtermrc")
-
 def windows():
     #commands.append("lynx -source rawgit.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg");
     #commands.append("install apt-cyg /bin && rm apt-cyg");
@@ -66,6 +58,12 @@ def linux():
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml")
     commands.append("ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.bashrc /root/.bashrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.bash_profile /root/.bash_profile")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.tmux.conf /root/.tmux.conf")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.zshrc /root/.zshrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.vimrc /root/.vimrc")
+    commands.append("sudo ln -sf /home/joeky/dotfile/.fbtermrc /root/.fbtermrc")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
     commands.append("sudo chmod 755 /usr/bin/reconnect")
     commands.append("sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service")
@@ -135,9 +133,6 @@ elif target == "bsd":
     install()
 elif target == "container":
     container()
-    install()
-elif target == "sudo":
-    sudo()
     install()
 else:
     print("System not support")
