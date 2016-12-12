@@ -610,6 +610,10 @@ function! HighlightTXT()
   syn match txtNumber "\<\d\+\>"
   " floating point number, with dot, optional exponent
   syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+  " floating point number, starting with a dot, optional exponent
+  syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
+  " floating point number, without dot, with exponent
+  syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
   hi def link txtNumber		Number
 endfunction
 
