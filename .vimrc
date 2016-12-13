@@ -1,7 +1,6 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" MiniVim
-" Details on : https://github.com/sd65/MiniVim
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ┌──────────────────────┐
+" │ Make Vim great again │
+" └──────────────────────┘
 """ General options
 syntax enable " Enable syntax highlights
 set ttyfast " Faster redraw
