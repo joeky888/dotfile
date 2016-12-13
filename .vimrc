@@ -4,7 +4,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 """ General options
 syntax enable " Enable syntax highlights
-set ttyfast " Faster refraw
+set ttyfast " Faster redraw
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set softtabstop=4 " ... and insert four spaces
@@ -367,7 +367,7 @@ function! KeysInNetrw() " Map keys in file explorer
   nmap <buffer> <Left> -
   " l - Display info
   nmap <buffer> l qf
-  " C-k - Delete file(s)/directorie(s)
+  " C-k - Delete files/directories
   nmap <buffer> <C-k> D
   vmap <buffer> <C-k> D
   " v - Enter to visual mode to select files
@@ -645,9 +645,9 @@ endfunction
 
 set noerrorbells " disable error sound
 autocmd VimEnter * set noerrorbells " disable error sound
-set vb t_vb= " disable visualbell
-set t_vb= " disable visualbell
-autocmd VimEnter * set vb t_vb= " disable visualbell
+set vb t_vb= " disable visual bell
+set t_vb= " disable visual bell
+autocmd VimEnter * set vb t_vb= " disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
@@ -687,12 +687,12 @@ if has("gui_running")
   vnoremap < <ESC>:call WrapSelected("<",">")<CR>
   vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
-  " Ctrl C is copying line if there is no word seleted
+  " Ctrl C is copying line if there is no word selected
   call CreateShortcut("C-c", "V\"+y", "in")
   call CreateShortcut("C-c", "\"+y", "v")
   cnoremap <C-c> <C-y>
 
-  " Ctrl X is cutting line if there is no word seleted
+  " Ctrl X is cutting line if there is no word selected
   call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
   call CreateShortcut("C-x", "V\"+x", "n")
   call CreateShortcut("C-x", "\"+x", "v")
