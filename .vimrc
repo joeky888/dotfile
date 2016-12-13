@@ -761,7 +761,7 @@ cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W>
 nnoremap <C-_> i<C-W>
 cnoremap <C-_> <C-w>
-vnoremap <bar> <S-i>
+vnoremap <bar> I
 
 function! ForceFoldmethodIndent()
   if &foldenable
