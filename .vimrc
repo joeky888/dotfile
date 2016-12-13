@@ -382,7 +382,7 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 
 " Ctrl Z - Undo
 call CreateShortcut("C-z", "u", "n")
-call CreateShortcut("C-z", "<C-o>u<Right>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 
 " Ctrl Y - Redo
 call CreateShortcut("C-y", "<C-r>", "n")
@@ -760,7 +760,7 @@ if has("gui_running")
   call CreateShortcut("Space", "di<Space>", "v")
   call CreateShortcut("C-BS", "d", "v")
   call CreateShortcut("C-Del", "ldw", "i")
-  call CreateShortcut("C-Del", "dw", "n")
+  nnoremap <C-Del> dwi
 
   " Get into insert mode by pressing any keys in visual mode
   for b:char in split(g:CharSet, '\zs')
@@ -784,8 +784,9 @@ call CreateShortcut("F4", ":tabn<CR>", "inv")
 call CreateShortcut("C-\\", ":call ToggleComments()<CR>", "inv")
 
 inoremap <C-b> <C-w>
-nnoremap <C-b> db
+nnoremap <C-b> i<C-w>
 cnoremap <C-b> <C-w>
+nnoremap <Del> i<Del>
 
 " Useful command mode mapping
 cnoremap <C-w> <C-c>
