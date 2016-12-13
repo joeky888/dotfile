@@ -756,7 +756,7 @@ cnoremap <C-e> <End>
 nnoremap : :set ignorecase<CR>:
 nnoremap / :set ignorecase<CR>/
 inoremap <C-BS> <C-W>
-nnoremap <C-BS> db
+nnoremap <C-BS> i<C-W>
 cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W>
 nnoremap <C-_> i<C-W>
