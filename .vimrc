@@ -40,7 +40,6 @@ let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
 " Highlight code area in markdown
 let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","sh","conf","zsh","debsources","resolv","sudoers"]
-" set iskeyword+=\- " Complete words containing a dash
 " Open all cmd args in new tabs
 execute ":silent tab all"
 " Open help in new tabs
@@ -651,7 +650,7 @@ autocmd VimEnter * set vb t_vb= " disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-set iskeyword& " '-' should not be one of the keywords
+" set iskeyword-=_ " _ Should not be one of the keywords
 
 if has("gui_running")
   if has('win32') || has('win64')
