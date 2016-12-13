@@ -4,7 +4,7 @@
 # Note that end-of-line comments are NOT supported, comments must be on a line of their own.
 
 
-# font family names/pixelsize used by fbterm, multiple font family names must be seperated by ','
+# font family names/pixelsize used by fbterm, multiple font family names must be separated by ','
 # and using a fixed width font as the first is strongly recommended
 font-names=Ubuntu Mono, Droid Sans Fallback, mono
 font-size=20
@@ -22,7 +22,7 @@ color-background=0
 # max scroll-back history lines of every window, value must be [0 - 65535], 0 means disable it
 history-lines=1000
 
-# up to 5 additional text encodings, multiple encodings must be seperated by ','
+# up to 5 additional text encodings, multiple encodings must be separated by ','
 # run 'iconv --list' to get available encodings.
 text-encodings=
 

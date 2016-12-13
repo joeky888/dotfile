@@ -1,4 +1,4 @@
-REGEDIT4
+Windows Registry Editor Version 5.00
 
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontLink\SystemLink]
 "Lucida Sans Unicode"="wqy-microhei.ttc"
