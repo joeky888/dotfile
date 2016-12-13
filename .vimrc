@@ -15,8 +15,8 @@ set cursorline " Highlight the cursor line
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
 set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
-set scrolloff=10 " Always keep 10 lines after or before when scrolling
-set sidescrolloff=5 " Always keep 5 lines after or before when side scrolling
+set scrolloff=999 " Always keep max lines after or before when scrolling
+set sidescrolloff=999 " Always keep max lines after or before whens side scrolling
 set noshowmode " Don't display the current mode
 set gdefault " The substitute flag g is on
 set hidden " Hide the buffer instead of closing when switching
