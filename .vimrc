@@ -292,10 +292,47 @@ call CreateShortcut("C-Down", "15j", "inv")
 call CreateShortcut("C-Up", "15k", "inv")
 
 " Ctrl Right - Next Word
-call CreateShortcut("C-Right", "w", "nv")
-
+" call CreateShortcut("C-Right", "w", "nv")
 " Ctrl Left - Previous Word
-call CreateShortcut("C-Left", "b", "nv")
+" call CreateShortcut("C-Left", "b", "nv")
+
+nnoremap <silent> <C-Right> :call MoveWord("Right", "n")<CR>
+nnoremap <silent> <C-Left>  :call MoveWord("Left", "n")<CR>
+inoremap <silent> <C-Right> <Right><ESC>:call MoveWord("Right", "i")<CR>i
+inoremap <silent> <C-Left>  <Right><ESC>:call MoveWord("Left", "i")<CR>i
+
+function! MoveWord(d, m)
+  if col(".") == 1 && a:d =~ "Left"
+    normal k$l
+    return
+  endif
+
+  if col(".") == col("$") && a:d =~ "Right"
+    normal j0
+    return
+  endif
+
+  if col(".") != 1 && col(".") == col("$")-1 && a:d =~ "Right" && a:m =~ "i"
+    normal j0
+    return
+  endif
+
+  let l1 = getline('.')
+  if a:d =~ "Right"
+    normal w
+  else
+    normal b
+  endif
+
+  let l2 = getline('.')
+  if l1 != l2
+    if a:d =~ "Right"
+      normal k$l
+    else
+      normal j0
+    endif
+  endif
+endfunction
 
 " Ctrl J - Pagedown
 call CreateShortcut("C-j", "15j", "inv")
