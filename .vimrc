@@ -319,12 +319,14 @@ call CreateShortcut("C-g", "ggVG", "inv")
 call CreateShortcut("C-l", "ggdG", "in")
 
 " Pageup - Move up Line
-call CreateShortcut("PageUp", ":m-2<CR>", "in")
-vnoremap <PageUp> :m -2<CR>gv
+nnoremap <silent> <PageUp> :<C-u>silent! move-2<CR>==
+inoremap <silent> <PageUp> <ESC>:<C-u>silent! move-2<CR>==i
+vnoremap <silent> <PageUp> :<C-u>silent! '<,'>move-2<CR>gv=gv
 
 " Pagedown - Move down Line
-call CreateShortcut("PageDown", ":m+<CR>", "in")
-vnoremap <PageDown> <ESC>:'<,'>m+<CR>gv
+nnoremap <silent> <PageDown> :<C-u>silent! move+<CR>==
+inoremap <silent> <PageDown> <ESC>:<C-u>silent! move+<CR>==i
+vnoremap <silent> <PageDown> :<C-u>silent! '<,'>move'>+<CR>gv=gv
 
 " Ctrl W - Quit
 call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
