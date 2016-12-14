@@ -305,24 +305,17 @@ call CreateShortcut("C-Up", "15k", "inv")
 " Ctrl Left - Previous Word
 " call CreateShortcut("C-Left", "b", "nv")
 
-nnoremap <silent> <C-Right> :call MoveWord("Right", "n")<CR>
-nnoremap <silent> <C-Left>  :call MoveWord("Left", "n")<CR>
-inoremap <silent> <C-Right> <Right><ESC>:call MoveWord("Right", "i")<CR>i
-inoremap <silent> <C-Left>  <Right><ESC>:call MoveWord("Left", "i")<CR>i
+nnoremap <silent> <C-Right> :call MoveWord("Right")<CR>
+nnoremap <silent> <C-Left>  :call MoveWord("Left")<CR>
 
-function! MoveWord(d, m)
-  if col(".") == 1 && a:d =~ "Left"
-    normal k$l
-    return
-  endif
-
+function! MoveWord(d)
   if col(".") == col("$") && a:d =~ "Right"
     normal j0
     return
   endif
 
-  if col(".") != 1 && col(".") == col("$")-1 && a:d =~ "Right" && a:m =~ "i"
-    normal j0
+  if col(".") == 1 && a:d =~ "Left"
+    normal k$l
     return
   endif
 
