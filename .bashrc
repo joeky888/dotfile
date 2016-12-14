@@ -46,7 +46,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     ZSH_THEME="bira"
     plugins=(git docker)
     DISABLE_AUTO_UPDATE="true"
-    export PATH=/usr/local/bin:$PATH
     source $ZSH/oh-my-zsh.sh
     export KEYTIMEOUT=1 # Make ESC faster
     setopt NO_NOMATCH # disable zsh match filename
@@ -76,7 +75,7 @@ fi
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-    if [[ -d "~/$HOME/Miniconda3" ]]; then
+    if [[ -d "$HOME/Miniconda3" ]]; then
         export PATH=~/Miniconda3/bin:$PATH
     fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
