@@ -262,9 +262,9 @@ call CreateShortcut("C-e", "$l", "inv")
 call CreateShortcut("C-c", "V:w! /tmp/clipboard.txt<CR>", "ni")
 call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy all lines of selection
 
-" Ctrl X - Copy
-call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvd", "n")
-call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>gvdi<C-g>u", "i", "noTrailingIInInsert")
+" Ctrl X - Cut
+call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>dd", "n")
+call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
 " Vim still cut all lines of selection
 vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:call DeleteSelectedLines()<CR>
 
