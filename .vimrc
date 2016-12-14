@@ -324,7 +324,7 @@ vnoremap <PageUp> :m -2<CR>gv
 
 " Pagedown - Move down Line
 call CreateShortcut("PageDown", ":m+<CR>", "in")
-vnoremap <PageDown> :m +1<CR>gv
+vnoremap <PageDown> <ESC>:'<,'>m+<CR>gv
 
 " Ctrl W - Quit
 call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
