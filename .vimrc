@@ -305,37 +305,6 @@ call CreateShortcut("C-Up", "15k", "inv")
 " Ctrl Left - Previous Word
 " call CreateShortcut("C-Left", "b", "nv")
 
-nnoremap <silent> <C-Right> :call MoveWord("Right")<CR>
-nnoremap <silent> <C-Left>  :call MoveWord("Left")<CR>
-
-function! MoveWord(d)
-  if col(".") == col("$") && a:d =~ "Right"
-    normal j0
-    return
-  endif
-
-  if col(".") == 1 && a:d =~ "Left"
-    normal k$l
-    return
-  endif
-
-  let l1 = getline('.')
-  if a:d =~ "Right"
-    normal w
-  else
-    normal b
-  endif
-
-  let l2 = getline('.')
-  if l1 != l2
-    if a:d =~ "Right"
-      normal k$l
-    else
-      normal j0
-    endif
-  endif
-endfunction
-
 " Ctrl J - Pagedown
 call CreateShortcut("C-j", "15j", "inv")
 
@@ -416,6 +385,37 @@ function! KeysInNetrw() " Map keys in file explorer
   nmap <buffer> <Tab> j
   " Exit explorer without closing vim
   nmap <buffer> <silent> <C-w> :bd<CR>
+endfunction
+
+nnoremap <silent> <C-Right> :call MoveWord("Right")<CR>
+nnoremap <silent> <C-Left>  :call MoveWord("Left")<CR>
+
+function! MoveWord(d)
+  if col(".") == col("$") && a:d =~ "Right"
+    normal j0
+    return
+  endif
+
+  if col(".") == 1 && a:d =~ "Left"
+    normal k$l
+    return
+  endif
+
+  let l1 = getline('.')
+  if a:d =~ "Right"
+    normal w
+  else
+    normal b
+  endif
+
+  let l2 = getline('.')
+  if l1 != l2
+    if a:d =~ "Right"
+      normal k$l
+    else
+      normal j0
+    endif
+  endif
 endfunction
 
 function! DeleteSelectedLines()
