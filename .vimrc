@@ -513,9 +513,9 @@ hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NON
 hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff gui=NONE
 " Pmenu is popup autocomplete color
 hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
+hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 
 hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
-hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Search ctermfg=yellow ctermbg=NONE cterm=NONE guibg=yellow guifg=black
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
@@ -603,7 +603,6 @@ hi NonText              ctermfg=59      guifg=#465457
 hi Normal               ctermfg=252     ctermbg=233     guifg=#F8F8F2     guibg=#1B1D1E
 hi Number               ctermfg=135     guifg=#AE81FF
 hi Operator             ctermfg=161     guifg=#F92672
-hi Pmenu                ctermfg=81      ctermbg=16      guifg=#66D9EF     guibg=#000000
 hi PmenuSbar            ctermbg=232     guibg=#080808
 hi PmenuThumb           ctermfg=81      guifg=#66D9EF
 hi PreCondit            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
