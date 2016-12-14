@@ -666,7 +666,7 @@ function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<c-r>=Smart_Complete()<CR>"
+      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-r>=Smart_Complete()<CR>"
     endfor
   else
     let g:autocomp=0
@@ -677,23 +677,17 @@ function! ToggleAutoComplete()
 endfunction
 
 function! Smart_Complete()
-  let line = getline('.')                         " current line to string
-
-  let substr = strpart(line, -1, col('.')+1)      " from the start of the current
-                                                  " line to one character right
-                                                  " of the cursor
-  let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
-
-  if (col('.') == 1 || col('.') == 2) " empty line, omni matching
+  if (col(".") == 1 || col(".") == 2) " empty lines, omni matching
     return "\<C-X>\<C-O>"
-  elseif match(matchstr(line, '\%' . (col('.')-2) . 'c.'), " ") != -1 " First character, omni matching
+  elseif (match(getline('.'), "^\s\+$") != -1) " empty lines, omni matching
     return "\<C-X>\<C-O>"
   endif
 
-  if (match(substr, '\/') != -1)
-    return "\<C-X>\<C-F>"                         " Line contains a slash, file matching
+  if match(g:CharSet, matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')) == -1 " First character, omni matching
+    return "\<C-X>\<C-O>"
   endif
-  return "\<C-X>\<C-P>"                           " existing text matching
+
+  return "\<C-X>\<C-P>" " Currnt file matching
 endfunction
 
 set noerrorbells " disable error sound
