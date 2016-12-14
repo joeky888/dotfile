@@ -651,8 +651,9 @@ function! HighlightTXT()
   hi def link txtNumber		Number
 endfunction
 
+autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
 set completeopt=menuone,noinsert,noselect,longest
-set complete-=w,b,u,t,i
+set complete=.
 set shortmess+=c
 
 let autocomp=0
@@ -666,7 +667,7 @@ function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
+      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<c-r>=Smart_Complete()<CR>"
     endfor
   else
     let g:autocomp=0
@@ -674,6 +675,26 @@ function! ToggleAutoComplete()
       execute "inoremap <silent> ".l:char." ".l:char
     endfor
   endif
+endfunction
+
+function! Smart_Complete()
+  let line = getline('.')                         " current line to string
+
+  let substr = strpart(line, -1, col('.')+1)      " from the start of the current
+                                                  " line to one character right
+                                                  " of the cursor
+  let substr = matchstr(substr, "[^ \t]*$")       " word till cursor
+
+  if (col('.') == 1 || col('.') == 2) " empty line, omni matching
+    return "\<C-X>\<C-O>"
+  elseif match(matchstr(line, '\%' . (col('.')-2) . 'c.'), " ") != -1 " First character, omni matching
+    return "\<C-X>\<C-O>"
+  endif
+
+  if (match(substr, '\/') != -1)
+    return "\<C-X>\<C-F>"                         " Line contains a slash, file matching
+  endif
+  return "\<C-X>\<C-P>"                           " existing text matching
 endfunction
 
 set noerrorbells " disable error sound
@@ -693,9 +714,11 @@ if has("gui_running")
     set undodir=%TMP%
     set directory=%TMP%
     set backupdir=%TMP%
+    set viminfo+=n%TMP%/.vim/viminfo
     set guifont=Ubuntu\ Mono:h14
     set guifontwide=DroidMono:h13
   else
+    set viminfo+=n/tmp/.vim/viminfo
     set guifont=Ubuntu\ Mono\ 14
   endif
   set number
