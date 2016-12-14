@@ -300,11 +300,6 @@ call CreateShortcut("C-Down", "15j", "inv")
 " Ctrl Up - Pageup
 call CreateShortcut("C-Up", "15k", "inv")
 
-" Ctrl Right - Next Word
-" call CreateShortcut("C-Right", "w", "nv")
-" Ctrl Left - Previous Word
-" call CreateShortcut("C-Left", "b", "nv")
-
 " Ctrl J - Pagedown
 call CreateShortcut("C-j", "15j", "inv")
 
@@ -325,11 +320,11 @@ call CreateShortcut("C-l", "ggdG", "in")
 
 " Pageup - Move up Line
 call CreateShortcut("PageUp", ":m-2<CR>", "in")
-call CreateShortcut("PageUp", "dkP", "v")
+vnoremap <PageUp> :m -2<CR>gv
 
 " Pagedown - Move down Line
 call CreateShortcut("PageDown", ":m+<CR>", "in")
-call CreateShortcut("PageDown", "dp", "v")
+vnoremap <PageDown> :m +1<CR>gv
 
 " Ctrl W - Quit
 call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
