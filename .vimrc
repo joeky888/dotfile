@@ -679,8 +679,10 @@ endfunction
 function! Smart_Complete()
   if (col(".") == 1 || col(".") == 2) " empty lines, omni matching
     return "\<C-X>\<C-O>"
-  elseif (match(getline('.'), "^\s\+$") != -1) " empty lines, omni matching
-    return "\<C-X>\<C-O>"
+  endif
+
+  if match("\/\\", matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')) != -1 " File matching
+    return "\<C-X>\<C-F>"
   endif
 
   if match(g:CharSet, matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')) == -1 " First character, omni matching
