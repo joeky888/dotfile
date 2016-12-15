@@ -681,11 +681,13 @@ function! Smart_Complete()
     return "\<C-X>\<C-O>"
   endif
 
-  if match("\/\\", matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')) != -1 " File matching
+  let currentChar = matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')
+
+  if match("\/\\", currentChar) != -1 " File matching
     return "\<C-X>\<C-F>"
   endif
 
-  if match(g:CharSet, matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')) == -1 " First character, omni matching
+  if match(g:CharSet, currentChar) == -1 " First character, omni matching
     return "\<C-X>\<C-O>"
   endif
 
