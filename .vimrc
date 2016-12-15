@@ -666,7 +666,7 @@ function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-r>=Smart_Complete()<CR>"
+      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-r>=SmartComplete()<CR>"
     endfor
   else
     let g:autocomp=0
@@ -676,7 +676,7 @@ function! ToggleAutoComplete()
   endif
 endfunction
 
-function! Smart_Complete()
+function! SmartComplete()
   if (col(".") == 1 || col(".") == 2) " empty lines, omni matching
     return "\<C-X>\<C-O>"
   endif
