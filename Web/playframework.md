@@ -12,7 +12,7 @@ Create an app by using eclipse
 * Install Eclipse Java EE IDE for Web Developers
 * Open Eclipse -> Help -> Install New Software -> Add -> Name:Scala IDE, Location:(see http://scala-ide.org/download/current.html or http://scala-ide.org/download/nightly.html) -> OK
 * $ activator new myapp play-java
-* Add 'addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "4.0.0")' to myapp/project/plugins.sbt
+* Add 'addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "5.0.1")' to myapp/project/plugins.sbt
 * $ cd myapp
 * $ activator clean
 * $ activator compile
@@ -39,9 +39,10 @@ Refresh if eclipse does not recognize some symbols
 * Start with "eclipse.exe -clean"
 * Right click and select refresh(F5) OR Right click and select Close Project and import it again
 
-eclipse setting
+Eclipse setting
 =====
-* eclipse.ini is setting for java stack size
-* Eclipse > Preferences > Java > Editor > Content Assist
+* eclipse.ini set java stack size
+* Window > Preferences > Java > Editor > Content Assist
 * Auto Activation > Auto activation triggers for Java
 * Enter "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._" instead of "."
+* Window > Preferences > General > Appearance > Use Dark theme
