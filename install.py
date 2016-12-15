@@ -64,8 +64,10 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
-    commands.append("sudo cp ~/dotfile/Linux/BaiduCloud.desktop /usr/share/applications/BaiduCloud.desktop")
-    commands.append("sudo cp ~/dotfile/Linux/gvim.desktop /usr/share/applications/gvim.desktop")
+#     commands.append("sudo cp ~/dotfile/Linux/BaiduCloud.desktop /usr/share/applications/BaiduCloud.desktop")
+    commands.append("sudo desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop")
+    commands.append("sudo desktop-file-install ~/dotfile/Linux/gvim.desktop")
+#     commands.append("sudo cp ~/dotfile/Linux/gvim.desktop /usr/share/applications/gvim.desktop")
     commands.append("curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'");
     commands.append("chmod 777 Miniconda3-latest-Linux-x86_64.sh");
     commands.append("./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f");

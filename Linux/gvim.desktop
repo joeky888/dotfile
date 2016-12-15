@@ -9,4 +9,4 @@ Keywords=Text;editor;
 Icon=gvim
 Categories=Application;Utility;TextEditor;
 StartupNotify=true
-MimeType=text/*;applications/*;
+MimeType=text/*;inode/directory;
