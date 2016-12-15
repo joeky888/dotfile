@@ -25,7 +25,7 @@ Run app
 * Reload on refreshing webpage
 * $ activator "~run 80"
 
-Debug by using eclipse
+Debug using eclipse
 =====
 * $ activator -jvm-debug 9999 "run 80"
 * Right click project -> Debug As -> Debug Configuration -> Remote Java Application -> Right Click and new -> change port to 9999 -> Debug
