@@ -909,6 +909,15 @@ au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
 au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
 au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
+" Fast rendering for current file
+function! FastRender()
+  setlocal nocursorline
+  syntax clear
+endfunction
+
+noremenu Edit.FastRender :call FastRender()<CR>
+command! FastRender execute "call FastRender()"
+
 " Split view
 noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
 noremenu Edit.Split\ Window.Vertical\ 3     :vsplit<CR>:vsplit<CR>:wincmd =<CR>
