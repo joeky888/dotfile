@@ -1,3 +1,7 @@
+Add activator to path
+=====
+* Download http://www.lightbend.com/activator/download
+
 Create an app by using intellij(not recommended)
 =====
 * $ activator new myapp play-java
