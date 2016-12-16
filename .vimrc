@@ -36,6 +36,7 @@ set updatetime=750
 set autoread " Auto reload content if it changed outside of vim
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
+set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
 set fileencodings=utf-8,ucs-bom,gbk,big5,utf-16le,utf-16be,default,latin1
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
@@ -294,17 +295,17 @@ call CreateShortcut("C-d", "mjyyp`jj", "n")
 " Ctrl Q - Visual block selection
 call CreateShortcut("C-q", "<C-v>", "inv")
 
+" Ctrl Up - Pageup, &scroll means half of screen lines
+call CreateShortcut("C-Up", &scroll*5/3."k", "inv")
+
 " Ctrl Down - Pagedown
-call CreateShortcut("C-Down", "15j", "inv")
-
-" Ctrl Up - Pageup
-call CreateShortcut("C-Up", "15k", "inv")
-
-" Ctrl J - Pagedown
-call CreateShortcut("C-j", "15j", "inv")
+call CreateShortcut("C-Down",  &scroll*5/3."j", "inv")
 
 " Ctrl U - Pageup
-call CreateShortcut("C-u", "15k", "inv")
+call CreateShortcut("C-u", &scroll*5/3."k", "inv")
+
+" Ctrl J - Pagedown
+call CreateShortcut("C-j", &scroll*5/3."j", "inv")
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
