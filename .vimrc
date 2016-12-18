@@ -34,6 +34,7 @@ set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
 set updatetime=750
 set autoread " Auto reload content if it changed outside of vim
+set viminfo= " Don't use vim info
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
@@ -712,11 +713,11 @@ if has("gui_running")
     set undodir=%TMP%
     set directory=%TMP%
     set backupdir=%TMP%
-    set viminfo+=n%TMP%/.vim/viminfo
+"     set viminfo+=n%TMP%/.vim/viminfo
     set guifont=Ubuntu\ Mono:h14
     set guifontwide=DroidMono:h13
   else
-    set viminfo+=n/tmp/.vim/viminfo
+"     set viminfo+=n/tmp/.vim/viminfo
     set guifont=Ubuntu\ Mono\ 14
   endif
   set number
