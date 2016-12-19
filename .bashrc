@@ -118,6 +118,13 @@ BashPasteFromClipboard()
     READLINE_LINE="$READLINE_LINE$(cat /tmp/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
 }
 
+sudo() {
+    old=$(umask)
+    umask 0022
+    command sudo "$@"
+    umask $old
+}
+
 forever()
 {
     if [ "$#" == 0 ]; then
