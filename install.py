@@ -63,6 +63,7 @@ def linux():
     commands.append("sudo ln -sf ~/dotfile/.bashrc /root/.bashrc")
     commands.append("sudo ln -sf ~/dotfile/.zshrc /root/.zshrc")
     commands.append("sudo git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh")
+    commands.append("sudo sudo chsh -s $(command -v zsh) root")
     commands.append("sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect")
     commands.append("sudo chmod 755 /usr/bin/reconnect")
     commands.append("sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service")
