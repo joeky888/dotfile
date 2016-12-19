@@ -84,7 +84,7 @@ endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 
 """ Custom backup and swap files
-let myVimDir = expand("/tmp/.vim")
+let myVimDir = expand("$HOME/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
 function! EnsureDirExists (dir)
@@ -712,11 +712,9 @@ if has("gui_running")
     set undodir=%TMP%
     set directory=%TMP%
     set backupdir=%TMP%
-    set viminfo+=n%TMP%/.vim/viminfo
     set guifont=Ubuntu\ Mono:h14
     set guifontwide=DroidMono:h13
   else
-    set viminfo+=n/tmp/.vim/viminfo
     set guifont=Ubuntu\ Mono\ 14
   endif
   set number
