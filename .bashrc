@@ -139,6 +139,60 @@ EncodingToGBK()
     export LC_ALL="zh_CN.GBK";
 }
 
+unzipToBig5()
+{
+    export zipfilename="$@"
+    `python <<END
+import os
+import sys
+import zipfile
+
+# print ("Processing File " + os.environ['zipfilename'])
+
+file=zipfile.ZipFile(os.environ['zipfilename'],"r");
+for name in file.namelist():
+    utf8name=name.decode('big5')
+#    print "Extracting " + utf8name
+    pathname = os.path.dirname(utf8name)
+    if not os.path.exists(pathname) and pathname!= "":
+        os.makedirs(pathname)
+    data = file.read(name)
+    if not os.path.exists(utf8name):
+        fo = open(utf8name, "w")
+        fo.write(data)
+        fo.close
+file.close()
+
+END`
+}
+
+unzipToGBK()
+{
+    export zipfilename="$@"
+    `python <<END
+import os
+import sys
+import zipfile
+
+# print ("Processing File " + os.environ['zipfilename'])
+
+file=zipfile.ZipFile(os.environ['zipfilename'],"r");
+for name in file.namelist():
+    utf8name=name.decode('gbk')
+#    print "Extracting " + utf8name
+    pathname = os.path.dirname(utf8name)
+    if not os.path.exists(pathname) and pathname!= "":
+        os.makedirs(pathname)
+    data = file.read(name)
+    if not os.path.exists(utf8name):
+        fo = open(utf8name, "w")
+        fo.write(data)
+        fo.close
+file.close()
+
+END`
+}
+
 ZshPasteFromClipboard()
 {
     LBUFFER="$LBUFFER$(cat /tmp/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
