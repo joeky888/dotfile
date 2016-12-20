@@ -164,6 +164,7 @@ for name in file.namelist():
 file.close()
 
 END`
+    unset zipfilename;
 }
 
 unzipToGBK()
@@ -191,6 +192,7 @@ for name in file.namelist():
 file.close()
 
 END`
+    unset zipfilename;
 }
 
 ZshPasteFromClipboard()
