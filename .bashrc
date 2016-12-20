@@ -143,15 +143,11 @@ unzipToBig5()
 {
     export zipfilename="$@"
     python2 <<END
-import os
-import sys
-import zipfile
+import os, sys, zipfile
 
-# print ("Processing File " + os.environ['zipfilename'])
-
-file=zipfile.ZipFile(os.environ['zipfilename'],"r");
+file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
-    utf8name=name.decode('big5')
+    utf8name = name.decode('big5')
 #    print "Extracting " + utf8name
     pathname = os.path.dirname(utf8name)
     if not os.path.exists(pathname) and pathname!= "":
@@ -171,15 +167,11 @@ unzipToGBK()
 {
     export zipfilename="$@"
     python2 <<END
-import os
-import sys
-import zipfile
+import os, sys, zipfile
 
-# print ("Processing File " + os.environ['zipfilename'])
-
-file=zipfile.ZipFile(os.environ['zipfilename'],"r");
+file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
-    utf8name=name.decode('gbk')
+    utf8name = name.decode('gbk')
 #    print "Extracting " + utf8name
     pathname = os.path.dirname(utf8name)
     if not os.path.exists(pathname) and pathname!= "":
