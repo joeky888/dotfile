@@ -142,7 +142,7 @@ EncodingToGBK()
 unzipToBig5()
 {
     export zipfilename="$@"
-    `python2 <<END
+    python2 <<END
 import os
 import sys
 import zipfile
@@ -163,14 +163,14 @@ for name in file.namelist():
         fo.close
 file.close()
 
-END`
+END
     unset zipfilename;
 }
 
 unzipToGBK()
 {
     export zipfilename="$@"
-    `python <<END
+    python2 <<END
 import os
 import sys
 import zipfile
@@ -191,7 +191,7 @@ for name in file.namelist():
         fo.close
 file.close()
 
-END`
+END
     unset zipfilename;
 }
 
