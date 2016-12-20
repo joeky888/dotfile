@@ -142,7 +142,7 @@ EncodingToGBK()
 unzipToBig5()
 {
     export zipfilename="$@"
-    `python <<END
+    `python2 <<END
 import os
 import sys
 import zipfile
