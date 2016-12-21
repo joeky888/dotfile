@@ -78,9 +78,8 @@ def linux():
     commands.append("chmod 777 Miniconda3-latest-Linux-x86_64.sh");
     commands.append("./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f");
     commands.append("rm Miniconda3-latest-Linux-x86_64.sh");
-    commands.append("export PATH=~/Miniconda3/bin:$PATH");
-    commands.append("echo y | pip install youtube-dl");
-    commands.append("echo y | pip install you-get");
+    commands.append("echo y | ~/Miniconda3/bin/pip install youtube-dl");
+    commands.append("echo y | ~/Miniconda3/bin/pip install you-get");
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
