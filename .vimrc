@@ -684,10 +684,6 @@ function! SmartComplete()
 
   let currentChar = matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')
 
-  if match("\/\\", currentChar) != -1 " File matching
-    return "\<C-X>\<C-F>"
-  endif
-
   if match(g:CharSet, currentChar) == -1 " First character, omni matching
     return "\<C-X>\<C-O>"
   endif
