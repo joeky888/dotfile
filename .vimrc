@@ -908,6 +908,10 @@ au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
 au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
 au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
+" Merge selected to one line
+nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
+vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
+
 " Fast rendering for current file
 function! FastRender()
   setlocal nocursorline
