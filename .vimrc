@@ -719,7 +719,7 @@ if has("gui_running")
   set lines=999 columns=999 " set window Maximized
   set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
   set selection=exclusive " Don't select char under cursor
-  set mouseshape+=v:beam,n:beam " set cursor shape as modern editors should be
+  set mouseshape+=a:beam " set cursor shape as modern editors should be
   set scrolloff& " unset scroll values
   set sidescrolloff&
   inoremap {<CR> {<CR>}<ESC>O
