@@ -38,7 +38,7 @@ set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
-set fileencodings=utf-8,ucs-bom,gbk,big5,utf-16le,utf-16be,default,latin1
+set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
@@ -965,7 +965,6 @@ noremenu Edit.Line\ ending.Mac   :set fileformat=mac<CR>
 
 " Encoding
 noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
-noremenu Edit.Encoding.UCS\ Bom  :e ++enc=ucs-bom<CR>
 noremenu Edit.Encoding.Big5      :e ++enc=big5<CR>
 noremenu Edit.Encoding.GBK       :e ++enc=gbk<CR>
 noremenu Edit.Encoding.Japan     :e ++enc=japan<CR>
@@ -975,7 +974,6 @@ noremenu Edit.Encoding.UTF16BE   :e ++enc=utf-16be<CR>
 noremenu Edit.Encoding.ANSI      :e ++enc=ansi<CR>
 
 command! EncodingUTF8    execute "e ++enc=utf-8"
-command! EncodingUcsBom  execute "e ++enc=ucs-bom"
 command! EncodingBig5    execute "e ++enc=big5"
 command! EncodingGBK     execute "e ++enc=gbk"
 command! EncodingJapan   execute "e ++enc=japan"
