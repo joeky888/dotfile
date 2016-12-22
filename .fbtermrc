@@ -20,7 +20,7 @@ color-foreground=7
 color-background=0
 
 # max scroll-back history lines of every window, value must be [0 - 65535], 0 means disable it
-history-lines=1000
+history-lines=65535
 
 # up to 5 additional text encodings, multiple encodings must be separated by ','
 # run 'iconv --list' to get available encodings.
