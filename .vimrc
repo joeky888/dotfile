@@ -710,6 +710,7 @@ if has("gui_running")
     set backupdir=%TMP%
     set guifont=Ubuntu\ Mono:h14
     set guifontwide=DroidMono:h13
+    au GUIEnter * simalt ~x " Full screen on start
   else
     set guifont=Ubuntu\ Mono\ 14
   endif
