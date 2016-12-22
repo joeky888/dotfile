@@ -1,17 +1,13 @@
 Adblock Plus
-ad-safe
-AutoScroll
-Black Menu for Google
+ad-safe / newadblock
 Bookmark Sentry (scanner)
 Download Chrome Extension
 Search by Image (by Google)
 Spotflux Lite
 Stylish
 Unlimited Free VPN - Hola
-YouTube Center Developer Build
 Full Page Screen Capture
 DotVPN — better than VPN
 DevTools Theme: Zero Dark Matrix
 Chrome PDF Viewer
-ParrotTalks
-WeatherCE
+TJDict
