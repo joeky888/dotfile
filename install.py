@@ -35,10 +35,6 @@ def windows():
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-#     commands.append("rm -rf /usr/share/fonts/win-fonts")
-#     commands.append("mkdir /usr/share/fonts/win-fonts")
-#     commands.append("find /cygdrive/c/Windows/Fonts -iname '*.ttc' -printf '%P\n' -o -iname '*.ttf' -printf '%P\n' | xargs -I % bash -c 'ln -s /cygdrive/c/Windows/Fonts/$0 /usr/share/fonts/win-fonts/$0' %")
-#     commands.append("fc-cache -fv")
 
 def linux():
     commands.append("sudo apt-get update")
@@ -71,10 +67,8 @@ def linux():
     commands.append("sudo chmod 755 /lib/systemd/system/reconnect.service")
     commands.append("sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf")
     commands.append("sudo systemctl enable reconnect.service")
-#     commands.append("sudo cp ~/dotfile/Linux/BaiduCloud.desktop /usr/share/applications/BaiduCloud.desktop")
     commands.append("sudo desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop")
     commands.append("sudo desktop-file-install ~/dotfile/Linux/gvim.desktop")
-#     commands.append("sudo cp ~/dotfile/Linux/gvim.desktop /usr/share/applications/gvim.desktop")
     commands.append("curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'");
     commands.append("chmod 777 Miniconda3-latest-Linux-x86_64.sh");
     commands.append("./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f");
@@ -84,7 +78,6 @@ def linux():
     pkgLocation = site.getsitepackages()
     for location in pkgLocation:
         commands.append("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-    commands.append("openbox --reconfigure")
 
 def bsd():
     commands.append("sudo pkg update")
