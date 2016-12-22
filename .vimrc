@@ -266,8 +266,8 @@ call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy a
 " Ctrl X - Cut
 call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>dd", "n")
 call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
-" Vim still cut all lines of selection
-vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:call DeleteSelectedLines()<CR>
+" Somehow, vim still cut all lines of selection
+vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:execute line("'<").",".line("'>")."d"<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
@@ -286,7 +286,7 @@ call CreateShortcut("End", "G", "inv")
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", "dd", "n")
 call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-vnoremap <C-k> <ESC>:call DeleteSelectedLines()<CR>
+vnoremap <C-k> <ESC>:execute line("'<").",".line("'>")."d"<CR>
 
 " Ctrl D - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jja<C-g>u", "i", "noTrailingIInInsert")
@@ -295,7 +295,7 @@ call CreateShortcut("C-d", "mjyyp`jj", "n")
 " Ctrl Q - Visual block selection
 call CreateShortcut("C-q", "<C-v>", "inv")
 
-" Ctrl Up - Pageup, &scroll means half of screen lines
+" Ctrl Up - Pageup, &scroll = half of screen lines
 call CreateShortcut("C-Up", &scroll*5/3."k", "inv")
 
 " Ctrl Down - Pagedown
@@ -385,43 +385,6 @@ function! KeysInNetrw() " Map keys in file explorer
   nmap <buffer> <Tab> j
   " Exit explorer without closing vim
   nmap <buffer> <silent> <C-w> :bd<CR>
-endfunction
-
-nnoremap <silent> <C-Right> :call MoveWord("Right")<CR>
-nnoremap <silent> <C-Left>  :call MoveWord("Left")<CR>
-
-function! MoveWord(d)
-  if col(".") == col("$") && a:d =~ "Right"
-    normal j0
-    return
-  endif
-
-  if col(".") == 1 && a:d =~ "Left"
-    normal k$l
-    return
-  endif
-
-  let l1 = getline('.')
-  if a:d =~ "Right"
-    normal w
-  else
-    normal b
-  endif
-
-  let l2 = getline('.')
-  if l1 != l2
-    if a:d =~ "Right"
-      normal k$l
-    else
-      normal j0
-    endif
-  endif
-endfunction
-
-function! DeleteSelectedLines()
-  let l:lineBegin = line("'<")
-  let l:lineEnd = line("'>")
-  execute l:lineBegin.",".l:lineEnd."d"
 endfunction
 
 """ Custom commands
