@@ -309,9 +309,11 @@ call CreateShortcut("C-j", &scroll*5/3."j", "inv")
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
+vnoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\%V\c
 
 " Ctrl R - Search and Replace
 call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/\\c", "in", "noTrailingIInInsert")
+vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/
 
 " Ctrl G - Select all
 call CreateShortcut("C-g", "ggVG", "inv")
