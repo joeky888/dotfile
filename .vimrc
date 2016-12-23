@@ -39,6 +39,7 @@ let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
 set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
+set viminfo+=n"$HOME/.vim/viminfo" " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
@@ -644,16 +645,16 @@ endfunction
 
 function! SmartComplete()
   if (col(".") == 1 || col(".") == 2) " empty lines, omni matching
-    return "\<C-X>\<C-O>"
+    return "\<C-x>\<C-o>"
   endif
 
   let currentChar = matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')
 
   if match(g:CharSet, currentChar) == -1 " First character, omni matching
-    return "\<C-X>\<C-O>"
+    return "\<C-x>\<C-o>"
   endif
 
-  return "\<C-X>\<C-P>" " Currnt file matching
+  return "\<C-x>\<C-p>" " Currnt file matching
 endfunction
 
 set noerrorbells " disable error sound
