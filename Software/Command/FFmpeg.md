@@ -26,6 +26,12 @@ Extract part of a video
 * Time format HH:MM:SS.xxx where xxx are milliseconds
 * $ ffmpeg -i orginalfile -ss 00:00:30.000 -t 00:00:05.000 newfile
 
+Changing the resolution
+======
+* $ ffmpeg -i input.mkv -s 720x480 -c:a copy output.mkv
+* Or
+* $ ffmpeg -i input.mkv -vf scale=720x480 -c:a copy output.mkv
+
 Speed up / Slow down a video
 =====
 * 2x speed
