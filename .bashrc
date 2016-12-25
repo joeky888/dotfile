@@ -26,6 +26,10 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
 
+if [[ -d "$HOME/Miniconda3" ]]; then
+    export PATH=~/Miniconda3/bin:$PATH
+fi
+
 if [[ $(command -v gvim) ]]; then
     gv=$(which gvim)
     gvim()
@@ -79,9 +83,7 @@ fi
 
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-    if [[ -d "$HOME/Miniconda3" ]]; then
-        export PATH=~/Miniconda3/bin:$PATH
-    fi
+    true
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
     alias ls='ls -G'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
