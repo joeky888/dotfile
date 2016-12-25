@@ -83,7 +83,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
         export PATH=~/Miniconda3/bin:$PATH
     fi
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-    true
+    alias ls='ls -G'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     export DISPLAY=:0.0
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
