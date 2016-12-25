@@ -189,7 +189,7 @@ if [[ $(command -v tmux) ]] ; then
         if [[ $(command -v fbterm) ]] ; then
             # SHELL=tmux exec fbterm
             exec fbterm -- bash -c 'TERM=fbterm tmux'
-        elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 ]] ; then
+        elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
             exec tmux
         fi
     fi
