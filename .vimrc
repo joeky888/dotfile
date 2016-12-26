@@ -569,7 +569,7 @@ function! HighlightTXT()
   syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
   hi def link txtNumber	  Number
-  hi def link lineURL	    Keyword
+  hi def link lineURL	    Define
 endfunction
 
 autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
