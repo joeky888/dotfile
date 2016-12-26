@@ -53,6 +53,11 @@ Windows
 * Rufus
 * x64dbg / snowman
 
+Mac
+=====
+* iterm2
+* MacVim
+
 Linux
 =====
 * Qupzilla
