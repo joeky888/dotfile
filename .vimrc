@@ -484,7 +484,7 @@ hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 
 hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-hi Search ctermfg=11 ctermbg=NONE cterm=NONE guibg=yellow guifg=black
+hi Search ctermfg=226 ctermbg=NONE cterm=NONE guibg=yellow guifg=black
 
 hi Boolean              ctermfg=135     guifg=#AE81FF
 hi Character            ctermfg=144     guifg=#E6DB74
