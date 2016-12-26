@@ -567,7 +567,9 @@ function! HighlightTXT()
   syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
   " floating point number, without dot, with exponent
   syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
-  hi def link txtNumber		Number
+  syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+  hi def link txtNumber	  Number
+  hi def link lineURL	    Keyword
 endfunction
 
 autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
