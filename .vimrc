@@ -276,7 +276,7 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrai
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
-call CreateShortcut("C-s", ":call MySave()<CR>a", "i", "noTrailingIInInsert")
+call CreateShortcut("C-s", "<C-\\><C-O>:call MySave()<CR>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
@@ -483,6 +483,7 @@ hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
 hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 
 hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
+hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
 hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
 hi Search ctermfg=226 ctermbg=NONE cterm=NONE guibg=yellow guifg=black
 
