@@ -327,13 +327,13 @@ call CreateShortcut("C-g", "ggVG", "inv")
 call CreateShortcut("C-l", "ggdG", "in")
 
 " Pageup - Move up Line
-nnoremap <silent> <PageUp> :<C-u>silent! move-2<CR>==
-inoremap <silent> <PageUp> <ESC>:<C-u>silent! move-2<CR>==i
+nnoremap <silent> <PageUp> mj:<C-u>silent! move-2<CR>`j
+inoremap <silent> <PageUp> <C-\><C-O>mj<C-O>:<C-u>silent! move-2<CR><C-O>`j
 vnoremap <silent> <PageUp> :<C-u>silent! '<,'>move-2<CR>gv
 
 " Pagedown - Move down Line
-nnoremap <silent> <PageDown> :<C-u>silent! move+<CR>==
-inoremap <silent> <PageDown> <ESC>:<C-u>silent! move+<CR>==i
+nnoremap <silent> <PageDown> mj:<C-u>silent! move+<CR>`j
+inoremap <silent> <PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+<CR><C-O>`j
 vnoremap <silent> <PageDown> :<C-u>silent! '<,'>move'>+<CR>gv
 
 " Ctrl W - Quit
