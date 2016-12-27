@@ -276,7 +276,7 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrai
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
-call CreateShortcut("C-s", "<C-\\><C-O>:call MySave()<CR>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+inoremap <C-s> <C-\><C-O>:call MySave()<CR><C-g>u
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
@@ -290,23 +290,27 @@ call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrai
 vnoremap <C-k> <ESC>:execute line("'<").",".line("'>")."d"<CR>
 
 " Ctrl D - Duplicate Line
-call CreateShortcut("C-d", "mjyyp`jja<C-g>u", "i", "noTrailingIInInsert")
 call CreateShortcut("C-d", "mjyyp`jj", "n")
+inoremap <C-d> <C-\><C-O>:normal mjyyp`jj<CR><C-g>u
 
 " Ctrl Q - Visual block selection
 call CreateShortcut("C-q", "<C-v>", "inv")
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
-call CreateShortcut("C-Up", &scroll*5/3."k", "inv")
+call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
+inoremap <C-Up> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR><C-g>u
 
 " Ctrl Down - Pagedown
-call CreateShortcut("C-Down",  &scroll*5/3."j", "inv")
+call CreateShortcut("C-Down",  &scroll*5/3."j", "nv")
+inoremap <C-Down> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR><C-g>u
 
 " Ctrl U - Pageup
-call CreateShortcut("C-u", &scroll*5/3."k", "inv")
+call CreateShortcut("C-u", &scroll*5/3."k", "nv")
+inoremap <C-u> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR><C-g>u
 
 " Ctrl J - Pagedown
-call CreateShortcut("C-j", &scroll*5/3."j", "inv")
+call CreateShortcut("C-j", &scroll*5/3."j", "nv")
+inoremap <C-j> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR><C-g>u
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
@@ -698,7 +702,7 @@ if has("gui_running")
   call CreateShortcut("C-Del", "ldw", "i")
   nnoremap <C-Del> dwi
 
-  " Get into insert mode by pressing any keys in visual mode
+  " Get into insert mode by pressing any key in visual mode
   for b:char in split(g:CharSet, '\zs')
     execute "vnoremap ".b:char." di".b:char
   endfor
