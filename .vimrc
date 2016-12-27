@@ -103,22 +103,6 @@ let &directory = mySwapDir
 let &backupdir = myBackupDir
 set writebackup
 
-""" Smart Paste
-let &t_ti .= "\<ESC>[?2004h"
-let &t_te .= "\<ESC>[?2004l"
-function! XTermPasteBegin(ret)
-  set pastetoggle=<f29>
-  set paste
-  return a:ret
-endfunction
-execute "set <f28>=\<ESC>[200~"
-execute "set <f29>=\<ESC>[201~"
-map <expr> <f28> XTermPasteBegin("i")
-imap <expr> <f28> XTermPasteBegin("")
-vmap <expr> <f28> XTermPasteBegin("c")
-cmap <f28> <nop>
-cmap <f29> <nop>
-
 " Helper functions
 function! CreateShortcut(keys, cmd, where, ...)
   let keys = "<" . a:keys . ">"
