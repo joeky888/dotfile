@@ -282,19 +282,19 @@ call CreateShortcut("C-q", "<C-v>", "inv")
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
 call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
-inoremap <C-Up> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR><C-g>u
+inoremap <C-Up> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR>
 
 " Ctrl Down - Pagedown
 call CreateShortcut("C-Down",  &scroll*5/3."j", "nv")
-inoremap <C-Down> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR><C-g>u
+inoremap <C-Down> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR>
 
 " Ctrl U - Pageup
 call CreateShortcut("C-u", &scroll*5/3."k", "nv")
-inoremap <C-u> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR><C-g>u
+inoremap <C-u> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR>
 
 " Ctrl J - Pagedown
 call CreateShortcut("C-j", &scroll*5/3."j", "nv")
-inoremap <C-j> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR><C-g>u
+inoremap <C-j> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR>
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
@@ -312,12 +312,12 @@ call CreateShortcut("C-l", "ggdG", "in")
 
 " Pageup - Move up Line
 nnoremap <silent> <PageUp> mj:<C-u>silent! move-2<CR>`j
-inoremap <silent> <PageUp> <C-\><C-O>mj<C-O>:<C-u>silent! move-2<CR><C-O>`j
+inoremap <silent> <PageUp> <C-\><C-O>mj<C-O>:<C-u>silent! move-2<CR><C-O>`j<C-g>u
 vnoremap <silent> <PageUp> :<C-u>silent! '<,'>move-2<CR>gv
 
 " Pagedown - Move down Line
 nnoremap <silent> <PageDown> mj:<C-u>silent! move+<CR>`j
-inoremap <silent> <PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+<CR><C-O>`j
+inoremap <silent> <PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+<CR><C-O>`j<C-g>u
 vnoremap <silent> <PageDown> :<C-u>silent! '<,'>move'>+<CR>gv
 
 " Ctrl W - Quit
