@@ -32,7 +32,7 @@ Run app
 Debug using eclipse
 =====
 * $ activator -jvm-debug 9999 "run 80"
-* Right click project -> Debug As -> Debug Configuration -> Remote Java Application -> Right Click and new -> change port to 9999 -> Debug
+* Right click project -> Debug As -> Debug Configurations -> Remote Java Application -> Right Click and new -> change port to 9999 -> Debug
 * After debugging, press Ctrl-F8 to change ui back
 
 Refresh if eclipse does not recognize some symbols

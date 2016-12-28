@@ -93,9 +93,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     export DISPLAY=:0.0
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
-    alias apt-Cygwin-Search='setup-x86_64.exe --package-manager --wait'
-    alias apt-Cygwin-Install='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --packages'
-    alias apt-Cygwin-Uninstall='setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --remove-packages'
+    alias apt-Cygwin-Manage='setup-x86_64.exe --package-manager --wait'
     alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
     alias sudo='cygstart --action=runas "$@"'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
