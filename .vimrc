@@ -13,6 +13,7 @@ endif
 """ General options
 syntax enable " Enable syntax highlights
 set ttyfast " Faster redraw
+set lazyredraw " Lazy redraw
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set softtabstop=4 " ... and insert four spaces
@@ -626,6 +627,8 @@ if has("gui_running")
   endif
   set number
   set autoindent " auto indent
+  set smartindent " smart indent
+  set cindent " c style indent
   set lines=999 columns=999 " set window Maximized
   set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
   set selection=exclusive " Don't select char under cursor
@@ -783,7 +786,6 @@ endfunction
 
 " Indent by filetype
 au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
-au FileType c,cpp,java,javascript setlocal cindent " cindent for c-like files
 
 function! JsonBeautify()
   execute "%!python -m json.tool"
