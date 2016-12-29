@@ -269,6 +269,11 @@ call CreateShortcut("Home", "gg", "inv")
 " End - Go To End
 call CreateShortcut("End", "G", "inv")
 
+" Insert - Paste from system clipboard
+call CreateShortcut("Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+call CreateShortcut("Insert", "\"+gP", "n")
+call CreateShortcut("Insert", "d\"+gP", "v")
+
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", "dd", "n")
 call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
