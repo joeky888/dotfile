@@ -33,7 +33,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set clipboard=unnamedplus " Always yanking to system clipboard
+set clipboard=unnamed " Always yanking to system clipboard
 set updatetime=750
 set autoread " Auto reload content if it changed outside of vim
 set ignorecase " case insensitive but case sensitive in command mode
