@@ -672,6 +672,12 @@ if has("gui_running")
   call CreateShortcut("C-v", "d\"+gP", "v")
   cnoremap <C-v> <C-r>+
 
+  " Shift-Insert same as Ctrl-v
+  call CreateShortcut("S-Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("S-Insert", "\"+gP", "n")
+  call CreateShortcut("S-Insert", "d\"+gP", "v")
+  cnoremap <S-Insert> <C-r>+
+
   " Meta LeftMouse is block selecting
   noremap  <M-LeftMouse> <4-LeftMouse>
   inoremap <M-LeftMouse> <4-LeftMouse>
