@@ -575,7 +575,7 @@ set complete=.
 set shortmess+=c
 
 let autocomp=0
-inoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>a
+inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
 nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
 
@@ -642,6 +642,7 @@ if has("gui_running")
   set mouseshape+=a:beam " set cursor shape as modern editors should be
   set scrolloff& " unset scroll values
   set sidescrolloff&
+  set clipboard& " unset clipboard
   inoremap {<CR> {<CR>}<ESC>O
   inoremap [<CR> [<CR>]<ESC>O
   inoremap (<CR> (<CR>)<ESC>O
