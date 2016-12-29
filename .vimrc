@@ -33,7 +33,6 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set clipboard=unnamed " Always yanking to system clipboard
 set updatetime=750
 set autoread " Auto reload content if it changed outside of vim
 set ignorecase " case insensitive but case sensitive in command mode
@@ -248,13 +247,12 @@ call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
 call CreateShortcut("C-c", "V:w! /tmp/clipboard.txt<CR>", "ni")
-call CreateShortcut("C-c", ":w! /tmp/clipboard.txt<CR>", "v") " Vim still copy all lines of selection
+vnoremap <silent> <C-c> y:call delete("/tmp/clipboard.txt")<CR>:new /tmp/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl X - Cut
 call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>dd", "n")
 call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
-" Somehow, vim still cut all lines of selection
-vnoremap <C-x> :w! /tmp/clipboard.txt<CR><ESC>:execute line("'<").",".line("'>")."d"<CR>
+vnoremap <silent> <C-x> ygvd<CR>:call delete("/tmp/clipboard.txt")<CR>:new /tmp/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
