@@ -91,3 +91,7 @@ curl -XPUT 'localhost:9200/twitter?pretty' -d'
     }
 }'
 ```
+
+Search in traditional chinese / simplified chinese
+=====
+* Insetall smartcn plugin
