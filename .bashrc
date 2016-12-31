@@ -19,8 +19,8 @@ alias upgradeDotfile="cd ~/dotfile && git pull origin master && source ~/.zshrc 
 alias sudo='sudo -H '
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-alias youtube-dlNtust='you-get --proxy 140.118.31.62:3128'
-alias youtube-dlYouku='you-get --proxy proxy.uku.im:443'
+alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
+alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}

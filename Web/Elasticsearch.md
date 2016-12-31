@@ -95,3 +95,12 @@ curl -XPUT 'localhost:9200/twitter?pretty' -d'
 Search in traditional chinese / simplified chinese
 =====
 * Insetall smartcn plugin
+* Restart server
+* Test
+```sh
+curl -XPOST 'localhost:9200/_analyze?pretty' -d'
+{
+  "analyzer": "smartcn",
+  "text": "smartcn 可以支持簡體的搜尋，是官方發佈的外掛，可惜似乎不開源"
+}'
+```
