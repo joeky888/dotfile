@@ -30,26 +30,6 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
 
-if [[ -d "$HOME/Miniconda3" ]]; then
-    export PATH=~/Miniconda3/bin:$PATH
-fi
-
-if [[ $(command -v gvim) ]]; then
-    gv=$(which gvim)
-    gvim()
-    {
-        if [ "$#" == 0 ]; then
-            eval $gv
-        else
-            eval "$gv -p --remote-tab-silent $@"
-        fi;
-    }
-fi
-
-if [[ "$TERM" == "xterm"* ]]; then
-  export TERM=xterm-256color
-fi
-
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
@@ -85,7 +65,6 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
 fi
 
-
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
     true
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
@@ -102,6 +81,26 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
 else # Unknown OS
     true
+fi
+
+if [[ -d "$HOME/Miniconda3" ]]; then
+    export PATH=~/Miniconda3/bin:$PATH
+fi
+
+if [[ $(command -v gvim) ]]; then
+    gv=$(which gvim)
+    gvim()
+    {
+        if [ "$#" == 0 ]; then
+            eval $gv
+        else
+            eval "$gv -p --remote-tab-silent $@"
+        fi;
+    }
+fi
+
+if [[ "$TERM" == "xterm"* ]]; then
+  export TERM=xterm-256color
 fi
 
 vman() {
