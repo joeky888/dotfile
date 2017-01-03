@@ -354,6 +354,14 @@ call CreateShortcut("A-Right", "gt", "inv")
 " Alt Left - Previous tab
 call CreateShortcut("A-Left", "gT", "inv")
 
+" Ctrl N - Next word
+call CreateShortcut("C-n", "w", "n")
+inoremap <C-n> <C-\><C-o>w
+
+" Ctrl P - Previous word
+call CreateShortcut("C-p", "b", "n")
+inoremap <C-p> <C-\><C-o>b
+
 " Ctrl O - Netrw (:Explore)
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
@@ -716,8 +724,6 @@ endfunction
 " Byobu key binding
 call CreateShortcut("F2", ":tabnew<CR>", "inv")
 call CreateShortcut("C-t", ":tabnew<CR>", "inv")
-call CreateShortcut("C-n", ":tabn<CR>", "inv")
-call CreateShortcut("C-p", ":tabp<CR>", "inv")
 call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
