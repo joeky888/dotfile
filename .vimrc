@@ -61,7 +61,7 @@ cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
 set timeoutlen=1000
-au InsertEnter * set timeout
+au InsertEnter * set timeout | set ignorecase
 au InsertLeave * set notimeout
 
 """ When opening a file : - Reopen at last position - Display info
