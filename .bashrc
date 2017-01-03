@@ -87,6 +87,10 @@ if [[ -d "$HOME/Miniconda3" ]]; then
     export PATH=~/Miniconda3/bin:$PATH
 fi
 
+if [[ -d "/usr/local/sbin" ]]; then
+    export PATH=$PATH:/usr/local/sbin
+fi
+
 if [ $(command -v gvim) ]; then
     gv=$(which gvim)
     gvim()
