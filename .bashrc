@@ -30,15 +30,15 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
 
-if [ -d "$HOME/Miniconda3" ]; then
+if [[ -d "$HOME/Miniconda3" ]]; then
     export PATH=~/Miniconda3/bin:$PATH
 fi
 
-if [ $(command -v gvim) ]; then
+if [[ $(command -v gvim) ]]; then
     gv=$(which gvim)
     gvim()
     {
-        if [ "$#" = 0 ]; then
+        if [ "$#" == 0 ]; then
             eval $gv
         else
             eval "$gv -p --remote-tab-silent $@"
@@ -46,10 +46,14 @@ if [ $(command -v gvim) ]; then
     }
 fi
 
+if [[ "$TERM" == "xterm"* ]]; then
+  export TERM=xterm-256color
+fi
+
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
-if [ -n "$ZSH_VERSION" ]; then # Zsh
+if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export ZSH=$HOME/.oh-my-zsh
     ZSH_THEME="bira"
     plugins=(git docker)
@@ -63,8 +67,8 @@ if [ -n "$ZSH_VERSION" ]; then # Zsh
     # alt + arrow key to move
     bindkey "OC" forward-word
     bindkey "OD" backward-word
-    bindkey "^[1;3C" forward-word
-    bindkey "^[1;3D" backward-word
+    bindkey "^[[1;3C" forward-word
+    bindkey "^[[1;3D" backward-word
     bindkey "[C" forward-word
     bindkey "[D" backward-word
     bindkey "[3~" kill-word
@@ -72,7 +76,7 @@ if [ -n "$ZSH_VERSION" ]; then # Zsh
     bindkey "^Y" redo
     bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
     bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
-elif [ -n "$BASH_VERSION" ]; then # Bash
+elif [[ -n "$BASH_VERSION" ]]; then # Bash
     complete -cf sudo # complete sudo command
     complete -cf man # complete man command
     bind 'set completion-ignore-case on' # Ignore case
@@ -82,26 +86,22 @@ elif [ -n "$BASH_VERSION" ]; then # Bash
 fi
 
 
-if [ "$OSTYPE" = "linux-gnu" ]; then # Ubuntu
+if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
     true
-elif [ "$OSTYPE" =~ ^darwin.* ]; then # Mac OSX
+elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
     alias ls='ls -G'
-elif [ "$OSTYPE" = "cygwin" ]; then # Cygwin
+elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     export DISPLAY=:0.0
     export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
     alias apt-Cygwin-Manage='setup-x86_64.exe --package-manager --wait'
     alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
     alias sudo='cygstart --action=runas "$@"'
-elif [ "$OSTYPE" = "msys" ]; then # Msys
+elif [[ "$OSTYPE" == "msys" ]]; then # Msys
     true
-elif [ "$OSTYPE" =~ ^freebsd.* ]; then # FreeBSD or TrueOS
+elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
     alias ls='ls -G'
 else # Unknown OS
     true
-fi
-
-if [ "$TERM" =~ ^xterm.* ]; then
-  export TERM=xterm-256color
 fi
 
 vman() {
@@ -176,7 +176,7 @@ BashPasteFromClipboard()
 
 forever()
 {
-    if [ "$#" = 0 ]; then
+    if [ "$#" == 0 ]; then
         echo "Usage: forever \"[commands]\""
         echo "ex: forever \"ls -a\""
         echo "Run commands forever!"
@@ -186,17 +186,14 @@ forever()
 }
 
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [ $whichTTY =~ ^pts.* ] || [ $whichTTY = tty1 ] || [ $whichTTY =~ ^pty.* ] || [ $whichTTY = ttyv0 ] || [ $whichTTY =~ ^ttys00.* ] ; then
-    isTTY=true
-fi
-if [ $(command -v tmux) ] ; then
-    if [ $TERM != screen ] && [ $isTTY ] ; then
+if [[ $(command -v tmux) ]] ; then
+    if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
         cd ~
         # Check if fbterm installed
-        if [ $(command -v fbterm) ] ; then
+        if [[ $(command -v fbterm) ]] ; then
             # SHELL=tmux exec fbterm
             exec fbterm -- bash -c 'TERM=fbterm tmux'
-        elif [ $isTTY ] ; then
+        elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
             exec tmux
         fi
     fi
