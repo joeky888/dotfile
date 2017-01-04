@@ -818,10 +818,10 @@ function! JsonMinify()
 endfunction
 
 " Json pretty by python
-au FileType json,javascript noremenu Edit.Json.Beautify  :call JsonBeautify()<CR>
-au FileType json,javascript noremenu Edit.Json.Minify    :call JsonMinify()<CR>
-au FileType json,javascript command! JsonBeautify    execute "call JsonBeautify()"
-au FileType json,javascript command! JsonMinify      execute "call JsonMinify()"
+nnoremenu Edit.Json.Beautify  :call JsonBeautify()<CR>
+nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
+command! JsonBeautify    execute "call JsonBeautify()"
+command! JsonMinify      execute "call JsonMinify()"
 
 " XML pretty by vim
 function! XmlBeautify()
@@ -835,19 +835,19 @@ function! XmlMinify()
   filetype indent on
   execute "%s/\\s\\+$//e"
   normal! ggVGJ
-  execute "%s/>\\s\\+</></e"
   execute "%s/\\n//e"
   execute "%s/\\r//e"
+  execute "%s/>\\s\\+</></e"
 endfunction
-
-au FileType xml noremenu Edit.XML.Beautify  :call XmlBeautify()<CR>
-au FileType xml noremenu Edit.XML.Minify    :call XmlMinify()<CR>
-au FileType xml command! XmlBeautify    execute "call XmlBeautify()"
-au FileType xml command! XmlMinify      execute "call XmlMinify()"
 
 " Merge selected to one line
 nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
 vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
+
+nnoremenu Edit.XML.Beautify   :call XmlBeautify()<CR>
+nnoremenu Edit.XML.Minify     :call XmlMinify()<CR>
+command! XmlBeautify    execute "call XmlBeautify()"
+command! XmlMinify      execute "call XmlMinify()"
 
 " Fast rendering for current file
 function! FastRender()
