@@ -104,3 +104,13 @@ curl -XPOST 'localhost:9200/_analyze?pretty' -d'
   "text": "smartcn 可以支持簡體的搜尋，是官方發佈的外掛，可惜似乎不開源"
 }'
 ```
+
+Install Head plugin to show index in web browser
+=====
+* Install head plugin
+* Add two dangerous lines to config/elasticsearch.yml
+```yaml
+http.cors.enabled: true
+http.cors.allow-origin: "*"
+```
+* Restart elasticsearch
