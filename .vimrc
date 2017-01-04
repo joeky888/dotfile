@@ -86,7 +86,7 @@ endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 
 """ Custom backup and swap files
-let myVimDir = expand("$HOME/.vim")
+let myVimDir = expand("/tmp/$USER/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
 function! EnsureDirExists (dir)
@@ -220,11 +220,11 @@ endfunction
 function! PasteFromClipboard()
   if line(".") == 1
     normal O
-    execute "r /tmp/clipboard.txt"
+    execute "r /tmp/$USER/clipboard.txt"
     execute "1d"
   else
     normal k
-    execute "r /tmp/clipboard.txt"
+    execute "r /tmp/$USER/clipboard.txt"
   endif
 endfunction
 " Usefull shortcuts to enter insert mode
@@ -246,13 +246,13 @@ call CreateShortcut("C-a", "0", "inv")
 call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
-call CreateShortcut("C-c", "V:w! /tmp/clipboard.txt<CR>", "ni")
-vnoremap <silent> <C-c> y:call delete("/tmp/clipboard.txt")<CR>:new /tmp/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
+vnoremap <silent> <C-c> y:call delete("/tmp/$USER/clipboard.txt")<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl X - Cut
-call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>dd", "n")
-call CreateShortcut("C-x", "V:w! /tmp/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
-vnoremap <silent> <C-x> ygvd<CR>:call delete("/tmp/clipboard.txt")<CR>:new /tmp/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>dd", "n")
+call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
+vnoremap <silent> <C-x> ygvd<CR>:call delete("/tmp/$USER/clipboard.txt")<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")

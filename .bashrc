@@ -164,18 +164,18 @@ END
 
 ZshPasteFromClipboard()
 {
-    LBUFFER="$LBUFFER$(cat /tmp/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
+    LBUFFER="$LBUFFER$(cat /tmp/$USER/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
 }
 
 ZshCutToClipboard()
 {
-    echo "$LBUFFER" > /tmp/clipboard.txt
+    echo "$LBUFFER" > /tmp/$USER/clipboard.txt
     LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
 }
 
 BashPasteFromClipboard()
 {
-    READLINE_LINE="$READLINE_LINE$(cat /tmp/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+    READLINE_LINE="$READLINE_LINE$(cat /tmp/$USER/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
 }
 
 forever()
