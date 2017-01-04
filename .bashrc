@@ -16,7 +16,8 @@ alias upgradeYou-get='pip install --upgrade git+https://github.com/soimort/you-g
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && cd -"
-alias sudo='sudo -H '
+alias sudoRoot='sudo -H ' # $HOME = /root
+alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
