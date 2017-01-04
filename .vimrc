@@ -814,7 +814,7 @@ function! JsonMinify()
   filetype indent on
   execute "%s/\\s\\+$//e"
   execute "%left"
-  normal! ggVGJ
+  execute "%j!"
 endfunction
 
 " Json pretty by python
@@ -833,21 +833,20 @@ endfunction
 function! XmlMinify()
   set filetype=xml
   filetype indent on
-  execute "%s/\\s\\+$//e"
-  normal! ggVGJ
-  execute "%s/\\n//e"
-  execute "%s/\\r//e"
   execute "%s/>\\s\\+</></e"
+  execute "%s/\\s\\+$//e"
+  execute "%left"
+  execute "%j!"
 endfunction
-
-" Merge selected to one line
-nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
-vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
 
 nnoremenu Edit.XML.Beautify   :call XmlBeautify()<CR>
 nnoremenu Edit.XML.Minify     :call XmlMinify()<CR>
 command! XmlBeautify    execute "call XmlBeautify()"
 command! XmlMinify      execute "call XmlMinify()"
+
+" Merge selected to one line
+nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
+vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
 
 " Fast rendering for current file
 function! FastRender()
