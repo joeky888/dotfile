@@ -246,13 +246,14 @@ call CreateShortcut("C-a", "0", "inv")
 call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
-call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
-vnoremap <silent> <C-c> y:call delete("/tmp/$USER/clipboard.txt")<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+nnoremap <C-c> mjV:w! /tmp/$USER/clipboard.txt<CR>`j
+inoremap <C-c> <C-\><C-o>mj<C-o>V:w! /tmp/$USER/clipboard.txt<CR><C-o>`j
+vnoremap <silent> <C-c> y:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl X - Cut
 call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>dd", "n")
 call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
-vnoremap <silent> <C-x> ygvd<CR>:call delete("/tmp/$USER/clipboard.txt")<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
@@ -664,7 +665,8 @@ if has("gui_running")
   vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
   " Ctrl C is copying line if there is no word selected
-  call CreateShortcut("C-c", "V\"+y", "in")
+  nnoremap <C-c> mjV"+y`j
+  inoremap <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>`j
   call CreateShortcut("C-c", "\"+y", "v")
   cnoremap <C-c> <C-y>
 
