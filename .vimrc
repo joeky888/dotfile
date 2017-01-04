@@ -246,8 +246,7 @@ call CreateShortcut("C-a", "0", "inv")
 call CreateShortcut("C-e", "$l", "inv")
 
 " Ctrl C - Copy
-nnoremap <C-c> mjV:w! /tmp/$USER/clipboard.txt<CR>`j
-inoremap <C-c> <C-\><C-o>mj<C-o>V:w! /tmp/$USER/clipboard.txt<CR><C-o>`j
+call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
 vnoremap <silent> <C-c> y:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
 " Ctrl X - Cut
@@ -665,8 +664,7 @@ if has("gui_running")
   vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
   " Ctrl C is copying line if there is no word selected
-  nnoremap <C-c> mjV"+y`j
-  inoremap <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>`j
+  call CreateShortcut("C-c", "V\"+y", "in")
   call CreateShortcut("C-c", "\"+y", "v")
   cnoremap <C-c> <C-y>
 
