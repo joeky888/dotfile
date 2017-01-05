@@ -9,8 +9,9 @@ export LC_COLLATE="en_US.UTF-8"
 export LC_MONETARY="en_US.UTF-8"
 export LC_MESSAGES="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export VISUAL="vim" # Set vim as default editor
+export VISUAL="vim"
 export EDITOR="$VISUAL"
+export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 alias upgradeYoutubedl='pip install youtube-dl -U'
 alias upgradeYou-get='pip install --upgrade git+https://github.com/soimort/you-get@develop'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
