@@ -36,6 +36,7 @@ Software
 * Docker
 * Sikuli / SikuliX
 * ffmpeg
+* OpenCC
 * Zulu
 * MegaDownloader
 * JComicDownloader
