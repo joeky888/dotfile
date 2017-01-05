@@ -18,6 +18,8 @@ find and exec multiple commands
 
 find and exec a shell function command
 =====
+* This is for bash or zsh
+* $ for x in **/*.jpg; do myfunction "$x"; done
 * This is bash-only
 * $ bash
 * $ export -f myfunction
