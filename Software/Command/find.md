@@ -16,6 +16,13 @@ find and exec multiple commands
 * OR
 * $ find . -iname '*.jpg' -exec sh -c 'cp "$0" "$0".backup' {} \; -exec sh -c 'rm "$0"' {} \;
 
+find and exec a shell function command
+=====
+* This is bash-only
+* $ bash
+* $ export -f myfunction
+* $ find . -iname '*.jpg' -exec bash -c 'myfunction "$0"' {} \;
+
 find all UTF-8 files
 =====
 * $ find . -type f -exec sh -c 'file --mime "$0"' {} \; | grep utf
