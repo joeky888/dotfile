@@ -712,7 +712,7 @@ if has("gui_running")
 
   " Get into insert mode by pressing any key in visual mode
   for b:char in split(g:CharSet, '\zs')
-    execute "vnoremap ".b:char." di".b:char
+    execute "vnoremap ".b:char." di<C-g>u".b:char
   endfor
 endif
 
