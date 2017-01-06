@@ -39,6 +39,7 @@ Remove index
 ```sh
 curl -XDELETE 'localhost:9200/twitter?pretty'
 ```
+
 Add types
 =====
 * Add `questions` and `user` type to `twitter` index
