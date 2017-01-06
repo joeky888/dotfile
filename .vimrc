@@ -282,6 +282,7 @@ vnoremap <C-k> <ESC>:execute line("'<").",".line("'>")."d"<CR>
 " Ctrl D - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jj", "n")
 inoremap <C-d> <C-\><C-O>:normal mjyyp`jj<CR><C-g>u
+vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
 call CreateShortcut("C-q", "<C-v>", "inv")
