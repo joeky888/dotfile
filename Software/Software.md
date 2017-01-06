@@ -37,6 +37,7 @@ Software
 * Sikuli / SikuliX
 * ffmpeg
 * OpenCC
+* aria2
 * Zulu
 * MegaDownloader
 * JComicDownloader
