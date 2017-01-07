@@ -27,7 +27,7 @@ Run app
 =====
 * $ cd myapp
 * Reload on refreshing webpage
-* $ activator "~run 80"
+* $ activator "~run 80" -v
 
 Debug using eclipse
 =====
