@@ -237,7 +237,7 @@ inoremap <CR> <CR><C-g>u
 inoremap <Tab> <Tab><C-g>u
 
 " Backspace is deleting in visual mode
-call CreateShortcut("BS", "d", "v")
+call CreateShortcut("BS", "di", "v")
 
 " Ctrl A - Begin Line
 call CreateShortcut("C-a", "0", "inv")
