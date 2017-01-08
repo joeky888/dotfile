@@ -5,3 +5,7 @@ Install latest packages
 ```debsources
 deb http://ftp.tw.debian.org/debian/ stretch main contrib non-free
 ```
+
+Enable multi-architecture
+=====
+* $ sudo dpkg --add-architecture i386
