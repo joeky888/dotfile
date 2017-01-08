@@ -112,6 +112,6 @@ Install Head plugin to show index in web browser
 * Add two dangerous lines to config/elasticsearch.yml
 ```yaml
 http.cors.enabled: true
-http.cors.allow-origin: "*"
+http.cors.allow-origin: /https?:\/\/localhost(:[0-9]+)?/
 ```
 * Restart elasticsearch
