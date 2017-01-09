@@ -804,7 +804,7 @@ function! ToggleComments()
 endfunction
 
 " Indent by filetype
-au FileType vim setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
+au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 
 function! JsonBeautify()
   execute "%!python -m json.tool"

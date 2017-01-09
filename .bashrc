@@ -36,73 +36,73 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
-    export ZSH=$HOME/.oh-my-zsh
-    ZSH_THEME="bira"
-    plugins=(git docker)
-    DISABLE_AUTO_UPDATE="true"
-    source $ZSH/oh-my-zsh.sh
-    export KEYTIMEOUT=1 # Make ESC faster
-    setopt NO_NOMATCH # disable zsh match filename
-    _comp_options+=(globdots) # Show hidden files when using completion
-    zle -N ZshPasteFromClipboard # Bind function to command
-    zle -N ZshCutToClipboard # Bind function to command
-    # alt + arrow key to move
-    bindkey "OC" forward-word
-    bindkey "OD" backward-word
-    bindkey "^[[1;3C" forward-word
-    bindkey "^[[1;3D" backward-word
-    bindkey "[C" forward-word
-    bindkey "[D" backward-word
-    bindkey "[3~" kill-word
-    bindkey "^Z" undo
-    bindkey "^Y" redo
-    bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
-    bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
+  export ZSH=$HOME/.oh-my-zsh
+  ZSH_THEME="bira"
+  plugins=(git docker)
+  DISABLE_AUTO_UPDATE="true"
+  source $ZSH/oh-my-zsh.sh
+  export KEYTIMEOUT=1 # Make ESC faster
+  setopt NO_NOMATCH # disable zsh match filename
+  _comp_options+=(globdots) # Show hidden files when using completion
+  zle -N ZshPasteFromClipboard # Bind function to command
+  zle -N ZshCutToClipboard # Bind function to command
+  # alt + arrow key to move
+  bindkey "OC" forward-word
+  bindkey "OD" backward-word
+  bindkey "^[[1;3C" forward-word
+  bindkey "^[[1;3D" backward-word
+  bindkey "[C" forward-word
+  bindkey "[D" backward-word
+  bindkey "[3~" kill-word
+  bindkey "^Z" undo
+  bindkey "^Y" redo
+  bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
+  bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
-    complete -cf sudo # complete sudo command
-    complete -cf man # complete man command
-    bind 'set completion-ignore-case on' # Ignore case
-    bind '"\e[A": history-search-backward' # Up key is searching backward
-    bind '"\e[B": history-search-forward'  # Down key is searching forward
-    bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+  complete -cf sudo # complete sudo command
+  complete -cf man # complete man command
+  bind 'set completion-ignore-case on' # Ignore case
+  bind '"\e[A": history-search-backward' # Up key is searching backward
+  bind '"\e[B": history-search-forward'  # Down key is searching forward
+  bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-    true
+  true
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-    alias ls='ls -G'
+  alias ls='ls -G'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
-    export DISPLAY=:0.0
-    export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
-    alias apt-Cygwin-Manage='setup-x86_64.exe --package-manager --wait'
-    alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
-    alias sudo='cygstart --action=runas "$@"'
+  export DISPLAY=:0.0
+  export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
+  alias apt-Cygwin-Manage='setup-x86_64.exe --package-manager --wait'
+  alias apt-Cygwin-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
+  alias sudo='cygstart --action=runas "$@"'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
-    true
+  true
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-    alias ls='ls -G'
+  alias ls='ls -G'
 else # Unknown OS
-    true
+  true
 fi
 
 if [[ -d "$HOME/Miniconda3" ]]; then
-    export PATH=~/Miniconda3/bin:$PATH
+  export PATH=~/Miniconda3/bin:$PATH
 fi
 
 if [[ -d "/sbin" ]]; then
-    export PATH=$PATH:/sbin
+  export PATH=$PATH:/sbin
 fi
 
 if [ $(command -v gvim) ]; then
-    gv=$(which gvim)
-    gvim()
-    {
-        if [ "$#" == 0 ]; then
-            eval $gv
-        else
-            eval "$gv -p --remote-tab-silent $@"
-        fi;
-    }
+  gv=$(which gvim)
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      eval $gv
+    else
+      eval "$gv -p --remote-tab-silent $@"
+    fi;
+  }
 fi
 
 if [[ "$TERM" == "xterm"* ]]; then
@@ -110,96 +110,96 @@ if [[ "$TERM" == "xterm"* ]]; then
 fi
 
 vman() {
-    export MANPAGER="col -bx" # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
-    eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
-    unset MANPAGER;
+  export MANPAGER="col -bx" # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
+  eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
+  unset MANPAGER;
 }
 
 unzipToBig5()
 {
-    export zipfilename="$@"
-    python2 <<END
+  export zipfilename="$@"
+  python2 <<END
 import os, sys, zipfile
 
 file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
-    utf8name = name.decode('big5')
-#    print "Extracting " + utf8name
-    pathname = os.path.dirname(utf8name)
-    if not os.path.exists(pathname) and pathname!= "":
-        os.makedirs(pathname)
-    data = file.read(name)
-    if not os.path.exists(utf8name):
-        fo = open(utf8name, "w")
-        fo.write(data)
-        fo.close
+  utf8name = name.decode('big5')
+#  print "Extracting " + utf8name
+  pathname = os.path.dirname(utf8name)
+  if not os.path.exists(pathname) and pathname!= "":
+    os.makedirs(pathname)
+  data = file.read(name)
+  if not os.path.exists(utf8name):
+    fo = open(utf8name, "w")
+    fo.write(data)
+    fo.close
 file.close()
 
 END
-    unset zipfilename;
+  unset zipfilename;
 }
 
 unzipToGBK()
 {
-    export zipfilename="$@"
-    python2 <<END
+  export zipfilename="$@"
+  python2 <<END
 import os, sys, zipfile
 
 file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
-    utf8name = name.decode('gbk')
-#    print "Extracting " + utf8name
-    pathname = os.path.dirname(utf8name)
-    if not os.path.exists(pathname) and pathname!= "":
-        os.makedirs(pathname)
-    data = file.read(name)
-    if not os.path.exists(utf8name):
-        fo = open(utf8name, "w")
-        fo.write(data)
-        fo.close
+  utf8name = name.decode('gbk')
+#  print "Extracting " + utf8name
+  pathname = os.path.dirname(utf8name)
+  if not os.path.exists(pathname) and pathname!= "":
+    os.makedirs(pathname)
+  data = file.read(name)
+  if not os.path.exists(utf8name):
+    fo = open(utf8name, "w")
+    fo.write(data)
+    fo.close
 file.close()
 
 END
-    unset zipfilename;
+  unset zipfilename;
 }
 
 ZshPasteFromClipboard()
 {
-    LBUFFER="$LBUFFER$(cat /tmp/$USER/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
+  LBUFFER="$LBUFFER$(cat /tmp/$USER/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
 }
 
 ZshCutToClipboard()
 {
-    echo "$LBUFFER" > /tmp/$USER/clipboard.txt
-    LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
+  echo "$LBUFFER" > /tmp/$USER/clipboard.txt
+  LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
 }
 
 BashPasteFromClipboard()
 {
-    READLINE_LINE="$READLINE_LINE$(cat /tmp/$USER/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+  READLINE_LINE="$READLINE_LINE$(cat /tmp/$USER/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
 }
 
 forever()
 {
-    if [ "$#" == 0 ]; then
-        echo "Usage: forever \"[commands]\""
-        echo "ex: forever \"ls -a\""
-        echo "Run commands forever!"
-    else
-        while true; do eval $* ; done
-    fi;
+  if [ "$#" == 0 ]; then
+    echo "Usage: forever \"[commands]\""
+    echo "ex: forever \"ls -a\""
+    echo "Run commands forever!"
+  else
+    while true; do eval $* ; done
+  fi;
 }
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [ $(command -v tmux) ] ; then
-    if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-        cd ~
-        # Check if fbterm installed
-        if [ $(command -v fbterm) ] ; then
-            # SHELL=tmux exec fbterm
-            exec fbterm -- bash -c 'TERM=fbterm tmux'
-        elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-            exec tmux
-        fi
+  if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+    cd ~
+    # Check if fbterm installed
+    if [ $(command -v fbterm) ] ; then
+      # SHELL=tmux exec fbterm
+      exec fbterm -- bash -c 'TERM=fbterm tmux'
+    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+      exec tmux
     fi
+  fi
 fi
