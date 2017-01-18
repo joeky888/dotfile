@@ -26,6 +26,9 @@ set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
 set scrolloff=999 " Always keep max lines after or before when scrolling
 set sidescrolloff=999 " Always keep max lines after or before whens side scrolling
+set autoindent " auto indent
+set smartindent " smart indent
+set cindent " c style indent
 set noshowmode " Don't display the current mode
 set gdefault " The substitute flag g is on
 set hidden " Hide the buffer instead of closing when switching
@@ -640,9 +643,6 @@ if has("gui_running")
     set guifont=Ubuntu\ Mono\ 14
   endif
   set number
-  set autoindent " auto indent
-  set smartindent " smart indent
-  set cindent " c style indent
   set lines=999 columns=999 " set window Maximized
   set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
   set selection=exclusive " Don't select char under cursor
@@ -650,19 +650,6 @@ if has("gui_running")
   set scrolloff& " unset scroll values
   set sidescrolloff&
   set clipboard& " unset clipboard
-  inoremap {<CR> {<CR>}<ESC>O
-  inoremap [<CR> [<CR>]<ESC>O
-  inoremap (<CR> (<CR>)<ESC>O
-  vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
-  vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
-  vnoremap { <ESC>:call WrapSelected("{","}")<CR>
-  vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
-  vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
-  vnoremap } <ESC>:call WrapSelected("{","}")<CR>
-  vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
-  vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
-  vnoremap < <ESC>:call WrapSelected("<",">")<CR>
-  vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
   " Ctrl C is copying line if there is no word selected
   call CreateShortcut("C-c", "V\"+y", "in")
@@ -715,6 +702,20 @@ if has("gui_running")
     execute "vnoremap ".b:char." di<C-g>u".b:char
   endfor
 endif
+
+inoremap {<CR> {<CR>}<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
+vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
+vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
+vnoremap { <ESC>:call WrapSelected("{","}")<CR>
+vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
+vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
+vnoremap } <ESC>:call WrapSelected("{","}")<CR>
+vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
+vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
+vnoremap < <ESC>:call WrapSelected("<",">")<CR>
+vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
 function! WrapSelected(c1, c2)
   execute "normal `<i".a:c1
