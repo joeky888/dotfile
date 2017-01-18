@@ -508,7 +508,7 @@ hi DiffChange           ctermfg=181     ctermbg=239     guifg=#89807D     guibg=
 hi DiffDelete           ctermfg=162     ctermbg=53      guifg=#960050     guibg=#1E0010
 hi DiffText             ctermbg=102     cterm=none      guibg=#4C4745     gui=none
 hi Directory            ctermfg=81      cterm=none      guifg=#66D9EF     gui=none
-hi Error                ctermfg=219     ctermbg=89      guifg=#E6DB74     guibg=#1E0010
+hi Error                ctermfg=255     ctermbg=196     guifg=#E6DB74     guibg=#ff3333
 hi ErrorMsg             ctermfg=199     ctermbg=16      cterm=none        guifg=#F92672       guibg=#232526     gui=none
 hi Exception            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
 hi Float                ctermfg=135     guifg=#AE81FF
