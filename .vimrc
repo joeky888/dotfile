@@ -850,6 +850,14 @@ command! XmlMinify      execute "call XmlMinify()"
 nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
 vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
 
+" Remove something
+nnoremenu Edit.Remove.Empty\ lines          :g/^$/d<CR>
+nnoremenu Edit.Remove.Leading\ whitespace   :%s/^\s\+//e<CR>
+nnoremenu Edit.Remove.Trailing\ whitespace  :%s/\s\+$//e<CR>
+
+command! RemoveLeadingSpace %s/^\s\+//e
+command! RemoveEmptyLines   g/^$/d
+
 " Fast rendering for current file
 function! FastRender()
   setlocal nocursorline
