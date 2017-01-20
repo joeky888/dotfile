@@ -3,7 +3,7 @@ Install opencc on cygwin
 * Install cmake doxygen
 * $ make
 * $ make install
-* Copy build/rel/src/cygopencc-2.dll to C:\Windows\System32
+* Copy "build/rel/src/cygopencc-2.dll" to "/bin" or "C:\Windows\System32"
 
 List of help
 =====
