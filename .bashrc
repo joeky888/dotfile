@@ -21,8 +21,9 @@ alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
-alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
+alias youtube-dl='youtube-dl --write-sub'
+alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128 --write-sub'
+alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443 --write-sub'
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
