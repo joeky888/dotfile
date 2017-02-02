@@ -12,7 +12,7 @@ export LC_ALL="en_US.UTF-8"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
-alias upgradeYoutubedl='pip install youtube-dl -U'
+alias upgradeYoutubedl='pip install --upgrade git+https://github.com/rg3/youtube-dl@master'
 alias upgradeYou-get='pip install --upgrade git+https://github.com/soimort/you-get@develop'
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgrade_oh_my_zsh="cd ~/.oh-my-zsh && git pull origin master && cd -"
