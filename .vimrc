@@ -584,9 +584,9 @@ endfunction
 function! HighlightSRT()
   setlocal filetype=srt
   syn case ignore
+  syn match srtContent ".*"
   syn match srtArrow " --> "
   syn match srtComment "^#.*"
-  syn match srtContent ".*"
   syn match srtError "\[br\]"
   syn match srtError "{y:[bi][bi]}"
   syn match srtError "{y:[bi]}"
@@ -603,34 +603,34 @@ endfunction
 
 function! HighlightASS()
   setlocal filetype=ssa
+  syn match ssaSection       "^\[.*\]"
+  syn match ssaSourceComment "^;.*$"
+  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
+  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
+  syn match ssaHeaderText    ".*$"             contained
   syn match ssaComment       "^Comment:\s*"    contained nextgroup=ssaCommentText
   syn match ssaCommentText   ".*$"             contained
   syn match ssaDialog        "^Dialogue:\s*"   contained nextgroup=ssaDialogTimes
+  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
   syn match ssaDialogActor   "[^,]*"           contained nextgroup=ssaDialogEffects
   syn match ssaDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=ssaDialogText
   syn match ssaDialogText    ".*$"             contained contains=ssaTextComment,ssaTextSubCode
-  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
-  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
-  syn match ssaHeaderText    ".*$"             contained
-  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
-  syn match ssaSection       "^\[.*\]"
-  syn match ssaSourceComment "^;.*$"
   syn match ssaTextComment   "{[^}]*}"         contained
   syn match ssaTextSubCode   "{\\[^}]*}"       contained
 
-  hi def link ssaComment         Label
+  hi def link ssaSection         Function
+  hi def link ssaSourceComment   Comment
+  hi def link ssaHeader          Statement
+  hi def link ssaComment         Statement
+  hi def link ssaDialog          Statement
+  hi def link ssaHeaderText      Constant
   hi def link ssaCommentText     Comment
-  hi def link ssaDialog          Label
+  hi def link ssaDialogTimes     Type
   hi def link ssaDialogActor     Title
   hi def link ssaDialogEffects   Comment
-  hi def link ssaDialogText      Normal
-  hi def link ssaDialogTimes     Comment
-  hi def link ssaHeader          Label
-  hi def link ssaHeaderText      Constant
-  hi def link ssaSection         Directory
-  hi def link ssaSourceComment   Comment
+  hi def link ssaDialogText      Identifier
   hi def link ssaTextComment     Comment
-  hi def link ssaTextSubCode     Identifier
+  hi def link ssaTextSubCode     Comment
 endfunction
 
 autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
