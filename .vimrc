@@ -563,6 +563,8 @@ hi iCursor              guifg=#000000   guibg=#F8F8F0
 call ChangeAccentColor()
 
 autocmd FileType text call HighlightTXT()
+autocmd BufRead,BufNewFile *.{srt,SRT} call HighlightSRT()
+autocmd BufRead,BufNewFile *.{ass,ASS} call HighlightASS()
 
 function! HighlightTXT()
   " Copy from $VIM/syntax/lua.vim
@@ -577,6 +579,56 @@ function! HighlightTXT()
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
   hi def link txtNumber	  Number
   hi def link lineURL	    Define
+endfunction
+
+function! HighlightSRT()
+  setlocal filetype=srt
+  syn case ignore
+  syn match srtComment "^#.*"
+  syn match srtNumber "^[0-9]*$"
+  syn match srtArrow " --> "
+  syn region transparent matchgroup=srtTime start='[0-9]*:[0-9]*:[0-9]*,[0-9]*' end='[0-9]*:[0-9]*:[0-9]*,[0-9]*' contains=srtArrow
+  syn match srtError "{y:[bi]}"
+  syn match srtError "{y:[bi][bi]}"
+  syn match srtError "\[br\]"
+
+  hi def link srtComment Comment
+  hi def link srtNumber Number
+  hi def link srtArrow Statement
+  hi def link srtTime Type
+  hi def link srtError Error
+endfunction
+
+function! HighlightASS()
+  setlocal filetype=ssa
+  syn match ssaSection       "^\[.*\]"
+  syn match ssaSourceComment "^;.*$"
+  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
+  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
+  syn match ssaHeaderText    ".*$"             contained
+  syn match ssaComment       "^Comment:\s*"    contained nextgroup=ssaCommentText
+  syn match ssaCommentText   ".*$"             contained
+  syn match ssaDialog        "^Dialogue:\s*"   contained nextgroup=ssaDialogTimes
+  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
+  syn match ssaDialogActor   "[^,]*"           contained nextgroup=ssaDialogEffects
+  syn match ssaDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=ssaDialogText
+  syn match ssaDialogText    ".*$"             contained contains=ssaTextComment,ssaTextSubCode
+  syn match ssaTextComment   "{[^}]*}"         contained
+  syn match ssaTextSubCode   "{\\[^}]*}"       contained
+
+  hi def link ssaSection         Directory
+  hi def link ssaSourceComment   Comment
+  hi def link ssaHeader          Label
+  hi def link ssaComment         Label
+  hi def link ssaDialog          Label
+  hi def link ssaHeaderText      Constant
+  hi def link ssaCommentText     Comment
+  hi def link ssaDialogTimes     Comment
+  hi def link ssaDialogActor     Title
+  hi def link ssaDialogEffects   Comment
+  hi def link ssaDialogText      Normal
+  hi def link ssaTextComment     Comment
+  hi def link ssaTextSubCode     Identifier
 endfunction
 
 autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
