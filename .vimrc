@@ -627,7 +627,7 @@ function! HighlightASS()
   hi def link ssaCommentText     Comment
   hi def link ssaDialogTimes     Type
   hi def link ssaDialogActor     Title
-  hi def link ssaDialogEffects   Comment
+  hi def link ssaDialogEffects   Function
   hi def link ssaDialogText      Identifier
   hi def link ssaTextComment     Comment
   hi def link ssaTextSubCode     Comment
