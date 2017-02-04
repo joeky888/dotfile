@@ -563,8 +563,8 @@ hi iCursor              guifg=#000000   guibg=#F8F8F0
 call ChangeAccentColor()
 
 autocmd FileType text call HighlightTXT()
-autocmd BufRead,BufNewFile *.{srt,SRT} call HighlightSRT()
-autocmd BufRead,BufNewFile *.{ass,ASS} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS} call HighlightASS()
 
 function! HighlightTXT()
   " Copy from $VIM/syntax/lua.vim
