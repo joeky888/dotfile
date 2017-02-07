@@ -140,6 +140,7 @@ Compile ffmpeg on Cygwin
     * $ git clone --depth=1 git://git.videolan.org/x264.git
     * $ ./configure --enable-static
     * $ make -j 8 && make install
+    * If there is an error about "HMODULE" when compiling, just add "#include <windows.h>" to file "extras/avisynth_c.h"
     * $ ffmpeg -i input -c:v libx264 output
 * Install libh265
     * $ Download https://bitbucket.org/multicoreware/x265/downloads
