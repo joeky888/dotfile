@@ -8,7 +8,7 @@ Config CJK font in tty
 * $ sudo usermod -a -G video $(whoami)
 * $ sudo reboot
 
-Change tty resolution 
+Change tty resolution
 =====
 * $ sudo apt-get install virtualbox-guest-dkms -y
 * Reboot OS, when it shows boot menu, type "c" switch to grub mode
@@ -68,8 +68,9 @@ Add dns server
 ```resolv
 nameserver 8.8.8.8
 nameserver 8.8.4.4
+nameserver 123.193.111.11
+nameserver 123.193.111.69
 nameserver 223.5.5.5
-nameserver 140.118.31.31
 ```
 * $ sudo resolvconf -u
 
@@ -82,7 +83,7 @@ Install LXQT
 =====
 * $ sudo apt-get install lxqt xorg openbox -y
 * Or using ppa
-* $ sudo add-apt-repository ppa:lxqt/ppa -y 
+* $ sudo add-apt-repository ppa:lxqt/ppa -y
 * $ sudo apt-get update
 * $ sudo apt-get install lxqt
 
