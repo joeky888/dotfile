@@ -59,7 +59,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "\e\e[D" backward-word
   bindkey "^N" forward-word
   bindkey "^P" backward-word
-  bindkey "[3~" kill-word
+  bindkey "\e\e[3~" kill-word
   bindkey "^Z" undo
   bindkey "^Y" redo
   bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
