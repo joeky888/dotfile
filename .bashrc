@@ -57,6 +57,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 #   bindkey "^[[1;3D" backward-word
 #   bindkey "[C" forward-word
 #   bindkey "[D" backward-word
+  bindkey "\e\eOC" forward-word
+  bindkey "\e\eOD" backward-word
   bindkey "^N" forward-word
   bindkey "^P" backward-word
   bindkey "[3~" kill-word
