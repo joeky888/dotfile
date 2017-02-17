@@ -89,13 +89,13 @@ def bsd():
     commands.append("git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile")
     commands.append("git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh")
     commands.append("git config --global core.editor vim")
-    commands.append("grep -q -F 'Control Mod1 T :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 T :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
-    commands.append("grep -q -F 'Control Mod1 G :Exec vim' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 G :Exec gvim' >> ~/.config/lumina-desktop/fluxbox-keys");
     commands.append("ln -sf ~/dotfile/.bashrc ~/.bashrc")
     commands.append("ln -sf ~/dotfile/.bash_profile ~/.bash_profile")
     commands.append("ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf")
     commands.append("ln -sf ~/dotfile/.zshrc ~/.zshrc")
     commands.append("ln -sf ~/dotfile/.vimrc ~/.vimrc")
+    commands.append("grep -q -F 'Control Mod1 T :Exec qterminal' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 T :Exec qterminal' >> ~/.config/lumina-desktop/fluxbox-keys");
+    commands.append("grep -q -F 'Control Mod1 G :Exec vim' ~/.config/lumina-desktop/fluxbox-keys || echo 'Control Mod1 G :Exec gvim' >> ~/.config/lumina-desktop/fluxbox-keys");
 
 def container():
     commands.append("apt-get update")
