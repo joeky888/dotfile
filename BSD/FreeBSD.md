@@ -28,6 +28,10 @@ Upgrade all ports packages
 * $ portsnap fetch update
 * $ portupgrade -a
 
+Upgrade all pkg packages
+=====
+* $ sudo pkg update && sudo pkg upgrade
+
 Add user to sudoer
 =====
 * $ whereis sudo
