@@ -564,6 +564,7 @@ call ChangeAccentColor()
 
 autocmd FileType text call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS} call HighlightASS()
 
 function! HighlightTXT()
@@ -599,6 +600,26 @@ function! HighlightSRT()
   hi def link srtError      Error
   hi def link srtNumber     Number
   hi def link srtTime       Statement
+endfunction
+
+function! HighlightVTT()
+  setlocal filetype=webvtt
+  syn case ignore
+  syn match vttContent ".*"
+  syn match vttArrow " --> "
+  syn match vttComment "^#.*"
+  syn match vttError "\[br\]"
+  syn match vttError "{y:[bi][bi]}"
+  syn match vttError "{y:[bi]}"
+  syn match vttNumber "^[0-9]*$"
+  syn region transparent matchgroup=vttTime start='[0-9]*:[0-9]*:[0-9]*\.[0-9]*' end='[0-9]*:[0-9]*:[0-9]*\.[0-9]*' contains=vttArrow
+
+  hi def link vttArrow      Type
+  hi def link vttComment    Comment
+  hi def link vttContent    Identifier
+  hi def link vttError      Error
+  hi def link vttNumber     Number
+  hi def link vttTime       Statement
 endfunction
 
 function! HighlightASS()
