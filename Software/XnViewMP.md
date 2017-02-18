@@ -6,7 +6,7 @@ Settings
 =====
 * Tools -> Settings
     * General
-        * General -> One instance of program only -> check
+        * General -> Allow only one instance of XnView -> check
         * General -> Save session on program exit -> Never
         * General -> Startup -> Mode when starting with a file -> Normal
     * Interface
@@ -30,3 +30,7 @@ Settings
         * Fullscreen -> Auto image size -> Fit image to window width or height
         * Fullscreen -> Show info -> uncheck
 * View -> Auto image size -> Fit image to window width or height
+
+Set XnView as default program for Win10+
+=====
+* Windows Settings -> System -> Default apps -> set defaults by app -> Select XnView (on the left side) -> Choose defaults for this program -> check all
