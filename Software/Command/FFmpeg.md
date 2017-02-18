@@ -122,6 +122,10 @@ Convert a folder
 * opus to mp3
 * $ mkdir -p ../ffconvert && find . -iname "*.opus" -exec sh -c 'chmod 777 "$0" && ffmpeg -i "$0" ../ffconvert/"${0/.opus}.mp3"' {} \;
 
+Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
+=====
+* $ cat VTS-01-* > VTS-01.VOB
+
 Compile ffmpeg on Cygwin
 =====
 * Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
