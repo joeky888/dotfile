@@ -107,7 +107,7 @@ if [ $(command -v gvim) ]; then
     if [ "$#" == 0 ]; then
       eval $gv
     else
-      eval "$gv -p --remote-tab-silent $@"
+      eval "$gv -p --remote-tab-silent '$@'"
     fi;
   }
 fi
