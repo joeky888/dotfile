@@ -36,6 +36,7 @@ EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && e
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
 killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
+killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
