@@ -311,7 +311,7 @@ call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailin
 vnoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\%V\c
 
 " Ctrl R - Search and Replace
-call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/\\c", "in", "noTrailingIInInsert")
+call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/", "in", "noTrailingIInInsert")
 vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/
 
 " Ctrl G - Select all
