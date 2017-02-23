@@ -211,22 +211,22 @@ endfunction
 function! MenuNetrw()
   let c = input("What to you want to do? (M)ake a dir, Make a (F)ile, (R)ename, (D)elete : ")
   if (c == "m" || c == "M")
-    normal d
+    normal! d
   elseif (c == "f" || c == "F")
-    normal %
+    normal! %
   elseif (c == "r" || c == "R")
-    normal R
+    normal! R
   elseif (c == "d" || c == "D")
-    normal D
+    normal! D
   endif
 endfunction
 function! PasteFromClipboard()
   if line(".") == 1
-    normal O
+    normal! O
     execute "r /tmp/$USER/clipboard.txt"
     execute "1d"
   else
-    normal k
+    normal! k
     execute "r /tmp/$USER/clipboard.txt"
   endif
 endfunction
@@ -240,7 +240,7 @@ inoremap <CR> <CR><C-g>u
 inoremap <Tab> <Tab><C-g>u
 
 " Backspace is deleting in visual mode
-call CreateShortcut("BS", "di", "v")
+call CreateShortcut("BS", "di<C-g>u", "v")
 
 " Ctrl A - Begin Line
 call CreateShortcut("C-a", "0", "inv")
@@ -284,7 +284,7 @@ vnoremap <C-k> <ESC>:execute line("'<").",".line("'>")."d"<CR>
 
 " Ctrl D - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jj", "n")
-inoremap <C-d> <C-\><C-O>:normal mjyyp`jj<CR><C-g>u
+inoremap <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
 vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
@@ -292,19 +292,19 @@ call CreateShortcut("C-q", "<C-v>", "inv")
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
 call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
-inoremap <C-Up> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR>
+inoremap <C-Up> <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
 
 " Ctrl Down - Pagedown
 call CreateShortcut("C-Down",  &scroll*5/3."j", "nv")
-inoremap <C-Down> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR>
+inoremap <C-Down> <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
 
 " Ctrl U - Pageup
 call CreateShortcut("C-u", &scroll*5/3."k", "nv")
-inoremap <C-u> <C-\><C-O>:execute "normal ".&scroll*5/3."k"<CR>
+inoremap <C-u> <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
 
 " Ctrl J - Pagedown
 call CreateShortcut("C-j", &scroll*5/3."j", "nv")
-inoremap <C-j> <C-\><C-O>:execute "normal ".&scroll*5/3."j"<CR>
+inoremap <C-j> <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
@@ -766,10 +766,10 @@ if has("gui_running")
   onoremap <C-LeftDrag>  <C-C><LeftDrag>
 
   " Deleting words and Entering insert mode
-  call CreateShortcut("CR", "di<CR>", "v")
-  call CreateShortcut("Space", "di<Space>", "v")
-  call CreateShortcut("C-BS", "d", "v")
-  call CreateShortcut("C-Del", "ldw", "i")
+  call CreateShortcut("CR", "di<CR><C-g>u", "v")
+  call CreateShortcut("Space", "di<Space><C-g>u", "v")
+  call CreateShortcut("C-BS", "di<C-g>u", "v")
+  call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
   nnoremap <C-Del> dwi
 
   " Get into insert mode by pressing any key in visual mode
@@ -793,9 +793,9 @@ vnoremap < <ESC>:call WrapSelected("<",">")<CR>
 vnoremap > <ESC>:call WrapSelected("<",">")<CR>
 
 function! WrapSelected(c1, c2)
-  execute "normal `<i".a:c1
-  execute "normal `>a".a:c2
-  execute "normal l"
+  execute "normal! `<i".a:c1
+  execute "normal! `>a".a:c2
+  execute "normal! l"
 endfunction
 
 " Byobu key binding
@@ -824,12 +824,12 @@ cnoremap <C-e> <End>
 nnoremap : :set ignorecase<CR>:
 nnoremap / :set ignorecase<CR>/
 inoremap <C-CR> <ESC>o<C-g>u
-nnoremap <C-CR> o
+nnoremap <C-CR> o<C-g>u
 inoremap <C-BS> <C-W><C-g>u
-nnoremap <C-BS> i<C-W>
+nnoremap <C-BS> i<C-W><C-g>u
 cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W><C-g>u
-nnoremap <C-_> i<C-W>
+nnoremap <C-_> i<C-W><C-g>u
 cnoremap <C-_> <C-w>
 vnoremap <bar> I
 
@@ -840,7 +840,7 @@ function! ForceFoldmethodIndent()
 endfunction
 
 " minus key is folding/unfolding code in normal mode
-nnoremap <silent> - :normal zi<CR>:call ForceFoldmethodIndent()<CR>
+nnoremap <silent> - :normal! zi<CR>:call ForceFoldmethodIndent()<CR>
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
