@@ -32,15 +32,6 @@ Changing the resolution
 * Or
 * $ ffmpeg -i input.mkv -vf scale=720x480 -c:a copy output.mkv
 
-Speed up / Slow down a video
-=====
-* 2x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
-* 1.5x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666*PTS" -filter:a "atempo=1.5" output.mp4
-* 1.25x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
-
 Delay / Hasten audio track
 =====
 * Time format HH:MM:SS.xxx where xxx are milliseconds
@@ -121,6 +112,15 @@ Convert a folder
 =====
 * opus to mp3
 * $ mkdir -p ../ffconvert && find . -iname "*.opus" -exec sh -c 'chmod 777 "$0" && ffmpeg -i "$0" ../ffconvert/"${0/.opus}.mp3"' {} \;
+
+Speed up / Slow down a video
+=====
+* 2x speed
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
+* 1.5x speed
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666*PTS" -filter:a "atempo=1.5" output.mp4
+* 1.25x speed
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
 
 Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 =====
