@@ -124,7 +124,7 @@ Speed up / Slow down a video
 
 Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 =====
-* $ cat VTS-01-* > VTS-01.VOB
+* $ cat VTS-01-*.VOB > VTS-01.VOB
 
 Compile ffmpeg on Cygwin
 =====
