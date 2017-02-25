@@ -816,7 +816,7 @@ nnoremap <Del> i<Del>
 cnoremap <C-w> <C-c>
 cnoremap <C-k> <C-e><C-u>
 cnoremap <C-f> <C-c>:noh<CR>/\c
-cnoremap <C-r> <C-c>:noh<CR>:%s/\c
+cnoremap <C-r> <C-c>:noh<CR>:%s/
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
