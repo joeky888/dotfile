@@ -344,6 +344,7 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 " Ctrl Z - Undo
 call CreateShortcut("C-z", "u", "n")
 call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+vnoremap <C-z> <ESC>
 
 " Ctrl Y - Redo
 call CreateShortcut("C-y", "<C-r>", "n")
