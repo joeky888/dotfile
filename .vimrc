@@ -361,10 +361,12 @@ call CreateShortcut("A-Left", "gT", "inv")
 " Ctrl N - Next word
 call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-\><C-o>w
+vnoremap <C-n> 5l
 
 " Ctrl P - Previous word
 call CreateShortcut("C-p", "b", "n")
 inoremap <C-p> <C-\><C-o>b
+vnoremap <C-p> 5h
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
