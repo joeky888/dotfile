@@ -366,6 +366,12 @@ inoremap <C-n> <C-\><C-o>w
 call CreateShortcut("C-p", "b", "n")
 inoremap <C-p> <C-\><C-o>b
 
+" Ctrl Left - Previous 5 column
+vnoremap <C-Left> 5h
+
+" Ctrl Right - Next 5 column
+vnoremap <C-Right> 5l
+
 " Ctrl O - Netrw (:Explore)
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
