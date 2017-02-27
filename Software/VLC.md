@@ -8,4 +8,5 @@ Performance
     * Volumn up -> Up
     * Volumn down -> Down
     * Very short jump length -> 5 seconds
+    * Medium jump length -> 25 seconds
 * Copy vlc.exe to vlc-gpu.exe -> open NVIDIA setting add vlc-gpu.exe to GPU list
