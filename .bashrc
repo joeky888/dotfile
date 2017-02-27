@@ -76,6 +76,12 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
 fi
 
+if [[ "$OSTYPE" == "linux-gnu" || "$OSTYPE" == "darwin"* || "$OSTYPE" == "freebsd"* ]]; then # Unix-like, but no Cygwin
+  export TEMP="/tmp"
+  export TMP="$TEMP"
+  export TMPDIR="$TEMP"
+fi
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   true
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
