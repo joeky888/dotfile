@@ -262,8 +262,9 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
 
 " Ctrl S - Save
-call CreateShortcut("C-s", ":call MySave()<CR>", "nv", "cmdInVisual", "restoreSelectionAfter")
-inoremap <C-s> <C-\><C-O>:call MySave()<CR><C-g>u
+call CreateShortcut("C-s", ":call MySave()<CR>", "n")
+inoremap <C-s> <C-\><C-O>:call MySave()<CR>
+vnoremap <C-s> <ESC>:<C-u>call MySave()<CR>
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
