@@ -351,6 +351,7 @@ cnoremap <C-z> <ESC>u
 " Ctrl Y - Redo
 call CreateShortcut("C-y", "<C-r>", "n")
 call CreateShortcut("C-y", "<C-o><C-r>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+cnoremap <C-y> <ESC><C-r>
 
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>i", "inv", "noTrailingIInInsert", "cmdInVisual")
@@ -366,10 +367,22 @@ call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-\><C-o>w
 vnoremap <C-n> 5l
 
+" Terminal Alt Right - Next word
+execute "set <M-C>=\e\eOC"
+nnoremap <M-C> w
+inoremap <M-C> <C-\><C-o>w
+vnoremap <M-C> 5l
+
 " Ctrl P - Previous word
 call CreateShortcut("C-p", "b", "n")
 inoremap <C-p> <C-\><C-o>b
 vnoremap <C-p> 5h
+
+" Terminal Alt Left - Previous word
+execute "set <M-D>=\e\eOD"
+nnoremap <M-D> b
+inoremap <M-D> <C-\><C-o>b
+vnoremap <M-D> 5h
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
