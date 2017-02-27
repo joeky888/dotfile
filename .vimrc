@@ -263,7 +263,7 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrai
 
 " Ctrl S - Save
 call CreateShortcut("C-s", ":call MySave()<CR>", "n")
-inoremap <C-s> <C-\><C-O>:call MySave()<CR>
+inoremap <C-s> <C-g>u<C-\><C-O>:call MySave()<CR>
 vnoremap <C-s> <ESC>:<C-u>call MySave()<CR>
 
 " Home - Go To Begin
