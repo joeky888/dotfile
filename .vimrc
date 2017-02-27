@@ -288,7 +288,8 @@ inoremap <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
 vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
-call CreateShortcut("C-q", "<C-v>", "inv")
+call CreateShortcut("C-q", "<C-v>", "nv")
+inoremap <C-q> <C-\><C-o><C-v>
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
 call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
@@ -344,7 +345,8 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 " Ctrl Z - Undo
 call CreateShortcut("C-z", "u", "n")
 call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-vnoremap <C-z> <ESC>
+vnoremap <C-z> <ESC>u
+cnoremap <C-z> <ESC>u
 
 " Ctrl Y - Redo
 call CreateShortcut("C-y", "<C-r>", "n")
