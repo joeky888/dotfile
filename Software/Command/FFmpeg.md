@@ -81,6 +81,17 @@ Copy encoding if convert coding is not available
 * Subtitle
 * $ ffmpeg -i input.mkv -c:s copy output.mkv
 
+Left channel to 1st audio track, right channel to 2nd audio track
+=====
+* The best way to go is spliting left and right channels into 2 files
+* The example rmvb 0:0 is audio track and 0:1 is video track
+* Get left 國語
+* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+* Get Right 韓語
+* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+* Merge *.opus and video track into mkv
+* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
+
 Attached font file to .mkv
 =====
 * Suppose there is a file input.mkv with a video track, an audio track and a subtitle track
