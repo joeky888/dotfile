@@ -757,13 +757,13 @@ if has("gui_running")
   set clipboard& " unset clipboard
 
   " Ctrl C is copying line if there is no word selected
-  call CreateShortcut("C-c", "V\"+y", "in")
+  call CreateShortcut("C-c", "0v$\"+y", "in")
   call CreateShortcut("C-c", "\"+y", "v")
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
-  call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-x", "V\"+x", "n")
+  call CreateShortcut("C-x", "0v$\"+x<ESC>ddi<C-g>u", "i", "noTrailingIInInsert")
+  call CreateShortcut("C-x", "0v$\"+x<ESC>dd", "n")
   call CreateShortcut("C-x", "\"+x", "v")
   cnoremap <C-x> <C-y><C-e><C-u>
 
