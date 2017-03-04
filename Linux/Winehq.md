@@ -23,10 +23,10 @@ Install CJK font
     * $ sh winetricks wenquanyi
     * $ wine regedit ~/dotfile/Linux/cjk.reg
 2. manual
-    * Download wqy-zenhei.ttc and place it to ~/.wine/drive_c/windows/Fonts/
+    * Download wqy-zenhei.ttc and place it to ~/.wine/drive\_c/windows/Fonts/
     * Install a Chinese input method on Linux
     * $ wine regedit ~/dotfile/Linux/cjk.reg
-    * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
+    * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive\_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
 
 Install mono or dotnet
 =====

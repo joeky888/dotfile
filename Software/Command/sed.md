@@ -12,12 +12,18 @@ Remove all lines which not contain a string
 
 Remove all empty lines
 =====
-* $ sed -i '/^\s*$/d' filename
+```sh
+sed -i '/^\s*$/d' filename
+```
 
 Replace all empty lines with one empty lines
 =====
-* $ sed -i '/^$/N;/^\n$/D' filename
+```sh
+sed -i '/^$/N;/^\n$/D' filename
+```
 
 Remove all trailing whitespace
 =====
-* $ sed -i 's/\s*$//g' filename
+```sh
+sed -i 's/\s*$//g' filename
+```

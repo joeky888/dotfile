@@ -1,29 +1,27 @@
 find
 =====
-* $ find . -iname '*.jpg'
+* $ find . -iname '\*.jpg'
 
 find and exec a command
 =====
 * Rename all .jpg to .jpg.backup
-* $ find . -iname '*.jpg' -exec sh -c 'mv "$0" "$0".backup' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'mv "$0" "$0".backup' {} \;
 
 find and exec multiple commands
 =====
 * Add multiple -exec for each command
 * Copy all .jpg to .jpg.backup
 * Remove all .jpg
-* $ find . -iname '*.jpg' -exec sh -c 'mv "$0" "$0".backup && rm "$0"' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'mv "$0" "$0".backup && rm "$0"' {} \;
 * OR
-* $ find . -iname '*.jpg' -exec sh -c 'cp "$0" "$0".backup' {} \; -exec sh -c 'rm "$0"' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'cp "$0" "$0".backup' {} \; -exec sh -c 'rm "$0"' {} \;
 
 find and exec a shell function command
 =====
 * This is for bash or zsh
-* $ for x in **/*.jpg; do myfunction "$x"; done
-* This is bash-only
-* $ bash
-* $ export -f myfunction
-* $ find . -iname '*.jpg' -exec bash -c 'myfunction "$0"' {} \;
+```sh
+for x in **/*.jpg; do myfunction "$x"; done
+```
 
 find all UTF-8 files
 =====
@@ -35,45 +33,40 @@ find without leading path such as ./ and exec a command (which means getting bas
 =====
 * Remove all jpg files
 * Set % as variable/file name
-* $ find . -iname '*.jpg' -printf '%P\n' | xargs -I % sh -c 'rm "$0"' %
+* $ find . -iname '\*.jpg' -printf '%P\n' | xargs -I % sh -c 'rm "$0"' %
 
 find and convert file to UTF-8
 =====
 * Make sure to install libiconv
-* $ find . -type f -iname '*.txt' -exec sh -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 "$0" > "$0.converted" && mv "$0.converted" "$0"' {} \;
+```sh
+find . -type f -iname '*.txt' -exec sh -c 'iconv -f $(file -bi "$0" | sed -e "s/.*[ ]charset=//") -t utf-8 "$0" > "$0.converted" && mv "$0.converted" "$0"' {} \;
+```
 
 find with multiple conditions
 =====
 * -o means OR, -a means AND, -not means NOT
 * find all jpg or png or gif
-* $ find . -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif'
+* $ find . -iname '\*.jpg' -o -iname '\*.png' -o -iname '\*.gif'
 
 find with file size
 =====
 * Auto detect which unit to use
-* $ du -sh *
+* $ du -sh \*
 * OR
-* $ find . -iname '*.jpg' -exec sh -c 'ls -lh "$0"' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'ls -lh "$0"' {} \;
 * KB
-* $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=K "$0"' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=K "$0"' {} \;
 * MB
-* $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=M "$0"' {} \;
+* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=M "$0"' {} \;
 * GB
-* $ find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=G "$0"' {} \;
-
-Replace / Remove a string in a file
-=====
-* Replace all "\n\r" with ","
-* $ tr "\n\r" "," < input.txt  > output.txt
-* Remove all "\n\r"
-* $ tr -d "\n\r" < input.txt  > output.txt
+* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=G "$0"' {} \;
 
 Rename all file types (filename extension)
 =====
 * Rename all jpg to png
-* $ find . -name '*.jpg' -exec sh -c 'mv "$0" "${0%.jpg}.png"' {} \;
+* $ find . -name '\*.jpg' -exec sh -c 'mv "$0" "${0%.jpg}.png"' {} \;
 
 Find wihout/exclude a folder
 =====
-* Find jpg but not ./directory
-* $ find . -iname '*.jpg' -and -not -path "./directory*"
+* Find jpg but not in ./directory
+* $ find . -iname '\*.jpg' -and -not -path "./directory\*"

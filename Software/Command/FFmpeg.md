@@ -86,11 +86,11 @@ Left channel to 1st audio track, right channel to 2nd audio track
 * The best way to go is spliting left and right channels into 2 files
 * The example rmvb 0:0 is audio track and 0:1 is video track
 * Get left 國語
-* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map\_channel 0.0.0 -map\_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
 * Get Right 韓語
-* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
-* Merge *.opus and video track into mkv
-* $ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
+* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map\_channel 0.0.0 -map\_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+* Merge \*.opus and video track into mkv
+* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
 
 Attached font file to .mkv
 =====
@@ -122,20 +122,20 @@ Show media info
 Convert a folder
 =====
 * opus to mp3
-* $ mkdir -p ../ffconvert && find . -iname "*.opus" -exec sh -c 'chmod 777 "$0" && ffmpeg -i "$0" ../ffconvert/"${0/.opus}.mp3"' {} \;
+* $ mkdir -p ../ffconvert && find . -iname "\*.opus" -exec sh -c 'chmod 777 "$0" && ffmpeg -i "$0" ../ffconvert/"${0/.opus}.mp3"' {} \;
 
 Speed up / Slow down a video
 =====
 * 2x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.5\*PTS" -filter:a "atempo=2.0" output.mp4
 * 1.5x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666*PTS" -filter:a "atempo=1.5" output.mp4
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666\*PTS" -filter:a "atempo=1.5" output.mp4
 * 1.25x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
+* $ ffmpeg -i input.mp4 -filter:v "setpts=0.8\*PTS" -filter:a "atempo=1.25" output.mp4
 
 Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 =====
-* $ cat VTS-01-*.VOB > VTS-01.VOB
+* $ cat VTS-01-\*.VOB > VTS-01.VOB
 
 Compile ffmpeg on Cygwin
 =====
@@ -148,7 +148,7 @@ Compile ffmpeg on Cygwin
     * $ git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
     * $ ./autogen.sh
     * $ ./configure --enable-static --disable-shared && make -j 8 && make install
-    * $ ffmpeg -i input -c:a libfdk_aac output
+    * $ ffmpeg -i input -c:a libfdk\_aac output
 * Install libh264
     * $ git clone --depth=1 git://git.videolan.org/x264.git
     * $ ./configure --enable-static && make -j 8 && make install
@@ -157,7 +157,7 @@ Compile ffmpeg on Cygwin
 * Install libh265
     * $ Download https://bitbucket.org/multicoreware/x265/downloads
     * $ cd build/linux
-    * $ cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source && make -j 8 && make install
+    * $ cmake -G "Unix Makefiles" -DENABLE\_SHARED:bool=off ../../source && make -j 8 && make install
     * $ ffmpeg -i input -c:v libx265 output
 * Install ffmpeg
     * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg

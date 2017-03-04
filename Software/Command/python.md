@@ -1,4 +1,4 @@
-Json prettify
+Unicode Json prettify
 =====
 * $ echo '{"foo": "lorem", "bar": "ipsum"}' | python3 -m json.tool
 * Support unicode

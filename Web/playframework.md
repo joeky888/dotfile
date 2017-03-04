@@ -48,5 +48,5 @@ Eclipse setting
 * eclipse.ini set java stack size
 * Window > Preferences > Java > Editor > Content Assist
 * Auto Activation > Auto activation triggers for Java
-* Enter "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ._" instead of "."
+* Enter "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ.\_" instead of "."
 * Window > Preferences > General > Appearance > Use Dark theme

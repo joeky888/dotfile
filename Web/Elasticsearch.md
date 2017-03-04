@@ -19,8 +19,8 @@ Create new database
 Add new index
 =====
 * Add an index called twitter
-* number_of_shards = number of shards in an index
-* number_of_replicas = number of copies from each in other machines
+* number\_of\_shards = number of shards in an index
+* number\_of\_replicas = number of copies from each in other machines
 ```sh
 curl -XPUT 'localhost:9200/twitter?pretty' -d'
 {
