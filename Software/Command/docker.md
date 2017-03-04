@@ -14,10 +14,13 @@ Turn off Hyper-V
 
 Install docker on Linux
 =====
-* Install docker docker-engine
-* $ sudo usermod -aG docker $(whoami)
-* $ sudo reboot
-* $ systemctl status docker.service
+```sh
+# Install Docker Community Edition (Docker CE)
+sudo apt-get update && sudo apt-get install docker.io -y
+sudo usermod -aG docker $USER
+sudo reboot
+systemctl status docker.service
+```
 
 Check if docker is running correctly
 =====
