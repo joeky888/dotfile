@@ -1,6 +1,8 @@
 find
 =====
-* $ find . -iname '\*.jpg'
+```sh
+find . -iname '*.jpg'
+```
 
 find and exec a command
 =====

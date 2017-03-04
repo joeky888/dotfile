@@ -86,11 +86,17 @@ Left channel to 1st audio track, right channel to 2nd audio track
 * The best way to go is spliting left and right channels into 2 files
 * The example rmvb 0:0 is audio track and 0:1 is video track
 * Get left 國語
-* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map\_channel 0.0.0 -map\_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+```sh
+find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+```
 * Get Right 韓語
-* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map\_channel 0.0.0 -map\_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+```sh
+find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+```
 * Merge \*.opus and video track into mkv
-* $ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
+```sh
+find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
+```
 
 Attached font file to .mkv
 =====
@@ -127,11 +133,17 @@ Convert a folder
 Speed up / Slow down a video
 =====
 * 2x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.5\*PTS" -filter:a "atempo=2.0" output.mp4
+```sh
+ffmpeg -i input.mp4 -filter:v "setpts=0.5*PTS" -filter:a "atempo=2.0" output.mp4
+```
 * 1.5x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.666666\*PTS" -filter:a "atempo=1.5" output.mp4
+```sh
+ffmpeg -i input.mp4 -filter:v "setpts=0.666666*PTS" -filter:a "atempo=1.5" output.mp4
+```
 * 1.25x speed
-* $ ffmpeg -i input.mp4 -filter:v "setpts=0.8\*PTS" -filter:a "atempo=1.25" output.mp4
+```sh
+ffmpeg -i input.mp4 -filter:v "setpts=0.8*PTS" -filter:a "atempo=1.25" output.mp4
+```
 
 Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 =====
@@ -141,26 +153,41 @@ Compile ffmpeg on Cygwin
 =====
 * Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
 * Install libmp3
-    * $ git clone --depth=1 https://github.com/j16180339887/lame.git
-    * $ ./configure --enable-static --disable-shared && make -j 8 && make install
-    * $ ffmpeg -i input -c:a libmp3lame output
+```sh
+git clone --depth=1 https://github.com/j16180339887/lame.git
+./configure --enable-static --disable-shared && make -j 8 && make install
+ffmpeg -i input -c:a libmp3lame output
+```
+
 * Install libaac
-    * $ git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
-    * $ ./autogen.sh
-    * $ ./configure --enable-static --disable-shared && make -j 8 && make install
-    * $ ffmpeg -i input -c:a libfdk\_aac output
+```sh
+git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
+./autogen.sh
+./configure --enable-static --disable-shared && make -j 8 && make install
+ffmpeg -i input -c:a libfdk\_aac output
+```
+
 * Install libh264
-    * $ git clone --depth=1 git://git.videolan.org/x264.git
-    * $ ./configure --enable-static && make -j 8 && make install
-    * If there is an error about "HMODULE" when compiling, just add "#include <windows.h>" to file "extras/avisynth_c.h"
-    * $ ffmpeg -i input -c:v libx264 output
+```sh
+git clone --depth=1 git://git.videolan.org/x264.git
+./configure --enable-static && make -j 8 && make install
+# If there is an error about "HMODULE" when compiling, just add "#include <windows.h>" to file "extras/avisynth_c.h"
+ffmpeg -i input -c:v libx264 output
+```
+
 * Install libh265
-    * $ Download https://bitbucket.org/multicoreware/x265/downloads
-    * $ cd build/linux
-    * $ cmake -G "Unix Makefiles" -DENABLE\_SHARED:bool=off ../../source && make -j 8 && make install
-    * $ ffmpeg -i input -c:v libx265 output
+```sh
+# Download https://bitbucket.org/multicoreware/x265/downloads
+cd build/linux
+cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source && make -j 8 && make install
+ffmpeg -i input -c:v libx265 output
+```
+
 * Install ffmpeg
-    * $ git clone --depth=1 git://source.ffmpeg.org/ffmpeg
-    * $ ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
+```sh
+git clone --depth=1 git://source.ffmpeg.org/ffmpeg
+./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
+```
+
 * If ./configure failed
     * check the error message at end of the file 'config.log'
