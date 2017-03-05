@@ -510,6 +510,9 @@ set background=dark
 highlight clear
 syntax reset
 set t_Co=256
+
+let g:is_bash=1 " Tell $VIMRUNTIME/syntax/sh.vim that I am using bash
+
 " Normal is background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
 " Visual is selected color

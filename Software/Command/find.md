@@ -7,16 +7,18 @@ find . -iname '*.jpg'
 find and exec a command
 =====
 * Rename all .jpg to .jpg.backup
-* $ find . -iname '\*.jpg' -exec sh -c 'mv "$0" "$0".backup' {} \;
+```sh
+find . -iname '*.jpg' -exec sh -c 'mv "$0" "$0".backup' {} \;
+```
 
 find and exec multiple commands
 =====
 * Add multiple -exec for each command
 * Copy all .jpg to .jpg.backup
 * Remove all .jpg
-* $ find . -iname '\*.jpg' -exec sh -c 'mv "$0" "$0".backup && rm "$0"' {} \;
-* OR
-* $ find . -iname '\*.jpg' -exec sh -c 'cp "$0" "$0".backup' {} \; -exec sh -c 'rm "$0"' {} \;
+```sh
+find . -iname '*.jpg' -exec sh -c 'mv "$0" "$0".backup && rm "$0"' {} \;
+```
 
 find and exec a shell function command
 =====
@@ -55,18 +57,22 @@ find with file size
 * Auto detect which unit to use
 * $ du -sh \*
 * OR
-* $ find . -iname '\*.jpg' -exec sh -c 'ls -lh "$0"' {} \;
-* KB
-* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=K "$0"' {} \;
-* MB
-* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=M "$0"' {} \;
-* GB
-* $ find . -iname '\*.jpg' -exec sh -c 'ls -s --block-size=G "$0"' {} \;
+```sh
+find . -iname '*.jpg' -exec sh -c 'ls -lh "$0"' {} \;
+# KB
+find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=K "$0"' {} \;
+# MB
+find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=M "$0"' {} \;
+# GB
+find . -iname '*.jpg' -exec sh -c 'ls -s --block-size=G "$0"' {} \;
+```
 
 Rename all file types (filename extension)
 =====
 * Rename all jpg to png
-* $ find . -name '\*.jpg' -exec sh -c 'mv "$0" "${0%.jpg}.png"' {} \;
+```sh
+find . -name '\*.jpg' -exec sh -c 'mv "$0" "${0%.jpg}.png"' {} \;
+```
 
 Find wihout/exclude a folder
 =====
