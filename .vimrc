@@ -235,6 +235,11 @@ function! PasteFromClipboard()
     execute "r /tmp/$USER/clipboard.txt"
   endif
 endfunction
+function! DeleteLine()
+  let savepos = getpos(".")
+  normal! dd
+  call setpos(".", savepos)
+endfunction
 " Usefull shortcuts to enter insert mode
 nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
@@ -284,9 +289,9 @@ call CreateShortcut("Insert", "d\"+gP", "v")
 cnoremap <Insert> <C-r>+
 
 " Ctrl K - Delete Line
-call CreateShortcut("C-k", "dd", "n")
-call CreateShortcut("C-k", "<C-o>dd<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-vnoremap <C-k> <ESC>:execute line("'<").",".line("'>")."d"<CR>
+call CreateShortcut("C-k", ":call DeleteLine()<CR>", "n")
+call CreateShortcut("C-k", "<C-o>:call DeleteLine()<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+vnoremap <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
 call CreateShortcut("C-d", "mjyyp`jj", "n")
