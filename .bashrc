@@ -13,6 +13,7 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
+alias upgradePip='pip install --upgrade $(pip freeze -l | cut --fields=1 -d = -)'
 alias upgradeConda='conda update --all --yes'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
