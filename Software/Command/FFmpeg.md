@@ -162,8 +162,7 @@ ffmpeg -i input -c:a libmp3lame output
 * Install libaac
 ```sh
 git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
-./autogen.sh
-./configure --enable-static --disable-shared && make -j 8 && make install
+./autogen.sh && ./configure --enable-static --disable-shared && make -j 8 && make install
 ffmpeg -i input -c:a libfdk\_aac output
 ```
 
@@ -178,8 +177,7 @@ ffmpeg -i input -c:v libx264 output
 * Install libh265
 ```sh
 # Download https://bitbucket.org/multicoreware/x265/downloads
-cd build/linux
-cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source && make -j 8 && make install
+cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source && make -j 8 && make install
 ffmpeg -i input -c:v libx265 output
 ```
 
