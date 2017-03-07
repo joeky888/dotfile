@@ -40,6 +40,11 @@ killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 
+git config --global core.autocrlf false   # Don't correct CRLF
+git config --global core.editor vim
+git config --global user.email jj16180339887@gmail.com
+git config --global user.name j16180339887
+
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
