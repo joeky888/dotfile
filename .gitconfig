@@ -1,0 +1,11 @@
+[user]
+    name = j16180339887
+    email = jj16180339887@gmail.com
+[core]
+    editor = vim
+    autocrlf = false
+[rerere]
+    enabled = 1
+    autoupdate = 1
+[color]
+    ui = auto

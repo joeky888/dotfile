@@ -13,6 +13,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
+  ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc
   mkdir -p ~/.config/openbox
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
@@ -63,6 +64,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
+  ln -sf ~/dotfile/.gitconfig ~/.gitconfig
 
 
 
@@ -117,6 +119,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
+  ln -sf ~/dotfile/.gitconfig ~/.gitconfig
 
 
 
