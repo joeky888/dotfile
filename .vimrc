@@ -302,6 +302,12 @@ vnoremap <C-d> yPgv
 call CreateShortcut("C-q", "<C-v>", "nv")
 inoremap <C-q> <C-\><C-o><C-v>
 
+" Ctrl Left - Move a word
+call CreateShortcut("C-Left", "b", "n")
+
+" Ctrl Right - Move a word
+call CreateShortcut("C-Right", "w", "n")
+
 " Ctrl Up - Pageup, &scroll = half of screen lines
 call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
 inoremap <C-Up> <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
@@ -740,7 +746,7 @@ autocmd VimEnter * set vb t_vb= " disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-" set iskeyword-=_ " _ Should not be one of the keywords
+set iskeyword=a-z,A-Z,48-57
 
 if has("gui_running")
   if has('win32') || has('win64')
