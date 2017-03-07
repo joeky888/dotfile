@@ -336,7 +336,9 @@ vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/\%V
 call CreateShortcut("C-g", "ggVG", "inv")
 
 " Ctrl L - Delete all lines
-call CreateShortcut("C-l", "ggdG", "in")
+call CreateShortcut("C-l", "V", "n")
+inoremap <C-l> <C-\><C-O>V
+vnoremap <C-l> <ESC>V
 
 " Pageup - Move up Line
 nnoremap <silent> <PageUp> mj:<C-u>silent! move-2<CR>`j
