@@ -86,6 +86,21 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bash_profile"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.zshrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+
 python3 <<END
 import sys, os, site
 
