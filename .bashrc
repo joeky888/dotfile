@@ -44,7 +44,7 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
-  export ZSH=$HOME/dotfile/.oh-my-zsh
+  export ZSH=$HOME/dotfile/oh-my-zsh
   ZSH_THEME="bira"
   plugins=(git docker)
   DISABLE_AUTO_UPDATE="true"

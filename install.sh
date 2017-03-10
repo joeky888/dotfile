@@ -4,7 +4,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
   sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   rm -rf ~/dotfile
-  rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
   git submodule init
@@ -57,7 +56,6 @@ END
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   alias ls='ls -G'
   rm -rf ~/dotfile
-  rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
   git submodule init
@@ -87,7 +85,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   echo y | pip install youtube-dl
   echo y | pip install you-get
   rm -rf ~/dotfile
-  rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
   git submodule init
@@ -131,7 +128,6 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   echo y | sudo pkg install tmux zsh git vim curl ubuntu-font
   chsh -s $(command -v zsh) $(whoami)
   rm -rf ~/dotfile
-  rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
   git submodule init
