@@ -709,6 +709,7 @@ let autocomp=0
 inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
 nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
+inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
 
 let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
@@ -716,7 +717,7 @@ function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-r>=SmartComplete()<CR>"
+      execute "inoremap <silent> ".l:char." ".l:char."<C-x><C-p>"
     endfor
   else
     let g:autocomp=0
@@ -726,18 +727,11 @@ function! ToggleAutoComplete()
   endif
 endfunction
 
-function! SmartComplete()
-  if (col(".") == 1 || col(".") == 2) " empty lines, omni matching
-    return "\<C-x>\<C-o>"
+function! OmniPopup()
+  if pumvisible()
+      return "\<C-N>"
   endif
-
-  let currentChar = matchstr(getline('.'), '\%' . (col('.')-2) . 'c.')
-
-  if match(g:CharSet, currentChar) == -1 " First character, omni matching
-    return "\<C-x>\<C-o>"
-  endif
-
-  return "\<C-x>\<C-p>" " Currnt file matching
+  return "\<Tab>"
 endfunction
 
 set noerrorbells " disable error sound
