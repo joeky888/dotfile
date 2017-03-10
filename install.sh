@@ -35,6 +35,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo systemctl enable reconnect.service
   sudo desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   sudo desktop-file-install ~/dotfile/Linux/gvim.desktop
+  rm -rf ~/Miniconda3
   curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
   chmod 777 Miniconda3-latest-Linux-x86_64.sh
   ./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f
