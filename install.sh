@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
