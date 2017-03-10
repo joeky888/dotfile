@@ -516,7 +516,7 @@ au CursorHold * let &ro = &ro
 """" Color Scheme
 
 "" Placed here for convenience.
-"" Copied from tomasr Monokai on Github,
+"" Copied from tomasr Molokai on Github,
 "" and slightly modified.
 
 set background=dark
