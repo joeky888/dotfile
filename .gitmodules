@@ -2,4 +2,3 @@
 	path = .oh-my-zsh
 	url = https://github.com/robbyrussell/oh-my-zsh.git
         shallow = true
-	ignore = dirty
