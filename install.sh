@@ -1,4 +1,4 @@
-#!/bin/bash
+#! /bin/bash
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
@@ -6,7 +6,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   rm -rf ~/dotfile
   rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
-  git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  cd ~/dotfile
+  git submodule init
+  git submodule update
   git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
@@ -57,7 +59,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   rm -rf ~/dotfile
   rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
-  git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  cd ~/dotfile
+  git submodule init
+  git submodule update
   git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
@@ -85,7 +89,9 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   rm -rf ~/dotfile
   rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
-  git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  cd ~/dotfile
+  git submodule init
+  git submodule update
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -127,7 +133,9 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   rm -rf ~/dotfile
   rm -rf ~/.oh-my-zsh
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
-  git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+  cd ~/dotfile
+  git submodule init
+  git submodule update
   git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
