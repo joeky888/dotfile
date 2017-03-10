@@ -54,6 +54,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   _comp_options+=(globdots) # Show hidden files when using completion
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
+  compdef vman=man # Complete vman as man command
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
   bindkey "^[[1;3D" backward-word
