@@ -436,8 +436,8 @@ nnoremap <C-b> i<C-w>
 cnoremap <C-b> <C-w>
 nnoremap <Del> i<Del>
 
-" minus key is unfolding code
-nnoremap <silent> - :normal! zi
+" minus key is folding/unfolding code
+nnoremap - zi
 
 " Useful command mode mapping
 cnoremap <C-w> <C-c>
