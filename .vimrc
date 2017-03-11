@@ -742,7 +742,7 @@ autocmd VimEnter * set vb t_vb= " disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-set iskeyword=a-z,A-Z,48-57
+set iskeyword=a-z,A-Z,48-57,_
 
 if has("gui_running")
   if has('win32') || has('win64')
