@@ -45,6 +45,15 @@ set encoding=utf-8
 set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set viminfo+=n$HOME/viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
+set noerrorbells " disable error sound
+autocmd VimEnter * set noerrorbells " disable error sound
+set vb t_vb= " disable visual bell
+set t_vb= " disable visual bell
+autocmd VimEnter * set vb t_vb= " disable visual bell
+set smartcase& " No smart
+set nowrap " Don't wrap text
+set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
+set iskeyword=a-z,A-Z,48-57,_
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
@@ -53,6 +62,7 @@ let g:netrw_hide=0 " Show all hidden files when using file explorer
 let g:netrw_sizestyle="H" " Human-readable file size in file explorer
 let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
+au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
 " Highlight code area in markdown
 let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","yaml","sh","conf","zsh","debsources","resolv","sudoers"]
 " Open all cmd args in new tabs
@@ -412,6 +422,134 @@ vnoremap <C-Right> 5l
 " Ctrl O - Netrw (:Explore)
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
+" Byobu key binding
+call CreateShortcut("F2", ":tabnew<CR>", "inv")
+call CreateShortcut("C-t", ":tabnew<CR>", "inv")
+call CreateShortcut("F3", ":tabp<CR>", "inv")
+call CreateShortcut("F4", ":tabn<CR>", "inv")
+
+" Ctrl \ is toggling comments
+call CreateShortcut("C-\\", ":call ToggleComments()<CR>", "inv")
+
+inoremap <C-b> <C-w>
+nnoremap <C-b> i<C-w>
+cnoremap <C-b> <C-w>
+nnoremap <Del> i<Del>
+
+" minus key is unfolding code
+nnoremap <silent> - :normal! zi
+
+" Useful command mode mapping
+cnoremap <C-w> <C-c>
+cnoremap <C-k> <C-e><C-u>
+cnoremap <C-f> <C-c>:noh<CR>/\c
+cnoremap <C-r> <C-c>:noh<CR>:%s/
+cnoremap <C-a> <Home>
+cnoremap <C-e> <End>
+
+""" Case insensitive when entering command mode
+nnoremap : :set ignorecase<CR>:
+nnoremap / :set ignorecase<CR>/
+
+inoremap <C-CR> <ESC>o<C-g>u
+nnoremap <C-CR> o<C-g>u
+inoremap <C-BS> <C-W><C-g>u
+nnoremap <C-BS> i<C-W><C-g>u
+cnoremap <C-BS> <C-w>
+inoremap <C-_> <C-W><C-g>u
+nnoremap <C-_> i<C-W><C-g>u
+cnoremap <C-_> <C-w>
+vnoremap <bar> I
+
+inoremap {<CR> {<CR>}<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
+vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
+vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
+vnoremap { <ESC>:call WrapSelected("{","}")<CR>
+vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
+vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
+vnoremap } <ESC>:call WrapSelected("{","}")<CR>
+vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
+vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
+vnoremap < <ESC>:call WrapSelected("<",">")<CR>
+vnoremap > <ESC>:call WrapSelected("<",">")<CR>
+
+function! WrapSelected(c1, c2)
+  execute "normal! `<i".a:c1
+  execute "normal! `>a".a:c2
+  execute "normal! l"
+endfunction
+
+" Commenting blocks of code.
+autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
+autocmd FileType javascript         let b:comment_leader = '\/\/'
+autocmd FileType arduino            let b:comment_leader = '\/\/'
+autocmd FileType registry           let b:comment_leader = ';'
+autocmd FileType dosbatch           let b:comment_leader = '::'
+autocmd FileType sh,ruby,python     let b:comment_leader = '#'
+autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
+autocmd FileType make,Cmake,yaml    let b:comment_leader = '#'
+autocmd FileType debsources,desktop let b:comment_leader = '#'
+autocmd FileType matlab,tex         let b:comment_leader = '%'
+autocmd FileType vim                let b:comment_leader = '"'
+autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
+autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
+
+function! ToggleComments()
+  if exists('b:comment_leader')
+    if getline(".") =~ '^' .b:comment_leader
+      " uncomment the line
+      execute 'silent s/^' .b:comment_leader.' //g'
+      if exists('b:comment_ender')
+        execute 'silent s/ ' .b:comment_ender.'$//g'
+      endif
+    elseif getline(".") =~ '^\s*$'
+      " empty lines, ignore
+    else
+      " comment the line
+      execute 'silent s/^/' .b:comment_leader.' /g'
+      if exists('b:comment_ender')
+        execute 'silent s/$/\ ' .b:comment_ender.'/g'
+      endif
+    endif
+  else
+    echo 'No comment leader found for filetype'
+  endif
+endfunction
+
+autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
+set completeopt=menuone,noinsert,noselect,longest
+set complete=.
+set shortmess+=c
+let autocomp=0
+let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
+vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
+nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
+inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
+
+function! ToggleAutoComplete()
+  if (g:autocomp == 0)
+    let g:autocomp=1
+    for l:char in split(g:CharSet, '\zs')
+      execute "inoremap <silent> ".l:char." ".l:char."<C-x><C-p>"
+    endfor
+  else
+    let g:autocomp=0
+    for l:char in split(g:CharSet, '\zs')
+      execute "inoremap <silent> ".l:char." ".l:char
+    endfor
+  endif
+endfunction
+
+function! OmniPopup()
+  if pumvisible()
+      return "\<C-N>"
+  endif
+  return "\<Tab>"
+endfunction
+
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
 autocmd FileType netrw call KeysInNetrw()
@@ -441,9 +579,6 @@ endfunction
 
 " :UndoCloseTab - To undo close tab
 command! UndoCloseTab call OpenLastBufferInNewTab()
-
-" :RemoveTrailingSpaces - To remove unwanted space(s) at the end of lines
-command! RemoveTrailingSpaces %s/\s\+$
 
 """ Colors and Statusline
 
@@ -514,10 +649,7 @@ au InsertLeave * call ChangeAccentColor()
 au CursorHold * let &ro = &ro
 
 """" Color Scheme
-
-"" Placed here for convenience.
-"" Copied from tomasr Molokai on Github,
-"" and slightly modified.
+"" Modified from tomasr Molokai on Github
 
 set background=dark
 highlight clear
@@ -607,320 +739,6 @@ hi iCursor              guifg=#000000   guibg=#F8F8F0
 
 " Final redraw
 call ChangeAccentColor()
-
-autocmd FileType text call HighlightTXT()
-autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
-autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
-
-function! HighlightTXT()
-  " Copy from $VIM/syntax/lua.vim
-  " integer number
-  syn match txtNumber "\<\d\+\>"
-  " floating point number, with dot, optional exponent
-  syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
-  " floating point number, starting with a dot, optional exponent
-  syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
-  " floating point number, without dot, with exponent
-  syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
-  syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
-  hi def link txtNumber	  Number
-  hi def link lineURL	    Define
-endfunction
-
-function! HighlightSRT()
-  setlocal filetype=srt
-  syn case ignore
-  syn match srtContent ".*"
-  syn match srtArrow " --> "
-  syn match srtComment "^#.*"
-  syn match srtError "\[br\]"
-  syn match srtError "{y:[bi][bi]}"
-  syn match srtError "{y:[bi]}"
-  syn match srtNumber "^[0-9]*$"
-  syn region transparent matchgroup=srtTime start='[0-9]*:[0-9]*:[0-9]*,[0-9]*' end='[0-9]*:[0-9]*:[0-9]*,[0-9]*' contains=srtArrow
-
-  hi def link srtArrow      Type
-  hi def link srtComment    Comment
-  hi def link srtContent    Identifier
-  hi def link srtError      Error
-  hi def link srtNumber     Number
-  hi def link srtTime       Statement
-endfunction
-
-function! HighlightVTT()
-  setlocal filetype=webvtt
-  syn case ignore
-  syn match vttContent ".*"
-  syn match vttArrow " --> "
-  syn match vttComment "^#.*"
-  syn match vttError "\[br\]"
-  syn match vttError "{y:[bi][bi]}"
-  syn match vttError "{y:[bi]}"
-  syn match vttNumber "^[0-9]*$"
-  syn region transparent matchgroup=vttTime start='[0-9:]\+\.[0-9]*' end='[0-9:]\+\.[0-9]*' contains=vttArrow
-
-  hi def link vttArrow      Type
-  hi def link vttComment    Comment
-  hi def link vttContent    Identifier
-  hi def link vttError      Error
-  hi def link vttNumber     Number
-  hi def link vttTime       Statement
-endfunction
-
-function! HighlightASS()
-  setlocal filetype=ssa
-  syn match ssaSection       "^\[.*\]"
-  syn match ssaSourceComment "^;.*$"
-  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
-  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
-  syn match ssaHeaderText    ".*$"             contained
-  syn match ssaComment       "^Comment:\s*"    contained nextgroup=ssaCommentText
-  syn match ssaCommentText   ".*$"             contained
-  syn match ssaDialog        "^Dialogue:\s*"   contained nextgroup=ssaDialogTimes
-  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
-  syn match ssaDialogActor   "[^,]*"           contained nextgroup=ssaDialogEffects
-  syn match ssaDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=ssaDialogText
-  syn match ssaDialogText    ".*$"             contained contains=ssaTextComment,ssaTextSubCode
-  syn match ssaTextComment   "{[^}]*}"         contained
-  syn match ssaTextSubCode   "{\\[^}]*}"       contained
-
-  hi def link ssaSection         Function
-  hi def link ssaSourceComment   Comment
-  hi def link ssaHeader          Statement
-  hi def link ssaComment         Statement
-  hi def link ssaDialog          Statement
-  hi def link ssaHeaderText      Constant
-  hi def link ssaCommentText     Comment
-  hi def link ssaDialogTimes     Type
-  hi def link ssaDialogActor     Title
-  hi def link ssaDialogEffects   Function
-  hi def link ssaDialogText      Identifier
-  hi def link ssaTextComment     Comment
-  hi def link ssaTextSubCode     Comment
-endfunction
-
-autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,noinsert,noselect,longest
-set complete=.
-set shortmess+=c
-
-let autocomp=0
-inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
-vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
-nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
-inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
-
-let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-function! ToggleAutoComplete()
-  if (g:autocomp == 0)
-    let g:autocomp=1
-    for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<C-x><C-p>"
-    endfor
-  else
-    let g:autocomp=0
-    for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char
-    endfor
-  endif
-endfunction
-
-function! OmniPopup()
-  if pumvisible()
-      return "\<C-N>"
-  endif
-  return "\<Tab>"
-endfunction
-
-set noerrorbells " disable error sound
-autocmd VimEnter * set noerrorbells " disable error sound
-set vb t_vb= " disable visual bell
-set t_vb= " disable visual bell
-autocmd VimEnter * set vb t_vb= " disable visual bell
-set smartcase& " No smart
-set nowrap " Don't wrap text
-set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-set iskeyword=a-z,A-Z,48-57,_
-
-if has("gui_running")
-  if has('win32') || has('win64')
-    set backup
-    set backupskip=$TEMP
-    set undodir=$TEMP
-    set directory=$TEMP
-    set backupdir=$TEMP
-    set guifont=Ubuntu\ Mono:h14
-    set guifontwide=DroidMono:h13
-    au GUIEnter * simalt ~x " Full screen on start
-  else
-    set guifont=Ubuntu\ Mono\ 14
-  endif
-  set number
-  set lines=999 columns=999 " set window Maximized
-  set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
-  set selection=exclusive " Don't select char under cursor
-  set mouseshape+=a:beam " set cursor shape as modern editors should be
-  set scrolloff& " unset scroll values
-  set sidescrolloff&
-  set clipboard& " unset clipboard
-
-  " Ctrl C is copying line if there is no word selected
-  call CreateShortcut("C-c", "V\"+y", "in")
-  call CreateShortcut("C-c", "\"+y", "v")
-  cnoremap <C-c> <C-y>
-
-  " Ctrl X is cutting line if there is no word selected
-  call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-x", "V\"+x", "n")
-  call CreateShortcut("C-x", "\"+x", "v")
-  cnoremap <C-x> <C-y><C-e><C-u>
-
-  " Ctrl v is paste / override selected then paste
-  call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-v", "\"+gP", "n")
-  call CreateShortcut("C-v", "d\"+gP", "v")
-  cnoremap <C-v> <C-r>+
-
-  " Shift-Insert same as Ctrl-v
-  call CreateShortcut("S-Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("S-Insert", "\"+gP", "n")
-  call CreateShortcut("S-Insert", "d\"+gP", "v")
-  cnoremap <S-Insert> <C-r>+
-
-  " Meta LeftMouse is block selecting
-  noremap  <M-LeftMouse> <4-LeftMouse>
-  inoremap <M-LeftMouse> <4-LeftMouse>
-  onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-  noremap  <M-LeftDrag>  <LeftDrag>
-  inoremap <M-LeftDrag>  <LeftDrag>
-  onoremap <M-LeftDrag>  <C-C><LeftDrag>
-
-  " Ctrl LeftMouse is block selecting
-  noremap  <C-LeftMouse> <4-LeftMouse>
-  inoremap <C-LeftMouse> <4-LeftMouse>
-  onoremap <C-LeftMouse> <C-C><4-LeftMouse>
-  noremap  <C-LeftDrag>  <LeftDrag>
-  inoremap <C-LeftDrag>  <LeftDrag>
-  onoremap <C-LeftDrag>  <C-C><LeftDrag>
-
-  " Deleting words and Entering insert mode
-  call CreateShortcut("CR", "di<CR><C-g>u", "v")
-  call CreateShortcut("Space", "di<Space><C-g>u", "v")
-  call CreateShortcut("C-BS", "di<C-g>u", "v")
-  call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
-  nnoremap <C-Del> dwi
-
-  " Get into insert mode by pressing any key in visual mode
-  for b:char in split(g:CharSet, '\zs')
-    execute "vnoremap ".b:char." di<C-g>u".b:char
-  endfor
-endif
-
-inoremap {<CR> {<CR>}<ESC>O
-inoremap [<CR> [<CR>]<ESC>O
-inoremap (<CR> (<CR>)<ESC>O
-vnoremap ( <ESC>:call WrapSelected("(",")")<CR>
-vnoremap [ <ESC>:call WrapSelected("[","]")<CR>
-vnoremap { <ESC>:call WrapSelected("{","}")<CR>
-vnoremap ) <ESC>:call WrapSelected("(",")")<CR>
-vnoremap ] <ESC>:call WrapSelected("[","]")<CR>
-vnoremap } <ESC>:call WrapSelected("{","}")<CR>
-vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
-vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
-vnoremap < <ESC>:call WrapSelected("<",">")<CR>
-vnoremap > <ESC>:call WrapSelected("<",">")<CR>
-
-function! WrapSelected(c1, c2)
-  execute "normal! `<i".a:c1
-  execute "normal! `>a".a:c2
-  execute "normal! l"
-endfunction
-
-" Byobu key binding
-call CreateShortcut("F2", ":tabnew<CR>", "inv")
-call CreateShortcut("C-t", ":tabnew<CR>", "inv")
-call CreateShortcut("F3", ":tabp<CR>", "inv")
-call CreateShortcut("F4", ":tabn<CR>", "inv")
-
-" Ctrl \ is toggling comments
-call CreateShortcut("C-\\", ":call ToggleComments()<CR>", "inv")
-
-inoremap <C-b> <C-w>
-nnoremap <C-b> i<C-w>
-cnoremap <C-b> <C-w>
-nnoremap <Del> i<Del>
-
-" Useful command mode mapping
-cnoremap <C-w> <C-c>
-cnoremap <C-k> <C-e><C-u>
-cnoremap <C-f> <C-c>:noh<CR>/\c
-cnoremap <C-r> <C-c>:noh<CR>:%s/
-cnoremap <C-a> <Home>
-cnoremap <C-e> <End>
-
-""" Case insensitive when entering command mode
-nnoremap : :set ignorecase<CR>:
-nnoremap / :set ignorecase<CR>/
-inoremap <C-CR> <ESC>o<C-g>u
-nnoremap <C-CR> o<C-g>u
-inoremap <C-BS> <C-W><C-g>u
-nnoremap <C-BS> i<C-W><C-g>u
-cnoremap <C-BS> <C-w>
-inoremap <C-_> <C-W><C-g>u
-nnoremap <C-_> i<C-W><C-g>u
-cnoremap <C-_> <C-w>
-vnoremap <bar> I
-
-function! ForceFoldmethodIndent()
-  if &foldenable
-    set foldmethod=indent
-  endif
-endfunction
-
-" minus key is folding/unfolding code in normal mode
-nnoremap <silent> - :normal! zi<CR>:call ForceFoldmethodIndent()<CR>
-
-" Commenting blocks of code.
-autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
-autocmd FileType javascript         let b:comment_leader = '\/\/'
-autocmd FileType arduino            let b:comment_leader = '\/\/'
-autocmd FileType registry           let b:comment_leader = ';'
-autocmd FileType dosbatch           let b:comment_leader = '::'
-autocmd FileType sh,ruby,python     let b:comment_leader = '#'
-autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
-autocmd FileType make,Cmake,yaml    let b:comment_leader = '#'
-autocmd FileType debsources,desktop let b:comment_leader = '#'
-autocmd FileType matlab,tex         let b:comment_leader = '%'
-autocmd FileType vim                let b:comment_leader = '"'
-autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
-autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
-
-function! ToggleComments()
-  if exists('b:comment_leader')
-    if getline(".") =~ '^' .b:comment_leader
-      " uncomment the line
-      execute 'silent s/^' .b:comment_leader.' //g'
-      if exists('b:comment_ender')
-        execute 'silent s/ ' .b:comment_ender.'$//g'
-      endif
-    elseif getline(".") =~ '^\s*$'
-      " empty lines, ignore
-    else
-      " comment the line
-      execute 'silent s/^/' .b:comment_leader.' /g'
-      if exists('b:comment_ender')
-        execute 'silent s/$/\ ' .b:comment_ender.'/g'
-      endif
-    endif
-  else
-    echo 'No comment leader found for filetype'
-  endif
-endfunction
-
-" Indent by filetype
-au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent for vim files
 
 function! JsonBeautify()
   execute "%!python -m json.tool"
@@ -1044,3 +862,169 @@ command! EncodingKorea   execute "e ++enc=korea"
 command! EncodingUTF16LE execute "e ++enc=utf-16le"
 command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
+
+autocmd FileType text call HighlightTXT()
+autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
+autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
+
+function! HighlightTXT()
+  " Copy from $VIM/syntax/lua.vim
+  " integer number
+  syn match txtNumber "\<\d\+\>"
+  " floating point number, with dot, optional exponent
+  syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+  " floating point number, starting with a dot, optional exponent
+  syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
+  " floating point number, without dot, with exponent
+  syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
+  syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+  hi def link txtNumber	  Number
+  hi def link lineURL	    Define
+endfunction
+
+function! HighlightSRT()
+  setlocal filetype=srt
+  syn case ignore
+  syn match srtContent ".*"
+  syn match srtArrow " --> "
+  syn match srtComment "^#.*"
+  syn match srtError "\[br\]"
+  syn match srtError "{y:[bi][bi]}"
+  syn match srtError "{y:[bi]}"
+  syn match srtNumber "^[0-9]*$"
+  syn region transparent matchgroup=srtTime start='[0-9]*:[0-9]*:[0-9]*,[0-9]*' end='[0-9]*:[0-9]*:[0-9]*,[0-9]*' contains=srtArrow
+
+  hi def link srtArrow      Type
+  hi def link srtComment    Comment
+  hi def link srtContent    Identifier
+  hi def link srtError      Error
+  hi def link srtNumber     Number
+  hi def link srtTime       Statement
+endfunction
+
+function! HighlightVTT()
+  setlocal filetype=webvtt
+  syn case ignore
+  syn match vttContent ".*"
+  syn match vttArrow " --> "
+  syn match vttComment "^#.*"
+  syn match vttError "\[br\]"
+  syn match vttError "{y:[bi][bi]}"
+  syn match vttError "{y:[bi]}"
+  syn match vttNumber "^[0-9]*$"
+  syn region transparent matchgroup=vttTime start='[0-9:]\+\.[0-9]*' end='[0-9:]\+\.[0-9]*' contains=vttArrow
+
+  hi def link vttArrow      Type
+  hi def link vttComment    Comment
+  hi def link vttContent    Identifier
+  hi def link vttError      Error
+  hi def link vttNumber     Number
+  hi def link vttTime       Statement
+endfunction
+
+function! HighlightASS()
+  setlocal filetype=ssa
+  syn match ssaSection       "^\[.*\]"
+  syn match ssaSourceComment "^;.*$"
+  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
+  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
+  syn match ssaHeaderText    ".*$"             contained
+  syn match ssaComment       "^Comment:\s*"    contained nextgroup=ssaCommentText
+  syn match ssaCommentText   ".*$"             contained
+  syn match ssaDialog        "^Dialogue:\s*"   contained nextgroup=ssaDialogTimes
+  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
+  syn match ssaDialogActor   "[^,]*"           contained nextgroup=ssaDialogEffects
+  syn match ssaDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=ssaDialogText
+  syn match ssaDialogText    ".*$"             contained contains=ssaTextComment,ssaTextSubCode
+  syn match ssaTextComment   "{[^}]*}"         contained
+  syn match ssaTextSubCode   "{\\[^}]*}"       contained
+
+  hi def link ssaSection         Function
+  hi def link ssaSourceComment   Comment
+  hi def link ssaHeader          Statement
+  hi def link ssaComment         Statement
+  hi def link ssaDialog          Statement
+  hi def link ssaHeaderText      Constant
+  hi def link ssaCommentText     Comment
+  hi def link ssaDialogTimes     Type
+  hi def link ssaDialogActor     Title
+  hi def link ssaDialogEffects   Function
+  hi def link ssaDialogText      Identifier
+  hi def link ssaTextComment     Comment
+  hi def link ssaTextSubCode     Comment
+endfunction
+
+if has("gui_running")
+  if has('win32') || has('win64')
+    set backup
+    set backupskip=$TEMP
+    set undodir=$TEMP
+    set directory=$TEMP
+    set backupdir=$TEMP
+    set guifont=Ubuntu\ Mono:h14
+    set guifontwide=DroidMono:h13
+    au GUIEnter * simalt ~x " Full screen on start
+  else
+    set guifont=Ubuntu\ Mono\ 14
+  endif
+  set number
+  set lines=999 columns=999 " set window Maximized
+  set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
+  set selection=exclusive " Don't select char under cursor
+  set mouseshape+=a:beam " set cursor shape as modern editors should be
+  set scrolloff& " unset scroll values
+  set sidescrolloff&
+  set clipboard& " unset clipboard
+
+  " Ctrl C is copying line if there is no word selected
+  call CreateShortcut("C-c", "V\"+y", "in")
+  call CreateShortcut("C-c", "\"+y", "v")
+  cnoremap <C-c> <C-y>
+
+  " Ctrl X is cutting line if there is no word selected
+  call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-x", "V\"+x", "n")
+  call CreateShortcut("C-x", "\"+x", "v")
+  cnoremap <C-x> <C-y><C-e><C-u>
+
+  " Ctrl v is paste / override selected then paste
+  call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-v", "\"+gP", "n")
+  call CreateShortcut("C-v", "d\"+gP", "v")
+  cnoremap <C-v> <C-r>+
+
+  " Shift-Insert same as Ctrl-v
+  call CreateShortcut("S-Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("S-Insert", "\"+gP", "n")
+  call CreateShortcut("S-Insert", "d\"+gP", "v")
+  cnoremap <S-Insert> <C-r>+
+
+  " Meta LeftMouse is block selecting
+  noremap  <M-LeftMouse> <4-LeftMouse>
+  inoremap <M-LeftMouse> <4-LeftMouse>
+  onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+  noremap  <M-LeftDrag>  <LeftDrag>
+  inoremap <M-LeftDrag>  <LeftDrag>
+  onoremap <M-LeftDrag>  <C-C><LeftDrag>
+
+  " Ctrl LeftMouse is block selecting
+  noremap  <C-LeftMouse> <4-LeftMouse>
+  inoremap <C-LeftMouse> <4-LeftMouse>
+  onoremap <C-LeftMouse> <C-C><4-LeftMouse>
+  noremap  <C-LeftDrag>  <LeftDrag>
+  inoremap <C-LeftDrag>  <LeftDrag>
+  onoremap <C-LeftDrag>  <C-C><LeftDrag>
+
+  " Deleting words and Entering insert mode
+  call CreateShortcut("CR", "di<CR><C-g>u", "v")
+  call CreateShortcut("Space", "di<Space><C-g>u", "v")
+  call CreateShortcut("C-BS", "di<C-g>u", "v")
+  call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
+  nnoremap <C-Del> dwi
+
+  " Get into insert mode by pressing any key in visual mode
+  for b:char in split(g:CharSet, '\zs')
+    execute "vnoremap ".b:char." di<C-g>u".b:char
+  endfor
+endif
