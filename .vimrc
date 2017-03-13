@@ -12,6 +12,7 @@ endif
 
 """ General options
 syntax enable " Enable syntax highlights
+set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Lazy redraw
 set shortmess+=I " No intro when starting Vim
@@ -360,6 +361,16 @@ nnoremap <silent> <PageDown> mj:<C-u>silent! move+<CR>`j
 inoremap <silent> <PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+<CR><C-O>`j<C-g>u
 vnoremap <silent> <PageDown> :<C-u>silent! '<,'>move'>+<CR>gv
 
+" Ctrl Pageup - Move up Line booster
+nnoremap <silent> <C-PageUp> mj:<C-u>silent! move-16<CR>`j
+inoremap <silent> <C-PageUp> <C-\><C-O>mj<C-O>:<C-u>silent! move-16<CR><C-O>`j<C-g>u
+vnoremap <silent> <C-PageUp> :<C-u>silent! '<,'>move-16<CR>gv
+
+" Ctrl Pagedown - Move down Line boosted
+nnoremap <silent> <C-PageDown> mj:<C-u>silent! move+15<CR>`j
+inoremap <silent> <C-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j<C-g>u
+vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
+
 " Ctrl W - Quit
 call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
 
@@ -429,7 +440,7 @@ call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
 " Ctrl \ is toggling comments
-call CreateShortcut("C-\\", ":call ToggleComments()<CR>", "inv")
+call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "inv")
 
 inoremap <C-b> <C-w>
 nnoremap <C-b> i<C-w>
@@ -496,25 +507,25 @@ autocmd FileType vim                let b:comment_leader = '"'
 autocmd FileType css                let b:comment_leader = '\/\*'   |   let b:comment_ender = '\*\/'
 autocmd FileType html,xml,markdown  let b:comment_leader = '<!--'   |   let b:comment_ender = '-->'
 
-function! ToggleComments()
+function! ToggleComment()
   if exists('b:comment_leader')
-    if getline(".") =~ '^' .b:comment_leader
-      " uncomment the line
-      execute 'silent s/^' .b:comment_leader.' //g'
+    if getline(".") =~ '^' . b:comment_leader
+      " Uncomment the line
+      execute 'silent s/^' . b:comment_leader .'\( \)\?//g'
       if exists('b:comment_ender')
-        execute 'silent s/ ' .b:comment_ender.'$//g'
+        execute 'silent s/ ' . b:comment_ender .'$//g'
       endif
     elseif getline(".") =~ '^\s*$'
-      " empty lines, ignore
+      " Empty lines: ignore
     else
-      " comment the line
-      execute 'silent s/^/' .b:comment_leader.' /g'
+      " Comment the line
+      execute 'silent s/^/' . b:comment_leader .' /g'
       if exists('b:comment_ender')
-        execute 'silent s/$/\ ' .b:comment_ender.'/g'
+        execute 'silent s/$/\ ' . b:comment_ender .'/g'
       endif
     endif
   else
-    echo 'No comment leader found for filetype'
+    echom "Unknow comment's symbols for filetype"
   endif
 endfunction
 
