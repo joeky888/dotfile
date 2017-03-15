@@ -44,6 +44,7 @@ let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
 set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
+set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set noerrorbells " disable error sound
@@ -987,6 +988,7 @@ if has("gui_running")
   set scrolloff& " unset scroll values
   set sidescrolloff&
   set clipboard& " unset clipboard
+  set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
   call CreateShortcut("C-c", "V\"+y", "in")
