@@ -12,7 +12,7 @@ List of help
 
 簡 to 繁
 =====
-* $ opencc -i input.txt -c s2tw.json -o output.txt
+* $ opencc -i input.txt -c s2twp.json -o output.txt
 
 繁 to 簡
 =====
