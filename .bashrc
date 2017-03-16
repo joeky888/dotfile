@@ -38,6 +38,7 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 killallproc() { eval 'kill -9 $(pgrep $@)' ;}
 killallprocSudo() { eval 'sudo kill -9 $(pgrep $@)' ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
+7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
