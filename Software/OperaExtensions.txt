@@ -1,13 +1,8 @@
 Adblock Plus
 ad-safe / newadblock
-Bookmark Sentry (scanner)
 Download Chrome Extension
 Search by Image (by Google)
-Spotflux Lite
 Stylish
-Unlimited Free VPN - Hola
 Full Page Screen Capture
-DotVPN — better than VPN
-DevTools Theme: Zero Dark Matrix
-Chrome PDF Viewer
 TJDict
+SimpleUndoClose
