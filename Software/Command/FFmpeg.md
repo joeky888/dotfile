@@ -61,6 +61,13 @@ Add subtitle track to .mkv (softsub)
 * 1:0 means sub.srt first subtitle track
 * $ ffmpeg -i input.mkv -i sub.srt -map 0:0 -map 0:1 -map 1:0 -c copy output.mkv
 
+Set video title
+=====
+* Clear title
+* $ ffmpeg -i input.mkv -metadata title="" -c copy -map 0 output.mkv
+* Set title to "國語片"
+* $ ffmpeg -i input.mkv -metadata title="國語片" -c copy -map 0 output.mkv
+
 Set audio track title
 =====
 * Set first track title to "國語"
