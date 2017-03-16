@@ -106,13 +106,12 @@ if [[ -d "/sbin" ]]; then
 fi
 
 if [ $(command -v gvim) ]; then
-  gv=$(which gvim)
   gvim()
   {
     if [ "$#" == 0 ]; then
-      eval $gv
+      /usr/bin/gvim
     else
-      eval "$gv -p --remote-tab-silent '$@'"
+      /usr/bin/gvim -p --remote-tab-silent "$@"
     fi;
   }
 fi
