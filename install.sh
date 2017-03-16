@@ -8,7 +8,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   cd ~/dotfile
   git submodule init
   git submodule update
-  git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
@@ -61,7 +60,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   cd ~/dotfile
   git submodule init
   git submodule update
-  git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
@@ -133,7 +131,6 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   cd ~/dotfile
   git submodule init
   git submodule update
-  git config --global core.editor vim
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bash_profile ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
