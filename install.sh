@@ -23,8 +23,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo ln -sf ~/dotfile/.bash_profile /root/.bash_profile
   sudo ln -sf ~/dotfile/.bashrc /root/.bashrc
   sudo ln -sf ~/dotfile/.zshrc /root/.zshrc
-  sudo rm -rf /root/.oh-my-zsh
-  sudo git clone --depth=1 https://github.com/robbyrussell/oh-my-zsh.git /root/.oh-my-zsh
   sudo chsh -s $(command -v zsh) root
   sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect
   sudo chmod 755 /usr/bin/reconnect
