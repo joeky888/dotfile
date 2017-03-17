@@ -10,3 +10,10 @@ Performance
     * Very short jump length -> 5 seconds
     * Medium jump length -> 25 seconds
 * Copy vlc.exe to vlc-gpu.exe -> open NVIDIA setting and add vlc-gpu.exe to GPU list
+
+Subtitle
+=====
+* Tools -> Preferences -> Subtitles/OSD
+    * Show media title on video start -> uncheck
+    * Default encoding -> Universal(UTF-8)
+    * Font -> use wps office font
