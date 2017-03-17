@@ -803,6 +803,12 @@ nnoremenu Edit.Remove.Trailing\ whitespace  :%s/\s\+$//e<CR>
 command! RemoveLeadingSpace %s/^\s\+//e
 command! RemoveEmptyLines   g/^$/d
 
+" Toggle case
+nnoremenu Edit.Toggle\ case.Upper          ggVGU
+nnoremenu Edit.Toggle\ case.Lower          ggVGu
+vnoremenu Edit.Toggle\ case.Upper          U
+vnoremenu Edit.Toggle\ case.Lower          u
+
 " Fast rendering for current file
 function! FastRender()
   setlocal nocursorline

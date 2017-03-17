@@ -56,6 +56,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
   compdef vman=man # Complete vman as man command
+  compdef AptCygComplete apt-cyg # Complete apt-cyg
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
   bindkey "^[[1;3D" backward-word
@@ -188,6 +189,27 @@ ZshCutToClipboard()
 BashPasteFromClipboard()
 {
   READLINE_LINE="$READLINE_LINE$(cat /tmp/$USER/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+}
+
+AptCygComplete()
+{
+  local -a options
+  options=(
+    'install:Install package(s).'
+    'remove:Remove package(s) from the system.'
+    'update:Download a fresh copy of the master package list (setup.ini).'
+    'download:Retrieve package(s) from the server, but do not install/upgrade anything.'
+    'show:Display information on given package(s).'
+    'depends:Produce a dependency tree for a package.'
+    'rdepends:Produce a tree of packages that depend on the named package.'
+    'list:Search each locally-installed package for names that match regexp.'
+    'listall:This will regexp search each package in the master package list (setup.ini).'
+    'category:Display all packages that are members of a named category.'
+    'listfiles:List all files owned by a given package.'
+    'search:Search for downloaded packages that own the specified file(s).'
+    'searchall:Search cygwin.com to retrieve file information about packages'
+  )
+  _describe 'values' options;
 }
 
 forever()
