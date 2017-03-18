@@ -43,16 +43,16 @@ Delay / Hasten audio track
 Set default audio track
 =====
 * Set second audio track as default
-* $ ffmpeg -i input.mkv -disposition:a:1 default output.mkv
+* $ ffmpeg -i input.mkv -disposition:a:1 forced output.mkv
 * Set first audio track as default
-* $ ffmpeg -i input.mkv -disposition:a:0 default output.mkv
+* $ ffmpeg -i input.mkv -disposition:a:0 forced output.mkv
 
 Set default subtitle track
 =====
 * Set second subtitle track as default
-* $ ffmpeg -i input.mkv -disposition:s:1 default output.mkv
+* $ ffmpeg -i input.mkv -disposition:s:1 forced output.mkv
 * Set first subtitle track as default
-* $ ffmpeg -i input.mkv -disposition:s:0 default output.mkv
+* $ ffmpeg -i input.mkv -disposition:s:0 forced output.mkv
 
 Add subtitle track to .mkv (softsub)
 =====
@@ -102,7 +102,7 @@ find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_ch
 ```
 * Merge \*.opus and video track into mkv
 ```sh
-find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 default -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
+find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 forced -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
 ```
 
 Attached font file to .mkv
