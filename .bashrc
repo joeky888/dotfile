@@ -56,7 +56,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
   compdef vman=man # Complete vman as man command
-  compdef forever=sudo # Complete vman as man command
+  compdef forever=sudo # Complete forever as sudo command
   compdef CompleteAptCyg apt-cyg # Complete apt-cyg
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
