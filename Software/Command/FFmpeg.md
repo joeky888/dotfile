@@ -22,9 +22,13 @@ Swap audio track order (1, 2 -> 2, 1)
 Extract part of a video
 =====
 * ffmpeg -i inputfile -ss startseconds -t durationseconds outputfile
-* extract 5 seconds start with 00:00:30
+* Extract 5 seconds start with 00:00:30
 * Time format HH:MM:SS.xxx where xxx are milliseconds
-* $ ffmpeg -i orginalfile -ss 00:00:30.000 -t 00:00:05.000 newfile
+* $ ffmpeg -i orginalfile -ss 00:00:30.000 -t 00:00:05.000 newfile.mp4
+* Extract video from 00:00:30 to 00:00:40
+* $ ffmpeg -i orginalfile -ss 00:00:30.000 -to 00:00:40.000 newfile.mp4
+* Extract video from 00:00:30 to the end
+* $ ffmpeg -i orginalfile -ss 00:00:30.000 newfile.mp4
 
 Changing the resolution
 ======
