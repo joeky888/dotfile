@@ -261,6 +261,11 @@ inoremap <Space> <Space><C-g>u
 inoremap <CR> <CR><C-g>u
 inoremap <Tab> <Tab><C-g>u
 
+" Disable middle mouse button
+nnoremap <MiddleMouse> <Nop>
+inoremap <MiddleMouse> <Nop>
+vnoremap <MiddleMouse> <Nop>
+
 " Backspace is deleting in visual mode
 call CreateShortcut("BS", "di<C-g>u", "v")
 
@@ -270,14 +275,26 @@ call CreateShortcut("C-a", "0", "inv")
 " Ctrl E - End Line
 call CreateShortcut("C-e", "$l", "inv")
 
-" Ctrl C - Copy to system clipboard and clipboard.txt
-call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+y", "ni")
-vnoremap <silent> <C-c> "+ygvy:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+if has("clipboard")
+  " Ctrl C - Copy to system clipboard and clipboard.txt
+  call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+y", "ni")
+  vnoremap <silent> <C-c> "+ygvy:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
 
-" Ctrl X - Cut to system clipboard and clipboard.txt
-call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+x", "n")
-call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+xi<C-g>u", "i", "noTrailingIInInsert")
-vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+  " Ctrl X - Cut to system clipboard and clipboard.txt
+  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+x", "n")
+  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+xi<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+elseif
+  " Ctrl C - Copy
+  call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
+  vnoremap <silent> <C-c> y:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+
+  " Ctrl X - Cut
+  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>dd", "n")
+  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+endif
+
 
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
