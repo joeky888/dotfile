@@ -284,7 +284,7 @@ if has("clipboard")
   call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+x", "n")
   call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+xi<C-g>u", "i", "noTrailingIInInsert")
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
-elseif
+else
   " Ctrl C - Copy
   call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
   vnoremap <silent> <C-c> y:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
