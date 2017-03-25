@@ -111,9 +111,9 @@ if [ $(command -v gvim) ]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      /usr/bin/gvim
+      command gvim
     else
-      /usr/bin/gvim -p --remote-tab-silent "$@"
+      command gvim -p --remote-tab-silent "$@"
     fi;
   }
 fi
