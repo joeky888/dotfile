@@ -1061,6 +1061,14 @@ if has("gui_running")
   inoremap <C-LeftDrag>  <LeftDrag>
   onoremap <C-LeftDrag>  <C-C><LeftDrag>
 
+  " RightMouse is block selecting
+  noremap  <RightMouse> <4-LeftMouse>
+  inoremap <RightMouse> <4-LeftMouse>
+  onoremap <RightMouse> <C-C><4-LeftMouse>
+  noremap  <RightDrag>  <LeftDrag>
+  inoremap <RightDrag>  <LeftDrag>
+  onoremap <RightDrag>  <C-C><LeftDrag>
+
   " Deleting words and Entering insert mode
   call CreateShortcut("CR", "di<CR><C-g>u", "v")
   call CreateShortcut("Space", "di<Space><C-g>u", "v")
