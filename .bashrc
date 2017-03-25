@@ -119,6 +119,10 @@ if [ $(command -v gvim) ]; then
   }
 fi
 
+if ! [[ $(command -v tree) ]]; then
+  alias tree="ls -R | grep ':$' | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+fi
+
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
 fi
