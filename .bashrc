@@ -120,7 +120,21 @@ if [ $(command -v gvim) ]; then
 fi
 
 if ! [[ $(command -v tree) ]]; then
-  alias tree="ls -R | grep ':$' | sed -e 's/:$//' -e 's/[^-][^\/]*\//--/g' -e 's/^/   /' -e 's/-/|/'"
+  tree()
+  {
+python3 <<END
+import os
+
+for root, dirs, files in os.walk("."):
+  level = root.replace(".", '').count(os.sep)
+  indent = ' ' * 4 * (level)
+  print('{}{}/'.format(indent, os.path.basename(root)))
+  subindent = ' ' * 4 * (level + 1)
+  for f in files:
+    print('{}{}'.format(subindent, f))
+
+END
+  }
 fi
 
 if [[ "$TERM" == "xterm"* ]]; then
