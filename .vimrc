@@ -252,10 +252,16 @@ function! DeleteLine()
   normal! dd
   call setpos(".", savepos)
 endfunction
-" Usefull shortcuts to enter insert mode
+" Usefull shortcuts for entering insert mode
 nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
 nnoremap <Space> i<Space>
+nnoremap " i"
+nnoremap ' i'
+nnoremap [ i[
+nnoremap ] i]
+nnoremap { i{
+nnoremap } i}
 " Vim undo too much
 inoremap <Space> <Space><C-g>u
 inoremap <CR> <CR><C-g>u
