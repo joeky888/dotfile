@@ -263,6 +263,8 @@ nnoremap [ i[
 nnoremap ] i]
 nnoremap { i{
 nnoremap } i}
+nnoremap ( i(
+nnoremap ) i)
 nnoremap < i<
 nnoremap > i>
 nnoremap . i.
