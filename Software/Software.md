@@ -52,6 +52,7 @@ Windows
 =====
 * build-extra (git for Windows) or msys2
 * Cygwin
+* Chocolatey
 * Greenshot
 * Rufus
 * x64dbg / snowman
