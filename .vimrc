@@ -301,22 +301,22 @@ call CreateShortcut("C-e", "$l", "inv")
 
 if has("clipboard")
   " Ctrl C - Copy to system clipboard and clipboard.txt
-  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+y:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "ni")
-  vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
+  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+y:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "ni")
+  vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "n")
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>i<C-g>u", "i", "noTrailingIInInsert")
-  vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 else
   " Ctrl C - Copy
-  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "ni")
-  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
+  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "ni")
+  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl X - Cut
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "n")
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>i<C-g>u", "i", "noTrailingIInInsert")
-  vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 endif
 
 
