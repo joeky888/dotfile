@@ -45,7 +45,7 @@ set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
 set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
-set viminfo+=n$HOME/viminfo " .viminfo location
+set viminfo+=n$HOME/dotfile/viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set noerrorbells " disable error sound
 autocmd VimEnter * set noerrorbells " disable error sound
@@ -240,11 +240,11 @@ endfunction
 function! PasteFromClipboard()
   if line(".") == 1
     normal! O
-    execute "r /tmp/$USER/clipboard.txt"
+    execute "r $HOME/dotfile/clipboard.txt"
     execute "1d"
   else
     normal! k
-    execute "r /tmp/$USER/clipboard.txt"
+    execute "r $HOME/dotfile/clipboard.txt"
   endif
 endfunction
 function! DeleteLine()
@@ -301,22 +301,22 @@ call CreateShortcut("C-e", "$l", "inv")
 
 if has("clipboard")
   " Ctrl C - Copy to system clipboard and clipboard.txt
-  call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+y", "ni")
-  vnoremap <silent> <C-c> "+ygvy:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+y:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "ni")
+  vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
-  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+x", "n")
-  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>V\"+xi<C-g>u", "i", "noTrailingIInInsert")
-  vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "n")
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
 else
   " Ctrl C - Copy
-  call CreateShortcut("C-c", "V:w! /tmp/$USER/clipboard.txt<CR>", "ni")
-  vnoremap <silent> <C-c> y:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "ni")
+  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
 
   " Ctrl X - Cut
-  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>dd", "n")
-  call CreateShortcut("C-x", "V:w! /tmp/$USER/clipboard.txt<CR>ddi<C-g>u", "i", "noTrailingIInInsert")
-  vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("/tmp/$USER/clipboard.txt"))<CR>:new /tmp/$USER/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>", "n")
+  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:silent! !chmod 777 $HOME/dotfile/clipboard.txt<CR>:redraw!<CR>
 endif
 
 

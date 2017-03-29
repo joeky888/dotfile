@@ -30,6 +30,7 @@ alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias wget='wget -e robots=off'
+chmod 777 $HOME/dotfile/viminfo
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
@@ -200,18 +201,19 @@ END
 
 ZshPasteFromClipboard()
 {
-  LBUFFER="$LBUFFER$(cat /tmp/$USER/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
+  LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
 }
 
 ZshCutToClipboard()
 {
-  echo "$LBUFFER" > /tmp/$USER/clipboard.txt
+  echo "$LBUFFER" > $HOME/dotfile/clipboard.txt
   LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
+  chmod 777 $HOME/dotfile/clipboard.txt
 }
 
 BashPasteFromClipboard()
 {
-  READLINE_LINE="$READLINE_LINE$(cat /tmp/$USER/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+  READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
 }
 
 CompleteAptCyg()
