@@ -123,6 +123,34 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 
 
+elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
+  apt update && apt upgrade
+  apt install man vim git zsh tmux curl python
+  rm -rf ~/dotfile
+  git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
+  cd ~/dotfile
+  git submodule init
+  git submodule update
+  ln -sf ~/dotfile/.bashrc ~/.bashrc
+  ln -sf ~/dotfile/.bash_profile ~/.bash_profile
+  ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
+  ln -sf ~/dotfile/.zshrc ~/.zshrc
+  ln -sf ~/dotfile/.vimrc ~/.vimrc
+  ln -sf ~/dotfile/.gitconfig ~/.gitconfig
+  curl 'https://bootstrap.pypa.io/get-pip.py' | python3
+  echo y | pip install youtube-dl
+  echo y | pip install you-get
+
+python3 <<END
+import sys, os, site
+
+pkgLocation = site.getsitepackages()
+for location in pkgLocation:
+  os.system("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+END
+
+
+
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   sudo pkg update
   echo y | sudo pkg install tmux zsh git vim curl ubuntu-font
@@ -138,8 +166,17 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
+  curl 'https://bootstrap.pypa.io/get-pip.py' | python3
+  echo y | pip install youtube-dl
+  echo y | pip install you-get
 
+python3 <<END
+import sys, os, site
 
+pkgLocation = site.getsitepackages()
+for location in pkgLocation:
+  os.system("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+END
 
 
 

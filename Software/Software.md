@@ -71,6 +71,8 @@ Android
 =====
 * Firefox
 * Sogou input method
+* Hacker's Keyboard
+* Termux
 * VLC
 * WPS office
 * WiFiAnalyzer open source
