@@ -111,6 +111,10 @@ if [[ -f $HOME/dotfile/viminfo ]]; then
   chmod 777 $HOME/dotfile/viminfo
 fi
 
+if [[ -d $HOME/dotfile/.vim ]]; then
+  chmod -R 777 $HOME/dotfile/.vim
+fi
+
 if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
 fi
