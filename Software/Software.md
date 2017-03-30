@@ -74,6 +74,7 @@ Android
 * Hacker's Keyboard
 * Termux
 * VLC
+* FX File Explorer
 * WPS office
 * WiFiAnalyzer open source
 * IP webcam
