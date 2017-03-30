@@ -17,3 +17,8 @@ Subtitle
     * Show media title on video start -> uncheck
     * Default encoding -> Universal(UTF-8)
     * Font -> use wps office font
+
+Android
+=====
+* Settings -> Play videos in background -> check
+* Settings -> Interface -> Enable the black theme -> check
