@@ -153,7 +153,7 @@ if [[ "$TERM" == "xterm"* ]]; then
 fi
 
 vman() {
-  export MANPAGER="col -bx" # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
+  export MANPAGER='sed "s/^H//g"' # for FreeBSD/MacOS, removes backspaces ^H
   eval 'man $@ | vim -MR +"set filetype=man" -' # Make it read only and quit easily
   unset MANPAGER;
 }
