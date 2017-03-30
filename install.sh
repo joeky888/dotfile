@@ -125,6 +125,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
+  termux-setup-storage
   apt install man vim git zsh tmux curl python ffmpeg
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
