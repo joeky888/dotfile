@@ -125,7 +125,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
-  apt install man vim git zsh tmux curl python
+  apt install man vim git zsh tmux curl python ffmpeg
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -148,6 +148,8 @@ pkgLocation = site.getsitepackages()
 for location in pkgLocation:
   os.system("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 END
+
+
 
 
 
