@@ -17,7 +17,7 @@ alias upgradePip='pip install --upgrade $(pip freeze -l | cut --fields=1 -d = -)
 alias upgradeConda='conda update --all --yes'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
-alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule update && cd -"
+alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule foreach git pull origin master && cd -"
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias curl-continue-download='curl -LOC - '
