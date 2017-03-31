@@ -117,7 +117,8 @@ END
 
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
-  pacman -S tmux zsh git vim curl wget
+  pacman -Syu
+  pacman -S tmux zsh git vim curl wget base-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
 
 
 
