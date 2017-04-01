@@ -20,7 +20,7 @@ alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/a
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule foreach git pull origin master && cd -"
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
-alias curl-continue-download='curl -LOC - '
+alias curl='curl -LC - '
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 alias youtube-dl='youtube-dl --write-sub --ignore-errors'
