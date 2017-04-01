@@ -2,7 +2,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
-  sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+  sudo apt-get install tmux zsh git curl wget p7zip-full p7zip-rar build-essential vim ffmpeg neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -127,7 +127,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
   termux-setup-storage
-  apt install man vim git zsh tmux curl sed python ffmpeg p7zip util-linux
+  apt install man vim git zsh tmux curl sed python ffmpeg p7zip util-linux neofetch
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile

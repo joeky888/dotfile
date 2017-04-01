@@ -45,6 +45,7 @@ Software
 * JDownloader
 * Miniconda
 * BusyBox / Toybox
+* Neofetch
 * youtube-dl
 * you-get
 
