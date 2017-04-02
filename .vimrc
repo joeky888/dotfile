@@ -587,7 +587,7 @@ function! ToggleAutoComplete()
   if (g:autocomp == 0)
     let g:autocomp=1
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<C-x><C-p>"
+      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
     endfor
   else
     let g:autocomp=0
