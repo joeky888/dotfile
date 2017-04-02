@@ -39,6 +39,7 @@ set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
 set updatetime=750
 set autoread " Auto reload content if it changed outside of vim
+set tabpagemax=1000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
