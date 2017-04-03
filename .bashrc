@@ -106,6 +106,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias apt-cyg-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
   alias sudo='cygstart --action=runas "$@"'
   alias choco='cygstart --action=runas choco'
+  upgradeChoco() { cygstart --action=runas choco upgrade all -y ;}
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   true
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
