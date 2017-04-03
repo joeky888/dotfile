@@ -129,7 +129,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
   termux-setup-storage
-  apt install man vim git zsh tmux curl aria2 sed python ffmpeg p7zip util-linux neofetch
+  apt install -y man vim git zsh tmux curl aria2 sed python ffmpeg p7zip util-linux neofetch
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
