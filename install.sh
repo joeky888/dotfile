@@ -39,6 +39,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   rm Miniconda3-latest-Linux-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
+  echo y | ~/Miniconda3/bin/pip install bypy
 python3 <<END
 import sys, os, site
 
@@ -81,6 +82,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
+  echo y | pip install bypy
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -142,6 +144,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
+  echo y | pip install bypy
 
 python3 <<END
 import sys, os, site
@@ -173,6 +176,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
+  echo y | pip install bypy
 
 python3 <<END
 import sys, os, site

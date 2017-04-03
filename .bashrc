@@ -12,9 +12,11 @@ export LC_ALL="en_US.UTF-8"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
+export DOWNLOADER_ARGUMENTS="-c --file-allocation=falloc --max-tries=0 --max-connection-per-server=16 --split=16 --min-split-size=1M" # Bypy
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgradePip='pip install --upgrade $(pip freeze -l | cut --fields=1 -d = -)'
 alias upgradeConda='conda update --all --yes'
+alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule foreach git pull origin master && cd -"
@@ -23,14 +25,15 @@ alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias curl='curl -LC - '
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-alias youtube-dl='youtube-dl --write-sub --ignore-errors --external-downloader aria2c --external-downloader-args "-c --file-allocation=falloc --max-connection-per-server=16 --split=16 --min-split-size=1M"'
+alias youtube-dl='youtube-dl --write-sub --ignore-errors --external-downloader aria2c --external-downloader-args "-c --file-allocation=falloc --max-tries=0 --max-connection-per-server=16 --split=16 --min-split-size=1M"'
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias wget='wget -c -e robots=off --tries=5 --read-timeout=30'
-alias aria2c='aria2c -c --file-allocation=falloc --max-connection-per-server=16 --split=16 --min-split-size=1M'
+alias wget='wget -c -e robots=off --tries=10 --read-timeout=30'
+alias aria2c='aria2c -c --file-allocation=falloc --max-tries=0 --max-connection-per-server=16 --split=16 --min-split-size=1M'
+alias bypy='bypy --downloader aria2'
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
