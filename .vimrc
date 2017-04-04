@@ -310,15 +310,27 @@ if has("clipboard")
   call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
   call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+
+  " Insert - Paste from system clipboard
+  call CreateShortcut("Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("Insert", "\"+gP", "n")
+  call CreateShortcut("Insert", "d\"+gP", "v")
+  cnoremap <Insert> <C-r>+
 else
   " Ctrl C - Copy
-  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "ni")
+  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>gvy", "ni")
   vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl X - Cut
   call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
   call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+
+  " Insert - Paste from vim clipboard
+  call CreateShortcut("Insert", "<C-o>p<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("Insert", "p", "n")
+  call CreateShortcut("Insert", "dp", "v")
+  cnoremap <Insert> <C-r>"
 endif
 
 
@@ -336,12 +348,6 @@ call CreateShortcut("Home", "gg", "inv")
 
 " End - Go To End
 call CreateShortcut("End", "G", "inv")
-
-" Insert - Paste from system clipboard
-call CreateShortcut("Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-call CreateShortcut("Insert", "\"+gP", "n")
-call CreateShortcut("Insert", "d\"+gP", "v")
-cnoremap <Insert> <C-r>+
 
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", ":call DeleteLine()<CR>", "n")
