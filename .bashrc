@@ -21,7 +21,7 @@ export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DOWNLOADER_ARGUMENTS="-c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M" # Bypy
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
-alias upgradePip='pip install --upgrade $(pip freeze -l | cut --fields=1 -d = -)'
+alias upgradePip='pip install --upgrade $(pip freeze -l | sed "s/==.*//")'
 alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
