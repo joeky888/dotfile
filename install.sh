@@ -2,7 +2,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
-  sudo apt-get install tmux zsh git curl wget aria2 -y
+  sudo apt-get install tmux zsh git tig curl wget aria2 -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -75,7 +75,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   curl https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git openssh vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
@@ -131,7 +131,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y man vim git zsh tmux curl aria2 sed python ffmpeg p7zip util-linux neofetch
+  apt install -y man vim git tig zsh tmux curl aria2 sed python ffmpeg p7zip util-linux neofetch
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
