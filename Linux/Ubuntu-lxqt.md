@@ -1,7 +1,7 @@
 Config CJK font in tty
 =====
-* $ sudo apt-get install ttf-ubuntu-font-family fonts-droid-fallback fbterm fontconfig -y # ttf-ubuntu-font-family.deb can be found on internet if use Debian
-* $ sudo apt-get install virtualbox-guest-dkms -y # for virtualbox
+* $ sudo apt-fast install ttf-ubuntu-font-family fonts-droid-fallback fbterm fontconfig -y # ttf-ubuntu-font-family.deb can be found on internet if use Debian
+* $ sudo apt-fast install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
@@ -10,7 +10,7 @@ Config CJK font in tty
 
 Change tty resolution
 =====
-* $ sudo apt-get install virtualbox-guest-dkms -y
+* $ sudo apt-fast install virtualbox-guest-dkms -y
 * Reboot OS, when it shows boot menu, type "c" switch to grub mode
 * $ grub> vbeinfo
 * Pick one from stdout, ex: 1024x768x16
@@ -27,7 +27,7 @@ GRUB_GFXPAYLOAD_LINUX=1024x768x16
 
 Listen to music without x
 =====
-* $ sudo apt-get install alsa alsa-tools vlc-nox -y
+* $ sudo apt-fast install alsa alsa-tools vlc-nox -y
 * $ sudo usermod -a -G audio $(whoami)
 * $ sudo reboot
 * $ alsamixer # Adjust volume
@@ -81,11 +81,11 @@ Get latest ubuntu package
 
 Install LXQT
 =====
-* $ sudo apt-get install lxqt xorg openbox -y
+* $ sudo apt-fast install lxqt xorg openbox -y
 * Or using ppa
 * $ sudo add-apt-repository ppa:lxqt/ppa -y
-* $ sudo apt-get update
-* $ sudo apt-get install lxqt
+* $ sudo apt-fast update
+* $ sudo apt-fast install lxqt
 
 Install dotfile
 =====
