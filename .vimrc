@@ -205,7 +205,6 @@ function! MySave()
   echohl iGreen | echon "    SAVED     "
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
-  normal! `j
 endfunction
 function! OpenLastBufferInNewTab()
   redir => ls_output
@@ -339,9 +338,10 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
 
 " Ctrl S - Save
-call CreateShortcut("C-s", "mj:call MySave()<CR>", "n")
-inoremap <C-s> <C-g>u<C-\><C-O>mj<C-O>:call MySave()<CR>
-vnoremap <C-s> <ESC>mj:call MySave()<CR>
+call CreateShortcut("C-s", "mj:call MySave()<CR>`j", "n")
+inoremap <C-s> <C-g>u<C-\><C-O>mj<C-O>:call MySave()<CR><C-o>`j
+vnoremap <C-s> <ESC>mj:call MySave()<CR>`j
+cnoremap <C-s> <C-u>:call MySave()<CR>
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
