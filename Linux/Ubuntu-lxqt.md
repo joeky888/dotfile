@@ -1,3 +1,8 @@
+Get latest ubuntu package
+=====
+* Edit /etc/apt/sources.list
+* Replace all "xenial" (or something like that) strings with "devel"
+
 Config CJK font in tty
 =====
 * $ sudo apt-fast install ttf-ubuntu-font-family fonts-droid-fallback fbterm fontconfig -y # ttf-ubuntu-font-family.deb can be found on internet if use Debian
@@ -74,11 +79,6 @@ nameserver 223.5.5.5
 ```
 * $ sudo resolvconf -u
 
-Get latest ubuntu package
-=====
-* Edit /etc/apt/sources.list
-* Replace all "vivid" (or something like that) strings to "devel"
-
 Install LXQT
 =====
 * $ sudo apt-fast install lxqt xorg openbox -y
@@ -86,10 +86,6 @@ Install LXQT
 * $ sudo add-apt-repository ppa:lxqt/ppa -y
 * $ sudo apt-fast update
 * $ sudo apt-fast install lxqt
-
-Install dotfile
-=====
-* $ ./install.py linux
 
 Disable suspend when closing laptop lid
 =====
