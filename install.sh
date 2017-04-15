@@ -33,7 +33,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   sudo desktop-file-install ~/dotfile/Linux/gvim.desktop
   sudo install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-  sudo apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+  sudo apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   rm -rf ~/Miniconda3
   curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
   chmod 777 Miniconda3-latest-Linux-x86_64.sh
