@@ -292,6 +292,30 @@ nnoremap <4-MiddleMouse> <Nop>
 inoremap <4-MiddleMouse> <Nop>
 vnoremap <4-MiddleMouse> <Nop>
 
+" Meta LeftMouse is block selecting
+noremap  <M-LeftMouse> <4-LeftMouse>
+inoremap <M-LeftMouse> <4-LeftMouse>
+onoremap <M-LeftMouse> <C-C><4-LeftMouse>
+noremap  <M-LeftDrag>  <LeftDrag>
+inoremap <M-LeftDrag>  <LeftDrag>
+onoremap <M-LeftDrag>  <C-C><LeftDrag>
+
+" Ctrl LeftMouse is block selecting
+noremap  <C-LeftMouse> <4-LeftMouse>
+inoremap <C-LeftMouse> <4-LeftMouse>
+onoremap <C-LeftMouse> <C-C><4-LeftMouse>
+noremap  <C-LeftDrag>  <LeftDrag>
+inoremap <C-LeftDrag>  <LeftDrag>
+onoremap <C-LeftDrag>  <C-C><LeftDrag>
+
+" RightMouse is block selecting
+noremap  <RightMouse> <4-LeftMouse>
+inoremap <RightMouse> <4-LeftMouse>
+onoremap <RightMouse> <C-C><4-LeftMouse>
+noremap  <RightDrag>  <LeftDrag>
+inoremap <RightDrag>  <LeftDrag>
+onoremap <RightDrag>  <C-C><LeftDrag>
+
 " Backspace is deleting in visual mode
 call CreateShortcut("BS", "di<C-g>u", "v")
 
@@ -1079,30 +1103,6 @@ if has("gui_running")
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
   cnoremap <C-v> <C-r>+
-
-  " Meta LeftMouse is block selecting
-  noremap  <M-LeftMouse> <4-LeftMouse>
-  inoremap <M-LeftMouse> <4-LeftMouse>
-  onoremap <M-LeftMouse> <C-C><4-LeftMouse>
-  noremap  <M-LeftDrag>  <LeftDrag>
-  inoremap <M-LeftDrag>  <LeftDrag>
-  onoremap <M-LeftDrag>  <C-C><LeftDrag>
-
-  " Ctrl LeftMouse is block selecting
-  noremap  <C-LeftMouse> <4-LeftMouse>
-  inoremap <C-LeftMouse> <4-LeftMouse>
-  onoremap <C-LeftMouse> <C-C><4-LeftMouse>
-  noremap  <C-LeftDrag>  <LeftDrag>
-  inoremap <C-LeftDrag>  <LeftDrag>
-  onoremap <C-LeftDrag>  <C-C><LeftDrag>
-
-  " RightMouse is block selecting
-  noremap  <RightMouse> <4-LeftMouse>
-  inoremap <RightMouse> <4-LeftMouse>
-  onoremap <RightMouse> <C-C><4-LeftMouse>
-  noremap  <RightDrag>  <LeftDrag>
-  inoremap <RightDrag>  <LeftDrag>
-  onoremap <RightDrag>  <C-C><LeftDrag>
 
   " Deleting words and Entering insert mode
   call CreateShortcut("CR", "di<CR><C-g>u", "v")
