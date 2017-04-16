@@ -1,9 +1,9 @@
 Install without ppa
 =====
-* $ sudo apt-get update
-* $ sudo apt-get install --install-recommends wine32-development-preloader winbind -y
+* $ sudo apt-fast update
+* $ sudo apt-fast install --install-recommends wine32-development-preloader winbind -y
 * Or
-* $ sudo apt-get install --install-recommends wine64-development-preloader winbind -y
+* $ sudo apt-fast install --install-recommends wine64-development-preloader winbind -y
 * $ export WINEARCH=win32
 * $ winecfg-development # Configure OS, Win7 is a good option
 * DO NOT INSTALL winetricks
@@ -11,8 +11,8 @@ Install without ppa
 Install from ppa
 =====
 * $ sudo add-apt-repository ppa:wine/wine-builds -y
-* $ sudo apt-get update
-* $ sudo apt-get install --install-recommends winehq-devel winbind -y
+* $ sudo apt-fast update
+* $ sudo apt-fast install --install-recommends winehq-devel winbind -y
 * $ winecfg # Configure OS
 
 Install CJK font
@@ -31,12 +31,12 @@ Install CJK font
 Install mono or dotnet
 =====
 1. Using Linux Mono
-    * $ sudo apt-get install --install-recommends mono-complete mono-runtime -y
+    * $ sudo apt-fast install --install-recommends mono-complete mono-runtime -y
     * $ mono file.exe
 2. Using Wine Mono
     * $ sudo add-apt-repository ppa:ubuntu-wine/ppa -y
-    * $ sudo apt-get update
-    * $ sudo apt-get install --install-recommends wine-mono4.5.6
+    * $ sudo apt-fast update
+    * $ sudo apt-fast install --install-recommends wine-mono4.5.6
     * $ wine file.exe
 3. Using winetricks dotnet
     * $ rm -rf ~/.wine
