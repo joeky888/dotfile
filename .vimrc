@@ -27,6 +27,9 @@ set history=300 " Keep 300 undo
 set wildmenu " Better command-line completion
 " set scrolloff=999 " Always keep max lines after or before when scrolling
 " set sidescrolloff=999 " Always keep max lines after or before whens side scrolling
+set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
+set selection=exclusive " Don't select char under cursor
+set mouseshape+=a:beam " set cursor shape as modern editors should be
 set mouse=a
 set autoindent " auto indent
 set smartindent " smart indent
@@ -1069,9 +1072,6 @@ if has("gui_running")
   endif
   set number
   set lines=999 columns=999 " set window Maximized
-  set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
-  set selection=exclusive " Don't select char under cursor
-  set mouseshape+=a:beam " set cursor shape as modern editors should be
   set scrolloff& " unset scroll values
   set sidescrolloff&
   set clipboard& " unset clipboard
