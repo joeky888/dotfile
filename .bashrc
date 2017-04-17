@@ -32,7 +32,7 @@ alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias curl='curl -LC - '
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-alias youtube-dl='youtube-dl --write-sub --ignore-errors --external-downloader aria2c --external-downloader-args $(DOWNLOADER_ARGUMENTS)'
+alias youtube-dl='youtube-dl --write-sub --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
