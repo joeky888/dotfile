@@ -120,6 +120,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
 elif [[ "$OSTYPE" == "linux-android" ]]; then
+  true
 else # Unknown OS
   true
 fi
