@@ -19,6 +19,7 @@ export LC_ALL="en_US.UTF-8"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
+export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M" # aria2 & bypy
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
 alias upgradePip='pip install --upgrade $(pip freeze -l | sed "s/==.*//")'
 alias upgradeConda='conda update --all --yes'
@@ -94,7 +95,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --async-dns-server=8.8.8.8,223.5.5.5 --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M" # aria2 & bypy
+  export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,223.5.5.5"
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
@@ -102,7 +103,6 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
-  export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M" # aria2 & bypy
   alias apt-cyg-Manage='setup-x86_64.exe --package-manager --wait'
   alias apt-cyg-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
   alias sudo='cygstart --action=runas "$@"'
@@ -114,7 +114,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
 elif [[ "$OSTYPE" == "linux-android" ]]; then
-  export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --async-dns-server=8.8.8.8,223.5.5.5 --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M" # aria2 & bypy
+  export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,223.5.5.5"
 else # Unknown OS
   true
 fi
