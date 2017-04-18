@@ -95,7 +95,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,223.5.5.5"
+  export DOWNLOADER_ARGUMENTS+=" --async-dns-server=8.8.8.8,223.5.5.5"
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
@@ -114,7 +114,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
 elif [[ "$OSTYPE" == "linux-android" ]]; then
-  export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,223.5.5.5"
+  export DOWNLOADER_ARGUMENTS+=" --async-dns-server=8.8.8.8,223.5.5.5"
 else # Unknown OS
   true
 fi
