@@ -102,6 +102,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
+  true
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
