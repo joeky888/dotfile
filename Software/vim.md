@@ -5,3 +5,8 @@ Disable bold and italic font
 * In /syntax
 * $ sudo sed -i 's/=bold/=NONE/g' \*.vim
 * $ sudo sed -i 's/=italic/=NONE/g' \*.vim
+
+sudo
+=====
+* Use sudoedit instead of sudo vim
+* $ sudoedit filename
