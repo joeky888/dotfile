@@ -20,7 +20,7 @@ Change tty resolution
 * $ grub> vbeinfo
 * Pick one from stdout, ex: 1024x768x16
 * $ grub> reboot
-* $ sudo vim /etc/default/grub && sudo update-grub && sudo update-grub2
+* $ sudoedit /etc/default/grub && sudo update-grub && sudo update-grub2
 ```conf
 # In this order
 GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"
@@ -69,7 +69,7 @@ wpa-psk <your_wpa_key>
 
 Add dns server
 =====
-* Edit /etc/resolvconf/resolv.conf.d/head
+* sudoedit /etc/resolvconf/resolv.conf.d/head
 ```resolv
 nameserver 8.8.8.8
 nameserver 8.8.4.4
