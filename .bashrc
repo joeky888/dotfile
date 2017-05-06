@@ -178,6 +178,18 @@ vman() {
   man $@ | col -bx | vim -MR +"set filetype=man" - # -MR Make it read only and quit easily
 }
 
+curlToAria2()
+{
+  PARAMS=""
+
+  for PARAM in "$@"
+  do
+    PARAMS="${PARAMS} '${PARAM}'"
+  done
+  PARAMS=$( echo $PARAMS | sed "s/'-H'/--header/g" | sed "s/ '--compressed'//g" )
+  bash -c "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
+}
+
 unzipToBig5()
 {
   export zipfilename="$@"
