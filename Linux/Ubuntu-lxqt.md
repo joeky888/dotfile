@@ -1,6 +1,6 @@
 Get latest ubuntu package
 =====
-* Edit /etc/apt/sources.list
+* $ sudoedit /etc/apt/sources.list
 * Replace all "xenial" (or something like that) strings with "devel"
 
 Config CJK font in tty
@@ -58,7 +58,7 @@ Connect network using dynamic ip
 * Get netword card name
 * $ ifconfig -a
 * if the name is wlan0
-* Edit /etc/network/interfaces
+* $ sudoedit /etc/network/interfaces
 ```conf
 auto wlan0
 iface wlan0 inet dhcp
@@ -69,7 +69,7 @@ wpa-psk <your_wpa_key>
 
 Add dns server
 =====
-* sudoedit /etc/resolvconf/resolv.conf.d/head
+* $ sudoedit /etc/resolvconf/resolv.conf.d/head
 ```resolv
 nameserver 8.8.8.8
 nameserver 8.8.4.4
@@ -89,7 +89,7 @@ Install LXQT
 
 Disable suspend when closing laptop lid
 =====
-* Edit /etc/systemd/logind.conf
+* $ sudoedit /etc/systemd/logind.conf
 ```conf
 HandleLidSwitch=ignore
 ```
