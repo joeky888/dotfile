@@ -167,6 +167,7 @@ function! MyQuit()
 endfunction
 function! MySave()
   " Remove trailing space
+  normal! mj
   execute "%s/\\s\\+$//e"
   let cantSave = "echo \"Can't save the file: \" . v:exception | return"
   let notSaved = "redraw | echo 'This buffer was NOT saved!' | return"
@@ -209,6 +210,7 @@ function! MySave()
   echohl iGreen | echon "    SAVED     "
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
+  normal! `j
 endfunction
 function! OpenLastBufferInNewTab()
   redir => ls_output
@@ -366,10 +368,10 @@ call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
 
 " Ctrl S - Save
-call CreateShortcut("C-s", "mj:call MySave()<CR>`j", "n")
-inoremap <C-s> <C-g>u<C-\><C-O>mj<C-O>:call MySave()<CR><C-o>`j
-vnoremap <C-s> <ESC>mj:call MySave()<CR>`j
-cnoremap <C-s> <C-u>:call MySave()<CR>
+nnoremap <silent> <C-s> :call MySave()<CR>
+inoremap <silent> <C-s> <C-g>u<C-O>:call MySave()<CR>
+vnoremap <silent> <C-s> <ESC>:call MySave()<CR>
+cnoremap <silent> <C-s> <C-u>:call MySave()<CR>
 
 " Home - Go To Begin
 call CreateShortcut("Home", "gg", "inv")
@@ -450,7 +452,7 @@ inoremap <silent> <C-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j
 vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 
 " Ctrl W - Quit
-call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv")
+call CreateShortcut("C-w", ":silent! call MyQuit()<CR>", "inv")
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
