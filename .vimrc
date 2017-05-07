@@ -210,7 +210,12 @@ function! MySave()
   echohl iGreen | echon "    SAVED     "
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
-  normal! `j
+  try
+    normal! `j
+  catch /:E20:/
+    " mark not set error
+    echon "mark not set"
+  endtry
 endfunction
 function! OpenLastBufferInNewTab()
   redir => ls_output
