@@ -165,21 +165,21 @@ Compile ffmpeg on Cygwin
 * Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
 * Install libmp3
 ```sh
-git clone --depth=1 https://github.com/j16180339887/lame.git
+aria2c https://github.com/j16180339887/lame/archive/master.zip && 7z x lame-master.zip && cd lame-master
 ./configure --enable-static --disable-shared && make -j 8 && make install
 ffmpeg -i input -c:a libmp3lame output
 ```
 
 * Install libaac
 ```sh
-git clone --depth=1 https://github.com/mstorsjo/fdk-aac.git
+aria2c https://github.com/mstorsjo/fdk-aac/archive/master.zip && 7z x fdk-aac-master.zip && cd fdk-aac-master
 ./autogen.sh && ./configure --enable-static --disable-shared && make -j 8 && make install
 ffmpeg -i input -c:a libfdk\_aac output
 ```
 
 * Install libh264
 ```sh
-git clone --depth=1 git://git.videolan.org/x264.git
+aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_x264.tar.bz2 && 7z x last_x264.tar && cd x264*
 ./configure --enable-static && make -j 8 && make install
 # If there is an error about "HMODULE" when compiling, just add "#include <windows.h>" to file "extras/avisynth_c.h"
 ffmpeg -i input -c:v libx264 output
@@ -188,13 +188,14 @@ ffmpeg -i input -c:v libx264 output
 * Install libh265
 ```sh
 # Download https://bitbucket.org/multicoreware/x265/downloads
+aria2c https://github.com/videolan/x265/archive/master.zip && 7z x x265-master.zip && cd x265-master
 cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off ../../source && make -j 8 && make install
 ffmpeg -i input -c:v libx265 output
 ```
 
 * Install ffmpeg
 ```sh
-git clone --depth=1 git://source.ffmpeg.org/ffmpeg
+aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg
 ./configure --pkg-config-flags="--static" --extra-ldflags="-L/usr/local/lib" --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-nonfree --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
 ```
 

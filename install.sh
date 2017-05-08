@@ -72,7 +72,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 
 
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
-  curl https://raw.githubusercontent.com/transcode-open/apt-cyg/master/apt-cyg > apt-cyg
+  curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
