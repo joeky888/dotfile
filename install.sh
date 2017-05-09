@@ -2,7 +2,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
-  sudo apt-get install tmux zsh git tig curl wget aria2 grc -y
+  sudo apt-get install tmux zsh git tig curl wget aria2 -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -42,6 +42,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install bypy
+  git clone --depth 1 https://github.com/garabik/grc.git grc
+  cd grc
+  sh install.sh
+  cd ..
+  rm -rf grc
 python3 <<END
 import sys, os, site
 
@@ -108,6 +113,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
 
+  git clone --depth 1 https://github.com/garabik/grc.git grc
+  cd grc
+  sh install.sh
+  cd ..
+  rm -rf grc
 python3 <<END
 import sys, os, site
 
@@ -148,6 +158,11 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   echo y | pip install you-get
   echo y | pip install bypy
 
+  git clone --depth 1 https://github.com/garabik/grc.git grc
+  cd grc
+  sh install.sh
+  cd ..
+  rm -rf grc
 python3 <<END
 import sys, os, site
 
@@ -180,6 +195,11 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   echo y | pip install you-get
   echo y | pip install bypy
 
+  git clone --depth 1 https://github.com/garabik/grc.git grc
+  cd grc
+  sh install.sh
+  cd ..
+  rm -rf grc
 python3 <<END
 import sys, os, site
 
