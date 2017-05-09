@@ -1,3 +1,6 @@
+alias ll='ls -lh'
+alias ls='ls -F --color=auto --show-control-chars'
+
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
@@ -79,7 +82,6 @@ if [ $(command -v grc) ] ; then
   alias as='colourify as'
   alias gas='colourify gas'
   alias ld='colourify ld'
-  alias ls='colourify ls'
   alias lsof='colourify lsof'
   alias lsblk='colourify lsblk'
   alias lspci='colourify lspci'
@@ -96,9 +98,6 @@ if [ $(command -v grc) ] ; then
   alias semanage='colourify semanage'
   alias getsebool='colourify setsebool'
   alias ifconfig='colourify ifconfig'
-else
-  alias ll='ls -lh'
-  alias ls='ls -F --color=auto --show-control-chars'
 fi
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
