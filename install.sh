@@ -44,7 +44,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   echo y | ~/Miniconda3/bin/pip install bypy
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  sudo install.sh
+  sudo sh install.sh
   cd ..
   rm -rf grc
 python3 <<END
@@ -197,7 +197,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  sudo install.sh
+  sudo sh install.sh
   cd ..
   rm -rf grc
 python3 <<END
