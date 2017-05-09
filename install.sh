@@ -2,7 +2,7 @@
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   sudo apt-get update
-  sudo apt-get install tmux zsh git tig curl wget aria2 -y
+  sudo apt-get install tmux zsh git tig curl wget aria2 grc -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
