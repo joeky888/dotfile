@@ -1,8 +1,13 @@
 #! /bin/bash
 
+export SUDO=''
+if (( $EUID != 0 )); then
+    export SUDO='sudo'
+fi
+
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  sudo apt-get update
-  sudo apt-get install tmux zsh git tig curl wget aria2 -y
+  $SUDO apt-get update
+  $SUDO apt-get install tmux zsh git tig curl wget aria2 -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -19,21 +24,21 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-  sudo ln -sf ~/dotfile/.vimrc /root/.vimrc
-  sudo ln -sf ~/dotfile/.bash_profile /root/.bash_profile
-  sudo ln -sf ~/dotfile/.bashrc /root/.bashrc
-  sudo ln -sf ~/dotfile/.zshrc /root/.zshrc
-  sudo chsh -s $(command -v zsh) root
-  sudo install ~/dotfile/Linux/reconnect /usr/bin/reconnect
-  sudo chmod 755 /usr/bin/reconnect
-  sudo install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-  sudo chmod 755 /lib/systemd/system/reconnect.service
-  sudo install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
-  sudo systemctl enable reconnect.service
-  sudo desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
-  sudo desktop-file-install ~/dotfile/Linux/gvim.desktop
-  sudo install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-  sudo apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+  $SUDO ln -sf ~/dotfile/.vimrc /root/.vimrc
+  $SUDO ln -sf ~/dotfile/.bash_profile /root/.bash_profile
+  $SUDO ln -sf ~/dotfile/.bashrc /root/.bashrc
+  $SUDO ln -sf ~/dotfile/.zshrc /root/.zshrc
+  $SUDO chsh -s $(command -v zsh) root
+  $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
+  $SUDO chmod 755 /usr/bin/reconnect
+  $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
+  $SUDO chmod 755 /lib/systemd/system/reconnect.service
+  $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
+  $SUDO systemctl enable reconnect.service
+  $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
+  $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
+  $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   rm -rf ~/Miniconda3
   curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
   chmod 777 Miniconda3-latest-Linux-x86_64.sh
@@ -44,7 +49,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   echo y | ~/Miniconda3/bin/pip install bypy
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  sudo sh install.sh
+  $SUDO sh install.sh
   cd ..
   rm -rf grc
 python3 <<END
@@ -52,7 +57,7 @@ import sys, os, site
 
 pkgLocation = site.getsitepackages()
 for location in pkgLocation:
-  os.system("sudo install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+  os.system(os.environ['SUDO'] + " install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 END
 
 
@@ -176,8 +181,8 @@ END
 
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-  sudo pkg update
-  echo y | sudo pkg install tmux zsh git vim curl ubuntu-font
+  $SUDO pkg update
+  echo y | $SUDO pkg install tmux zsh git vim curl ubuntu-font
   chsh -s $(command -v zsh) $(whoami)
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
@@ -197,7 +202,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  sudo sh install.sh
+  $SUDO sh install.sh
   cd ..
   rm -rf grc
 python3 <<END
