@@ -117,8 +117,12 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N ZshCutToClipboard # Bind function to command
   compdef vman=man # Complete vman as man command
   compdef forever=sudo # Complete forever as sudo command
-  compdef apt-fast=apt-get # Complete apt-fast as apt-get command
-  compdef CompleteAptCyg apt-cyg # Complete apt-cyg
+
+  if [ $(command -v apt-get) ] ; then
+    compdef apt-fast=apt-get # Complete apt-fast as apt-get command
+    compdef CompleteAptCyg apt-cyg # Complete apt-cyg
+  fi
+
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
   bindkey "^[[1;3D" backward-word
