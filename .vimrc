@@ -493,7 +493,7 @@ inoremap <C-n> <C-\><C-o>w
 vnoremap <C-n> 5l
 
 " Terminal Alt Right - Next word
-execute "set <M-C>=\e\eOC"
+execute "set <M-C>=\e[1;3C"
 nnoremap <M-C> w
 inoremap <M-C> <C-\><C-o>w
 vnoremap <M-C> 5l
@@ -504,7 +504,7 @@ inoremap <C-p> <C-\><C-o>b
 vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
-execute "set <M-D>=\e\eOD"
+execute "set <M-D>=\e[1;3D"
 nnoremap <M-D> b
 inoremap <M-D> <C-\><C-o>b
 vnoremap <M-D> 5h
