@@ -6,3 +6,4 @@ Stylish
 Full Page Screen Capture
 TJDict
 SimpleUndoClose
+Tampermonkey
