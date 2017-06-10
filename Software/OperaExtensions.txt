@@ -1,5 +1,4 @@
 Adblock Plus
-ad-safe / newadblock
 Download Chrome Extension
 Search by Image (by Google)
 Stylish
