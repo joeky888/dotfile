@@ -10,3 +10,11 @@ sudo
 =====
 * Use sudoedit instead of sudo vim
 * $ sudoedit filename
+
+Remove lines contains a string
+====
+* :g/string/d
+
+Remove lines contains a pattern
+====
+* :g/pattern/d
