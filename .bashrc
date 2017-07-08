@@ -28,7 +28,6 @@ if [[ $(command -v aria2c) ]]; then
 fi
 
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
-alias upgradePip='pip install --upgrade $(pip freeze -l | sed "s/==.*//")'
 alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
@@ -48,6 +47,7 @@ alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias wget='wget -c -e robots=off --tries=10 --read-timeout=30'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
 alias bypy='bypy --downloader aria2'
+
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
@@ -58,6 +58,7 @@ killallproc() { kill -9 $(pgrep $@) ;}
 killallprocSudo() { sudo kill -9 $(pgrep $@) ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
+upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip }
 
 if [ $(command -v grc) ] ; then
   GRC="$(which grc)"
@@ -120,8 +121,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 
   if [ $(command -v apt-get) ] ; then
     compdef apt-fast=apt-get # Complete apt-fast as apt-get command
-    compdef CompleteAptCyg apt-cyg # Complete apt-cyg
   fi
+  compdef CompleteAptCyg apt-cyg # Complete apt-cyg
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
