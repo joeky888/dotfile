@@ -972,6 +972,10 @@ command! EncodingUTF16LE execute "e ++enc=utf-16le"
 command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
 
+for syn in map(split(globpath(&rtp, 'syntax/*.vim'), '\n'), 'fnamemodify(v:val, ":t:r")')
+  execute "noremenu Edit.Filetype.".syn." :set filetype=".syn."<CR>"
+endfor
+
 autocmd FileType text call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
