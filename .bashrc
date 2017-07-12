@@ -58,7 +58,7 @@ killallproc() { kill -9 $(pgrep $@) ;}
 killallprocSudo() { sudo kill -9 $(pgrep $@) ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
-upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip }
+upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 
 if [ $(command -v grc) ] ; then
   GRC="$(which grc)"
