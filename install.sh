@@ -164,12 +164,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   echo y | pip install you-get
   echo y | pip install bypy
 
-  git clone --depth 1 https://github.com/garabik/grc.git grc
-  cd grc
-  sh install.sh /data/data/com.termux/files $PREFIX/etc
-  cd ..
-  rm -rf grc
-python3 <<END
+  python3 <<END
 import sys, os, site
 
 pkgLocation = site.getsitepackages()
