@@ -166,7 +166,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  sh install.sh
+  sh install.sh $PREFIX
   cd ..
   rm -rf grc
 python3 <<END
