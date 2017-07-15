@@ -973,7 +973,7 @@ command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
 
 for syn in map(split(globpath(&rtp, 'syntax/*.vim'), '\n'), 'fnamemodify(v:val, ":t:r")')
-  execute "noremenu Edit.Filetype.".split(syn, '\zs')[0].".".syn." :set filetype=".syn."<CR>"
+  execute "noremenu Edit.Filetype.".split(syn, '\zs')[0].".".syn." :setlocal filetype=".syn."<CR>"
 endfor
 
 autocmd FileType text call HighlightTXT()
