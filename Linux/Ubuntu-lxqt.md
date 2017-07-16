@@ -69,6 +69,8 @@ wpa-psk <your_wpa_key>
 
 Add dns server
 =====
+* $ sudoedit /etc/resolv.conf
+* Or
 * $ sudoedit /etc/resolvconf/resolv.conf.d/head
 ```resolv
 nameserver 8.8.8.8
