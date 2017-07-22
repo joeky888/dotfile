@@ -40,7 +40,6 @@ Software
 * OpenCC
 * aria2
 * Zulu
-* MegaDownloader
 * JComicDownloader
 * JDownloader
 * Miniconda
