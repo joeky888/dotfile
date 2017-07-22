@@ -1,3 +1,8 @@
+A good Android phone
+=====
+* Supported by Lineage OS
+* Support OTG
+
 刷機 (flash a new rom)
 =====
 * 先root
