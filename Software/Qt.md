@@ -12,4 +12,8 @@ pacman -S mingw-w64-x86_64-qt5 mingw-w64-x86_64-qt-creator mingw-w64-x86_64-qt5-
 
 Error: at least one valid and enable repository required for this action to succeed
 =====
-* Open Maintain tool -> Settings -> Repositories -> User defined repositories -> Add -> "http://download.qt.io/online/qtsdkrepository/windows_x86/desktop/tools_maintenance/"
+* Open Maintain tool -> Settings -> Repositories -> User defined repositories -> Add ->
+```markdown
+"http://download.qt.io/online/qtsdkrepository/windows_x86/desktop/tools_maintenance/"
+"http://download.qt.io/online/qtsdkrepository/windows_x86/root/qt/"
+```
