@@ -160,6 +160,8 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias apt-cyg-Upgrade="setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
   alias sudo='cygstart --action=runas "$@"'
   alias choco='cygstart --action=runas choco'
+  alias mtuForGaming='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent'
+  alias mtuForNormal='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent'
   upgradeChoco() { cygstart --action=runas cmd.exe /c "choco update all -y & choco upgrade all -y" ;}
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
