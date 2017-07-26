@@ -3,9 +3,9 @@ ssh-keygen
 * ssh-keygen on ComputerA
 ```bash
 ssh-keygen
+Copy ~/.ssh/id_rsa.pub from ComputerA to ~/.ssh/id_rsa.pub on ComputerB
+cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys on ComputerB
 ```
-* Copy id\_rsa.pub to ComputerB ~/.ssh/id\_rsa.pub
-* cat id\_rsa.pub >> ~/.ssh/authorized\_keys on ComputerB
 
 ssh
 =====
