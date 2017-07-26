@@ -19,3 +19,6 @@ del /f /s /q "%ProgramFiles(x86)%\WAYI\SFOnline\XIGNCODE\*"
 del /f /s /q "%ProgramFiles(x86)%\WAYI\SFOnline\SpecialForce_exe_log.edl"
 
 break>"%ProgramFiles(x86)%\WAYI\SFOnline\data\lobby\SF_Curse.drk"
+
+:: Lower the mtu value
+netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
