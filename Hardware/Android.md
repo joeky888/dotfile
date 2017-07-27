@@ -2,6 +2,7 @@ A good Android phone
 =====
 * Supported by Lineage OS
 * Support OTG
+* Support large size external card
 
 刷機 (flash a new rom)
 =====
