@@ -69,7 +69,7 @@ Linux
 
 Android
 =====
-* Firefox
+* Firefox (Stylish, Undo Close for mobile, uBlock Origin, Video Background Play Fix)
 * Sogou input method
 * Hacker's Keyboard
 * Termux
