@@ -746,6 +746,13 @@ au CursorHold * let &ro = &ro
 
 """" Color Scheme
 "" Modified from tomasr Molokai on Github
+" Red = #F92672, 161
+" Orange = #FD971F, 208
+" Yellow = #yellow, 226
+" Green = #A6E22E, 118
+" Blue = #66D9EF, 81
+" Purple = #AE81FF, 135
+" Gray = #7E8E91, 59
 
 set background=dark
 highlight clear
