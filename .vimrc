@@ -748,7 +748,7 @@ au CursorHold * let &ro = &ro
 "" Modified from tomasr Molokai on Github
 " Red = #F92672, 161
 " Orange = #FD971F, 208
-" Yellow = #yellow, 226
+" Yellow = #E6DB74, 144
 " Green = #A6E22E, 118
 " Blue = #66D9EF, 81
 " Purple = #AE81FF, 135
