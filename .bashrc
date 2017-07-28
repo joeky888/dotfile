@@ -62,6 +62,7 @@ upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip in
 
 if [ $(command -v grc) ] ; then
   GRC="$(which grc)"
+  alias colourify="$GRC -es --colour=auto"
   alias ant='colourify ant'
   alias blkid='colourify blkid'
   alias configure='colourify configure'
