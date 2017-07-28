@@ -167,7 +167,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "\e\e[D" backward-word
   bindkey "^N" forward-word
   bindkey "^P" backward-word
-  bindkey "\e\e[3~" kill-word
+  bindkey "^B" backward-kill-word
+  bindkey "\e\e[3~" backward-kill-word
   bindkey "^Z" undo
   bindkey "^Y" redo
   bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
@@ -179,6 +180,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind '"\e[A": history-search-backward' # Up key is searching backward
   bind '"\e[B": history-search-forward'  # Down key is searching forward
   bind -x '"\C-v": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+  bind '\C-B:backward-kill-word'
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
