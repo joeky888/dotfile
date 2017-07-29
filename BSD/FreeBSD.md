@@ -38,6 +38,7 @@ Add user to sudoer
 =====
 * $ whereis sudo
 * $ cd /usr/ports/security/sudo
+* $ export BATCH=yes
 * $ make install clean
 * $ visudo
 ```sudoers
