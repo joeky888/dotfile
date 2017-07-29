@@ -17,3 +17,11 @@ Error: at least one valid and enable repository required for this action to succ
 "http://download.qt.io/online/qtsdkrepository/windows_x86/desktop/tools_maintenance/"
 "http://download.qt.io/online/qtsdkrepository/windows_x86/root/qt/"
 ```
+
+Windeployqt
+=====
+* Open Qt cmd.exe
+* cd $ReleaseFolder
+* windeployqt .
+* If using qml, then
+* windeployqt --qmldir <PathToQml> .

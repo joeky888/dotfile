@@ -1,9 +1,11 @@
 Initialize ports tree (Do this for the first time)
 =====
+* Login as root
 * $ portsnap fetch extract
 
 Update ports tree
 =====
+* Login as root
 * $ portsnap fetch update
 
 Search and Install ports packages
