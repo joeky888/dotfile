@@ -1086,7 +1086,7 @@ if has("gui_running")
     set guifontwide=DroidMono:h13
     au GUIEnter * simalt ~x " Full screen on start
   else
-    set guifont=Ubuntu\ Mono\ 14
+    set guifont=Ubuntu\ Mono\ 16
   endif
   set number
   set lines=999 columns=999 " set window Maximized
