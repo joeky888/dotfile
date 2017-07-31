@@ -24,10 +24,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-  $SUDO ln -sf ~/dotfile/.vimrc /root/.vimrc
-  $SUDO ln -sf ~/dotfile/.bash_profile /root/.bash_profile
-  $SUDO ln -sf ~/dotfile/.bashrc /root/.bashrc
-  $SUDO ln -sf ~/dotfile/.zshrc /root/.zshrc
   $SUDO chsh -s $(command -v zsh) root
   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
   $SUDO chmod 755 /usr/bin/reconnect
