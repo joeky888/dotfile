@@ -25,3 +25,26 @@ Windeployqt
 * windeployqt .
 * If using qml, then
 * windeployqt --qmldir <PathToQml> .
+
+Static build on Windows mingw
+=====
+* Reference <https://wiki.qt.io/How_to_build_a_static_Qt_version_for_Windows_with_gcc>
+* Install qt with mingw tool and python3
+* Download source and extract as "qt-everywhere-opensource-src-5" folder name
+* Edit qt-everywhere-opensource-src-5\qtbase\mkspecs\win32-g++\qmake.conf
+```conf
+QMAKE_LFLAGS     = -static
+QMAKE_LFLAGS_DLL = -static
+DEFINES          = QT_STATIC_BUILD
+```
+* Edit qt-everywhere-opensource-src-5\qmake\Makefile.win32
+```conf
+LFLAGS = -static
+```
+* Open Qt cmd, see more options by using `configre.bat --help`
+```sh
+# I got an error on this, to be continue...
+configure.bat -prefix "c:\QT\Qt5-static" -static -release -ltcg -optimize-size -opensource -confirm-license -platform win32-g++ -qt-zlib -qt-libpng -qt-libjpeg -gif -ico -opengl desktop -qt-pcre -qt-freetype -nomake tests -nomake examples -no-compile-examples -skip qtdeclarative -skip qtwebengine
+mingw32-make
+mingw32-make install
+```

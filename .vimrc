@@ -71,7 +71,7 @@ let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
 " Highlight code area in markdown
-let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","yaml","sh","conf","zsh","debsources","resolv","sudoers"]
+let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","yaml","sh","conf","zsh","tmux","debsources","resolv","sudoers"]
 " Open all cmd args in new tabs
 execute ":silent tab all"
 " Open help in new tabs
@@ -584,7 +584,8 @@ autocmd FileType arduino            let b:comment_leader = '\/\/'
 autocmd FileType registry           let b:comment_leader = ';'
 autocmd FileType dosbatch           let b:comment_leader = '::'
 autocmd FileType sh,ruby,python     let b:comment_leader = '#'
-autocmd FileType conf,fstab,zsh     let b:comment_leader = '#'
+autocmd FileType conf,fstab         let b:comment_leader = '#'
+autocmd FileType tmux,zsh           let b:comment_leader = '#'
 autocmd FileType make,Cmake,yaml    let b:comment_leader = '#'
 autocmd FileType debsources,desktop let b:comment_leader = '#'
 autocmd FileType matlab,tex         let b:comment_leader = '%'
