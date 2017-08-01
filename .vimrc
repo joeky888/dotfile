@@ -337,8 +337,8 @@ call CreateShortcut("C-e", "$l", "inv")
 
 if has("clipboard")
   " Ctrl C - Copy to system clipboard and clipboard.txt
-  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+y:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "ni")
-  vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+  call CreateShortcut("C-c", "mjV:w! $HOME/dotfile/clipboard.txt<CR>V\"+y:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
+  vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
   call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
@@ -371,6 +371,7 @@ endif
 " Ctrl V - Paste
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
 call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
+call CreateShortcut("C-v", "d:call PasteFromClipboard()<CR>", "v")
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
@@ -1100,8 +1101,8 @@ if has("gui_running")
   set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
-  call CreateShortcut("C-c", "V\"+y", "in")
-  call CreateShortcut("C-c", "\"+y", "v")
+  call CreateShortcut("C-c", "mjV\"+y:redraw!<CR>`j", "in")
+  call CreateShortcut("C-c", "\"+y:redraw!<CR>gv", "v")
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
