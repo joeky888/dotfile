@@ -823,6 +823,9 @@ hi Special              ctermfg=81      guifg=#66D9EF   guibg=bg          gui=no
 hi SpecialChar          ctermfg=161     cterm=none      guifg=#F92672     gui=none
 hi SpecialComment       ctermfg=245     cterm=none      guifg=#7E8E91     gui=none
 hi SpecialKey           ctermfg=81      guifg=#66D9EF   gui=none
+hi SpellBad             ctermbg=52      cterm=underline
+hi SpellCap             ctermbg=17      cterm=underline
+hi SpellLocal           ctermbg=17      cterm=underline
 hi Statement            ctermfg=161     cterm=none      guifg=#F92672     gui=none
 hi StatusLine           ctermfg=238     ctermbg=253     guifg=#455354     guibg=fg
 hi StatusLineNC         ctermfg=244     ctermbg=232     guifg=#808080     guibg=#080808
