@@ -1,10 +1,10 @@
 Install opencc on cygwin
 =====
 * Install cmake doxygen
-* $ git clone --depth=1 https://github.com/BYVoid/OpenCC.git
-* $ make
-* $ make install
-* Copy "build/rel/src/cygopencc-2.dll" to "/bin" or "C:\Windows\System32"
+```sh
+aria2c https://github.com/BYVoid/OpenCC/archive/master.zip && 7z x OpenCC-master.zip && cd OpenCC-master
+make && make install && install build/rel/src/cygopencc-2.dll /bin/cygopencc-2.dll
+```
 
 List of help
 =====

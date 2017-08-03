@@ -521,7 +521,6 @@ call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert",
 
 " Byobu key binding
 call CreateShortcut("F2", ":tabnew<CR>", "inv")
-call CreateShortcut("C-t", ":tabnew<CR>", "inv")
 call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
