@@ -162,7 +162,7 @@ Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 
 Compile ffmpeg on Cygwin
 =====
-* Install (Cygwin) -> libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+* Install (Cygwin) -> libtool yasm yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
 * Install libmp3
 ```sh
 aria2c https://github.com/j16180339887/lame/archive/master.zip && 7z x lame-master.zip && cd lame-master
