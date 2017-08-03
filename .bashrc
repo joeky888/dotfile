@@ -145,6 +145,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   DISABLE_AUTO_UPDATE="true"
   source $ZSH/oh-my-zsh.sh
   unset -f upgrade_oh_my_zsh # Remove this function
+  source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
   _comp_options+=(globdots) # Show hidden files when using completion
