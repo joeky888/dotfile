@@ -98,11 +98,11 @@ Left channel to 1st audio track, right channel to 2nd audio track
 * The example rmvb 0:0 is audio track and 0:1 is video track
 * Get left 國語
 ```sh
-find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
 ```
 * Get Right 韓語
 ```sh
-find . -name '\*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
+find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_channel 0.0.0 -map_channel 0.0.0 "${0%.rmvb}l.opus" ' {} \;
 ```
 * Merge \*.opus and video track into mkv
 ```sh
@@ -174,7 +174,7 @@ ffmpeg -i input -c:a libmp3lame output
 ```sh
 aria2c https://github.com/mstorsjo/fdk-aac/archive/master.zip && 7z x fdk-aac-master.zip && cd fdk-aac-master
 ./autogen.sh && ./configure --enable-static --disable-shared && make -j 8 && make install
-ffmpeg -i input -c:a libfdk\_aac output
+ffmpeg -i input -c:a libfdk_aac output
 ```
 
 * Install libh264
