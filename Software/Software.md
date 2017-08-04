@@ -34,6 +34,7 @@ Software
 * Popcorn Time
 * GeoGebra
 * Virtualbox
+* TigerVNC
 * Docker
 * Sikuli / SikuliX
 * ffmpeg
