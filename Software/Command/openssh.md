@@ -14,3 +14,7 @@ ssh
 ```bash
 ssh username@192.168.0.2 -p 8888
 ```
+
+What if I use 3G/4G/Wi-fi on client
+=====
+* Maybe mosh (mobile ssh) can help
