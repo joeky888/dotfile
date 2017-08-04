@@ -18,3 +18,34 @@ ssh username@192.168.0.2 -p 8888
 What if I use 3G/4G/Wi-fi on client
 =====
 * Maybe mosh (mobile ssh) can help
+
+Find and compare the Randomart of the existing ssh key
+=====
+```sh
+
+ssh-keygen -lv -f ~/.ssh/id_rsa
++---[RSA 2048]----+
+|                 |
+|           .     |
+| .    o   *      |
+|. E  + o = =     |
+|+...o . S +      |
+|*+=..  + o       |
+|=B.* o  +..      |
+|* o.B +o+.. .    |
+| oo+o=.+ ..o     |
++----[SHA256]-----+
+
+ssh-keygen -lv -f ~/.ssh/id_rsa.pub
++---[RSA 2048]----+
+|                 |
+|           .     |
+| .    o   *      |
+|. E  + o = =     |
+|+...o . S +      |
+|*+=..  + o       |
+|=B.* o  +..      |
+|* o.B +o+.. .    |
+| oo+o=.+ ..o     |
++----[SHA256]-----+
+```
