@@ -458,7 +458,8 @@ inoremap <silent> <C-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j
 vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 
 " Ctrl W - Quit
-call CreateShortcut("C-w", ":silent! call MyQuit()<CR>", "inv")
+call CreateShortcut("C-w", ":silent! call MyQuit()<CR>", "inv", "cmdInVisual")
+cnoremap <C-w> <C-u>silent! call MyQuit()<CR>
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
@@ -536,7 +537,6 @@ nnoremap <Del> i<Del>
 nnoremap - zi
 
 " Useful command mode mapping
-cnoremap <C-w> <C-c>
 cnoremap <C-k> <C-e><C-u>
 cnoremap <C-f> <C-c>:noh<CR>/\c
 cnoremap <C-r> <C-c>:noh<CR>:%s/
