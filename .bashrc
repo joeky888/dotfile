@@ -32,7 +32,7 @@ alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
-alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule foreach git pull origin master && cd -"
+alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule init && git submodule update && git submodule foreach git pull origin master && cd -"
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias curl='curl --retry 999 --retry-max-time 0 -LC - '
