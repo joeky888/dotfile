@@ -45,7 +45,7 @@ Install mono or dotnet
     * $ export WINEARCH=win32
     * $ winecfg # Configure OS
     * $ aria2c https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-    * $ sh winetricks dotnet46
+    * $ sh winetricks dotnet462
     * $ sh winetricks xna40 # Optional
     * $ wine file.exe
 4. Install dotnet from Microsoft
