@@ -10,5 +10,6 @@ A good Android phone
 * 先root
 * 刷第三方recovery
 * 備份系統到 sd 避免出錯
+* 將 zip 裡面的 recovery 資料夾刪除，重新壓成 .zip
 * 將 zip 放到 sd
 * 進入 recovery 刷入 zip
