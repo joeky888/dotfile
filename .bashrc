@@ -47,6 +47,7 @@ alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias wget='wget -c -e robots=off --tries=10 --read-timeout=30'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
 alias bypy='bypy --downloader aria2'
+alias scp='scp -v'
 
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
