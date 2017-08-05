@@ -12,7 +12,15 @@ ssh
 * A = 192.168.0.1:8888 and B = 192.168.0.2:8888
 * Connect from A to B
 ```bash
-ssh username@192.168.0.2 -p 8888
+ssh B_username@192.168.0.2 -p 8888
+```
+
+scp
+=====
+* A = 192.168.0.1:8888 and B = 192.168.0.2:8888
+* Copy from A to B
+```bash
+scp –P 8888 A_username@192.168.0.1:~/foobar.txt /some/local/directory
 ```
 
 What if I use 3G/4G/Wi-fi on client
