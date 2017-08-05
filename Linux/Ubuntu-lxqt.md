@@ -1,6 +1,6 @@
 Get latest ubuntu package
 =====
-* $ dpkg-reconfigure tzdata
+* $ dpkg-reconfigure tzdata # Select country
 * $ sudo do-release-upgrade
 * $ sudoedit /etc/apt/sources.list
 * Replace all "xenial" (or something like that) strings with "devel"
