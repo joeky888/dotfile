@@ -7,6 +7,7 @@ XTerm*saveLines: 1024000
 XTerm*scrollBar: True
 XTerm*loginshell: False
 XTerm*cursorBlink: False
+XTerm*visualBell: False
 
 ! Fonts and Encoding
 XTerm*utf8: True
