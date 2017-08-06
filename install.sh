@@ -6,8 +6,8 @@ if (( $EUID != 0 )); then
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  $SUDO apt-get update
-  $SUDO apt-get install tmux zsh git tig curl wget aria2 -y
+  $SUDO apt update
+  $SUDO apt install tmux zsh git tig curl wget aria2 -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
