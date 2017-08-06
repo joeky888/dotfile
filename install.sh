@@ -20,6 +20,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc
+  ln -sf ~/dotfile/.Xresources ~/.Xresources
   mkdir -p ~/.config/openbox
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
@@ -74,6 +75,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
+  ln -sf ~/dotfile/.Xresources ~/.Xresources
 
 
 
@@ -111,6 +113,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
@@ -198,6 +201,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   ln -sf ~/dotfile/.zshrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
+  ln -sf ~/dotfile/.Xresources ~/.Xresources
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
