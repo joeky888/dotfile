@@ -1086,7 +1086,7 @@ if has("gui_running")
     set undodir=$TEMP
     set directory=$TEMP
     set backupdir=$TEMP
-    set guifont=Ubuntu\ Mono:h14,Fixed:h14,monospace:h14
+    set guifont=Ubuntu\ Mono:h14,Consolas:h14,Fixed:h14,monospace:h14
     set guifontwide=DroidMono:h13,Microsoft\ Yahei:h13
     au GUIEnter * simalt ~x " Full screen on start
   else
