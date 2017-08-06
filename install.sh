@@ -155,6 +155,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt update && apt upgrade
   termux-setup-storage
   apt install -y clang man vim git tig zsh tmux curl aria2 openssh sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
+  install ~/dotfile/Linux/apt-fast /data/data/com.termux/files/usr/bin/apt-fast
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
