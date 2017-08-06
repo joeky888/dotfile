@@ -2,7 +2,7 @@
 
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
-if echo "$@" | grep -q "upgrade\|install\|dist-upgrade"; then
+if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade"; then
   cd /var/cache/apt/archives/;
 
   # Donload unfinished jobs
@@ -10,7 +10,6 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade"; then
 
   # Create new jobs
   apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,223.5.5.5 -i apt-fast.list
-  apt $@;
-else
-  apt-get $@;
 fi
+
+apt $@;
