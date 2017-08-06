@@ -157,7 +157,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   compdef forever=sudo # Complete forever as sudo command
 
   if [ $(command -v apt-get) ] ; then
-    compdef apt-fast=apt-get # Complete apt-fast as apt-get command
+    compdef apt-fast=apt # Complete apt-fast as apt command
   fi
   compdef CompleteAptCyg apt-cyg # Complete apt-cyg
 
