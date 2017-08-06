@@ -33,7 +33,7 @@ XTerm*translations: #override \
 ! Allow selecting email/url by double-click
 XTerm*charClass: 33:48,37-38:48,45-47:48,64:48,58:48,126:48,61:48,63:48,43:48,35:48
 
-! Tango Theme
+! Monokai Theme
 
 XTerm*background: #1C1C1C
 XTerm*foreground: #DEDEDE
@@ -42,24 +42,53 @@ XTerm*foreground: #DEDEDE
 XTerm*color0  : #2E3436
 XTerm*color8  : #555753
 ! red
-XTerm*color1  : #CC0000
-XTerm*color9  : #EF2929
+XTerm*color1  : #F92672
+XTerm*color9  : #F92672
 ! green
-XTerm*color2  : #4E9A06
-XTerm*color10 : #8AE234
+XTerm*color2  : #A6E22E
+XTerm*color10 : #A6E22E
 ! yellow
-XTerm*color3  : #C4A000
-XTerm*color11 : #FCE94F
+XTerm*color3  : #E6DB74
+XTerm*color11 : #E6DB74
 ! blue
-XTerm*color4  : #3465A4
-XTerm*color12 : #729FCF
+XTerm*color4  : #66D9EF
+XTerm*color12 : #66D9EF
 ! magenta
-XTerm*color5  : #75507B
-XTerm*color13 : #AD7FA8
+XTerm*color5  : #AE81FF
+XTerm*color13 : #AE81FF
 ! cyan
-XTerm*color6  : #06989A
-XTerm*color14 : #34E2E2
+XTerm*color6  : #66D9EF
+XTerm*color14 : #66D9EF
 ! white
 XTerm*color7  : #D3D7CF
 XTerm*color15 : #EEEEEC
 
+# ! Tango Theme
+
+# XTerm*background: #1C1C1C
+# XTerm*foreground: #DEDEDE
+
+# ! black
+# XTerm*color0  : #2E3436
+# XTerm*color8  : #555753
+# ! red
+# XTerm*color1  : #CC0000
+# XTerm*color9  : #EF2929
+# ! green
+# XTerm*color2  : #4E9A06
+# XTerm*color10 : #8AE234
+# ! yellow
+# XTerm*color3  : #C4A000
+# XTerm*color11 : #FCE94F
+# ! blue
+# XTerm*color4  : #3465A4
+# XTerm*color12 : #729FCF
+# ! magenta
+# XTerm*color5  : #75507B
+# XTerm*color13 : #AD7FA8
+# ! cyan
+# XTerm*color6  : #06989A
+# XTerm*color14 : #34E2E2
+# ! white
+# XTerm*color7  : #D3D7CF
+# XTerm*color15 : #EEEEEC
