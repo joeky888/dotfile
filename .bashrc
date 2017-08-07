@@ -1,3 +1,22 @@
+if [[ "$TERM" == "xterm"* ]]; then
+  export TERM=xterm-256color
+fi
+
+
+whichTTY=$(tty | sed -e "s:/dev/::")
+if [ $(command -v tmux) ] ; then
+  if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+    cd ~
+    # Check if fbterm installed
+    if [ $(command -v fbterm) ] ; then
+      # SHELL=tmux exec fbterm
+      exec fbterm -- bash -c 'TERM=fbterm tmux'
+    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+      exec tmux
+    fi
+  fi
+fi
+
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
@@ -248,10 +267,6 @@ END
   }
 fi
 
-if [[ "$TERM" == "xterm"* ]]; then
-  export TERM=xterm-256color
-fi
-
 vman() {
   # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
   man $@ | col -bx | vim -MR +"set filetype=man" - # -MR Make it read only and quit easily
@@ -368,16 +383,10 @@ forever()
   fi;
 }
 
-whichTTY=$(tty | sed -e "s:/dev/::")
-if [ $(command -v tmux) ] ; then
-  if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-    cd ~
-    # Check if fbterm installed
-    if [ $(command -v fbterm) ] ; then
-      # SHELL=tmux exec fbterm
-      exec fbterm -- bash -c 'TERM=fbterm tmux'
-    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-      exec tmux
-    fi
+finish() {
+  if [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]]; then
+#     TODO
+#     Do somethihng when bash is closing
   fi
-fi
+}
+trap finish EXIT

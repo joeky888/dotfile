@@ -10,3 +10,4 @@ CursorType=line
 CursorBlinks=no
 BellType=0
 ScrollbackLines=100000
+Term=xterm
