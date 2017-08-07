@@ -385,8 +385,9 @@ forever()
 
 finish() {
   if [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]]; then
+    true
 #     TODO
 #     Do somethihng when bash is closing
-  fi
+  fi;
 }
 trap finish EXIT
