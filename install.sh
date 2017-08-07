@@ -14,9 +14,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   git submodule init
   git submodule update
   ln -sf ~/dotfile/.bashrc ~/.bashrc
-  ln -sf ~/dotfile/.bash_profile ~/.bash_profile
+  ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
-  ln -sf ~/dotfile/.zshrc ~/.zshrc
+  ln -sf ~/dotfile/.bashrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc
@@ -70,9 +70,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   git submodule init
   git submodule update
   ln -sf ~/dotfile/.bashrc ~/.bashrc
-  ln -sf ~/dotfile/.bash_profile ~/.bash_profile
+  ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
-  ln -sf ~/dotfile/.zshrc ~/.zshrc
+  ln -sf ~/dotfile/.bashrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.Xresources ~/.Xresources
@@ -107,9 +107,9 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bash_profile"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.zshrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
@@ -164,9 +164,9 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   git submodule init
   git submodule update
   ln -sf ~/dotfile/.bashrc ~/.bashrc
-  ln -sf ~/dotfile/.bash_profile ~/.bash_profile
+  ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
-  ln -sf ~/dotfile/.zshrc ~/.zshrc
+  ln -sf ~/dotfile/.bashrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
@@ -196,9 +196,9 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   git submodule init
   git submodule update
   ln -sf ~/dotfile/.bashrc ~/.bashrc
-  ln -sf ~/dotfile/.bash_profile ~/.bash_profile
+  ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
-  ln -sf ~/dotfile/.zshrc ~/.zshrc
+  ln -sf ~/dotfile/.bashrc ~/.zshrc
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.Xresources ~/.Xresources
