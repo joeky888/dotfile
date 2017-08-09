@@ -616,37 +616,39 @@ function! ToggleComment()
   endif
 endfunction
 
-autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-set completeopt=menuone,noinsert,noselect,longest
-set complete=.
-set shortmess+=c
-let autocomp=0
-let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
-vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
-nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
-inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
+if v:version >= 800
+  autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
+  set completeopt=menuone,noinsert,noselect,longest
+  set complete=.
+  set shortmess+=c
+  let autocomp=0
+  let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+  inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
+  vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
+  nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
+  inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
 
-function! ToggleAutoComplete()
-  if (g:autocomp == 0)
-    let g:autocomp=1
-    for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
-    endfor
-  else
-    let g:autocomp=0
-    for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <silent> ".l:char." ".l:char
-    endfor
-  endif
-endfunction
+  function! ToggleAutoComplete()
+    if (g:autocomp == 0)
+      let g:autocomp=1
+      for l:char in split(g:CharSet, '\zs')
+        execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
+      endfor
+    else
+      let g:autocomp=0
+      for l:char in split(g:CharSet, '\zs')
+        execute "inoremap <silent> ".l:char." ".l:char
+      endfor
+    endif
+  endfunction
 
-function! OmniPopup()
-  if pumvisible()
-      return "\<C-N>"
-  endif
-  return "\<Tab>"
-endfunction
+  function! OmniPopup()
+    if pumvisible()
+        return "\<C-N>"
+    endif
+    return "\<Tab>"
+  endfunction
+endif
 
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
