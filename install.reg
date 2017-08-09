@@ -36,7 +36,15 @@ Windows Registry Editor Version 5.00
 "JAVA_TOOL_OPTIONS"=" -Dfile.encoding=UTF8 "
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"AppsUseLightTheme"=dword:0
+"AppsUseLightTheme"=dword:00000000
 
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
-"AppsUseLightTheme"=dword:0
+"AppsUseLightTheme"=dword:00000000
+
+[HKEY_CURRENT_USER\Control Panel\Colors]
+"Window"="170 170 170"
+"WindowText"="0 100 0"
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\DefaultColors\HighContrast]
+"Window"=dword:00999999
+"WindowText"=dword:00006400
