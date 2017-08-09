@@ -101,4 +101,9 @@ HandleLidSwitch=ignore
 Transparet background with openbox
 =====
 * $ sudo apt-fast install compton
-* $ echo "compton &" > ~/.config/openbox/autostart
+* $ ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
+* $ lxqt-config-session
+* Go to Autostart tab and add a new command
+* Name: Compton
+* Command: compton -CGb --config ~/.config/compton.conf
+* $ sudo reboot
