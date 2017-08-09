@@ -57,7 +57,7 @@ Windows
 * Greenshot
 * Rufus
 * x64dbg / snowman
-* Rainmeter
+* Rainmeter (with weather)
 
 Mac
 =====
@@ -68,6 +68,7 @@ Linux
 =====
 * Qupzilla
 * NetworkManager / nmtui
+* Conky (with weather)
 
 Android
 =====
