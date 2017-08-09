@@ -25,6 +25,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
+  ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
+  ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
   $SUDO chsh -s $(command -v zsh) root
   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
   $SUDO chmod 755 /usr/bin/reconnect
@@ -35,7 +37,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg chromium-codecs-ffmpeg-extra neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg chromium-codecs-ffmpeg-extra neofetch ttf-ubuntu-font-family fonts-droid-fallback fontconfig compton gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   $SUDO apt-fast install libssl-dev -y
   rm -rf ~/Miniconda3
   curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
