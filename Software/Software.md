@@ -57,6 +57,7 @@ Windows
 * Greenshot
 * Rufus
 * x64dbg / snowman
+* Rainmeter
 
 Mac
 =====
