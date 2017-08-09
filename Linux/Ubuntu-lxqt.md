@@ -97,3 +97,8 @@ Disable suspend when closing laptop lid
 HandleLidSwitch=ignore
 ```
 * $ sudo systemctl restart systemd-logind
+
+Transparet background with openbox
+=====
+* $ sudo apt-fast install compton
+* $ echo "compton &" > ~/.config/openbox/autostart
