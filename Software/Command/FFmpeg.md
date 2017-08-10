@@ -44,6 +44,12 @@ Delay / Hasten audio track
 * Hasten 5 Second
 * $ ffmpeg -i input.mp4 -itsoffset -00:00:05.000 -i input.mp4 -map 0:v -map 1:a output.mp4
 
+Show progress bar
+=====
+```sh
+pv input.mkv | ffmpeg -i pipe:0 -v warning {arguments}
+```
+
 Set default audio track
 =====
 * Set second audio track as default
