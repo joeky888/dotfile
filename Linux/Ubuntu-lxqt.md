@@ -40,6 +40,12 @@ Listen to music without x
 * $ vlc -I ncurses --random ~/Music/\*.mp3
 * If there is no sound in virtualbox, switch the audio card in virtualbox setting
 
+Mouse without x
+=====
+* Make sure fbterm is installed and functional
+* $ sudo apt-fast install gpm
+* $ sudo reboot
+
 Connect network using static ip
 =====
 * Get netword card name
