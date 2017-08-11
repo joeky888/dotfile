@@ -626,27 +626,29 @@ if v:version >= 800
   inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
   vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
   nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
-  inoremap <silent> <Tab> <C-R>=OmniPopup()<CR>
+  inoremap <expr> <Tab>  pumvisible() ? "\<C-n>" : "\<Tab>"
+  inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+  inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
+  inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
+  inoremap <expr> <ESC>  pumvisible() ? "\<C-e>" : "\<ESC>"
+  inoremap <ESC>A <Up>
+  inoremap <ESC>B <Down>
+  inoremap <ESC>C <Right>
+  inoremap <ESC>D <Left>
 
   function! ToggleAutoComplete()
     if (g:autocomp == 0)
       let g:autocomp=1
       for l:char in split(g:CharSet, '\zs')
-        execute "inoremap <silent> ".l:char." ".l:char."<ESC>a<C-x><C-p>"
+        " Use <C-x><C-p> if there is no popup window
+        execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<ESC>a\<C-x>\<C-p>'"
       endfor
     else
       let g:autocomp=0
       for l:char in split(g:CharSet, '\zs')
-        execute "inoremap <silent> ".l:char." ".l:char
+        execute "inoremap ".l:char." ".l:char
       endfor
     endif
-  endfunction
-
-  function! OmniPopup()
-    if pumvisible()
-        return "\<C-N>"
-    endif
-    return "\<Tab>"
   endfunction
 endif
 
