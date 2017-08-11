@@ -82,6 +82,7 @@ Android
 * WiFiAnalyzer open source
 * IP webcam
 * LibreTorrent
+* F-Droid
 
 Good Software Design
 =====
