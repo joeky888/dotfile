@@ -41,7 +41,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set updatetime=750
+set updatetime=2000
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=1000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
@@ -80,7 +80,7 @@ cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
-set timeoutlen=1000
+set timeoutlen=100
 au InsertEnter * set timeout | set ignorecase
 au InsertLeave * set notimeout
 
