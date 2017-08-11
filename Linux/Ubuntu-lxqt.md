@@ -1,6 +1,6 @@
 Get latest ubuntu package
 =====
-* $ sudo do-release-upgrade
+* $ sudo do-release-upgrade -d
 * $ sudoedit /etc/apt/sources.list
 * Replace all "xenial" (or something like that) strings with "devel"
 
