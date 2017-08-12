@@ -42,19 +42,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
   aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
   fc-cache -fv
-  rm -rf ~/Miniconda3
-  aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
-  chmod 777 Miniconda3-latest-Linux-x86_64.sh
-  ./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f
-  rm Miniconda3-latest-Linux-x86_64.sh
+  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install bypy
-  git clone --depth 1 https://github.com/garabik/grc.git grc
-  cd grc
-  $SUDO sh install.sh
-  cd ..
-  rm -rf grc
+  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc && $SUDO sh install.sh && cd .. && rm -rf grc
 python3 <<END
 import sys, os, site
 
