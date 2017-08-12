@@ -351,7 +351,7 @@ else
   " Insert - Paste from vim clipboard
   call CreateShortcut("Insert", "<C-o>:normal! Pl<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
   call CreateShortcut("Insert", "Pl", "n")
-  call CreateShortcut("Insert", "dPl", "v")
+  call CreateShortcut("Insert", "dP", "v")
   cnoremap <Insert> <C-r>"
 endif
 
