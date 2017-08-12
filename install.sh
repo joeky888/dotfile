@@ -40,7 +40,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg chromium-codecs-ffmpeg-extra neofetch fontconfig compton gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   $SUDO apt-fast install libssl-dev -y
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-  aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
+  aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
   fc-cache -fv
   rm -rf ~/Miniconda3
   aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
