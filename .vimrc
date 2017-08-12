@@ -245,7 +245,7 @@ function! MenuNetrw()
   endif
 endfunction
 function! SavePos()
-  let g:savepos = getpos(".")
+  let b:savepos = getpos(".")
 endfunction
 function! DeleteLine()
   let savepos = getpos(".")
@@ -329,8 +329,8 @@ if has("clipboard")
   vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
-  nnoremap <silent> <C-x>           :call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
-  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
+  nnoremap <silent> <C-x>           :call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>
+  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from system clipboard
@@ -344,8 +344,8 @@ else
   vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
   " Ctrl X - Cut
-  nnoremap <silent> <C-x>           :call SavePos()<CR>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
-  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
+  nnoremap <silent> <C-x>           :call SavePos()<CR>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>
+  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from vim clipboard
@@ -1092,8 +1092,8 @@ if has("gui_running")
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
-  call CreateShortcut("C-x", "<C-o>:call SavePos()<CR><C-o>V\"+x<C-o>:call setpos('.',g:savepos)<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-x", ":call SavePos()<CR>V\"+x:call setpos('.',g:savepos)<CR>", "n")
+  call CreateShortcut("C-x", "<C-o>:call SavePos()<CR><C-o>V\"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-x", ":call SavePos()<CR>V\"+x:call setpos('.',b:savepos)<CR>", "n")
   call CreateShortcut("C-x", "\"+x", "v")
   cnoremap <C-x> <C-y><C-e><C-u>
 
