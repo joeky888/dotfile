@@ -91,6 +91,7 @@ Good Software Design
 * Customizable theming (and Font-Family) with json format
 * Support Private Tabs/Windows
 * Cross Platform
+* Progress bar
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
