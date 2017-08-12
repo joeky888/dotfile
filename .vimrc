@@ -106,12 +106,7 @@ endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 
 """ Custom backup and swap files
-let myVimDir = ""
-if has("gui_running") && has('win32') || has('win64')
-  let myVimDir = expand("$HOME/dotfile/.vim")
-else
-  let myVimDir = expand("$HOME/dotfile/.vim")
-endif
+let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
 function! EnsureDirExists (dir)
@@ -249,15 +244,8 @@ function! MenuNetrw()
     normal! D
   endif
 endfunction
-function! PasteFromClipboard()
-  if line(".") == 1
-    normal! O
-    execute "r $HOME/dotfile/clipboard.txt"
-    execute "1d"
-  else
-    normal! k
-    execute "r $HOME/dotfile/clipboard.txt"
-  endif
+function! SavePos()
+  let g:savepos = getpos(".")
 endfunction
 function! DeleteLine()
   let savepos = getpos(".")
@@ -341,8 +329,8 @@ if has("clipboard")
   vnoremap <silent> <C-c> "+ygvy:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>V\"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  nnoremap <silent> <C-x>           :call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
+  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from system clipboard
@@ -352,12 +340,12 @@ if has("clipboard")
   cnoremap <Insert> <C-r>+
 else
   " Ctrl C - Copy
-  call CreateShortcut("C-c", "V:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>gvy", "ni")
+  call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
   vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl X - Cut
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>", "n")
-  call CreateShortcut("C-x", "V:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>i<C-g>u", "i", "noTrailingIInInsert")
+  nnoremap <silent> <C-x>           :call SavePos()<CR>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
+  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from vim clipboard
@@ -369,9 +357,9 @@ endif
 
 
 " Ctrl V - Paste
-call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>", "n")
-call CreateShortcut("C-v", ":call PasteFromClipboard()<CR>i<C-g>u", "i", "noTrailingIInInsert")
-call CreateShortcut("C-v", "d:call PasteFromClipboard()<CR>", "v")
+call CreateShortcut("C-v", ":r $HOME/dotfile/clipboard.txt<CR>", "n")
+call CreateShortcut("C-v", ":r $HOME/dotfile/clipboard.txt<CR>i<C-g>u", "i", "noTrailingIInInsert")
+call CreateShortcut("C-v", "d:r $HOME/dotfile/clipboard.txt<CR>", "v")
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
@@ -1108,8 +1096,8 @@ if has("gui_running")
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
-  call CreateShortcut("C-x", "<C-o>V\"+x<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-x", "V\"+x", "n")
+  call CreateShortcut("C-x", "<C-o>:call SavePos()<CR><C-o>V\"+x<C-o>:call setpos('.',g:savepos)<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("C-x", ":call SavePos()<CR>V\"+x:call setpos('.',g:savepos)<CR>", "n")
   call CreateShortcut("C-x", "\"+x", "v")
   cnoremap <C-x> <C-y><C-e><C-u>
 
