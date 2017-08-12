@@ -43,7 +43,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
   fc-cache -fv
   rm -rf ~/Miniconda3
-  curl -LOC - 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
+  aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh'
   chmod 777 Miniconda3-latest-Linux-x86_64.sh
   ./Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f
   rm Miniconda3-latest-Linux-x86_64.sh
