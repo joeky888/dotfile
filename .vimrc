@@ -616,41 +616,39 @@ function! ToggleComment()
   endif
 endfunction
 
-if v:version >= 800
-  autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-  set completeopt=menuone,noinsert,noselect,longest
-  set complete=.
-  set shortmess+=c
-  let autocomp=0
-  let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-  inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
-  vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
-  nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
-  inoremap <expr> <Tab>  pumvisible() ? "\<C-n>" : "\<Tab>"
-  inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-  inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
-  inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
-  inoremap <expr> <ESC>  pumvisible() ? "\<C-e>" : "\<ESC>"
-  inoremap <ESC>A <Up>
-  inoremap <ESC>B <Down>
-  inoremap <ESC>C <Right>
-  inoremap <ESC>D <Left>
+autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
+set completeopt=menuone
+set complete=.
+set shortmess+=c
+let autocomp=0
+let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
+vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
+nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
+inoremap <expr> <Tab>  pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
+inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
+inoremap <expr> <ESC>  pumvisible() ? "\<C-e>" : "\<ESC>"
+inoremap <ESC>A <Up>
+inoremap <ESC>B <Down>
+inoremap <ESC>C <Right>
+inoremap <ESC>D <Left>
 
-  function! ToggleAutoComplete()
-    if (g:autocomp == 0)
-      let g:autocomp=1
-      for l:char in split(g:CharSet, '\zs')
-        " Use <C-x><C-p> if there is no popup window
-        execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-x>\<C-p>'"
-      endfor
-    else
-      let g:autocomp=0
-      for l:char in split(g:CharSet, '\zs')
-        execute "inoremap ".l:char." ".l:char
-      endfor
-    endif
-  endfunction
-endif
+function! ToggleAutoComplete()
+  if (g:autocomp == 0)
+    let g:autocomp=1
+    for l:char in split(g:CharSet, '\zs')
+      " Use <C-x><C-p> if there is no popup window
+      execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
+    endfor
+  else
+    let g:autocomp=0
+    for l:char in split(g:CharSet, '\zs')
+      execute "inoremap ".l:char." ".l:char
+    endfor
+  endif
+endfunction
 
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
