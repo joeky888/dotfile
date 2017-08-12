@@ -341,7 +341,7 @@ if has("clipboard")
 else
   " Ctrl C - Copy
   call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
-  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
   " Ctrl X - Cut
   nnoremap <silent> <C-x>           :call SavePos()<CR>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
