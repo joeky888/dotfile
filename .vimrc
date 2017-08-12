@@ -80,7 +80,7 @@ cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
-set timeoutlen=100
+set timeoutlen=0
 au InsertEnter * set timeout | set ignorecase
 au InsertLeave * set notimeout
 
