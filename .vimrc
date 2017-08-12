@@ -330,7 +330,7 @@ if has("clipboard")
 
   " Ctrl X - Cut to system clipboard and clipboard.txt
   nnoremap <silent> <C-x>           :call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>
-  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
+  inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", g:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from system clipboard
