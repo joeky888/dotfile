@@ -6,7 +6,7 @@ Get latest ubuntu package
 
 Config CJK font in tty
 =====
-* $ sudo apt-fast install ttf-ubuntu-font-family fonts-droid-fallback fbterm fontconfig -y # ttf-ubuntu-font-family.deb can be found on internet if use Debian
+* $ sudo apt-fast install fbterm fontconfig -y
 * $ sudo apt-fast install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
