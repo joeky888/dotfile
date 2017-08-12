@@ -27,6 +27,8 @@ Settings
             * Auto image size -> Fit image to window height
             * Background color -> set to black
             * Reset XY (No fit) -> check
+        * Misc
+            * Show Video -> uncheck
     * Fullscreen
         * Fullscreen -> Auto image size -> Fit image to window width or height
         * Fullscreen -> Show info -> uncheck
