@@ -349,8 +349,8 @@ else
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from vim clipboard
-  call CreateShortcut("Insert", "<C-o>p<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("Insert", "p", "n")
+  call CreateShortcut("Insert", "<C-o>:normal! Pl<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+  call CreateShortcut("Insert", "Pl", "n")
   call CreateShortcut("Insert", "dp", "v")
   cnoremap <Insert> <C-r>"
 endif
