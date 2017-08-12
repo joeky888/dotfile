@@ -641,7 +641,7 @@ if v:version >= 800
       let g:autocomp=1
       for l:char in split(g:CharSet, '\zs')
         " Use <C-x><C-p> if there is no popup window
-        execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<ESC>a\<C-x>\<C-p>'"
+        execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-x>\<C-p>'"
       endfor
     else
       let g:autocomp=0
