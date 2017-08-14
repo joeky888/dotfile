@@ -608,7 +608,7 @@ autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
 set completeopt=menuone
 set complete=.
 set shortmess+=c
-let autocomp=0
+let autocomp=1
 let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
@@ -624,19 +624,18 @@ inoremap <ESC>C <Right>
 inoremap <ESC>D <Left>
 
 function! ToggleAutoComplete()
-  if (g:autocomp == 0)
-    let g:autocomp=1
+  if g:autocomp
     for l:char in split(g:CharSet, '\zs')
-      " Use <C-x><C-p> if there is no popup window
       execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
     endfor
   else
-    let g:autocomp=0
     for l:char in split(g:CharSet, '\zs')
       execute "inoremap ".l:char." ".l:char
     endfor
   endif
+  let g:autocomp=g:autocomp ? 0 : 1
 endfunction
+execute "call ToggleAutoComplete()"
 
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
