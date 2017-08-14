@@ -558,6 +558,8 @@ vnoremap ' <ESC>:call WrapSelected("'","'")<CR>
 vnoremap " <ESC>:call WrapSelected("\"","\"")<CR>
 vnoremap < <ESC>:call WrapSelected("<",">")<CR>
 vnoremap > <ESC>:call WrapSelected("<",">")<CR>
+vnoremap / <ESC>:call WrapSelected("/","/")<CR>
+vnoremap \ <ESC>:call WrapSelected("\\","\\")<CR>
 
 function! WrapSelected(c1, c2)
   execute "normal! `<i".a:c1
