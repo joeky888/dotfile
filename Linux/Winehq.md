@@ -30,6 +30,11 @@ Install CJK font
     * $ sh winetricks wenquanyi
     * $ wine regedit ~/dotfile/Linux/cjk.reg
 
+Open cmd and run .bat file
+======
+* $ wineconsole cmd
+* Run .bat file
+
 Install mono or dotnet
 =====
 1. Using Linux Mono
