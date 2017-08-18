@@ -46,6 +46,7 @@ if [[ $(command -v aria2c) ]]; then
 fi
 
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
+alias grep='grep --color=auto --exclude-dir={.bzr,CVS,.git,.hg,.svn}'
 alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'

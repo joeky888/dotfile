@@ -134,7 +134,7 @@ END
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   pacman -Syu
-  pacman -S zsh git vim curl wget base-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
+  pacman -S zsh git vim curl wget base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
