@@ -83,6 +83,7 @@ Android
 * IP webcam
 * LibreTorrent
 * F-Droid
+* Magisk
 
 Good Software Design
 =====
