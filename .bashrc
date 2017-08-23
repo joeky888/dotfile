@@ -16,9 +16,6 @@ if [ $(command -v tmux) ] ; then
   fi
 fi
 
-alias ll='ls -lh'
-alias ls='ls -F --color=auto --show-control-chars'
-
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
@@ -68,6 +65,8 @@ alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --
 alias bypy='bypy -d --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
+alias ll='ls -lh'
+alias ls='ls -F --color=auto --show-control-chars'
 
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
