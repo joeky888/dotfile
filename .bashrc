@@ -67,6 +67,7 @@ alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
 alias bypy='bypy -d --downloader aria2'
 alias scp='scp -v'
+alias vim="vim -u ~/.vimrc"
 
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
@@ -242,9 +243,9 @@ if [ $(command -v gvim) ]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      command gvim
+      command gvim -u ~/.vimrc
     else
-      command gvim -p --remote-tab-silent "$@"
+      command gvim -u ~/.vimrc -p --remote-tab-silent "$@"
     fi;
   }
 fi
