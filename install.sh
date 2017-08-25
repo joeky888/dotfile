@@ -37,11 +37,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim ffmpeg chromium-codecs-ffmpeg-extra neofetch fontconfig compton gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim nano ffmpeg chromium-codecs-ffmpeg-extra neofetch fontconfig compton gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
   $SUDO apt-fast install libssl-dev -y
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
   aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
   fc-cache -fv
+  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
@@ -81,11 +82,12 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
+  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   mount -a
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
@@ -185,8 +187,9 @@ END
 
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   $SUDO pkg update
-  echo y | $SUDO pkg install tmux zsh git vim curl ubuntu-font
+  echo y | $SUDO pkg install tmux zsh git vim nano curl ubuntu-font
   chsh -s $(command -v zsh) $(whoami)
+  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
