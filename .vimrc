@@ -696,19 +696,52 @@ function! ChangeAccentColor()
   return ''
 endfunction
 function! SearchCount()
-  let keyString=@/
-  let pos=getpos('.')
-  try
-    redir => nth
-      silent exe '0,.s/' . keyString . '//ne'
-    redir => cnt
-      silent exe '%s/' . keyString . '//ne'
-    redir END
-    return matchstr( nth, '\d\+' ) . '/' . matchstr( cnt, '\d\+' )
-  finally
-    call setpos('.', pos)
-  endtry
+  " variable b:lastKey = [key, Nth, N]
+  if !exists('b:lastKey') | let b:lastKey = [[], 0, 0] | endif
+  return b:lastKey[1] . "/" . b:lastKey[2]
 endfunction
+function! UpdateSearch()
+  let pos=getpos('.')
+  let key=[@/, b:changedtick]
+
+  let b:lastKey[0] = key
+
+  redir => cnt
+    silent exe '%s/' . key[0] . '//gne'
+  redir END
+  let b:lastKey[2] = str2nr(matchstr( cnt, '\d\+' ))
+
+  redir => nth
+    silent exe '0,.s/' . key[0] . '//gne'
+  redir END
+
+  let b:lastKey[1] = str2nr(matchstr( nth, '\d\+' ))
+  call setpos('.', pos)
+endfunction
+function CommandAfterSearch()
+  if getcmdtype() == '/'
+    return "\<cr>:call UpdateSearch()\<cr>"
+  else
+    return "\<cr>"
+  endif
+endfunction
+cnoremap <silent> <expr> <Enter> CommandAfterSearch()
+function NextSearch()
+  let l:line = line(".")
+  normal! n
+  if l:line != line(".")
+    let b:lastKey[1]=b:lastKey[1]+1 <= b:lastKey[2] ? b:lastKey[1]+1 : b:lastKey[1]+1-b:lastKey[2]
+  endif
+endfunction
+function PreviousSearch()
+  let l:line = line(".")
+  normal! N
+  if l:line != line(".")
+    let b:lastKey[1]=b:lastKey[1]-1 > 0 ? b:lastKey[1]-1 : b:lastKey[1]-1+b:lastKey[2]
+  endif
+endfunction
+nnoremap <silent> n :call NextSearch()<CR>
+nnoremap <silent> N :call PreviousSearch()<CR>
 function! ReadOnly()
   return (&readonly || !&modifiable) ? 'Read Only ' : ''
 endfunction
