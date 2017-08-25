@@ -366,11 +366,11 @@ inoremap <silent> <C-s> <C-g>u<C-O>:call MySave()<CR>
 vnoremap <silent> <C-s> <ESC>:call MySave()<CR>
 cnoremap <silent> <C-s> <C-u>:call MySave()<CR>
 
-" Home - Go To Begin
-call CreateShortcut("Home", "gg", "inv")
+" Home - Go To Begin of the Line
+call CreateShortcut("Home", "^", "inv")
 
-" End - Go To End
-call CreateShortcut("End", "G", "inv")
+" End - Go To End of the Line
+call CreateShortcut("End", "$l", "inv")
 
 " Ctrl K - Delete Line
 call CreateShortcut("C-k", ":call DeleteLine()<CR>", "n")
