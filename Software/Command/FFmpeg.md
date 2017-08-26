@@ -44,6 +44,13 @@ Delay / Hasten audio track
 * Hasten 5 Second
 * $ ffmpeg -i input.mp4 -itsoffset -00:00:05.000 -i input.mp4 -map 0:v -map 1:a output.mp4
 
+Volumn up/down of a video
+=====
+* Volumn up
+* ffmpeg -i input.mp4 -vcodec copy -af "volume=10dB" output.mp4
+* Volumn down
+* ffmpeg -i input.mp4 -vcodec copy -af "volume=-10dB" output.mp4
+
 Show progress bar
 =====
 ```sh
