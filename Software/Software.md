@@ -83,7 +83,8 @@ Android
 * IP webcam
 * LibreTorrent
 * F-Droid
-* Magisk
+* TWRP Recovery
+* Magisk / Xposed
 
 Good Software Design
 =====
