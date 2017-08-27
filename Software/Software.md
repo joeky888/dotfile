@@ -77,6 +77,7 @@ Android
     * Undo Close for mobile
     * uBlock Origin
     * Video Background Play Fix
+    * Barcode Scanner ZXing
 * Sogou input method
 * Hacker's Keyboard
 * Termux
