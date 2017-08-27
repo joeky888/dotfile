@@ -72,7 +72,11 @@ Linux
 
 Android
 =====
-* Firefox (Stylish, Undo Close for mobile, uBlock Origin, Video Background Play Fix)
+* Firefox Nightly
+    * Stylus
+    * Undo Close for mobile
+    * uBlock Origin
+    * Video Background Play Fix
 * Sogou input method
 * Hacker's Keyboard
 * Termux
