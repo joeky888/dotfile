@@ -1020,7 +1020,8 @@ command! EncodingUTF16LE execute "e ++enc=utf-16le"
 command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
 
-for syn in map(split(globpath(&rtp, 'syntax/*.vim'), '\n'), 'fnamemodify(v:val, ":t:r")')
+if !exists('g:ftypes') | let g:ftypes = map(split(globpath(&rtp, 'syntax/*.vim'), '\n'), 'fnamemodify(v:val, ":t:r")') | endif
+for syn in g:ftypes
   execute "noremenu Edit.Filetype.".split(syn, '\zs')[0].".".syn." :setlocal filetype=".syn."<CR>"
 endfor
 
