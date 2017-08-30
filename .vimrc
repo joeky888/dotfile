@@ -1028,18 +1028,23 @@ autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 
 function! HighlightTXT()
+  syn match ascii      "[\u0030-\u007A]"
   " Copy from $VIM/syntax/lua.vim
   " integer number
-  syn match txtNumber "\<\d\+\>"
+  syn match txtNumber  "\<\d\+\>"
   " floating point number, with dot, optional exponent
   syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
   " floating point number, starting with a dot, optional exponent
   syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
   " floating point number, without dot, with exponent
   syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
+  " Wide characters and non-ascii characters
+  syn match nonascii   "[^\u0000-\u007F]"
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+  hi def link ascii       Define
   hi def link txtNumber	  Number
-  hi def link lineURL	    Define
+  hi def link lineURL	    Green
+  hi def link nonascii    Identifier
 endfunction
 
 function! HighlightSRT()
