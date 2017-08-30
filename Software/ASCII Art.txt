@@ -67,3 +67,22 @@ Japanese:
 ば	ぱ	ひ	び	ぴ	ふ	ぶ	ぷ	へ	べ	ぺ	ほ	ぼ	ぽ	ま	み
 む	め	も	ゃ	や	ゅ	ゆ	ょ	よ	ら	り	る	れ	ろ	ゎ	わ
 ゐ	ゑ	を	ん	ゔ	ゕ	ゖ	゛	゜	ゝ	ゞ	ゟ
+
+Phonemic:
+
+* single vowels:
+    ɪ	i	ʊ	u
+    ɛ	ɜ	ə	ɔ
+    æ	ʌ	ɒ	ɑ
+
+* diphthongs:
+    eɪɪ	ɔɪ	aɪ
+    eə	ɪə	ʊə
+    oʊ	aʊ	/
+
+* unvoiced:
+    p	f	θ	t	s	ʃ	ʧ	k
+
+* voiced:
+    b	v	ð	d	z	ʒ	ʤ	g
+    m	n	ŋ	h	w	l	r	j
