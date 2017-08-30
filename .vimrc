@@ -543,6 +543,8 @@ inoremap <C-_> <C-W><C-g>u
 nnoremap <C-_> i<C-W><C-g>u
 cnoremap <C-_> <C-w>
 vnoremap <bar> I
+vnoremap <Space> di<Space><C-g>u
+vnoremap <CR> di<CR><C-g>u
 
 inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
@@ -1167,8 +1169,6 @@ if has("gui_running")
   cnoremap <C-v> <C-r>+
 
   " Deleting words and Entering insert mode
-  call CreateShortcut("CR", "di<CR><C-g>u", "v")
-  call CreateShortcut("Space", "di<Space><C-g>u", "v")
   call CreateShortcut("C-BS", "di<C-g>u", "v")
   call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
   nnoremap <C-Del> dwi
