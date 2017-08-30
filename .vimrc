@@ -1168,7 +1168,7 @@ if has("gui_running")
   noremap! <Insert> <C-r>+
   cnoremap <C-v> <C-r>+
 
-  " Deleting words and Entering insert mode
+  " Delete selected characters before Entering the insert mode
   call CreateShortcut("C-BS", "di<C-g>u", "v")
   call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
   nnoremap <C-Del> dwi
