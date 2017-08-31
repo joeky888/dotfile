@@ -490,10 +490,19 @@ vnoremap <Esc><BS> d
 cnoremap <Esc><BS> <C-w>
 
 " Terminal Alt Right - Next word
-execute "set <M-C>=\e[1;3C"
-nnoremap <M-C> w
-inoremap <M-C> <C-Right>
-vnoremap <M-C> 5l
+" execute "set <M-C>=\e[1;3C"
+nnoremap <ESC>[1;3C w
+inoremap <ESC>[1;3C <C-Right>
+vnoremap <ESC>[1;3C 5l
+nnoremap <ESC>[C w
+inoremap <ESC>[C <C-Right>
+vnoremap <ESC>[C 5l
+nnoremap <ESC>[1;5C w
+inoremap <ESC>[1;5C <C-Right>
+vnoremap <ESC>[1;5C 5l
+nnoremap <ESC>[1;9C w
+inoremap <ESC>[1;9C <C-Right>
+vnoremap <ESC>[1;9C 5l
 
 " Ctrl P - Previous word
 call CreateShortcut("C-p", "b", "n")
@@ -501,10 +510,19 @@ inoremap <C-p> <C-Left>
 vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
-execute "set <M-D>=\e[1;3D"
-nnoremap <M-D> b
-inoremap <M-D> <C-Left>
-vnoremap <M-D> 5h
+" execute "set <M-D>=\e[1;3D"
+nnoremap <ESC>[1;3D b
+inoremap <ESC>[1;3D <C-Left>
+vnoremap <ESC>[1;3D 5h
+nnoremap <ESC>[D b
+inoremap <ESC>[D <C-Left>
+vnoremap <ESC>[D 5h
+nnoremap <ESC>[1;5D b
+inoremap <ESC>[1;5D <C-Left>
+vnoremap <ESC>[1;5D 5h
+nnoremap <ESC>[1;9D b
+inoremap <ESC>[1;9D <C-Left>
+vnoremap <ESC>[1;9D 5h
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
