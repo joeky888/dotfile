@@ -335,9 +335,9 @@ if has("clipboard")
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from system clipboard
-  call CreateShortcut("Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("Insert", "\"+gP", "n")
-  call CreateShortcut("Insert", "d\"+gP", "v")
+  inoremap <Insert> <C-o>"+gP<C-g>u
+  nnoremap <Insert> "+gPi<C-g>u
+  vnoremap <Insert> d"+gP
   cnoremap <Insert> <C-r>+
 else
   " Ctrl C - Copy
@@ -350,6 +350,9 @@ else
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Insert - Paste from vim clipboard
+  inoremap <Insert> <C-o>:normal! Pl<CR><C-g>u
+  nnoremap <Insert> Pli<C-g>u
+  vnoremap <Insert> dP
   call CreateShortcut("Insert", "<C-o>:normal! Pl<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
   call CreateShortcut("Insert", "Pl", "n")
   call CreateShortcut("Insert", "dP", "v")
@@ -1180,17 +1183,17 @@ if has("gui_running")
   cnoremap <C-x> <C-y><C-e><C-u>
 
   " Ctrl v is paste / override selected then paste
-  call CreateShortcut("C-v", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-v", "\"+gP", "n")
-  call CreateShortcut("C-v", "d\"+gP", "v")
+  inoremap <C-v> <C-o>"+gP<C-g>u
+  nnoremap <C-v> "+gPi<C-g>u
+  vnoremap <C-v> d"+gP
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
   cnoremap <C-v> <C-r>+
 
   " Shift-Insert same as Ctrl-v
-  call CreateShortcut("S-Insert", "<C-o>\"+gP<C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("S-Insert", "\"+gP", "n")
-  call CreateShortcut("S-Insert", "d\"+gP", "v")
+  inoremap <S-Insert> <C-o>"+gP<C-g>u
+  nnoremap <S-Insert> "+gPi<C-g>u
+  vnoremap <S-Insert> d"+gP
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
   cnoremap <C-v> <C-r>+
