@@ -483,6 +483,12 @@ call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-Right>
 vnoremap <C-n> 5l
 
+" Terminal kill a word
+nnoremap <Esc><BS> dBi
+inoremap <Esc><BS> <C-w>
+vnoremap <Esc><BS> d
+cnoremap <Esc><BS> <C-w>
+
 " Terminal Alt Right - Next word
 execute "set <M-C>=\e[1;3C"
 nnoremap <M-C> w
