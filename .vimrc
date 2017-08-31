@@ -317,10 +317,12 @@ onoremap <RightDrag>  <C-C><LeftDrag>
 call CreateShortcut("BS", "di<C-g>u", "v")
 
 " Ctrl A - Begin Line
-call CreateShortcut("C-a", "0", "inv")
+call CreateShortcut("C-a", "0", "nv")
+inoremap <C-a> <Home>
 
 " Ctrl E - End Line
-call CreateShortcut("C-e", "$l", "inv")
+call CreateShortcut("C-e", "$l", "nv")
+inoremap <C-e> <End>
 
 if has("clipboard")
   " Ctrl C - Copy to system clipboard and clipboard.txt
@@ -478,24 +480,24 @@ call CreateShortcut("A-Left", "gT", "inv")
 
 " Ctrl N - Next word
 call CreateShortcut("C-n", "w", "n")
-inoremap <C-n> <C-\><C-o>w
+inoremap <C-n> <C-Right>
 vnoremap <C-n> 5l
 
 " Terminal Alt Right - Next word
 execute "set <M-C>=\e[1;3C"
 nnoremap <M-C> w
-inoremap <M-C> <C-\><C-o>w
+inoremap <M-C> <C-Right>
 vnoremap <M-C> 5l
 
 " Ctrl P - Previous word
 call CreateShortcut("C-p", "b", "n")
-inoremap <C-p> <C-\><C-o>b
+inoremap <C-p> <C-Left>
 vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
 execute "set <M-D>=\e[1;3D"
 nnoremap <M-D> b
-inoremap <M-D> <C-\><C-o>b
+inoremap <M-D> <C-Left>
 vnoremap <M-D> 5h
 
 " Ctrl Left - Previous 5 column
