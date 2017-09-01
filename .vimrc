@@ -486,9 +486,9 @@ call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-Right>
 vnoremap <C-n> 5l
 
-" Terminal kill a word
-nnoremap <Esc><BS> dBi
-inoremap <Esc><BS> <C-w>
+" Terminal Alt Backspace kill a word
+nnoremap <Esc><BS> dBi<C-g>u
+inoremap <Esc><BS> <C-w><C-g>u
 vnoremap <Esc><BS> d
 cnoremap <Esc><BS> <C-w>
 
@@ -1202,6 +1202,20 @@ if has("gui_running")
   call CreateShortcut("C-BS", "di<C-g>u", "v")
   call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
   nnoremap <C-Del> dwi
+
+  " Alt - Backspace kill a word
+  nnoremap <A-BS> dBi<C-g>u
+  inoremap <A-BS> <C-w><C-g>u
+  vnoremap <A-BS> d
+  cnoremap <A-BS> <C-w>
+
+  " Alt - Arrow, Move a word
+  nnoremap <A-Right> w
+  inoremap <A-Right> <C-Right>
+  vnoremap <A-Right> 5l
+  nnoremap <A-Left> b
+  inoremap <A-Left> <C-Left>
+  vnoremap <A-Left> 5h
 
   " Get into insert mode by pressing any key in visual mode
   for b:char in split(g:CharSet, '\zs')
