@@ -473,7 +473,7 @@ call CreateShortcut("C-y", "<C-o><C-r>", "i", "noLeadingESCInInsert", "noTrailin
 cnoremap <C-y> <ESC><C-r>
 
 " Ctrl T - New tab
-call CreateShortcut("C-t", ":tabnew<CR>i", "inv", "noTrailingIInInsert", "cmdInVisual")
+call CreateShortcut("C-t", ":tabnew<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
 " Alt Right - Next tab
 call CreateShortcut("A-Right", "gt", "inv")
