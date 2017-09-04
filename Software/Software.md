@@ -77,6 +77,8 @@ Android
     * Undo Close for mobile
     * uBlock Origin
     * Video Background Play Fix
+* Facebook Messenger
+* LINE
 * Barcode Scanner ZXing
 * Sogou input method
 * Hacker's Keyboard
