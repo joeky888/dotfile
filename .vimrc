@@ -1073,10 +1073,10 @@ function! HighlightTXT()
   " Wide characters and non-ascii characters
   syn match nonascii   "[^\u0000-\u007F]"
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
-  hi def link ascii       Define
-  hi def link txtNumber	  Conditional
-  hi def link lineURL	    Green
-  hi def link nonascii    Identifier
+  hi def link ascii       Character
+  hi def link txtNumber	  Identifier
+  hi def link lineURL	    Define
+  hi def link nonascii    Conditional
 endfunction
 
 function! HighlightSRT()
