@@ -816,7 +816,8 @@ au CursorHold * let &ro = &ro
 " Red = #F92672, 161
 " Orange = #FD971F, 208
 " Yellow = #E6DB74, 144
-" Green = #A6E22E, 118
+" Light Green = #A6E22E, 118
+" Green = #00AF00, 34
 " Blue = #66D9EF, 81
 " Purple = #AE81FF, 135
 " Gray = #7E8E91, 59
@@ -838,8 +839,7 @@ hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 
 hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
 hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
-hi PreProc ctermfg=197 ctermbg=NONE cterm=NONE guifg=#f92672 guibg=NONE gui=NONE
-hi Search ctermfg=226 ctermbg=NONE cterm=NONE guibg=yellow guifg=black
+hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
 
 hi Boolean              ctermfg=135     guifg=#AE81FF
 hi Character            ctermfg=144     guifg=#E6DB74
@@ -1074,7 +1074,7 @@ function! HighlightTXT()
   syn match nonascii   "[^\u0000-\u007F]"
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
   hi def link ascii       Character
-  hi def link txtNumber	  Green
+  hi def link txtNumber	  PreProc
   hi def link lineURL	    Define
   hi def link nonascii    Conditional
 endfunction
