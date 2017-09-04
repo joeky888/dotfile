@@ -1055,6 +1055,7 @@ for syn in g:ftypes
 endfor
 
 autocmd FileType text call HighlightTXT()
+autocmd BufRead,BufNewFile,BufWritePost *.{log,LOG} call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
