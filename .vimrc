@@ -1074,7 +1074,7 @@ function! HighlightTXT()
   syn match nonascii   "[^\u0000-\u007F]"
   syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
   hi def link ascii       Define
-  hi def link txtNumber	  Number
+  hi def link txtNumber	  Conditional
   hi def link lineURL	    Green
   hi def link nonascii    Identifier
 endfunction
