@@ -48,6 +48,7 @@ Software
 * Neofetch
 * youtube-dl
 * you-get
+* danmaku2ass (m13253)
 
 Windows
 =====
