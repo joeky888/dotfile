@@ -34,6 +34,19 @@ A good Android phone
     * fastboot flash recovery recovery.img (OR fastboot flash recovery TWRP.img)
     * fastboot reboot-bootloader
 
+Backup .img files without pc
+=====
+* Open any terminal emulator on Android
+```sh
+dd if=/dev/block/mmcblk0p7 of=/sdcard/backups/boot.img
+dd if=/dev/block/mmcblk0p15 of=/sdcard/backups/cache.img
+dd if=/dev/block/mmcblk0p11 of=/sdcard/backups/logo.bin
+dd if=/dev/block/mmcblk0p2 of=/sdcard/backups/nvram.img
+dd if=/dev/block/mmcblk0p8 of=/sdcard/backups/recovery.img
+dd if=/dev/block/mmcblk0p14 of=/sdcard/backups/system.img
+dd if=/dev/block/mmcblk0p16 of=/sdcard/backups/userdata.img
+```
+
 ADB
 =====
 * Connecting from pc to phone
