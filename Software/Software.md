@@ -94,6 +94,7 @@ Android
 * F-Droid
 * TWRP Recovery
 * Magisk / Xposed
+* opengapps (flash it if gapps are not functional)
 
 Good Software Design
 =====
