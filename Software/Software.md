@@ -78,6 +78,7 @@ Android
     * Undo Close for mobile
     * uBlock Origin
     * Video Background Play Fix
+* OpenLauncher
 * Facebook Messenger
 * LINE
 * Barcode Scanner ZXing
