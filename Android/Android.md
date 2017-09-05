@@ -26,7 +26,7 @@ A good Android phone
 * Boot phone to TWRP, wipe DalvikCache / System / Data / Internal Storage / Cache
 * Boot phone to bootloader
 * Open cmd.exe and enter the following commands
-    * fastboot oem rebootRUU (if failed, try fastboot reboot-bootloader)
+    * fastboot oem rebootRUU (if failed, use fastboot reboot-bootloader)
     * fastboot erase system  (if failed ignore it)
     * fastboot erase cache   (if failed ignore it)
     * fastboot flash system system.img (OR fastboot flash system system\_image.emmc.win)
