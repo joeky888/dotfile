@@ -14,6 +14,13 @@ A good Android phone
 * 將 zip 放到 sd
 * 進入 recovery 刷入 zip
 
+Flash a new rom by PC
+=====
+* Install adb and fastboot on PC
+* unlock the phone
+* fastboot oem rebootRUU
+* fastboot flash zip xxx.zip
+
 磚機救援 (Recover a Bricked Android Phone)
 =====
 * Install adb and fastboot on PC
