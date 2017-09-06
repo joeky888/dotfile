@@ -406,12 +406,14 @@ call CreateShortcut("C-Down",  &scroll*5/3."j", "nv")
 inoremap <C-Down> <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
 
 " Ctrl U - Pageup
-call CreateShortcut("C-u", &scroll*5/3."k", "nv")
-inoremap <C-u> <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+execute 'nnoremap <silent> <C-u> '.&scroll*5/3.'k'
+execute 'inoremap <silent> <C-u> <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <C-u> '.&scroll*5/3.'k'
 
 " Ctrl J - Pagedown
-call CreateShortcut("C-j", &scroll*5/3."j", "nv")
-inoremap <C-j> <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+execute 'nnoremap <silent> <C-j> '.&scroll*5/3.'j'
+execute 'inoremap <silent> <C-j> <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <C-j> '.&scroll*5/3.'j'
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
@@ -538,38 +540,38 @@ cnoremap <ESC>[1;9D <C-Left>
 vnoremap <ESC>[1;9D 5h
 
 " Terminal Alt Up - Multiple UP keys
-nnoremap <silent> <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <silent> <ESC><ESC>OA    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <silent> <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <silent> <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <silent> <ESC>[1;3A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <silent> <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <silent> <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <silent> <ESC>[A    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <silent> <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <silent> <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <silent> <ESC>[1;5A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <silent> <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <silent> <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <silent> <ESC>[1;9A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <silent> <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
+execute 'nnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC><ESC>OA <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC>[1;3A <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC>[A '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC>[A <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC>[A '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC>[1;5A <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC>[1;9A '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC>[1;9A <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC>[1;9A '.&scroll*5/3.'k'
 
 " Terminal Alt Down - Multiple DOWN keys
-nnoremap <silent> <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <silent> <ESC><ESC>OB    <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <silent> <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <silent> <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <silent> <ESC>[1;3B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <silent> <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <silent> <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <silent> <ESC>[B   <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <silent> <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <silent> <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <silent> <ESC>[1;5B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <silent> <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <silent> <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <silent> <ESC>[1;9B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <silent> <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
+execute 'nnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC><ESC>OB <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC>[1;3B <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC>[B '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC>[B <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC>[B '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC>[1;5B <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC>[1;9B '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC>[1;9B <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC>[1;9B '.&scroll*5/3.'j'
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
@@ -1100,6 +1102,11 @@ for syn in g:ftypes
   execute "noremenu Edit.Filetype.".split(syn, '\zs')[0].".".syn." :setlocal filetype=".syn."<CR>"
 endfor
 
+" Get into insert mode by pressing any key in visual mode
+for b:char in split(g:CharSet, '\zs')
+  execute "vnoremap ".b:char." di<C-g>u".b:char
+endfor
+
 autocmd FileType text call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{log,LOG} call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
@@ -1265,9 +1272,4 @@ if has("gui_running")
   inoremap <A-Left> <C-Left>
   cnoremap <A-Left> <C-Left>
   vnoremap <A-Left> 5h
-
-  " Get into insert mode by pressing any key in visual mode
-  for b:char in split(g:CharSet, '\zs')
-    execute "vnoremap ".b:char." di<C-g>u".b:char
-  endfor
 endif
