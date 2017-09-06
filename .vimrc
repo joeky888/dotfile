@@ -639,7 +639,7 @@ endfunction
 " autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
 autocmd FileType * execute 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim'
 set completeopt=menuone
-set complete=.
+set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
 set shortmess+=c
 let autocomp=1
