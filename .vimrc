@@ -475,12 +475,6 @@ cnoremap <C-y> <ESC><C-r>
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
 
-" Alt Right - Next tab
-call CreateShortcut("A-Right", "gt", "inv")
-
-" Alt Left - Previous tab
-call CreateShortcut("A-Left", "gT", "inv")
-
 " Ctrl N - Next word
 call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-Right>
@@ -494,6 +488,10 @@ cnoremap <Esc><BS> <C-w>
 
 " Terminal Alt Right - Next word
 " execute "set <M-C>=\e[1;3C"
+nnoremap <ESC>OC w
+inoremap <ESC>OC <C-Right>
+cnoremap <ESC>OC <C-Right>
+vnoremap <ESC>OC 5l
 nnoremap <ESC>[1;3C w
 inoremap <ESC>[1;3C <C-Right>
 cnoremap <ESC>[1;3C <C-Right>
@@ -518,6 +516,10 @@ vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
 " execute "set <M-D>=\e[1;3D"
+nnoremap <ESC>OD b
+inoremap <ESC>OD <C-Left>
+cnoremap <ESC>OD <C-Left>
+vnoremap <ESC>OD 5h
 nnoremap <ESC>[1;3D b
 inoremap <ESC>[1;3D <C-Left>
 cnoremap <ESC>[1;3D <C-Left>
@@ -534,6 +536,40 @@ nnoremap <ESC>[1;9D b
 inoremap <ESC>[1;9D <C-Left>
 cnoremap <ESC>[1;9D <C-Left>
 vnoremap <ESC>[1;9D 5h
+
+" Terminal Alt Up - Multiple UP keys
+nnoremap <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <ESC><ESC>OA    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <ESC>[1;3A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <ESC>[A    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <ESC>[1;5A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <ESC>[1;9A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
+
+" Terminal Alt Down - Multiple DOWN keys
+nnoremap <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <ESC><ESC>OB    <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <ESC>[1;3B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <ESC>[B   <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <ESC>[1;5B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <ESC>[1;9B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
@@ -1223,9 +1259,11 @@ if has("gui_running")
   " Alt - Arrow, Move a word
   nnoremap <A-Right> w
   inoremap <A-Right> <C-Right>
+  cnoremap <A-Right> <C-Right>
   vnoremap <A-Right> 5l
   nnoremap <A-Left> b
   inoremap <A-Left> <C-Left>
+  cnoremap <A-Left> <C-Left>
   vnoremap <A-Left> 5h
 
   " Get into insert mode by pressing any key in visual mode
