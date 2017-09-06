@@ -7,8 +7,8 @@ A good Android phone
 
 刷機 (flash a new rom)
 =====
-* 先unlock或root或兩個都做
-* 刷第三方recovery
+* 先unlock
+* 刷第三方recovery,刷不了先root再刷一次
 * 備份系統到 sd 避免出錯
 * 將 zip 裡面的 recovery 資料夾刪除，重新壓成 .zip
 * 將 zip 放到 sd
