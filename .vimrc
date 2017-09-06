@@ -488,10 +488,10 @@ cnoremap <Esc><BS> <C-w>
 
 " Terminal Alt Right - Next word
 " execute "set <M-C>=\e[1;3C"
-nnoremap <ESC>OC w
-inoremap <ESC>OC <C-Right>
-cnoremap <ESC>OC <C-Right>
-vnoremap <ESC>OC 5l
+nnoremap <ESC><ESC>OC w
+inoremap <ESC><ESC>OC <C-Right>
+cnoremap <ESC><ESC>OC <C-Right>
+vnoremap <ESC><ESC>OC 5l
 nnoremap <ESC>[1;3C w
 inoremap <ESC>[1;3C <C-Right>
 cnoremap <ESC>[1;3C <C-Right>
@@ -516,10 +516,10 @@ vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
 " execute "set <M-D>=\e[1;3D"
-nnoremap <ESC>OD b
-inoremap <ESC>OD <C-Left>
-cnoremap <ESC>OD <C-Left>
-vnoremap <ESC>OD 5h
+nnoremap <ESC><ESC>OD b
+inoremap <ESC><ESC>OD <C-Left>
+cnoremap <ESC><ESC>OD <C-Left>
+vnoremap <ESC><ESC>OD 5h
 nnoremap <ESC>[1;3D b
 inoremap <ESC>[1;3D <C-Left>
 cnoremap <ESC>[1;3D <C-Left>
