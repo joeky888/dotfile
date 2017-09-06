@@ -538,38 +538,38 @@ cnoremap <ESC>[1;9D <C-Left>
 vnoremap <ESC>[1;9D 5h
 
 " Terminal Alt Up - Multiple UP keys
-nnoremap <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <ESC><ESC>OA    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <ESC>[1;3A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <ESC>[A    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <ESC>[1;5A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
-nnoremap <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
-inoremap <ESC>[1;9A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
-vnoremap <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <silent> <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <silent> <ESC><ESC>OA    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <silent> <ESC><ESC>OA    :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <silent> <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <silent> <ESC>[1;3A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <silent> <ESC>[1;3A :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <silent> <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <silent> <ESC>[A    <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <silent> <ESC>[A    :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <silent> <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <silent> <ESC>[1;5A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <silent> <ESC>[1;5A :execute "normal! ".&scroll*5/3."k"<CR>
+nnoremap <silent> <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
+inoremap <silent> <ESC>[1;9A <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+vnoremap <silent> <ESC>[1;9A :execute "normal! ".&scroll*5/3."k"<CR>
 
 " Terminal Alt Down - Multiple DOWN keys
-nnoremap <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <ESC><ESC>OB    <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <ESC>[1;3B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <ESC>[B   <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <ESC>[1;5B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
-nnoremap <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
-inoremap <ESC>[1;9B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
-vnoremap <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <silent> <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <silent> <ESC><ESC>OB    <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <silent> <ESC><ESC>OB    :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <silent> <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <silent> <ESC>[1;3B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <silent> <ESC>[1;3B :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <silent> <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <silent> <ESC>[B   <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <silent> <ESC>[B    :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <silent> <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <silent> <ESC>[1;5B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <silent> <ESC>[1;5B :execute "normal! ".&scroll*5/3."j"<CR>
+nnoremap <silent> <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
+inoremap <silent> <ESC>[1;9B <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+vnoremap <silent> <ESC>[1;9B :execute "normal! ".&scroll*5/3."j"<CR>
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
