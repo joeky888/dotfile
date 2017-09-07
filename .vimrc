@@ -77,6 +77,8 @@ execute ":silent tab all"
 " Open help in new tabs
 cnoreabbrev help <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
 cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
+cnoreabbrev edit <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'edit')<CR>
+cnoreabbrev e <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'e')<CR>
 
 """ Prevent lag when hitting ESC
 set ttimeoutlen=0
@@ -642,7 +644,7 @@ vnoremap \ <ESC>:call WrapSelection("\\","\\")<CR>
 function! WrapSelection(c1, c2)
   execute "normal! `<i".a:c1
   execute "normal! `>a".a:c2
-  execute "normal! l"
+  normal! l
 endfunction
 
 " Commenting blocks of code.
