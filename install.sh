@@ -79,6 +79,10 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
 
 
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
+  if [[ ! $(command -v aria2c) ]]; then
+    echo "Please install aria2"
+    exit 1
+  fi
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
