@@ -398,12 +398,14 @@ call CreateShortcut("C-Left", "b", "n")
 call CreateShortcut("C-Right", "w", "n")
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
-call CreateShortcut("C-Up", &scroll*5/3."k", "nv")
-inoremap <C-Up> <C-\><C-O>:execute "normal! ".&scroll*5/3."k"<CR>
+execute 'nnoremap <silent> <C-Up> '.&scroll*5/3.'k'
+execute 'inoremap <silent> <C-Up> <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <C-Up> '.&scroll*5/3.'k'
 
 " Ctrl Down - Pagedown
-call CreateShortcut("C-Down",  &scroll*5/3."j", "nv")
-inoremap <C-Down> <C-\><C-O>:execute "normal! ".&scroll*5/3."j"<CR>
+execute 'nnoremap <silent> <C-Down> '.&scroll*5/3.'j'
+execute 'inoremap <silent> <C-Down> <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <C-Down> '.&scroll*5/3.'j'
 
 " Ctrl U - Pageup
 execute 'nnoremap <silent> <C-u> '.&scroll*5/3.'k'
