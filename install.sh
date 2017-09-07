@@ -128,7 +128,7 @@ import sys, os, site
 
 pkgLocation = site.getsitepackages()
 for location in pkgLocation:
-  os.system("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+  os.system("cd $USERPROFILE && install -D dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 END
 
 
