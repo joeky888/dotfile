@@ -90,16 +90,14 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   apt-cyg install cygwin-devel python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-  sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
-  mount -a
   curl 'https://bootstrap.pypa.io/get-pip.py' | python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
   echo y | pip install bypy
   rm -rf ~/dotfile
-  git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
-  cd ~/dotfile
+  git clone --depth=1 https://github.com/j16180339887/dotfile.git $USERPROFILE/dotfile
+  cd $USERPROFILE/dotfile
   git submodule init
   git submodule update
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
