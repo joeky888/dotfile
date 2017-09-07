@@ -96,12 +96,9 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   echo y | pip install youtube-dl
   echo y | pip install you-get
   echo y | pip install bypy
-  cd $USERPROFILE
-  rm -rf dotfile/
+  cd $USERPROFILE && rm -rf dotfile/
   git clone --depth=1 https://github.com/j16180339887/dotfile.git dotfile
-  cd dotfile
-  git submodule init
-  git submodule update
+  cd dotfile && git submodule init && git submodule update
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
