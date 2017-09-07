@@ -214,3 +214,48 @@ aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapsh
 
 * If ./configure failed
     * check the error message at end of the file 'config.log'
+
+MinGW cross compile on Cygwin (To be continue)
+=====
+* Install packages
+```sh
+apt-cyg install mingw64-x86_64-gcc-core mingw64-x86_64-gcc-g++ mingw64-x86_64-pkg-config
+apt-cyg install mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
+```
+* Install liblame
+```sh
+aria2c https://github.com/j16180339887/lame/archive/master.zip && 7z x lame-master.zip && cd lame-master
+./configure --host=x86_64-w64-mingw32 --prefix=/usr --enable-static --disable-shared && make -j 8 && make install
+```
+* Install libfdk-aac
+```sh
+aria2c https://github.com/mstorsjo/fdk-aac/archive/master.zip && 7z x fdk-aac-master.zip && cd fdk-aac-master
+./autogen.sh && ./configure --enable-static --disable-shared --host=x86_64-w64-mingw32 --prefix=/usr && make -j 8
+```
+* Install x264
+```sh
+aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_x264.tar.bz2 && 7z x last_x264.tar && cd x264*
+./configure --enable-static --host=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --prefix=/usr && make -j 8 && make install
+```
+* Install x265
+Add this code to the top of source/CMakeLists.txt file
+```cmake
+SET(CMAKE_SYSTEM_NAME Windows)
+set(TOOLCHAIN_PREFIX x86_64-w64-mingw32)
+set(CMAKE_C_COMPILER ${TOOLCHAIN_PREFIX}-gcc)
+set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PREFIX}-g++)
+set(CMAKE_RC_COMPILER ${TOOLCHAIN_PREFIX}-windres)
+SET(CMAKE_ASM_YASM_COMPILER yasm)
+SET(CMAKE_CXX_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
+SET(CMAKE_C_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
+SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
+SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
+```
+```sh
+cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off -DCMAKE_INSTALL_PREFIX:PATH=/usr ../../source && make -j 8 && make install
+```
+* Install ffmpeg W/O liblame, libfdk-aac, x264 and x265
+```sh
+aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg
+./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --enable-cross-compile --enable-w32threads --prefix=/usr --pkg-config=pkg-config --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
+```
