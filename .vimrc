@@ -494,14 +494,18 @@ cnoremap <Esc><BS> <C-w>
 
 " Terminal Alt Right - Next word
 " execute "set <M-C>=\e[1;3C"
+nnoremap <ESC><ESC>OC w
+inoremap <ESC><ESC>OC <C-Right>
+cnoremap <ESC><ESC>OC <C-Right>
+vnoremap <ESC><ESC>OC 5l
 nnoremap <ESC>[1;3C w
 inoremap <ESC>[1;3C <C-Right>
 cnoremap <ESC>[1;3C <C-Right>
 vnoremap <ESC>[1;3C 5l
-nnoremap <ESC>[C w
-inoremap <ESC>[C <C-Right>
-cnoremap <ESC>[C <C-Right>
-vnoremap <ESC>[C 5l
+nnoremap <ESC><ESC>[C w
+inoremap <ESC><ESC>[C <C-Right>
+cnoremap <ESC><ESC>[C <C-Right>
+vnoremap <ESC><ESC>[C 5l
 nnoremap <ESC>[1;5C w
 inoremap <ESC>[1;5C <C-Right>
 cnoremap <ESC>[1;5C <C-Right>
@@ -518,14 +522,18 @@ vnoremap <C-p> 5h
 
 " Terminal Alt Left - Previous word
 " execute "set <M-D>=\e[1;3D"
+nnoremap <ESC><ESC>OD b
+inoremap <ESC><ESC>OD <C-Left>
+cnoremap <ESC><ESC>OD <C-Left>
+vnoremap <ESC><ESC>OD 5h
 nnoremap <ESC>[1;3D b
 inoremap <ESC>[1;3D <C-Left>
 cnoremap <ESC>[1;3D <C-Left>
 vnoremap <ESC>[1;3D 5h
-nnoremap <ESC>[D b
-inoremap <ESC>[D <C-Left>
-cnoremap <ESC>[D <C-Left>
-vnoremap <ESC>[D 5h
+nnoremap <ESC><ESC>[D b
+inoremap <ESC><ESC>[D <C-Left>
+cnoremap <ESC><ESC>[D <C-Left>
+vnoremap <ESC><ESC>[D 5h
 nnoremap <ESC>[1;5D b
 inoremap <ESC>[1;5D <C-Left>
 cnoremap <ESC>[1;5D <C-Left>
@@ -536,12 +544,15 @@ cnoremap <ESC>[1;9D <C-Left>
 vnoremap <ESC>[1;9D 5h
 
 " Terminal Alt Up - Multiple UP keys
+execute 'nnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC><ESC>OA <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
 execute 'nnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
 execute 'inoremap <silent> <ESC>[1;3A <C-\><C-O>'.&scroll*5/3.'k'
 execute 'vnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
-execute 'nnoremap <silent> <ESC>[A '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC>[A <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC>[A '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC><ESC>[A '.&scroll*5/3.'k'
+execute 'inoremap <silent> <ESC><ESC>[A <C-\><C-O>'.&scroll*5/3.'k'
+execute 'vnoremap <silent> <ESC><ESC>[A '.&scroll*5/3.'k'
 execute 'nnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
 execute 'inoremap <silent> <ESC>[1;5A <C-\><C-O>'.&scroll*5/3.'k'
 execute 'vnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
@@ -550,12 +561,15 @@ execute 'inoremap <silent> <ESC>[1;9A <C-\><C-O>'.&scroll*5/3.'k'
 execute 'vnoremap <silent> <ESC>[1;9A '.&scroll*5/3.'k'
 
 " Terminal Alt Down - Multiple DOWN keys
+execute 'nnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC><ESC>OB <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
 execute 'nnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
 execute 'inoremap <silent> <ESC>[1;3B <C-\><C-O>'.&scroll*5/3.'j'
 execute 'vnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
-execute 'nnoremap <silent> <ESC>[B '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC>[B <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC>[B '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC><ESC>[B '.&scroll*5/3.'j'
+execute 'inoremap <silent> <ESC><ESC>[B <C-\><C-O>'.&scroll*5/3.'j'
+execute 'vnoremap <silent> <ESC><ESC>[B '.&scroll*5/3.'j'
 execute 'nnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
 execute 'inoremap <silent> <ESC>[1;5B <C-\><C-O>'.&scroll*5/3.'j'
 execute 'vnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
