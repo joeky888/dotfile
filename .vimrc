@@ -1130,7 +1130,7 @@ function! HighlightTXT()
     syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
     " Wide characters and non-ascii characters
     syn match nonascii   "[^\u0000-\u007F]"
-    syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+    syn match lineURL /\(https\?\|ftps\?\|git\|ssh\):\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
     hi def link ascii       Function
     hi def link txtNumber	  Define
     hi def link lineURL	    Green
