@@ -1111,30 +1111,31 @@ for b:char in split(g:CharSet, '\zs')
   execute "vnoremap ".b:char." di<C-g>u".b:char
 endfor
 
-autocmd FileType text call HighlightTXT()
-autocmd BufRead,BufNewFile,BufWritePost *.{log,LOG} call HighlightTXT()
+autocmd BufRead,BufNewFile,BufWritePost * call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 
 function! HighlightTXT()
-  syn match ascii      "[\u0030-\u007A]"
-  " Copy from $VIM/syntax/lua.vim
-  " integer number
-  syn match txtNumber  "\<\d\+\>"
-  " floating point number, with dot, optional exponent
-  syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
-  " floating point number, starting with a dot, optional exponent
-  syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
-  " floating point number, without dot, with exponent
-  syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
-  " Wide characters and non-ascii characters
-  syn match nonascii   "[^\u0000-\u007F]"
-  syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
-  hi def link ascii       Character
-  hi def link txtNumber	  Define
-  hi def link lineURL	    Green
-  hi def link nonascii    Conditional
+  if &filetype == "" || &filetype == "text"
+    syn match ascii      "[\u0030-\u007A]"
+    " Copy from $VIM/syntax/lua.vim
+    " integer number
+    syn match txtNumber  "\<\d\+\>"
+    " floating point number, with dot, optional exponent
+    syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+    " floating point number, starting with a dot, optional exponent
+    syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
+    " floating point number, without dot, with exponent
+    syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
+    " Wide characters and non-ascii characters
+    syn match nonascii   "[^\u0000-\u007F]"
+    syn match lineURL /https\?:\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+    hi def link ascii       Function
+    hi def link txtNumber	  Define
+    hi def link lineURL	    Green
+    hi def link nonascii    Conditional
+  endif
 endfunction
 
 function! HighlightSRT()
