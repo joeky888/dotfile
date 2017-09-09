@@ -183,13 +183,25 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
   bindkey "^[[1;3D" backward-word
+  bindkey "^[[1;5C" forward-word
+  bindkey "^[[1;5D" backward-word
   bindkey "\e\eOC" forward-word
   bindkey "\e\eOD" backward-word
   bindkey "\e\e[C" forward-word
   bindkey "\e\e[D" backward-word
+
+  # Up/Down keys for searching history
+  bindkey "\e\eA" history-beginning-search-backward
+  bindkey "\e\eB" history-beginning-search-forward
+  bindkey "^[[A" history-beginning-search-backward
+  bindkey "^[[B" history-beginning-search-forward
+
   bindkey "^N" forward-word
   bindkey "^P" backward-word
   bindkey "^B" backward-kill-word
+  bindkey '^A' beginning-of-line
+  bindkey '^E' end-of-line
+  bindkey '^R' history-incremental-search-backward
   bindkey "\e\e^H" backward-kill-word # Alt + Backspace
   bindkey "^Z" undo
   bindkey "^Y" redo
