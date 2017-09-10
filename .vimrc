@@ -1115,6 +1115,7 @@ autocmd BufRead,BufNewFile,BufWritePost * call HighlightTXT()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 
 function! HighlightTXT()
   if &filetype == "" || &filetype == "text"
@@ -1208,6 +1209,114 @@ function! HighlightASS()
   hi def link ssaDialogText      Identifier
   hi def link ssaTextComment     Comment
   hi def link ssaTextSubCode     Comment
+endfunction
+
+function! HighlightPS1()
+  " Project Repository: https://github.com/PProvost/vim-ps1
+  set ft=ps1
+  syn case ignore
+  syn cluster ps1NotTop contains=@ps1Comment,ps1CDocParam,ps1FunctionDeclaration
+  syn keyword ps1CommentTodo TODO FIXME XXX TBD HACK NOTE contained
+  syn match ps1CDocParam /.*/ contained
+  syn match ps1CommentDoc /^\s*\zs\.\w\+\>/ nextgroup=ps1CDocParam contained
+  syn match ps1CommentDoc /#\s*\zs\.\w\+\>/ nextgroup=ps1CDocParam contained
+  syn match ps1Comment /#.*/ contains=ps1CommentTodo,ps1CommentDoc,@Spell
+  syn region ps1Comment start="<#" end="#>" contains=ps1CommentTodo,ps1CommentDoc,@Spell
+  syn keyword ps1Conditional if else elseif switch default
+  syn keyword ps1Repeat while for do until break continue foreach in
+  syn match ps1Repeat /\<foreach\>/ nextgroup=ps1Block skipwhite
+  syn match ps1Keyword /\<while\>/ nextgroup=ps1Block skipwhite
+  syn match ps1Keyword /\<where\>/ nextgroup=ps1Block skipwhite
+  syn keyword ps1Exception begin process end exit inlinescript parallel sequence
+  syn keyword ps1Keyword try catch finally throw
+  syn keyword ps1Keyword return filter in trap param data dynamicparam
+  syn keyword ps1Constant $true $false $null
+  syn match ps1Constant +\$?+
+  syn match ps1Constant +\$_+
+  syn match ps1Constant +\$\$+
+  syn match ps1Constant +\$^+
+  syn keyword ps1Keyword class define from using var
+  syn keyword ps1Keyword function nextgroup=ps1FunctionDeclaration skipwhite
+  syn keyword ps1Keyword filter nextgroup=ps1FunctionDeclaration skipwhite
+  syn keyword ps1Keyword workflow nextgroup=ps1FunctionDeclaration skipwhite
+  syn keyword ps1Keyword configuration nextgroup=ps1FunctionDeclaration skipwhite
+  syn keyword ps1Keyword class nextgroup=ps1FunctionDeclaration skipwhite
+  syn keyword ps1Keyword enum nextgroup=ps1FunctionDeclaration skipwhite
+  syn match ps1FunctionDeclaration /\w\+\(-\w\+\)*/ contained
+  syn match ps1FunctionInvocation /\w\+\(-\w\+\)\+/
+  syn match ps1Type /\[[a-z_][a-z0-9_.,\[\]]\+\]/
+  syn match ps1ScopeModifier /\(global:\|local:\|private:\|script:\)/ contained
+  syn match ps1Variable /\$\w\+\(:\w\+\)\?/ contains=ps1ScopeModifier
+  syn match ps1Variable /\${\w\+\(:\w\+\)\?}/ contains=ps1ScopeModifier
+  syn keyword ps1Operator -eq -ne -ge -gt -lt -le -like -notlike -match -notmatch -replace -split -contains -notcontains
+  syn keyword ps1Operator -ieq -ine -ige -igt -ile -ilt -ilike -inotlike -imatch -inotmatch -ireplace -isplit -icontains -inotcontains
+  syn keyword ps1Operator -ceq -cne -cge -cgt -clt -cle -clike -cnotlike -cmatch -cnotmatch -creplace -csplit -ccontains -cnotcontains
+  syn keyword ps1Operator -in -notin
+  syn keyword ps1Operator -is -isnot -as -join
+  syn keyword ps1Operator -and -or -not -xor -band -bor -bnot -bxor
+  syn keyword ps1Operator -f
+  syn match ps1Operator /!/
+  syn match ps1Operator /=/
+  syn match ps1Operator /+=/
+  syn match ps1Operator /-=/
+  syn match ps1Operator /\*=/
+  syn match ps1Operator /\/=/
+  syn match ps1Operator /%=/
+  syn match ps1Operator /+/
+  syn match ps1Operator /-\(\s\|\d\|\.\|\$\|(\)\@=/
+  syn match ps1Operator /\*/
+  syn match ps1Operator /\//
+  syn match ps1Operator /|/
+  syn match ps1Operator /%/
+  syn match ps1Operator /&/
+  syn match ps1Operator /::/
+  syn match ps1Operator /,/
+  syn match ps1Operator /\(^\|\s\)\@<=\. \@=/
+  syn region ps1String start=/"/ skip=/`"/ end=/"/ contains=@ps1StringSpecial,@Spell
+  syn region ps1String start=/'/ skip=/''/ end=/'/
+  syn region ps1String start=/@"$/ end=/^"@/ contains=@ps1StringSpecial,@Spell
+  syn region ps1String start=/@'$/ end=/^'@/
+  syn match ps1Escape /`./
+  syn region ps1Interpolation matchgroup=ps1InterpolationDelimiter start="$(" end=")" contained contains=ALLBUT,@ps1NotTop
+  syn region ps1NestedParentheses start="(" skip="\\\\\|\\)" matchgroup=ps1Interpolation end=")" transparent contained
+  syn cluster ps1StringSpecial contains=ps1Escape,ps1Interpolation,ps1Variable,ps1Boolean,ps1Constant,ps1BuiltIn,@Spell
+  syn match   ps1Number		"\(\<\|-\)\@<=\(0[xX]\x\+\|\d\+\)\([KMGTP][B]\)\=\(\>\|-\)\@="
+  syn match   ps1Number		"\(\(\<\|-\)\@<=\d\+\.\d*\|\.\d\+\)\([eE][-+]\=\d\+\)\=[dD]\="
+  syn match   ps1Number		"\<\d\+[eE][-+]\=\d\+[dD]\=\>"
+  syn match   ps1Number		"\<\d\+\([eE][-+]\=\d\+\)\=[dD]\>"
+  syn match ps1Boolean "$\%(true\|false\)\>"
+  syn match ps1Constant /\$null\>/
+  syn match ps1BuiltIn "$^\|$?\|$_\|$\$"
+  syn match ps1BuiltIn "$\%(args\|error\|foreach\|home\|input\)\>"
+  syn match ps1BuiltIn "$\%(match\(es\)\?\|myinvocation\|host\|lastexitcode\)\>"
+  syn match ps1BuiltIn "$\%(ofs\|shellid\|stacktrace\)\>"
+
+	hi def link ps1Number Number
+	hi def link ps1Block Block
+	hi def link ps1Region Region
+	hi def link ps1Exception Exception
+	hi def link ps1Constant Constant
+	hi def link ps1String String
+	hi def link ps1Escape SpecialChar
+	hi def link ps1InterpolationDelimiter Delimiter
+	hi def link ps1Conditional Conditional
+	hi def link ps1FunctionDeclaration Function
+	hi def link ps1FunctionInvocation Function
+	hi def link ps1Variable Identifier
+	hi def link ps1Boolean Boolean
+	hi def link ps1Constant Constant
+	hi def link ps1BuiltIn StorageClass
+	hi def link ps1Type Type
+	hi def link ps1ScopeModifier StorageClass
+	hi def link ps1Comment Comment
+	hi def link ps1CommentTodo Todo
+	hi def link ps1CommentDoc Tag
+	hi def link ps1CDocParam Todo
+	hi def link ps1Operator Operator
+	hi def link ps1Repeat Repeat
+	hi def link ps1RepeatAndCmdlet Repeat
+	hi def link ps1Keyword Keyword
+	hi def link ps1KeywordAndCmdlet Keyword
 endfunction
 
 if has("gui_running")
