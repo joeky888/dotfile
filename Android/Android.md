@@ -68,4 +68,4 @@ Android X86 on virtualbox
 =====
 * Power off
     * Press Right Ctrl + H
-* Install Flashify from Google Play for flash roms
+* Install Flashify or FlashFire from Google Play for flash roms
