@@ -63,3 +63,9 @@ ADB
 * Install .apk to phone
     * Put xxx.apk to same folder with cmd.exe
     * adb -s SerialNumberOfPhone install -r xxx.apk
+
+Android X86 on virtualbox
+=====
+* Power off
+    * Press Right Ctrl + H
+* Install Flashify from Google Play for flash roms
