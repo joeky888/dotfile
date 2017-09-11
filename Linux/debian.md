@@ -1,7 +1,7 @@
 Install latest packages
 =====
 * $ sudoedit /etc/apt/sources.list
-* Add "deb http://ftp.<COURTRY>.debian.org/debian/ stretch main contrib non-free"
+* Add "deb http://ftp.<COUNRTRY>.debian.org/debian/ stretch main contrib non-free"
 ```debsources
 deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free
 ```
