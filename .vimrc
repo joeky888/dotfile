@@ -992,6 +992,8 @@ command! JsonMinify      execute "call JsonMinify()"
 
 " XML pretty by vim
 function! XmlBeautify()
+  " Must call XmlMinify() twice
+  call XmlMinify()
   call XmlMinify()
   execute "%s/></>\\r</e"
   filetype plugin indent on
