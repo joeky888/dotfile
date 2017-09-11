@@ -1116,6 +1116,7 @@ autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+autocmd FileType c,cpp,javascript call HighlightC()
 
 function! HighlightTXT()
   if &filetype == "" || &filetype == "text"
@@ -1317,6 +1318,16 @@ function! HighlightPS1()
 	hi def link ps1RepeatAndCmdlet Repeat
 	hi def link ps1Keyword Keyword
 	hi def link ps1KeywordAndCmdlet Keyword
+endfunction
+
+function! HighlightC()
+  syn match    cCustomParen    "(" contains=cParen,cCppParen
+  syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
+  syn match    cCustomScope    "::"
+  syn match    cCustomClass    "\w\+\s*::" contains=cCustomScope
+
+  hi def link cCustomFunc  Identifier
+  hi def link cCustomClass Identifier
 endfunction
 
 if has("gui_running")
