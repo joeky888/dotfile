@@ -992,11 +992,10 @@ command! JsonMinify      execute "call JsonMinify()"
 
 " XML pretty by vim
 function! XmlBeautify()
-  " Must call XmlMinify() twice
   call XmlMinify()
-  call XmlMinify()
+  setlocal filetype=xml
+  filetype indent on
   execute "%s/></>\\r</e"
-  filetype plugin indent on
   normal! gg=G
   " Recolor the file again
   setlocal filetype=xml
