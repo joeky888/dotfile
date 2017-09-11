@@ -1120,23 +1120,28 @@ autocmd FileType c,cpp,javascript call HighlightC()
 
 function! HighlightTXT()
   if &filetype == "" || &filetype == "text"
-    syn match ascii      "[\u0030-\u007A]"
+    syn match alphabet      "[\u0041-\u005A]"
+    syn match alphabet      "[\u0061-\u007A]"
     " Copy from $VIM/syntax/lua.vim
     " integer number
-    syn match txtNumber  "\<\d\+\>"
+    syn match txtNumber     "\<\d\+\>"
     " floating point number, with dot, optional exponent
-    syn match txtNumber  "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
+    syn match txtNumber     "\<\d\+\.\d*\%([eE][-+]\=\d\+\)\=\>"
     " floating point number, starting with a dot, optional exponent
-    syn match txtNumber  "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
+    syn match txtNumber     "\.\d\+\%([eE][-+]\=\d\+\)\=\>"
     " floating point number, without dot, with exponent
-    syn match txtNumber  "\<\d\+[eE][-+]\=\d\+\>"
+    syn match txtNumber     "\<\d\+[eE][-+]\=\d\+\>"
     " Wide characters and non-ascii characters
-    syn match nonascii   "[^\u0000-\u007F]"
-    syn match lineURL /\(https\?\|ftps\?\|git\|ssh\):\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
-    hi def link ascii       Function
-    hi def link txtNumber	  Define
-    hi def link lineURL	    Green
-    hi def link nonascii    Conditional
+    syn match nonalphabet   "[\u0021-\u002F]"
+    syn match nonalphabet   "[\u003A-\u0040]"
+    syn match nonalphabet   "[\u005B-\u0060]"
+    syn match nonalphabet   "[\u007B-\u007E]"
+    syn match nonalphabet   "[^\u0000-\u007F]"
+    syn match lineURL       /\(https\?\|ftps\?\|git\|ssh\):\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
+    hi def link alphabet      Function
+    hi def link txtNumber	    Define
+    hi def link lineURL	      Green
+    hi def link nonalphabet   Conditional
   endif
 endfunction
 
