@@ -122,6 +122,13 @@ find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -c:a libopus -map 0:0 -map_cha
 find . -name '*.rmvb' -exec sh -c 'ffmpeg -i "$0" -i "${0%.rmvb}l.opus" -i "${0%.rmvb}r.opus" -map 0:1 -map 1:0 -map 2:0 -metadata:s:a:0 title="國語" -metadata:s:a:1 title="Korean" -disposition:a:0 forced -c:a copy -y "${0%.rmvb}.mkv" ' {} \;
 ```
 
+Ignore errors
+=====
+* Must put this option before the input file
+```sh
+ffmpeg -err_detect ignore_err -i input.mp4 -c copy output.mkv
+```
+
 Softsub .idx and .sub files into .mkv
 ======
 ```sh
