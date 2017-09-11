@@ -26,6 +26,7 @@ Software
 * OBS MP
 * Aegisub
 * Audacity
+* LMMS
 * Qt
 * PyCharm Community Edition
 * Cheat Engine
