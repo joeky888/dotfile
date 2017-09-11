@@ -7,3 +7,7 @@ TJDict
 SimpleUndoClose
 Tampermonkey
 Turbo Download Manager (Opera Extension)
+Monokai for Chrome:
+    * chrome://flags -> Enable Developer Tools experiments -> enable -> Relaunch Now
+    * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
+
