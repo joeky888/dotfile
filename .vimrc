@@ -1120,8 +1120,7 @@ autocmd FileType c,cpp,javascript call HighlightC()
 
 function! HighlightTXT()
   if &filetype == "" || &filetype == "text"
-    syn match alphabet      "[\u0041-\u005A]"
-    syn match alphabet      "[\u0061-\u007A]"
+    syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
     " integer number
     syn match txtNumber     "\<\d\+\>"
@@ -1138,7 +1137,7 @@ function! HighlightTXT()
     syn match nonalphabet   "[\u007B-\u007E]"
     syn match nonalphabet   "[^\u0000-\u007F]"
     syn match lineURL       /\(https\?\|ftps\?\|git\|ssh\):\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*/
-    hi def link alphabet      Function
+    hi def link alphanumeric  Function
     hi def link txtNumber	    Define
     hi def link lineURL	      Green
     hi def link nonalphabet   Conditional
