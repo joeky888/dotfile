@@ -14,6 +14,8 @@ if [ $(command -v tmux) ] ; then
       exec tmux
     fi
   fi
+elif [ $(command -v zsh) ] ; then
+  exec zsh
 fi
 
 export LANG="en_US.UTF-8"
