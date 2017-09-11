@@ -86,7 +86,7 @@ Android
 * Hacker's Keyboard
 * Termux
 * DroidVim
-* VLC
+* VLC nightly
 * FX File Explorer
 * WPS office
 * WiFiAnalyzer open source
