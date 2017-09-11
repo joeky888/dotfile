@@ -1152,13 +1152,13 @@ function! HighlightSRT()
   setlocal filetype=srt
   syn case ignore
   syn match srtContent ".*"
-  syn match srtArrow " --> "
+  syn match srtArrow "-->"
   syn match srtComment "^#.*"
   syn match srtError "\[br\]"
   syn match srtError "{y:[bi][bi]}"
   syn match srtError "{y:[bi]}"
   syn match srtNumber "^[0-9]*$"
-  syn region transparent matchgroup=srtTime start='[0-9:]\+[\.,][0-9]*' end='[0-9:]\+[\.,][0-9]*' contains=srtArrow
+  syn region transparent matchgroup=srtTime start='[0-9: ]\+[\., ][0-9 ]*' end='[0-9: ]\+[\., ][0-9 ]*' contains=srtArrow
 
   hi def link srtArrow      Type
   hi def link srtComment    Comment
@@ -1172,13 +1172,13 @@ function! HighlightVTT()
   setlocal filetype=webvtt
   syn case ignore
   syn match vttContent ".*"
-  syn match vttArrow " --> "
+  syn match vttArrow "-->"
   syn match vttComment "^#.*"
   syn match vttError "\[br\]"
   syn match vttError "{y:[bi][bi]}"
   syn match vttError "{y:[bi]}"
   syn match vttNumber "^[0-9]*$"
-  syn region transparent matchgroup=vttTime start='[0-9:]\+[\.,][0-9]*' end='[0-9:]\+[\.,][0-9]*' contains=vttArrow
+  syn region transparent matchgroup=vttTime start='[0-9: ]\+[\., ][0-9 ]*' end='[0-9: ]\+[\., ][0-9 ]*' contains=vttArrow
 
   hi def link vttArrow      Type
   hi def link vttComment    Comment
