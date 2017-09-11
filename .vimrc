@@ -994,6 +994,7 @@ command! JsonMinify      execute "call JsonMinify()"
 function! XmlBeautify()
   call XmlMinify()
   execute "%s/></>\\r</e"
+  filetype plugin indent on
   normal! gg=G
 endfunction
 
