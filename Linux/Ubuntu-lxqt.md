@@ -90,7 +90,7 @@ nameserver 223.5.5.5
 
 Install LXQT
 =====
-* $ sudo apt-fast install lxqt xorg openbox -y
+* $ sudo apt-fast install lxqt xorg openbox compton gnome-terminal vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
 * Or using ppa
 * $ sudo add-apt-repository ppa:lxqt/ppa -y
 * $ sudo apt-fast update
