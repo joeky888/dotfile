@@ -66,6 +66,7 @@ ADB
 
 Android X86 on virtualbox
 =====
+* Setting -> Developer options -> Stay awake -> Check
 * Power off
     * Press Right Ctrl + H
 * Install Flashify or FlashFire from Google Play for flash roms
