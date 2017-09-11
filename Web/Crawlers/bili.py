@@ -5,15 +5,19 @@
 import subprocess, sys, os, codecs
 
 Error_List = []
+url = "http://www.bilibili.com/video/av9760383/#page="
+
+for i in range(21):
+    if os.system("you-get " + url + str(i)) != 0:
+        print("Download Error: " + url + str(i))
+        Error_List.append(url + str(i))
 
 # Retry
-while True:
+while len(Error_List) != 0:
     NewError_List = []
-    for i in range(21):
-        if os.system("you-get http://www.bilibili.com/video/av9760383/#page=" + str(i)) != 0:
-            print("Download Error: " + url)
-            NewError_List.append(url)
+    for u in Error_List:
+        if os.system("you-get " + u) != 0:
+            print("Download Error: " + u)
+            NewError_List.append(u)
     Error_List = []
     Error_List = NewError_List[:]
-    if len(Error_List) != 0:
-        break
