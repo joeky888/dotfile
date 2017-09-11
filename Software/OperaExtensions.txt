@@ -6,3 +6,4 @@ Full Page Screen Capture
 TJDict
 SimpleUndoClose
 Tampermonkey
+Turbo Download Manager (Opera Extension)
