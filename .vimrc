@@ -742,8 +742,6 @@ function! KeysInNetrw() " Map keys in file explorer
   nmap <buffer> <Space> <CR>
   " Tab to go down an entry
   nmap <buffer> <Tab> j
-  " Exit explorer without closing vim
-  nmap <buffer> <silent> <C-w> :bd<CR>
 endfunction
 
 """ Custom commands
