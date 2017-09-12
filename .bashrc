@@ -177,6 +177,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   compdef vman=man # Complete vman as man command
   compdef forever=sudo # Complete forever as sudo command
   unsetopt EXTENDED_HISTORY # Use bash-like history
+  unsetopt SHARE_HISTORY # Use bash-like history
+  unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
+  setopt INC_APPEND_HISTORY # Use bash-like history
   alias history='fc -ln 1' # bash-like history
   HISTFILE=$HOME/.bash_history
 
