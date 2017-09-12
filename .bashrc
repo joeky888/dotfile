@@ -176,12 +176,12 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N ZshCutToClipboard # Bind function to command
   compdef vman=man # Complete vman as man command
   compdef forever=sudo # Complete forever as sudo command
+  HISTFILE=$HOME/.bash_history
+  alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
   unsetopt SHARE_HISTORY # Use bash-like history
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
   setopt INC_APPEND_HISTORY # Use bash-like history
-  alias history='fc -ln 1' # bash-like history
-  HISTFILE=$HOME/.bash_history
 
   if [ $(command -v apt-get) ] ; then
     compdef apt-fast=apt # Complete apt-fast as apt command
