@@ -8,6 +8,6 @@ SimpleUndoClose
 Tampermonkey
 Turbo Download Manager (Opera Extension)
 Monokai for Chrome:
-    * chrome://flags -> Enable Developer Tools experiments -> enable -> Relaunch Now
+    * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
 
