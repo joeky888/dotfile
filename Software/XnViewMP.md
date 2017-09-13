@@ -32,6 +32,7 @@ Settings
     * Fullscreen
         * Fullscreen -> Auto image size -> Fit image to window width or height
         * Fullscreen -> Show info -> uncheck
+        * Fullscreen -> Background color -> set to black
 * View -> Auto image size -> Fit image to window height
 
 Set XnView as default program for Win10+
