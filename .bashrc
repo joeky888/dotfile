@@ -211,6 +211,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey '^E' end-of-line
   bindkey '^R' history-incremental-search-backward
   bindkey "\e\e^H" backward-kill-word # Alt + Backspace
+  bindkey "^[^?" backward-kill-word # Alt + Backspace
+  bindkey "\e\C-?" backward-kill-word # Alt + Backspace
   bindkey "^Z" undo
   bindkey "^Y" redo
   bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
