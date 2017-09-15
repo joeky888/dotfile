@@ -3,7 +3,7 @@ Software
 * XnView MP
 * sogou pinyin
 * Opera Developer
-* Chome Developer
+* Chrome Developer
 * Firefox Developer
 * Adobe Flash Player Beta
 * Wireshark
