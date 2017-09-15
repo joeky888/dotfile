@@ -18,3 +18,15 @@ Remove lines contains a string
 Remove lines contains a pattern
 ====
 * :g/pattern/d
+
+Generate a list of numbers
+=====
+* :put =range(11,15)
+* The five lines are:
+```vim
+11
+12
+13
+14
+15
+```
