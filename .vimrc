@@ -17,6 +17,7 @@ set ttyfast " Faster redraw
 set lazyredraw " Lazy redraw
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
+set smarttab " Insert spaces according to shiftwidth
 set softtabstop=4 " ... and insert four spaces
 set shiftwidth=4 " Indent with four spaces
 set incsearch " Search as typing
@@ -33,7 +34,6 @@ set mouseshape+=a:beam " set cursor shape as modern editors should be
 set mouse=a
 set autoindent " auto indent
 set smartindent " smart indent
-set cindent " c style indent
 set noshowmode " Don't display the current mode
 set gdefault " The substitute flag g is on
 set hidden " Hide the buffer instead of closing when switching
@@ -45,6 +45,7 @@ set updatetime=2000
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
+set smartcase " ignorecase in lower case searching
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
