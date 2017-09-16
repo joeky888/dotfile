@@ -971,7 +971,7 @@ function! OpenDroppedFiles(droppedFiles)
 endfunction
 command! -nargs=1 OpenDroppedFiles call OpenDroppedFiles(<f-args>)
 
-if !has("win32") && has("python")
+if has("python")
 python << EOF
 import vim
 import json
@@ -997,7 +997,7 @@ function! JsonMinify()
 endfunction
 
 " Json pretty by python
-vnoremenu Edit.Json.Beautify  :%!python -m json.tool<CR>
+vnoremenu Edit.Json.Beautify  :<C-u>'<,'>JsonBeautify<CR>
 nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
 command! JsonMinify      execute "call JsonMinify()"
 
