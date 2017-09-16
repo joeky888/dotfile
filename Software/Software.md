@@ -60,6 +60,7 @@ Windows
 * Rufus
 * x64dbg / snowman
 * Rainmeter (with weather)
+* MPC-HC
 
 Mac
 =====
