@@ -971,9 +971,22 @@ function! OpenDroppedFiles(droppedFiles)
 endfunction
 command! -nargs=1 OpenDroppedFiles call OpenDroppedFiles(<f-args>)
 
-function! JsonBeautify()
-  execute "%!python3 -m json.tool"
-endfunction
+if !has("win32") && has("python")
+python << EOF
+import vim
+import json
+def FormatJSON(fmtlStart, fmtlEnd):
+  fmtlStart = fmtlStart-1
+  jsonStr = "\n".join(vim.current.buffer[fmtlStart:fmtlEnd])
+  prettyJson = json.dumps(json.loads(jsonStr), sort_keys=False, indent=4, separators=(',', ': '), ensure_ascii=False)
+  prettyJson = prettyJson.encode('utf8')
+  vim.current.buffer[fmtlStart:fmtlEnd] = prettyJson.split('\n')
+EOF
+  " :'<,'>JsonBeautify
+  command! -range -bar JsonBeautify :python FormatJSON(<line1>, <line2>)
+else
+  command! JsonBeautify execute "%!python -m json.tool"
+endif
 
 function! JsonMinify()
   set filetype=json
@@ -984,9 +997,8 @@ function! JsonMinify()
 endfunction
 
 " Json pretty by python
-nnoremenu Edit.Json.Beautify  :call JsonBeautify()<CR>
+vnoremenu Edit.Json.Beautify  :%!python -m json.tool<CR>
 nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
-command! JsonBeautify    execute "call JsonBeautify()"
 command! JsonMinify      execute "call JsonMinify()"
 
 " XML pretty by vim
