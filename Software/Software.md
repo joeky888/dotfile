@@ -80,6 +80,7 @@ Android
     * Undo Close for mobile
     * uBlock Origin
     * Video Background Play Fix
+    * h264ify
 * OpenLauncher
 * Facebook Messenger
 * LINE
