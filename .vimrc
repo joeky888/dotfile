@@ -1134,7 +1134,7 @@ autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
-autocmd FileType c,cpp,javascript,python call HighlightFunctions()
+autocmd FileType c,cpp,javascript,python call HighlightC()
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
@@ -1342,7 +1342,7 @@ function! HighlightPS1()
 	hi def link ps1KeywordAndCmdlet Keyword
 endfunction
 
-function! HighlightFunction()
+function! HighlightC()
   syn match    cCustomParen    "(" contains=cParen,cCppParen
   syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
   syn match    cCustomScope    "::"
