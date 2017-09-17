@@ -166,7 +166,7 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>sh -c "import -window root ~/Desktop/$(date '+%Y%m%d-%H%M%S').png"</command>
+        <command>bash -c "import -window root ~/Desktop/$(date '+%Y%m%d-%H%M%S').png"</command>
       </action>
     </keybind>
     <keybind key="XF86MonBrightnessUp">
