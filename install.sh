@@ -89,7 +89,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh
   cd $USERPROFILE && rm -rf dotfile/
   git clone --depth=1 https://github.com/j16180339887/dotfile.git dotfile
-  cd dotfile && git submodule init && git submodule update
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -119,6 +118,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 
   apt-cyg install procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
+  cd $USERPROFILE && cd dotfile && git submodule init && git submodule update
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
