@@ -111,14 +111,11 @@ function! GetFileSize()
 endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 """ Custom backup and swap files
+set backup
 let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
-set backup
-set backupskip=myVimDir
-set undodir=myVimDir
-set directory=myVimDir
-set backupdir=myVimDir
+let myUndoDir = myVimDir . '/undo'
 function! EnsureDirExists (dir)
   if !isdirectory(a:dir)
     call mkdir(a:dir,'p')
@@ -127,11 +124,13 @@ endfunction
 call EnsureDirExists(myVimDir)
 call EnsureDirExists(myBackupDir)
 call EnsureDirExists(mySwapDir)
+call EnsureDirExists(myUndoDir)
 set backup
 set backupskip=/tmp/*
 set backupext=.bak
 let &directory = mySwapDir
 let &backupdir = myBackupDir
+let &undodir = myUndoDir
 set writebackup
 
 " Helper functions
