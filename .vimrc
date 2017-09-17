@@ -54,7 +54,7 @@ set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
 set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
-set viminfo+=n$HOME/dotfile/viminfo " .viminfo location
+set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set noerrorbells " disable error sound
 autocmd VimEnter * set noerrorbells " disable error sound
