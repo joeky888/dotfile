@@ -86,16 +86,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
-  apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
-  grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
-  grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-  sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
-  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
-  curl 'https://bootstrap.pypa.io/get-pip.py' | python3
-  echo y | pip install youtube-dl
-  echo y | pip install you-get
-  echo y | pip install bypy
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh
   cd $USERPROFILE && rm -rf dotfile/
   git clone --depth=1 https://github.com/j16180339887/dotfile.git dotfile
   cd dotfile && git submodule init && git submodule update
@@ -117,6 +108,17 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
+  grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
+  grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
+  sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
+  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+  curl 'https://bootstrap.pypa.io/get-pip.py' | python3
+  echo y | pip install youtube-dl
+  echo y | pip install you-get
+  echo y | pip install bypy
+
+  apt-cyg install procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
+  apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
