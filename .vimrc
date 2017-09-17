@@ -1129,14 +1129,14 @@ for b:char in split(g:CharSet, '\zs')
   execute "vnoremap ".b:char." di<C-g>u".b:char
 endfor
 
-autocmd BufRead,BufNewFile,BufWritePost * call HighlightTXT()
+autocmd BufRead,BufNewFile,BufWritePost * call HighlightGlobal()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 autocmd FileType c,cpp,javascript,python call HighlightC()
 
-function! HighlightTXT()
+function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
     syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
