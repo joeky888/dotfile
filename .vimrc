@@ -114,6 +114,11 @@ au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g
 let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
+set backup
+set backupskip=myVimDir
+set undodir=myVimDir
+set directory=myVimDir
+set backupdir=myVimDir
 function! EnsureDirExists (dir)
   if !isdirectory(a:dir)
     call mkdir(a:dir,'p')
@@ -1355,11 +1360,6 @@ endfunction
 
 if has("gui_running")
   if has('win32') || has('win64')
-    set backup
-    set backupskip=$TEMP
-    set undodir=$TEMP
-    set directory=$TEMP
-    set backupdir=$TEMP
     set guifont=Ubuntu\ Mono:h14,Consolas:h14,Fixed:h14,monospace:h14
     set guifontwide=DroidMono:h13,Microsoft\ Yahei:h13
     au GUIEnter * simalt ~x " Full screen on start
