@@ -882,6 +882,7 @@ syntax reset
 set t_Co=256
 
 let g:is_bash=1 " Tell $VIMRUNTIME/syntax/sh.vim that I am using bash
+let python_highlight_all = 1 " Tell $VIMRUNTIME/syntax/python.vim to highlight all
 
 " Normal is background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
