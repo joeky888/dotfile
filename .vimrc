@@ -12,6 +12,9 @@ endif
 
 """ General options
 syntax enable " Enable syntax highlights
+filetype on " Enable filetype plugin
+filetype plugin on
+filetype indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Lazy redraw
