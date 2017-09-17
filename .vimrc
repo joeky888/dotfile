@@ -111,7 +111,6 @@ function! GetFileSize()
 endfunction
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
 """ Custom backup and swap files
-set backup
 let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
