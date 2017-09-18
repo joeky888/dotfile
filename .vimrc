@@ -73,6 +73,8 @@ let g:netrw_hide=0 " Show all hidden files when using file explorer
 let g:netrw_sizestyle="H" " Human-readable file size in file explorer
 let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
+let g:vertical_jump=&scroll*4/3 " Jump when Ctrl up/down triggered
+au VimResized * let g:vertical_jump=&scroll*4/3
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
 " Highlight code area in markdown
 let g:markdown_fenced_languages =
@@ -412,24 +414,24 @@ call CreateShortcut("C-Left", "b", "n")
 call CreateShortcut("C-Right", "w", "n")
 
 " Ctrl Up - Pageup, &scroll = half of screen lines
-execute 'nnoremap <silent> <C-Up> '.&scroll*5/3.'k'
-execute 'inoremap <silent> <C-Up> <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <C-Up> '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <C-Up> '.g:vertical_jump.'k'
+execute 'inoremap <silent> <C-Up> <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <C-Up> '.g:vertical_jump.'k'
 
 " Ctrl Down - Pagedown
-execute 'nnoremap <silent> <C-Down> '.&scroll*5/3.'j'
-execute 'inoremap <silent> <C-Down> <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <C-Down> '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <C-Down> '.g:vertical_jump.'j'
+execute 'inoremap <silent> <C-Down> <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <C-Down> '.g:vertical_jump.'j'
 
 " Ctrl U - Pageup
-execute 'nnoremap <silent> <C-u> '.&scroll*5/3.'k'
-execute 'inoremap <silent> <C-u> <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <C-u> '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <C-u> '.g:vertical_jump.'k'
+execute 'inoremap <silent> <C-u> <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <C-u> '.g:vertical_jump.'k'
 
 " Ctrl J - Pagedown
-execute 'nnoremap <silent> <C-j> '.&scroll*5/3.'j'
-execute 'inoremap <silent> <C-j> <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <C-j> '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <C-j> '.g:vertical_jump.'j'
+execute 'inoremap <silent> <C-j> <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 
 " Ctrl F - Find
 call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
@@ -556,38 +558,38 @@ cnoremap <ESC>[1;9D <C-Left>
 vnoremap <ESC>[1;9D 5h
 
 " Terminal Alt Up - Multiple UP keys
-execute 'nnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC><ESC>OA <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC><ESC>OA '.&scroll*5/3.'k'
-execute 'nnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC>[1;3A <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC>[1;3A '.&scroll*5/3.'k'
-execute 'nnoremap <silent> <ESC><ESC>[A '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC><ESC>[A <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC><ESC>[A '.&scroll*5/3.'k'
-execute 'nnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC>[1;5A <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC>[1;5A '.&scroll*5/3.'k'
-execute 'nnoremap <silent> <ESC>[1;9A '.&scroll*5/3.'k'
-execute 'inoremap <silent> <ESC>[1;9A <C-\><C-O>'.&scroll*5/3.'k'
-execute 'vnoremap <silent> <ESC>[1;9A '.&scroll*5/3.'k'
+execute 'nnoremap <silent> <ESC><ESC>OA '.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC><ESC>OA <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC><ESC>OA '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <ESC>[1;3A '.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC>[1;3A <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC>[1;3A '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <ESC><ESC>[A '.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC><ESC>[A <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC><ESC>[A '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <ESC>[1;5A '.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC>[1;5A <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC>[1;5A '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <ESC>[1;9A '.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC>[1;9A <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC>[1;9A '.g:vertical_jump.'k'
 
 " Terminal Alt Down - Multiple DOWN keys
-execute 'nnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC><ESC>OB <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC><ESC>OB '.&scroll*5/3.'j'
-execute 'nnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC>[1;3B <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC>[1;3B '.&scroll*5/3.'j'
-execute 'nnoremap <silent> <ESC><ESC>[B '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC><ESC>[B <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC><ESC>[B '.&scroll*5/3.'j'
-execute 'nnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC>[1;5B <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC>[1;5B '.&scroll*5/3.'j'
-execute 'nnoremap <silent> <ESC>[1;9B '.&scroll*5/3.'j'
-execute 'inoremap <silent> <ESC>[1;9B <C-\><C-O>'.&scroll*5/3.'j'
-execute 'vnoremap <silent> <ESC>[1;9B '.&scroll*5/3.'j'
+execute 'nnoremap <silent> <ESC><ESC>OB '.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC><ESC>OB <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC><ESC>OB '.g:vertical_jump.'j'
+execute 'nnoremap <silent> <ESC>[1;3B '.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC>[1;3B <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC>[1;3B '.g:vertical_jump.'j'
+execute 'nnoremap <silent> <ESC><ESC>[B '.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC><ESC>[B <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC><ESC>[B '.g:vertical_jump.'j'
+execute 'nnoremap <silent> <ESC>[1;5B '.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC>[1;5B <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC>[1;5B '.g:vertical_jump.'j'
+execute 'nnoremap <silent> <ESC>[1;9B '.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC>[1;9B <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC>[1;9B '.g:vertical_jump.'j'
 
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
