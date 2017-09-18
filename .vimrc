@@ -1342,9 +1342,9 @@ endfunction
 
 if has("gui_running")
   if has('win32') || has('win64')
-    call EnsureDirExists($TEMP/vim/backup)
-    call EnsureDirExists($TEMP/vim/swap)
-    call EnsureDirExists($TEMP/vim/undo)
+    call EnsureDirExists($TEMP."/vim/backup")
+    call EnsureDirExists($TEMP."/vim/swap")
+    call EnsureDirExists($TEMP."/vim/undo")
     set directory=$TEMP/vim/swap
     set backupdir=$TEMP/vim/backup
     set undodir=$TEMP/vim/undo
