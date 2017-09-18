@@ -328,6 +328,9 @@ noremap  <RightDrag>  <LeftDrag>
 inoremap <RightDrag>  <LeftDrag>
 onoremap <RightDrag>  <C-C><LeftDrag>
 
+" RightMouse double clicking moves cursor the the other side
+noremap <2-RightMouse> <2-LeftMouse>o
+
 " Backspace is deleting in visual mode
 call CreateShortcut("BS", "di<C-g>u", "v")
 
