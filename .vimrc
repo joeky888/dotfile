@@ -1363,12 +1363,12 @@ endfunction
 
 if has("gui_running")
   if has('win32') || has('win64')
-    call EnsureDirExists($TEMP/backup)
-    call EnsureDirExists($TEMP/swap)
-    call EnsureDirExists($TEMP/undo)
-    set directory=$TEMP/swap
-    set backupdir=$TEMP/backup
-    set undodir=$TEMP/undo
+    call EnsureDirExists($TEMP/vim/backup)
+    call EnsureDirExists($TEMP/vim/swap)
+    call EnsureDirExists($TEMP/vim/undo)
+    set directory=$TEMP/vim/swap
+    set backupdir=$TEMP/vim/backup
+    set undodir=$TEMP/vim/undo
     set guifont=Ubuntu\ Mono:h14,Consolas:h14,Fixed:h14,monospace:h14
     set guifontwide=DroidMono:h13,Microsoft\ Yahei:h13
     au GUIEnter * simalt ~x " Full screen on start
