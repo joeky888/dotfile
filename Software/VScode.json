@@ -1,0 +1,12 @@
+{
+    "editor.fontSize": 20,
+    "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', monospace",
+    "powermode.enabled": true
+}
+
+[
+    { "key": "ctrl+k", "command": "editor.action.deleteLines",
+        "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+d", "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly" }
+]
