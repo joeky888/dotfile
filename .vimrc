@@ -1139,8 +1139,7 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 autocmd BufRead,BufNewFile,BufWritePost * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost *.{vtt,VTT} call HighlightVTT()
+autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT,vtt,VTT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 autocmd FileType c,cpp,javascript,python call HighlightC()
@@ -1191,28 +1190,8 @@ function! HighlightSRT()
   hi def link srtTime       Statement
 endfunction
 
-function! HighlightVTT()
-  setlocal filetype=webvtt
-  syn case ignore
-  syn match vttContent ".*"
-  syn match vttArrow "-->"
-  syn match vttComment "^#.*"
-  syn match vttError "\[br\]"
-  syn match vttError "{y:[bi][bi]}"
-  syn match vttError "{y:[bi]}"
-  syn match vttNumber "^[0-9]*$"
-  syn region transparent matchgroup=vttTime start='[0-9: ]\+[\., ][0-9 ]*' end='[0-9: ]\+[\., ][0-9 ]*' contains=vttArrow
-
-  hi def link vttArrow      Type
-  hi def link vttComment    Comment
-  hi def link vttContent    Identifier
-  hi def link vttError      Error
-  hi def link vttNumber     Number
-  hi def link vttTime       Statement
-endfunction
-
 function! HighlightASS()
-  setlocal filetype=ssa
+  setlocal filetype=ass
   syn match ssaSection       "^\[.*\]"
   syn match ssaSourceComment "^;.*$"
   syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
