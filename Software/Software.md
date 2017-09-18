@@ -9,7 +9,7 @@ Software
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
-* Baidu Pan
+* Baidu Pan(BaiduExporter/百度网盘直接下载助手增强版)
 * UNetbootin
 * Gimp
 * Inkscape
