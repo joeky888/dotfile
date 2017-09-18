@@ -2,12 +2,17 @@
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', monospace",
     "powermode.enabled": true,
-    "editor.minimap.enabled": true
+    "editor.minimap.enabled": true,
+    "workbench.colorTheme": "Monokai Dimmed"
 }
 
 [
     { "key": "ctrl+k", "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly" },
     { "key": "ctrl+d", "command": "editor.action.copyLinesDownAction",
-        "when": "editorTextFocus && !editorReadonly" }
+        "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+up", "command": "cursorPageUp",
+        "when": "editorTextFocus" },
+    { "key": "ctrl+down", "command": "cursorPageDown",
+        "when": "editorTextFocus" }
 ]
