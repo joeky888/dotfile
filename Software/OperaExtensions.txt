@@ -6,6 +6,7 @@ Full Page Screen Capture
 TJDict
 SimpleUndoClose
 Tampermonkey
+User-Agent Switcher for Chrome by Google
 Turbo Download Manager (Opera Extension)
 Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
