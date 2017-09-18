@@ -75,7 +75,12 @@ let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
 " Highlight code area in markdown
-let g:markdown_fenced_languages = ["c","cpp","java","javascript","ruby","python","vim","css","html","xml","json","cmake","yaml","sh","conf","zsh","tmux","debsources","resolv","sudoers"]
+let g:markdown_fenced_languages =
+\[
+  \"c","cpp","java","javascript","ruby","python","vim",
+  \"css","html","xml","json","cmake","yaml","sh","conf",
+  \"zsh","tmux","debsources","resolv","sudoers"
+\]
 " Open all cmd args in new tabs
 execute ":silent tab all"
 " Open help in new tabs
@@ -887,11 +892,11 @@ set t_Co=256
 let g:is_bash=1 " Tell $VIMRUNTIME/syntax/sh.vim that I am using bash
 let python_highlight_all = 1 " Tell $VIMRUNTIME/syntax/python.vim to highlight all
 
-" Normal is background color
+" Normal is the background color
 hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
-" Visual is selected color
+" Visual is the selected color
 hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff gui=NONE
-" Pmenu is popup autocomplete color
+" Pmenu is the popup autocomplete color
 hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
 hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
 
