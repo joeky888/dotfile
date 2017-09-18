@@ -1,7 +1,8 @@
 {
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', monospace",
-    "powermode.enabled": true
+    "powermode.enabled": true,
+    "editor.minimap.enabled": true
 }
 
 [
