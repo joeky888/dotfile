@@ -21,7 +21,7 @@ Software
 * gVim x64
 * Brackets
 * Visual Studio Code Insiders
-* Vlc
+* VLC
 * Natron
 * OBS MP
 * Aegisub
