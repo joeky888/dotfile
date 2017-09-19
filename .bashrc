@@ -160,6 +160,17 @@ fi
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
+if [ $(command -v gvim) ]; then
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      command gvim -u ~/.vimrc
+    else
+      command gvim -u ~/.vimrc -p --remote-tab-silent "$@"
+    fi;
+  }
+fi
+
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   export ZSH=$HOME/dotfile/oh-my-zsh
   ZSH_THEME="bira"
@@ -242,6 +253,14 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias choco='cygstart --action=runas choco'
   alias mtuForGaming='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent'
   alias mtuForNormal='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent'
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      /cygdrive/c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc &!
+    else
+      /cygdrive/c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+    fi;
+  }
   upgradeChoco() { cygstart --action=runas cmd.exe /c "choco upgrade all -y" ;}
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
@@ -258,17 +277,6 @@ fi
 
 if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
-fi
-
-if [ $(command -v gvim) ]; then
-  gvim()
-  {
-    if [ "$#" == 0 ]; then
-      command gvim -u ~/.vimrc
-    else
-      command gvim -u ~/.vimrc -p --remote-tab-silent "$@"
-    fi;
-  }
 fi
 
 if ! [[ $(command -v tree) ]]; then
