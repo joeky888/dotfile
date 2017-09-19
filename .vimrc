@@ -817,9 +817,9 @@ function! UpdateSearch()
 endfunction
 function CommandAfterSearch()
   if getcmdtype() == '/'
-    return "\<cr>:call UpdateSearch()\<cr>:set ignorecase\<cr>"
+    return "\<cr>:call UpdateSearch()\<cr>"
   else
-    return "\<cr>:set ignorecase\<cr>"
+    return "\<cr>"
   endif
 endfunction
 cnoremap <silent> <expr> <Enter> CommandAfterSearch()
