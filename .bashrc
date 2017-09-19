@@ -131,7 +131,7 @@ if [ $(command -v grc) ] ; then
   [ $(command -v mtr) ] && alias mtr='colourify mtr'
   [ $(command -v mvn) ] && alias mvn='colourify mvn'
   [ $(command -v netstat) ] && alias netstat='colourify netstat'
-#   [ ! "$OSTYPE" = "cygwin" ] && [ $(command -v nmap) ] && alias nmap='colourify nmap'
+  alias nmap='colourify nmap'
   [ $(command -v php) ] && alias php='colourify php'
   [ $(command -v ping) ] && alias ping='colourify ping'
   [ $(command -v ping2) ] && alias ping2='colourify ping2'
