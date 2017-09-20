@@ -376,9 +376,9 @@ endif
 
 
 " Insert - Paste
-nnoremap <Insert>      :r $HOME/dotfile/clipboard.txt<CR>
-inoremap <Insert> <ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
-vnoremap <Insert>     d:r $HOME/dotfile/clipboard.txt<CR>
+nnoremap <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
+inoremap <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
+vnoremap <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
