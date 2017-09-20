@@ -231,6 +231,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
+  export HISTSIZE=10000
+  export HISTFILESIZE=10000
   bind 'set completion-ignore-case on' # Ignore case
   bind '"\e[A": history-search-backward' # Up key is searching backward
   bind '"\e[B": history-search-forward'  # Down key is searching forward
