@@ -1373,13 +1373,8 @@ if has("gui_running")
   call CreateShortcut("C-x", "\"+x", "v")
   cnoremap <C-x> <C-y><C-e><C-u>
 
-  " Ctrl v is paste / override selected then paste
-  inoremap <C-v> <C-o>"+gP<C-g>u
-  nnoremap <C-v> "+gPi<C-g>u
-  vnoremap <C-v> d"+gP
-  " For Visual-Block Insert and command-line mode
+  " For Visual-Block Insert
   noremap! <Insert> <C-r>+
-  cnoremap <C-v> <C-r>+
 
   " Shift-Insert same as Ctrl-v
   inoremap <S-Insert> <C-o>"+gP<C-g>u
@@ -1387,7 +1382,6 @@ if has("gui_running")
   vnoremap <S-Insert> d"+gP
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
-  cnoremap <C-v> <C-r>+
 
   " Delete selected characters before Entering the insert mode
   call CreateShortcut("C-BS", "di<C-g>u", "v")
