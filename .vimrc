@@ -352,7 +352,7 @@ if has("clipboard")
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>V:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
-  " Insert - Paste from system clipboard
+  " Ctrl V - Paste from system clipboard
   inoremap <C-v> <C-o>"+gP<C-g>u
   nnoremap <C-v> "+gPi<C-g>u
   vnoremap <C-v> d"+gP
@@ -367,7 +367,7 @@ else
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
-  " inoremap - Paste from vim clipboard
+  " Ctrl V - Paste from vim clipboard
   inoremap <C-v> <C-o>:normal! Pl<CR><C-g>u
   nnoremap <C-v> Pli<C-g>u
   vnoremap <C-v> "_dPl
@@ -375,10 +375,10 @@ else
 endif
 
 
-" Ctrl V - Paste
-call CreateShortcut("Insert", ":r $HOME/dotfile/clipboard.txt<CR>", "n")
-call CreateShortcut("Insert", ":r $HOME/dotfile/clipboard.txt<CR>i<C-g>u", "i", "noTrailingIInInsert")
-call CreateShortcut("Insert", "d:r $HOME/dotfile/clipboard.txt<CR>", "v")
+" Insert - Paste
+nnoremap <Insert>      :r $HOME/dotfile/clipboard.txt<CR>
+inoremap <Insert> <ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
+vnoremap <Insert>     d:r $HOME/dotfile/clipboard.txt<CR>
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
