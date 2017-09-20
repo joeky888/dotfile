@@ -78,6 +78,8 @@ Add dns server
 =====
 * $ sudoedit /etc/resolv.conf
 * Or
+* $ sudoedit /run/resolvconf/resolv.conf
+* Or
 * $ sudoedit /etc/resolvconf/resolv.conf.d/head
 ```resolv
 nameserver 8.8.8.8
