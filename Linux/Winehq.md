@@ -35,6 +35,10 @@ Open cmd and run .bat file
 * $ wineconsole cmd
 * Run .bat file
 
+Install a .msi file
+=====
+* $ wine msiexec /i filename.msi
+
 Install mono or dotnet
 =====
 1. Using Linux Mono
