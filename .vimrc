@@ -367,10 +367,10 @@ else
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>YV:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
-  " Insert - Paste from vim clipboard
+  " inoremap - Paste from vim clipboard
   inoremap <C-v> <C-o>:normal! Pl<CR><C-g>u
   nnoremap <C-v> Pli<C-g>u
-  vnoremap <C-v> dP
+  vnoremap <C-v> "_dPl
   cnoremap <C-v> <C-r>"
 endif
 
