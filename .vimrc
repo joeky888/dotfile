@@ -1019,6 +1019,7 @@ function! XmlBeautify()
   call XmlMinify()
   setlocal filetype=xml
   filetype indent on
+  setlocal smartindent
   execute "%s/></>\\r</e"
   normal! gg=G
   " Recolor the file again
@@ -1027,7 +1028,6 @@ endfunction
 
 function! XmlMinify()
   setlocal filetype=xml
-  filetype indent on
   execute "%s/>\\s\\+</></e"
   execute "%s/\\s\\+$//e"
   execute "%left"
