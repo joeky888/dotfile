@@ -7,7 +7,7 @@ fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO apt update
-  $SUDO apt install tmux zsh git tig curl wget aria2 -y
+  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
@@ -86,7 +86,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
   cd $USERPROFILE && rm -rf dotfile/
   git clone --depth=1 https://github.com/j16180339887/dotfile.git dotfile
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
