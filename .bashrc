@@ -186,6 +186,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else
     NEWLINE_NO_OMZ=$'\n'
     PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
+    export HISTSIZE=10000
+    export SAVEHIST=10000
   fi
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
