@@ -176,8 +176,17 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME="bira"
   plugins=(git docker)
   DISABLE_AUTO_UPDATE="true"
-  [ -f $ZSH/oh-my-zsh.sh ] && source $ZSH/oh-my-zsh.sh
-  unset -f upgrade_oh_my_zsh # Remove this function
+  if [ -f $ZSH/oh-my-zsh.sh ]; then
+    source $ZSH/oh-my-zsh.sh
+    compdef vman=man # Complete vman as man command
+    compdef forever=sudo # Complete forever as sudo command
+    [ $(command -v apt-get) ] && compdef apt-fast=apt # Complete apt-fast as apt command
+    compdef CompleteAptCyg apt-cyg # Complete apt-cyg
+    unset -f upgrade_oh_my_zsh # Remove this function
+  else
+    NEWLINE_NO_OMZ=$'\n'
+    PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
+  fi
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster
@@ -185,19 +194,12 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   _comp_options+=(globdots) # Show hidden files when using completion
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
-  compdef vman=man # Complete vman as man command
-  compdef forever=sudo # Complete forever as sudo command
   HISTFILE=$HOME/.bash_history
   alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
   unsetopt SHARE_HISTORY # Use bash-like history
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
   setopt INC_APPEND_HISTORY # Use bash-like history
-
-  if [ $(command -v apt-get) ] ; then
-    compdef apt-fast=apt # Complete apt-fast as apt command
-  fi
-  compdef CompleteAptCyg apt-cyg # Complete apt-cyg
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
