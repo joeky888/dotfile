@@ -1140,7 +1140,7 @@ for b:char in split(g:CharSet, '\zs')
   execute "vnoremap ".b:char." di<C-g>u".b:char
 endfor
 
-autocmd BufRead,BufNewFile,BufWritePost,FileType * call HighlightGlobal()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType * call HighlightGlobal()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT,vtt,VTT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
