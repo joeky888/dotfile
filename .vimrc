@@ -1194,34 +1194,34 @@ endfunction
 
 function! HighlightASS()
   setlocal filetype=ass
-  syn match ssaSection       "^\[.*\]"
-  syn match ssaSourceComment "^;.*$"
-  syn match ssaLine          "^[^;][^:]*:.*$"  contains=ssaHeader,ssaComment,ssaDialog
-  syn match ssaHeader        "^[^;][^:]*:\s*"  contained nextgroup=ssaHeaderText
-  syn match ssaHeaderText    ".*$"             contained
-  syn match ssaComment       "^Comment:\s*"    contained nextgroup=ssaCommentText
-  syn match ssaCommentText   ".*$"             contained
-  syn match ssaDialog        "^Dialogue:\s*"   contained nextgroup=ssaDialogTimes
-  syn match ssaDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=ssaDialogActor
-  syn match ssaDialogActor   "[^,]*"           contained nextgroup=ssaDialogEffects
-  syn match ssaDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=ssaDialogText
-  syn match ssaDialogText    ".*$"             contained contains=ssaTextComment,ssaTextSubCode
-  syn match ssaTextComment   "{[^}]*}"         contained
-  syn match ssaTextSubCode   "{\\[^}]*}"       contained
+  syn match assSection       "^\[.*\]"
+  syn match assSourceComment "^;.*$"
+  syn match assLine          "^[^;][^:]*:.*$"  contains=assHeader,assComment,assDialog
+  syn match assHeader        "^[^;][^:]*:\s*"  contained nextgroup=assHeaderText
+  syn match assHeaderText    ".*$"             contained
+  syn match assComment       "^Comment:\s*"    contained nextgroup=assCommentText
+  syn match assCommentText   ".*$"             contained
+  syn match assDialog        "^Dialogue:\s*"   contained nextgroup=assDialogTimes
+  syn match assDialogTimes   "\([^,]*,\)\{4}"  contained nextgroup=assDialogActor
+  syn match assDialogActor   "[^,]*"           contained nextgroup=assDialogEffects
+  syn match assDialogEffects ",\([^,]*,\)\{4}" contained nextgroup=assDialogText
+  syn match assDialogText    ".*$"             contained contains=assTextComment,assTextSubCode
+  syn match assTextComment   "{[^}]*}"         contained
+  syn match assTextSubCode   "{\\[^}]*}"       contained
 
-  hi def link ssaSection         Function
-  hi def link ssaSourceComment   Comment
-  hi def link ssaHeader          Statement
-  hi def link ssaComment         Statement
-  hi def link ssaDialog          Statement
-  hi def link ssaHeaderText      Constant
-  hi def link ssaCommentText     Comment
-  hi def link ssaDialogTimes     Type
-  hi def link ssaDialogActor     Title
-  hi def link ssaDialogEffects   Function
-  hi def link ssaDialogText      Identifier
-  hi def link ssaTextComment     Comment
-  hi def link ssaTextSubCode     Comment
+  hi def link assSection         Function
+  hi def link assSourceComment   Comment
+  hi def link assHeader          Statement
+  hi def link assComment         Statement
+  hi def link assDialog          Statement
+  hi def link assHeaderText      Constant
+  hi def link assCommentText     Comment
+  hi def link assDialogTimes     Type
+  hi def link assDialogActor     Title
+  hi def link assDialogEffects   Function
+  hi def link assDialogText      Identifier
+  hi def link assTextComment     Comment
+  hi def link assTextSubCode     Comment
 endfunction
 
 function! HighlightPS1()
