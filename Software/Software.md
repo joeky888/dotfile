@@ -30,7 +30,7 @@ Software
 * Qt
 * PyCharm Community Edition
 * Cheat Engine
-* WPS Office
+* WPS Office (Hong Kong)
 * Libre Office
 * Popcorn Time
 * GeoGebra
