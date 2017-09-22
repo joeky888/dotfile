@@ -1144,7 +1144,7 @@ autocmd BufRead,BufNewFile,BufWritePost * call HighlightGlobal()
 autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT,vtt,VTT} call HighlightSRT()
 autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
 autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
-autocmd FileType c,cpp,javascript,python call HighlightC()
+autocmd FileType c,cpp,javascript,python,go call HighlightC()
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
