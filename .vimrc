@@ -1338,8 +1338,8 @@ function! HighlightC()
   syn match    cCustomScope    "::"
   syn match    cCustomClass    "\w\+\s*::" contains=cCustomScope
 
-  hi def link cCustomFunc  Identifier
-  hi def link cCustomClass Identifier
+  hi def link cCustomFunc  Green
+  hi def link cCustomClass Green
 endfunction
 
 if has("gui_running")
