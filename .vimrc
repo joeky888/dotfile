@@ -403,8 +403,9 @@ inoremap <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
 vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
-call CreateShortcut("C-q", "<C-v>", "nv")
+nnoremap <C-q> <C-v>
 inoremap <C-q> <C-\><C-o><C-v>
+vnoremap <C-q> <ESC>
 
 " Ctrl Left - Move a word
 call CreateShortcut("C-Left", "b", "n")
@@ -446,7 +447,7 @@ call CreateShortcut("C-g", "ggVG", "inv")
 " Ctrl L - Delete all lines
 call CreateShortcut("C-l", "V", "n")
 inoremap <C-l> <C-\><C-O>V
-vnoremap <C-l> <ESC>V
+vnoremap <C-l> <ESC>
 
 " Pageup - Move up Line
 nnoremap <silent> <PageUp> mj:<C-u>silent! move-2<CR>`j
