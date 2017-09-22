@@ -9,3 +9,14 @@ Add submodule
 git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
 ```
 * Add "shallow = true" to .gitmodules
+
+git restore a commit
+=====
+* Unpushed commit
+* $ git reset --hard <commit>
+* $ git clean -xdf
+* Pushed commit
+* $ git revert --no-commit <commit>
+* $ git status # Conflicts check
+* $ git commit
+
