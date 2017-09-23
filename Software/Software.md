@@ -1,7 +1,7 @@
 Software
 =====
 * XnView MP
-* sogou pinyin
+* sogou pinyin/zhuyin
 * Opera Developer
 * Chrome Developer
 * Firefox Developer
