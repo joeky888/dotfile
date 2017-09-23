@@ -70,6 +70,7 @@ Windows XP
 * git 2.10.0
 * sogou input (zhuyin/pinyin)
 * wps office
+* VLC
 
 Mac
 =====
