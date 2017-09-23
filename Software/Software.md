@@ -62,6 +62,15 @@ Windows
 * Rainmeter (with weather)
 * MPC-HC
 
+Windows XP
+=====
+* Qupzilla 1.8.9
+* gVim
+* 7zip
+* git 2.10.0
+* sogou input (zhuyin/pinyin)
+* wps office
+
 Mac
 =====
 * iterm2
