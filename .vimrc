@@ -726,7 +726,7 @@ inoremap <ESC>D <Left>
 function! ToggleAutoComplete()
   if g:autocomp
     for l:char in split(g:CharSet, '\zs')
-      silent execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
+      silent execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '\<C-g>u".l:char."\<C-n>\<C-p>'"
     endfor
   else
     for l:char in split(g:CharSet, '\zs')
