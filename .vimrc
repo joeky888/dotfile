@@ -705,7 +705,9 @@ autocmd FileType * execute 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.
 set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
-set shortmess+=c
+if v:version >= 704 && has('patch314')
+  set shortmess+=c
+endif
 let autocomp=1
 let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
 inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
@@ -724,7 +726,7 @@ inoremap <ESC>D <Left>
 function! ToggleAutoComplete()
   if g:autocomp
     for l:char in split(g:CharSet, '\zs')
-      execute "inoremap <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
+      execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
     endfor
   else
     for l:char in split(g:CharSet, '\zs')
