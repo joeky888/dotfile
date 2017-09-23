@@ -11,8 +11,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
-  git submodule init
-  git submodule update
+  git submodule update --init --recursive
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
@@ -65,8 +64,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
-  git submodule init
-  git submodule update
+  git submodule update --init --recursive
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
@@ -119,7 +117,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 
   apt-cyg install procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
-  cd $USERPROFILE && cd dotfile && git submodule init && git submodule update
+  cd $USERPROFILE && cd dotfile && git submodule update --init --recursive
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
@@ -164,8 +162,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
-  git submodule init
-  git submodule update
+  git submodule update --init --recursive
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
@@ -197,8 +194,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
-  git submodule init
-  git submodule update
+  git submodule update --init --recursive
   ln -sf ~/dotfile/.bashrc ~/.bashrc
   ln -sf ~/dotfile/.bashrc ~/.bash_profile
   ln -sf ~/dotfile/.tmux.conf ~/.tmux.conf
