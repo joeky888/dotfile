@@ -1013,6 +1013,7 @@ function! JsonMinify()
 endfunction
 
 " Json pretty by python
+nnoremenu Edit.Json.Beautify  ggVG:<C-u>'<,'>JsonBeautify<CR>
 vnoremenu Edit.Json.Beautify  :<C-u>'<,'>JsonBeautify<CR>
 nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
 command! JsonMinify      execute "call JsonMinify()"
