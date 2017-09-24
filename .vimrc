@@ -353,8 +353,8 @@ if has("clipboard")
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl V - Paste from system clipboard
-  inoremap <C-v> <C-o>"+gP<C-g>u
-  nnoremap <C-v> "+gPi<C-g>u
+  inoremap <C-v> <C-g>u<C-o>"+gP<C-g>u
+  nnoremap <C-v> i<C-g>u<C-o>"+gP<C-g>u
   vnoremap <C-v> d"+gP
   cnoremap <C-v> <C-r>+
 else
