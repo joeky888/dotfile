@@ -705,7 +705,7 @@ autocmd FileType * execute 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.
 set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
-if v:version >= 704 && has('patch314')
+if v:version > 704 || has("patch314") || has('patch-7.4.314')
   set shortmess+=c
 endif
 let autocomp=1
