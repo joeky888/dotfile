@@ -202,7 +202,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   ln -sf ~/dotfile/.vimrc ~/.vimrc
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.Xresources ~/.Xresources
-  curl 'https://bootstrap.pypa.io/get-pip.py' | python3
+  curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | pip install youtube-dl
   echo y | pip install you-get
   echo y | pip install bypy
