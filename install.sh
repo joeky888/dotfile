@@ -209,7 +209,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
-  $SUDO sh install.sh
+  $SUDO zsh install.sh
   cd ..
   rm -rf grc
 python3 <<END
