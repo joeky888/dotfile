@@ -16,7 +16,10 @@ git restore a commit
 * $ git reset --hard <commit>
 * $ git clean -xdf
 * Pushed commit
-* $ git revert --no-commit <commit>..master
-* $ git status # Conflicts check
-* $ git commit
+    * Revert Multiple commit (Preferred)
+    * $ git revert --no-commit <commit>..master
+    * Revert one commit
+    * $ git revert --no-commit <commit>
+    * $ git status # Conflicts check
+    * $ git commit
 
