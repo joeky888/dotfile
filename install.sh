@@ -203,9 +203,9 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   ln -sf ~/dotfile/.gitconfig ~/.gitconfig
   ln -sf ~/dotfile/.Xresources ~/.Xresources
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
-  echo y | pip install youtube-dl
-  echo y | pip install you-get
-  echo y | pip install bypy
+  echo y | $SUDO pip install youtube-dl
+  echo y | $SUDO pip install you-get
+  echo y | $SUDO pip install bypy
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
@@ -217,7 +217,7 @@ import sys, os, site
 
 pkgLocation = site.getsitepackages()
 for location in pkgLocation:
-  os.system("install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+  os.system(os.environ['SUDO'] + " install -D ~/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 END
 
 
