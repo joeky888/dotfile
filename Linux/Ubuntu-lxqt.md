@@ -93,6 +93,7 @@ nameserver 223.5.5.5
 Install LXQT
 =====
 * $ sudo apt-fast install lxqt xorg openbox compton gnome-terminal chromium-codecs-ffmpeg-extra vim-gtk3 network-manager file-roller software-properties-kde baobab gnome-system-monitor gnome-disk-utility -y
+* $ lxqt-config-appearance # Select dark theme
 * Or using ppa
 * $ sudo add-apt-repository ppa:lxqt/ppa -y
 * $ sudo apt-fast update
