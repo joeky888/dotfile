@@ -332,21 +332,21 @@ curlToAria2()
 unzipToBig5()
 {
   export zipfilename="$@"
-  python2 <<END
-import os, sys, zipfile
+  python3 <<END
+import zipfile, sys, os
 
-file = zipfile.ZipFile(os.environ['zipfilename'],"r");
-for name in file.namelist():
-  utf8name = name.decode('big5')
-#  print "Extracting " + utf8name
-  pathname = os.path.dirname(utf8name)
-  if not os.path.exists(pathname) and pathname!= "":
-    os.makedirs(pathname)
-  data = file.read(name)
-  if not os.path.exists(utf8name):
-    fo = open(utf8name, "w")
-    fo.write(data)
-    fo.close
+with zipfile.ZipFile(os.environ['zipfilename']) as file:
+  for name in file.namelist():
+    utf8name = name.encode('cp437').decode('Big5')
+    pathname = os.path.dirname(utf8name)
+    if not os.path.exists(pathname) and pathname!= "":
+      os.makedirs(pathname)
+    else:
+      data = file.read(name)
+      if not os.path.exists(utf8name):
+        fo = open(utf8name, "wb")
+        fo.write(data)
+        fo.close
 file.close()
 
 END
@@ -356,21 +356,21 @@ END
 unzipToGBK()
 {
   export zipfilename="$@"
-  python2 <<END
-import os, sys, zipfile
+  python3 <<END
+import zipfile, sys, os
 
-file = zipfile.ZipFile(os.environ['zipfilename'],"r");
-for name in file.namelist():
-  utf8name = name.decode('gbk')
-#  print "Extracting " + utf8name
-  pathname = os.path.dirname(utf8name)
-  if not os.path.exists(pathname) and pathname!= "":
-    os.makedirs(pathname)
-  data = file.read(name)
-  if not os.path.exists(utf8name):
-    fo = open(utf8name, "w")
-    fo.write(data)
-    fo.close
+with zipfile.ZipFile(os.environ['zipfilename']) as file:
+  for name in file.namelist():
+    utf8name = name.encode('cp437').decode('GBK')
+    pathname = os.path.dirname(utf8name)
+    if not os.path.exists(pathname) and pathname!= "":
+      os.makedirs(pathname)
+    else:
+      data = file.read(name)
+      if not os.path.exists(utf8name):
+        fo = open(utf8name, "wb")
+        fo.write(data)
+        fo.close
 file.close()
 
 END
