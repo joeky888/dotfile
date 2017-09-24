@@ -252,6 +252,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   alias ls='ls -G'
+  alias grep='grep --color=auto'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
@@ -275,6 +276,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   true
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
+  alias grep='grep --color=auto'
 else # Unknown OS
   true
 fi
