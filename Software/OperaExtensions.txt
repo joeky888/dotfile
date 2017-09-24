@@ -6,7 +6,6 @@ Full Page Screen Capture
 TJDict
 SimpleUndoClose
 Tampermonkey
-Allow Select And Copy
 User-Agent Switcher for Chrome by Google
 Turbo Download Manager (Opera Extension)
 Monokai for Chrome:
