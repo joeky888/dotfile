@@ -21,11 +21,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   ln -sf ~/dotfile/.fbtermrc ~/.fbtermrc
   ln -sf ~/dotfile/.Xresources ~/.Xresources
   mkdir -p ~/.config/openbox
-  mkdir -p "~/.themes/Ambiance/gtk-3.0/apps"
+  mkdir -p ~/.themes
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-  ln -sf ~/dotfile/Linux/nautilus.css "~/.themes/Ambiance/gtk-3.0/apps/nautilus.css"
+  ln -sf ~/dotfile/Linux/nautilus.css ~/.themes/nautilus.css
   ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
   ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
   $SUDO chsh -s $(command -v zsh) root
