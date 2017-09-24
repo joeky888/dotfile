@@ -183,9 +183,9 @@
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>pcmanfm-qt</name>
+          <name>nautilus</name>
         </startupnotify>
-        <command>pcmanfm-qt</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-Tab">
