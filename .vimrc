@@ -27,7 +27,7 @@ set incsearch " Search as typing
 set hlsearch " Highlight search results
 set cursorline " Highlight the cursor line
 set virtualedit=onemore " Allow the cursor to move just past the end of the line
-set history=5000 " Keep 5000 undo
+set history=10000 " Maximum 10000 undo
 set wildmenu " Better command-line completion
 " set scrolloff=999 " Always keep max lines after or before when scrolling
 " set sidescrolloff=999 " Always keep max lines after or before whens side scrolling
