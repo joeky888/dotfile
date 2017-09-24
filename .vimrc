@@ -1346,6 +1346,21 @@ function! HighlightC()
 endfunction
 
 if has("gui_running")
+
+  let g:guifontsize=13
+  function! ChangeFontSize()
+    if has('win32') || has('win64')
+      execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize
+      execute "set guifontwide=DroidMono:h".g:guifontsize
+    else
+      execute "set guifont=Ubuntu\\ Mono ".g:guifontsize
+    endif
+  endfunction
+  call ChangeFontSize()
+
+  nnoremap <Home>     :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <End>   :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
     call EnsureDirExists($TEMP."/vim/swap")
@@ -1353,11 +1368,7 @@ if has("gui_running")
     set directory=$TEMP/vim/swap
     set backupdir=$TEMP/vim/backup
     set undodir=$TEMP/vim/undo
-    set guifont=Ubuntu\ Mono:h14,Consolas:h14,Fixed:h14,monospace:h14
-    set guifontwide=DroidMono:h13,Microsoft\ Yahei:h13
     au GUIEnter * simalt ~x " Full screen on start
-  else
-    set guifont=Ubuntu\ Mono\ 16,Fixed\ 16,monospace\ 16
   endif
   set number
   set lines=999 columns=999 " set window Maximized
