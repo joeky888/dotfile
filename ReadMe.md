@@ -17,7 +17,7 @@ python2 -c "import urllib; print urllib.urlopen('https://raw.githubusercontent.c
 python3 -c "import urllib.request as ur; print (ur.urlopen('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc').read().decode('utf-8'))" > ~/.vimrc
 
 # Windows: Use cmd
-powershell -command "& { (New-Object Net.WebClient).DownloadFile('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc', '%USERPROFILE%\\.vimrc') }"
+C:\windows\explorer.exe https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc
 
 # Windows: Use powershell
 Invoke-WebRequest "https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc" -OutFile "$ENV:UserProfile\\.vimrc"
