@@ -1353,7 +1353,7 @@ if has("gui_running")
       execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize
       execute "set guifontwide=DroidMono:h".g:guifontsize
     else
-      execute "set guifont=Ubuntu\\ Mono ".g:guifontsize
+      execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize
     endif
   endfunction
   call ChangeFontSize()
