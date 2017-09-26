@@ -782,7 +782,7 @@ let colorsAndModesGui= {
   \ '' : '#ff8700',
 \}
 function! LastAccentColor()
-  if !exists('b:lastMode') | let b:lastMode = mode() | endif
+  if !exists('b:lastMode') | let b:lastMode = mode() | call ChangeAccentColor() | endif
   if b:lastMode != mode()
     let b:lastMode = mode()
     call ChangeAccentColor()
@@ -882,7 +882,7 @@ set statusline+=%2*\ [%{&filetype}] " Filetype
 set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 " Speed up the redraw
-au InsertLeave * call ChangeAccentColor()
+" au InsertLeave * call ChangeAccentColor()
 au CursorHold * let &ro = &ro
 
 """" Color Scheme
