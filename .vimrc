@@ -393,8 +393,8 @@ call CreateShortcut("Home", "^", "inv")
 call CreateShortcut("End", "$l", "inv")
 
 " Ctrl K - Delete Line
-call CreateShortcut("C-k", ":call DeleteLine()<CR>", "n")
-call CreateShortcut("C-k", "<C-o>:call DeleteLine()<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+nnoremap <C-k> :call DeleteLine()<CR>
+inoremap <C-k> <C-o>:call DeleteLine()<CR><C-g>u
 vnoremap <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
@@ -1386,14 +1386,15 @@ if has("gui_running")
   set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
-  call CreateShortcut("C-c", "mjV\"+y:redraw!<CR>`j", "in")
-  call CreateShortcut("C-c", "\"+y:redraw!<CR>gv", "v")
+  nnoremap <C-c> mjV"+y:redraw!<CR>`j
+  inoremap <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>:redraw!<CR><C-o>`j
+  vnoremap <C-c> "+y:redraw!<CR>gv
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
-  call CreateShortcut("C-x", "<C-o>:call SavePos()<CR><C-o>V\"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
-  call CreateShortcut("C-x", ":call SavePos()<CR>V\"+x:call setpos('.',b:savepos)<CR>", "n")
-  call CreateShortcut("C-x", "\"+x", "v")
+  nnoremap <C-x> :call SavePos()<CR>V"+x:call setpos('.',b:savepos)<CR>
+  inoremap <C-x> <C-o>:call SavePos()<CR><C-o>V"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u
+  vnoremap <C-x> "+x
   cnoremap <C-x> <C-y><C-e><C-u>
 
   " For Visual-Block Insert
@@ -1407,9 +1408,9 @@ if has("gui_running")
   noremap! <Insert> <C-r>+
 
   " Delete selected characters before Entering the insert mode
-  call CreateShortcut("C-BS", "di<C-g>u", "v")
-  call CreateShortcut("C-Del", "ldwi<C-g>u", "i", "noTrailingIInInsert")
   nnoremap <C-Del> dwi
+  inoremap <C-Del> <C-o>dw<C-g>u
+  vnoremap <C-BS> di
 
   " Alt - Backspace kill a word
   nnoremap <A-BS> dBi<C-g>u
