@@ -9,6 +9,7 @@ Tampermonkey
 Allow Select And Copy
 Set Character Encoding
 User-Agent Switcher for Chrome by Google
+HTTPS Everywhere
 Turbo Download Manager (Opera Extension)
 Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
