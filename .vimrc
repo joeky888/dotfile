@@ -1353,8 +1353,8 @@ if has("gui_running")
   let g:guifontsize=13
   function! ChangeFontSize()
     if has('win32') || has('win64')
-      execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize
-      execute "set guifontwide=DroidMono:h".g:guifontsize
+      execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
+      execute "set guifontwide=DroidMono:h".g:guifontsize.",Microsoft\\ Yahei:h".g:guifontsize
     else
       execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize
     endif
