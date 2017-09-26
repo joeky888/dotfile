@@ -781,6 +781,14 @@ let colorsAndModesGui= {
   \ 'V' : '#ffff00',
   \ '' : '#ff8700',
 \}
+function! LastAccentColor()
+  if !exists('b:lastMode') | let b:lastMode = mode() | endif
+  if b:lastMode != mode()
+    let b:lastMode = mode()
+    call ChangeAccentColor()
+  endif
+  return ''
+endfunction
 function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
@@ -864,7 +872,7 @@ let g:currentmode={
     \ 't'  : 'Terminal',
 \}
 set statusline=
-set statusline+=%{ChangeAccentColor()}
+set statusline+=%{LastAccentColor()}
 set statusline+=%1*\ ***%{toupper(g:currentmode[mode()])}***\  " Current mode
 set statusline+=%2*\ %<%F\  " Filepath
 set statusline+=%2*\ [%{SearchCount()}] " Nth of N when searching
