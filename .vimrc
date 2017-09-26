@@ -988,7 +988,7 @@ hi iCursor              guifg=#000000   guibg=#F8F8F0
 " :OpenDroppedFiles <Drop_Files_To_Vim>
 function! OpenDroppedFiles(droppedFiles)
   execute "silent! argadd " . a:droppedFiles
-  execute "silent! argdo tabnew"
+  argdo set eventignore-=Syntax | tabedit
 endfunction
 command! -nargs=1 OpenDroppedFiles call OpenDroppedFiles(<f-args>)
 
