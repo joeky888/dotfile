@@ -482,14 +482,14 @@ call CreateShortcut("S-Tab", "<<", "in")
 call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 
 " Ctrl Z - Undo
-call CreateShortcut("C-z", "u", "n")
-call CreateShortcut("C-z", "<C-o>u", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+nnoremap <C-z> u
+inoremap <C-z> <C-o>u
 vnoremap <C-z> <ESC>u
 cnoremap <C-z> <ESC>u
 
 " Ctrl Y - Redo
-call CreateShortcut("C-y", "<C-r>", "n")
-call CreateShortcut("C-y", "<C-o><C-r>", "i", "noLeadingESCInInsert", "noTrailingIInInsert")
+nnoremap <C-y> <C-r>
+inoremap <C-y> <C-o><C-r>
 cnoremap <C-y> <ESC><C-r>
 
 " Ctrl T - New tab
