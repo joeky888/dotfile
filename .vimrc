@@ -1000,8 +1000,11 @@ def FormatJSON(fmtlStart, fmtlEnd):
 EOF
   " :'<,'>JsonBeautify
   command! -range -bar JsonBeautify :python FormatJSON(<line1>, <line2>)
+  nnoremenu Edit.Json.Beautify  ggVG:<C-u>'<,'>JsonBeautify<CR>
+  vnoremenu Edit.Json.Beautify  :<C-u>'<,'>JsonBeautify<CR>
 else
   command! JsonBeautify execute "%!python -m json.tool"
+  nnoremenu Edit.Json.Beautify :%!python -m json.tool<CR>
 endif
 
 function! JsonMinify()
@@ -1012,9 +1015,6 @@ function! JsonMinify()
   execute "%j!"
 endfunction
 
-" Json pretty by python
-nnoremenu Edit.Json.Beautify  ggVG:<C-u>'<,'>JsonBeautify<CR>
-vnoremenu Edit.Json.Beautify  :<C-u>'<,'>JsonBeautify<CR>
 nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
 command! JsonMinify      execute "call JsonMinify()"
 
