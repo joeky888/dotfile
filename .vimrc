@@ -1354,15 +1354,15 @@ if has("gui_running")
   function! ChangeFontSize()
     if has('win32') || has('win64')
       execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
-      execute "set guifontwide=DroidMono:h".g:guifontsize.",Microsoft\\ Yahei:h".g:guifontsize
+      execute "set guifontwide=DroidMono:h".g:guifontsize.",NSimsun:h".g:guifontsize
     else
       execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize
     endif
   endfunction
   call ChangeFontSize()
 
-  nnoremap <Home>     :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
-  nnoremap <End>   :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
