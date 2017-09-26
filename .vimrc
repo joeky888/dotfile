@@ -1043,6 +1043,9 @@ nnoremenu Edit.XML.Minify     :call XmlMinify()<CR>
 command! XmlBeautify    execute "call XmlBeautify()"
 command! XmlMinify      execute "call XmlMinify()"
 
+" xxd command alias
+command! XXD execute "%!xxd"
+
 " Merge selected to one line
 nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
 vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
