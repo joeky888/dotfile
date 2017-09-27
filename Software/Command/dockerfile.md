@@ -13,7 +13,3 @@ Remove a dockerfile image
 =====
 * $ docker images
 * $ docker rmi debian:joeky
-
-Remove a container
-=====
-* $ docker rm containerID
