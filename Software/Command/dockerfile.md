@@ -7,5 +7,5 @@ Build and Run a dockerfile
 * If the dockerfile has a line CMD["bash"]
 * $ docker run -i -t debian:joeky
 * If the dockerfile doesn't have a line CMD["bash"]
-* $ docker run -i -t debian:joeky /bin/bash
+* $ docker run -i -t debian:joeky /bin/zsh
 

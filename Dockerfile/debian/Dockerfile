@@ -8,4 +8,4 @@ RUN curl -s https://raw.githubusercontent.com/j16180339887/dotfile/master/instal
 
 ENV EDITOR vim
 
-CMD ["bash"]
+CMD ["zsh"]
