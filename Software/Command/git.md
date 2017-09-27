@@ -9,6 +9,7 @@ Add submodule
 git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
 ```
 * Add "shallow = true" to .gitmodules
+* $ git submodule update --init --recursive
 
 git restore a commit
 =====
