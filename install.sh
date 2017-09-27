@@ -7,7 +7,7 @@ fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO apt update
-  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils -y
+  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils python3 -y
   rm -rf ~/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git ~/dotfile
   cd ~/dotfile
