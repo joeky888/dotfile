@@ -358,7 +358,7 @@ if has("clipboard")
   inoremap <silent> <C-v> <C-g>u<C-o>"+gP<C-g>u
   nnoremap <silent> <C-v> i<C-g>u<C-o>"+gP<C-g>u
   vnoremap <silent> <C-v> d"+gP
-  cnoremap <silent> <C-v> <C-r>+
+  cnoremap <C-v> <C-r>+
 else
   " Ctrl C - Copy
   call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
@@ -373,7 +373,7 @@ else
   inoremap <silent> <C-v> <C-o>:normal! Pl<CR><C-g>u
   nnoremap <silent> <C-v> Pli<C-g>u
   vnoremap <silent> <C-v> "_dPl
-  cnoremap <silent> <C-v> <C-r>"
+  cnoremap <C-v> <C-r>"
 endif
 
 
@@ -386,7 +386,7 @@ vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
 nnoremap <silent> <C-s> :call MySave()<CR>
 inoremap <silent> <C-s> <C-g>u<C-O>:call MySave()<CR>
 vnoremap <silent> <C-s> <ESC>:call MySave()<CR>
-cnoremap <silent> <C-s> <C-u>:call MySave()<CR>
+cnoremap <C-s> <C-u>:call MySave()<CR>
 
 " Home - Go To Begin of the Line
 call CreateShortcut("Home", "^", "inv")
@@ -475,7 +475,7 @@ vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 nnoremap <silent> <C-w> :call MyQuit()<CR>
 inoremap <silent> <C-w> <C-o>:call MyQuit()<CR><CR>
 vnoremap <silent> <C-w> <ESC>:call MyQuit()<CR><CR>
-cnoremap <silent> <C-w> <C-u>call MyQuit()<CR>
+cnoremap <C-w> <C-u>call MyQuit()<CR>
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
@@ -1402,7 +1402,7 @@ if has("gui_running")
   nnoremap <silent> <C-x> :call SavePos()<CR>V"+x:call setpos('.',b:savepos)<CR>
   inoremap <silent> <C-x> <C-o>:call SavePos()<CR><C-o>V"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u
   vnoremap <silent> <C-x> "+x
-  cnoremap <silent> <C-x> <C-y><C-e><C-u>
+  cnoremap <C-x> <C-y><C-e><C-u>
 
   " For Visual-Block Insert
   noremap! <Insert> <C-r>+
