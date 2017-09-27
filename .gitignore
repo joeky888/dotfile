@@ -6,3 +6,4 @@ Thumbs.db
 *viminfo*
 clipboard.txt
 *stackdump
+*.pyc
