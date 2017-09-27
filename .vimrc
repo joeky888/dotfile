@@ -1005,11 +1005,11 @@ def FormatJSON(fmtlStart, fmtlEnd):
 EOF
   " :'<,'>JsonBeautify
   command! -range -bar JsonBeautify :python FormatJSON(<line1>, <line2>)
-  nnoremenu Edit.Json.Beautify  ggVG:<C-u>'<,'>JsonBeautify<CR>
-  vnoremenu Edit.Json.Beautify  :<C-u>'<,'>JsonBeautify<CR>
+  nnoremenu Edit.Json.Beautify(UTF8)  ggVG:<C-u>'<,'>JsonBeautify<CR>
+  vnoremenu Edit.Json.Beautify(UTF8)  :<C-u>'<,'>JsonBeautify<CR>
 else
   command! JsonBeautify execute "%!python -m json.tool"
-  nnoremenu Edit.Json.Beautify :%!python -m json.tool<CR>
+  nnoremenu Edit.Json.Beautify(cANSI) :%!python -m json.tool<CR>
 endif
 
 function! JsonMinify()
