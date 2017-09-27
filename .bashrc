@@ -332,7 +332,7 @@ curlToAria2()
   done
 }
 
-unzipToBig5()
+unzipToBig5py3()
 {
   export zipfilename="$@"
   python3 <<END
@@ -356,7 +356,7 @@ END
   unset zipfilename;
 }
 
-unzipToGBK()
+unzipToGBKpy3()
 {
   export zipfilename="$@"
   python3 <<END
@@ -376,6 +376,50 @@ with zipfile.ZipFile(os.environ['zipfilename']) as file:
         fo.close
 file.close()
 
+END
+  unset zipfilename;
+}
+
+unzipToBig5py2()
+{
+  export zipfilename="$@"
+  python2 <<END
+import os, sys, zipfile
+file = zipfile.ZipFile(os.environ['zipfilename'],"r");
+for name in file.namelist():
+  utf8name = name.decode('big5')
+#  print "Extracting " + utf8name
+  pathname = os.path.dirname(utf8name)
+  if not os.path.exists(pathname) and pathname!= "":
+    os.makedirs(pathname)
+  data = file.read(name)
+  if not os.path.exists(utf8name):
+    fo = open(utf8name, "w")
+    fo.write(data)
+    fo.close
+file.close()
+END
+  unset zipfilename;
+}
+
+unzipToGBKpy2()
+{
+  export zipfilename="$@"
+  python2 <<END
+import os, sys, zipfile
+file = zipfile.ZipFile(os.environ['zipfilename'],"r");
+for name in file.namelist():
+  utf8name = name.decode('gbk')
+#  print "Extracting " + utf8name
+  pathname = os.path.dirname(utf8name)
+  if not os.path.exists(pathname) and pathname!= "":
+    os.makedirs(pathname)
+  data = file.read(name)
+  if not os.path.exists(utf8name):
+    fo = open(utf8name, "w")
+    fo.write(data)
+    fo.close
+file.close()
 END
   unset zipfilename;
 }
