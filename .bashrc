@@ -64,7 +64,7 @@ alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
-alias bypy='bypy -d --processes 8 --downloader aria2'
+alias bypy='bypy -d --processes 4 --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
 alias ll='ls -lh'
