@@ -284,6 +284,8 @@ nnoremap > i>
 nnoremap . i.
 nnoremap , i,
 nnoremap ; i;
+nnoremap + i+
+nnoremap = i=
 
 " Vim undo too much
 inoremap <Space> <Space><C-g>u
@@ -353,10 +355,10 @@ if has("clipboard")
   vnoremap <silent> <C-x> "+ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl V - Paste from system clipboard
-  inoremap <C-v> <C-g>u<C-o>"+gP<C-g>u
-  nnoremap <C-v> i<C-g>u<C-o>"+gP<C-g>u
-  vnoremap <C-v> d"+gP
-  cnoremap <C-v> <C-r>+
+  inoremap <silent> <C-v> <C-g>u<C-o>"+gP<C-g>u
+  nnoremap <silent> <C-v> i<C-g>u<C-o>"+gP<C-g>u
+  vnoremap <silent> <C-v> d"+gP
+  cnoremap <silent> <C-v> <C-r>+
 else
   " Ctrl C - Copy
   call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
@@ -368,17 +370,17 @@ else
   vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
   " Ctrl V - Paste from vim clipboard
-  inoremap <C-v> <C-o>:normal! Pl<CR><C-g>u
-  nnoremap <C-v> Pli<C-g>u
-  vnoremap <C-v> "_dPl
-  cnoremap <C-v> <C-r>"
+  inoremap <silent> <C-v> <C-o>:normal! Pl<CR><C-g>u
+  nnoremap <silent> <C-v> Pli<C-g>u
+  vnoremap <silent> <C-v> "_dPl
+  cnoremap <silent> <C-v> <C-r>"
 endif
 
 
 " Insert - Paste
-nnoremap <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
-inoremap <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
-vnoremap <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
+nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
+inoremap <silent> <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
+vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
@@ -393,13 +395,13 @@ call CreateShortcut("Home", "^", "inv")
 call CreateShortcut("End", "$l", "inv")
 
 " Ctrl K - Delete Line
-nnoremap <C-k> :call DeleteLine()<CR>
-inoremap <C-k> <C-o>:call DeleteLine()<CR><C-g>u
-vnoremap <C-k> <ESC>:<C-u>'<,'>d<CR>
+nnoremap <silent> <C-k> :call DeleteLine()<CR>
+inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
+vnoremap <silent> <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
-call CreateShortcut("C-d", "mjyyp`jj", "n")
-inoremap <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
+nnoremap <C-d> mjyyp`jj
+inoremap <silent> <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
 vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
@@ -444,7 +446,7 @@ vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/\%V
 " Ctrl G - Select all
 call CreateShortcut("C-g", "ggVG", "inv")
 
-" Ctrl L - Delete all lines
+" Ctrl L - Visual line selection
 call CreateShortcut("C-l", "V", "n")
 inoremap <C-l> <C-\><C-O>V
 vnoremap <C-l> <ESC>
@@ -470,8 +472,10 @@ inoremap <silent> <C-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j
 vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 
 " Ctrl W - Quit
-call CreateShortcut("C-w", ":call MyQuit()<CR>", "inv", "cmdInVisual")
-cnoremap <C-w> <C-u>call MyQuit()<CR>
+nnoremap <silent> <C-w> :call MyQuit()<CR>
+inoremap <silent> <C-w> <C-o>:call MyQuit()<CR><CR>
+vnoremap <silent> <C-w> <ESC>:call MyQuit()<CR><CR>
+cnoremap <silent> <C-w> <C-u>call MyQuit()<CR>
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
@@ -606,7 +610,9 @@ call CreateShortcut("F3", ":tabp<CR>", "inv")
 call CreateShortcut("F4", ":tabn<CR>", "inv")
 
 " Ctrl \ is toggling comments
-call CreateShortcut("C-\\", ":call ToggleComment()<CR>", "inv")
+nnoremap <silent> <C-\> :call ToggleComment()<CR>
+inoremap <silent> <C-\> <C-o>:call ToggleComment()<CR>
+vnoremap <silent> <C-\> :call ToggleComment()<CR>
 
 inoremap <C-b> <C-w>
 nnoremap <C-b> i<C-w>
@@ -642,18 +648,18 @@ vnoremap <CR> di<CR><C-g>u
 inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
-vnoremap ( <ESC>:call WrapSelection("(",")")<CR>
-vnoremap [ <ESC>:call WrapSelection("[","]")<CR>
-vnoremap { <ESC>:call WrapSelection("{","}")<CR>
-vnoremap ) <ESC>:call WrapSelection("(",")")<CR>
-vnoremap ] <ESC>:call WrapSelection("[","]")<CR>
-vnoremap } <ESC>:call WrapSelection("{","}")<CR>
-vnoremap ' <ESC>:call WrapSelection("'","'")<CR>
-vnoremap " <ESC>:call WrapSelection("\"","\"")<CR>
-vnoremap < <ESC>:call WrapSelection("<",">")<CR>
-vnoremap > <ESC>:call WrapSelection("<",">")<CR>
-vnoremap / <ESC>:call WrapSelection("/","/")<CR>
-vnoremap \ <ESC>:call WrapSelection("\\","\\")<CR>
+vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
+vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
+vnoremap <silent> { <ESC>:call WrapSelection("{","}")<CR>
+vnoremap <silent> ) <ESC>:call WrapSelection("(",")")<CR>
+vnoremap <silent> ] <ESC>:call WrapSelection("[","]")<CR>
+vnoremap <silent> } <ESC>:call WrapSelection("{","}")<CR>
+vnoremap <silent> ' <ESC>:call WrapSelection("'","'")<CR>
+vnoremap <silent> " <ESC>:call WrapSelection("\"","\"")<CR>
+vnoremap <silent> < <ESC>:call WrapSelection("<",">")<CR>
+vnoremap <silent> > <ESC>:call WrapSelection("<",">")<CR>
+vnoremap <silent> / <ESC>:call WrapSelection("/","/")<CR>
+vnoremap <silent> \ <ESC>:call WrapSelection("\\","\\")<CR>
 
 function! WrapSelection(c1, c2)
   execute "normal! `<i".a:c1
@@ -1392,10 +1398,10 @@ if has("gui_running")
   cnoremap <C-c> <C-y>
 
   " Ctrl X is cutting line if there is no word selected
-  nnoremap <C-x> :call SavePos()<CR>V"+x:call setpos('.',b:savepos)<CR>
-  inoremap <C-x> <C-o>:call SavePos()<CR><C-o>V"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u
-  vnoremap <C-x> "+x
-  cnoremap <C-x> <C-y><C-e><C-u>
+  nnoremap <silent> <C-x> :call SavePos()<CR>V"+x:call setpos('.',b:savepos)<CR>
+  inoremap <silent> <C-x> <C-o>:call SavePos()<CR><C-o>V"+x<C-o>:call setpos('.',b:savepos)<CR><C-g>u
+  vnoremap <silent> <C-x> "+x
+  cnoremap <silent> <C-x> <C-y><C-e><C-u>
 
   " For Visual-Block Insert
   noremap! <Insert> <C-r>+
