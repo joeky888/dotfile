@@ -7,7 +7,7 @@ curl -s https://raw.githubusercontent.com/j16180339887/dotfile/master/install.sh
 Install vimrc only
 ====
 ```bash
-# Unix-like: Use curl
+# Unix-like & Powershell: Use curl
 curl https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
 
 # Unix-like: Use python2
@@ -19,6 +19,6 @@ python3 -c "import urllib.request as ur; print (ur.urlopen('https://raw.githubus
 # Windows: Use cmd
 C:\windows\explorer.exe https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc
 
-# Windows: Use powershell
+# Windows: Use Powershell
 Invoke-WebRequest "https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc" -OutFile "$ENV:UserProfile\\.vimrc"
 ```
