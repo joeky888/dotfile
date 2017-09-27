@@ -5,7 +5,7 @@ git diff ignore
 
 Add submodule
 =====
-```bash
+```sh
 git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
 ```
 * Add "shallow = true" to .gitmodules
