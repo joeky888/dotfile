@@ -16,7 +16,7 @@ Install docker on Linux
 =====
 ```sh
 # Install Docker Community Edition (Docker CE)
-sudo apt-get update && sudo apt-get install docker.io -y
+sudo apt-fast update && sudo apt-fast install docker.io -y
 sudo usermod -aG docker $USER
 sudo reboot
 systemctl status docker.service
