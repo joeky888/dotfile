@@ -7,3 +7,5 @@ RUN apt-get update && apt-get install curl -y
 RUN curl -s https://raw.githubusercontent.com/j16180339887/dotfile/master/install.sh | bash
 
 ENV EDITOR vim
+
+CMD ["bash"]
