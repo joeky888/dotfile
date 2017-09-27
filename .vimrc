@@ -436,11 +436,13 @@ execute 'inoremap <silent> <C-j> <C-\><C-O>'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 
 " Ctrl F - Find
-call CreateShortcut("C-f", ":noh<CR>:set noignorecase<CR>/\\c", "in", "noTrailingIInInsert")
+nnoremap <C-f> :noh<CR>:set noignorecase<CR>/\c
+inoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\c
 vnoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\%V\c
 
 " Ctrl R - Search and Replace
-call CreateShortcut("C-r", ":noh<CR>:set noignorecase<CR>:%s/", "in", "noTrailingIInInsert")
+nnoremap <C-r> :noh<CR>:set noignorecase<CR>:%s/
+inoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:%s/
 vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/\%V
 
 " Ctrl G - Select all
@@ -779,14 +781,14 @@ let colorsAndModes= {
   \ 'i' : 39,
   \ 'v' : 82,
   \ 'V' : 226,
-  \ '' : 208,
+  \ '' : 208
 \}
 let defaultAccentColorGui='#d7005f'
 let colorsAndModesGui= {
   \ 'i' : '#00afff',
   \ 'v' : '#5fff00',
   \ 'V' : '#ffff00',
-  \ '' : '#ff8700',
+  \ '' : '#ff8700'
 \}
 function! LastAccentColor()
   if !exists('b:lastMode') | let b:lastMode = mode() | call ChangeAccentColor() | endif
