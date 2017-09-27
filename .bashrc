@@ -188,6 +188,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
     export HISTSIZE=10000
     export SAVEHIST=10000
+    zstyle ':completion:*' menu select
+    autoload -U compinit && compinit
+    zmodload -i zsh/complist
   fi
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
