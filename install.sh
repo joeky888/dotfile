@@ -81,12 +81,13 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     echo "Please install aria2"
     exit 1
   fi
+  export Home=$(cygpath -u "$USERPROFILE")
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
-  cd $USERPROFILE && rm -rf dotfile/
-  git clone --depth=1 https://github.com/j16180339887/dotfile.git dotfile
+  rm -rf $Home/dotfile/
+  git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -118,7 +119,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 
   apt-cyg install procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
-  cd $USERPROFILE && cd dotfile && git submodule update --init --recursive
+  cd $Home/dotfile && git submodule update --init --recursive
 
   git clone --depth 1 https://github.com/garabik/grc.git grc
   cd grc
