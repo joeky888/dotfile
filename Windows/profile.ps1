@@ -1,3 +1,6 @@
+# UTF8
+[Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+
 # Zsh-like completion
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
