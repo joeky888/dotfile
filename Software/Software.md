@@ -62,6 +62,7 @@ Windows
 * Rainmeter (with weather)
 * MPC-HC
 * SumatraPDF
+* Inziu Iosevka font (for console)
 
 Windows XP
 =====
