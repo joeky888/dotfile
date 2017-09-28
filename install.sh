@@ -121,17 +121,14 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   cd $Home/dotfile && git submodule update --init --recursive
 
-  git clone --depth 1 https://github.com/garabik/grc.git grc
-  cd grc
-  sh install.sh
-  cd ..
-  rm -rf grc
+  git clone --depth 1 https://github.com/garabik/grc.git $Home/grc
+  cd $Home/grc && bash install.sh && cd $Home && rm -rf $Home/grc
 python3 <<END
 import sys, os, site
 
 pkgLocation = site.getsitepackages()
 for location in pkgLocation:
-  os.system("cd $USERPROFILE && install -D dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+  os.system("install -D " + os.environ['Home'] + "/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 END
 
 
