@@ -11,6 +11,9 @@ Set-PSReadlineOption -BellStyle None
 Set-PSReadlineOption -EditMode Emacs
 
 # Theme
+$Host.UI.RawUI.ForegroundColor = "Gray"
+$Host.UI.RawUI.BackgroundColor = "Black"
+
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
   Write-Host "@" -NoNewline
