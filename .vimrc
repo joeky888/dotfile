@@ -1375,8 +1375,8 @@ if has("gui_running")
   endfunction
   call ChangeFontSize()
 
-  nnoremap <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
-  nnoremap <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <silent> <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
