@@ -61,6 +61,7 @@ Windows
 * x64dbg / snowman
 * Rainmeter (with weather)
 * MPC-HC
+* SumatraPDF
 
 Windows XP
 =====
