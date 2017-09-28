@@ -4,6 +4,12 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 # Increase history size
 $global:MaximumHistoryCount = 1000
 
+# Disable beep
+Set-PSReadlineOption -BellStyle None
+
+# Bash-like keys
+Set-PSReadlineOption -EditMode Emacs
+
 # Theme
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Green
