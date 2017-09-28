@@ -1,9 +1,6 @@
 # UTF8
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 
-# Zsh-like completion
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
-
 # Increase history size
 $global:MaximumHistoryCount = 1000
 
@@ -12,6 +9,17 @@ Set-PSReadlineOption -BellStyle None
 
 # Bash-like keys
 Set-PSReadlineOption -EditMode Emacs
+
+# Zsh-like completion
+Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+
+# Key mappings
+Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
+Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
+Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
+Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
+Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
+Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
 
 # Theme
 $Host.UI.RawUI.ForegroundColor = "Gray"
