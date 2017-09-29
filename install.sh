@@ -39,7 +39,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim nano ffmpeg neofetch fontconfig -y
   $SUDO apt-fast install libssl-dev -y
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-  aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu-font-family-0.83 /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family-0.83.zip
+  aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z -o"ubuntu" x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family*
   fc-cache -fv
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
