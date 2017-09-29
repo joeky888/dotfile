@@ -21,6 +21,9 @@ Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
 Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
 Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
 
+# Set default starting path to USERPROFILE
+Set-Location $env:USERPROFILE
+
 # Theme
 $Host.UI.RawUI.ForegroundColor = "Gray"
 $Host.UI.RawUI.BackgroundColor = "Black"

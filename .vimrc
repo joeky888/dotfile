@@ -91,10 +91,8 @@ cnoreabbrev edit <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'edit'
 cnoreabbrev e <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'e')<CR>
 
 """ Prevent lag when hitting ESC
-set ttimeoutlen=100
-set timeoutlen=0
-au InsertEnter * set timeout | set ignorecase
-au InsertLeave * set notimeout
+set ttimeoutlen=10
+set timeoutlen=10
 
 """ When opening a file : - Reopen at last position - Display info
 function! GetFileInfo()
