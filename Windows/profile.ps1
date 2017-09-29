@@ -29,9 +29,9 @@ $Host.UI.RawUI.ForegroundColor = "Gray"
 $Host.UI.RawUI.BackgroundColor = "Black"
 
 Function Prompt {
-  Write-Host "$env:username" -NoNewline -ForegroundColor Green
+  Write-Host "$env:username" -NoNewline -ForegroundColor Red
   Write-Host "@" -NoNewline
-  Write-Host "$env:computername" -NoNewline -ForegroundColor Red
+  Write-Host "$env:computername" -NoNewline -ForegroundColor Green
   Write-Host " " -NoNewline
   Write-Host "$PWD" -ForegroundColor Yellow
   Write-Host "$" -NoNewline
