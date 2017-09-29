@@ -895,7 +895,7 @@ set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 " Speed up the redraw
 " au InsertLeave * call ChangeAccentColor()
-au CursorHold * let &ro = &ro
+" au CursorHold * let &ro = &ro
 
 """" Color Scheme
 "" Modified from tomasr Molokai on Github
