@@ -475,7 +475,7 @@ vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 nnoremap <silent> <C-w> :call MyQuit()<CR>
 inoremap <silent> <C-w> <C-o>:call MyQuit()<CR>
 vnoremap <silent> <C-w> <ESC>:call MyQuit()<CR>
-cnoremap <C-w> <C-u>call MyQuit()<CR>
+cnoremap <C-w> <C-c>:call MyQuit()<CR>
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
