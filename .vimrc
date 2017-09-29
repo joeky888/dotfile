@@ -489,12 +489,12 @@ call CreateShortcut("S-Tab", "<", "v", "restoreSelectionAfter")
 nnoremap <C-z> u
 inoremap <C-z> <C-o>u
 vnoremap <C-z> <ESC>u
-cnoremap <C-z> <ESC>u
+cnoremap <C-z> <C-c>u
 
 " Ctrl Y - Redo
 nnoremap <C-y> <C-r>
 inoremap <C-y> <C-o><C-r>
-cnoremap <C-y> <ESC><C-r>
+cnoremap <C-y> <C-c><C-r>
 
 " Ctrl T - New tab
 call CreateShortcut("C-t", ":tabnew<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
