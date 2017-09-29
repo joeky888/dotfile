@@ -384,7 +384,7 @@ vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
 nnoremap <silent> <C-s> :call MySave()<CR>
 inoremap <silent> <C-s> <C-g>u<C-O>:call MySave()<CR>
 vnoremap <silent> <C-s> <ESC>:call MySave()<CR>
-cnoremap <C-s> <C-u>:call MySave()<CR>
+cnoremap <C-s> <C-c>:call MySave()<CR>
 
 " Home - Go To Begin of the Line
 call CreateShortcut("Home", "^", "inv")
