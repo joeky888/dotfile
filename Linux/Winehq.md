@@ -1,4 +1,4 @@
-Install without ppa
+Install Wine
 =====
 * $ sudo apt-fast update
 * $ sudo apt-fast install --install-recommends wine32-development-preloader winbind -y
@@ -7,13 +7,6 @@ Install without ppa
 * $ export WINEARCH=win32
 * $ winecfg-development # Configure OS, Win7 is a good option
 * DO NOT INSTALL winetricks
-
-Install from ppa
-=====
-* $ sudo add-apt-repository ppa:wine/wine-builds -y
-* $ sudo apt-fast update
-* $ sudo apt-fast install --install-recommends winehq-devel winbind -y
-* $ winecfg # Configure OS
 
 Install CJK font
 =====
