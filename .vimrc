@@ -44,7 +44,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set updatetime=2000
+set updatetime=8000 " How long will vim backup a file
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
