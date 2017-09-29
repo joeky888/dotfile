@@ -17,7 +17,7 @@ filetype plugin on
 filetype indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
-set lazyredraw " Lazy redraw
+set lazyredraw " Speed up when switching between vim modes
 set shortmess+=I " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set smarttab " Insert spaces according to shiftwidth
