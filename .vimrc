@@ -1409,13 +1409,15 @@ if has("gui_running")
   vnoremap <silent> <C-x> "+x
   cnoremap <C-x> <C-y><C-e><C-u>
 
-  " For Visual-Block Insert
-  noremap! <Insert> <C-r>+
-
   " Shift-Insert same as Ctrl-v
   inoremap <S-Insert> <C-o>"+gP<C-g>u
   nnoremap <S-Insert> "+gPi<C-g>u
   vnoremap <S-Insert> d"+gP
+
+  " Insert same as Ctrl-v
+  inoremap <Insert> <C-o>"+gP<C-g>u
+  nnoremap <Insert> "+gPi<C-g>u
+  vnoremap <Insert> d"+gP
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
 
