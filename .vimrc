@@ -203,7 +203,7 @@ function! MySave()
     endif
   catch /:E32:/
     if (confirm("This buffer has no file to be saved in! Wanna choose it?", "&Yes\n&No", 2)==1)
-      execute has("gui_running") == 1 ? 'browse confirm saveas %:p:h' : 'call feedkeys("\<ESC>:w ")'
+      execute has("gui_running") ? 'browse confirm saveas %:p:h' : 'call feedkeys("\<ESC>:w ")'
     else
       exe notSaved
     endif
@@ -239,9 +239,9 @@ function! OpenLastBufferInNewTab()
 endfunction
 function! OpenNetrw()
   if TabIsEmpty() == 1
-    execute has("gui_running") == 1 ? "browse confirm e %:p:h" : "Explore %:p:h"
+    execute has("gui_running") ? "browse confirm e %:p:h" : "Explore %:p:h"
   else
-    execute has("gui_running") == 1 ? "browse confirm tabe %:p:h" : "Texplore %:p:h"
+    execute has("gui_running") ? "browse confirm tabe %:p:h" : "Texplore %:p:h"
   endif
 endfunction
 function! MenuNetrw()
@@ -857,6 +857,7 @@ nnoremap <silent> N :call PreviousSearch()<CR>
 function! ReadOnly()
   return (&readonly || !&modifiable) ? 'Read Only ' : ''
 endfunction
+"  Get all mode in :h mode()
 let g:currentmode={
     \ 'n'  : 'Normal',
     \ 'no' : 'N·Operator Pending',
@@ -867,8 +868,12 @@ let g:currentmode={
     \ 'S'  : 'S·Line',
     \ '^S' : 'S·Block',
     \ 'i'  : 'Insert',
+    \ 'ic' : 'Insert',
+    \ 'ix' : 'Insert',
     \ 'R'  : 'Replace',
+    \ 'Rc' : 'Replace',
     \ 'Rv' : 'VReplace',
+    \ 'Rx' : 'Replace',
     \ 'c'  : 'Command',
     \ 'cv' : 'Vim Ex',
     \ 'ce' : 'Ex',
@@ -876,7 +881,7 @@ let g:currentmode={
     \ 'rm' : 'More',
     \ 'r?' : 'Confirm',
     \ '!'  : 'Shell',
-    \ 't'  : 'Terminal',
+    \ 't'  : 'Terminal'
 \}
 set statusline=
 set statusline+=%{LastAccentColor()}
