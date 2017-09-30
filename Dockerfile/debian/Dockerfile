@@ -1,6 +1,8 @@
 FROM debian:unstable
 
 RUN echo "deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free" > /etc/apt/sources.list
+RUN echo "deb http://deb.debian.org/debian unstable-updates main contrib non-free" >> /etc/apt/sources.list
+RUN echo "deb http://security.debian.org/ unstable/updates main contrib non-free" >> /etc/apt/sources.list
 RUN apt-get update && apt-get install curl -y
 
 # Install basic development packages.
