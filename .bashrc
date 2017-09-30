@@ -182,12 +182,14 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     [ $(command -v apt-get) ] && compdef apt-fast=apt # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
-  else
+  else # Oh-my-zsh is not available
     NEWLINE_NO_OMZ=$'\n'
     PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
     export HISTSIZE=10000
     export SAVEHIST=10000
-    zstyle ':completion:*' menu select
+    unsetopt menu_complete # Don't autoselect the first completion entry
+    zstyle ':completion:*' menu select# selected entry highlighting
+    zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive
     autoload -U compinit && compinit
     zmodload -i zsh/complist
   fi
