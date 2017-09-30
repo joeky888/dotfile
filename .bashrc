@@ -185,6 +185,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else # Oh-my-zsh is not available
     NEWLINE_NO_OMZ=$'\n'
     PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
+    alias -g ...='../..'
+    alias -g ....='../../..'
     export HISTSIZE=10000
     export SAVEHIST=10000
     unsetopt menu_complete # Don't autoselect the first completion entry
