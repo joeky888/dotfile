@@ -262,7 +262,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   export COLOR_PURPLE="\[$(tput setaf 5)\]"
   export COLOR_CYAN="\[$(tput setaf 6)\]"
   export COLOR_GRAY="\[$(tput setaf 7)\]"
-  export COLOR_LIGHT_RED="\[$(tput setaf 1)\]"
+  export COLOR_LIGHT_RED="\[$(tput setaf 1; tput bold)\]"
   export COLOR_LIGHT_GREEN="\[$(tput setaf 2; tput bold)\]"
   export COLOR_LIGHT_YELLOW="\[$(tput setaf 3; tput bold)\]"
   export COLOR_LIGHT_BLUE="\[$(tput setaf 4; tput bold)\]"
@@ -270,7 +270,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   export COLOR_LIGHT_CYAN="\[$(tput setaf 6; tput bold)\]"
   export COLOR_LIGHT_GRAY="\[$(tput setaf 7; tput bold)\]"
   # USER@DOMAIN directory
-  export PS1="${COLOR_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
+  export PS1="${COLOR_LIGHT_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
