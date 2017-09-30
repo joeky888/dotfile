@@ -183,8 +183,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
   else # Oh-my-zsh is not available
-    NEWLINE_NO_OMZ=$'\n'
-    PROMPT="%n@%M ➜ %~"${NEWLINE_NO_OMZ}"$ "
     alias -g ...='../..'
     alias -g ....='../../..'
     export HISTSIZE=10000
@@ -194,6 +192,10 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive
     autoload -U compinit && compinit
     zmodload -i zsh/complist
+    autoload -U colors && colors
+    NEWLINE_NO_OMZ=$'\n'
+    # %B=light_color %F=color
+    PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
@@ -250,6 +252,25 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind '"\e[B": history-search-forward'  # Down key is searching forward
   bind -x '"\C-V": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
   bind '\C-B:backward-kill-word'
+  bind 'set show-all-if-ambiguous on'
+  bind 'TAB:menu-complete' # Zsh-like completion
+  export COLOR_RESET="\[$(tput sgr0)\]" # No Color
+  export COLOR_RED="\[$(tput setaf 1)\]"
+  export COLOR_GREEN="\[$(tput setaf 2)\]"
+  export COLOR_YELLOW="\[$(tput setaf 3)\]"
+  export COLOR_BLUE="\[$(tput setaf 4)\]"
+  export COLOR_PURPLE="\[$(tput setaf 5)\]"
+  export COLOR_CYAN="\[$(tput setaf 6)\]"
+  export COLOR_GRAY="\[$(tput setaf 7)\]"
+  export COLOR_LIGHT_RED="\[$(tput setaf 9)\]"
+  export COLOR_LIGHT_GREEN="\[$(tput setaf 10)\]"
+  export COLOR_LIGHT_YELLOW="\[$(tput setaf 11)\]"
+  export COLOR_LIGHT_BLUE="\[$(tput setaf 12)\]"
+  export COLOR_LIGHT_PURPLE="\[$(tput setaf 13)\]"
+  export COLOR_LIGHT_CYAN="\[$(tput setaf 14)\]"
+  export COLOR_LIGHT_GRAY="\[$(tput setaf 15)\]"
+  # USER@DOMAIN directory
+  export PS1="${COLOR_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
