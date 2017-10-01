@@ -32,5 +32,6 @@
     { "key": "tab", "command": "selectNextSuggestion",
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
     { "key": "ctrl+oem_5", "command": "editor.action.commentLine",
-        "when": "editorTextFocus && !editorReadonly" }
+        "when": "editorTextFocus && !editorReadonly" },
+    { "key": "ctrl+f", "command": "editor.action.startFindReplaceAction" }
 ]
