@@ -28,5 +28,7 @@
         "when": "editorTextFocus" },
     { "key": "ctrl+e", "command": "cursorEnd",
         "when": "editorTextFocus" },
-    { "key": "ctrl+g", "command": "editor.action.selectAll" }
+    { "key": "ctrl+g", "command": "editor.action.selectAll" },
+    { "key": "tab", "command": "selectNextSuggestion",
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" }
 ]
