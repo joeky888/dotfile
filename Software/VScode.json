@@ -30,5 +30,7 @@
         "when": "editorTextFocus" },
     { "key": "ctrl+g", "command": "editor.action.selectAll" },
     { "key": "tab", "command": "selectNextSuggestion",
-        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" }
+        "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
+    { "key": "ctrl+oem_5", "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly" }
 ]
