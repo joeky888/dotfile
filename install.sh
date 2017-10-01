@@ -33,6 +33,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
