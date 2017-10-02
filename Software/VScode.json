@@ -10,6 +10,14 @@
     "workbench.colorTheme": "Monokai Dimmed"
 }
 
+{
+    "Extensions": [
+        "Actually, there is no file to control the extensions",
+        "HookyQR.beautify",
+        "hoovercj.vscode-power-mode"
+    ]
+}
+
 [
     { "key": "ctrl+k", "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly" },
@@ -33,5 +41,7 @@
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
     { "key": "ctrl+oem_5", "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly" },
-    { "key": "ctrl+f", "command": "editor.action.startFindReplaceAction" }
+    { "key": "ctrl+f", "command": "editor.action.startFindReplaceAction" },
+    { "key": "ctrl+b", "command": "HookyQR.beautify",
+        "when": "editorTextFocus" }
 ]
