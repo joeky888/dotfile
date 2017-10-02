@@ -647,18 +647,18 @@ vnoremap <bar> I
 vnoremap <Space> di<Space><C-g>u
 vnoremap <CR> di<CR><C-g>u
 
-vnoremap <silent> ( :call WrapSelection("(",")")<CR>
-vnoremap <silent> [ :call WrapSelection("[","]")<CR>
-vnoremap <silent> { :call WrapSelection("{","}")<CR>
-vnoremap <silent> ) :call WrapSelection("(",")")<CR>
-vnoremap <silent> ] :call WrapSelection("[","]")<CR>
-vnoremap <silent> } :call WrapSelection("{","}")<CR>
-vnoremap <silent> ' :call WrapSelection("'","'")<CR>
-vnoremap <silent> " :call WrapSelection("\"","\"")<CR>
-vnoremap <silent> < :call WrapSelection("<",">")<CR>
-vnoremap <silent> > :call WrapSelection("<",">")<CR>
-vnoremap <silent> / :call WrapSelection("/","/")<CR>
-vnoremap <silent> \ :call WrapSelection("\\","\\")<CR>
+vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
+vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
+vnoremap <silent> { <ESC>:call WrapSelection("{","}")<CR>
+vnoremap <silent> ) <ESC>:call WrapSelection("(",")")<CR>
+vnoremap <silent> ] <ESC>:call WrapSelection("[","]")<CR>
+vnoremap <silent> } <ESC>:call WrapSelection("{","}")<CR>
+vnoremap <silent> ' <ESC>:call WrapSelection("'","'")<CR>
+vnoremap <silent> " <ESC>:call WrapSelection("\"","\"")<CR>
+vnoremap <silent> < <ESC>:call WrapSelection("<",">")<CR>
+vnoremap <silent> > <ESC>:call WrapSelection("<",">")<CR>
+vnoremap <silent> / <ESC>:call WrapSelection("/","/")<CR>
+vnoremap <silent> \ <ESC>:call WrapSelection("\\","\\")<CR>
 inoremap {<CR> {<CR>}<ESC>O
 inoremap [<CR> [<CR>]<ESC>O
 inoremap (<CR> (<CR>)<ESC>O
