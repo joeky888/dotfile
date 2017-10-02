@@ -16,7 +16,7 @@ List of help
 
 繁 to 簡
 =====
-* $ opencc -i input.txt -c tw2s.json -o output.txt
+* $ opencc -i input.txt -c tw2sp.json -o output.txt
 
 Default configre files
 ====

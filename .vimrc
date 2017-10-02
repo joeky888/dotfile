@@ -1072,14 +1072,22 @@ nnoremenu Edit.Remove.Empty\ lines          :g/^$/d<CR>
 nnoremenu Edit.Remove.Leading\ whitespace   :%s/^\s\+//e<CR>
 nnoremenu Edit.Remove.Trailing\ whitespace  :%s/\s\+$//e<CR>
 
-command! RemoveLeadingSpace %s/^\s\+//e
-command! RemoveEmptyLines   g/^$/d
+command! RemoveLeadingSpace     %s/^\s\+//e
+command! RemoveTrailingSpace    %s/\s\+$//e
+command! RemoveEmptyLines       g/^$/d
 
 " Toggle case
 nnoremenu Edit.Toggle\ case.Upper          ggVGU
 nnoremenu Edit.Toggle\ case.Lower          ggVGu
 vnoremenu Edit.Toggle\ case.Upper          U
 vnoremenu Edit.Toggle\ case.Lower          u
+
+" Opencc
+nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
+nnoremenu Edit.Opencc.Simplified          :%!opencc -c tw2sp.json<CR>
+
+command! Opencc2T   %!opencc -c s2twp.json
+command! Opencc2S   %!opencc -c tw2sp.json
 
 " Fast rendering for current file
 function! FastRender()
