@@ -652,22 +652,23 @@ inoremap <silent> ( <C-o>:set timeoutlen=99999 ttimeoutlen=99999<CR><C-o>:call f
 inoremap {<CR> {<CR>}<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
 inoremap [<CR> [<CR>]<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
 inoremap (<CR> (<CR>)<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
-vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>a
-vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>a
-vnoremap <silent> { <ESC>:call WrapSelection("{","}")<CR>a
-vnoremap <silent> ) <ESC>:call WrapSelection("(",")")<CR>a
-vnoremap <silent> ] <ESC>:call WrapSelection("[","]")<CR>a
-vnoremap <silent> } <ESC>:call WrapSelection("{","}")<CR>a
-vnoremap <silent> ' <ESC>:call WrapSelection("'","'")<CR>a
-vnoremap <silent> " <ESC>:call WrapSelection("\"","\"")<CR>a
-vnoremap <silent> < <ESC>:call WrapSelection("<",">")<CR>a
-vnoremap <silent> > <ESC>:call WrapSelection("<",">")<CR>a
-vnoremap <silent> / <ESC>:call WrapSelection("/","/")<CR>a
-vnoremap <silent> \ <ESC>:call WrapSelection("\\","\\")<CR>a
+vnoremap <silent> ( :call WrapSelection("(",")")<CR>
+vnoremap <silent> [ :call WrapSelection("[","]")<CR>
+vnoremap <silent> { :call WrapSelection("{","}")<CR>
+vnoremap <silent> ) :call WrapSelection("(",")")<CR>
+vnoremap <silent> ] :call WrapSelection("[","]")<CR>
+vnoremap <silent> } :call WrapSelection("{","}")<CR>
+vnoremap <silent> ' :call WrapSelection("'","'")<CR>
+vnoremap <silent> " :call WrapSelection("\"","\"")<CR>
+vnoremap <silent> < :call WrapSelection("<",">")<CR>
+vnoremap <silent> > :call WrapSelection("<",">")<CR>
+vnoremap <silent> / :call WrapSelection("/","/")<CR>
+vnoremap <silent> \ :call WrapSelection("\\","\\")<CR>
 
 function! WrapSelection(c1, c2)
   execute "normal! `<i".a:c1
   execute "normal! `>a".a:c2
+  normal! l
 endfunction
 
 " Commenting blocks of code.
