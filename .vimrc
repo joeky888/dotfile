@@ -271,9 +271,9 @@ nnoremap <Backspace> i<Backspace>
 nnoremap <Space> i<Space>
 nnoremap " i"
 nnoremap ' i'
-nnoremap <silent> { :set timeoutlen=99999 ttimeoutlen=99999<CR><ESC>:call feedkeys('i{')<CR>
-nnoremap <silent> [ :set timeoutlen=99999 ttimeoutlen=99999<CR><ESC>:call feedkeys('i[')<CR>
-nnoremap <silent> ( :set timeoutlen=99999 ttimeoutlen=99999<CR><ESC>:call feedkeys('i(')<CR>
+nnoremap [ i[
+nnoremap ] i]
+nnoremap { i{
 nnoremap } i}
 nnoremap ( i(
 nnoremap ) i)
@@ -645,13 +645,6 @@ vnoremap <bar> I
 vnoremap <Space> di<Space><C-g>u
 vnoremap <CR> di<CR><C-g>u
 
-inoremap <silent> { <C-o>:set timeoutlen=99999 ttimeoutlen=99999<CR><C-o>:call feedkeys('{')<CR>
-inoremap <silent> [ <C-o>:set timeoutlen=99999 ttimeoutlen=99999<CR><C-o>:call feedkeys('[')<CR>
-inoremap <silent> ( <C-o>:set timeoutlen=99999 ttimeoutlen=99999<CR><C-o>:call feedkeys('(')<CR>
-" autocmd CursorMoved * set timeoutlen=10 ttimeoutlen=10
-inoremap {<CR> {<CR>}<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
-inoremap [<CR> [<CR>]<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
-inoremap (<CR> (<CR>)<ESC>O<C-o>:set timeoutlen=10 ttimeoutlen=10<CR>
 vnoremap <silent> ( :call WrapSelection("(",")")<CR>
 vnoremap <silent> [ :call WrapSelection("[","]")<CR>
 vnoremap <silent> { :call WrapSelection("{","}")<CR>
@@ -664,6 +657,9 @@ vnoremap <silent> < :call WrapSelection("<",">")<CR>
 vnoremap <silent> > :call WrapSelection("<",">")<CR>
 vnoremap <silent> / :call WrapSelection("/","/")<CR>
 vnoremap <silent> \ :call WrapSelection("\\","\\")<CR>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap [<CR> [<CR>]<ESC>O
+inoremap (<CR> (<CR>)<ESC>O
 
 function! WrapSelection(c1, c2)
   execute "normal! `<i".a:c1
