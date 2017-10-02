@@ -16,6 +16,8 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 # Key mappings
 Set-PSReadlineKeyHandler -Key UpArrow   -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+Set-PSReadlineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
+Set-PSReadlineKeyHandler -Chord Ctrl+LeftArrow  -Function BackwardWord
 Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
 Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
 Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
