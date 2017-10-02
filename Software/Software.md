@@ -53,6 +53,7 @@ Software
 
 Windows
 =====
+* Process Monitor
 * build-extra (git for Windows) or msys2
 * Cygwin
 * Chocolatey
