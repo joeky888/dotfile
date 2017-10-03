@@ -42,3 +42,7 @@ Function Prompt {
   Return " "
 }
 
+# Command to upgrade all chocolatey packages
+Function upgradeChoco {
+  choco upgrade all -y
+}
