@@ -65,6 +65,6 @@ lxqt: {
         priority: 100
 }
 ```
-* $ sudo pkg install lxqt
+* $ sudo pkg install lxqt xorg
 * $ echo 'ck-launch-session /usr/local/bin/startlxqt' > ~/.xinitrc
 * $ startx
