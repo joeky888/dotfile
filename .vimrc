@@ -1018,11 +1018,11 @@ def FormatJSON(fmtlStart, fmtlEnd):
   vim.current.buffer[fmtlStart:fmtlEnd] = prettyJson.split('\n')
 EOF
   " :'<,'>JsonBeautify
-  command! -range -bar JsonBeautify :python FormatJSON(<line1>, <line2>)
+  command! -range=% JsonBeautify python FormatJSON(<line1>, <line2>)
   nnoremenu Edit.Json.Beautify(UTF8)  ggVG:<C-u>'<,'>JsonBeautify<CR>
   vnoremenu Edit.Json.Beautify(UTF8)  :<C-u>'<,'>JsonBeautify<CR>
 else
-  command! JsonBeautify execute "%!python -m json.tool"
+  command! JsonBeautify %!python -m json.tool
   nnoremenu Edit.Json.Beautify(cANSI) :%!python -m json.tool<CR>
 endif
 
@@ -1035,7 +1035,7 @@ function! JsonMinify()
 endfunction
 
 nnoremenu Edit.Json.Minify    :call JsonMinify()<CR>
-command! JsonMinify      execute "call JsonMinify()"
+command! JsonMinify           call JsonMinify()
 
 " XML pretty by vim
 function! XmlBeautify()
@@ -1063,11 +1063,12 @@ command! XmlBeautify    execute "call XmlBeautify()"
 command! XmlMinify      execute "call XmlMinify()"
 
 " xxd command alias
-command! XXD execute "%!xxd"
+command! -range=% XXD <line1>,<line2>%!xxd
 
 " Merge selected to one line
 nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
 vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
+command! -range=% MergeToOneLine <line1>,<line2>%left | <line1>,<line2>%j!
 
 " Remove something
 nnoremenu Edit.Remove.Empty\ lines          :g/^$/d<CR>
@@ -1083,13 +1084,15 @@ nnoremenu Edit.Toggle\ case.Upper          ggVGU
 nnoremenu Edit.Toggle\ case.Lower          ggVGu
 vnoremenu Edit.Toggle\ case.Upper          U
 vnoremenu Edit.Toggle\ case.Lower          u
+command! -range=% ToggleCaseToUpper <line1>,<line2>s/.*/\U&/
+command! -range=% ToggleCaseToLower <line1>,<line2>s/.*/\L&/
 
 " Opencc
 nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
 nnoremenu Edit.Opencc.Simplified          :%!opencc -c tw2sp.json<CR>
 
-command! Opencc2T   %!opencc -c s2twp.json
-command! Opencc2S   %!opencc -c tw2sp.json
+command! -range=% Opencc2T    <line1>,<line2>%!opencc -c s2twp.json
+command! -range=% Opencc2S    <line1>,<line2>%!opencc -c tw2sp.json
 
 " Fast rendering for current file
 function! FastRender()
@@ -1098,7 +1101,7 @@ function! FastRender()
 endfunction
 
 noremenu Edit.FastRender :call FastRender()<CR>
-command! FastRender execute "call FastRender()"
+command! FastRender call FastRender()
 
 " Split view
 noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
