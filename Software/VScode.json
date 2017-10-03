@@ -7,16 +7,13 @@
     "files.trimTrailingWhitespace": true,
     "powermode.enabled": true,
     "editor.minimap.enabled": true,
-    "workbench.colorTheme": "Monokai Dimmed"
+    "workbench.colorTheme": "Monokai Dimmed",
+    "editor.mouseWheelZoom": true
 }
 
-{
-    "Extensions": [
-        "Actually, there is no file to control the extensions",
-        "HookyQR.beautify",
-        "hoovercj.vscode-power-mode"
-    ]
-}
+[
+    "Extensions(manually download)": "HookyQR.beautify", "hoovercj.vscode-power-mode"
+]
 
 [
     { "key": "ctrl+k", "command": "editor.action.deleteLines",
