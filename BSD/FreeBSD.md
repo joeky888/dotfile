@@ -53,6 +53,7 @@ Install LXQt
 =====
 * $ fetch http://lxqt-freebsd.schmitz.computer/poudriere.cert
 * $ sudo mv -i poudriere.cert /usr/local/etc/ssl/
+* $ sudo mkdir -p /usr/local/etc/pkg/repos
 * $ sudoedit /usr/local/etc/pkg/repos/lxqt.conf
 ```conf
 lxqt: {
