@@ -66,3 +66,5 @@ lxqt: {
 }
 ```
 * $ sudo pkg install lxqt
+* $ echo 'ck-launch-session /usr/local/bin/startlxqt' > ~/.xinitrc
+* $ startx
