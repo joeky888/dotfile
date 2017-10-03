@@ -187,6 +187,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     alias -g ....='../../..'
     export HISTSIZE=10000
     export SAVEHIST=10000
+    bindkey -e # emacs keys
     unsetopt menu_complete # Don't autoselect the first completion entry
     zstyle ':completion:*' menu select# selected entry highlighting
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive

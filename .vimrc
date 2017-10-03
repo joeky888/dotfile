@@ -55,11 +55,10 @@ set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
-set noerrorbells " disable error sound
-autocmd VimEnter * set noerrorbells " disable error sound
+autocmd VimEnter * set noerrorbells " Disable error sound
 set vb t_vb= " disable visual bell
 set t_vb= " disable visual bell
-autocmd VimEnter * set vb t_vb= " disable visual bell
+autocmd VimEnter * set vb t_vb= " Disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
@@ -678,7 +677,7 @@ autocmd FileType dosbatch           let b:comment_leader = '::'
 autocmd FileType sh,ruby,python     let b:comment_leader = '#'
 autocmd FileType conf,fstab         let b:comment_leader = '#'
 autocmd FileType tmux,zsh           let b:comment_leader = '#'
-autocmd FileType make,Cmake,yaml    let b:comment_leader = '#'
+autocmd FileType make,cmake,yaml    let b:comment_leader = '#'
 autocmd FileType debsources,desktop let b:comment_leader = '#'
 autocmd FileType xdefaults          let b:comment_leader = '#'
 autocmd FileType dockerfile         let b:comment_leader = '#'
@@ -1108,6 +1107,11 @@ noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
 noremenu Edit.Split\ Window.Vertical\ 3     :vsplit<CR>:vsplit<CR>:wincmd =<CR>
 noremenu Edit.Split\ Window.Horizontal\ 2   :split<CR>
 noremenu Edit.Split\ Window.Horizontal\ 3   :split<CR>:split<CR>:wincmd =<CR>
+
+command! SplitVertical2   vsplit
+command! SplitVertical3   vsplit | vsplit | wincmd =
+command! SplitHorizontal2 split
+command! SplitHorizontal3 split  | split  | wincmd =
 
 " Indent format
 function! IndentSpace(width)
