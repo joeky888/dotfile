@@ -48,5 +48,11 @@ Function upgradeChoco {
 }
 
 # Add chocolatey packages to path
-if($env:Path -NotLike "*C:\ProgramData\Miniconda3\Scripts*") { $env:Path += ";C:\ProgramData\Miniconda3\Scripts" }
-if($env:Path -NotLike "*C:\ProgramData\Miniconda2\Scripts*") { $env:Path += ";C:\ProgramData\Miniconda2\Scripts" }
+if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
+  $env:Path += ";C:\ProgramData\Miniconda3"
+  $env:Path += ";C:\ProgramData\Miniconda3\Scripts"
+}
+if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
+  $env:Path += ";C:\ProgramData\Miniconda2"
+  $env:Path += ";C:\ProgramData\Miniconda2\Scripts"
+}
