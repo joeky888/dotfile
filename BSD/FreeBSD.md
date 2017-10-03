@@ -48,3 +48,20 @@ Add user to sudoer
 root  ALL=(ALL) ALL
 joeky ALL=(ALL) ALL
 ```
+
+Install LXQt
+=====
+* $ fetch http://lxqt-freebsd.schmitz.computer/poudriere.cert
+* $ sudo mv -i poudriere.cert /usr/local/etc/ssl/
+* $ sudoedit /usr/local/etc/pkg/repos/lxqt.conf
+```conf
+lxqt: {
+        url: "pkg+http://lxqt-freebsd.schmitz.computer/packages/${ABI}",
+        mirror_type: "srv",
+        enabled: yes,
+        signature_type: "pubkey",
+        pubkey: "/usr/local/etc/ssl/poudriere.cert",
+        priority: 100
+}
+```
+* $ sudo pkg install lxqt
