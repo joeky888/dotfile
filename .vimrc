@@ -626,8 +626,9 @@ inoremap <C-_> <C-W><C-g>u
 nnoremap <C-_> i<C-W><C-g>u
 cnoremap <C-_> <C-w>
 vnoremap <bar> I
-vnoremap <Space> di<Space><C-g>u
-vnoremap <CR> di<CR><C-g>u
+vnoremap <Space> "_di<Space><C-g>u
+vnoremap <CR> "_di<CR><C-g>u
+vnoremap <BS> "_di
 
 vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
 vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
@@ -1160,7 +1161,7 @@ endfor
 
 " Get into insert mode by pressing any key in visual mode
 for b:char in split(g:CharSet, '\zs')
-  execute "vnoremap ".b:char." di<C-g>u".b:char
+  execute "vnoremap ".b:char." \"_di<C-g>u".b:char
 endfor
 
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType * call HighlightGlobal()
@@ -1412,24 +1413,24 @@ if has("gui_running")
   " Shift-Insert same as Ctrl-v
   inoremap <S-Insert> <C-o>"+gP<C-g>u
   nnoremap <S-Insert> "+gPi<C-g>u
-  vnoremap <S-Insert> d"+gP
+  vnoremap <S-Insert> "_d"+gP
 
   " Insert same as Ctrl-v
   inoremap <Insert> <C-o>"+gP<C-g>u
   nnoremap <Insert> "+gPi<C-g>u
-  vnoremap <Insert> d"+gP
+  vnoremap <Insert> "_d"+gP
   " For Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
 
   " Delete selected characters before Entering the insert mode
   nnoremap <C-Del> dwi
   inoremap <C-Del> <C-o>dw<C-g>u
-  vnoremap <C-BS> di
+  vnoremap <C-BS> "_di
 
   " Alt - Backspace kill a word
   nnoremap <A-BS> dBi<C-g>u
   inoremap <A-BS> <C-w><C-g>u
-  vnoremap <A-BS> d
+  vnoremap <A-BS> "_d
   cnoremap <A-BS> <C-w>
 
   " Alt - Arrow, Move a word

@@ -255,10 +255,13 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind 'set completion-ignore-case on' # Ignore case
   bind '"\e[A": history-search-backward' # Up key is searching backward
   bind '"\e[B": history-search-forward'  # Down key is searching forward
-  bind -x '"\C-V": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
   bind '\C-B:backward-kill-word'
+  bind '\C-Z:undo'
+  bind '\C-Y:redo'
+  bind '\C-K:kill-whole-line'
   bind 'set show-all-if-ambiguous on'
   bind 'TAB:menu-complete' # Zsh-like completion
+  bind -x '"\C-V": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
   export COLOR_RESET="\[$(tput sgr0)\]" # No Color
   export COLOR_RED="\[$(tput setaf 1)\]"
   export COLOR_GREEN="\[$(tput setaf 2)\]"
