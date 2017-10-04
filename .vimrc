@@ -1221,7 +1221,7 @@ function! HighlightSRT()
   syn match srtError "\[br\]"
   syn match srtError "{y:[bi][bi]}"
   syn match srtError "{y:[bi]}"
-  syn match srtNumber "^[0-9]\+$"
+  syn match srtNumber "^[0-9]\+\s*$"
   syn region transparent matchgroup=srtTime start='[0-9: ]\+[\., ][0-9 ]*' end='[0-9: ]\+[\., ][0-9 ]*' contains=srtArrow oneline
 
   hi def link srtArrow      Type
