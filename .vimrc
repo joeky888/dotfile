@@ -1412,7 +1412,7 @@ if has("gui_running")
   set lines=999 columns=999 " set window Maximized
   set scrolloff& " unset scroll values
   set sidescrolloff&
-  set clipboard& " unset clipboard
+"   set clipboard& " unset clipboard
   set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
