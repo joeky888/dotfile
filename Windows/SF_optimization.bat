@@ -21,6 +21,15 @@ del /f /s /q "%ProgramFiles(x86)%\WAYI\SFOnline\SpecialForce_exe_log.edl"
 break>"%ProgramFiles(x86)%\WAYI\SFOnline\data\lobby\SF_Curse.drk"
 
 :: Lower the mtu value, default mtu=1500
-netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
+:: netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
+
+:: Reset Networking
+ipconfig /release
+ipconfig /renew
+arp -d *
+nbtstat -R
+nbtstat -RR
+ipconfig /flushdns
+ipconfig /registerdns
 
 pause
