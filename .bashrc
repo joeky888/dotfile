@@ -51,7 +51,6 @@ alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/a
 alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule update --init --recursive && git submodule foreach git pull origin master && cd -"
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
-alias curl='curl --retry 999 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --write-annotations --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
@@ -60,8 +59,15 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
+if [[ $(command -v youtube-dl) ]]; then
+  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
+  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
+  alias curl='curl --retry 999 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+else
+  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
+  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
+  alias curl='curl --retry 999 --retry-max-time 0 --user-agent -LC - '
+fi
 alias bypy='bypy -d --processes 4 --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
