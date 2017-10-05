@@ -711,7 +711,7 @@ inoremap <expr> <Tab>  pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <CR>   pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <Down> pumvisible() ? "\<C-n>" : "\<Down>"
 inoremap <expr> <Up>   pumvisible() ? "\<C-p>" : "\<Up>"
-inoremap <expr> <ESC>  pumvisible() ? "\<C-e>" : "\<ESC>"
+inoremap <expr> <ESC>  pumvisible() ? "\<C-e>\<C-g>u" : "\<ESC>"
 inoremap <ESC>A <Up>
 inoremap <ESC>B <Down>
 inoremap <ESC>C <Right>
@@ -720,7 +720,7 @@ inoremap <ESC>D <Left>
 function! ToggleAutoComplete()
   if g:autocomp
     for l:char in split(g:CharSet, '\zs')
-      silent execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '\<C-g>u".l:char."\<C-n>\<C-p>'"
+      silent execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
     endfor
   else
     for l:char in split(g:CharSet, '\zs')
