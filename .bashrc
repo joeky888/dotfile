@@ -59,13 +59,14 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
-alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
-alias curl='curl --retry 999 --retry-max-time 0'
 if [[ $(command -v youtube-dl) ]]; then
   alias wget='wget --user-agent="$(youtube-dl --dump-user-agent)"'
   alias aria2c='aria2c --user-agent="$(youtube-dl --dump-user-agent)"'
   alias curl='curl --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+else
+  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
+  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
+  alias curl='curl --retry 999 --retry-max-time 0'
 fi
 alias bypy='bypy -d --processes 4 --downloader aria2'
 alias scp='scp -v'
