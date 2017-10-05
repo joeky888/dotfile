@@ -359,7 +359,7 @@ cnoremap <C-v> <C-r>+
 " Insert - Paste
 nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
 inoremap <silent> <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
-vnoremap <silent> <silent>           d:r $HOME/dotfile/clipboard.txt<CR>
+vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
 cnoremap <silent> <C-r>"
 
 " Ctrl S - Save
