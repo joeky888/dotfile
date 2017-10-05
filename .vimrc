@@ -824,7 +824,7 @@ function CommandAfterSearch()
     return "\<cr>"
   endif
 endfunction
-cnoremap <silent> <expr> <Enter> CommandAfterSearch()
+cnoremap <silent> <expr> <CR> CommandAfterSearch()
 function NextSearch()
   let l:line = line(".")
   normal! n
