@@ -333,9 +333,6 @@ onoremap <RightDrag>  <C-C><LeftDrag>
 " RightMouse double clicking moves cursor the the other side
 noremap <2-RightMouse> <2-LeftMouse>o
 
-" Backspace is deleting in visual mode
-call CreateShortcut("BS", "di<C-g>u", "v")
-
 " Ctrl A - Begin Line
 call CreateShortcut("C-a", "0", "nv")
 inoremap <C-a> <Home>
@@ -491,7 +488,7 @@ vnoremap <C-n> 5l
 " Terminal Alt Backspace kill a word
 nnoremap <Esc><BS> dBi<C-g>u
 inoremap <Esc><BS> <C-w><C-g>u
-vnoremap <Esc><BS> d
+vnoremap <Esc><BS> "_di<C-g>u
 cnoremap <Esc><BS> <C-w>
 
 " Terminal Alt Right - Next word
@@ -628,7 +625,7 @@ cnoremap <C-_> <C-w>
 vnoremap <bar> I
 vnoremap <Space> "_di<Space><C-g>u
 vnoremap <CR> "_di<CR><C-g>u
-vnoremap <BS> "_di
+vnoremap <BS> "_di<C-g>u
 
 vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
 vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
