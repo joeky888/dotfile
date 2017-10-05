@@ -354,7 +354,7 @@ vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt
 inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
 nnoremap <silent> <C-v> gPi<C-g>u
 vnoremap <silent> <C-v> "_dgP
-cnoremap <C-v> <C-r>"
+cnoremap <C-v> <C-r>+
 
 " Insert - Paste
 nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
@@ -1064,8 +1064,8 @@ nnoremenu Edit.Toggle\ case.Upper          ggVGU
 nnoremenu Edit.Toggle\ case.Lower          ggVGu
 vnoremenu Edit.Toggle\ case.Upper          U
 vnoremenu Edit.Toggle\ case.Lower          u
-command! -range=% ToggleCaseToUpper <line1>,<line2>s/.*/\U&/
-command! -range=% ToggleCaseToLower <line1>,<line2>s/.*/\L&/
+command! ToggleCaseToUpper %s/\%V/\U&/
+command! ToggleCaseToLower s/\%V/\L&/
 
 " Opencc
 nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
