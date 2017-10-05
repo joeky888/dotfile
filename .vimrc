@@ -360,7 +360,7 @@ cnoremap <C-v> <C-r>+
 nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
 inoremap <silent> <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
 vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
-cnoremap <silent> <C-r>"
+cnoremap <Insert> <C-r>"
 
 " Ctrl S - Save
 nnoremap <silent> <C-s> :call MySave()<CR>
