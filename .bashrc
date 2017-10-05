@@ -192,13 +192,17 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     alias -g ....='../../..'
     export HISTSIZE=10000
     export SAVEHIST=10000
+    WORDCHARS='' # More completion
     bindkey -e # emacs keys
+    unsetopt flowcontrol # Unbind Ctrl-S
     unsetopt menu_complete # Don't autoselect the first completion entry
-    zstyle ':completion:*' menu select# selected entry highlighting
-    zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' # Case insensitive
     autoload -U compinit && compinit
-    zmodload -i zsh/complist
     autoload -U colors && colors
+    zmodload -i zsh/complist
+    zstyle ':completion:*:*:*:*:*' menu select# selected entry highlighting
+    zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*' # Case insensitive
+    zstyle '*' single-ignored show # Don't show menu when there is only one match
+    zstyle ':completion:*' list-colors '' # Popup colors
     NEWLINE_NO_OMZ=$'\n'
     # %B=light_color %F=color
     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
@@ -207,6 +211,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
+  setopt complete_in_word # Move cursor to the end when completion
+  setopt always_to_end # Move cursor to the end when completion
+  setopt nonomatch # Disable warning when completion not found
   _comp_options+=(globdots) # Show hidden files when using completion
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
