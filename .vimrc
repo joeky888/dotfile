@@ -1069,8 +1069,8 @@ nnoremenu Edit.Toggle\ case.Upper          ggVGU
 nnoremenu Edit.Toggle\ case.Lower          ggVGu
 vnoremenu Edit.Toggle\ case.Upper          U
 vnoremenu Edit.Toggle\ case.Lower          u
-command! -range=% ToggleCaseToUpper  <line1>,<line2>s/\%V.*\%V/\U&/
-command! -range=% ToggleCaseToLower  <line1>,<line2>s/\%V.*\%V/\L&/
+command! -range=% ToggleCaseToUpper  <line1>,<line2>s/\%V.*\%V./\U&/
+command! -range=% ToggleCaseToLower  <line1>,<line2>s/\%V.*\%V./\L&/
 
 " Opencc
 nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
