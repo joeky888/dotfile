@@ -354,7 +354,11 @@ vnoremap <silent> <C-x> ygvd<CR>:call delete(expand("$HOME/dotfile/clipboard.txt
 inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
 nnoremap <silent> <C-v> gPi<C-g>u
 vnoremap <silent> <C-v> "_dgP
-cnoremap <C-v> <C-r>+
+if has('clipboard')
+  cnoremap <C-v> <C-r>+
+else
+  cnoremap <C-v> <C-r>"
+endif
 
 " Insert - Paste
 nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
