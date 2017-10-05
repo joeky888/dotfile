@@ -1060,17 +1060,17 @@ nnoremenu Edit.Remove.Empty\ lines          :g/^$/d<CR>
 nnoremenu Edit.Remove.Leading\ whitespace   :%s/^\s\+//e<CR>
 nnoremenu Edit.Remove.Trailing\ whitespace  :%s/\s\+$//e<CR>
 
-command! RemoveLeadingSpace     %s/^\s\+//e
-command! RemoveTrailingSpace    %s/\s\+$//e
-command! RemoveEmptyLines       g/^$/d
+command! -range=% RemoveLeadingSpace     <line1>,<line2>%s/^\s\+//e
+command! -range=% RemoveTrailingSpace    <line1>,<line2>%s/\s\+$//e
+command! -range=% RemoveEmptyLines       <line1>,<line2>g/^$/d
 
 " Toggle case
 nnoremenu Edit.Toggle\ case.Upper          ggVGU
 nnoremenu Edit.Toggle\ case.Lower          ggVGu
 vnoremenu Edit.Toggle\ case.Upper          U
 vnoremenu Edit.Toggle\ case.Lower          u
-command! ToggleCaseToUpper %s/\%V/\U&/
-command! ToggleCaseToLower s/\%V/\L&/
+command! -range=% ToggleCaseToUpper  <line1>,<line2>s/\%V.*\%V/\U&/
+command! -range=% ToggleCaseToLower  <line1>,<line2>s/\%V.*\%V/\L&/
 
 " Opencc
 nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
