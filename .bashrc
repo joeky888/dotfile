@@ -256,8 +256,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
-  export HISTSIZE=10000
-  export HISTFILESIZE=10000
+  export HISTFILESIZE=
+  export HISTSIZE=
   shopt -s histappend # Append history
   PROMPT_COMMAND="history -a;history -n;$PROMPT_COMMAND" # Write history immediately
   bind 'set completion-ignore-case on' # Ignore case
