@@ -38,6 +38,7 @@ Software
 * TigerVNC
 * Docker
 * Sikuli / SikuliX
+* TestDisk / PhotoRec
 * ffmpeg
 * OpenCC
 * aria2
