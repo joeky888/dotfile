@@ -263,7 +263,7 @@ function! SavePos()
 endfunction
 function! DeleteLine()
   let savepos = getpos(".")
-  normal! dd
+  normal! "_dd
   call setpos(".", savepos)
 endfunction
 
@@ -363,7 +363,7 @@ endif
 " Insert - Paste
 nnoremap <silent> <Insert>            :r $HOME/dotfile/clipboard.txt<CR>
 inoremap <silent> <Insert> <C-g>u<ESC>:r $HOME/dotfile/clipboard.txt<CR>i<C-g>u
-vnoremap <silent> <Insert>           d:r $HOME/dotfile/clipboard.txt<CR>
+vnoremap <silent> <Insert>           "_d:r $HOME/dotfile/clipboard.txt<CR>
 cnoremap <Insert> <C-r>"
 
 " Ctrl S - Save
@@ -384,8 +384,8 @@ inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
 vnoremap <silent> <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
-nnoremap <C-d> mjyyp`jj
-inoremap <silent> <C-d> <C-\><C-O>:normal! mjyyp`jj<CR><C-g>u
+nnoremap <C-d> mj:t.<CR>`jj
+inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
 vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
@@ -491,7 +491,7 @@ inoremap <C-n> <C-Right>
 vnoremap <C-n> 5l
 
 " Terminal Alt Backspace kill a word
-nnoremap <Esc><BS> dBi<C-g>u
+nnoremap <Esc><BS> "_dBi<C-g>u
 inoremap <Esc><BS> <C-w><C-g>u
 vnoremap <Esc><BS> "_di<C-g>u
 cnoremap <Esc><BS> <C-w>
@@ -1425,12 +1425,12 @@ if has("gui_running")
   noremap! <Insert> <C-r>+
 
   " Delete selected characters before Entering the insert mode
-  nnoremap <C-Del> dwi
+  nnoremap <C-Del> "_dwi
   inoremap <C-Del> <C-o>dw<C-g>u
   vnoremap <C-BS> "_di
 
   " Alt - Backspace kill a word
-  nnoremap <A-BS> dBi<C-g>u
+  nnoremap <A-BS> "_dBi<C-g>u
   inoremap <A-BS> <C-w><C-g>u
   vnoremap <A-BS> "_d
   cnoremap <A-BS> <C-w>
