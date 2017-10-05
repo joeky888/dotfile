@@ -1426,7 +1426,7 @@ if has("gui_running")
 
   " Delete selected characters before Entering the insert mode
   nnoremap <C-Del> "_dwi
-  inoremap <C-Del> <C-o>dw<C-g>u
+  inoremap <C-Del> <C-o>"_dw<C-g>u
   vnoremap <C-BS> "_di
 
   " Alt - Backspace kill a word
