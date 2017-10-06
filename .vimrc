@@ -11,7 +11,6 @@ if 0
 endif
 
 """ General options
-syntax enable " Enable syntax highlights
 filetype on " Enable filetype plugin
 filetype plugin on
 filetype indent on
@@ -65,7 +64,6 @@ set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword=a-z,A-Z,48-57,_
-set runtimepath=$VIMRUNTIME " Only source this one
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
@@ -906,6 +904,7 @@ function SyntaxMonokai()
   " Purple = #AE81FF, 135
   " Gray = #7E8E91, 59
 
+  syntax enable " Enable syntax highlights
   set background=dark
   highlight clear
   syntax reset
@@ -1419,7 +1418,7 @@ if has("gui_running")
       let mySession=expand("$TEMP/vim/session.vim")
     else
       let mySession=expand("$HOME/dotfile/.vim/session.vim")
-    endif
+   endif
     if (filereadable(mySession))
       exe 'source ' . mySession
     else
