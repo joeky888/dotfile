@@ -49,6 +49,12 @@ root  ALL=(ALL) ALL
 joeky ALL=(ALL) ALL
 ```
 
+Install jfbterm
+=====
+* $ git clone --depth 1 https://github.com/source-archive/jfbterm-FreeBSD && cd jfbterm-FreeBSD
+* $ ./configure CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib --prefix=/usr/local --mandir=/usr/local/man
+* $ gmake && sudo gmake install
+
 Install LXQt
 =====
 * $ fetch http://lxqt-freebsd.schmitz.computer/poudriere.cert

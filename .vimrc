@@ -224,7 +224,7 @@ function! MySave()
     normal! `j
   catch /:E20:/
     " mark not set error
-    echon "mark not set"
+    echon "Mark not set, Try again"
   endtry
 endfunction
 function! OpenLastBufferInNewTab()
@@ -385,9 +385,14 @@ inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
 vnoremap <silent> <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
-nnoremap <C-d> mj:t.<CR>`jj
-inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
-vnoremap <C-d> yPgv
+try
+  nnoremap <C-d> mj:t.<CR>`jj
+  inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
+  vnoremap <C-d> yPgv
+catch /:E20:/
+  " mark not set error
+  echon "Mark not set, Try again"
+endtry
 
 " Ctrl Q - Visual block selection
 nnoremap <C-q> <C-v>
