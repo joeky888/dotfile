@@ -1428,8 +1428,6 @@ if has("gui_running")
    endif
     if (filereadable(mySession))
       exe 'source ' . mySession
-    else
-      echo "No session loaded."
     endif
   endfunction
   au VimEnter *  nested :call LoadSession() | call SyntaxMonokai()
