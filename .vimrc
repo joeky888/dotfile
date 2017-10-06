@@ -783,7 +783,8 @@ let colorsAndModesGui= {
   \ '' : '#ff8700'
 \}
 function! LastAccentColor()
-  if !exists('b:lastMode') | let b:lastMode = mode() | call SyntaxMonokai() | call ChangeAccentColor() | endif
+  if g:colors_name != "MonoKambat" | return | endif
+  if !exists('b:lastMode') | let b:lastMode = mode() | call ChangeAccentColor() | endif
   if b:lastMode != mode()
     let b:lastMode = mode()
     call ChangeAccentColor()
@@ -942,10 +943,12 @@ function SyntaxMonokai()
   " Gray = #7E8E91, 59
 
   syntax enable " Enable syntax highlights
-  set background=dark
+"   set background=dark
   highlight clear
   syntax reset
   set t_Co=256
+
+  let g:colors_name = "MonoKambat"
 
   let g:is_bash=1 " Tell $VIMRUNTIME/syntax/sh.vim that I am using bash
   let python_highlight_all = 1 " Tell $VIMRUNTIME/syntax/python.vim to highlight all
@@ -1449,7 +1452,7 @@ if has("gui_running")
 
   function! LoadSession()
     " Prevent screen flashing on start
-    hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
+"     hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
     if has('win32') || has('win64')
       let mySession=expand("$TEMP/vim/session.vim")
     else
