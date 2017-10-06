@@ -1380,7 +1380,7 @@ if has("gui_running")
   function! ChangeFontSize()
     if has('win32') || has('win64')
       execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
-      execute "set guifontwide=DroidMono:h".g:guifontsize.",NSimsun:h".g:guifontsize
+      execute "set guifontwide=DroidMono:h".g:guifontsize.",Inziu\\ Iosevka\\ TC:h".g:guifontsize.",NSimsun:h".g:guifontsize
     else
       execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize
     endif
