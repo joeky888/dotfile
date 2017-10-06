@@ -167,7 +167,7 @@ function! MyQuit()
     let g:bufferNum = len(split(bufferActive, "\n"))
 
     if g:bufferNum == 1 && bufname("%") != ""
-      bufdo bd
+      silent bufdo bd
       return
     endif
   endif
