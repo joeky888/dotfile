@@ -67,6 +67,8 @@ sudo cp fonts/*.pcf.gz /usr/local/share/fonts/bitmap/
 sudo mkfontscale /usr/local/share/fonts/bitmap/
 sudo mkfontdir /usr/local/share/fonts/bitmap/
 sudo fc-cache -fv
+sudo cat termcap.jfbterm >> /usr/share/misc/termcap
+sudo cap_mkdb /usr/share/misc/termcap
 ```
 
 Install LXQt
