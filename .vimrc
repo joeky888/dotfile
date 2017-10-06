@@ -152,9 +152,6 @@ endfunction
 
 function! LoadSession()
   " Prevent screen flashing on start
-  set background=dark
-  highlight clear
-  syntax reset
   hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
   if has('win32') || has('win64')
     let mySession=expand("$TEMP/vim/session.vim")
