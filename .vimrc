@@ -833,7 +833,7 @@ function! UpdateSearch()
   let b:lastKey[1] = str2nr(matchstr( nth, '\d\+' ))
   call setpos('.', pos)
 endfunction
-function CommandAfterSearch()
+function! CommandAfterSearch()
   if getcmdtype() == '/'
     return "\<cr>:call UpdateSearch()\<cr>"
   else
@@ -841,14 +841,14 @@ function CommandAfterSearch()
   endif
 endfunction
 cnoremap <silent> <expr> <CR> CommandAfterSearch()
-function NextSearch()
+function! NextSearch()
   let l:line = line(".")
   normal! n
   if l:line != line(".")
     let b:lastKey[1]=b:lastKey[1]+1 <= b:lastKey[2] ? b:lastKey[1]+1 : b:lastKey[1]+1-b:lastKey[2]
   endif
 endfunction
-function PreviousSearch()
+function! PreviousSearch()
   let l:line = line(".")
   normal! N
   if l:line != line(".")
@@ -897,7 +897,7 @@ set statusline+=%2*\ [%{&filetype}] " Filetype
 set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 
-function SyntaxMonokai()
+function! SyntaxMonokai()
   " Speed up the redraw
   " au InsertLeave * call ChangeAccentColor()
   " au CursorHold * let &ro = &ro
@@ -1185,10 +1185,11 @@ for b:char in split(g:CharSet, '\zs')
   execute "vnoremap ".b:char." \"_di<C-g>u".b:char
 endfor
 
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{srt,SRT,vtt,VTT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{ass,ASS,ssa,SSA} call HighlightASS()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+" Custom file syntax
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * call HighlightGlobal()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{srt,SRT,vtt,VTT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{ass,ASS,ssa,SSA} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 autocmd FileType c,cpp,javascript,python,cs,go call HighlightC()
 
 function! HighlightGlobal()
