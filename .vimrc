@@ -1395,11 +1395,17 @@ if has("gui_running")
 
   " Restore all sessions, GUI only, don't do this with terminal vim
   function! MakeSession()
+    redir => bufferActive | silent exec 'buffers a' | redir END
+"     let bufferNum = len(filter(split(bufferActive, "\n"), 'strlen(v:val) == 0'))
+    let bufferNum = len(split(bufferActive, "\n"))
+
     if has('win32') || has('win64')
       let mySession=expand("$TEMP/vim/session.vim")
     else
       let mySession=expand("$HOME/dotfile/.vim/session.vim")
     endif
+    " Don's save the session if there is only one buffer
+    if bufferNum <= 1 | call delete(mySession) | return | endif
     exe "mksession! " . mySession
   endfunction
 
