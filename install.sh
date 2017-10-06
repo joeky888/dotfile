@@ -192,7 +192,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   $SUDO pkg update
   echo y | $SUDO pkg install tmux zsh git vim nano curl python3 aria2 clang-devel autotools autoconf gmake cmake ubuntu-font
   chsh -s $(command -v zsh) $(whoami)
-  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+  cat /usr/local/share/nano/xml.nanorc > ~/.nanorc
   InstallDotfile
   InstallPIP
   InstallGRC
