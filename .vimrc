@@ -386,7 +386,7 @@ vnoremap <silent> <C-k> <ESC>:<C-u>'<,'>d<CR>
 
 " Ctrl D - Duplicate Line
 try
-  nnoremap <C-d> mj:t.<CR>`jj
+  nnoremap <silent> <C-d> mj:t.<CR>`jj
   inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
   vnoremap <C-d> yPgv
 catch /:E20:/
