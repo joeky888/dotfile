@@ -54,13 +54,15 @@ joeky ALL=(ALL) ALL
 
 Install jfbterm
 =====
-* $ sudo pkg install libiconv png gnu-unifont
-* $ export CC='gcc' && export CXX='g++' # GCC
-* $ export CC='clang' && export CXX='clang++' # Clang
-* $ git clone --depth 1 https://github.com/j16180339887/jfbterm-FreeBSD && cd jfbterm-FreeBSD
-* $ rm configure && autoreconf -ifv
-* $ ./configure CPPFLAGS=-I/usr/local/include LDFLAGS=-L/usr/local/lib LIBS=-liconv --prefix=/usr/local --mandir=/usr/local/man
-* $ gmake && sudo gmake install
+```sh
+sudo pkg install libiconv png gnu-unifont
+export CC='gcc' && export CXX='g++' # GCC
+git clone --depth 1 https://github.com/j16180339887/jfbterm-FreeBSD && cd jfbterm-FreeBSD
+rm configure && autoreconf -ifv
+./configure CPPFLAGS=-I/usr/local/include CFLAGS=-DLIBICONV_PLUG LDFLAGS=-L/usr/local/lib LIBS=-liconv --prefix=/usr/local --mandir=/usr/local/man
+gmake && sudo gmake install
+sudo cp /usr/local/etc/jfbterm.conf.sample /usr/local/etc/jfbterm.conf
+```
 
 Install LXQt
 =====
