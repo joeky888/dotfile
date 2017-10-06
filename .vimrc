@@ -162,8 +162,16 @@ function! TabIsEmpty()
     return winnr('$') == 1 && len(expand('%')) == 0 && line2byte(line('$') + 1) <= 2
 endfunction
 function! MyQuit()
-  redir => bufferActive | silent exec 'buffers a' | redir END
-  let g:bufferNum = len(split(bufferActive, "\n"))
+  if has("gui_running")
+    redir => bufferActive | silent exec 'buffers a' | redir END
+    let g:bufferNum = len(split(bufferActive, "\n"))
+
+    if g:bufferNum == 1 && bufname("%") != ""
+      bufdo bd
+      return
+    endif
+  endif
+
   if TabIsEmpty() == 1
     q!
   else
@@ -783,7 +791,6 @@ let colorsAndModesGui= {
   \ '' : '#ff8700'
 \}
 function! LastAccentColor()
-  if g:colors_name != "MonoKambat" | return | endif
   if !exists('b:lastMode') | let b:lastMode = mode() | call ChangeAccentColor() | endif
   if b:lastMode != mode()
     let b:lastMode = mode()
@@ -800,43 +807,6 @@ function! ChangeAccentColor()
   execute 'hi TabLineSel ctermfg=0 cterm=none ctermbg=' . accentColor
   execute 'hi TabLine ctermbg=0 ctermfg=' . accentColor
   execute 'hi CursorLineNr ctermfg=' . accentColor . ' guifg=' . accentColorGui
-"   if mode() == "i"
-"     hi User1 ctermfg=0 guifg=#000000 ctermbg=39  guibg=#00afff
-"     hi User2 ctermbg=0 guibg=#2e3436 ctermfg=39  guifg=#00afff
-"     hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=39  guibg=#00afff
-"     hi TabLineSel ctermfg=0 cterm=none ctermbg=39
-"     hi TabLine ctermbg=0 ctermfg=39
-"     hi CursorLineNr ctermfg=39  guifg=#00afff
-"   elseif mode() == "v"
-"     hi User1 ctermfg=0 guifg=#000000 ctermbg=82  guibg=#5fff00
-"     hi User2 ctermbg=0 guibg=#2e3436 ctermfg=82  guifg=#5fff00
-"     hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=82  guibg=#5fff00
-"     hi TabLineSel ctermfg=0 cterm=none ctermbg=82
-"     hi TabLine ctermbg=0 ctermfg=82
-"     hi CursorLineNr ctermfg=82  guifg=#5fff00
-"   elseif mode() == "V"
-"     hi User1 ctermfg=0 guifg=#000000 ctermbg=226  guibg=#ffff00
-"     hi User2 ctermbg=0 guibg=#2e3436 ctermfg=226  guifg=#ffff00
-"     hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=226  guibg=#ffff00
-"     hi TabLineSel ctermfg=0 cterm=none ctermbg=226
-"     hi TabLine ctermbg=0 ctermfg=226
-"     hi CursorLineNr ctermfg=226  guifg=#ffff00
-"   elseif mode() == ""
-"     hi User1 ctermfg=0 guifg=#000000 ctermbg=208  guibg=#ff8700
-"     hi User2 ctermbg=0 guibg=#2e3436 ctermfg=208  guifg=#ff8700
-"     hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161  guibg=#ff8700
-"     hi TabLineSel ctermfg=0 cterm=none ctermbg=208
-"     hi TabLine ctermbg=0 ctermfg=208
-"     hi CursorLineNr ctermfg=208  guifg=#ff8700
-"   else
-"     " Default color
-"     hi User1 ctermfg=0 guifg=#000000 ctermbg=161  guibg=#d7005f
-"     hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161  guifg=#d7005f
-"     hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161  guibg=#d7005f
-"     hi TabLineSel ctermfg=0 cterm=none ctermbg=161
-"     hi TabLine ctermbg=0 ctermfg=161
-"     hi CursorLineNr ctermfg=161  guifg=#d7005f
-"   endif
   return ''
 endfunction
 function! SearchCount()
@@ -947,8 +917,6 @@ function SyntaxMonokai()
   highlight clear
   syntax reset
   set t_Co=256
-
-  let g:colors_name = "MonoKambat"
 
   let g:is_bash=1 " Tell $VIMRUNTIME/syntax/sh.vim that I am using bash
   let python_highlight_all = 1 " Tell $VIMRUNTIME/syntax/python.vim to highlight all
@@ -1452,7 +1420,7 @@ if has("gui_running")
 
   function! LoadSession()
     " Prevent screen flashing on start
-"     hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
+    hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
     if has('win32') || has('win64')
       let mySession=expand("$TEMP/vim/session.vim")
     else
