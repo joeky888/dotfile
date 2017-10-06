@@ -62,6 +62,9 @@ rm configure && autoreconf -ifv
 ./configure CPPFLAGS=-I/usr/local/include CFLAGS=-DLIBICONV_PLUG LDFLAGS=-L/usr/local/lib LIBS=-liconv --prefix=/usr/local --mandir=/usr/local/man
 gmake && sudo gmake install
 sudo cp /usr/local/etc/jfbterm.conf.sample /usr/local/etc/jfbterm.conf
+mkdir -p /usr/local/share/fonts/bitmap/
+cp fonts/*.pcf.gz /usr/local/share/fonts/bitmap/
+mkfontdir /usr/local/share/fonts/bitmap/
 ```
 
 Install LXQt
