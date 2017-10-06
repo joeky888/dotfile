@@ -56,6 +56,7 @@ set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
+set sessionoptions-=options,localoptions " Don't save these to the session file
 autocmd VimEnter * set noerrorbells " Disable error sound
 set vb t_vb= " disable visual bell
 set t_vb= " disable visual bell
@@ -1185,9 +1186,9 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost *.{srt,SRT,vtt,VTT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost *.{ass,ASS,ssa,SSA} call HighlightASS()
-autocmd BufRead,BufNewFile,BufWritePost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{srt,SRT,vtt,VTT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{ass,ASS,ssa,SSA} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 autocmd FileType c,cpp,javascript,python,cs,go call HighlightC()
 
 function! HighlightGlobal()
