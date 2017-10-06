@@ -627,8 +627,8 @@ nnoremap / :set ignorecase<CR>/
 
 inoremap <C-CR> <ESC>o<C-g>u
 nnoremap <C-CR> o<C-g>u
-inoremap <C-BS> <C-W><C-g>u
-nnoremap <C-BS> i<C-W><C-g>u
+inoremap <C-BS> <C-g>u<C-W>
+nnoremap <C-BS> i<C-g>u<C-W>
 cnoremap <C-BS> <C-w>
 inoremap <C-_> <C-W><C-g>u
 nnoremap <C-_> i<C-W><C-g>u
