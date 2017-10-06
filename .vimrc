@@ -701,7 +701,7 @@ function! ToggleComment()
 endfunction
 
 " autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-autocmd FileType * if filereadable(expand('$VIMRUNTIME/syntax/'.&filetype.'.vim')) | exe 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim' | endif
+autocmd FileType * exe 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim'
 set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
