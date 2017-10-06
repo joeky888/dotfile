@@ -382,7 +382,7 @@ call CreateShortcut("End", "$l", "inv")
 " Ctrl K - Delete Line
 nnoremap <silent> <C-k> :call DeleteLine()<CR>
 inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
-vnoremap <silent> <C-k> <ESC>:<C-u>'<,'>d<CR>
+vnoremap <silent> <C-k> :d _<CR>
 
 " Ctrl D - Duplicate Line
 try
