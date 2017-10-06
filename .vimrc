@@ -1480,4 +1480,6 @@ if has("gui_running")
   inoremap <A-Left> <C-Left>
   cnoremap <A-Left> <C-Left>
   vnoremap <A-Left> 5h
+else
+  call SyntaxMonokai()
 endif
