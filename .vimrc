@@ -1186,11 +1186,18 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 " Custom file syntax
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{srt,SRT,vtt,VTT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{ass,ASS,ssa,SSA} call HighlightASS()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme * call HighlightGlobal()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{ass,ASS,ssa,SSA} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 autocmd FileType c,cpp,javascript,python,cs,go call HighlightC()
+" Highlight again after session loaded
+function! HighlightAll()
+  call HighlightGlobal()
+  call HighlightSRT()
+  call HighlightASS()
+  call HighlightPS1()
+endfunction
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
@@ -1219,6 +1226,11 @@ function! HighlightGlobal()
 endfunction
 
 function! HighlightSRT()
+  let fe=expand("%:e")
+  let ext=["srt", "SRT", "vtt", "VTT"]
+  if (index(ext, fe) < 0)
+    return
+  endif
   setlocal filetype=srt
   syn case ignore
   syn match srtContent ".*"
@@ -1239,6 +1251,11 @@ function! HighlightSRT()
 endfunction
 
 function! HighlightASS()
+  let fe=expand("%:e")
+  let ext=["ass", "ASS", "ssa", "SSA"]
+  if (index(ext, fe) < 0)
+    return
+  endif
   setlocal filetype=ass
   syn match assSection       "^\[.*\]"
   syn match assSourceComment "^;.*$"
@@ -1272,6 +1289,11 @@ endfunction
 
 function! HighlightPS1()
   " Project Repository: https://github.com/PProvost/vim-ps1
+  let fe=expand("%:e")
+  let ext=["ps1","PS1","psd1","PSD1","psm1","PSM1","pssc","PSSC"]
+  if (index(ext, fe) < 0)
+    return
+  endif
   set ft=ps1
   syn case ignore
   syn cluster ps1NotTop contains=@ps1Comment,ps1CDocParam,ps1FunctionDeclaration
@@ -1379,6 +1401,11 @@ function! HighlightPS1()
 endfunction
 
 function! HighlightC()
+  let fe=expand("%:e")
+  let ext=["c","cpp","javascript","python","cs","go"]
+  if (index(ext, fe) < 0)
+    return
+  endif
   syn match    cCustomParen    "(" contains=cParen,cCppParen
   syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
   syn match    cCustomScope    "::"
@@ -1432,7 +1459,7 @@ if has("gui_running")
       exe 'source ' . mySession
     endif
   endfunction
-  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai()
+  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
   au VimLeave * :call MakeSession()
 
   if has('win32') || has('win64')
