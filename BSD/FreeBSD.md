@@ -1,12 +1,16 @@
-Initialize ports tree (Do this for the first time)
+Ports
 =====
 * Login as root
-* $ portsnap fetch extract
-
-Update ports tree
-=====
-* Login as root
+* $ portsnap fetch extract # (Do this for the first time)
+* Update ports tree (Login as root)
 * $ portsnap fetch update
+* Uninstall poarts packages
+* $ whereis zsh
+* $ cd /usr/ports/shells/zsh
+* $ make deinstall
+* Upgrade all ports packages
+* $ portsnap fetch update
+* $ portupgrade -a
 
 Search and Install ports packages
 =====
@@ -19,16 +23,15 @@ Search and Install ports packages
 * For sudoers
 * $ sudo -E make install clean # -E means preserving env variables
 
-Uninstall paorts packages
+Make pkg faster
 =====
-* $ whereis zsh
-* $ cd /usr/ports/shells/zsh
-* $ make deinstall
-
-Upgrade all ports packages
-=====
-* $ portsnap fetch update
-* $ portupgrade -a
+* $ sudoedit /etc/pkg/FreeBSD.conf
+```conf
+# Change url from
+url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
+# To
+url: "pkg+http://pkg.tw.FreeBSD.org/${ABI}/latest",
+```
 
 Upgrade all pkg packages
 =====
@@ -57,20 +60,4 @@ Install jfbterm
 
 Install LXQt
 =====
-* $ fetch http://lxqt-freebsd.schmitz.computer/poudriere.cert
-* $ sudo mv -i poudriere.cert /usr/local/etc/ssl/
-* $ sudo mkdir -p /usr/local/etc/pkg/repos
-* $ sudoedit /usr/local/etc/pkg/repos/lxqt.conf
-```conf
-lxqt: {
-        url: "pkg+http://lxqt-freebsd.schmitz.computer/packages/${ABI}",
-        mirror_type: "srv",
-        enabled: yes,
-        signature_type: "pubkey",
-        pubkey: "/usr/local/etc/ssl/poudriere.cert",
-        priority: 100
-}
-```
-* $ sudo pkg install lxqt xorg
-* $ echo 'ck-launch-session /usr/local/bin/startlxqt' > ~/.xinitrc
-* $ startx
+* Don't do it if `pkg search lxqt` failed
