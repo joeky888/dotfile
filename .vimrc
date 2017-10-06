@@ -1197,6 +1197,7 @@ function! HighlightAll()
   call HighlightSRT()
   call HighlightASS()
   call HighlightPS1()
+  call HighlightC()
 endfunction
 
 function! HighlightGlobal()
@@ -1401,9 +1402,8 @@ function! HighlightPS1()
 endfunction
 
 function! HighlightC()
-  let fe=expand("%:e")
-  let ext=["c","cpp","javascript","python","cs","go"]
-  if (index(ext, fe) < 0)
+  let fts=["c","cpp","javascript","python","cs","go"]
+  if (index(fts, &filetype) < 0)
     return
   endif
   syn match    cCustomParen    "(" contains=cParen,cCppParen
