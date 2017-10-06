@@ -65,6 +65,7 @@ set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 set iskeyword=a-z,A-Z,48-57,_
+set runtimepath=$VIMRUNTIME " Only source this one
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
