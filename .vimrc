@@ -920,6 +920,13 @@ function SyntaxMonokai()
   " Pmenu is the popup autocomplete color
   hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
   hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
+  " Statusline
+  hi User1 ctermfg=0 guifg=#000000 ctermbg=161  guibg=#d7005f
+  hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161  guifg=#d7005f
+  hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161  guibg=#d7005f
+  hi TabLineSel ctermfg=0 cterm=none ctermbg=161
+  hi TabLine ctermbg=0 ctermfg=161
+  hi CursorLineNr ctermfg=161  guifg=#d7005f
 
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
