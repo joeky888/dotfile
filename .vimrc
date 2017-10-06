@@ -122,7 +122,6 @@ let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
 let mySwapDir = myVimDir . '/swap'
 let myUndoDir = myVimDir . '/undo'
-let mySession = myVimDir . '/session.vim'
 function! EnsureDirExists (dir)
   if !isdirectory(a:dir)
     call mkdir(a:dir,'p')
@@ -139,33 +138,6 @@ let &directory = mySwapDir
 let &backupdir = myBackupDir
 let &undodir = myUndoDir
 set writebackup
-
-" Restore all sessions
-function! MakeSession()
-  if has('win32') || has('win64')
-    let mySession=expand("$TEMP/vim/session.vim")
-  else
-    let mySession=expand("$HOME/dotfile/.vim/session.vim")
-  endif
-  exe "mksession! " . mySession
-endfunction
-
-function! LoadSession()
-  " Prevent screen flashing on start
-  hi Normal ctermfg=231 ctermbg=235 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
-  if has('win32') || has('win64')
-    let mySession=expand("$TEMP/vim/session.vim")
-  else
-    let mySession=expand("$HOME/dotfile/.vim/session.vim")
-  endif
-  if (filereadable(mySession))
-    exe 'source ' . mySession
-  else
-    echo "No session loaded."
-  endif
-endfunction
-au VimEnter *  nested :call LoadSession() | call SyntaxMonokai()
-au VimLeave * :call MakeSession()
 
 " Helper functions
 function! CreateShortcut(keys, cmd, where, ...)
@@ -1420,6 +1392,33 @@ if has("gui_running")
 
   nnoremap <silent> <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+
+  " Restore all sessions, GUI only, don't do this with terminal vim
+  function! MakeSession()
+    if has('win32') || has('win64')
+      let mySession=expand("$TEMP/vim/session.vim")
+    else
+      let mySession=expand("$HOME/dotfile/.vim/session.vim")
+    endif
+    exe "mksession! " . mySession
+  endfunction
+
+  function! LoadSession()
+    " Prevent screen flashing on start
+    hi Normal ctermfg=0 ctermbg=0 cterm=NONE guifg=black guibg=black gui=NONE
+    if has('win32') || has('win64')
+      let mySession=expand("$TEMP/vim/session.vim")
+    else
+      let mySession=expand("$HOME/dotfile/.vim/session.vim")
+    endif
+    if (filereadable(mySession))
+      exe 'source ' . mySession
+    else
+      echo "No session loaded."
+    endif
+  endfunction
+  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai()
+  au VimLeave * :call MakeSession()
 
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
