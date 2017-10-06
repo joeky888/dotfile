@@ -66,6 +66,7 @@ sudo mkdir -p /usr/local/share/fonts/bitmap/
 sudo cp fonts/*.pcf.gz /usr/local/share/fonts/bitmap/
 sudo mkfontscale /usr/local/share/fonts/bitmap/
 sudo mkfontdir /usr/local/share/fonts/bitmap/
+sudo fc-cache -fv
 ```
 
 Install LXQt
