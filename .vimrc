@@ -933,8 +933,8 @@ function! SyntaxMonokai()
   " Visual is the selection color
   hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff gui=NONE
   " Pmenu is the popup autocomplete color
-  hi Pmenu ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
-  hi PmenuSel ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
+  hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
+  hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
 
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
