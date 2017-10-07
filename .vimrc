@@ -56,7 +56,7 @@ set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
-set sessionoptions-=options,localoptions " Don't save these to the session file
+set sessionoptions-=options,localoptions,globals,buffers " Don't save these to the session file
 autocmd VimEnter * set noerrorbells " Disable error sound
 set vb t_vb= " disable visual bell
 set t_vb= " disable visual bell
@@ -1186,6 +1186,7 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 " Custom file syntax
+autocmd BufRead,BufNewFile,BufWritePost,FileType,ColorScheme,SessionLoadPost * exe 'if exists("b:custom_syntax") | unlet b:custom_syntax | endif'
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme * call HighlightGlobal()
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme * call HighlightC()
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
@@ -1203,6 +1204,10 @@ endfunction
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
+    if exists("b:custom_syntax")
+      return
+    endif
+    let b:custom_syntax = 1
     syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
     " integer number
@@ -1230,9 +1235,10 @@ endfunction
 function! HighlightSRT()
   let fe=expand("%:e")
   let ext=["srt", "SRT", "vtt", "VTT"]
-  if (index(ext, fe) < 0)
+  if (index(ext, fe) < 0) || exists("b:custom_syntax")
     return
   endif
+  let b:custom_syntax = 1
   setlocal filetype=srt
   syn case ignore
   syn match srtContent ".*"
@@ -1255,9 +1261,10 @@ endfunction
 function! HighlightASS()
   let fe=expand("%:e")
   let ext=["ass", "ASS", "ssa", "SSA"]
-  if (index(ext, fe) < 0)
+  if (index(ext, fe) < 0) || exists("b:custom_syntax")
     return
   endif
+  let b:custom_syntax = 1
   setlocal filetype=ass
   syn match assSection       "^\[.*\]"
   syn match assSourceComment "^;.*$"
@@ -1293,9 +1300,10 @@ function! HighlightPS1()
   " Project Repository: https://github.com/PProvost/vim-ps1
   let fe=expand("%:e")
   let ext=["ps1","PS1","psd1","PSD1","psm1","PSM1","pssc","PSSC"]
-  if (index(ext, fe) < 0)
+  if (index(ext, fe) < 0) || exists("b:custom_syntax")
     return
   endif
+  let b:custom_syntax = 1
   set ft=ps1
   syn case ignore
   syn cluster ps1NotTop contains=@ps1Comment,ps1CDocParam,ps1FunctionDeclaration
@@ -1404,9 +1412,10 @@ endfunction
 
 function! HighlightC()
   let fts=["c","cpp","javascript","python","cs","go"]
-  if (index(fts, &filetype) < 0)
+  if (index(fts, &filetype) < 0) || exists("b:custom_syntax")
     return
   endif
+  let b:custom_syntax = 1
   syn match    cCustomParen    "(" contains=cParen,cCppParen
   syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
   syn match    cCustomScope    "::"
