@@ -52,7 +52,7 @@ set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
 set encoding=utf-8
-set fileencodings=utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
+set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
