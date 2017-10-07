@@ -1467,7 +1467,7 @@ if has("gui_running")
     else
       execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize
     endif
-      execute "set linespace=".(g:guifontsize/4)
+      execute "set linespace=".(g:guifontsize/5)
   endfunction
   call ChangeFontSize()
 
