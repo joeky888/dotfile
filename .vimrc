@@ -165,6 +165,7 @@ endfunction
 function! MyQuit()
 
   if has("gui_running")
+    " help file is not in the buffer list, specially treated
     if (&filetype=="help")
       q
       return
