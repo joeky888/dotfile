@@ -43,7 +43,7 @@ if [[ $(command -v aria2c) ]]; then
   fi
 fi
 
-alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 14"
+alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
