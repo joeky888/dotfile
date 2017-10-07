@@ -174,14 +174,14 @@ function! MyQuit()
   endif
 
   if TabIsEmpty() == 1
-    q!
+    silent q!
   else
     if &modified
       if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1)
         q!
       endif
     else
-      q
+      silent q
     endif
   endif
 endfunction
@@ -837,7 +837,7 @@ function! CommandAfterSearch()
   if getcmdtype() == '/'
     return "\<cr>:call UpdateSearch()\<cr>"
   else
-    return "\<cr>"
+    return "\<cr>i"
   endif
 endfunction
 cnoremap <silent> <expr> <CR> CommandAfterSearch()
