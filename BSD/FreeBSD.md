@@ -58,6 +58,30 @@ Add user to sudoer
 root  ALL=(ALL) ALL
 joeky ALL=(ALL) ALL
 ```
+Rebuild Kernel
+=====
+* Rebuild Kernel
+* $ aria2c ftp://ftp.tw.freebsd.org/pub/FreeBSD/releases/amd64/MY-FREEBSD-RELEASE/src.txz
+* $ sudo tar -C / -xzvf src.txz
+* $ sudoedit /usr/src/sys/amd64/conf/GENERIC
+```conf
+options VESA
+options SC_PIXEL_MODE
+```
+* $ cd /usr/src
+* $ sudo make -j4 buildkernel && sudo make installkernel
+
+Install yaft (yet another framebuffer terminal)
+=====
+```sh
+sudoedit /boot/loader.conf # Remove `kern.vty=vt` , Add `kern.vty=sc`
+sudo kldload vesa # If failed, try to boot with BIOS instead of UEFI
+vidcontrol -i mode
+vidcontrol MODE_279
+echo "allscreens_flags=\"MODE_279\"" >> /etc/rc.conf
+kbdcontrol -r fast
+sudo memcontrol set -b 0xe0000000 -l 0x10000000 -o SVGA write-combine
+```
 
 Install jfbterm (Epic Fail!!)
 =====

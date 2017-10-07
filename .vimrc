@@ -64,7 +64,7 @@ autocmd VimEnter * set vb t_vb= " Disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-set iskeyword=a-z,A-Z,48-57,_
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
@@ -843,7 +843,7 @@ function! CommandAfterSearch()
   if getcmdtype() == '/'
     return "\<cr>:call UpdateSearch()\<cr>"
   else
-    return "\<cr>:set ignorecase\<cr>"
+    return "\<cr>"
   endif
 endfunction
 cnoremap <silent> <expr> <CR> CommandAfterSearch()
@@ -1206,6 +1206,7 @@ function! HighlightAll()
   call HighlightASS()
   call HighlightPS1()
   call HighlightC()
+  set iskeyword=a-z,A-Z,48-57,_
 endfunction
 
 function! HighlightGlobal()
