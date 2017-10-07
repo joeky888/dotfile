@@ -1,3 +1,10 @@
+Install
+=====
+* dvd1.iso is better than disc1.iso
+* Boot the iso file with UEFI, not BIOS
+* Hostname must be filled
+* Use AutoZFS for partition
+
 Ports
 =====
 * Login as root
