@@ -1425,6 +1425,32 @@ function! HighlightC()
   hi def link cCustomClass Define
 endfunction
 
+function! MakeSession()
+  if has('win32') || has('win64')
+    let mySession=expand("$TEMP/vim/session.vim")
+  else
+    let mySession=expand("$HOME/dotfile/.vim/session.vim")
+  endif
+  " Don's save the session if there is only one buffer
+  if exists('g:bufferNum')
+    if g:bufferNum <= 1 | call delete(mySession) | return | endif
+  endif
+  exe "mksession! " . mySession
+endfunction
+
+function! LoadSession()
+  " Prevent screen flashing on start
+  hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
+  if has('win32') || has('win64')
+    let mySession=expand("$TEMP/vim/session.vim")
+  else
+    let mySession=expand("$HOME/dotfile/.vim/session.vim")
+ endif
+  if (filereadable(mySession))
+    exe 'source ' . mySession
+  endif
+endfunction
+
 if has("gui_running")
 
   let g:guifontsize=13
@@ -1442,33 +1468,6 @@ if has("gui_running")
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   " Restore all sessions, GUI only, don't do this with terminal vim
-  function! MakeSession()
-"     let bufferNum = len(filter(split(bufferActive, "\n"), 'strlen(v:val) == 0'))
-
-    if has('win32') || has('win64')
-      let mySession=expand("$TEMP/vim/session.vim")
-    else
-      let mySession=expand("$HOME/dotfile/.vim/session.vim")
-    endif
-    " Don's save the session if there is only one buffer
-    if exists('g:bufferNum')
-      if g:bufferNum <= 1 | call delete(mySession) | return | endif
-    endif
-    exe "mksession! " . mySession
-  endfunction
-
-  function! LoadSession()
-    " Prevent screen flashing on start
-    hi Normal ctermfg=252 ctermbg=233 guifg=#F8F8F2 guibg=#1B1D1E
-    if has('win32') || has('win64')
-      let mySession=expand("$TEMP/vim/session.vim")
-    else
-      let mySession=expand("$HOME/dotfile/.vim/session.vim")
-   endif
-    if (filereadable(mySession))
-      exe 'source ' . mySession
-    endif
-  endfunction
   au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
   au VimLeave * :call MakeSession()
 
@@ -1485,7 +1484,6 @@ if has("gui_running")
   set lines=999 columns=999 " set window Maximized
   set scrolloff& " unset scroll values
   set sidescrolloff&
-"   set clipboard& " unset clipboard
   set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
