@@ -837,7 +837,7 @@ function! CommandAfterSearch()
   if getcmdtype() == '/'
     return "\<cr>:call UpdateSearch()\<cr>"
   else
-    return "\<cr>i"
+    return "\<cr>"
   endif
 endfunction
 cnoremap <silent> <expr> <CR> CommandAfterSearch()
