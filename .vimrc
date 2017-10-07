@@ -1075,7 +1075,7 @@ vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
 command! -range=% MergeToOneLine <line1>,<line2>%left | <line1>,<line2>%j!
 
 " Remove something
-nnoremenu Edit.Remove.Empty\ lines          :g/^$/d<CR>
+nnoremenu Edit.Remove.Empty\ lines          :g/^$/de<CR>
 nnoremenu Edit.Remove.Leading\ whitespace   :%s/^\s\+//e<CR>
 nnoremenu Edit.Remove.Trailing\ whitespace  :%s/\s\+$//e<CR>
 
