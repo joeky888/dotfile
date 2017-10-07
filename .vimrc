@@ -163,7 +163,9 @@ function! TabIsEmpty()
     return winnr('$') == 1 && len(expand('%')) == 0 && line2byte(line('$') + 1) <= 2
 endfunction
 function! MyQuit()
-  if has("gui_running")
+  if (&filetype=="help")
+    q
+  elseif has("gui_running")
     redir => bufferActive | silent exec 'buffers a' | redir END
     let g:bufferNum = len(split(bufferActive, "\n"))
 
@@ -171,9 +173,7 @@ function! MyQuit()
       silent bufdo bd
       return
     endif
-  endif
-
-  if TabIsEmpty() == 1
+  elseif TabIsEmpty() == 1
     silent q!
   else
     if &modified
