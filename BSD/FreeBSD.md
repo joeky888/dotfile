@@ -81,6 +81,10 @@ vidcontrol MODE_279
 echo "allscreens_flags=\"MODE_279\"" >> /etc/rc.conf
 kbdcontrol -r fast
 sudo memcontrol set -b 0xe0000000 -l 0x10000000 -o SVGA write-combine
+git clone --depth 1 https://github.com/uobikiemukot/yaft.git
+make
+sudo pkg install ncurses
+sudo make install
 ```
 
 Install jfbterm (Epic Fail!!)
