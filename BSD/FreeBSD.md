@@ -71,19 +71,20 @@ options SC_PIXEL_MODE
 * $ cd /usr/src
 * $ sudo make -j4 buildkernel && sudo make installkernel
 
-Install yaft (yet another framebuffer terminal)
+Install yaft (yet another framebuffer terminal) [Epic Fail!!]
 =====
 ```sh
 sudoedit /boot/loader.conf # Remove `kern.vty=vt` , Add `kern.vty=sc`
 sudo kldload vesa # If failed, try to boot with BIOS instead of UEFI
+# sudo echo "vesa_load=\"YES\"" >> /boot/loader.conf
 vidcontrol -i mode
 vidcontrol MODE_279
 echo "allscreens_flags=\"MODE_279\"" >> /etc/rc.conf
 kbdcontrol -r fast
 sudo memcontrol set -b 0xe0000000 -l 0x10000000 -o SVGA write-combine
 git clone --depth 1 https://github.com/uobikiemukot/yaft.git
-make
 sudo pkg install ncurses
+make
 sudo make install
 ```
 
