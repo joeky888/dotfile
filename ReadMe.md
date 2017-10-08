@@ -22,3 +22,20 @@ C:\windows\explorer.exe https://raw.githubusercontent.com/j16180339887/dotfile/m
 # Windows: Use Powershell
 Invoke-WebRequest "https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc" -OutFile "$ENV:UserProfile\\.vimrc"
 ```
+
+Experience
+=====
+* Windows               (2003-)
+* Linux                 (2014-)
+* FreeBSD               (2017-)
+* Git                   (2014-)
+* Bash                  (2014-)
+* Zsh                   (2015-)
+* Tmux                  (2015-)
+* Sublime Text          (2014-2015)
+* Adobe Brackets        (2015-2016)
+* Vim                   (2016-)
+* Cygwin                (2016-)
+* MS Office             (2010-2014)
+* Libre Office          (2014-2015)
+* WPS Office            (2015-)
