@@ -1285,7 +1285,6 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 " Custom file syntax
-autocmd SessionLoadPost * call HighlightAll()
 autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightGlobal()
 autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightC()
 autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
