@@ -58,15 +58,41 @@ Add user to sudoer
 root  ALL=(ALL) ALL
 joeky ALL=(ALL) ALL
 ```
+
+Display CJK font (Kernel rebuilding required)
+=====
+* Rebuild Kernel, then do the following things
+* $ sudoedit /boot/loader.conf
+```conf
+hw.vga.textmode=0
+kern.vty="vt"
+```
+* Download GNU Unifont font (HEX format)
+* $ vtfontcvt unifont.hex jj.fnt
+* $ sudo cp jj.fnt /usr/share/vt/fonts/
+* $ sudoedit /etc/rc.conf
+```conf
+font8x16="jj"
+```
+* $ sudo reboot
+* $ vidcontrol -f jj.fnt # Tmux could causes problems, start with zsh/bash without tmux
+
 Rebuild Kernel
 =====
-* Rebuild Kernel
 * $ aria2c ftp://ftp.tw.freebsd.org/pub/FreeBSD/releases/amd64/MY-FREEBSD-RELEASE/src.txz
+* $ sudo rm -rf /usr/src
 * $ sudo tar -C / -xzvf src.txz
 * $ sudoedit /usr/src/sys/amd64/conf/GENERIC
 ```conf
+options TERMINAL_NORM_ATTR=(FG_WHITE|BG_BLACK) # Normal output color
+options TERMINAL_KERN_ATTR=(FG_LIGHTCYAN|BG_BLACK) # Kernel output color
 options VESA
-options SC_PIXEL_MODE
+device vt
+device vt_vga
+# Comment out these lines, which against the vt option
+#device         sc
+#options        SC_PIXEL_MODE   # add support for the raster text mode
+#device         vga             # VGA video card driver
 ```
 * $ cd /usr/src
 * $ sudo make -j4 buildkernel && sudo make installkernel
