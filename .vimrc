@@ -842,35 +842,35 @@ function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
   if mode() == 'i'
-    hi! def link User1 iUser1
-    hi! def link User2 iUser2
-    hi! def link TabLineSel iTabLineSel
-    hi! def link TabLine iTabLine
-    hi! def link CursorLineNr iCursorLineNr
+    hi! link User1 iUser1
+    hi! link User2 iUser2
+    hi! link TabLineSel iTabLineSel
+    hi! link TabLine iTabLine
+    hi! link CursorLineNr iCursorLineNr
   elseif mode() == 'v'
-    hi! def link User1 vUser1
-    hi! def link User2 vUser2
-    hi! def link TabLineSel vTabLineSel
-    hi! def link TabLine vTabLine
-    hi! def link CursorLineNr vCursorLineNr
+    hi! link User1 vUser1
+    hi! link User2 vUser2
+    hi! link TabLineSel vTabLineSel
+    hi! link TabLine vTabLine
+    hi! link CursorLineNr vCursorLineNr
   elseif mode() == 'V'
-    hi! def link User1 VUser1
-    hi! def link User2 VUser2
-    hi! def link TabLineSel VTabLineSel
-    hi! def link TabLine VTabLine
-    hi! def link CursorLineNr VCursorLineNr
+    hi! link User1 VUser1
+    hi! link User2 VUser2
+    hi! link TabLineSel VTabLineSel
+    hi! link TabLine VTabLine
+    hi! link CursorLineNr VCursorLineNr
   elseif mode() == ''
-    hi! def link User1 VVUser1
-    hi! def link User2 VVUser2
-    hi! def link TabLineSel VVTabLineSel
-    hi! def link TabLine VVTabLine
-    hi! def link CursorLineNr VVCursorLineNr
+    hi! link User1 VVUser1
+    hi! link User2 VVUser2
+    hi! link TabLineSel VVTabLineSel
+    hi! link TabLine VVTabLine
+    hi! link CursorLineNr VVCursorLineNr
   else
-    hi! def link User1 NUser1
-    hi! def link User2 NUser2
-    hi! def link TabLineSel NTabLineSel
-    hi! def link TabLine NTabLine
-    hi! def link CursorLineNr NCursorLineNr
+    hi! link User1 NUser1
+    hi! link User2 NUser2
+    hi! link TabLineSel NTabLineSel
+    hi! link TabLine NTabLine
+    hi! link CursorLineNr NCursorLineNr
   endif
   return ''
 endfunction
@@ -994,12 +994,12 @@ function! SyntaxMonokai()
   hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
   hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
   " Init StatusLine color
-  hi User1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-  hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-  hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161   guibg=#d7005f
-  hi TabLineSel ctermfg=0 cterm=none ctermbg=161
-  hi TabLine ctermbg=0 ctermfg=161
-  hi CursorLineNr ctermfg=161   guifg=#d7005f
+"   hi User1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
+"   hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
+"   hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161   guibg=#d7005f
+"   hi TabLineSel ctermfg=0 cterm=none ctermbg=161
+"   hi TabLine ctermbg=0 ctermfg=161
+"   hi CursorLineNr ctermfg=161   guifg=#d7005f
 
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
