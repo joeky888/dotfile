@@ -136,7 +136,11 @@ function! IndentDetectorDetect(autoadjust)
       return 'space'.(spacenum ? spacenum : '>4')
 "       return 'space'.(spacenum ? spacenum : '>4')
     else
-      return 'default'
+      if &softtabstop
+        return 'space'.&softtabstop
+      else
+        return 'tab'
+"       return 'default'
     endif
   else
     return 'mixed'
