@@ -85,8 +85,11 @@ let g:markdown_fenced_languages =
   \"zsh","tmux","debsources","resolv","sudoers"
 \]
 " Open all cmd args in new tabs
-" autocmd BufReadPost * nested tab sball
-au VimEnter * if !&diff | tab all | tabfirst | endif
+if ("gui_running")
+  au VimEnter * if !&diff | tab all | tabfirst | endif
+else
+  silent tab all
+endif
 " Open help in new tabs
 cnoreabbrev help <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
 cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
