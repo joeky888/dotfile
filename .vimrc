@@ -141,10 +141,11 @@ function! IndentDetectorDetect(autoadjust)
       endif
       return 'space'.(spacenum ? spacenum : '>8')
     else
-      if &softtabstop
+      if &expandtab
         return 'space'.&softtabstop
       else
-        return 'tab'
+        return 'tab'.&tabstop
+      endif
     endif
   else
     return 'mixed'
