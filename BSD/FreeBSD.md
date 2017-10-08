@@ -69,6 +69,7 @@ hw.vga.textmode=0
 kern.vty="vt"
 ```
 * Download GNU Unifont font (HEX format)
+* $ aria2c http://unifoundry.com/pub/unifont-10.0.06/font-builds/unifont_sample-10.0.06.hex.gz
 * $ vtfontcvt unifont.hex jj.fnt
 * $ sudo cp jj.fnt /usr/share/vt/fonts/
 * $ sudoedit /etc/rc.conf
