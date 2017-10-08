@@ -46,11 +46,11 @@ Upgrade all pkg packages
 
 Add user to sudoer
 =====
-* # whereis sudo
-* # cd /usr/ports/security/sudo
-* # export BATCH=yes
-* # make install clean
-* # visudo
+* $ whereis sudo
+* $ cd /usr/ports/security/sudo
+* $ export BATCH=yes
+* $ make install clean
+* $ visudo
 ```sudoers
 ##
 ## User privilege specification
