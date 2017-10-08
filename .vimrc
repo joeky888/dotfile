@@ -45,7 +45,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set updatetime=100 " How long will vim backup a file
+set updatetime=200 " How long will vim backup a file
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
@@ -852,25 +852,25 @@ function! ChangeAccentColor()
     hi! def link User2 vUser2
     hi! def link TabLineSel vTabLineSel
     hi! def link TabLine vTabLine
-    hi! def link CursorLineNr vCursorLine
+    hi! def link CursorLineNr vCursorLineNr
   elseif mode() == 'V'
     hi! def link User1 VUser1
     hi! def link User2 VUser2
     hi! def link TabLineSel VTabLineSel
     hi! def link TabLine VTabLine
-    hi! def link CursorLineNr VCursorLine
+    hi! def link CursorLineNr VCursorLineNr
   elseif mode() == ''
     hi! def link User1 VVUser1
     hi! def link User2 VVUser2
     hi! def link TabLineSel VVTabLineSel
     hi! def link TabLine VVTabLine
-    hi! def link CursorLineNr VVCursorLine
+    hi! def link CursorLineNr VVCursorLineNr
   else
     hi! def link User1 NUser1
     hi! def link User2 NUser2
     hi! def link TabLineSel NTabLineSel
     hi! def link TabLine NTabLine
-    hi! def link CursorLineNr NCursorLine
+    hi! def link CursorLineNr NCursorLineNr
   endif
   return ''
 endfunction
@@ -1257,15 +1257,16 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 " Custom file syntax
-autocmd BufRead,BufNewFile,BufWritePost,FileType,ColorScheme,SessionLoadPost * exe 'if exists("b:custom_syntax") | unlet b:custom_syntax | endif'
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme * call HighlightC()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{ass,ASS,ssa,SSA} call HighlightASS()
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufNew,VimEnter,FileType,ColorScheme,SessionLoadPost * call HighlightAll()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightGlobal()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightC()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ass,ASS,ssa,SSA} call HighlightASS()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
 
 " Highlight again after session loaded
 function! HighlightAll()
+  if exists("b:custom_syntax") | unlet b:custom_syntax | endif
   call HighlightGlobal()
   call HighlightSRT()
   call HighlightASS()
