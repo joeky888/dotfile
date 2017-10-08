@@ -113,7 +113,7 @@ function! IndentDetectorDetect(autoadjust)
   if leadtab + leadspace < 2 && IndentDetectorSearchNearby('^\(\t\+ \| \+\t\)') == 0
     if leadtab
       if a:autoadjust
-        exec 'setl noexpandtab nosmarttab tabstop='.g:Indent_Detector_tabstop.' shiftwidth='.g:Indent_Detector_shiftwidth.' softtabstop='.g:Indent_Detector_softtabstop
+        exec 'setl noexpandtab nosmarttab tabstop='.b:Indent_Detector_tabstop.' shiftwidth='.b:Indent_Detector_shiftwidth.' softtabstop='.b:Indent_Detector_softtabstop
       endif
       return 'tab'
     elseif leadspace
@@ -127,20 +127,19 @@ function! IndentDetectorDetect(autoadjust)
       elseif IndentDetectorSearchNearby('^    [^\t ]')
         let spacenum = 4
       elseif IndentDetectorSearchNearby('^        [^\t ]')
-        let spacenum = 4
+        let spacenum = 8
       endif
       if a:autoadjust
-        let n = spacenum ? spacenum : g:Indent_Detector_shiftwidth
+        let n = spacenum ? spacenum : b:Indent_Detector_shiftwidth
         exec 'setl expandtab smarttab tabstop='.n.' shiftwidth='.n.' softtabstop='.n
       endif
-      return 'space'.(spacenum ? spacenum : '>4')
+      return 'space'.spacenum
 "       return 'space'.(spacenum ? spacenum : '>4')
     else
       if &softtabstop
         return 'space'.&softtabstop
       else
         return 'tab'
-"       return 'default'
     endif
   else
     return 'mixed'
@@ -149,9 +148,9 @@ endfunction
 
 function! GetIndent()
   if !exists('b:fileIndent')
-    call InitIndentVariable('g:Indent_Detector_tabstop', &tabstop)
-    call InitIndentVariable('g:Indent_Detector_shiftwidth', &shiftwidth)
-    call InitIndentVariable('g:Indent_Detector_softtabstop', &softtabstop)
+    call InitIndentVariable('b:Indent_Detector_tabstop', &tabstop)
+    call InitIndentVariable('b:Indent_Detector_shiftwidth', &shiftwidth)
+    call InitIndentVariable('b:Indent_Detector_softtabstop', &softtabstop)
     let b:fileIndent = IndentDetectorDetect(0)
   endif
   return b:fileIndent
