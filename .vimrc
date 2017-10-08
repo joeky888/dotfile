@@ -126,6 +126,12 @@ function! IndentDetectorDetect(autoadjust)
         let spacenum = 3
       elseif IndentDetectorSearchNearby('^    [^\t ]')
         let spacenum = 4
+      elseif IndentDetectorSearchNearby('^     [^\t ]')
+        let spacenum = 5
+      elseif IndentDetectorSearchNearby('^      [^\t ]')
+        let spacenum = 6
+      elseif IndentDetectorSearchNearby('^       [^\t ]')
+        let spacenum = 7
       elseif IndentDetectorSearchNearby('^        [^\t ]')
         let spacenum = 8
       endif
@@ -133,8 +139,7 @@ function! IndentDetectorDetect(autoadjust)
         let n = spacenum ? spacenum : b:Indent_Detector_shiftwidth
         exec 'setl expandtab smarttab tabstop='.n.' shiftwidth='.n.' softtabstop='.n
       endif
-      return 'space'.spacenum
-"       return 'space'.(spacenum ? spacenum : '>4')
+      return 'space'.(spacenum ? spacenum : '>8')
     else
       if &softtabstop
         return 'space'.&softtabstop
@@ -1600,7 +1605,7 @@ function! LoadSession()
     let mySession=expand("$TEMP/vim/session.vim")
   else
     let mySession=expand("$HOME/dotfile/.vim/session.vim")
- endif
+  endif
   if (filereadable(mySession))
     exe 'source ' . mySession
   endif
