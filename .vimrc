@@ -319,7 +319,7 @@ function! MySave()
     normal! `j
   catch /:E20:/
     " mark not set error
-    echon "Mark not set, Try again"
+"     echon "Mark not set, Try again"
   endtry
 endfunction
 function! OpenLastBufferInNewTab()
@@ -486,7 +486,7 @@ try
   vnoremap <C-d> yPgv
 catch /:E20:/
   " mark not set error
-  echon "Mark not set, Try again"
+"   echon "Mark not set, Try again"
 endtry
 
 " Ctrl Q - Visual block selection
@@ -1294,7 +1294,6 @@ autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{
 
 " Highlight again after session loaded
 function! HighlightAll()
-  if exists("b:custom_syntax") | unlet b:custom_syntax | endif
   call HighlightGlobal()
   call HighlightSRT()
   call HighlightASS()
@@ -1305,10 +1304,6 @@ endfunction
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
-    if exists("b:custom_syntax")
-      return
-    endif
-    let b:custom_syntax = 1
     syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
     " integer number
@@ -1336,10 +1331,9 @@ endfunction
 function! HighlightSRT()
   let fe=expand("%:e")
   let ext=["srt", "SRT", "vtt", "VTT"]
-  if (index(ext, fe) < 0) || exists("b:custom_syntax")
+  if (index(ext, fe) < 0)
     return
   endif
-  let b:custom_syntax = 1
   setlocal filetype=srt
   syn case ignore
   syn match srtContent ".*"
@@ -1362,10 +1356,9 @@ endfunction
 function! HighlightASS()
   let fe=expand("%:e")
   let ext=["ass", "ASS", "ssa", "SSA"]
-  if (index(ext, fe) < 0) || exists("b:custom_syntax")
+  if (index(ext, fe) < 0)
     return
   endif
-  let b:custom_syntax = 1
   setlocal filetype=ass
   syn match assSection       "^\[.*\]"
   syn match assSourceComment "^;.*$"
@@ -1401,10 +1394,9 @@ function! HighlightPS1()
   " Project Repository: https://github.com/PProvost/vim-ps1
   let fe=expand("%:e")
   let ext=["ps1","PS1","psd1","PSD1","psm1","PSM1","pssc","PSSC"]
-  if (index(ext, fe) < 0) || exists("b:custom_syntax")
+  if (index(ext, fe) < 0)
     return
   endif
-  let b:custom_syntax = 1
   set ft=ps1
   syn case ignore
   syn cluster ps1NotTop contains=@ps1Comment,ps1CDocParam,ps1FunctionDeclaration
@@ -1513,10 +1505,9 @@ endfunction
 
 function! HighlightC()
   let fts=["c","cpp","javascript","python","cs","go"]
-  if (index(fts, &filetype) < 0) || exists("b:custom_syntax")
+  if (index(fts, &filetype) < 0)
     return
   endif
-  let b:custom_syntax = 1
   syn match    cCustomParen    "(" contains=cParen,cCppParen
   syn match    cCustomFunc     "\w\+\s*(" contains=cCustomParen
   syn match    cCustomScope    "::"
