@@ -73,9 +73,15 @@ kern.vty="vt"
 * $ sudoedit /etc/rc.conf
 ```conf
 font8x16="jj"
+allscreens_flags="-f /usr/share/vt/fonts/jj.fnt" # Tmux could causes problems
 ```
 * $ sudo reboot
-* $ vidcontrol -f jj.fnt # Tmux could causes problems, start with zsh/bash without tmux
+* $ vidcontrol -f jj.fnt #Tmux could causes problems, start with zsh/bash without tmux
+* $ sudoedit /etc/rc.conf
+
+Large console font size
+=====
+* $ vidcontrol -f gallant
 
 Rebuild Kernel
 =====
@@ -136,3 +142,22 @@ sudo cap_mkdb /usr/share/misc/termcap
 Install LXQt
 =====
 * Don't do it if `pkg search lxqt` failed
+
+Install LXDE
+=====
+* $ sudo pkg install lxde-meta lxde-common openbox xorg
+* $ echo 'exec startlxde' > ~/.xinitrc
+* $ sudoedit /etc/rc.conf
+```conf
+dbus_enable="YES"
+slim_enable="YES"
+hald_enable="YES"
+```
+* $ sudoedit /usr/local/etc/X11/xorg.conf.d/driver-scfb.conf
+```conf
+Section "Device"
+    Identifier    "Card0"
+    Driver        "scfb"
+EndSection
+```
+* $ startx
