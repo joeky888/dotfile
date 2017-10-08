@@ -85,7 +85,7 @@ let g:markdown_fenced_languages =
   \"zsh","tmux","debsources","resolv","sudoers"
 \]
 " Open all cmd args in new tabs
-if ("gui_running")
+if has("gui_running")
   au VimEnter * if !&diff | tab all | tabfirst | endif
 else
   silent tab all
