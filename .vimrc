@@ -800,12 +800,6 @@ let colorsAndModesGui= {
 function! LastAccentColor()
   if !exists('b:lastMode')
     let b:lastMode = mode()
-    hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-    hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-    hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
-    hi NTabLine ctermbg=0 ctermfg=161
-    hi NCursorLineNr ctermfg=161   guifg=#d7005f
-
     hi iUser1 ctermfg=0 guifg=#000000 ctermbg=39   guibg=#00afff
     hi iUser2 ctermbg=0 guibg=#2e3436 ctermfg=39   guifg=#00afff
     hi iTabLineSel ctermfg=0 cterm=none ctermbg=39
@@ -829,6 +823,12 @@ function! LastAccentColor()
     hi VVTabLineSel ctermfg=0 cterm=none ctermbg=208
     hi VVTabLine ctermbg=0 ctermfg=208
     hi VVCursorLineNr ctermfg=208   guifg=#ff8700
+
+    hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
+    hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
+    hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
+    hi NTabLine ctermbg=0 ctermfg=161
+    hi NCursorLineNr ctermfg=161   guifg=#d7005f
     call ChangeAccentColor()
   endif
   if b:lastMode != mode()
@@ -994,12 +994,16 @@ function! SyntaxMonokai()
   hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
   hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
   " Init StatusLine color
-"   hi User1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-"   hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-"   hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=161   guibg=#d7005f
-"   hi TabLineSel ctermfg=0 cterm=none ctermbg=161
-"   hi TabLine ctermbg=0 ctermfg=161
-"   hi CursorLineNr ctermfg=161   guifg=#d7005f
+  hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
+  hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
+  hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
+  hi NTabLine ctermbg=0 ctermfg=161
+  hi NCursorLineNr ctermfg=161   guifg=#d7005f
+  hi! link User1 NUser1
+  hi! link User2 NUser2
+  hi! link TabLineSel NTabLineSel
+  hi! link TabLine NTabLine
+  hi! link CursorLineNr NCursorLineNr
 
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
