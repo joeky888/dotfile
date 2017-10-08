@@ -94,7 +94,7 @@ cnoreabbrev e <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'e')<CR>
 """ Prevent lag when hitting ESC
 set ttimeoutlen=10
 set timeoutlen=10
-au InsertEnter * set timeoutlen=300 | set ignorecase
+au InsertEnter * set timeoutlen=10 | set ignorecase
 au InsertLeave * set timeoutlen=10
 
 """ When opening a file : - Reopen at last position - Display info
@@ -160,10 +160,23 @@ function! CreateShortcut(keys, cmd, where, ...)
   endif
 endfunction
 function! TabIsEmpty()
-    return winnr('$') == 1 && len(expand('%')) == 0 && line2byte(line('$') + 1) <= 2
+  return winnr('$') == 1 && len(expand('%')) == 0 && line2byte(line('$') + 1) <= 2
+endfunction
+function! ModifiedQCheck()
+  if &modified
+    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1) | q! | endif
+  else
+    silent q
+  endif
+endfunction
+function! ModifiedBDCheck()
+  if &modified
+    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1) | bd! | endif
+  else
+    silent bd
+  endif
 endfunction
 function! MyQuit()
-
   if has("gui_running")
     " help file is not in the buffer list, specially treated
     if (&filetype=="help")
@@ -174,7 +187,7 @@ function! MyQuit()
     let g:bufferNum = len(split(bufferActive, "\n"))
 
     if g:bufferNum == 1 && bufname("%") != ""
-      silent bufdo bd
+      silent bufdo call ModifiedBDCheck()
       return
     endif
   endif
@@ -182,13 +195,7 @@ function! MyQuit()
   if TabIsEmpty() == 1
     silent q!
   else
-    if &modified
-      if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1)
-        q!
-      endif
-    else
-      silent q
-    endif
+    call ModifiedQCheck()
   endif
 endfunction
 function! MySave()
