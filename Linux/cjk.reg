@@ -194,20 +194,20 @@ Windows Registry Editor Version 5.00
 "FontLinkControl"=dword:00004000
 "FontLinkDefaultChar"=dword:00003000
 
-/* 平滑化(anti-alias) 備註 */
-/* 如果覺得開了之後字體難看，把三個 Y 改成 N，有些字型要開啟平滑化才好看 */
+; 平滑化(anti-alias) 備註
+; 如果覺得開了之後字體難看，把三個 Y 改成 N，有些字型要開啟平滑化才好看
 [HKEY_CURRENT_USER\Software\Wine\X11 Driver]
 "ClientSideAntiAliasWithCore"="Y"
 "ClientSideAntiAliasWithRender"="Y"
 "ClientSideWithRender"="Y"
 
-/* 平滑字型 */
+; 平滑字型
 [HKEY_CURRENT_USER\Control Panel\Desktop]
 "FontSmoothing"="2"
 
-/* 替換字型1 */
-/* 這裡以 Inziu Iosevka TC 為例，請自行改成你要的字型名稱 */
-/* 我很懶，所以都改成同一種字型。你也可以改成多種不同的字型 */
+; 替換字型1
+; 這裡以 Inziu Iosevka TC 為例，請自行改成你要的字型名稱
+; 我很懶，所以都改成同一種字型。你也可以改成多種不同的字型
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
 "Arial Baltic,186"="Inziu Iosevka TC"
 "Arial CE,238"="Inziu Iosevka TC"
@@ -258,8 +258,8 @@ Windows Registry Editor Version 5.00
 "Times New Roman TUR,162"="Inziu Iosevka TC"
 "Tms Rmn"="Inziu Iosevka TC"
 
-/* 替換字型2 */
-/* 我很懶，所以都改成同一種字型。你也可以改成多種不同的字型 */
+; 替換字型2
+; 我很懶，所以都改成同一種字型。你也可以改成多種不同的字型
 [HKEY_CURRENT_USER\Software\Wine\Fonts\Replacements]
 @="Inziu Iosevka TC"
 "Arial"="Inziu Iosevka TC"
@@ -274,15 +274,15 @@ Windows Registry Editor Version 5.00
 "Tahoma"="Inziu Iosevka TC"
 "Terminal"="Inziu Iosevka TC"
 
-/* 取代字型 */
-/* Wine 1.1.13 改這裡似乎看不出有什麼用，不過改就改了，沒差啦 */
+; 取代字型
+; Wine 1.1.13 改這裡似乎看不出有什麼用，不過改就改了，沒差啦
 "Microsoft Sans Serif"="wqy-microhei.ttf,Inziu Iosevka TC"
 "SimSun"="wqy-microhei.ttf,Inziu Iosevka TC"
 "Tahoma"="wqy-microhei.ttf,Inziu Iosevka TC"
 "PMingLiU"="wqy-microhei.ttf,Inziu Iosevka TC"
 "Lucida Sans Unicode"="wqy-microhei.ttf,Inziu Iosevka TC"
 
-/* Replace default fonts */
+; Replace default fonts
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FontAssoc\Associated DefaultFonts]
 "AssocSystemFont"="inziu-TC-regular.ttc""
 "FontPackage"="Inziu Iosevka TC"
