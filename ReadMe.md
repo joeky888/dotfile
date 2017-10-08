@@ -25,21 +25,21 @@ Invoke-WebRequest "https://raw.githubusercontent.com/j16180339887/dotfile/master
 
 Experience
 =====
-* Windows               (2003-)
-* Linux                 (2014-)
-* FreeBSD               (2017-)
-* Git                   (2014-)
-* Bash                  (2014-)
-* Zsh                   (2015-)
-* Tmux                  (2015-)
-* Sublime Text          (2014-2015)
-* Adobe Brackets        (2015-2016)
-* Vim                   (2016-)
-* VSCode                (2016-)
-* Cygwin                (2015-)
-* Qt                    (2014-)
-* MS Office             (2010-2014)
-* Libre Office          (2014-2015)
-* WPS Office            (2015-)
-* Chrome                (2010-2015)
-* Opera                 (2015-)
+| Windows           |  (2003-)     |
+| Linux             |  (2014-)     |
+| FreeBSD           |  (2017-)     |
+| Git               |  (2014-)     |
+| Bash              |  (2014-)     |
+| Zsh               |  (2015-)     |
+| Tmux              |  (2015-)     |
+| Sublime Text      |  (2014-2015) |
+| Adobe Brackets    |  (2015-2016) |
+| Vim               |  (2016-)     |
+| VSCode            |  (2016-)     |
+| Cygwin            |  (2015-)     |
+| Qt                |  (2014-)     |
+| MS Office         |  (2010-2014) |
+| Libre Office      |  (2014-2015) |
+| WPS Office        |  (2015-)     |
+| Chrome            |  (2010-2015) |
+| Opera             |  (2015-)     |
