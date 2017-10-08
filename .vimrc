@@ -879,35 +879,6 @@ let colorsAndModesGui= {
 function! LastAccentColor()
   if !exists('b:lastMode')
     let b:lastMode = mode()
-    hi iUser1 ctermfg=0 guifg=#000000 ctermbg=39   guibg=#00afff
-    hi iUser2 ctermbg=0 guibg=#2e3436 ctermfg=39   guifg=#00afff
-    hi iTabLineSel ctermfg=0 cterm=none ctermbg=39
-    hi iTabLine ctermbg=0 ctermfg=39
-    hi iCursorLineNr ctermfg=39   guifg=#00afff
-
-    hi vUser1 ctermfg=0 guifg=#000000 ctermbg=82   guibg=#5fff00
-    hi vUser2 ctermbg=0 guibg=#2e3436 ctermfg=82   guifg=#5fff00
-    hi vTabLineSel ctermfg=0 cterm=none ctermbg=82
-    hi vTabLine ctermbg=0 ctermfg=82
-    hi vCursorLineNr ctermfg=82   guifg=#5fff00
-
-    hi VUser1 ctermfg=0 guifg=#000000 ctermbg=226   guibg=#ffff00
-    hi VUser2 ctermbg=0 guibg=#2e3436 ctermfg=226   guifg=#ffff00
-    hi VTabLineSel ctermfg=0 cterm=none ctermbg=226
-    hi VTabLine ctermbg=0 ctermfg=226
-    hi VCursorLineNr ctermfg=226   guifg=#ffff00
-
-    hi VVUser1 ctermfg=0 guifg=#000000 ctermbg=208   guibg=#ff8700
-    hi VVUser2 ctermbg=0 guibg=#2e3436 ctermfg=208   guifg=#ff8700
-    hi VVTabLineSel ctermfg=0 cterm=none ctermbg=208
-    hi VVTabLine ctermbg=0 ctermfg=208
-    hi VVCursorLineNr ctermfg=208   guifg=#ff8700
-
-    hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-    hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-    hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
-    hi NTabLine ctermbg=0 ctermfg=161
-    hi NCursorLineNr ctermfg=161   guifg=#d7005f
     call ChangeAccentColor()
   endif
   if b:lastMode != mode()
@@ -920,37 +891,12 @@ autocmd CursorHold,CursorHoldI * call LastAccentColor()
 function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
-  if mode() == 'i'
-    hi! link User1 iUser1
-    hi! link User2 iUser2
-    hi! link TabLineSel iTabLineSel
-    hi! link TabLine iTabLine
-    hi! link CursorLineNr iCursorLineNr
-  elseif mode() == 'v'
-    hi! link User1 vUser1
-    hi! link User2 vUser2
-    hi! link TabLineSel vTabLineSel
-    hi! link TabLine vTabLine
-    hi! link CursorLineNr vCursorLineNr
-  elseif mode() == 'V'
-    hi! link User1 VUser1
-    hi! link User2 VUser2
-    hi! link TabLineSel VTabLineSel
-    hi! link TabLine VTabLine
-    hi! link CursorLineNr VCursorLineNr
-  elseif mode() == ''
-    hi! link User1 VVUser1
-    hi! link User2 VVUser2
-    hi! link TabLineSel VVTabLineSel
-    hi! link TabLine VVTabLine
-    hi! link CursorLineNr VVCursorLineNr
-  else
-    hi! link User1 NUser1
-    hi! link User2 NUser2
-    hi! link TabLineSel NTabLineSel
-    hi! link TabLine NTabLine
-    hi! link CursorLineNr NCursorLineNr
-  endif
+  execute 'hi! User1 ctermfg=0 guifg=#000000 ctermbg=' . accentColor . ' guibg=' . accentColorGui
+  execute 'hi! User2 ctermbg=0 guibg=#2e3436 ctermfg=' . accentColor . ' guifg=' . accentColorGui
+  execute 'hi! User3 ctermfg=0 guifg=#000000 cterm=bold gui=bold ctermbg=' . accentColor . ' guibg=' . accentColorGui
+  execute 'hi! TabLineSel ctermfg=0 cterm=bold ctermbg=' . accentColor
+  execute 'hi! TabLine ctermbg=0 ctermfg=' . accentColor
+  execute 'hi! CursorLineNr ctermfg=' . accentColor . ' guifg=' . accentColorGui
   return ''
 endfunction
 function! SearchCount()
@@ -1030,7 +976,7 @@ let g:currentmode={
     \ 't'  : 'Terminal'
 \}
 set statusline=
-set statusline+=%{LastAccentColor()}
+set statusline+=%{ChangeAccentColor()}
 set statusline+=%1*\ ***%{toupper(g:currentmode[mode()])}***\  " Current mode
 set statusline+=%2*\ %<%F\  " Filepath
 set statusline+=%2*\ [%{SearchCount()}] " Nth of N when searching
@@ -1073,17 +1019,6 @@ function! SyntaxMonokai()
   " Pmenu is the popup autocomplete color
   hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
   hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
-  " Init StatusLine color
-  hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-  hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-  hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
-  hi NTabLine ctermbg=0 ctermfg=161
-  hi NCursorLineNr ctermfg=161   guifg=#d7005f
-  hi! link User1 NUser1
-  hi! link User2 NUser2
-  hi! link TabLineSel NTabLineSel
-  hi! link TabLine NTabLine
-  hi! link CursorLineNr NCursorLineNr
 
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
