@@ -57,6 +57,7 @@ set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set sessionoptions-=options,localoptions,globals,buffers " Don't save these to the session file
+set sessionoptions+=winpos,winsize,resize, " Save these to the session file
 autocmd VimEnter * set noerrorbells " Disable error sound
 set vb t_vb= " disable visual bell
 set t_vb= " disable visual bell
