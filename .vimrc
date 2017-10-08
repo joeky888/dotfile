@@ -45,7 +45,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set updatetime=8000 " How long will vim backup a file
+set updatetime=100 " How long will vim backup a file
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
@@ -798,22 +798,80 @@ let colorsAndModesGui= {
   \ '' : '#ff8700'
 \}
 function! LastAccentColor()
-  if !exists('b:lastMode') | let b:lastMode = mode() | call ChangeAccentColor() | endif
+  if !exists('b:lastMode')
+    let b:lastMode = mode()
+    hi NUser1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
+    hi NUser2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
+    hi NTabLineSel ctermfg=0 cterm=none ctermbg=161
+    hi NTabLine ctermbg=0 ctermfg=161
+    hi NCursorLineNr ctermfg=161   guifg=#d7005f
+
+    hi iUser1 ctermfg=0 guifg=#000000 ctermbg=39   guibg=#00afff
+    hi iUser2 ctermbg=0 guibg=#2e3436 ctermfg=39   guifg=#00afff
+    hi iTabLineSel ctermfg=0 cterm=none ctermbg=39
+    hi iTabLine ctermbg=0 ctermfg=39
+    hi iCursorLineNr ctermfg=39   guifg=#00afff
+
+    hi vUser1 ctermfg=0 guifg=#000000 ctermbg=82   guibg=#5fff00
+    hi vUser2 ctermbg=0 guibg=#2e3436 ctermfg=82   guifg=#5fff00
+    hi vTabLineSel ctermfg=0 cterm=none ctermbg=82
+    hi vTabLine ctermbg=0 ctermfg=82
+    hi vCursorLineNr ctermfg=82   guifg=#5fff00
+
+    hi VUser1 ctermfg=0 guifg=#000000 ctermbg=226   guibg=#ffff00
+    hi VUser2 ctermbg=0 guibg=#2e3436 ctermfg=226   guifg=#ffff00
+    hi VTabLineSel ctermfg=0 cterm=none ctermbg=226
+    hi VTabLine ctermbg=0 ctermfg=226
+    hi VCursorLineNr ctermfg=226   guifg=#ffff00
+
+    hi VVUser1 ctermfg=0 guifg=#000000 ctermbg=208   guibg=#ff8700
+    hi VVUser2 ctermbg=0 guibg=#2e3436 ctermfg=208   guifg=#ff8700
+    hi VVTabLineSel ctermfg=0 cterm=none ctermbg=208
+    hi VVTabLine ctermbg=0 ctermfg=208
+    hi VVCursorLineNr ctermfg=208   guifg=#ff8700
+    call ChangeAccentColor()
+  endif
   if b:lastMode != mode()
     let b:lastMode = mode()
     call ChangeAccentColor()
   endif
   return ''
 endfunction
+autocmd CursorHold,CursorHoldI * call LastAccentColor()
 function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
-  execute 'hi User1 ctermfg=0 guifg=#000000 ctermbg=' . accentColor . ' guibg=' . accentColorGui
-  execute 'hi User2 ctermbg=0 guibg=#2e3436 ctermfg=' . accentColor . ' guifg=' . accentColorGui
-  execute 'hi User3 ctermfg=0 guifg=#000000 cterm=none gui=none ctermbg=' . accentColor . ' guibg=' . accentColorGui
-  execute 'hi TabLineSel ctermfg=0 cterm=none ctermbg=' . accentColor
-  execute 'hi TabLine ctermbg=0 ctermfg=' . accentColor
-  execute 'hi CursorLineNr ctermfg=' . accentColor . ' guifg=' . accentColorGui
+  if mode() == 'i'
+    hi! def link User1 iUser1
+    hi! def link User2 iUser2
+    hi! def link TabLineSel iTabLineSel
+    hi! def link TabLine iTabLine
+    hi! def link CursorLineNr iCursorLineNr
+  elseif mode() == 'v'
+    hi! def link User1 vUser1
+    hi! def link User2 vUser2
+    hi! def link TabLineSel vTabLineSel
+    hi! def link TabLine vTabLine
+    hi! def link CursorLineNr vCursorLine
+  elseif mode() == 'V'
+    hi! def link User1 VUser1
+    hi! def link User2 VUser2
+    hi! def link TabLineSel VTabLineSel
+    hi! def link TabLine VTabLine
+    hi! def link CursorLineNr VCursorLine
+  elseif mode() == ''
+    hi! def link User1 VVUser1
+    hi! def link User2 VVUser2
+    hi! def link TabLineSel VVTabLineSel
+    hi! def link TabLine VVTabLine
+    hi! def link CursorLineNr VVCursorLine
+  else
+    hi! def link User1 NUser1
+    hi! def link User2 NUser2
+    hi! def link TabLineSel NTabLineSel
+    hi! def link TabLine NTabLine
+    hi! def link CursorLineNr NCursorLine
+  endif
   return ''
 endfunction
 function! SearchCount()
