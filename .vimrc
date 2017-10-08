@@ -45,7 +45,7 @@ set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
 set whichwrap=<,>,[,] " Alow arrow keys move to previous/next line
-set updatetime=200 " How long will vim backup a file
+set updatetime=1000 " How long will vim backup a file
 set autoread " Auto reload content if it changed outside of vim
 set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
@@ -887,7 +887,7 @@ function! LastAccentColor()
   endif
   return ''
 endfunction
-autocmd CursorHold,CursorHoldI * call LastAccentColor()
+" autocmd CursorHold,CursorHoldI * call LastAccentColor()
 function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
@@ -976,7 +976,7 @@ let g:currentmode={
     \ 't'  : 'Terminal'
 \}
 set statusline=
-set statusline+=%{ChangeAccentColor()}
+set statusline+=%{LastAccentColor()}
 set statusline+=%1*\ ***%{toupper(g:currentmode[mode()])}***\  " Current mode
 set statusline+=%2*\ %<%F\  " Filepath
 set statusline+=%2*\ [%{SearchCount()}] " Nth of N when searching
@@ -989,8 +989,6 @@ set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 
 function! SyntaxMonokai()
   " Speed up the redraw
-  " au InsertLeave * call ChangeAccentColor()
-  " au CursorHold * let &ro = &ro
 
   """" Color Scheme
   "" Modified from tomasr Molokai on Github
@@ -1023,6 +1021,13 @@ function! SyntaxMonokai()
   hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
   hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
+
+  " Init StatusLine colors
+  hi User1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
+  hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
+  hi TabLineSel ctermfg=0 cterm=none ctermbg=161
+  hi TabLine ctermbg=0 ctermfg=161
+  hi CursorLineNr ctermfg=161   guifg=#d7005f
 
   hi Boolean              ctermfg=135     guifg=#AE81FF
   hi Character            ctermfg=144     guifg=#E6DB74
