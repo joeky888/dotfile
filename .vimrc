@@ -92,6 +92,68 @@ cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
 cnoreabbrev edit <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'edit')<CR>
 cnoreabbrev e <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tabedit' : 'e')<CR>
 
+" Modified from https://github.com/Khouba/indent-detector.vim
+function! InitIndentVariable(var, value)
+  if !exists(a:var)
+    if type(a:value) == type("")
+      exec 'let ' . a:var . ' = ' . "'" . a:value . "'"
+    else
+      exec 'let ' . a:var . ' = ' . a:value
+    endif
+  endif
+endfunction
+
+function! IndentDetectorSearchNearby(pat)
+  return search(a:pat, 'Wnc', 0, 20) > 0 || search(a:pat, 'Wnb', 0, 20) > 0
+endfunction
+
+function! IndentDetectorDetect(autoadjust)
+  let leadtab = IndentDetectorSearchNearby('^\t')
+  let leadspace = IndentDetectorSearchNearby('^ ')
+  if leadtab + leadspace < 2 && IndentDetectorSearchNearby('^\(\t\+ \| \+\t\)') == 0
+    if leadtab
+      if a:autoadjust
+        exec 'setl noexpandtab nosmarttab tabstop='.g:Indent_Detector_tabstop.' shiftwidth='.g:Indent_Detector_shiftwidth.' softtabstop='.g:Indent_Detector_softtabstop
+      endif
+      return 'tab'
+    elseif leadspace
+      let spacenum = 0
+      if IndentDetectorSearchNearby('^ [^\t ]')
+        let spacenum = 1
+      elseif IndentDetectorSearchNearby('^  [^\t ]')
+        let spacenum = 2
+      elseif IndentDetectorSearchNearby('^   [^\t ]')
+        let spacenum = 3
+      elseif IndentDetectorSearchNearby('^    [^\t ]')
+        let spacenum = 4
+      elseif IndentDetectorSearchNearby('^        [^\t ]')
+        let spacenum = 4
+      endif
+      if a:autoadjust
+        let n = spacenum ? spacenum : g:Indent_Detector_shiftwidth
+        exec 'setl expandtab smarttab tabstop='.n.' shiftwidth='.n.' softtabstop='.n
+      endif
+      return 'space'.(spacenum ? spacenum : '>4')
+"       return 'space'.(spacenum ? spacenum : '>4')
+    else
+      return 'default'
+    endif
+  else
+    return 'mixed'
+  endif
+endfunction
+
+function! GetIndent()
+  if !exists('b:fileIndent')
+    call InitIndentVariable('g:Indent_Detector_tabstop', &tabstop)
+    call InitIndentVariable('g:Indent_Detector_shiftwidth', &shiftwidth)
+    call InitIndentVariable('g:Indent_Detector_softtabstop', &softtabstop)
+    let b:fileIndent = IndentDetectorDetect(0)
+  endif
+  return b:fileIndent
+endfunction
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufNew,FileType,SessionLoadPost * exe "if exists('b:fileIndent') | unlet b:fileIndent | endif" | call GetIndent()
+
 """ Prevent lag when hitting ESC
 set ttimeoutlen=10
 set timeoutlen=10
@@ -965,6 +1027,7 @@ set statusline+=%2*\ %<%F\  " Filepath
 set statusline+=%2*\ [%{SearchCount()}] " Nth of N when searching
 set statusline+=%2*\ %= " To the right
 set statusline+=%2*\ %{toupper((&fenc!=''?&fenc:&enc))}\[%{&ff}] " Encoding & Fileformat
+set statusline+=%2*\ %{GetIndent()} " Filetype
 set statusline+=%2*\ [%{&filetype}] " Filetype
 set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
@@ -1208,6 +1271,8 @@ function! IndentSpace(width)
   execute "set shiftwidth=" . a:width
   execute "set softtabstop=" . a:width
   execute "%retab!"
+  if exists('b:fileIndent') | unlet b:fileIndent | endif
+  call GetIndent()
 endfunction
 
 function! IndentTab(width)
@@ -1216,6 +1281,8 @@ function! IndentTab(width)
   execute "set tabstop=" . a:width
   execute "set shiftwidth=" . a:width
   execute "%retab!"
+  if exists('b:fileIndent') | unlet b:fileIndent | endif
+  call GetIndent()
 endfunction
 
 command! IndentSpace2   execute "call IndentSpace(2)"
@@ -1311,8 +1378,8 @@ function! HighlightGlobal()
     syn match nonalphabet   "[^\u0000-\u007F]"
     syn match lineURL       "\(https\?\|ftps\?\|git\|ssh\):\/\/\(\w\+\(:\w\+\)\?@\)\?\([A-Za-z][-_0-9A-Za-z]*\.\)\{1,}\(\w\{2,}\.\?\)\{1,}\(:[0-9]\{1,5}\)\?\S*"
     hi def link alphanumeric  Function
-    hi def link txtNumber	    Define
-    hi def link lineURL	      Green
+    hi def link txtNumber     Define
+    hi def link lineURL       Green
     hi def link nonalphabet   Conditional
   endif
 endfunction
@@ -1456,10 +1523,10 @@ function! HighlightPS1()
   syn region ps1Interpolation matchgroup=ps1InterpolationDelimiter start="$(" end=")" contained contains=ALLBUT,@ps1NotTop
   syn region ps1NestedParentheses start="(" skip="\\\\\|\\)" matchgroup=ps1Interpolation end=")" transparent contained
   syn cluster ps1StringSpecial contains=ps1Escape,ps1Interpolation,ps1Variable,ps1Boolean,ps1Constant,ps1BuiltIn,@Spell
-  syn match   ps1Number		"\(\<\|-\)\@<=\(0[xX]\x\+\|\d\+\)\([KMGTP][B]\)\=\(\>\|-\)\@="
-  syn match   ps1Number		"\(\(\<\|-\)\@<=\d\+\.\d*\|\.\d\+\)\([eE][-+]\=\d\+\)\=[dD]\="
-  syn match   ps1Number		"\<\d\+[eE][-+]\=\d\+[dD]\=\>"
-  syn match   ps1Number		"\<\d\+\([eE][-+]\=\d\+\)\=[dD]\>"
+  syn match   ps1Number   "\(\<\|-\)\@<=\(0[xX]\x\+\|\d\+\)\([KMGTP][B]\)\=\(\>\|-\)\@="
+  syn match   ps1Number   "\(\(\<\|-\)\@<=\d\+\.\d*\|\.\d\+\)\([eE][-+]\=\d\+\)\=[dD]\="
+  syn match   ps1Number   "\<\d\+[eE][-+]\=\d\+[dD]\=\>"
+  syn match   ps1Number   "\<\d\+\([eE][-+]\=\d\+\)\=[dD]\>"
   syn match ps1Boolean "$\%(true\|false\)\>"
   syn match ps1Constant /\$null\>/
   syn match ps1BuiltIn "$^\|$?\|$_\|$\$"
@@ -1467,32 +1534,32 @@ function! HighlightPS1()
   syn match ps1BuiltIn "$\%(match\(es\)\?\|myinvocation\|host\|lastexitcode\)\>"
   syn match ps1BuiltIn "$\%(ofs\|shellid\|stacktrace\)\>"
 
-	hi def link ps1Number Number
-	hi def link ps1Block Block
-	hi def link ps1Region Region
-	hi def link ps1Exception Exception
-	hi def link ps1Constant Constant
-	hi def link ps1String String
-	hi def link ps1Escape SpecialChar
-	hi def link ps1InterpolationDelimiter Delimiter
-	hi def link ps1Conditional Conditional
-	hi def link ps1FunctionDeclaration Function
-	hi def link ps1FunctionInvocation Function
-	hi def link ps1Variable Identifier
-	hi def link ps1Boolean Boolean
-	hi def link ps1Constant Constant
-	hi def link ps1BuiltIn StorageClass
-	hi def link ps1Type Type
-	hi def link ps1ScopeModifier StorageClass
-	hi def link ps1Comment Comment
-	hi def link ps1CommentTodo Todo
-	hi def link ps1CommentDoc Tag
-	hi def link ps1CDocParam Todo
-	hi def link ps1Operator Operator
-	hi def link ps1Repeat Repeat
-	hi def link ps1RepeatAndCmdlet Repeat
-	hi def link ps1Keyword Keyword
-	hi def link ps1KeywordAndCmdlet Keyword
+  hi def link ps1Number Number
+  hi def link ps1Block Block
+  hi def link ps1Region Region
+  hi def link ps1Exception Exception
+  hi def link ps1Constant Constant
+  hi def link ps1String String
+  hi def link ps1Escape SpecialChar
+  hi def link ps1InterpolationDelimiter Delimiter
+  hi def link ps1Conditional Conditional
+  hi def link ps1FunctionDeclaration Function
+  hi def link ps1FunctionInvocation Function
+  hi def link ps1Variable Identifier
+  hi def link ps1Boolean Boolean
+  hi def link ps1Constant Constant
+  hi def link ps1BuiltIn StorageClass
+  hi def link ps1Type Type
+  hi def link ps1ScopeModifier StorageClass
+  hi def link ps1Comment Comment
+  hi def link ps1CommentTodo Todo
+  hi def link ps1CommentDoc Tag
+  hi def link ps1CDocParam Todo
+  hi def link ps1Operator Operator
+  hi def link ps1Repeat Repeat
+  hi def link ps1RepeatAndCmdlet Repeat
+  hi def link ps1Keyword Keyword
+  hi def link ps1KeywordAndCmdlet Keyword
 endfunction
 
 function! HighlightC()
