@@ -10,7 +10,7 @@ InstallDotfile()
   rm -rf $Home/dotfile
   export cygsudo=''
   if [[ "$OSTYPE" == "cygwin" ]]; then
-    export cygsudo='cygstart --action=runas'
+    export cygsudo='cygstart --action=runas "$@" '
   fi
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   $cygsudo ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -139,7 +139,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     echo "Please install aria2"
     exit 1
   fi
-  export SUDO='cygstart --action=runas'
+  export SUDO='cygstart --action=runas "$@" '
   export Home=$(cygpath -u "$USERPROFILE")
   export CYGWIN='winsymlinks:native'
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
