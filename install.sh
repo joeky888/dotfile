@@ -141,7 +141,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   fi
   export SUDO='cygstart --action=runas'
   export Home=$(cygpath -u "$USERPROFILE")
-  export CYGWIN='winsymlinks:nativestrict'
+  export CYGWIN='winsymlinks:native'
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
