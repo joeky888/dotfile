@@ -54,6 +54,10 @@ alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --write-annotations --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
+alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360]+bestaudio/best[height<=360]'"
+alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'"
+alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
+alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]'"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
