@@ -8,49 +8,45 @@ fi
 InstallDotfile()
 {
   rm -rf $Home/dotfile
-  export cygsudo=''
-  if [[ "$OSTYPE" == "cygwin" ]]; then
-    export cygsudo='cygstart --action=runas "$@" '
-  fi
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
-  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.bashrc
-  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.bash_profile
-  $cygsudo ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
-  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.zshrc
-  $cygsudo ln -sf $Home/dotfile/.vimrc ~/.vimrc
-  $cygsudo ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
-  $cygsudo ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
-  $cygsudo ln -sf $Home/dotfile/.Xresources ~/.Xresources
-  $cygsudo ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
+  ln -sf $Home/dotfile/.bashrc ~/.bashrc
+  ln -sf $Home/dotfile/.bashrc ~/.bash_profile
+  ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
+  ln -sf $Home/dotfile/.bashrc ~/.zshrc
+  ln -sf $Home/dotfile/.vimrc ~/.vimrc
+  ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
+  ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
+  ln -sf $Home/dotfile/.Xresources ~/.Xresources
+  ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile
   git submodule update --init --recursive
 }
 
-# InstallDotfileCygwin()
-# {
-#   rm -rf $Home/dotfile
-#   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
-#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
-#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\Windows\profile.ps1"
-#   cd $Home/dotfile
-#   git submodule update --init --recursive
-# }
+InstallDotfileCygwin()
+{
+  rm -rf $Home/dotfile
+  git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\Windows\profile.ps1"
+  cd $Home/dotfile
+  git submodule update --init --recursive
+}
 
 InstallGRC()
 {
@@ -141,12 +137,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   fi
   export SUDO='cygstart --action=runas "$@" '
   export Home=$(cygpath -u "$USERPROFILE")
-  export CYGWIN='winsymlinks:native'
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
-  InstallDotfile
+  InstallDotfileCygwin
   cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
