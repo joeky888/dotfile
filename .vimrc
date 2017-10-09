@@ -1212,14 +1212,18 @@ noremenu Edit.Split\ Window.Vertical\ 3     :vsplit<CR>:vsplit<CR>:wincmd =<CR>
 noremenu Edit.Split\ Window.Horizontal\ 2   :split<CR>
 noremenu Edit.Split\ Window.Horizontal\ 3   :split<CR>:split<CR>:wincmd =<CR>
 
-command! SplitVertical2   vsplit
-command! SplitVertical3   vsplit | vsplit | wincmd =
-command! SplitHorizontal2 split
-command! SplitHorizontal3 split  | split  | wincmd =
-command! SplitMoveRight   normal! <C-w>l
-command! SplitMoveLeft    normal! <C-w>h
-command! SplitMoveUp      normal! <C-w>k
-command! SplitMoveDown    normal! <C-w>j
+command! Split2Vertical     vsplit
+command! Split3Vertical     vsplit | vsplit | wincmd =
+command! Split2Horizontal   split
+command! Split3Horizontal   split  | split  | wincmd =
+command! SplitMoveRight     normal! <C-w>l
+command! SplitMoveLeft      normal! <C-w>h
+command! SplitMoveUp        normal! <C-w>k
+command! SplitMoveDown      normal! <C-w>j
+command! SplitExpandRight   normal! 3<C-w>>
+command! SplitExpandLeft    normal! 3<C-w><
+command! SplitExpandUp      normal! 3<C-w>+
+command! SplitExpandDown    normal! 3<C-w>-
 
 " Indent format
 function! IndentSpace(width)
