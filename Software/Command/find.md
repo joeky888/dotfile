@@ -78,3 +78,18 @@ Find wihout/exclude a folder
 =====
 * Find jpg but not in ./directory
 * $ find . -iname '\*.jpg' -and -not -path "./directory\*"
+
+Remove file size in a range
+=====
+* Remove all files which size smaller than 100KB
+```sh
+find . -maxdepth 1 -iname "*.txt" -size -100k -delete
+```
+* Remove all files which size bigger than 100KB
+```sh
+find . -maxdepth 1 -iname "*.txt" -size +100k -delete
+```
+* Remove all files which size smaller than 100MB
+```sh
+find . -maxdepth 1 -iname "*.txt" -size -100M -delete
+```
