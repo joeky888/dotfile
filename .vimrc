@@ -1216,6 +1216,10 @@ command! SplitVertical2   vsplit
 command! SplitVertical3   vsplit | vsplit | wincmd =
 command! SplitHorizontal2 split
 command! SplitHorizontal3 split  | split  | wincmd =
+command! SplitMoveRight   normal! <C-w>l
+command! SplitMoveLeft    normal! <C-w>h
+command! SplitMoveUp      normal! <C-w>k
+command! SplitMoveDown    normal! <C-w>j
 
 " Indent format
 function! IndentSpace(width)
