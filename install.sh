@@ -8,15 +8,20 @@ fi
 InstallDotfile()
 {
   rm -rf $Home/dotfile
+  export cygsudo=''
+  if [[ "$OSTYPE" == "cygwin" ]]; then
+    export cygsudo='cygstart --action=runas'
+  fi
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
-  ln -sf $Home/dotfile/.bashrc ~/.bashrc
-  ln -sf $Home/dotfile/.bashrc ~/.bash_profile
-  ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
-  ln -sf $Home/dotfile/.bashrc ~/.zshrc
-  ln -sf $Home/dotfile/.vimrc ~/.vimrc
-  ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
-  ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
-  ln -sf $Home/dotfile/.Xresources ~/.Xresources
+  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.bashrc
+  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.bash_profile
+  $cygsudo ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
+  $cygsudo ln -sf $Home/dotfile/.bashrc ~/.zshrc
+  $cygsudo ln -sf $Home/dotfile/.vimrc ~/.vimrc
+  $cygsudo ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
+  $cygsudo ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
+  $cygsudo ln -sf $Home/dotfile/.Xresources ~/.Xresources
+  $cygsudo ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile
   git submodule update --init --recursive
 }
