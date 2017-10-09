@@ -21,31 +21,31 @@ InstallDotfile()
   git submodule update --init --recursive
 }
 
-InstallDotfileCygwin()
-{
-  rm -rf $Home/dotfile
-  git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\Windows\profile.ps1"
-  cd $Home/dotfile
-  git submodule update --init --recursive
-}
+# InstallDotfileCygwin()
+# {
+#   rm -rf $Home/dotfile
+#   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
+#   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+#   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\Windows\profile.ps1"
+#   cd $Home/dotfile
+#   git submodule update --init --recursive
+# }
 
 InstallGRC()
 {
@@ -134,13 +134,14 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     echo "Please install aria2"
     exit 1
   fi
-  export SUDO=''
+  export SUDO='cygstart --action=runas'
   export Home=$(cygpath -u "$USERPROFILE")
+  export CYGWIN='winsymlinks:nativestrict'
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
   install apt-cyg /bin && rm apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
-  InstallDotfileCygwin
+  InstallDotfile
   cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
