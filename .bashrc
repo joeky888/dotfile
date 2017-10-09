@@ -72,7 +72,8 @@ else
   alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   alias curl='curl --retry 999 --retry-max-time 0 -LC - '
 fi
-alias bypy='bypy -d --processes 4 --downloader aria2'
+# alias bypy='bypy -d --processes 4 --downloader aria2'
+alias bypy='bypy -d --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
 alias ll='ls -lh'
