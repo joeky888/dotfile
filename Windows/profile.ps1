@@ -31,6 +31,11 @@ Set-Location $env:USERPROFILE
 # Theme
 $Host.UI.RawUI.ForegroundColor = "Gray"
 $Host.UI.RawUI.BackgroundColor = "Black"
+Set-PSReadlineOption -TokenKind command   -ForegroundColor Green
+Set-PSReadlineOption -TokenKind none      -ForegroundColor Red
+Set-PSReadlineOption -TokenKind variable  -ForegroundColor White
+Set-PSReadlineOption -TokenKind string    -ForegroundColor Yellow
+Set-PSReadlineOption -TokenKind number    -ForegroundColor White
 
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Red
