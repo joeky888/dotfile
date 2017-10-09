@@ -340,7 +340,7 @@ function! OpenLastBufferInNewTab()
   endfor
 endfunction
 function! OpenNetrw()
-  if TabIsEmpty() == 1
+  if TabIsEmpty() == 1 || winnr("$") != 1
     execute has("gui_running") ? "browse confirm e %:p:h" : "Explore %:p:h"
   else
     execute has("gui_running") ? "browse confirm tabe %:p:h" : "Texplore %:p:h"
