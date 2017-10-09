@@ -53,7 +53,11 @@ alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --write-annotations --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
+if [[ $(command -v aria2c) ]]; then
+  alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --write-annotations --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
+else
+  alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --write-annotations --ignore-errors'
+fi
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360]+bestaudio/best[height<=360]'"
 alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'"
 alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
