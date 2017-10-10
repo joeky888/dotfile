@@ -113,7 +113,7 @@ static const struct {
     {69,     0,      0},    /* dark red */      /* #AF0000 */
     {0,     69,      0},    /* dark green */    /* #00AF00 */
     {96,    75,     46},    /* dark yellow */   /* #f4bf75 */
-    {0 ,     0,     69},    /* dark blue */     /* #0000AF */
+    {0,      0,     69},    /* dark blue */     /* #0000AF */
     {68,    51,    100},    /* dark magenta */  /* #ae81ff */
     {63,    94,     89},    /* dark cyan */     /* #a1efe4 */
     {97,    97,     95},    /* light gray */    /* #f8f8f2 */
@@ -121,7 +121,7 @@ static const struct {
     {49,    56,     57},    /* dark gray */     /* #7E8E91 */
     {98,    15,     45},    /* light red */     /* #f92672 */
     {65,    89,     18},    /* light green */   /* #a6e22e */
-    {96,    75,     46},    /* light yellow */  /* #f4bf75 */
+    {100,  100,      0},    /* light yellow */  /* #ffff00 */
     {40,    85,     94},    /* light blue */    /* #66d9ef */
     {68,    51,    100},    /* light magenta */ /* #ae81ff */
     {63,    94,     89},    /* light cyan */    /* #a1efe4 */
