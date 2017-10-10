@@ -110,10 +110,10 @@ static const struct {
     unsigned char b;    /* Blue percentage value. */
 } color_def[16] = {
     {0,      0,      0},    /* black */         /* #000000 */
-    {98,    15,     45},    /* dark red */      /* #f92672 */
-    {65,    89,     18},    /* dark green */    /* #a6e22e */
+    {69,     0,      0},    /* dark red */      /* #AF0000 */
+    {0,     69,      0},    /* dark green */    /* #00AF00 */
     {96,    75,     46},    /* dark yellow */   /* #f4bf75 */
-    {40,    85,     94},    /* dark blue */     /* #66d9ef */
+    {0 ,     0,     69},    /* dark blue */     /* #0000AF */
     {68,    51,    100},    /* dark magenta */  /* #ae81ff */
     {63,    94,     89},    /* dark cyan */     /* #a1efe4 */
     {97,    97,     95},    /* light gray */    /* #f8f8f2 */
