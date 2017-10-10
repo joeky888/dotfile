@@ -109,23 +109,23 @@ static const struct {
     unsigned char g;    /* Green percentage value. */
     unsigned char b;    /* Blue percentage value. */
 } color_def[16] = {
-    {27,      29,      30},     /* black */
-    {200,      0,       0},     /* dark red */
-    {0,      175,       0},     /* dark green */
-    {253,    151,      31},     /* dark yellow */
-    {174,    129,     255},     /* dark blue */
-    {249,     38,     114},     /* dark magenta */
-    {0,      175,       0},     /* dark cyan */
-    {126,    142,     145},     /* light gray */
+    {39,    40,     34},    /* black */         /* #272822 */
+    {249,   38,     114},   /* dark red */      /* #f92672 */
+    {166,   226,    46},    /* dark green */    /* #a6e22e */
+    {244,   191,    117},   /* dark yellow */   /* #f4bf75 */
+    {102,   217,    239},   /* dark blue */     /* #66d9ef */
+    {174,   129,    255},   /* dark magenta */  /* #ae81ff */
+    {161,   239,    228},   /* dark cyan */     /* #a1efe4 */
+    {248,   248,    242},   /* light gray */    /* #f8f8f2 */
 
-    {126,    142,     145},     /* dark gray */
-    {249,     38,     114},     /* light red */
-    {166,    226,      46},     /* light green */
-    {230,    219,     116},     /* light yellow */
-    {102,    217,     239},     /* light blue */
-    {249,     38,     114},     /* light magenta */
-    {102,    217,     239},     /* light cyan */
-    {248,    248,     242},     /* white */
+    {117,   113,    94},    /* dark gray */     /* #75715e */
+    {253,   151,    31},    /* light red */     /* #fd971f */
+    {56,    56,     48},    /* light green */   /* #383830 */
+    {73,    72,     62},    /* light yellow */  /* #49483e */
+    {165,   159,    133},   /* light blue */    /* #a59f85 */
+    {245,   244,    241},   /* light magenta */ /* #f5f4f1 */
+    {204,   102,    51},    /* light cyan */    /* #cc6633 */
+    {249,   248,    245},   /* white */         /* #f9f8f5 */
 };
 ```
 * $ cd /usr/src
