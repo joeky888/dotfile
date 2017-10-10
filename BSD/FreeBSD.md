@@ -109,23 +109,23 @@ static const struct {
     unsigned char g;    /* Green percentage value. */
     unsigned char b;    /* Blue percentage value. */
 } color_def[16] = {
-    {0,     0,      0},     /* black */
-    {50,    0,      0},     /* dark red */
-    {0,     50,     0},     /* dark green */
-    {77,    63,     0},     /* dark yellow */
-    {20,    40,     64},    /* dark blue */
-    {50,    0,      50},    /* dark magenta */
-    {0,     50,     50},    /* dark cyan */
-    {75,    75,     75},    /* light gray */
+    {27,      29,      30},     /* black */
+    {200,	   0,	    0},     /* dark red */
+    {0,      175,       0},     /* dark green */
+    {253,    151,      31},     /* dark yellow */
+    {174,    129,     255},     /* dark blue */
+    {249,     38,     114},     /* dark magenta */
+    {0,      175,       0},     /* dark cyan */
+    {126,    142,     145},     /* light gray */
 
-    {18,    20,     21},    /* dark gray */
-    {100,   0,      0},     /* light red */
-    {0,     100,    0},     /* light green */
-    {100,   100,    0},     /* light yellow */
-    {45,    62,     81},    /* light blue */
-    {100,   0,      100},   /* light magenta */
-    {0,     100,    100},   /* light cyan */
-    {100,   100,    100},   /* white */
+    {126,    142,     145},     /* dark gray */
+    {249,     38,     114},     /* light red */
+    {166,    226,      46},     /* light green */
+    {230,    219,     116},     /* light yellow */
+    {102,    217,     239},     /* light blue */
+    {249,     38,     114},     /* light magenta */
+    {102,    217,     239},     /* light cyan */
+    {248,    248,     242},     /* white */
 };
 ```
 * $ cd /usr/src
