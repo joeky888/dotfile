@@ -1012,6 +1012,8 @@ function! SyntaxMonokai()
   " Blue        = #66D9EF, 81,    rgb(102   217   239)
   " Purple      = #AE81FF, 135,   rgb(174   129   255)
   " Gray        = #7E8E91, 59,    rgb(126   142   145)
+  " Black       = #1B1D1E, 233,   rgb(27   29   30)
+  " White       = #F8F8F2, 252,   rgb(248   248   242)
 
   try
     syntax enable " Enable syntax highlights
