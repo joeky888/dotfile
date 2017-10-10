@@ -17,7 +17,7 @@ filetype indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
-set shortmess+=I " No intro when starting Vim
+set shortmess=IAFW " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set smarttab " Insert spaces according to shiftwidth
 set softtabstop=4 " ... and insert four spaces
@@ -173,14 +173,15 @@ set timeoutlen=10
 au InsertEnter * set timeoutlen=10 | set ignorecase
 au InsertLeave * set timeoutlen=10
 
-function! ClearOuput()
-  echon "\r\r"
-  echon ''
-endfunction
 """ When opening a file : - Reopen at last position - Display info
 function! GetFileInfo()
-  let permissions = getfperm(expand('%:p'))
-  echon  &filetype . ", " . GetFileSize() . ", " . permissions
+  let time = strftime("%T")
+  let file = expand('%:p')
+  let permissions = getfperm(file)
+  echom file . " saved at " . time | redraw
+  echohl iGreen | echon "    Info     "
+  echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
+  echohl None
 endfunction
 function! GetFileSize()
   let bytes = getfsize(expand('%:p'))
@@ -196,7 +197,7 @@ function! GetFileSize()
      return bytes . "B"
   endif
 endfunction
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call ClearOuput()
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 """ Custom backup and swap files
 let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
@@ -1576,7 +1577,7 @@ if has("gui_running")
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   " Restore all sessions, GUI only, don't do this with terminal vim
-  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll() | call ClearOuput()
+  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
   au VimLeave * :call MakeSession()
 
   if has('win32') || has('win64')
