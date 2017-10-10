@@ -118,7 +118,7 @@ static const struct {
     {63,    94,     89},    /* dark cyan */     /* #a1efe4 */
     {97,    97,     95},    /* light gray */    /* #f8f8f2 */
 
-    {11,    11,     10},    /* dark gray */     /* #75715e */
+    {49,    56,     57},    /* dark gray */     /* #7E8E91 */
     {98,    15,     45},    /* light red */     /* #f92672 */
     {65,    89,     18},    /* light green */   /* #a6e22e */
     {96,    75,     46},    /* light yellow */  /* #f4bf75 */
