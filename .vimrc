@@ -264,7 +264,7 @@ function! MyQuit()
       q
       return
     endif
-    redir => bufferActive | silent exec 'buffers a' | redir END
+    redir => bufferActive | silent exe 'buffers a' | redir END
     let g:bufferNum = len(split(bufferActive, "\n"))
 
     if g:bufferNum == 1 && bufname("%") != ""
@@ -1013,7 +1013,13 @@ function! SyntaxMonokai()
   " Purple = #AE81FF, 135
   " Gray = #7E8E91, 59
 
-  syntax enable " Enable syntax highlights
+  try
+    syntax enable " Enable syntax highlights
+  catch /:E484:/
+    " E484: Syntax files not found, using GlobalHighght"
+    autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * call HighlightGlobal()
+    call HighlightGlobal()
+  endtry
 "   set background=dark
   highlight clear
   syntax reset
