@@ -1004,14 +1004,14 @@ function! SyntaxMonokai()
 
   """" Color Scheme
   "" Modified from tomasr Molokai on Github
-  " Red = #F92672, 161
-  " Orange = #FD971F, 208
-  " Yellow = #E6DB74, 144
-  " Light Green = #A6E22E, 118
-  " Green = #00AF00, 34
-  " Blue = #66D9EF, 81
-  " Purple = #AE81FF, 135
-  " Gray = #7E8E91, 59
+  " Red         = #F92672, 161,   rgb(249   38    114)
+  " Orange      = #FD971F, 208,   rgb(253   151   31)
+  " Yellow      = #E6DB74, 144,   rgb(230   219   116)
+  " Light Green = #A6E22E, 118,   rgb(166   226   46)
+  " Green       = #00AF00, 34,    rgb(0     175   0)
+  " Blue        = #66D9EF, 81,    rgb(102   217   239)
+  " Purple      = #AE81FF, 135,   rgb(174   129   255)
+  " Gray        = #7E8E91, 59,    rgb(126   142   145)
 
   try
     syntax enable " Enable syntax highlights

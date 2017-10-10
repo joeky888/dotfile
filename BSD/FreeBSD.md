@@ -102,6 +102,32 @@ device vt_vga
 #options        SC_PIXEL_MODE   # add support for the raster text mode
 #device         vga             # VGA video card driver
 ```
+* $ sudoedit /usr/src/sys/dev/vt/colors/vt_termcolors.c
+```c
+static const struct {
+    unsigned char r;    /* Red percentage value. */
+    unsigned char g;    /* Green percentage value. */
+    unsigned char b;    /* Blue percentage value. */
+} color_def[16] = {
+    {0,     0,      0},     /* black */
+    {50,    0,      0},     /* dark red */
+    {0,     50,     0},     /* dark green */
+    {77,    63,     0},     /* dark yellow */
+    {20,    40,     64},    /* dark blue */
+    {50,    0,      50},    /* dark magenta */
+    {0,     50,     50},    /* dark cyan */
+    {75,    75,     75},    /* light gray */
+
+    {18,    20,     21},    /* dark gray */
+    {100,   0,      0},     /* light red */
+    {0,     100,    0},     /* light green */
+    {100,   100,    0},     /* light yellow */
+    {45,    62,     81},    /* light blue */
+    {100,   0,      100},   /* light magenta */
+    {0,     100,    100},   /* light cyan */
+    {100,   100,    100},   /* white */
+};
+```
 * $ cd /usr/src
 * $ sudo make -j4 buildkernel && sudo make installkernel
 
