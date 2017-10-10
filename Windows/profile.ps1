@@ -49,7 +49,7 @@ Function Prompt {
 
 # Command to upgrade all chocolatey packages
 Function upgradeChoco {
-  choco upgrade all -y
+  choco upgrade all -y --pre
 }
 
 # Add chocolatey packages to path

@@ -321,7 +321,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
       /cygdrive/c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
     fi;
   }
-  upgradeChoco() { cygstart --action=runas cmd.exe /c "choco upgrade all -y" ;}
+  upgradeChoco() { cygstart --action=runas cmd.exe /c "choco upgrade all -y --pre" ;}
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   true
