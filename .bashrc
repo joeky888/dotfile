@@ -82,6 +82,17 @@ alias vim="vim -u ~/.vimrc"
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
+grep-flag-available() { echo | grep $1 "" >/dev/null 2>&1 ;}
+GREP_OPTIONS=""
+if grep-flag-available --color=auto; then GREP_OPTIONS+=" --color=auto" fi
+VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
+if grep-flag-available --exclude-dir=.cvs; then
+    GREP_OPTIONS+=" --exclude-dir=$VCS_FOLDERS"
+elif grep-flag-available --exclude=.cvs; then
+    GREP_OPTIONS+=" --exclude=$VCS_FOLDERS"
+fi
+alias grep="grep $GREP_OPTIONS"
+
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
