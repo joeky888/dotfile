@@ -173,6 +173,10 @@ set timeoutlen=10
 au InsertEnter * set timeoutlen=10 | set ignorecase
 au InsertLeave * set timeoutlen=10
 
+function! ClearOuput()
+  echon "\r\r"
+  echon ''
+endfunction
 """ When opening a file : - Reopen at last position - Display info
 function! GetFileInfo()
   let permissions = getfperm(expand('%:p'))
@@ -192,7 +196,7 @@ function! GetFileSize()
      return bytes . "B"
   endif
 endfunction
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call GetFileInfo()
+au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif | call ClearOuput()
 """ Custom backup and swap files
 let myVimDir = expand("$HOME/dotfile/.vim")
 let myBackupDir = myVimDir . '/backup'
@@ -1572,7 +1576,7 @@ if has("gui_running")
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   " Restore all sessions, GUI only, don't do this with terminal vim
-  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
+  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll() | call ClearOuput()
   au VimLeave * :call MakeSession()
 
   if has('win32') || has('win64')
