@@ -23,3 +23,10 @@ Android
 =====
 * Settings -> Play videos in background -> check
 * Settings -> Interface -> Enable the black theme -> check
+
+Crashes on some videos
+=====
+* Fix the video so that let VLC ignores the errors
+```sh
+ffmpeg -err_detect ignore_err -i video.mkv -c copy video_fixed.mkv
+```
