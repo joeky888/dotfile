@@ -17,7 +17,7 @@ filetype indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
-set shortmess=tIAW " No intro when starting Vim
+set shortmess=tsIAW " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set smarttab " Insert spaces according to shiftwidth
 set softtabstop=4 " ... and insert four spaces
@@ -944,14 +944,26 @@ endfunction
 cnoremap <silent> <expr> <CR> CommandAfterSearch()
 function! NextSearch()
   let l:line = line(".")
-  normal! n
+  try
+    normal! n
+  catch /:E486:/
+    echohl iGreen | echon "    Info     "
+    echohl Green | echon  " Nothing found! "
+    echohl None
+  endtry
   if l:line != line(".")
     let b:lastKey[1]=b:lastKey[1]+1 <= b:lastKey[2] ? b:lastKey[1]+1 : b:lastKey[1]+1-b:lastKey[2]
   endif
 endfunction
 function! PreviousSearch()
   let l:line = line(".")
-  normal! N
+  try
+    normal! N
+  catch /:E486:/
+    echohl iGreen | echon "    Info     "
+    echohl Green | echon  " Nothing found! "
+    echohl None
+  endtry
   if l:line != line(".")
     let b:lastKey[1]=b:lastKey[1]-1 > 0 ? b:lastKey[1]-1 : b:lastKey[1]-1+b:lastKey[2]
   endif
