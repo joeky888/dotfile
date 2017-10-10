@@ -14,7 +14,7 @@ if [ $(command -v tmux) ] ; then
       exec tmux
     fi
   fi
-elif [ $(command -v zsh) ] ; then
+elif [ $(command -v zsh) ] && [[ -n "$BASH_VERSION" ]] ; then
   exec zsh
 fi
 
