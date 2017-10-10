@@ -17,7 +17,7 @@ filetype indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
-set shortmess=IAFW " No intro when starting Vim
+set shortmess=tIAW " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
 set smarttab " Insert spaces according to shiftwidth
 set softtabstop=4 " ... and insert four spaces
@@ -810,7 +810,10 @@ set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
 if v:version > 704 || has("patch314") || has('patch-7.4.314')
-  set shortmess+=c
+  set shortmess+=c " Disable autocomplete WarningMsg
+endif
+if v:version > 704 || has("patch1570") || has('patch-7.4.1570')
+  set shortmess+=F " Disable file info on start
 endif
 let autocomp=1
 let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
