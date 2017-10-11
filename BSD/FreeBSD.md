@@ -39,6 +39,20 @@ url: "pkg+http://pkg.FreeBSD.org/${ABI}/quarterly",
 # To
 url: "pkg+http://pkg.tw.FreeBSD.org/${ABI}/latest",
 ```
+* $ sudoedit /etc/freebsd-update.conf
+```conf
+# Change url from
+ServerName update.FreeBSD.org
+# To
+ServerName update.tw.FreeBSD.org
+```
+* $ sudoedit /etc/portsnap.conf
+```conf
+# Change url from
+SERVERNAME=portsnap.FreeBSD.org
+# To
+SERVERNAME=portsnap.tw.FreeBSD.org
+```
 
 Upgrade all pkg packages
 =====
