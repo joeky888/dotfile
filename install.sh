@@ -191,7 +191,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   export Home="$HOME"
   $SUDO pkg update
-  echo y | $SUDO pkg install tmux zsh git vim nano curl python3 aria2 p7zip gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  echo y | $SUDO pkg install tmux zsh git vim nano curl python3 aria2 p7zip
 #   echo y | $SUDO pkg install clang-devel
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
@@ -199,6 +199,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   InstallPIP
   InstallGRC
   InstallPy3UTF8
+  echo y | $SUDO gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
 
 
 
