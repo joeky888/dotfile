@@ -197,7 +197,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
-  echo y | $SUDO gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  echo y | $SUDO pkg install gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallGRC
 #   echo y | $SUDO pkg install clang-devel
 
