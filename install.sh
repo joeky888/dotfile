@@ -196,9 +196,9 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
   InstallPIP
-  InstallGRC
   InstallPy3UTF8
   echo y | $SUDO gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  InstallGRC
 #   echo y | $SUDO pkg install clang-devel
 
 
