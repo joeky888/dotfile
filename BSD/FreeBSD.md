@@ -101,11 +101,20 @@ allscreens_flags="-f /usr/share/vt/fonts/jj.fnt" # Tmux could causes problems
 ```
 * $ sudo reboot
 * $ vidcontrol -f jj.fnt #Tmux could causes problems, start with zsh/bash without tmux
-* $ sudoedit /etc/rc.conf
 
 Large console font size
 =====
 * $ vidcontrol -f gallant
+* Or
+* $ aria2c https://github.com/chjj/ttystudio/raw/master/fonts/ter-u32n.bdf
+* $ vtfontcvt -w 16 -h 32 ter-u32n.bdf ter-u32.fnt
+* $ vidcontrol -f ter-u32.fnt #Tmux could causes problems, start with zsh/bash without tmux
+* $ sudo cp ter-u32.fnt /usr/share/vt/fonts/
+* $ sudoedit /etc/rc.conf
+```conf
+font16x32="ter-u32"
+allscreens_flags="-f /usr/share/vt/fonts/ter-u32.fnt" # Tmux could causes problems
+```
 
 Rebuild Kernel
 =====
