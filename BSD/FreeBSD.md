@@ -30,12 +30,12 @@ Search and Install ports packages
 * For sudoers
 * $ sudo -E make install clean # -E means preserving env variables
 
-Make pkg faster
+Make pkg faster, and get latest packags
 =====
 * $ sudoedit /etc/pkg/FreeBSD.conf
 ```conf
 # Change url from
-url: "pkg+http://pkg.FreeBSD.org/${ABI}/latest",
+url: "pkg+http://pkg.FreeBSD.org/${ABI}/quarterly",
 # To
 url: "pkg+http://pkg.tw.FreeBSD.org/${ABI}/latest",
 ```
