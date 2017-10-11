@@ -18,6 +18,7 @@ Software
 * Sweet home 3D
 * ngPlant
 * Fritzing
+* FontForge
 * gVim x64
 * Brackets
 * Visual Studio Code Insiders
