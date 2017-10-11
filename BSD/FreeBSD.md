@@ -64,7 +64,7 @@ SERVERNAME=portsnap.tw.FreeBSD.org
 
 Upgrade all pkg packages
 =====
-* $ sudo pkg update && sudo pkg upgrade
+* $ sudo pkg update -f && sudo pkg upgrade
 
 Add user to sudoer
 =====
