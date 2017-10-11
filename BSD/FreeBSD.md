@@ -115,7 +115,7 @@ Rebuild Kernel
 * $ sudoedit /usr/src/sys/amd64/conf/GENERIC
 ```conf
 options TERMINAL_NORM_ATTR=(FG_WHITE|BG_BLACK) # Normal output color
-options TERMINAL_KERN_ATTR=(FG_LIGHTCYAN|BG_BLACK) # Kernel output color
+options TERMINAL_KERN_ATTR=(FG_LIGHTGREEN|BG_BLACK) # Kernel output color
 options VESA
 device vt
 device vt_vga
