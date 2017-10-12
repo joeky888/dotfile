@@ -743,6 +743,7 @@ vnoremap <Space> "_di<Space><C-g>u
 vnoremap <CR> "_di<CR><C-g>u
 vnoremap <BS> "_di<C-g>u
 
+vnoremap <silent> ` <ESC>:call WrapSelection("`","`")<CR>
 vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
 vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
 vnoremap <silent> { <ESC>:call WrapSelection("{","}")<CR>

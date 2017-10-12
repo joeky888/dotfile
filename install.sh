@@ -84,7 +84,7 @@ InstallMinicondaLinux()
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   export Home="$HOME"
   $SUDO apt update
-  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
+  $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
 
   mkdir -p ~/.config/openbox
   InstallDotfile
@@ -103,7 +103,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-  $SUDO apt-fast install p7zip-full p7zip-rar build-essential vim nano ffmpeg neofetch fontconfig -y
+  $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig -y
   $SUDO apt-fast install libssl-dev -y
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
   aria2c http://font.ubuntu.com/download/ubuntu-font-family-0.83.zip && 7z -o"ubuntu" x ubuntu-font-family-0.83.zip && $SUDO mv -v ubuntu /usr/share/fonts/truetype/Ubuntu && rm ubuntu-font-family*
@@ -191,11 +191,11 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   export Home="$HOME"
   $SUDO pkg update -f
-  echo y | $SUDO pkg install tmux zsh git vim-lite nano curl python3 aria2 p7zip neofetch
+  echo y | $SUDO pkg install tmux zsh git vim-lite nano curl python3 aria2 p7zip neofetch bind-tools
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
-  echo y | $SUDO pkg install coreutils bash-completion gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  echo y | $SUDO pkg install coreutils bash-completion gcc binutils automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP
   InstallPy3UTF8
   InstallGRC
