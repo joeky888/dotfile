@@ -82,14 +82,15 @@ alias vim="vim -u ~/.vimrc"
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
-grep-flag-available() { echo | grep $1 "" >/dev/null 2>&1 ;}
 GREP_OPTIONS=""
-if grep-flag-available --color=auto; then GREP_OPTIONS+=" --color=auto" fi
+if $(echo | grep --color=auto "" > /dev/null 2>&1); then
+  GREP_OPTIONS="$GREP_OPTIONS --color=auto"
+fi
 VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
-if grep-flag-available --exclude-dir=.cvs; then
-    GREP_OPTIONS+=" --exclude-dir=$VCS_FOLDERS"
-elif grep-flag-available --exclude=.cvs; then
-    GREP_OPTIONS+=" --exclude=$VCS_FOLDERS"
+if $(echo | grep --exclude-dir=.cvs "" > /dev/null 2>&1); then
+  GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$VCS_FOLDERS"
+elif $(echo | grep --exclude=.cvs "" > /dev/null 2>&1); then
+  GREP_OPTIONS="$GREP_OPTIONS --exclude=$VCS_FOLDERS"
 fi
 alias grep="grep $GREP_OPTIONS"
 
@@ -485,7 +486,9 @@ END
 
 ZshPasteFromClipboard()
 {
-  LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
+  if [[ -f $HOME/dotfile/clipboard.txt ]]; then
+    LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
+  fi
 }
 
 ZshCutToClipboard()
@@ -497,7 +500,9 @@ ZshCutToClipboard()
 
 BashPasteFromClipboard()
 {
-  READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+  if [[ -f $HOME/dotfile/clipboard.txt ]]; then
+    READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
+  fi
 }
 
 CompleteAptCyg()
