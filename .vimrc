@@ -67,6 +67,7 @@ set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
 set guioptions-=T " Don't show toolbar in Gvim
+set guioptions-=t " Don't show tearoff menu items
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
 set guitabtooltip=%{expand('%:p')} " Use full path in GUI tab tooltip
 let g:netrw_list_hide='' " Show all hidden files when using file explorer
