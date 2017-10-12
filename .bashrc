@@ -276,6 +276,19 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
+  if [ -f /usr/share/bash-completion/bash_completion ]; then
+    source /usr/share/bash-completion/bash_completion
+  elif [ -f /etc/bash_completion ]; then
+    source /etc/bash_completion
+  elif [ -f /usr/local/share/bash-completion/bash_completion.sh ]; then
+    source /usr/local/share/bash-completion/bash_completion.sh
+  elif [ -f /usr/local/share/bash-completion/bash_completion ]; then
+    source /usr/local/share/bash-completion/bash_completion
+  elif [ -d "/usr/local/etc/bash_completion.d" ]; then # FreeBSD
+    for f in /usr/local/etc/bash_completion.d/*; do
+      source $f
+    done
+  fi
   export HISTFILESIZE=
   export HISTSIZE=
   shopt -s histappend # Append history

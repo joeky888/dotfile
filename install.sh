@@ -84,7 +84,7 @@ InstallMinicondaLinux()
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   export Home="$HOME"
   $SUDO apt update
-  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils python3 -y
+  $SUDO apt install tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
 
   mkdir -p ~/.config/openbox
   InstallDotfile
@@ -151,7 +151,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
   apt-cyg install procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
-  apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
+  apt-cyg install bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
   InstallGRC
   InstallPy3UTF8
@@ -165,7 +165,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
   pacman -Syu
-  pacman -S zsh git vim curl wget base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
+  pacman -S zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
   InstallPIP
   InstallGRC
   InstallPy3UTF8
@@ -179,7 +179,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y clang man vim git tig zsh tmux curl aria2 openssh grep sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
+  apt install -y clang man vim git tig zsh tmux curl aria2 bash-completion openssh grep sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
@@ -195,7 +195,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
-  echo y | $SUDO pkg install gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  echo y | $SUDO pkg install bash-completion gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP
   InstallPy3UTF8
   InstallGRC
