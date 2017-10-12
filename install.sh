@@ -195,7 +195,7 @@ elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
-  echo y | $SUDO pkg install bash-completion gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
+  echo y | $SUDO pkg install coreutils bash-completion gcc automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP
   InstallPy3UTF8
   InstallGRC
