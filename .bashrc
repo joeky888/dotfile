@@ -36,7 +36,7 @@ export LC_ALL="en_US.UTF-8"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
-export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=1000 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=1M" # aria2 & bypy
+export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=1000 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=1M --seed-ratio=0" # aria2 & bypy
 if [[ $(command -v aria2c) ]]; then
   if [[ $(aria2c --version | grep "Async DNS") ]]; then
     export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,223.5.5.5" # aria2 & bypy
@@ -67,13 +67,15 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
+alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
+alias aria2c-agent-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="qBittorrent/3.3.16" peer-id-prefix="-qB33G0-"'
+alias aria2c-agent-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" peer-id-prefix="-UT341-"'
+alias aria2c-agent-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" peer-id-prefix="-TR2770-"'
 if [[ $(command -v youtube-dl) ]]; then
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
   alias curl='curl --retry 999 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
 else
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
-  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   alias curl='curl --retry 999 --retry-max-time 0 -LC - '
 fi
 alias bypy='bypy -d --processes 4 --downloader aria2'
