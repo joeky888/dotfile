@@ -49,6 +49,7 @@ set tabpagemax=5000 " Max tab pages
 set ignorecase " case insensitive but case sensitive in command mode
 let &showbreak="\u21aa " " Show a left arrow when wrapping text
 set mousemodel=extend " Disable right click popup in Gvim
+set mousefocus " Focus on mouse hovered
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set fileformats=unix,dos " Set for terminal vim
@@ -1239,6 +1240,7 @@ noremenu Edit.Split\ Window.Vertical\ 2     :vsplit<CR>
 noremenu Edit.Split\ Window.Vertical\ 3     :vsplit<CR>:vsplit<CR>:wincmd =<CR>
 noremenu Edit.Split\ Window.Horizontal\ 2   :split<CR>
 noremenu Edit.Split\ Window.Horizontal\ 3   :split<CR>:split<CR>:wincmd =<CR>
+noremenu Edit.Split\ Window.4               :split<CR>:vsplit<CR>:wincmd j<CR>:vsplit<CR>:wincmd k<CR>
 
 command! Split2Vertical     vsplit
 command! Split3Vertical     vsplit | vsplit | wincmd =
@@ -1564,6 +1566,7 @@ function! MakeSession()
   else
     let mySession=expand("$HOME/dotfile/.vim/session.vim")
   endif
+
   " Don's save the session if there is only one buffer
   if exists('g:bufferNum')
     if g:bufferNum <= 1 | call delete(mySession) | return | endif
