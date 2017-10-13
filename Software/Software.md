@@ -66,6 +66,8 @@ Windows
 * MPC-HC
 * SumatraPDF
 * Inziu Iosevka font (for console)
+* choco install copyq aria2 miniconda3 ffmpeg youtube-dl -y --pre
+* choco install vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 -y --pre
 
 Windows XP
 =====

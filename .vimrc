@@ -29,8 +29,6 @@ set virtualedit=onemore " Allow the cursor to move just past the end of the line
 set history=10000 " Maximum 10000 undo
 set wildmenu " Better command-line completion
 set wildignorecase " Ignore case when command-line completion
-" set scrolloff=999 " Always keep max lines after or before when scrolling
-" set sidescrolloff=999 " Always keep max lines after or before whens side scrolling
 set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
 set clipboard=unnamed,unnamedplus,exclude:.*
 set selection=exclusive " Don't select char under cursor
@@ -1328,11 +1326,12 @@ for b:char in split(g:CharSet, '\zs')
 endfor
 
 " Custom file syntax
-autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightGlobal()
-autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightC()
-autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
-autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ass,ASS,ssa,SSA} call HighlightASS()
-autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+" autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightGlobal()
+" autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme * call HighlightC()
+" autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{srt,SRT,vtt,VTT} call HighlightSRT()
+" autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ass,ASS,ssa,SSA} call HighlightASS()
+" autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,ColorScheme *.{ps1,PS1,psd1,PSD1,psm1,PSM1,pssc,PSSC} call HighlightPS1()
+autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufEnter,FileType,Syntax,ColorScheme * call HighlightAll()
 
 " Highlight again after session loaded
 function! HighlightAll()
@@ -1617,8 +1616,6 @@ if has("gui_running")
   endif
   set number
   set lines=999 columns=999 " set window Maximized
-  set scrolloff& " unset scroll values
-  set sidescrolloff&
   set fileformats=dos,unix
 
   " Ctrl C is copying line if there is no word selected
