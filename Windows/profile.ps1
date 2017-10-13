@@ -67,3 +67,6 @@ if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
   $env:Path += ";C:\ProgramData\Miniconda2"
   $env:Path += ";C:\ProgramData\Miniconda2\Scripts"
 }
+if($env:Path -NotLike "*C:\GnuWin\bin*") {
+  $env:Path += ";C:\GnuWin\bin"
+}
