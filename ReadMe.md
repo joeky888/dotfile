@@ -6,15 +6,17 @@ curl -s https://raw.githubusercontent.com/j16180339887/dotfile/master/install.sh
 
 Install vimrc only
 ====
-```bash
+```sh
 # Unix-like & Powershell: Use curl
 curl https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
 
 # Unix-like: Use python2
-python2 -c "import urllib; print urllib.urlopen('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc'.encode('UTF-8')).read()" > ~/.vimrc
+python2 -c "import urllib;from os.path import expanduser; urllib.urlretrieve('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc', expanduser('~') + '/.vimrc')"
+# python2 -c "import urllib; print urllib.urlopen('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc'.encode('UTF-8')).read()" > ~/.vimrc
 
 # Unix-like: Use python3
-python3 -c "import urllib.request as ur; print (ur.urlopen('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc').read().decode('utf-8'))" > ~/.vimrc
+python3 -c "import urllib.request;from os.path import expanduser; urllib.request.urlretrieve('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc', expanduser('~') + '/.vimrc')"
+# python3 -c "import urllib.request as ur; print (ur.urlopen('https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc').read().decode('utf-8'))" > ~/.vimrc
 
 # Windows: Use cmd
 C:\windows\explorer.exe https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc
