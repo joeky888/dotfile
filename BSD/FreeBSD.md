@@ -143,20 +143,20 @@ static const struct {
     {0,      0,      0},    /* black */         /* #000000 */
     {69,     0,      0},    /* dark red */      /* #AF0000 */
     {0,     69,      0},    /* dark green */    /* #00AF00 */
-    {100,  100,      0},    /* dark yellow */   /* #ffff00 */
-    {40,    85,     94},    /* dark blue */     /* #66d9ef */
-    {68,    51,    100},    /* dark magenta */  /* #ae81ff */
-    {63,    94,     89},    /* dark cyan */     /* #a1efe4 */
-    {97,    97,     95},    /* light gray */    /* #f8f8f2 */
+    {100,  100,      0},    /* dark yellow */   /* #FFFF00 */
+    {40,    85,     94},    /* dark blue */     /* #66D9EF */
+    {68,    51,    100},    /* dark magenta */  /* #AE81FF */
+    {63,    94,     89},    /* dark cyan */     /* #A1EFE4 */
+    {97,    97,     95},    /* light gray */    /* #F8F8F2 */
 
     {49,    56,     57},    /* dark gray */     /* #7E8E91 */
-    {98,    15,     45},    /* light red */     /* #f92672 */
-    {65,    89,     18},    /* light green */   /* #a6e22e */
-    {96,    75,     46},    /* light yellow */  /* #f4bf75 */
-    {40,    85,     94},    /* light blue */    /* #66d9ef */
-    {68,    51,    100},    /* light magenta */ /* #ae81ff */
-    {63,    94,     89},    /* light cyan */    /* #a1efe4 */
-    {100,   100,   100},    /* white */         /* #ffffff */
+    {98,    15,     45},    /* light red */     /* #F92672 */
+    {65,    89,     18},    /* light green */   /* #A6E22E */
+    {96,    75,     46},    /* light yellow */  /* #F4BF75 */
+    {40,    85,     94},    /* light blue */    /* #66D9EF */
+    {68,    51,    100},    /* light magenta */ /* #AE81FF */
+    {63,    94,     89},    /* light cyan */    /* #A1EFE4 */
+    {100,   100,   100},    /* white */         /* #FFFFFF */
 };
 ```
 * $ cd /usr/src

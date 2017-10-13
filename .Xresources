@@ -42,13 +42,13 @@ XTerm*foreground: #DEDEDE
 XTerm*color0  : #2E3436
 XTerm*color8  : #555753
 ! red
-XTerm*color1  : #F92672
+XTerm*color1  : #AF0000
 XTerm*color9  : #F92672
 ! green
-XTerm*color2  : #A6E22E
+XTerm*color2  : #00AF00
 XTerm*color10 : #A6E22E
 ! yellow
-XTerm*color3  : #E6DB74
+XTerm*color3  : #FFFF00
 XTerm*color11 : #E6DB74
 ! blue
 XTerm*color4  : #66D9EF
