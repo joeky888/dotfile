@@ -305,10 +305,11 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
       source $f
     done
   fi
+  export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   export HISTFILESIZE=
   export HISTSIZE=
   shopt -s histappend # Append history
-  PROMPT_COMMAND="history -a;history -n;$PROMPT_COMMAND" # Write history immediately
+  PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND" # Write history immediately
   bind 'set completion-ignore-case on' # Ignore case
   bind '"\e[A": history-search-backward' # Up key is searching backward
   bind '"\e[B": history-search-forward'  # Down key is searching forward
