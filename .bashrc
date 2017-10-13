@@ -200,7 +200,7 @@ fi
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
-if [ $(command -v gvim) ] && ! [["$OSTYPE" == "msys"]] && ! [["$OSTYPE" == "cygwin"]] ; then
+if [ $(command -v gvim) ] && [[ "$OSTYPE" != "msys" ]] && [[ "$OSTYPE" != "cygwin" ]] ; then
   gvim()
   {
     if [ "$#" == 0 ]; then
