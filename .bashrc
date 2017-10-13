@@ -53,6 +53,13 @@ alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
+if [[ $(command -v youtube-dl) ]]; then
+  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
+  alias curl='curl --retry 999 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+else
+  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
+  alias curl='curl --retry 999 --retry-max-time 0 -LC - '
+fi
 if [[ $(command -v aria2c) ]]; then
   alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
 else
@@ -72,13 +79,6 @@ alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --
 alias aria2c-agent-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="qBittorrent/3.3.16" --peer-id-prefix="-qB33G0-"'
 alias aria2c-agent-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-"'
 alias aria2c-agent-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-"'
-if [[ $(command -v youtube-dl) ]]; then
-  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-  alias curl='curl --retry 999 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
-else
-  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
-  alias curl='curl --retry 999 --retry-max-time 0 -LC - '
-fi
 alias bypy='bypy -d --processes 4 --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
@@ -352,7 +352,15 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   upgradeChoco() { cygstart --action=runas cmd.exe /c "choco upgrade all -y --pre" ;}
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
-  true
+  cd ~
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      /c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc &!
+    else
+      /c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+    fi;
+  }
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
   alias grep='grep --color=auto'
