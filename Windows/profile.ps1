@@ -52,6 +52,12 @@ Function upgradeChoco {
   choco upgrade all -y --pre
 }
 
+# Command to upgrade all Conda packages
+Function upgradeConda {
+  conda update --all --yes
+}
+
+
 # Add chocolatey packages to path
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   $env:Path += ";C:\ProgramData\Miniconda3"
