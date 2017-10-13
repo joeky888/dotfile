@@ -191,7 +191,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   export Home="$HOME"
   $SUDO pkg update -f
-  echo y | $SUDO pkg install tmux zsh git vim-lite nano curl python3 aria2 p7zip neofetch bind-tools
+  echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip neofetch bind-tools
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
