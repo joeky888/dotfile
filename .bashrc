@@ -44,6 +44,19 @@ if [[ $(command -v aria2c) ]]; then
 fi
 
 alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
+alias tmux2SplitHorizontal='tmux split-window -v'
+alias tmux2SplitVertical='tmux split-window -h'
+alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
+alias tmux3SplitVertical='tmux split-window -h && tmux split-window -h && tmux select-layout even-horizontal'
+alias tmux4Split='tmux split-window -h && tmux split-window -v && tmux select-pane -L && tmux split-window -v && tmux select-pane -U'
+alias tmuxMoveUp='tmux select-pane -U'
+alias tmuxMoveDown='tmux select-pane -D'
+alias tmuxMoveLeft='tmux select-pane -L'
+alias tmuxMoveRight='tmux select-pane -R'
+alias tmuxResizeUp='tmux resize-pane -U'
+alias tmuxResizeDown='tmux resize-pane -D'
+alias tmuxResizeLeft='tmux resize-pane -L'
+alias tmuxResizeRight='tmux resize-pane -R'
 alias upgradeConda='conda update --all --yes'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
