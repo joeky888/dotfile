@@ -11,6 +11,10 @@ git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
 * Add "shallow = true" to .gitmodules
 * $ git submodule update --init --recursive
 
+Modify a commit message
+=====
+* $ git commit --amend
+
 git restore a commit
 =====
 * Unpushed commit
