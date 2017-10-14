@@ -95,6 +95,8 @@ alias aria2c-agent-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-age
 alias bypy='bypy -d --processes 4 --downloader aria2'
 alias scp='scp -v'
 alias vim="vim -u ~/.vimrc"
+alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
+alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
