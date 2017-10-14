@@ -456,13 +456,15 @@ inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clip
 vnoremap <silent> <C-x> d<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
 
 " Ctrl V - Paste from vim clipboard
-inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
+" inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
 nnoremap <silent> <C-v> gPi<C-g>u
 vnoremap <silent> <C-v> "_dgP
 if has('clipboard')
   cnoremap <C-v> <C-r>+
+  inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>+<C-r>=SetNoPaste()<CR><C-g>u
 else
   cnoremap <C-v> <C-r>"
+  inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>"<C-r>=SetNoPaste()<CR><C-g>u
 endif
 
 " Insert - Paste
@@ -1587,6 +1589,16 @@ function! LoadSession()
   endif
 endfunction
 
+function! SetPaste()
+  set paste
+  return ''
+endfunction
+
+function! SetNoPaste()
+  set nopaste
+  return ''
+endfunction
+
 if has("gui_running")
 
   let g:guifontsize=13
@@ -1642,8 +1654,12 @@ if has("gui_running")
   inoremap <Insert> <C-o>"+gP<C-g>u
   nnoremap <Insert> "+gPi<C-g>u
   vnoremap <Insert> "_d"+gP
-  " For Visual-Block Insert and command-line mode
+
+  " Pasting or Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
+"   <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
+"   noremap! <C-v> <C-r>=(set paste)<CR><C-r>+<C-r>=(set nopaste)<CR>
+"   inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>+<C-r>=SetNoPaste()<CR><C-g>u
 
   " Delete selected characters before Entering the insert mode
   nnoremap <C-Del> "_dwi
