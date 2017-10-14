@@ -435,7 +435,7 @@ noremap  <RightDrag>  <LeftDrag>
 inoremap <RightDrag>  <LeftDrag>
 onoremap <RightDrag>  <C-C><LeftDrag>
 
-" RightMouse double clicking moves cursor the the other side
+" RightMouse double clicking moves cursor to the other side
 noremap <2-RightMouse> <2-LeftMouse>o
 
 " Ctrl A - Begin Line
