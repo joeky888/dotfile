@@ -267,7 +267,7 @@ function! MyQuit()
     redir => bufferActive | silent exe 'buffers a' | redir END
     let g:bufferNum = len(split(bufferActive, "\n"))
 
-    if g:bufferNum == 1 && bufname("%") != ""
+    if g:bufferNum == 1 && bufname("%") != "" && winnr("$") == 1
       silent bufdo call ModifiedBDCheck()
       return
     endif
