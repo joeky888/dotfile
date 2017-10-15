@@ -52,6 +52,8 @@ set mousemodel=extend " Disable right click popup in Gvim
 set mousefocus " Focus on mouse hovered
 set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
+set langmenu=en_US.UTF-8 " Set Gvim menu language
+let $LANG='en' " Set $LANG variable
 set fileformats=unix,dos " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
