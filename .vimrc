@@ -1600,6 +1600,14 @@ function! LoadSession()
   endif
 endfunction
 
+function DeleteHiddenBuffers()
+    let tpbl=[]
+    call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+    for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+        silent execute 'bwipeout' buf
+    endfor
+endfunction
+
 if has("gui_running")
 
   let g:guifontsize=13
@@ -1618,8 +1626,8 @@ if has("gui_running")
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
 
   " Restore all sessions, GUI only, don't do this with terminal vim
-  au VimEnter *  nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
-  au VimLeave * :call MakeSession()
+  au VimEnter * nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
+  au VimLeave * call DeleteHiddenBuffers() | call MakeSession()
 
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
