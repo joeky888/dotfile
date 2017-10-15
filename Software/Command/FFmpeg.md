@@ -10,6 +10,7 @@ Embed sub.srt to input.mp4 (hardsub)
 =====
 * $ ffmpeg -i sub.srt sub.ass
 * Then edit font and fontsize in sub.ass
+* WPS font is an good option
 * $ ffmpeg -i input.mp4 -vf ass=sub.ass output.mp4
 
 Swap audio track order (1, 2 -> 2, 1)
