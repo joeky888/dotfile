@@ -371,6 +371,15 @@ function! DeleteLine()
   normal! "_dd
   call setpos(".", savepos)
 endfunction
+function! SetPaste()
+  set paste
+  return ''
+endfunction
+
+function! SetNoPaste()
+  set nopaste
+  return ''
+endfunction
 
 " Usefull shortcuts for entering insert mode
 nnoremap <CR> i<CR>
@@ -1587,16 +1596,6 @@ function! LoadSession()
   if (filereadable(mySession))
     exe 'source ' . mySession
   endif
-endfunction
-
-function! SetPaste()
-  set paste
-  return ''
-endfunction
-
-function! SetNoPaste()
-  set nopaste
-  return ''
 endfunction
 
 if has("gui_running")
