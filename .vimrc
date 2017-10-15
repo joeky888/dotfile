@@ -38,7 +38,7 @@ set autoindent " auto indent
 set smartindent " smart indent
 set noshowmode " Don't display the current mode
 set gdefault " The substitute flag g is on
-set hidden " Hide the buffer instead of closing when switching
+set nohidden " Don't hide *the buffer instead of closing when switching*
 set backspace=indent,eol,start " The normal behaviour of backspace
 set showtabline=2 " Always show tabs
 set laststatus=2 " Always show status bar
@@ -1600,14 +1600,6 @@ function! LoadSession()
   endif
 endfunction
 
-function DeleteHiddenBuffers()
-    let tpbl=[]
-    call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
-    for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
-        silent execute 'bwipeout' buf
-    endfor
-endfunction
-
 if has("gui_running")
 
   let g:guifontsize=13
@@ -1627,7 +1619,7 @@ if has("gui_running")
 
   " Restore all sessions, GUI only, don't do this with terminal vim
   au VimEnter * nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
-  au VimLeave * call DeleteHiddenBuffers() | call MakeSession()
+  au VimLeave * call MakeSession()
 
   if has('win32') || has('win64')
     call EnsureDirExists($TEMP."/vim/backup")
