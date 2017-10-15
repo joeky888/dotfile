@@ -1305,9 +1305,9 @@ noremenu Edit.Indent.Tab\ 8     :call IndentTab(8)<CR>
 command! LineEndingUnix   execute "set fileformat=unix"
 command! LineEndingDos    execute "set fileformat=dos"
 command! LineEndingMac    execute "set fileformat=mac"
-noremenu Edit.Line\ ending.Unix  :set fileformat=unix<CR>
-noremenu Edit.Line\ ending.Dos   :set fileformat=dos<CR>
-noremenu Edit.Line\ ending.Mac   :set fileformat=mac<CR>
+noremenu Edit.Line\ ending.Unix\ (\\n)    :set fileformat=unix<CR>
+noremenu Edit.Line\ ending.Dos\ (\\r\\n)  :set fileformat=dos<CR>
+noremenu Edit.Line\ ending.Mac\ (\\r)     :set fileformat=mac<CR>
 
 " Encoding
 noremenu Edit.Encoding.UTF8      :e ++enc=utf-8<CR>
