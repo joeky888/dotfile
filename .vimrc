@@ -54,7 +54,7 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set langmenu=en_US.UTF-8 " Set Gvim menu language
 let $LANG='en' " Set $LANG variable
-set fileformats=unix,dos " Set for terminal vim
+set fileformats=unix,dos,mac " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set sessionoptions-=options,localoptions,globals,buffers " Don't save these to the session file
@@ -1151,6 +1151,11 @@ function! OpenDroppedFiles(droppedFiles)
 endfunction
 command! -nargs=1 OpenDroppedFiles call OpenDroppedFiles(<f-args>)
 
+if has("win32") || has("win64")
+  let $PATH .= ';C:\ProgramData\Miniconda2' " choco install miniconda
+  let $PATH .= ';C:\ProgramData\Miniconda3' " choco install miniconda3
+endif
+
 if has("python")
 python << EOF
 import vim
@@ -1640,7 +1645,7 @@ if has("gui_running")
   endif
   set number
   set lines=999 columns=999 " set window Maximized
-  set fileformats=dos,unix
+  set fileformats=dos,unix,mac
 
   " Ctrl C is copying line if there is no word selected
   nnoremap <C-c> mjV"+y:redraw!<CR>`j
