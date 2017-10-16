@@ -56,6 +56,12 @@ Function upgradeChoco {
 Function upgradeConda {
   conda update --all --yes
 }
+Function upgradePip {
+  pip freeze -l > requirements.txt
+  (Get-Content requirements.txt).replace('==', '>=') | Set-Content requirements.txt
+  pip install -r requirements.txt --upgrade
+  Remove-Item requirements.txt
+}
 
 
 # Add chocolatey packages to path
