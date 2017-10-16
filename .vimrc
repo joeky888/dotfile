@@ -392,21 +392,21 @@ endfunction
 nnoremap <CR> i<CR>
 nnoremap <Backspace> i<Backspace>
 nnoremap <Space> i<Space>
-nnoremap " i"
-nnoremap ' i'
-nnoremap [ i[
-nnoremap ] i]
-nnoremap { i{
-nnoremap } i}
-nnoremap ( i(
-nnoremap ) i)
-nnoremap < i<
-nnoremap > i>
-nnoremap . i.
-nnoremap , i,
-nnoremap ; i;
-nnoremap + i+
-nnoremap = i=
+nnoremap <silent> " i"
+nnoremap <silent> ' i'
+nnoremap <silent> [ i[<C-r>=AutoPair("]")<CR>
+nnoremap <silent> ] i]
+nnoremap <silent> { i{<C-r>=AutoPair("}")<CR>
+nnoremap <silent> } i}
+nnoremap <silent> ( i(<C-r>=AutoPair(")")<CR>
+nnoremap <silent> ) i)
+nnoremap <silent> < i<
+nnoremap <silent> > i>
+nnoremap <silent> . i.
+nnoremap <silent> , i,
+nnoremap <silent> ; i;
+nnoremap <silent> + i+
+nnoremap <silent> = i=
 
 " Vim undo too much
 inoremap <Space> <Space><C-g>u
@@ -760,6 +760,20 @@ vnoremap <Space> "_di<Space><C-g>u
 vnoremap <CR> "_di<CR><C-g>u
 vnoremap <BS> "_di<C-g>u
 
+function! WrapSelection(c1, c2)
+  execute "normal! `<i".a:c1
+  execute "normal! `>a".a:c2
+  normal! l
+endfunction
+function! AutoPair(ac)
+  redraw
+  let c = nr2char(getchar())
+  if c == "\<CR>"
+    return "\<CR>".a:ac."\<ESC>O"
+  endif
+  return c
+endfunction
+
 vnoremap <silent> ` <ESC>:call WrapSelection("`","`")<CR>
 vnoremap <silent> ( <ESC>:call WrapSelection("(",")")<CR>
 vnoremap <silent> [ <ESC>:call WrapSelection("[","]")<CR>
@@ -773,15 +787,12 @@ vnoremap <silent> < <ESC>:call WrapSelection("<",">")<CR>
 vnoremap <silent> > <ESC>:call WrapSelection("<",">")<CR>
 vnoremap <silent> / <ESC>:call WrapSelection("/","/")<CR>
 vnoremap <silent> \ <ESC>:call WrapSelection("\\","\\")<CR>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap [<CR> [<CR>]<ESC>O
-inoremap (<CR> (<CR>)<ESC>O
-
-function! WrapSelection(c1, c2)
-  execute "normal! `<i".a:c1
-  execute "normal! `>a".a:c2
-  normal! l
-endfunction
+inoremap <silent> { {<C-r>=AutoPair("}")<CR>
+inoremap <silent> [ [<C-r>=AutoPair("]")<CR>
+inoremap <silent> ( (<C-r>=AutoPair(")")<CR>
+" inoremap {<CR> {<CR>}<ESC>O
+" inoremap [<CR> [<CR>]<ESC>O
+" inoremap (<CR> (<CR>)<ESC>O
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
@@ -1676,9 +1687,6 @@ if has("gui_running")
 
   " Pasting or Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
-"   <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
-"   noremap! <C-v> <C-r>=(set paste)<CR><C-r>+<C-r>=(set nopaste)<CR>
-"   inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>+<C-r>=SetNoPaste()<CR><C-g>u
 
   " Delete selected characters before Entering the insert mode
   nnoremap <C-Del> "_dwi
