@@ -86,12 +86,10 @@ let g:markdown_fenced_languages =
   \"css","html","xml","json","cmake","yaml","sh","conf",
   \"zsh","tmux","debsources","resolv","sudoers"
 \]
+
 " Open all cmd args in new tabs
-if has("gui_running")
-  au VimEnter * if !&diff | tab all | tabfirst | endif
-else
-  silent tab all
-endif
+silent tab all
+
 " Open help in new tabs
 cnoreabbrev help <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'help')<CR>
 cnoreabbrev h <c-r>=(getcmdtype()==':' && getcmdpos()==1 ? 'tab help' : 'h')<CR>
@@ -247,14 +245,18 @@ function! TabIsEmpty()
 endfunction
 function! ModifiedQCheck()
   if &modified
-    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1) | q! | endif
+    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1)
+      q!
+    endif
   else
     silent q
   endif
 endfunction
 function! ModifiedBDCheck()
   if &modified
-    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1) | bd! | endif
+    if (confirm("YOU HAVE UNSAVED CHANGES! Wanna quit anyway?", "&Yes\n&No", 2)==1)
+      bd!
+    endif
   else
     silent bd
   endif
@@ -267,6 +269,7 @@ function! MyQuit()
       return
     elseif TabIsEmpty() == 1
       silent q!
+      return
     endif
     redir => bufferActive | silent exe 'buffers a' | redir END
     let g:bufferNum = len(split(bufferActive, "\n"))
