@@ -145,11 +145,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
   [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
-  cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "choco install aria2 miniconda miniconda3 ffmpeg youtube-dl -y --pre"
-  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda3\python3.exe"
-  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda2\python2.exe"
-  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\python3.exe" "C:\ProgramData\Miniconda3\python.exe"
-  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\python2.exe" "C:\ProgramData\Miniconda2\python.exe"
+#   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "choco install aria2 miniconda miniconda3 ffmpeg youtube-dl -y --pre"
+#   cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda3\python3.exe"
+#   cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda2\python2.exe"
+#   cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\python3.exe" "C:\ProgramData\Miniconda3\python.exe"
+#   cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\python2.exe" "C:\ProgramData\Miniconda2\python.exe"
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
