@@ -62,10 +62,16 @@ Function upgradeConda {
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   $env:Path += ";C:\ProgramData\Miniconda3"
   $env:Path += ";C:\ProgramData\Miniconda3\Scripts"
+  Set-Alias pip3 C:\ProgramData\Miniconda3\Scripts\pip.exe
+  Set-Alias conda3 C:\ProgramData\Miniconda3\Scripts\conda.exe
+  Set-Alias python3 C:\ProgramData\Miniconda3\python.exe
 }
 if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
   $env:Path += ";C:\ProgramData\Miniconda2"
   $env:Path += ";C:\ProgramData\Miniconda2\Scripts"
+  Set-Alias pip2 C:\ProgramData\Miniconda2\Scripts\pip.exe
+  Set-Alias conda2 C:\ProgramData\Miniconda2\Scripts\conda.exe
+  Set-Alias python2 C:\ProgramData\Miniconda2\python.exe
 }
 if($env:Path -NotLike "*C:\GnuWin\bin*") {
   $env:Path += ";C:\GnuWin\bin"
