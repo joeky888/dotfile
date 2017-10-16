@@ -265,6 +265,8 @@ function! MyQuit()
     if (&filetype=="help")
       q
       return
+    elseif TabIsEmpty() == 1
+      silent q!
     endif
     redir => bufferActive | silent exe 'buffers a' | redir END
     let g:bufferNum = len(split(bufferActive, "\n"))
