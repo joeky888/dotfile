@@ -68,6 +68,7 @@ Function upgradePip {
 
 # Add chocolatey packages to path
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
+  # choco install miniconda3
   $env:Path += ";C:\ProgramData\Miniconda3"
   $env:Path += ";C:\ProgramData\Miniconda3\Scripts"
   Set-Alias pip3 C:\ProgramData\Miniconda3\Scripts\pip.exe
@@ -75,6 +76,7 @@ if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   Set-Alias python3 C:\ProgramData\Miniconda3\python.exe
 }
 if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
+  # choco install miniconda
   $env:Path += ";C:\ProgramData\Miniconda2"
   $env:Path += ";C:\ProgramData\Miniconda2\Scripts"
   Set-Alias pip2 C:\ProgramData\Miniconda2\Scripts\pip.exe
@@ -82,5 +84,6 @@ if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
   Set-Alias python2 C:\ProgramData\Miniconda2\python.exe
 }
 if($env:Path -NotLike "*C:\GnuWin\bin*") {
+  # choco install gnuwin
   $env:Path += ";C:\GnuWin\bin"
 }
