@@ -148,8 +148,16 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "choco install aria2 miniconda miniconda3 ffmpeg youtube-dl -y --pre"
   cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda3\python3.exe"
   cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda2\python2.exe"
-  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\python3.exe" "C:\ProgramData\Miniconda3\python.exe"
-  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\python2.exe" "C:\ProgramData\Miniconda2\python.exe"
+  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda3\Scripts\pip3.exe"
+  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda2\Scripts\pip2.exe"
+  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda3\Scripts\conda3.exe"
+  cygstart --action=runas cmd.exe /c del "C:\ProgramData\Miniconda2\Scripts\conda2.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\python3.exe"         "C:\ProgramData\Miniconda3\python.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\python2.exe"         "C:\ProgramData\Miniconda2\python.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\Scripts\pip3.exe"    "C:\ProgramData\Miniconda3\Scripts\pip.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\Scripts\pip2.exe"    "C:\ProgramData\Miniconda2\Scripts\pip.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda3\Scripts\conda3.exe"  "C:\ProgramData\Miniconda3\Scripts\conda.exe"
+  cygstart --action=runas cmd.exe /c mklink "C:\ProgramData\Miniconda2\Scripts\conda2.exe"  "C:\ProgramData\Miniconda2\Scripts\conda.exe"
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
