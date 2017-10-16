@@ -61,6 +61,8 @@ Function upgradePip {
   (Get-Content requirements.txt).replace('==', '>=') | Set-Content requirements.txt
   pip install -r requirements.txt --upgrade
   Remove-Item requirements.txt
+  pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
+  pip install --upgrade https://github.com/requests/requests/archive/master.zip
 }
 
 
