@@ -87,3 +87,8 @@ if($env:Path -NotLike "*C:\GnuWin\bin*") {
   # choco install gnuwin
   $env:Path += ";C:\GnuWin\bin"
 }
+if($env:Path -NotLike "*C:\Program Files (x86)\Nmap*") {
+  # choco install nmap
+  $env:Path += ";C:\Program Files (x86)\Nmap"
+}
+
