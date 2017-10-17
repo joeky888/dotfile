@@ -1665,7 +1665,7 @@ if has("gui_running")
   set fileformats=dos,unix,mac
 
   " Ctrl C is copying line if there is no word selected
-  nnoremap <C-c> mjV"+y:redraw!<CR>`j
+  nnoremap <C-c> mjV"+y:redraw!<CR>`ji
   inoremap <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>:redraw!<CR><C-o>`j
   vnoremap <C-c> "+y:redraw!<CR>gv
   cnoremap <C-c> <C-y>
