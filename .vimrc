@@ -12,8 +12,7 @@ endif
 
 """ General options
 filetype on " Enable filetype plugin
-filetype plugin on
-filetype indent on
+filetype plugin indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
@@ -67,6 +66,7 @@ set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set formatoptions-=cro " Prevent vim inserting new comment lines
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions-=t " Don't show tearoff menu items
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
