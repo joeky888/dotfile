@@ -920,11 +920,11 @@ let colorsAndModesGui= {
 \}
 function! LastAccentColor()
   if !exists('b:lastMode')
-    let b:lastMode = mode()
+    let b:lastMode = g:currentmode[mode()]
     call ChangeAccentColor()
   endif
-  if b:lastMode != mode()
-    let b:lastMode = mode()
+  if b:lastMode != g:currentmode[mode()]
+    let b:lastMode = g:currentmode[mode()]
     call ChangeAccentColor()
   endif
   return ''
@@ -1042,7 +1042,6 @@ set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 
 function! SyntaxMonokai()
-  " Speed up the redraw
 
   """" Color Scheme
   "" Modified from tomasr Molokai on Github
