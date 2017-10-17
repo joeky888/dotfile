@@ -769,7 +769,7 @@ function! AutoPair(ac)
   redraw
   let c = nr2char(getchar())
   if c == "\<CR>"
-    return "\<CR>".a:ac."\<C-o>O"
+    return "\<CR>".a:ac."\<C-o>O\<C-g>u"
   endif
   return c
 endfunction

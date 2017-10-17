@@ -64,7 +64,15 @@ Function upgradePip {
   pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
   pip install --upgrade https://github.com/requests/requests/archive/master.zip
 }
-
+Function gvim {
+  $Commandvim = "C:\vim\vim80\gvim.exe"
+  $Parmsvim = ""
+  if ($args.count -gt 0) {
+    $Parmsvim = "-p --remote-tab-silent $args"
+    $Parmsvim = $Parmsvim.Split(" ")
+  }
+  & "$Commandvim" $Parmsvim
+}
 
 # Add chocolatey packages to path
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
