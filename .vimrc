@@ -179,7 +179,7 @@ function! GetFileInfo()
   let file = expand('%:p')
   let permissions = getfperm(file)
   echom file . " saved at " . time | redraw
-  echohl iGreen | echon "    Info     "
+  echohl iGreen | echon "     Info     "
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
 endfunction
@@ -977,8 +977,8 @@ function! NextSearch()
   try
     normal! n
   catch /:E486:/
-    echohl iGreen | echon "    Info     "
-    echohl Green | echon  " Nothing found! "
+    echohl iBlue | echon "     Info     "
+    echohl Blue | echon  " Nothing found! "
     echohl None
   endtry
   if l:line != line(".")
@@ -990,8 +990,8 @@ function! PreviousSearch()
   try
     normal! N
   catch /:E486:/
-    echohl iGreen | echon "    Info     "
-    echohl Green | echon  " Nothing found! "
+    echohl iBlue | echon "     Info     "
+    echohl Blue | echon  " Nothing found! "
     echohl None
   endtry
   if l:line != line(".")
@@ -1080,8 +1080,10 @@ function! SyntaxMonokai()
   hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
   hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
 
-  hi Green ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
+  hi Green  ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
   hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
+  hi Blue   ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00afff guibg=NONE gui=NONE
+  hi iBlue  ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00afff gui=NONE
   hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
 
   " Init StatusLine colors
