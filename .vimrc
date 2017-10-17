@@ -1042,7 +1042,6 @@ set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 
 function! SyntaxMonokai()
-
   """" Color Scheme
   "" Modified from tomasr Molokai on Github
   " Red         = #F92672, 161,   rgb(249   38    114)
@@ -1050,7 +1049,8 @@ function! SyntaxMonokai()
   " Yellow      = #E6DB74, 144,   rgb(230   219   116)
   " Light Green = #A6E22E, 118,   rgb(166   226   46)
   " Green       = #00AF00, 34,    rgb(0     175   0)
-  " Blue        = #66D9EF, 81,    rgb(102   217   239)
+  " Blue        = #00AFFF, 81,    rgb(0     175   255)
+  " Light Blue  = #66D9EF, 39,    rgb(102   217   239)
   " Purple      = #AE81FF, 135,   rgb(174   129   255)
   " Gray        = #7E8E91, 59,    rgb(126   142   145)
   " Black       = #1B1D1E, 233,   rgb(27    29    30)
@@ -1059,7 +1059,7 @@ function! SyntaxMonokai()
   try
     syntax enable " Enable syntax highlights
   catch /:E484:/
-    " E484: Syntax files not found, using GlobalHighght"
+    " E484: Syntax files not found, using HighlightGlobal"
     autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * call HighlightGlobal()
     call HighlightGlobal()
   endtry
