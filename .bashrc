@@ -35,6 +35,7 @@ export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export VISUAL="vim"
 export EDITOR="$VISUAL"
+export PYTHONIOENCODING="UTF-8"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=1000 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=1M --seed-ratio=0" # aria2 & bypy
 if [[ $(command -v aria2c) ]]; then

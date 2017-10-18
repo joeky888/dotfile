@@ -2,7 +2,7 @@
 [Console]::InputEncoding = [Text.UTF8Encoding]::UTF8
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 # Python2 UTF8
-$env:PYTHONIOENCODING = "utf-8"
+$env:PYTHONIOENCODING = "UTF-8"
 # Java UTF8
 $env:JAVA_TOOL_OPTIONS = " -Dfile.encoding=UTF8 "
 
