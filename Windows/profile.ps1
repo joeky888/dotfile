@@ -3,6 +3,8 @@
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 # Python2 UTF8
 $env:PYTHONIOENCODING = "utf-8"
+# Java UTF8
+$env:JAVA_TOOL_OPTIONS = " -Dfile.encoding=UTF8 "
 
 # Increase history size
 $global:MaximumHistoryCount = 1000
