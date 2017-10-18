@@ -52,6 +52,10 @@ Function Prompt {
   Return " "
 }
 
+# alias bash/zsh command
+New-Alias which get-command
+New-Alias grep select-string
+
 # Command to upgrade all chocolatey packages
 Function upgradeChoco {
   choco upgrade all -y --pre
