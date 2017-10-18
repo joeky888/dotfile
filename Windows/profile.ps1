@@ -1,5 +1,8 @@
 # UTF8
+[Console]::InputEncoding = [Text.UTF8Encoding]::UTF8
 [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+# Python2 UTF8
+$env:PYTHONIOENCODING = "utf-8"
 
 # Increase history size
 $global:MaximumHistoryCount = 1000
