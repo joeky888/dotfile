@@ -95,7 +95,7 @@ Function aria2c {
   aria2c.exe $env:DOWNLOADARGS $args
 }
 Function youtube-dl {
-  C:\ProgramData\chocolatey\bin\youtube-dl.exe --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $env:DOWNLOADARGS $args
+  youtube-dl.exe --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $env:DOWNLOADARGS $args
 }
 
 # Add chocolatey packages to path
