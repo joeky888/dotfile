@@ -236,37 +236,44 @@ apt-cyg install mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-f
 * Install liblame
 ```sh
 aria2c https://github.com/j16180339887/lame/archive/master.zip && 7z x lame-master.zip && cd lame-master
-./configure --host=x86_64-w64-mingw32 --prefix=/usr --enable-static --disable-shared && make -j 8 && make install
+./configure --host=x86_64-w64-mingw32 --prefix=$HOME/Desktop/win64 --enable-static --disable-shared && make -j 8 && make install
 ```
 * Install libfdk-aac
 ```sh
 aria2c https://github.com/mstorsjo/fdk-aac/archive/master.zip && 7z x fdk-aac-master.zip && cd fdk-aac-master
-./autogen.sh && ./configure --enable-static --disable-shared --host=x86_64-w64-mingw32 --prefix=/usr && make -j 8
+./autogen.sh && ./configure --enable-static --disable-shared --host=x86_64-w64-mingw32 --prefix=$HOME/Desktop/win64 && make -j 8 && make install
 ```
 * Install x264
 ```sh
 aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_x264.tar.bz2 && 7z x last_x264.tar && cd x264*
-./configure --enable-static --host=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --prefix=/usr && make -j 8 && make install
+./configure --enable-static --host=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --prefix=$HOME/Desktop/win64 && make -j 8 && make install install-lib-dev install-lib-static install-cli
 ```
 * Install x265
+```sh
+aria2c https://github.com/videolan/x265/archive/master.zip && 7z x x265-master.zip && cd x265-master && chmod -R 777 .
+```
 Add this code to the top of source/CMakeLists.txt file
 ```cmake
+# this one is important
 SET(CMAKE_SYSTEM_NAME Windows)
-set(TOOLCHAIN_PREFIX x86_64-w64-mingw32)
-set(CMAKE_C_COMPILER ${TOOLCHAIN_PREFIX}-gcc)
-set(CMAKE_CXX_COMPILER ${TOOLCHAIN_PREFIX}-g++)
-set(CMAKE_RC_COMPILER ${TOOLCHAIN_PREFIX}-windres)
+
+# specify the cross compiler
+SET(CMAKE_C_COMPILER   x86_64-w64-mingw32-gcc)
+SET(CMAKE_CXX_COMPILER x86_64-w64-mingw32-g++)
+SET(CMAKE_RC_COMPILER x86_64-w64-mingw32-windres)
 SET(CMAKE_ASM_YASM_COMPILER yasm)
+
 SET(CMAKE_CXX_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
 SET(CMAKE_C_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
 SET(CMAKE_SHARED_LIBRARY_LINK_C_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
 SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "-static-libgcc -static-libstdc++ -static -O3 -s")
 ```
 ```sh
-cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off -DCMAKE_INSTALL_PREFIX:PATH=/usr ../../source && make -j 8 && make install
+cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off -DCMAKE_INSTALL_PREFIX:PATH=$HOME/Desktop/win64 ../../source && make -j 8 && make install
 ```
-* Install ffmpeg W/O liblame, libfdk-aac, x264 and x265
+* Install ffmpeg
 ```sh
-aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg
-./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --enable-cross-compile --enable-w32threads --prefix=/usr --pkg-config=pkg-config --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
+aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg && chmod -R 777 .
+apt-cyg remove libtool yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --pkg-config=x86_64-w64-mingw32-pkg-config --enable-cross-compile --disable-w32threads --pkg-config-flags="--static" --extra-libs=-lstdc++ --host-cflags="-I/usr/x86_64-w64-mingw32/sys-root/mingw/include" --extra-cflags="-I$HOME/Desktop/win64/include" --host-ldflags="-L/usr/x86_64-w64-mingw32/sys-root/mingw/lib" --extra-ldflags="-L$HOME/Desktop/win64/lib" --enable-nonfree --prefix=$HOME/Desktop/win64 --disable-runtime-cpudetect --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
 ```
