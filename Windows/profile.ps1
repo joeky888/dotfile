@@ -30,6 +30,7 @@ Set-PSReadlineKeyHandler -Chord Ctrl+K -Function DeleteLine
 Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
 Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
 Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
+Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
 Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
   [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
   [Microsoft.PowerShell.PSConsoleReadLine]::Insert("clear")
