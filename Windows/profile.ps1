@@ -26,6 +26,7 @@ Set-PSReadlineKeyHandler -Chord Ctrl+LeftArrow  -Function BackwardWord
 Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
 Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
 Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
+Set-PSReadlineKeyHandler -Chord Ctrl+K -Function DeleteLine
 Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
 Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
 Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
