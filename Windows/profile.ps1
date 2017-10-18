@@ -7,7 +7,7 @@ $env:PYTHONIOENCODING = "utf-8"
 $env:JAVA_TOOL_OPTIONS = " -Dfile.encoding=UTF8 "
 
 # Increase history size
-$global:MaximumHistoryCount = 1000
+$global:MaximumHistoryCount = 10000
 
 # Disable beep
 Set-PSReadlineOption -BellStyle None
