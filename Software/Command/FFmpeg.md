@@ -230,8 +230,10 @@ MinGW cross compile on Cygwin (To be continue)
 =====
 * Install packages
 ```sh
+apt-cyg remove gcc-core gcc-g++ bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
+apt-cyg install autobuild autogen automake libtool yasm nasm
 apt-cyg install mingw64-x86_64-gcc-core mingw64-x86_64-gcc-g++ mingw64-x86_64-pkg-config
-apt-cyg install mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
+apt-cyg install mingw64-x86_64-widl mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
 ```
 * Install liblame
 ```sh
@@ -245,7 +247,7 @@ aria2c https://github.com/mstorsjo/fdk-aac/archive/master.zip && 7z x fdk-aac-ma
 ```
 * Install x264
 ```sh
-aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_x264.tar.bz2 && 7z x last_x264.tar && cd x264*
+aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_x264.tar.bz2 && 7z x last_x264.tar && cd x264* && chmod -R 777 .
 ./configure --enable-static --host=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --prefix=$HOME/Desktop/win64 && make -j 8 && make install install-lib-dev install-lib-static install-cli
 ```
 * Install x265
@@ -274,6 +276,5 @@ cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off -DCMAKE_INS
 * Install ffmpeg
 ```sh
 aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg && chmod -R 777 .
-apt-cyg remove libtool yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
-./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --pkg-config=x86_64-w64-mingw32-pkg-config --enable-cross-compile --disable-w32threads --pkg-config-flags="--static" --extra-libs=-lstdc++ --host-cflags="-I/usr/x86_64-w64-mingw32/sys-root/mingw/include" --extra-cflags="-I$HOME/Desktop/win64/include" --host-ldflags="-L/usr/x86_64-w64-mingw32/sys-root/mingw/lib" --extra-ldflags="-L$HOME/Desktop/win64/lib" --enable-nonfree --prefix=$HOME/Desktop/win64 --disable-runtime-cpudetect --enable-libx264 --enable-libx265 --enable-libmp3lame --enable-libfdk-aac --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
+./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --pkg-config=x86_64-w64-mingw32-pkg-config --enable-cross-compile --enable-w32threads --pkg-config-flags="--static" --sysroot="/usr/x86_64-w64-mingw32/sys-root" --sysinclude="-I/usr/x86_64-w64-mingw32/sys-root/mingw/include" --extra-cflags="-I$HOME/Desktop/win64/include" --extra-ldflags="-L$HOME/Desktop/win64/lib" --enable-nonfree --prefix=$HOME/Desktop/win64 --disable-runtime-cpudetect --enable-libx264 --enable-libmp3lame --enable-libfdk-aac --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
 ```
