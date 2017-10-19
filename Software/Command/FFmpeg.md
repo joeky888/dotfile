@@ -228,7 +228,9 @@ aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapsh
 
 MinGW cross compile on Cygwin (To be continue)
 =====
-* Install packages
+* Install packages, make sure ffmpeg.exe is not in the $PATH
+* Prevent cygwin packages polluting mingw packages
+* The best way is to reinstall cygwin
 ```sh
 apt-cyg remove gcc-core gcc-g++ bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
 apt-cyg install autobuild autogen automake libtool yasm nasm
@@ -273,7 +275,7 @@ SET(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "-static-libgcc -static-libstdc++ -stati
 ```sh
 cd build/linux && cmake -G "Unix Makefiles" -DENABLE_SHARED:bool=off -DCMAKE_INSTALL_PREFIX:PATH=$HOME/Desktop/win64 ../../source && make -j 8 && make install
 ```
-* Install ffmpeg
+* Install ffmpeg W/O x265
 ```sh
 aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapshot.tar && cd ffmpeg && chmod -R 777 .
 ./configure --arch=x86_64 --target-os=mingw32 --host-os=x86_64-w64-mingw32 --cross-prefix=x86_64-w64-mingw32- --pkg-config=x86_64-w64-mingw32-pkg-config --enable-cross-compile --enable-w32threads --pkg-config-flags="--static" --sysroot="/usr/x86_64-w64-mingw32/sys-root" --sysinclude="-I/usr/x86_64-w64-mingw32/sys-root/mingw/include" --extra-cflags="-I$HOME/Desktop/win64/include" --extra-ldflags="-L$HOME/Desktop/win64/lib" --enable-nonfree --prefix=$HOME/Desktop/win64 --disable-runtime-cpudetect --enable-libx264 --enable-libmp3lame --enable-libfdk-aac --disable-ffplay --disable-ffserver --disable-debug --enable-version3 --enable-static --disable-shared --enable-gpl --enable-fontconfig --enable-iconv --enable-libass --enable-libfreetype --enable-libopenjpeg --enable-libopus --enable-libvorbis --enable-libvpx --enable-libwebp && make -j 8 && make install
