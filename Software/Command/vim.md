@@ -30,3 +30,10 @@ Generate a list of numbers
 14
 15
 ```
+
+Build Mingw64 vim under cygwin
+=====
+* $ cd src
+* Edit Make_cyg.mak and Make_cyg_ming.mak
+* $ make -f Make_cyg.mak
+* Open gvim.exe under src folder
