@@ -34,6 +34,16 @@ Generate a list of numbers
 Build Mingw64 vim under cygwin
 =====
 * $ cd src
-* Edit Make_cyg.mak and Make_cyg_ming.mak
-* $ make -f Make_cyg.mak
+* Edit Make\_cyg.mak and Make\_cyg\_ming.mak
+```make
+# Make_cyg.mak
+CROSS_COMPILE = x86_64-w64-mingw32-
+UNDER_CYGWIN = yes
+
+# Make_cyg_ming.mak
+ARCH=x86-64
+GUI=yes
+STATIC_STDCPLUS=yes
+```
+* $ make -f Make\_cyg.mak
 * Open gvim.exe under src folder
