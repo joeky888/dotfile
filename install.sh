@@ -135,7 +135,8 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     echo "Please install aria2"
     exit 1
   fi
-  export SUDO='cygstart --action=runas "$@" '
+#   export SUDO='cygstart --action=runas "$@" '
+  export SUDO=""
   export Home=$(cygpath -u "$USERPROFILE")
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe

@@ -79,10 +79,10 @@ if [[ $(command -v aria2c) ]]; then
 else
   alias youtube-dl='youtube-dl --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
 fi
-alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360]+bestaudio/best[height<=360]'"
-alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480]+bestaudio/best[height<=480]'"
-alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720]+bestaudio/best[height<=720]'"
-alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080]+bestaudio/best[height<=1080]'"
+alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30]+bestaudio/best'"
+alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30]+bestaudio/best'"
+alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30]+bestaudio/best'"
+alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30]+bestaudio/best'"
 alias youtube-dl-annotations="youtube-dl --write-annotations"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
