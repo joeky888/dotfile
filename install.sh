@@ -137,8 +137,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   fi
   export SUDO='cygstart --action=runas "$@" '
   export Home=$(cygpath -u "$USERPROFILE")
-  curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg > apt-cyg
-  install apt-cyg /bin && rm apt-cyg
+  curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
   InstallDotfileCygwin
