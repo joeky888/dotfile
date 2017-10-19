@@ -233,7 +233,7 @@ MinGW cross compile on Cygwin (To be continue)
 * The best way is to reinstall cygwin
 ```sh
 apt-cyg remove gcc-core gcc-g++ bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
-apt-cyg install autobuild autogen automake libtool yasm nasm
+apt-cyg install make autobuild autogen automake libtool yasm nasm
 apt-cyg install mingw64-x86_64-gcc-core mingw64-x86_64-gcc-g++ mingw64-x86_64-pkg-config
 apt-cyg install mingw64-x86_64-widl mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
 ```
@@ -256,7 +256,7 @@ aria2c ftp://ftp.videolan.org/pub/x264/snapshots/last_x264.tar.bz2 && 7z x last_
 ```sh
 aria2c https://github.com/videolan/x265/archive/master.zip && 7z x x265-master.zip && cd x265-master && chmod -R 777 .
 ```
-Add this code to the top of source/CMakeLists.txt file
+Add this code to the top of ./source/CMakeLists.txt file
 ```cmake
 # this one is important
 SET(CMAKE_SYSTEM_NAME Windows)
