@@ -35,6 +35,7 @@ Build Mingw64 vim under cygwin
 =====
 * $ cd src
 * Edit Make\_cyg.mak and Make\_cyg\_ming.mak
+* $ choco install miniconda miniconda3 -y
 * $ python2 --version ; python3 --version
 ```make
 # Make_cyg.mak
