@@ -30,6 +30,8 @@ Open cmd and run .bat file
 Install a .msi file
 =====
 * $ wine msiexec /i filename.msi
+* Uninstall a .msi file
+* $ wine msiexec /x filename.msi
 
 Install mono or dotnet
 =====
