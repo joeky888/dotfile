@@ -35,6 +35,7 @@ Build Mingw64 vim under cygwin
 =====
 * $ cd src
 * Edit Make\_cyg.mak and Make\_cyg\_ming.mak
+* $ python2 --version ; python3 --version
 ```make
 # Make_cyg.mak
 CROSS_COMPILE = x86_64-w64-mingw32-
@@ -42,8 +43,21 @@ UNDER_CYGWIN = yes
 
 # Make_cyg_ming.mak
 ARCH=x86-64
+FEATURES=HUGE
+CROSS=yes
 GUI=yes
 STATIC_STDCPLUS=yes
+PYTHON=/cygdrive/c/ProgramData/Miniconda2
+PYTHON3=/cygdrive/c/ProgramData/Miniconda3
+DYNAMIC_PYTHON=yes
+DYNAMIC_PYTHON3=yes
+PYTHON_VER=27
+PYTHON3_VER=36
+PYTHONINC=-I$(PYTHON)/include
+PYTHON3INC=-I$(PYTHON3)/include
+PYTHONLIB=-L$(PYTHON)/libs -lpython$(PYTHON_VER)
+PYTHON3LIB=-L$(PYTHON3)/libs -lpython$(PYTHON3_VER)
 ```
 * $ make -f Make\_cyg.mak
-* Open gvim.exe under src folder
+* $ cp gvim.exe ../runtime/gvim.exe
+* Open gvim.exe under runtime folder
