@@ -9,6 +9,9 @@ $env:JAVA_TOOL_OPTIONS = " -Dfile.encoding=UTF8 "
 # Increase history size
 $global:MaximumHistoryCount = 10000
 
+# Increase history in console buffer
+[Console]::BufferHeight = 20000
+
 # Disable beep
 Set-PSReadlineOption -BellStyle None
 
