@@ -98,6 +98,7 @@ Android
     * uBlock Origin
     * Video Background Play Fix
     * h264ify
+    * Video Speed Controller
 * OpenLauncher
 * Facebook Messenger
 * LINE
