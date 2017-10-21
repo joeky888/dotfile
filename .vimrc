@@ -1265,7 +1265,13 @@ function! Reverse()
   let lines[0] = lines[0][column_start - 1:]
   let s = join(lines, "\n")
   let sv = join(reverse(split(s, '.\zs')), '')
-  exe "s/\\%V.*\\%V./".sv."/"
+  try
+    exe "s/\\%V.*\\%V./".sv."/"
+  catch /:E486:/
+    echohl iBlue | echon "     Info     "
+    echohl Blue | echon  " Please select some text first!"
+    echohl None
+  endtry
 endfunction
 nnoremenu Edit.Reverse\ String Vc<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
 vnoremenu Edit.Reverse\ String c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
