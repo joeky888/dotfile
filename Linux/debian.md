@@ -1,5 +1,6 @@
 Install latest packages
 =====
+* Download debian iso with non-free firmware
 * unstable > testing > stable
 * $ sudoedit /etc/apt/sources.list
 * Add "deb http://ftp.<COUNTRY>.debian.org/debian/ unstable main contrib non-free"
