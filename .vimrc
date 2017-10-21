@@ -1254,6 +1254,23 @@ vnoremenu Edit.Toggle\ case.Lower          u
 command! -range=% ToggleCaseToUpper  <line1>,<line2>s/\%V.*\%V./\U&/
 command! -range=% ToggleCaseToLower  <line1>,<line2>s/\%V.*\%V./\L&/
 
+function! Reverse()
+  let [line_start, column_start] = getpos("'<")[1:2]
+  let [line_end, column_end] = getpos("'>")[1:2]
+  let lines = getline(line_start, line_end)
+  if len(lines) == 0
+      return ''
+  endif
+  let lines[-1] = lines[-1][: column_end - (&selection == 'inclusive' ? 1 : 2)]
+  let lines[0] = lines[0][column_start - 1:]
+  let s = join(lines, "\n")
+  let sv = join(reverse(split(s, '.\zs')), '')
+  exe "s/\\%V.*\\%V./".sv."/"
+endfunction
+nnoremenu Edit.Reverse\ String Vc<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
+vnoremenu Edit.Reverse\ String c<C-O>:set revins<CR><C-R>"<Esc>:set norevins<CR>
+command! -range ReverseString <line1>,<line2>call Reverse()
+
 " Opencc
 nnoremenu Edit.Opencc.Traditional         :%!opencc -c s2twp.json<CR>
 nnoremenu Edit.Opencc.Simplified          :%!opencc -c tw2sp.json<CR>
