@@ -40,6 +40,11 @@ GRUB_GFXPAYLOAD_LINUX=1024x768x16
 ```
 * $ sudo reboot
 
+Change timezone
+=====
+* $ timedatectl list-timezones | grep Asi
+* $ sudo timedatectl set-timezone Asia/Taipei
+
 Listen to music without x
 =====
 * $ sudo apt-fast install alsa alsa-tools vlc-nox -y
