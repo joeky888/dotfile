@@ -23,3 +23,13 @@ deb http://security.debian.org/ testing/updates main contrib non-free
 Enable multi-architecture
 =====
 * $ sudo dpkg --add-architecture i386
+
+Install Nvidia driver (Epic fail!!)
+=====
+* $ sudo apt purge xserver-xorg-video-nouveau -y
+* $ sudo aptitude install nvidia-driver bumblebee-nvidia primus -y
+* $ sudo systemctl enable bumblebeed && sudo systemctl start bumblebeed
+* $ sudo rm /etc/X11/xorg.conf
+* $ sudo nvidia-xconfig
+* $ sudo optirun nvidia-settings -c :8
+* $ sudo update-grub && sudo update-grub2
