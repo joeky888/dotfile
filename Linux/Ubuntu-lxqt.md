@@ -14,6 +14,15 @@ Config CJK font in tty
 * $ sudo usermod -a -G video $(whoami)
 * $ sudo reboot
 
+Mount a USB drive
+=====
+* $ lsblk
+* $ sudo blkid
+* $ sudo fdisk -l
+* $ sudo mkdir /media/usb
+* $ sudo mount /dev/sdb1 /media/usb
+* $ sudo umount /media/usb
+
 Change tty resolution
 =====
 * $ sudo apt-fast install virtualbox-guest-dkms -y
