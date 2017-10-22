@@ -89,6 +89,7 @@ Linux
 =====
 * Qupzilla
 * NetworkManager / nmtui
+* shutter
 * Conky (with weather)
 
 Android
