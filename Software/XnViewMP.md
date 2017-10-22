@@ -37,4 +37,4 @@ Settings
 
 Set XnView as default program for Win10+
 =====
-* Windows Settings -> System -> Default apps -> set defaults by app -> Select XnView (on the left side) -> Choose defaults for this program -> check all
+* Windows Settings -> Apps -> Default apps -> set defaults by app -> Select XnView (on the left side) -> Choose defaults for this program -> check all
