@@ -2,7 +2,7 @@
 
 /* Font */
 *, * *, *[id], *[class], *[name]{
-    font-family: "Ubuntu Mono", "Droid Sans Fallback", "DroidMono", "Inziu Iosevka TC" !important;
+    font-family: "Ubuntu Mono", "Droid Sans Fallback", "DroidMono", "Sarasa Mono TC" !important;
     font-weight: 400!important;
 }
 

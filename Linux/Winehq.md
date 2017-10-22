@@ -13,7 +13,7 @@ Install CJK font
 1. manual
     * Install a Chinese input method on Linux
 ```sh
-aria2c "http://7xpdnl.dl1.z0.glb.clouddn.com/inziu-iosevka-1.13.3.7z" -o "inziu-iosevka.7z" && 7z -o"inziu" x "inziu-iosevka.7z" && sudo cp -r inziu /usr/share/fonts/truetype && sudo fc-cache -f ; mv -f inziu/*  ~/.wine/drive_c/windows/Fonts/ && wine regedit ~/dotfile/Linux/cjk.reg && rm -rf inziu*
+aria2c "https://github.com/j16180339887/CJK-font/raw/master/wqy-microhei.ttc" -d / -o ~/.wine/drive_c/windows/Fonts/wqy-microhei.ttc && wine regedit ~/dotfile/Linux/cjk.reg
 ```
     * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive\_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
 2. Using winetricks
