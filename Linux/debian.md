@@ -1,3 +1,9 @@
+Download iso
+=====
+* Download debian-netinst.iso and debian firmware.zip
+* Burn debian-netinst.iso to USB drive
+* unzip firmware.zip to both / and /firmware of the USB drive
+
 Install latest packages
 =====
 * Download debian iso with non-free firmware
