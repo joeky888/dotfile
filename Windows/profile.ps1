@@ -34,6 +34,11 @@ Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
 Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
 Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
 Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
+Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
+  [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+  [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item 'C:\Users\joeky\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
+  [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+}
 Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
   [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
   [Microsoft.PowerShell.PSConsoleReadLine]::Insert("clear")
