@@ -122,6 +122,7 @@ Android
 
 Good Software Design
 =====
+* Use Cmake to manage build process of the project
 * Support "Ctrl + T" New Tab
 * Customizable hotkeys
 * Customizable theming (and Font-Family) with json format
