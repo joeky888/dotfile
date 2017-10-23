@@ -88,6 +88,9 @@ Function upgradePip {
   pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
   pip install --upgrade https://github.com/requests/requests/archive/master.zip
 }
+Function upgradeProfile {
+  curl https://raw.githubusercontent.com/j16180339887/dotfile/master/Windows/profile.ps1 -o ~/Documents/WindowsPowerShell/profile.ps1
+}
 Function gvim {
   $Commandvim = "C:\vim\vim80\gvim.exe"
   $Parmsvim = ""
