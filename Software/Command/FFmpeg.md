@@ -226,7 +226,7 @@ aria2c https://ffmpeg.org/releases/ffmpeg-snapshot.tar.bz2 && 7z x ffmpeg-snapsh
 * If ./configure failed
     * check the error message at end of the file 'config.log'
 
-MinGW cross compile on Cygwin (To be continue)
+MinGW cross compile on Cygwin
 =====
 * Install packages, make sure ffmpeg.exe is not in the $PATH (choco uninstall ffmpeg)
 * Prevent cygwin packages polluting mingw packages

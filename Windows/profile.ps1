@@ -129,4 +129,7 @@ if($env:Path -NotLike "*C:\Program Files (x86)\Nmap*") {
   # choco install nmap
   $env:Path += ";C:\Program Files (x86)\Nmap"
 }
-
+if($env:Path -NotLike "*C:\zulu\bin*") {
+  # choco install nmap
+  $env:Path += ";C:\zulu\bin"
+}
