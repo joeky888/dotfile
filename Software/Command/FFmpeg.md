@@ -186,7 +186,7 @@ Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 
 Compile ffmpeg on Cygwin
 =====
-* Install (Cygwin) -> libtool yasm yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
+* Install (Cygwin) -> libtool yasm yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopenjp2-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
 * Install libmp3
 ```sh
 aria2c https://github.com/j16180339887/lame/archive/master.zip && 7z x lame-master.zip && cd lame-master && chmod -R 777 .
@@ -235,7 +235,7 @@ MinGW cross compile on Cygwin (To be continue)
 apt-cyg remove gcc-core gcc-g++ bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
 apt-cyg install make autobuild autogen automake libtool yasm nasm
 apt-cyg install mingw64-x86_64-gcc-core mingw64-x86_64-gcc-g++ mingw64-x86_64-pkg-config
-apt-cyg install mingw64-x86_64-widl mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
+apt-cyg install mingw64-x86_64-widl mingw64-x86_64-gettext mingw64-x86_64-win-iconv mingw64-x86_64-fontconfig mingw64-x86_64-binutils mingw64-x86_64-libass mingw64-x86_64-fribidi mingw64-x86_64-freetype2 mingw64-x86_64-openjpeg mingw64-x86_64-openjpeg2 mingw64-x86_64-opus mingw64-x86_64-libvorbis mingw64-x86_64-libvpx mingw64-x86_64-opusfile mingw64-x86_64-libwebp mingw64-x86_64-bzip2
 ```
 * Install liblame
 ```sh
