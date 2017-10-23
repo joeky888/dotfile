@@ -16,4 +16,5 @@ Turbo Download Manager (Opera Extension)
 Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
-
+Adobe Flash:
+    * chrome://Plugins -> Search "flash" -> Enable
