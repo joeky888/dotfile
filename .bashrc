@@ -261,6 +261,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   unsetopt EXTENDED_HISTORY # Use bash-like history
   unsetopt SHARE_HISTORY # Use bash-like history
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
+  unsetopt AUTOCD # Don't cd to the directory by just typing its name
   setopt INC_APPEND_HISTORY # Use bash-like history
 
   # alt + arrow key to move
