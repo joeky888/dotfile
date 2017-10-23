@@ -130,6 +130,6 @@ if($env:Path -NotLike "*C:\Program Files (x86)\Nmap*") {
   $env:Path += ";C:\Program Files (x86)\Nmap"
 }
 if($env:Path -NotLike "*C:\zulu\bin*") {
-  # choco install nmap
   $env:Path += ";C:\zulu\bin"
 }
+$env:JAVA_HOME="C:\zulu"
