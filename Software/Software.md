@@ -62,7 +62,7 @@ Windows
 * Greenshot
 * Rufus
 * x64dbg / snowman
-* Rainmeter (with weather)
+* Rainmeter (with Circle-Weather)
 * MPC-HC
 * SumatraPDF
 * Sarasa Mono TC font (for console)
@@ -73,11 +73,11 @@ Windows
 Windows XP
 =====
 * Qupzilla 1.8.9
-* gVim
+* Gvim
 * 7zip
 * git 2.10.0
-* sogou input (zhuyin/pinyin)
-* wps office
+* Sogou input (zhuyin/pinyin)
+* WPS office
 * VLC
 
 Mac
@@ -95,7 +95,7 @@ Linux
 Android
 =====
 * Firefox Nightly
-    * Stylus
+    * Stylus + Midnight Surfing Global Dark Style
     * Undo Close for mobile
     * uBlock Origin
     * Video Background Play Fix
