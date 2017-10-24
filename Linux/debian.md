@@ -1,8 +1,21 @@
 Download iso
 =====
-* Download debian-netinst.iso and debian firmware.zip
+* Download debian-netinst.iso and /cdimage/unofficial/non-free/firmware/unstable/current/firmware.zip
 * Burn debian-netinst.iso to USB drive
 * unzip firmware.zip to both / and /firmware of the USB drive
+
+Sudo
+====
+* $ apt install sudo
+* $ visudo
+```sudoers
+##
+## User privilege specification
+##
+root  ALL=(ALL) ALL
+joeky ALL=(ALL) ALL
+Defaults timestamp_timeout=-1
+```
 
 Install latest packages
 =====
