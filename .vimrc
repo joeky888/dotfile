@@ -59,9 +59,7 @@ set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set sessionoptions-=options,localoptions,globals,buffers " Don't save these to the session file
 set sessionoptions+=winpos,winsize,resize, " Save these to the session file
 autocmd VimEnter * set noerrorbells " Disable error sound
-set vb t_vb= " disable visual bell
-set t_vb= " disable visual bell
-autocmd VimEnter * set vb t_vb= " Disable visual bell
+autocmd VimEnter * set vb t_vb= | set t_vb= " Disable visual bell
 set smartcase& " No smart
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
@@ -170,8 +168,7 @@ autocmd BufRead,BufNewFile,BufWritePost,BufAdd,BufNew,FileType,SessionLoadPost *
 """ Prevent lag when hitting ESC
 set ttimeoutlen=10
 set timeoutlen=10
-au InsertEnter * set timeoutlen=10 | set ignorecase
-au InsertLeave * set timeoutlen=10
+au InsertEnter * set ignorecase
 
 """ When opening a file : - Reopen at last position - Display info
 function! GetFileInfo()
@@ -334,8 +331,9 @@ function! MySave()
   try
     normal! `j
   catch /:E20:/
-    " mark not set error
-"     echon "Mark not set, Try again"
+    echohl iBlue | echon "     Info     "
+    echohl Blue | echon  " E20: Mark not set, please try again. "
+    echohl None
   endtry
 endfunction
 function! OpenLastBufferInNewTab()
@@ -507,14 +505,9 @@ inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
 vnoremap <silent> <C-k> :d _<CR>
 
 " Ctrl D - Duplicate Line
-try
-  nnoremap <silent> <C-d> mj:t.<CR>`jj
-  inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
-  vnoremap <C-d> yPgv
-catch /:E20:/
-  " mark not set error
-"   echon "Mark not set, Try again"
-endtry
+nnoremap <silent> <C-d> mj:t.<CR>`jj
+inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
+vnoremap <C-d> yPgv
 
 " Ctrl Q - Visual block selection
 nnoremap <C-q> <C-v>
@@ -790,9 +783,6 @@ vnoremap <silent> \ <ESC>:call WrapSelection("\\","\\")<CR>
 inoremap <silent> { {<C-r>=AutoPair("}")<CR>
 inoremap <silent> [ [<C-r>=AutoPair("]")<CR>
 inoremap <silent> ( (<C-r>=AutoPair(")")<CR>
-" inoremap {<CR> {<CR>}<ESC>O
-" inoremap [<CR> [<CR>]<ESC>O
-" inoremap (<CR> (<CR>)<ESC>O
 
 " Commenting blocks of code.
 autocmd FileType c,cpp,java         let b:comment_leader = '\/\/'
