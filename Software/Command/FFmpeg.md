@@ -160,6 +160,13 @@ Show media info
 * Or
 * $ ffprobe -i input.mkv
 
+Reverse (play backwards)
+=====
+* Reverse a video and audio
+* $ ffmpeg -i inputfile.mp4 -vf reverse -af areverse reversed.mp4
+* Reverse audio only
+* $ ffmpeg -i inputfile.mp4 -af areverse reversed.opus
+
 Convert a folder
 =====
 * opus to mp3
