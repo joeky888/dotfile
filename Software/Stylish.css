@@ -2,7 +2,7 @@
 
 /* Font */
 *, * *, *[id], *[class], *[name]{
-    font-family: "Ubuntu Mono", "Droid Sans Fallback", "DroidMono", "Sarasa Mono TC", "FontAwesome" !important;
+    font-family: "Ubuntu Mono", "Droid Sans Fallback", "DroidMono", "Sarasa Mono TC", "FontAwesome", "FontawesomeCom" !important;
     font-weight: 400!important;
 }
 
