@@ -8,7 +8,8 @@
     "powermode.enabled": true,
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai Dimmed",
-    "editor.mouseWheelZoom": true
+    "editor.mouseWheelZoom": true,
+    "editor.cursorBlinking": "solid"
 }
 
 [
