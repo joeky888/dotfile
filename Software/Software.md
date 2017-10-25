@@ -29,6 +29,7 @@ Software
 * Audacity
 * LMMS
 * Qt
+* qTox
 * PyCharm Community Edition
 * Cheat Engine
 * WPS Office (Hong Kong)
