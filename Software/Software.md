@@ -69,7 +69,7 @@ Windows
 * Sarasa Mono TC font (for console)
 * $ Set-ExecutionPolicy RemoteSigned
 * $ choco install aria2 miniconda miniconda3 nmap ffmpeg youtube-dl -y --pre
-* $ choco install vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
+* $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
 
 Windows XP
 =====
