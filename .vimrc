@@ -1091,7 +1091,6 @@ function! SyntaxMonokai()
   hi Cursor               ctermfg=16      ctermbg=253     guifg=#000000     guibg=#F8F8F0
   hi CursorColumn         ctermbg=236     guibg=#293739
   hi CursorLine           ctermbg=234     cterm=none      guibg=#293739
-  hi CursorLineNr         ctermfg=208     cterm=none      guifg=#FD971F     gui=none
   hi Debug                ctermfg=225     cterm=none      guifg=#BCA3A3     gui=none
   hi Define               ctermfg=81      guifg=#66D9EF
   hi Delimiter            ctermfg=241     guifg=#8F8F8F
@@ -1679,6 +1678,10 @@ if has("gui_running")
   set number
   set lines=999 columns=999 " set window Maximized
   set fileformats=dos,unix,mac
+  if has("multi_byte_ime")
+    au InsertEnter * set iminsert=2 " Enable input method
+    au InsertLeave * set iminsert=0
+  endif
 
   " Ctrl C is copying line if there is no word selected
   nnoremap <C-c> mjV"+y:redraw!<CR>`ji
