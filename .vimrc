@@ -1679,8 +1679,7 @@ if has("gui_running")
   set lines=999 columns=999 " set window Maximized
   set fileformats=dos,unix,mac
   if has("multi_byte_ime")
-    au InsertEnter * set iminsert=2 " Enable input method
-    au InsertLeave * set iminsert=0
+    set iminsert=2 " This could cause statusline color act weirdly
   endif
 
   " Ctrl C is copying line if there is no word selected
