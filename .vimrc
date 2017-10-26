@@ -1076,11 +1076,7 @@ function! SyntaxMonokai()
   hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
 
   " Init StatusLine colors
-  hi User1 ctermfg=0 guifg=#000000 ctermbg=161   guibg=#d7005f
-  hi User2 ctermbg=0 guibg=#2e3436 ctermfg=161   guifg=#d7005f
-  hi TabLineSel ctermfg=0 cterm=none ctermbg=161
-  hi TabLine ctermbg=0 ctermfg=161
-  hi CursorLineNr ctermfg=161   guifg=#d7005f
+  call ChangeAccentColor()
 
   hi Boolean              ctermfg=135     guifg=#AE81FF
   hi Character            ctermfg=144     guifg=#E6DB74
