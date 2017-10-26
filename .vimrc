@@ -1160,6 +1160,7 @@ command! -nargs=1 OpenDroppedFiles call OpenDroppedFiles(<f-args>)
 if has("win32") || has("win64")
   let $PATH .= ';C:\ProgramData\Miniconda2' " choco install miniconda
   let $PATH .= ';C:\ProgramData\Miniconda3' " choco install miniconda3
+"   set pythonthreedll=python36.dll " set python3 dll name
 endif
 
 if has("python")
