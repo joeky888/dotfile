@@ -912,8 +912,7 @@ function! LastAccentColor()
   if !exists('b:lastMode')
     let b:lastMode = g:currentmode[mode()]
     call ChangeAccentColor()
-  endif
-  if b:lastMode != g:currentmode[mode()]
+  elseif b:lastMode != g:currentmode[mode()]
     let b:lastMode = g:currentmode[mode()]
     call ChangeAccentColor()
   endif
@@ -1076,7 +1075,7 @@ function! SyntaxMonokai()
   hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
 
   " Init StatusLine colors
-  call ChangeAccentColor()
+  if !exists('b:lastMode') | let b:lastMode = g:currentmode[mode()] | call ChangeAccentColor() | endif
 
   hi Boolean              ctermfg=135     guifg=#AE81FF
   hi Character            ctermfg=144     guifg=#E6DB74
