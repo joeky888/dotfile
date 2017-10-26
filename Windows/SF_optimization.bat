@@ -15,21 +15,21 @@ del /f /q %USERPROFILE%\recent\*.*
 del /f /s /q "%USERPROFILE%\Local Settings\Temporary Internet Files\*.*"
 del /f /s /q "%USERPROFILE%\Local Settings\Temp\*.*"
 del /f /s /q "%USERPROFILE%\recent\*.*"
-del /f /s /q "%ProgramFiles(x86)%\WAYI\SFOnline\XIGNCODE\*"
-del /f /s /q "%ProgramFiles(x86)%\WAYI\SFOnline\SpecialForce_exe_log.edl"
+del /f /s /q "C:\Dragonfly\Special Force\XIGNCODE\*"
+del /f /s /q "C:\Dragonfly\Special Force\SpecialForce_exe_log.edl"
 
-break>"%ProgramFiles(x86)%\WAYI\SFOnline\data\lobby\SF_Curse.drk"
+break>"C:\Dragonfly\Special Force\data\lobby\SF_Curse.drk"
 
 :: Lower the mtu value, default mtu=1500
 :: netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
 
 :: Reset Networking
-ipconfig /release
-ipconfig /renew
-arp -d *
-nbtstat -R
-nbtstat -RR
-ipconfig /flushdns
-ipconfig /registerdns
+:: ipconfig /release
+:: ipconfig /renew
+:: arp -d *
+:: nbtstat -R
+:: nbtstat -RR
+:: ipconfig /flushdns
+:: ipconfig /registerdns
 
 pause
