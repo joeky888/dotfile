@@ -13,6 +13,7 @@ HTTPS Everywhere
 Disconnect
 Remove Google Redirection
 Turbo Download Manager (Opera Extension)
+Custom New Tab Page (Opera Extension) and set to "opera://news"
 Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
