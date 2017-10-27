@@ -6,6 +6,17 @@ Merge 1.mp4 2.mp4 3.mp4 to merge.mp4
 * file '/path/to/3.mp4'
 * $ ffmpeg -y -f concat -safe 0 -i list.txt -c copy merge.mp4
 
+Concat images into one
+=====
+* Vertically
+```sh
+ffmpeg -i a.jpg -i b.jpg -i c.jpg -filter_complex vstack=inputs=3 merge.png
+```
+* Horizontally
+```sh
+ffmpeg -i a.jpg -i b.jpg -i c.jpg -filter_complex hstack=inputs=3 merge.png
+```
+
 Embed sub.srt to input.mp4 (hardsub)
 =====
 * $ ffmpeg -i sub.srt sub.ass
