@@ -30,7 +30,7 @@ Settings
         * Misc
             * Show Video -> uncheck
     * Fullscreen
-        * Fullscreen -> Auto image size -> Fit image to window width or height
+        * Fullscreen -> Auto image size -> Fit image to window width
         * Fullscreen -> Show info -> uncheck
         * Fullscreen -> Background color -> set to black
 * View -> Auto image size -> Fit image to window height
