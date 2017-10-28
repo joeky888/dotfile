@@ -103,6 +103,7 @@ Android
     * h264ify
     * Video Speed Controller
 * OpenLauncher
+* Clock by Google
 * Facebook Messenger
 * LINE
 * Barcode Scanner ZXing
