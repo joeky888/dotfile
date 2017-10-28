@@ -1,5 +1,6 @@
 A good Android phone
 =====
+* Heavy battery and long battery life
 * Supported by Lineage OS
 * Support OTG
 * Support large size external card
