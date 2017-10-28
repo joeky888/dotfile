@@ -1219,9 +1219,12 @@ command! XmlMinify      execute "call XmlMinify()"
 command! -range=% XXD <line1>,<line2>%!xxd
 
 " Merge selected to one line
-nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
-vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
-command! -range=% MergeToOneLine <line1>,<line2>%left | <line1>,<line2>%j!
+nnoremenu Edit.Merge\ to\ one\ line  :%j!<CR>
+vnoremenu Edit.Merge\ to\ one\ line  gv:%j!<CR>
+command! -range=% MergeToOneLine <line1>,<line2>%j!
+" nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
+" vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
+" command! -range=% MergeToOneLine <line1>,<line2>%left | <line1>,<line2>%j!
 
 " Remove something
 nnoremenu Edit.Remove.Empty\ lines          :g/^$/de<CR>
