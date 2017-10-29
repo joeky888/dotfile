@@ -571,7 +571,7 @@ forever()
     echo "ex: forever \"ls -a\""
     echo "Run commands forever!"
   else
-    while true; do eval $* ; done
+    while true; do $* ; done
   fi;
 }
 
