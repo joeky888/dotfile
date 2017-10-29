@@ -41,6 +41,7 @@ Experience
 | Vim                               |  (2016-)     |
 | VSCode                            |  (2016-)     |
 | Cygwin                            |  (2015-)     |
+| Powershell                        |  (2017-)     |
 | Qt                                |  (2014-)     |
 | MS Office                         |  (2010-2014) |
 | Libre Office                      |  (2014-2015) |
