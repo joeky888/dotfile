@@ -20,5 +20,22 @@ Convert a input.pdf to greyscale
 
 Multiple pages pdf to one long page pdf
 =====
-* pdfjam input.pdf --nup 1x1 --no-landscape --outfile merge.pdf
+* Currently this is not available on Cygwin
+* sudo apt-fast install texlive-extra-utils texlive-latex-recommended --no-install-recommends -y
+* Vertically
+```sh
+pdfjam input.pdf --nup 1x2 --no-landscape --outfile merge.pdf
+```
+* Horizontally
+```sh
+pdfjam input.pdf --nup 2x1 --landscape --outfile merge.pdf
+```
 * Or just using online pdf tools [](http://www.pdfdo.com/pdf-pages-merge.aspx)
+
+Convert PDF to Postscript and vice versa
+=====
+```sh
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sOutputFile=output.ps input.pdf
+gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dHaveTrueTypes=true -dEmbedAllFonts=true -dSubsetFonts=false -o output.pdf input.ps
+```
+
