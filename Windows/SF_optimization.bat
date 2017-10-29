@@ -20,10 +20,10 @@ del /f /s /q "C:\Dragonfly\Special Force\SpecialForce_exe_log.edl"
 
 break>"C:\Dragonfly\Special Force\data\lobby\SF_Curse.drk"
 
-:: Lower the mtu value, default mtu=1500
+:: == Lower the mtu value, default mtu=1500 ==
 :: netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
 
-:: Reset Networking
+:: == Reset Networking ==
 :: ipconfig /release
 :: ipconfig /renew
 :: arp -d *
@@ -31,5 +31,6 @@ break>"C:\Dragonfly\Special Force\data\lobby\SF_Curse.drk"
 :: nbtstat -RR
 :: ipconfig /flushdns
 :: ipconfig /registerdns
+:: netsh winsock reset
 
 pause
