@@ -377,13 +377,10 @@ function! DeleteLine()
   normal! "_dd
   call setpos(".", savepos)
 endfunction
-function! SetPaste()
-  set paste
-  return ''
-endfunction
-
-function! SetNoPaste()
-  set nopaste
+function! PasteInsertMode()
+"   set paste
+  normal! gP
+"   set nopaste
   return ''
 endfunction
 
@@ -474,12 +471,11 @@ vnoremap <silent> <C-x> d<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt")
 " inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
 nnoremap <silent> <C-v> gPi<C-g>u
 vnoremap <silent> <C-v> "_dgP
+inoremap <silent> <C-v> <C-r>=PasteInsertMode()<CR><C-g>u
 if has('clipboard')
   cnoremap <C-v> <C-r>+
-  inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>+<C-r>=SetNoPaste()<CR><C-g>u
 else
   cnoremap <C-v> <C-r>"
-  inoremap <silent> <C-v> <C-r>=SetPaste()<CR><C-r>"<C-r>=SetNoPaste()<CR><C-g>u
 endif
 
 " Insert - Paste
