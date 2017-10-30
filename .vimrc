@@ -82,7 +82,8 @@ let g:markdown_fenced_languages =
 \[
   \"c","cpp","java","javascript","ruby","python","vim",
   \"css","html","xml","json","cmake","yaml","sh","conf",
-  \"zsh","tmux","debsources","resolv","sudoers","make"
+  \"zsh","tmux","debsources","resolv","sudoers","make",
+  \"dosbatch"
 \]
 
 " Open all cmd args in new tabs
