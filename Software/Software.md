@@ -34,6 +34,7 @@ Software
 * Cheat Engine
 * WPS Office (Hong Kong)
 * Libre Office
+* GSView
 * Popcorn Time
 * GeoGebra
 * Virtualbox
