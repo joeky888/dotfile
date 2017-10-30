@@ -33,8 +33,8 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\jar_auto_file\shell\Open\command]
 @="C:\\zulu\\bin\\java.exe -jar \"%1\""
 
-[HKEY_CLASSES_ROOT\SumatraPDF\shell\Open with inverted color\command]
-@="C:\\Program Files\\SumatraPDF\\SumatraPDF.exe -invert-colors \"%1\""
+[HKEY_CLASSES_ROOT\*\shell\Open with invert color\command]
+@="C:\\ProgramData\\chocolatey\\bin\\SumatraPDF.exe -invert-colors \"%1\""
 
 [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
 "JAVA_TOOL_OPTIONS"=" -Dfile.encoding=UTF8 "
