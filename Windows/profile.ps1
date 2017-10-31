@@ -135,8 +135,11 @@ if($env:Path -NotLike "*C:\Program Files (x86)\Nmap*") {
   # choco install nmap
   $env:Path += ";C:\Program Files (x86)\Nmap"
 }
-if($env:Path -NotLike "*C:\zulu\bin*") {
+if (Test-Path -Path "C:\zulu"){
   # Download openjdk from Zulu
-  $env:Path += ";C:\zulu\bin"
-  $env:JAVA_HOME="C:\zulu"
+  if($env:Path -NotLike "*C:\zulu\bin*") {
+    $env:Path += ";C:\zulu\bin"
+    $env:JAVA_HOME="C:\zulu"
+  }
 }
+
