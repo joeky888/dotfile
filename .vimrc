@@ -1679,6 +1679,8 @@ if has("gui_running")
   set fileformats=dos,unix,mac
   if has("multi_byte_ime")
     set iminsert=2 " This could cause statusline color act weirdly
+    set imcmdline
+    set imsearch=2
   endif
 
   " Ctrl C is copying line if there is no word selected
