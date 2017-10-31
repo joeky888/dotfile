@@ -36,7 +36,7 @@ Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
 Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
 Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
   [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-  [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item 'C:\Users\joeky\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
+  [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
   [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
 Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
@@ -112,7 +112,6 @@ Function youtube-dl-mp3 {
   youtube-dl.exe --extract-audio --audio-format mp3 --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $env:DOWNLOADARGS $args
 }
 
-# Add chocolatey packages to path
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   # choco install miniconda3
   $env:Path += ";C:\ProgramData\Miniconda3"
@@ -129,15 +128,12 @@ if($env:Path -NotLike "*C:\ProgramData\Miniconda2*") {
   Set-Alias conda2 C:\ProgramData\Miniconda2\Scripts\conda.exe
   Set-Alias python2 C:\ProgramData\Miniconda2\python.exe
 }
-if($env:Path -NotLike "*C:\GnuWin\bin*") {
-  # choco install gnuwin
-  $env:Path += ";C:\GnuWin\bin"
-}
 if($env:Path -NotLike "*C:\Program Files (x86)\Nmap*") {
   # choco install nmap
   $env:Path += ";C:\Program Files (x86)\Nmap"
 }
 if($env:Path -NotLike "*C:\zulu\bin*") {
+  # Download openjdk from Zulu
   $env:Path += ";C:\zulu\bin"
+  $env:JAVA_HOME="C:\zulu"
 }
-$env:JAVA_HOME="C:\zulu"
