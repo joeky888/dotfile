@@ -89,10 +89,10 @@ Function upgradePip {
   pip install --upgrade https://github.com/requests/requests/archive/master.zip
 }
 Function upgradeProfile {
-  curl https://raw.githubusercontent.com/j16180339887/dotfile/master/Windows/profile.ps1 -o ~/Documents/WindowsPowerShell/profile.ps1
+  Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/Windows/profile.ps1 -o ~/Documents/WindowsPowerShell/profile.ps1
 }
 Function upgradeVimrc {
-  curl https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
+  Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
 }
 Function gvim {
   $Commandvim = "C:\vim\vim80\gvim.exe"
