@@ -15,8 +15,9 @@ del /f /q %USERPROFILE%\recent\*.*
 del /f /s /q "%USERPROFILE%\Local Settings\Temporary Internet Files\*.*"
 del /f /s /q "%USERPROFILE%\Local Settings\Temp\*.*"
 del /f /s /q "%USERPROFILE%\recent\*.*"
-del /f /s /q "C:\Dragonfly\Special Force\XIGNCODE\*"
+del /f /s /q "C:\Dragonfly\Special Force\XIGNCODE\*.*"
 del /f /s /q "C:\Dragonfly\Special Force\SpecialForce_exe_log.edl"
+del /f /s /q "C:\Dragonfly\Special Force\GameGuard\*.erl"
 
 break>"C:\Dragonfly\Special Force\data\lobby\SF_Curse.drk"
 
