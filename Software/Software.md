@@ -66,7 +66,6 @@ Windows
 * x64dbg / snowman
 * Rainmeter (with Circle-Weather)
 * MPC-HC
-* SumatraPDF
 * Sarasa Mono TC font (for console)
 * $ Set-ExecutionPolicy RemoteSigned
 * $ choco install aria2 miniconda miniconda3 nmap ffmpeg youtube-dl greenshot sumatrapdf 7zip adb -y --pre
