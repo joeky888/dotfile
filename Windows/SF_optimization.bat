@@ -22,9 +22,9 @@ del /f /s /q "C:\Dragonfly\Special Force\GameGuard\*.erl"
 break>"C:\Dragonfly\Special Force\data\lobby\SF_Curse.drk"
 
 :: == Remove Windows.old ==
-:: takeown /F "C:\Windows.old\*" /R /A
-:: cacls "C:\Windows.old\*.*" /T /grant administrators:F
-:: rmdir /S /Q "C:\Windows.old\"
+:: takeown /F C:\Windows.old\* /R /A
+:: cacls C:\Windows.old\*.* /T /grant administrators:F
+:: rmdir /S /Q C:\Windows.old\
 
 :: == Lower the mtu value, default mtu=1500 ==
 :: netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
