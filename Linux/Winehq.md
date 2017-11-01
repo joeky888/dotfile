@@ -23,8 +23,16 @@ aria2c "https://github.com/j16180339887/CJK-font/raw/master/wqy-microhei.ttc" -d
     * $ sh winetricks wenquanyi
     * $ wine regedit ~/dotfile/Linux/cjk.reg
 
+Install winetricks and winetricks packages
+=====
+* $ aria2c https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
+* See https://github.com/Winetricks/winetricks/blob/master/files/verbs/download.txt
+* $ bash winetricks cjkfonts cmd corefonts 7zip vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2017 d3dx9 d3dx10 d3dxof d3drm allcodecs quartz wininet xact xinput
+* Nvidia only
+* $ bash winetricks physx
+
 Open cmd and run .bat file
-======
+=====
 * $ wineconsole cmd
 * Run .bat file
 
@@ -58,9 +66,6 @@ Install mono or dotnet
     * $ winecfg # Select Win7
     * Download dotnet4.0 32bits from Microsoft
     * $ wine file.exe
-
-Install vc runtime
-* $ bash winetricks vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2017
 
 Troubleshooting
 =====
