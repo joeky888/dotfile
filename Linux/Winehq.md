@@ -58,6 +58,9 @@ Install mono or dotnet
     * Download dotnet4.0 32bits from Microsoft
     * $ wine file.exe
 
+Install vc runtime
+* $ bash winetricks vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 vcrun2017
+
 Troubleshooting
 =====
 * If winecfg/winecfg-development can not create .wine/ successfully
