@@ -1383,7 +1383,9 @@ function! DownloadFile(url)
     set shellcmdflag=-command
     exe "!Invoke-WebRequest -uri ".a:url." -outfile $(split-path -path ".a:url." -leaf)"
   elseif executable("python")
-    exe "!python -c \"import urllib;from os.path import expanduser; urllib.urlretrieve('".a:url."', expanduser('~') + '/Downloadfile')\""
+    let flname = fnamemodify(a:url, ":t")
+    exe "!python -c \"import urllib;from os.path import expanduser; urllib.urlretrieve('".a:url."', './".flname."')\""
+    echo flname
   elseif executable("curl")
     exe "!curl -sLOC - ".a:url
   elseif executable("wget")
