@@ -153,5 +153,5 @@ Dev Tools
     * C and C++, could be built by gcc and mingw
 * Data
     * Huge and complicated: Json
-    * Small or configurations: Yaml, TOML
+    * Small or configurations: TOML
 * OS, embbed system: FreeBSD
