@@ -405,6 +405,17 @@ nnoremap <silent> , i,
 nnoremap <silent> ; i;
 nnoremap <silent> + i+
 nnoremap <silent> = i=
+nnoremap <silent> ` i`
+nnoremap <silent> ~ i~
+nnoremap <silent> & i&
+nnoremap <silent> * i*
+nnoremap <silent> ! i!
+nnoremap <silent> @ i@
+nnoremap <silent> # i#
+nnoremap <silent> % i%
+nnoremap <silent> ^ i^
+nnoremap <silent> \ i\
+nnoremap <silent> <Bar> i<Bar>
 
 " Vim undo too much
 inoremap <Space> <Space><C-g>u

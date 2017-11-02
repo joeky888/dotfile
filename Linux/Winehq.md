@@ -58,15 +58,9 @@ Install mono or dotnet
     * $ sh winetricks dotnet462
     * $ sh winetricks xna40 # Optional
     * $ wine file.exe
-4. Install dotnet from Microsoft
-    * $ rm -rf ~/.wine
-    * $ export WINEARCH=win32
-    * $ winecfg # Select Win7
-    * Download dotnet4.0 32bits from Microsoft
-    * $ wine file.exe
 
 Troubleshooting
 =====
-* If winecfg/winecfg-development can not create .wine/ successfully
+* If winecfg/winecfg-development can not create ~/.wine/ successfully
     * $ export WINEARCH=win32
     * $ winecfg # Win7 is a good option
