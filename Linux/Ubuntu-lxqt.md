@@ -108,10 +108,6 @@ Install LXQT
 =====
 * $ sudo apt-fast install lxqt xorg openbox compton gnome-terminal chromium-codecs-ffmpeg-extra shutter opencc vim-gtk3 network-manager network-manager-gnome file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt-fast purge connman xarchiver -y
 * $ lxqt-config-appearance # Select dark theme
-* Or using ppa
-* $ sudo add-apt-repository ppa:lxqt/ppa -y
-* $ sudo apt-fast update
-* $ sudo apt-fast install lxqt
 
 Disable suspend when closing laptop lid
 =====
