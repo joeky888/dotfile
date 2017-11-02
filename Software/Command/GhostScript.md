@@ -18,7 +18,7 @@ Convert a input.pdf to greyscale
 =====
 * gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -sColorConversionStrategy=Gray -dProcessColorModel=/DeviceGray -sOutputFile=output.pdf Course01.pdf
 
-Multiple pages pdf to one long page pdf
+Multiple pages pdf to one long page pdf (N-up)
 =====
 * Currently this is not available on Cygwin
 * sudo apt-fast install texlive-extra-utils texlive-latex-recommended --no-install-recommends -y

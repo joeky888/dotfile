@@ -1690,6 +1690,8 @@ if has("gui_running")
 
   nnoremap <silent> <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
   nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+  inoremap <silent> <Home> <C-o>:let g:guifontsize+=1<CR><C-o>:call ChangeFontSize()<CR>
+  inoremap <silent> <End>  <C-o>:let g:guifontsize-=1<CR><C-o>:call ChangeFontSize()<CR>
 
   " Restore all sessions, GUI only, don't do this with terminal vim
   au VimEnter * nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
