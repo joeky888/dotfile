@@ -130,9 +130,28 @@ Good Software Design
 * Customizable theming (and Font-Family) with json format
 * Support Private Tabs/Windows
 * Cross Platform
+* Less dependencies
 * Progress bar
+* Easily porting to another system
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
 * Proxy setting
 * Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
+
+Dev Tools
+=====
+* Mobile and embbed system: Qt
+* GUI on desktop
+    * Executable size as small as possible, for personal use : Wxwidget
+    * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
+    * As powerful as possible: Qt
+* Web server backend: Java Playframework
+* Web frontend: React.js vue.js
+* CLI:
+    * Pure Python, Python libs written in pure python
+    * C and C++, could be built by gcc and mingw
+* Data
+    * Huge and complicated: Json
+    * Small or configurations: Yaml, TOML
+* OS, embbed system: FreeBSD
