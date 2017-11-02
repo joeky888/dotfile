@@ -45,12 +45,7 @@ Install mono or dotnet
 1. Using Linux Mono
     * $ sudo apt-fast install --install-recommends mono-complete mono-runtime -y
     * $ mono file.exe
-2. Using Wine Mono
-    * $ sudo add-apt-repository ppa:ubuntu-wine/ppa -y
-    * $ sudo apt-fast update
-    * $ sudo apt-fast install --install-recommends wine-mono4.5.6
-    * $ wine file.exe
-3. Using winetricks dotnet
+2. Using winetricks dotnet
     * $ rm -rf ~/.wine
     * $ export WINEARCH=win32
     * $ winecfg # Configure OS
