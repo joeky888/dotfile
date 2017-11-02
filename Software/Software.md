@@ -128,6 +128,7 @@ Good Software Design
 * Support "Ctrl + T" New Tab
 * Customizable hotkeys
 * Customizable theming (and Font-Family) with json format
+* A light theme and a dark theme built-in
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies
