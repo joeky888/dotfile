@@ -1390,6 +1390,8 @@ function! DownloadFile(url)
     exe "!curl -sLOC - ".a:url
   elseif executable("wget")
     exe "!wget ".a:url
+  elseif executable("axel")
+    exe "!axel ".a:url
   elseif executable("aria2c")
     exe "!aria2c ".a:url
   else
