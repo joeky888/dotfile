@@ -31,6 +31,27 @@ Generate a list of numbers
 15
 ```
 
+Regex
+=====
+```conf
+\s  whitespace character        \S  non-whitespace character
+\d  number digit                \D  non-number digit
+\x  hex digit	                \X  non-hex digit
+\o  octal digit	                \O  non-octal digit
+\a  alphabetic character        \A  non-alphabetic character
+\l  lowercase character         \L  non-lowercase character
+\u  uppercase character         \U  non-uppercase character
+
+.   any character
+*   matches 0 or more
+\+  matches 1 or more
+\=  matches 0 or 1
+
+[A-Za-z0-9_]        alphanumeric
+[\u0021-\u002F]     range of unicode
+[^\u0000-\u007F]    range of non-unicode
+```
+
 Build Mingw64 vim under cygwin
 =====
 * $ cd src
