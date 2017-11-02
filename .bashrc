@@ -83,6 +83,7 @@ alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30]+bestaudio/b
 alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30]+bestaudio/best'"
 alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30]+bestaudio/best'"
 alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30]+bestaudio/best'"
+alias youtube-dl-playlist="youtube-dl -o '%(playlist_index)s-%(title)s.%(ext)s'"
 alias youtube-dl-annotations="youtube-dl --write-annotations"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
