@@ -1378,7 +1378,7 @@ command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
 
 function! DownloadFile(url)
-  if has("gui_running") && has("win32")
+  if has("gui_running") && (has("win32") || has("win64"))
     set shell=powershell.exe
     set shellcmdflag=-command
     exe "!Invoke-WebRequest -uri ".a:url." -outfile $(split-path -path ".a:url." -leaf)"
