@@ -1382,10 +1382,12 @@ function! DownloadFile(url)
     set shell=powershell.exe
     set shellcmdflag=-command
     exe "!Invoke-WebRequest -uri ".a:url." -outfile $(split-path -path ".a:url." -leaf)"
-  elseif executable("python")
+  elseif executable("python2")
     let flname = fnamemodify(a:url, ":t")
-    exe "!python -c \"import urllib;from os.path import expanduser; urllib.urlretrieve('".a:url."', './".flname."')\""
-    echo flname
+    exe "!python2 -c \"import urllib;from os.path import expanduser; urllib.urlretrieve('".a:url."', './".flname."')\""
+  elseif executable("python3")
+    let flname = fnamemodify(a:url, ":t")
+    exe "!python3 -c \"import urllib.request;from os.path import expanduser; urllib.request.urlretrieve('".a:url."', './".flname."')\""
   elseif executable("curl")
     exe "!curl -sLOC - ".a:url
   elseif executable("wget")
