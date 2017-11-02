@@ -42,12 +42,31 @@ Regex
 \l  lowercase character         \L  non-lowercase character
 \u  uppercase character         \U  non-uppercase character
 
+\e  <Esc>
+\t  <Tab>
+\r  <CR>
+\b  <BS> <Backspace>
+\n  line break
+
 .   any character
 *   matches 0 or more
 \+  matches 1 or more
 \=  matches 0 or 1
 
-[A-Za-z0-9_]        alphanumeric
+[A-Za-z0-9_]    alphanumeric
+[^A-Za-z0-9_]   non-alphanumeric
+
+[:alnum:]       ASCII letters and numbers
+[:alpha:]       ASCII letters
+[:blank:]       space and tab
+[:digit:]       decimal digits '0' to '9'
+[:lower:]       lowercase letters
+[:upper:]       uppercase letters (all letters when
+[:print:]       printable characters including space
+[:space:]       whitespace characters: space, tab, CR, NL, vertical tab
+[:xdigit:]      hexadecimal digits: 0-9, a-f, A-F
+[:return:]      the <CR> character
+[:tab:]         the <Tab> character
 [\u0021-\u002F]     range of unicode
 [^\u0000-\u007F]    range of non-unicode
 ```
