@@ -1377,6 +1377,23 @@ command! EncodingUTF16LE execute "e ++enc=utf-16le"
 command! EncodingUTF16BE execute "e ++enc=utf-16be"
 command! EncodingAnsi    execute "e ++enc=ansi"
 
+function! DownloadFile(url)
+  if has("gui_running") && has("win32")
+    set shell=powershell.exe
+    set shellcmdflag=-command
+    exe "!Invoke-WebRequest -uri ".a:url." -outfile $(split-path -path ".a:url." -leaf)"
+  elseif executable("curl")
+    exe "!curl -sLOC - ".a:url
+  elseif executable("wget")
+    exe "!wget ".a:url
+  elseif executable("aria2c")
+    exe "!aria2c ".a:url
+  else
+    echom "Please install a downloader first, ex. curl, wget or aria2"
+  endif
+endfunction
+command! -nargs=1 Download call DownloadFile(<f-args>)
+
 if !exists('g:ftypes') | let g:ftypes = map(split(globpath(&rtp, 'syntax/*.vim'), '\n'), 'fnamemodify(v:val, ":t:r")') | endif
 for syn in g:ftypes
   execute "noremenu Edit.Filetype.".split(syn, '\zs')[0].".".syn." :setlocal filetype=".syn."<CR>"
