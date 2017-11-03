@@ -39,6 +39,7 @@ Regex
 \x  hex digit	                \X  non-hex digit
 \o  octal digit	                \O  non-octal digit
 \a  alphabetic character        \A  non-alphabetic character
+\w  ASCII letters and numbers   \W  non-ASCII letters or non-numbers
 \l  lowercase character         \L  non-lowercase character
 \u  uppercase character         \U  non-uppercase character
 

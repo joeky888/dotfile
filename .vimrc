@@ -911,12 +911,12 @@ let colorsAndModes= {
   \ 'V' : 226,
   \ '' : 208
 \}
-let defaultAccentColorGui='#d7005f'
+let defaultAccentColorGui='#D7005F'
 let colorsAndModesGui= {
-  \ 'i' : '#00afff',
-  \ 'v' : '#5fff00',
-  \ 'V' : '#ffff00',
-  \ '' : '#ff8700'
+  \ 'i' : '#00AFFF',
+  \ 'v' : '#5FFF00',
+  \ 'V' : '#FFFF00',
+  \ '' : '#FF8700'
 \}
 function! LastAccentColor()
   if !exists('b:lastMode')
@@ -933,7 +933,7 @@ function! ChangeAccentColor()
   let accentColor=get(g:colorsAndModes, mode(), g:defaultAccentColor)
   let accentColorGui=get(g:colorsAndModesGui, mode(), g:defaultAccentColorGui)
   execute 'hi! User1 ctermfg=0 guifg=#000000 ctermbg=' . accentColor . ' guibg=' . accentColorGui
-  execute 'hi! User2 ctermbg=0 guibg=#2e3436 ctermfg=' . accentColor . ' guifg=' . accentColorGui
+  execute 'hi! User2 ctermbg=0 guibg=#2E3436 ctermfg=' . accentColor . ' guifg=' . accentColorGui
   execute 'hi! User3 ctermfg=0 guifg=#000000 cterm=bold gui=bold ctermbg=' . accentColor . ' guibg=' . accentColorGui
   execute 'hi! TabLineSel ctermfg=0 cterm=bold ctermbg=' . accentColor
   execute 'hi! TabLine ctermbg=0 ctermfg=' . accentColor
@@ -1073,15 +1073,15 @@ function! SyntaxMonokai()
   " Normal is the background color
   hi Normal ctermfg=252 ctermbg=233 cterm=NONE guifg=#F8F8F2 guibg=#1B1D1E gui=NONE
   " Visual is the selection color
-  hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff gui=NONE
+  hi Visual ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00AFFF gui=NONE
   " Pmenu is the popup autocomplete color
-  hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00afff
-  hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00afff guibg=White
+  hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00AFFF
+  hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00AFFF guibg=White
 
-  hi Green  ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00af00 guibg=NONE gui=NONE
-  hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00af00 gui=NONE
-  hi Blue   ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00afff guibg=NONE gui=NONE
-  hi iBlue  ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00afff gui=NONE
+  hi Green  ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00AF00 guibg=NONE gui=NONE
+  hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00AF00 gui=NONE
+  hi Blue   ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00AFFF guibg=NONE gui=NONE
+  hi iBlue  ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00AFFF gui=NONE
   hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
 
   " Init StatusLine colors
@@ -1104,7 +1104,7 @@ function! SyntaxMonokai()
   hi DiffDelete           ctermfg=162     ctermbg=53      guifg=#960050     guibg=#1E0010
   hi DiffText             ctermbg=102     cterm=none      guibg=#4C4745     gui=none
   hi Directory            ctermfg=81      cterm=none      guifg=#66D9EF     gui=none
-  hi Error                ctermfg=255     ctermbg=196     guifg=#E6DB74     guibg=#ff3333
+  hi Error                ctermfg=255     ctermbg=196     guifg=#E6DB74     guibg=#FF3333
   hi ErrorMsg             ctermfg=199     ctermbg=16      cterm=none        guifg=#F92672       guibg=#232526     gui=none
   hi Exception            ctermfg=118     cterm=none      guifg=#A6E22E     gui=none
   hi Float                ctermfg=135     guifg=#AE81FF
@@ -1144,7 +1144,7 @@ function! SyntaxMonokai()
   hi Structure            ctermfg=81      guifg=#66D9EF
   hi TabLineFill          cterm=none      ctermbg=none    guifg=#1B1D1E     guibg=#1B1D1E
   hi Tag                  ctermfg=161     guifg=#F92672   gui=none
-  hi Title                ctermfg=166     guifg=#ef5939
+  hi Title                ctermfg=166     guifg=#EF5939
   hi Todo                 ctermfg=231     ctermbg=232     cterm=none        guifg=#FFFFFF       guibg=bg        gui=none
   hi Type                 ctermfg=81      cterm=none      guifg=#66D9EF     gui=none
   hi Typedef              ctermfg=81      guifg=#66D9EF
