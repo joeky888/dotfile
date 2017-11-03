@@ -53,6 +53,10 @@ Regex
 *   matches 0 or more
 \+  matches 1 or more
 \=  matches 0 or 1
+\{n,m}      matches from n to m times
+\{n}        matches exactly n times
+\{,m}       matches at most m times
+\{n,}       matches at least n times
 
 [A-Za-z0-9_]    alphanumeric
 [^A-Za-z0-9_]   non-alphanumeric
