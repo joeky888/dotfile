@@ -3,3 +3,10 @@ Download Mozilla certdata.txt and convert it to .crt
 * $ aria2c https://raw.githubusercontent.com/curl/curl/master/lib/mk-ca-bundle.pl && chmod +x mk-ca-bundle.pl
 * $ ./mk-ca-bundle.pl
 * Install the ca-bundle.crt file
+
+Convert multiple .pem files into one .pem file
+=====
+```sh
+[[ -f ca-bundle.pem ]] && rm -f ca-bundle.pem || touch ca-bundle.pem
+for cert in `ls *.pem`; do openssl x509 -text -in ${cert} >> ca-bundle.pem; done
+```
