@@ -10,3 +10,9 @@ Convert multiple .pem files into one .pem file
 [[ -f ca-bundle.pem ]] && rm -f ca-bundle.pem || touch ca-bundle.pem
 for cert in `ls *.pem`; do openssl x509 -text -in ${cert} >> ca-bundle.pem; done
 ```
+
+Convert .pem to .crt
+=====
+```sh
+openssl x509 -in input.pem -inform PEM -out output.crt
+```
