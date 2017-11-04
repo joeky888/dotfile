@@ -476,9 +476,10 @@ call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system(
 vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
 
 " Ctrl X - Cut
-nnoremap <silent> <C-x>           :call SavePos()<CR>:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>
-inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR><C-g>u
+nnoremap <silent> <C-x>       :call SavePos()<CR>:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i
+inoremap <silent> <C-x>  <C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR><ESC>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
 vnoremap <silent> <C-x> d<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+cnoremap <C-x> <C-y><C-e><C-u>
 
 " Ctrl V - Paste from vim clipboard
 " inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
@@ -1732,7 +1733,6 @@ if has("gui_running")
   nnoremap <silent> <C-x>           :call SavePos()<CR>dd:call setpos(".", b:savepos)<CR>
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><C-\><C-o>dd<C-\><C-o>:call setpos(".", b:savepos)<CR><C-g>u
   vnoremap <silent> <C-x> "+x
-  cnoremap <C-x> <C-y><C-e><C-u>
 
   " Shift-Insert same as Ctrl-v
   inoremap <S-Insert> <C-o>"+gP<C-g>u
