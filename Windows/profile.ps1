@@ -116,6 +116,17 @@ Function youtube-dl-mp3 {
 }
 set-alias mp3 youtube-dl-mp3
 
+Function Reset-Networking {
+  ipconfig /release
+  ipconfig /renew
+  arp -d *
+  nbtstat -R
+  nbtstat -RR
+  ipconfig /flushdns
+  ipconfig /registerdns
+  netsh winsock reset
+}
+
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   # choco install miniconda3
   $env:Path += ";C:\ProgramData\Miniconda3"
