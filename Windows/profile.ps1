@@ -114,6 +114,7 @@ Function youtube-dl {
 Function youtube-dl-mp3 {
   youtube-dl.exe --extract-audio --audio-format mp3 --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $env:DOWNLOADARGS $args
 }
+set-alias mp3 youtube-dl-mp3
 
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   # choco install miniconda3
