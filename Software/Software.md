@@ -144,7 +144,7 @@ Dev Tools
 =====
 * Mobile and embbed system: Qt
 * GUI on desktop
-    * Executable size as small as possible, for personal use : Wxwidget
+    * Executable size as small as possible, for personal use : wxWidgets
     * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
     * As powerful as possible: Qt
 * Web server backend: Java Playframework
