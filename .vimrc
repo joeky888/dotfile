@@ -516,7 +516,7 @@ inoremap <silent> <C-k> <C-o>:call DeleteLine()<CR><C-g>u
 vnoremap <silent> <C-k> :d _<CR>
 
 " Ctrl D - Duplicate Line
-nnoremap <silent> <C-d> mj:t.<CR>`jj
+nnoremap <silent> <C-d> mj:t.<CR>`jji
 inoremap <silent> <C-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
 vnoremap <C-d> yPgv
 

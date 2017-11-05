@@ -68,7 +68,7 @@ Windows
 * MPC-HC
 * Sarasa Mono TC font (for console)
 * $ Set-ExecutionPolicy RemoteSigned
-* $ choco install aria2 miniconda miniconda3 nmap ffmpeg youtube-dl greenshot sumatrapdf 7zip adb -y --pre
+* $ choco install aria2 miniconda miniconda3 nmap ffmpeg youtube-dl greenshot sumatrapdf 7zip cmake.portable adb -y --pre
 * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
 
 Windows XP
@@ -144,7 +144,7 @@ Dev Tools
 =====
 * Mobile and embbed system: Qt
 * GUI on desktop
-    * Executable size as small as possible, for personal use : wxWidgets
+    * Executable size as small as possible, for personal use : Not possible at this moment, wxWidgets is FAT and hard to use
     * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
     * As powerful as possible: Qt
 * Web server backend: Java Playframework

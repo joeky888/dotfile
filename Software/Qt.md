@@ -41,10 +41,29 @@ DEFINES          = QT_STATIC_BUILD
 ```conf
 LFLAGS = -static
 ```
-* Open Qt cmd, see more options by using `configre.bat --help`
+* Open Qt cmd, see more options by using `configure.bat --help`
 ```sh
 # I got an error on this, to be continue...
 configure.bat -prefix "c:\QT\Qt5-static" -static -release -ltcg -optimize-size -opensource -confirm-license -platform win32-g++ -qt-zlib -qt-libpng -qt-libjpeg -gif -ico -opengl desktop -qt-pcre -qt-freetype -nomake tests -nomake examples -no-compile-examples -skip qtdeclarative -skip qtwebengine
 mingw32-make
 mingw32-make install
 ```
+
+Use latest MinGW-w64 with cmake
+=====
+* $ choco install cmake.portable -y
+* Download MinGW-w64 with posix and seh
+* Extract MinGW-w64 to C:\mingw64
+* Qt creator -> Tool -> Options -> Build and Run
+    * Compilers
+        * Add -> MinGW ->  C  -> Compiler path -> C:\mingw64\bin\x86_64-w64-mingw32-gcc.exe
+        * Add -> MinGW -> C++ -> Compiler path -> C:\mingw64\bin\x86_64-w64-mingw32-g++.exe
+    * Debuggers
+        * Add -> path -> C:\mingw64\bin\gdb.exe
+    * Kits
+        * Compiler  C  -> MinGW
+        * Compiler C++ -> MinGW
+        * Debugger -> GDB
+        * Cmake Tool -> C:\ProgramData\chocolatey\bin\cmake.exe
+        * Cmake generator -> Change -> Generator -> MinGW Makefiles
+        * Cmake Configuration -> Change -> Add this -> CMAKE_MAKE_PROGRAM:INTERNAL=C:\mingw64\bin\mingw32-make.exe
