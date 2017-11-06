@@ -1,8 +1,19 @@
 /* Midnight Surfing - Global Dark Style is better */
 
 /* Font */
+@font-face {
+    font-family: "ASCII";
+    src: local("Ubuntu Mono"),local("Consolas");
+/*     src: local("Arial") */
+    unicode-range: U+00-7F;
+}
+@font-face {
+    font-family: "CJK";
+    src: local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Microsoft JhengHei"),local("Microsoft YaHei");
+    unicode-range: U+2E80-FAFF;
+}
 *, * *, *[id], *[class], *[name]{
-    font-family: "Ubuntu Mono", "Droid Sans Fallback", "DroidMono", "Sarasa Mono TC", "FontAwesome", "FontawesomeCom", "fontello" !important;
+    font-family: "ASCII","CJK",sans-serif;
     font-weight: 400!important;
 }
 
