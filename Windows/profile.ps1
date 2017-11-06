@@ -127,6 +127,10 @@ Function Reset-Networking {
   netsh winsock reset
 }
 
+if($env:Path -NotLike "*C:\ProgramData\chocolatey\bin*") {
+  # Just in case
+  $env:Path += ";C:\ProgramData\chocolatey\bin"
+}
 if($env:Path -NotLike "*C:\tools\git\bin*") {
   # choco install git.portable
   $env:Path += ";C:\tools\git\bin"
