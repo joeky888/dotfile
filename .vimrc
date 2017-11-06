@@ -81,6 +81,7 @@ let g:netrw_timefmt="" " Don't display time in file explorer
 let g:vertical_jump=&scroll*4/3 " Jump when Ctrl up/down triggered
 au VimResized * let g:vertical_jump=&scroll*4/3
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
+au FileType help noremap <CR> <C-]> | noremap <C-n> :cn<CR> | noremap <C-p> :cp<CR>
 " Highlight code area in markdown
 let g:markdown_fenced_languages =
 \[
@@ -1719,7 +1720,7 @@ if has("gui_running")
   set number
   set lines=999 columns=999 " set window Maximized
   set fileformats=dos,unix,mac
-  if has("multi_byte_ime")
+  if has("multi_byte_ime") || has("xim")
     set iminsert=2 " This could cause statusline color act weirdly
     set imcmdline
     set imsearch=2
