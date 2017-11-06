@@ -204,7 +204,25 @@ fi
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
-if [ $(command -v gvim) ] && [[ "$OSTYPE" != "msys" ]] && [[ "$OSTYPE" != "cygwin" ]] ; then
+if [[ "$OSTYPE" == "cygwin" ]]; then
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc &!
+    else
+      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+    fi;
+  }
+elif [[ "$OSTYPE" == "msys" ]]; then
+  gvim()
+  {
+    if [ "$#" == 0 ]; then
+      /c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc &!
+    else
+      /c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+    fi;
+  }
+elif [ $(command -v gvim) ]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
@@ -359,26 +377,10 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias choco='cygstart --action=runas choco'
   alias mtuForGaming='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent'
   alias mtuForNormal='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent'
-  gvim()
-  {
-    if [ "$#" == 0 ]; then
-      /cygdrive/c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc &!
-    else
-      /cygdrive/c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
-    fi;
-  }
   upgradeChoco() { cygstart --action=runas cmd.exe /c "choco upgrade all -y --pre" ;}
 
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   cd ~
-  gvim()
-  {
-    if [ "$#" == 0 ]; then
-      /c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc &!
-    else
-      /c/vim/vim80/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
-    fi;
-  }
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
   alias grep='grep --color=auto'

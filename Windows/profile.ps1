@@ -95,7 +95,7 @@ Function upgradeVimrc {
   Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
 }
 Function gvim {
-  $Commandvim = "C:\vim\vim80\gvim.exe"
+  $Commandvim = "C:\ProgramData\chocolatey\bin\gvim.exe"
   $Parmsvim = ""
   if ($args.count -gt 0) {
     $Parmsvim = "-p --remote-tab-silent $args"
@@ -127,6 +127,10 @@ Function Reset-Networking {
   netsh winsock reset
 }
 
+if($env:Path -NotLike "*C:\tools\git\bin*") {
+  # choco install git.portable
+  $env:Path += ";C:\tools\git\bin"
+}
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   # choco install miniconda3
   $env:Path += ";C:\ProgramData\Miniconda3"
