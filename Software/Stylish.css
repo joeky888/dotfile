@@ -13,8 +13,8 @@
     unicode-range: U+2E80-FAFF;
 }
 *, * *, *[id], *[class], *[name]{
-    font-family: "ASCII","CJK",sans-serif;
-    font-weight: 400!important;
+    font-family: "ASCII","CJK","FontAwesome","FontawesomeCom","fontello","Material Icons",sans-serif;
+    font-weight: 400 !important;
 }
 
 /* Black */
