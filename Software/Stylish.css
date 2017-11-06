@@ -5,7 +5,7 @@
     font-family: "ASCII";
     src: local("Ubuntu Mono"),local("Consolas");
 /*     src: local("Arial"); */
-    unicode-range: U+00-7F;
+    unicode-range: U+00-7F,U+FF01-FF5E;
 }
 @font-face {
     font-family: "CJK";
