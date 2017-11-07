@@ -102,7 +102,6 @@ alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
-alias forever='while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;'
 
 GREP_OPTIONS=""
 if $(echo | grep --color=auto "" > /dev/null 2>&1); then
@@ -569,20 +568,19 @@ CompleteAptCyg()
   _describe 'values' options;
 }
 
-# forever()
-# {
-#   Deprecated! Since zsh can not use "export -f"
-#   if [ "$#" == 0 ]; then
-#     echo "Usage: forever \"[commands]\""
-#     echo "ex: forever \"ls -a\""
-#     echo "Run commands forever!"
-#   else
-#     while true;
-#       do $* ;
-#       if [ $? -eq 0 ]; then break; fi;
-#     done
-#   fi;
-# }
+forever()
+{
+  if [ "$#" == 0 ]; then
+    echo "Usage: forever \"[commands]\""
+    echo "ex: forever \"ls -a\""
+    echo "Run commands forever!"
+  else
+    # To keep all alias commands working
+    # Just copy and paste the following one-line command to terminal
+    # I can not find another way to do it
+    while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
+  fi;
+}
 
 finish() {
   if [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]]; then
