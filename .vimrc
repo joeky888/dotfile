@@ -555,14 +555,14 @@ execute 'inoremap <silent> <C-j> <C-\><C-O>'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 
 " Ctrl F - Find
-nnoremap <C-f> :noh<CR>:set ignorecase<CR>/
-inoremap <C-f> <Esc>:noh<CR>:set ignorecase<CR>/
-vnoremap <C-f> <Esc>:noh<CR>:set ignorecase<CR>/\%V
+nnoremap <C-f> :noh<CR>:redraw<CR>:set ignorecase<CR>/
+inoremap <C-f> <Esc>:noh<CR>:redraw<CR>:set ignorecase<CR>/
+vnoremap <C-f> <Esc>:noh<CR>:redraw<CR>:set ignorecase<CR>/\%V
 
 " Ctrl R - Search and Replace
-nnoremap <C-r> :noh<CR>:set noignorecase<CR>:%s/
-inoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:%s/
-vnoremap <C-r> <Esc>:noh<CR>:set noignorecase<CR>:'<,'>s/\%V
+nnoremap <C-r> :noh<CR>:redraw<CR>:set noignorecase<CR>:%s/
+inoremap <C-r> <Esc>:noh<CR>:redraw<CR>:set noignorecase<CR>:%s/
+vnoremap <C-r> <Esc>:noh<CR>:redraw<CR>:set noignorecase<CR>:'<,'>s/\%V
 
 " Ctrl G - Select all
 call CreateShortcut("C-g", "ggVG", "inv")
@@ -745,14 +745,14 @@ nnoremap - zi
 
 " Useful command mode mapping
 cnoremap <C-k> <C-e><C-u>
-cnoremap <C-f> <C-c>:noh<CR>/
-cnoremap <C-r> <C-c>:noh<CR>:%s/
+cnoremap <C-f> <C-c>:noh<CR>:redraw<CR>/
+cnoremap <C-r> <C-c>:noh<CR>:redraw<CR>:%s/
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
 """ Case insensitive when entering command mode
-nnoremap : :noh<CR>:set ignorecase<CR>:
-nnoremap / :noh<CR>:set noignorecase<CR>/
+nnoremap : :noh<CR>:redraw<CR>:set ignorecase<CR>:
+nnoremap / :noh<CR>:redraw<CR>:set noignorecase<CR>/
 
 inoremap <C-CR> <ESC>o<C-g>u
 nnoremap <C-CR> o<C-g>u
