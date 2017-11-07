@@ -131,6 +131,7 @@ Good Software Design
 * Customizable hotkeys
 * Customizable theming (and Font-Family) with json format
 * A light theme and a dark theme built-in
+* Multiple languages other than just English
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies
