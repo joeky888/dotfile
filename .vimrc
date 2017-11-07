@@ -751,8 +751,8 @@ cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
 
 """ Case insensitive when entering command mode
-nnoremap : :set ignorecase<CR>:
-nnoremap / :set ignorecase<CR>/
+nnoremap : :noh<CR>:set ignorecase<CR>:
+nnoremap / :noh<CR>:set noignorecase<CR>/
 
 inoremap <C-CR> <ESC>o<C-g>u
 nnoremap <C-CR> o<C-g>u
