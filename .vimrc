@@ -1086,7 +1086,7 @@ function! SyntaxMonokai()
   hi iGreen     ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00AF00 gui=NONE
   hi Blue       ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00AFFF guibg=NONE gui=NONE
   hi iBlue      ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00AFFF gui=NONE
-  hi Search     ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
+  hi Search     ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black  gui=NONE
   hi IncSearch  ctermfg=255 ctermbg=34  cterm=NONE guibg=#00FF00 guifg=black gui=NONE
 
   " Init StatusLine colors
