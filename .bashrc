@@ -102,6 +102,7 @@ alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
+alias forever='while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;'
 
 GREP_OPTIONS=""
 if $(echo | grep --color=auto "" > /dev/null 2>&1); then
@@ -130,76 +131,76 @@ upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip in
 if [ $(command -v grc) ] ; then
   GRC="$(which grc)"
   alias colourify="$GRC -es --colour=auto"
-  [ $(command -v ant) ] && alias ant='colourify ant'
-  [ $(command -v blkid) ] && alias blkid='colourify blkid'
-  [ $(command -v configure) ] && alias configure='colourify configure'
-  [ $(command -v cvs) ] && alias cvs='colourify cvs'
-  [ $(command -v df) ] && alias df='colourify df'
-  [ $(command -v diff) ] && alias diff='colourify diff'
-  [ $(command -v dig) ] && alias dig='colourify dig'
-  [ $(command -v dnf) ] && alias dnf='colourify dnf'
-  [ $(command -v dockerimages) ] && alias dockerimages='colourify dockerimages'
-  [ $(command -v dockerinfo) ] && alias dockerinfo='colourify dockerinfo'
-  [ $(command -v docker-machinels) ] && alias docker-machinels='colourify docker-machinels'
-  [ $(command -v dockernetwork) ] && alias dockernetwork='colourify dockernetwork'
-  [ $(command -v dockerps) ] && alias dockerps='colourify dockerps'
-  [ $(command -v dockerpull) ] && alias dockerpull='colourify dockerpull'
-  [ $(command -v dockersearch) ] && alias dockersearch='colourify dockersearch'
-  [ $(command -v dockerversion) ] && alias dockerversion='colourify dockerversion'
-  [ $(command -v du) ] && alias du='colourify du'
-  [ $(command -v env) ] && alias env='colourify env'
-  [ $(command -v esperanto) ] && alias esperanto='colourify esperanto'
-  [ $(command -v fdisk) ] && alias fdisk='colourify fdisk'
-  [ $(command -v findmnt) ] && alias findmnt='colourify findmnt'
-  [ $(command -v free) ] && alias free='colourify free'
-  [ $(command -v gcc) ] && alias gcc='colourify gcc'
-  [ $(command -v getfacl) ] && alias getfacl='colourify getfacl'
-  [ $(command -v getsebool) ] && alias getsebool='colourify getsebool'
-  [ $(command -v id) ] && alias id='colourify id'
-  [ $(command -v ifconfig) ] && alias ifconfig='colourify ifconfig'
-  [ $(command -v iostat_sar) ] && alias iostat_sar='colourify iostat_sar'
-  [ $(command -v ip) ] && alias ip='colourify ip'
-  [ $(command -v ipaddr) ] && alias ipaddr='colourify ipaddr'
-  [ $(command -v ipneighbor) ] && alias ipneighbor='colourify ipneighbor'
-  [ $(command -v iproute) ] && alias iproute='colourify iproute'
-  [ $(command -v iptables) ] && alias iptables='colourify iptables'
-  [ $(command -v irclog) ] && alias irclog='colourify irclog'
-  [ $(command -v last) ] && alias last='colourify last'
-  [ $(command -v ldap) ] && alias ldap='colourify ldap'
-  [ $(command -v log) ] && alias log='colourify log'
-  [ $(command -v lsattr) ] && alias lsattr='colourify lsattr'
-  [ $(command -v lsblk) ] && alias lsblk='colourify lsblk'
-  [ $(command -v lsmod) ] && alias lsmod='colourify lsmod'
-  [ $(command -v lsof) ] && alias lsof='colourify lsof'
-  [ $(command -v lspci) ] && alias lspci='colourify lspci'
-  [ $(command -v mount) ] && alias mount='colourify mount'
-  [ $(command -v mtr) ] && alias mtr='colourify mtr'
-  [ $(command -v mvn) ] && alias mvn='colourify mvn'
-  [ $(command -v netstat) ] && alias netstat='colourify netstat'
+  [[ $(command -v ant) ]] && alias ant='colourify ant'
+  [[ $(command -v blkid) ]] && alias blkid='colourify blkid'
+  [[ $(command -v configure) ]] && alias configure='colourify configure'
+  [[ $(command -v cvs) ]] && alias cvs='colourify cvs'
+  [[ $(command -v df) ]] && alias df='colourify df'
+  [[ $(command -v diff) ]] && alias diff='colourify diff'
+  [[ $(command -v dig) ]] && alias dig='colourify dig'
+  [[ $(command -v dnf) ]] && alias dnf='colourify dnf'
+  [[ $(command -v dockerimages) ]] && alias dockerimages='colourify dockerimages'
+  [[ $(command -v dockerinfo) ]] && alias dockerinfo='colourify dockerinfo'
+  [[ $(command -v docker-machinels) ]] && alias docker-machinels='colourify docker-machinels'
+  [[ $(command -v dockernetwork) ]] && alias dockernetwork='colourify dockernetwork'
+  [[ $(command -v dockerps) ]] && alias dockerps='colourify dockerps'
+  [[ $(command -v dockerpull) ]] && alias dockerpull='colourify dockerpull'
+  [[ $(command -v dockersearch) ]] && alias dockersearch='colourify dockersearch'
+  [[ $(command -v dockerversion) ]] && alias dockerversion='colourify dockerversion'
+  [[ $(command -v du) ]] && alias du='colourify du'
+  [[ $(command -v env) ]] && alias env='colourify env'
+  [[ $(command -v esperanto) ]] && alias esperanto='colourify esperanto'
+  [[ $(command -v fdisk) ]] && alias fdisk='colourify fdisk'
+  [[ $(command -v findmnt) ]] && alias findmnt='colourify findmnt'
+  [[ $(command -v free) ]] && alias free='colourify free'
+  [[ $(command -v gcc) ]] && alias gcc='colourify gcc'
+  [[ $(command -v getfacl) ]] && alias getfacl='colourify getfacl'
+  [[ $(command -v getsebool) ]] && alias getsebool='colourify getsebool'
+  [[ $(command -v id) ]] && alias id='colourify id'
+  [[ $(command -v ifconfig) ]] && alias ifconfig='colourify ifconfig'
+  [[ $(command -v iostat_sar) ]] && alias iostat_sar='colourify iostat_sar'
+  [[ $(command -v ip) ]] && alias ip='colourify ip'
+  [[ $(command -v ipaddr) ]] && alias ipaddr='colourify ipaddr'
+  [[ $(command -v ipneighbor) ]] && alias ipneighbor='colourify ipneighbor'
+  [[ $(command -v iproute) ]] && alias iproute='colourify iproute'
+  [[ $(command -v iptables) ]] && alias iptables='colourify iptables'
+  [[ $(command -v irclog) ]] && alias irclog='colourify irclog'
+  [[ $(command -v last) ]] && alias last='colourify last'
+  [[ $(command -v ldap) ]] && alias ldap='colourify ldap'
+  [[ $(command -v log) ]] && alias log='colourify log'
+  [[ $(command -v lsattr) ]] && alias lsattr='colourify lsattr'
+  [[ $(command -v lsblk) ]] && alias lsblk='colourify lsblk'
+  [[ $(command -v lsmod) ]] && alias lsmod='colourify lsmod'
+  [[ $(command -v lsof) ]] && alias lsof='colourify lsof'
+  [[ $(command -v lspci) ]] && alias lspci='colourify lspci'
+  [[ $(command -v mount) ]] && alias mount='colourify mount'
+  [[ $(command -v mtr) ]] && alias mtr='colourify mtr'
+  [[ $(command -v mvn) ]] && alias mvn='colourify mvn'
+  [[ $(command -v netstat) ]] && alias netstat='colourify netstat'
   alias nmap='colourify nmap'
-  [ $(command -v php) ] && alias php='colourify php'
-  [ $(command -v ping) ] && alias ping='colourify ping'
-  [ $(command -v ping2) ] && alias ping2='colourify ping2'
-  [ $(command -v proftpd) ] && alias proftpd='colourify proftpd'
-  [ $(command -v ps) ] && alias ps='colourify ps'
-  [ $(command -v pv) ] && alias pv='colourify pv'
-  [ $(command -v semanageboolean) ] && alias semanageboolean='colourify semanageboolean'
-  [ $(command -v semanagefcontext) ] && alias semanagefcontext='colourify semanagefcontext'
-  [ $(command -v semanageuser) ] && alias semanageuser='colourify semanageuser'
-  [ $(command -v showmount) ] && alias showmount='colourify showmount'
-  [ $(command -v sql) ] && alias sql='colourify sql'
-  [ $(command -v ss) ] && alias ss='colourify ss'
-  [ $(command -v stat) ] && alias stat='colourify stat'
-  [ $(command -v sysctl) ] && alias sysctl='colourify sysctl'
-  [ $(command -v systemctl) ] && alias systemctl='colourify systemctl'
-  [ $(command -v tcpdump) ] && alias tcpdump='colourify tcpdump'
-  [ $(command -v traceroute) ] && alias traceroute='colourify traceroute'
-  [ $(command -v tune2fs) ] && alias tune2fs='colourify tune2fs'
-  [ $(command -v ulimit) ] && alias ulimit='colourify ulimit'
-  [ $(command -v uptime) ] && alias uptime='colourify uptime'
-  [ $(command -v vmstat) ] && alias vmstat='colourify vmstat'
-  [ $(command -v wdiff) ] && alias wdiff='colourify wdiff'
-  [ $(command -v sh) ] && alias sh='colourify sh'
+  [[ $(command -v php) ]] && alias php='colourify php'
+  [[ $(command -v ping) ]] && alias ping='colourify ping'
+  [[ $(command -v ping2) ]] && alias ping2='colourify ping2'
+  [[ $(command -v proftpd) ]] && alias proftpd='colourify proftpd'
+  [[ $(command -v ps) ]] && alias ps='colourify ps'
+  [[ $(command -v pv) ]] && alias pv='colourify pv'
+  [[ $(command -v semanageboolean) ]] && alias semanageboolean='colourify semanageboolean'
+  [[ $(command -v semanagefcontext) ]] && alias semanagefcontext='colourify semanagefcontext'
+  [[ $(command -v semanageuser) ]] && alias semanageuser='colourify semanageuser'
+  [[ $(command -v showmount) ]] && alias showmount='colourify showmount'
+  [[ $(command -v sql) ]] && alias sql='colourify sql'
+  [[ $(command -v ss) ]] && alias ss='colourify ss'
+  [[ $(command -v stat) ]] && alias stat='colourify stat'
+  [[ $(command -v sysctl) ]] && alias sysctl='colourify sysctl'
+  [[ $(command -v systemctl) ]] && alias systemctl='colourify systemctl'
+  [[ $(command -v tcpdump) ]] && alias tcpdump='colourify tcpdump'
+  [[ $(command -v traceroute) ]] && alias traceroute='colourify traceroute'
+  [[ $(command -v tune2fs) ]] && alias tune2fs='colourify tune2fs'
+  [[ $(command -v ulimit) ]] && alias ulimit='colourify ulimit'
+  [[ $(command -v uptime) ]] && alias uptime='colourify uptime'
+  [[ $(command -v vmstat) ]] && alias vmstat='colourify vmstat'
+  [[ $(command -v wdiff) ]] && alias wdiff='colourify wdiff'
+  [[ $(command -v sh) ]] && alias sh='colourify sh'
 fi
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
@@ -568,16 +569,20 @@ CompleteAptCyg()
   _describe 'values' options;
 }
 
-forever()
-{
-  if [ "$#" == 0 ]; then
-    echo "Usage: forever \"[commands]\""
-    echo "ex: forever \"ls -a\""
-    echo "Run commands forever!"
-  else
-    while true; do $* ; done
-  fi;
-}
+# forever()
+# {
+#   Deprecated! Since zsh can not use "export -f"
+#   if [ "$#" == 0 ]; then
+#     echo "Usage: forever \"[commands]\""
+#     echo "ex: forever \"ls -a\""
+#     echo "Run commands forever!"
+#   else
+#     while true;
+#       do $* ;
+#       if [ $? -eq 0 ]; then break; fi;
+#     done
+#   fi;
+# }
 
 finish() {
   if [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]]; then
