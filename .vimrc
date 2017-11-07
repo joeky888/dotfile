@@ -64,7 +64,7 @@ set sessionoptions-=options,localoptions,globals,buffers " Don't save these to t
 set sessionoptions+=winpos,winsize,resize, " Save these to the session file
 autocmd VimEnter * set noerrorbells " Disable error sound
 autocmd VimEnter * set vb t_vb= | set t_vb= " Disable visual bell
-set smartcase& " No smart
+set smartcase& " After 8.0.1238, smartcase should be on. But we'll see.
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
@@ -555,9 +555,9 @@ execute 'inoremap <silent> <C-j> <C-\><C-O>'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 
 " Ctrl F - Find
-nnoremap <C-f> :noh<CR>:set noignorecase<CR>/\c
-inoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\c
-vnoremap <C-f> <Esc>:noh<CR>:set noignorecase<CR>/\%V\c
+nnoremap <C-f> :noh<CR>:set ignorecase<CR>/
+inoremap <C-f> <Esc>:noh<CR>:set ignorecase<CR>/
+vnoremap <C-f> <Esc>:noh<CR>:set ignorecase<CR>/\%V
 
 " Ctrl R - Search and Replace
 nnoremap <C-r> :noh<CR>:set noignorecase<CR>:%s/
@@ -745,7 +745,7 @@ nnoremap - zi
 
 " Useful command mode mapping
 cnoremap <C-k> <C-e><C-u>
-cnoremap <C-f> <C-c>:noh<CR>/\c
+cnoremap <C-f> <C-c>:noh<CR>/
 cnoremap <C-r> <C-c>:noh<CR>:%s/
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -1082,11 +1082,12 @@ function! SyntaxMonokai()
   hi Pmenu ctermfg=255 ctermbg=39 cterm=NONE guifg=White guibg=#00AFFF
   hi PmenuSel ctermfg=39 ctermbg=255 cterm=NONE guifg=#00AFFF guibg=White
 
-  hi Green  ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00AF00 guibg=NONE gui=NONE
-  hi iGreen ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00AF00 gui=NONE
-  hi Blue   ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00AFFF guibg=NONE gui=NONE
-  hi iBlue  ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00AFFF gui=NONE
-  hi Search ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
+  hi Green      ctermfg=34 ctermbg=NONE cterm=NONE guifg=#00AF00 guibg=NONE gui=NONE
+  hi iGreen     ctermfg=0 ctermbg=34 cterm=NONE guifg=#000000 guibg=#00AF00 gui=NONE
+  hi Blue       ctermfg=39 ctermbg=NONE cterm=NONE guifg=#00AFFF guibg=NONE gui=NONE
+  hi iBlue      ctermfg=0 ctermbg=39 cterm=NONE guifg=#000000 guibg=#00AFFF gui=NONE
+  hi Search     ctermfg=59 ctermbg=226 cterm=NONE guibg=yellow guifg=black
+  hi IncSearch  ctermfg=255 ctermbg=34  cterm=NONE guibg=#00FF00 guifg=black gui=NONE
 
   " Init StatusLine colors
   if !exists('b:lastMode') | let b:lastMode = g:currentmode[mode()] | call ChangeAccentColor() | endif
