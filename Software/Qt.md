@@ -49,7 +49,7 @@ mingw32-make
 mingw32-make install
 ```
 
-Use latest MinGW-w64 with cmake
+Use latest MinGW-w64 with cmake (For non-Qt project)
 =====
 * $ choco install cmake.portable -y # Make sure cmake is in the $PATH
 * Download MinGW-w64 with posix and seh
