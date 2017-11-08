@@ -51,7 +51,7 @@ mingw32-make install
 
 Use latest MinGW-w64 with cmake
 =====
-* $ choco install cmake.portable -y
+* $ choco install cmake.portable -y # Make sure cmake is in the $PATH
 * Download MinGW-w64 with posix and seh
 * Extract MinGW-w64 to C:\mingw64
 * Qt creator -> Tool -> Options -> Build and Run
