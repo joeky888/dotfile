@@ -67,3 +67,12 @@ Use latest MinGW-w64 with cmake (For non-Qt project)
         * Cmake Tool -> C:\ProgramData\chocolatey\bin\cmake.exe
         * Cmake generator -> Change -> Generator -> MinGW Makefiles
         * Cmake Configuration -> Change -> Add this -> CMAKE_MAKE_PROGRAM:INTERNAL=C:\mingw64\bin\mingw32-make.exe
+* Example
+```cmake
+cmake_minimum_required(VERSION 2.8)
+SET(CMAKE_CXX_FLAGS  "-static-libgcc -static-libstdc++ -static")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
+project(wxcmake)
+add_executable(${PROJECT_NAME} "main.cpp")
+target_link_libraries(${PROJECT_NAME} ${LIB_DIR}/thirdParty.a zlib glfw glxw)
+```

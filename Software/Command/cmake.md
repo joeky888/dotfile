@@ -77,3 +77,12 @@ add_library(mylib libsrc.cpp ${HEADER_FILES})
 add_executable(myexec execfile.cpp ${HEADER_FILES})
 ```
 
+Link libs
+=====
+```cmake
+# Visual studio
+target_link_libraries(${PROJECT_NAME} ${LIB_DIR}/libfoo.lib ${LIB_DIR}/libfoo2.dll)
+# MinGW/Unix
+target_link_libraries(${PROJECT_NAME} ${LIB_DIR}/libfoo.a)
+```
+
