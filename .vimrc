@@ -290,8 +290,8 @@ function! MyQuit()
   endif
 endfunction
 function! MySave()
-  " Remove trailing space
   normal! mj
+  let @/ = "" " Clear searching highlight
   execute "%s/\\s\\+$//e"
   let cantSave = "echo \"Can't save the file: \" . v:exception | return"
   let notSaved = "redraw | echo 'This buffer was NOT saved!' | return"
@@ -383,9 +383,7 @@ function! DeleteLine()
   call setpos(".", savepos)
 endfunction
 function! PasteInsertMode()
-"   set paste
   normal! gP
-"   set nopaste
   return ''
 endfunction
 
@@ -1237,9 +1235,6 @@ command! -range=% XXD <line1>,<line2>%!xxd
 nnoremenu Edit.Merge\ to\ one\ line  :%j!<CR>
 vnoremenu Edit.Merge\ to\ one\ line  gv:%j!<CR>
 command! -range=% MergeToOneLine <line1>,<line2>%j!
-" nnoremenu Edit.Merge\ to\ one\ line  :%left<CR>:%j!<CR>
-" vnoremenu Edit.Merge\ to\ one\ line  :%left<CR>gv:%j!<CR>
-" command! -range=% MergeToOneLine <line1>,<line2>%left | <line1>,<line2>%j!
 
 " Remove something
 nnoremenu Edit.Remove.Empty\ lines          :g/^$/de<CR>
@@ -1679,11 +1674,11 @@ function! LoadSession()
 endfunction
 
 function DeleteHiddenBuffers()
-    let tpbl=[]
-    call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
-    for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
-        silent execute 'bwipeout' buf
-    endfor
+  let tpbl=[]
+  call map(range(1, tabpagenr('$')), 'extend(tpbl, tabpagebuflist(v:val))')
+  for buf in filter(range(1, bufnr('$')), 'bufexists(v:val) && index(tpbl, v:val)==-1')
+      silent execute 'bwipeout' buf
+  endfor
 endfunction
 
 if has("gui_running")
