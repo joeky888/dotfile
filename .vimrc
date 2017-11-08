@@ -81,7 +81,7 @@ let g:netrw_timefmt="" " Don't display time in file explorer
 let g:vertical_jump=&scroll*4/3 " Jump when Ctrl up/down triggered
 au VimResized * let g:vertical_jump=&scroll*4/3
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
-au FileType help noremap <CR> <C-]> | noremap <C-n> :cn<CR> | noremap <C-p> :cp<CR>
+au FileType help nmap <buffer> <CR> <C-]> | nmap <buffer> <C-n> :cn<CR> | nmap <buffer> <C-p> :cp<CR>
 " Highlight code area in markdown
 let g:markdown_fenced_languages =
 \[
