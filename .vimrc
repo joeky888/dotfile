@@ -53,7 +53,7 @@ set encoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set langmenu=en_US.UTF-8 " Set Gvim menu language
 let $LANG='en' " Set $LANG variable
-if filereadable("$VIMRUNTIME/delmenu.vim")
+if filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
   source $VIMRUNTIME/delmenu.vim " Reload Menu.vim
   source $VIMRUNTIME/menu.vim
 endif
