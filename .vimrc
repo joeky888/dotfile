@@ -1431,7 +1431,8 @@ function! HighlightAll()
 endfunction
 
 function! HighlightGlobal()
-  if &filetype == "" || &filetype == "text"
+  if &filetype == "" || &filetype == "text" || &filetype == "conf"
+    syntax clear
     let b:comment_leader = "#"
     syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
