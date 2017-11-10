@@ -1738,10 +1738,11 @@ if has("gui_running")
   nnoremap <S-Insert> "+gPi<C-g>u
   vnoremap <S-Insert> "_d"+gP
 
-  " Insert same as Ctrl-v
-  inoremap <Insert> <C-o>"+gP<C-g>u
-  nnoremap <Insert> "+gPi<C-g>u
-  vnoremap <Insert> "_d"+gP
+  " Disable Insert key in GUI
+  inoremap <Insert> <Nop>
+  nnoremap <Insert> <Nop>
+  vnoremap <Insert> <Nop>
+  cnoremap <Insert> <Nop>
 
   " Pasting or Visual-Block Insert and command-line mode
   noremap! <Insert> <C-r>+
