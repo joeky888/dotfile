@@ -276,6 +276,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   _comp_options+=(globdots) # Show hidden files when using completion
   zle -N ZshPasteFromClipboard # Bind function to command
   zle -N ZshCutToClipboard # Bind function to command
+  zle -N ZshForever # Bind function to command
   HISTFILE=$HOME/.bash_history
   alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
@@ -313,6 +314,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "^Y" redo
   bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
   bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
+  bindkey "^R" ZshForever # Ctrl R to run a command forever
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
@@ -343,6 +345,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind '\C-K:kill-whole-line'
   bind 'set show-all-if-ambiguous on'
   bind -x '"\C-V": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+  bind -x '"\C-R": BashForever'  # Ctrl R to run a command forever
   export COLOR_RESET="\[$(tput sgr0)\]" # No Color
   export COLOR_RED="\[$(tput setaf 1)\]"
   export COLOR_GREEN="\[$(tput setaf 2)\]"
@@ -540,11 +543,21 @@ ZshCutToClipboard()
   chmod 777 $HOME/dotfile/clipboard.txt
 }
 
+ZshForever()
+{
+  LBUFFER='while true; do {somethihng} ; if [ $? -eq 0 ]; then break; fi; done ;'
+}
+
 BashPasteFromClipboard()
 {
   if [[ -f $HOME/dotfile/clipboard.txt ]]; then
     READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
   fi
+}
+
+BashForever()
+{
+  READLINE_LINE='while true; do {somethihng} ; if [ $? -eq 0 ]; then break; fi; done ;'
 }
 
 CompleteAptCyg()
