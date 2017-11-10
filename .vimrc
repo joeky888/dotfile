@@ -1432,6 +1432,7 @@ endfunction
 
 function! HighlightGlobal()
   if &filetype == "" || &filetype == "text"
+    let b:comment_leader = "#"
     syn match alphanumeric  "[A-Za-z0-9_]"
     " Copy from $VIM/syntax/lua.vim
     " integer number
@@ -1449,10 +1450,14 @@ function! HighlightGlobal()
     syn match nonalphabet   "[\u007B-\u007E]"
     syn match nonalphabet   "[^\u0000-\u007F]"
     syn match lineURL       "\(https\?\|ftps\?\|git\|ssh\|scp\|file\):\/\/[[:alnum:]+&!,\'\"=@;<>\?\:|\^`\*\$%\/_#.\-\[\]\{\}()]*"
+    syn match txtComment    "#.*$"
+    syn match txtComment    "\s#.*"
+    syn match txtComment    "^;.*"
     hi def link alphanumeric  Function
     hi def link txtNumber     Define
     hi def link lineURL       Green
     hi def link nonalphabet   Conditional
+    hi def link txtComment    Comment
   endif
 endfunction
 
