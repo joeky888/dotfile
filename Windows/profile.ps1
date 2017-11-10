@@ -134,7 +134,6 @@ Function MtuForWifiNormal {
   netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent
 }
 
-
 if($env:Path -NotLike "*C:\ProgramData\chocolatey\bin*") {
   # Just in case
   $env:Path += ";C:\ProgramData\chocolatey\bin"
