@@ -837,7 +837,7 @@ function! ToggleComment()
 endfunction
 
 " autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-autocmd FileType * exe 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim'
+autocmd FileType * exe 'setlocal dictionary+='.expand("$VIMRUNTIME/syntax/".&filetype.".vim")
 set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
