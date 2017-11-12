@@ -2,5 +2,5 @@ Install an arm iso
 =====
 * See [wiki](https://wiki.qemu.org/Documentation/Platforms/ARM)
 * $ qemu-img create -f qcow2 disk.qcow2 10G
-* $ qemu-system-aarch64 -m 2048M -sd disk.qcow2 -M virt -show-cursor -drive format=raw,media=cdrom,readonly,file=debian-amd64-DVD-1.iso
-* $ qemu-system-aarch64 -m 2048M -show-cursor -drive format=qcow2,file=disk.qcow2
+* $ qemu-system-aarch64 -m 1024M -sd disk.qcow2 -M virt -show-cursor -cdrom debian-amd64-DVD-1.iso
+* $ qemu-system-aarch64 -m 1024M -show-cursor -drive format=qcow2,file=disk.qcow2
