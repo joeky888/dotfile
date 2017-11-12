@@ -837,7 +837,7 @@ function! ToggleComment()
 endfunction
 
 " autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
-autocmd FileType * exe 'setlocal dictionary+='.expand("$VIMRUNTIME/syntax/".&filetype.".vim")
+autocmd FileType * exe 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim'
 set completeopt=menuone
 set complete=.,w,b
 set complete+=k " Rescan files in the 'dictionary' option
@@ -1451,7 +1451,7 @@ function! HighlightGlobal()
     syn match nonalphabet   "[\u007B-\u007E]"
     syn match nonalphabet   "[^\u0000-\u007F]"
     syn match lineURL       "\(https\?\|ftps\?\|git\|ssh\|scp\|file\):\/\/[[:alnum:]+&!,\'\"=@;<>\?\:|\^`\*\$%\/_#.\-\[\]\{\}()]*"
-    syn match txtComment    "#.*$"
+    syn match txtComment    "^#.*$"
     syn match txtComment    "\s#.*"
     syn match txtComment    "^;.*"
     hi def link alphanumeric  Function
