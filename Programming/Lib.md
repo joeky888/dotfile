@@ -1,5 +1,5 @@
 Javascript
 =====
-* tern.js
+* TypeScript + JSX
 * d3.js
 * vue.js
