@@ -1,11 +1,13 @@
 Javascript
 =====
+* VS code: Editor
 * TypeScript + JSX
 * d3.js
 * vue.js
 
 Browser
 =====
+* VS code: Editor
 * WebExtension API
 
 C and C++
@@ -27,7 +29,14 @@ Python
 * colorama: Simple cross-platform colored terminal text
     * `https://github.com/tartley/colorama`
 * urwid: Console interface
+    * curses: standard python built-in lib
     * `https://github.com/urwid/urwid`
+
+Java
+=====
+* Eclipse: IDE
+* IntelliJ IDEA: IDE
+* Playframework
 
 Data
 =====
