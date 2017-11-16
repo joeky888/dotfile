@@ -138,9 +138,9 @@ if($env:Path -NotLike "*C:\ProgramData\chocolatey\bin*") {
   # Just in case
   $env:Path += ";C:\ProgramData\chocolatey\bin"
 }
-if($env:Path -NotLike "*C:\tools\git\bin*") {
+if($env:Path -NotLike "*C:\tools\git\cmd*") {
   # choco install git.portable
-  $env:Path += ";C:\tools\git\bin"
+  $env:Path += ";C:\tools\git\cmd"
 }
 if($env:Path -NotLike "*C:\ProgramData\Miniconda3*") {
   # choco install miniconda3
