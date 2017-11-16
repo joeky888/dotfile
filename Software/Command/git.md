@@ -15,6 +15,10 @@ Modify a commit message
 =====
 * $ git commit --amend
 
+git restore a single file
+=====
+* $ git checkout HEAD -- my-file.txt
+
 git restore a commit
 =====
 * Unpushed commit
