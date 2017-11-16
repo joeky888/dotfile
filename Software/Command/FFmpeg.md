@@ -114,6 +114,14 @@ Copy encoding if convert coding is not available
 * Subtitle
 * $ ffmpeg -i input.mkv -c:s copy output.mkv
 
+Mashup videos (Merge video clips into one, placing them next to each other)
+=====
+* Use Blender video editor, Or
+```sh
+# Merge two videos
+ffmpeg -i input1.mp4 -i input2.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' \ -map [vid] -c:v libx264 -crf 23 -preset veryfast output.mp4
+```
+
 Left channel to 1st audio track, right channel to 2nd audio track
 =====
 * The best way to go is spliting left and right channels into 2 files
