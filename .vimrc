@@ -15,6 +15,7 @@ filetype on " Enable filetype plugin
 filetype plugin indent on
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
+set ttymouse=xterm2 " Faster tty mouse
 set lazyredraw " Don't redraw statusline when switching between vim modes
 set shortmess=tsIAW " No intro when starting Vim
 set expandtab " Insert spaces instead of tabs
