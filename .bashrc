@@ -576,7 +576,7 @@ CompleteAptCyg()
 Forever()
 {
   # Hit Ctrl-F to complete Forever function
-  # Make sure the cursor is at the end of the command
+  # Forever loop until the job is done
   # while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
   if [[ -n "$ZSH_VERSION" ]]; then
     BUFFER='while true; do '$BUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
