@@ -39,7 +39,6 @@ Features in vimrc
 * Extra menu items under Edit option (GUI)
 * For vim beginners only
 
-Keys | Action | Comments
 | Keys      | Action                                                | Description |
 | --------- | ----------------------------------------------------- | ----------- |
 | Ctrl A    | Move cursor to the beginning of the line              | |
