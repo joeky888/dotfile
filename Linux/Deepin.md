@@ -9,3 +9,8 @@ deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contri
 Terminal color
 =====
 * Click setting button -> Switch theme -> elementary
+
+Packages
+=====
+* These pakcages are more powerful if they are installed from deepin GUI store
+* $ sudo apt-fast install deepin-system-monitor deepin.com.baidu.pan -y # Probably missing some icons if using cli to install them
