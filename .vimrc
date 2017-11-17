@@ -78,10 +78,10 @@ if filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
   source $VIMRUNTIME/delmenu.vim " Reload Menu.vim
   source $VIMRUNTIME/menu.vim
 endif
-if has("mouse_sgr") " xterm version >= 277
-  set ttymouse=sgr
-elseif has("mouse_xterm") " xterm version from 95 to 276
-  set ttymouse=xterm2
+if has("mouse_sgr")
+  set ttymouse=sgr " Faster mouse in tty, xterm patch version >= 277
+elseif has("mouse_xterm")
+  set ttymouse=xterm2 " Faster mouse in tty, xterm patch version from 95 to 276
 endif
 autocmd VimEnter * set noerrorbells " Disable Gvim error sound
 autocmd VimEnter * set vb t_vb= | set t_vb= " Disable Gvim visual bell
@@ -424,6 +424,7 @@ nnoremap <silent> # i#
 nnoremap <silent> % i%
 nnoremap <silent> ^ i^
 nnoremap <silent> \ i\
+nnoremap <silent> _ i_
 nnoremap <silent> <Bar> i<Bar>
 
 " Vim undo too much
@@ -847,7 +848,7 @@ endfunction
 " autocmd Filetype * setlocal omnifunc=syntaxcomplete#Complete
 autocmd FileType * exe 'setlocal dictionary+=$VIMRUNTIME/syntax/'.&filetype.'.vim'
 set completeopt=menuone
-set complete=.,w,b
+set complete=.,w,b,t
 set complete+=k " Rescan files in the 'dictionary' option
 if v:version > 704 || has("patch314") || has('patch-7.4.314')
   set shortmess+=c " Disable autocomplete WarningMsg
@@ -856,7 +857,7 @@ if v:version > 704 || has("patch1570") || has('patch-7.4.1570')
   set shortmess+=F " Disable file info on start
 endif
 let autocomp=1
-let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+let g:CharSet = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_"
 inoremap <silent> <F10> <C-\><C-O>:call ToggleAutoComplete()<CR>
 vnoremap <silent> <F10> <ESC>:call ToggleAutoComplete()<CR>
 nnoremap <silent> <F10>      :call ToggleAutoComplete()<CR>
