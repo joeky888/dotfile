@@ -58,7 +58,7 @@ Features in vimrc
 | Ctrl S    | Save                                                  | |
 | Ctrl W    | Close                                                 | |
 | Ctrl Q    | Visual-Block mode                                     | |
-| | (bar)   | Enter multiple-line editing from Visual-Block mode    | |
+| \| (bar)  | Enter multiple-line editing from Visual-Block mode    | |
 | Ctrl N    | Next word                                             | |
 | Ctrl P    | Previous word                                         | |
 | Ctrl U    | Jump multiple lines up                                | Depends on window size |
