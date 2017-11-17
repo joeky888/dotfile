@@ -74,7 +74,7 @@ let g:netrw_sizestyle="H" " Human-readable file size in file explorer
 let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
 let g:vertical_jump=&scroll*4/3 " Jump when Ctrl up/down triggered
-if filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
+if has("gui_running") && filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
   source $VIMRUNTIME/delmenu.vim " Reload Menu.vim
   source $VIMRUNTIME/menu.vim
 endif
@@ -96,7 +96,7 @@ let g:markdown_fenced_languages =
   \"c","cpp","java","javascript","ruby","python","vim",
   \"css","html","xml","json","cmake","yaml","sh","conf",
   \"zsh","tmux","debsources","resolv","sudoers","make",
-  \"dosbatch"
+  \"dosbatch","bash=sh","js=javascript"
 \]
 
 " Open all cmd args in new tabs
