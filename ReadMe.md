@@ -25,10 +25,6 @@ C:\windows\explorer.exe https://raw.githubusercontent.com/j16180339887/dotfile/m
 Invoke-WebRequest "https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc" -OutFile "$ENV:UserProfile\\.vimrc"
 ```
 
-This vimrc is based on [MiniVim](https://github.com/sd65/MiniVim). It runs on both Vim>=7.4 and neovim even though
-I am not a fan of neovim. I am not intend to release it to a extra public repo.
-In case you are interested, the code is under Public-domain licence.
-
 Features in vimrc
 =====
 * No plugins, just one file
@@ -38,6 +34,10 @@ Features in vimrc
 * Sans-serif mono font automatic detection (GUI)
 * Extra menu items under Edit option (GUI)
 * For vim beginners only
+
+This vimrc is based on [MiniVim](https://github.com/sd65/MiniVim). It runs on both Vim>=7.4 and neovim even though
+I am not a fan of neovim. I am not intend to release it to a extra public repo.
+In case you are interested, the code is under Public-domain licence.
 
 | Keys      | Action                                                | Description |
 | --------- | ----------------------------------------------------- | ----------- |
