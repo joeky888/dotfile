@@ -242,7 +242,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -f $ZSH/oh-my-zsh.sh ]; then
     source $ZSH/oh-my-zsh.sh
     compdef vman=man # Complete vman as man command
-    compdef forever=sudo # Complete forever as sudo command
+    compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v apt-get) ] && compdef apt-fast=apt # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
@@ -274,9 +274,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   setopt always_to_end # Move cursor to the end when completion
   setopt nonomatch # Disable warning when completion not found
   _comp_options+=(globdots) # Show hidden files when using completion
-  zle -N ZshPasteFromClipboard # Bind function to command
-  zle -N ZshCutToClipboard # Bind function to command
-  zle -N ZshForever # Bind function to command
+  zle -N PasteFromClipboard # Bind function to command
+  zle -N CutToClipboard # Bind function to command
+  zle -N Forever # Bind function to command
   HISTFILE=$HOME/.bash_history
   alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
@@ -312,9 +312,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "\e\C-?" backward-kill-word # Alt + Backspace
   bindkey "^Z" undo
   bindkey "^Y" redo
-  bindkey "^V" ZshPasteFromClipboard # Ctrl V to paste from Clipboard.txt
-  bindkey "^X" ZshCutToClipboard # Ctrl X to cut to Clipboard.txt
-  bindkey "^R" ZshForever # Ctrl R to run a command forever
+  bindkey "^V" PasteFromClipboard # Ctrl V to paste from Clipboard.txt
+  bindkey "^X" CutToClipboard # Ctrl X to cut to Clipboard.txt
+  bindkey "^F" Forever # Ctrl F to run a command Forever
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
@@ -344,8 +344,9 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind '\C-Y:redo'
   bind '\C-K:kill-whole-line'
   bind 'set show-all-if-ambiguous on'
-  bind -x '"\C-V": BashPasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
-  bind -x '"\C-R": BashForever'  # Ctrl R to run a command forever
+  bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
+  bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+  bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
   export COLOR_RESET="\[$(tput sgr0)\]" # No Color
   export COLOR_RED="\[$(tput setaf 1)\]"
   export COLOR_GREEN="\[$(tput setaf 2)\]"
@@ -529,35 +530,29 @@ END
   unset zipfilename;
 }
 
-ZshPasteFromClipboard()
+CutToClipboard()
+{
+  if [[ -n "$ZSH_VERSION" ]]; then
+    echo "$LBUFFER" > $HOME/dotfile/clipboard.txt
+    LBUFFER="" ;
+
+  elif [[ -n "$BASH_VERSION" ]]; then
+    # Currently, bash can not bind C-x but I'll leave this here
+    echo "$READLINE_LINE" > $HOME/dotfile/clipboard.txt
+    READLINE_LINE="" ;
+  fi
+  chmod 777 $HOME/dotfile/clipboard.txt;
+}
+
+PasteFromClipboard()
 {
   if [[ -f $HOME/dotfile/clipboard.txt ]]; then
-    LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)" ; # Zsh only, C-v to paste from clipboard.txt
-  fi
-}
-
-ZshCutToClipboard()
-{
-  echo "$LBUFFER" > $HOME/dotfile/clipboard.txt
-  LBUFFER="" ; # Zsh only, C-x to cut to clipboard.txt
-  chmod 777 $HOME/dotfile/clipboard.txt
-}
-
-ZshForever()
-{
-  LBUFFER='while true; do {somethihng} ; if [ $? -eq 0 ]; then break; fi; done ;'
-}
-
-BashPasteFromClipboard()
-{
-  if [[ -f $HOME/dotfile/clipboard.txt ]]; then
-    READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ; # Bash only, C-v to paste from clipboard.txt
-  fi
-}
-
-BashForever()
-{
-  READLINE_LINE='while true; do {somethihng} ; if [ $? -eq 0 ]; then break; fi; done ;'
+    if [[ -n "$ZSH_VERSION" ]]; then
+      LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)"
+    elif [[ -n "$BASH_VERSION" ]]; then
+      READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ;
+    fi
+  fi;
 }
 
 CompleteAptCyg()
@@ -578,17 +573,15 @@ CompleteAptCyg()
   _describe 'values' options;
 }
 
-forever()
+Forever()
 {
-  if [ "$#" == 0 ]; then
-    echo "Usage: forever \"[commands]\""
-    echo "ex: forever \"ls -a\""
-    echo "Run commands forever!"
-  else
-    # To keep all alias commands working
-    # Just copy and paste the following one-line command to terminal
-    # I can not find another way to do it
-    while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
+  # Hit Ctrl-F to complete Forever function
+  # Make sure the cursor is at the end of the command
+  # while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
+  if [[ -n "$ZSH_VERSION" ]]; then
+    LBUFFER='while true; do '$LBUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
+  elif [[ -n "$BASH_VERSION" ]]; then
+    READLINE_LINE='while true; do '$READLINE_LINE' ; if [ $? -eq 0 ]; then break; fi; done ;'
   fi;
 }
 
