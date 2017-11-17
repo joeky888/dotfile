@@ -89,9 +89,57 @@ In case you are interested, the code is under Public-domain licence.
 | Alt  Backspace    |  Delte a word backward                        | In case Ctrl key is not working in terminal emulators |
 | Ctrl Delete       |  Delte a word forward                         | |
 
+## Extra commands (Most of them were added to the GUI Edit menu already)
+
+| Command   | Action                                                    | Description |
+| --------- | --------------------------------------------------------- | ----------- |
+| OpenDroppedFiles      | Open multiple files to each tabs at one time  | |
+| JsonBeautify          | Json file beautify                            | Require Python 2 |
+| JsonMinify            | Json file minify                              | |
+| XmlBeautify           | XML file beautify                             | |
+| MergeToOneLine        | Merge selection to one single line            | |
+| RemoveLeadingSpace    |                                               | |
+| RemoveTrailingSpace   |                                               | |
+| RemoveEmptyLines      |                                               | |
+| ToggleCaseToUpper     | Toggle case from selection                    | |
+| ToggleCaseToLower     | Toggle case from selection                    | |
+| ReverseString         | Reverse selected string                       | |
+| FastRender            | Disable everything which are making Vim slow  | |
+| Split2Vertical        | Split window                                  | |
+| Split3Vertical        |                                               | |
+| Split2Horizontal      |                                               | |
+| Split3Horizontal      |                                               | |
+| Split4                |                                               | |
+| SplitMoveRight        | Move window                                   | |
+| SplitMoveLeft         |                                               | |
+| SplitMoveUp           |                                               | |
+| SplitMoveDown         |                                               | |
+| SplitResizeRight      | Resize window                                 | |
+| SplitResizeLeft       |                                               | |
+| SplitResizeUp         |                                               | |
+| SplitResizeDown       |                                               | |
+| IndentSpace2          | 2 space indention                             | |
+| IndentSpace4          | 4 space indention                             | |
+| IndentSpace8          | 8 space indention                             | |
+| IndentTab2            | 2 tab indention                               | |
+| IndentTab4            | 4 tab indention                               | |
+| IndentTab8            | 8 tab indention                               | |
+| LineEndingUnix        | \\n line ending                               | |
+| LineEndingDos         | \\r\\n line ending                            | |
+| LineEndingMac         | \\r line ending                               | |
+| EncodingUTF8          |                                               | |
+| EncodingBig5          |                                               | |
+| EncodingGBK           |                                               | |
+| EncodingJapan         |                                               | |
+| EncodingKorea         |                                               | |
+| EncodingUTF16LE       |                                               | |
+| EncodingUTF16BE       |                                               | |
+| EncodingAnsi          |                                               | |
+| Download              | Download a file from given URL                | |
+
 Extra notes
 =====
-* There are some keys you should never map them
+* There are some keys one should never map
     * Ctrl-I = Space in terminal
     * Ctrl-M = Enter in terminal
     * Ctrl-H = Backspace in terminal
