@@ -140,8 +140,11 @@ Good Software Design
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
+* Auto updater
 * Proxy setting
 * Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
+* Mobile
+    * Most operations can be done with only one hand
 
 Dev Tools
 =====
