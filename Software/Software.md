@@ -94,6 +94,7 @@ Linux
 * NetworkManager / nmtui
 * shutter
 * Conky (with weather)
+* alacritty (terminal emulator but it's new, one have to compile it from source)
 
 Android
 =====
