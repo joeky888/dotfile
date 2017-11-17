@@ -44,3 +44,16 @@ Data
 * YAML
 * Json
 
+Comment
+=====
+* Important comments should be surrounding by the comment characters
+```vim
+""""""""""""""""""""""
+"      Settings      "
+""""""""""""""""""""""
+```
+```c
+/////////////////////
+//    Documents    //
+/////////////////////
+```

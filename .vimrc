@@ -10,7 +10,9 @@ if 0
 ██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████
 endif
 
-""" General options
+""""""""""""""""""""""
+"      Settings      "
+""""""""""""""""""""""
 filetype on " Enable filetype plugin
 filetype plugin indent on
 set nocompatible " We use Vim, not Vi
@@ -54,27 +56,14 @@ set termencoding=utf-8
 set fileencodings=ucs-bom,utf-8,gbk,big5,utf-16le,utf-16be,default,latin1
 set langmenu=en_US.UTF-8 " Set Gvim menu language
 let $LANG='en' " Set $LANG variable
-if filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
-  source $VIMRUNTIME/delmenu.vim " Reload Menu.vim
-  source $VIMRUNTIME/menu.vim
-endif
 set fileformats=unix,dos,mac " Set for terminal vim
 set viminfo+=n$HOME/dotfile/.viminfo " .viminfo location
 set synmaxcol=3000 " Don't try to highlight lines with over 3000 characters
 set sessionoptions-=options,localoptions,globals,buffers " Don't save these to the session file
 set sessionoptions+=winpos,winsize,resize, " Save these to the session file
-autocmd VimEnter * set noerrorbells " Disable error sound
-autocmd VimEnter * set vb t_vb= | set t_vb= " Disable visual bell
 set smartcase& " After 8.0.1238, smartcase should be on. But we'll see.
 set nowrap " Don't wrap text
 set cmdheight=2 "Avoiding the Hit ENTER to continue prompts
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
-autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set formatoptions-=cro " Prevent vim inserting new comment lines
-if has("mouse_sgr")
-  set ttymouse=sgr
-elseif has("mouse_xterm")
-  set ttymouse=xterm2
-endif
 set guioptions-=T " Don't show toolbar in Gvim
 set guioptions-=t " Don't show tearoff menu items
 set guioptions+=b " Show bottom (horizontal) scrollbar in Gvim
@@ -85,6 +74,19 @@ let g:netrw_sizestyle="H" " Human-readable file size in file explorer
 let g:netrw_liststyle=1 " Like 'ls -al' in file explorer
 let g:netrw_timefmt="" " Don't display time in file explorer
 let g:vertical_jump=&scroll*4/3 " Jump when Ctrl up/down triggered
+if filereadable(expand(("$VIMRUNTIME/delmenu.vim")))
+  source $VIMRUNTIME/delmenu.vim " Reload Menu.vim
+  source $VIMRUNTIME/menu.vim
+endif
+if has("mouse_sgr") " xterm version >= 277
+  set ttymouse=sgr
+elseif has("mouse_xterm") " xterm version from 95 to 276
+  set ttymouse=xterm2
+endif
+autocmd VimEnter * set noerrorbells " Disable Gvim error sound
+autocmd VimEnter * set vb t_vb= | set t_vb= " Disable Gvim visual bell
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
+autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set formatoptions-=cro " Prevent vim inserting new comment lines
 au VimResized * let g:vertical_jump=&scroll*4/3
 au FileType vim,conf,sh,zsh setlocal ts=2 sw=2 sts=2 " 2 spaces indent
 au FileType help nmap <buffer> <CR> <C-]> | nmap <buffer> <C-n> :cn<CR> | nmap <buffer> <C-p> :cp<CR>
