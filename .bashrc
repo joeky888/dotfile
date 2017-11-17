@@ -579,7 +579,7 @@ Forever()
   # Make sure the cursor is at the end of the command
   # while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
   if [[ -n "$ZSH_VERSION" ]]; then
-    LBUFFER='while true; do '$LBUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
+    BUFFER='while true; do '$BUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
   elif [[ -n "$BASH_VERSION" ]]; then
     READLINE_LINE='while true; do '$READLINE_LINE' ; if [ $? -eq 0 ]; then break; fi; done ;'
   fi;
