@@ -52,6 +52,7 @@ Features in vimrc
 | /         | Search                                                | Case sensitive    |
 | Ctrl R    | Replace                                               | Case sensitive    |
 | Ctrl G    | Select all                                            | |
+| Ctrl \\   | Comment/Uncomment	                                    | Depends on file type |
 | Ctrl T    | New tab                                               | |
 | Ctrl Z    | Undo                                                  | |
 | Ctrl Y    | Redo                                                  | |
