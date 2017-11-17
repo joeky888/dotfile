@@ -30,7 +30,9 @@ Experience
 | Tool                              |  Year        |
 | --------------------------------- | ------------ |
 | Windows                           |  (2003-)     |
-| Linux                             |  (2014-)     |
+| Ubuntu Linux                      |  (2014-)     |
+| Debian Linux                      |  (2016-)     |
+| Deepin Linux                      |  (2017-)     |
 | FreeBSD                           |  (2017-)     |
 | Git                               |  (2014-)     |
 | Bash                              |  (2014-)     |
