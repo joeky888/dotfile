@@ -106,7 +106,7 @@ nameserver 223.5.5.5
 
 Install LXQT
 =====
-* $ sudo apt-fast install lxqt xorg openbox compton gnome-terminal chromium-codecs-ffmpeg-extra shutter opencc vim-gtk3 network-manager network-manager-gnome file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt-fast purge connman xarchiver -y
+* $ sudo apt-fast install lxqt xorg openbox compton chromium-codecs-ffmpeg-extra shutter opencc vim-gtk3 network-manager network-manager-gnome file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt-fast purge connman xarchiver -y
 * $ lxqt-config-appearance # Select dark theme
 
 Disable suspend when closing laptop lid
