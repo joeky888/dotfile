@@ -36,7 +36,9 @@ Features in vimrc
 * For vim beginners only
 
 This vimrc is based on [MiniVim](https://github.com/sd65/MiniVim). It runs on both Vim>=7.4 and neovim even though
+
 I am not a fan of neovim. I am not intend to release it to a extra public repo.
+
 In case you are interested, the code is under Public-domain licence.
 
 | Keys      | Action                                                | Description |
