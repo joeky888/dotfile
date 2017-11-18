@@ -126,6 +126,13 @@ Function Reset-Networking {
   ipconfig /registerdns
   netsh winsock reset
 }
+Function Reset-Networking-Per30s {
+  while($true)
+  {
+    Reset-Networking
+    Start-Sleep -s 30
+  }
+}
 
 Function MtuForWifiGaming {
   netsh interface ipv4 set subinterface Wi-Fi mtu=296  store=persistent
