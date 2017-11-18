@@ -1211,7 +1211,7 @@ if has("win32") || has("win64")
 "   set pythonthreedll=python36.dll " set python3 dll name
 endif
 
-if has("python") || has("python3")
+if has("python")
 python << EOF
 import vim
 import json
