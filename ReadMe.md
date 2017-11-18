@@ -74,7 +74,7 @@ In case you are interested, the code is under Public-domain licence.
 | Alt ←     | Previous word                                         | |
 | Alt ↑     | Jump multiple lines up                                | Depends on window size |
 | Alt ↓     | Jump multiple lines down                              | Depends on window size |
-| Ctrl B    | Delte a word backward                                 | |
+| Ctrl B    | Delete a word backward                                | |
 | Tab       | Indent                                                | |
 | Shift Tab | Unindent                                              | |
 | F2        | New tab                                               | Like Byobu |
@@ -85,16 +85,16 @@ In case you are interested, the code is under Public-domain licence.
 | PageDown  | Move current line / Selection down                    | |
 | Home      | Increase font size                                    | GUI only |
 | End       | Decrease font size                                    | GUI only |
-| Ctrl Backspace    |  Delte a word backward                        | |
-| Alt  Backspace    |  Delte a word backward                        | In case Ctrl key is not working in terminal emulators |
-| Ctrl Delete       |  Delte a word forward                         | |
+| Ctrl Backspace    |  Delete a word backward                       | |
+| Alt  Backspace    |  Delete a word backward                       | In case Ctrl key is not working in terminal emulators |
+| Ctrl Delete       |  Delete a word forward                        | |
 
 ## Extra commands (Most of them were added to the GUI Edit menu already)
 
 | Command   | Action                                                    | Description |
 | --------- | --------------------------------------------------------- | ----------- |
 | OpenDroppedFiles      | Open multiple files to each tabs at one time  | |
-| JsonBeautify          | Json file beautify                            | Require Python 2 |
+| JsonBeautify          | Json file beautify                            | Require Python 2/3 |
 | JsonMinify            | Json file minify                              | |
 | XmlBeautify           | XML file beautify                             | |
 | MergeToOneLine        | Merge selection to one single line            | |
