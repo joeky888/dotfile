@@ -1052,19 +1052,22 @@ set statusline+=%2*\ %{ReadOnly()} " ReadOnly Flags
 set statusline+=%1*\ \%l/%L(%P)-%c\  " Position
 
 function! SyntaxMonokai()
-  """" Color Scheme
-  "" Modified from tomasr Molokai on Github
-  " Red         = #F92672, 161,   rgb(249   38    114)
-  " Orange      = #FD971F, 208,   rgb(253   151   31)
-  " Yellow      = #E6DB74, 144,   rgb(230   219   116)
-  " Light Green = #A6E22E, 118,   rgb(166   226   46)
-  " Green       = #00AF00, 34,    rgb(0     175   0)
-  " Blue        = #00AFFF, 81,    rgb(0     175   255)
-  " Light Blue  = #66D9EF, 39,    rgb(102   217   239)
-  " Purple      = #AE81FF, 135,   rgb(174   129   255)
-  " Gray        = #7E8E91, 59,    rgb(126   142   145)
-  " Black       = #1B1D1E, 233,   rgb(27    29    30)
-  " White       = #F8F8F2, 252,   rgb(248   248   242)
+
+  """""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " Modified from tomasr Molokai on Github              "
+  "
+  " Red         = #F92672, 161,   rgb(249   38    114)  "
+  " Orange      = #FD971F, 208,   rgb(253   151   31)   "
+  " Yellow      = #E6DB74, 144,   rgb(230   219   116)  "
+  " Light Green = #A6E22E, 118,   rgb(166   226   46)   "
+  " Green       = #00AF00, 34,    rgb(0     175   0)    "
+  " Blue        = #00AFFF, 81,    rgb(0     175   255)  "
+  " Light Blue  = #66D9EF, 39,    rgb(102   217   239)  "
+  " Purple      = #AE81FF, 135,   rgb(174   129   255)  "
+  " Gray        = #7E8E91, 59,    rgb(126   142   145)  "
+  " Black       = #1B1D1E, 233,   rgb(27    29    30)   "
+  " White       = #F8F8F2, 252,   rgb(248   248   242)  "
+  """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
   try
     syntax enable " Enable syntax highlights
