@@ -723,6 +723,33 @@ execute 'nnoremap <silent> <ESC>[1;9B '.g:vertical_jump.'j'
 execute 'inoremap <silent> <ESC>[1;9B <C-\><C-O>'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <ESC>[1;9B '.g:vertical_jump.'j'
 
+" Delete selected characters before Entering the insert mode
+nnoremap <C-Del> "_dwi
+inoremap <C-Del> <C-o>"_dw<C-g>u
+vnoremap <C-BS> "_di
+
+" Alt - Backspace kill a word
+nnoremap <A-BS> "_dBi<C-g>u
+inoremap <A-BS> <C-w><C-g>u
+vnoremap <A-BS> "_d
+cnoremap <A-BS> <C-w>
+
+" Alt - Arrow, Move like Ctrl keys, in case Ctrl key is not working
+execute 'nnoremap <silent> <A-Up> '.g:vertical_jump.'k'
+execute 'inoremap <silent> <A-Up> <C-\><C-O>'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <A-Up> '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <A-Down> '.g:vertical_jump.'j'
+execute 'inoremap <silent> <A-Down> <C-\><C-O>'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <A-Down> '.g:vertical_jump.'j'
+nnoremap <A-Right> w
+inoremap <A-Right> <C-Right>
+cnoremap <A-Right> <C-Right>
+vnoremap <A-Right> 5l
+nnoremap <A-Left> b
+inoremap <A-Left> <C-Left>
+cnoremap <A-Left> <C-Left>
+vnoremap <A-Left> 5h
+
 " Ctrl Left - Previous 5 column
 vnoremap <C-Left> 5h
 
@@ -1763,28 +1790,7 @@ if has("gui_running")
   cnoremap <Insert> <Nop>
 
   " Pasting or Visual-Block Insert and command-line mode
-  noremap! <Insert> <C-r>+
-
-  " Delete selected characters before Entering the insert mode
-  nnoremap <C-Del> "_dwi
-  inoremap <C-Del> <C-o>"_dw<C-g>u
-  vnoremap <C-BS> "_di
-
-  " Alt - Backspace kill a word
-  nnoremap <A-BS> "_dBi<C-g>u
-  inoremap <A-BS> <C-w><C-g>u
-  vnoremap <A-BS> "_d
-  cnoremap <A-BS> <C-w>
-
-  " Alt - Arrow, Move a word
-  nnoremap <A-Right> w
-  inoremap <A-Right> <C-Right>
-  cnoremap <A-Right> <C-Right>
-  vnoremap <A-Right> 5l
-  nnoremap <A-Left> b
-  inoremap <A-Left> <C-Left>
-  cnoremap <A-Left> <C-Left>
-  vnoremap <A-Left> 5h
+  " noremap! <Insert> <C-r>+
 else
   call SyntaxMonokai()
 endif
