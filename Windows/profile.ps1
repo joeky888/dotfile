@@ -126,11 +126,11 @@ Function Reset-Networking {
   ipconfig /registerdns
   netsh winsock reset
 }
-Function Reset-Networking-Per120s {
+Function Reset-Networking-Per45s {
   while($true)
   {
     Reset-Networking
-    Start-Sleep -s 120
+    Start-Sleep -s 45
   }
 }
 
