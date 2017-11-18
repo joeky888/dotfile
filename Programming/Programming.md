@@ -4,6 +4,7 @@ Javascript
 * TypeScript + JSX
 * d3.js
 * vue.js
+* clipboard.js - Copy to clipboard
 
 Browser
 =====
