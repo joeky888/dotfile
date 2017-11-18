@@ -6,9 +6,13 @@ After installed
 ```debsources
 deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contrib non-free universe
 ```
-Terminal color
+
+Theme
 =====
-* Click setting button -> Switch theme -> elementary
+* Terminal theme
+    * Click setting button -> Switch theme -> elementary
+* Dock theme
+    * Right click on the dock -> Mode -> Efficient Mode
 
 Packages
 =====
