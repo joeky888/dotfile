@@ -104,7 +104,7 @@ In case you are interested, the code is under Public-domain licence.
 | ToggleCaseToUpper     | Toggle case from selection                    | |
 | ToggleCaseToLower     | Toggle case from selection                    | |
 | ReverseString         | Reverse selected string                       | |
-| FastRender            | Disable everything which are making Vim slow  | |
+| FastRender            | Disable everything which makes Vim slow       | |
 | Split2Vertical        | Split window                                  | |
 | Split3Vertical        |                                               | |
 | Split2Horizontal      |                                               | |
