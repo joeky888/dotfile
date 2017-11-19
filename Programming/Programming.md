@@ -41,8 +41,8 @@ Java
 * IntelliJ IDEA: IDE
 * Android Studio: IDE
 * Web server
-    * Playframework - Writen in scala (scala is not backward compatible)
-    * Spring MVC - Writen in Java
+    * Playframework - Full-featured
+    * dropwizard - small and very fast
 
 Data
 =====
