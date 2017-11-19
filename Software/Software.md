@@ -154,8 +154,10 @@ Dev Tools
 * Mobile and embbed system: Qt
 * GUI on desktop
     * Executable size as small as possible, for personal use : QtLite
-    * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
+    * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
+* Windows / XBOX only
+    * Universal Windows Platform
 * Web server backend
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
