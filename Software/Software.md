@@ -144,6 +144,7 @@ Good Software Design
 * Auto updater
 * Proxy setting
 * Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
+* Testing and Documentation
 * Mobile
     * Most operations can be done with only one hand
 

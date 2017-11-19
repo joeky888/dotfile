@@ -37,6 +37,7 @@ Java
 =====
 * Eclipse: IDE
 * IntelliJ IDEA: IDE
+* Android Studio: IDE
 * Playframework
 
 Data
