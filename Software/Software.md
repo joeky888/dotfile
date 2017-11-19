@@ -153,7 +153,7 @@ Dev Tools
 =====
 * Mobile and embbed system: Qt
 * GUI on desktop
-    * Executable size as small as possible, for personal use : Not possible at this moment, wxWidgets is FAT and hard to use
+    * Executable size as small as possible, for personal use : QtLite
     * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
     * As powerful as possible: Qt
 * Web server backend
