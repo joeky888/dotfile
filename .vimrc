@@ -1728,12 +1728,13 @@ endfunction
 
 if has("gui_running")
 
-  let g:guifontsize=13
   function! ChangeFontSize()
     if has('win32') || has('win64')
+      let g:guifontsize=13
       execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
       execute "set guifontwide=DroidMono:h".g:guifontsize.",Sarasa\\ Mono\\ TC:h".g:guifontsize.",NSimsun:h".g:guifontsize
     else
+      let g:guifontsize=14
       execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize.",Droid\\ Sans\\ Mono\\ ".g:guifontsize.",Inconsolata\\ ".g:guifontsize.",DejaVu\\ Sans\\ Mono\\ ".g:guifontsize
     endif
       execute "set linespace=".(g:guifontsize/5)
