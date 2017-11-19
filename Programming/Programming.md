@@ -23,14 +23,16 @@ C and C++
 * Single file libs
     * `https://github.com/RandyGaul/tinyheaders`
     * `https://github.com/nothings/single_file_libs`
+* Web
+    * Crow - Micro web framework for C++ (BSD license)
 
 Python
 =====
-* PyCharm: IDE
+* PyCharm: IDE (Open source and free for both Personal and Commercial use)
 * colorama: Simple cross-platform colored terminal text
     * `https://github.com/tartley/colorama`
 * urwid: Console interface
-    * curses: standard python built-in lib
+    * Curses - standard python built-in lib
     * `https://github.com/urwid/urwid`
 
 Java

@@ -156,7 +156,9 @@ Dev Tools
     * Executable size as small as possible, for personal use : Not possible at this moment, wxWidgets is FAT and hard to use
     * Development time as fast as possible: Electron (FreeBSD, Android and iOS are not supported yet)
     * As powerful as possible: Qt
-* Web server backend: Java Playframework
+* Web server backend
+    * Java Playframework - Full-featured
+    * C++ Crow - Very small and fast
 * Web frontend: React.js vue.js
 * CLI:
     * Pure Python, Python libs written in pure python
