@@ -142,6 +142,7 @@ Good Software Design
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
 * Auto updater
+* Multiple users Co-op
 * Proxy setting
 * Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and Documentation
