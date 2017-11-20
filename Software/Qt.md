@@ -1,6 +1,6 @@
 Install from archived (not recommend)
 =====
-* [archive]("https://download.qt.io/archive/online_installers/")
+* [archive]("https://download.qt.io/archive/")
 
 Install from git-for-windows/msys2
 =====
