@@ -104,6 +104,11 @@ alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.a
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
+export SUDO=''
+if (( $EUID != 0 )); then
+  export SUDO='sudo'
+fi
+
 GREP_OPTIONS=""
 if $(echo | grep --color=auto "" > /dev/null 2>&1); then
   GREP_OPTIONS="$GREP_OPTIONS --color=auto"
@@ -122,9 +127,8 @@ proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
 EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && export LC_NUMERIC="zh_TW.Big5" && export LC_TIME="zh_TW.Big5" && export LC_COLLATE="zh_TW.Big5" && export LC_MONETARY="zh_TW.Big5" && export LC_MESSAGES="zh_TW.Big5" && export LC_ALL="zh_TW.Big5" ;}
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
-killallproc() { kill -9 $(pgrep $@) ;}
-killallprocSudo() { sudo kill -9 $(pgrep $@) ;}
-killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
+killallproc() { $SUDO kill -9 $(pgrep $@) ;}
+killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
 upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 
@@ -371,11 +375,13 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   true
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
+  export SUDO=""
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   alias ls='ls -G'
   alias grep='grep --color=auto'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
+  export SUDO=""
   export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
   alias apt-cyg-Manage='setup-x86_64.exe --package-manager --wait'
   alias apt-cyg-Upgrade="aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe && setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
@@ -384,6 +390,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias mtuForWifiNormal='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   cd ~
+  export SUDO=""
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   alias ls='ls -G'
   alias grep='grep --color=auto'

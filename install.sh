@@ -119,7 +119,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-  export SUDO=''
   export Home="$HOME"
   alias ls='ls -G'
   InstallDotfile
