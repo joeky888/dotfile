@@ -10,6 +10,7 @@ English
 * Amaranth
 * Orbitron
 * Audiowide
+* Lobster Two
 
 Symbols
 =====
