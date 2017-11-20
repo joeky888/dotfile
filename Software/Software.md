@@ -146,7 +146,7 @@ Good Software Design
 * Multiple users Co-op
 * Proxy setting
 * Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
-* Testing and Documentation
+* Testing and Documentation and Examples in Documentation
 * Mobile
     * Most operations can be done with only one hand
 
