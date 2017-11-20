@@ -39,7 +39,7 @@ Regex
 \x  hex digit	                \X  non-hex digit
 \o  octal digit	                \O  non-octal digit
 \a  alphabetic character        \A  non-alphabetic character
-\w  ASCII letters and numbers   \W  non-ASCII letters or non-numbers
+\w  ASCII letters and numbers   \W  non-letters or non-numbers
 \l  lowercase character         \L  non-lowercase character
 \u  uppercase character         \U  non-uppercase character
 
@@ -73,7 +73,7 @@ Regex
 [:return:]      the <CR> character
 [:tab:]         the <Tab> character
 [\u0021-\u002F]     range of unicode
-[^\u0000-\u007F]    range of non-unicode
+[^\u0000-\u007F]    range of non-ASCII (Full-width characters)
 ```
 
 Build Mingw64 vim under cygwin
