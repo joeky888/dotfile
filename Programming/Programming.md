@@ -18,6 +18,7 @@ C and C++
 * Console interface
     * PDCurses
     * Ncurses
+    * Termbox
 * Porgress bar
     * `https://github.com/doches/progressbar`
 * Single file libs
