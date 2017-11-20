@@ -11,6 +11,7 @@ Software
 * Teamviewer
 * Baidu Pan(BaiduExporter/百度网盘直接下载助手增强版)
 * UNetbootin
+* deepin-boot-maker
 * Gimp
 * Inkscape
 * Blender
