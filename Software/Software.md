@@ -158,7 +158,7 @@ Dev Tools
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
 * Windows / XBOX only
-    * Universal Windows Platform
+    * Universal Windows Platform (.AppX)
 * Web server backend
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
