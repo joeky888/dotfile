@@ -2,9 +2,13 @@ if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
 fi
 
+if [[ "$TERM" == "screen"* ]]; then
+  export TERM=screen-256color
+fi
+
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [ $(command -v tmux) ] ; then
-  if [[ $TERM != screen ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+  if [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
     cd ~
     # Check if fbterm installed
     if [ $(command -v fbterm) ] ; then
