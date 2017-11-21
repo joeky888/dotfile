@@ -20,7 +20,7 @@ Packages
 =====
 * $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer xnview deepin-system-monitor deepin.com.baidu.pan -y
 
-Nvidia driver
+Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
 =====
 * $ `sudo apt remove nvidia-* -y`
 * $ sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings -y
