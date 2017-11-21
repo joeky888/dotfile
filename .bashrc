@@ -589,7 +589,7 @@ RestartNetworking()
 {
   $SUDO systemctl restart NetworkManager.service
   $SUDO systemctl restart networking.service
-  $SUDO systemctl restart teamviewerd.service
+  $SUDO systemctl restart teamviewerd.service;
 }
 
 Forever()
