@@ -9,7 +9,8 @@
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai Dimmed",
     "editor.mouseWheelZoom": true,
-    "editor.cursorBlinking": "solid"
+    "editor.cursorBlinking": "solid",
+    "Enable Live-Share-Function": "This is a comming soon feature"
 }
 
 [
