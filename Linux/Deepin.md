@@ -33,3 +33,21 @@ Nvidia driver
     * $ optirun firefox
 * If error "You do not appear to be using the NVIDIA X driver" appears
     * $ optirun -b none nvidia-settings -c :8
+
+Run Android apk files
+=====
+* $ sudo apt-fast install archon-integration deepin-archon -y
+```sh
+AndroidApkRun(){
+  apk=$1
+  if [ -z $apk ];then
+    echo "apk needed."
+    exit 1
+  fi
+  ret=$(/usr/lib/node_modules/chromeos-apk/chromeos-apk --archon -t --scale --name "Android App" "$apk")
+  ret=${ret#Directory \" }
+  ret=${ret% \" created*}
+  /lastore/framework/myarchon/archonrun --silent-launch --load-and-launch-app=$ret
+}
+```
+* $ AndroidApkRun xxx.apk
