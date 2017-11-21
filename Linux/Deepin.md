@@ -16,9 +16,27 @@ Theme
 * Dock theme
     * Right click on the dock -> Mode -> Efficient Mode
 
+Add dns server
+=====
+* $ sudoedit /var/run/NetworkManager/resolv.conf
+* Or
+* $ sudoedit /etc/resolv.conf
+* Or
+* $ sudoedit /run/resolvconf/resolv.conf
+* Or
+* $ sudoedit /etc/resolvconf/resolv.conf.d/head
+```resolv
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+nameserver 123.193.111.11
+nameserver 123.193.111.69
+nameserver 223.5.5.5
+```
+* $ sudo resolvconf -u
+
 Packages
 =====
-* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer xnview deepin-system-monitor deepin.com.baidu.pan -y
+* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer xnview deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y
 
 Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
 =====
