@@ -128,7 +128,6 @@ Android
 
 Good Software Design
 =====
-* Use Cmake to manage build process of the project
 * Support "Ctrl + T" New Tab
 * Customizable hotkeys
 * Customizable theming (and Font-Family) with json format
@@ -146,7 +145,7 @@ Good Software Design
 * Auto updater
 * Multiple users Co-op
 * Proxy setting
-* Create a poll or predefined option for asking user experience, not just give them a piece of blank paper
+* Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and Documentation and Examples in Documentation
 * Mobile
     * Most operations can be done with only one hand
