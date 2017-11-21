@@ -142,6 +142,7 @@ Good Software Design
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
+* Call external programs/commands
 * Auto updater
 * Multiple users Co-op
 * Proxy setting
