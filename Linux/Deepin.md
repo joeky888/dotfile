@@ -17,7 +17,7 @@ Theme
 Packages
 =====
 * These pakcages are more powerful if they are installed from deepin GUI store
-* $ sudo apt-fast install sogoupinyin opera-developer opera-stable teamviewer xnview deepin-system-monitor deepin.com.baidu.pan -y # Probably missing some icons if using cli to install them
+* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer xnview deepin-system-monitor deepin.com.baidu.pan -y # Probably missing some icons if using cli to install them
 
 Nvidia driver
 =====
