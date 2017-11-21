@@ -425,7 +425,7 @@ for root, dirs, files in os.walk("."):
     print('{}{}'.format(subindent, f))
 
 END
-  }
+  ;}
 fi
 
 vman() {
@@ -447,7 +447,7 @@ curlToAria2()
   while [ $? -ne 0 ]; do
     echo "Retrying curlToAria2 ..."
     bash -c "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
-  done
+  done;
 }
 
 unzipToBig5py3()
