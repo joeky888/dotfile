@@ -1728,29 +1728,9 @@ endfunction
 
 if has("gui_running")
 
-  function! ChangeFontSize()
-    if has('win32') || has('win64')
-      let g:guifontsize=13
-      execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
-      execute "set guifontwide=DroidMono:h".g:guifontsize.",Sarasa\\ Mono\\ TC:h".g:guifontsize.",NSimsun:h".g:guifontsize
-    else
-      let g:guifontsize=14
-      execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize.",Droid\\ Sans\\ Mono\\ ".g:guifontsize.",Inconsolata\\ ".g:guifontsize.",DejaVu\\ Sans\\ Mono\\ ".g:guifontsize
-    endif
-      execute "set linespace=".(g:guifontsize/5)
-  endfunction
-  call ChangeFontSize()
-
-  nnoremap <silent> <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
-  nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
-  inoremap <silent> <Home> <C-o>:let g:guifontsize+=1<CR><C-o>:call ChangeFontSize()<CR>
-  inoremap <silent> <End>  <C-o>:let g:guifontsize-=1<CR><C-o>:call ChangeFontSize()<CR>
-
-  " Restore all sessions, GUI only, don't do this with terminal vim
-  au VimEnter * nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
-  au VimLeave * call DeleteHiddenBuffers() | call MakeSession()
-
+  let g:guifontsize=14
   if has('win32') || has('win64')
+    let g:guifontsize=13
     call EnsureDirExists($TEMP."/vim/backup")
     call EnsureDirExists($TEMP."/vim/swap")
     call EnsureDirExists($TEMP."/vim/undo")
@@ -1767,6 +1747,26 @@ if has("gui_running")
     set imcmdline
     set imsearch=2
   endif
+
+  function! ChangeFontSize()
+    if has('win32') || has('win64')
+      execute "set guifont=Ubuntu\\ Mono:h".g:guifontsize.",Consolas:h".g:guifontsize
+      execute "set guifontwide=DroidMono:h".g:guifontsize.",Sarasa\\ Mono\\ TC:h".g:guifontsize.",NSimsun:h".g:guifontsize
+    else
+      execute "set guifont=Ubuntu\\ Mono\\ ".g:guifontsize.",Droid\\ Sans\\ Mono\\ ".g:guifontsize.",Inconsolata\\ ".g:guifontsize.",DejaVu\\ Sans\\ Mono\\ ".g:guifontsize
+    endif
+      execute "set linespace=".(g:guifontsize/5)
+  endfunction
+  call ChangeFontSize()
+
+  nnoremap <silent> <Home> :let g:guifontsize+=1<CR>:call ChangeFontSize()<CR>
+  nnoremap <silent> <End>  :let g:guifontsize-=1<CR>:call ChangeFontSize()<CR>
+  inoremap <silent> <Home> <C-o>:let g:guifontsize+=1<CR><C-o>:call ChangeFontSize()<CR>
+  inoremap <silent> <End>  <C-o>:let g:guifontsize-=1<CR><C-o>:call ChangeFontSize()<CR>
+
+  " Restore all sessions, GUI only, don't do this with terminal vim
+  au VimEnter * nested :call LoadSession() | call SyntaxMonokai() | call HighlightAll()
+  au VimLeave * call DeleteHiddenBuffers() | call MakeSession()
 
   " Ctrl C is copying line if there is no word selected
   nnoremap <C-c> mjV"+y:redraw!<CR>`ji
