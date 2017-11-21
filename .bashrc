@@ -236,9 +236,9 @@ elif [ $(command -v gvim) ]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      command gvim -u ~/.vimrc
+      command gvim -u ~/.vimrc > /dev/null 2>&1
     else
-      command gvim -u ~/.vimrc -p --remote-tab-silent "$@"
+      command gvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
     fi;
   }
 fi
