@@ -9,6 +9,7 @@ deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contri
 
 Theme
 =====
+* Display -> Theme -> Deepin-dark
 * Terminal theme
     * Click setting button -> Switch theme -> elementary
 * Dock theme
