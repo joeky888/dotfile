@@ -51,3 +51,7 @@ AndroidApkRun(){
 }
 ```
 * $ AndroidApkRun xxx.apk
+
+Install Line
+=====
+* Install Line Chrome App, don't use wine to do this
