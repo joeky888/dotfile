@@ -28,8 +28,6 @@ Add dns server
 ```resolv
 nameserver 8.8.8.8
 nameserver 8.8.4.4
-nameserver 123.193.111.11
-nameserver 123.193.111.69
 nameserver 223.5.5.5
 ```
 * $ sudo resolvconf -u
