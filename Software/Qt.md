@@ -18,6 +18,22 @@ Error: at least one valid and enable repository required for this action to succ
 "http://download.qt.io/online/qtsdkrepository/windows_x86/root/qt/"
 ```
 
+Qt Creator
+=====
+* Tools -> Options -> Environment -> Keyboard
+```xml
+<shortcut id="TextEditor.CopyLineDown"><key value="Ctrl+D"/></shortcut>
+<shortcut id="TextEditor.UnCommentSelection"><key value="Ctrl+\"/></shortcut>
+<shortcut id="TextEditor.DeleteLine"/><key value="Ctrl+K"/></shortcut>
+<shortcut id="TextEditor.GotoLineEnd"/><key value="Ctrl+E"/></shortcut>
+<shortcut id="TextEditor.GotoLineStart"/><key value="Ctrl+A"/></shortcut>
+<shortcut id="QtCreator.SelectAll"><key value="Ctrl+G"/></shortcut>
+<shortcut id="TextEditor.MoveLineUp"><key value="PgUp"/></shortcut>
+<shortcut id="TextEditor.MoveLineDown"><key value="PgDown"/></shortcut>
+<shortcut id="TextEditor.viewLineUp"><key value="Ctrl+Up"/></shortcut>
+<shortcut id="TextEditor.viewPageDown"><key value="Ctrl+Down"/></shortcut>
+```
+
 Windeployqt
 =====
 * Open Qt cmd.exe
