@@ -587,13 +587,13 @@ CompleteAptCyg()
 
 RestartNetworking()
 {
-  $SUDO systemctl restart NetworkManager.service
   $SUDO systemctl restart networking.service
   $SUDO systemctl restart dnsmasq.service
   $SUDO systemctl restart systemd-hostnamed.service
   $SUDO ip -s -s neigh flush all
   $SUDO ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
   $SUDO systemctl restart teamviewerd.service;
+  $SUDO systemctl restart NetworkManager.service
 }
 
 Forever()
