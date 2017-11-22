@@ -36,6 +36,7 @@ Make pkg faster, and get latest packags
 ```conf
 nameserver 8.8.8.8
 nameserver 8.8.4.4
+nameserver 180.76.76.76
 nameserver 114.114.114.114
 ```
 * $ sudoedit /etc/pkg/FreeBSD.conf
