@@ -21,6 +21,8 @@ C and C++
     * Termbox
 * Porgress bar
     * `https://github.com/doches/progressbar`
+* Math
+    * Boost
 * Single file libs
     * `https://github.com/RandyGaul/tinyheaders`
     * `https://github.com/nothings/single_file_libs`
