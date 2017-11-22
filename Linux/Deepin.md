@@ -27,9 +27,9 @@ Add dns server
 * Or
 * $ sudoedit /etc/resolvconf/resolv.conf.d/head
 ```resolv
-nameserver 8.8.8.8
 nameserver 8.8.4.4
 nameserver 114.114.114.114
+nameserver 8.8.8.8
 ```
 * $ sudo resolvconf -u
 
