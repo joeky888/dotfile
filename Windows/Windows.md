@@ -13,11 +13,19 @@ Post-install
 * Disable animations in Windows
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 
-Win8+ Set Powershell.exe to default shell to Win+X
+Win8+ Set Powershell.exe to default shell to WinX
 =====
 * Control Panel -> Appearance and Personalization -> Taskbar and Navigation -> Navigation -> Coner navigation -> Check
 * Or
 * Setting -> Personalization -> Taskbar -> Replace cmd with Powershell in the menu -> Check
+
+Add Control Panel to the WinX menu
+=====
+* Open file explorer and go to %LocalAppdata%\Microsoft\Windows\WinX\Group2
+* Create a shourtcut
+    * Location "%windir%\system32\control.exe"
+    * Name "4 - Control Panel.lnk"
+* Reboot
 
 God mode
 =====
