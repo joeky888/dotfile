@@ -36,7 +36,7 @@ nameserver 223.5.5.5
 Packages
 =====
 * $ sudo apt purge vim -y
-* $ sudo apt-fast install sogoupinyin xclip xsel opera-developer opera-stable vscode teamviewer vlc xnview deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y
+* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer vlc xnview deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y
 
 Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
 =====
