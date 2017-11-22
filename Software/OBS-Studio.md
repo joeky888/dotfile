@@ -6,3 +6,8 @@ If not working on Windows(Black screen)
 Drag to crop the video source
 =====
 * Hold alt-key and use mouse to drap the red spot on the preview window
+
+Keys
+=====
+* Set F5 as Start Reconding
+* Set F6 as Stop Reconding
