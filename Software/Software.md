@@ -69,6 +69,7 @@ Windows
 * MPC-HC
 * Sarasa Mono TC font (for console)
 * $ Set-ExecutionPolicy RemoteSigned
+* $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
 * $ choco install 7zip aria2 miniconda miniconda3 ffmpeg youtube-dl greenshot sumatrapdf.commandline xnviewmp inkscape cmake.portable git.portable vim-tux.portable adb -y --pre
 * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
 * Gaming dlls
