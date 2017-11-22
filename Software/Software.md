@@ -43,9 +43,9 @@ Software
 * Docker
 * Sikuli / SikuliX
 * TestDisk / PhotoRec
-* ffmpeg
+* FFmpeg
 * OpenCC
-* aria2
+* Aria2
 * Zulu
 * JComicDownloader
 * JDownloader
