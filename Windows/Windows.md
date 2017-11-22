@@ -21,6 +21,15 @@ Win8+ Set Powershell.exe to default shell to WinX
 
 Add Control Panel to the WinX menu
 =====
+```sh
+# Powershell
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$env:LocalAppdata\\Microsoft\\Windows\\WinX\\Group2\\4 - Control Panel.lnk")
+$Shortcut.TargetPath = "%windir%\system32\control.exe"
+$Shortcut.Arguments = "shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}"
+$Shortcut.Save()
+```
+* Or
 * Open file explorer and go to %LocalAppdata%\Microsoft\Windows\WinX\Group2
 * Create a shourtcut
     * Location "%windir%\system32\control.exe"
