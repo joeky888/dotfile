@@ -45,6 +45,9 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
 
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced]
+"DontUsePowerShellOnWinX"=dword:00000000
+
 [HKEY_CURRENT_USER\Console]
 "LineSelection"=1
 "QuickEdit"=1
