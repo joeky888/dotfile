@@ -11,3 +11,9 @@ Post-install
 * Install Sarasa Mono TC, Ubuntu mono and Droid Mono fonts
 * Disable battery automatically sleeping
 * Disable animations in Windows
+
+Win8+ Set Powershell.exe to default shell to Win+X
+=====
+* Control Panel -> Appearance and Personalization -> Taskbar and Navigation -> Navigation -> Coner navigation -> Check
+* Or
+* Setting -> Personalization -> Taskbar -> Replace cmd with Powershell in the menu -> Check
