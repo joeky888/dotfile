@@ -376,7 +376,15 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  true
+  RestartNetworking() {
+    $SUDO systemctl restart networking.service
+    $SUDO systemctl restart dnsmasq.service
+    $SUDO systemctl restart systemd-hostnamed.service
+    $SUDO ip -s -s neigh flush all
+    $SUDO ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
+    $SUDO systemctl restart teamviewerd.service;
+    $SUDO systemctl restart NetworkManager.service
+  }
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
   export SUDO=""
@@ -583,17 +591,6 @@ CompleteAptCyg()
     'searchall:Search cygwin.com to retrieve file information about packages'
   )
   _describe 'values' options;
-}
-
-RestartNetworking()
-{
-  $SUDO systemctl restart networking.service
-  $SUDO systemctl restart dnsmasq.service
-  $SUDO systemctl restart systemd-hostnamed.service
-  $SUDO ip -s -s neigh flush all
-  $SUDO ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
-  $SUDO systemctl restart teamviewerd.service;
-  $SUDO systemctl restart NetworkManager.service
 }
 
 Forever()
