@@ -6,10 +6,10 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade"; then
   cd /var/cache/apt/archives/;
 
   # Donload unfinished jobs
-  aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,223.5.5.5 -i apt-fast.list
+  aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,114.114.114.114 -i apt-fast.list
 
   # Create new jobs
-  apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,223.5.5.5 -i apt-fast.list
+  apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,114.114.114.114 -i apt-fast.list
 fi
 
 apt $@;
