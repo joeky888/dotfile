@@ -11,6 +11,7 @@ Post-install
 * Install Sarasa Mono TC, Ubuntu mono and Droid Mono fonts
 * Disable battery automatically sleeping
 * Disable animations in Windows
+* cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 
 Win8+ Set Powershell.exe to default shell to Win+X
 =====
