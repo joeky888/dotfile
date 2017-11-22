@@ -18,3 +18,7 @@ Win8+ Set Powershell.exe to default shell to Win+X
 * Control Panel -> Appearance and Personalization -> Taskbar and Navigation -> Navigation -> Coner navigation -> Check
 * Or
 * Setting -> Personalization -> Taskbar -> Replace cmd with Powershell in the menu -> Check
+
+God mode
+=====
+* Rename an empty folder to "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
