@@ -31,7 +31,7 @@ set history=10000 " Maximum 10000 undo
 set wildmenu " Better command-line completion
 set wildignorecase " Ignore case when command-line completion
 set guicursor=a:ver25-Cursor/lCursor-blinkon0 " disable cursor flashing
-set clipboard=unnamed,unnamedplus,exclude:.*
+set clipboard=unnamedplus,unnamed,exclude:.*
 set selection=exclusive " Don't select char under cursor
 set mouseshape+=a:beam " set cursor shape as modern editors should be
 set mouse=a
