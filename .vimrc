@@ -1474,7 +1474,7 @@ function! HighlightGlobal()
     syntax clear
     let b:comment_leader = "#"
     syn match alphanumeric  "[A-Za-z0-9_]"
-    " Copy from $VIM/syntax/lua.vim
+    " Copied from $VIM/syntax/lua.vim
     " integer number
     syn match txtNumber     "\<\d\+\>"
     " floating point number, with dot, optional exponent
@@ -1533,6 +1533,7 @@ function! HighlightASS()
     return
   endif
   setlocal filetype=ass
+  let b:comment_leader = ";"
   syn match assSection       "^\[.*\]"
   syn match assSourceComment "^;.*$"
   syn match assLine          "^[^;][^:]*:.*$"  contains=assHeader,assComment,assDialog
