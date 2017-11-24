@@ -4,35 +4,6 @@ Get latest ubuntu package
 * $ sudoedit /etc/apt/sources.list
 * Replace all "xenial" (or something like that) strings with "devel"
 
-Mount a USB drive
-=====
-* $ lsblk
-* $ sudo blkid
-* $ sudo fdisk -l
-* $ sudo mkdir /media/usb
-* $ sudo mount /dev/sdb1 /media/usb
-* $ sudo umount /media/usb
-
-Change timezone
-=====
-* $ timedatectl list-timezones | grep Asi
-* $ sudo timedatectl set-timezone Asia/Taipei
-
-Listen to music without x
-=====
-* $ sudo apt-fast install alsa alsa-tools vlc-nox -y
-* $ sudo usermod -a -G audio $(whoami)
-* $ sudo reboot
-* $ alsamixer # Adjust volume
-* $ vlc -I ncurses --random ~/Music/\*.mp3
-* If there is no sound in virtualbox, switch the audio card in virtualbox setting
-
-Mouse without x
-=====
-* Make sure fbterm is installed and functional
-* $ sudo apt-fast install gpm
-* $ sudo reboot
-
 Connect network using static ip
 =====
 * Get netword card name
