@@ -394,6 +394,10 @@ function! PasteInsertMode()
   normal! gP
   return ''
 endfunction
+function! PasteClipboardInsertMode()
+  normal! "+gP
+  return ''
+endfunction
 
 " Usefull shortcuts for entering insert mode
 nnoremap <CR> i<CR>
@@ -514,6 +518,10 @@ if !has("gui_running") && has("clipboard") && v:register == '"'
   inoremap <silent> <C-x>  <C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR><ESC>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
   vnoremap <silent> <C-x> "+y<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>gv"_d
   cnoremap <C-x> <C-y><C-e><C-u>
+  " Remap Ctrl V
+  nnoremap <silent> <C-v> "+gPi<C-g>u
+  vnoremap <silent> <C-v> "_d"+gP
+  inoremap <silent> <C-v> <C-r>=PasteClipboardInsertMode()<CR><C-g>u
 endif
 
 " Insert - Paste
