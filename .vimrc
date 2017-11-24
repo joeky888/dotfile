@@ -15,7 +15,6 @@ endif
 """"""""""""""""""""""
 filetype on " Enable filetype plugin
 filetype plugin indent on
-colorscheme darkblue
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
@@ -1113,7 +1112,8 @@ function! SyntaxMonokai()
 
   try
     syntax enable " Enable syntax highlights
-  catch /:E484:/
+    colorscheme darkblue
+  catch /:E484:\|:E185:/
     " E484: Syntax files not found, using HighlightGlobal"
     autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * call HighlightGlobal()
     call HighlightGlobal()
