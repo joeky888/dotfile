@@ -442,7 +442,7 @@ for root, dirs, files in os.walk("."):
     print('{}{}'.format(subindent, f))
 
 END
-  ;}
+  }
 fi
 
 vman() {
