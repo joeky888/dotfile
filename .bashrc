@@ -241,7 +241,8 @@ elif [ $(command -v gvim) ]; then
       command gvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
     fi;
   }
-elif [ $(command -v nvim) ]; then
+fi
+if [ $(command -v nvim) ]; then
   nvim()
   {
     if [ "$#" == 0 ]; then
