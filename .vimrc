@@ -15,6 +15,7 @@ endif
 """"""""""""""""""""""
 filetype on " Enable filetype plugin
 filetype plugin indent on
+colorscheme darkblue
 set nocompatible " We use Vim, not Vi
 set ttyfast " Faster redraw
 set lazyredraw " Don't redraw statusline when switching between vim modes
