@@ -1,3 +1,20 @@
+System Clipboard not working
+=====
+* Check environment
+```vim
+echo has('clipboard')
+echo has('unnamedplus')
+echo v:register
+```
+* If everything seems fine, here is a quick fix
+```vim
+set clipboard=
+nnoremap <C-c> mjV"+y:redraw!<CR>`ji
+inoremap <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>:redraw!<CR><C-o>`j
+vnoremap <C-c> "+y:redraw!<CR>gv
+cnoremap <C-c> <C-y>
+```
+
 Disable bold and italic font
 =====
 * :echo $VIMRUNTIME
