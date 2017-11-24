@@ -496,10 +496,23 @@ cnoremap <C-x> <C-y><C-e><C-u>
 nnoremap <silent> <C-v> gPi<C-g>u
 vnoremap <silent> <C-v> "_dgP
 inoremap <silent> <C-v> <C-r>=PasteInsertMode()<CR><C-g>u
+cnoremap <C-v> <C-r>"
+
 if has('clipboard')
+  set clipboard=
+  " Remap Ctrl C
+  nnoremap <silent> <C-c> mjV"+yV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`ji
+  inoremap <silent> <C-c> <C-\><C-o>mj<C-o>V"+y<C-o>V:w! $HOME/dotfile/clipboard.txt<CR><C-o>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR><C-o>:redraw!<CR><C-o>`j
+  vnoremap <silent> <C-c> "+y<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
+  cnoremap <C-c> <C-y>
+  " Remap Ctrl X
+  nnoremap <silent> <C-x>       :call SavePos()<CR>:w! $HOME/dotfile/clipboard.txt<CR>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i
+  inoremap <silent> <C-x>  <C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR><ESC>V"+x:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
+  vnoremap <silent> <C-x> "+y<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>gv"_d
+  cnoremap <C-x> <C-y><C-e><C-u>
+
+  " Remap Ctrl X
   cnoremap <C-v> <C-r>+
-else
-  cnoremap <C-v> <C-r>"
 endif
 
 " Insert - Paste
