@@ -498,7 +498,7 @@ vnoremap <silent> <C-v> "_dgP
 inoremap <silent> <C-v> <C-r>=PasteInsertMode()<CR><C-g>u
 cnoremap <C-v> <C-r>"
 
-if has('clipboard')
+if !has("gui_running") && has("clipboard") && v:register == '"'
   set clipboard=
   " Remap Ctrl C
   nnoremap <silent> <C-c> mjV"+yV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`ji
@@ -511,7 +511,7 @@ if has('clipboard')
   vnoremap <silent> <C-x> "+y<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>gv"_d
   cnoremap <C-x> <C-y><C-e><C-u>
 
-  " Remap Ctrl X
+  " Remap Ctrl V
   cnoremap <C-v> <C-r>+
 endif
 

@@ -25,6 +25,7 @@ Mouse without x
 * Make sure fbterm is installed and functional
 * $ sudo apt-fast install gpm
 * $ sudo reboot
+* $ vim --version | grep gpm # Check vim gpm support
 
 Mount a USB drive
 =====
