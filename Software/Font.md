@@ -14,4 +14,5 @@ English
 
 Symbols
 =====
+* Google material-design-icons
 * deepin-opensymbol

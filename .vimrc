@@ -1104,7 +1104,7 @@ function! SyntaxMonokai()
 
   """""""""""""""""""""""""""""""""""""""""""""""""""""""
   " Modified from tomasr Molokai on Github              "
-  "
+  "                                                     "
   " Red         = #F92672, 161,   rgb(249   38    114)  "
   " Orange      = #FD971F, 208,   rgb(253   151   31)   "
   " Yellow      = #E6DB74, 144,   rgb(230   219   116)  "
