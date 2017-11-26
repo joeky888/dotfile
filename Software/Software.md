@@ -150,7 +150,7 @@ Good Software Design
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and Documentation and Examples in Documentation
 * Mobile
-    * Most operations can be done with only one hand
+    * Most operations can be done with only one finger
 
 Dev Tools
 =====
