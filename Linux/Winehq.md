@@ -4,7 +4,11 @@ Install Wine
 * $ sudo apt-fast install --install-recommends wine32-development-preloader winbind cabextract zenity -y && winecfg-development
 * Or
 * $ sudo dpkg --add-architecture i386 && sudo apt-fast update
-* $ sudo apt-fast install --install-recommends wine64-development-preloader winbind cabextract zenity -y && winecfg-development
+* $ sudo apt-fast install --install-recommends wine64-development-preloader winbind cabextract zenity -y
+```sh
+export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" && export LC_NUMERIC="zh_TW.UTF-8" && export LC_TIME="zh_TW.UTF-8" && export LC_COLLATE="zh_TW.UTF-8" && export LC_MONETARY="zh_TW.UTF-8" && export LC_MESSAGES="zh_TW.UTF-8" && export LC_ALL="zh_TW.UTF-8"
+winecfg-development
+```
 * DO NOT INSTALL winetricks
 
 Install CJK font
@@ -12,7 +16,6 @@ Install CJK font
 1. manual
     * Install a Chinese input method on Linux
 ```sh
-LANG="zh_TW.Big5" && LC_CTYPE="zh_TW.Big5" && LC_NUMERIC="zh_TW.Big5" && LC_TIME="zh_TW.Big5" && LC_COLLATE="zh_TW.Big5" && LC_MONETARY="zh_TW.Big5" && LC_MESSAGES="zh_TW.Big5" && LC_ALL="zh_TW.Big5"
 aria2c "https://github.com/j16180339887/CJK-font/raw/master/wqy-microhei.ttc" -d / -o ~/.wine/drive_c/windows/Fonts/wqy-microhei.ttc && wine regedit ~/dotfile/Linux/cjk.reg
 ```
     * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive\_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
