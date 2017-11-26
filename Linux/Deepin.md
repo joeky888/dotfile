@@ -75,3 +75,8 @@ AndroidApkRun(){
 Install Line
 =====
 * Install Line Chrome App, don't use wine to do this
+
+Install conky
+=====
+* $ sudo apt-fast install conky conky-manager -y
+* $ conky-manager
