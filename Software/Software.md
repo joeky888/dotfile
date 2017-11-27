@@ -144,6 +144,7 @@ Good Software Design
 * GUI but command line also available for shell scripting
 * Responsive UI design for all device
 * Call external programs/commands
+* Current status / Connection status, like (Green)Good, (Red)Bad
 * Auto updater
 * Multiple users Co-op
 * Proxy setting
