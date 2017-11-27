@@ -122,6 +122,15 @@ Mashup videos (Merge video clips into one, placing them next to each other)
 ffmpeg -i input1.mp4 -i input2.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' \ -map [vid] -c:v libx264 -crf 23 -preset veryfast output.mp4
 ```
 
+Convert Video to GIF
+=====
+```sh
+# FPS 5
+ffmpeg -i input.mp4 -vf scale=320:-1 -r 5 -f image2pipe -vcodec ppm - | convert -delay 20 -loop 0 - gif:- | convert -fuzz 10% -layers Optimize - output.gif
+# FPS 10
+ffmpeg -i input.mp4 -vf scale=320:-1 -r 10 -f image2pipe -vcodec ppm - | convert -delay 10 -loop 0 - gif:- | convert -fuzz 10% -layers Optimize - output.gif
+```
+
 Left channel to 1st audio track, right channel to 2nd audio track
 =====
 * The best way to go is spliting left and right channels into 2 files
