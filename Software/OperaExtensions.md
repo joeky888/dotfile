@@ -28,7 +28,15 @@ RSS list
 中文
 https://feeds.feedburner.com/techbang
 https://www.gamebase.com.tw/news/rss/0
+http://news.everydayhealth.com.tw/feed
+https://feeds.feedburner.com/engadget/cstb
+https://technews.tw/tn-rss/
+https://feeds.feedburner.com/pcadv
+https://feeds.feedburner.com/cool3c-show
+https://www.ithome.com.tw/rss
+https://www.kocpc.com.tw/feed
 
 English
 https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
+https://feeds.feedburner.com/engadget
