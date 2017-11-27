@@ -1,0 +1,34 @@
+* Adblock Plus
+* Download Chrome Extension
+* Search by Image (by Google)
+* Stylish / Stylus
+* Full Page Screen Capture
+* TJDict
+* SimpleUndoClose
+* Tampermonkey
+* Allow Select And Copy
+* Set Character Encoding
+* User-Agent Switcher for Chrome by Google
+* HTTPS Everywhere
+* Disconnect
+* Remove Google Redirection
+* GitHub Plus
+* BaiduExporter
+* Turbo Download Manager (Opera Extension)
+* Monokai for Chrome:
+    * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
+    * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
+* Adobe Flash:
+    * chrome://Plugins -> Search "flash" -> Enable
+* LXRSS
+    * Custom New Tab Page (Opera Extension) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
+
+RSS list
+=====
+中文
+https://feeds.feedburner.com/techbang
+https://www.gamebase.com.tw/news/rss/0
+
+English
+https://feeds.feedburner.com/d0od
+https://www.phoronix.com/rss.php
