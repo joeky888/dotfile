@@ -13,6 +13,7 @@
 * Disconnect
 * Remove Google Redirection
 * GitHub Plus
+* Reddit Enhancement Suite
 * BaiduExporter
 * Turbo Download Manager (Opera Extension)
 * Monokai for Chrome:
