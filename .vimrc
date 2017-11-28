@@ -485,7 +485,7 @@ inoremap <C-a> <Home>
 call CreateShortcut("C-e", "$l", "nv")
 inoremap <C-e> <End>
 
-if !has("gui_running") && has("clipboard") && v:register == '"'
+if !has("gui_running") && has("clipboard")
   set clipboard=
   " Remap Ctrl C
   nnoremap <silent> <C-c> mjV"+yV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`ji
