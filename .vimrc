@@ -485,27 +485,6 @@ inoremap <C-a> <Home>
 call CreateShortcut("C-e", "$l", "nv")
 inoremap <C-e> <End>
 
-" Ctrl C - Copy
-call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
-vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
-
-" Ctrl X - Cut
-nnoremap <silent> <C-x>       :call SavePos()<CR>:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i
-inoremap <silent> <C-x>  <C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR><ESC>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
-vnoremap <silent> <C-x> d<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
-cnoremap <C-x> <C-y><C-e><C-u>
-
-" Ctrl V - Paste from vim clipboard
-" inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
-nnoremap <silent> <C-v> gPi<C-g>u
-vnoremap <silent> <C-v> "_dgP
-inoremap <silent> <C-v> <C-r>=PasteInsertMode()<CR><C-g>u
-if has("clipboard")
-  cnoremap <C-v> <C-r>+
-else
-  cnoremap <C-v> <C-r>"
-endif
-
 if !has("gui_running") && has("clipboard") && v:register == '"'
   set clipboard=
   " Remap Ctrl C
@@ -522,6 +501,24 @@ if !has("gui_running") && has("clipboard") && v:register == '"'
   nnoremap <silent> <C-v> "+gPi<C-g>u
   vnoremap <silent> <C-v> "_d"+gP
   inoremap <silent> <C-v> <C-r>=PasteClipboardInsertMode()<CR><C-g>u
+  cnoremap <C-v> <C-r>+
+elseif !has("gui_running") && !has("clipboard")
+  " Ctrl C - Copy
+  call CreateShortcut("C-c", "mjYV:w! $HOME/dotfile/clipboard.txt<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>`j", "ni")
+  vnoremap <silent> <C-c> y:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:redraw!<CR>gv
+
+  " Ctrl X - Cut
+  nnoremap <silent> <C-x>       :call SavePos()<CR>:w! $HOME/dotfile/clipboard.txt<CR>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i
+  inoremap <silent> <C-x>  <C-o>:call SavePos()<CR><ESC>:w! $HOME/dotfile/clipboard.txt<CR><ESC>dd:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>:call setpos(".", b:savepos)<CR>i<C-g>u
+  vnoremap <silent> <C-x> d<ESC>:call delete(expand("$HOME/dotfile/clipboard.txt"))<CR>:new $HOME/dotfile/clipboard.txt<CR>P:w!<CR>:bdelete!<CR>:call system('chmod 777 $HOME/dotfile/clipboard.txt')<CR>
+  cnoremap <C-x> <C-y><C-e><C-u>
+
+  " Ctrl V - Paste from vim clipboard
+  " inoremap <silent> <C-v> <C-o>:normal! gP<CR><C-g>u
+  nnoremap <silent> <C-v> gPi<C-g>u
+  vnoremap <silent> <C-v> "_dgP
+  inoremap <silent> <C-v> <C-r>=PasteInsertMode()<CR><C-g>u
+  cnoremap <C-v> <C-r>"
 endif
 
 " Insert - Paste
