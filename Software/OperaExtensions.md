@@ -26,7 +26,7 @@
 
 RSS list
 =====
-中文
+* 中文
 https://feeds.feedburner.com/techbang
 https://www.gamebase.com.tw/news/rss/0
 http://news.everydayhealth.com.tw/feed
@@ -37,9 +37,14 @@ https://feeds.feedburner.com/cool3c-show
 https://www.ithome.com.tw/rss
 https://www.kocpc.com.tw/feed
 http://www.eprice.com.tw/news/rss.xml
+http://techcrunch.cn/feed
+http://www.azofreeware.com/feeds/posts/default
 
-English
+* English
 https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
 https://feeds.feedburner.com/engadget
 https://feeds2.feedburner.com/webupd8
+https://feeds.feedburner.com/TechCrunch
+https://opensource.com/feed
+https://feeds.feedburner.com/linuxtoday/linux
