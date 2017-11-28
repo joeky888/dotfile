@@ -35,6 +35,7 @@ https://feeds.feedburner.com/pcadv
 https://feeds.feedburner.com/cool3c-show
 https://www.ithome.com.tw/rss
 https://www.kocpc.com.tw/feed
+http://www.eprice.com.tw/news/rss.xml
 
 English
 https://feeds.feedburner.com/d0od

@@ -1800,6 +1800,12 @@ if has("gui_running")
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><C-\><C-o>dd<C-\><C-o>:call setpos(".", b:savepos)<CR><C-g>u
   vnoremap <silent> <C-x> "+x
 
+  " Ctrl X is pasting from system clipboard
+  nnoremap <silent> <C-v> "+gPi<C-g>u
+  vnoremap <silent> <C-v> "_d"+gP
+  inoremap <silent> <C-v> <C-r>=PasteClipboardInsertMode()<CR><C-g>u
+  cnoremap <C-v> <C-r>+
+
   " Shift-Insert same as Ctrl-v
   inoremap <S-Insert> <C-o>"+gP<C-g>u
   nnoremap <S-Insert> "+gPi<C-g>u
