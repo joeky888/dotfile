@@ -83,15 +83,6 @@ List<Double> intList = new LinkedList<Double>();
 Polymorphism 多型
 =====
 ```java
-class Polymorphic{
-  public static doPrint(Pen foo){
-    System.out.println("I got a pen");
-  }
-  public static doPrint(Apple foo){
-    System.out.println("I got an apple");
-  }
-  public static doPrint(Pineapple foo){
-    System.out.println("I got a pineapple");
-  }
-}
+Animal puppy1, puppy2, puppy3; // Animal 宣告
+puppy1 = new Elephant("大象", 6, 70); // new Elephant
 ```
