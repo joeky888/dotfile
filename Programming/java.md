@@ -86,3 +86,21 @@ Polymorphism 多型
 Animal puppy1, puppy2, puppy3; // Animal 宣告
 puppy1 = new Elephant("大象", 6, 70); // new Elephant
 ```
+
+Binding
+=====
+* Early (or static) binding = compile time binding
+* Late (or dynamic) binding = runtime binding
+```java
+//early binding:
+public create_a_foo(*args) {
+    return new Foo(args)
+}
+my_foo = create_a_foo();
+
+//late binding:
+public create_something(Class klass, *args) {
+    klass.new_instance(args)
+}
+my_foo = create_something(Foo);
+```
