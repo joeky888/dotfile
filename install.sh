@@ -80,6 +80,15 @@ InstallMinicondaLinux()
   echo y | ~/Miniconda3/bin/pip install bypy
 }
 
+InstallMinicondaMac()
+{
+  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
+  echo y | ~/Miniconda3/bin/pip install youtube-dl
+  echo y | ~/Miniconda3/bin/pip install you-get
+  echo y | ~/Miniconda3/bin/pip install bypy
+}
+
+
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   export Home="$HOME"
@@ -124,9 +133,11 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   brew update
   brew install git ffmpeg aria2 tig tmux p7zip macvim --with-override-system-vim
   brew linkapps
+  InstallMinicondaMac
   InstallDotfile
-  InstallPIP
   InstallPy3UTF8
+
+  export SUDO="sudo"
   InstallGRC
 
 
