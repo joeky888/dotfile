@@ -253,6 +253,16 @@ if [ $(command -v nvim) ]; then
     fi;
   }
 fi
+if [ $(command -v mvim) ]; then # MacVim
+  mvim()
+  {
+    if [ "$#" == 0 ]; then
+      command mvim -u ~/.vimrc > /dev/null 2>&1
+    else
+      command mvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
+    fi;
+  }
+fi
 
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
