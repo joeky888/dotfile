@@ -473,10 +473,10 @@ curlToAria2()
   done
   PARAMS=$( echo $PARAMS | sed "s/'-H'/--header/g" | sed "s/ '--compressed'//g" )
 
-  bash -c "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
+  eval "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
   while [ $? -ne 0 ]; do
     echo "Retrying curlToAria2 ..."
-    bash -c "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
+    eval "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
   done;
 }
 
