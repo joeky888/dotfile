@@ -85,12 +85,10 @@ elseif has("mouse_xterm")
 endif
 if !has("win32") && !has("win64")
   if executable("bash")
-    silent !bash -c "stty -ixon -ixoff"
-    silent !bash -c "stty lnext '^-' stop undef start undef -ixon"
+    silent !bash -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon"
   endif
   if executable("zsh")
-    silent !zsh -c "stty -ixon -ixoff"
-    silent !zsh -c "stty lnext '^-' stop undef start undef -ixon"
+    silent !zsh -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon"
   endif
 endif
 autocmd VimEnter * set noerrorbells " Disable Gvim error sound
