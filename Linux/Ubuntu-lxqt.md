@@ -3,6 +3,7 @@ Get latest ubuntu package
 * $ sudo do-release-upgrade -d
 * $ sudoedit /etc/apt/sources.list
 * Replace all "xenial" (or something like that) strings with "devel"
+* $ sudo add-apt-repository "deb http://archive.canonical.com/ devel partner"
 
 Connect network using static ip
 =====
