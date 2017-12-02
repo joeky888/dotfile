@@ -88,6 +88,7 @@ Windows XP
 Mac
 =====
 * iterm2
+* Homebrew
 * MacVim
 
 Linux
