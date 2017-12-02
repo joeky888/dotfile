@@ -10,7 +10,7 @@ if [ $(command -v tmux) ] ; then
     cd ~
     # Check if fbterm installed
     if [ $(command -v fbterm) ] ; then
-      exec fbterm -- bash -c 'TERM=fbterm exec tmux'
+      exec fbterm -- eval 'TERM=fbterm exec tmux'
     elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
       exec tmux
     fi
