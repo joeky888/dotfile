@@ -839,8 +839,10 @@ function! AutoPair(ac)
   let c = nr2char(getchar())
   if c == "\<CR>"
     return "\<CR>".a:ac."\<C-o>O\<C-g>u"
+  else
+    call feedkeys(c)
   endif
-  return c
+  return ""
 endfunction
 
 vnoremap <silent> ` <ESC>:call WrapSelection("`","`")<CR>
