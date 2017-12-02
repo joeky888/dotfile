@@ -83,6 +83,15 @@ if has("mouse_sgr")
 elseif has("mouse_xterm")
   set ttymouse=xterm2 " Faster mouse in tty, xterm patch version from 95 to 276
 endif
+if !has("win32") && !has("win64")
+  if executable("bash")
+    silent !bash -c "stty -ixon -ixoff"
+    silent !bash -c "stty lnext '^-' stop undef start undef -ixon"
+  elseif executable("zsh")
+    silent !zsh -c "stty -ixon -ixoff"
+    silent !zsh -c "stty lnext '^-' stop undef start undef -ixon"
+  endif
+endif
 autocmd VimEnter * set noerrorbells " Disable Gvim error sound
 autocmd VimEnter * set vb t_vb= | set t_vb= " Disable Gvim visual bell
 autocmd BufRead,BufNewFile,BufWritePost,BufEnter,FileType,ColorScheme,SessionLoadPost * set iskeyword=a-z,A-Z,48-57,_
