@@ -120,7 +120,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export Home="$HOME"
-  alias ls='ls -G'
+  export SUDO=""
+  brew update
+  brew install git ffmpeg aria2 tig tmux p7zip macvim --with-override-system-vim
+  brew linkapps
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
