@@ -5,6 +5,7 @@ Javascript
 * d3.js
 * vue.js
 * clipboard.js - Copy to clipboard
+* WebAssembly - For bigger projects
 
 Browser
 =====
