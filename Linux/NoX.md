@@ -25,9 +25,11 @@ Mouse without x
 * Make sure fbterm is installed and functional
 * $ sudo apt-fast install gpm
 * $ sudo reboot
-* $ vim --version | grep gpm # Check vim gpm support
 * Left mouse click is Copy
 * Right mouse click is Paste
+* If mouse is not available in vim
+    * $ vim --version | grep gpm # Check vim gpm support
+    * :set ttymouse=xterm
 
 Mount a USB drive
 =====
