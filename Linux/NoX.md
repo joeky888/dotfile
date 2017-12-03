@@ -29,6 +29,7 @@ Mouse without x
 * Right mouse click is Paste
 * If mouse is not available in vim
     * $ vim --version | grep gpm # Check vim gpm support
+    * :set mouse=a
     * :set ttymouse=xterm
 
 Mount a USB drive
