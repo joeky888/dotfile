@@ -51,3 +51,8 @@ Windows Registry Editor Version 5.00
 [HKEY_CURRENT_USER\Console]
 "LineSelection"=1
 "QuickEdit"=1
+
+; Disable Windows Defender
+; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
+; "DisableAntiSpyware"=dword:00000001
+
