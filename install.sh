@@ -131,8 +131,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export Home="$HOME"
   export SUDO=""
   brew update
-  brew install git ffmpeg aria2 tig tmux p7zip
-  brew install macvim --with-override-system-vim
+  brew install git ffmpeg aria2 tig tmux p7zip macvim
   brew linkapps
   InstallMinicondaMac
   InstallDotfile
