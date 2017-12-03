@@ -135,10 +135,13 @@ In case you are interested, the code is under Public-domain licence.
 | EncodingUTF16LE       |                                               | |
 | EncodingUTF16BE       |                                               | |
 | EncodingAnsi          |                                               | |
+| AutoCompleteEnable    |                                               | |
+| AutoCompleteDisable   |                                               | |
 | Download              | Download a file from given URL                | |
 
 Extra notes
 =====
+* On MacVim, both Ctrl key and Command key will work
 * There are some keys one should never map
     * Ctrl-I = Space in terminal
     * Ctrl-M = Enter in terminal

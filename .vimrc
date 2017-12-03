@@ -281,7 +281,7 @@ function! ModifiedBDCheck()
     silent bd
   endif
 endfunction
-function! MyQuit()
+function! FileQuit()
   if has("gui_running")
     " help file is not in the buffer list, specially treated
     if (&filetype=="help")
@@ -306,7 +306,7 @@ function! MyQuit()
     call ModifiedQCheck()
   endif
 endfunction
-function! MySave()
+function! FileSave()
   normal! mj
   let @/ = "" " Clear searching highlight
   execute "%s/\\s\\+$//e"
@@ -537,10 +537,10 @@ vnoremap <silent> <Insert>           "_d:r $HOME/dotfile/clipboard.txt<CR>
 cnoremap <Insert> <C-r>"
 
 " Ctrl S - Save
-nnoremap <silent> <C-s> :call MySave()<CR>
-inoremap <silent> <C-s> <C-g>u<C-O>:call MySave()<CR>
-vnoremap <silent> <C-s> <ESC>:call MySave()<CR>
-cnoremap <C-s> <C-c>:call MySave()<CR>
+nnoremap <silent> <C-s> :call FileSave()<CR>
+inoremap <silent> <C-s> <C-g>u<C-O>:call FileSave()<CR>
+vnoremap <silent> <C-s> <ESC>:call FileSave()<CR>
+cnoremap <C-s> <C-c>:call FileSave()<CR>
 
 " Home - Go To Begin of the Line
 call CreateShortcut("Home", "^", "inv")
@@ -628,10 +628,10 @@ inoremap <silent> <C-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j
 vnoremap <silent> <C-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
 
 " Ctrl W - Quit
-nnoremap <silent> <C-w> :call MyQuit()<CR>
-inoremap <silent> <C-w> <C-o>:call MyQuit()<CR>
-vnoremap <silent> <C-w> <ESC>:call MyQuit()<CR>
-cnoremap <C-w> <C-c>:call MyQuit()<CR>
+nnoremap <silent> <C-w> :call FileQuit()<CR>
+inoremap <silent> <C-w> <C-o>:call FileQuit()<CR>
+vnoremap <silent> <C-w> <ESC>:call FileQuit()<CR>
+cnoremap <C-w> <C-c>:call FileQuit()<CR>
 
 " Tab - Indent
 call CreateShortcut("Tab", ">>", "n")
@@ -940,7 +940,9 @@ function! ToggleAutoComplete()
   endif
   let g:autocomp=g:autocomp ? 0 : 1
 endfunction
-execute "call ToggleAutoComplete()"
+call ToggleAutoComplete()
+command! AutoCompleteEnable  let g:autocomp=1 | call ToggleAutoComplete()
+command! AutoCompleteDisable let g:autocomp=0 | call ToggleAutoComplete()
 
 let g:netrw_banner=0 " Hide banner
 " let g:netrw_list_hide='\(^\|\s\s\)\zs\.\S\+' " Hide hidden files
@@ -1770,6 +1772,135 @@ if has("gui_running")
     set backupdir=$TEMP/vim/backup
     set undodir=$TEMP/vim/undo
     au GUIEnter * simalt ~x " Full screen on start
+  elseif has("gui_macvim") " Use Command key as Ctrl key
+    " Command A - Begin Line
+    call CreateShortcut("D-a", "0", "nv")
+    inoremap <D-a> <Home>
+    " Command E - End Line
+    call CreateShortcut("D-e", "$l", "nv")
+    inoremap <D-e> <End>
+    " Command S - Save
+    nnoremap <silent> <D-s> :call FileSave()<CR>
+    inoremap <silent> <D-s> <C-g>u<C-O>:call FileSave()<CR>
+    vnoremap <silent> <D-s> <ESC>:call FileSave()<CR>
+    cnoremap <D-s> <C-c>:call FileSave()<CR>
+    " Command K - Delete Line
+    nnoremap <silent> <D-k> :call DeleteLine()<CR>
+    inoremap <silent> <D-k> <C-o>:call DeleteLine()<CR><C-g>u
+    vnoremap <silent> <D-k> :d _<CR>
+    " Command D - Duplicate Line
+    nnoremap <silent> <D-d> mj:t.<CR>`jji
+    inoremap <silent> <D-d> <C-\><C-O>mj<C-O>:t.<CR><C-O>`j<Down><C-g>u
+    vnoremap <D-d> yPgv
+    " Command Q - Visual block selection
+    nnoremap <D-q> <C-v>
+    inoremap <D-q> <C-\><C-o><C-v>
+    vnoremap <D-q> <ESC>
+    " Command Left - Move a word
+    call CreateShortcut("D-Left", "b", "n")
+    " Command Right - Move a word
+    call CreateShortcut("D-Right", "w", "n")
+    " Command Up - Pageup, &scroll = half of screen lines
+    execute 'nnoremap <silent> <D-Up> '.g:vertical_jump.'k'
+    execute 'inoremap <silent> <D-Up> <C-\><C-O>'.g:vertical_jump.'k'
+    execute 'vnoremap <silent> <D-Up> '.g:vertical_jump.'k'
+    " Command Down - Pagedown
+    execute 'nnoremap <silent> <D-Down> '.g:vertical_jump.'j'
+    execute 'inoremap <silent> <D-Down> <C-\><C-O>'.g:vertical_jump.'j'
+    execute 'vnoremap <silent> <D-Down> '.g:vertical_jump.'j'
+    " Command U - Pageup
+    execute 'nnoremap <silent> <D-u> '.g:vertical_jump.'k'
+    execute 'inoremap <silent> <D-u> <C-\><C-O>'.g:vertical_jump.'k'
+    execute 'vnoremap <silent> <D-u> '.g:vertical_jump.'k'
+    " Command J - Pagedown
+    execute 'nnoremap <silent> <D-j> '.g:vertical_jump.'j'
+    execute 'inoremap <silent> <D-j> <C-\><C-O>'.g:vertical_jump.'j'
+    execute 'vnoremap <silent> <D-j> '.g:vertical_jump.'j'
+    " Command F - Find
+    nnoremap <D-f> :noh<CR>:redraw<CR>:set ignorecase<CR>/
+    inoremap <D-f> <Esc>:noh<CR>:redraw<CR>:set ignorecase<CR>/
+    vnoremap <D-f> <Esc>:noh<CR>:redraw<CR>:set ignorecase<CR>/\%V
+    " Command R - Search and Replace
+    nnoremap <D-r> :noh<CR>:redraw<CR>:set noignorecase<CR>:%s/
+    inoremap <D-r> <Esc>:noh<CR>:redraw<CR>:set noignorecase<CR>:%s/
+    vnoremap <D-r> <Esc>:noh<CR>:redraw<CR>:set noignorecase<CR>:'<,'>s/\%V
+    " Command G - Select all
+    call CreateShortcut("D-g", "ggVG", "inv")
+    " Command L - Visual line selection
+    call CreateShortcut("D-l", "V", "n")
+    inoremap <D-l> <C-\><C-O>V
+    vnoremap <D-l> <ESC>
+    " Command Pageup - Move up Line booster
+    nnoremap <silent> <D-PageUp> mj:<C-u>silent! move-16<CR>`j
+    inoremap <silent> <D-PageUp> <C-\><C-O>mj<C-O>:<C-u>silent! move-16<CR><C-O>`j<C-g>u
+    vnoremap <silent> <D-PageUp> :<C-u>silent! '<,'>move-16<CR>gv
+    " Command Pagedown - Move down Line boosted
+    nnoremap <silent> <D-PageDown> mj:<C-u>silent! move+15<CR>`j
+    inoremap <silent> <D-PageDown> <C-\><C-O>mj<C-O>:<C-u>silent! move+15<CR><C-O>`j<C-g>u
+    vnoremap <silent> <D-PageDown> :<C-u>silent! '<,'>move'>+15<CR>gv
+    " Command W - Quit
+    nnoremap <silent> <D-w> :call FileQuit()<CR>
+    inoremap <silent> <D-w> <C-o>:call FileQuit()<CR>
+    vnoremap <silent> <D-w> <ESC>:call FileQuit()<CR>
+    cnoremap <D-w> <C-c>:call FileQuit()<CR>
+    " Command Z - Undo
+    nnoremap <D-z> u
+    inoremap <D-z> <C-o>u
+    vnoremap <D-z> <ESC>u
+    cnoremap <D-z> <C-c>u
+    " Command Y - Redo
+    nnoremap <D-y> <C-r>
+    inoremap <D-y> <C-o><C-r>
+    cnoremap <D-y> <C-c><C-r>
+    " Command T - New tab
+    call CreateShortcut("D-t", ":tabnew<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+    " Command N - Next word
+    call CreateShortcut("D-n", "w", "n")
+    inoremap <D-n> <C-Right>
+    vnoremap <D-n> 5l
+    " Command P - Previous word
+    call CreateShortcut("D-p", "b", "n")
+    inoremap <D-p> <C-Left>
+    vnoremap <D-p> 5h
+    " Command Left - Previous 5 column
+    vnoremap <D-Left> 5h
+    " Command Right - Next 5 column
+    vnoremap <D-Right> 5l
+    " Command O - Netrw (:Explore)
+    call CreateShortcut("D-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
+    " Command \ is toggling comments
+    nnoremap <silent> <D-\> :call ToggleComment()<CR>
+    inoremap <silent> <D-\> <C-o>:call ToggleComment()<CR>
+    vnoremap <silent> <D-\> :call ToggleComment()<CR>
+    inoremap <D-b> <C-w>
+    nnoremap <D-b> i<C-w>
+    cnoremap <D-b> <C-w>
+    nnoremap <Del> i<Del>
+    " Useful command mode mapping
+    cnoremap <D-k> <C-e><C-u>
+    cnoremap <D-f> <C-c>:noh<CR>:redraw<CR>/
+    cnoremap <D-r> <C-c>:noh<CR>:redraw<CR>:%s/
+    cnoremap <D-a> <Home>
+    cnoremap <D-e> <End>
+    inoremap <D-CR> <C-o>o<C-g>u
+    nnoremap <D-CR> o<C-g>u
+    inoremap <D-BS> <C-g>u<C-W>
+    nnoremap <D-BS> i<C-g>u<C-W>
+    cnoremap <D-BS> <C-w>
+    " Command C is copying line if there is no word selected
+    nnoremap <D-c> mjV"+y:redraw!<CR>`ji
+    inoremap <D-c> <C-\><C-o>mj<C-o>V"+y<C-o>:redraw!<CR><C-o>`j
+    vnoremap <D-c> "+y:redraw!<CR>gv
+    cnoremap <D-c> <C-y>
+    " Command X is cutting line if there is no word selected
+    nnoremap <silent> <D-x>           :call SavePos()<CR>dd:call setpos(".", b:savepos)<CR>
+    inoremap <silent> <D-x> <C-\><C-o>:call SavePos()<CR><C-\><C-o>dd<C-\><C-o>:call setpos(".", b:savepos)<CR><C-g>u
+    vnoremap <silent> <D-x> "+x
+    " Command V is pasting from system clipboard
+    nnoremap <silent> <D-v> "+gPi<C-g>u
+    vnoremap <silent> <D-v> "_d"+gP
+    inoremap <silent> <D-v> <C-r>=PasteClipboardInsertMode()<CR><C-g>u
+    cnoremap <D-v> <C-r>+
   endif
   set number
   set lines=999 columns=999 " set window Maximized
@@ -1814,7 +1945,7 @@ if has("gui_running")
   inoremap <silent> <C-x> <C-\><C-o>:call SavePos()<CR><C-\><C-o>dd<C-\><C-o>:call setpos(".", b:savepos)<CR><C-g>u
   vnoremap <silent> <C-x> "+x
 
-  " Ctrl X is pasting from system clipboard
+  " Ctrl V is pasting from system clipboard
   nnoremap <silent> <C-v> "+gPi<C-g>u
   vnoremap <silent> <C-v> "_d"+gP
   inoremap <silent> <C-v> <C-r>=PasteClipboardInsertMode()<CR><C-g>u
