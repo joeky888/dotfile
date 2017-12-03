@@ -12,6 +12,13 @@ Post-install
 * Disable battery automatically sleeping
 * Disable animations in Windows
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
+* DNS server
+```resolv
+nameserver 8.8.4.4
+nameserver 180.76.76.76
+nameserver 8.8.8.8
+nameserver 114.114.114.114
+```
 
 Win8+ Set Powershell.exe to default shell to WinX
 =====
