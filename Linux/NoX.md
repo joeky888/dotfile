@@ -26,6 +26,8 @@ Mouse without x
 * $ sudo apt-fast install gpm
 * $ sudo reboot
 * $ vim --version | grep gpm # Check vim gpm support
+* Left mouse click is Copy
+* Right mouse click is Paste
 
 Mount a USB drive
 =====
