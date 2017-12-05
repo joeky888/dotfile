@@ -143,6 +143,8 @@ Good Software Design
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
+* Human readable configuration files
+* Configuration files are all backward compatible
 * Responsive UI design for all device
 * Call external programs/commands
 * Current status / Connection status, like (Green)Good, (Red)Bad
