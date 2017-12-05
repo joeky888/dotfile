@@ -5,7 +5,7 @@
 import subprocess, sys, os, codecs
 
 Error_List = []
-url = "http://www.bilibili.com/video/av9760383/#page="
+url = "https://www.bilibili.com/video/av9760383/#page="
 
 for i in range(1, 21):
     if os.system("you-get " + url + str(i)) != 0:
