@@ -1,3 +1,17 @@
+Foreach loop, index vs element
+=====
+```javascript
+let list = ["a", "b", "c"];
+
+for (let i in list) {
+   console.log(i); // "0", "1", "2",
+}
+
+for (let i of list) {
+   console.log(i); // "a", "b", "c"
+}
+```
+
 Map reduce
 =====
 ```javascript
