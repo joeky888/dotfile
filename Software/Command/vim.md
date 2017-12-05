@@ -48,15 +48,6 @@ Generate a list of numbers
 15
 ```
 
-Remove youtube auto subs extra timing
-=====
-```vim
-:%s/<\/c><[0-9:\.]*><c>
-:%s/<[0-9:\.]*><c>
-:%s/<c\.color\w\w\w\w\w\w>
-:%s/<\/c>
-```
-
 Regex
 =====
 ```conf
