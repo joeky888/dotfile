@@ -85,11 +85,10 @@ elseif has("mouse_xterm")
 endif
 if !has("win32") && !has("win64") && !has("gui_running")
   " Make sure Ctrl-S and Ctrl-V is working
-  if executable("bash")
-    silent !bash -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon" > /dev/null 2>&1
-  endif
-  if executable("zsh")
-    silent !zsh -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon" > /dev/null 2>&1
+  if executable("bash") || executable("zsh")
+    call system("stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon")
+"     silent !bash -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon" > /dev/null 2>&1
+"     silent !zsh -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon" > /dev/null 2>&1
   endif
 endif
 autocmd VimEnter * set noerrorbells " Disable Gvim error sound
