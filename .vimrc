@@ -608,6 +608,14 @@ noremap  <C-LeftDrag>  <LeftDrag>
 inoremap <C-LeftDrag>  <LeftDrag>
 onoremap <C-LeftDrag>  <C-C><LeftDrag>
 
+" Ctrl RightMouse is block selecting
+noremap  <C-RightMouse> <4-LeftMouse>
+inoremap <C-RightMouse> <4-LeftMouse>
+onoremap <C-RightMouse> <C-C><4-LeftMouse>
+noremap  <C-RightDrag>  <LeftDrag>
+inoremap <C-RightDrag>  <LeftDrag>
+onoremap <C-RightDrag>  <C-C><LeftDrag>
+
 " RightMouse is block selecting
 noremap  <RightMouse> <4-LeftMouse>
 inoremap <RightMouse> <4-LeftMouse>
