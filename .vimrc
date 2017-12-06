@@ -83,6 +83,9 @@ if has("mouse_sgr")
 elseif has("mouse_xterm")
   set ttymouse=xterm2 " Faster mouse in tty, xterm patch version from 95 to 276
 endif
+if executable("fbterm")
+  set ttymouse=xterm " Reset to xterm in order to use GPM mouse
+endif
 if !has("win32") && !has("win64") && !has("gui_running")
   " Make sure Ctrl-S and Ctrl-V is working
   if executable("bash")
