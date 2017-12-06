@@ -115,7 +115,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
   $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig -y
   $SUDO apt-fast install libssl-dev -y
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
+  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
   fc-cache -fv
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallMinicondaLinux
