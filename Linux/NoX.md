@@ -20,6 +20,36 @@ GRUB_GFXPAYLOAD_LINUX=1024x768x16
 ```
 * $ sudo reboot
 
+Change the default 16 colors of fbterm
+=====
+```conf
+# Edit fbtermrc file
+color-foreground=7
+color-background=0
+color-0=000000
+color-1=AA0000
+color-2=00AA00
+color-3=AA5500
+color-4=0000AA
+color-5=AA00AA
+color-6=00AAAA
+color-7=AAAAAA
+color-8=555555
+color-9=FF5555
+color-10=55FF55
+color-11=FFFF55
+color-12=5555FF
+color-13=FF55FF
+color-14=55FFFF
+color-15=FFFFFF
+```
+```sh
+sudo apt remove fbterm -y
+sudo apt install libgpm-dev libconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
+git clone https://github.com/j16180339887/fbterm.git && cd fbterm
+./configure && make && sudo make install
+```
+
 Mouse without x
 =====
 * Make sure fbterm is installed and functional
