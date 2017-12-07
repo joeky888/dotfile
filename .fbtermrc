@@ -19,6 +19,24 @@ font-size=20
 color-foreground=7
 color-background=0
 
+# Default 16 colors
+color-0=000000
+color-1=AF0000
+color-2=00AF00
+color-3=FFFF00
+color-4=66D9EF
+color-5=AE81FF
+color-6=A1EFE4
+color-7=F8F8F2
+color-8=7E8E91
+color-9=F92672
+color-10=A6E22E
+color-11=F4BF75
+color-12=66D9EF
+color-13=AE81FF
+color-14=A1EFE4
+color-15=FFFFFF
+
 # max scroll-back history lines of every window, value must be [0 - 65535], 0 means disable it
 history-lines=65535
 
