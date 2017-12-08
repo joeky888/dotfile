@@ -145,6 +145,8 @@ Good Software Design
 * GUI but command line also available for shell scripting
 * Human readable configuration files
 * Configuration files are all backward compatible
+* 100% Extentable code for future use
+* Allow to install extensions
 * Responsive UI design for all device
 * Call external programs/commands
 * Current status / Connection status, like (Green)Good, (Red)Bad
