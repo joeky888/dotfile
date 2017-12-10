@@ -1269,6 +1269,27 @@ function! SyntaxMonokai()
   " White       = #F8F8F2, 252,   rgb(248   248   242)  "
   """""""""""""""""""""""""""""""""""""""""""""""""""""""
 
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+  " If terminal true colors are supported                                        "
+  "                                                                              "
+  " 00 black         #1B1D1E  rgb( 27,   29,   30), 233, rgb%{ 11,   11,     12} "
+  " 01 dark red      #E90000  rgb(233,    0,    0), 160, rgb%{ 91,    0,      0} "
+  " 02 dark green    #00AF00  rgb(  0,  175,    0), 034, rgb%{  0,   69,      0} "
+  " 03 dark yellow   #FFFF00  rgb(255,  255,    0), 144, rgb%{100,  100,      0} "
+  " 04 dark blue     #00AFFF  rgb(  0,  175,  255), 081, rgb%{ 40,   85,     94} "
+  " 05 dark magenta  #AE81FF  rgb(174,  129,  255), 135, rgb%{ 68,   51,    100} "
+  " 06 dark cyan     #A1EFE4  rgb(161,  239,  228), 014, rgb%{ 63,   94,     89} "
+  " 07 light gray    #F8F8F2  rgb(248,  248,  242), 252, rgb%{ 97,   97,     95} "
+  " 08 dark gray     #7E8E91  rgb(126,  142,  145), 059, rgb%{ 49,   56,     57} "
+  " 09 light red     #F92672  rgb(249,   38,  114), 161, rgb%{ 98,   15,     45} "
+  " 10 light green   #A6E22E  rgb(166,  226,   46), 118, rgb%{ 65,   89,     18} "
+  " 11 light yellow  #F4BF75  rgb(244,  191,  117), 011, rgb%{ 96,   75,     46} "
+  " 12 light blue    #66D9EF  rgb(102,  217,  239), 039, rgb%{ 40,   85,     94} "
+  " 13 light magenta #AE81FF  rgb(174,  129,  255), 135, rgb%{ 68,   51,    100} "
+  " 14 light cyan    #A1EFE4  rgb(161,  239,  228), 014, rgb%{ 63,   94,     89} "
+  " 15 white         #F8F8F2  rgb(248,  248,  242), 252, rgb%{ 97,   97,     95} "
+  """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
   try
     syntax enable " Enable syntax highlights
     colorscheme darkblue
