@@ -139,23 +139,22 @@ static const struct {
     unsigned char g;    /* Green percentage value. */
     unsigned char b;    /* Blue percentage value. */
 } color_def[16] = {
-    {0,      0,      0},    /* black */         /* #000000 */
-    {91,     0,      0},    /* dark red */      /* #E90000 */
-    {0,     69,      0},    /* dark green */    /* #00AF00 */
+    { 11,   11,     12},    /* black */         /* #1B1D1E */
+    { 91,    0,      0},    /* dark red */      /* #E90000 */
+    {  0,   69,      0},    /* dark green */    /* #00AF00 */
     {100,  100,      0},    /* dark yellow */   /* #FFFF00 */
-    {40,    85,     94},    /* dark blue */     /* #66D9EF */
-    {68,    51,    100},    /* dark magenta */  /* #AE81FF */
-    {63,    94,     89},    /* dark cyan */     /* #A1EFE4 */
-    {97,    97,     95},    /* light gray */    /* #F8F8F2 */
-
-    {49,    56,     57},    /* dark gray */     /* #7E8E91 */
-    {98,    15,     45},    /* light red */     /* #F92672 */
-    {65,    89,     18},    /* light green */   /* #A6E22E */
-    {96,    75,     46},    /* light yellow */  /* #F4BF75 */
-    {40,    85,     94},    /* light blue */    /* #66D9EF */
-    {68,    51,    100},    /* light magenta */ /* #AE81FF */
-    {63,    94,     89},    /* light cyan */    /* #A1EFE4 */
-    {100,   100,   100},    /* white */         /* #FFFFFF */
+    { 40,   85,     94},    /* dark blue */     /* #00AFFF */
+    { 68,   51,    100},    /* dark magenta */  /* #AE81FF */
+    { 63,   94,     89},    /* dark cyan */     /* #A1EFE4 */
+    { 97,   97,     95},    /* light gray */    /* #F8F8F2 */
+    { 49,   56,     57},    /* dark gray */     /* #7E8E91 */
+    { 98,   15,     45},    /* light red */     /* #F92672 */
+    { 65,   89,     18},    /* light green */   /* #A6E22E */
+    { 96,   75,     46},    /* light yellow */  /* #F4BF75 */
+    { 40,   85,     94},    /* light blue */    /* #66D9EF */
+    { 68,   51,    100},    /* light magenta */ /* #AE81FF */
+    { 63,   94,     89},    /* light cyan */    /* #A1EFE4 */
+    { 97,   97,     95}     /* white */         /* #F8F8F2 */
 };
 ```
 * $ cd /usr/src
