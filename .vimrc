@@ -1146,8 +1146,8 @@ function! ChangeAccentColor()
   execute 'hi! User1 ctermfg=0 guifg=#000000 ctermbg=' . accentColor . ' guibg=' . accentColorGui
   execute 'hi! User2 ctermbg=0 guibg=#2E3436 ctermfg=' . accentColor . ' guifg=' . accentColorGui
   execute 'hi! User3 ctermfg=0 guifg=#000000 cterm=bold gui=bold ctermbg=' . accentColor . ' guibg=' . accentColorGui
-  execute 'hi! TabLineSel ctermfg=0 cterm=bold ctermbg=' . accentColor
-  execute 'hi! TabLine ctermbg=0 ctermfg=' . accentColor
+  execute 'hi! TabLineSel ctermfg=233 cterm=bold ctermbg=' . accentColor
+  execute 'hi! TabLine ctermbg=233 ctermfg=' . accentColor
   execute 'hi! CursorLineNr ctermfg=' . accentColor . ' guifg=' . accentColorGui
   return ''
 endfunction
