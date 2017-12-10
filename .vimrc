@@ -87,7 +87,7 @@ if executable("fbterm")
   set ttymouse=xterm " Reset to xterm in order to use GPM mouse
 endif
 if !has("win32") && !has("win64") && !has("gui_running")
-  " Make sure Ctrl-S and Ctrl-V is working
+  " Make sure Ctrl-S, Ctrl-Q and Ctrl-V are working
   if executable("bash")
     silent !bash -c "stty -ixon -ixoff ; stty lnext '^-' stop undef start undef -ixon" > /dev/null 2>&1
   elseif executable("zsh")
@@ -1072,7 +1072,7 @@ inoremap <ESC>D <Left>
 function! ToggleAutoComplete()
   if g:autocomp
     for l:char in split(g:CharSet, '\zs')
-      silent execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
+      execute "inoremap <silent> <expr> ".l:char." pumvisible() ? '".l:char."' : '".l:char."\<C-n>\<C-p>'"
     endfor
   else
     for l:char in split(g:CharSet, '\zs')
