@@ -140,11 +140,13 @@ Good Software Design
 * Cross Platform
 * Less dependencies
 * Progress bar
+* Sci-Fi User interface
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
 * Human readable configuration files
 * Configuration files are all backward compatible
+* Configuration files are under $HOME, and easy to find
 * 100% Extentable code for future use
 * Allow to install extensions
 * Responsive UI design for all device
