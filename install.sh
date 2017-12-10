@@ -18,8 +18,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-  cd $Home/dotfile
-  git submodule update --init --recursive
+  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
 }
 
 InstallDotfileCygwin()
