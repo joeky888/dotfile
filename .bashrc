@@ -38,7 +38,7 @@ export VISUAL="vim"
 export EDITOR="$VISUAL"
 export PYTHONIOENCODING="UTF-8"
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
-export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --force-sequential=true --parameterized-uri=true" # aria2 & bypy
+export DOWNLOADER_ARGUMENTS="--continue=true --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --parameterized-uri=true" # aria2 & bypy
 if [[ $(command -v aria2c) ]]; then
   if [[ $(aria2c --version | grep "Async DNS") ]]; then
     export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,180.76.76.76" # aria2 & bypy
