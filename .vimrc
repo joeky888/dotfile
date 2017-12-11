@@ -309,7 +309,7 @@ function! FileQuit()
   endif
 endfunction
 function! FileSave()
-  normal! mj
+  call SavePos()
   let @/ = "" " Clear searching highlight
   execute "%s/\\s\\+$//e"
   let cantSave = "echo \"Can't save the file: \" . v:exception | return"
@@ -354,7 +354,7 @@ function! FileSave()
   echohl Green | echon  " " . GetFileSize() . ", " . time . ", " . permissions
   echohl None
   try
-    normal! `j
+    call setpos(".", b:savepos)
   catch /:E20:/
     echohl iBlue | echon "     Info     "
     echohl Blue | echon  " E20: Mark not set, please try again. "
