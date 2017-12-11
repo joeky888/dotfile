@@ -1,5 +1,5 @@
 BoldAsFont=no
-Transparency=high
+Transparency=medium
 Font=Sarasa Mono TC
 FontHeight=15
 FontWeight=400
@@ -11,6 +11,8 @@ CursorBlinks=no
 BellType=0
 ScrollbackLines=100000
 Term=xterm-256color
+ForegroundColour=248,248,242
+BackgroundColour=27,29,30
 Black=27,29,30
 Red=233,0,0
 Green=0,175,0
