@@ -733,20 +733,30 @@ execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 " Shift Left - Select mode
 nnoremap <S-Left> v<Left>
 inoremap <S-Left> <C-o>v<Left>
+nnoremap <ESC>[1;2D v<Left>
+inoremap <ESC>[1;2D <C-o>v<Left>
 
 " Shift Right - Select mode
 nnoremap <S-Right> v<Right>
 inoremap <S-Right> <C-o>v<Right>
+nnoremap <ESC>[1;2C v<Right>
+inoremap <ESC>[1;2C <C-o>v<Right>
 
 " Shift Up - Select mode + Pageup
 execute 'nnoremap <silent> <S-Up> v'.g:vertical_jump.'k'
 execute 'inoremap <silent> <S-Up> <C-\><C-O>v'.g:vertical_jump.'k'
 execute 'vnoremap <silent> <S-Up> '.g:vertical_jump.'k'
+execute 'nnoremap <silent> <ESC>[1;2A v'.g:vertical_jump.'k'
+execute 'inoremap <silent> <ESC>[1;2A <C-\><C-O>v'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <ESC>[1;2A '.g:vertical_jump.'k'
 
 " Shift Down - Select mode + Pagedown
 execute 'nnoremap <silent> <S-Down> v'.g:vertical_jump.'j'
 execute 'inoremap <silent> <S-Down> <C-\><C-O>v'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <S-Down> '.g:vertical_jump.'j'
+execute 'nnoremap <silent> <ESC>[1;2B v'.g:vertical_jump.'j'
+execute 'inoremap <silent> <ESC>[1;2B <C-\><C-O>v'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <ESC>[1;2B '.g:vertical_jump.'j'
 
 " Ctrl F - Find
 nnoremap <C-f> :noh<CR>:redraw<CR>:set ignorecase<CR>/
