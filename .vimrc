@@ -495,15 +495,15 @@ function! MacVimKeyMapping()
   " Command N - Next word
   call CreateShortcut("D-n", "w", "n")
   inoremap <D-n> <C-Right>
-  vnoremap <D-n> 5l
+  vnoremap <D-n> <S-Right>
   " Command P - Previous word
   call CreateShortcut("D-p", "b", "n")
   inoremap <D-p> <C-Left>
-  vnoremap <D-p> 5h
+  vnoremap <D-p> <S-Left>
   " Command Left - Previous 5 column
-  vnoremap <D-Left> 5h
+  vnoremap <D-Left> <S-Left>
   " Command Right - Next 5 column
-  vnoremap <D-Right> 5l
+  vnoremap <D-Right> <S-Right>
   " Command O - Netrw (:Explore)
   call CreateShortcut("D-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
   " Command \ is toggling comments
@@ -730,6 +730,24 @@ execute 'nnoremap <silent> <C-j> '.g:vertical_jump.'j'
 execute 'inoremap <silent> <C-j> <C-\><C-O>'.g:vertical_jump.'j'
 execute 'vnoremap <silent> <C-j> '.g:vertical_jump.'j'
 
+" Shift Left - Select mode
+nnoremap <S-Left> v<Left>
+inoremap <S-Left> <C-o>v<Left>
+
+" Shift Right - Select mode
+nnoremap <S-Right> v<Right>
+inoremap <S-Right> <C-o>v<Right>
+
+" Shift Up - Select mode + Pageup
+execute 'nnoremap <silent> <S-Up> v'.g:vertical_jump.'k'
+execute 'inoremap <silent> <S-Up> <C-\><C-O>v'.g:vertical_jump.'k'
+execute 'vnoremap <silent> <S-Up> '.g:vertical_jump.'k'
+
+" Shift Down - Select mode + Pagedown
+execute 'nnoremap <silent> <S-Down> v'.g:vertical_jump.'j'
+execute 'inoremap <silent> <S-Down> <C-\><C-O>v'.g:vertical_jump.'j'
+execute 'vnoremap <silent> <S-Down> '.g:vertical_jump.'j'
+
 " Ctrl F - Find
 nnoremap <C-f> :noh<CR>:redraw<CR>:set ignorecase<CR>/
 inoremap <C-f> <Esc>:noh<CR>:redraw<CR>:set ignorecase<CR>/
@@ -799,7 +817,7 @@ call CreateShortcut("C-t", ":tabnew<CR>", "inv", "noTrailingIInInsert", "cmdInVi
 " Ctrl N - Next word
 call CreateShortcut("C-n", "w", "n")
 inoremap <C-n> <C-Right>
-vnoremap <C-n> 5l
+vnoremap <C-n> <S-Right>
 
 " Terminal Alt Backspace kill a word
 nnoremap <Esc><BS> "_dBi<C-g>u
@@ -812,51 +830,51 @@ cnoremap <Esc><BS> <C-w>
 nnoremap <ESC><ESC>OC w
 inoremap <ESC><ESC>OC <C-Right>
 cnoremap <ESC><ESC>OC <C-Right>
-vnoremap <ESC><ESC>OC 5l
+vnoremap <ESC><ESC>OC <S-Right>
 nnoremap <ESC>[1;3C w
 inoremap <ESC>[1;3C <C-Right>
 cnoremap <ESC>[1;3C <C-Right>
-vnoremap <ESC>[1;3C 5l
+vnoremap <ESC>[1;3C <S-Right>
 nnoremap <ESC><ESC>[C w
 inoremap <ESC><ESC>[C <C-Right>
 cnoremap <ESC><ESC>[C <C-Right>
-vnoremap <ESC><ESC>[C 5l
+vnoremap <ESC><ESC>[C <S-Right>
 nnoremap <ESC>[1;5C w
 inoremap <ESC>[1;5C <C-Right>
 cnoremap <ESC>[1;5C <C-Right>
-vnoremap <ESC>[1;5C 5l
+vnoremap <ESC>[1;5C <S-Right>
 nnoremap <ESC>[1;9C w
 inoremap <ESC>[1;9C <C-Right>
 cnoremap <ESC>[1;9C <C-Right>
-vnoremap <ESC>[1;9C 5l
+vnoremap <ESC>[1;9C <S-Right>
 
 " Ctrl P - Previous word
 call CreateShortcut("C-p", "b", "n")
 inoremap <C-p> <C-Left>
-vnoremap <C-p> 5h
+vnoremap <C-p> <S-Left>
 
 " Terminal Alt Left - Previous word
 " execute "set <M-D>=\e[1;3D"
 nnoremap <ESC><ESC>OD b
 inoremap <ESC><ESC>OD <C-Left>
 cnoremap <ESC><ESC>OD <C-Left>
-vnoremap <ESC><ESC>OD 5h
+vnoremap <ESC><ESC>OD <S-Left>
 nnoremap <ESC>[1;3D b
 inoremap <ESC>[1;3D <C-Left>
 cnoremap <ESC>[1;3D <C-Left>
-vnoremap <ESC>[1;3D 5h
+vnoremap <ESC>[1;3D <S-Left>
 nnoremap <ESC><ESC>[D b
 inoremap <ESC><ESC>[D <C-Left>
 cnoremap <ESC><ESC>[D <C-Left>
-vnoremap <ESC><ESC>[D 5h
+vnoremap <ESC><ESC>[D <S-Left>
 nnoremap <ESC>[1;5D b
 inoremap <ESC>[1;5D <C-Left>
 cnoremap <ESC>[1;5D <C-Left>
-vnoremap <ESC>[1;5D 5h
+vnoremap <ESC>[1;5D <S-Left>
 nnoremap <ESC>[1;9D b
 inoremap <ESC>[1;9D <C-Left>
 cnoremap <ESC>[1;9D <C-Left>
-vnoremap <ESC>[1;9D 5h
+vnoremap <ESC>[1;9D <S-Left>
 
 " Terminal Alt Up - Multiple UP keys
 execute 'nnoremap <silent> <ESC><ESC>OA '.g:vertical_jump.'k'
@@ -913,17 +931,17 @@ execute 'vnoremap <silent> <A-Down> '.g:vertical_jump.'j'
 nnoremap <A-Right> w
 inoremap <A-Right> <C-Right>
 cnoremap <A-Right> <C-Right>
-vnoremap <A-Right> 5l
+vnoremap <A-Right> <S-Right>
 nnoremap <A-Left> b
 inoremap <A-Left> <C-Left>
 cnoremap <A-Left> <C-Left>
-vnoremap <A-Left> 5h
+vnoremap <A-Left> <S-Left>
 
 " Ctrl Left - Previous 5 column
-vnoremap <C-Left> 5h
+vnoremap <C-Left> <S-Left>
 
 " Ctrl Right - Next 5 column
-vnoremap <C-Right> 5l
+vnoremap <C-Right> <S-Right>
 
 " Ctrl O - Netrw (:Explore)
 call CreateShortcut("C-o",":call OpenNetrw()<CR>", "inv", "noTrailingIInInsert", "cmdInVisual")
