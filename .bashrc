@@ -45,7 +45,7 @@ if [[ $(command -v aria2c) ]]; then
   fi
 fi
 
-alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
+[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
