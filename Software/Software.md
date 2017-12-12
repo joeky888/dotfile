@@ -154,6 +154,7 @@ Good Software Design
 * Current status / Connection status, like (Green)Good, (Red)Bad
 * Auto updater
 * Multiple users Co-op
+* Rewards/Praising for user's hard work
 * Proxy setting
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
