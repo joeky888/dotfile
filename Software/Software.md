@@ -178,6 +178,8 @@ Dev Tools
     * C and C++, could be built by gcc and mingw
 * Linux CLI
     * Fbterm, modified the source of the Fbterm
+* FreeBSD CLI
+    * Yaft, modified the source of the Yaft
 * Data
     * Huge and complicated: Json
     * Small or configurations: TOML
