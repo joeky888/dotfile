@@ -735,12 +735,14 @@ nnoremap <S-Left> v<Left>
 inoremap <S-Left> <C-o>v<Left>
 nnoremap <ESC>[1;2D v<Left>
 inoremap <ESC>[1;2D <C-o>v<Left>
+vnoremap <ESC>[1;2D <S-Left>
 
 " Shift Right - Select mode
 nnoremap <S-Right> v<Right>
 inoremap <S-Right> <C-o>v<Right>
 nnoremap <ESC>[1;2C v<Right>
 inoremap <ESC>[1;2C <C-o>v<Right>
+vnoremap <ESC>[1;2C <S-Right>
 
 " Shift Up - Select mode + Pageup
 execute 'nnoremap <silent> <S-Up> v'.g:vertical_jump.'k'
