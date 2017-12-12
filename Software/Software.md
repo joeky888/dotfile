@@ -173,9 +173,11 @@ Dev Tools
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
 * Web frontend: React.js vue.js
-* CLI:
+* CLI
     * Pure Python, Python libs written in pure python
     * C and C++, could be built by gcc and mingw
+* Linux CLI
+    * Fbterm, modified the source of the Fbterm
 * Data
     * Huge and complicated: Json
     * Small or configurations: TOML
