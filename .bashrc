@@ -388,21 +388,21 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
   bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
   bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
-  export COLOR_RESET="\[$(tput sgr0 > /dev/null 2>&1)\]" # No Color
-  export COLOR_RED="\[$(tput setaf 1 > /dev/null 2>&1)\]"
-  export COLOR_GREEN="\[$(tput setaf 2 > /dev/null 2>&1)\]"
-  export COLOR_YELLOW="\[$(tput setaf 3 > /dev/null 2>&1)\]"
-  export COLOR_BLUE="\[$(tput setaf 4 > /dev/null 2>&1)\]"
-  export COLOR_PURPLE="\[$(tput setaf 5 > /dev/null 2>&1)\]"
-  export COLOR_CYAN="\[$(tput setaf 6 > /dev/null 2>&1)\]"
-  export COLOR_GRAY="\[$(tput setaf 7 > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_RED="\[$(tput setaf 1 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_GREEN="\[$(tput setaf 2 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_YELLOW="\[$(tput setaf 3 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_BLUE="\[$(tput setaf 4 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_PURPLE="\[$(tput setaf 5 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_CYAN="\[$(tput setaf 6 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
-  export COLOR_LIGHT_GRAY="\[$(tput setaf 7 > /dev/null 2>&1; tput bold > /dev/null 2>&1)\]"
+  export COLOR_RESET="\[$(tput sgr0)\]" # No Color
+  export COLOR_RED="\[$(tput setaf 1)\]"
+  export COLOR_GREEN="\[$(tput setaf 2)\]"
+  export COLOR_YELLOW="\[$(tput setaf 3)\]"
+  export COLOR_BLUE="\[$(tput setaf 4)\]"
+  export COLOR_PURPLE="\[$(tput setaf 5)\]"
+  export COLOR_CYAN="\[$(tput setaf 6)\]"
+  export COLOR_GRAY="\[$(tput setaf 7)\]"
+  export COLOR_LIGHT_RED="\[$(tput setaf 1; tput bold)\]"
+  export COLOR_LIGHT_GREEN="\[$(tput setaf 2; tput bold)\]"
+  export COLOR_LIGHT_YELLOW="\[$(tput setaf 3; tput bold)\]"
+  export COLOR_LIGHT_BLUE="\[$(tput setaf 4; tput bold)\]"
+  export COLOR_LIGHT_PURPLE="\[$(tput setaf 5; tput bold)\]"
+  export COLOR_LIGHT_CYAN="\[$(tput setaf 6; tput bold)\]"
+  export COLOR_LIGHT_GRAY="\[$(tput setaf 7; tput bold)\]"
   # USER@DOMAIN directory
   export PS1="${COLOR_LIGHT_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
 fi
