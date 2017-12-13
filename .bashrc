@@ -253,7 +253,7 @@ if [ $(command -v nvim) ]; then
     if [ "$#" == 0 ]; then
       command nvim -u ~/.vimrc
     else
-      command nvim -u ~/.vimrc -p "$@" > /dev/null 2>&1
+      command nvim -u ~/.vimrc -p "$@"
     fi;
   }
 fi
