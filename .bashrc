@@ -251,9 +251,9 @@ if [ $(command -v nvim) ]; then
   nvim()
   {
     if [ "$#" == 0 ]; then
-      command nvim -u ~/.vimrc > /dev/null 2>&1
+      command nvim -u ~/.vimrc
     else
-      command nvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
+      command nvim -u ~/.vimrc -p "$@" > /dev/null 2>&1
     fi;
   }
 fi
