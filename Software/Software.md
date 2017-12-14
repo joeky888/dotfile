@@ -126,7 +126,11 @@ Android
 * F-Droid
 * TWRP Recovery
 * Magisk / Xposed
-* opengapps (flash it if gapps are not functional)
+* Opengapps (flash it if gapps are not functional)
+* Drop-down menu items
+    * Screenshot
+    * Flash light
+    * Auto rotate
 
 Good Software Design
 =====
