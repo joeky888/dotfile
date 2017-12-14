@@ -179,9 +179,9 @@ Dev Tools
 * CLI
     * Pure Python, Python libs written in pure python
     * C and C++, could be built by gcc and mingw
-* Linux CLI
+* Linux CLI/Driver
     * Fbterm, modified the source of the Fbterm
-* FreeBSD CLI
+* FreeBSD CLI/Driver
     * Yaft, modified the source of the Yaft
 * Data
     * Huge and complicated: Json
