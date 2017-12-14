@@ -25,6 +25,7 @@ Settings
     * View
         * View
             * Auto image size -> Fit image to window height
+            * Reset `Auto image size` setting with next/previous file -> uncheck
             * Background color -> set to black
             * Reset XY (No fit) -> check
         * Misc
