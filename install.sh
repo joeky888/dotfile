@@ -151,7 +151,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export Home=$(cygpath -u "$USERPROFILE")
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bind-utils
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bash-completion bind-utils
   InstallDotfileCygwin
   if ! [[ $(command -v choco) ]]; then # Don't reinstall chocolatey
     cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
@@ -164,7 +164,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
-  apt-cyg install bash-completion cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
+  apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
   InstallGRC
   InstallPy3UTF8
