@@ -446,7 +446,15 @@ function! MacVimKeyMapping()
   execute 'nnoremap <silent> <D-Down> '.g:vertical_jump.'j'
   execute 'inoremap <silent> <D-Down> <C-\><C-O>'.g:vertical_jump.'j'
   execute 'vnoremap <silent> <D-Down> '.g:vertical_jump.'j'
-  " Command U - Pageup
+  " Alt Up - Pageup
+  execute 'nnoremap <silent> <A-Up> '.g:vertical_jump.'k'
+  execute 'inoremap <silent> <A-Up> <C-\><C-O>'.g:vertical_jump.'k'
+  execute 'vnoremap <silent> <A-Up> '.g:vertical_jump.'k'
+  " Alt Down - Pagedown
+  execute 'nnoremap <silent> <A-Down> '.g:vertical_jump.'j'
+  execute 'inoremap <silent> <A-Down> <C-\><C-O>'.g:vertical_jump.'j'
+  execute 'vnoremap <silent> <A-Down> '.g:vertical_jump.'j'
+    " Command U - Pageup
   execute 'nnoremap <silent> <D-u> '.g:vertical_jump.'k'
   execute 'inoremap <silent> <D-u> <C-\><C-O>'.g:vertical_jump.'k'
   execute 'vnoremap <silent> <D-u> '.g:vertical_jump.'k'
