@@ -74,6 +74,10 @@ In case you are interested, the code is under Public-domain licence.
 | Alt ←     | Previous word                                         | |
 | Alt ↑     | Jump multiple lines up                                | Depends on window size |
 | Alt ↓     | Jump multiple lines down                              | Depends on window size |
+| Shift →   | Select next word                                      | In case Ctrl key is not working in terminal emulators |
+| Shift ←   | Select previous word                                  | |
+| Shift ↑   | Select multiple lines up                              | Depends on window size |
+| Shift ↓   | Select multiple lines down                            | Depends on window size |
 | Ctrl B    | Delete a word backward                                | |
 | Tab       | Indent                                                | |
 | Shift Tab | Unindent                                              | |
