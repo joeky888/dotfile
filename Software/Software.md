@@ -123,10 +123,12 @@ Android
 * WiFiAnalyzer open source
 * IP webcam
 * LibreTorrent
-* F-Droid
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
+* F-Droid
+    * Newpipe
+    * YalpStore
 * Drop-down menu items
     * Screenshot
     * Flash light
