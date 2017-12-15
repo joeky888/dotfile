@@ -89,6 +89,7 @@ In case you are interested, the code is under Public-domain licence.
 | PageDown  | Move current line / Selection down                    | |
 | Home      | Increase font size                                    | GUI only |
 | End       | Decrease font size                                    | GUI only |
+| - (minus) | Fold/Unfold                                           | Normal mode only |
 | Ctrl Backspace    |  Delete a word backward                       | |
 | Alt  Backspace    |  Delete a word backward                       | In case Ctrl key is not working in terminal emulators |
 | Ctrl Delete       |  Delete a word forward                        | |
