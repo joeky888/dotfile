@@ -148,7 +148,7 @@ Extra notes
     * Ctrl-H = Backspace in terminal
     * Ctrl-[ = ESC in terminal
     * Ctrl-/ Vim doesn't support it
-    * Ctrl-AnyNumberkeys Vim doesn't support it
+    * Ctrl-AnyNumberkey Vim doesn't support it
     * More than three combination keys like Ctrl-Shift-S, terminals don't accept this
 * An example setup should like this
 ```sh
