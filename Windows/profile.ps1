@@ -92,7 +92,7 @@ Function upgradeProfile {
   Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/Windows/profile.ps1 -o ~/Documents/WindowsPowerShell/profile.ps1
 }
 Function upgradeVimrc {
-  Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/.vimrc -o ~/.vimrc
+  Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/vimrc/master/.vimrc -o ~/.vimrc
 }
 Function gvim {
   $Commandvim = "C:\ProgramData\chocolatey\bin\gvim.exe"
