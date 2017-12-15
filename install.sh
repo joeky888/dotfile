@@ -13,12 +13,12 @@ InstallDotfile()
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
   ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf $Home/dotfile/.bashrc ~/.zshrc
-  ln -sf $Home/dotfile/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
   ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
+  ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
 }
 
 InstallDotfileCygwin()
@@ -39,11 +39,11 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\Windows\profile.ps1"
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
 }
 
 InstallGRC()
