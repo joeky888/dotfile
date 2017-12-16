@@ -10,6 +10,8 @@ Settings
         * General -> Save session on program exit -> Never
         * General -> Startup -> Mode when starting with a file -> Normal
     * Interface
+        * Interface
+            * Purge `Recent files and folders` on exit -> check
         * Mouse
             * Left button -> Move picture
             * Left button + CTRL -> Do nothing
@@ -27,12 +29,14 @@ Settings
             * Auto image size -> Fit image to window height
             * Reset `Auto image size` setting with next/previous file -> uncheck
             * Background color -> set to black
+            * Show scrollbars -> check
             * Reset XY (No fit) -> check
         * Misc
             * Show Video -> uncheck
     * Fullscreen
         * Fullscreen -> Auto image size -> Fit image to window width
         * Fullscreen -> Show info -> uncheck
+        * Fullscreen -> Show scrollbars -> check
         * Fullscreen -> Background color -> set to black
 * View -> Auto image size -> Fit image to window height
 
