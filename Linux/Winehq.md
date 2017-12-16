@@ -4,12 +4,7 @@ Install Wine
 * $ sudo apt-fast install --install-recommends wine32-development-preloader winbind cabextract zenity -y && winecfg-development
 * Or
 * $ sudo dpkg --add-architecture i386 && sudo apt-fast update
-* $ sudo apt-fast install --install-recommends wine64-development-preloader winbind cabextract zenity -y
-```sh
-export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" && export LC_NUMERIC="zh_TW.UTF-8" && export LC_TIME="zh_TW.UTF-8" && export LC_COLLATE="zh_TW.UTF-8" && export LC_MONETARY="zh_TW.UTF-8" && export LC_MESSAGES="zh_TW.UTF-8" && export LC_ALL="zh_TW.UTF-8"
-winecfg-development
-```
-* DO NOT INSTALL winetricks
+* $ sudo apt-fast install --install-recommends wine64-development-preloader winbind cabextract zenity -y && winecfg-development
 
 Install CJK font
 =====
