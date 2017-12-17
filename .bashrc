@@ -102,7 +102,6 @@ alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent=
 alias bypy='bypy -d --downloader aria2'
 alias bypy-processes-4='bypy --processes 4'
 alias scp='scp -v'
-alias vim="vim -u ~/.vimrc"
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ll='ls -lh'
@@ -223,27 +222,27 @@ if [[ "$OSTYPE" == "cygwin" ]]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc &!
+      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe &!
     else
-      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -p --remote-tab-silent "$@" &!
     fi;
   }
 elif [[ "$OSTYPE" == "msys" ]]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      /c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc &!
+      /c/ProgramData/chocolatey/bin/gvim.exe &!
     else
-      /c/ProgramData/chocolatey/bin/gvim.exe -u $USERPROFILE/.vimrc -p --remote-tab-silent "$@" &!
+      /c/ProgramData/chocolatey/bin/gvim.exe -p --remote-tab-silent "$@" &!
     fi;
   }
 elif [ $(command -v gvim) ]; then
   gvim()
   {
     if [ "$#" == 0 ]; then
-      command gvim -u ~/.vimrc > /dev/null 2>&1
+      command gvim > /dev/null 2>&1
     else
-      command gvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
+      command gvim -p --remote-tab-silent "$@" > /dev/null 2>&1
     fi;
   }
 fi
@@ -261,9 +260,9 @@ if [ $(command -v mvim) ]; then # MacVim
   mvim()
   {
     if [ "$#" == 0 ]; then
-      command mvim -u ~/.vimrc > /dev/null 2>&1
+      command mvim > /dev/null 2>&1
     else
-      command mvim -u ~/.vimrc -p --remote-tab-silent "$@" > /dev/null 2>&1
+      command mvim -p --remote-tab-silent "$@" > /dev/null 2>&1
     fi;
   }
 fi
