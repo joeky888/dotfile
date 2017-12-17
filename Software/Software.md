@@ -118,7 +118,7 @@ Android
 * Termux
 * DroidVim
 * VLC nightly
-* FX File Explorer
+* Amaze File Manager
 * WPS office
 * WiFiAnalyzer open source
 * IP webcam
