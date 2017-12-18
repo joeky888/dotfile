@@ -59,7 +59,7 @@ $   End of line
 \x  hex digit	                \X  non-hex digit
 \o  octal digit	                \O  non-octal digit
 \a  alphabetic character        \A  non-alphabetic character
-\w  ASCII letters and numbers   \W  non-letters or non-numbers
+\w  A word                      \W  Not a word
 \l  lowercase character         \L  non-lowercase character
 \u  uppercase character         \U  non-uppercase character
 
