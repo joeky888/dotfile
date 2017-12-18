@@ -51,6 +51,9 @@ Generate a list of numbers
 Regex
 =====
 ```conf
+^   Begin of line
+$   End of line
+
 \s  whitespace character        \S  non-whitespace character
 \d  number digit                \D  non-number digit
 \x  hex digit	                \X  non-hex digit
