@@ -163,6 +163,7 @@ Good Software Design
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
 * Proxy setting
+* Use date in version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Mobile
