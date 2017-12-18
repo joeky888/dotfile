@@ -104,6 +104,7 @@ alias bypy-processes-4='bypy --processes 4'
 alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
+alias ffmpeg='ffmpeg -err_detect ignore_err'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 
