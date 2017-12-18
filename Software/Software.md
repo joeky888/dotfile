@@ -173,7 +173,7 @@ Good Software Design
 
 Dev Tools
 =====
-* Mobile and embbed system: Qt
+* Mobile and embbed system: Qt + QML
 * GUI on desktop
     * Executable size as small as possible, for personal use : QtLite
     * Development time as fast as possible: Electron (FreeBSD is not supported)
