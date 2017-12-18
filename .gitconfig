@@ -2,7 +2,7 @@
     name = j16180339887
     email = jj16180339887@gmail.com
 [core]
-    editor = vim
+    editor = vim -c 'normal gg'
     autocrlf = false
     safecrlf = false
     pager = vim -c '%sm/\\e.\\{-}m//e' -c 'set ft=diff' -c 'setlocal buftype=nofile' -c 'normal gg' -
