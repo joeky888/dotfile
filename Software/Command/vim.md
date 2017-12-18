@@ -92,8 +92,8 @@ $   End of line
 [:xdigit:]      hexadecimal digits: 0-9, a-f, A-F
 [:return:]      the <CR> character
 [:tab:]         the <Tab> character
-[\u0021-\u002F]     range of unicode
-[^\u0000-\u007F]    range of non-ASCII (Full-width characters)
+[\u0000-\u007F]     range of ASCII
+[^\u0000-\u007F]    range of non-ASCII (e.g. Full-width characters)
 ```
 
 Build Mingw64 vim under cygwin
