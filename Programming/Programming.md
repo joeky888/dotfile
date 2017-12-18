@@ -1,3 +1,18 @@
+Code Design
+=====
+* Use a design pattern
+* Use Enum and Switch-Case instead of If-Else
+* Use Ternary Operator `? :` instead a single If-Else
+* Optimization
+    * Use Map-Reduce (or other ways) if For-loop is slow
+    * Use Bitwise operations
+        * `&`   bitwise AND
+        * `|`   bitwise inclusive OR
+        * `^`   bitwise XOR (eXclusive OR)
+        * `<<`  left shift
+        * `>>`  right shift
+        * `~`   bitwise NOT
+
 Javascript
 =====
 * VS code: Editor
