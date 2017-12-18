@@ -118,6 +118,7 @@ Android
 * Termux
 * DroidVim
 * VLC nightly
+* Kodi
 * Amaze File Manager
 * WPS office
 * WiFiAnalyzer open source
