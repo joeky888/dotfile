@@ -104,3 +104,52 @@ public create_something(Class klass, *args) {
 }
 my_foo = create_something(Foo);
 ```
+
+Sort
+=====
+```java
+List list = new ArrayList(coll);
+Collections.sort(list);
+```
+
+Closure: string to int
+=====
+```java
+//原本 Java 的寫法
+public List<Integer> convertStringToInteger(List<String> strings) {
+    List<Integer> ints = new ArrayList<Integer>();
+    for(String s : strings) {
+       ints.add(Integer.parseInt(s));
+    }
+    return ints;
+}
+
+//改成 Closure:
+public List<Integer> convertStringToInteger(List<String> strings) {
+    return Collections.convert(strings, {String s => Integer.parseInt(s) });
+}
+```
+
+Closure: InputStream
+=====
+```java
+//原本 Java 的寫法
+public void readData(InputStream inputStream) throws IOException{
+    try {
+        readFromInput(inputStream); //這個 method throws IOException
+    } finally {
+        try {
+            if(inputStream !=null) {
+                inputStream.close();
+            }
+        } catch (IOException ignore) {}
+    }
+}
+
+//改成 Closure:
+public void readData(InputStream inputStream) throws IOException {
+    IO.with(inputStream, { InputStream in =>
+       readFromInput(in) ; //這個 method throws IOException
+    });
+}
+```
