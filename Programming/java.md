@@ -112,6 +112,28 @@ List list = new ArrayList(coll);
 Collections.sort(list);
 ```
 
+Closure: Basics
+=====
+* {} 大括號為界定範圍
+* 使用 => 箭頭分隔輸入和輸出
+* 左邊是宣告參數的型別和變數名，逗點隔開，沒有則留白
+* 右邊是 statement block，可以多個，最後一行可寫 expression，然後直接回傳值
+```java
+//類比的 AIC：
+new Block() {
+    public int sum(int x, int y) {
+        System.out.println("some msg...");
+        return x + y ;
+    }
+};
+
+//對應的 closure 寫法
+{ int x, int y => //參數列
+    System.out.println("some msg..."); //中間可以多個 statement
+    x + y //最後一行可以是 expression，不用寫 return
+}
+```
+
 Closure: string to int
 =====
 ```java
