@@ -99,43 +99,37 @@ InstallMinicondaMac()
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
-  if [[ $(command -v lsb_release) ]]; then
-    distribName=`lsb_release -is`
-    if [[ $distribName == "ubuntu" || $distribName == "LinuxMint" || $distribName == "debian" || $distribName == "Raspbian" ]]; then
-      export Home="$HOME"
-      $SUDO apt update
-      $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
+  if [[ $(command -v apt) ]]; then
+    export Home="$HOME"
+    $SUDO apt update
+    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
 
-      mkdir -p ~/.config/openbox
-      InstallDotfile
-      ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
-      ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
-      ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-      ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
-      ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
-      $SUDO chsh -s $(command -v zsh) root
-      $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
-      $SUDO chmod 755 /usr/bin/reconnect
-      $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-      $SUDO chmod 755 /lib/systemd/system/reconnect.service
-      $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
-      $SUDO systemctl enable reconnect.service
-      $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
-      $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
-      $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-      $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig -y
-      $SUDO apt-fast install libssl-dev -y
-      $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-      $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
-      fc-cache -fv
-      find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
-      InstallMinicondaLinux
-      InstallGRC
-      InstallPy3UTF8
-    else
-      echo "Distro not support at this moment."
-      exit 1
-    fi
+    mkdir -p ~/.config/openbox
+    InstallDotfile
+    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
+    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
+    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
+    ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
+    ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
+    $SUDO chsh -s $(command -v zsh) root
+    $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
+    $SUDO chmod 755 /usr/bin/reconnect
+    $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
+    $SUDO chmod 755 /lib/systemd/system/reconnect.service
+    $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
+    $SUDO systemctl enable reconnect.service
+    $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
+    $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
+    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig -y
+    $SUDO apt-fast install libssl-dev -y
+    $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
+    $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
+    fc-cache -fv
+    find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+    InstallMinicondaLinux
+    InstallGRC
+    InstallPy3UTF8
   else
     echo "Distro not support at this moment."
     exit 1
