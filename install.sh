@@ -73,6 +73,7 @@ InstallPIP()
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | $SUDO pip install youtube-dl
   echo y | $SUDO pip install you-get
+  echo y | $SUDO pip install ykdl
   echo y | $SUDO pip install bypy
 }
 
@@ -81,6 +82,7 @@ InstallMinicondaLinux()
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
+  echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
 }
 
@@ -89,6 +91,7 @@ InstallMinicondaMac()
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
+  echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
 }
 
