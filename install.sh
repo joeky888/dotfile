@@ -102,7 +102,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   if [[ $(command -v apt) ]]; then
     export Home="$HOME"
     $SUDO apt update
-    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils python3 bash-completion -y
+    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils glances python3 bash-completion -y
 
     mkdir -p ~/.config/openbox
     InstallDotfile
