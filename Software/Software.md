@@ -95,6 +95,7 @@ Mac
 * iterm2
 * Homebrew
 * MacVim
+* Unarchiver
 
 Linux
 =====

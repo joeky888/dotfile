@@ -5,7 +5,7 @@
     editor = vim -c 'normal! gg'
     autocrlf = false
     safecrlf = false
-    pager = vim +'setlocal nogdefault' +'%sm/\\e.\\{-}m//ge' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' -
+    pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' -
 [rerere]
     enabled = 1
     autoupdate = 1
