@@ -447,6 +447,10 @@ if [[ -d "$HOME/Miniconda3" ]]; then
   export PATH=~/Miniconda3/bin:$PATH
 fi
 
+if [[ -d "$HOME/.local/bin" ]]; then
+  export PATH=~/.local/bin:$PATH
+fi
+
 if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
 fi
