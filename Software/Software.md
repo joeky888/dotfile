@@ -40,21 +40,26 @@ Software
 * GeoGebra
 * Virtualbox
 * TigerVNC
-* Docker
 * Sikuli / SikuliX
-* TestDisk / PhotoRec
-* FFmpeg
-* OpenCC
-* Aria2
 * Zulu
 * JComicDownloader
 * JDownloader
+
+CLI
+=====
 * Miniconda
 * BusyBox / Toybox
 * Neofetch
 * youtube-dl
 * you-get
+* ykdl
+* glances
 * danmaku2ass (m13253)
+* TestDisk / PhotoRec
+* FFmpeg
+* OpenCC
+* Aria2
+* Docker
 
 Windows
 =====
