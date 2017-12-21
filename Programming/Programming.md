@@ -21,6 +21,9 @@ Javascript
 * vue.js
 * clipboard.js - Copy to clipboard
 * WebAssembly - For bigger projects
+* WebRTC
+* Microlight.js - Global code highting
+* flatpickr.js - Calendar date time picker
 
 Browser
 =====
