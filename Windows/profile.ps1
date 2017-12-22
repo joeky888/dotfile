@@ -44,6 +44,13 @@ Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
   [Microsoft.PowerShell.PSConsoleReadLine]::Insert("clear")
   [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
 }
+Set-PSReadlineKeyHandler -Chord Ctrl+F -ScriptBlock {
+  $line = $null
+  $cursor = $null
+  [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+  [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+  [Microsoft.PowerShell.PSConsoleReadLine]::Insert( "while(1){ " + $line + " ; if(`$?){break} }")
+}
 
 # Set default starting path to USERPROFILE
 Set-Location $env:USERPROFILE\\Desktop
@@ -126,11 +133,11 @@ Function Reset-Networking {
   ipconfig /registerdns
   netsh winsock reset
 }
-Function Reset-Networking-Per45s {
+Function Reset-Networking-Per10m {
   while($true)
   {
     Reset-Networking
-    Start-Sleep -s 45
+    Start-Sleep -s 600
   }
 }
 
