@@ -6,7 +6,7 @@
 * TJDict
 * SimpleUndoClose
 * Tampermonkey
-* Allow Select And Copy
+* RightToCopy
 * Set Character Encoding
 * User-Agent Switcher for Chrome by Google
 * HTTPS Everywhere
