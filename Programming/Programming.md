@@ -4,6 +4,7 @@ Code Design
 * Use Enum and Switch-Case instead of If-Else
 * Use Ternary Operator `? :` instead a single If-Else
 * Optimization
+    * Compute elapsed time
     * Use Map-Reduce (or other ways) if For-loop is slow
     * Use Bitwise operations
         * `&`   bitwise AND
