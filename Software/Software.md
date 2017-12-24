@@ -127,6 +127,7 @@ Android
 * Kodi
 * Amaze File Manager
 * WPS office
+* Starfire 星火直播
 * WiFiAnalyzer open source
 * IP webcam
 * LibreTorrent
