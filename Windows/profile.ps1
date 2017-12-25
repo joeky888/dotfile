@@ -116,7 +116,7 @@ Function gvim {
   & "$Commandvim" $Parmsvim
 }
 
-$env:DOWNLOADARGS="--continue=true --file-allocation=none --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=1M --seed-ratio=0 --bt-detach-seed-only=true"
+$env:DOWNLOADARGS="--continue=true --file-allocation=none --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --parameterized-uri=true"
 Function aria2c {
   Invoke-Expression "aria2c.exe $env:DOWNLOADARGS '$args'"
 }
