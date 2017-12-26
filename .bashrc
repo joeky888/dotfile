@@ -443,6 +443,11 @@ else # Unknown OS
   true
 fi
 
+# Faster navigating, overwrite oh-my-zsh settings
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+
 if [[ -d "$HOME/Miniconda3" ]]; then
   export PATH=~/Miniconda3/bin:$PATH
 fi
