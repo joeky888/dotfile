@@ -13,6 +13,7 @@
 * Disconnect
 * Remove Google Redirection
 * GitHub Plus
+* Video Speed Controller
 * Reddit Enhancement Suite
 * BaiduExporter
 * Turbo Download Manager (Opera Extension)
