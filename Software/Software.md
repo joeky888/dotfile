@@ -146,6 +146,7 @@ Good Software Design
 =====
 * Support "Ctrl + T" New Tab
 * Customizable hotkeys
+* Hotkeys of other similar softwares are included, such as sublime-text has optional vi binding switcher
 * Customizable theming (and Font-Family) with json format
 * A light theme and a dark theme built-in
 * Always use simple English
