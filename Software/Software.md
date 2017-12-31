@@ -192,13 +192,15 @@ Dev Tools
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
 * Web frontend: React.js vue.js
+* Browser extension
+    * Modify the source of https://github.com/igrigorik/videospeed
 * CLI
     * Pure Python, Python libs written in pure python
     * C and C++, could be built by gcc and mingw
 * Linux CLI/Driver
-    * Fbterm, modified the source of the Fbterm
+    * Fbterm, modify the source of the Fbterm
 * FreeBSD CLI/Driver
-    * Yaft, modified the source of the Yaft
+    * Yaft, modify the source of the Yaft
 * Data
     * Huge and complicated: Json
     * Small or configurations: TOML
