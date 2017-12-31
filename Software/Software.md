@@ -193,7 +193,7 @@ Dev Tools
     * C++ Crow - Very small and fast
 * Web frontend: React.js vue.js
 * Browser extension: WebExtension API
-    * Modify the source of https://github.com/igrigorik/videospeed
+    * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
 * CLI
     * Pure Python, Python libs written in pure python
     * C and C++, could be built by gcc and mingw
