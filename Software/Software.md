@@ -192,7 +192,7 @@ Dev Tools
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
 * Web frontend: React.js vue.js
-* Browser extension
+* Browser extension: WebExtension API
     * Modify the source of https://github.com/igrigorik/videospeed
 * CLI
     * Pure Python, Python libs written in pure python
