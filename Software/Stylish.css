@@ -19,13 +19,14 @@
 
 /* Black */
 *::selection, *[id]::selection, *[class]::selection, *[name]::selection{
-	background-color: #00afff !important;
-	color: #ffffff !important;
+    background-color: #00afff !important;
+    color: #ffffff !important;
 }
 
 *, * *, *[id], *[class], *[name]{
     color: #AAA !important;
     text-shadow: none !important;
+    text-decoration: none; !important;
     background-color: rgba(0, 0, 0, 1) !important;
     border-color: #888 !important;
     border-top-color: #888 !important;
@@ -35,6 +36,7 @@
 }
 
 a, a *, a[id], a[class], a[name], a *[id], a *[class], a *[name]{
+    text-decoration: none; !important;
     color: #B1CBF7 !important;
 }
 
