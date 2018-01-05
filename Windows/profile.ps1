@@ -87,6 +87,9 @@ Function upgradeChoco {
 Function upgradeConda {
   conda update --all --yes
 }
+Function upgradeYoutube-dl {
+  pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip
+}
 Function upgradePip {
   pip freeze -l > requirements.txt
   (Get-Content requirements.txt).replace('==', '>=') | Set-Content requirements.txt
