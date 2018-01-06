@@ -174,6 +174,7 @@ Good Software Design
 * Use date in version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
+* Create a Wikipedia page for it
 * Mobile
     * Most operations can be done with only one finger
 * Web plugins
