@@ -19,6 +19,13 @@ Subtitle
     * Default encoding -> Universal(UTF-8)
     * Font -> use wps office font
 
+With GPU supported on Windows
+=====
+```dosbatch
+del "%PROGRAMFILES%\VideoLAN\VLC\vlc-gpu.exe"
+mklink "%PROGRAMFILES%\VideoLAN\VLC\vlc-gpu.exe" "%PROGRAMFILES%\VideoLAN\VLC\vlc.exe"
+```
+
 Android
 =====
 * Settings -> Play videos in background -> check
