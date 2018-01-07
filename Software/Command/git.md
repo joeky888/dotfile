@@ -32,3 +32,10 @@ git restore a commit
     * $ git status # Conflicts check
     * $ git commit
 
+Git push won't do anything (Everything up-to-date)
+=====
+* There must be another branch
+* $ git branch
+* Switch back to master
+* $ git checkout master
+* $ git push origin master
