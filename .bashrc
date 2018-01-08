@@ -9,10 +9,12 @@ if [ $(command -v tmux) ] ; then
   if [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
     cd ~
     # Check if fbterm installed and x server isn't running
-    if [ $(command -v fbterm) ] && ! [ xset q &>/dev/null ] ; then
-      exec fbterm -- bash -c 'TERM=fbterm exec tmux'
-    elif [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-      exec tmux
+    if [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+      if [ $(command -v fbterm) ] && [ $whichTTY == tty1 ] ; then
+        exec fbterm -- bash -c 'TERM=fbterm exec tmux'
+      else
+        exec tmux
+      fi
     fi
   fi
 elif [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] ; then
