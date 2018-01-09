@@ -150,7 +150,7 @@ Good Software Design
 * Customizable theming (and Font-Family) with json format
 * A light theme and a dark theme built-in
 * Always use simple English
-* Host on github if open source, host on gitlab for self-hosting
+* Host on github if open source, host on Gogs for self-hosting
 * Multiple languages other than just English
 * Support Private Tabs/Windows
 * Cross Platform
