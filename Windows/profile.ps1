@@ -85,6 +85,7 @@ Function upgradeChoco {
 
 # Command to upgrade all Conda packages
 Function upgradeConda {
+  conda update -n base conda -y
   conda update --all --yes
 }
 Function upgradeYoutube-dl {
