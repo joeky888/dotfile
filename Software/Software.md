@@ -145,6 +145,7 @@ Android
 Good Software Design
 =====
 * Support "Ctrl + T" New Tab
+* Support "Alt + Enter / F11" Full Screen
 * Customizable hotkeys
 * Hotkeys of other similar softwares are included, such as sublime-text has optional vi binding switcher
 * Customizable theming (and Font-Family) with json format
