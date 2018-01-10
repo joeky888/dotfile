@@ -12,7 +12,7 @@ ssh
 * A = 192.168.0.1:8888 and B = 192.168.0.2:8888
 * Connect from A to B
 ```sh
-ssh B_username@192.168.0.2 -p 8888
+ssh B_username@192.168.0.2 -p 8888 -t tmux attach || tmux new
 ```
 
 scp
