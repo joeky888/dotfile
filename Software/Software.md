@@ -111,6 +111,7 @@ Android
     * Stylus + Midnight Surfing Global Dark Style
     * Undo Close for mobile
     * uBlock Origin
+    * Privacy Badger
     * Video Background Play Fix
     * h264ify
     * Video Speed Controller

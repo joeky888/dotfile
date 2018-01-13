@@ -15,6 +15,7 @@
 * GitHub Plus
 * Video Speed Controller
 * Reddit Enhancement Suite
+* Privacy Badger
 * BaiduExporter
 * Turbo Download Manager (Opera Extension)
 * 飛比價格購物幫手
