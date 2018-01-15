@@ -20,6 +20,10 @@ nameserver 8.8.8.8
 nameserver 114.114.114.114
 ```
 
+Mono sound
+=====
+* Setting -> Ease of Access settings -> Other options -> Audio options -> Mono audio -> Check
+
 Win8+ Set Powershell.exe to default shell to WinX
 =====
 * Control Panel -> Appearance and Personalization -> Taskbar and Navigation -> Navigation -> Coner navigation -> Check
