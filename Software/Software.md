@@ -170,6 +170,7 @@ Good Software Design
 * Responsive UI design for all device
 * Call external programs/commands
 * Current status / Connection status, like (Green)Good, (Red)Bad
+* PrintStatus() function and Error log files (in binary if closed-source)
 * Auto updater
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
