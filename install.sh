@@ -26,6 +26,7 @@ InstallDotfileCygwin()
 {
   rm -rf $Home/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
+  mkdir -p $Home/Documents/WindowsPowerShell
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
