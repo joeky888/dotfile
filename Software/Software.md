@@ -59,6 +59,7 @@ CLI
 * FFmpeg
 * OpenCC
 * Aria2
+* Google-drive-ocamlfuse
 * Docker
 
 Windows

@@ -9,7 +9,7 @@ Post-install
 * Install wi-fi drivers (optional)
 * Install choco
 * Install Sarasa Mono TC, Ubuntu mono and Droid Mono fonts
-* Disable battery automatically sleeping
+* Disable battery automatically sleeping -> Setting -> System -> Power & Sleep -> Sleep -> Never
 * Disable animations in Windows
 * Disable Sticky Keys by pressing shift key 5 times
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
