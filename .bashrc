@@ -111,7 +111,7 @@ alias ffmpeg='ffmpeg -err_detect ignore_err'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
-alias termux-scp='rsync --partial --progress --rsh="ssh -p8022"'
+alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 
 export SUDO=''
 if (( $EUID != 0 )); then
