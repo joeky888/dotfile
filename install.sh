@@ -103,7 +103,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   if [[ $(command -v apt) ]]; then
     export Home="$HOME"
     $SUDO apt update
-    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils glances python3 bash-completion -y
+    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils rsync glances python3 bash-completion -y
 
     mkdir -p ~/.config/openbox
     InstallDotfile
@@ -147,7 +147,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export Home="$HOME"
   export SUDO=""
   brew update
-  brew install git ffmpeg aria2 tig tmux p7zip macvim
+  brew install git ffmpeg aria2 tig tmux p7zip macvim rsync
   brew linkapps
   InstallMinicondaMac
   InstallDotfile
@@ -169,7 +169,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export Home=$(cygpath -u "$USERPROFILE")
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bash-completion bind-utils
+  apt-cyg install wget curl aria2 tar p7zip git tig openssh vim nano tmux zsh bash-completion rsync bind-utils
   InstallDotfileCygwin
   if ! [[ $(command -v choco) ]]; then # Don't reinstall chocolatey
     cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
@@ -210,7 +210,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y clang man vim git tig zsh tmux curl aria2 bash-completion openssh grep sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
+  apt install -y clang man vim git tig zsh tmux curl aria2 rsync bash-completion openssh grep sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
