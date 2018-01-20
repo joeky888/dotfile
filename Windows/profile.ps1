@@ -27,7 +27,7 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 Set-PSReadlineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
 Set-PSReadlineKeyHandler -Chord Ctrl+LeftArrow  -Function BackwardWord
 Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
-Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
+# Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
 Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
 Set-PSReadlineKeyHandler -Chord Ctrl+K -Function DeleteLine
 Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
@@ -50,6 +50,15 @@ Set-PSReadlineKeyHandler -Chord Ctrl+F -ScriptBlock {
   [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
   [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
   [Microsoft.PowerShell.PSConsoleReadLine]::Insert( "while(1){ " + $line + " ; if(`$?){break} }")
+}
+Set-PSReadlineKeyHandler -Chord Ctrl+V -ScriptBlock {
+  $clipboard = Get-Clipboard
+  $line = $null
+  $cursor = $null
+#   $clipboard = [Regex]::Escape($clipboard)
+  $clipboard = $clipboard -replace "&","``&"
+  [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+  [Microsoft.PowerShell.PSConsoleReadLine]::Insert($clipboard)
 }
 
 # Set default starting path to USERPROFILE
