@@ -5,6 +5,8 @@ Extracting page 10 to page 20 from input.pdf
 Merging 1.pdf, 2.pdf and 3.pdf
 =====
 * gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=output.pdf 1.pdf 2.pdf 3.pdf
+* Merge all pdf
+* `gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dPDFSETTINGS=/prepress -sOutputFile=output.pdf *.pdf`
 
 Remove password from input.pdf
 =====
