@@ -115,10 +115,6 @@ Function upgradeVimrc {
   Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/vimrc/master/.vimrc -o ~/.vimrc
 }
 
-Function ffmpeg {
-  & "ffmpeg.exe  -err_detect ignore_err " + $args
-}
-
 Function gvim {
   $Commandvim = "C:\ProgramData\chocolatey\bin\gvim.exe"
   $Parmsvim = ""
