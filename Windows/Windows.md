@@ -11,6 +11,8 @@ Post-install
 * Install Sarasa Mono TC, Ubuntu mono and Droid Mono fonts
 * Disable battery automatically sleeping -> Setting -> System -> Power & Sleep -> Sleep -> Never
 * Disable animations in Windows
+* Disable sleep when Lid closed
+* Set system non-utf to big5
 * Disable Sticky Keys by pressing shift key 5 times
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 * DNS server
