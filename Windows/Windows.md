@@ -13,6 +13,7 @@ Post-install
 * Disable animations in Windows
 * Disable sleep when Lid closed
 * Set system non-utf to big5
+* Show hidden files and file name extensions
 * Disable Sticky Keys by pressing shift key 5 times
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 * DNS server
