@@ -13,6 +13,7 @@
 * Disconnect
 * Remove Google Redirection
 * GitHub Plus
+* No Coin
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Privacy Badger
