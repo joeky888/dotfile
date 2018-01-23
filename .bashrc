@@ -132,6 +132,8 @@ alias grep="grep $GREP_OPTIONS"
 
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
+proxyAsusInToOut() { export http_proxy="kungfu:howkungfu@10.78.20.186.3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
+proxyAsusOutToIn() { export http_proxy="kungfu:howkungfu@ceasar.dlinkdns.com:5566" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
 EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && export LC_NUMERIC="zh_TW.Big5" && export LC_TIME="zh_TW.Big5" && export LC_COLLATE="zh_TW.Big5" && export LC_MONETARY="zh_TW.Big5" && export LC_MESSAGES="zh_TW.Big5" && export LC_ALL="zh_TW.Big5" ;}
