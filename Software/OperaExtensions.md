@@ -1,5 +1,5 @@
 * Adblock Plus
-* Download Chrome Extension
+* Install Chrome Extension
 * Search by Image (by Google)
 * Stylish / Stylus
 * Full Page Screen Capture
