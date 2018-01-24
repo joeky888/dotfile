@@ -4,7 +4,7 @@ Software
 * sogou pinyin/zhuyin
 * Opera Developer
 * Chrome Developer
-* Firefox Developer
+* Firefox Developer `https://www.mozilla.org/en-US/firefox/developer/all/`
 * Adobe Flash Player Beta
 * Wireshark
 * Nmap / Zenmap
