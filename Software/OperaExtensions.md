@@ -1,5 +1,5 @@
 * Adblock Plus
-* Download Chrome Extension
+* Install Chrome Extension
 * Search by Image (by Google)
 * Stylish / Stylus
 * Full Page Screen Capture
@@ -13,6 +13,7 @@
 * Disconnect
 * Remove Google Redirection
 * GitHub Plus
+* No Coin
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Privacy Badger
