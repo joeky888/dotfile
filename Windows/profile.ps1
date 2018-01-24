@@ -129,6 +129,9 @@ $env:DOWNLOADARGS="--continue=true --file-allocation=none --check-certificate=fa
 Function aria2c {
   Invoke-Expression "aria2c.exe $env:DOWNLOADARGS '$args'"
 }
+Function aria2c-asus {
+  Invoke-Expression "aria2c.exe $env:DOWNLOADARGS --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu '$args'"
+}
 Function youtube-dl {
   youtube-dl.exe -o "%(title)s.%(ext)s" -f "bestvideo[height<=1080][fps<=30]+bestaudio/best" --write-sub --sub-lang zh-TW,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $env:DOWNLOADARGS $args
 }
