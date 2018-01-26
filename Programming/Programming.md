@@ -1,5 +1,6 @@
 Code Design
 =====
+* Use functional programming
 * Use a design pattern
 * Use Enum and Switch-Case instead of If-Else
 * Use Ternary Operator `? :` instead a single If-Else
