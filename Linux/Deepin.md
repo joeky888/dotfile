@@ -13,6 +13,7 @@ Theme
 =====
 * Display -> Personalization -> Theme -> Deepin-dark
 * Display -> Personalization -> Uncheck Enable window effect
+* Keyboard and Language -> Uncheck Caps Lock Prompt
 * Terminal theme
     * Click setting button -> Switch theme -> elementary
 * Dock theme
