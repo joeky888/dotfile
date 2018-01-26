@@ -20,3 +20,4 @@ Keymapping
     * Column Selection Mode -> Right Click -> Add Keyboard Shortcut -> Ctrl Q
     * Move Line Up -> Right Click -> Add Keyboard Shortcut -> Pageup
     * Move Line Down -> Right Click -> Add Keyboard Shortcut -> Pagedown
+    * Comment with Line Comment -> Right Click -> Add Keyboard Shortcut -> Ctrl \
