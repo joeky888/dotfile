@@ -12,7 +12,7 @@ deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contri
 Theme
 =====
 * Display -> Personalization -> Theme -> Deepin-dark
-* Display -> Personalization -> Theme -> Uncheck Enable window effect
+* Display -> Personalization -> Uncheck Enable window effect
 * Terminal theme
     * Click setting button -> Switch theme -> elementary
 * Dock theme

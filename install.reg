@@ -52,6 +52,10 @@ Windows Registry Editor Version 5.00
 "LineSelection"=1
 "QuickEdit"=1
 
+[HKEY_LOCAL_MACHINE/SYSTEM/CurrentControlSet/Control/Session Manager/MemoryManagement/PrefetchParameters]
+"EnableSuperfetch"=dword:00000000
+; "EnableSuperfetch"=dword:00000003 (default is 3)
+
 ; Disable Windows Defender
 ; [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender]
 ; "DisableAntiSpyware"=dword:00000001
