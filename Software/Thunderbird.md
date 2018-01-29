@@ -6,4 +6,5 @@ Asus Exchange setting
 * `Password "YOUR_Password"`
 * `User name "Joeky_Zhan"`
 * `Domain "ASUS"`
+* (Optional setting) `Server "mymail.asus.com"`
 * Next -> do auto discover -> Next -> Finish
