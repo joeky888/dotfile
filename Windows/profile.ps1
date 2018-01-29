@@ -78,7 +78,9 @@ Function Prompt {
   Write-Host "@" -NoNewline
   Write-Host "$env:computername" -NoNewline -ForegroundColor Green
   Write-Host " " -NoNewline
-  Write-Host "$PWD".Replace("$HOME", "~") -ForegroundColor Yellow
+  # Use full path since it's easier to understand for newbies
+#   Write-Host "$PWD".Replace("$HOME", "~") -ForegroundColor Yellow
+  Write-Host "$PWD" -ForegroundColor Yellow
   Write-Host "$" -NoNewline
   Return " "
 }
