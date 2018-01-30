@@ -456,6 +456,10 @@ alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
 
+if [[ -d "$HOME/Miniconda2" ]]; then
+  export PATH=~/Miniconda2/bin:$PATH
+fi
+
 if [[ -d "$HOME/Miniconda3" ]]; then
   export PATH=~/Miniconda3/bin:$PATH
 fi
