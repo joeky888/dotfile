@@ -8,3 +8,8 @@ Asus Exchange setting
 * `Domain "ASUS"`
 * (Optional setting) `Server "mymail.asus.com"`
 * Next -> do auto discover -> Next -> Finish
+
+Start when windows logging in
+=====
+* Win+R -> shell:startup
+* Copy shortcut into the folder

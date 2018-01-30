@@ -63,6 +63,13 @@ CLI
 * Google-drive-ocamlfuse
 * Docker
 
+Dev
+=====
+* Godot
+* Android Studio
+* Qt Creator
+* Eclipse
+
 Windows
 =====
 * Process Monitor
