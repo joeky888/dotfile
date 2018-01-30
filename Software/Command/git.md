@@ -11,6 +11,11 @@ git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
 * Add "shallow = true" to .gitmodules
 * $ git submodule update --init --recursive
 
+Clone all branches
+=====
+* $ git clone -b AnyBranchName URL
+* $ git branch -a
+
 Modify a commit message
 =====
 * $ git commit --amend
