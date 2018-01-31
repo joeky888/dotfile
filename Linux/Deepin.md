@@ -38,7 +38,7 @@ nameserver 114.114.114.114
 
 Packages
 =====
-* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer nomacs vlc obs-studio deepin-graphics-driver-manager deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim -y
+* $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer nomacs vlc obs-studio deepin-graphics-driver-manager deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim -y
 
 Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
 =====
