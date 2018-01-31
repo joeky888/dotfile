@@ -99,6 +99,7 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
+alias youtube-dl-asus='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu" && youtube-dl --no-check-certificate'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
 alias aria2c-asus='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/3.3.16" --peer-id-prefix="-qB33G0-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
@@ -466,6 +467,7 @@ if [[ -d "$HOME/Miniconda2" ]]; then
   alias conda2='~/Miniconda2/bin/conda'
   alias pip2='~/Miniconda2/bin/pip'
   alias upgradeConda2='~/Miniconda2/bin/conda update --all --yes'
+  upgradePip2() { ~/Miniconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Miniconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Miniconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 if [[ -d "$HOME/Miniconda3" ]]; then
@@ -473,6 +475,7 @@ if [[ -d "$HOME/Miniconda3" ]]; then
   alias conda3='~/Miniconda3/bin/conda'
   alias pip3='~/Miniconda3/bin/pip'
   alias upgradeConda3='~/Miniconda3/bin/conda update --all --yes'
+  upgradePip3() { ~/Miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 if [[ -d "$HOME/.local/bin" ]]; then
