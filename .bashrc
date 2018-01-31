@@ -463,10 +463,16 @@ alias ....='cd ../../../'
 
 if [[ -d "$HOME/Miniconda2" ]]; then
   export PATH=~/Miniconda2/bin:$PATH
+  alias conda2='~/Miniconda2/bin/conda'
+  alias pip2='~/Miniconda2/bin/pip'
+  alias upgradeConda2='~/Miniconda2/bin/conda update --all --yes'
 fi
 
 if [[ -d "$HOME/Miniconda3" ]]; then
   export PATH=~/Miniconda3/bin:$PATH
+  alias conda3='~/Miniconda3/bin/conda'
+  alias pip3='~/Miniconda3/bin/pip'
+  alias upgradeConda3='~/Miniconda3/bin/conda update --all --yes'
 fi
 
 if [[ -d "$HOME/.local/bin" ]]; then
