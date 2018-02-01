@@ -16,6 +16,7 @@
 * No Coin
 * Video Speed Controller
 * Reddit Enhancement Suite
+* Hacker News Enhancement Suite
 * Privacy Badger
 * BaiduExporter
 * Turbo Download Manager (Opera Extension)
