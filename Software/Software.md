@@ -189,6 +189,7 @@ Good Software Design
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia page for it
 * Mobile
+    * Portable between Android and iOS
     * Most operations can be done with only one finger
 * Web plugins
     * Make sure it runs on Chrome, Firefox and Firefox Android
