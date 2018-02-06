@@ -104,7 +104,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   if [[ $(command -v apt) ]]; then
     export Home="$HOME"
     $SUDO apt update
-    $SUDO apt install vim tmux zsh git tig curl wget aria2 dnsutils rsync python3 bash-completion -y
+    $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
     mkdir -p ~/.config/openbox
     InstallDotfile
@@ -123,7 +123,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
     $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils rsync python3 wget tig -y
     $SUDO apt-fast install libssl-dev -y
     $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
     $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
