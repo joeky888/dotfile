@@ -147,6 +147,7 @@ Android
 * F-Droid
     * Newpipe
     * YalpStore
+    * Your local weather
 * Drop-down menu items
     * Screenshot
     * Flash light
