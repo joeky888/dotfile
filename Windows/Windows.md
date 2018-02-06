@@ -16,6 +16,7 @@ Post-install
 * Show hidden files and file name extensions
 * Disable Sticky Keys by pressing shift key 5 times
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
+* Exclude cygwin path in anti-virus
 * DNS server
 ```resolv
 nameserver 8.8.4.4
