@@ -11,12 +11,15 @@ org.gradle.parallel=true
 Android X86 on virtualbox
 =====
 * Setting -> Developer options -> Stay awake -> Check
+* Setting -> Developer options -> Drawing ->
+    * set Window Animation Scale, Transition Animation Scale, and Animator Duration Scale to OFF
 * Power off
     * Press Right Ctrl + H
 * Install Flashify or FlashFire from Google Play for flash roms
 
 Android Studio + Virtualbox with adb
 =====
+* Make sure the virtualbox is installed with the Network option
 * Install a Android X86 VM in virtualbox
 * Open virtualbox
     * File -> Host Network Manager -> Create a new one
