@@ -12,4 +12,4 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade"; then
   apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c --max-tries=0 --max-concurrent-downloads=16 --max-connection-per-server=16 --split=16 --min-split-size=1M --async-dns-server=8.8.8.8,180.76.76.76 -i apt-fast.list
 fi
 
-apt $@;
+apt $@ && rm /var/cache/apt/archives/apt-fast.list
