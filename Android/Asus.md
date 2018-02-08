@@ -8,4 +8,4 @@ Flash a new rom
 * $ fastboot reboot
 * $ adb reboot recovery
 * Make sure the img SKU is matched to the system SKU (TW -> TW, WW -> WW, JP -> JP)
-* Use twrp to back up before flashing anything
+* Use twrp to backup before flashing anything
