@@ -40,6 +40,12 @@ Packages
 =====
 * $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer qpdfview nomacs vlc obs-studio earlyoom deepin-graphics-driver-manager deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client -y
 
+Install Zhuyin IM
+=====
+* $ sudo apt install gcin # or hime
+* $ im-config -n gcin
+* $ sudo reboot
+
 Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
 =====
 * $ `sudo apt remove nvidia-* -y`
