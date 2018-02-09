@@ -11,9 +11,17 @@ if [ $(command -v tmux) ] ; then
     # Check if fbterm installed and x server isn't running
     if [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
       if [ $(command -v fbterm) ] && [ $whichTTY == tty1 ] ; then
-        exec fbterm -- bash -c 'TERM=fbterm exec tmux'
+        if [ $(command -v byobu) ] ; then
+          exec fbterm -- bash -c 'TERM=fbterm exec byobu'
+        else
+          exec fbterm -- bash -c 'TERM=fbterm exec tmux'
+        fi
       else
-        exec tmux
+        if [ $(command -v byobu) ] ; then
+          exec byobu
+        else
+          exec tmux
+        fi
       fi
     fi
   fi
