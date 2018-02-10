@@ -20,6 +20,7 @@ Javascript
 * VS code: Editor
 * TypeScript + JSX
 * d3.js
+* Zepto.js - Lightweight jquery-like lib
 * vue.js
 * clipboard.js - Copy to clipboard
 * WebAssembly - For bigger projects
