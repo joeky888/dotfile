@@ -37,6 +37,7 @@ Settings
         * Fullscreen -> Auto image size -> Fit image to window width
         * Fullscreen -> Show info -> uncheck
         * Fullscreen -> Show scrollbars -> check
+        * Fullscreen -> Show toolbar -> uncheck
         * Fullscreen -> Background color -> set to black
 * View -> Auto image size -> Fit image to window height
 
