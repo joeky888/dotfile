@@ -37,6 +37,8 @@ C and C++
 =====
 * Qt Creator
 * Cmake
+* Hardware checking
+    * https://github.com/google/cpu_features
 * Console interface
     * PDCurses
     * Ncurses
