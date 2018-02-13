@@ -2,6 +2,7 @@ Keymapping
 =====
 * File -> Settings -> Keymap -> Editor Actions
     * Delete Line -> Right Click -> Add Keyboard Shortcut -> Ctrl K
+    * Replace -> Right Click -> Add Keyboard Shortcut -> Ctrl H
     * Select All -> Right Click -> Add Keyboard Shortcut -> Ctrl G
     * Select Line at Caret -> Right Click -> Add Keyboard Shortcut -> Ctrl L
     * Move Caret to Line Start -> Right Click -> Add Keyboard Shortcut -> Ctrl A
