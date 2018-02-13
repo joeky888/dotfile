@@ -15,7 +15,7 @@ Theme
 * Display -> Personalization -> Uncheck Enable window effect
 * Keyboard and Language -> Uncheck Caps Lock Prompt
 * Terminal theme
-    * Click setting button -> Switch theme -> elementary
+    * Click setting button -> Switch theme -> Monokai Dark
 * Dock theme
     * Right click on the dock -> Mode -> Efficient Mode
 
