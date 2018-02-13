@@ -36,6 +36,13 @@ nameserver 114.114.114.114
 ```
 * $ sudo resolvconf -u
 
+Add apt-get proxy
+=====
+* $ sudoedit /etc/apt/apt.conf
+```conf
+Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
+```
+
 Packages
 =====
 * $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer qpdfview evince nomacs vlc obs-studio earlyoom deepin-graphics-driver-manager deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client -y
@@ -46,20 +53,10 @@ Install Zhuyin IM
 * $ im-config -n gcin
 * $ sudo reboot
 
-Nvidia driver (Don't do it!!! bumblebee is deprecated!!!)
+Nvidia driver
 =====
-* $ `sudo apt remove nvidia-* -y`
-* $ sudo apt-get install bumblebee-nvidia nvidia-driver nvidia-settings -y
-* Check driver is installed successfully
-* $ sudo apt-fast install mesa-utils -y
-* $ optirun glxinfo | grep NVIDIA
-* $ optirun glxgears -info # Test bumblebee
-* Open a program with Nvidia driver, Ex: firefox
-    * $ Primusrun firefox
-    * Or
-    * $ optirun firefox
-* If error "You do not appear to be using the NVIDIA X driver" appears
-    * $ optirun -b none nvidia-settings -c :8
+* Don't use bumblebee
+* $ deepin-graphics-driver-manager
 
 Run Android apk files
 =====
