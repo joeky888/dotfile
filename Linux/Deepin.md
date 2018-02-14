@@ -7,6 +7,8 @@ After installed
 * $ sudoedit /etc/apt/sources.list -> Use "unstable"
 ```debsources
 deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contrib non-free universe
+# This one is optional
+deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free
 ```
 
 Theme
