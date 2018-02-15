@@ -67,11 +67,18 @@ Set-Location $env:USERPROFILE\\Desktop
 # Theme
 $Host.UI.RawUI.ForegroundColor = "Gray"
 $Host.UI.RawUI.BackgroundColor = "Black"
-Set-PSReadlineOption -TokenKind command   -ForegroundColor Green
-Set-PSReadlineOption -TokenKind none      -ForegroundColor Red
-Set-PSReadlineOption -TokenKind variable  -ForegroundColor White
-Set-PSReadlineOption -TokenKind string    -ForegroundColor Yellow
-Set-PSReadlineOption -TokenKind number    -ForegroundColor White
+
+Set-PSReadlineOption -TokenKind None      -ForegroundColor Red
+Set-PSReadlineOption -TokenKind Comment   -ForegroundColor Gray
+Set-PSReadlineOption -TokenKind Keyword   -ForegroundColor White
+Set-PSReadlineOption -TokenKind String    -ForegroundColor Yellow
+Set-PSReadlineOption -TokenKind Operator  -ForegroundColor White
+Set-PSReadlineOption -TokenKind Variable  -ForegroundColor White
+Set-PSReadlineOption -TokenKind Command   -ForegroundColor Green
+Set-PSReadlineOption -TokenKind Parameter -ForegroundColor White
+Set-PSReadlineOption -TokenKind Type      -ForegroundColor White
+Set-PSReadlineOption -TokenKind Number    -ForegroundColor Cyan
+Set-PSReadlineOption -TokenKind Member    -ForegroundColor White
 
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Red
@@ -80,7 +87,7 @@ Function Prompt {
   Write-Host " " -NoNewline
   # Use full path since it's easier to understand for newbies
 #   Write-Host "$PWD".Replace("$HOME", "~") -ForegroundColor Yellow
-  Write-Host "$PWD" -ForegroundColor Yellow
+  Write-Host "$PWD" -ForegroundColor Cyan
   Write-Host "$" -NoNewline
   Return " "
 }
