@@ -93,3 +93,15 @@ aux_source_directory(. SRC_LIST)
 add_executable(${PROJECT_NAME} "main.cpp")
 target_link_libraries(${PROJECT_NAME} ${LIB_DIR}/thirdParty.a zlib glfw glxw)
 ```
+
+Android (To be continued)
+=====
+* Qt Creator -> Tools -> Options -> Devices -> Android -> SDK manager
+* Or just use sdkmanager.bat
+* $ `C:\Android\SDK\bin\sdkmanager.bat --list --verbose`
+* $ `C:\Android\SDK\bin\sdkmanager.bat --sdk_root=C:\Android\SDK "platform-tools" "tools" "platforms;android-25" "build-tools;25.0.3" "extras;google;m2repository" "extras;android;m2repository" "extras;google;usb_driver"`
+* $ `C:\Android\SDK\bin\sdkmanager.bat --sdk_root=C:\Android\SDK --update`
+* Qt Creator -> Tools -> Options -> Devices -> Android
+    * JDK -> C:\zulu
+    * Android SDK -> C:\Android\SDK
+    * Android NDK -> C:\Android\NDK
