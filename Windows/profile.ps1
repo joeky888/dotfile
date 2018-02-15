@@ -109,6 +109,9 @@ Function upgradeConda {
 Function upgradeYoutube-dl {
   pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip
 }
+Function upgradeYou-get {
+  pip install --upgrade https://github.com/soimort/you-get/archive/master.zip
+}
 Function upgradePip {
   pip freeze -l > requirements.txt
   (Get-Content requirements.txt).replace('==', '>=') | Set-Content requirements.txt
