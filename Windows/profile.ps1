@@ -106,6 +106,10 @@ Function upgradeConda {
   conda update -n base conda -y
   conda update --all --yes
 }
+Function upgradeConda2 {
+  C:\ProgramData\Miniconda2\Scripts\conda.exe update -n base conda -y
+  C:\ProgramData\Miniconda2\Scripts\conda.exe update --all --yes
+}
 Function upgradeYoutube-dl {
   pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip
 }
@@ -119,6 +123,14 @@ Function upgradePip {
   Remove-Item requirements.txt
   pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
   pip install --upgrade https://github.com/requests/requests/archive/master.zip
+}
+Function upgradePip2 {
+  C:\ProgramData\Miniconda2\Scripts\pip.exe freeze -l > requirements.txt
+  (Get-Content requirements.txt).replace('==', '>=') | Set-Content requirements.txt
+  C:\ProgramData\Miniconda2\Scripts\pip.exe install -r requirements.txt --upgrade
+  Remove-Item requirements.txt
+  C:\ProgramData\Miniconda2\Scripts\pip.exe install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
+  C:\ProgramData\Miniconda2\Scripts\pip.exe install --upgrade https://github.com/requests/requests/archive/master.zip
 }
 Function upgradeProfile {
   Invoke-WebRequest https://raw.githubusercontent.com/j16180339887/dotfile/master/Windows/profile.ps1 -o ~/Documents/WindowsPowerShell/profile.ps1
