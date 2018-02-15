@@ -73,7 +73,7 @@ Set-Location $env:USERPROFILE\\Desktop
 
 # Theme
 $Host.UI.RawUI.ForegroundColor = "Gray"
-$Host.UI.RawUI.BackgroundColor = "Black"
+# $Host.UI.RawUI.BackgroundColor = "Black"
 
 if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
 {
