@@ -12,54 +12,61 @@ $global:MaximumHistoryCount = 10000
 # Increase history in console buffer
 [Console]::BufferHeight = 20000
 
-# Disable beep
-Set-PSReadlineOption -BellStyle None
+if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
+{
+  # Disable beep
+  Set-PSReadlineOption -BellStyle None
 
-# Bash-like keys
-Set-PSReadlineOption -EditMode Emacs
+  # Bash-like keys
+  Set-PSReadlineOption -EditMode Emacs
+}
 
-# Zsh-like completion
-Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
+if (Get-Command Set-PSReadlineKeyHandler -errorAction SilentlyContinue)
+{
+  # Zsh-like completion
+  Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
-# Key mappings
-Set-PSReadlineKeyHandler -Key UpArrow   -Function HistorySearchBackward
-Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
-Set-PSReadlineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
-Set-PSReadlineKeyHandler -Chord Ctrl+LeftArrow  -Function BackwardWord
-Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
-# Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
-Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
-Set-PSReadlineKeyHandler -Chord Ctrl+K -Function DeleteLine
-Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
-Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
-Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
-Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
-Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
-  [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-  [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
-  [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
-}
-Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
-  [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-  [Microsoft.PowerShell.PSConsoleReadLine]::Insert("clear")
-  [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
-}
-Set-PSReadlineKeyHandler -Chord Ctrl+F -ScriptBlock {
-  $line = $null
-  $cursor = $null
-  [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
-  [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-  [Microsoft.PowerShell.PSConsoleReadLine]::Insert( "while(1){ " + $line + " ; if(`$?){break} }")
-}
-Set-PSReadlineKeyHandler -Chord Ctrl+V -ScriptBlock {
-  $clipboard = Get-Clipboard
-  $line = $null
-  $cursor = $null
+  # Key mappings
+  Set-PSReadlineKeyHandler -Key UpArrow   -Function HistorySearchBackward
+  Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
+  Set-PSReadlineKeyHandler -Chord Ctrl+RightArrow -Function ForwardWord
+  Set-PSReadlineKeyHandler -Chord Ctrl+LeftArrow  -Function BackwardWord
+  Set-PSReadlineKeyHandler -Chord Ctrl+X -Function Cut
+  # Set-PSReadlineKeyHandler -Chord Ctrl+V -Function Paste
+  Set-PSReadlineKeyHandler -Chord Ctrl+G -Function SelectAll
+  Set-PSReadlineKeyHandler -Chord Ctrl+K -Function DeleteLine
+  Set-PSReadlineKeyHandler -Chord Ctrl+Z -Function Undo
+  Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
+  Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
+  Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
+  Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+  }
+  Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert("clear")
+    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+  }
+  Set-PSReadlineKeyHandler -Chord Ctrl+F -ScriptBlock {
+    $line = $null
+    $cursor = $null
+    [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert( "while(1){ " + $line + " ; if(`$?){break} }")
+  }
+  Set-PSReadlineKeyHandler -Chord Ctrl+V -ScriptBlock {
+    $clipboard = Get-Clipboard
+    $line = $null
+    $cursor = $null
 #   $clipboard = [Regex]::Escape($clipboard)
-  $clipboard = $clipboard -replace "&","``&"
-  [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
-  [Microsoft.PowerShell.PSConsoleReadLine]::Insert($clipboard)
+    $clipboard = $clipboard -replace "&","``&"
+    [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
+    [Microsoft.PowerShell.PSConsoleReadLine]::Insert($clipboard)
+  }
 }
+
 
 # Set default starting path to USERPROFILE
 Set-Location $env:USERPROFILE\\Desktop
@@ -68,17 +75,20 @@ Set-Location $env:USERPROFILE\\Desktop
 $Host.UI.RawUI.ForegroundColor = "Gray"
 $Host.UI.RawUI.BackgroundColor = "Black"
 
-Set-PSReadlineOption -TokenKind None      -ForegroundColor Red
-Set-PSReadlineOption -TokenKind Comment   -ForegroundColor Gray
-Set-PSReadlineOption -TokenKind Keyword   -ForegroundColor White
-Set-PSReadlineOption -TokenKind String    -ForegroundColor Yellow
-Set-PSReadlineOption -TokenKind Operator  -ForegroundColor White
-Set-PSReadlineOption -TokenKind Variable  -ForegroundColor White
-Set-PSReadlineOption -TokenKind Command   -ForegroundColor Green
-Set-PSReadlineOption -TokenKind Parameter -ForegroundColor White
-Set-PSReadlineOption -TokenKind Type      -ForegroundColor White
-Set-PSReadlineOption -TokenKind Number    -ForegroundColor Cyan
-Set-PSReadlineOption -TokenKind Member    -ForegroundColor White
+if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
+{
+  Set-PSReadlineOption -TokenKind None      -ForegroundColor Red
+  Set-PSReadlineOption -TokenKind Comment   -ForegroundColor Gray
+  Set-PSReadlineOption -TokenKind Keyword   -ForegroundColor White
+  Set-PSReadlineOption -TokenKind String    -ForegroundColor Yellow
+  Set-PSReadlineOption -TokenKind Operator  -ForegroundColor White
+  Set-PSReadlineOption -TokenKind Variable  -ForegroundColor White
+  Set-PSReadlineOption -TokenKind Command   -ForegroundColor Green
+  Set-PSReadlineOption -TokenKind Parameter -ForegroundColor White
+  Set-PSReadlineOption -TokenKind Type      -ForegroundColor White
+  Set-PSReadlineOption -TokenKind Number    -ForegroundColor Cyan
+  Set-PSReadlineOption -TokenKind Member    -ForegroundColor White
+}
 
 Function Prompt {
   Write-Host "$env:username" -NoNewline -ForegroundColor Red
