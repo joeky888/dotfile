@@ -94,9 +94,10 @@ add_executable(${PROJECT_NAME} "main.cpp")
 target_link_libraries(${PROJECT_NAME} ${LIB_DIR}/thirdParty.a zlib glfw glxw)
 ```
 
-Android (To be continued)
+Android
 =====
-* Qt Creator -> Tools -> Options -> Devices -> Android -> SDK manager
+* Install Android SDK by using Android Studio (recommend)
+* Or use Qt Creator -> Tools -> Options -> Devices -> Android -> SDK manager
 * Or just use sdkmanager.bat
 * $ `C:\Android\SDK\bin\sdkmanager.bat --list --verbose`
 * $ `C:\Android\SDK\bin\sdkmanager.bat --sdk_root=C:\Android\SDK "platform-tools" "tools" "platforms;android-27" "build-tools;27.0.3" "extras;google;m2repository" "extras;android;m2repository" "extras;google;usb_driver"`
