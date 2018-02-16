@@ -39,10 +39,12 @@ if (Get-Command Set-PSReadlineKeyHandler -errorAction SilentlyContinue)
   Set-PSReadlineKeyHandler -Chord Ctrl+Y -Function Redo
   Set-PSReadlineKeyHandler -Chord Ctrl+Backspace -Function BackwardKillWord
   Set-PSReadlineKeyHandler -Chord Shift+Insert -Function Paste
+  Set-PSReadlineKeyHandler -Chord Ctrl+O -ScriptBlock {
+    explorer.exe .
+  }
   Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
-    [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
-    [Microsoft.PowerShell.PSConsoleReadLine]::Insert("Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'")
-    [Microsoft.PowerShell.PSConsoleReadLine]::AcceptLine()
+    # To do
+    Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'
   }
   Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
