@@ -1,6 +1,3 @@
-# UTF8
-[Console]::InputEncoding = [Text.UTF8Encoding]::UTF8
-[Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
 # Python2 UTF8
 $env:PYTHONIOENCODING = "UTF-8"
 # Java UTF8
@@ -9,8 +6,17 @@ $env:JAVA_TOOL_OPTIONS = " -Dfile.encoding=UTF8 "
 # Increase history size
 $global:MaximumHistoryCount = 10000
 
-# Increase history in console buffer
-[Console]::BufferHeight = 20000
+if ($host.name -eq 'ConsoleHost')
+{
+  # Not in Powershell ISE
+
+  # UTF8
+  [Console]::InputEncoding = [Text.UTF8Encoding]::UTF8
+  [Console]::OutputEncoding = [Text.UTF8Encoding]::UTF8
+
+  # Increase history in console buffer
+  [Console]::BufferHeight = 20000
+}
 
 if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
 {
