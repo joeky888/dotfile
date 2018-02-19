@@ -169,6 +169,7 @@ Good Software Design
 * Less dependencies
 * Progress bar
 * Sci-Fi User interface
+* 4:3 16:9 16:10 18:9 supported
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
