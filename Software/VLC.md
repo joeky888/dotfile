@@ -21,9 +21,14 @@ Subtitle
 
 With GPU supported on Windows
 =====
-```dosbatch
-del "%PROGRAMFILES%\VideoLAN\VLC\vlc-gpu.exe"
-mklink "%PROGRAMFILES%\VideoLAN\VLC\vlc-gpu.exe" "%PROGRAMFILES%\VideoLAN\VLC\vlc.exe"
+```sh
+Copy-Item "$env:PROGRAMFILES\\VideoLAN\\VLC\\vlc.exe" -Destination "$env:PROGRAMFILES\\VideoLAN\\VLC\\vlc-gpu.exe"
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$Home\\Desktop\\VLC.lnk")
+$Shortcut.TargetPath = "$env:PROGRAMFILES\\VideoLAN\\VLC\\vlc-gpu.exe"
+$Shortcut.Save()
+Remove-Item "$env:PROGRAMFILES\\VideoLAN\\VLC\\vlc-gpu.exe"
+New-Item -ItemType SymbolicLink -Path "$env:PROGRAMFILES\\VideoLAN\\VLC" -Name "vlc-gpu.exe" -Value "$env:PROGRAMFILES\\VideoLAN\\VLC\\vlc.exe"
 ```
 
 Android

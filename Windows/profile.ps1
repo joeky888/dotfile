@@ -65,12 +65,8 @@ if (Get-Command Set-PSReadlineKeyHandler -errorAction SilentlyContinue)
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert( "while(1){ " + $line + " ; if(`$?){break} }")
   }
   Set-PSReadlineKeyHandler -Chord Ctrl+V -ScriptBlock {
-    $clipboard = Get-Clipboard
-    $line = $null
-    $cursor = $null
-#   $clipboard = [Regex]::Escape($clipboard)
+    $clipboard = Get-Clipboard -Raw
     $clipboard = $clipboard -replace "&","``&"
-    [Microsoft.PowerShell.PSConsoleReadLine]::GetBufferState([ref]$line, [ref]$cursor)
     [Microsoft.PowerShell.PSConsoleReadLine]::Insert($clipboard)
   }
 }
