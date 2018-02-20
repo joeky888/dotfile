@@ -95,13 +95,15 @@ if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
 }
 
 Function Prompt {
-  Write-Host "$env:username" -NoNewline -ForegroundColor Red
+  Write-Host  "$([Char]9581)$([Char]9472)" -NoNewline
+  Write-Host  "$env:username" -NoNewline -ForegroundColor Red
   Write-Host "@" -NoNewline
   Write-Host "$env:computername" -NoNewline -ForegroundColor Green
   Write-Host " " -NoNewline
   # Use full path since it's easier to understand for newbies
 #   Write-Host "$PWD".Replace("$HOME", "~") -ForegroundColor Yellow
   Write-Host "$PWD" -ForegroundColor Cyan
+  Write-Host  "$([Char]9584)$([Char]9472)" -NoNewline
   Write-Host "$" -NoNewline
   Return " "
 }
