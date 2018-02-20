@@ -3,11 +3,11 @@
 while true; do
   sleep 20s
   if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then
+#     systemctl restart dnsmasq.service
+#     systemctl restart systemd-hostnamed.service
+#     ip -s -s neigh flush all
+#     ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
     systemctl restart networking.service
-    systemctl restart dnsmasq.service
-    systemctl restart systemd-hostnamed.service
-    ip -s -s neigh flush all
-    ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
     systemctl restart teamviewerd.service
     systemctl restart NetworkManager.service
     echo $(date +"%m/%d/%Y %I:%M:%p") >> /home/Reconnect.log
