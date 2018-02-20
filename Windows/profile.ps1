@@ -50,7 +50,7 @@ if (Get-Command Set-PSReadlineKeyHandler -errorAction SilentlyContinue)
   }
   Set-PSReadlineKeyHandler -Chord Ctrl+T -ScriptBlock {
     # To do
-    Invoke-Item '$env:USERPROFILE\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'
+    Invoke-Item $env:USERPROFILE'\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Windows PowerShell\Windows PowerShell.lnk'
   }
   Set-PSReadlineKeyHandler -Chord Ctrl+L -ScriptBlock {
     [Microsoft.PowerShell.PSConsoleReadLine]::RevertLine()
