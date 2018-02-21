@@ -16,3 +16,11 @@ Convert .pem to .crt
 ```sh
 openssl x509 -in input.pem -inform PEM -out output.crt
 ```
+
+Install .crt to debian and ubuntu
+=====
+```sh
+sudo mkdir -p /usr/share/ca-certificates/extra
+sudo cp asus.crt /usr/share/ca-certificates/extra/asus.crt
+sudo dpkg-reconfigure ca-certificates # Make sure asus is selected
+```
