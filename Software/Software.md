@@ -195,6 +195,7 @@ Good Software Design
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia page for it
+* Send crash log to server
 * Mobile
     * Portable between Android and iOS
     * Most operations can be done with only one finger
