@@ -19,7 +19,7 @@
 * Hacker News Enhancement Suite
 * Privacy Badger
 * BaiduExporter
-* FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies")
+* FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Turbo Download Manager (Opera Extension)
 * 飛比價格購物幫手
 * Monokai for Chrome:
