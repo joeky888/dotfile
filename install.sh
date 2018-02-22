@@ -123,7 +123,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
     $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils rsync python3 wget tig -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
     $SUDO apt-fast install libssl-dev -y
     $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
     $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
