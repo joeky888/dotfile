@@ -336,6 +336,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N PasteFromClipboard # Bind function to command
   zle -N CutToClipboard # Bind function to command
   zle -N Forever # Bind function to command
+  zle -N OpenFileExplorer # Bind function to command
   HISTFILE=$HOME/.bash_history
   alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
@@ -380,6 +381,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "^V" PasteFromClipboard # Ctrl V to paste from Clipboard.txt
   bindkey "^X" CutToClipboard # Ctrl X to cut to Clipboard.txt
   bindkey "^F" Forever # Ctrl F to run a command Forever
+  bindkey "^O" OpenFileExplorer # Ctrl F to run a command Forever
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
@@ -412,6 +414,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
   bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
   bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
+  bind -x '"\C-O": OpenFileExplorer'  # Ctrl O to open file explorer here
   export COLOR_RESET="\[$(tput sgr0)\]" # No Color
   export COLOR_RED="\[$(tput setaf 1)\]"
   export COLOR_GREEN="\[$(tput setaf 2)\]"
@@ -690,6 +693,17 @@ Forever()
     BUFFER='while true; do '$BUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
   elif [[ -n "$BASH_VERSION" ]]; then
     READLINE_LINE='while true; do '$READLINE_LINE' ; if [ $? -eq 0 ]; then break; fi; done ;'
+  fi;
+}
+
+OpenFileExplorer()
+{
+  if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
+    xdg-open . > /dev/null 2>&1;
+  elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
+    xdg-open . > /dev/null 2>&1;
+  else # Unknown OS
+    true
   fi;
 }
 
