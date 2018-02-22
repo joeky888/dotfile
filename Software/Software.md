@@ -162,6 +162,7 @@ Good Software Design
 * Customizable theming (and Font-Family) with json format
 * A light theme and a dark theme built-in
 * Always use simple English
+* Colorful output in the debug console
 * Host on github if open source, host on Gogs for self-hosting
 * Multiple languages other than just English
 * Support Private Tabs/Windows
@@ -170,6 +171,7 @@ Good Software Design
 * Progress bar
 * Sci-Fi User interface
 * 4:3 16:9 16:10 18:9 supported
+* 4k and 8k resolution supported
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
 * GUI but command line also available for shell scripting
