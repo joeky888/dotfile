@@ -112,6 +112,12 @@ Function Prompt {
 New-Alias which get-command
 New-Alias grep select-string
 
+# Choco tab completion
+$ChocolateyProfile = "$env:ChocolateyInstall\helpers\chocolateyProfile.psm1"
+if (Test-Path($ChocolateyProfile)) {
+  Import-Module "$ChocolateyProfile"
+}
+
 # Command to upgrade all chocolatey packages
 Function upgradeChoco {
   choco upgrade all -y --pre
