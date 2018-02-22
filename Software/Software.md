@@ -27,6 +27,7 @@ Software
 * Natron
 * OBS MP
 * Aegisub
+* Kdenlive
 * Audacity
 * LMMS
 * Qt
