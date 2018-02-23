@@ -205,8 +205,8 @@ Good Software Design
 Dev Tools
 =====
 * Mobile and embbed system
+    * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
-    * Qt + Native WebView (with html5)
 * GUI on desktop
     * Executable size as small as possible, for personal use : QtLite
     * Development time as fast as possible: Electron (FreeBSD is not supported)
