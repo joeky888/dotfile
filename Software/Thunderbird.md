@@ -13,3 +13,7 @@ Start when windows logging in
 =====
 * Win+R -> shell:startup
 * Copy shortcut into the folder
+
+Reply with outlook style
+=====
+* Install "ReplyWithHeader" extension -> Restart thunderbird
