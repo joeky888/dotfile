@@ -118,6 +118,14 @@ if (Test-Path($ChocolateyProfile)) {
   Import-Module "$ChocolateyProfile"
 }
 
+# Import modules from Powershell Gallery
+if (Get-Module -ListAvailable -Name posh-git) {
+  Import-Module posh-git
+}
+if (Get-Module -ListAvailable -Name posh-docker) {
+  Import-Module posh-docker
+}
+
 # Command to upgrade all chocolatey packages
 Function upgradeChoco {
   choco upgrade all -y --pre
