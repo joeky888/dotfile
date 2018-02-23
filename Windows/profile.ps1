@@ -131,6 +131,11 @@ Function upgradeChoco {
   choco upgrade all -y --pre
 }
 
+# Command to upgrade all powershell modules
+Function upgradeChoco {
+  Update-Module
+}
+
 # Command to upgrade all Conda packages
 Function upgradeConda {
   conda update -n base conda -y
