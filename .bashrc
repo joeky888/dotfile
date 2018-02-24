@@ -698,10 +698,12 @@ Forever()
 
 OpenFileExplorer()
 {
-  if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
+  if [[ "$OSTYPE" == "linux-gnu" || "$OSTYPE" == "freebsd"* ]]; then # Linux + FreeBSD
     xdg-open . > /dev/null 2>&1;
-  elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-    xdg-open . > /dev/null 2>&1;
+  elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then # Windows
+    explorer.exe .
+  elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
+    open .
   else # Unknown OS
     true
   fi;
