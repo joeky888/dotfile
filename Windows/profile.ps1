@@ -132,7 +132,7 @@ Function upgradeChoco {
 }
 
 # Command to upgrade all powershell modules
-Function upgradeChoco {
+Function upgradeModule {
   Update-Module
 }
 
