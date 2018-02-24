@@ -10,3 +10,7 @@
     path = vimrc
     url = https://github.com/j16180339887/vimrc.git
     shallow = true
+[submodule "powershell"]
+    path = powershell
+    url = https://github.com/j16180339887/powershell.git
+    shallow = true
