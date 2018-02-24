@@ -16,6 +16,9 @@ if ($host.name -eq 'ConsoleHost')
 
   # Increase history in console buffer
   [Console]::BufferHeight = 20000
+} else {
+  # Powershell ISE UTF8
+  chcp 65001
 }
 
 if (Get-Command Set-PSReadlineOption -errorAction SilentlyContinue)
