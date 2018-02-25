@@ -74,7 +74,6 @@ alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archi
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
-alias upgradeDotfile="cd ~/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -"
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
@@ -161,6 +160,49 @@ killallproc() { $SUDO kill -9 $(pgrep $@) ;}
 killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
 upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+upgradeDotfile() {
+  cd ~/dotfile
+  git pull origin master
+  git submodule update --init --recursive --remote --merge
+  git submodule foreach git pull origin master
+  cd - ;
+
+  rm ~/.bashrc
+  rm ~/.bash_profile
+  rm ~/.tmux.conf
+  rm ~/.zshrc
+  rm ~/.gitconfig
+  rm ~/.gitmessage
+  rm ~/.fbtermrc
+  rm ~/.Xresources
+  rm ~/.minttyrc
+  rm ~/.vimrc
+
+  if [[ "$OSTYPE" == "cygwin" ]]; then
+    cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+  else
+    ln -sf $Home/dotfile/.bashrc ~/.bashrc
+    ln -sf $Home/dotfile/.bashrc ~/.bash_profile
+    ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
+    ln -sf $Home/dotfile/.bashrc ~/.zshrc
+    ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
+    ln -sf $Home/dotfile/.gitmessage ~/.gitmessage
+    ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
+    ln -sf $Home/dotfile/.Xresources ~/.Xresources
+    ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
+    ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
+  fi;
+}
 
 if [ $(command -v grc) ] ; then
   GRC="$(which grc)"
