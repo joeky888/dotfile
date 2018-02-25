@@ -197,6 +197,7 @@ Good Software Design
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia page for it
 * Send crash log to server
+* Easter eggs
 * Mobile
     * Portable between Android and iOS
     * Most operations can be done with only one finger
