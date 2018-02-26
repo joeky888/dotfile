@@ -21,7 +21,7 @@ Install .crt to debian and ubuntu
 =====
 ```sh
 sudo mkdir -p /usr/share/ca-certificates/extra
-sudo cp asus.crt /usr/share/ca-certificates/extra/asus.crt
+sudo cp asus.com.crt /usr/share/ca-certificates/extra/asus.com.crt
 sudo dpkg-reconfigure ca-certificates # Make sure asus is selected
 sudo update-ca-certificates
 ```
