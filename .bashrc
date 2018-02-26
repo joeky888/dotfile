@@ -191,16 +191,16 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   else
-    ln -sf $Home/dotfile/.bashrc ~/.bashrc
-    ln -sf $Home/dotfile/.bashrc ~/.bash_profile
-    ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
-    ln -sf $Home/dotfile/.bashrc ~/.zshrc
-    ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
-    ln -sf $Home/dotfile/.gitmessage ~/.gitmessage
-    ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
-    ln -sf $Home/dotfile/.Xresources ~/.Xresources
-    ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-    ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
+    ln -sf $HOME/dotfile/.bashrc ~/.bashrc
+    ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
+    ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
+    ln -sf $HOME/dotfile/.bashrc ~/.zshrc
+    ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
+    ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage
+    ln -sf $HOME/dotfile/.fbtermrc ~/.fbtermrc
+    ln -sf $HOME/dotfile/.Xresources ~/.Xresources
+    ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
+    ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
   fi;
 }
 
