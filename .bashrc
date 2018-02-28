@@ -106,9 +106,11 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias youtube-dl-asus='youtube-dl --no-check-certificate --external-downloader-args "-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
+alias youtube-dl-asus-proxy='youtube-dl --no-check-certificate --external-downloader-args "-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
+alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16" -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
-alias aria2c-asus='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
+alias aria2c-asus-proxy='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
+alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/3.3.16" --peer-id-prefix="-qB33G0-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
@@ -191,16 +193,16 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   else
-    ln -sf $Home/dotfile/.bashrc ~/.bashrc
-    ln -sf $Home/dotfile/.bashrc ~/.bash_profile
-    ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
-    ln -sf $Home/dotfile/.bashrc ~/.zshrc
-    ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
-    ln -sf $Home/dotfile/.gitmessage ~/.gitmessage
-    ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
-    ln -sf $Home/dotfile/.Xresources ~/.Xresources
-    ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-    ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
+    ln -sf $HOME/dotfile/.bashrc ~/.bashrc
+    ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
+    ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
+    ln -sf $HOME/dotfile/.bashrc ~/.zshrc
+    ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
+    ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage
+    ln -sf $HOME/dotfile/.fbtermrc ~/.fbtermrc
+    ln -sf $HOME/dotfile/.Xresources ~/.Xresources
+    ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
+    ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
   fi;
 }
 

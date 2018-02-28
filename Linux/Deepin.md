@@ -48,6 +48,12 @@ Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
 Packages
 =====
 * $ sudo apt-fast install sogoupinyin opera-developer opera-stable vscode teamviewer qpdfview evince nomacs vlc obs-studio earlyoom deepin-graphics-driver-manager deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client -y
+* $ cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
+* Dowload the LibreOffice.appimage
+* $ sudoedit /etc/systemd/system/earlyoom.service
+```conf
+ExecStart=/usr/bin/earlyoom -m 3
+```
 
 Install Zhuyin IM
 =====
