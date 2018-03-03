@@ -192,7 +192,7 @@ Good Software Design
 * Proxy setting
 * Import SSL certificates
 * Use emojis in git commit message ✅ ❌
-* Use date in version number, e.g. Version YYYY.MM.DD.001
+* Use date as version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia page for it
