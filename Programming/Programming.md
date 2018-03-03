@@ -21,6 +21,7 @@ Javascript
 * TypeScript + JSX
 * d3.js
 * Zepto.js - Lightweight jquery-like lib
+* preactjs - Lightweight reactjs-like lib
 * infernojs - Lightweight reactjs-like lib
 * vue.js
 * clipboard.js - Copy to clipboard
@@ -39,7 +40,7 @@ C and C++
 * Qt Creator
 * Cmake
 * Hardware checking
-    * https://github.com/google/cpu_features
+    * `https://github.com/google/cpu_features`
 * Console interface
     * PDCurses
     * Ncurses
