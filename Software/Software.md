@@ -176,7 +176,7 @@ Good Software Design
 * 4k and 8k resolution supported
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
-* GUI but command line also available for shell scripting
+* GUI but command line is also available for shell scripting
 * Human readable configuration files
 * Configuration files are all backward compatible
 * Configuration files are under $HOME, and easy to find
