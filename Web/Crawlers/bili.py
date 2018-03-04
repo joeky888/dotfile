@@ -10,7 +10,7 @@ start = 1
 end   = 25
 
 for i in range(start, end+1):
-    cmd = "you-get " + url + str(i)
+    cmd = "you-get " + url + str(i) + " -O " + str(i)
     print(cmd)
     if os.system(cmd) != 0:
         print("Download Error: " + str(i))
@@ -20,7 +20,7 @@ for i in range(start, end+1):
 while len(Error_List) != 0:
     NewError_List = []
     for i in Error_List:
-        cmd = "you-get " + url + str(i)
+        cmd = "you-get " + url + str(i) + " -O " + str(i)
         print(cmd)
         if os.system(cmd) != 0:
             print("Download Error: " + str(i))
