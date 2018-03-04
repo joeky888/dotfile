@@ -207,6 +207,7 @@ Good Software Design
 Dev Tools
 =====
 * Mobile and embbed system
+    * React Native
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
 * GUI on desktop
