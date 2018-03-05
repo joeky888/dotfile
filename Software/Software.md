@@ -176,7 +176,7 @@ Good Software Design
 * 4k and 8k resolution supported
 * Easily porting to another system
 * A reminder sound after a job done (or a process finished)
-* GUI but command line also available for shell scripting
+* GUI but command line is also available for shell scripting
 * Human readable configuration files
 * Configuration files are all backward compatible
 * Configuration files are under $HOME, and easy to find
@@ -192,7 +192,7 @@ Good Software Design
 * Proxy setting
 * Import SSL certificates
 * Use emojis in git commit message ✅ ❌
-* Use date in version number, e.g. Version YYYY.MM.DD.001
+* Use date as version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia page for it
@@ -207,6 +207,7 @@ Good Software Design
 Dev Tools
 =====
 * Mobile and embbed system
+    * React Native
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
 * GUI on desktop
