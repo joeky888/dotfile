@@ -180,6 +180,7 @@ Good Software Design
 * Human readable configuration files
 * Configuration files are all backward compatible
 * Configuration files are under $HOME, and easy to find
+* Configuration files support variables, system variables and if-else statements
 * 100% Extentable code for future use
 * Allow to install extensions
 * Responsive UI design for all device
