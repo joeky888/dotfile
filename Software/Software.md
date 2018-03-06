@@ -95,6 +95,7 @@ Windows XP
 =====
 * Qupzilla 1.8.9
 * Google Chrome 49
+* Powershell 2.0
 * Gvim
 * 7zip
 * git 2.10.0
