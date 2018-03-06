@@ -99,6 +99,7 @@ Windows XP
 * Gvim
 * 7zip
 * git 2.10.0
+* Yahoo KeyKey
 * Sogou input (zhuyin/pinyin)
 * WPS office
 * VLC
