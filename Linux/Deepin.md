@@ -52,6 +52,7 @@ Packages
 * Dowload the LibreOffice.appimage
 * $ sudoedit /etc/systemd/system/earlyoom.service
 ```conf
+# Use 97% of ram
 ExecStart=/usr/bin/earlyoom -m 3
 ```
 
