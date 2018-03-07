@@ -14,6 +14,7 @@ Start when windows logging in
 * Win+R -> shell:startup
 * Copy shortcut into the folder
 
-Reply with outlook style
+Outlook style
 =====
 * Install "ReplyWithHeader" extension -> Restart thunderbird
+* Alt+V -> Layout -> Vertical View
