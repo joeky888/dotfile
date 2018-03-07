@@ -6,6 +6,7 @@
     autocrlf = false
     safecrlf = false
     pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' -
+    fileMode = true
 [rerere]
     enabled = 1
     autoupdate = 1
