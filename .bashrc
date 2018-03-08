@@ -536,6 +536,11 @@ if [[ -d "$HOME/Miniconda3" ]]; then
   upgradePip3() { ~/Miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
+if [[ -d "$HOME/node" ]]; then
+  export PATH=~/node/bin:$PATH
+  alias upgradeNpm='~/node/bin/npm update -g'
+fi
+
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
   export JAVA_HOME=~/zulu
