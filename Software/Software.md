@@ -99,6 +99,8 @@ Windows XP
 * Gvim
 * 7zip
 * git 2.10.0
+* Sumatra PDF
+* Greenshot
 * Yahoo KeyKey
 * Sogou input (zhuyin/pinyin)
 * WPS office
@@ -167,7 +169,7 @@ Good Software Design
 * Customizable theming (and Font-Family) with json format
 * A light theme and a dark theme built-in
 * Always use simple English
-* Colorful output in the debug console (Logcat)
+* Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warrning
 * Host on github if open source, host on Gogs for self-hosting
 * Multiple languages other than just English
 * Support Private Tabs/Windows
