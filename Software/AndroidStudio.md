@@ -14,6 +14,18 @@ Keymapping
     * Move Line Down -> Right Click -> Add Keyboard Shortcut -> Pagedown
     * Comment with Line Comment -> Right Click -> Add Keyboard Shortcut -> Ctrl \
 
+Colored logcat
+=====
+* Preferences –> Editor –> Colors & Fonts –> Android Logcat
+```conf
+Assert : 9876AA
+Debug  : 6897BB
+Error  : FF6B68
+Info   : 6A8759
+Verbose: BBBBBB
+Warn   : BBB529
+```
+
 Make build faster
 =====
 * File -> Settings -> Build, Execution, Deployment -> Build Tools -> Gradle -> Global Gradle settings -> Offline work -> Check
