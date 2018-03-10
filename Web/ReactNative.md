@@ -1,11 +1,17 @@
 Install
 =====
-* $ npm install -g react-native-cli
+* $ npm install -g yarn
+* $ yarn global add create-react-native-app
 * Install watchman (https://github.com/facebook/watchman)
 * Install Android Studio, JDK and python2
 
 Init
 ======
-* $ react-native init ProjectName
+* $ create-react-native-app ProjectName
 * $ cd ProjectName
-* $ react-native run-android # react-native run-ios
+* $ `rm -rf node_modules`
+* $ yarn install
+* Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
+* $ npm start
+* Install Expo app and open the project
+* Press capital `R` in terminal to restart and clear cache
