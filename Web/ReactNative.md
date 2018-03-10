@@ -12,6 +12,8 @@ Init
 * $ `rm -rf node_modules`
 * $ yarn install
 * Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
-* $ npm start
+* $ npm --verbose start
+* $ npm --verbose run android
+* $ npm --verbose run ios
 * Install Expo app and open the project
 * Press capital `R` in terminal to restart and clear cache
