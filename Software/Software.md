@@ -99,6 +99,8 @@ Windows XP
 * Gvim
 * 7zip
 * git 2.10.0
+* Powershell 2
+* Python 2 (Miniconda2)
 * Sumatra PDF
 * Greenshot
 * Yahoo KeyKey
