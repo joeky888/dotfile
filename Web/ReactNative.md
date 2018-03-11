@@ -12,6 +12,7 @@ Install with yarn
 
 Init
 ======
+* Install Expo app and open the project
 * $ create-react-native-app ProjectName
 * $ cd ProjectName
 * $ `rm -rf node_modules`
@@ -20,5 +21,4 @@ Init
 * $ npm --verbose start
 * $ npm --verbose run android
 * $ npm --verbose run ios
-* Install Expo app and open the project
 * Press capital `R` in terminal to restart and clear cache
