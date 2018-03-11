@@ -1,7 +1,7 @@
 Install
 =====
 * $ npm install -g yarn
-* $ yarn global add create-react-native-app
+* $ yarn global add create-react-native-app # npm install -g create-react-native-app
 * Install watchman (https://github.com/facebook/watchman)
 * Install Android Studio, JDK and python2
 
