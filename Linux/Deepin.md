@@ -1,6 +1,7 @@
 After installed
 =====
 * Setting -> Power Management -> Disable computer auto sleeping
+* Setting -> Power Management -> Disable suspend on lid closed
 * Setting -> Account -> auto login
 * Setting -> Update -> Update Settings -> Auto-download Updates -> Check
 * Desktop right click -> Corner Settings -> set right bottom corner to "Desktop"
