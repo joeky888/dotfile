@@ -35,17 +35,14 @@ All containers are stored at
 =====
 * Windows: "C:\Users\Public\Documents\Hyper-V\Virtual hard disks"
 
-Remove a installed container / just like remove a .vmdk on virtualbox
+Remove an installed container / just like remove a .vmdk on virtualbox
 =====
 * $ docker rm container\_id
 
 Create a ubuntu container on docker
 =====
-* use C:\cygwin64\Cygwin.bat
-* add "chcp 65001" to C:\cygwin64\Cygwin.bat
-* Replace C:\cygwin64\Cygwin.bat font
-* Run C:\cygwin64\Cygwin.bat
-* $ zsh
+* $ docker pull ubuntu
+* $ docker images
 * name it to "ubuntu1"
 * $ docker run -it --name ubuntu1 ubuntu bash
 * $ dpkg-reconfigure tzdata # Set packages server location
@@ -54,7 +51,7 @@ Create a ubuntu container on docker
 * Download and run dotfiles
 * $ locale-gen en\_US.UTF-8
 
-Run a exist ubuntu container
+Run an exist ubuntu container
 =====
 * $ docker ps -a # get the name of the container
 * $ docker restart container\_name
