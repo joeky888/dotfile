@@ -31,7 +31,7 @@ Show all installed container / just like showing all .vmdk on virtualbox
 =====
 * $ docker ps -a
 
-All container stored at
+All containers are stored at
 =====
 * Windows: "C:\Users\Public\Documents\Hyper-V\Virtual hard disks"
 
