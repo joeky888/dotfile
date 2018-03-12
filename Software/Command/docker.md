@@ -43,7 +43,7 @@ Remove an installed container / just like remove a .vmdk on virtualbox
 
 Create a ubuntu container on docker
 =====
-* $ docker pull ubuntu
+* $ docker pull ubuntu # From Docker Hub
 * $ docker images
 * name it to "ubuntu1"
 * $ docker run -it --name ubuntu1 ubuntu bash
