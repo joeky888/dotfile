@@ -45,7 +45,7 @@ Create a ubuntu container on docker
 =====
 * $ docker pull ubuntu # From Docker Hub
 * $ docker images
-* name it to "ubuntu1"
+* Create a container and name it to "ubuntu1"
 * $ docker run -it --name ubuntu1 ubuntu bash
 * $ dpkg-reconfigure tzdata # Set packages server location
 * edit /etc/apt/sources.list # Replace all "archive" to "tw.archive"
