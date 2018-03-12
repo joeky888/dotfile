@@ -20,6 +20,8 @@ sudo apt-fast update && sudo apt-fast install docker.io -y
 sudo usermod -aG docker $USER
 sudo reboot
 systemctl status docker.service
+sudo systemctl enable docker.service
+sudo systemctl restart docker.service
 ```
 
 Check if docker is running correctly
