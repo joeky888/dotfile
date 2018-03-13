@@ -10,4 +10,5 @@ Find out ip of a host
 * $ dig youtube.com
 * ipv6
 * $ dig youtube.com AAAA
+* Open browser and enter the URL like this http://[2001:4860:0:2001::68]/
 
