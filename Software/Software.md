@@ -83,7 +83,7 @@ Windows
 * Rainmeter (with Circle-Weather)
 * MPC-HC
 * Sarasa Mono TC font (for console)
-* $ Set-ExecutionPolicy RemoteSigned
+* $ Set-ExecutionPolicy RemoteSigned -Force
 * $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
 * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
 * $ choco install 7zip vim-tux.portable git poshgit aria2 miniconda miniconda3 ffmpeg youtube-dl greenshot wps-office-free obs-studio nmap nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp inkscape cmake.portable adb nodejs phantomjs -y --pre
