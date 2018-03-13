@@ -3,6 +3,7 @@ A good Android phone
 * Heavy battery and long battery life
 * Supported by Lineage OS
 * Support OTG
+* Support NFC
 * Support large size external card
 * Waterproof
 
