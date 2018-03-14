@@ -1,3 +1,7 @@
+Get only the matched string
+=====
+* $ echo aaaTESTbbb | grep -o "TEST"
+
 Remove all lines which contain a string
 =====
 * $ sed -i '/string/d' filename
