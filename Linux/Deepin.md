@@ -58,6 +58,8 @@ Packages
 # Use 97% of ram
 ExecStart=/usr/bin/earlyoom -m 3
 ```
+* $ sudo systemctl restart earlyoom.service
+* $ sudo systemctl daemon-reload
 
 Disable Gnome keyring when opening the browser
 =====
