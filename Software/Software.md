@@ -53,7 +53,7 @@ CLI
 * BusyBox / Toybox
 * Neofetch
 * youtube-dl
-* you-get
+* you-get / Lulu
 * ykdl
 * glances
 * danmaku2ass (m13253)
