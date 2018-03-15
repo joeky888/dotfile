@@ -98,6 +98,8 @@ Windows XP
 * Google Chrome 49
 * Powershell 2.0
 * Gvim
+* Notepad++
+* Sublime Text 2/3
 * 7zip
 * git 2.10.0
 * Powershell 2
