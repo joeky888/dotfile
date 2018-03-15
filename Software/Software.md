@@ -99,6 +99,7 @@ Windows XP
 * Powershell 2.0
 * Gvim
 * 7zip
+* Aria2 (static build)
 * git 2.10.0
 * Powershell 2
 * Python 2 (Miniconda2)
