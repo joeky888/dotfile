@@ -1,29 +1,20 @@
 #!/usr/bin/env python3
 
-# $ ./Download.py
-
-import subprocess, sys, os, codecs
+import subprocess, sys, os, codecs, time
 
 Error_List = []
-url = "https://www.bilibili.com/video/av8927491/#page="
+MAX_DOWNLOAD_AT_ONCE = 10
+processes = set()
+url = "https://www.bilibili.com/video/av8927491/?p="
 start = 1
 end   = 25
 
 for i in range(start, end+1):
-    cmd = "you-get " + url + str(i) + " -O " + str(i)
-    print(cmd)
-    if os.system(cmd) != 0:
-        print("Download Error: " + str(i))
-        Error_List.append(i)
+    processes.add( subprocess.Popen(["you-get", url + str(i), "-O", str(i), "-o", str(i)]) )
+    while len(processes) >= MAX_DOWNLOAD_AT_ONCE:
+        time.sleep(.1)
+        processes.difference_update([
+            p for p in processes if p.poll() is not None])
 
-# Retry
-while len(Error_List) != 0:
-    NewError_List = []
-    for i in Error_List:
-        cmd = "you-get " + url + str(i) + " -O " + str(i)
-        print(cmd)
-        if os.system(cmd) != 0:
-            print("Download Error: " + str(i))
-            NewError_List.append(i)
-    Error_List = []
-    Error_List = NewError_List[:]
+# Execute this command
+# $ find . -name '*' -type f -exec mv {} ./ \;
