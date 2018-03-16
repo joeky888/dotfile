@@ -3,7 +3,7 @@
 import subprocess, sys, os, codecs, time
 
 Error = []
-MAX_DOWNLOAD_AT_ONCE = 10
+MAX_DOWNLOAD_AT_ONCE = 16
 processes = []
 url = "https://www.bilibili.com/video/av7931969/?p="
 start = 1
