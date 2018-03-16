@@ -15,6 +15,7 @@ for i in range(start, end + 1):
     while len(processes) >= MAX_DOWNLOAD_AT_ONCE:
         time.sleep(.1)
         for idx, p in enumerate(processes):
+            # if p[0].returncode == None, it means that downloading is not finished
             if p[0].poll() == 0:
                 # Succeed
                 processes.pop(idx)
