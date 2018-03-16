@@ -2,6 +2,7 @@
 
 import subprocess, sys, os, codecs, time
 
+Error = []
 MAX_DOWNLOAD_AT_ONCE = 10
 processes = []
 url = "https://www.bilibili.com/video/av7931969/?p="
@@ -19,7 +20,9 @@ for i in range(start, end + 1):
             elif processes[j].returncode != None:
                 # Failed
                 processes.pop(j)
-                processes.append( subprocess.Popen(["you-get", url + str(j), "-O", str(j), "-o", str(j)]) )
+                Error.append( subprocess.Popen(["you-get", url + str(j), "-O", str(j), "-o", str(j)]) )
+        processes.extend(Error)
+        Error = []
 
 # Execute this command
 # $ find . -name '*' -type f -exec mv {} ./ \;
