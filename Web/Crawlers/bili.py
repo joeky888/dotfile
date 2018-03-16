@@ -10,17 +10,20 @@ start = 1
 end   = 140
 
 for i in range(start, end + 1):
-    processes.append( subprocess.Popen(["you-get", url + str(i), "-O", str(i), "-o", str(i)]) )
+    vid = str(i)
+    processes.append( [subprocess.Popen(["you-get", url + vid, "-O", vid, "-o", vid]), i] )
     while len(processes) >= MAX_DOWNLOAD_AT_ONCE:
         time.sleep(.1)
-        for j in range(len(processes)-1, -1, -1):
-            if processes[j].poll() == 0:
+        for idx, p in enumerate(processes):
+            if p[0].poll() == 0:
                 # Succeed
-                processes.pop(j)
-            elif processes[j].returncode != None:
+                processes.pop(idx)
+            elif p[0].returncode != None:
                 # Failed
-                processes.pop(j)
-                Error.append( subprocess.Popen(["you-get", url + str(j), "-O", str(j), "-o", str(j)]) )
+                processes.pop(idx)
+                vidp = str(p[1])
+                Error.append( [subprocess.Popen(["you-get", url + vidp, "-O", vidp, "-o", vidp]), p[1]] )
+                time.sleep(.1)
         processes.extend(Error)
         Error = []
 
