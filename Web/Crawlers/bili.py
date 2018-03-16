@@ -27,6 +27,8 @@ for i in range(start, end + 1):
         processes.extend(Error)
         Error = []
 
-# Execute this command
-# $ find . -name '*' -type f -exec mv {} ./ \;
-# $ find . -type d -empty -delete
+# Execute this bash command
+# $ find . -name '*' -type f -exec mv {} ./ \; && find . -type d -empty -delete
+
+# Or the Powershell Command
+# $ Get-ChildItem -Path . -Recurse -File | Move-Item -Force -Destination . ; Get-ChildItem -Path . -Recurse -Directory | Remove-Item
