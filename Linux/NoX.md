@@ -1,13 +1,17 @@
 Install Fbterm
 =====
-* $ sudo apt-fast install fbterm fontconfig -y
+* $ sudo apt remove fbterm -y
+* $ sudo apt install libgpm-dev libfontconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
+* $ git clone https://github.com/j16180339887/fbterm.git && cd fbterm
+* $ ./configure && make && sudo make install
+* $ sudo apt-fast install fontconfig -y
 * $ sudo apt-fast install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
 * $ sudo usermod -a -G video $(whoami)
 * Reboot OS, when it shows boot menu, type "c" switch to grub mode
-* $ grub> vbeinfo
+* $ grub> vbeinfo # Or videoinfo
 * Pick one from stdout, ex: 1024x768x16
 * $ grub> reboot
 * $ sudoedit /etc/default/grub && sudo update-grub && sudo update-grub2
@@ -42,12 +46,6 @@ color-12=5555FF
 color-13=FF55FF
 color-14=55FFFF
 color-15=FFFFFF
-```
-```sh
-sudo apt remove fbterm -y
-sudo apt install libgpm-dev libfontconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
-git clone https://github.com/j16180339887/fbterm.git && cd fbterm
-./configure && make && sudo make install
 ```
 
 Mouse without x
