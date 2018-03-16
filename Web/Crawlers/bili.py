@@ -29,3 +29,4 @@ for i in range(start, end + 1):
 
 # Execute this command
 # $ find . -name '*' -type f -exec mv {} ./ \;
+# $ find . -type d -empty -delete
