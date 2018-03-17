@@ -17,6 +17,12 @@ Convert .pem to .crt
 openssl x509 -in input.pem -inform PEM -out output.crt
 ```
 
+View a .crt file
+=====
+```sh
+openssl x509 -in input.crt -text -noout
+```
+
 Install .crt to debian and ubuntu
 =====
 ```sh
