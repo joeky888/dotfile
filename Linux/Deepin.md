@@ -63,7 +63,7 @@ ExecStart=/usr/bin/earlyoom -m 3
 
 Disable Gnome keyring when opening the browser
 =====
-* $ sudo apt install seahorse -y
+* $ sudo aptitude install seahorse -y
 * $ seahorse
 
 Install Zhuyin IM
