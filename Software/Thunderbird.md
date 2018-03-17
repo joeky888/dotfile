@@ -1,4 +1,4 @@
-Asus Exchange setting
+Asus Exchange setting Using ExQuilla (Closed source)
 =====
 * Press "Alt" key -> Tool -> Extensions -> Search "Exchange" -> install "ExQuilla"
 * Tool -> ExQuilla for Microsoft Exchange -> Add Microsoft Exchange Account
@@ -6,8 +6,18 @@ Asus Exchange setting
 * `Password "YOUR_Password"`
 * `User name "Joeky_Zhan"`
 * `Domain "ASUS"`
-* (Optional setting) `Server "mymail.asus.com"`
+* (Optional setting) `Server "https://mymail.asus.com/ews/exchange.asmx"`
 * Next -> do auto discover -> Next -> Finish
+
+Asus Exchange setting Using MExInt (Open source)
+=====
+* Install Thunderbird plugin from https://github.com/guderkar/MExInt/tree/master/xpi
+* Press "Alt" key -> Tool -> Account Settings -> Account Actions -> Add Microsoft Exchange Account
+* Tool -> ExQuilla for Microsoft Exchange -> Add Microsoft Exchange Account
+* `User name "Joeky_Zhan"`
+* `Email Address "ASUS\Joeky_Zhan"`
+* `Password "YOUR_Password"`
+* `Server "https://mymail.asus.com/ews/exchange.asmx"`
 
 Start when windows logging in
 =====
