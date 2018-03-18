@@ -3,7 +3,7 @@
 import subprocess, sys, os, codecs, time
 
 Error = []
-MAX_DOWNLOAD_AT_ONCE = 5
+MAX_DOWNLOAD_AT_ONCE = 16
 processes = []
 url = []
 
