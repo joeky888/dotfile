@@ -527,6 +527,12 @@ if [[ -d "$HOME/Miniconda2" ]]; then
   alias pip2='~/Miniconda2/bin/pip'
   alias upgradeConda2='~/Miniconda2/bin/conda update --all --yes'
   upgradePip2() { ~/Miniconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Miniconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Miniconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/miniconda2" ]]; then
+  export PATH=~/miniconda2/bin:$PATH
+  alias conda2='~/miniconda2/bin/conda'
+  alias pip2='~/miniconda2/bin/pip'
+  alias upgradeConda2='~/miniconda2/bin/conda update --all --yes'
+  upgradePip2() { ~/miniconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/miniconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/miniconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 if [[ -d "$HOME/Miniconda3" ]]; then
@@ -535,6 +541,12 @@ if [[ -d "$HOME/Miniconda3" ]]; then
   alias pip3='~/Miniconda3/bin/pip'
   alias upgradeConda3='~/Miniconda3/bin/conda update --all --yes'
   upgradePip3() { ~/Miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/miniconda3" ]]; then
+  export PATH=~/miniconda3/bin:$PATH
+  alias conda3='~/miniconda3/bin/conda'
+  alias pip3='~/miniconda3/bin/pip'
+  alias upgradeConda3='~/miniconda3/bin/conda update --all --yes'
+  upgradePip3() { ~/miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 if [[ -d "$HOME/node" ]]; then
