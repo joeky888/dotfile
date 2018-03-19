@@ -170,16 +170,17 @@ upgradeDotfile() {
   git submodule foreach git pull origin master
   cd - ;
 
-  rm ~/.bashrc
-  rm ~/.bash_profile
-  rm ~/.tmux.conf
-  rm ~/.zshrc
-  rm ~/.gitconfig
-  rm ~/.gitmessage
-  rm ~/.fbtermrc
-  rm ~/.Xresources
-  rm ~/.minttyrc
-  rm ~/.vimrc
+  rm -rf ~/.bashrc
+  rm -rf ~/.bash_profile
+  rm -rf ~/.tmux.conf
+  rm -rf ~/.zshrc
+  rm -rf ~/.gitconfig
+  rm -rf ~/.gitmessage
+  rm -rf ~/.fbtermrc
+  rm -rf ~/.Xresources
+  rm -rf ~/.minttyrc
+  rm -rf ~/.vimrc
+  rm -rf ~/.pythonrc
 
   if [[ "$OSTYPE" == "cygwin" ]]; then
     cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1"
@@ -188,6 +189,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\Windows\.pythonrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
@@ -198,6 +200,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
     ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
     ln -sf $HOME/dotfile/.bashrc ~/.zshrc
+    ln -sf $HOME/dotfile/.pythonrc ~/.pythonrc
     ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
     ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage
     ln -sf $HOME/dotfile/.fbtermrc ~/.fbtermrc
@@ -548,6 +551,8 @@ elif [[ -d "$HOME/miniconda3" ]]; then
   alias upgradeConda3='~/miniconda3/bin/conda update --all --yes'
   upgradePip3() { ~/miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
+
+[ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH
