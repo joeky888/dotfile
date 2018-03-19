@@ -16,14 +16,6 @@ Windows Registry Editor Version 5.00
 ; [HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor]
 ; "Autorun"="@chcp 65001>nul & cmd"
 
-; [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Console\TrueTypeFont]
-; "000"="Ubuntu Mono"
-; "932"="Ubuntu Mono"
-; "936"="Ubuntu Mono"
-; "949"="Ubuntu Mono"
-; "950"="Ubuntu Mono"
-; "65001"="Ubuntu Mono"
-
 [HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command]
 @="C:\\ProgramData\\chocolatey\\bin\\gvim.exe -p --remote-tab-silent \"%1\""
 
