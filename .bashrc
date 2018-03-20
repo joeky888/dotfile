@@ -540,6 +540,18 @@ elif [[ -d "$HOME/miniconda2" ]]; then
   alias pip2='~/miniconda2/bin/pip'
   alias upgradeConda2='~/miniconda2/bin/conda update --all --yes'
   upgradePip2() { ~/miniconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/miniconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/miniconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/Anaconda2" ]]; then
+  export PATH=~/Anaconda2/bin:$PATH
+  alias conda2='~/Anaconda2/bin/conda'
+  alias pip2='~/Anaconda2/bin/pip'
+  alias upgradeConda2='~/Anaconda2/bin/conda update --all --yes'
+  upgradePip2() { ~/Anaconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Anaconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Anaconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/anaconda2" ]]; then
+  export PATH=~/anaconda2/bin:$PATH
+  alias conda2='~/anaconda2/bin/conda'
+  alias pip2='~/anaconda2/bin/pip'
+  alias upgradeConda2='~/anaconda2/bin/conda update --all --yes'
+  upgradePip2() { ~/anaconda2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/anaconda2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/anaconda2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 if [[ -d "$HOME/Miniconda3" ]]; then
@@ -554,6 +566,18 @@ elif [[ -d "$HOME/miniconda3" ]]; then
   alias pip3='~/miniconda3/bin/pip'
   alias upgradeConda3='~/miniconda3/bin/conda update --all --yes'
   upgradePip3() { ~/miniconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/miniconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/miniconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/Anaconda3" ]]; then
+  export PATH=~/Anaconda3/bin:$PATH
+  alias conda3='~/Anaconda3/bin/conda'
+  alias pip3='~/Anaconda3/bin/pip'
+  alias upgradeConda3='~/Anaconda3/bin/conda update --all --yes'
+  upgradePip3() { ~/Anaconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/Anaconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/Anaconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+elif [[ -d "$HOME/anaconda3" ]]; then
+  export PATH=~/anaconda3/bin:$PATH
+  alias conda3='~/anaconda3/bin/conda'
+  alias pip3='~/anaconda3/bin/pip'
+  alias upgradeConda3='~/anaconda3/bin/conda update --all --yes'
+  upgradePip3() { ~/anaconda3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && ~/anaconda3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && ~/anaconda3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
