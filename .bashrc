@@ -557,6 +557,7 @@ elif [[ -d "$HOME/miniconda3" ]]; then
 fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
+[ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH
