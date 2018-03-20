@@ -43,7 +43,9 @@
         "when": "editorTextFocus && suggestWidgetMultipleSuggestions && suggestWidgetVisible" },
     { "key": "ctrl+oem_5", "command": "editor.action.commentLine",
         "when": "editorTextFocus && !editorReadonly" },
-    { "key": "ctrl+f", "command": "editor.action.startFindReplaceAction" },
+    { "key": "ctrl+f", "command": "actions.find" },
+    { "key": "ctrl+h", "command": "editor.action.startFindReplaceAction" },
+    { "key": "ctrl+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "ctrl+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" }
 ]
