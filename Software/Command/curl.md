@@ -27,7 +27,7 @@ curl -v https://hanshih.management.azure-api.net/api/Assets -X POST \
 ```
 ```sh
 # Powershell
-curl -v https://hanshih.management.azure-api.net/api/Assets -X POST `
+curl.exe -v https://hanshih.management.azure-api.net/api/Assets -X POST `
     --insecure `
     -H "Content-Type: application/json; charset=utf-8" `
     -H "DataServiceVersion:1.0;NetFx" `
