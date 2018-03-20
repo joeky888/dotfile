@@ -451,35 +451,39 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   export HISTSIZE=
   shopt -s histappend # Append history
   PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND" # Write history immediately
-  bind 'set completion-ignore-case on' # Ignore case
-  bind '"\e[A": history-search-backward' # Up key is searching backward
-  bind '"\e[B": history-search-forward'  # Down key is searching forward
-  bind '\C-B:backward-kill-word'
-  bind '\C-Z:undo'
-  bind '\C-Y:redo'
-  bind '\C-K:kill-whole-line'
-  bind 'set show-all-if-ambiguous on'
-  bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
-  bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
-  bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
-  bind -x '"\C-O": OpenFileExplorer'  # Ctrl O to open file explorer here
-  export COLOR_RESET="\[$(tput sgr0)\]" # No Color
-  export COLOR_RED="\[$(tput setaf 1)\]"
-  export COLOR_GREEN="\[$(tput setaf 2)\]"
-  export COLOR_YELLOW="\[$(tput setaf 3)\]"
-  export COLOR_BLUE="\[$(tput setaf 4)\]"
-  export COLOR_PURPLE="\[$(tput setaf 5)\]"
-  export COLOR_CYAN="\[$(tput setaf 6)\]"
-  export COLOR_GRAY="\[$(tput setaf 7)\]"
-  export COLOR_LIGHT_RED="\[$(tput setaf 1; tput bold)\]"
-  export COLOR_LIGHT_GREEN="\[$(tput setaf 2; tput bold)\]"
-  export COLOR_LIGHT_YELLOW="\[$(tput setaf 3; tput bold)\]"
-  export COLOR_LIGHT_BLUE="\[$(tput setaf 4; tput bold)\]"
-  export COLOR_LIGHT_PURPLE="\[$(tput setaf 5; tput bold)\]"
-  export COLOR_LIGHT_CYAN="\[$(tput setaf 6; tput bold)\]"
-  export COLOR_LIGHT_GRAY="\[$(tput setaf 7; tput bold)\]"
-  # USER@DOMAIN directory
-  export PS1="${COLOR_LIGHT_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
+  if [[ $- =~ i ]]; then
+    bind 'set completion-ignore-case on' # Ignore case
+    bind '"\e[A": history-search-backward' # Up key is searching backward
+    bind '"\e[B": history-search-forward'  # Down key is searching forward
+    bind '\C-B:backward-kill-word'
+    bind '\C-Z:undo'
+    bind '\C-Y:redo'
+    bind '\C-K:kill-whole-line'
+    bind 'set show-all-if-ambiguous on'
+    bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
+    bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+    bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
+    bind -x '"\C-O": OpenFileExplorer'  # Ctrl O to open file explorer here
+  fi
+  if [ $(command -v tput) ]; then
+    export COLOR_RESET="\[$(tput sgr0)\]" # No Color
+    export COLOR_RED="\[$(tput setaf 1)\]"
+    export COLOR_GREEN="\[$(tput setaf 2)\]"
+    export COLOR_YELLOW="\[$(tput setaf 3)\]"
+    export COLOR_BLUE="\[$(tput setaf 4)\]"
+    export COLOR_PURPLE="\[$(tput setaf 5)\]"
+    export COLOR_CYAN="\[$(tput setaf 6)\]"
+    export COLOR_GRAY="\[$(tput setaf 7)\]"
+    export COLOR_LIGHT_RED="\[$(tput setaf 1; tput bold)\]"
+    export COLOR_LIGHT_GREEN="\[$(tput setaf 2; tput bold)\]"
+    export COLOR_LIGHT_YELLOW="\[$(tput setaf 3; tput bold)\]"
+    export COLOR_LIGHT_BLUE="\[$(tput setaf 4; tput bold)\]"
+    export COLOR_LIGHT_PURPLE="\[$(tput setaf 5; tput bold)\]"
+    export COLOR_LIGHT_CYAN="\[$(tput setaf 6; tput bold)\]"
+    export COLOR_LIGHT_GRAY="\[$(tput setaf 7; tput bold)\]"
+    # USER@DOMAIN directory
+    export PS1="${COLOR_LIGHT_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
+  fi
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
