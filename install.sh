@@ -215,7 +215,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y clang man vim git tig zsh tmux curl aria2 rsync bash-completion openssh grep sed python ffmpeg p7zip util-linux neofetch python-dev libffi-dev openssl-dev
+  apt install -y clang man vim git tig zsh tmux curl aria2 rsync bash-completion openssh grep sed python ffmpeg p7zip util-linux ncurses-utils neofetch python-dev libffi-dev openssl-dev
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
