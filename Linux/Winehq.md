@@ -53,6 +53,10 @@ Install mono or dotnet
     * $ sh winetricks xna40 # Optional
     * $ wine file.exe
 
+Reboot wine
+=====
+* $ wineboot
+
 Troubleshooting
 =====
 * If winecfg/winecfg-development can not create ~/.wine/ successfully
