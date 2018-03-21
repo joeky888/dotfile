@@ -31,6 +31,8 @@ Install winetricks and winetricks packages
 Open cmd and run .bat file
 =====
 * $ wineconsole cmd
+* Or
+* $ wineconsole --backend=curses
 * Run .bat file
 
 Install a .msi file
