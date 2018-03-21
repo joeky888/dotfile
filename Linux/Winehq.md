@@ -30,7 +30,7 @@ Install winetricks and winetricks packages
 
 Open cmd and run .bat file
 =====
-* $ wineconsole cmd
+* $ wine cmd
 * Or
 * $ wineconsole --backend=curses
 * Run .bat file
