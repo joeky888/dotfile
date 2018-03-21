@@ -55,7 +55,7 @@ Install mono or dotnet
 
 Reboot wine
 =====
-* $ wineboot
+* $ wineboot --restart
 
 Troubleshooting
 =====
