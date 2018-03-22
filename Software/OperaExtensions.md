@@ -23,7 +23,7 @@
 * Turbo Download Manager (Opera Extension)
 * 飛比價格購物幫手
 * Monokai for Chrome:
-    * chrome://flags -> Developer Tools experiments -> enable -> Relaunch Now
+    * chrome://flags -> Developer Tools experiments (or chrome://flags/#enable-devtools-experiments) -> enable -> Relaunch Now
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
 * Adobe Flash:
     * chrome://Plugins -> Search "flash" -> Enable
