@@ -41,6 +41,13 @@ Install a .msi file
 * Uninstall a .msi file
 * $ wine msiexec /x filename.msi
 
+Set environment variables
+=====
+* -m means system side variable
+* $ setx -m PYTHONIOENCODING "UTF-8"
+* $ setx -m PYTHONHTTPSVERIFY 0
+* $ `setx -m JAVA_HOME "C:\Program Files (x86)\Java\jdk1.7.0_04"`
+
 Install mono or dotnet
 =====
 1. Using Linux Mono
