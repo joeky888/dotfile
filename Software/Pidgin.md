@@ -4,6 +4,7 @@ Setup
 * Tools -> Plugins -> Message Notification -> Check -> Configure Plugin
     * Check "Raise conversation"
     * Check "Present conversation"
+* Buddies -> Show -> Offline Buddies
 
 Connect to Skype for business
 =====
