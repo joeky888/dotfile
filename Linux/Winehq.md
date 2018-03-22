@@ -49,6 +49,13 @@ Set environment variables
 * $ PYTHONIOENCODING="UTF-16" # Or `export PYTHONIOENCODING="UTF-16"`
 * $ wine cmd
 
+Tab completion
+=====
+* Cmd.exe tab completion isn't possible at this moment
+* Use bash instead
+* (X) cmd> python install.py
+* (O) $ wine python install.py
+
 Install mono or dotnet
 =====
 1. Using Linux Mono
