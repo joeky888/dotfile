@@ -1,9 +1,11 @@
 Setup
 =====
+* $ sudo apt-fast install pidgin-libnotify -y
 * Tools -> Plugins -> History -> Check
 * Tools -> Plugins -> Message Notification -> Check -> Configure Plugin
     * Check "Raise conversation"
     * Check "Present conversation"
+* Tools -> Plugins -> Libnotify Popups
 * Buddies -> Show -> Offline Buddies
 
 Connect to Skype for business
