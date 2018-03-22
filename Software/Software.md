@@ -78,6 +78,7 @@ Windows
 * Cygwin
 * Chocolatey
 * Greenshot
+* Clink
 * Rufus
 * x64dbg / snowman
 * Rainmeter (with Circle-Weather)
