@@ -40,6 +40,8 @@ Install a .msi file
 * $ wine msiexec /i filename.msi
 * Uninstall a .msi file
 * $ wine msiexec /x filename.msi
+* Show all environment variables
+* cmd> set
 
 Set environment variables
 =====
