@@ -6,6 +6,7 @@ A good Android phone
 * Support NFC
 * Support large size external card
 * Waterproof
+* Dual-camera
 * USB Type C
 
 刷機 (flash a new rom)
