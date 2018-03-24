@@ -70,6 +70,15 @@ Install mono or dotnet
     * $ sh winetricks xna40 # Optional
     * $ wine file.exe
 
+Install powershell 2
+=====
+* Use Windows XP
+* $ export WINEARCH=win32
+* $ bash winetricks -q msxml3 dotnet35sp1 lucida
+* $ taskset -c 0 bash winetricks windowscodecs
+* $ wine ./WindowsXP-KB968930-x86-ENG.exe
+* $ wine powershell
+
 Reboot wine
 =====
 * $ wineboot --restart
