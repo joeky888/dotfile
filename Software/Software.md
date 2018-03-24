@@ -113,7 +113,7 @@ Windows XP
 * WPS office
 * VLC
 
-Mac
+Mac (Hack-intosh)
 =====
 * iterm2
 * Homebrew
