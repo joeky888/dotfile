@@ -21,6 +21,7 @@
 * BaiduExporter
 * Chrome-ssh-agent https://github.com/google/chrome-ssh-agent
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
+* Free Proxy to Unblock any sites (For pan.baidu.com)
 * Turbo Download Manager (Opera Extension)
 * 飛比價格購物幫手
 * Monokai for Chrome:
