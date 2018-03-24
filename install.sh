@@ -136,7 +136,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     InstallGRC
     InstallPy3UTF8
   else
-    echo "Distro not support at this moment."
+    echo "Distro does not support at this moment."
     exit 1
   fi
 
