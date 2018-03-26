@@ -17,6 +17,12 @@
     font-weight: 400 !important;
 }
 
+/* Invert color of images */
+img {
+   -webkit-filter: invert(1);
+   filter: invert(1);
+}
+
 /* Black */
 *::selection, *[id]::selection, *[class]::selection, *[name]::selection{
     background-color: #00afff !important;
