@@ -41,6 +41,11 @@ scp
 scp –P 8888 A_username@192.168.0.1:~/foobar.txt /some/local/directory
 ```
 
+ssh File transferring with GUI
+=====
+* Both Filezilla and Gnome Files (Nautilus) will work
+* Connect to server with ssh:// or sftp://
+
 What if I use 3G/4G/Wi-fi on client
 =====
 * Maybe mosh (mobile ssh) can help
