@@ -626,7 +626,7 @@ fi
 
 vman() {
   # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
-  man $@ | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" - # -MR Make it read only and quit easily
+  man $@ | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
 }
 
 curlToAria2()
