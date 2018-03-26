@@ -1,6 +1,6 @@
 Performance
 =====
-* Tools -> Preferences -> All -> Input / Codecs -> File Caching -> 30000ms
+* Tools -> Preferences -> All -> Input / Codecs -> File Caching -> 59999ms
 * Tools -> Preferences -> All -> Input / Codecs -> Video codecs -> FFmpeg -> Skip the loop filter for H.264 decoding -> All
 * Tools -> Preferences -> All -> Interface -> Main interfaces -> Qt -> Maximum Volume displayed > 300%
 * Tools -> Preferences -> All -> Interface -> Hotkeys settings
