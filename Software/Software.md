@@ -105,6 +105,7 @@ Windows XP
 * Aria2 (static build)
 * git 2.10.0
 * Powershell 2
+* Qt 5.6 (For development, I'm not sure if the apps built with latest Qt still runs on XP)
 * Python 2 (Miniconda2)
 * Sumatra PDF
 * Greenshot
