@@ -1,3 +1,10 @@
+Setting
+=====
+* chrome://flags/#smooth-scrolling -> Enable
+* chrome://Plugins -> Search "flash" -> Enable
+
+Extension
+=====
 * Adblock Plus
 * Install Chrome Extension
 * Search by Image (by Google)
@@ -27,8 +34,6 @@
 * Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments (or chrome://flags/#enable-devtools-experiments) -> enable -> Relaunch Now
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
-* Adobe Flash:
-    * chrome://Plugins -> Search "flash" -> Enable
 * LXRSS
     * Custom New Tab Page (Opera Extension) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
 
