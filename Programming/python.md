@@ -9,3 +9,15 @@ except ValueError as e:
     else:
         raise # Throw this error again
 ```
+
+Debug preprocessor
+=====
+* $ python -O abc.py # Debug off
+* $ python abc.py # Debug on
+```
+if __debug__:
+    print 'Debug ON'
+else:
+    print 'Debug OFF'
+
+```
