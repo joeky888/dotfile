@@ -1,3 +1,6 @@
+Setting
+=====
+```json
 {
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
@@ -15,11 +18,16 @@
     "editor.snippetSuggestions": "top",
     "Enable Live-Share-Function": "This is a comming soon feature"
 }
+```
 
-[
-    "Extensions(manually download)": "HookyQR.beautify", "hoovercj.vscode-power-mode"
-]
+Extension
+=====
+* HookyQR.beautify
+* hoovercj.vscode-power-mode
 
+Key
+=====
+```json
 [
     { "key": "ctrl+k", "command": "editor.action.deleteLines",
         "when": "editorTextFocus && !editorReadonly" },
@@ -49,3 +57,10 @@
     { "key": "ctrl+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" }
 ]
+```
+
+Diff 2 file
+=====
+* Open a.txt
+* Hit F1 -> Compare active file with -> Select b.txt
+* Note that only b.txt can be modified
