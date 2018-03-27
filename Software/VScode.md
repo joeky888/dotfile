@@ -5,6 +5,7 @@ Setting
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
     "editor.wordWrap": "off",
+    "editor.tabSize": 4,
     "files.encoding": "utf8",
     "files.eol": "\r\n",
     "files.trimTrailingWhitespace": true,
