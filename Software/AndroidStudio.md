@@ -18,12 +18,21 @@ Colored logcat
 =====
 * Preferences –> Editor –> Colors & Fonts –> Android Logcat
 ```conf
-Assert : 9876AA
-Debug  : 6897BB
-Error  : FF6B68
-Info   : 6A8759
-Verbose: BBBBBB
-Warn   : BBB529
+Material design palette:
+    Assert : E040FB
+    Debug  : 64B5F6
+    Error  : EF5350
+    Info   : 66BB6A
+    Verbose: BBBBBB
+    Warn   : FFC107
+
+Darcula palette:
+    Assert : 9876AA
+    Debug  : 6897BB
+    Error  : FF6B68
+    Info   : 6A8759
+    Verbose: BBBBBB
+    Warn   : BBB529
 ```
 
 Make build faster
