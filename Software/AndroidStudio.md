@@ -18,13 +18,20 @@ Colored logcat
 =====
 * Preferences –> Editor –> Colors & Fonts –> Android Logcat
 ```conf
-Material design palette:
+Material design palette (Weak):
     Assert : E040FB
     Debug  : 64B5F6
     Error  : EF5350
     Info   : 66BB6A
     Verbose: BBBBBB
     Warn   : FFC107
+
+Material design palette (Strong):
+    Assert : 9C27B0
+    Debug  : 2196F3
+    Error  : F44336
+    Info   : 4CAF50
+    Warning: FFC107
 
 Darcula palette:
     Assert : 9876AA
