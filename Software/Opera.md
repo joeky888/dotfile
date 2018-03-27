@@ -4,6 +4,12 @@ Setting
 * chrome://flags/#smooth-scrolling -> Enable
 * chrome://flags/#personal-news-notifications -> Enable
 * chrome://flags/#save-page-as-mhtml -> Enable
+* chrome://flags/#enable-quic -> Enable
+* chrome://flags/#toolkit-bookmarks -> Enable
+* chrome://flags/#enable-suggestions-with-substring-match -> Enable
+* chrome://flags/#enable-simple-cache-backend -> Enable
+* chrome://flags/#enable-client-lo-fi -> Enable
+* chrome://flags/#enable-module-scripts-import-meta-url -> Enable
 * chrome://flags/#enable-javascript-harmony -> Enable
 * chrome://flags/#enable-asm-webassembly -> Enable
 * chrome://flags/#enable-webassembly -> Enable

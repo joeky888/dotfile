@@ -36,6 +36,14 @@ org.gradle.parallel=true
 ```
 * Disable proxy if downloading dependencies takes forever
 
+Debug WebView with Chrome
+=====
+* Set mWebView.setWebContentsDebuggingEnabled(true);
+* Enable developer option on Android device
+* Connect Android device with USB
+* Navigate to the webview area in the Android APP
+* Open chrome://inspect in browser
+
 Android X86 on virtualbox
 =====
 * Setting -> Developer options -> Stay awake -> Check
