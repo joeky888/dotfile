@@ -34,6 +34,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pythonrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
