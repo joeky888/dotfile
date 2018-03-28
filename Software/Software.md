@@ -119,7 +119,7 @@ Mac (Hack-intosh)
 * iterm2
 * Homebrew
 * Homebrew Cask
-* MacVim
+* MacVim / VimR
 * Unarchiver
 
 Linux
