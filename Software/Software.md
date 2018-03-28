@@ -152,7 +152,6 @@ Android
 * VLC nightly
 * Kodi
 * Amaze File Manager
-* Open Camera
 * WPS office
 * Starfire 星火直播
 * WiFiAnalyzer open source
@@ -165,6 +164,7 @@ Android
     * Newpipe
     * YalpStore
     * Your local weather
+    * Open Camera
 * Drop-down menu items
     * Screenshot
     * Flash light
