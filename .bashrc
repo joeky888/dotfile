@@ -91,7 +91,8 @@ if [[ $(command -v aria2c) ]]; then
 else
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
 fi
-alias curl-asus='curl -x 10.78.20.186:3128 -U kungfu:howkungfu'
+alias curl-asus-proxy-kungfu='curl -x 10.78.20.186:3128 -U kungfu:howkungfu'
+alias curl-asus-proxy-zscaler='curl -x gateway.zscaler.net:80'
 alias which='which -a'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30]+bestaudio/best'"
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30]+bestaudio/best'"
@@ -108,10 +109,12 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias youtube-dl-asus-proxy='youtube-dl --no-check-certificate --external-downloader-args "-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
+alias youtube-dl-asus-proxy-kungfu='youtube-dl --no-check-certificate --external-downloader-args "-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
+alias youtube-dl-asus-proxy-zscaler='youtube-dl --no-check-certificate --external-downloader-args "-c -s16 -k1M -x16 --enable-rpc=false --all-proxy=gateway.zscaler.net:80"'
 alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16" -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
 alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
-alias aria2c-asus-proxy='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
+alias aria2c-asus-proxy-kungfu='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
+alias aria2c-asus-proxy-zscaler='aria2c --all-proxy=gateway.zscaler.net:80'
 alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/3.3.16" --peer-id-prefix="-qB33G0-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=false --bt-enable-lpd=false --enable-peer-exchange=false'
