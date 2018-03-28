@@ -62,7 +62,8 @@ Python
     * `https://github.com/tartley/colorama`
 * urwid: Console interface
     * Curses - standard python built-in lib
-    * `https://github.com/urwid/urwid`
+    * urwid
+    * picotui - Minimal pure python lib without using ncurses, MicroPython supported
 
 Java
 =====
