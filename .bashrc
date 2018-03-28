@@ -155,6 +155,7 @@ alias grep="grep $GREP_OPTIONS"
 
 proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
+proxyAsusZscaler() { export http_proxy="gateway.zscaler.net:80" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyAsusInToOut() { export http_proxy="kungfu:howkungfu@10.78.20.186.3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyAsusOutToIn() { export http_proxy="kungfu:howkungfu@ceasar.dlinkdns.com:5566" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
