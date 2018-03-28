@@ -117,6 +117,7 @@ Windows XP
 Mac (Hack-intosh)
 =====
 * iterm2
+* iTerm2-Color-Schemes
 * Homebrew
 * Homebrew Cask
 * MacVim / VimR
