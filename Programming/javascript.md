@@ -1,3 +1,10 @@
+Get browser user agent
+=====
+```javascript
+var agent = navigator.userAgent || navigator.vendor || window.opera;
+console.log(agent);
+```
+
 Foreach loop, index vs element
 =====
 ```javascript
