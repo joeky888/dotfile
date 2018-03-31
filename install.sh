@@ -155,7 +155,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   brew update
   brew install git ffmpeg aria2 tig tmux p7zip rsync
-  brew cask install macvim the-unarchiver
+  brew cask install macvim keka
 #   brew linkapps
   InstallMinicondaMac
   InstallDotfile
