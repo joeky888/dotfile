@@ -769,7 +769,8 @@ PasteFromClipboard()
 {
   if [[ -f $HOME/dotfile/clipboard.txt ]]; then
     if [[ -n "$ZSH_VERSION" ]]; then
-      LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)"
+      CLIP=$(cat $HOME/dotfile/clipboard.txt)
+      LBUFFER="$LBUFFER$CLIP"
     elif [[ -n "$BASH_VERSION" ]]; then
       CLIP=$(cat $HOME/dotfile/clipboard.txt)
       COUNT=$(echo -n "$CLIP" | wc -c)
