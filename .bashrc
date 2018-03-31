@@ -771,7 +771,10 @@ PasteFromClipboard()
     if [[ -n "$ZSH_VERSION" ]]; then
       LBUFFER="$LBUFFER$(cat $HOME/dotfile/clipboard.txt)"
     elif [[ -n "$BASH_VERSION" ]]; then
-      READLINE_LINE="$READLINE_LINE$(cat $HOME/dotfile/clipboard.txt)" ;
+      CLIP=$(cat $HOME/dotfile/clipboard.txt)
+      COUNT=$(echo -n "$CLIP" | wc -c)
+      READLINE_LINE="${READLINE_LINE:0:$READLINE_POINT}${CLIP}${READLINE_LINE:$READLINE_POINT}"
+      READLINE_POINT=$(($READLINE_POINT + $COUNT))
     fi
   fi;
 }
