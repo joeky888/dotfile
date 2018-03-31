@@ -215,6 +215,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
+    mkdir -p ~/.config/nvim/
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   fi;
 }
