@@ -121,7 +121,7 @@ Mac (Hack-intosh)
 * Homebrew
 * Homebrew Cask
 * MacVim / VimR
-* Unarchiver
+* Dr. Unarchiver
 
 Linux
 =====
