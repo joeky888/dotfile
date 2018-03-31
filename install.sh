@@ -20,7 +20,9 @@ InstallDotfile()
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
+  mkdir -p $Home/.config/nvim/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
+  ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
 }
 
 InstallDotfileCygwin()

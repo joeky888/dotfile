@@ -186,6 +186,7 @@ upgradeDotfile() {
   rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
+  rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
 
   if [[ "$OSTYPE" == "cygwin" ]]; then
@@ -214,6 +215,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
+    ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   fi;
 }
 
