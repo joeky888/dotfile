@@ -793,7 +793,7 @@ CompleteAptCyg()
     'rdepends:Produce a tree of packages that depend on the named package.'
     'category:Display all packages that are members of a named category.'
     'listfiles:List all files owned by a given package.'
-    'searchall:Search cygwin.com to retrieve file information about packages'
+    'search:Search cygwin.com to retrieve file information about packages'
   )
   _describe 'values' options;
 }
