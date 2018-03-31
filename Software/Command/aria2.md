@@ -4,3 +4,7 @@ Download torrent
 * $ aria2c --show-files a.torrent
 * Download some of the files
 * $ aria2c --select-file=1-5,7,8 a.torrent
+
+Download magnet link (Need update)
+=====
+* Convert to .torrent
