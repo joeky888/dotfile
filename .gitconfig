@@ -13,10 +13,12 @@
 [color]
     ui = auto
 [diff]
-    tool = vimdiff
+    tool = vimdiff3
 [difftool]
     prompt = false
 [http]
     sslVerify = false
 [commit]
     template = ~/.gitmessage
+[merge]
+    conflictstyle = diff3
