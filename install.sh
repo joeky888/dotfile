@@ -107,41 +107,48 @@ InstallMinicondaMac()
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
+  export Home="$HOME"
   if [[ $(command -v apt) ]]; then
-    export Home="$HOME"
     $SUDO apt update
     $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
-    mkdir -p ~/.config/openbox
-    InstallDotfile
-    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
-    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
-    ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-    ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
-    ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
-    $SUDO chsh -s $(command -v zsh) root
-    $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
-    $SUDO chmod 755 /usr/bin/reconnect
-    $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-    $SUDO chmod 755 /lib/systemd/system/reconnect.service
-    $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
-    $SUDO systemctl enable reconnect.service
-    $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
-    $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
-    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
-    $SUDO apt-fast install libssl-dev -y
-    $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-    $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
-    fc-cache -fv
-    find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
-    InstallMinicondaLinux
-    InstallGRC
-    InstallPy3UTF8
+  elif [[ $(command -v pacman) ]]; then
+    $SUDO pacman -Sy vim tmux zsh git curl aria2 bash-completion --noconfirm
   else
     echo "Distro does not support at this moment."
     exit 1
   fi
+  mkdir -p ~/.config/openbox
+  InstallDotfile
+  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
+  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
+  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
+  ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
+  ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
+  $SUDO chsh -s $(command -v zsh) root
+  $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
+  $SUDO chmod 755 /usr/bin/reconnect
+  $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
+  $SUDO chmod 755 /lib/systemd/system/reconnect.service
+  $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
+  $SUDO systemctl enable reconnect.service
+  $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
+  $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
+  if [[ $(command -v apt) ]]; then
+    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
+    $SUDO apt-fast install libssl-dev -y
+  elif [[ $(command -v pacman) ]]; then
+    $SUDO pacman -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig --noconfirm
+  fi
+
+  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
+  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
+  fc-cache -fv
+  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+  InstallMinicondaLinux
+  InstallGRC
+  InstallPy3UTF8
 
 
 
