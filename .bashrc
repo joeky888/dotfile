@@ -737,25 +737,25 @@ END
 CutToClipboard()
 {
   if [[ -n "$ZSH_VERSION" ]]; then
-    echo "$LBUFFER" > $HOME/dotfile/clipboard.txt
+    echo "$LBUFFER" > $HOME/.vim/clipboard.txt
     LBUFFER="" ;
 
   elif [[ -n "$BASH_VERSION" ]]; then
     # Currently, bash can not bind C-x but I'll leave this here
-    echo "$READLINE_LINE" > $HOME/dotfile/clipboard.txt
+    echo "$READLINE_LINE" > $HOME/.vim/clipboard.txt
     READLINE_LINE="" ;
   fi
-  chmod 777 $HOME/dotfile/clipboard.txt;
+  chmod 777 $HOME/.vim/clipboard.txt;
 }
 
 PasteFromClipboard()
 {
-  if [[ -f $HOME/dotfile/clipboard.txt ]]; then
+  if [[ -f $HOME/.vim/clipboard.txt ]]; then
     if [[ -n "$ZSH_VERSION" ]]; then
-      CLIP=$(cat $HOME/dotfile/clipboard.txt)
+      CLIP=$(cat $HOME/.vim/clipboard.txt)
       LBUFFER="$LBUFFER$CLIP"
     elif [[ -n "$BASH_VERSION" ]]; then
-      CLIP=$(cat $HOME/dotfile/clipboard.txt)
+      CLIP=$(cat $HOME/.vim/clipboard.txt)
       COUNT=$(echo -n "$CLIP" | wc -c)
       READLINE_LINE="${READLINE_LINE:0:$READLINE_POINT}${CLIP}${READLINE_LINE:$READLINE_POINT}"
       READLINE_POINT=$(($READLINE_POINT + $COUNT))
