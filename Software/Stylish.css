@@ -46,3 +46,12 @@ a, a *, a[id], a[class], a[name], a *[id], a *[class], a *[name]{
     color: #B1CBF7 !important;
 }
 
+/* Revert */
+html {
+    -webkit-filter: invert(100%) hue-rotate(180deg) contrast(70%) !important;
+    background: #fff;
+}
+
+.line-content {
+    background-color: #fefefe;
+}
