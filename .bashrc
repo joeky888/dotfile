@@ -469,6 +469,17 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     bind '\C-Z:undo'
     bind '\C-Y:redo'
     bind '\C-K:kill-whole-line'
+    # alt + arrow key to move
+    bind '"^[[1;3C": forward-word'
+    bind '"^[[1;3D": backward-word'
+    bind '"^[[1;5C": forward-word'
+    bind '"^[[1;5D": backward-word'
+    bind '"\e\eOC": forward-word'
+    bind '"\e\eOD": backward-word'
+    bind '"\e\e[C": forward-word'
+    bind '"\e\e[D": backward-word'
+    bind '"\e[1;3C": forward-word'
+    bind '"\e[1;3D": backward-word'
     bind 'set show-all-if-ambiguous on'
     bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
     bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
