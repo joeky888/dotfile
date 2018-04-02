@@ -189,6 +189,8 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
     cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
     [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
   fi
+  rm -rf /bin/apt-cyg
+  rm -rf /bin/setup-x86_64.exe
   curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh
