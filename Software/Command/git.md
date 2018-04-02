@@ -20,6 +20,10 @@ Modify a commit message
 =====
 * $ git commit --amend
 
+History commits of a file
+=====
+* $ git log -p filename
+
 git restore a single file
 =====
 * $ git checkout HEAD -- my-file.txt
