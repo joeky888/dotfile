@@ -28,3 +28,12 @@ Outlook style
 =====
 * Install "ReplyWithHeader" extension -> Restart thunderbird
 * Alt+V -> Layout -> Vertical View
+
+Signatures
+=====
+* Press Alt key -> Tools -> Account Settings -> Signature text
+```html
+<a href = "https://github.com/j16180339887" target = "_self">
+    <img src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="Github" height="50" width="50"/>
+</a>
+```
