@@ -361,6 +361,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     compdef vman=man # Complete vman as man command
     compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v pacman) ] && compdef powerpill=pacman # Complete powerpill as pacman command
+    [ $(command -v pacman) ] && compdef yaourt=pacman # Complete yaourt as pacman command
     [ $(command -v apt) ] && compdef apt-fast=apt # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
