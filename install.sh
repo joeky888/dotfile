@@ -164,15 +164,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git ffmpeg aria2 tig tmux p7zip rsync mas
+  brew install git ffmpeg aria2 tig tmux p7zip rsync mas grc
   brew cask install macvim iterm2
 #   brew linkapps
   InstallMinicondaMac
   InstallDotfile
   InstallPy3UTF8
-
-  export SUDO="sudo"
-  InstallGRC
 
 
 
