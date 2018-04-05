@@ -216,7 +216,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
   pacman -Syu
-  pacman -S zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain
+  pacman -S zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain --noconfirm
   InstallPIP
   InstallGRC
   InstallPy3UTF8
