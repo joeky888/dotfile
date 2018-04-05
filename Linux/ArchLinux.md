@@ -11,5 +11,5 @@ CN packages like baidu pan
 [archlinuxcn]
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
-* sudo pacman -Syy && sudo pacman -S archlinuxcn-keyring
+* sudo pacman -Syy && sudo powerpill -S archlinuxcn-keyring --noconfirm
 * sudo pacman -S deepin-baidu-pan
