@@ -218,7 +218,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   pacman -R catgets libcatgets --noconfirm
   pacman -Sy zsh git vim curl aria2 wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 --noconfirm
   sed -i '/XferCommand/d' /etc/pacman.conf
-  sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
+  sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 %u' /etc/pacman.conf
   sed -i '/./d' /etc/fstab
   echo 'C:/Users /home ntfs binary,noacl,auto 1 1' >> /etc/fstab
   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
