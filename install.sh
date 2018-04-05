@@ -215,7 +215,9 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
-  pacman -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 mingw-w64-x86_64-toolchain --noconfirm
+  pacman -R catgets libcatgets --noconfirm
+  pacman -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 --noconfirm
+#   pacman -S mingw-w64-x86_64-toolchain --noconfirm
   InstallPIP
   InstallGRC
   InstallPy3UTF8
