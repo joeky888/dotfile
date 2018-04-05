@@ -5,24 +5,20 @@ elif [[ "$TERM" == "screen"* ]]; then
 fi
 
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [ $(command -v tmux) ] ; then
-  if [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-    cd ~
-    # Check if fbterm installed and x server isn't running
-    if [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-      if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
-        if [ $(command -v byobu) ] ; then
-          exec fbterm -- bash -c 'TERM=fbterm exec byobu'
-        else
-          exec fbterm -- bash -c 'TERM=fbterm exec tmux'
-        fi
-      else
-        if [ $(command -v byobu) ] ; then
-          exec byobu
-        else
-          exec tmux
-        fi
-      fi
+if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+  # Check if fbterm installed and x server isn't running
+  cd ~
+  if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
+    if [ $(command -v byobu) ] ; then
+      exec fbterm -- bash -c 'TERM=fbterm exec byobu'
+    else
+      exec fbterm -- bash -c 'TERM=fbterm exec tmux'
+    fi
+  else
+    if [ $(command -v byobu) ] ; then
+      exec byobu
+    else
+      exec tmux
     fi
   fi
 elif [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] ; then
