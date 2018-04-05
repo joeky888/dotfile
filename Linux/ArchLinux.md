@@ -12,4 +12,4 @@ CN packages like baidu pan
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 * sudo pacman -Syy && sudo powerpill -S archlinuxcn-keyring --noconfirm
-* sudo pacman -S deepin-baidu-pan
+* sudo powerpill -S deepin-baidu-pan --noconfirm
