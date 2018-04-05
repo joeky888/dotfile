@@ -779,19 +779,35 @@ PasteFromClipboard()
 CompleteAptCyg()
 {
   local -a options
+  local -a cmd
+  cmd=(
+    "install: to install packages"
+    "resume-install: to resume interrupted installing"
+    "remove: to remove packages"
+    "update: to update setup.ini"
+    "show: to show installed packages"
+    "find : to find packages matching patterns"
+    "search : to search packages on cygwin.com"
+    "describe : to describe packages matching patterns"
+    "packageof : to locate parent packages"
+  )
   options=(
-    'install:Install package(s).'
-    'remove:Remove package(s) from the system.'
-    'update:Download a fresh copy of the master package list (setup.ini).'
-    'download:Retrieve package(s) from the server, but do not install/upgrade anything.'
-    'show:Display information on given package(s).'
-    'depends:Produce a dependency tree for a package.'
-    'rdepends:Produce a tree of packages that depend on the named package.'
-    'category:Display all packages that are members of a named category.'
-    'listfiles:List all files owned by a given package.'
-    'search:Search cygwin.com to retrieve file information about packages'
+    {-j,--jobs}:"number of projects to check simultaneously"
+    {-h,--help}:"number 1 to check simultaneously"
+    --charch:"change archetecture"
+    --use-setuprc:"set cache and mirror with /etc/setup/setup.rc"
+    --force:"force install/remove/fetch trustedkeys"
+    --max-connections:"maximum number of connections"
+    {--ignore-case,-i}:"ignore case distinctions for patterns"
+    {--no-file-alloc,-n}:"doesn't allocate file space before downloading"
+    {--mirror,-m}:"set mirror"
+    {--cache,-c}:"set cache folder"
+    {--file,-f}:"read package names from file"
+    {--yes-to-all,-y}:"force yes on ask prompts"
+    "--version"
   )
   _describe 'values' options;
+  _describe 'commands' cmd;
 }
 
 Forever()
