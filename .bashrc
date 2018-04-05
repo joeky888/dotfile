@@ -781,15 +781,15 @@ CompleteAptCyg()
   local -a options
   local -a cmd
   cmd=(
-    "install: to install packages"
+    "install:to install packages"
     "resume-install: to resume interrupted installing"
-    "remove: to remove packages"
-    "update: to update setup.ini"
-    "show: to show installed packages"
-    "find : to find packages matching patterns"
-    "search : to search packages on cygwin.com"
-    "describe : to describe packages matching patterns"
-    "packageof : to locate parent packages"
+    "remove:to remove packages"
+    "update:to update setup.ini"
+    "show:to show installed packages"
+    "find:to find packages matching patterns"
+    "search:to search packages on cygwin.com"
+    "describe:to describe packages matching patterns"
+    "packageof:to locate parent packages"
   )
   options=(
     {-j,--jobs}:"number of projects to check simultaneously"
