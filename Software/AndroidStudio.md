@@ -1,3 +1,7 @@
+Settings
+=====
+* Completion -> Case sensitive completion -> None
+
 Keymapping
 =====
 * File -> Settings -> Keymap -> Editor Actions
