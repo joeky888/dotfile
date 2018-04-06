@@ -1,6 +1,9 @@
 Settings
 =====
 * Completion -> Case sensitive completion -> None
+* Help -> Find Action -> "Registry" ->
+    * undo:globalUndoLimit -> 1000
+    * undo.documentUndoLimit -> 1000
 
 Keymapping
 =====
