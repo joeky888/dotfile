@@ -22,6 +22,15 @@ Theme
 * Dock theme
     * Right click on the dock -> Mode -> Efficient Mode
 
+Change theme
+=====
+* Download https://github.com/ParrotSec/parrot-themes
+* Extract themes to ~/.local/share/themes Or /usr/local/themes
+* Extract icons to ~/.local/share/icons Or /usr/local/icons
+* Select theme from deepin settings
+* Or
+* Edit theme name in both ~/.gtkrc-2.0 and ~/.config/gtk-3.0/settings.ini
+
 Add dns server
 =====
 * $ sudoedit /var/run/NetworkManager/resolv.conf
