@@ -14,6 +14,10 @@ Remove all lines which not contain a string
 * Ignore case
 * $ sed -i '/string/Id' filename
 
+Replace a folder of strings
+=====
+* $ find /folder -type f -exec sed -i -e 's/apple/orange/g' {} \;
+
 Remove all empty lines
 =====
 ```sh
