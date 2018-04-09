@@ -1,3 +1,6 @@
+## Don't Use pidgin to connect Lync (Skype for Business)
+## See ~/dotfile/Linux/Lync.md
+
 Setup
 =====
 * $ sudo apt-fast install pidgin-libnotify -y
