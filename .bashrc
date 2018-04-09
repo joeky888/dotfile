@@ -21,8 +21,8 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
       exec tmux
     fi
   fi
-elif [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] ; then
-  exec zsh
+# elif [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] ; then
+#   exec zsh
 fi
 
 export LANG="en_US.UTF-8"
