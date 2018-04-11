@@ -164,7 +164,7 @@ EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" 
 killallproc() { $SUDO kill -9 $(pgrep $@) ;}
 killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
-upgradePip() { pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   cd ~/dotfile
   git pull origin master
@@ -570,7 +570,7 @@ if ! [ -z $CONDA_2 ]; then
   alias conda2='$CONDA_2/bin/conda'
   alias pip2='$CONDA_2/bin/pip'
   alias upgradeConda2='$CONDA_2/bin/conda update -n base conda -y; $CONDA_2/bin/conda update --all --yes'
-  upgradePip2() { $CONDA_2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip2() { $CONDA_2/bin/pip install --upgrade pip && $CONDA_2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 CONDA_3=$(getCondaPath 3)
@@ -580,7 +580,7 @@ if ! [ -z $CONDA_3 ]; then
   alias conda3='$CONDA_3/bin/conda'
   alias pip3='$CONDA_3/bin/pip'
   alias upgradeConda3='$CONDA_3/bin/conda update -n base conda -y; $CONDA_3/bin/conda update --all --yes'
-  upgradePip3() { $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip3() { $CONDA_3/bin/pip install --upgrade pip && $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
