@@ -26,6 +26,17 @@ nameserver 8.8.8.8
 nameserver 114.114.114.114
 ```
 
+Powershell Monokai theme
+=====
+* Execute ~/dotfile/install.reg first
+* Execute this powershell script
+```sh
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$Home\\Desktop\\Powershell.lnk")
+$Shortcut.TargetPath = "$env:SYSTEMROOT\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
+$Shortcut.Save()
+```
+
 Mono sound
 =====
 * Setting -> Ease of Access settings -> Other options -> Audio options -> Mono audio -> Check
