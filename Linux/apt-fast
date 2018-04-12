@@ -2,7 +2,7 @@
 
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
-if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade"; then
+if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
   cd /var/cache/apt/archives/;
 
   DOWNLOADARGS='-c -s16 -k1M -x16'
