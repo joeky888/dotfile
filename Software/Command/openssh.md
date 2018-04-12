@@ -33,6 +33,7 @@ Host alias-name
     ProxyCommand ncat --proxy 127.0.0.1:1080 %h %p
     #ProxyCommand ssh proxyuser@proxy.example.com -p proxyport nc %h %p 2> /dev/null
     #ProxyCommand nc -X connect -x 127.0.0.1:1080 %h %p
+    #ProxyCommand nc.openbsd -X connect -x 127.0.0.1:1080 %h %p
 ```
 * $ ssh alias-name # Enter the proxy password, then enter the host user password
 

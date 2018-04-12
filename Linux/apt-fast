@@ -16,6 +16,8 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade"; then
 
   # Create new jobs
   apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+elif echo "$@" | grep -q "update"; then
+  apt -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
 fi
 
 apt $@ && rm -rf /var/cache/apt/archives/apt-fast.list
