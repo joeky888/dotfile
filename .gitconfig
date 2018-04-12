@@ -22,9 +22,12 @@
     template = ~/.gitmessage
 [merge]
     conflictstyle = diff3
+    tool = vimdiff3
 [gui]
     encoding = utf-8
 [i18n "commit"]
     encoding = utf-8
 [i18n]
     logoutputencoding = utf-8
+[mergetool]
+    prompt = false
