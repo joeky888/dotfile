@@ -47,7 +47,7 @@ Extension
 * Hacker News Enhancement Suite
 * Privacy Badger
 * BaiduExporter
-* Chrome-ssh-agent https://github.com/google/chrome-ssh-agent
+* Secure Shell Extension
 * ZScaler Bypass (for ASUS ZScaler)
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Free Proxy to Unblock any sites (For pan.baidu.com)
