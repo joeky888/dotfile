@@ -32,7 +32,7 @@ Install winetricks and winetricks packages
 * Nvidia only
 * $ bash winetricks physx
 * Register all dlls
-* $ wineconsole
+* $ wine cmd
 ```dosbatch
 for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
 ```
