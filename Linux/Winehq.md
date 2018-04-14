@@ -28,9 +28,14 @@ Install winetricks and winetricks packages
 * See https://github.com/Winetricks/winetricks/blob/master/files/verbs/download.txt
 * $ bash winetricks cmd 7zip lucida msxml3 msxml4 msxml6 xmllite d3dx9 d3dx10 d3dxof d3drm quartz wininet xact xinput xna31 xna40
 * $ bash winetricks vb6run vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
-* $ bash winetricks dotnet40 dotnet452 dotnet462 nuget
+* $ bash winetricks dotnet20sp2 dotnet30sp1 dotnet35sp1 dotnet40 dotnet452 dotnet462 nuget
 * Nvidia only
 * $ bash winetricks physx
+* Register all dlls
+* $ wineconsole
+```dosbatch
+for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
+```
 
 Open cmd and run .bat file
 =====
@@ -46,6 +51,10 @@ Install a .msi file
 * $ wine msiexec /x filename.msi
 * Show all environment variables
 * cmd> set
+
+Install a .msu file (Windows Update file)
+=====
+* $ wine wusa file.msu
 
 Set environment variables
 =====
