@@ -110,6 +110,7 @@ Windows XP
 * Python 2 (Miniconda2)
 * Sumatra PDF
 * Greenshot
+* Rime input method
 * Yahoo KeyKey
 * Sogou input (zhuyin/pinyin)
 * WPS office
