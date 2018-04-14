@@ -95,6 +95,7 @@ Windows
 
 Windows XP
 =====
+* Maxthon (傲遊瀏覽器)
 * Qupzilla 1.8.9
 * Google Chrome 49
 * Powershell 2.0
