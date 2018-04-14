@@ -26,7 +26,9 @@ Install winetricks and winetricks packages
 =====
 * $ aria2c https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
 * See https://github.com/Winetricks/winetricks/blob/master/files/verbs/download.txt
-* $ bash winetricks cmd 7zip lucida msxml3 msxml4 msxml6 vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015 d3dx9 d3dx10 d3dxof d3drm quartz wininet xact xinput
+* $ bash winetricks cmd 7zip lucida msxml3 msxml4 msxml6 xmllite d3dx9 d3dx10 d3dxof d3drm quartz wininet xact xinput xna31 xna40
+* $ bash winetricks vb6run vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
+* $ bash winetricks dotnet40 dotnet452 dotnet462 nuget
 * Nvidia only
 * $ bash winetricks physx
 
