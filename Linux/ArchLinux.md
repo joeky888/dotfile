@@ -13,3 +13,8 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 * sudo pacman -Syy && sudo powerpill -S archlinuxcn-keyring --noconfirm
 * sudo powerpill -S deepin-baidu-pan --noconfirm
+
+Unstable and testing package (Manjaro)
+=====
+* $ sudo pacman-mirrors --api --set-branch testing # Or unstable
+* $ sudo pacman-mirrors --fasttrack 5
