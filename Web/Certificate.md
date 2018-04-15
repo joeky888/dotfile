@@ -26,8 +26,14 @@ openssl x509 -in input.crt -text -noout
 Install .crt to debian and ubuntu
 =====
 ```sh
+# Debian and Ubuntu
 sudo mkdir -p /usr/share/ca-certificates/extra
 sudo cp asus.com.crt /usr/share/ca-certificates/extra/asus.com.crt
 sudo dpkg-reconfigure ca-certificates # Make sure asus is selected
 sudo update-ca-certificates
+
+# Manjaro and Arch
+sudo cp asus.com.crt /etc/ca-certificates/trust-source/anchors/asus.com.crt
+sudo trust extract-compat
+sudo update-ca-trust extract
 ```
