@@ -1,3 +1,16 @@
+Optimize PDF file
+=====
+```sh
+gs -o output.pdf \
+  -dEmbedAllFonts=true \
+  -dSubsetFonts=true \
+  -dConvertCMYKImagesToRGB=true \
+  -dCompressFonts=true \
+  -dDetectDuplicateImages=true \
+  -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite \
+  -f input.pdf
+```
+
 Extracting page 10 to page 20 from input.pdf
 =====
 * gs -dBATCH -dNOPAUSE -q -sDEVICE=pdfwrite -dFirstPage=10 -dLastPage=20 -sOutputFile=output.pdf input.pdf
