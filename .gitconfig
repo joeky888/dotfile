@@ -7,6 +7,7 @@
     safecrlf = false
     pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'call histdel(\"search\", -1)' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' -
     fileMode = true
+    quotepath = false
 [rerere]
     enabled = 1
     autoupdate = 1
