@@ -226,6 +226,8 @@ Good Software Design
 
 Dev Tools
 =====
+* Good IDE:
+    * Support performance analyzer (with graphs)
 * Mobile and embbed system
     * React Native
     * Qt + Native WebView (with html5 + WebAssembly)
