@@ -113,8 +113,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -Sy vim tmux zsh git curl aria2 bash-completion powerpill yaourt --noconfirm
-    $SUDO yaourt -S powerpill --noconfirm
+    $SUDO pacman -Sy vim tmux zsh git curl aria2 bash-completion powerpill yaourt --noconfirm --needed
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
     $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
@@ -143,7 +142,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    $SUDO powerpill -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig --noconfirm
+    $SUDO powerpill -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
@@ -166,7 +165,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git vim ffmpeg aria2 tig tmux p7zip rsync mas grc
+  brew install git vim ffmpeg aria2 tig tmux p7zip rsync mas grc qpdf
   brew cask install macvim iterm2
 #   brew linkapps
   InstallMinicondaMac
