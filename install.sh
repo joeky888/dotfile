@@ -216,7 +216,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
   pacman -R catgets libcatgets --noconfirm
-  pacman -Sy zsh git vim curl aria2 wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 python3-pip --noconfirm --needed
+  pacman -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 python3-pip --noconfirm --needed
 #   sed -i '/XferCommand/d' /etc/pacman.conf
 #   sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 %u' /etc/pacman.conf
   sed -i '/./d' /etc/fstab
