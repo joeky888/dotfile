@@ -62,7 +62,8 @@ InstallDotfileCygwin()
 InstallGRC()
 {
   rm -rf grc
-  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc && $SUDO zsh install.sh && cd .. && rm -rf grc
+  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc && $SUDO zsh install.sh && cd ..
+  rm -rf grc
 }
 
 InstallPy3UTF8()
