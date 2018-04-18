@@ -225,7 +225,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   pacman -S mingw-w64-x86_64-aria2 --noconfirm --needed
 #   pacman -S mingw-w64-x86_64-toolchain --noconfirm
-  InstallGRC
+#   InstallGRC # Windows can not use python os.fork()
   InstallPy3UTF8
 
 
