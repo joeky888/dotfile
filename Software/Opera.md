@@ -84,6 +84,7 @@ https://feeds.feedburner.com/TechCrunch
 https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 https://blog.qt.io/feed
+https://godotengine.org/rss.xml
 
 Bookmark script
 =====
