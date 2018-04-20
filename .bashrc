@@ -388,7 +388,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   fi
   NEWLINE_NO_OMZ=$'\n'
   # %B=light_color %F=color %K=background
-  PROMPT="%B%K{red}%F{white} %n %K{yellow}@%B%K{green} %M %{$reset_color%} %F{yellow}%B%K{blue} %~ "${NEWLINE_NO_OMZ}"%K{black}%F{white}%{$reset_color%}➜  "
+  PROMPT="%B%K{red}%F{white} %n %b%K{yellow}@%B%K{green} %M %{$reset_color%} %B%F{yellow}%B%K{blue} %~ "${NEWLINE_NO_OMZ}"%b%K{black}%F{white}%{$reset_color%}➜  "
+  zle_highlight=(none)
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster

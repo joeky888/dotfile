@@ -161,6 +161,7 @@ Android
 * WiFiAnalyzer open source
 * IP webcam
 * LibreTorrent
+* Turbo Download Manager
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
