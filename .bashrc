@@ -355,7 +355,7 @@ fi
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   export ZSH=$HOME/dotfile/oh-my-zsh
-  ZSH_THEME="bira"
+#   ZSH_THEME="bira"
   plugins=(git docker adb)
   DISABLE_AUTO_UPDATE="true"
   if [ -f $ZSH/oh-my-zsh.sh ]; then
@@ -367,6 +367,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     [ $(command -v apt) ] && compdef apt-fast=apt # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
+
   else # Oh-my-zsh is not available
     alias -g ...='../..'
     alias -g ....='../../..'
@@ -383,10 +384,11 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*' # Case insensitive
     zstyle '*' single-ignored show # Don't show menu when there is only one match
     zstyle ':completion:*' list-colors '' # Popup colors
-    NEWLINE_NO_OMZ=$'\n'
-    # %B=light_color %F=color
-    PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
+#     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
+  NEWLINE_NO_OMZ=$'\n'
+  # %B=light_color %F=color %K=background
+  PROMPT="%B%K{red}%F{white} %n %K{yellow}@%B%K{green} %M %{$reset_color%} %F{yellow}%B%K{blue} %~ "${NEWLINE_NO_OMZ}"%K{black}%F{white}%{$reset_color%}➜  "
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster
