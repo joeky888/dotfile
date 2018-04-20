@@ -386,9 +386,19 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle ':completion:*' list-colors '' # Popup colors
 #     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
-  NEWLINE_NO_OMZ=$'\n'
-  # %B=light_color %F=color %K=background
-  PROMPT="%B%K{red}%F{white} %n %b%K{yellow}@%B%K{green} %M %{$reset_color%} %B%F{yellow}%B%K{blue} %~ "${NEWLINE_NO_OMZ}"%b%K{black}%F{white}%{$reset_color%}➜  "
+  autoload -U add-zsh-hook
+  function git_branch_info() {
+    if git rev-parse --git-dir > /dev/null 2>&1; then
+      echo "* $(git rev-parse --abbrev-ref HEAD)"
+    fi
+  }
+  function update_prompt() {
+    NEWLINE_NO_OMZ=$'\n'
+    # %B=light_color %F=color %K=background
+    PROMPT="%B%K{red}%F{white} %n %B%K{yellow} %B%K{green} %M %B%F{yellow}%B%K{blue} %~ %B%F{yellow}%B%K{black} $(git_branch_info) "${NEWLINE_NO_OMZ}"%b%K{black}%F{white}%{$reset_color%}➜  "
+  }
+  update_prompt
+  add-zsh-hook chpwd update_prompt
   zle_highlight=(none)
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
