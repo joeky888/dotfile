@@ -519,8 +519,24 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_LIGHT_PURPLE="\[$(tput setaf 5; tput bold)\]"
     export COLOR_LIGHT_CYAN="\[$(tput setaf 6; tput bold)\]"
     export COLOR_LIGHT_GRAY="\[$(tput setaf 7; tput bold)\]"
+
+    export COLOR_BG_RESET="\[$(tput sgr0)\]" # No Color
+    export COLOR_BG_RED="\[$(tput setab 1)\]"
+    export COLOR_BG_GREEN="\[$(tput setab 2)\]"
+    export COLOR_BG_YELLOW="\[$(tput setab 3)\]"
+    export COLOR_BG_BLUE="\[$(tput setab 4)\]"
+    export COLOR_BG_PURPLE="\[$(tput setab 5)\]"
+    export COLOR_BG_CYAN="\[$(tput setab 6)\]"
+    export COLOR_BG_GRAY="\[$(tput setab 7)\]"
+    export COLOR_BG_LIGHT_RED="\[$(tput setab 1; tput bold)\]"
+    export COLOR_BG_LIGHT_GREEN="\[$(tput setab 2; tput bold)\]"
+    export COLOR_BG_LIGHT_YELLOW="\[$(tput setab 3; tput bold)\]"
+    export COLOR_BG_LIGHT_BLUE="\[$(tput setab 4; tput bold)\]"
+    export COLOR_BG_LIGHT_PURPLE="\[$(tput setab 5; tput bold)\]"
+    export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
+    export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     # USER@DOMAIN directory
-    export PS1="${COLOR_LIGHT_RED}\u${COLOR_LIGHT_YELLOW}@${COLOR_LIGHT_GREEN}\h${COLOR_RESET}➜ ${COLOR_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
+    export PS1="${COLOR_BG_LIGHT_RED}\u${COLOR_BG_LIGHT_YELLOW}@${COLOR_BG_LIGHT_GREEN}\h${COLOR_BG_RESET}➜ ${COLOR_BG_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
   fi
 fi
 
