@@ -166,6 +166,7 @@ Android
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
 * F-Droid
+    * Firefox Klar (5.0+) / Fennec (4.1+)
     * Newpipe
     * YalpStore
     * Your local weather
