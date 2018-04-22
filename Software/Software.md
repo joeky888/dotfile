@@ -144,6 +144,7 @@ Android
     * Video Background Play Fix
     * h264ify
     * Video Speed Controller
+    * User Agent Switcher (by Alexander Schlarb)
 * OpenLauncher
 * Clock by Google
 * Facebook Messenger
