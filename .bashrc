@@ -21,7 +21,8 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
       exec tmux
     fi
   fi
-elif [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] && ! [ $(command -v tmux) ] ; then
+elif ! [ $(command -v tmux) ] && [ $(command -v zsh) ] && ! [[ -n "$ZSH_VERSION" ]] && ! [[ -n "$ZSH_IS_RUNNING" ]] ; then
+  export ZSH_IS_RUNNING=1
   exec zsh
 fi
 
