@@ -16,17 +16,9 @@ url.append( "https://www.bilibili.com/video/av7931969/?p=6" )
 url.append( "https://www.bilibili.com/video/av7931969/?p=7" )
 url.append( "https://www.bilibili.com/video/av7931969/?p=8" )
 url.append( "https://www.bilibili.com/video/av7931969/?p=9" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=10" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=11" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=12" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=13" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=14" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=15" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=16" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=17" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=18" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=19" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=20" )
+
+# Remove duplicates
+url = list(set(url))
 
 for idx, u in enumerate(url):
     processes.append( [subprocess.Popen([ "you-get", u, "-o", str(idx) ]), u, idx] )
