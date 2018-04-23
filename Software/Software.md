@@ -46,6 +46,7 @@ Software
 * Zulu
 * JComicDownloader
 * JDownloader
+* LanguageTool
 
 CLI
 =====
