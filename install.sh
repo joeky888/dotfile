@@ -8,6 +8,21 @@ fi
 InstallDotfile()
 {
   rm -rf $Home/dotfile
+  rm -rf ~/.bashrc
+  rm -rf ~/.bash_profile
+  rm -rf ~/.tmux.conf
+  rm -rf ~/.zshrc
+  rm -rf ~/.gitconfig
+  rm -rf ~/.gitmessage
+  rm -rf ~/.fbtermrc
+  rm -rf ~/.Xresources
+  rm -rf ~/.minttyrc
+  rm -rf ~/.vimrc
+  rm -rf ~/.pythonrc
+  rm -rf ~/.condarc
+  rm -rf ~/.config/nvim/init.vim
+  rm -rf ~/AppData/Local/nvim/init.vim
+
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
@@ -39,6 +54,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pythonrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.condarc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"

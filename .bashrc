@@ -190,6 +190,7 @@ upgradeDotfile() {
   rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
+  rm -rf ~/.condarc
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
 
