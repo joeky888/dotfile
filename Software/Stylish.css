@@ -17,12 +17,6 @@
     font-weight: 400 !important;
 }
 
-/* Invert color of images */
-img {
-   -webkit-filter: invert(1);
-   filter: invert(1);
-}
-
 /* Black */
 *::selection, *[id]::selection, *[class]::selection, *[name]::selection{
     background-color: #00afff !important;
@@ -46,12 +40,8 @@ a, a *, a[id], a[class], a[name], a *[id], a *[class], a *[name]{
     color: #B1CBF7 !important;
 }
 
-/* Revert */
-html {
+/* Invert */
+html:not(img) {
     -webkit-filter: invert(100%) hue-rotate(180deg) contrast(70%) !important;
     background: #fff;
-}
-
-.line-content {
-    background-color: #fefefe;
 }
