@@ -57,7 +57,7 @@ Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
 
 Packages
 =====
-* $ sudo apt-fast install sogoupinyin adb fastboot opera-developer opera-stable vscode teamviewer skypeforlinux qpdfview evince nomacs vlc obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
+* $ sudo apt-fast install sogoupinyin adb fastboot pidcat opera-developer opera-stable vscode teamviewer skypeforlinux qpdfview evince nomacs vlc obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
 * $ sudo apt-fast install tlp -y # For laptop, in case deepin is unable to reboot
 * $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
