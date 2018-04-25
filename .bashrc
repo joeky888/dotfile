@@ -73,7 +73,7 @@ CONDA_2=$(getCondaPath 2)
 if ! [ -z $CONDA_2 ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2='$CONDA_2/bin/conda'
-  alias pip2='$CONDA_2/bin/pip'
+  alias pip2='$CONDA_2/bin/pip --trusted-host pypi.python.org'
   alias upgradeConda2='$CONDA_2/bin/conda update -n base conda -y; $CONDA_2/bin/conda update --all --yes'
   upgradePip2() { $CONDA_2/bin/pip install --upgrade pip && $CONDA_2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
@@ -83,7 +83,7 @@ CONDA_3=$(getCondaPath 3)
 if ! [ -z $CONDA_3 ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3='$CONDA_3/bin/conda'
-  alias pip3='$CONDA_3/bin/pip'
+  alias pip3='$CONDA_3/bin/pip --trusted-host pypi.python.org'
   alias upgradeConda3='$CONDA_3/bin/conda update -n base conda -y; $CONDA_3/bin/conda update --all --yes'
   upgradePip3() { $CONDA_3/bin/pip install --upgrade pip && $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
@@ -115,6 +115,7 @@ fi
 
 [[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
+[[ $(command -v pip) ]] && alias pip='pip --trusted-host pypi.python.org'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
