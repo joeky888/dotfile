@@ -79,6 +79,7 @@ Windows
 * Cygwin
 * Chocolatey
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
+* Microsoft .NET Framework Repair Tool
 * Greenshot
 * Clink
 * Rufus
