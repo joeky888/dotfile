@@ -78,6 +78,7 @@ Windows
 * build-extra (git for Windows) or msys2
 * Cygwin
 * Chocolatey
+* DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Greenshot
 * Clink
 * Rufus
@@ -102,6 +103,7 @@ Windows XP
 * Google Chrome 49
 * Powershell 2.0
 * BusyBox
+* DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Gvim
 * Notepad++
 * Sublime Text 2/3
