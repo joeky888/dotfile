@@ -8,5 +8,5 @@ bind generic	<PgUp>	move-page-up
 bind generic	<Space>	move-page-down
 bind generic	<Home>	move-first-line
 bind generic	<End>	move-last-line
-bind generic	o	options			# Open the options menu
-bind generic	<C-O>	options			# Open the options menu
+bind generic	O	maximiz			# Open the options menu
+bind generic	<C-O>	maximiz			# Open the options menu
