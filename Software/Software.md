@@ -80,6 +80,7 @@ Windows
 * Chocolatey
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Microsoft .NET Framework Repair Tool
+* Microsoft .NET Framework Cleanup Tool
 * Greenshot
 * Clink
 * Rufus
@@ -105,6 +106,8 @@ Windows XP
 * Powershell 2.0
 * BusyBox
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
+* Microsoft .NET Framework Repair Tool
+* Microsoft .NET Framework Cleanup Tool
 * Gvim
 * Notepad++
 * Sublime Text 2/3

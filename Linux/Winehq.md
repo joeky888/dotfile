@@ -39,6 +39,7 @@ for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
 ```
 * Run DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版 https://blog.csdn.net/vbcom
 * Run Microsoft .NET Framework Repair Tool
+* Run Microsoft .NET Framework Cleanup Tool
 
 Open cmd and run .bat file
 =====
