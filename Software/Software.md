@@ -101,6 +101,7 @@ Windows XP
 * Qupzilla 1.8.9
 * Google Chrome 49
 * Powershell 2.0
+* BusyBox
 * Gvim
 * Notepad++
 * Sublime Text 2/3
