@@ -47,6 +47,7 @@ export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DOWNLOADER_ARGUMENTS="--continue=true --file-allocation=none --check-certificate=false --content-disposition-default-utf8=true --max-tries=0 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --parameterized-uri=true" # aria2 & bypy
+export PY_SSL_PASS='--trusted-host pypi.python.org --trusted-host pypi.org --trusted-host files.pythonhosted.org'
 if [[ $(command -v aria2c) ]]; then
   if [[ $(aria2c --version | grep "Async DNS") ]]; then
     export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=8.8.8.8,180.76.76.76" # aria2 & bypy
@@ -73,9 +74,9 @@ CONDA_2=$(getCondaPath 2)
 if ! [ -z $CONDA_2 ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2='$CONDA_2/bin/conda'
-  alias pip2='$CONDA_2/bin/pip --trusted-host pypi.python.org'
+  alias pip2='$CONDA_2/bin/pip $(echo $PY_SSL_PASS)'
   alias upgradeConda2='$CONDA_2/bin/conda update -n base conda -y; $CONDA_2/bin/conda update --all --yes'
-  upgradePip2() { $CONDA_2/bin/pip install --upgrade pip && $CONDA_2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_2/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip2() { $CONDA_2/bin/pip $(echo $PY_SSL_PASS) install --upgrade pip && $CONDA_2/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_2/bin/pip $PY_SSL_PASS install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_2/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 CONDA_3=$(getCondaPath 3)
@@ -83,9 +84,9 @@ CONDA_3=$(getCondaPath 3)
 if ! [ -z $CONDA_3 ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3='$CONDA_3/bin/conda'
-  alias pip3='$CONDA_3/bin/pip --trusted-host pypi.python.org'
+  alias pip3='$CONDA_3/bin/pip $(echo $PY_SSL_PASS)'
   alias upgradeConda3='$CONDA_3/bin/conda update -n base conda -y; $CONDA_3/bin/conda update --all --yes'
-  upgradePip3() { $CONDA_3/bin/pip install --upgrade pip && $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip3() { $CONDA_3/bin/pip $(echo $PY_SSL_PASS) install --upgrade pip && $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip $PY_SSL_PASS install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
@@ -115,7 +116,7 @@ fi
 
 [[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
-[[ $(command -v pip) ]] && alias pip='pip --trusted-host pypi.python.org'
+[[ $(command -v pip) ]] && alias pip='pip $(echo $PY_SSL_PASS)'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
@@ -130,10 +131,10 @@ alias tmuxResizeDown='tmux resize-pane -D'
 alias tmuxResizeLeft='tmux resize-pane -L'
 alias tmuxResizeRight='tmux resize-pane -R'
 alias upgradeConda='conda update -n base conda -y && conda update --all --yes'
-alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
-alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
-alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
-alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
+alias upgradeBypy='pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
+alias upgradeYoutubedl='pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
+alias upgradeYou-get='pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
+alias upgradeYkdl='pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
@@ -231,7 +232,7 @@ EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" 
 killallproc() { $SUDO kill -9 $(pgrep $@) ;}
 killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
-upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+upgradePip() { pip $(echo $PY_SSL_PASS) install --upgrade pip && pip $(echo $PY_SSL_PASS) install --upgrade $(pip freeze -l | sed "s/==.*//") && pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip $(echo $PY_SSL_PASS) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   cd ~/dotfile
   git pull origin master
