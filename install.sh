@@ -12,6 +12,7 @@ InstallDotfile()
   rm -rf ~/.bash_profile
   rm -rf ~/.tmux.conf
   rm -rf ~/.zshrc
+  rm -rf ~/.tigrc
   rm -rf ~/.gitconfig
   rm -rf ~/.gitmessage
   rm -rf ~/.fbtermrc
@@ -28,6 +29,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
   ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf $Home/dotfile/.bashrc ~/.zshrc
+  ln -sf $Home/dotfile/.tigrc ~/.tigrc
   ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
   ln -sf $Home/dotfile/.gitmessage ~/.gitmessage
   ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
@@ -55,6 +57,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pythonrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.condarc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tigrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
@@ -64,6 +67,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
