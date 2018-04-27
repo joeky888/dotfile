@@ -185,6 +185,12 @@ Android
     * Flash light
     * Auto rotate
 
+Gaming
+=====
+* Mumu - Android emulator
+* RetroArch - Console emulator
+* PCSX2 - PS2 emulator
+
 Good Software Design
 =====
 * Support "Ctrl + T" New Tab
