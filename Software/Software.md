@@ -88,15 +88,20 @@ Windows
 * Rainmeter (with Circle-Weather)
 * MPC-HC
 * Sarasa Mono TC font (for console)
-* $ Set-ExecutionPolicy RemoteSigned -Force
-* $ Unblock-File $profile
-* $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
-* $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
-* $ choco install git --params="'/NoShellIntegration /GitOnlyOnPath /NoAutoCrlf'" -y --pre
-* $ choco install 7zip vim-tux.portable poshgit aria2 miniconda miniconda3 ffmpeg youtube-dl greenshot wps-office-free obs-studio nmap nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp inkscape cmake.portable adb nodejs phantomjs -y --pre
-* $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
-* Gaming dlls
-    * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
+* Scoop
+    * $ Set-ExecutionPolicy RemoteSigned -Force
+    * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+    * $ scoop install busybox
+* Chocolatey
+    * $ Set-ExecutionPolicy RemoteSigned -Force
+    * $ Unblock-File $profile
+    * $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
+    * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
+    * $ choco install git --params="'/NoShellIntegration /GitOnlyOnPath /NoAutoCrlf'" -y --pre
+    * $ choco install 7zip vim-tux.portable poshgit aria2 miniconda miniconda3 ffmpeg youtube-dl greenshot wps-office-free obs-studio nmap nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp inkscape cmake.portable adb nodejs phantomjs -y --pre
+    * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
+    * Gaming dlls
+        * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
 
 Windows XP
 =====
