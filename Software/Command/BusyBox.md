@@ -6,3 +6,7 @@ Compile
 Shell
 =====
 * $ ./busybox ash
+* Or
+* $ ./busybox sh
+* Or
+* $ ./busybox sh -l
