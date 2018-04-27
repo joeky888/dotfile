@@ -42,9 +42,9 @@ for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
 * Run Microsoft .NET Framework Cleanup Tool
 * Install busybox
 ```sh
-wine busybox.exe ash
+wine busybox.exe ash -l
 # Or
-wine busybox.exe sh
+wine busybox.exe sh -l
 ```
 
 Open cmd and run .bat file
