@@ -234,9 +234,9 @@ killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   cd ~/dotfile
-  git pull origin master
+  git pull --rebase origin master
   git submodule update --init --recursive --remote --merge
-  git submodule foreach git pull origin master
+  git submodule foreach git pull --rebase  origin master
   cd - ;
 
   rm -rf ~/.bashrc
