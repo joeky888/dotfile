@@ -32,3 +32,5 @@
     logoutputencoding = utf-8
 [mergetool]
     prompt = false
+[pull]
+    rebase = true
