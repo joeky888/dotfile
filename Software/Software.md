@@ -88,6 +88,10 @@ Windows
 * Rainmeter (with Circle-Weather)
 * MPC-HC
 * Sarasa Mono TC font (for console)
+* OpenJDK
+    * Zulu
+    * ojdkbuild - Windows only
+    * AdoptOpenJDK
 * Scoop
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
