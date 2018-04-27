@@ -141,6 +141,12 @@ Linux
 * Conky (with weather)
 * alacritty (terminal emulator but it's new, one have to compile it from source)
 
+WineHQ
+=====
+* Busybox
+* DirectX Repair Tool (Enhanced Edition)
+* 7zip
+
 Android
 =====
 * Firefox Nightly
