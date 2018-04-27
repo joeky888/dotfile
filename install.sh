@@ -20,6 +20,7 @@ InstallDotfile()
   rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
+  rm -rf ~/.pip/pip.conf
   rm -rf ~/.condarc
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
@@ -39,8 +40,10 @@ InstallDotfile()
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/.config/nvim/
+  mkdir -p $Home/.pip/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
+  ln -sf $Home/dotfile/pip.conf ~/.pip/pip.conf
 }
 
 InstallDotfileCygwin()
@@ -48,6 +51,8 @@ InstallDotfileCygwin()
   rm -rf $Home/dotfile
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   mkdir -p $Home/Documents/WindowsPowerShell
+  mkdir -p $Home/.pip/
+  mkdir -p $Home/pip/
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -56,6 +61,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pythonrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\pip\pip.ini"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pip\pip.conf"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.condarc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tigrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
@@ -71,6 +78,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\pip.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\pip.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
