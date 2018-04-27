@@ -91,6 +91,7 @@ Windows
 * Scoop
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+    * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop install busybox
 * Chocolatey
     * $ Set-ExecutionPolicy RemoteSigned -Force
