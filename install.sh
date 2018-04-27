@@ -38,7 +38,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.condarc ~/.condarc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-  cd $Home/dotfile && git pull --rebase origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull --rebase origin master && cd -
+  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.pip/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
@@ -83,7 +83,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
-  cd $Home/dotfile && git pull --rebase origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull --rebase origin master && cd -
+  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/AppData/Local/nvim
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
