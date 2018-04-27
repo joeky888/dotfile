@@ -30,5 +30,3 @@
     prompt = false
 [pull]
     rebase = true
-[branch]
-    autosetuprebase = always
