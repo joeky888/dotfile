@@ -41,6 +41,7 @@ for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
 * Run Microsoft .NET Framework Repair Tool
 * Run Microsoft .NET Framework Cleanup Tool
 * Install busybox
+* $ aria2c https://frippery.org/files/busybox/busybox.exe
 ```sh
 wine busybox.exe ash -l
 # Or
