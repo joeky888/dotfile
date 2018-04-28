@@ -134,6 +134,7 @@ Windows XP
 * Sogou input (zhuyin/pinyin)
 * WPS office
 * VLC
+* FFmpeg 3.x
 
 Mac (Hack-intosh)
 =====
