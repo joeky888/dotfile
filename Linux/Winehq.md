@@ -42,7 +42,7 @@ for %1 in (%windir%\system32\*.dll) do regsvr32.exe /s %1
 * Run Microsoft .NET Framework Cleanup Tool
 * Install busybox
 ```sh
-aria2c https://frippery.org/files/busybox/busybox.exe -d / -o ~/.wine/drive_c/windows/system32/busybox.exe && chmod 777 ~/.wine/drive_c/windows/system32/busybox.exe
+aria2c https://frippery.org/files/busybox/busybox.exe
 wine busybox.exe ash -l
 # Or
 wine busybox.exe sh -l
