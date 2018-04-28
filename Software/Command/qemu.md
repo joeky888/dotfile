@@ -21,5 +21,7 @@ Use raspbian (No network!!)
 ReactOS
 =====
 * Download ReactOS iso
-* $ qemu-img create -f qcow2 ReactOS.qcow2 10G
-* $ qemu-system-i386 -m 1024M -boot c -cdrom ReactOS.iso -hda ReactOS.qcow2 -localtime -net nic,model=e1000 -net user -serial file:ReactOS.log
+```sh
+qemu-img create -f qcow2 ReactOS.qcow2 10G
+qemu-system-i386 -m 1024M -boot c -cdrom ReactOS.iso -hda ReactOS.qcow2 -localtime -net nic,model=ne2k_pci -net user -serial file:ReactOS.log
+```
