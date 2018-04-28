@@ -97,6 +97,7 @@ Windows
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop install busybox
+    * $ scoop install qemu
 * Chocolatey
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ Unblock-File $profile
