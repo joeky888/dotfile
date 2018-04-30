@@ -51,8 +51,7 @@ let aaa = matchstr( aaa, \"\\\\d\\\\+\" ) |\
 let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
 let aaa = aaa == \"\" ? \"0\" : aaa |\
 let ddd = ddd == \"\" ? \"0\" : ddd |\
-echo \" Git: \" . \
-        aaa . \
-        \" additions and \" . \
-        ddd . \
-        \" deletions\"' -
+echohl iBlue | echon \"     Info     \" |\
+echohl Function    | echon \" \" . aaa . \" additions \" |\
+echohl Conditional | echon \" \" . ddd . \" deletions \" |\
+echohl None ' -
