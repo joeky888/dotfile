@@ -16,6 +16,17 @@ Clone all branches
 * $ git clone -b AnyBranchName URL
 * $ git branch -a
 
+Fetch/Pull a new branch
+=====
+* $ vim .git/config
+```conf
+# Change this line
+fetch = +refs/heads/master:refs/remotes/origin/master
+# To
+fetch = +refs/heads/*:refs/remotes/origin/*
+```
+* $ git fetch origin NewBranch
+
 Modify a commit message
 =====
 * $ git commit --amend
