@@ -7,7 +7,7 @@
     safecrlf = false
     fileMode = true
     quotepath = false
-    pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'g/^+++/d' +'g/^---/d' +'call histdel(\"search\", -1)' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' +'redir => aaa | silent exe \"%s/^+//ne\" | redir END | redir => ddd | silent exe \"%s/^-//ne\" | redir END | noh | redraw | echo \" Git message: \" . matchstr( aaa, \"\\\\d\\\\+\" ) . \" additions and \" . matchstr( ddd, \"\\\\d\\\\+\" ) . \" deletions\"' -
+    pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'g/^+++/d' +'g/^---/d' +'call histdel(\"search\", -1)' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' +'redir => aaa | silent exe \"%s/^+//ne\" | redir END | redir => ddd | silent exe \"%s/^-//ne\" | redir END | noh | redraw! | echo \" Git message: \" . matchstr( aaa, \"\\\\d\\\\+\" ) . \" additions and \" . matchstr( ddd, \"\\\\d\\\\+\" ) . \" deletions\"' -
 [rerere]
     enabled = 1
     autoupdate = 1
