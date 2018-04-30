@@ -47,4 +47,12 @@ silent exe \"%s/^-//ne\" |\
 redir END |\
 noh |\
 redraw! |\
-echo \" Git message: \" . matchstr( aaa, \"\\\\d\\\\+\" ) . \" additions and \" . matchstr( ddd, \"\\\\d\\\\+\" ) . \" deletions\"' -
+let aaa = matchstr( aaa, \"\\\\d\\\\+\" ) |\
+let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
+let aaa = aaa == \"\" ? \"0\" : aaa |\
+let ddd = ddd == \"\" ? \"0\" : ddd |\
+echo \" Git: \" . \
+        aaa . \
+        \" additions and \" . \
+        ddd . \
+        \" deletions\"' -
