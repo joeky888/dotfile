@@ -1,13 +1,6 @@
 [user]
     name = Joeky Zhan
     email = jj16180339887@gmail.com
-[core]
-    editor = vim -c 'normal! gg'
-    autocrlf = false
-    safecrlf = false
-    fileMode = true
-    quotepath = false
-    pager = vim +'setlocal gdefault' +'%sm/\\e.\\{-}m//e' +'g/^+++/d' +'g/^---/d' +'call histdel(\"search\", -1)' +'setlocal ft=diff' +'setlocal buftype=nofile' +'normal! gg' +'redir => aaa | silent exe \"%s/^+//ne\" | redir END | redir => ddd | silent exe \"%s/^-//ne\" | redir END | noh | redraw! | echo \" Git message: \" . matchstr( aaa, \"\\\\d\\\\+\" ) . \" additions and \" . matchstr( ddd, \"\\\\d\\\\+\" ) . \" deletions\"' -
 [rerere]
     enabled = 1
     autoupdate = 1
@@ -30,3 +23,28 @@
     prompt = false
 [pull]
     rebase = true
+[core]
+    editor = vim -c 'normal! gg'
+    autocrlf = false
+    safecrlf = false
+    fileMode = true
+    quotepath = false
+    pager = vim +' \
+setlocal gdefault |\
+%sm/\\e.\\{-}m//e |\
+setlocal ft=diff |\
+setlocal buftype=nofile |\
+exe \"g/^+++/d\" |\
+exe \"g/^---/d\" |\
+call histdel(\"search\", -1) |\
+exe \"normal! gg\" |\
+echo \"aaa\" |\
+redir => aaa |\
+silent exe \"%s/^+//ne\" |\
+redir END |\
+redir => ddd |\
+silent exe \"%s/^-//ne\" |\
+redir END |\
+noh |\
+redraw! |\
+echo \" Git message: \" . matchstr( aaa, \"\\\\d\\\\+\" ) . \" additions and \" . matchstr( ddd, \"\\\\d\\\\+\" ) . \" deletions\"' -
