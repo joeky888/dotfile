@@ -10,8 +10,8 @@ LDFLAGS=" -lm -lcompiler_rt" pip install -vvv --upgrade --force-reinstall --no-c
 ```
 * Test
 ```python
-# pip install -U nose2
-import nose, numpy, scipy
+# pip install nose nose2
+import nose, nose2, numpy, scipy
 numpy.test('full')
 scipy.test('full')
 ```
