@@ -26,6 +26,8 @@ fetch = +refs/heads/master:refs/remotes/origin/master
 fetch = +refs/heads/*:refs/remotes/origin/*
 ```
 * $ git fetch origin NewBranch
+* Or
+* $ git fetch --all
 
 Modify a commit message
 =====
