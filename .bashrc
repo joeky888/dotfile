@@ -477,6 +477,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   }
   update_prompt
   add-zsh-hook chpwd update_prompt
+  add-zsh-hook preexec update_prompt
+  add-zsh-hook precmd update_prompt
   zle_highlight=(none)
   [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
