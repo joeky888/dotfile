@@ -1,3 +1,7 @@
+Autoremove
+=====
+* $ sudo pacman -Qdtq | pacman -Rs -
+
 Use aria2 as backend of pacman
 =====
 * pacman -S mingw64/mingw-w64-x86\_64-aria2
