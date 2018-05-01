@@ -106,6 +106,7 @@ InstallPy3UTF8()
 # for location in pkgLocation:
 #   os.system(os.environ['SUDO'] + " install -D " + os.environ['Home'] + "/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
 # END
+;
 }
 
 InstallPIP()
