@@ -38,6 +38,7 @@ exe \"g/^+++/d\" |\
 exe \"g/^---/d\" |\
 call histdel(\"search\", -1) |\
 exe \"normal! gg\" |\
+hi iBlueInfo ctermfg=0 ctermbg=39 |\
 echo \"aaa\" |\
 redir => aaa |\
 silent exe \"%s/^+//ne\" |\
@@ -51,7 +52,7 @@ let aaa = matchstr( aaa, \"\\\\d\\\\+\" ) |\
 let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
 let aaa = aaa == \"\" ? \"0\" : aaa |\
 let ddd = ddd == \"\" ? \"0\" : ddd |\
-echohl iBlue | echon \"     Info     \" |\
+echohl iBlueInfo | echon \"     Info     \" |\
 echohl Function    | echon \" \" . aaa . \" additions \" |\
 echohl Conditional | echon \" \" . ddd . \" deletions \" |\
 echohl None ' -
