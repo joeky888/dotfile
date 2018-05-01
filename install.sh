@@ -99,13 +99,13 @@ InstallGRC()
 
 InstallPy3UTF8()
 {
-  python3 <<END
-import sys, os, site
+#   python3 <<END
+# import sys, os, site
 
-pkgLocation = site.getsitepackages()
-for location in pkgLocation:
-  os.system(os.environ['SUDO'] + " install -D " + os.environ['Home'] + "/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-END
+# pkgLocation = site.getsitepackages()
+# for location in pkgLocation:
+#   os.system(os.environ['SUDO'] + " install -D " + os.environ['Home'] + "/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
+# END
 }
 
 InstallPIP()
