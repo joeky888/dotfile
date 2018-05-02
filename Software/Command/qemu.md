@@ -1,3 +1,17 @@
+Useful params
+=====
+* Multiple core -smp
+    * CPU為一，各CPU核心個數為一，各核心線程數為一，即各CPU總線程數為一
+    * $ qemu -smp 1,cores=1,threads=1,sockets=1
+    * CPU為二，各CPU核心個數為一，各核心線程數為一，即各CPU總線程數為二
+    * $ qemu -smp 2,cores=1,threads=1,sockets=2
+    * CPU為四，各CPU核心個數為二，各核心線程數為二，即各CPU總線程數為四
+    * $ qemu -smp 16,cores=2,threads=2,sockets=4
+* Enable Intel HAXM acceleration
+* $ qemu -accel hax
+* Enable KVM acceleration, Linux only
+* $ qemu -enable-kvm
+
 Install qemu on Windows
 =====
 * $ scoop install qemu
