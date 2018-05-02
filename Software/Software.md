@@ -85,6 +85,7 @@ Windows
 * Greenshot
 * Clink
 * Rufus
+* Caffeine (https://github.com/cttynul/caffeine/releases)
 * x64dbg / snowman
 * Rainmeter (with Circle-Weather)
 * MPC-HC
