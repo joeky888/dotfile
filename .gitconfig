@@ -53,6 +53,6 @@ let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
 let aaa = aaa == \"\" ? \"+0\" : \"+\".aaa |\
 let ddd = ddd == \"\" ? \"-0\" : \"-\".ddd |\
 echohl iBlueInfo | echon \"     Info     \" |\
-echohl Function    | echon \" \" . aaa . \" additions \" |\
-echohl Conditional | echon \" \" . ddd . \" deletions \" |\
+echohl Function    | echon \" \" . aaa . \" additions\" |\
+echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -
