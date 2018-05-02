@@ -1,10 +1,15 @@
 Single loop sorting
 =====
-```cpp
-for (i = 0; i < arr.length-1 && i >=0; i++)
-    if (arr[i] > arr[i+1]) {
-        swap(arr[i], arr[i+1]); i-=2
+```javascript
+var a = [5, 6, 3, 4, 1, 9]
+
+for (var i = 0; i < a.length-1; i++)
+    if (i >= 0 && a[i] > a[i+1]) {
+        temp=a[i]; a[i]=a[i+1]; a[i+1]=temp
+        i-=2
     }
+
+console.log(a)
 ```
 ```python
 a = [5, 6, 3, 4, 1, 9]
