@@ -197,6 +197,7 @@ Android
     * YalpStore
     * Your local weather
     * Open Camera
+    * Busybox
 * Drop-down menu items
     * Screenshot
     * Flash light
