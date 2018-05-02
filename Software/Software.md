@@ -115,6 +115,8 @@ Windows XP
 * Maxthon (傲遊瀏覽器)
 * Qupzilla 1.8.9
 * Google Chrome 49
+* Firefox 52
+* Free Download Manager 3.9.7
 * Powershell 2.0
 * BusyBox
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
@@ -141,10 +143,10 @@ Mac (Hack-intosh)
 =====
 * iTerm2 / Hyper
 * iTerm2-Color-Schemes
-* Homebrew
-* Homebrew Cask
-* MacVim / VimR
 * Dr. Unarchiver
+* Homebrew and Homebrew Cask
+    * MacVim / VimR
+    * Free Download Manager
 
 Linux
 =====
@@ -187,7 +189,6 @@ Android
 * Starfire 星火直播
 * WiFiAnalyzer open source
 * IP webcam
-* LibreTorrent
 * Advanced Download Manager
 * TWRP Recovery
 * Magisk / Xposed
@@ -199,6 +200,7 @@ Android
     * Your local weather
     * Open Camera
     * Busybox
+    * LibreTorrent
 * Drop-down menu items
     * Screenshot
     * Flash light
