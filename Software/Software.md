@@ -9,7 +9,7 @@ Software
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
-* Free Download Manager (Open Source)
+* Free Download Manager (Open Source, Win+Mac only)
 * Baidu Pan(BaiduExporter/百度网盘直接下载助手增强版)
 * UNetbootin
 * deepin-boot-maker
