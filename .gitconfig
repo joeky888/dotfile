@@ -32,7 +32,7 @@
     pager = vim +' \
 setlocal gdefault |\
 %sm/\\e.\\{-}m//e |\
-setlocal ft=diff |\
+setlocal ft=git |\
 setlocal buftype=nofile |\
 exe \"g/^+++/d\" |\
 exe \"g/^---/d\" |\
