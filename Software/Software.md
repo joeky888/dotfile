@@ -9,6 +9,7 @@ Software
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
+* Free Download Manager (Open Source)
 * Baidu Pan(BaiduExporter/百度网盘直接下载助手增强版)
 * UNetbootin
 * deepin-boot-maker
@@ -187,7 +188,7 @@ Android
 * WiFiAnalyzer open source
 * IP webcam
 * LibreTorrent
-* Turbo Download Manager
+* Advanced Download Manager
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
