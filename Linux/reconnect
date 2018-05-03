@@ -2,7 +2,7 @@
 
 while true; do
   sleep 20s
-  if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then
+  if ! ping -c 1 -W 1 8.8.8.8 | grep -q -i "ttl"; then
 #     systemctl restart dnsmasq.service
 #     systemctl restart systemd-hostnamed.service
 #     ip -s -s neigh flush all
