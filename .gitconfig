@@ -25,6 +25,7 @@
     rebase = true
 [alias]
     history = log -p
+    summary = log --stat
 [core]
     editor = vim -c 'normal! gg'
     autocrlf = false
