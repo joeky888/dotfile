@@ -130,7 +130,8 @@ InstallMinicondaLinux()
 
 InstallMinicondaMac()
 {
-  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && bash Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
+  rm -rf ~/Miniconda2 && aria2c 'https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda2-latest-MacOSX-x86_64.sh && zsh Miniconda2-latest-MacOSX-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-MacOSX-x86_64.sh
+  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && zsh Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install ykdl
