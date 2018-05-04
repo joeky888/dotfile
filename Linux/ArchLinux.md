@@ -1,6 +1,10 @@
-Autoremove
+Pacman
 =====
-* $ sudo pacman -Qdtq | pacman -Rs -
+* Remove a package
+    * $ sudo pacman -Qdtq | pacman -Rs -
+* Download only
+    * $ pacman -Sw package
+    * $ /var/cache/pacman/pkg # Find the package
 
 Use aria2 as backend of pacman
 =====
