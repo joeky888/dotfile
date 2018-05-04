@@ -67,3 +67,12 @@ $Shortcut.Save()
 God mode
 =====
 * Rename an empty folder to "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
+
+Delete a Disk partition
+=====
+* Open powershell as admin, run `diskpart`
+* `list disk` to list all disks
+* `select disk n` to select nth disk
+* `list partition` to list all partitions
+* `select partition n` to select nth partition
+* `delete partition override` to remove current selection
