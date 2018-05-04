@@ -76,3 +76,20 @@ Delete a Disk partition
 * `list partition` to list all partitions
 * `select partition n` to select nth partition
 * `delete partition override` to remove current selection
+
+Delete an UEFI boot option
+=====
+* Open cmd (not powershell) as admin
+```dosbatch
+:: List all boot options
+bcdedit /enum firmware
+:: It will produce a list of all entries in the BCD store. Export the list
+bcdedit /export newbcd
+:: and make a backup copy just in case.
+copy newbcd bcdbackup
+:: Now copy and paste the IDs of the unused entries and delete them one at a time by this command.
+bcdedit /store newbcd /delete {….-….-….}
+:: After you removed all unwanted, save the file with this command.
+bcdedit /import newbcd /clean
+:: That’s it. You won’t see those entries anymore on next reboot.
+```
