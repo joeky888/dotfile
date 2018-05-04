@@ -149,8 +149,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
   elif [[ $(command -v pacman) ]]; then
     $SUDO pacman -Sy vim tmux zsh git curl aria2 bash-completion powerpill yaourt --noconfirm --needed
-#     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
-#     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
+    $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
+    $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
     [ command -v powerpill ] && $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
   else
     echo "Distro does not support at this moment."

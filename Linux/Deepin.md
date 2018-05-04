@@ -57,12 +57,18 @@ Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
 
 Packages
 =====
-* $ sudo apt-fast install sogoupinyin adb fastboot opera-developer opera-stable vscode teamviewer skypeforlinux qpdfview evince nomacs vlc obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
-* $ sudo apt-fast install tlp -y # For laptop, in case deepin is unable to reboot
-* $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
+* Deepin
+  * $ sudo apt-fast install sogoupinyin adb fastboot opera-developer opera-stable vscode teamviewer skypeforlinux qpdfview evince nomacs vlc obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
+  * $ sudo apt-fast install tlp -y # For laptop, in case deepin is unable to reboot
+  * $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
+* Manjaro
+  * $ sudo pacman -Rs vim --noconfirm; sudo pacman -Qdtq | pacman -Rs -
+  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-rime android-tools opera nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab
+  * $ yaourt -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin earlyoom
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
-* $ sudoedit /etc/systemd/system/earlyoom.service
+* $ sudoedit /etc/systemd/system/earlyoom.service # Or
+* $ sudoedit /usr/lib/systemd/system/earlyoom.service
 ```conf
 # Use 97% of ram
 ExecStart=/usr/bin/earlyoom -m 3
