@@ -85,6 +85,30 @@ https://feeds.feedburner.com/linuxtoday/linux
 https://blog.qt.io/feed
 https://godotengine.org/rss.xml
 
+* Github
+```
+http://github-trends.ryotarai.info/rss/github_trends_all_daily.rss
+http://github-trends.ryotarai.info/rss/github_trends_all_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_c?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_c%23?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_c++?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_cmake?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_css?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_diff?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_dockerfile?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_gdscript?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_go?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_java?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_javascript?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_kotlin?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_powershell?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_python?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_qml?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_shell?since=daily_weekly.rss
+http://github-trends.ryotarai.info/rss/github_trends_typescript?since=daily_weekly.rss
+```
+
+
 Bookmark script
 =====
 * Dark
