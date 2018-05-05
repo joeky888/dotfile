@@ -1,7 +1,7 @@
 Pacman
 =====
 * Remove a package
-    * $ sudo pacman -Qdtq | pacman -Rs -
+    * $ sudo pacman -Qdtq | sudo pacman -Rs -
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
