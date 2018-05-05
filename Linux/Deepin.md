@@ -1,4 +1,27 @@
+Pre install (Manjaro Deepin only)
+=====
+* Use `dd` mode when burn into the USB drive with rufus
+* When enter to the grub menu, select non-free driver
+* Press `E` to edit boot option
+  * Add boot option `systemd.mask=mhwd-live.service` to the first line
+* Enter boot
+* Before starting the GUI installation
+  * $ sudo nano /usr/lib/calamares/modules/mhwdcfg/main.py
+```python
+Change:
+def run(self):
+  for b in self.bus:
+  for id in self.identifier['net']:
+  self.configure(b, id)
+  for id in self.identifier['video']:
+  self.configure(b, id)
+  return None
 
+To:
+def run(self):
+  return None
+```
+* Now start GUI installation
 
 After installed
 =====
