@@ -1,3 +1,5 @@
+
+
 After installed
 =====
 * Setting -> Power Management -> Disable computer auto sleeping
@@ -63,7 +65,8 @@ Packages
   * $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * Manjaro
   * $ sudo pacman -Rs vim --noconfirm; sudo pacman -Qdtq | pacman -Rs -
-  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-rime android-tools opera nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab
+  * $ sudo powerpill -S --noconfirm --needed laptop-mode-tools # For laptop, in case deepin is unable to reboot
+  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-rime fcitx-configtool android-tools opera nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab
   * $ yaourt -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin earlyoom
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage

@@ -26,8 +26,8 @@ Setting
 
 Extension
 =====
-* Adblock Plus
 * Install Chrome Extension
+* Adblock Plus
 * Search by Image (by Google)
 * Stylish / Stylus
 * Full Page Screen Capture
