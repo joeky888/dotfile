@@ -98,8 +98,7 @@ Windows
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
-    * $ scoop install busybox
-    * $ scoop install qemu
+    * $ scoop install vim busybox qemu
 * Chocolatey
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ Unblock-File $profile

@@ -382,22 +382,14 @@ fi
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
-if [[ "$OSTYPE" == "cygwin" ]]; then
+if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
   gvim()
   {
+    gv=$( [ -f $(cygpath $ProgramData/chocolatey/bin/gvim.exe) ] && cygpath $ProgramData/chocolatey/bin/gvim.exe || cygpath $USERPROFILE/scoop/shims/gvim.exe )
     if [ "$#" == 0 ]; then
-      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe &!
+      $gv &!
     else
-      /cygdrive/c/ProgramData/chocolatey/bin/gvim.exe -p --remote-tab-silent "$@" &!
-    fi;
-  }
-elif [[ "$OSTYPE" == "msys" ]]; then
-  gvim()
-  {
-    if [ "$#" == 0 ]; then
-      /c/ProgramData/chocolatey/bin/gvim.exe &!
-    else
-      /c/ProgramData/chocolatey/bin/gvim.exe -p --remote-tab-silent "$@" &!
+      $gv -p --remote-tab-silent "$@" &!
     fi;
   }
 elif [ $(command -v gvim) ]; then

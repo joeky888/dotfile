@@ -151,7 +151,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO pacman -Sy vim tmux zsh git curl aria2 bash-completion powerpill yaourt --noconfirm --needed
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
-    [ command -v /usr/bin/powerpill ] && $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
+    [ -f /usr/bin/powerpill ] && $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
   else
     echo "Distro does not support at this moment."
     exit 1
@@ -177,7 +177,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    pac=$([ command -v /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
+    pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
     $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig --noconfirm --needed
   fi
 
