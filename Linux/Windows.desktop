@@ -1,0 +1,13 @@
+[Desktop Entry]
+Actions=new-window;
+Categories=Utility;
+Comment=Windows shortcut
+Exec=/usr/bin/dde-file-manager -n /run/media/joeky/7C62E44062E4012E/Users/joeky/Desktop
+Icon=dde-file-manager
+MimeType=inode/directory;
+Name=Deepin File Manager
+StartupNotify=true
+Terminal=false
+Type=Application
+Version=1.0
+X-Deepin-DEComponent=true
