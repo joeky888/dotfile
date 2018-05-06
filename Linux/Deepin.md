@@ -37,6 +37,13 @@ deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contri
 # This one is optional
 deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free
 ```
+* Disable suspend when closing laptop lid (Manjaro)
+  * $ sudoedit /etc/systemd/logind.conf
+```conf
+HandleLidSwitch=ignore
+```
+  * $ sudo systemctl restart systemd-logind
+
 
 Theme
 =====
