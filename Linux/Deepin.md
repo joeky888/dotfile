@@ -28,6 +28,7 @@ After installed
 * Setting -> Power Management -> Disable computer auto sleeping
 * Setting -> Power Management -> Disable suspend on lid closed
 * Setting -> Account -> auto login
+* Setting -> Time and Date -> Auto-Sync
 * Setting -> Update -> Update Settings -> Auto-download Updates -> Uncheck
 * Desktop right click -> Corner Settings -> set right bottom corner to "Desktop"
 * $ sudoedit /etc/apt/sources.list -> Use "unstable"
