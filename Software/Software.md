@@ -210,6 +210,8 @@ Android
     * Screenshot
     * Flash light
     * Auto rotate
+* Not on Google/F-droid
+    * Alpha VNC (beta)
 
 Gaming
 =====
