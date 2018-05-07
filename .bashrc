@@ -114,6 +114,12 @@ if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
 fi
 
+if [[ -d "/data/local/tmp" ]]; then
+  # This is for Android
+  # adb push ./aria2c /data/local/tmp
+  export PATH=$PATH:/data/local/tmp
+fi
+
 [[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 [[ $(command -v pip) ]] && alias pip='pip'
