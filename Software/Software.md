@@ -211,7 +211,7 @@ Android
     * Flash light
     * Auto rotate
 * Not on Google/F-droid
-    * Alpha VNC (beta) (Android 5.0+)
+    * Alpha VNC (beta) (No root, Android 5.0+)
 
 Gaming
 =====
