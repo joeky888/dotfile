@@ -185,7 +185,8 @@ Android
 * Barcode Scanner ZXing
 * Sogou input method
 * Hacker's Keyboard
-* Termux
+* Termux (terminal for Android 5+)
+* Pydroid 3 (terminal for Android 4.4+, `cp aria2c /data/data/ru.iiec.pydroid3/files/aria2c`)
 * DroidVim
 * VLC nightly
 * Kodi
