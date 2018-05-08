@@ -61,12 +61,14 @@ dd if=/dev/block/mmcblk0p16 of=/sdcard/backups/userdata.img
 ADB
 =====
 * Connecting from pc to phone
-    * adb kill-server
-    * adb devices
+    * $ adb kill-server
+    * $ adb devices
     * Copy the serial number of the output
 * Install .apk to phone
     * Put xxx.apk to same folder with cmd.exe
-    * adb -s SerialNumberOfPhone install -r xxx.apk
+    * $ adb -s SerialNumberOfPhone install -f -r xxx.apk
+* Copy a new command to phone
+    * $ adb push ./aria2c /data/local/tmp
 
 Android X86 on virtualbox
 =====
