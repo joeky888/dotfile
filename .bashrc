@@ -487,6 +487,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   setopt always_to_end # Move cursor to the end when completion
   setopt nonomatch # Disable warning when completion not found
   _comp_options+=(globdots) # Show hidden files when using completion
+  zstyle ':completion:*' special-dirs false # Don't complete ./ and ../
   zle -N PasteFromClipboard # Bind function to command
   zle -N CutToClipboard # Bind function to command
   zle -N Forever # Bind function to command
