@@ -21,9 +21,6 @@ Software
 * ngPlant
 * Fritzing
 * FontForge
-* gVim x64
-* Brackets
-* Visual Studio Code Insiders
 * VLC
 * Natron
 * OBS MP
@@ -33,7 +30,6 @@ Software
 * LMMS
 * Qt
 * qTox
-* PyCharm Community Edition
 * Cheat Engine
 * WPS Office (Hong Kong)
 * Libre Office
@@ -72,6 +68,10 @@ Dev
 * Android Studio
 * Qt Creator
 * Eclipse
+* PyCharm Community Edition
+* gVim x64
+* Brackets
+* Visual Studio Code Insiders
 
 Windows
 =====
