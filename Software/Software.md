@@ -187,7 +187,6 @@ Android
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, `chmod 777 aria2c && cp aria2c /data/data/ru.iiec.pydroid3/files/aria2c`)
-* QPython3 (terminal for Android 2.3+, no Busybox so try `adb push busybox /data/data/org.qpython.qpy3/files/bin`)
 * DroidVim
 * VLC nightly
 * Kodi
