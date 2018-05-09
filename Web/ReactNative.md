@@ -22,3 +22,10 @@ Init
 * $ npm --verbose run android
 * $ npm --verbose run ios
 * Press capital `R` in terminal to restart and clear cache
+
+Run with vscode
+=====
+* $ npm install -g react-native-cli
+* $ react-native init myapp && cd myapp
+* Install `React Native Tools` vscode extension
+* Open myapp using vscode
