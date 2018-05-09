@@ -17,7 +17,6 @@ Setting
     "git.ignoreMissingGitWarning": true,
     "emmet.showSuggestionsAsSnippets": true,
     "editor.snippetSuggestions": "top",
-    "files.trimTrailingWhitespace": true,
     "Enable Live-Share-Function": "This is a comming soon feature"
 }
 ```
