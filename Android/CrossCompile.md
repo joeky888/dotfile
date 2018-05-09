@@ -29,27 +29,26 @@ cd android-ndk
 git clone --depth 1 https://github.com/mirror/busybox busybox
 
 export ANDROID_ABI="arm-linux-androideabi"
-export CC="$PWD/$ANDROID_ABI/bin/$ANDROID_ABI-clang"
-export CXX="$PWD/$ANDROID_ABI/bin/$ANDROID_ABI-clang++"
+export PATH=$PWD/$ANDROID_ABI/bin:$PATH
+export CROSS_COMPILE="$ANDROID_ABI-"
+export CROSS_COMPILER_PREFIX="$ANDROID_ABI-"
+export CC="clang"
+export CXX="clang++"
 export ARCH="arm"
-export CROSS_COMPILE="$PWD/$ANDROID_ABI/bin/$ANDROID_ABI-"
 export CFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export CPPFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
-export LDFLAGS="-static -L$PWD/platforms/android-16/arch-arm/usr/lib -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
+export LDFLAGS="-static -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
+export LDLIBS="-static"
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
 
 cd ./busybox
 git reset --hard && git clean -xdf && \
-#make CONFIG_SYSROOT="$SYSROOT" CONFIG_EXTRA_LDLIBS="m c gcc" android_ndk_defconfig && \
-make CONFIG_SYSROOT="$SYSROOT" CONFIG_EXTRA_LDLIBS="m c gcc" android2_defconfig && \
+rm -f ./libbb/missing_syscalls.c
+rm -f ./miscutils/setfattr.c
+# Try android2_defconfig or android_ndk_defconfig
+make CONFIG_SYSROOT="$SYSROOT" CONFIG_FEATURE_TOUCH_NODEREF=n CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" android_ndk_defconfig && \
 make clean && \
-make CONFIG_SYSROOT="$SYSROOT" CONFIG_EXTRA_LDLIBS="m c gcc"
-
-cd ./busybox
-git reset --hard && git clean -xdf && \
-make CONFIG_SYSROOT="$SYSROOT" CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" android_ndk_defconfig && \
-make clean && \
-make CONFIG_SYSROOT="$SYSROOT" CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS"
+make CONFIG_SYSROOT="$SYSROOT" CONFIG_FEATURE_TOUCH_NODEREF=n CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS"
 ```
 
 Toybox
@@ -59,7 +58,7 @@ cd android-ndk
 git clone --depth 1 https://github.com/landley/toybox toybox
 
 export ANDROID_ABI="arm-linux-androideabi"
-export PATH=$PATH:$PWD/$ANDROID_ABI/bin
+export PATH=$PWD/$ANDROID_ABI/bin:$PATH
 export CC="clang"
 export CXX="clang++"
 export ARCH="arm"
