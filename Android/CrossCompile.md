@@ -38,7 +38,7 @@ export ARCH="arm"
 export CFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export CPPFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export LDFLAGS="-static -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
-export LDLIBS="-static"
+export LDLIBS="-static -llog"
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
 
 cd ./busybox
