@@ -79,3 +79,174 @@ rm -f ./toys/android/log.c && \
 make CONFIG_SYSROOT="$SYSROOT" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" defconfig && \
 make CONFIG_SYSROOT="$SYSROOT" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS"
 ```
+
+Aria2 (Android arm) (To be continued)
+=====
+```sh
+export BASE=`pwd`
+export PATH=$PWD/$ANDROID_ABI/bin:$PATH
+export ANDROID_ABI="arm-linux-androideabi"
+export SRC=$BASE/src
+export DOWNLOAD="aria2c"
+export DEST=$BASE/opt
+export CC="$ANDROID_ABI-clang"
+export CXX="$ANDROID_ABI-clang++"
+export LDFLAGS="-L$DEST/lib"
+export CPPFLAGS="-I$DEST/include"
+export CFLAGS="-march=armv7-a -mtune=cortex-a9"
+export CXXFLAGS=$CFLAGS
+export CONFIGURE="./configure --prefix=/opt --host=arm-linux"
+mkdir -p $SRC
+
+######## ####################################################################
+# ZLIB # ####################################################################
+######## ####################################################################
+
+git clone --depth 1 https://github.com/madler/zlib zlib
+cd zlib
+LDFLAGS=$LDFLAGS
+CPPFLAGS=$CPPFLAGS
+CFLAGS=$CFLAGS
+CXXFLAGS=$CXXFLAGS
+CROSS_PREFIX="$ANDROID_ABI-"
+./configure --prefix=/opt
+
+make -j 2
+make install DESTDIR=$BASE
+cd -
+
+########### #################################################################
+# OPENSSL # #################################################################
+########### #################################################################
+
+git clone --depth 1 https://github.com/openssl/openssl openssl
+cd openssl
+
+./Configure linux-armv4 $CFLAGS \
+--prefix=/opt shared zlib zlib-dynamic \
+-D_GNU_SOURCE -D_BSD_SOURCE \
+--with-zlib-lib=$DEST/lib \
+--with-zlib-include=$DEST/include
+
+make CC=$CC
+make CC=$CC install INSTALLTOP=$DEST OPENSSLDIR=$DEST/ssl
+cd -
+
+########## ##################################################################
+# SQLITE # ##################################################################
+########## ##################################################################
+
+git clone --depth 1 https://github.com/mackyle/sqlite sqlite
+cd sqlite
+
+CC=clang
+./configure --prefix=/opt --host=arm-linux
+
+make -j 2
+make install DESTDIR=$BASE
+
+########### #################################################################
+# LIBXML2 # #################################################################
+########### #################################################################
+
+git clone --depth 1 https://github.com/GNOME/libxml2 libxml2
+cd libxml2
+
+#patch < $PATCHES/libxml2-pthread.patch
+
+CC=$CC \
+CXX=$CXX \
+LDFLAGS=$LDFLAGS \
+CPPFLAGS=$CPPFLAGS \
+CFLAGS=$CFLAGS \
+CXXFLAGS=$CXXFLAGS \
+./configure --prefix=/opt --host=arm-linux \
+--with-zlib=$DEST \
+--without-python
+
+make LIBS="-lz"
+make install DESTDIR=$BASE
+
+########## ##################################################################
+# C-ARES # ##################################################################
+########## ##################################################################
+
+mkdir $SRC/c-ares && cd $SRC/c-ares
+$WGET http://c-ares.haxx.se/download/c-ares-1.10.0.tar.gz
+tar zxvf c-ares-1.10.0.tar.gz
+cd c-ares-1.10.0
+
+CC=$CC \
+CXX=$CXX \
+LDFLAGS=$LDFLAGS \
+CPPFLAGS=$CPPFLAGS \
+CFLAGS=$CFLAGS \
+CXXFLAGS=$CXXFLAGS \
+./configure --prefix=/opt --host=arm-linux
+
+make
+make install DESTDIR=$BASE
+
+########### #################################################################
+# LIBSSH2 # #################################################################
+########### #################################################################
+
+mkdir $SRC/libssh2 && cd $SRC/libssh2
+$WGET http://www.libssh2.org/download/libssh2-1.5.0.tar.gz
+tar zxvf libssh2-1.5.0.tar.gz
+cd libssh2-1.5.0
+
+CC=$CC \
+CXX=$CXX \
+LDFLAGS=$LDFLAGS \
+CPPFLAGS=$CPPFLAGS \
+CFLAGS=$CFLAGS \
+CXXFLAGS=$CXXFLAGS \
+./configure --prefix=/opt --host=arm-linux
+
+make LIBS="-lz -lssl -lcrypto"
+make install DESTDIR=$BASE
+
+######### ###################################################################
+# ARIA2 # ###################################################################
+######### ###################################################################
+
+mkdir $SRC/aria2 && cd $SRC/aria2
+$WGET http://sourceforge.net/projects/aria2/files/stable/aria2-1.19.0/aria2-1.19.0.tar.gz
+tar zxvf aria2-1.19.0.tar.gz
+cd aria2-1.19.0
+
+CC=$CC \
+CXX=$CXX \
+LDFLAGS=$LDFLAGS \
+CPPFLAGS=$CPPFLAGS \
+CFLAGS=$CFLAGS \
+CXXFLAGS=$CXXFLAGS \
+./configure --prefix=/opt --host=arm-linux \
+--enable-libaria2 \
+--enable-static \
+--disable-shared \
+--without-libuv \
+--without-appletls \
+--without-gnutls \
+--without-libnettle \
+--without-libgmp \
+--without-libgcrypt \
+--without-libexpat \
+--with-xml-prefix=$DEST \
+ZLIB_CFLAGS="-I$DEST/include" \
+ZLIB_LIBS="-L$DEST/lib" \
+OPENSSL_CFLAGS="-I$DEST/include" \
+OPENSSL_LIBS="-L$DEST/lib" \
+SQLITE3_CFLAGS="-I$DEST/include" \
+SQLITE3_LIBS="-L$DEST/lib" \
+LIBCARES_CFLAGS="-I$DEST/include" \
+LIBCARES_LIBS="-L$DEST/lib" \
+LIBSSH2_CFLAGS="-I$DEST/include" \
+LIBSSH2_LIBS="-L$DEST/lib" \
+ARIA2_STATIC=yes
+
+make LIBS="-lz -lssl -lcrypto -lsqlite3 -lcares -lxml2 -lssh2"
+
+make install DESTDIR=$BASE/aria2
+```
