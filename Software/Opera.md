@@ -23,6 +23,8 @@ Setting
 * chrome://flags/#enable-async-image-decoding -> Enable
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://Plugins -> Search "flash" -> Enable
+* chrome://settings -> Search "VPN" -> Enable
+* chrome://settings -> Search "Opera Turbo" -> Enable
 
 Extension
 =====
