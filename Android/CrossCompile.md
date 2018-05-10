@@ -12,15 +12,15 @@ cd android-ndk
 ./build/tools/make_standalone_toolchain.py --arch=x86 --package-dir=$PWD
 tar -xvjf ./arm-linux-androideabi.tar.bz2
 tar -xvjf ./i686-linux-android.tar.bz2
-# Custom variable ANDROID_ABI
-export ANDROID_ABI="arm-linux-androideabi"
+# Custom variable NDK_PREFIX
+export NDK_PREFIX="arm-linux-androideabi"
 
 # Example settings
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
-export CC="$PWD/$ANDROID_ABI/bin/arm-linux-androideabi-clang"
-export CXX="$PWD/$ANDROID_ABI/bin/arm-linux-androideabi-clang++"
-export LDFLAGS="-static -L$SYSROOT/usr/lib -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
-export CPPFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include/ -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include"
+export CC="$PWD/$NDK_PREFIX/bin/arm-linux-androideabi-clang"
+export CXX="$PWD/$NDK_PREFIX/bin/arm-linux-androideabi-clang++"
+export LDFLAGS="-static -L$SYSROOT/usr/lib -L$PWD/$NDK_PREFIX/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$NDK_PREFIX"
+export CPPFLAGS="-I$PWD/$NDK_PREFIX/sysroot/usr/include/ -I$PWD/sysroot/usr/include/$NDK_PREFIX -I$PWD/sysroot/usr/include"
 ```
 
 Busybox (arm gcc)
@@ -30,16 +30,16 @@ Busybox (arm gcc)
 cd android-ndk
 git clone --depth 1 https://github.com/mirror/busybox busybox
 
-export ANDROID_ABI="arm-linux-androideabi"
-export PATH=$PWD/$ANDROID_ABI/bin:$PATH
-export CROSS_COMPILE="$ANDROID_ABI-"
-export CROSS_COMPILER_PREFIX="$ANDROID_ABI-"
+export NDK_PREFIX="arm-linux-androideabi"
+export PATH=$PWD/$NDK_PREFIX/bin:$PATH
+export CROSS_COMPILE="$NDK_PREFIX-"
+export CROSS_COMPILER_PREFIX="$NDK_PREFIX-"
 export CC="${CROSS_COMPILE}gcc"
 export CXX="${CROSS_COMPILE}g++"
 export ARCH="arm"
-export CFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
-export CPPFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
-export LDFLAGS="-static -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
+export CFLAGS="-I$PWD/busybox/include -I$PWD/$NDK_PREFIX/sysroot/usr/include -I$PWD/sysroot/usr/include/$NDK_PREFIX -I$PWD/sysroot/usr/include -static"
+export CPPFLAGS="-I$PWD/busybox/include -I$PWD/$NDK_PREFIX/sysroot/usr/include -I$PWD/sysroot/usr/include/$NDK_PREFIX -I$PWD/sysroot/usr/include -static"
+export LDFLAGS="-static -L$PWD/$NDK_PREFIX/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$NDK_PREFIX"
 export LDLIBS="-static -lm -Wl,--allow-multiple-definition"
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
 
@@ -62,15 +62,15 @@ Toybox (arm clang)
 cd android-ndk
 git clone --depth 1 https://github.com/landley/toybox toybox
 
-export ANDROID_ABI="arm-linux-androideabi"
-export PATH=$PWD/$ANDROID_ABI/bin:$PATH
-export CROSS_COMPILE="$ANDROID_ABI-"
+export NDK_PREFIX="arm-linux-androideabi"
+export PATH=$PWD/$NDK_PREFIX/bin:$PATH
+export CROSS_COMPILE="$NDK_PREFIX-"
 export CC="${CROSS_COMPILE}clang"
 export CXX="${CROSS_COMPILE}clang++"
 export ARCH="arm"
-export CFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
-export CPPFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
-export LDFLAGS="-static -L$PWD/platforms/android-16/arch-arm/usr/lib -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
+export CFLAGS="-I$PWD/$NDK_PREFIX/sysroot/usr/include -I$PWD/sysroot/usr/include/$NDK_PREFIX -I$PWD/sysroot/usr/include -static"
+export CPPFLAGS="-I$PWD/$NDK_PREFIX/sysroot/usr/include -I$PWD/sysroot/usr/include/$NDK_PREFIX -I$PWD/sysroot/usr/include -static"
+export LDFLAGS="-static -L$PWD/platforms/android-16/arch-arm/usr/lib -L$PWD/$NDK_PREFIX/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$NDK_PREFIX"
 export LDLIBS="-static -llog"
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
 
@@ -89,13 +89,13 @@ Aria2 (Android arm) (To be continued)
 =====
 ```sh
 export BASE=`pwd`
-export PATH=$PWD/$ANDROID_ABI/bin:$PATH
-export ANDROID_ABI="arm-linux-androideabi"
+export PATH=$PWD/$NDK_PREFIX/bin:$PATH
+export NDK_PREFIX="arm-linux-androideabi"
 export SRC=$BASE/src
 export DOWNLOAD="aria2c"
 export DEST=$BASE/opt
-export CC="$ANDROID_ABI-clang"
-export CXX="$ANDROID_ABI-clang++"
+export CC="$NDK_PREFIX-clang"
+export CXX="$NDK_PREFIX-clang++"
 export LDFLAGS="-L$DEST/lib"
 export CPPFLAGS="-I$DEST/include"
 export CFLAGS="-march=armv7-a -mtune=cortex-a9"
@@ -113,7 +113,7 @@ LDFLAGS=$LDFLAGS
 CPPFLAGS=$CPPFLAGS
 CFLAGS=$CFLAGS
 CXXFLAGS=$CXXFLAGS
-CROSS_PREFIX="$ANDROID_ABI-"
+CROSS_PREFIX="$NDK_PREFIX-"
 ./configure --prefix=/opt
 
 make -j 2
