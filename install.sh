@@ -36,6 +36,8 @@ InstallDotfile()
   ln -sf $Home/dotfile/.fbtermrc ~/.fbtermrc
   ln -sf $Home/dotfile/.pythonrc ~/.pythonrc
   ln -sf $Home/dotfile/.condarc ~/.condarc
+  ln -sf $Home/dotfile/.npmrc ~/.npmrc
+  ln -sf $Home/dotfile/.npmrc ~/.yarnrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
@@ -64,6 +66,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\pip\pip.ini"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pip\pip.conf"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.condarc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.npmrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.yarnrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tigrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
@@ -81,6 +85,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.npmrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -

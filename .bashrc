@@ -261,6 +261,8 @@ upgradeDotfile() {
   rm -rf ~/.pip/pip.conf
   rm -rf ~/pip/pip.ini
   rm -rf ~/.condarc
+  rm -rf ~/.npmrc
+  rm -rf ~/.yarnrc
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/Documents/WindowsPowerShell/profile.ps1
@@ -279,6 +281,8 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.npmrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
@@ -296,6 +300,8 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.pythonrc ~/.pythonrc
     ln -sf $HOME/dotfile/.pip.ini ~/.pip/pip.conf
     ln -sf $HOME/dotfile/.condarc ~/.condarc
+    ln -sf $HOME/dotfile/.npmrc ~/.npmrc
+    ln -sf $HOME/dotfile/.npmrc ~/.yarnrc
     ln -sf $HOME/dotfile/.tigrc ~/.tigrc
     ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
     ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage

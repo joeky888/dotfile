@@ -16,7 +16,9 @@ Init
 * $ create-react-native-app ProjectName
 * $ cd ProjectName
 * $ `rm -rf node_modules`
-* $ yarn install
+* $ npm install # or yarn install
+* $ npm install -g exp
+* $ exp path
 * Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
 * $ npm --verbose start
 * $ npm --verbose run android
