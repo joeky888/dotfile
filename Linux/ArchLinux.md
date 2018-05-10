@@ -19,8 +19,10 @@ CN packages like baidu pan
 [archlinuxcn]
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
-* sudo pacman -Syy && sudo powerpill -S archlinuxcn-keyring --noconfirm
-* sudo powerpill -S deepin-baidu-pan --noconfirm
+```sh
+sudo pacman -Syy && sudo powerpill -S --noconfirm --needed archlinuxcn-keyring
+sudo powerpill -S --noconfirm --needed wine-staging wine-mono wine_gecko cabextract zenity deepin-baidu-pan fcitx-sogoupinyin
+```
 
 Unstable and testing package (Manjaro)
 =====
