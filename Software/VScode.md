@@ -9,6 +9,7 @@ Setting
     "files.encoding": "utf8",
     "files.eol": "\r\n",
     "files.trimTrailingWhitespace": true,
+    "files.autoSave": "afterDelay",
     "powermode.enabled": true,
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai Dimmed",
