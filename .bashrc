@@ -282,7 +282,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.npmrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
@@ -301,7 +301,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.pip.ini ~/.pip/pip.conf
     ln -sf $HOME/dotfile/.condarc ~/.condarc
     ln -sf $HOME/dotfile/.npmrc ~/.npmrc
-    ln -sf $HOME/dotfile/.npmrc ~/.yarnrc
+    ln -sf $HOME/dotfile/.yarnrc ~/.yarnrc
     ln -sf $HOME/dotfile/.tigrc ~/.tigrc
     ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
     ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage
