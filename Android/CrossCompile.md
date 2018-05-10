@@ -23,7 +23,7 @@ export LDFLAGS="-static -L$SYSROOT/usr/lib -L$PWD/$ANDROID_ABI/sysroot/usr/lib -
 export CPPFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include/ -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include"
 ```
 
-Busybox (To be continued)
+Busybox (arm gcc)
 =====
 ```sh
 #sudo apt-fast install libpam0g-dev libsepol1-dev libselinux1-dev libncurses5-dev libncursesw5-dev -y
@@ -34,26 +34,29 @@ export ANDROID_ABI="arm-linux-androideabi"
 export PATH=$PWD/$ANDROID_ABI/bin:$PATH
 export CROSS_COMPILE="$ANDROID_ABI-"
 export CROSS_COMPILER_PREFIX="$ANDROID_ABI-"
-export CC="clang"
-export CXX="clang++"
+export CC="${CROSS_COMPILE}gcc"
+export CXX="${CROSS_COMPILE}g++"
 export ARCH="arm"
 export CFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export CPPFLAGS="-I$PWD/busybox/include -I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export LDFLAGS="-static -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
-export LDLIBS="-static -llog"
+export LDLIBS="-static -lm -Wl,--allow-multiple-definition"
 export SYSROOT="$PWD/platforms/android-16/arch-arm"
 
 cd ./busybox
 git reset --hard && git clean -xdf && \
-rm -f ./libbb/missing_syscalls.c
-rm -f ./miscutils/setfattr.c
+#rm -f ./libbb/missing_syscalls.c
+#rm -f ./miscutils/setfattr.c
+#rm -f ./archival/libarchive/data_extract_to_command.c
+#sed -e 's/.*FEATURE_PREFER_APPLETS.*/CONFIG_FEATURE_PREFER_APPLETS=y/' -i .config && \
+#sed -e 's/.*FEATURE_SH_STANDALONE.*/CONFIG_FEATURE_SH_STANDALONE=y/' -i .config && \
 # Try android2_defconfig or android_ndk_defconfig
-make CONFIG_SYSROOT="$SYSROOT" CONFIG_FEATURE_TOUCH_NODEREF=n CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" android_ndk_defconfig && \
 make clean && \
+make CONFIG_SYSROOT="$SYSROOT" CONFIG_FEATURE_TOUCH_NODEREF=n CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" android_ndk_defconfig && \
 make CONFIG_SYSROOT="$SYSROOT" CONFIG_FEATURE_TOUCH_NODEREF=n CONFIG_CROSS_COMPILER_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" CFLAGS="$CFLAGS" CC="$CC" CONFIG_EXTRA_LDLIBS="m c gcc" EXTRA_LDFLAGS="$LDFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS"
 ```
 
-Toybox
+Toybox (arm clang)
 =====
 ```sh
 cd android-ndk
@@ -61,10 +64,10 @@ git clone --depth 1 https://github.com/landley/toybox toybox
 
 export ANDROID_ABI="arm-linux-androideabi"
 export PATH=$PWD/$ANDROID_ABI/bin:$PATH
-export CC="clang"
-export CXX="clang++"
-export ARCH="arm"
 export CROSS_COMPILE="$ANDROID_ABI-"
+export CC="${CROSS_COMPILE}clang"
+export CXX="${CROSS_COMPILE}clang++"
+export ARCH="arm"
 export CFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export CPPFLAGS="-I$PWD/$ANDROID_ABI/sysroot/usr/include -I$PWD/sysroot/usr/include/$ANDROID_ABI -I$PWD/sysroot/usr/include -static"
 export LDFLAGS="-static -L$PWD/platforms/android-16/arch-arm/usr/lib -L$PWD/$ANDROID_ABI/sysroot/usr/lib -L$PWD/sysroot/usr/lib/$ANDROID_ABI"
