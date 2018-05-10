@@ -276,8 +276,8 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\pip.conf"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\pip.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
@@ -294,7 +294,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
     ln -sf $HOME/dotfile/.bashrc ~/.zshrc
     ln -sf $HOME/dotfile/.pythonrc ~/.pythonrc
-    ln -sf $HOME/dotfile/pip.conf ~/.pip/pip.conf
+    ln -sf $HOME/dotfile/.pip.ini ~/.pip/pip.conf
     ln -sf $HOME/dotfile/.condarc ~/.condarc
     ln -sf $HOME/dotfile/.tigrc ~/.tigrc
     ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
