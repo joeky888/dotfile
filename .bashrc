@@ -478,7 +478,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   function update_prompt() {
     NEWLINE_NO_OMZ=$'\n'
     # %B=light_color %F=color %K=background
-    PROMPT="%B%K{red}%F{white} %n %B%K{yellow} %K{green} %M %F{yellow}%B%K{blue} %~ %B%F{yellow}%B%K{black} $(git_branch_info) "${NEWLINE_NO_OMZ}"%b%K{black}%F{white}%{$reset_color%}➜  "
+    PROMPT="%B%K{red}%F{white} %n %K{yellow} %K{green} %M %F{yellow}%K{blue} %~ %F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}%{$reset_color%}➜  "
   }
   update_prompt
   add-zsh-hook chpwd update_prompt
