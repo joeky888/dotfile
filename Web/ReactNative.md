@@ -17,13 +17,12 @@ Init
 * $ cd ProjectName
 * $ `rm -rf node_modules`
 * $ npm install # or yarn install
-* $ npm install -g exp
-* $ exp path
 * Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
 * $ npm --verbose start
 * $ npm --verbose run android
 * $ npm --verbose run ios
 * Press capital `R` in terminal to restart and clear cache
+* $ cd .. && react-native init ProjectName # Ejecting Expo, Create android and ios folder
 
 Run with vscode
 =====
