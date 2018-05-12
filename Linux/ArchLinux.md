@@ -28,3 +28,11 @@ Unstable and testing package (Manjaro)
 =====
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
 * $ sudo pacman-mirrors --fasttrack 5
+
+Install virtualbox
+=====
+* $ uname -a # Get kernel version
+* $ sudo powerpill -S virtualbox
+* $ sudo powerpill -S [kernel version]-virtualbox-host-modules
+* $ sudo modprobe vboxdrv
+* $ sudo gpasswd -a $(whoami) vboxusers
