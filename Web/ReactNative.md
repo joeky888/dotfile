@@ -18,7 +18,7 @@ Init
 * $ `rm -rf node_modules`
 * $ npm install # or yarn install
 * Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
-* $ npm --verbose start
+* $ rm -f package-lock.json yarn.lock ; npm --verbose --reset-cache start
 * $ npm --verbose run android
 * $ npm --verbose run ios
 * Press capital `R` in terminal to restart and clear cache
