@@ -97,7 +97,7 @@ Packages
 * Manjaro
   * $ sudo pacman -Rs vim --noconfirm; sudo pacman -Qdtq | pacman -Rs -
   * $ sudo powerpill -S --noconfirm --needed laptop-mode-tools # For laptop, in case deepin is unable to reboot
-  * $ sudo powerpill -S --noconfirm --needed gvim fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool android-tools opera opera-ffmpeg-codecs nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab
+  * $ sudo powerpill -S --noconfirm --needed gvim fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool android-tools opera opera-ffmpeg-codecs chromium nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab
   * $ yaourt -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin earlyoom
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
