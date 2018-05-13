@@ -52,7 +52,6 @@ Extension
 * Secure Shell Extension
 * ZScaler Bypass (for ASUS ZScaler)
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
-* Free Proxy to Unblock any sites (For pan.baidu.com)
 * Turbo Download Manager (Opera Extension)
 * 飛比價格購物幫手
 * Monokai for Chrome:
@@ -60,6 +59,8 @@ Extension
     * Open DevTools -> settings -> experiments -> Allow custom UI themes -> Check
 * LXRSS
     * Custom New Tab Page (Opera Extension) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
+* Deprecated
+    * Free Proxy to Unblock any sites (For pan.baidu.com, EDIT: Use Opera VPN instead)
 
 RSS list
 =====

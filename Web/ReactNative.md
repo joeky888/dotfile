@@ -46,7 +46,7 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.4.1-all.zip
 ```
 * Install `React Native Tools` `React Native snippets` vscode extension
 * Open myapp using vscode
-* Create `.vscode/tasks.json` to build apk
+* Create `.vscode/tasks.json` to build .apk or .ipa
     * Add `JAVA_HOME` and `ANDROID_HOME` to tasks.json (also setting $PATH)
     * One can also add proxy in the tasks.json, like this
         * `./gradlew -Dhttp.proxyHost=10.78.20.186 -Dhttp.proxyPort=3128 -Dhttps.proxyHost=10.78.20.186 -Dhttps.proxyPort=3129 -Dhttps.proxyUser=kungfu -Dhttps.proxyPassword=howkungfu`

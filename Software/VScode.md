@@ -27,6 +27,8 @@ Extension
 =====
 * HookyQR.beautify
 * hoovercj.vscode-power-mode
+* dbaeumer.vscode-eslint
+* streetsidesoftware.code-spell-checker
 
 Key
 =====
