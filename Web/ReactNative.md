@@ -44,7 +44,7 @@ repositories {
 ```conf
 distributionUrl=https\://services.gradle.org/distributions/gradle-4.4.1-all.zip
 ```
-* Install `React Native Tools` vscode extension
+* Install `React Native Tools` `React Native snippets` vscode extension
 * Open myapp using vscode
 * Create `.vscode/tasks.json` to build apk
     * Add `JAVA_HOME` and `ANDROID_HOME` to tasks.json (also setting $PATH)

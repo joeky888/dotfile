@@ -58,7 +58,8 @@ Key
     { "key": "ctrl+h", "command": "editor.action.startFindReplaceAction" },
     { "key": "ctrl+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "ctrl+b", "command": "HookyQR.beautify",
-        "when": "editorTextFocus" }
+        "when": "editorTextFocus" },
+    { "key": "alt+enter", "command": "editor.action.quickFix"}
 ]
 ```
 
