@@ -200,6 +200,7 @@ Android
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
+* APKPure - Google Play alternative
 * F-Droid
     * Firefox Klar (5.0+) / Fennec (4.1+)
     * Newpipe
