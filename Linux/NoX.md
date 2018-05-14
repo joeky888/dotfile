@@ -59,6 +59,8 @@ Mouse without x
     * $ vim --version | grep gpm # Check vim gpm support
     * :set mouse=a
     * :set ttymouse=xterm
+    * Edit .tmux.conf
+    * set -g mouse off
 
 Mount a USB drive
 =====
