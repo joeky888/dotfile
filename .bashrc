@@ -94,7 +94,7 @@ fi
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH
-  alias upgradeNpm='~/node/bin/npm update -g'
+  alias upgradeNpm='~/node/bin/npm install -g npm@latest ; ~/node/bin/npm update -g'
 fi
 
 if [[ -d "$HOME/zulu" ]]; then
