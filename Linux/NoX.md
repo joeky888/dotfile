@@ -51,7 +51,7 @@ color-15=FFFFFF
 Mouse without x
 =====
 * Make sure fbterm is installed and functional
-* $ sudo apt-fast install gpm
+* $ sudo apt-fast install gpm -y
 * $ sudo reboot
 * Left mouse click is Copy
 * Right mouse click is Paste

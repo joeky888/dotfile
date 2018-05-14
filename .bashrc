@@ -114,6 +114,10 @@ if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
 fi
 
+if [[ -d "/usr/sbin" ]]; then
+  export PATH=$PATH:/usr/sbin
+fi
+
 if [[ -d "/data/local/tmp" ]]; then
   # This is for Android
   # adb push ./aria2c /data/local/tmp
