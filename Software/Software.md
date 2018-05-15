@@ -62,6 +62,7 @@ CLI
 * Aria2
 * Google-drive-ocamlfuse
 * Docker
+* Micro (text editor written in go)
 
 Dev
 =====
@@ -129,6 +130,7 @@ Windows XP
 * Microsoft .NET Framework Repair Tool
 * Microsoft .NET Framework Cleanup Tool
 * Gvim
+* Micro (text editor written in go)
 * Notepad++
 * Sublime Text 2/3
 * 7zip
