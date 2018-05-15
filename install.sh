@@ -213,6 +213,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   brew update
   brew install git vim ffmpeg aria2 tig tmux p7zip rsync mas grc qpdf
   brew cask install macvim iterm2
+  chsh -s $(command -v zsh) $(whoami)
 #   brew linkapps
   InstallMinicondaMac
   InstallDotfile
