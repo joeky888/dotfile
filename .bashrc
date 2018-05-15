@@ -626,7 +626,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     # USER@DOMAIN directory
-    export PS1="${COLOR_BG_LIGHT_RED}\u${COLOR_BG_LIGHT_YELLOW}@${COLOR_BG_LIGHT_GREEN}\h${COLOR_BG_RESET}➜ ${COLOR_BG_LIGHT_BLUE}\w${COLOR_RESET}\n\$ "
+    export PS1="${COLOR_BG_LIGHT_RED} \u ${COLOR_BG_LIGHT_YELLOW} ${COLOR_BG_LIGHT_GREEN} \h ${COLOR_BG_RESET}➜ ${COLOR_BG_LIGHT_BLUE} \w ${COLOR_RESET}\n\$ "
   fi
 fi
 
