@@ -53,6 +53,7 @@ CLI
 * youtube-dl
 * you-get / Lulu
 * ykdl
+* speedtest-cli
 * glances
 * danmaku2ass (m13253)
 * TestDisk / PhotoRec

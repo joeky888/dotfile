@@ -122,6 +122,7 @@ InstallPIP()
   echo y | $SUDO pip install you-get
   echo y | $SUDO pip install ykdl
   echo y | $SUDO pip install bypy
+  echo y | $SUDO pip install speedtest-cli
 }
 
 InstallMinicondaLinux()
@@ -132,6 +133,7 @@ InstallMinicondaLinux()
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
+  echo y | ~/Miniconda3/bin/pip install speedtest-cli
 }
 
 InstallMinicondaMac()
@@ -142,6 +144,7 @@ InstallMinicondaMac()
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
+  echo y | ~/Miniconda3/bin/pip install speedtest-cli
 }
 
 
