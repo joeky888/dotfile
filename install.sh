@@ -172,7 +172,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
   ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
   ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
-  $SUDO chsh -s $(command -v zsh) root
+  [[ $(command -v zsh) ]] && $SUDO chsh -s $(command -v zsh) root
+  [[ $(command -v zsh) ]] && chsh -s $(whoami)
   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
   $SUDO chmod 755 /usr/bin/reconnect
   $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
