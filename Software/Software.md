@@ -100,7 +100,7 @@ Windows
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
-    * $ scoop install vim busybox qemu micro
+    * $ scoop install vim busybox qemu micro win32-openssh
 ```sh
 # "" means "(Default)" which equals "@"
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
