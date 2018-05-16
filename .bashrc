@@ -20,10 +20,6 @@ elif [[ "$TERM" == "screen"* ]]; then
   export TERM=screen-256color
 fi
 
-if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ] && [ command -v tmux ]; then
-  tmux attach-session || tmux new-session
-fi
-
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
@@ -35,12 +31,12 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
       exec fbterm -- bash -c 'TERM=fbterm exec tmux'
     fi
   else
-#     Disable byobu because it breaks colors of vim
-#     if [ $(command -v byobu) ] ; then
-#       exec byobu
-#     else
+#     Disable byobu because if it breaks colors of vim
+    if [ $(command -v byobu) ] ; then
+      exec byobu
+    else
       exec tmux
-#     fi
+    fi
   fi
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] ; then
   export ZSH_IS_RUNNING=1
