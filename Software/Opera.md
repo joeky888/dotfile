@@ -53,6 +53,7 @@ Extension
 * ZScaler Bypass (for ASUS ZScaler)
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Turbo Download Manager (Opera Extension)
+* Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
 * 飛比價格購物幫手
 * Monokai for Chrome:
     * chrome://flags -> Developer Tools experiments (or chrome://flags/#enable-devtools-experiments) -> enable -> Relaunch Now
