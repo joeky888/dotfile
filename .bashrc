@@ -31,11 +31,12 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
       exec fbterm -- bash -c 'TERM=fbterm exec tmux'
     fi
   else
-    if [ $(command -v byobu) ] ; then
-      exec byobu
-    else
+#     Disable byobu because it breaks colors of vim
+#     if [ $(command -v byobu) ] ; then
+#       exec byobu
+#     else
       exec tmux
-    fi
+#     fi
   fi
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] ; then
   export ZSH_IS_RUNNING=1
