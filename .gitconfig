@@ -1,38 +1,38 @@
 [user]
-    name = Joeky Zhan
-    email = jj16180339887@gmail.com
+	name = Joeky Zhan
+	email = jj16180339887@gmail.com
 [rerere]
-    enabled = 1
-    autoupdate = 1
+	enabled = 1
+	autoupdate = 1
 [color]
-    ui = auto
+	ui = auto
 [diff]
-    tool = vimdiff3
+	tool = vimdiff3
 [difftool]
-    prompt = false
+	prompt = false
 [http]
-    sslVerify = false
+	sslVerify = false
 [commit]
-    template = ~/.gitmessage
+	template = ~/.gitmessage
 [merge]
-    conflictstyle = diff3
-    tool = vimdiff3
+	conflictstyle = diff3
+	tool = vimdiff3
 [gui]
-    encoding = utf-8
+	encoding = utf-8
 [mergetool]
-    prompt = false
+	prompt = false
 [pull]
-    rebase = true
+	rebase = true
 [alias]
-    history = log -p
-    summary = log --stat
+	history = log -p
+	summary = log --stat
 [core]
-    editor = vim -c 'normal! gg'
-    autocrlf = false
-    safecrlf = false
-    fileMode = true
-    quotepath = false
-    pager = vim +' \
+	editor = vim -c 'normal! gg'
+	autocrlf = false
+	safecrlf = false
+	fileMode = true
+	quotepath = false
+	pager = vim +' \
 setlocal gdefault |\
 %sm/\\e.\\{-}m//e |\
 setlocal ft=git |\
@@ -55,7 +55,7 @@ let aaa = matchstr( aaa, \"\\\\d\\\\+\" ) |\
 let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
 let aaa = aaa == \"\" ? \"+0\" : \"+\".aaa |\
 let ddd = ddd == \"\" ? \"-0\" : \"-\".ddd |\
-echohl iBlueInfo | echon \"     Info     \" |\
+echohl iBlueInfo | echon \"		Info	 \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -

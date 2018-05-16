@@ -20,6 +20,10 @@ elif [[ "$TERM" == "screen"* ]]; then
   export TERM=screen-256color
 fi
 
+if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ] && [ command -v tmux ]; then
+  tmux attach-session || tmux new-session
+fi
+
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
