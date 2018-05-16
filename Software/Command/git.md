@@ -61,3 +61,27 @@ Git push won't do anything (Everything up-to-date)
 * Switch back to master
 * $ git checkout master
 * $ git push origin master
+
+Gogs server push-to-deploy (Just like another git mirror)
+=====
+* gitRepo means git server to push
+* webSite means website to depoly from gitRepo
+* Add git hooks gitRepo/.git/hooks
+* $ chmod u+x gitRepo/.git/hooks
+* $ vim gitRepo/.git/hooks
+```sh
+#!/bin/bash
+while read oldrev newrev refname
+do
+    branch=$(git rev-parse --symbolic --abbrev-ref $refname)
+    if [ "master" == "$branch" ]; then
+        export GIT_WORK_TREE=/home/joeky/webSite
+        export GIT_DIR=${GIT_WORK_TREE}/.git
+
+        cd ${GIT_WORK_TREE}
+        git pull origin master
+        git reset --hard origin/master
+    fi
+done
+```
+* $ cd /home/joeky && git clone http://server/gitRepo webSite

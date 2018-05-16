@@ -17,6 +17,12 @@ Convert .pem to .crt
 openssl x509 -in input.pem -inform PEM -out output.crt
 ```
 
+Convert .crt to .pem
+=====
+```sh
+openssl x509 -in input.crt -out output.pem -outform PEM
+```
+
 View a .crt file
 =====
 ```sh
