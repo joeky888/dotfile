@@ -184,11 +184,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
     pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
-    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig --noconfirm --needed
+    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances bind-tools rsync python3 wget tig htop --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
