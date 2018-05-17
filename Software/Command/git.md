@@ -62,7 +62,7 @@ Git push won't do anything (Everything up-to-date)
 * $ git checkout master
 * $ git push origin master
 
-Gogs server push-to-deploy (Just like another git mirror)
+Gogs server push-to-deploy (Make a git hook just like a git mirror)
 =====
 * gitRepo means git server to push
 * webSite means website to depoly from gitRepo
