@@ -78,6 +78,10 @@ do
         export GIT_WORK_TREE=/home/joeky/webSite
         export GIT_DIR=${GIT_WORK_TREE}/.git
 
+        echo "Hi ${GOGS_AUTH_USER_NAME}, thank you so much for your efforts!"
+        echo "Now I am going to mirror this project to ${GIT_WORK_TREE}."
+        echo "Hold tight..."
+
         cd ${GIT_WORK_TREE}
         git pull origin master
         git reset --hard origin/master
