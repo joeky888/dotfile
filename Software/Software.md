@@ -32,6 +32,7 @@ Software
 * qTox
 * Cheat Engine
 * WPS Office (Hong Kong)
+* SoftMaker FreeOffice
 * Libre Office
 * GSView
 * Nomacs
