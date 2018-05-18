@@ -98,7 +98,8 @@ Packages
   * $ sudo pacman -Rs vim --noconfirm; sudo pacman -Qdtq | pacman -Rs -
   * $ sudo powerpill -S --noconfirm --needed laptop-mode-tools # For laptop, in case deepin is unable to reboot
   * $ sudo powerpill -S --noconfirm --needed gvim fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool android-tools opera opera-ffmpeg-codecs chromium nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab ; sudo pacman -R --noconfirm xarchiver
-<!--   * $ yaourt -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin earlyoom # Use Arch CN repo instaed -->
+  * $ yaourt -S earlyoom
+<!--   * $ yaourt -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
 * $ sudoedit /etc/systemd/system/earlyoom.service # Or

@@ -21,7 +21,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 sudo pacman -Syy && sudo powerpill -S --noconfirm --needed archlinuxcn-keyring
-sudo powerpill -S --noconfirm --needed wine-staging wine-mono wine_gecko cabextract zenity deepin-baidu-pan fcitx-sogoupinyin
+sudo powerpill -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office
 ```
 
 Unstable and testing package (Manjaro)
