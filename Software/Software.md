@@ -49,22 +49,27 @@ Software
 CLI
 =====
 * Miniconda
+    * youtube-dl
+    * you-get / Lulu
+    * ykdl
+    * bypy
+    * speedtest-cli
+    * glances
+    * danmaku2ass (m13253)
+* Go
+    * BaiduPCS-Go
+    * Micro (text editor)
+* Nodejs
+    * gtop
+    * git-stats
 * BusyBox / Toybox
 * Neofetch
-* youtube-dl
-* you-get / Lulu
-* ykdl
-* Bypy / BaiduPCS-Go
-* speedtest-cli
-* glances
-* danmaku2ass (m13253)
 * TestDisk / PhotoRec
 * FFmpeg
 * OpenCC
 * Aria2
 * Google-drive-ocamlfuse
 * Docker
-* Micro (text editor written in go)
 
 Dev
 =====
