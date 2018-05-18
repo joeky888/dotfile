@@ -100,7 +100,8 @@ fi
 
 if [[ -d "$HOME/go" ]]; then
   export PATH=$HOME/go/bin:$PATH
-  export GOPATH="$HOME/go"
+  export GOROOT="$HOME/go"
+  export GOPATH="$HOME/gotool"
 fi
 
 if [[ -d "$HOME/zulu" ]]; then
