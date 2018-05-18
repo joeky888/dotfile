@@ -98,6 +98,11 @@ if [[ -d "$HOME/node" ]]; then
   alias upgradeNpm='~/node/bin/npm install -g npm@latest ; ~/node/bin/npm update -g'
 fi
 
+if [[ -d "$HOME/go" ]]; then
+  export PATH=$HOME/go/bin:$PATH
+  export GOPATH="$HOME/go"
+fi
+
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
   export JAVA_HOME=~/zulu
