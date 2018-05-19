@@ -229,6 +229,10 @@ Android
     * Alpha VNC (beta) (No root, Android 5.0+)
     * Entware-ng (root, Termux alternative, Android 4.2.2+)
 
+iOS
+=====
+* Cydia
+
 Gaming
 =====
 * Mumu - Android emulator
