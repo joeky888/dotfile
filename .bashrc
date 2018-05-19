@@ -493,7 +493,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   function update_prompt() {
     NEWLINE_NO_OMZ=$'\n'
     # %B=light_color %F=color %K=background
-    PROMPT="%B%K{red}%F{white} %n %K{yellow} %K{green} %M %F{yellow}%K{blue} %~ %F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}> "
+    PROMPT="╭─%B%K{red}%F{white} %n %K{yellow} %K{green} %M %F{yellow}%K{blue} %~ %F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
   }
   update_prompt
   add-zsh-hook chpwd update_prompt
@@ -638,7 +638,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     # USER@DOMAIN directory
-    export PS1="${COLOR_BG_LIGHT_RED} \u ${COLOR_BG_LIGHT_YELLOW} ${COLOR_BG_LIGHT_GREEN} \h ${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_RESET}\n\$ "
+    export PS1="╭─${COLOR_BG_LIGHT_RED} \u ${COLOR_BG_LIGHT_YELLOW} ${COLOR_BG_LIGHT_GREEN} \h ${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_RESET}\n╰─\$ "
   fi
 fi
 

@@ -22,7 +22,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 sudo pacman -Syy && sudo powerpill -S --noconfirm --needed archlinuxcn-keyring
-sudo powerpill -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-sarasa-gothic
+sudo powerpill -S --noconfirm --needed visual-studio-code-bin teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term
 ```
 
 Unstable and testing package (Manjaro)
