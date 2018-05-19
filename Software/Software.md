@@ -59,6 +59,12 @@ CLI
 * Go
     * BaiduPCS-Go
     * Micro (text editor)
+```sh
+# $ go help get
+go get -u -v github.com/iikira/BaiduPCS-Go
+BaiduPCS-Go config set -max_parallel 250
+BaiduPCS-Go config set -savedir $HOME/Desktop
+```
 * Nodejs
     * gtop
     * git-stats

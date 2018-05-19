@@ -99,9 +99,11 @@ if [[ -d "$HOME/node" ]]; then
 fi
 
 if [[ -d "$HOME/go" ]]; then
-  export PATH=$HOME/go/bin:$PATH
   export GOROOT="$HOME/go"
-  export GOPATH="$HOME/gotool"
+  export GOPATH="$GOROOT/tool"
+  export PATH=$GOROOT/bin:$PATH
+  export PATH=$GOPATH/bin:$PATH
+  alias upgradeGo='~/go/bin/go get -insecure -v -u all'
 fi
 
 if [[ -d "$HOME/zulu" ]]; then
