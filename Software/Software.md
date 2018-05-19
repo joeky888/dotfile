@@ -232,6 +232,7 @@ Android
 iOS
 =====
 * Cydia
+    * NewTerm 2
 
 Gaming
 =====
