@@ -97,7 +97,7 @@ Packages
 * Manjaro
   * $ sudo pacman -Rs vim --noconfirm; sudo pacman -Qdtq | pacman -Rs -
   * $ sudo powerpill -S --noconfirm --needed laptop-mode-tools # For laptop, in case deepin is unable to reboot
-  * $ sudo powerpill -S --noconfirm --needed gvim fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool noto-fonts-emoji android-tools opera opera-ffmpeg-codecs chromium nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab ; sudo pacman -R --noconfirm xarchiver
+  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-sogoupinyin noto-fonts-emoji android-tools opera opera-ffmpeg-codecs chromium nomacs qpdf file-roller vlc obs-studio evince gnome-disk-utility baobab ; sudo pacman -R --noconfirm xarchiver
   * $ yaourt -S earlyoom
 <!--   * $ yaourt -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
@@ -116,9 +116,9 @@ Disable Gnome keyring when opening the browser
 * $ sudo aptitude install seahorse -y
 * $ seahorse
 
-Install Pinyin IM (Manjaro)
+Install Rime Pinyin IME (Manjaro)
 =====
-* $ sudo powerpill -S --noconfirm --needed fcitx fcitx-rime fcitx-im fcitx-configtool
+* $ sudo powerpill -S --noconfirm --needed fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
 * Goto fcitx settings, add Rime, remove all other IMEs
 * $ mkdir -p ~/.config/fcitx/rime/
 * $ vim ~/.config/fcitx/rime/default.custom.yaml
