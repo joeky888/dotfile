@@ -84,3 +84,9 @@ Listen to music without x
 * $ alsamixer # Adjust volume
 * $ vlc -I ncurses --random ~/Music/\*.mp3
 * If there is no sound in virtualbox, switch the audio card in virtualbox setting
+
+Show all network interfaces
+=====
+* $ ip a
+* $ ip address
+* $ ifconfig -a
