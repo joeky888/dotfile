@@ -110,6 +110,12 @@ ExecStart=/usr/bin/earlyoom -m 3
 ```
 * $ sudo systemctl restart earlyoom.service
 * $ sudo systemctl daemon-reload
+* $ vim ~/.xprofile
+```sh
+export GTK_IM_MODULE=fcitx
+export QT_IM_MODULE=fcitx
+export XMODIFIERS="@im=fcitx"
+```
 
 Disable Gnome keyring when opening the browser
 =====
