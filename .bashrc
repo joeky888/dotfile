@@ -269,6 +269,7 @@ upgradeDotfile() {
   rm -rf ~/.gitmessage
   rm -rf ~/.fbtermrc
   rm -rf ~/.Xresources
+  rm -rf ~/.xprofile
   rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
@@ -320,6 +321,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.gitconfig ~/.gitconfig
     ln -sf $HOME/dotfile/.gitmessage ~/.gitmessage
     ln -sf $HOME/dotfile/.fbtermrc ~/.fbtermrc
+    ln -sf $HOME/dotfile/.xprofile ~/.xprofile
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc

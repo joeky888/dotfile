@@ -17,6 +17,7 @@ InstallDotfile()
   rm -rf ~/.gitmessage
   rm -rf ~/.fbtermrc
   rm -rf ~/.Xresources
+  rm -rf ~/.xprofile
   rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
@@ -39,6 +40,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.npmrc ~/.npmrc
   ln -sf $Home/dotfile/.yarnrc ~/.yarnrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
+  ln -sf $Home/dotfile/.xprofile ~/.xprofile
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/.config/nvim/
