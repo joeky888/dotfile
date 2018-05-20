@@ -28,6 +28,7 @@ sudo powerpill -S --noconfirm --needed visual-studio-code-bin teamviewer skypefo
 Unstable and testing package (Manjaro)
 =====
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
+* $ sudo pacman-mirrors -f 0
 
 Install virtualbox
 =====
