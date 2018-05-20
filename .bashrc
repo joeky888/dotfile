@@ -409,7 +409,7 @@ if [ $(command -v grc) ] ; then
 
   # Set alias for available commands.
   for cmd in $cmds ; do
-    [[ $(command -v $cmds) ]] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
+    [[ $(command -v $cmd) ]] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
   done
 
   alias configure='grc -es --colour=auto ./configure'
