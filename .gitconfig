@@ -55,6 +55,7 @@ let aaa = matchstr( aaa, \"\\\\d\\\\+\" ) |\
 let ddd = matchstr( ddd, \"\\\\d\\\\+\" ) |\
 let aaa = aaa == \"\" ? \"+0\" : \"+\".aaa |\
 let ddd = ddd == \"\" ? \"-0\" : \"-\".ddd |\
+exe \"set ul=-1 | m-1 | let &ul=\" . &ul |\
 echohl iBlueInfo | echon \"		Info	 \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
