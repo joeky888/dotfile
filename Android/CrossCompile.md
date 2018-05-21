@@ -1,9 +1,10 @@
 TODO
 =====
-* aria2 busybox p7zip ffmpeg nano zsh curl openssh-server
-* aria2: try https://github.com/lancethepants/aria2-arm-musl-static
+* aria2 busybox p7zip ffmpeg nano zsh curl openssh
+    * aria2: try https://github.com/lancethepants/aria2-arm-musl-static
+    * ssh: try mobile-shell (mosh)
 
-Use clang
+Prepare gcc/clang cross compiler
 =====
 ```sh
 cd android-ndk
