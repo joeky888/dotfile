@@ -1,7 +1,7 @@
 #!/bin/bash
 
 while true; do
-  sleep 20s
+  sleep 40s
   if ! ping -c 1 -W 3 8.8.8.8 | grep -q -i "ttl"; then
 #     systemctl restart dnsmasq.service
 #     systemctl restart systemd-hostnamed.service
