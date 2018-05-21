@@ -114,6 +114,7 @@ Windows
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
+    * $ scoop bucket add rasa https://github.com/rasa/scoops.git
     * $ scoop install vim busybox qemu micro win32-openssh noto-fonts
 ```sh
 # "" means "(Default)" which equals "@"
