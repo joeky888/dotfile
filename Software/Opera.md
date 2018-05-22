@@ -38,6 +38,7 @@ Extension
 * Tampermonkey
 * RightToCopy
 * Set Character Encoding
+* HackBar
 * User-Agent Switcher for Chrome by Google
 * HTTPS Everywhere
 * Disconnect
