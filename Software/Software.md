@@ -323,6 +323,7 @@ Dev Tools
     * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
 * CLI
     * Pure Python, Python libs written in pure python
+    * Go, static compile by default (single executable file) and easily cross-compile to other platforms
     * C and C++, could be built by gcc and mingw
 * Linux CLI/Driver
     * Fbterm, modify the source of the Fbterm
