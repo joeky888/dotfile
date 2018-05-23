@@ -1,4 +1,5 @@
 ssl_verify: false
 channels:
-  - conda-forge
   - defaults
+  - conda-forge
+  - bioconda
