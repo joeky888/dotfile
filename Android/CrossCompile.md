@@ -3,6 +3,7 @@ TODO
 * aria2 busybox p7zip ffmpeg nano zsh curl openssh
     * aria2: try https://github.com/lancethepants/aria2-arm-musl-static
     * ssh: try mobile-shell (mosh)
+    * Busybox/Toybox: try GoBox
 
 Prepare gcc/clang cross compiler
 =====
