@@ -52,6 +52,7 @@ CLI
     * youtube-dl
     * you-get / Lulu
     * ykdl
+    * streamlink
     * bypy
     * speedtest-cli
     * glances
