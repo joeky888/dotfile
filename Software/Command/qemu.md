@@ -39,3 +39,13 @@ ReactOS
 qemu-img create -f qcow2 ReactOS.qcow2 10G
 qemu-system-i386 -m 1024M -boot c -cdrom ReactOS.iso -hda ReactOS.qcow2 -localtime -net "nic,model=ne2k_pci" -net user -serial file:ReactOS.log
 ```
+
+Resize a disk file
+=====
+* Download gparted.iso
+```
+qemu-img resize disk.qcow2 +10G
+qemu-system-i386 -m 1024M -boot c -cdrom gparted.iso -hda disk.qcow2
+```
+* Enter to gparted GUI menu -> Partition -> Check
+* Disk size will be resized after checking finished
