@@ -1,5 +1,6 @@
 Install Yocto Linux armv8 using qemu on Linux host
 =====
+* Original doc here `https://www.yoctoproject.org/docs/1.8/yocto-project-qs/yocto-project-qs.html`
 * Download Yocto toolchain
     * Take version 2.5 for example
     * `http://downloads.yoctoproject.org/releases/yocto/yocto-2.5/toolchain/x86_64/poky-glibc-x86_64-core-image-sato-aarch64-toolchain-2.5.sh`
