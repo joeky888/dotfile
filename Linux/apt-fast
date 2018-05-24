@@ -2,7 +2,7 @@
 
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
-APT=$([ command -v apt ] && echo "apt" || echo "apt-get")
+APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
 
 if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
   cd /var/cache/apt/archives/;
