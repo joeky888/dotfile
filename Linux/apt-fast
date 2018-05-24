@@ -2,11 +2,14 @@
 
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
+APT=$([ command -v apt ] && echo "apt" || echo "apt-get")
+
 if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
   cd /var/cache/apt/archives/;
 
   DOWNLOADARGS='-c -s16 -k1M -x16'
   DNS="--async-dns-server=8.8.8.8,180.76.76.76"
+
   if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then
     DNS=""
   fi
@@ -17,7 +20,7 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"
   # Create new jobs
   apt-get -y --print-uris $@ | egrep -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
 elif echo "$@" | grep -q "update"; then
-  apt -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
+  $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
 fi
 
-apt $@ && rm -rf /var/cache/apt/archives/apt-fast.list
+$APT $@ && rm -rf /var/cache/apt/archives/apt-fast.list
