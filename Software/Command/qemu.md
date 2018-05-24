@@ -43,7 +43,7 @@ qemu-system-i386 -m 1024M -boot c -cdrom ReactOS.iso -hda ReactOS.qcow2 -localti
 Resize a disk file
 =====
 * Download gparted.iso
-```
+```sh
 qemu-img resize disk.qcow2 +10G
 qemu-system-i386 -m 1024M -boot c -cdrom gparted.iso -hda disk.qcow2
 ```
