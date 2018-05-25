@@ -133,6 +133,11 @@ if [[ -d "/data/local/tmp" ]]; then
   export PATH=$PATH:/data/local/tmp
 fi
 
+if [[ -d "/opt/bin" ]]; then
+  # This is for opkg
+  export PATH=$PATH:/opt/bin
+fi
+
 [[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 [[ $(command -v pip) ]] && alias pip='pip'
