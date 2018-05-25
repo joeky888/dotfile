@@ -185,7 +185,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO chmod 755 /lib/systemd/system/reconnect.service
   $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
   $SUDO systemctl enable reconnect.service
-  $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
+#   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
