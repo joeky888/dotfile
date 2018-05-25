@@ -28,7 +28,7 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
     if [ $(command -v byobu) ] ; then
       exec fbterm -- bash -c 'TERM=fbterm exec byobu'
     else
-      exec fbterm -- bash -c 'TERM=fbterm && [[ $(tmux ls) ]] && exec tmux attach || exec tmux'
+      exec fbterm -- bash -c 'TERM=fbterm && [[ tmux ls >/dev/null 2>&1 ]] && exec tmux attach || exec tmux'
     fi
   else
 #     Disable byobu because if it breaks colors of vim
