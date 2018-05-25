@@ -125,7 +125,7 @@ InstallPIP()
   echo y | $SUDO pip install ykdl
   echo y | $SUDO pip install bypy
   echo y | $SUDO pip install speedtest-cli
-  echo y | $SUDO pip install streamlink
+  echo y | $SUDO pip install ptpython
 }
 
 InstallMinicondaLinux()
@@ -137,7 +137,7 @@ InstallMinicondaLinux()
   echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
-  echo y | ~/Miniconda3/bin/pip install streamlink
+  echo y | ~/Miniconda3/bin/pip install ptpython
 }
 
 InstallMinicondaMac()
@@ -149,7 +149,7 @@ InstallMinicondaMac()
   echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install bypy
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
-  echo y | ~/Miniconda3/bin/pip install streamlink
+  echo y | ~/Miniconda3/bin/pip install ptpython
 }
 
 
