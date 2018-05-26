@@ -88,9 +88,17 @@ if ! [ -z $CONDA_3 ]; then
   alias pip3='$CONDA_3/bin/pip'
   alias upgradeConda3='$CONDA_3/bin/conda update -n base conda -y; $CONDA_3/bin/conda update --all --yes'
   if [[ -n "$ZSH_VERSION" ]]; then
-    eval "`pip3 completion --zsh`"
+    function _pip_completion {
+      local words cword
+      read -Ac words
+      read -cn cword
+      reply=( $( COMP_WORDS="$words[*]" \
+                 COMP_CWORD=$(( cword-1 )) \
+                 PIP_AUTO_COMPLETE=1 pip3 ) )
+    }
+    compctl -K _pip_completion pip
   elif [[ -n "$BASH_VERSION" ]]; then
-    eval "`pip3 completion --bash`"
+    eval "`pip completion --bash`"
   fi
   upgradePip3() { $CONDA_3/bin/pip install --upgrade pip && $CONDA_3/bin/pip install --upgrade $(pip freeze -l | sed "s/==.*//") && $CONDA_3/bin/pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $CONDA_3/bin/pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
