@@ -15,7 +15,7 @@ Error_List.append( "https://www.bilibili.com/video/av7931969/?p=8" )
 Error_List.append( "https://www.bilibili.com/video/av7931969/?p=9" )
 
 DOWNLOADER="youtube-dl"
-DOWNLOADER_ARGS='-o "%(title)s.%(ext)s" --external-downloader aria2c --external-downloader-args "-c -s16 -k1M -x16 -j16"'
+DOWNLOADER_ARGS='-o --external-downloader aria2c --external-downloader-args "-c -s16 -k1M -x16 -j16"'
 
 # Remove duplicates
 Error_List = list(set(Error_List))
