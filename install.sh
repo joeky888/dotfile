@@ -200,6 +200,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
   fc-cache -fv
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+  if [ -n "$SUDO" ]; then
+    sudo bash -c 'find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc'
+  else
+    find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
+  fi
   InstallMinicondaLinux
   InstallGRC
   InstallPy3UTF8
