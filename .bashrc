@@ -537,7 +537,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
   unsetopt AUTOCD # Don't cd to the directory by just typing its name
   setopt INC_APPEND_HISTORY # Use bash-like history
-  [ $(command -v pip) ] && eval "`pip completion --zsh`"
+  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check`"
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
@@ -592,7 +592,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
       source $f
     done
   fi
-  [ $(command -v pip) ] && eval "`pip completion --bash`"
+  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check`"
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   export HISTFILESIZE=
   export HISTSIZE=
