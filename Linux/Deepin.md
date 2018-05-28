@@ -34,8 +34,7 @@ After installed
 * $ sudoedit /etc/apt/sources.list -> Use "unstable"
 ```debsources
 deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contrib non-free universe
-# This one is optional
-deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free
+deb [by-hash=force] http://packages.deepin.com/deepin/ unstable main contrib non-free universe
 ```
 * Disable suspend when closing laptop lid (Manjaro)
   * $ sudoedit /etc/systemd/logind.conf
