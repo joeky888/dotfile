@@ -90,3 +90,7 @@ Show all network interfaces
 * $ ip a
 * $ ip address
 * $ ifconfig -a
+
+Add an user to sudoer
+=====
+* $ sudo adduser user-name sudo
