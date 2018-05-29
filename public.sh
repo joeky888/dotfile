@@ -3,11 +3,12 @@
 # Transfer all personal settings to public
 # Usefull when I don't own this machine
 
-sed -i '/template/d'   ~/.gitconfig
-sed -i '/name/d'       ~/.gitconfig
-sed -i '/email/d'      ~/.gitconfig
+sed -i '/template/d'   ~/dotfile/.gitconfig
+sed -i '/name/d'       ~/dotfile/.gitconfig
+sed -i '/email/d'      ~/dotfile/.gitconfig
 
-sed -i '/update_prompt/d'                   ~/.zshrc
-sed -i 's/ZSH_THEME.*$/ZSH_THEME="bira"/'    ~/.zshrc
+sed -i '/zsh-hook/d'                        ~/dotfile/.bashrc
+sed -i '/^\s*update_prompt/d'               ~/dotfile/.bashrc
+sed -i 's/ZSH_THEME.*$/ZSH_THEME="bira"/'   ~/dotfile/.bashrc
 
-echo -n "" > ~/.xprofile
+echo -n "" > ~/dotfile/.xprofile
