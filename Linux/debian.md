@@ -6,6 +6,8 @@ Download iso
 
 Sudo
 ====
+* $ adduser joeky sudo
+* Or
 * $ apt install sudo
 * $ visudo
 ```sudoers

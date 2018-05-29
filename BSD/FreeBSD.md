@@ -67,6 +67,8 @@ Upgrade all pkg packages
 
 Add user to sudoer
 =====
+* $ adduser joeky sudo
+* Or
 * $ whereis sudo
 * $ cd /usr/ports/security/sudo
 * $ export BATCH=yes
