@@ -2,6 +2,12 @@ Get only the matched string
 =====
 * $ echo aaaTESTbbb | grep -o "TEST"
 
+Replace a string
+=====
+```sh
+sed -i 's/string1/string2/' filename
+```
+
 Remove all lines which contain a string
 =====
 * $ sed -i '/string/d' filename
