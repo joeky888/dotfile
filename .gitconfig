@@ -32,6 +32,7 @@
 	safecrlf = false
 	fileMode = true
 	quotepath = false
+	ignorecase = false
 	pager = vim +' \
 setlocal gdefault |\
 %sm/\\e.\\{-}m//e |\
