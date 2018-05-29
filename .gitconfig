@@ -1,4 +1,9 @@
+[commit]
+	# Comment out this on server
+	template = ~/.gitmessage
 [user]
+	# Comment out this on server
+	# Also comment out commit.template
 	name = Joeky Zhan
 	email = jj16180339887@gmail.com
 [rerere]
@@ -12,8 +17,6 @@
 	prompt = false
 [http]
 	sslVerify = false
-[commit]
-	template = ~/.gitmessage
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff3
