@@ -466,7 +466,7 @@ if [ $(command -v mvim) ]; then # MacVim
   }
 fi
 
-function git_branch_info() {
+git_branch_info() {
   if git rev-parse --git-dir > /dev/null 2>&1; then
     echo "* $(git rev-parse --abbrev-ref HEAD)"
   fi;
