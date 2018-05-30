@@ -173,6 +173,7 @@ Mac (Hack-intosh)
 * Homebrew and Homebrew Cask
     * MacVim / VimR
     * Free Download Manager
+* WPS Office
 
 Linux
 =====
