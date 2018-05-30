@@ -657,7 +657,10 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     # USER@DOMAIN directory
-    export PS1="╭─${COLOR_LIGHT_GREEN}\u@\h${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_LIGHT_YELLOW} \$(git_branch_info)${COLOR_BG_RESET}${COLOR_RESET}\n╰─\$ "
+    bashprompt(){
+      export PS1="╭─${COLOR_LIGHT_GREEN}\u@\h${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_BG_RESET}${COLOR_RESET}\n╰─\$ "
+    }
+    PROMPT_COMMAND=bashprompt
   fi
 fi
 
