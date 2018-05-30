@@ -697,6 +697,7 @@ else # Unknown OS
 fi
 
 # Faster navigating, overwrite oh-my-zsh settings
+alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../../'
 alias ....='cd ../../../'
