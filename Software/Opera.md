@@ -1,8 +1,9 @@
 Setting
 =====
 * chrome://flags/#scroll-on-active-tab-on-click -> Disable
-* chrome://flags/#smooth-scrolling -> Enable
-* chrome://flags/#personal-news-notifications -> Enable
+* chrome://flags/#enable-parallel-downloading -> Enable
+<!-- * chrome://flags/#smooth-scrolling -> Enable -->
+<!-- * chrome://flags/#personal-news-notifications -> Enable -->
 * chrome://flags/#save-page-as-mhtml -> Enable
 * chrome://flags/#enable-quic -> Enable
 * chrome://flags/#toolkit-bookmarks -> Enable
@@ -16,12 +17,11 @@ Setting
 * chrome://flags/#enable-webassembly-streaming -> Enable
 * chrome://flags/#enable-future-v8-vm-features -> Enable
 * chrome://flags/#enable-experimental-web-platform-features -> Enable
-* chrome://flags/#overlay-scrollbars -> Enable (Automatically hidding scrollbar)
+<!-- * chrome://flags/#overlay-scrollbars -> Enable (Automatically hidding scrollbar) -->
 * chrome://flags/#enable-md-extensions -> Enable (Material design)
 * chrome://flags/#disable-background-video-track -> Enable
 * chrome://flags/#enable-new-print-preview -> Enable
 * chrome://flags/#enable-async-image-decoding -> Enable
-* chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://Plugins -> Search "flash" -> Enable
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
