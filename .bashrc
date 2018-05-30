@@ -466,6 +466,11 @@ if [ $(command -v mvim) ]; then # MacVim
   }
 fi
 
+git_branch_info() {
+  if git rev-parse --git-dir > /dev/null 2>&1; then
+    echo "* $(git rev-parse --abbrev-ref HEAD)"
+  fi;
+}
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   export ZSH=$HOME/dotfile/oh-my-zsh
@@ -502,12 +507,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 #     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
   autoload -U add-zsh-hook
-  function git_branch_info() {
-    if git rev-parse --git-dir > /dev/null 2>&1; then
-      echo "* $(git rev-parse --abbrev-ref HEAD)"
-    fi
-  }
-  function update_prompt() {
+  update_prompt() {
     NEWLINE_NO_OMZ=$'\n'
     # %B=light_color %F=color %K=background
     PROMPT="╭─%B%F{green}%n@%M %B%F{yellow}%K{blue} %~ %F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
@@ -657,7 +657,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     # USER@DOMAIN directory
-    export PS1="╭─${COLOR_LIGHT_GREEN}\u@\h${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_RESET}\n╰─\$ "
+    export PS1="╭─${COLOR_LIGHT_GREEN}\u@\h${COLOR_BG_RESET} ${COLOR_BG_LIGHT_BLUE}${COLOR_LIGHT_YELLOW} \w ${COLOR_BG_RESET}${COLOR_LIGHT_YELLOW} \$(git_branch_info)${COLOR_BG_RESET}${COLOR_RESET}\n╰─\$ "
   fi
 fi
 
