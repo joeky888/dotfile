@@ -20,7 +20,14 @@ docker swarm join \
 
 # On master
 docker node ls
-docker network create -d overlay my-app # create a multi-host overlay network
+#docker network create -d overlay my-app # create a multi-host overlay network
+docker service create \
+  --name myservice \
+  --mode global \
+  alpine top
+docker service ls
+docker service ps myservice
+docker service rm myservice
 ```
 
 Remove a swarm
