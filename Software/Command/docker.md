@@ -48,6 +48,9 @@ Create a ubuntu container on docker
 * Create a container and name it to "ubuntu1"
 * $ docker run -it --name ubuntu1 ubuntu bash
 * $ dpkg-reconfigure tzdata # Set packages server location
+```sh
+sed -i "s/archive/tw.archive/" /etc/apt/sources.list
+```
 * edit /etc/apt/sources.list # Replace all "archive" to "tw.archive"
 * edit /etc/apt/sources.list # Use devel packages
 * Download and run dotfiles
