@@ -11,5 +11,3 @@ Check a port is open or not on the host
 Scan all open port on the host
 =====
 * $ nmap -p- 192.168.0.1
-* Or
-* $ sudo nmap -p- 192.168.0.1 # sudo will take a full scan
