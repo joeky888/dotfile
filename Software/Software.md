@@ -169,8 +169,8 @@ Windows XP
 
 Mac (Hack-intosh)
 =====
-* iTerm2 / Hyper
-* iTerm2-Color-Schemes
+* Hyper
+<!-- * iTerm2 and iTerm2-Color-Schemes -->
 * Dr. Unarchiver
 * Homebrew and Homebrew Cask
     * MacVim / VimR
