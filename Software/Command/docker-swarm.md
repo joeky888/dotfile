@@ -7,7 +7,7 @@ Setup a docker swarm cluster using docker-machine
 ```sh
 # on master
 docker swarm init --advertise-addr 192.168.0.1
-docker swarm join-token manager # Copy output and paste to all slaves
+docker swarm join-token worker # Copy output and paste to all slaves
 
 # On slave1
 docker swarm join \
@@ -32,5 +32,12 @@ docker service rm myservice
 
 Remove a swarm
 =====
+* On the master
+* $ docker node ls
+* $ docker node rm -worker-node-id- --force
 * On the target machine(swarm)
 * $ docker swarm leave --force
+
+Monitor
+====
+* Use docker-swarm-visualizer

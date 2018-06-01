@@ -45,6 +45,7 @@ Extension
 * Remove Google Redirection
 * GitHub Plus
 * No Coin
+* LanguageTool
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Hacker News Enhancement Suite
