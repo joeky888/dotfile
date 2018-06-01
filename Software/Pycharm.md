@@ -10,3 +10,7 @@ Code Completion
 Keymapping
 =====
 * See AndroidStudio.md
+
+If Run -> Run(or Debug) is grayed out (不能點)
+=====
+* Right click on the target .py file -> Select Run
