@@ -7,6 +7,7 @@ fi
 
 InstallDotfile()
 {
+  [ $Home ] || export Home="$HOME"
   rm -rf $Home/dotfile
   rm -rf ~/.bashrc
   rm -rf ~/.bash_profile
@@ -122,10 +123,10 @@ InstallPIP()
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | $SUDO pip install youtube-dl
   echo y | $SUDO pip install you-get
-  echo y | $SUDO pip install ykdl
-  echo y | $SUDO pip install bypy
-  echo y | $SUDO pip install speedtest-cli
   echo y | $SUDO pip install ptpython
+#   echo y | $SUDO pip install ykdl
+#   echo y | $SUDO pip install bypy
+#   echo y | $SUDO pip install speedtest-cli
 }
 
 InstallMinicondaLinux()
@@ -134,10 +135,10 @@ InstallMinicondaLinux()
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
-  echo y | ~/Miniconda3/bin/pip install ykdl
-  echo y | ~/Miniconda3/bin/pip install bypy
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
   echo y | ~/Miniconda3/bin/pip install ptpython
+#   echo y | ~/Miniconda3/bin/pip install bypy
+#   echo y | ~/Miniconda3/bin/pip install ykdl
 }
 
 InstallMinicondaMac()
@@ -146,10 +147,10 @@ InstallMinicondaMac()
   rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && zsh Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
-  echo y | ~/Miniconda3/bin/pip install ykdl
-  echo y | ~/Miniconda3/bin/pip install bypy
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
+#   echo y | ~/Miniconda3/bin/pip install ykdl
   echo y | ~/Miniconda3/bin/pip install ptpython
+#   echo y | ~/Miniconda3/bin/pip install bypy
 }
 
 
@@ -292,7 +293,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y clang man vim micro git tig zsh tmux curl aria2 rsync bash-completion openssh grep sed python ffmpeg p7zip util-linux ncurses-utils neofetch python-dev libffi-dev openssl-dev
+  apt install -y clang man vim micro git tig zsh tmux curl aria2 rsync bash-completion openssh grep sed python ffmpeg p7zip util-linux ncurses-utils neofetch python-dev libffi-dev libcrypt-dev openssl-dev
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
