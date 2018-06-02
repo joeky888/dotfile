@@ -68,6 +68,7 @@ BaiduPCS-Go config set -savedir $HOME/Desktop
 ```
 * Nodejs
     * gtop
+    * cloc # Programing language usage analyzer
     * git-stats
 * BusyBox / Toybox
 * Neofetch
@@ -356,7 +357,7 @@ Dev Tools
 * Data
     * Huge and complicated: Json
     * Small or configurations: TOML
-* OS, embbed system: FreeBSD
+* OS, embbed system: Alpine Linux, FreeBSD
 
 Experience
 =====
