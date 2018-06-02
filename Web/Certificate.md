@@ -33,12 +33,14 @@ Install .crt to debian and ubuntu
 =====
 ```sh
 # Debian and Ubuntu
+sudo apt-fast install libssl-dev -y
 sudo mkdir -p /usr/share/ca-certificates/extra
 sudo cp asus.com.crt /usr/share/ca-certificates/extra/asus.com.crt
 sudo dpkg-reconfigure ca-certificates # Make sure asus is selected
 sudo update-ca-certificates
 
 # Manjaro and Arch
+sudo pacman --needed -S openssl
 sudo cp asus.com.crt /etc/ca-certificates/trust-source/anchors/asus.com.crt
 sudo cat asus.com.crt >> /etc/ssl/certs/ca-certificates.crt
 sudo trust extract-compat
