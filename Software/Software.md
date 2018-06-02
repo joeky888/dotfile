@@ -65,6 +65,7 @@ CLI
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
 BaiduPCS-Go config set -max_parallel 64
 BaiduPCS-Go config set -savedir $HOME/Desktop
+BaiduPCS-Go config set -cache_size 16384 # 16MB
 ```
 * Nodejs
     * gtop
