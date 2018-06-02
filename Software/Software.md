@@ -287,6 +287,8 @@ Good Software Design
 * Cross Platform
 * Less dependencies
 * Progress bar
+* Built-in shell
+* TUI dashboard/monitor
 * Sci-Fi User interface, such as "Circle SeekBar"
 * 4:3 16:9 16:10 18:9 supported
 * 4k and 8k resolution supported
