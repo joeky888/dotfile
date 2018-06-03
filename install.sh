@@ -299,6 +299,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   InstallDotfile
   InstallPIP
   InstallPy3UTF8
+  InstallGRC
 
 
 
