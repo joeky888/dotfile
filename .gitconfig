@@ -64,3 +64,5 @@ echohl iBlueInfo | echon \"     Info     \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -
+[credential]
+	helper = manager
