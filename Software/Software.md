@@ -118,7 +118,7 @@ Windows
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop bucket add rasa https://github.com/rasa/scoops.git
-    * $ scoop install 7zip vim busybox qemu youtube-dl aria2 ffmpeg cmake micro win32-openssh adb nmap nodejs phantomjs
+    * $ scoop install vim git busybox qemu youtube-dl aria2 ffmpeg cmake micro win32-openssh adb nmap nodejs phantomjs
     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing
 ```sh
 # "" means "(Default)" which equals "@"
@@ -130,8 +130,7 @@ Windows
     * $ Unblock-File $profile
     * $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
     * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
-    * $ choco install git --params="'/NoShellIntegration /GitOnlyOnPath /NoAutoCrlf'" -y --pre
-    * $ choco install poshgit miniconda miniconda3 greenshot wps-office-free obs-studio nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
+    * $ choco install 7zip poshgit miniconda miniconda3 greenshot wps-office-free obs-studio nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
     * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
     * Gaming dlls
         * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
