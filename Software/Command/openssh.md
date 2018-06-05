@@ -3,9 +3,11 @@ ssh-keygen
 * ssh-keygen on ComputerA
 ```sh
 ssh-keygen
-# Copy ~/.ssh/id_rsa.pub from ComputerA to ~/.ssh/id_rsa.pub on ComputerB
-ssh-copy-id -i ~/.ssh/id_rsa.pub user@ComputerB
-cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys on ComputerB
+```
+* Remove ~/dotfile on the remote machine before copy the public key to it
+```sh
+ssh user@ComputerB "echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
+ssh-copy-id -i ~/.ssh/id_rsa.pub user@ComputerB # Alternative way
 ```
 
 ssh
