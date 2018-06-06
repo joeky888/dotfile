@@ -201,7 +201,7 @@ Android
     * h264ify
     * Video Speed Controller
     * User Agent Switcher (by Alexander Schlarb)
-    * Enable Right Click and Copy
+    * Absolute Enable Right Click & Copy
 * OpenLauncher
 * Clock by Google
 * Facebook Messenger
