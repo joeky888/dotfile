@@ -14,3 +14,12 @@ Keymapping
 If Run -> Run(or Debug) is grayed out (不能點)
 =====
 * Right click on the target .py file -> Select Run
+
+Run a module command
+=====
+* Command
+* $ python3 -m train.train --epochs 30
+* Pycharm Run configuration (find runpy.py)
+    * Script: ~/Miniconda3/lib/python3.6/runpy.py
+    * Script parameters: train.train --epochs 30
+    * Interpreter options: (leave blank, no -m required)
