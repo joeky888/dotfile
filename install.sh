@@ -304,6 +304,10 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   InstallPIP
   InstallPy3UTF8
   InstallGRC
+  # To be continued
+  ARCH=$(uname -m)
+  ALPINE_VER=$(curl -s http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$ARCH/latest-releases.yaml | grep -m 1 -o version.* | sed 's/[^0-9.]*//g')
+  ALPINE_URL="http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-minirootfs-$ALPINE_VER-$ARCH.tar.gz"
 
 
 
