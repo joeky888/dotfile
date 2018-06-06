@@ -253,6 +253,7 @@ ln -s libc-2.23.so libc.so.6
     * Open Camera
     * Busybox
     * LibreTorrent
+    * ScreenCam
 * Drop-down menu items
     * Screenshot
     * Flash light
