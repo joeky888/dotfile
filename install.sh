@@ -154,29 +154,26 @@ InstallAlpine()
   aria2c $ALPINE_URL
   proot --link2symlink -0 bsdtar -xpf *.tar.gz 2> /dev/null || :
 
-  cat > $HOME/Alpine/etc/profile <<- EOM
-  export CHARSET=UTF-8
-  export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
-  export PAGER=less
-  export PS1='[termux@alpine \W]\\$ '
-  umask 022
-  for script in /etc/profile.d/*.sh ; do
-  if [ -r \$script ] ; then
+
+  echo 'export CHARSET=UTF-8
+export PAGER=less
+umask 022
+for script in /etc/profile.d/*.sh ; do
+if [ -r \$script ] ; then
   . \$script
-  fi
-  done
-  EOM
+fi
+done
+alias ls="ls --color=auto"
+export PS1="[/u@/h /W]# "
+export LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
-  cat > $HOME/Alpine/etc/resolv.conf <<- EOM
-  nameserver 8.8.8.8
-  nameserver 8.8.4.4
-  EOM
+  echo "nameserver 8.8.8.8" > $HOME/Alpine/etc/resolv.conf; \
+  echo "nameserver 8.8.4.4" >> $HOME/Alpine/etc/resolv.conf
 
-  cat > $HOME/Alpine/etc/apk/repositories <<- EOM
-  http://dl-cdn.alpinelinux.org/alpine/edge/main/
-  http://dl-cdn.alpinelinux.org/alpine/edge/community/
-  http://dl-cdn.alpinelinux.org/alpine/edge/testing/
-  EOM
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $HOME/Alpine/etc/apk/repositories
 
   cd -
 }
