@@ -933,8 +933,9 @@ OpenFileExplorer()
 
 StartAlpine()
 {
-  unset LD_PRELOAD
-  exec proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login -c "cd $HOME" ;
+  unset LD_PRELOAD3
+  cd $HOME/Alpine # This isn't necessary
+  exec proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login ;
 }
 
 finish() {
