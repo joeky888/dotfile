@@ -11,3 +11,26 @@ nameserver 180.76.76.76
 nameserver 8.8.8.8
 nameserver 114.114.114.114
 ```
+
+Hyper terminal
+=====
+```js
+colors: {
+  black:          '#1B1D1E',
+  red:            '#E90000',
+  green:          '#00AF00',
+  yellow:         '#F4BF75',
+  blue:           '#00AFFF',
+  magenta:        '#AE81FF',
+  cyan:           '#A1EFE4',
+  white:          '#F8F8F2',
+  lightBlack:     '#7E8E91',
+  lightRed:       '#F92672',
+  lightGreen:     '#A6E22E',
+  lightYellow:    '#FFFF00',
+  lightBlue:      '#66D9EF',
+  lightMagenta:   '#AE81FF',
+  lightCyan:      '#A1EFE4',
+  lightWhite:     '#F8F8F2'
+},
+```

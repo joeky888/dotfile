@@ -118,7 +118,7 @@ Windows
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop bucket add rasa https://github.com/rasa/scoops.git
-    * $ scoop install win32-openssh vim git busybox qemu youtube-dl aria2 ffmpeg cmake micro adb nmap nodejs phantomjs
+    * $ scoop install win32-openssh vim git busybox qemu youtube-dl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs
     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing
 ```sh
 # "" means "(Default)" which equals "@"
