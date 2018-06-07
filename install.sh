@@ -153,6 +153,31 @@ InstallAlpine()
   rm -rf $Home/Alpine && mkdir -p $Home/Alpine && cd $Home/Alpine
   aria2c $ALPINE_URL
   proot --link2symlink -0 bsdtar -xpf *.tar.gz 2> /dev/null || :
+
+  cat > $HOME/Alpine/etc/profile <<- EOM
+  export CHARSET=UTF-8
+  export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+  export PAGER=less
+  export PS1='[termux@alpine \W]\\$ '
+  umask 022
+  for script in /etc/profile.d/*.sh ; do
+  if [ -r \$script ] ; then
+  . \$script
+  fi
+  done
+  EOM
+
+  cat > $HOME/Alpine/etc/resolv.conf <<- EOM
+  nameserver 8.8.8.8
+  nameserver 8.8.4.4
+  EOM
+
+  cat > $HOME/Alpine/etc/apk/repositories <<- EOM
+  http://dl-cdn.alpinelinux.org/alpine/edge/main/
+  http://dl-cdn.alpinelinux.org/alpine/edge/community/
+  http://dl-cdn.alpinelinux.org/alpine/edge/testing/
+  EOM
+
   cd -
 }
 
