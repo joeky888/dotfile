@@ -41,5 +41,5 @@ Run a module command
 * $ python3 -m train.train --epochs 30
 * Pycharm Run configuration (find runpy.py)
     * Script: ~/Miniconda3/lib/python3.6/runpy.py
-    * Script parameters: train.train --epochs 30
+    * Script parameters: train.train --epochs 30 (-m is not required)
     * Interpreter options: (leave blank, no -m required)
