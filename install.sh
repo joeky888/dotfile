@@ -133,10 +133,10 @@ InstallPIP()
 #   echo y | $SUDO pip install speedtest-cli
 }
 
-InstallMinicondaLinux()
+InstallMiniconda()
 {
-  rm -rf ~/Miniconda2 && aria2c 'https://repo.continuum.io/miniconda/Miniconda2-latest-Linux-x86_64.sh' && chmod 777 Miniconda2-latest-Linux-x86_64.sh && bash Miniconda2-latest-Linux-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-Linux-x86_64.sh
-  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh' && chmod 777 Miniconda3-latest-Linux-x86_64.sh && bash Miniconda3-latest-Linux-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-Linux-x86_64.sh
+  rm -rf ~/Miniconda2 && aria2c "https://repo.continuum.io/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod 777 Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
+  rm -rf ~/Miniconda3 && aria2c "https://repo.continuum.io/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
@@ -145,19 +145,16 @@ InstallMinicondaLinux()
 #   echo y | ~/Miniconda3/bin/pip install ykdl
 }
 
-InstallMinicondaMac()
+InstallAlpine()
 {
-  rm -rf ~/Miniconda2 && aria2c 'https://repo.continuum.io/miniconda/Miniconda2-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda2-latest-MacOSX-x86_64.sh && zsh Miniconda2-latest-MacOSX-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-MacOSX-x86_64.sh
-  rm -rf ~/Miniconda3 && aria2c 'https://repo.continuum.io/miniconda/Miniconda3-latest-MacOSX-x86_64.sh' && chmod 777 Miniconda3-latest-MacOSX-x86_64.sh && zsh Miniconda3-latest-MacOSX-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-MacOSX-x86_64.sh
-  echo y | ~/Miniconda3/bin/pip install youtube-dl
-  echo y | ~/Miniconda3/bin/pip install you-get
-  echo y | ~/Miniconda3/bin/pip install speedtest-cli
-#   echo y | ~/Miniconda3/bin/pip install ykdl
-  echo y | ~/Miniconda3/bin/pip install ptpython
-#   echo y | ~/Miniconda3/bin/pip install bypy
+  ARCH=$(uname -m)
+  ALPINE_VER=$(curl -s http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$ARCH/latest-releases.yaml | grep -m 1 -o version.* | sed 's/[^0-9.]*//g')
+  ALPINE_URL="http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-minirootfs-$ALPINE_VER-$ARCH.tar.gz"
+  rm -rf $Home/Alpine && mkdir -p $Home/Alpine && cd $Home/Alpine
+  aria2c $ALPINE_URL
+  proot --link2symlink -0 bsdtar -xpf *.tar.gz 2> /dev/null || :
+  cd -
 }
-
-
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
@@ -210,7 +207,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   else
     find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
   fi
-  InstallMinicondaLinux
+  InstallMiniconda Linux
   InstallGRC
   InstallPy3UTF8
 
@@ -230,7 +227,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   brew cask install macvim iterm2
   chsh -s $(command -v zsh) $(whoami)
 #   brew linkapps
-  InstallMinicondaMac
+  InstallMiniconda MacOSX
   InstallDotfile
   InstallPy3UTF8
 
@@ -304,10 +301,8 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   InstallPIP
   InstallPy3UTF8
   InstallGRC
-  # To be continued
-  ARCH=$(uname -m)
-  ALPINE_VER=$(curl -s http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$ARCH/latest-releases.yaml | grep -m 1 -o version.* | sed 's/[^0-9.]*//g')
-  ALPINE_URL="http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/x86_64/alpine-minirootfs-$ALPINE_VER-$ARCH.tar.gz"
+  apt install -y proot bsdtar
+  InstallAlpine
 
 
 
