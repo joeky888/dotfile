@@ -153,28 +153,6 @@ InstallAlpine()
   rm -rf $Home/Alpine && mkdir -p $Home/Alpine && cd $Home/Alpine
   aria2c $ALPINE_URL
   proot --link2symlink -0 bsdtar -xpf *.tar.gz 2> /dev/null || :
-
-
-  echo 'export CHARSET=UTF-8
-export PAGER=less
-umask 022
-for script in /etc/profile.d/*.sh ; do
-if [ -r \$script ] ; then
-  . \$script
-fi
-done
-alias ls="ls --color=auto"
-export PS1="\u@\h \W# "
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
-
-  echo "nameserver 8.8.8.8" > $HOME/Alpine/etc/resolv.conf; \
-  echo "nameserver 8.8.4.4" >> $HOME/Alpine/etc/resolv.conf
-
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $HOME/Alpine/etc/apk/repositories
-
   cd -
 }
 
