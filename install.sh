@@ -164,7 +164,7 @@ if [ -r \$script ] ; then
 fi
 done
 alias ls="ls --color=auto"
-export PS1="[/u@/h /W]# "
+export PS1="\u@\h \W# "
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
