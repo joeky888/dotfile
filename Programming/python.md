@@ -1,3 +1,9 @@
+Remove all invisible characters
+=====
+```python
+string.strip(' \t\n\r')
+```
+
 Raise an error
 =====
 ```python
