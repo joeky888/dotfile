@@ -131,6 +131,8 @@ Windows
     * $ Unblock-File $profile
     * $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
     * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
+    * $ PowerShellGet\Install-Module posh-docker -Scope CurrentUser
+    * $ PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
     * $ choco install 7zip poshgit miniconda miniconda3 greenshot wps-office-free obs-studio nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
     * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
     * Gaming dlls
