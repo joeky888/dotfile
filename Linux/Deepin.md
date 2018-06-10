@@ -33,7 +33,10 @@ After installed
 * Desktop right click -> Corner Settings -> set right bottom corner to "Desktop"
 * $ sudoedit /etc/apt/sources.list -> Use "unstable"
 ```debsources
+deb [by-hash=force] https://mirrors.tuna.tsinghua.edu.cn/deepin/ unstable main contrib non-free universe
 deb [by-hash=force] http://mirrors.163.com/deepin/ unstable main contrib non-free universe
+deb [by-hash=force] http://mirrors.shu.edu.cn/deepin/ unstable main contrib non-free universe
+deb [by-hash=force] http://ftp.ubuntu-tw.org/mirror/deepin/ unstable main contrib non-free universe
 #deb [by-hash=force] http://packages.deepin.com/deepin/ unstable main contrib non-free universe
 ```
 * Disable suspend when closing laptop lid (Manjaro)
