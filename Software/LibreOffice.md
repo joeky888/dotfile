@@ -5,3 +5,9 @@ Colorful code area to LibreOffice Impress
 * Cut (Ctrl-X) the code from LibreOffice Writer
 * Open LibreOffice Impress
     * Insert -> Text Box -> Paste (Ctrl-V)
+
+Math function color
+=====
+* Open LibreOffice Math
+* Tools -> Options -> LibreOffice -> Application Colors -> Document background
+* Minimize LibreOffice and restore it if the color is not updated
