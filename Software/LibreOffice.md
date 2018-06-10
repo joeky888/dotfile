@@ -6,6 +6,10 @@ Colorful code area to LibreOffice Impress
 * Open LibreOffice Impress
     * Insert -> Text Box -> Paste (Ctrl-V)
 
+Math function symbols
+=====
+* `https://help.libreoffice.org/Math/Other_Symbols/zh-TW`
+
 Math function color
 =====
 * Open LibreOffice Math
