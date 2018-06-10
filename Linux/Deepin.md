@@ -56,6 +56,11 @@ Theme
 
 Change theme
 =====
+* $ git clone --depth 1 https://github.com/ParrotSec/parrot-themes ~/parrot
+* $ rm -rf ~/.local/share/themes/ARK-Dark
+* $ rm -rf ~/.local/share/themes/ARK-Dark && cp -r ~/parrot/themes/ARK-Dark ~/.local/share/themes/ARK-Dark
+* $ rm -rf ~/.local/share/icons/maia && cp -r ~/parrot/icons/maia ~/.local/share/icons/maia
+* Or
 * Download https://github.com/ParrotSec/parrot-themes
 * Extract themes to ~/.local/share/themes Or /usr/local/themes
 * Extract icons to ~/.local/share/icons Or /usr/local/icons
