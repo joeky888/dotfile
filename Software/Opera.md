@@ -43,7 +43,9 @@ Extension
 * HTTPS Everywhere
 * Disconnect
 * Remove Google Redirection
+* Get CRX
 * GitHub Plus
+* Octotree
 * No Coin
 * LanguageTool
 * Video Speed Controller
