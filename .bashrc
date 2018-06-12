@@ -962,18 +962,32 @@ export BPur="\e[1;35m"
 export BCya="\e[1;36m"
 export BWhi="\e[1;37m"
 export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# "
+export HOME=/root
+export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
-  echo "nameserver 8.8.8.8" > $HOME/Alpine/etc/resolv.conf; \
-  echo "nameserver 8.8.4.4" >> $HOME/Alpine/etc/resolv.conf
+#   echo "nameserver 8.8.8.8" > $HOME/Alpine/etc/resolv.conf; \
+#   echo "nameserver 8.8.4.4" >> $HOME/Alpine/etc/resolv.conf
+  cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
 
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $HOME/Alpine/etc/apk/repositories
 
+  export SUDO=''
+  if (( $EUID != 0 )); then
+    export SUDO='sudo'
+  fi
+
   cd $HOME/Alpine # This isn't necessary
-  proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login ;
+  if [ $(command -v proot) ]; then
+    proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login
+  elif [ $(command -v fakechroot) ] && [ $(command -v fakeroot) ]; then
+    fakechroot fakeroot chroot $PWD /bin/sh -l
+  else
+    $SUDO chroot $PWD /bin/sh -l
+  fi;
 }
 
 finish() {
