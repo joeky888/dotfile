@@ -20,7 +20,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/" > /etc/apk/repositori
 RUN apk update
 RUN apk add --upgrade --force apk-tools
 RUN apk upgrade
-RUN apk add --update --no-cache micro openssh-server
+RUN apk add --update --no-cache nano
 
 #######################
 #                     #
@@ -66,7 +66,7 @@ RUN sed -i "s/\s*$//g" /root/.profile
 #######################
 
 ENV ENV="/root/.profile"
-ENV EDITOR micro
+ENV EDITOR nano
 
 SHELL ["/bin/ash"]
 # ENTRYPOINT ["busybox", "ash"]
