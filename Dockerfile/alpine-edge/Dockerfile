@@ -21,6 +21,7 @@ RUN apk update
 RUN apk add --upgrade --force apk-tools
 RUN apk upgrade
 RUN apk add --update --no-cache nano
+RUN rm -f /var/cache/apk/*
 
 #######################
 #                     #
