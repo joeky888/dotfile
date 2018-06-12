@@ -54,7 +54,7 @@ export BBlu="\e[1;34m"                    \n\
 export BPur="\e[1;35m"                    \n\
 export BCya="\e[1;36m"                    \n\
 export BWhi="\e[1;37m"                    \n\
-export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} # " \n\
+export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# " \n\
 export LC_ALL="en_US.UTF-8"               \n\
 export LANG="en_US.UTF-8"' > /root/.profile
 RUN sed -i "s/\s*$//g" /root/.profile

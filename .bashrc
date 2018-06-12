@@ -961,7 +961,7 @@ export BBlu="\e[1;34m"
 export BPur="\e[1;35m"
 export BCya="\e[1;36m"
 export BWhi="\e[1;37m"
-export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} # "
+export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# "
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
