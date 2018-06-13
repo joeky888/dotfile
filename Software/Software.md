@@ -244,6 +244,8 @@ Android
 * Not on Google/F-droid
     * Alpha VNC (beta) (No root, Android 5.0+)
     * Entware-ng (root, Termux alternative, Android 4.2.2+)
+    * 豌豆荚 wandoujia
+    * 應用寶
 
 iOS
 =====
