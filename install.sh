@@ -224,6 +224,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
   brew install git vim ffmpeg aria2 tig tmux p7zip rsync mas grc qpdf
+  brew tap homebrew/cask
+  brew tap homebrew/cask-fonts
+  brew tap homebrew/cask-drivers
   brew cask install macvim iterm2
   chsh -s $(command -v zsh) $(whoami)
 #   brew linkapps
