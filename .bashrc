@@ -520,6 +520,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     typeset -A ZSH_HIGHLIGHT_STYLES
+    #################
+    #      None     #
+    #################
     ZSH_HIGHLIGHT_STYLES[unknown-token]='none'
     #################
     #      Blue     #
@@ -532,6 +535,13 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=39'
     ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=39'
     #################
+    #    LightBlue  #
+    #################
+    ZSH_HIGHLIGHT_STYLES[path]='fg=81'
+    ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=81'
+    ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=81'
+    ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=81'
+    #################
     #      Red      #
     #################
     ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=161'
@@ -541,10 +551,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     #     Green     #
     #################
     ZSH_HIGHLIGHT_STYLES[globbing]='fg=118'
-    ZSH_HIGHLIGHT_STYLES[path]='fg=118'
-    ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=118'
-    ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=118'
-    ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=118'
     ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=118'
     ZSH_HIGHLIGHT_STYLES[builtin]='fg=118'
     ZSH_HIGHLIGHT_STYLES[alias]='fg=118'
