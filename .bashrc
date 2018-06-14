@@ -517,7 +517,56 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   add-zsh-hook preexec update_prompt
   add-zsh-hook precmd update_prompt
   zle_highlight=(none)
-  [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ] && source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
+    source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+    typeset -A ZSH_HIGHLIGHT_STYLES
+    ZSH_HIGHLIGHT_STYLES[unknown-token]='none'
+    #################
+    #      Blue     #
+    #################
+    ZSH_HIGHLIGHT_STYLES[default]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[single-hyphen-option]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[double-hyphen-option]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[dollar-quoted-argument]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[back-double-quoted-argument]='fg=39'
+    ZSH_HIGHLIGHT_STYLES[back-dollar-quoted-argument]='fg=39'
+    #################
+    #      Red      #
+    #################
+    ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=161'
+    ZSH_HIGHLIGHT_STYLES[redirection]='fg=161'
+    ZSH_HIGHLIGHT_STYLES[commandseparator]='fg=161'
+    #################
+    #     Green     #
+    #################
+    ZSH_HIGHLIGHT_STYLES[globbing]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[path]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[path_pathseparator]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[path_prefix]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[path_prefix_pathseparator]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[dollar-double-quoted-argument]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[builtin]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[alias]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[command]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[precommand]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[function]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[hashed-command]='fg=118'
+    ZSH_HIGHLIGHT_STYLES[suffix-alias]='fg=118'
+    #################
+    #     Orange    #
+    #################
+    ZSH_HIGHLIGHT_STYLES[assign]='fg=208'
+    ZSH_HIGHLIGHT_STYLES[arg0]='fg=208'
+    ZSH_HIGHLIGHT_STYLES[back-quoted-argument]='fg=208'
+    ZSH_HIGHLIGHT_STYLES[back-quoted-argument-unclosed]='fg=208'
+    ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=208'
+    ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=208'
+    #################
+    #      Gray     #
+    #################
+    ZSH_HIGHLIGHT_STYLES[comment]='fg=59'
+  fi
   export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
