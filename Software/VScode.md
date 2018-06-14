@@ -12,7 +12,7 @@ Setting
     "files.autoSave": "afterDelay",
     "powermode.enabled": true,
     "editor.minimap.enabled": true,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "solid",
     "git.ignoreMissingGitWarning": true,
@@ -27,6 +27,7 @@ Extension
 =====
 * HookyQR.beautify
 <!-- * GitLens -->
+* magicstack.MagicPython
 * hoovercj.vscode-power-mode
 * dbaeumer.vscode-eslint
 * streetsidesoftware.code-spell-checker
