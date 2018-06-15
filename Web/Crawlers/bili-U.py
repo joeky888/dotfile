@@ -7,15 +7,18 @@ MAX_DOWNLOAD_AT_ONCE = 16
 processes = []
 url = []
 
-url.append( "https://www.bilibili.com/video/av7931969/?p=1" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=2" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=3" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=4" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=5" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=6" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=7" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=8" )
-url.append( "https://www.bilibili.com/video/av7931969/?p=9" )
+for u in sys.argv[1:]:
+    url.append(u)
+
+# url.append( "https://www.bilibili.com/video/av7931969/?p=1" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=2" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=3" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=4" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=5" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=6" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=7" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=8" )
+# url.append( "https://www.bilibili.com/video/av7931969/?p=9" )
 
 # Remove duplicates
 url = list(set(url))
