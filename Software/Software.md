@@ -81,6 +81,7 @@ BaiduPCS-Go config set -cache_size 16384 # 16MB
 * Monitorix
 * Google-drive-ocamlfuse
 * Docker
+* Shellcheck
 
 Dev
 =====
