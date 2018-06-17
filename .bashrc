@@ -518,6 +518,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     typeset -A ZSH_HIGHLIGHT_STYLES
+    export zle_highlight=(default:bold)
+    export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
     #################
     #      None     #
     #################
@@ -571,7 +573,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     #################
     ZSH_HIGHLIGHT_STYLES[comment]='fg=59'
   fi
-  export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
   setopt complete_in_word # Move cursor to the end when completion

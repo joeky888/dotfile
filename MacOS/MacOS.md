@@ -1,6 +1,7 @@
 Make Ctrl key work
 =====
 * System Preferences -> Keyboard -> Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
+* Command + Option + D -> Hide dock
 
 DNS
 =====
