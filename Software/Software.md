@@ -179,6 +179,7 @@ Mac (Hack-intosh)
     * MacVim / VimR
     * Free Download Manager
 * WPS Office
+* Spectacle (Window manager)
 
 Linux
 =====
