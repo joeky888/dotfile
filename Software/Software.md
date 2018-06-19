@@ -290,6 +290,7 @@ Good Software Design
 * Configuration files are under $HOME, and easy to find
 * Configuration files support variables, system variables and if-else statements
 * 100% Extentable code for future use
+* A Class of dialog can be easily called and override the method after yes/no clicked
 * Allow to install extensions
 * Responsive UI design for all device
 * Call external programs/commands
