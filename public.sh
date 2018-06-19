@@ -11,4 +11,6 @@ sed -i '/email/d'      ~/dotfile/.gitconfig
 # sed -i '/^\s*update_prompt\s*$/d'               ~/dotfile/.bashrc
 # sed -i 's/ZSH_THEME.*$/ZSH_THEME="bira"/'   ~/dotfile/.bashrc
 
-echo -n "" > ~/dotfile/.xprofile
+if [ -z $(command -v fcitx) ]; then
+  echo -n "" > ~/dotfile/.xprofile
+fi
