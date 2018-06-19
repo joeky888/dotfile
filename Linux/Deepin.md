@@ -1,6 +1,11 @@
 Pre install (Manjaro Deepin only)
 =====
-* Use `dd` mode when burn into the USB drive with rufus
+* Windows
+  * Use `dd` mode when burn into the USB drive with rufus
+* Unix
+  * $ sudo fdisk -l
+  * $ sudo dd bs=4M if=/path/to/manjaro.iso of=/dev/sd[drive letter] status=progress
+  * e.g. /dev/sdb
 * When enter to the grub menu, select non-free driver
 * Press `E` to edit boot option
   * Add boot option `systemd.mask=mhwd-live.service` to the first line
