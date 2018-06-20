@@ -292,6 +292,7 @@ Good Software Design
 * 100% Extentable code for future use
 * A Class of dialog can be easily called and override the method after yes/no clicked
 * Allow to install extensions
+* Deploy with docker swarm
 * Responsive UI design for all device
 * Call external programs/commands
 * Current status / Connection status, like (Green)Good, (Red)Bad
