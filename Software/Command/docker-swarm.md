@@ -21,13 +21,13 @@ docker swarm join \
 # On master
 docker node ls
 #docker network create -d overlay my-app # create a multi-host overlay network
-docker service create \
-  --name myservice \
-  --mode global \
-  alpine top
-docker service ls
-docker service ps myservice
-docker service rm myservice
+#docker service create \
+#  --name myservice \
+#  --mode global \
+#  alpine top
+#docker service ls
+#docker service ps myservice
+#docker service rm myservice
 ```
 
 Remove a swarm
@@ -35,9 +35,23 @@ Remove a swarm
 * On the master
 * $ docker node ls
 * $ docker node rm -worker-node-id- --force
-* On the target machine(swarm)
+* Or on the slave
 * $ docker swarm leave --force
+
+Create a service
+=====
+* Create a compose yaml file, which is the most difficult part
+* $ docker stack deploy -c ./docker-compose.yml myapp
+* $ docker stack ls
+* $ docker stack ps myapp
+* $ docker service scale myapp=5 # Resize number of containers to run this
+* $ docker stack rm myapp
 
 Monitor
 ====
 * Use docker-swarm-visualizer
+
+How it works
+=====
+* [](http://thesecretlivesofdata.com/raft)
+
