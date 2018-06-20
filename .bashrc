@@ -228,15 +228,15 @@ if (( $EUID != 0 )); then
   export SUDO='sudo'
 fi
 
-GREP_OPTIONS=""
+export GREP_OPTIONS=""
 if $(echo | grep --color=auto "" > /dev/null 2>&1); then
-  GREP_OPTIONS="$GREP_OPTIONS --color=auto"
+  export GREP_OPTIONS="$GREP_OPTIONS --color=auto"
 fi
-VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
+export VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
 if $(echo | grep --exclude-dir=.cvs "" > /dev/null 2>&1); then
-  GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$VCS_FOLDERS"
+  export GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$VCS_FOLDERS"
 elif $(echo | grep --exclude=.cvs "" > /dev/null 2>&1); then
-  GREP_OPTIONS="$GREP_OPTIONS --exclude=$VCS_FOLDERS"
+  export GREP_OPTIONS="$GREP_OPTIONS --exclude=$VCS_FOLDERS"
 fi
 alias grep="grep $GREP_OPTIONS"
 
@@ -1039,6 +1039,14 @@ export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
     fakechroot fakeroot chroot $PWD /bin/sh -l
   else
     $SUDO chroot $PWD /bin/sh -l
+  fi;
+}
+
+dict() {
+  if [ $# -eq 0 ]; then
+    echo "Usage: dict <word>"
+  else
+    grep $GREP_OPTIONS --color=auto -RiIn -C 5 $1 $HOME/dict
   fi;
 }
 
