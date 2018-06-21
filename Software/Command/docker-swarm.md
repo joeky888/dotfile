@@ -40,7 +40,11 @@ Remove a swarm
 
 Create a service
 =====
+* Create a Dockerfile which setup environment
+    * $ docker build -t mydockerfile .
+    * $ docker tag joeky:latest groot:staging
 * Create a compose yaml file, which is the most difficult part
+    * Include the joeky:latest image
 * $ docker stack deploy -c ./docker-compose.yml myapp
 * $ docker stack ls
 * $ docker stack ps myapp
