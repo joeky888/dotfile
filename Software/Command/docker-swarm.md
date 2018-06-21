@@ -42,9 +42,9 @@ Create a service
 =====
 * Create a Dockerfile which setup environment
     * $ docker build -t mydockerfile .
-    * $ docker tag joeky:latest groot:staging
+    * $ docker tag ubuntu:latest joeky:latest # Optional
 * Create a compose yaml file, which is the most difficult part
-    * Include the joeky:latest image
+    * Include the joeky:latest image tag
 * $ docker stack deploy -c ./docker-compose.yml myapp
 * $ docker stack ls
 * $ docker stack ps myapp
