@@ -307,7 +307,8 @@ Good Software Design
 * Use date as version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
-* Create a Wikipedia page for it
+* Create a Wikipedia/Wikia page for it
+* Community-driven Wikipedia-like site for handling errors
 * Send crash log to server
 * Easter eggs
 * Mobile
