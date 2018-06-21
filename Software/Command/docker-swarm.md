@@ -41,6 +41,7 @@ Remove a swarm
 Create a service
 =====
 * Create a Dockerfile which setup environment
+    * One dockerfile per service
     * $ docker build -t mydockerfile .
     * $ docker tag ubuntu:latest joeky:latest # Optional
 * Create a compose yaml file, which is the most difficult part
