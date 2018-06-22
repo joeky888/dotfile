@@ -314,6 +314,7 @@ Good Software Design
 * Mobile
     * Portable between Android and iOS
     * Most operations can be done with only one finger
+    * Make small button can be easily clicked (bind clicked event with clickable layout surrounding it)
 * Web plugins
     * Make sure it runs on Chrome, Firefox and Firefox Android
 
