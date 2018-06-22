@@ -21,10 +21,6 @@ docker swarm join \
 # On master
 docker node ls
 #docker network create -d overlay my-app # create a multi-host overlay network
-#docker service create \
-#  --name myservice \
-#  --mode global \
-#  alpine top
 #docker service ls
 #docker service ps myservice
 #docker service rm myservice
@@ -49,6 +45,7 @@ Create a service
 * $ docker stack deploy -c ./docker-compose.yml myapp
 * $ docker stack ls
 * $ docker stack ps myapp
+* $ docker service inspect --pretty myapp
 * $ docker service scale myapp=5 # Resize number of containers to run this
 * $ docker stack rm myapp
 
