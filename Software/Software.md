@@ -354,27 +354,38 @@ Dev Tools
 
 Experience
 =====
-| Tool                              |  Year        |
-| --------------------------------- | ------------ |
-| Windows                           |  (2003-)     |
-| Ubuntu Linux                      |  (2014-)     |
-| Debian Linux                      |  (2016-)     |
-| Deepin Linux                      |  (2017-)     |
-| FreeBSD                           |  (2017-)     |
-| Git                               |  (2014-)     |
-| Bash                              |  (2014-)     |
-| Zsh                               |  (2015-)     |
-| Tmux                              |  (2015-)     |
-| Sublime Text                      |  (2014-2015) |
-| Adobe Brackets                    |  (2015-2016) |
-| Vim                               |  (2016-)     |
-| VSCode                            |  (2016-)     |
-| Cygwin                            |  (2015-)     |
-| Powershell                        |  (2017-)     |
-| Qt                                |  (2014-)     |
-| MS Office                         |  (2010-2014) |
-| Libre Office                      |  (2014-2015) |
-| WPS Office                        |  (2015-)     |
-| Chrome                            |  (2010-2015) |
-| Opera                             |  (2015-)     |
-| PinyinIME 拼音中打                |  (2016-)     |
+| Tool                              |  Year         |
+| --------------------------------- | ------------- |
+| Windows                           |  (2003-)      |
+| Ubuntu Linux                      |  (2014-)      |
+| Debian Linux                      |  (2016-)      |
+| Deepin Linux                      |  (2017-)      |
+| Manjaro Linux                     |  (2018-)      |
+| Alpine Linux                      |  (2018-)      |
+| FreeBSD                           |  (2017-)      |
+| Git                               |  (2014-)      |
+| Bash                              |  (2014-)      |
+| Zsh                               |  (2015-)      |
+| Fish                              |  (2018-)      |
+| Tmux                              |  (2015-)      |
+| Docker                            |  (2016-)      |
+| Youtube-dl                        |  (2015-)      |
+| You-get                           |  (2016-)      |
+| FFmpeg                            |  (2015-)      |
+| Sublime Text                      |  (2014-2015)  |
+| Adobe Brackets                    |  (2015-2016)  |
+| Vim                               |  (2016-)      |
+| VSCode                            |  (2016-)      |
+| PyCharm                           |  (2018-)      |
+| Cygwin                            |  (2015-)      |
+| Msys2/Git-SDK                     |  (2016-)      |
+| Powershell                        |  (2017-)      |
+| Qt                                |  (2014-2016)  |
+| React Native                      |  (2018-)      |
+| MS Office                         |  (2010-2014)  |
+| Libre Office                      |  (2014-2015)  |
+| WPS Office                        |  (2015-)      |
+| Chrome                            |  (2010-2015)  |
+| Opera                             |  (2015-)      |
+| ZhuyinIME 注音中打                |  (2003-2016)  |
+| PinyinIME 拼音中打                |  (2016-)      |
