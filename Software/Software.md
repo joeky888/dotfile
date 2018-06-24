@@ -280,6 +280,7 @@ Good Software Design
 * Built-in shell
 * TUI/GUI dashboard and resource monitor, google image "大數據可視化"
 * Sci-Fi User interface, such as "Circle SeekBar"
+* Smooth scrolling
 * 4:3 16:9 16:10 18:9 supported
 * 4k and 8k resolution supported
 * Easily porting to another system
