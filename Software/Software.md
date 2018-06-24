@@ -259,6 +259,7 @@ Gaming
 =====
 * Mumu - Android emulator
 * RetroArch - Console emulator
+    * RetroPie
 * PCSX2 - PS2 emulator
 
 Good Software Design
