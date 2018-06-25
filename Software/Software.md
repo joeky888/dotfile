@@ -337,7 +337,7 @@ Dev Tools
 * Web server backend
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
-* Web frontend: React.js vue.js
+* Web frontend: React.js, vue.js, Qt for WebAssembly
 * Browser extension: WebExtension API
     * Install mozilla/web-ext
     * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
