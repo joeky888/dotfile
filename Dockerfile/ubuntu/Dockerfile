@@ -1,9 +1,9 @@
 FROM ubuntu:devel
 
 # Install basic development packages.
-RUN apt-get update -q \
- && apt-get upgrade -qy \
- && apt-get install -qy \
+RUN apt update -q \
+ && apt upgrade -qy \
+ && apt install -qy \
   build-essential \
   clang \
   cmake \
