@@ -5,14 +5,14 @@ RUN apt-get update -q \
  && apt-get upgrade -qy \
  && apt-get install -qy \
   build-essential \
-  clang-3.9 \
+  clang \
   cmake \
   curl \
   gdb \
   vim \
-  openssh-server \
-ENV SHELL /bin/bash
-ENV CC clang-3.9
-ENV CXX clang++-3.9
+  openssh-server
+
+ENV CC clang
+ENV CXX clang++
 
 ENV EDITOR vim
