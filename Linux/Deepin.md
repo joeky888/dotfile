@@ -1,4 +1,4 @@
-Pre install (Manjaro Deepin only)
+Pre install (Manjaro only)
 =====
 * Windows
   * Use `dd` mode when burn into the USB drive with rufus
@@ -27,6 +27,13 @@ def run(self):
   return None
 ```
 * Now start GUI installation
+
+Install (Manjaro)
+=====
+* Format 300MB fat32 to "/boot/efi"
+  * Flag "bootable"
+  * Flag "esp"
+* Format the rest to ext4
 
 After installed
 =====
@@ -122,7 +129,7 @@ ExecStart=/usr/bin/earlyoom -m 3
 ```
 * $ sudo systemctl restart earlyoom.service
 * $ sudo systemctl daemon-reload
-* Setting -> Display -> Font -> Standard Font -> Noto Sans CJK TC
+* Setting -> Personalization -> Font -> Standard Font -> Noto Sans CJK TC
 
 Disable Gnome keyring when opening the browser
 =====
