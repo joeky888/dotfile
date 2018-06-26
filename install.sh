@@ -210,6 +210,20 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   else
     find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
   fi
+  $SUDO localectl set-locale LANG="en_US.UTF-8"
+  $SUDO localectl set-locale LANGUAGE="en_US.UTF-8"
+  $SUDO localectl set-locale LC_CTYPE="en_US.UTF-8"
+  $SUDO localectl set-locale LC_NUMERIC="en_US.UTF-8"
+  $SUDO localectl set-locale LC_TIME="en_US.UTF-8"
+  $SUDO localectl set-locale LC_COLLATE="en_US.UTF-8"
+  $SUDO localectl set-locale LC_MONETARY="en_US.UTF-8"
+  $SUDO localectl set-locale LC_MESSAGES="en_US.UTF-8"
+  $SUDO localectl set-locale LC_PAPER="en_US.UTF-8"
+  $SUDO localectl set-locale LC_NAME="en_US.UTF-8"
+  $SUDO localectl set-locale LC_ADDRESS="en_US.UTF-8"
+  $SUDO localectl set-locale LC_TELEPHONE="en_US.UTF-8"
+  $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
+  $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   InstallMiniconda Linux
   InstallGRC
   InstallPy3UTF8
