@@ -164,7 +164,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion powerpill yaourt --noconfirm --needed
+    $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion yaourt --noconfirm --needed
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
@@ -196,7 +196,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
+    #pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
+    pac=pacman
     $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
   fi
 
