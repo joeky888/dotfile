@@ -6,7 +6,7 @@ ssh-keygen
 ```
 * Remove ~/dotfile on the ComputerB
 ```sh
-ssh user@ComputerB "echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
+ssh user@ComputerB "mkdir -p ~/.ssh ; echo \"`cat ~/.ssh/id_rsa.pub`\" >> ~/.ssh/authorized_keys"
 ssh-copy-id -i ~/.ssh/id_rsa.pub user@ComputerB # Alternative way
 ```
 
