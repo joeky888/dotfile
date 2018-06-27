@@ -16,7 +16,7 @@ XTerm*utf8Title: True
 XTerm*renderFont: True
 XTerm*preeditType: Root
 XTerm*xftAntialias: true
-XTerm*font: *-fixed-*-*-*-24-*
+XTerm*font: *-Monospace-*-*-*-18-*
 
 ! Trim trailing spaces
 XTerm*trimSelection: true

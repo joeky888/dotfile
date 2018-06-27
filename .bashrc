@@ -20,8 +20,16 @@ elif [[ "$TERM" == "screen"* ]]; then
   export TERM=screen-256color
 fi
 
+emulator() {
+    pid=$$
+    pid=$(ps -h -o ppid -p $pid 2>/dev/null)
+    ps -h -o comm -p $pid 2>/dev/null;
+}
+
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+if [[ "$(emulator)" == "xterm" ]]; then
+  [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+elif [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
   cd ~
   if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
@@ -31,9 +39,8 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
       exec fbterm -- bash -c 'TERM=fbterm && [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux'
     fi
   else
-#     Disable byobu because if it breaks colors of vim
     if [ $(command -v byobu) ] ; then
-      exec byobu
+      exec byobu # Disable byobu if it breaks colors of vim
     else
        [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
     fi
@@ -136,7 +143,7 @@ if [[ -d "/opt/bin" ]]; then
   export PATH=$PATH:/opt/bin
 fi
 
-[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Ubuntu Mono' -fs 24"
+[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
