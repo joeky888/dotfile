@@ -38,7 +38,7 @@ if [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $
        [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
     fi
   fi
-elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] ; then
+elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
   exec zsh
 fi
