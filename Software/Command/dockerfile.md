@@ -5,9 +5,9 @@ Build and Run a dockerfile
 * $ docker build . -t debian:joeky
 * $ docker images
 * If the dockerfile has a line CMD["bash"]
-* $ docker run -i -t debian:joeky
+* $ docker run --name j1 -it debian:joeky
 * If the dockerfile doesn't have a line CMD["bash"]
-* $ docker run -i -t debian:joeky /bin/zsh
+* $ docker run --name j1 -it debian:joeky /bin/zsh
 
 Run an exist container
 =====
