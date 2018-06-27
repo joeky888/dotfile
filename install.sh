@@ -225,7 +225,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
   $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   InstallMiniconda Linux
-  InstallGRC
+  if [[ $(command -v pacman) ]]; then
+    $SUDO pacman -S grc --noconfirm --needed
+  else
+    InstallGRC
+  fi
   InstallPy3UTF8
 
 
