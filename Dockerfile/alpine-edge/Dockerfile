@@ -58,7 +58,7 @@ export BWhi="\e[1;37m"                    \n\
 export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# " \n\
 export LC_ALL="en_US.UTF-8"               \n\
 export LANG="en_US.UTF-8"' > /root/.profile
-RUN sed -i "s/\s*$//g" /root/.profile
+RUN sed -i "s/\s+$//g" /root/.profile
 
 #######################
 #                     #
