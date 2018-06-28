@@ -137,3 +137,7 @@ nameserver 114.114.114.114
 Add an user to sudoer
 =====
 * $ sudo adduser joeky sudo
+
+Get log of systemd
+=====
+* $ sudo journalctl -u SERVICE-NAME.service

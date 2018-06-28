@@ -12,10 +12,10 @@ Server = https://cdn.repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
 RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-RUN bash -c "curl -fsSL 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' > /etc/pacman.d/mirrorlist"
-RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist
-RUN cat /etc/pacman.d/mirrorlist
-RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist | tee /etc/pacman.d/mirrorlist"
+RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' > /etc/pacman.d/mirrorlist.bak"
+RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist.bak
+RUN cat /etc/pacman.d/mirrorlist.bak
+RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/mirrorlist"
 
 #####################
 #                   #
