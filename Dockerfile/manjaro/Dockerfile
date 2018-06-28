@@ -1,4 +1,4 @@
-FROM archimg/base:latest
+FROM jonathonf/manjaro-build:latest
 
 ################
 #              #
@@ -9,13 +9,8 @@ FROM archimg/base:latest
 RUN echo $'[archlinuxcn]\n\
 SigLevel = Never\n\
 Server = https://cdn.repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
-RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring
-# Arch Linux Pacman Mirrorlist Generator
-RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-RUN bash -c "curl -fsSL 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' > /etc/pacman.d/mirrorlist"
-RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist
-RUN cat /etc/pacman.d/mirrorlist
-RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist | tee /etc/pacman.d/mirrorlist"
+
+RUN cp /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.backup
 
 #####################
 #                   #
@@ -23,6 +18,9 @@ RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist | tee /etc/pacman.d/mirr
 #                   #
 #####################
 
+RUN pacman -Sy --noconfirm --needed pacman-contrib archlinuxcn-keyring
+RUN sed -i 's/^#S/S/g' /etc/pacman.d/mirrorlist
+RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.backup | tee /etc/pacman.d/mirrorlist"
 # RUN pacman -S --noconfirm --needed powerpill
 # RUN powerpill -Syyu --noconfirm --needed
 RUN pacman -S --noconfirm --needed nano
