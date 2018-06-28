@@ -348,14 +348,8 @@ if [ $(command -v grc) ] ; then
     diff \
     dig \
     dnf \
-    dockerimages \
-    dockerinfo \
-    docker-machinels \
-    dockernetwork \
-    dockerps \
-    dockerpull \
-    dockersearch \
-    dockerversion \
+    docker \
+    docker-machine \
     du \
     env \
     esperanto \

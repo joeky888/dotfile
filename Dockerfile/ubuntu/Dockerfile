@@ -1,6 +1,7 @@
 FROM ubuntu:devel
 
 # Install basic development packages.
+RUN sed -i "s/archive/tw.archive" /etc/apt/sources.list
 RUN apt update -q \
  && apt upgrade -qy \
  && apt install -qy \

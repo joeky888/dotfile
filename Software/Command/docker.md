@@ -78,3 +78,7 @@ Take a snapshot of container and restore
 Remove a commit / snapshot1 image
 =====
 * $ docker rmi imageID
+
+Remove all containers and images
+=====
+* $ docker system prune -a

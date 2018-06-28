@@ -3,11 +3,9 @@ FROM debian:testing
 RUN echo "deb http://ftp.tw.debian.org/debian/ testing main contrib non-free" > /etc/apt/sources.list
 RUN echo "deb http://ftp.tw.debian.org/debian testing-updates main contrib non-free" >> /etc/apt/sources.list
 RUN echo "deb http://security.debian.org/ testing/updates main contrib non-free" >> /etc/apt/sources.list
-RUN apt update && apt install curl -y
-
-# Install basic development packages.
-RUN curl -s https://raw.githubusercontent.com/j16180339887/dotfile/master/install.sh | bash
+RUN apt update
+RUN apt install -y curl nano
 
 ENV EDITOR vim
 
-CMD ["zsh"]
+CMD ["bash"]

@@ -20,7 +20,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/" > /etc/apk/repositori
 RUN apk update
 RUN apk add --upgrade --force apk-tools
 RUN apk upgrade
-RUN apk add --update --no-cache nano
+RUN apk add --update --no-cache nano openrc
 RUN rm -f /var/cache/apk/*
 
 #######################
