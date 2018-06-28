@@ -349,6 +349,7 @@ if [ $(command -v grc) ] ; then
     dig \
     dnf \
     docker \
+    docker-compose \
     docker-machine \
     du \
     env \
