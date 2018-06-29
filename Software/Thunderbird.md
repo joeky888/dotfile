@@ -28,6 +28,7 @@ Outlook style
 =====
 * Install "ReplyWithHeader" extension -> Restart thunderbird
 * Alt+V -> Layout -> Vertical View
+* Preference -> Privicy -> Allow remote content in messeges -> Check
 
 Signatures
 =====

@@ -17,7 +17,7 @@ Install docker on Linux
 ```sh
 # Install Docker Community Edition (Docker CE)
 sudo apt-fast update && sudo apt-fast install docker.io -y
-sudo usermod -aG docker $USER
+sudo usermod -aG docker $USER # Or sudo adduser joeky docker
 exit # and then open the terminal again
 systemctl status docker.service
 sudo systemctl enable docker.service
@@ -82,3 +82,8 @@ Remove a commit / snapshot1 image
 Remove all containers and images
 =====
 * $ docker system prune -a
+
+Expose port
+=====
+* Host port 80 container port 8080
+* $ docker -p 80:8080
