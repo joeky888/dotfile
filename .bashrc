@@ -339,90 +339,6 @@ upgradeDotfile() {
   fi;
 }
 
-if [ $(command -v grc) ] ; then
-  cmds=(
-    ant \
-    blkid \
-    cvs \
-    df \
-    diff \
-    dig \
-    dnf \
-    docker \
-    docker-compose \
-    docker-machine \
-    du \
-    env \
-    esperanto \
-    fdisk \
-    findmnt \
-    free \
-    gcc \
-    getfacl \
-    getsebool \
-    id \
-    ifconfig \
-    iostat_sar \
-    ip \
-    ipaddr \
-    ipneighbor \
-    iproute \
-    iptables \
-    irclog \
-    iwconfig \
-    jobs \
-    last \
-    ldap \
-    log \
-    lolcat \
-    lsattr \
-    lsblk \
-    lsmod \
-    lsof \
-    lspci \
-    mount \
-    mtr \
-    mvn \
-    netstat \
-    nmap \
-    ntpdate \
-    php \
-    ping \
-    ping2 \
-    proftpd \
-    ps \
-    pv \
-    semanageboolean \
-    semanagefcontext \
-    semanageuser \
-    sensors \
-    showmount \
-    sql \
-    ss \
-    stat \
-    sysctl \
-    systemctl \
-    tcpdump \
-    traceroute \
-    tune2fs \
-    ulimit \
-    uptime \
-    vmstat \
-    wdiff \
-    whois
-  );
-
-  # Set alias for available commands.
-  for cmd in $cmds ; do
-    [[ $(command -v $cmd) ]] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
-  done
-
-  alias configure='grc -es --colour=auto ./configure'
-
-  # Clean up variables
-  unset cmds cmd
-fi
-
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
@@ -763,6 +679,94 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
+
+if [ $(command -v grc) ] ; then
+  cmds=(  ant \
+          blkid \
+          cvs \
+          df \
+          diff \
+          dig \
+          dnf \
+          docker \
+          docker-compose \
+          docker-machine \
+          du \
+          env \
+          esperanto \
+          fdisk \
+          findmnt \
+          free \
+          gcc \
+          getfacl \
+          getsebool \
+          id \
+          ifconfig \
+          iostat_sar \
+          ip \
+          ipaddr \
+          ipneighbor \
+          iproute \
+          iptables \
+          irclog \
+          iwconfig \
+          jobs \
+          last \
+          ldap \
+          log \
+          lolcat \
+          lsattr \
+          lsblk \
+          lsmod \
+          lsof \
+          lspci \
+          mount \
+          mtr \
+          mvn \
+          netstat \
+          nmap \
+          ntpdate \
+          php \
+          ping \
+          ping2 \
+          proftpd \
+          ps \
+          pv \
+          semanageboolean \
+          semanagefcontext \
+          semanageuser \
+          sensors \
+          showmount \
+          sql \
+          ss \
+          stat \
+          sysctl \
+          systemctl \
+          tcpdump \
+          traceroute \
+          tune2fs \
+          ulimit \
+          uptime \
+          vmstat \
+          wdiff \
+          whois
+  );
+
+  # Set alias for available commands.
+  for cmd in "${cmds[@]}" ; do
+    if [[ -n "$ZSH_VERSION" ]] && [[ $(command -v $cmd) ]] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
+      eval "function $cmd { grc -es --colour=auto $(command -v $cmd) \"\$@\" }"
+      eval "compdef _$cmd $cmd"
+    else
+      [[ $(command -v $cmd) ]] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
+    fi
+  done
+
+  alias configure='grc -es --colour=auto ./configure'
+
+  # Clean up variables
+  unset cmds cmd
+fi
 
 if ! [[ $(command -v tree) ]]; then
   tree()
