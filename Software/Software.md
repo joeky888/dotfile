@@ -279,7 +279,9 @@ Good Software Design
 * Less dependencies
 * Progress bar
 * Built-in shell
-* TUI/GUI dashboard and resource monitor, google image "大數據可視化"
+* TUI/GUI dashboard and resource monitor
+    * Google image "大數據可視化"
+    * PointDownload
 * Sci-Fi User interface, such as "Circle SeekBar"
 * Smooth scrolling
 * 4:3 16:9 16:10 18:9 supported
