@@ -38,6 +38,7 @@ if [ -r \$script ] ; then                 \n\
 fi                                        \n\
 done                                      \n\
 alias ls="ls --color=auto"                \n\
+alias ll="ls --color=auto -lh"            \n\
 alias l="ls --color=auto -alh"            \n\
 export Blk="\e[0;30m"                     \n\
 export Red="\e[0;31m"                     \n\
