@@ -20,8 +20,9 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/" > /etc/apk/repositori
 RUN apk add --upgrade --no-cache --force apk-tools
 RUN apk update
 RUN apk upgrade
-RUN apk add --update --no-cache nano nodejs-npm git
-RUN npm install -g pm2
+RUN apk add --update --no-cache nano nodejs-current nodejs-npm git
+RUN npm install -g npm@latest
+RUN npm install -g pm2@latest
 RUN rm -f /var/cache/apk/*
 
 ######################
@@ -31,7 +32,7 @@ RUN rm -f /var/cache/apk/*
 ######################
 
 WORKDIR /root
-ADD . .
+RUN git clone --depth 1 http://zenboml-api.eastasia.cloudapp.azure.com:7788/han/node-data-controller.git
 WORKDIR /root/node-data-controller
 RUN npm install
 
@@ -50,6 +51,7 @@ if [ -r \$script ] ; then                 \n\
 fi                                        \n\
 done                                      \n\
 alias ls="ls --color=auto"                \n\
+alias ll="ls --color=auto -alh"           \n\
 alias l="ls --color=auto -alh"            \n\
 export Blk="\e[0;30m"                     \n\
 export Red="\e[0;31m"                     \n\
@@ -67,7 +69,7 @@ export BBlu="\e[1;34m"                    \n\
 export BPur="\e[1;35m"                    \n\
 export BCya="\e[1;36m"                    \n\
 export BWhi="\e[1;37m"                    \n\
-export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# " \n\
+export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# " \n\
 export LC_ALL="en_US.UTF-8"               \n\
 export LANG="en_US.UTF-8"' > /root/.profile
 RUN sed -i "s/\s*$//g" /root/.profile
@@ -90,5 +92,5 @@ ENV pm2_home /root/.pm2/
 SHELL ["/bin/ash"]
 
 # docker build . -t alpine:joeky
-# docker run -d --name controller -p 8080:8080 --restart=always -it alpine:joeky /bin/sh
+# docker run -d --name controller -p 8080:8080 --restart=always -t alpine:joeky
 # docker exec -it controller /bin/sh

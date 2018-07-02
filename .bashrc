@@ -1006,6 +1006,7 @@ if [ -r \$script ] ; then
 fi
 done
 alias ls="ls --color=auto"
+alias ll="ls --color=auto -alh"
 alias l="ls --color=auto -alh"
 export Blk="\e[0;30m"
 export Red="\e[0;31m"
@@ -1023,11 +1024,13 @@ export BBlu="\e[1;34m"
 export BPur="\e[1;35m"
 export BCya="\e[1;36m"
 export BWhi="\e[1;37m"
-export PS1="${BRed}\\\\u@\h ${BGre}\w${BWhi} \n# "
+export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# "
 export HOME=/root
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
+
+#   PROMPT="╭─%B%F{green}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
 
   cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
 
