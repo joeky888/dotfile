@@ -1030,8 +1030,6 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
-#   PROMPT="╭─%B%F{green}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
-
   cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
 
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
