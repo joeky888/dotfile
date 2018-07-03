@@ -31,8 +31,8 @@ RUN rm -f /var/cache/apk/*
 #                    #
 ######################
 
-WORKDIR /root
-RUN git clone --depth 1 http://zenboml-api.eastasia.cloudapp.azure.com:7788/han/node-data-controller.git
+ADD . /root/node-data-controller/
+#RUN git clone --depth 1 http://zenboml-api.eastasia.cloudapp.azure.com:7788/han/node-data-controller.git
 WORKDIR /root/node-data-controller
 RUN npm install
 
@@ -80,9 +80,9 @@ RUN sed -i "s/\s*$//g" /root/.profile
 #                     #
 #######################
 
-EXPOSE 8080 8080
-WORKDIR /root/node-data-controller
-ENTRYPOINT pm2-runtime start server.js
+EXPOSE 8080
+RUN mkdir -p /root/node-data-controller/
+ENTRYPOINT pm2-runtime start /root/node-data-controller/server.js
 ENV ENV="/root/.profile"
 ENV EDITOR nano
 ENV USER root
@@ -91,6 +91,6 @@ ENV pm2_home /root/.pm2/
 
 SHELL ["/bin/ash"]
 
-# docker build . -t alpine:joeky
-# docker run -d --name controller -p 8080:8080 --restart=always -t alpine:joeky
+# docker build -f ./Dockerfile/Dockerfile . -t han:20180101
+# docker run -d --name controller -p 8080:8080 --restart=always -t han:20180101
 # docker exec -it controller /bin/sh
