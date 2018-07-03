@@ -1030,7 +1030,7 @@ export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
-  cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
+  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
 
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
