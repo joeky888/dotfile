@@ -93,6 +93,6 @@ ENV pm2_home /root/.pm2/
 SHELL ["/bin/ash"]
 
 # docker build -f ./Dockerfile/Dockerfile . -t han:20180101
-# git clone --depth 1 http://zenboml-api.eastasia.cloudapp.azure.com:7788/han/node-data-controller.git $HOME/vm-node-data-controller
-# docker run -d --name controller -p 8080:8080 -v $HOME/vm-node-data-controller:/root/node-data-controller --restart=always -t han:20180101
+# git clone --depth 1 http://zenboml-api.eastasia.cloudapp.azure.com:7788/han/node-data-controller.git $HOME/node-data-controller
+# docker run -d --name controller -p 8080:8080 -v $HOME/:/root/ --restart=always -t han:20180101
 # docker exec -it controller /bin/sh
