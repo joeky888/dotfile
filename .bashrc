@@ -97,6 +97,8 @@ fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
+[ -d $HOME/dotfile/grc ] && export PATH=$HOME/dotfile/grc:$PATH
+[ -d $HOME/dotfile/neofetch ] && export PATH=$HOME/dotfile/neofetch:$PATH
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH

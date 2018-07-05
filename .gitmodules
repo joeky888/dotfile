@@ -14,3 +14,11 @@
     path = powershell
     url = https://github.com/j16180339887/powershell.git
     shallow = true
+[submodule "grc"]
+    path = grc
+    url = https://github.com/garabik/grc.git
+    shallow = true
+[submodule "neofetch"]
+    path = neofetch
+    url = https://github.com/dylanaraps/neofetch.git
+    shallow = true
