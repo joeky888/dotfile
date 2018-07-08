@@ -26,7 +26,7 @@ XTerm*eightBitInput: false
 XTerm*metaSendsEscape: true
 
 ! Copy and paste with clipboard
-XTerm*translations: #override \
+XTerm*VT100.translations: #override \
 	Ctrl Shift <KeyPress> C: copy-selection(CLIPBOARD) \n\
 	Ctrl Shift <KeyPress> V: insert-selection(CLIPBOARD)
 

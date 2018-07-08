@@ -29,6 +29,13 @@ emulator() {
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [[ "$(emulator)" == "xterm" ]]; then
   [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+  echo -e -n "\x1b[\x36 q" # changes to steady bar
+  # echo -e -n "\x1b[\x30 q" # changes to blinking block
+  # echo -e -n "\x1b[\x31 q" # changes to blinking block also
+  # echo -e -n "\x1b[\x32 q" # changes to steady block
+  # echo -e -n "\x1b[\x33 q" # changes to blinking underline
+  # echo -e -n "\x1b[\x34 q" # changes to steady underline
+  # echo -e -n "\x1b[\x35 q" # changes to blinking bar
 elif [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
   cd ~
