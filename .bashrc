@@ -152,7 +152,7 @@ if [[ -d "/opt/bin" ]]; then
   export PATH=$PATH:/opt/bin
 fi
 
-[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14"
+[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
@@ -992,7 +992,7 @@ Forever()
 OpenFileExplorer()
 {
   if [[ "$OSTYPE" == "linux-gnu" || "$OSTYPE" == "freebsd"* ]]; then # Linux + FreeBSD
-    xdg-open . > /dev/null 2>&1;
+    xdg-open . > /dev/null 2>&1 &!;
   elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then # Windows
     explorer.exe .
   elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
