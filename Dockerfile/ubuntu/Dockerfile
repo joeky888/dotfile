@@ -6,6 +6,7 @@ RUN apt update -q \
  && apt upgrade -qy \
  && apt install -qy \
   build-essential \
+  gnupg \
   clang \
   cmake \
   curl \

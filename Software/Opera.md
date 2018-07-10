@@ -94,6 +94,7 @@ https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 https://blog.qt.io/feed
 https://godotengine.org/rss.xml
+https://manjaro.org/feed
 
 * Github
 ```
