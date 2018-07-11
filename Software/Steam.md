@@ -1,3 +1,8 @@
+Enable XBOX PS4 Switch joystick
+=====
+* Go to Big Picture mode
+* Setting -> Enable all these joysticks
+
 Resident Evil 5
 =====
 * Install Media Feature Pack
