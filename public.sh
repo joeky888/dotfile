@@ -6,7 +6,8 @@
 sed -i '/template/d'   ~/dotfile/.gitconfig
 sed -i '/name/d'       ~/dotfile/.gitconfig
 sed -i '/email/d'      ~/dotfile/.gitconfig
-
+sed -i "/pageup/Id"    ~/.vimrc
+sed -i "/pagedown/Id"  ~/.vimrc
 # sed -i '/zsh-hook/d'                        ~/dotfile/.bashrc
 # sed -i '/^\s*update_prompt\s*$/d'               ~/dotfile/.bashrc
 # sed -i 's/ZSH_THEME.*$/ZSH_THEME="bira"/'   ~/dotfile/.bashrc
