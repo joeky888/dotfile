@@ -13,6 +13,7 @@ export LC_TELEPHONE="en_US.UTF-8"
 export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
+export CLICOLOR=1 # Colors for FreeBSD and MacOS
 
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
