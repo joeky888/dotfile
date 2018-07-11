@@ -101,13 +101,14 @@ InstallDotfileCygwin()
 
 InstallGRC()
 {
-  rm -rf grc
-  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
-  if [ $(command -v termux-fix-shebang) ]; then
-    find . -type f -exec termux-fix-shebang {} \;
-  fi
-  $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
-  rm -rf grc
+#   rm -rf grc
+#   git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
+#   if [ $(command -v termux-fix-shebang) ]; then
+#     find . -type f -exec termux-fix-shebang {} \;
+#   fi
+#   $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
+#   rm -rf grc
+  noinstall=1
 }
 
 InstallPy3UTF8()
@@ -128,6 +129,7 @@ InstallPIP()
   echo y | $SUDO pip install youtube-dl
   echo y | $SUDO pip install you-get
   echo y | $SUDO pip install ptpython
+  echo y | $SUDO pip install Glances
 #   echo y | $SUDO pip install ykdl
 #   echo y | $SUDO pip install bypy
 #   echo y | $SUDO pip install speedtest-cli
@@ -141,6 +143,7 @@ InstallMiniconda()
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
   echo y | ~/Miniconda3/bin/pip install ptpython
+  echo y | ~/Miniconda3/bin/pip install Glances
 #   echo y | ~/Miniconda3/bin/pip install bypy
 #   echo y | ~/Miniconda3/bin/pip install ykdl
 }
@@ -193,12 +196,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg neofetch fontconfig traceroute glances dnsutils mtr-tiny rsync python3 wget tig htop -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg neofetch fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
     #pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
     pac=pacman
-    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute glances openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
+    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
