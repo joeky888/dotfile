@@ -16,6 +16,11 @@ nameserver 114.114.114.114
 Hyper terminal
 =====
 ```js
+css: `
+  .xterm {
+    cursor: default;
+  }
+  `,
 colors: {
   black:          '#1B1D1E',
   red:            '#E90000',
