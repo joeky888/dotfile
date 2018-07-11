@@ -1,3 +1,7 @@
+Share screen and sound on 2nd monitor
+=====
+* Windows Desktop -> Win+P -> Second screen only
+
 Enable XBOX PS4 Switch joystick
 =====
 * Go to Big Picture mode
