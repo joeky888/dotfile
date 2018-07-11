@@ -39,6 +39,8 @@ History commits of a file
 
 git restore a single file
 =====
+* $ git checkout -- my-file.txt
+* Or
 * $ git checkout HEAD -- my-file.txt
 
 git restore a commit
