@@ -60,6 +60,8 @@ CLI
 * Go
     * BaiduPCS-Go
     * Micro (text editor)
+    * hugo
+    * mkcert
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
@@ -71,6 +73,8 @@ BaiduPCS-Go config set -max_download_load 5 # 5 Files one time
 ```
 * Nodejs
     * gtop
+    * loadtest
+    * pm2
     * cloc # Programing language usage analyzer
     * git-stats
 * BusyBox / Toybox
