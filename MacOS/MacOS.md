@@ -3,6 +3,10 @@ Make Ctrl key work
 * System Preferences -> Keyboard -> Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
 * Command + Option + D -> Hide dock
 
+Hide dock
+=====
+* System Preferences -> Dock -> Automatically hide and show the Dock -> Check
+
 DNS
 =====
 * System Preferences -> Network -> Select interface
