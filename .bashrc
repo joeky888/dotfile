@@ -14,6 +14,8 @@ export LC_MEASUREMENT="en_US.UTF-8"
 export LC_IDENTIFICATION="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
 export CLICOLOR=1 # Colors for FreeBSD and MacOS
+export force_color_prompt=yes
+export color_prompt=yes
 
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
