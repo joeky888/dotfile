@@ -405,7 +405,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   export ZSH=$HOME/dotfile/oh-my-zsh
   ZSH_THEME=""
 #   plugins=($(find $ZSH/plugins -maxdepth 1 -printf "%f "))
-  plugins=(git docker adb)
+  plugins=(git docker docker-compose adb)
   DISABLE_AUTO_UPDATE="true"
   if [ -f $ZSH/oh-my-zsh.sh ]; then
     source $ZSH/oh-my-zsh.sh
