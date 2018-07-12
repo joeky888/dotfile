@@ -245,6 +245,7 @@ Android
     * Busybox
     * LibreTorrent
     * ScreenCam
+    * Simple Gallery
 * Drop-down menu items
     * Screenshot
     * Flash light
