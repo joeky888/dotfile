@@ -1,3 +1,12 @@
+Args
+=====
+```conf
+-C              UTF8
+-Mutf8          UTF8
+-i              Replace in place (current file)
+-e              Regex
+```
+
 Replace all strings in a file
 =====
 ```sh
