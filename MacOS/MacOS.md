@@ -3,9 +3,10 @@ Make Ctrl key work
 * System Preferences -> Keyboard -> Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
 * Command + Option + D -> Hide dock
 
-Hide dock
+Post-installed
 =====
 * System Preferences -> Dock -> Automatically hide and show the Dock -> Check
+* System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
 
 DNS
 =====
