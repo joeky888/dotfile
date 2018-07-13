@@ -22,7 +22,7 @@ while true; do
     systemctl is-active teamviewerd.service >/dev/null 2>&1
     if [[ $? != 0 ]]; then # if exit code is not zero, restart
       systemctl restart teamviewerd.service
-      echo $(date +"%m/%d/%Y %I:%M:%p") "teamviewer" >> /home/Reconnect.log
+      echo $(date +"%m/%d/%Y %I:%M:%S:%p") "teamviewer" >> /home/Reconnect.log
       if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
         sed -i '1d' /home/Reconnect.log
       fi
