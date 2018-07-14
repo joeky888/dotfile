@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<openbox_config xmlns="http://openbox.org/3.4/rc">
+<openbox_config xmlns="http://openbox.org/3.6/rc">
   <resistance>
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
@@ -19,9 +19,9 @@
     <primaryMonitor/>
   </placement>
   <theme>
-    <name>Nightmare-02</name>
+    <name>Adapta-Maia</name>
     <titleLayout>DSLIMC</titleLayout>
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Ubuntu Medium</name>
@@ -72,7 +72,7 @@
       <name>3</name>
       <name>4</name>
     </names>
-    <popupTime>875</popupTime>
+    <popupTime>200</popupTime>
   </desktops>
   <resize>
     <drawContents>yes</drawContents>
@@ -89,18 +89,6 @@
     <left>0</left>
     <right>0</right>
   </margins>
-  <dock>
-    <position>TopLeft</position>
-    <floatingX>0</floatingX>
-    <floatingY>0</floatingY>
-    <noStrut>no</noStrut>
-    <stacking>Above</stacking>
-    <direction>Vertical</direction>
-    <autoHide>no</autoHide>
-    <hideDelay>300</hideDelay>
-    <showDelay>300</showDelay>
-    <moveButton>Middle</moveButton>
-  </dock>
   <keyboard>
     <chainQuitKey>C-g</chainQuitKey>
     <keybind key="W-d">
@@ -469,11 +457,4 @@
       </mousebind>
     </context>
   </mouse>
-  <menu>
-    <file>menu.xml</file>
-    <hideDelay>200</hideDelay>
-    <middle>no</middle>
-    <submenuShowDelay>100</submenuShowDelay>
-    <applicationIcons>yes</applicationIcons>
-  </menu>
 </openbox_config>
