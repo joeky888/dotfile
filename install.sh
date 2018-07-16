@@ -252,7 +252,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-drivers
   brew cask install hyper
-  brew cask install spectacle
+#   brew cask install spectacle
   chsh -s $(command -v zsh) $(whoami)
 #   brew cask install macvim iterm2
 #   brew linkapps
