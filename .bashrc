@@ -156,6 +156,16 @@ if [[ -d "/opt/bin" ]]; then
   export PATH=$PATH:/opt/bin
 fi
 
+if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
+  # This is for mac
+  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+fi
+
+if [[ -d "/usr/local/opt/coreutils/libexec/gnuman" ]]; then
+  # This is for mac
+  export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+fi
+
 [[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias tmux2SplitHorizontal='tmux split-window -v'
