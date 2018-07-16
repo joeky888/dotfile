@@ -675,7 +675,9 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
   export SUDO=""
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-  alias ls='ls -G'
+  if [[ ! -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
+    alias ls='ls -G'
+  fi
   alias grep='grep --color=auto'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
