@@ -439,6 +439,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     unsetopt menu_complete # Don't autoselect the first completion entry
     autoload -U +X compinit && compinit
     autoload -U +X colors && colors
+    autoload bashcompinit && bashcompinit
     zmodload -i zsh/complist
     zstyle ':completion:*:*:*:*:*' menu select# selected entry highlighting
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*' # Case insensitive
