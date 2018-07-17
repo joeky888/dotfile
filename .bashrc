@@ -120,8 +120,8 @@ if [[ -d "$HOME/golang" ]]; then
   export GOROOT="$HOME/golang"
   export GOPATH="$GOROOT/tool"
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
-  alias upgradeGo='go get -insecure -v -u all'
 fi
+[ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all'
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
