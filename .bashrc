@@ -841,8 +841,14 @@ curlToAria2()
 unzipToBig5py3()
 {
   export zipfilename="$@"
+  export zipfilepwd=""
+
+  echo -n "Input zip password:"
+  read zipfilepwd
   python3 <<END
 import zipfile, sys, os
+
+zipfilepwd = os.environ['zipfilepwd'] or ""
 
 with zipfile.ZipFile(os.environ['zipfilename']) as file:
   for name in file.namelist():
@@ -851,7 +857,7 @@ with zipfile.ZipFile(os.environ['zipfilename']) as file:
     if not os.path.exists(pathname) and pathname!= "":
       os.makedirs(pathname)
     else:
-      data = file.read(name)
+      data = file.read(name, pwd=zipfilepwd.encode())
       if not os.path.exists(utf8name):
         fo = open(utf8name, "wb")
         fo.write(data)
@@ -865,8 +871,14 @@ END
 unzipToGBKpy3()
 {
   export zipfilename="$@"
+  export zipfilepwd=""
+
+  echo -n "Input zip password:"
+  read zipfilepwd
   python3 <<END
 import zipfile, sys, os
+
+zipfilepwd = os.environ['zipfilepwd'] or ""
 
 with zipfile.ZipFile(os.environ['zipfilename']) as file:
   for name in file.namelist():
@@ -875,7 +887,7 @@ with zipfile.ZipFile(os.environ['zipfilename']) as file:
     if not os.path.exists(pathname) and pathname!= "":
       os.makedirs(pathname)
     else:
-      data = file.read(name)
+      data = file.read(name, pwd=zipfilepwd.encode())
       if not os.path.exists(utf8name):
         fo = open(utf8name, "wb")
         fo.write(data)
@@ -889,16 +901,21 @@ END
 unzipToBig5py2()
 {
   export zipfilename="$@"
+  export zipfilepwd=""
+
+  echo -n "Input zip password:"
+  read zipfilepwd
+
   python2 <<END
 import os, sys, zipfile
+zipfilepwd = os.environ['zipfilepwd'] or ""
 file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
   utf8name = name.decode('big5')
-#  print "Extracting " + utf8name
   pathname = os.path.dirname(utf8name)
   if not os.path.exists(pathname) and pathname!= "":
     os.makedirs(pathname)
-  data = file.read(name)
+  data = file.read(name, zipfilepwd)
   if not os.path.exists(utf8name):
     fo = open(utf8name, "w")
     fo.write(data)
@@ -911,16 +928,21 @@ END
 unzipToGBKpy2()
 {
   export zipfilename="$@"
+  export zipfilepwd=""
+
+  echo -n "Input zip password:"
+  read zipfilepwd
+
   python2 <<END
 import os, sys, zipfile
+zipfilepwd = os.environ['zipfilepwd'] or ""
 file = zipfile.ZipFile(os.environ['zipfilename'],"r");
 for name in file.namelist():
   utf8name = name.decode('gbk')
-#  print "Extracting " + utf8name
   pathname = os.path.dirname(utf8name)
   if not os.path.exists(pathname) and pathname!= "":
     os.makedirs(pathname)
-  data = file.read(name)
+  data = file.read(name, zipfilepwd)
   if not os.path.exists(utf8name):
     fo = open(utf8name, "w")
     fo.write(data)
