@@ -143,3 +143,7 @@ Add an user to sudoer
 Get log of systemd
 =====
 * $ sudo journalctl -u SERVICE-NAME.service
+
+Clear system log greater than 10MB
+=====
+* $ sudo journalctl --vacuum-size=10M
