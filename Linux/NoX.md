@@ -136,6 +136,8 @@ nameserver 114.114.114.114
 
 Add an user to sudoer
 =====
+* $ sudo usermod -aG sudo joeky
+* Or
 * $ sudo adduser joeky sudo
 
 Get log of systemd
