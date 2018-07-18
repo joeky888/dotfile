@@ -439,7 +439,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     unsetopt menu_complete # Don't autoselect the first completion entry
     autoload -U +X compinit && compinit
     autoload -U +X colors && colors
-    autoload bashcompinit && bashcompinit
     zmodload -i zsh/complist
     zstyle ':completion:*:*:*:*:*' menu select# selected entry highlighting
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*' # Case insensitive
@@ -447,6 +446,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle ':completion:*' list-colors '' # Popup colors
 #     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
+  autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
   update_prompt() {
     NEWLINE_NO_OMZ=$'\n'
