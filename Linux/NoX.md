@@ -147,3 +147,47 @@ Get log of systemd
 Clear system log greater than 10MB
 =====
 * $ sudo journalctl --vacuum-size=10M
+
+cat, more, less command with color
+=====
+```sh
+# file.txt
+[30mTEXT[39m
+[31mTEXT[39m
+[32mTEXT[39m
+[33mTEXT[39m
+[34mTEXT[39m
+[35mTEXT[39m
+[36mTEXT[39m
+[37mTEXT[39m
+[90mTEXT[39m
+[91mTEXT[39m
+[92mTEXT[39m
+[93mTEXT[39m
+[94mTEXT[39m
+[95mTEXT[39m
+[96mTEXT[39m
+[97mTEXT[39m
+
+[40mTEXT[49m
+[41mTEXT[49m
+[42mTEXT[49m
+[43mTEXT[49m
+[44mTEXT[49m
+[45mTEXT[49m
+[46mTEXT[49m
+[47mTEXT[49m
+[100mTEXT[49m
+[101mTEXT[49m
+[102mTEXT[49m
+[103mTEXT[49m
+[104mTEXT[49m
+[105mTEXT[49m
+[106mTEXT[49m
+[107mTEXT[49m
+# file.txt
+
+cat  file.txt
+more file.txt
+less file.txt
+```
