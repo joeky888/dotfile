@@ -7,8 +7,11 @@ console.log(agent);
 
 Print colored JSON without libs
 =====
+* Use `util.inspect.colors` to change different colors
+* Use `util.inspect.styles` to change different colors for each keyword
 ```javascript
-util.inspect(JSON.parse('{"foo":"bar"}'),false, null, true)
+util.inspect(JSON.parse('{"foo":"bar"}'), false, null, true)
+util.inspect(myObject, false, null, true)
 ```
 
 Foreach loop, index vs element
