@@ -5,6 +5,12 @@ var agent = navigator.userAgent || navigator.vendor || window.opera;
 console.log(agent);
 ```
 
+Print colored JSON without libs
+=====
+```javascript
+util.inspect(JSON.parse('{"foo":"bar"}'),false, null, true)
+```
+
 Foreach loop, index vs element
 =====
 ```javascript
