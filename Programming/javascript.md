@@ -39,6 +39,21 @@ util.inspect.colors.LIGHT_PURPLE=[95,39]
 util.inspect.colors.LIGHT_CYAN=[96,39]
 util.inspect.colors.LIGHT_GRAY=[97,39]
 
+util.inspect.colors.BG_RED=[41,49]
+util.inspect.colors.BG_GREEN=[42,49]
+util.inspect.colors.BG_YELLOW=[44,49]
+util.inspect.colors.BG_BLUE=[44,49]
+util.inspect.colors.BG_PURPLE=[45,49]
+util.inspect.colors.BG_CYAN=[46,49]
+util.inspect.colors.BG_GRAY=[90,39]
+util.inspect.colors.BG_LIGHT_RED=[101,49]
+util.inspect.colors.BG_LIGHT_GREEN=[102,49]
+util.inspect.colors.BG_LIGHT_YELLOW=[103,49]
+util.inspect.colors.BG_LIGHT_BLUE=[104,49]
+util.inspect.colors.BG_LIGHT_PURPLE=[105,39]
+util.inspect.colors.BG_LIGHT_CYAN=[106,49]
+util.inspect.colors.BG_LIGHT_GRAY=[107,49]
+
 util.inspect.styles.name='LIGHT_CYAN'
 ```
 
