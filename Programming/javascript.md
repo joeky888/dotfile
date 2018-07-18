@@ -12,6 +12,7 @@ Print colored JSON without libs
 ```javascript
 
 // Quick example
+const util = require('util')
 util.inspect(JSON.parse('{"foo":"bar"}'), false, null, true)
 util.inspect(myObject, false, null, true)
 
