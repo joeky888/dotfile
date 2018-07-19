@@ -241,6 +241,7 @@ alias ffmpeg='ffmpeg -err_detect ignore_err'
 alias l='ls -lah'
 alias ll='ls -lh'
 alias ls='ls -F --color=auto --show-control-chars'
+alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 alias ssh-asus-ml='ssh joeky@zenboml-api.eastasia.cloudapp.azure.com'
