@@ -134,9 +134,11 @@ nameserver 114.114.114.114
 ```
 * $ sudo resolvconf -u
 
-Add an user to sudoer
+Add an user to sudoer group
 =====
 * $ sudo usermod -aG sudo joeky
+* Or
+* $ sudo gpasswd -a joeky sudo
 * Or
 * $ sudo adduser joeky sudo
 
