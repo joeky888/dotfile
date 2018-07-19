@@ -1078,6 +1078,8 @@ export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
 
   [ -f /etc/resolv.conf ] && cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
+  [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
+  [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $HOME/Alpine/etc/resolv.conf
 
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
