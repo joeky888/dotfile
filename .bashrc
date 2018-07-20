@@ -595,6 +595,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   export HISTFILESIZE=
   export HISTSIZE=
   shopt -s histappend # Append history
+  shopt -s checkwinsize # Checks the window size after each command
   PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND" # Write history immediately
   if [[ $- =~ i ]]; then
     bind 'set bell-style none' # Disable beep sound
