@@ -101,14 +101,13 @@ InstallDotfileCygwin()
 
 InstallGRC()
 {
-#   rm -rf grc
-#   git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
-#   if [ $(command -v termux-fix-shebang) ]; then
-#     find . -type f -exec termux-fix-shebang {} \;
-#   fi
-#   $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
-#   rm -rf grc
-  noinstall=1
+  rm -rf grc
+  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
+  if [ $(command -v termux-fix-shebang) ]; then
+    find . -type f -exec termux-fix-shebang {} \;
+  fi
+  $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
+  rm -rf grc
 }
 
 InstallPy3UTF8()
