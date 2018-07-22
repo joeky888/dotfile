@@ -17,10 +17,11 @@ Init
 * $ create-react-native-app ProjectName
 * $ cd ProjectName
 * $ `rm -rf node_modules`
-* $ npm install # or yarn install
+* $ npm install && npm audit fix --force # or yarn install
 * Disable all other connetions in Network Connections (Like "VirtualBox Host-Only Network")
 * $ `echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events && echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances && watchman shutdown-server && sudo sysctl -p`
-* $ rm -f package-lock.json yarn.lock ; npm --verbose --reset-cache start
+* $ `sudo sysctl -w fs.inotify.max_user_watches=10000`
+* $ watchman watch-del-all ; rm -f package-lock.json yarn.lock ; npm --verbose --reset-cache start # then press Q
 * $ npm --verbose run android
 * $ npm --verbose run ios
 * Press capital `R` in terminal to restart and clear cache
