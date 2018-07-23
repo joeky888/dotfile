@@ -105,6 +105,13 @@ Extract subtitle
 =====
 * $ ffmpeg -i Movie.mkv -map 0:s:0 subs.srt
 
+Shift subtitle timing
+=====
+* Delay 0.7s
+* $ ffmpeg -itsoffset 0.7 -i input.ass output.ass
+* Advance 0.7s
+* $ ffmpeg -itsoffset -0.7 -i input.ass output.ass
+
 Copy encoding if convert coding is not available
 =====
 * Video
