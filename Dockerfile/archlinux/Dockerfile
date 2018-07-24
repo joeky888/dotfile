@@ -8,8 +8,8 @@ FROM archimg/base:latest
 
 RUN echo $'[archlinuxcn]\n\
 SigLevel = Never\n\
-Server = https://cdn.repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
-RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring
+Server = http://cdn.repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
+RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring nano powerpill
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' > /etc/pacman.d/mirrorlist.bak"
@@ -25,7 +25,7 @@ RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/
 
 # RUN pacman -S --noconfirm --needed powerpill
 # RUN powerpill -Syyu --noconfirm --needed
-RUN pacman -S --noconfirm --needed nano
+# RUN pacman -S --noconfirm --needed nano powerpill
 RUN bash -c "pacman -Qdtq | pacman -Rs - || echo ok"
 RUN rm -rf /var/cache/pacman/pkg/*
 
