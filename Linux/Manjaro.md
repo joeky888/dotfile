@@ -30,6 +30,10 @@ Unstable and testing package (Manjaro)
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
 * $ sudo pacman-mirrors -f 0
 
+Install qemu
+=====
+* $ sudo powerpill -S qemu-arch-extra
+
 Install virtualbox
 =====
 * $ uname -a # Get kernel version

@@ -134,7 +134,7 @@ Windows
 ```
 * Chocolatey
     * $ Set-ExecutionPolicy RemoteSigned -Force
-    * $ Unblock-File $profile
+    * $ Unblock-File $profile.CurrentUserAllHosts
     * $ New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
     * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
     * $ PowerShellGet\Install-Module posh-docker -Scope CurrentUser
