@@ -5,7 +5,7 @@ POST with json, well I didn't really test this one
 * -insecure means don't check certificate of this connection
 ```sh
 # Bash
-curl -v https://hanshih.management.azure-api.net/api/Assets -X POST \
+curl -vi https://hanshih.management.azure-api.net/api/Assets -X POST \
     --insecure \
     -H "Content-Type: application/json; charset=utf-8" \
     -H "DataServiceVersion:1.0;NetFx" \
@@ -27,7 +27,7 @@ curl -v https://hanshih.management.azure-api.net/api/Assets -X POST \
 ```
 ```sh
 # Powershell
-curl.exe -v https://hanshih.management.azure-api.net/api/Assets -X POST `
+curl.exe -vi https://hanshih.management.azure-api.net/api/Assets -X POST `
     --insecure `
     -H "Content-Type: application/json; charset=utf-8" `
     -H "DataServiceVersion:1.0;NetFx" `
