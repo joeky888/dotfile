@@ -235,6 +235,7 @@ Android
 * Opengapps (flash it if gapps are not functional)
 * APKPure - Google Play alternative
 * Baidu Map
+* SystemPanel 2
 * F-Droid
     * OpenLauncher
     * Firefox Klar (5.0+) / Fennec (4.1+)
