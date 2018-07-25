@@ -17,7 +17,7 @@ source /opt/poky/2.5/environment-setup-arch-poky-linux
 runqemu qemuarm64 ./Image-qemuarm64.bin ./core-image-sato-qemuarm64.ext4
 ```
 
-Install opkg file manager
+Install opkg package manager
 =====
 * Original tutorial here
     * https://github.com/Entware/Entware-ng/wiki/Install-on-Android
