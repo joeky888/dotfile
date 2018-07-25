@@ -98,3 +98,9 @@ ES6+
 ```javascript
 let newArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ].map((value) => value + 1);
 ```
+* Get data from a promise object
+```javascript
+const result = await async myPromiseFunc
+// Or
+const result  = await myPromiseFunc.then(result => result.data);
+```

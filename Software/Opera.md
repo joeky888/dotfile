@@ -48,6 +48,7 @@ Extension
 * Octotree
 * No Coin
 * LanguageTool
+* JSON Viewer
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Hacker News Enhancement Suite
