@@ -65,8 +65,7 @@ make PREFIX="$HOME/$ARM_PREFIX" install
 git clone --depth 1 https://github.com/micropython/micropython $HOME/micropython
 git submodule update --init
 git clone --depth 1 https://github.com/micropython/oofatfs $HOME/oofatfs
-cp -r ~/oofatfs/src/ ~/micropython/lib/oofatfs
-rm -rf ~/micropython/lib/oofatfs
+rm -rf ~/micropython/lib/oofatfs && cp -r ~/oofatfs/src/ ~/micropython/lib/oofatfs
 
 cd ports/unix
 
