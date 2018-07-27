@@ -67,6 +67,32 @@ git submodule update --init
 git clone --depth 1 https://github.com/micropython/oofatfs $HOME/oofatfs
 rm -rf ~/micropython/lib/oofatfs && cp -r ~/oofatfs/src/ ~/micropython/lib/oofatfs
 
+cd mpy-cross
+export ARM_PREFIX="aarch64-linux-gnu"
+export LIB_CACHE=$HOME/$ARM_PREFIX
+export CROSS_COMPILE="$ARM_PREFIX-"
+export CROSS_COMPILER_PREFIX="$ARM_PREFIX-"
+export CC="${CROSS_COMPILE}gcc"
+export CXX="${CROSS_COMPILE}g++"
+export LD="${CROSS_COMPILE}ld"
+export AS="${CROSS_COMPILE}as"
+export AR="${CROSS_COMPILE}ar"
+export RANLIB="${CROSS_COMPILE}ranlib"
+export STRIP="${CROSS_COMPILE}strip"
+export HOSTCC="gcc"
+export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/mpy-cross -I$HOME/micropython/mpy-cross/build -I$HOME/micropython/ports/unix -I$HOME/micropython/lib/axtls/ssl -I$HOME/micropython/lib/axtls/crypto -I$HOME/micropython/lib/axtls/config -I$HOME/micropython/lib/berkeley-db-1.xx/PORT/include -I$HOME/micropython/ports/unix/build -I$LIB_CACHE/include"
+export LDFLAGS="-lm -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+export LDLIBS="-lm"
+export ARCH="arm"
+
+
+# make V=1 CC="$CC" HOSTCC="$CC" HOST="$ARM_PREFIX" ARCH="$ARCH" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" CROSS_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" axtls
+make V=1 CC="$CC" CXX="$CXX" HOSTCC="$HOSTCC" STRIP="$STRIP" HOST="$ARM_PREFIX" \
+LD="$LD" AS="$AS" AR="$AR" RANLIB="$RANLIB" \
+ARCH="$ARCH" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" \
+CROSS_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" \
+CROSS_COMPILER_PREFIX="$CROSS_COMPILER_PREFIX" PREFIX="$HOME/$ARM_PREFIX"
+
 cd ports/unix
 
 export ARM_PREFIX="aarch64-linux-gnu"
@@ -81,7 +107,7 @@ export AR="${CROSS_COMPILE}ar"
 export RANLIB="${CROSS_COMPILE}ranlib"
 export STRIP="${CROSS_COMPILE}strip"
 export HOSTCC="gcc"
-export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/mpy-cross -I$HOME/micropython/mpy-cross/build -I$HOME/micropython/ports/unix -I$HOME/micropython/lib/axtls/ssl -I$HOME/micropython/lib/axtls/crypto -I$HOME/micropython/lib/axtls/config -I$HOME/micropython/lib/berkeley-db-1.xx/PORT/include -I$HOME/micropython/ports/unix/build -I$LIB_CACHE/include"
+export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/ports/unix -I$HOME/micropython/mpy-cross -I$HOME/micropython/mpy-cross/build -I$HOME/micropython/lib/axtls/ssl -I$HOME/micropython/lib/axtls/crypto -I$HOME/micropython/lib/axtls/config -I$HOME/micropython/lib/berkeley-db-1.xx/PORT/include -I$HOME/micropython/ports/unix/build -I$LIB_CACHE/include"
 export LDFLAGS="-lm -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
 export LDLIBS="-lm"
 export ARCH="arm"
