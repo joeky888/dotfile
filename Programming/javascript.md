@@ -104,3 +104,24 @@ const result = await async myPromiseFunc
 // Or
 const result  = await myPromiseFunc.then(result => result.data);
 ```
+
+String color
+=====
+```javascript
+exports.logcat = function() {
+    String.prototype.RED            = function(){ return `\u001b[31m${this}\u001b[39m` }
+    String.prototype.GREEN          = function(){ return `\u001b[32m${this}\u001b[39m` }
+    String.prototype.YELLOW         = function(){ return `\u001b[33m${this}\u001b[39m` }
+    String.prototype.BLUE           = function(){ return `\u001b[34m${this}\u001b[39m` }
+    String.prototype.PURPLE         = function(){ return `\u001b[35m${this}\u001b[39m` }
+    String.prototype.CYAN           = function(){ return `\u001b[36m${this}\u001b[39m` }
+    String.prototype.GRAY           = function(){ return `\u001b[37m${this}\u001b[39m` }
+    String.prototype.LIGHT_RED      = function(){ return `\u001b[91m${this}\u001b[39m` }
+    String.prototype.LIGHT_GREEN    = function(){ return `\u001b[92m${this}\u001b[39m` }
+    String.prototype.LIGHT_YELLOW   = function(){ return `\u001b[93m${this}\u001b[39m` }
+    String.prototype.LIGHT_BLUE     = function(){ return `\u001b[94m${this}\u001b[39m` }
+    String.prototype.LIGHT_PURPLE   = function(){ return `\u001b[95m${this}\u001b[39m` }
+    String.prototype.LIGHT_CYAN     = function(){ return `\u001b[96m${this}\u001b[39m` }
+    String.prototype.LIGHT_GRAY     = function(){ return `\u001b[97m${this}\u001b[39m` }
+}
+```
