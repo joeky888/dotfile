@@ -662,12 +662,14 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
     if (( $EUID != 0 )); then
       export MAIN_THEME=$COLOR_LIGHT_GREEN
+      export MATIN_DOLOR="$"
     else
       export MAIN_THEME=$COLOR_LIGHT_RED
+      export MATIN_DOLOR="#"
     fi
     # USER@DOMAIN directory
     bashprompt(){
-      export PS1="╭─${MAIN_THEME}\u@\h ${COLOR_LIGHT_BLUE}\w ${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_RESET}\n╰─\$ "
+      export PS1="╭─${MAIN_THEME}\u@\h ${COLOR_LIGHT_BLUE}\w ${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_RESET}\n╰─${MATIN_DOLOR} "
     }
     PROMPT_COMMAND=bashprompt
   fi
