@@ -449,10 +449,15 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   fi
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
+  if (( $EUID != 0 )); then
+    export MAIN_THEME='green'
+  else
+    export MAIN_THEME='red'
+  fi
   update_prompt() {
     NEWLINE_NO_OMZ=$'\n'
     # %B=light_color %F=color %K=background
-    PROMPT="╭─%B%F{green}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
+    PROMPT="╭─%B%F{$MAIN_THEME}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─> "
   }
   update_prompt
   add-zsh-hook chpwd update_prompt
@@ -655,9 +660,14 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     export COLOR_BG_LIGHT_PURPLE="\[$(tput setab 5; tput bold)\]"
     export COLOR_BG_LIGHT_CYAN="\[$(tput setab 6; tput bold)\]"
     export COLOR_BG_LIGHT_GRAY="\[$(tput setab 7; tput bold)\]"
+    if (( $EUID != 0 )); then
+      export MAIN_THEME=$COLOR_LIGHT_GREEN
+    else
+      export MAIN_THEME=$COLOR_LIGHT_RED
+    fi
     # USER@DOMAIN directory
     bashprompt(){
-      export PS1="╭─${COLOR_LIGHT_GREEN}\u@\h ${COLOR_LIGHT_BLUE} \w ${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_RESET}\n╰─\$ "
+      export PS1="╭─${MAIN_THEME}\u@\h ${COLOR_LIGHT_BLUE}\w ${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_RESET}\n╰─\$ "
     }
     PROMPT_COMMAND=bashprompt
   fi

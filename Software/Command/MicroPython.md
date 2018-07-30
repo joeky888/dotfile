@@ -81,7 +81,7 @@ export HOSTCC="gcc"
 export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/mpy-cross -I$HOME/micropython/mpy-cross/build"
 export LDFLAGS="-lm"
 export LDLIBS="-lm"
-export ARCH="x86"
+export ARCH="x86_64"
 
 
 # make V=1 CC="$CC" HOSTCC="$CC" HOST="$ARM_PREFIX" ARCH="$ARCH" CFLAGS="$CFLAGS" LDFLAGS="$LDFLAGS" LDLIBS="$LDLIBS" CROSS_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" axtls
@@ -92,6 +92,10 @@ CROSS_PREFIX="$CROSS_COMPILE" CROSS_COMPILE="$CROSS_COMPILE" \
 CROSS_COMPILER_PREFIX="$CROSS_COMPILER_PREFIX" PREFIX="$HOME/$ARM_PREFIX"
 
 cd ports/unix
+
+sed -i '1i#endif\' $HOME/micropython/lib/berkeley-db-1.xx/mpool/mpool.c
+sed -i '1i#define EFTYPE EINVAL\' $HOME/micropython/lib/berkeley-db-1.xx/mpool/mpool.c
+sed -i '1i#ifndef EFTYPE\' $HOME/micropython/lib/berkeley-db-1.xx/mpool/mpool.c
 
 export ARM_PREFIX="aarch64-linux-gnu"
 export LIB_CACHE=$HOME/$ARM_PREFIX
@@ -105,9 +109,9 @@ export AR="${CROSS_COMPILE}ar"
 export RANLIB="${CROSS_COMPILE}ranlib"
 export STRIP="${CROSS_COMPILE}strip"
 export HOSTCC="gcc"
-export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/ports/unix -I$HOME/micropython/mpy-cross -I$HOME/micropython/lib/axtls/ssl -I$HOME/micropython/lib/axtls/crypto -I$HOME/micropython/lib/axtls/config -I$HOME/micropython/lib/berkeley-db-1.xx/PORT/include -I$HOME/micropython/ports/unix/build -I$LIB_CACHE/include"
-export LDFLAGS="-lm -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
-export LDLIBS="-lm"
+export CFLAGS="-O1 -fPIC -I$HOME/micropython -I$HOME/micropython/ports/unix -I$HOME/micropython/mpy-cross -I$HOME/micropython/lib/axtls/ssl -I$HOME/micropython/lib/axtls/crypto -I$HOME/micropython/lib/axtls/config -I$HOME/micropython/lib/berkeley-db-1.xx/include -I$HOME/micropython/lib/berkeley-db-1.xx/PORT/include -I$HOME/micropython/ports/unix/build -I$LIB_CACHE/include -I/usr/$ARM_PREFIX/include -I/usr/$ARM_PREFIX/usr/include"
+export LDFLAGS="-lm -lc -lffi -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -L/usr/$ARM_PREFIX/lib64 -L/usr/$ARM_PREFIX/usr/lib"
+export LDLIBS="-lm -lc -lgcc -lffi"
 export ARCH="arm"
 
 
