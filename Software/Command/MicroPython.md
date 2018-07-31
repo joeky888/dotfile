@@ -27,8 +27,8 @@ export LIB_CACHE=$HOME/$ARM_PREFIX
 export CROSS_COMPILE="$ARM_PREFIX-"
 export CROSS_COMPILER_PREFIX="$ARM_PREFIX-"
 export CFLAGS_EXTRA=""
-export LDFLAGS_EXTRA="-L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
-cd libffi
+export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+cd $HOME/libffi
 make clean
 ./autogen.sh
 ./configure --prefix=$LIB_CACHE --host=$ARM_PREFIX
@@ -38,6 +38,6 @@ make install
 cd $HOME/micropython/ports/unix
 make clean
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
-make V=1 CROSS_COMPILE="$CROSS_COMPILE"
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 ./micropython
 ```
