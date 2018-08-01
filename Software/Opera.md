@@ -49,6 +49,7 @@ Extension
 * No Coin
 * LanguageTool
 * JSON Viewer
+* XV XML Viewer
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Hacker News Enhancement Suite
