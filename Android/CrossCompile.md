@@ -12,8 +12,8 @@ cd android-ndk
 # arch could be arm, arm64, x86, x86_64
 ./build/tools/make_standalone_toolchain.py --arch=arm --package-dir=$PWD
 ./build/tools/make_standalone_toolchain.py --arch=x86 --package-dir=$PWD
-tar -xvjf ./arm-linux-androideabi.tar.bz2
-tar -xvjf ./i686-linux-android.tar.bz2
+tar xvjf ./arm-linux-androideabi.tar.bz2
+tar xvjf ./i686-linux-android.tar.bz2
 # Custom variable NDK_PREFIX
 export NDK_PREFIX="arm-linux-androideabi"
 

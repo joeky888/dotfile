@@ -44,7 +44,7 @@ make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython $HOME/$CC_PREFIX
 
 ##############################################
-pacman -S bison linux-api-headers --noconfirm
+pacman -S bison arm-none-eabi-gcc arm-none-eabi-newlib linux-api-headers --noconfirm
 git clone --depth 1 git://sourceware.org/git/glibc.git $HOME/glibc
 #git clone --depth 1 git://sourceware.org/git/glibc-ports.git $HOME/glibc/ports
 mkdir -p $HOME/glibc/glibcbuild && cd $HOME/glibc/glibcbuild
@@ -52,9 +52,12 @@ export CC_PREFIX="arm-none-eabi"
 export LIB_CACHE=$HOME/$CC_PREFIX
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CFLAGS_EXTRA="-I/usr/include -I/usr/include/linux"
+export CC="${CROSS_COMPILE}gcc"
+export CXX="${CROSS_COMPILE}g++"
+export CFLAGS_EXTRA=""
 export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
-../configure CC="${CROSS_COMPILE}gcc" --prefix=$LIB_CACHE --host=arm-linux --build=$CC_PREFIX --with-headers=/usr/include
+export ARCH="arm-linux"
+$HOME/glibc/configure CC=$CC CXX=$CXX --prefix=$LIB_CACHE --target=$ARCH --host=$ARCH --with-headers=/usr/include --enable-add-on=nptls
 #    --enable-add-on=nptl \
 #    libc_cv_forced_unwind=yes \
 #    libc_cv_c_cleanup=yes \
