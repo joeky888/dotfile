@@ -47,19 +47,23 @@ InstallDotfile()
   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.pip/
+  mkdir -p $Home/.grc/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
-  ln -sf $Home/dotfile/grc/colourfiles ~/.grc
+  ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
+  cp ~/dotfile/grc/colourfiles/* ~/.grc
 }
 
 InstallDotfileCygwin()
 {
   rm -rf $Home/dotfile
+  rm -rf ~/.grc
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   mkdir -p $Home/Documents/WindowsPowerShell
   mkdir -p $Home/.pip/
   mkdir -p $Home/pip/
+  mkdir -p $Home/.grc/
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -99,8 +103,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
-  rm -rf ~/.grc
-  ln -sf ~/dotfile/grc/colourfiles ~/.grc
+  ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
+  cp ~/dotfile/grc/colourfiles/* ~/.grc
 }
 
 InstallGRC()
