@@ -26,6 +26,7 @@ InstallDotfile()
   rm -rf ~/.condarc
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
+  rm -rf ~/.grc
 
   git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -49,6 +50,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
+  ln -sf $Home/dotfile/grc/colourfiles ~/.grc
 }
 
 InstallDotfileCygwin()
@@ -97,6 +99,8 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
+  rm -rf ~/.grc
+  ln -sf ~/dotfile/grc/colourfiles ~/.grc
 }
 
 InstallGRC()

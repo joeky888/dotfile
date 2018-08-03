@@ -316,6 +316,7 @@ upgradeDotfile() {
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/Documents/WindowsPowerShell/profile.ps1
   rm -rf ~/.grc
+  ln -sf $Home/dotfile/grc/colourfiles ~/.grc
 
   if [[ "$OSTYPE" == "cygwin" ]]; then
     mkdir -p ~/AppData/Local/nvim/
