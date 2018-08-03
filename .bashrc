@@ -361,6 +361,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   fi;
+  ln -sf $HOME/dotfile/grc ~/.grc
 }
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
