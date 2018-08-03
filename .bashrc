@@ -319,7 +319,7 @@ upgradeDotfile() {
 
   mkdir -p ~/.grc
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
-  cp ~/dotfile/grc/colourfiles/* ~/.grc
+  ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 
   if [[ "$OSTYPE" == "cygwin" ]]; then
     mkdir -p ~/AppData/Local/nvim/
