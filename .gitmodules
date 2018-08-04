@@ -17,7 +17,6 @@
 [submodule "grc"]
     path = grc
     url = https://github.com/garabik/grc.git
-    branch = devel
     shallow = true
 [submodule "neofetch"]
     path = neofetch
