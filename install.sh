@@ -109,13 +109,14 @@ InstallDotfileCygwin()
 
 InstallGRC()
 {
-  rm -rf grc
-  git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
-  if [ $(command -v termux-fix-shebang) ]; then
-    find . -type f -exec termux-fix-shebang {} \;
-  fi
-  $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
-  rm -rf grc
+#   rm -rf grc
+#   git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
+#   if [ $(command -v termux-fix-shebang) ]; then
+#     find . -type f -exec termux-fix-shebang {} \;
+#   fi
+#   $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
+#   rm -rf grc
+  noinstall=1
 }
 
 InstallPy3UTF8()
@@ -235,11 +236,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
   $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   InstallMiniconda Linux
-  if [[ $(command -v pacman) ]]; then
-    $SUDO pacman -S grc --noconfirm --needed
-  else
-    InstallGRC
-  fi
+  InstallGRC
   InstallPy3UTF8
 
 
@@ -254,7 +251,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip rsync mas grc qpdf
+  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip rsync mas qpdf
   brew tap homebrew/cask
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-drivers
