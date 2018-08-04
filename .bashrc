@@ -727,6 +727,7 @@ alias ......='cd ../../../../../'
 
 if [ $(command -v grc) ] ; then
   cmds=(  ant \
+          as \
           blkid \
           cvs \
           df \
@@ -745,18 +746,21 @@ if [ $(command -v grc) ] ; then
           gcc \
           getfacl \
           getsebool \
+          gmake \
           id \
           ifconfig \
-          iostat_sar \
+          iostat \
           ip \
-          ipaddr \
-          ipneighbor \
           iproute \
           iptables \
           irclog \
           iwconfig \
           jobs \
+          journalctl \
           last \
+          lastb \
+          lastlog \
+          ld \
           ldap \
           log \
           lolcat \
@@ -765,6 +769,7 @@ if [ $(command -v grc) ] ; then
           lsmod \
           lsof \
           lspci \
+          make \
           mount \
           mtr \
           mvn \
@@ -774,12 +779,13 @@ if [ $(command -v grc) ] ; then
           php \
           ping \
           ping2 \
+          ping3 \
+          ping6 \
           proftpd \
           ps \
           pv \
-          semanageboolean \
-          semanagefcontext \
-          semanageuser \
+          sar \
+          semanage \
           sensors \
           showmount \
           sql \
@@ -789,11 +795,14 @@ if [ $(command -v grc) ] ; then
           systemctl \
           tcpdump \
           traceroute \
+          traceroute6 \
           tune2fs \
           ulimit \
           uptime \
           vmstat \
+          w \
           wdiff \
+          who \
           whois
   );
 
