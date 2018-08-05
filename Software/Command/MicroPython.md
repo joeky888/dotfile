@@ -15,6 +15,8 @@ sed -i "s/^SigLevel.*/SigLevel=Never/g" /etc/pacman.conf
 pacman -S git make gcc pkgconf autoconf automake sudo --noconfirm
 pacman -S aarch64-linux-gnu-gcc --noconfirm
 
+apt install -y git make gcc pkgconf autoconf automake libtool-bin texinfo python
+
 git clone --depth 1 https://github.com/libffi/libffi $HOME/libffi
 git clone --depth 1 https://github.com/micropython/micropython $HOME/micropython
 
@@ -24,13 +26,14 @@ make clean
 make
 
 ##############################################
+apt install -y gcc-aarch64-linux-gnu
 
 export CC_PREFIX="aarch64-linux-gnu"
 export LIB_CACHE=$HOME/$CC_PREFIX
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CFLAGS_EXTRA=""
-export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include"
+export LDFLAGS_EXTRA="-static -lffi -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
 cd $HOME/libffi
 make clean
 ./autogen.sh
@@ -45,48 +48,14 @@ make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython $HOME/$CC_PREFIX
 
 ##############################################
+apt install -y gcc-arm-linux-gnueabi
 
-pacman -S bison flex man-pages arm-none-eabi-gcc arm-none-eabi-newlib linux-api-headers --noconfirm
-pacman -S mingw-w64-gcc --noconfirm
-git clone --depth 1 git://sourceware.org/git/glibc.git $HOME/glibc
-#git clone --depth 1 git://sourceware.org/git/glibc-ports.git $HOME/glibc/ports
-cd $HOME/glibc && git reset --hard && git clean -xdf
-mkdir -p $HOME/glibc/glibcbuild && cd $HOME/glibc/glibcbuild
-echo 'libc_cv_forced_unwind=yes' > config.cache
-echo 'libc_cv_c_cleanup=yes' >> config.cache
-echo 'libc_cv_mips_tls=yes' >> config.cache
-echo 'libc_cv_gnu99_inline=yes' >> config.cache
-sed -i '1s/^/#define __builtin_thread_pointer()  ((void *) 0)/' $HOME/glibc/sysdeps/unix/sysv/linux/arm/tls.h
-export CC_PREFIX="x86_64-w64-mingw32"
+export CC_PREFIX="arm-linux-gnueabi"
 export LIB_CACHE=$HOME/$CC_PREFIX
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CC="${CROSS_COMPILE}gcc"
-export CXX="${CROSS_COMPILE}g++"
-export LD="${CROSS_COMPILE}ld"
-export AS="${CROSS_COMPILE}as"
-#export CFLAGS_EXTRA=""
-#export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
-export HOST="mingw64"
-export BUILD="x86_64-pc-linux-gnu"
-export TARGET="mingw64"
-$HOME/glibc/configure CC=$CC CXX=$CXX LD=$LD AS=$AS --prefix=$LIB_CACHE --build=$BUILD --target=$TARGET --host=$HOST --with-headers=/usr/include --config-cache
-
-#useradd -ms /bin/bash docker
-#echo "docker ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-#gpg --recv-keys 13FCEF89DD9E3C4F
-#runuser -l docker -c "gpg --recv-keys 13FCEF89DD9E3C4F"
-#yes | runuser -l docker -c "yaourt --noconfirm -S mingw-w64-crt mingw-w64-gcc-bin"
-#echo "NOCONFIRM=1
-#BUILD_NOCONFIRM=1
-#EDITFILES=0
-#" > ~/.yaourtrc
-export CC_PREFIX="x86_64-w64-mingw32"
-export LIB_CACHE=$HOME/$CC_PREFIX
-export CROSS_COMPILE="$CC_PREFIX-"
-export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CFLAGS_EXTRA=""
-export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include"
+export LDFLAGS_EXTRA="-static -lffi -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
 cd $HOME/libffi
 make clean
 ./autogen.sh
@@ -101,43 +70,14 @@ make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython $HOME/$CC_PREFIX
 
 ##############################################
-pacman -S bison flex man-pages arm-none-eabi-gcc arm-none-eabi-newlib linux-api-headers --noconfirm
-git clone --depth 1 git://sourceware.org/git/glibc.git $HOME/glibc
-#git clone --depth 1 git://sourceware.org/git/glibc-ports.git $HOME/glibc/ports
-cd $HOME/glibc && git reset --hard && git clean -xdf
-mkdir -p $HOME/glibc/glibcbuild && cd $HOME/glibc/glibcbuild
-echo 'libc_cv_forced_unwind=yes' > config.cache
-echo 'libc_cv_c_cleanup=yes' >> config.cache
-echo 'libc_cv_mips_tls=yes' >> config.cache
-echo 'libc_cv_gnu99_inline=yes' >> config.cache
-sed -i '1s/^/#define __builtin_thread_pointer()  ((void *) 0)/' $HOME/glibc/sysdeps/unix/sysv/linux/arm/tls.h
-export CC_PREFIX="arm-none-eabi"
+apt install -y gcc-mingw-w64-x86-64
+#cp /usr/arm-linux-gnueabi/include/malloc.h /usr/arm-linux-gnueabi/include/alloca.h
+export CC_PREFIX="x86_64-w64-mingw32"
 export LIB_CACHE=$HOME/$CC_PREFIX
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CC="${CROSS_COMPILE}gcc"
-export CXX="${CROSS_COMPILE}g++"
-export LD="${CROSS_COMPILE}ld"
-export AS="${CROSS_COMPILE}as"
-#export CFLAGS_EXTRA=""
-#export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
-export ARCH="arm-linux"
-$HOME/glibc/configure CC=$CC CXX=$CXX LD=$LD AS=$AS --prefix=$LIB_CACHE --target=$ARCH --host=$ARCH --with-headers=/usr/include --config-cache
-#    --enable-add-on=nptl \
-#    libc_cv_forced_unwind=yes \
-#    libc_cv_c_cleanup=yes \
-#    libc_cv_mips_tls=yes \
-#    libc_cv_gnu99_inline=yes
-#make -k install-headers cross_compiling=yes install_root=$LIB_CACHE
-mkdir -p $LIB_CACHE
-make -k install-headers cross_compiling=yes install_root=$LIB_CACHE install
-
-export CC_PREFIX="arm-none-eabi"
-export LIB_CACHE=$HOME/$CC_PREFIX
-export CROSS_COMPILE="$CC_PREFIX-"
-export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CFLAGS_EXTRA="-I/usr/include -I/usr/include/linux"
-export LDFLAGS_EXTRA="-static -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include"
+export LDFLAGS_EXTRA="-static -lffi -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
 cd $HOME/libffi
 make clean
 ./autogen.sh
@@ -145,9 +85,47 @@ make clean
 make
 make install
 
-cd $HOME/micropython/ports/unix
+cd $HOME/micropython/ports/windows
 make clean
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
+cp micropython.exe $HOME/$CC_PREFIX
+##############################################
+export DL_MIRROR="https://dl.google.com"
+apt install -y google-android-ndk-installer
+cd $HOME
+# arch could be arm, arm64, x86, x86_64
+echo "Downloading arm64 toolchain..."
+/usr/lib/android-ndk/build/tools/make_standalone_toolchain.py --arch=arm64 --package-dir=$PWD
+echo "Downloading x86_64 toolchain..."
+/usr/lib/android-ndk/build/tools/make_standalone_toolchain.py --arch=x86_64 --package-dir=$PWD
+tar jxvf ./aarch64-linux-android.tar.bz2
+tar jxvf ./x86_64-linux-android.tar.bz2
+
+export CC_PREFIX="aarch64-linux-android"
+export PATH=$PATH:$HOME/$CC_PREFIX/bin
+export LIB_CACHE="$HOME/$CC_PREFIX"
+export CROSS_COMPILE="$CC_PREFIX-"
+export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
+export SYSROOT="$HOME/$CC_PREFIX/sysroot/"
+export CFLAGS_EXTRA="-I$LIB_CACHE/sysroot/usr/include -I$LIB_CACHE/include --sysroot=$SYSROOT"
+export LDFLAGS_EXTRA="-lffi -L$LIB_CACHE/sysroot/usr/lib -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -Wl,--no-as-needed"
+cd $HOME/libffi
+make clean
+./autogen.sh
+./configure --prefix=$LIB_CACHE --host=$CC_PREFIX
+make
+make install
+cp -R $HOME/micropython/lib/libffi/build_dir/out/lib64/* $HOME/micropython/lib/libffi/build_dir/out/lib
+cp $HOME/$CC_PREFIX/sysroot/usr/lib/libdl.so $HOME/micropython/lib/libffi/build_dir/out/lib
+
+cd $HOME/micropython/ports/unix
+sed  -i '1i #define MP_S_IFDIR (0x4000)' modos.c
+sed  -i '1i #define MP_S_IFREG (0x8000)' modos.c
+sed  -i '/.*-ldl.*/d' Makefile
+make clean
+#make V=1 CROSS_COMPILE="$CROSS_COMPILE" libffi
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA" MICROPY_PY_THREAD=0
 cp micropython $HOME/$CC_PREFIX
 ```
