@@ -335,7 +335,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   InstallPy3UTF8
   InstallGRC
   apt install -y proot bsdtar
-  InstallAlpine
+  #InstallAlpine
 
 
 
