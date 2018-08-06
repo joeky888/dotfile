@@ -8,10 +8,14 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"
   cd /var/cache/apt/archives/;
 
   DOWNLOADARGS='-c -s16 -k1M -x16'
-  DNS="--async-dns-server=8.8.8.8,180.76.76.76"
+  DNS=""
 
-  if ! ping -c 1 8.8.8.8 | grep -q -i "ttl"; then
-    DNS=""
+  if ping -c 1 -W 1 180.76.76.76 | grep -q -i "ttl"; then
+    DNS="--async-dns-server=180.76.76.76"
+  fi
+
+  if ping -c 1 -W 2 8.8.8.8 | grep -q -i "ttl"; then
+    DNS="--async-dns-server=8.8.8.8"
   fi
 
   # Donload unfinished jobs

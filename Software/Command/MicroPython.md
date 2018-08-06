@@ -12,12 +12,12 @@ Cross compile
 =====
 ```sh
 sed -i "s/^SigLevel.*/SigLevel=Never/g" /etc/pacman.conf
-pacman -S git make gcc pkgconf autoconf automake sudo --noconfirm
-pacman -S aarch64-linux-gnu-gcc --noconfirm
+#pacman -S git make gcc pkgconf autoconf automake sudo --noconfirm
+#pacman -S aarch64-linux-gnu-gcc --noconfirm
 
 apt install -y git make gcc pkgconf autoconf automake libtool-bin texinfo python
 
-git clone --depth 1 https://github.com/libffi/libffi $HOME/libffi
+git clone --depth 1 https://github.com/jeremyhu/libffi $HOME/libffi
 git clone --depth 1 https://github.com/micropython/micropython $HOME/micropython
 
 # mpy-cross doesn't need to use cross compiler
