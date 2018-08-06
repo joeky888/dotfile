@@ -1,6 +1,6 @@
 FROM debian:unstable
 
-RUN echo "deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free" > /etc/apt/sources.list
+RUN echo "deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free" > /etc/apt/sources.list
 RUN apt update
 RUN apt install -y curl nano gnupg
 
