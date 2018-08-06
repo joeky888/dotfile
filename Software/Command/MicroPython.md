@@ -11,7 +11,7 @@ make
 Cross compile
 =====
 ```sh
-sed -i "s/^SigLevel.*/SigLevel=Never/g" /etc/pacman.conf
+#sed -i "s/^SigLevel.*/SigLevel=Never/g" /etc/pacman.conf
 #pacman -S git make gcc pkgconf autoconf automake sudo --noconfirm
 #pacman -S aarch64-linux-gnu-gcc --noconfirm
 
@@ -25,7 +25,7 @@ cd $HOME/micropython/mpy-cross
 make clean
 make
 
-##############################################
+################# arm64 Linux begin #####################
 apt install -y gcc-aarch64-linux-gnu
 
 export CC_PREFIX="aarch64-linux-gnu"
@@ -47,7 +47,8 @@ make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython $HOME/$CC_PREFIX
 
-##############################################
+################# arm64 Linux end   #####################
+################# arm32 Linux begin #####################
 apt install -y gcc-arm-linux-gnueabi
 
 export CC_PREFIX="arm-linux-gnueabi"
@@ -69,7 +70,31 @@ make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython $HOME/$CC_PREFIX
 
-##############################################
+################# arm32 Linux end   #####################
+################# mips Linux begin #####################
+apt install -y gcc-mips-linux-gnu
+
+export CC_PREFIX="mips-linux-gnu"
+export LIB_CACHE=$HOME/$CC_PREFIX
+export CROSS_COMPILE="$CC_PREFIX-"
+export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include"
+export LDFLAGS_EXTRA="-static -lffi -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib"
+cd $HOME/libffi
+make clean
+./autogen.sh
+./configure --prefix=$LIB_CACHE --host=$CC_PREFIX
+make
+make install
+
+cd $HOME/micropython/ports/unix
+make clean
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
+cp micropython $HOME/$CC_PREFIX
+
+################# mips Linux end   #####################
+################# win64 begin #####################
 apt install -y gcc-mingw-w64-x86-64
 #cp /usr/arm-linux-gnueabi/include/malloc.h /usr/arm-linux-gnueabi/include/alloca.h
 export CC_PREFIX="x86_64-w64-mingw32"
@@ -90,7 +115,9 @@ make clean
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA"
 cp micropython.exe $HOME/$CC_PREFIX
-##############################################
+
+################# win64 end #####################
+
 export DL_MIRROR="https://dl.google.com"
 apt install -y google-android-ndk-installer
 cd $HOME
