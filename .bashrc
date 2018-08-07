@@ -1,3 +1,7 @@
+if [ -z "$PS1" ]; then
+   return # Prevent scp command hangs
+fi
+
 export LANG="en_US.UTF-8"
 export LANGUAGE="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
