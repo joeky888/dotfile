@@ -19,6 +19,7 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"
   fi
 
   # Donload unfinished jobs
+  [ $(command -v aria2c) ] || $APT install -y aria2
   [[ -f /var/cache/apt/archives/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs

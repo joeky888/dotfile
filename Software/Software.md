@@ -205,7 +205,7 @@ WineHQ
 
 Android
 =====
-* Firefox Nightly
+* Firefox Beta
     * Stylus + Midnight Surfing Global Dark Style
     * Undo Close for mobile
     * uBlock Origin
@@ -224,7 +224,7 @@ Android
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, `chmod 777 aria2c && cp aria2c /data/data/ru.iiec.pydroid3/files/aria2c`)
 * DroidVim
-* VLC nightly
+* VLC
 * Kodi
 * Amaze File Manager
 * WPS office

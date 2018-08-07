@@ -77,8 +77,10 @@ Change timezone
     * $ timedatectl list-timezones | grep Asi
     * $ sudo timedatectl set-timezone Asia/Taipei
 * Method 2
-    * $ sudo cp /usr/share/zoneinfo/Asia/Taipei /etc/localtime
+    * $ `export DEBIAN_FRONTEND=noninteractive && sudo apt install -y tzdata`
+    * $ sudo ln -sf /usr/share/zoneinfo/Asia/Taipei /etc/localtime
     * $ sudo echo "Asia/Taipei" > /etc/timezone
+    * $ sudo dpkg-reconfigure --frontend noninteractive tzdata
 
 Listen to music without x
 =====
