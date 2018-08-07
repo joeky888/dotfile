@@ -64,6 +64,8 @@ CLI
     * mkcert
 ```sh
 # $ go help get
+go get -insecure -u -v github.com/ncw/rclone
+go get -insecure -u -v github.com/ncw/rclone/...
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
 go get -insecure -u -v github.com/iikira/downloader
 BaiduPCS-Go config set -max_parallel 64
@@ -84,7 +86,7 @@ BaiduPCS-Go config set -max_download_load 5 # 5 Files one time
 * OpenCC
 * Aria2
 * Monitorix
-* Google-drive-ocamlfuse
+* Google-drive-ocamlfuse / rclone
 * Docker
 * Shellcheck
 
