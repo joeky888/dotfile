@@ -477,8 +477,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
     typeset -A ZSH_HIGHLIGHT_STYLES
-    export zle_highlight=(default:bold)
-    export ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
+    zle_highlight=(default:bold)
+    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
     #################
     #      None     #
     #################
@@ -699,7 +699,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
   export SUDO=""
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
-  if [[ $(command -v gls) ]]; then
+  if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
   fi
   alias grep='grep --color=auto'
@@ -813,11 +813,11 @@ if [ $(command -v grc) ] ; then
 
   # Set alias for available commands.
   for cmd in "${cmds[@]}" ; do
-    if [[ -n "$ZSH_VERSION" ]] && [[ $(command -v $cmd) ]] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
+    if [[ -n "$ZSH_VERSION" ]] && [ $(command -v $cmd) ] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
       eval "function $cmd { grc -es --colour=auto $(command -v $cmd) \"\$@\" }"
       eval "compdef _$cmd $cmd"
     else
-      [[ $(command -v $cmd) ]] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
+      [ $(command -v $cmd) ] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
     fi
   done
 
@@ -827,7 +827,7 @@ if [ $(command -v grc) ] ; then
   unset cmds cmd
 fi
 
-if ! [[ $(command -v tree) ]]; then
+if ! [ $(command -v tree) ]; then
   tree()
   {
 python3 <<END
