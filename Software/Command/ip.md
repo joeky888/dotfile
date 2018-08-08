@@ -33,7 +33,11 @@ Get ip and Subnet Mask
 =====
 * $ ip a
 
-Set ip redirection
+Get Default GetWay
+=====
+* $ ip route | awk '/default/ { print $3 }'
+
+Set ip redirection (Use route)
 =====
 ```sh
 # 雙網卡 eth0 eth1
@@ -48,4 +52,17 @@ route del -net 0.0.0.0 netmask 0.0.0.0 gw 10.78.20.1 dev eth0
 route add -net 0.0.0.0 netmask 0.0.0.0 gw 192.168.0.1 dev eth1
 ```
 
+Set ip redirection (Use ip)
+=====
+```sh
+# 雙網卡 eth0 eth1
+# eth0 爲內部網路網卡 eth1 爲外部網路網卡
 
+# 設定 Server 將 10.x.x.x 進來的 ip 經由 eth0 導出到 ip 爲 10.78.20.1 的內網路由器1號
+ip route add 10.0.0.0/8 via 10.78.20.1 dev eth0
+# 設定 Server 將 172.x.x.x 進來的 ip 經由 eth0 導出到 ip 爲 10.78.20.1 的內網路由器1號
+ip route add 172.0.0.0/8 via 10.78.20.1 dev eth0
+# 設定 Server 將其他所有進來的 ip 經由 eth1 導出到 ip 爲 192.168.0.1 的外網路由器2號
+ip route delete 0.0.0.0/0 via 192.168.0.1 dev eth0
+ip route add 0.0.0.0/0 via 192.168.0.1 dev eth1
+```
