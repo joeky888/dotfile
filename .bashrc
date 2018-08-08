@@ -248,6 +248,7 @@ alias ls='ls -F --color=auto --show-control-chars'
 alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
+alias ssh-asus-inside='ssh joeky@10.78.20.186'
 alias ssh-asus-ml='ssh joeky@zenboml-api.eastasia.cloudapp.azure.com'
 alias ssh-asus-temp='ssh -p 50022 joeky@contextualintelligence-temp.southeastasia.cloudapp.azure.com'
 alias ssh-asus-jump='ssh -p 22681 chungyi@ai800mjp01.southeastasia.cloudapp.azure.com'
