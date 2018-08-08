@@ -28,4 +28,4 @@ elif echo "$@" | grep -q "update"; then
   $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
 fi
 
-$APT $@ && rm -rf /var/cache/apt/archives/apt-fast.list
+$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list
