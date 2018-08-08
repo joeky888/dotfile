@@ -156,7 +156,7 @@ Clear system log greater than 10MB
 =====
 * $ sudo journalctl --vacuum-size=10M
 
-cat, more, less command with color
+cat, more, less and cmd.exe type command with color
 =====
 ```sh
 # file.txt
@@ -233,4 +233,7 @@ echo "\u001b[107mTEXT\u001b[49m"
 cat  file.txt
 more file.txt
 less file.txt
+
+# On windows cmd.exe
+type file.txt
 ```
