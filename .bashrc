@@ -169,8 +169,8 @@ if [[ -d "/usr/local/opt/coreutils/libexec/gnuman" ]]; then
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 fi
 
-[[ $(command -v xterm) ]] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
-[[ $(command -v nano) ]] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
+[ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
+[ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
@@ -193,14 +193,14 @@ alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-if [[ $(command -v youtube-dl) ]]; then
+if [ $(command -v youtube-dl) ]; then
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
   alias curl='curl --retry 10 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
 else
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
   alias curl='curl --retry 10 --retry-max-time 0 -LC - '
 fi
-if [[ $(command -v aria2c) ]]; then
+if [ $(command -v aria2c) ]; then
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
 else
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
