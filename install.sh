@@ -171,8 +171,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
   export Home="$HOME"
   if [[ $(command -v apt) ]]; then
-    $SUDO apt update
-    $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
+    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+    $SUDO apt-fast update
+    $SUDO apt-fast install vim tmux zsh git curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
     $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion yaourt --noconfirm --needed
@@ -203,7 +204,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
-    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
     $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg neofetch fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
