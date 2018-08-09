@@ -760,7 +760,6 @@ if [ $(command -v grc) ] ; then
           iptables \
           irclog \
           iwconfig \
-          jobs \
           journalctl \
           last \
           lastb \
@@ -802,7 +801,6 @@ if [ $(command -v grc) ] ; then
           traceroute \
           traceroute6 \
           tune2fs \
-          ulimit \
           uptime \
           vmstat \
           w \
@@ -822,6 +820,9 @@ if [ $(command -v grc) ] ; then
   done
 
   alias configure='grc -es --colour=auto ./configure'
+  alias jobs='grc -es --colour=auto bash -c "jobs $@"'
+  alias limit='grc -es --colour=auto bash -c "limit $@"'
+  alias ulimit='grc -es --colour=auto bash -c "ulimit $@"'
 
   # Clean up variables
   unset cmds cmd
