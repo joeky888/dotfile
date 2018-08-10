@@ -11,3 +11,9 @@ https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=
 https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=臺北101&destinations=內湖科學園區&language=zh_TW&mode=transit
 https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=臺北101&destinations=內湖科學園區&language=zh_TW&mode=walking
 ```
+
+Google Correction
+=====
+```
+http://suggestqueries.google.com/complete/search?client=chrome&q=臺杯
+```
