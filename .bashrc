@@ -196,9 +196,11 @@ alias you-getYouku='you-get -y proxy.uku.im:443'
 if [ $(command -v youtube-dl) ]; then
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
   alias curl='curl --retry 10 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --user-agent="$(youtube-dl --dump-user-agent)"'
 else
   alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
   alias curl='curl --retry 10 --retry-max-time 0 -LC - '
+  [ $(command -v axel) ] && alias axel='axel --num-connections=16'
 fi
 if [ $(command -v aria2c) ]; then
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
