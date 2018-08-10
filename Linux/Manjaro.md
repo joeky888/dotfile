@@ -5,6 +5,8 @@ Pacman
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
+* Upgrade all AUR packages
+    * $ yaourt -Syyu --aur
 
 Use aria2 as backend of pacman
 =====
