@@ -204,12 +204,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg neofetch fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
     #pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
     pac=pacman
-    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg neofetch fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
+    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
@@ -327,7 +327,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y man vim micro git tig zsh tmux curl aria2 rsync bash-completion openssh mosh grep sed gawk python ffmpeg p7zip neofetch
+  apt install -y man vim micro git tig zsh tmux curl aria2 rsync bash-completion openssh mosh grep sed gawk python ffmpeg p7zip
   apt install -y tar wget clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
   apt install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallDotfile
@@ -344,7 +344,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   export Home="$HOME"
   $SUDO pkg update -f
-  echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip neofetch bind-tools
+  echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip bind-tools
   chsh -s $(command -v zsh) $(whoami)
   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
