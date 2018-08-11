@@ -218,6 +218,7 @@ Android
 * Clock by Google
 * Facebook Messenger
 * LINE
+* Skype
 * Barcode Scanner ZXing
 * Sogou input method
 * Hacker's Keyboard
@@ -258,6 +259,7 @@ Android
     * Entware-ng (root, Termux alternative, Android 4.2.2+)
     * 豌豆荚 wandoujia
     * 應用寶
+    * 迅雷
 
 iOS
 =====
