@@ -118,41 +118,45 @@ cp micropython.exe $HOME/$CC_PREFIX
 
 ################# win64 end #####################
 
-export DL_MIRROR="https://dl.google.com"
-apt install -y google-android-ndk-installer
+#export DL_MIRROR="https://dl.google.com"
+#apt install -y google-android-ndk-installer
 cd $HOME
+
+wget https://dl.google.com/android/repository/android-ndk-r17b-linux-x86_64.zip
+unzip android-ndk-r17b-linux-x86_64.zip
+mv android-ndk-r17b android-ndk && cd android-ndk
+
 # arch could be arm, arm64, x86, x86_64
 echo "Downloading arm64 toolchain..."
-/usr/lib/android-ndk/build/tools/make_standalone_toolchain.py --arch=arm64 --package-dir=$PWD
-echo "Downloading x86_64 toolchain..."
-/usr/lib/android-ndk/build/tools/make_standalone_toolchain.py --arch=x86_64 --package-dir=$PWD
+./build/tools/make_standalone_toolchain.py --arch=arm64 --package-dir=$PWD
 tar jxvf ./aarch64-linux-android.tar.bz2
+echo "Downloading x86_64 toolchain..."
+./build/tools/make_standalone_toolchain.py --arch=x86_64 --package-dir=$PWD
 tar jxvf ./x86_64-linux-android.tar.bz2
 
 export CC_PREFIX="aarch64-linux-android"
-export PATH=$PATH:$HOME/$CC_PREFIX/bin
+export PATH=$PATH:$HOME/android-ndk/$CC_PREFIX/bin
 export LIB_CACHE="$HOME/$CC_PREFIX"
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export SYSROOT="$HOME/$CC_PREFIX/sysroot/"
-export CFLAGS_EXTRA="-I$LIB_CACHE/sysroot/usr/include -I$LIB_CACHE/include --sysroot=$SYSROOT"
-export LDFLAGS_EXTRA="-lffi -L$LIB_CACHE/sysroot/usr/lib -L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -Wl,--no-as-needed"
+export CC="${CROSS_COMPILE}clang"
+#export CXX="${CROSS_COMPILE}gcc++"
+#export SYSROOT="$HOME/android-ndk/$CC_PREFIX/sysroot/"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include"
+export LDFLAGS_EXTRA="-L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -lffi"
 cd $HOME/libffi
 make clean
 ./autogen.sh
 ./configure --prefix=$LIB_CACHE --host=$CC_PREFIX
-make
+make CC=$CC
 make install
-cp -R $HOME/micropython/lib/libffi/build_dir/out/lib64/* $HOME/micropython/lib/libffi/build_dir/out/lib
-cp $HOME/$CC_PREFIX/sysroot/usr/lib/libdl.so $HOME/micropython/lib/libffi/build_dir/out/lib
 
 cd $HOME/micropython/ports/unix
+make clean
 sed  -i '1i #define MP_S_IFDIR (0x4000)' modos.c
 sed  -i '1i #define MP_S_IFREG (0x8000)' modos.c
 sed  -i '/.*-ldl.*/d' Makefile
-make clean
-#make V=1 CROSS_COMPILE="$CROSS_COMPILE" libffi
-make V=1 CROSS_COMPILE="$CROSS_COMPILE" axtls
-make V=1 CROSS_COMPILE="$CROSS_COMPILE" LDFLAGS_EXTRA="$LDFLAGS_EXTRA" MICROPY_PY_THREAD=0
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC axtls
+make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC LDFLAGS_EXTRA="$LDFLAGS_EXTRA" MICROPY_PY_THREAD=0
 cp micropython $HOME/$CC_PREFIX
 ```
