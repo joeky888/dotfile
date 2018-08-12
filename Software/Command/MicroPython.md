@@ -139,11 +139,11 @@ export PATH=$PATH:$HOME/android-ndk/$CC_PREFIX/bin
 export LIB_CACHE="$HOME/$CC_PREFIX"
 export CROSS_COMPILE="$CC_PREFIX-"
 export CROSS_COMPILER_PREFIX="$CC_PREFIX-"
-export CC="${CROSS_COMPILE}clang"
+export CC="${CROSS_COMPILE}gcc"
 #export CXX="${CROSS_COMPILE}gcc++"
 #export SYSROOT="$HOME/android-ndk/$CC_PREFIX/sysroot/"
-export CFLAGS_EXTRA="-I$LIB_CACHE/include"
-export LDFLAGS_EXTRA="-L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -lffi"
+export CFLAGS_EXTRA="-I$LIB_CACHE/include -O3"
+export LDFLAGS_EXTRA="-L$LIB_CACHE/lib64 -L$LIB_CACHE/lib -lffi -static -Wl,--allow-multiple-definition"
 cd $HOME/libffi
 make clean
 ./autogen.sh
@@ -155,7 +155,7 @@ cd $HOME/micropython/ports/unix
 make clean
 sed  -i '1i #define MP_S_IFDIR (0x4000)' modos.c
 sed  -i '1i #define MP_S_IFREG (0x8000)' modos.c
-sed  -i '/.*-ldl.*/d' Makefile
+#sed  -i '/.*-ldl.*/d' Makefile
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC LDFLAGS_EXTRA="$LDFLAGS_EXTRA" MICROPY_PY_THREAD=0
 cp micropython $HOME/$CC_PREFIX
