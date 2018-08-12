@@ -71,6 +71,14 @@ Mount a USB drive
 * $ sudo mount /dev/sdb1 /media/usb
 * $ sudo umount /media/usb
 
+Clear cache
+=====
+```sh
+rm -rf ~/.cache
+sudo rm /var/cache/apt/archives/*
+sudo rm /var/cache/pacman/pkg/*
+```
+
 Change timezone
 =====
 * Method 1
