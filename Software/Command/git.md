@@ -43,6 +43,12 @@ git restore a single file
 * Or
 * $ git checkout HEAD -- my-file.txt
 
+Export and import a patch
+=====
+* $ git diff > save.patch
+* $ git reset --hard
+* $ git apply save.patch
+
 git restore a commit
 =====
 * Unpushed commit
