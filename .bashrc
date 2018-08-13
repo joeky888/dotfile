@@ -292,7 +292,7 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallproc() { $SUDO kill -9 $(pgrep $@) ;}
 killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
-7zExtractToFolder() { 7z -o"$@E" x "$@" ;}
+7zExtractToFolder() { 7z -o* x "$@" ;}
 upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   cd ~/dotfile
