@@ -32,6 +32,12 @@ Unstable and testing package (Manjaro)
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
 * $ sudo pacman-mirrors -f 0
 
+Install fbterm (recommand)
+=====
+* $ yaourt -S fbterm-git
+* $ sudo chmod u-s $(which fbterm)
+* $ sudo usermod -a -G video $(whoami)
+
 Install qemu
 =====
 * $ sudo powerpill -S qemu-arch-extra
