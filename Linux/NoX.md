@@ -52,7 +52,7 @@ Mouse without x
 =====
 * Make sure fbterm is installed and functional
 * $ sudo apt-fast install gpm -y
-* $ sudo reboot
+* $ sudo systemctl enable gpm
 * Left mouse click is Copy
 * Right mouse click is Paste
 * If mouse is not available in vim
