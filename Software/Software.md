@@ -223,7 +223,7 @@ Android
 * Sogou input method
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
-* Pydroid 3 (terminal for Android 4.4+, `chmod 777 aria2c && cp aria2c /data/data/ru.iiec.pydroid3/files/aria2c`)
+* Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
 * DroidVim
 * VLC
 * Kodi
@@ -232,7 +232,6 @@ Android
 * WPS office
 * Starfire 星火直播
 * WiFiAnalyzer open source
-* IP webcam
 * Advanced Download Manager
 * TWRP Recovery
 * Magisk / Xposed
@@ -327,6 +326,7 @@ Good Software Design
 * Create a Wikipedia/Wikia page for it
 * Community-driven Wikipedia-like site for handling errors
 * Send crash log to server
+* Feedback button in-app
 * Easter eggs
 * Mobile
     * Portable between Android and iOS
