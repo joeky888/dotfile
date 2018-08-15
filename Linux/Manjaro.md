@@ -37,6 +37,8 @@ Install fbterm (recommand)
 * $ yaourt -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -a -G video $(whoami)
+* $ sudo powerpill -S gpm
+* $ sudo systemctl enable gpm
 
 Install qemu
 =====
