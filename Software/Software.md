@@ -227,6 +227,7 @@ Android
 * DroidVim
 * VLC
 * Kodi
+* Here WeGo
 * Amaze File Manager
 * WPS office
 * Starfire 星火直播
