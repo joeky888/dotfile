@@ -17,7 +17,7 @@ Install docker on Linux
 ```sh
 # Install Docker Community Edition (Docker CE)
 sudo apt-fast update && sudo apt-fast install docker.io -y
-sudo usermod -aG docker $USER # Or sudo adduser joeky docker
+sudo usermod -aG docker $(whoami) # Or sudo adduser $(whoami) docker
 exit # and then open the terminal again
 systemctl status docker.service
 sudo systemctl enable docker.service
