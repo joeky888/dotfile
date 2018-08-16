@@ -42,9 +42,10 @@ Create a service
     * $ docker tag ubuntu:latest joeky:latest # Optional
 * Create a compose yaml file, which is the most difficult part
     * Include the joeky:latest image tag
+* Make sure all masters and slaves have the same docker image
 * $ docker stack deploy -c ./docker-compose.yml myapp
 * $ docker stack ls
-* $ docker stack ps myapp
+* $ docker stack ps --no-trunc myapp
 * $ docker service inspect --pretty myapp
 * $ docker service scale myapp=5 # Resize number of containers to run this
 * $ docker stack rm myapp
