@@ -297,7 +297,7 @@ upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -
 upgradeDotfile() {
   cd ~/dotfile
   git pull origin master
-  git submodule update --init --recursive --remote --merge
+  git submodule update --init --recursive --remote --merge --depth 1
   git submodule foreach git pull origin master
   cd - ;
 

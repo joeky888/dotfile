@@ -44,7 +44,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.xprofile ~/.xprofile
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
+  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
@@ -97,7 +97,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
-  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge && git submodule foreach git pull origin master && cd -
+  cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
   mkdir -p $Home/AppData/Local/nvim
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
