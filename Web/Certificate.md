@@ -4,6 +4,10 @@ Download Mozilla certdata.txt and convert it to .crt
 * $ ./mk-ca-bundle.pl
 * Install the ca-bundle.crt file
 
+Show info of a cert file
+=====
+* $ openssl req -text -noout -verify -in cert.crt
+
 Convert multiple .pem files into one .pem file
 =====
 ```sh
