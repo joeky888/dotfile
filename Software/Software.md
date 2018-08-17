@@ -319,7 +319,7 @@ Good Software Design
 * Rewards/Praising for user's hard work
 * Proxy setting
 * Import SSL certificates
-* Use emojis in git commit message ✅ ❌
+* Use emojis in git commit message ✔️  ❌
 * Use date as version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
@@ -344,7 +344,7 @@ Dev Tools
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
 * GUI on desktop
-    * Executable size as small as possible, for personal use : QtLite
+    * Executable size as small as possible, for personal use : QtLite, or github.com/zserge/webview
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
 * Windows / XBOX only
