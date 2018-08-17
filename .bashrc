@@ -194,11 +194,11 @@ alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if [ $(command -v youtube-dl) ]; then
-  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-  alias curl='curl --retry 10 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+  alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --max-time=5 --read-timeout=30 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
+  alias curl='curl --retry 2 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --user-agent="$(youtube-dl --dump-user-agent)"'
 else
-  alias wget='wget -c -e robots=off --tries=10 --read-timeout=30 --verbose'
+  alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --max-time=5 --read-timeout=30 --verbose'
   alias curl='curl --retry 10 --retry-max-time 0 -LC - '
   [ $(command -v axel) ] && alias axel='axel --num-connections=16'
 fi

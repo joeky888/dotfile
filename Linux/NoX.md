@@ -99,6 +99,10 @@ Listen to music without x
 * $ vlc -I ncurses --random ~/Music/\*.mp3
 * If there is no sound in virtualbox, switch the audio card in virtualbox setting
 
+Show images without x
+=====
+* See w3m.md
+
 Show all network interfaces
 =====
 * $ ip a
