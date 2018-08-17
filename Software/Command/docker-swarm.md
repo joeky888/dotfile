@@ -33,6 +33,8 @@ Remove a swarm
 * $ docker node rm -worker-node-id- --force
 * Or on the slave
 * $ docker swarm leave --force
+* Reset network (recommand)
+* $ docker network prune
 
 Create a service
 =====
