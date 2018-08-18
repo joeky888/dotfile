@@ -37,6 +37,7 @@ Extension
 * SimpleUndoClose
 * Tampermonkey
 * RightToCopy
+* Enable Copy by keakon.net
 * Set Character Encoding
 * HackBar
 * User-Agent Switcher for Chrome by Google
