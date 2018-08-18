@@ -47,3 +47,12 @@ curl.exe -vi https://hanshih.management.azure-api.net/api/Assets -X POST `
     }
     '
 ```
+
+With cookies
+=====
+```sh
+# 將cookie存檔
+curl -i -X POST -d username=kent -d password=kent123 -c ~/cookie.txt http://www.rest.com/auth
+# 載入cookie到request中
+curl -i --header "Accept:application/json" -X GET -b ~/cookie.txt http://www.rest.com/users/1
+```
