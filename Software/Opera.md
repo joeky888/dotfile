@@ -57,6 +57,7 @@ Extension
 * Privacy Badger
 * BaiduExporter
 * Secure Shell Extension
+* Selenium IDE / Katalon Recorder
 * ZScaler Bypass (for ASUS ZScaler)
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Turbo Download Manager (Opera Extension)
