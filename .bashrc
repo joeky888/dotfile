@@ -682,7 +682,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     fi
     # USER@DOMAIN directory
     bashprompt(){
-      export PS1="╭─${MAIN_THEME}\u@\h ${COLOR_LIGHT_BLUE}\w ${COLOR_LIGHT_YELLOW} \[$(git_branch_info)\]${COLOR_RESET}\n╰─${MATIN_DOLOR} "
+      export PS1="╭─${MAIN_THEME}\u@\h ${COLOR_LIGHT_BLUE}\w ${COLOR_LIGHT_YELLOW}\[$(git_branch_info)\]${COLOR_RESET}\n╰─${MATIN_DOLOR} "
     }
     PROMPT_COMMAND=bashprompt
   fi
