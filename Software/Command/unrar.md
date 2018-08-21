@@ -2,5 +2,5 @@ Extract
 =====
 ```sh
 unrar x file.rar
-find . -iname "*" -exec unrar x {} \;
+find . -iname "*.rar" -exec unrar x {} \;
 ```
