@@ -11,12 +11,13 @@ XTerm*visualBell: False
 
 ! Fonts and Encoding
 XTerm*utf8: True
-XTerm*locale: True
+XTerm*locale: en_US.UTF-8
 XTerm*utf8Title: True
 XTerm*renderFont: True
 XTerm*preeditType: Root
 XTerm*xftAntialias: true
-XTerm*font: *-Monospace-*-*-*-18-*
+xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=18
+xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=18
 
 ! Trim trailing spaces
 XTerm*trimSelection: true

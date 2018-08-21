@@ -34,7 +34,7 @@ emulator() {
 }
 
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [[ "$(emulator)" == "xterm" ]]; then
+if [[ "$(emulator)" == "xterm" ]] || [[ "$(emulator)" == "luit" ]]; then
   [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   # echo -e -n "\x1b[\x30 q" # changes to blinking block
@@ -169,7 +169,8 @@ if [[ -d "/usr/local/opt/coreutils/libexec/gnuman" ]]; then
   export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 fi
 
-[ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
+# [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
+[ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
