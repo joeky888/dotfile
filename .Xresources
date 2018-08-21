@@ -16,9 +16,9 @@ XTerm*utf8Title: True
 XTerm*renderFont: True
 XTerm*preeditType: Root
 XTerm*xftAntialias: true
-XTerm*font: *-Monospace-*-*-*-18-*
-! xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=18
-! xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=18
+! XTerm*font: *-Monospace-*-*-*-18-*
+xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=18
+xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=18
 
 ! Trim trailing spaces
 XTerm*trimSelection: true
