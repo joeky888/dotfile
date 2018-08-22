@@ -12,10 +12,10 @@ Arch / Manjaro
 =====
 ```sh
 sudo powerpill -S arch-install-scripts
-mkdir $HOME/arch
+mkdir $HOME/Arch
 
-sudo pacstrap -cdGM $HOME/arch filesystem pacman
-sudoedit $HOME/arch/etc/pacman-mirrors.conf
+sudo pacstrap -cdGM $HOME/Arch filesystem pacman
+sudoedit $HOME/Arch/etc/pacman-mirrors.conf
 
-sudo chroot $HOME/arch /bin/bash -l
+sudo chroot $HOME/Arch /bin/bash -l
 ```

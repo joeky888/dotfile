@@ -1078,9 +1078,11 @@ OpenFileExplorer()
   fi;
 }
 
-StartAlpine()
+ChrootHome()
 {
   unset LD_PRELOAD
+
+  newhome=$1
 
   echo 'export CHARSET=UTF-8
 export PAGER=less
@@ -1113,33 +1115,45 @@ export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# "
 export HOME=/root
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
+export LANG="en_US.UTF-8"' > $newhome/etc/profile
 
-  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
-  [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $HOME/Alpine/etc/resolv.conf
-  [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $HOME/Alpine/etc/resolv.conf
-
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $HOME/Alpine/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $HOME/Alpine/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $HOME/Alpine/etc/apk/repositories
+  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf > $newhome/etc/resolv.conf
+  [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $newhome/etc/resolv.conf
+  [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $newhome/etc/resolv.conf
 
   export SUDO=''
   if (( $EUID != 0 )); then
     export SUDO='sudo'
   fi
 
-  export ALPINE_SHELL=/bin/sh
-  [ -f $HOME/Alpine/root/.bashrc ] && ALPINE_SHELL=/bin/bash
-  [ -f $HOME/Alpine/root/.zshrc ] && ALPINE_SHELL=/bin/zsh
+  export CHROOT_SHELL=/bin/sh
+  [ -f $newhome/bin/bash ] && CHROOT_SHELL=/bin/bash
+  [ -f $newhome/bin/zsh ] && CHROOT_SHELL=/bin/zsh
 
-  cd $HOME/Alpine # This isn't necessary
+  cd $newhome # This isn't necessary
   if [ $(command -v proot) ]; then
-    proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin $ALPINE_SHELL --login
+    proot --link2symlink -0 -r $newhome -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin $CHROOT_SHELL --login
   elif [ $(command -v fakechroot) ] && [ $(command -v fakeroot) ]; then
-    fakechroot fakeroot chroot $PWD $ALPINE_SHELL -l
+    fakechroot fakeroot chroot $PWD $CHROOT_SHELL -l
   else
-    $SUDO chroot $PWD $ALPINE_SHELL -l
+    $SUDO chroot $PWD $CHROOT_SHELL -l
   fi;
+}
+
+StartAlpine()
+{
+  export newhome=$HOME/Alpine
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $newhome/etc/apk/repositories; \
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $newhome/etc/apk/repositories; \
+  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $newhome/etc/apk/repositories
+
+  ChrootHome $newhome
+}
+
+StartArch()
+{
+  export newhome=$HOME/Arch
+  ChrootHome $newhome
 }
 
 dict() {
