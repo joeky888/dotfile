@@ -3,7 +3,9 @@ Alpine Linux
 * Download Mini root filesystem
 * https://alpinelinux.org/downloads/
 ```sh
-$SUDO chroot $HOME/Alpine /bin/bash -l
+mkdir -p $HOME/Alpine
+tar zxvf alpine.tar.gz -C $HOME/Alpine
+sudo chroot $HOME/Alpine /bin/bash -l
 ```
 
 Arch / Manjaro
@@ -15,5 +17,5 @@ mkdir $HOME/arch
 sudo pacstrap -cdGM $HOME/arch filesystem pacman
 sudoedit $HOME/arch/etc/pacman-mirrors.conf
 
-$SUDO chroot $HOME/arch /bin/bash -l
+sudo chroot $HOME/arch /bin/bash -l
 ```
