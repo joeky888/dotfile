@@ -14,8 +14,10 @@ Arch / Manjaro
 sudo powerpill -S arch-install-scripts
 mkdir $HOME/Arch
 
-sudo pacstrap -cdGM $HOME/Arch filesystem pacman
+sudo pacstrap -cdGM $HOME/Arch base filesystem pacman linux powerpill
 sudoedit $HOME/Arch/etc/pacman-mirrors.conf
-
-sudo chroot $HOME/Arch /bin/bash -l
+sudo cp $(command -v arch-chroot) $HOME/Arch/bin
+sudo $HOME/Arch/bin/arch-chroot $HOME/Arch /bin/bash -l
+# or
+sudo chroot $HOME/Arch /bin/bash -l # Not recommand
 ```

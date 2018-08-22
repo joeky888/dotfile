@@ -1080,9 +1080,13 @@ OpenFileExplorer()
 
 ChrootHome()
 {
+  newhome=$1
   unset LD_PRELOAD
 
-  newhome=$1
+  export SUDO=''
+  if (( $EUID != 0 )); then
+    export SUDO='sudo'
+  fi
 
   echo 'export CHARSET=UTF-8
 export PAGER=less
@@ -1115,16 +1119,11 @@ export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# "
 export HOME=/root
 export PATH=/bin:/usr/bin:/sbin:/usr/sbin
 export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"' > $newhome/etc/profile
+export LANG="en_US.UTF-8"' | $SUDO tee $newhome/etc/profile
 
-  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf > $newhome/etc/resolv.conf
+  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf | $SUDO tee $newhome/etc/resolv.conf
   [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $newhome/etc/resolv.conf
   [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $newhome/etc/resolv.conf
-
-  export SUDO=''
-  if (( $EUID != 0 )); then
-    export SUDO='sudo'
-  fi
 
   export CHROOT_SHELL=/bin/sh
   [ -f $newhome/bin/bash ] && CHROOT_SHELL=/bin/bash
