@@ -1127,13 +1127,17 @@ export LANG="en_US.UTF-8"' > $HOME/Alpine/etc/profile
     export SUDO='sudo'
   fi
 
+  export ALPINE_SHELL=/bin/sh
+  [ -f $HOME/Alpine/root/.bashrc ] && ALPINE_SHELL=/bin/bash
+  [ -f $HOME/Alpine/root/.zshrc ] && ALPINE_SHELL=/bin/zsh
+
   cd $HOME/Alpine # This isn't necessary
   if [ $(command -v proot) ]; then
-    proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin /bin/sh --login
+    proot --link2symlink -0 -r ${HOME}/Alpine/ -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin $ALPINE_SHELL --login
   elif [ $(command -v fakechroot) ] && [ $(command -v fakeroot) ]; then
-    fakechroot fakeroot chroot $PWD /bin/sh -l
+    fakechroot fakeroot chroot $PWD $ALPINE_SHELL -l
   else
-    $SUDO chroot $PWD /bin/sh -l
+    $SUDO chroot $PWD $ALPINE_SHELL -l
   fi;
 }
 
