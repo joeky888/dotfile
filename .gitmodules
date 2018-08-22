@@ -1,24 +1,30 @@
 [submodule "oh-my-zsh"]
+    branch = master
     path = oh-my-zsh
     url = https://github.com/robbyrussell/oh-my-zsh.git
     shallow = true
 [submodule "zsh-syntax-highlighting"]
+    branch = master
     path = zsh-syntax-highlighting
     url = https://github.com/zsh-users/zsh-syntax-highlighting.git
     shallow = true
 [submodule "vimrc"]
+    branch = master
     path = vimrc
     url = https://github.com/j16180339887/vimrc.git
     shallow = true
 [submodule "powershell"]
+    branch = master
     path = powershell
     url = https://github.com/j16180339887/powershell.git
     shallow = true
 [submodule "grc"]
+    branch = devel
     path = grc
     url = https://github.com/garabik/grc.git
     shallow = true
 [submodule "neofetch"]
+    branch = master
     path = neofetch
     url = https://github.com/dylanaraps/neofetch.git
     shallow = true
