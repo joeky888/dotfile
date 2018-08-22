@@ -44,7 +44,8 @@ InstallDotfile()
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.xprofile ~/.xprofile
   ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
-  cd $Home/dotfile && git pull && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
+#   cd $Home/dotfile && git pull && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
+  cd $Home/dotfile && git pull && git pull --recurse-submodules --depth 1 && git submodule foreach git pull && cd -
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
