@@ -21,7 +21,8 @@ sudo $HOME/Arch/bin/arch-chroot $HOME/Arch /bin/bash -l
 # or
 sudo chroot $HOME/Arch /bin/bash -l # Not recommand
 
-sudo tar czvf arch.tar.gz $HOME/Arch
+sudo tar czvf arch.tar.gz $HOME/Arch # Pack
+sudo tar zxvf arch.tar.gz -C $HOME/Arch # Unpack
 ```
 
 Debian
@@ -37,6 +38,8 @@ mkdir $HOME/Debian ; cd $HOME/Debian
 sudo debootstrap --arch amd64 unstable $PWD http://cdn-fastly.deb.debian.org/debian/
 
 echo "deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free" | sudo tee $PWD/etc/apt/sources.list
+sudo install ~/dotfile/Linux/apt-fast $PWD/usr/bin
 
-sudo tar czvf deb.tar.gz $HOME/Debian
+sudo tar czvf deb.tar.gz $HOME/Debian # Pack
+sudo tar zxvf deb.tar.gz -C $HOME/Debian # Unpack
 ```

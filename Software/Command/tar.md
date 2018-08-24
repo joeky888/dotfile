@@ -9,3 +9,16 @@ tar Zxvf FileName.tar.Z
 tar zxvf FileName.tgz
 tar zxvf FileName.tar.tgz
 ```
+
+Extract to folder
+=====
+```sh
+mkdir $HOME/Desktop/Extract
+tar zxvf FileName.tar.gz -C $HOME/Desktop/Extract
+```
+
+Pack
+=====
+```sh
+tar czvf Newfile.tar.gz $HOME/folder
+```
