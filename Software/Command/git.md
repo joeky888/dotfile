@@ -70,3 +70,6 @@ Git push won't do anything (Everything up-to-date)
 * $ git checkout master
 * $ git push origin master
 
+Merge commit from another branch
+=====
+* $ git cherry-pick d42c389f

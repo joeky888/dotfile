@@ -1156,6 +1156,12 @@ StartArch()
   ChrootHome $newhome
 }
 
+StartDebian()
+{
+  export newhome=$HOME/Debian
+  ChrootHome $newhome
+}
+
 dict() {
   if [ $# -eq 0 ]; then
     echo "Usage: dict <word>"
