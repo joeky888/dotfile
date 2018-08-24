@@ -1134,8 +1134,10 @@ export LANG="en_US.UTF-8"' | $SUDO tee $newhome/etc/profile
   if [ $(command -v proot) ]; then
     proot --link2symlink -0 -r $newhome -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin $CHROOT_SHELL --login
   elif [ $(command -v fakechroot) ] && [ $(command -v fakeroot) ]; then
+    fakechroot fakeroot chroot $PWD $CHROOT_SHELL -c "source /etc/profile"
     fakechroot fakeroot chroot $PWD $CHROOT_SHELL -l
   else
+    $SUDO chroot $PWD $CHROOT_SHELL -c "source /etc/profile"
     $SUDO chroot $PWD $CHROOT_SHELL -l
   fi;
 }
