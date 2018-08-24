@@ -20,5 +20,6 @@ tar zxvf FileName.tar.gz -C $HOME/Desktop/Extract
 Pack
 =====
 ```sh
-tar czvf Newfile.tar.gz $HOME/folder
+cd $HOME/folder
+sudo tar czvf ../pack.tar.gz . # Pack
 ```
