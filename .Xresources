@@ -2,7 +2,7 @@
 
 ! General settings
 XTerm*termName: xterm-256color
-XTerm*geometry: 80x24
+XTerm*geometry: 80x32
 XTerm*saveLines: 1024000
 XTerm*scrollBar: True
 XTerm*loginshell: False
@@ -17,7 +17,7 @@ XTerm*renderFont: True
 XTerm*preeditType: Root
 XTerm*xftAntialias: true
 ! XTerm*font: *-Monospace-*-*-*-18-*
-xterm*faceName:DejaVu Sans Mono:antialias=True:pixelsize=18
+xterm*faceName:Ubuntu Mono:antialias=True:pixelsize=18
 xterm*faceNameDoublesize:Droid Sans Fallback:antialias=True:pixelsize=18
 
 ! Trim trailing spaces

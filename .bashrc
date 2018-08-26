@@ -43,21 +43,13 @@ if [[ "$(emulator)" == "xterm" ]] || [[ "$(emulator)" == "luit" ]]; then
   # echo -e -n "\x1b[\x33 q" # changes to blinking underline
   # echo -e -n "\x1b[\x34 q" # changes to steady underline
   # echo -e -n "\x1b[\x35 q" # changes to blinking bar
-elif [ $(command -v tmux) ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+elif [ $(command -v tmux) ] && [ -f ~/.tmux.conf ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
   cd ~
   if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
-    if [ $(command -v byobu) ] ; then
-      exec fbterm -- bash -c 'TERM=fbterm exec byobu'
-    else
-      exec fbterm -- bash -c 'TERM=fbterm && [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux'
-    fi
+    exec fbterm -- bash -c 'TERM=fbterm && [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux'
   else
-    if [ $(command -v byobu) ] ; then
-      exec byobu # Disable byobu if it breaks colors of vim
-    else
-       [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
-    fi
+    [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
   fi
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
