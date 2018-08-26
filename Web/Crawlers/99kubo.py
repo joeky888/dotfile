@@ -38,82 +38,43 @@ MAX_DOWNLOAD_AT_ONCE = 16
 processes = []
 url = []
 
-for u in sys.argv[1:]:
-    url.append(u)
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-1-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-2-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-3-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-4-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-5-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-6-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-7-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-8-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-9-flv.html")
+url.append("http://www.99kubo.tv/vod-play-id-45451-sid-2-pid-10-flv.html")
+
+# for u in sys.argv[1:]:
+#     url.append(u)
+
+DOWNLOADER="youtube-dl"
+DOWNLOADER_ARGS='--no-check-certificate --external-downloader aria2c --external-downloader-args "-c -s16 -k1M -x16 -j16"'
 
 for idx, u in enumerate(url):
 
     try:
         driver.get(u)
     except:
-        # Ignore long loading
         pass
 
     while True:
-        print("Trying")
+#         print("Trying")
         time.sleep(2)
-        start = time.clock()
         try:
             # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_1 | ]]
-            driver.switch_to.frame(driver.find_element_by_css_selector("#playleft > iframe:nth-child(2)"))
-#             driver.find_element_by_id("play-btn").click()
-#             driver.find_element_by_link_text(u"火影忍者小李外傳E01").click()
-            driver.find_element_by_id("wv-play-btn").click()
-#             driver.find_element_by_id("player_view").click()
-            print('已定位到元素')
-            end=time.clock()
+            driver.switch_to.frame(driver.find_element_by_css_selector("#playleft > iframe:not(#buffer)"))
             break
         except:
-            print("还未定位到元素!")
+            pass
 
+    vid = driver.find_element_by_css_selector('video#my-video_html5_api').get_attribute('src')
+    cmd = DOWNLOADER + " " + DOWNLOADER_ARGS + " '" + vid + "' -o " + str(idx+1) + ".flv"
+    print(cmd)
+    os.system(cmd)
 
-#     driver.find_element_by_id("play-btn").click()
-    # ERROR: Caught exception [ERROR: Unsupported command [selectFrame | index=3 | ]]
-#     driver.find_element_by_id("play-btn").click()
-    # ERROR: Caught exception [ERROR: Unsupported command [selectFrame | index=1 | ]]
-#     driver.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Select'])[2]/following::div[8]").click()
-    # ERROR: Caught exception [ERROR: Unsupported command [selectWindow | win_ser_1 | ]]
-    # ERROR: Caught exception [ERROR: Unsupported command [selectFrame | index=1 | ]]
-#     driver.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Select'])[2]/following::div[8]").click()
-
-#     driver.find_element_by_id("play-btn").click()
-    html = driver.page_source       # get html
-#     driver.get_screenshot_as_file("./img/sreenshot1.png")
-    print(html)
-    driver.close()
-
-# url.append( "https://www.bilibili.com/video/av7931969/?p=1" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=2" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=3" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=4" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=5" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=6" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=7" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=8" )
-# url.append( "https://www.bilibili.com/video/av7931969/?p=9" )
-
-# Remove duplicates
-# url = list(set(url))
-
-# for idx, u in enumerate(url):
-#     processes.append( [subprocess.Popen([ "you-get", u, "-o", str(idx) ]), u, idx] )
-#     while len(processes) >= MAX_DOWNLOAD_AT_ONCE:
-#         time.sleep(.1)
-#         for i, p in enumerate(processes):
-#             # if p[0].returncode == None, it means that downloading is not finished
-#             if p[0].poll() == 0:
-#                 # Succeed
-#                 processes.pop(i)
-#             elif p[0].returncode != None:
-#                 # Failed
-#                 processes.pop(i)
-#                 Error.append( [subprocess.Popen([ "you-get", p[1], "-o", str(p[2]) ]), p[1], p[2]] )
-#                 time.sleep(.1)
-#         processes.extend(Error)
-#         Error = []
-
-# Execute this bash command
-# $ find . -name '*' -type f -exec mv {} ./ \; && find . -type d -empty -delete
-
-# Or the Powershell Command
-# $ Get-ChildItem -Path . -Recurse -File | Move-Item -Force -Destination . ; Get-ChildItem -Path . -Recurse -Directory | Remove-Item
+driver.close()
