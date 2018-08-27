@@ -16,3 +16,8 @@ Decryption
 =====
 * $ openssl aes-256-cbc -d -in message.enc -out plain-text.txt
 * Then openssl will ask password to decrypt
+
+Base64
+=====
+* $ openssl enc -base64 <<< 'Hello, World!'
+* $ openssl enc -base64 -d <<< SGVsbG8sIFdvcmxkIQo=
