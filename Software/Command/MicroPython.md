@@ -128,10 +128,10 @@ mv android-ndk-r17b android-ndk && cd android-ndk
 
 # arch could be arm, arm64, x86, x86_64
 echo "Downloading arm64 toolchain..."
-./build/tools/make_standalone_toolchain.py --arch=arm64 --package-dir=$PWD
+./build/tools/make_standalone_toolchain.py --arch=arm64 --api 21 --package-dir=$PWD
 tar jxvf ./aarch64-linux-android.tar.bz2
 echo "Downloading x86_64 toolchain..."
-./build/tools/make_standalone_toolchain.py --arch=x86_64 --package-dir=$PWD
+./build/tools/make_standalone_toolchain.py --arch=x86_64 --api 21 --package-dir=$PWD
 tar jxvf ./x86_64-linux-android.tar.bz2
 
 export CC_PREFIX="aarch64-linux-android"
@@ -159,4 +159,5 @@ sed  -i '1i #define MP_S_IFREG (0x8000)' modos.c
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC axtls
 make V=1 CROSS_COMPILE="$CROSS_COMPILE" CC=$CC LDFLAGS_EXTRA="$LDFLAGS_EXTRA" MICROPY_PY_THREAD=0
 cp micropython $HOME/$CC_PREFIX
+cp micropython /data/data/com.termux/files/usr/bin
 ```
