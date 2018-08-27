@@ -15,3 +15,9 @@
 手機CPU、電腦CPU、電腦GPU 規格判別
 =====
 * 天梯圖
+
+Embbed hardware
+=====
+* ESP8266/ESP32
+    * Micropython
+    * Arduino IDE
