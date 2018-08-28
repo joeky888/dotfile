@@ -28,7 +28,7 @@ InstallDotfile()
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/.grc
 
-  git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
+  git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
   ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
@@ -62,7 +62,7 @@ InstallDotfileCygwin()
 {
   rm -rf $Home/dotfile
   rm -rf ~/.grc
-  git clone --depth=1 https://github.com/j16180339887/dotfile.git $Home/dotfile
+  git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   mkdir -p $Home/Documents/WindowsPowerShell
   mkdir -p $Home/.pip/
   mkdir -p $Home/pip/
@@ -215,8 +215,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
   fi
 
-  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-  $SUDO aria2c https://raw.githubusercontent.com/j16180339887/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
+  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
+  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
   fc-cache -fv
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   if [ -n "$SUDO" ]; then
@@ -285,7 +285,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   fi
   rm -rf /bin/apt-cyg
   rm -rf /bin/setup-x86_64.exe
-  curl https://raw.githubusercontent.com/j16180339887/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
+  curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
   apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh
   InstallDotfileCygwin
