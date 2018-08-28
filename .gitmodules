@@ -8,11 +8,11 @@
     shallow = true
 [submodule "vimrc"]
     path = vimrc
-    url = https://github.com/j16180339887/vimrc.git
+    url = https://github.com/joeky888/vimrc.git
     shallow = true
 [submodule "powershell"]
     path = powershell
-    url = https://github.com/j16180339887/powershell.git
+    url = https://github.com/joeky888/powershell.git
     shallow = true
 [submodule "grc"]
     path = grc
