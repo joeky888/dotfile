@@ -1,3 +1,10 @@
+Get all platforms
+=====
+```sh
+go tool dist list
+go tool dist list -json
+```
+
 Cross compile webrtc and openssl with CGO
 =====
 ```sh
