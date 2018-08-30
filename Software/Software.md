@@ -126,13 +126,17 @@ Windows
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
-    * $ scoop bucket add rasa https://github.com/rasa/scoops.git
-    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs
-    * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing
+    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs mpv
+<!--     * $ scoop bucket add rasa https://github.com/rasa/scoops.git -->
+<!--     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing -->
 ```sh
 # "" means "(Default)" which equals "@"
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\\Desktop\\mpv.lnk")
+$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv\\current\\mpv.exe"
+$Shortcut.Save()
 ```
 * Chocolatey
     * $ Set-ExecutionPolicy RemoteSigned -Force
