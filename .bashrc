@@ -112,7 +112,7 @@ if [[ -d "$HOME/node" ]]; then
   alias upgradeNpm='~/node/bin/npm install -g npm@latest ; ~/node/bin/npm update -g'
 fi
 
-if [[ -d "$HOME/go" ]]; then
+if [ -d "$HOME/go" ] && [ -f "$HOME/go/bin/go" ]; then
   export GOROOT="$HOME/go"
   export GOPATH="$GOROOT/tool"
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
