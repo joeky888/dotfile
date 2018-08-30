@@ -112,11 +112,18 @@ if [[ -d "$HOME/node" ]]; then
   alias upgradeNpm='~/node/bin/npm install -g npm@latest ; ~/node/bin/npm update -g'
 fi
 
-if [ -d "$HOME/go" ] && [ -f "$HOME/go/bin/go" ]; then
+if [ -f "$HOME/go/bin/go" ]; then
   export GOROOT="$HOME/go"
   export GOPATH="$GOROOT/tool"
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+elif [ -f "$HOME/golang/bin/go" ]; then
+  export GOROOT="$HOME/golang"
+  export GOPATH="$GOROOT/tool"
+  export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
+elif [ -d "$HOME/go" ]; then
+  export PATH=$HOME/go/bin:$PATH
 fi
+
 [ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all'
 
 if [[ -d "$HOME/zulu" ]]; then
