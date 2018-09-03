@@ -6,5 +6,6 @@ channels:
   - free
   - conda-forge
   - bioconda
-  - msys2
+  - intel
+#   - msys2
 show_channel_urls: true

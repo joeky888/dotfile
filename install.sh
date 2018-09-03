@@ -148,6 +148,7 @@ InstallPIP()
 
 InstallMiniconda()
 {
+  [ "$(uname -m)" == "x86_64" ] || return;
   rm -rf ~/Miniconda2 && aria2c "https://repo.continuum.io/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod 777 Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
   rm -rf ~/Miniconda3 && aria2c "https://repo.continuum.io/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
@@ -229,14 +230,14 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
   [[ $(command -v zsh) ]] && $SUDO chsh -s $(command -v zsh) root
   [[ $(command -v zsh) ]] && chsh -s $(command -v zsh) $(whoami)
-  $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
-  $SUDO chmod 755 /usr/bin/reconnect
-  $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-  $SUDO chmod 755 /lib/systemd/system/reconnect.service
-  $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
-  $SUDO systemctl enable reconnect.service
+#   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
+#   $SUDO chmod 755 /usr/bin/reconnect
+#   $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
+#   $SUDO chmod 755 /lib/systemd/system/reconnect.service
+#   $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
+#   $SUDO systemctl enable reconnect.service
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
-  $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
+#   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
     $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y

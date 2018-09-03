@@ -22,6 +22,7 @@ Software
 * Fritzing
 * FontForge
 * VLC
+* MPV player
 * Natron
 * OBS MP
 * Aegisub
@@ -179,6 +180,7 @@ Windows XP
 * Sogou input (zhuyin/pinyin)
 * WPS office
 * VLC
+* MPV player 2015-10-29
 * FFmpeg 3.x
 
 Mac (Hack-intosh)
@@ -230,7 +232,7 @@ Android
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
 * DroidVim
 * VLC
-* Kodi
+* mpv-android
 * Here WeGo
 * Amaze File Manager
 * WPS office

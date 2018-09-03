@@ -87,7 +87,7 @@ if [ -n $CONDA_2 ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2=$(echo $CONDA_2/bin/conda)
   alias pip2=$(echo $CONDA_2/bin/pip)
-  upgradeConda2() { $(echo $CONDA_2/bin/conda) -n base conda -y; $(echo $CONDA_2/bin/conda) update --all --yes ;}
+  upgradeConda2() { $(echo $CONDA_2/bin/conda) -n base conda -y; $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
   upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
@@ -97,7 +97,7 @@ if [ -n $CONDA_3 ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3=$(echo $CONDA_3/bin/conda)
   alias pip3=$(echo $CONDA_3/bin/pip)
-  upgradeConda3() { $(echo $CONDA_3/bin/conda) -n base conda -y; $(echo $CONDA_3/bin/conda) update --all --yes ;}
+  upgradeConda3() { $(echo $CONDA_3/bin/conda) -n base conda -y; $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
   upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
@@ -193,16 +193,18 @@ alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-if [ $(command -v youtube-dl) ]; then
+if hash youtube-dl 2>/dev/null >/dev/null; then
   alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
   alias curl='curl --retry 2 --retry-max-time 0 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --user-agent="$(youtube-dl --dump-user-agent)"'
 else
   alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --read-timeout=10 --verbose'
   alias curl='curl --retry 10 --retry-max-time 0 -LC - '
+  alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16'
 fi
-if [ $(command -v aria2c) ]; then
+if hash aria2c 2>/dev/null >/dev/null ; then
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
 else
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
@@ -228,7 +230,6 @@ alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias youtube-dl-asus-proxy-kungfu='youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
 alias youtube-dl-asus-proxy-zscaler='youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=gateway.zscaler.net:80"'
 alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16" -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
-alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
 alias aria2c-asus-proxy-kungfu='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
 alias aria2c-asus-proxy-zscaler='aria2c --all-proxy=gateway.zscaler.net:80'
 alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16'
