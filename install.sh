@@ -221,11 +221,11 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     echo "Distro does not support at this moment."
     exit 1
   fi
-  mkdir -p ~/.config/openbox
   InstallDotfile
-  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
-  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
-  ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
+#   mkdir -p ~/.config/openbox
+#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
+#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
+#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
 #   ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
 #   ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
 #   [[ $(command -v zsh) ]] && $SUDO chsh -s $(command -v zsh) root
