@@ -11,3 +11,7 @@ ldd
 ```sh
 ldd /bin/ffmpeg
 ```
+* Copy all dependencies to current folder
+```sh
+ldd /bin/ffmpeg | grep "=> /" | awk '{print $3}' | xargs -I '{}' cp -v '{}' .
+```
