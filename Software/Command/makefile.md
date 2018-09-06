@@ -2,6 +2,7 @@ pkg-config
 =====
 * Get all includes and libs path
 ```sh
+pkg-config --list-all | grep gstreamer
 pkg-config --cflags --libs gstreamer-1.0 gstreamer-app-1.0
 ```
 
