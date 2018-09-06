@@ -16,3 +16,10 @@ ldd /bin/ffmpeg
 ```sh
 ldd /bin/ffmpeg | grep "=> /" | awk '{print $3}' | xargs -I '{}' cp -v '{}' .
 ```
+
+Static compile (To be continued)
+=====
+* Make sure libs are compiled as .a format not .so or .dll format
+```sh
+gcc -static
+```
