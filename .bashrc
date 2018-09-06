@@ -122,6 +122,8 @@ elif [ -f "$HOME/golang/bin/go" ]; then
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -d "$HOME/go" ]; then
   export PATH=$HOME/go/bin:$PATH
+else
+  export GOPATH="$HOME/go"
 fi
 
 [ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all'
