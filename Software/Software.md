@@ -127,7 +127,8 @@ Windows
     * $ Set-ExecutionPolicy RemoteSigned -Force
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
-    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs mpv
+    * $ scoop bucket add dorado https://github.com/h404bi/dorado
+    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs mpv miniconda2 miniconda3
 <!--     * $ scoop bucket add rasa https://github.com/rasa/scoops.git -->
 <!--     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing -->
 ```sh
@@ -146,7 +147,7 @@ $Shortcut.Save()
     * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
     * $ PowerShellGet\Install-Module posh-docker -Scope CurrentUser
     * $ PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
-    * $ choco install 7zip git poshgit miniconda miniconda3 greenshot wps-office-free obs-studio nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
+    * $ choco install 7zip git poshgit greenshot wps-office-free obs-studio nomacs vlc virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
     * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
     * Gaming dlls
         * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
