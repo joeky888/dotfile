@@ -437,6 +437,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   plugins=(git docker docker-compose adb)
   DISABLE_AUTO_UPDATE="true"
   if [ -f $ZSH/oh-my-zsh.sh ]; then
+    save_aliases=$(alias -L) # Store current aliases before oh-my-zsh
     source $ZSH/oh-my-zsh.sh
     compdef vman=man # Complete vman as man command
     compdef Forever=sudo # Complete Forever as sudo command
@@ -445,6 +446,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     [ $(command -v apt) ] && compdef apt-fast=apt # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
+    unalias -m '*' # Remove all aliases
+    eval $save_aliases; unset save_aliases # Restore all aliases
 
   else # Oh-my-zsh is not available
     alias -g ...='../..'
