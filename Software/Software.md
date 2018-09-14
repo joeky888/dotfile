@@ -291,7 +291,7 @@ Good Software Design
 * A light theme and a dark theme built-in
 * Always use simple English
 * Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warrning
-* Host on github if open source, host on Gogs for self-hosting
+* Host on github if open source, host on Gogs/Gitea for self-hosting
 * Multiple languages other than just English
 * Support Private Tabs/Windows
 * Cross Platform
