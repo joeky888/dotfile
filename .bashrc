@@ -610,6 +610,10 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     source /usr/local/share/bash-completion/bash_completion.sh
   elif [ -f /usr/local/share/bash-completion/bash_completion ]; then
     source /usr/local/share/bash-completion/bash_completion
+  elif [ -d "/usr/share/bash-completion/completions" ]; then
+    for f in /usr/share/bash-completion/completions/*; do
+      source $f
+    done
   elif [ -d "/usr/local/etc/bash_completion.d" ]; then # FreeBSD
     for f in /usr/local/etc/bash_completion.d/*; do
       source $f
