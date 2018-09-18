@@ -73,6 +73,7 @@ BaiduPCS-Go config set -max_parallel 64
 BaiduPCS-Go config set -savedir $HOME/Desktop
 BaiduPCS-Go config set -cache_size 16384 # 16MB
 BaiduPCS-Go config set -max_download_load 5 # 5 Files one time
+BaiduPCS-Go config set -appid=266719 # https://github.com/iikira/BaiduPCS-Go/issues/387
 ```
 * Nodejs
     * gtop
