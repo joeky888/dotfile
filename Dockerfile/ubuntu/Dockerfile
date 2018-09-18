@@ -7,12 +7,14 @@ RUN apt update -q \
  && apt install -qy \
   build-essential \
   gnupg \
-  clang \
-  cmake \
   curl \
-  gdb \
   vim \
-  openssh-server
+  openssh-server \
+  locales
+RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
+    echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen; \
+    echo "LANG=en_US.UTF-8" > /etc/locale.conf; \
+    locale-gen en_US.UTF-8
 
 ENV CC clang
 ENV CXX clang++
