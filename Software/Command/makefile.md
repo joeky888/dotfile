@@ -23,3 +23,12 @@ Static compile (To be continued)
 ```sh
 gcc -static
 ```
+
+Cross compile with sysroot
+=====
+```sh
+export LDFLAGS="--sysroot=$MYSYSROOT $LDFLAGS"
+export CFLAGS="--sysroot=$MYSYSROOT $CFLAGS"
+# Or
+export CC="aarch64-linux-gcc --sysroot=$MYSYSROOT"
+```
