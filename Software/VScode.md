@@ -19,7 +19,7 @@ Setting
     "emmet.showSuggestionsAsSnippets": true,
     "editor.snippetSuggestions": "top",
     "terminal.integrated.fontSize": 18,
-    "Enable Live-Share-Function": "This is a comming soon feature"
+    "workbench.editor.enablePreview": false
 }
 ```
 
