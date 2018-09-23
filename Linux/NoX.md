@@ -249,3 +249,8 @@ less file.txt
 # On windows cmd.exe
 type file.txt
 ```
+
+Web browser without X
+=====
+* Install firefox
+* Download browsh
