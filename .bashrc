@@ -191,6 +191,7 @@ alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archi
 alias upgradeYoutubedl='pip install --upgrade https://github.com/rg3/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
+alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
