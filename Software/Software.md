@@ -358,6 +358,7 @@ Dev Tools
 * Windows / XBOX only
     * Universal Windows Platform (.AppX)
 * Web server backend
+    * Golang
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
 * Web frontend: React.js, vue.js, Qt for WebAssembly
