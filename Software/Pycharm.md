@@ -1,6 +1,13 @@
 Python env location
 =====
+* Create project using pycharm
+* $ cd project
+* $ rm -rf "./venv"
+* $ conda create --prefix "./venv" python=3.6 tensorflow-gpu keras-gpu
 * File -> Settings -> Project xxx -> Project Interpreter -> Add new interpreter manually (On the top)
+    * Virtualenv Environment -> Existing environment -> Interpreter -> "./venv/python.exe"
+    * Conda Environment -> Existing environment -> Interpreter -> "./venv/python.exe"
+* Add venv to .gitignore
 
 Code Completion
 =====
