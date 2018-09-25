@@ -7,6 +7,7 @@ Post-installed
 =====
 * System Preferences -> Dock -> Automatically hide and show the Dock -> Check
 * System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
+* Enable Mojave dark theme
 
 DNS
 =====
