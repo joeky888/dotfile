@@ -162,37 +162,6 @@ InstallMiniconda()
 #   echo y | ~/Miniconda3/bin/pip install ykdl
 }
 
-apt-fast()
-{
-  APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
-
-  if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
-    cd /var/cache/apt/archives/;
-
-    DOWNLOADARGS='-c -s16 -k1M -x16'
-    DNS=""
-
-    if ping -c 1 -W 1 180.76.76.76 2>/dev/null | grep -q -i "ttl"; then
-      DNS="--async-dns-server=180.76.76.76"
-    fi
-
-    if ping -c 1 -W 2 8.8.8.8 2>/dev/null | grep -q -i "ttl"; then
-      DNS="--async-dns-server=8.8.8.8"
-    fi
-
-    # Donload unfinished jobs
-    [ $(command -v aria2c) ] || $APT install -y aria2
-    [[ -f /var/cache/apt/archives/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
-
-    # Create new jobs
-    apt-get -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-  elif echo "$@" | grep -q "update"; then
-    $SUDO $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
-  fi
-
-  $SUDO $APT $@ && rm -f /var/cache/apt/archives/apt-fast.list
-}
-
 InstallAlpine()
 {
   ARCH=$(uname -m)
@@ -208,9 +177,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
   export Home="$HOME"
   if [[ $(command -v apt) ]]; then
-#     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast update
-    $SUDO apt-fast install vim tmux zsh git curl aria2 bash-completion -y
+    $SUDO apt update
+    $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
     $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion yaourt --noconfirm --needed
@@ -224,6 +192,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     exit 1
   fi
   InstallDotfile
+  $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
 #   mkdir -p ~/.config/openbox
 #   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
 #   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
