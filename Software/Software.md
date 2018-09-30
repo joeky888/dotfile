@@ -186,6 +186,8 @@ Windows XP
 * VLC
 * MPV player 2015-10-29
 * FFmpeg 3.x
+* PhotoScape
+* Google Picasa
 
 Mac (Hack-intosh)
 =====
