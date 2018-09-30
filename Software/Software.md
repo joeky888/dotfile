@@ -156,6 +156,8 @@ $Shortcut.Save()
 Windows XP
 =====
 * Maxthon (傲遊瀏覽器)
+    * Ad block plus
+    * Stylish
 * Qupzilla 1.8.9
 * Google Chrome 49
 * Firefox 52
