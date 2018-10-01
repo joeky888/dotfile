@@ -19,7 +19,7 @@ Useful params
 Enable KVM
 =====
 ```sh
-LC_ALL=C lscpu | grep Virtualization # If it output someting means hardware is usable
+LC_ALL=C lscpu | grep Virtualization # If it outputs someting means hardware is usable
 zgrep CONFIG_KVM /proc/config.gz # You should see CONFIG_KVM_INTEL or CONFIG_KVM_AMD as ‘m’ or ‘y’
 
 sudo powerpill -S virt-manager qemu-arch-extra vde2 ebtables dnsmasq bridge-utils openbsd-netcat --needed
