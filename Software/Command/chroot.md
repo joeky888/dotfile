@@ -34,7 +34,7 @@ sudo powerpill -S debootstrap
 mkdir $HOME/Debian ; cd $HOME/Debian
 
 # debootstrap --arch <ARCH> <VERSION> <DIRECTORY> <MIRROR>
-#   <ARCH> = i386、amd64、armel、armhf
+#   <ARCH> = i386、amd64、armel、armhf、arm64
 #   <MIRROR> = http://ftp.tw.debian.org/debian/
 sudo debootstrap --arch amd64 unstable $PWD http://cdn-fastly.deb.debian.org/debian/
 
