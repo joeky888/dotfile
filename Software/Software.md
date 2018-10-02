@@ -355,7 +355,8 @@ Dev Tools
     * React Native
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
-* GUI on desktop
+* Desktop app
+    * Proton-native, react native syntax and builds native apps
     * Executable size as small as possible, for personal use : QtLite, or github.com/zserge/webview
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
