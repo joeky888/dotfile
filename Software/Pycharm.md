@@ -4,6 +4,7 @@ Python env location
 * $ cd project
 * $ rm -rf "./venv"
 * $ conda create --prefix "./venv" python=3.6 tensorflow-gpu keras-gpu
+* $ conda install --prefix "./venv" otherPackages
 * File -> Settings -> Project xxx -> Project Interpreter -> Add new interpreter manually (On the top)
     * Virtualenv Environment -> Existing environment -> Interpreter -> "./venv/python.exe"
     * Conda Environment -> Existing environment -> Interpreter -> "./venv/python.exe"
@@ -12,7 +13,8 @@ Python env location
 Code Completion
 =====
 * File -> Settings -> Editor -> General -> Code Completion
-    * Case sensitive completion -> None
+    * Match case -> Uncheck
+    * Parameter Info -> Check all
 
 Keymapping
 =====
