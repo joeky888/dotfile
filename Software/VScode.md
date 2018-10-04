@@ -19,7 +19,8 @@ Setting
     "emmet.showSuggestionsAsSnippets": true,
     "editor.snippetSuggestions": "top",
     "terminal.integrated.fontSize": 18,
-    "workbench.editor.enablePreview": false
+    "workbench.editor.enablePreview": false,
+    "editor.dragAndDrop": false
 }
 ```
 
