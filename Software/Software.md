@@ -178,6 +178,7 @@ Windows XP
 * Qt 5.6 (For development, I'm not sure if the apps built with latest Qt still runs on XP)
 * Python 2 (Miniconda 2 Latest, Anaconda 2 Latest)
 * Python 3.4.3 (Miniconda 3 Latest, Anaconda 3 v2.3)
+* Go 1.10.x
 * Sumatra PDF
 * Greenshot
 * Rime input method
