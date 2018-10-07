@@ -25,7 +25,7 @@ url = list(set(url))
 
 for idx, u in enumerate(url):
     processes.append( [subprocess.Popen([ "you-get", u, "-o", str(idx) ]), u, idx] )
-    while len(processes) >= MAX_DOWNLOAD_AT_ONCE:
+    while len(processes) >= MAX_DOWNLOAD_AT_ONCE or (idx == len(url)-1 and len(processes) > 0):
         time.sleep(.1)
         for i, p in enumerate(processes):
             # if p[0].returncode == None, it means that downloading is not finished
