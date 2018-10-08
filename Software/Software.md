@@ -342,6 +342,7 @@ Good Software Design
 * Send crash log to server
 * Feedback button in-app
 * Easter eggs
+* Software-level Factory reset
 * Mobile
     * Portable between Android and iOS
     * Most operations can be done with only one finger
