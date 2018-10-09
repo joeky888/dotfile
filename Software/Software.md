@@ -377,7 +377,7 @@ Dev Tools
     * Pure Python, Python libs written in pure python
     * Micropython, pure python lib
     * Go, static compile by default (single executable file) and easily cross-compile to other platforms
-    * C and C++, could be built by gcc and mingw
+    * C and C++, could be built by gcc, mingw and Clang
 * Linux CLI/Driver
     * Fbterm, modify the source of the Fbterm
 * FreeBSD CLI/Driver
