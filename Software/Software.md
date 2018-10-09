@@ -91,6 +91,7 @@ BaiduPCS-Go config set -appid=266719 # https://github.com/iikira/BaiduPCS-Go/iss
 * Google-drive-ocamlfuse / rclone
 * Docker
 * Shellcheck
+* hey - loadtest tool written in go https://github.com/rakyll/hey
 
 Dev
 =====
