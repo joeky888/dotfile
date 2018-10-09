@@ -34,7 +34,6 @@ Extension
 * Search by Image (by Google)
 * Stylish / Stylus
 * Full Page Screen Capture
-* TJDict
 * SimpleUndoClose
 * Tampermonkey
 * RightToCopy
@@ -47,7 +46,6 @@ Extension
 * Remove Google Redirection
 * Get CRX
 * GitHub Plus
-* Octotree
 * No Coin
 * LanguageTool
 * JSON Viewer
