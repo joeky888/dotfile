@@ -1,7 +1,5 @@
 Setting
 =====
-* chrome://flags/#scroll-on-active-tab-on-click -> Disable
-* chrome://flags/#multiple-tab-selection -> Disable
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-md-extensions -> Enable (Material design)
 * chrome://flags/#save-page-as-mhtml -> Enable
