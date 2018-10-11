@@ -1074,7 +1074,7 @@ FindFilesToExec()
   if [[ -n "$ZSH_VERSION" ]]; then
     BUFFER="find . -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
   elif [[ -n "$BASH_VERSION" ]]; then
-    READLINE_LINE="find . -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
+    READLINE_LINE="find . -iname '*.jpg' -exec sh -c '$READLINE_LINE \"\$0\"' {} \;"
   fi;
 }
 
