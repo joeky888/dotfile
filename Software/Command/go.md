@@ -5,6 +5,19 @@ go tool dist list
 go tool dist list -json
 ```
 
+CGO on Windows powershell
+=====
+```sh
+$env:PATH="C:\cygwin64\bin;$env:PATH"
+$env:CGO_ENABLED="1"
+$env:CC="x86_64-w64-mingw32-gcc.exe"
+$env:CXX="x86_64-w64-mingw32-g++.exe"
+$env:PKG_CONFIG="x86_64-w64-mingw32-pkg-config.exe"
+
+go env
+go build -ldflags "-w -extldflags '-static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
+```
+
 Cross compile webrtc and openssl with CGO
 =====
 ```sh
