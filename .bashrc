@@ -553,6 +553,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zstyle ':completion:*' special-dirs false # Don't complete ./ and ../
   zle -N PasteFromClipboard # Bind function to command
   zle -N CutToClipboard # Bind function to command
+  zle -N FindFilesToExec # Bind function to command
   zle -N Forever # Bind function to command
   zle -N OpenFileExplorer # Bind function to command
   HISTFILE=$HOME/.bash_history
@@ -599,6 +600,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "^Y" redo
   bindkey "^V" PasteFromClipboard # Ctrl V to paste from Clipboard.txt
   bindkey "^X" CutToClipboard # Ctrl X to cut to Clipboard.txt
+  bindkey "^G" FindFilesToExec # Ctrl G to execute command on multiple files
   bindkey "^F" Forever # Ctrl F to run a command Forever
   bindkey "^O" OpenFileExplorer # Ctrl F to run a command Forever
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
@@ -651,6 +653,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     bind 'set show-all-if-ambiguous on'
     bind -x '"\C-X": CutToClipboard'  # Ctrl V to paste from Clipboard.txt
     bind -x '"\C-V": PasteFromClipboard'  # Ctrl V to paste from Clipboard.txt
+    bind -x '"\C-G": FindFilesToExec'  # Ctrl G to execute command on multiple files
     bind -x '"\C-F": Forever'  # Ctrl F to run a command Forever
     bind -x '"\C-O": OpenFileExplorer'  # Ctrl O to open file explorer here
   fi
@@ -1063,6 +1066,16 @@ CompleteAptCyg()
   )
   _describe 'values' options;
   _describe 'commands' cmd;
+}
+
+FindFilesToExec()
+{
+# find . -iname '*.jpg' -exec sh -c '$BUFFER mv "$0" "$0".backup' {} \;
+  if [[ -n "$ZSH_VERSION" ]]; then
+    BUFFER="find . -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
+  elif [[ -n "$BASH_VERSION" ]]; then
+    READLINE_LINE="find . -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
+  fi;
 }
 
 Forever()
