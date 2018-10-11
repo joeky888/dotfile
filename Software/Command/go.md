@@ -15,7 +15,8 @@ $env:CXX="x86_64-w64-mingw32-g++.exe"
 $env:PKG_CONFIG="x86_64-w64-mingw32-pkg-config.exe"
 
 go env
-go build -ldflags "-w -extldflags '-static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
+# gcc -s Make the size 10x smaller
+go build -ldflags "-w -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
 ```
 
 Cross compile webrtc and openssl with CGO
