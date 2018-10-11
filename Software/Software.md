@@ -329,6 +329,7 @@ Good Software Design
 * Current status / Connection status, like (Green)Good, (Red)Bad
 * PrintStatus() function and Error log files (in binary if closed-source)
 * Log files are available in plan-text, html and markdown format
+* Stripped binary (like gcc -s)
 * Auto updater
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
