@@ -118,7 +118,7 @@ Packages
   * $ sudo powerpill -S --noconfirm --needed tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker android-tools opera opera-ffmpeg-codecs chromium nomacs qpdfview file-roller vlc obs-studio evince gnome-disk-utility baobab ; sudo pacman -R --noconfirm xarchiver
+  * $ sudo powerpill -S --noconfirm --needed gvim fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller vlc obs-studio evince gnome-disk-utility baobab ; sudo pacman -R --noconfirm xarchiver
   * $ yaourt -S earlyoom
 <!--   * $ yaourt -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
