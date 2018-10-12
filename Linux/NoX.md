@@ -123,6 +123,14 @@ gateway 192.168.1.1
 ```
 * $ sudo systemctl restart networking
 
+DHCP on archlinux
+=====
+```sh
+ip a # Get interface name, EX. eth0
+sudo dhcpcd eth0
+sudo pacman -Syyu
+```
+
 Connect network using dynamic ip
 =====
 * Get netword card name
