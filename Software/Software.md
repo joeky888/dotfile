@@ -62,7 +62,10 @@ CLI
     * BaiduPCS-Go
     * Micro (text editor)
     * hugo
-    * mkcert
+    * mkcert - Certificates generator
+    * hey - loadtest tool written in go https://github.com/rakyll/hey
+    * gotop - top-like tool in go
+    * ctop - top-like tool for Docker containers
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
@@ -77,6 +80,7 @@ BaiduPCS-Go config set -appid=266719 # https://github.com/iikira/BaiduPCS-Go/iss
 ```
 * Nodejs
     * gtop
+    * vtop
     * loadtest
     * pm2
     * cloc # Programing language usage analyzer
@@ -91,7 +95,6 @@ BaiduPCS-Go config set -appid=266719 # https://github.com/iikira/BaiduPCS-Go/iss
 * Google-drive-ocamlfuse / rclone
 * Docker
 * Shellcheck
-* hey - loadtest tool written in go https://github.com/rakyll/hey
 
 Dev
 =====
