@@ -64,7 +64,7 @@ CLI
     * hugo
     * mkcert - Certificates generator
     * hey - loadtest tool written in go https://github.com/rakyll/hey
-    * gotop - top-like tool in go
+    * gotop - top-like tool in Go and C
     * ctop - top-like tool for Docker containers
 ```sh
 # $ go help get
