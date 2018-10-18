@@ -6,7 +6,7 @@ Setup a docker swarm cluster using docker-machine
     * slave2 is on 192.168.0.3
 ```sh
 # on master
-docker swarm init --advertise-addr 192.168.0.1
+docker swarm init # --advertise-addr 192.168.0.1
 docker swarm join-token worker # Copy output and paste to all slaves
 
 # On slave1
