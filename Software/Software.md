@@ -64,8 +64,9 @@ CLI
     * hugo
     * mkcert - Certificates generator
     * hey - loadtest tool written in go https://github.com/rakyll/hey
-    * gotop - top-like tool in Go and C
+    * gotop - top-like tool
     * ctop - top-like tool for Docker containers
+    * upx - Ultimate Packer executables, written in C
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
@@ -133,7 +134,7 @@ Windows
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop bucket add dorado https://github.com/h404bi/dorado
-    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go nodejs phantomjs mpv miniconda2 miniconda3
+    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
 <!--     * $ scoop bucket add rasa https://github.com/rasa/scoops.git -->
 <!--     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing -->
 ```sh
