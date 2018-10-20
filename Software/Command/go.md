@@ -17,7 +17,7 @@ $env:PKG_CONFIG="x86_64-w64-mingw32-pkg-config.exe"
 go env
 # gcc -s Make the size 10x smaller
 go build -ldflags "-w -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
-Binary files can be even smaller using "upx" command
+upx --lzma file.exe
 ```
 
 Cross compile webrtc and openssl with CGO

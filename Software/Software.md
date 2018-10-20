@@ -66,7 +66,7 @@ CLI
     * hey - loadtest tool written in go https://github.com/rakyll/hey
     * gotop - top-like tool
     * ctop - top-like tool for Docker containers
-    * upx - Ultimate Packer executables, written in C
+    * upx - Ultimate Packer executables, `upx --lzma file.exe`
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
