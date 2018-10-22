@@ -8,6 +8,7 @@ XTerm*scrollBar: True
 XTerm*loginshell: False
 XTerm*cursorBlink: False
 XTerm*visualBell: False
+XTerm*pointerShape: left_ptr
 
 ! Fonts and Encoding
 XTerm*utf8: True
