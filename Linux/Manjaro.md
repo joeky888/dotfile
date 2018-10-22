@@ -1,7 +1,7 @@
 Pacman
 =====
-* Remove a package
-    * $ sudo pacman -Qdtq | sudo pacman -Rsc -
+* Upgrade packages
+    * $ sudo powerpill -Syyu ; sudo pacman -Rsc $(pacman -Qdtq)
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
