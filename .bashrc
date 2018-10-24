@@ -1116,6 +1116,9 @@ ChrootHome()
   if (( $EUID != 0 )); then
     export SUDO='sudo'
   fi
+  if [[ "$OSTYPE" == "linux-android" ]]; then
+    export SUDO=''
+  fi
 
   echo 'export CHARSET=UTF-8
 export PAGER=less
