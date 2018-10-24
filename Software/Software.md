@@ -109,6 +109,13 @@ Dev
 * Brackets
 * Visual Studio Code Insiders
 
+Library
+=====
+* Python
+    * aiohttp - Asynchronous HTTP client/server for py >= 3.5
+* Go
+    * fasthttp/fasthttprouter - Super fast for simple web server/router
+
 Windows
 =====
 * Process Monitor
