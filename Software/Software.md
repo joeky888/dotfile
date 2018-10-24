@@ -46,6 +46,7 @@ Software
 * JComicDownloader
 * JDownloader
 * LanguageTool
+* Cutter - reverse engineering framework
 
 CLI
 =====
