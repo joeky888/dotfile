@@ -20,6 +20,7 @@ Javascript
 * VS code: Editor
 * TypeScript + JSX
 * d3.js
+* pixi.js - Fast WebGL d3.js replacement
 * Zepto.js - Lightweight jquery-like lib
 * preactjs - Lightweight reactjs-like lib
 * infernojs - Lightweight reactjs-like lib
@@ -68,6 +69,11 @@ Python
     * Curses - standard python built-in lib
     * urwid
     * picotui - Minimal pure python lib without using ncurses, MicroPython supported
+* aiohttp - Asynchronous HTTP client/server for py >= 3.5
+
+Go
+=====
+* fasthttp/fasthttprouter - Super fast for simple web server/router
 
 Java
 =====
