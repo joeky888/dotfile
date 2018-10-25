@@ -3,6 +3,7 @@ Get all platforms
 ```sh
 go tool dist list
 go tool dist list -json
+go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
 ```
 
 CGO on Windows powershell
