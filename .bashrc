@@ -20,6 +20,9 @@ export LC_ALL="en_US.UTF-8"
 export CLICOLOR=1 # Colors for FreeBSD and MacOS
 export force_color_prompt=yes
 export color_prompt=yes
+export HISTFILESIZE=50000
+export HISTSIZE=50000
+export SAVEHIST=50000
 
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
@@ -458,8 +461,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else # Oh-my-zsh is not available
     alias -g ...='../..'
     alias -g ....='../../..'
-    export HISTSIZE=10000
-    export SAVEHIST=10000
     WORDCHARS='' # More completion
     bindkey -e # emacs keys
     unsetopt flowcontrol # Unbind Ctrl-S
@@ -560,7 +561,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zle -N FindFilesToExec # Bind function to command
   zle -N Forever # Bind function to command
   zle -N OpenFileExplorer # Bind function to command
-  HISTFILE=$HOME/.bash_history
+  export HISTFILE=$HOME/.bash_history
   alias history='fc -ln 1' # bash-like history
   unsetopt EXTENDED_HISTORY # Use bash-like history
   unsetopt SHARE_HISTORY # Use bash-like history
@@ -629,8 +630,6 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   fi
   [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check`"
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
-  export HISTFILESIZE=
-  export HISTSIZE=
   shopt -s histappend # Append history
   shopt -s checkwinsize # Checks the window size after each command
   PROMPT_COMMAND="history -n; history -w; history -c; history -r; $PROMPT_COMMAND" # Write history immediately
