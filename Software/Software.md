@@ -97,6 +97,7 @@ BaiduPCS-Go config set -appid=266719 # Or 309847 or 310646
 * Google-drive-ocamlfuse / rclone
 * Docker
 * Shellcheck
+* Hollywood - Hacker tool collection
 
 Dev
 =====
