@@ -1155,6 +1155,7 @@ export LANG="en_US.UTF-8"' | $SUDO tee $newhome/etc/profile
   [ -f /etc/resolv.conf ] && cat /etc/resolv.conf | $SUDO tee $newhome/etc/resolv.conf
   [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $newhome/etc/resolv.conf
   [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $newhome/etc/resolv.conf
+  [ -s $newhome/etc/resolv.conf ] || echo "nameserver 8.8.8.8" > $newhome/etc/resolv.conf
 
   export CHROOT_SHELL=/bin/sh
   [ -f $newhome/bin/bash ] && CHROOT_SHELL=/bin/bash
