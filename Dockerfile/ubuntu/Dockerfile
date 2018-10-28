@@ -17,3 +17,6 @@ RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
     locale-gen en_US.UTF-8
 
 ENV EDITOR vim
+
+# docker build . -t ubuntu:joeky
+# docker run --name u1 -it ubuntu:joeky bash
