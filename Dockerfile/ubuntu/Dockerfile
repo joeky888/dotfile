@@ -16,7 +16,4 @@ RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
     echo "LANG=en_US.UTF-8" > /etc/locale.conf; \
     locale-gen en_US.UTF-8
 
-ENV CC clang
-ENV CXX clang++
-
 ENV EDITOR vim
