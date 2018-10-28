@@ -170,7 +170,7 @@ InstallAlpine()
   ALPINE_HOME="$HOME/Alpine"
   rm -rf $ALPINE_HOME && mkdir -p $ALPINE_HOME && cd $ALPINE_HOME
   aria2c $ALPINE_URL
-  proot --link2symlink -0 tar zxvf *.tar.gz
+  proot --link2symlink -0 bsdtar -xpf *.tar.gz
   cd -
 }
 
