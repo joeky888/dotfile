@@ -128,6 +128,7 @@ elif [ -f "$HOME/golang/bin/go" ]; then
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -d "$HOME/go" ]; then
   export PATH=$HOME/go/bin:$PATH
+  export GOPATH="$HOME/go"
 else
   export GOPATH="$HOME/go"
 fi
