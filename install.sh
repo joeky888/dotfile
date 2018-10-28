@@ -167,7 +167,8 @@ InstallAlpine()
   ARCH=$(uname -m)
   ALPINE_VER=$(curl -s http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$ARCH/latest-releases.yaml | grep -m 1 -o version.* | sed 's/[^0-9.]*//g')
   ALPINE_URL="http://dl-cdn.alpinelinux.org/alpine/latest-stable/releases/$ARCH/alpine-minirootfs-$ALPINE_VER-$ARCH.tar.gz"
-  rm -rf $Home/Alpine && mkdir -p $Home/Alpine && cd $Home/Alpine
+  ALPINE_HOME="$HOME/Alpine"
+  rm -rf $ALPINE_HOME && mkdir -p $ALPINE_HOME && cd $ALPINE_HOME
   aria2c $ALPINE_URL
   proot --link2symlink -0 bsdtar -xpf *.tar.gz 2> /dev/null || :
   cd -
