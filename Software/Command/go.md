@@ -17,7 +17,7 @@ $env:PKG_CONFIG="x86_64-w64-mingw32-pkg-config.exe"
 
 go env
 # gcc -s Make the size 10x smaller
-go build -ldflags "-w -s -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
+go build -ldflags "-w -s -linkmode external -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
 upx --lzma file.exe
 ```
 
