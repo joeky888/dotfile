@@ -74,6 +74,7 @@ Python
 Go
 =====
 * fasthttp/fasthttprouter - Super fast for simple web server/router
+* iris - Fatest web framework
 
 Java
 =====
