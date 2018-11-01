@@ -1,3 +1,9 @@
+Install without desktop
+=====
+* Login as manjaro/manjaro
+* $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
+* $ setup
+
 Pacman
 =====
 * Upgrade packages

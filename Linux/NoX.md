@@ -108,6 +108,14 @@ Show all network interfaces
 * $ ip a
 * $ ip address
 * $ ifconfig -a
+* $ nmcli device show
+
+NetworkManager without X
+=====
+* $ nmtui # Or
+* $ nmcli device show | grep CONNECTION # Get device name
+* $ sudoedit /etc/NetworkManager/system-connections/${DeviceName} # TODO
+* $ sudo systemctl restart NetworkManager
 
 Connect network using static ip
 =====
