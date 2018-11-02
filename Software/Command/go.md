@@ -3,7 +3,15 @@ Get all platforms
 ```sh
 go tool dist list
 go tool dist list -json
-go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
+vim go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
+```
+
+Static compile
+=====
+```sh
+CGO_ENABLED=0 go build
+# Or
+go build -ldflags "-w -s -linkmode external -extldflags '-s -static'"
 ```
 
 CGO on Windows powershell
@@ -17,7 +25,7 @@ $env:PKG_CONFIG="x86_64-w64-mingw32-pkg-config.exe"
 
 go env
 # gcc -s Make the size 10x smaller
-go build -ldflags "-w -s -linkmode external -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
+go build -ldflags "-w -s -extldflags '-s -static --sysroot=C:\cygwin64\usr\x86_64-w64-mingw32\sys-root'"
 upx --lzma file.exe
 ```
 
