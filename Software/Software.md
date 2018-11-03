@@ -68,6 +68,8 @@ CLI
     * gotop - top-like tool
     * ctop - top-like tool for Docker containers
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
+    * syncthing - sync files between 2 PCs
+    * grafana - beautiful monitoring tool
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
