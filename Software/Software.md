@@ -62,7 +62,8 @@ CLI
 * Go
     * BaiduPCS-Go
     * Micro (text editor)
-    * hugo
+    * annie - youtube-dl like video downloader
+    * hugo - html generator
     * mkcert - Certificates generator
     * hey - loadtest tool written in go https://github.com/rakyll/hey
     * gotop - top-like tool
