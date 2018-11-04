@@ -67,9 +67,12 @@ CLI
     * hey - loadtest tool written in go https://github.com/rakyll/hey
     * gotop - top-like tool
     * ctop - top-like tool for Docker containers
-    * upx - Ultimate Packer executables, `upx --lzma file.exe`
     * syncthing - sync files between 2 PCs
     * grafana - beautiful monitoring tool
+    * enry - Get source code filetype distribution of current folder
+* C
+    * Shellinabox - SSH alternative via browser Webshell
+    * upx - Ultimate Packer executables, `upx --lzma file.exe`
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
