@@ -52,7 +52,7 @@ CLI
 =====
 * Miniconda
     * youtube-dl
-    * you-get / Lulu
+    * you-get
     * ykdl
     * streamlink
     * bypy
