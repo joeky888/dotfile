@@ -65,7 +65,8 @@ CLI
     * annie - youtube-dl like video downloader
     * hugo - html generator
     * mkcert - Certificates generator
-    * hey - loadtest tool written in go https://github.com/rakyll/hey
+    * kurly - curl clone written in go
+    * hey - loadtest tool written in go
     * gotop - top-like tool
     * ctop - top-like tool for Docker containers
     * syncthing - sync files between 2 PCs
