@@ -12,7 +12,7 @@ Pacman
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
 * Upgrade all AUR packages
-    * $ yaourt -Syyu --aur
+    * $ yay -Syyu --aur
 
 Use aria2 as backend of pacman
 =====
@@ -40,7 +40,7 @@ Unstable and testing package (Manjaro)
 
 Install fbterm (recommand)
 =====
-* $ yaourt -S fbterm-git
+* $ yay -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -a -G video $(whoami)
 * $ sudo powerpill -S gpm

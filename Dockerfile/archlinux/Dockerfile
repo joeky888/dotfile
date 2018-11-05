@@ -14,7 +14,7 @@ RUN echo "[ownstuff]" >> /etc/pacman.conf \
     && echo "SigLevel = Never" >> /etc/pacman.conf \
     && echo "Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/\$arch" >> /etc/pacman.conf
 
-RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring nano powerpill
+RUN pacman -Sy --noconfirm --needed curl pacman-contrib archlinuxcn-keyring nano powerpill yay
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' > /etc/pacman.d/mirrorlist.bak"

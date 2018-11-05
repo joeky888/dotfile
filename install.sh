@@ -182,7 +182,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install vim tmux zsh git curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion yaourt --noconfirm --needed
+    $SUDO pacman -Syu vim tmux zsh git curl aria2 bash-completion yay --noconfirm --needed
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
