@@ -43,7 +43,7 @@ Extension
 * Disconnect
 * Remove Google Redirection
 * Get CRX
-* GitHub Plus
+* Enhanced Github
 * No Coin
 * LanguageTool
 * JSON Viewer

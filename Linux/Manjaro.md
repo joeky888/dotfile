@@ -43,7 +43,7 @@ Install fbterm (recommand)
 * $ yay -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -a -G video $(whoami)
-* $ sudo powerpill -S gpm
+* $ sudo powerpill -S gpm libx86
 * $ sudo systemctl enable gpm
 
 Install qemu
