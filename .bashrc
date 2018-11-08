@@ -125,7 +125,7 @@ if [ -f "$HOME/go/bin/go" ]; then
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -f "$HOME/golang/bin/go" ]; then
   export GOROOT="$HOME/golang"
-  export GOPATH="$GOROOT/tool"
+  export GOPATH="$HOME/go"
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -d "$HOME/go" ]; then
   export GOPATH=$HOME/go
