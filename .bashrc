@@ -1183,15 +1183,6 @@ StartAlpine()
   ChrootHome $newhome
 }
 
-StartAlpineHere()
-{
-  export newhome=$(realpath ./Alpine)
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $newhome/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $newhome/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $newhome/etc/apk/repositories
-  ChrootHome $newhome
-}
-
 StartArch()
 {
   export newhome=$HOME/Arch
