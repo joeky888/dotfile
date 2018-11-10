@@ -76,6 +76,7 @@ CLI
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
+    * hashcat - fatest password cracking tool
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/ncw/rclone
