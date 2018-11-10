@@ -27,13 +27,8 @@ Setting
 Extension
 =====
 * HookyQR.beautify
-<!-- * GitLens -->
-* magicstack.MagicPython
 * hoovercj.vscode-power-mode
-* dbaeumer.vscode-eslint
 * streetsidesoftware.code-spell-checker
-* christian-kohler.npm-intellisense
-* eg2.vscode-npm-script
 
 Key
 =====
