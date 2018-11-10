@@ -75,3 +75,12 @@ Diff 2 file
 * Open a.txt
 * Hit F1 -> Compare active file with -> Select b.txt
 * Note that only b.txt can be modified
+
+Auto completion
+=====
+* Install DefinitelyTyped like this
+* $ npm install --save-dev @types/d3
+* Add the path to the first line of the .js file
+```javascript
+/// <reference path="/home/joeky/project/node_modules/@types/d3/index.d.ts" />
+```
