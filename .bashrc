@@ -845,7 +845,7 @@ if [ $(command -v grc) ] ; then
   done
 
   alias configure='grc -es --colour=auto ./configure'
-  alias jobs='grc -es --colour=auto bash -c "jobs $@"'
+#   alias jobs='grc -es --colour=auto bash -c "jobs $@"' # Comment out because it breaks powerlevel9k theme
   alias limit='grc -es --colour=auto bash -c "limit $@"'
   alias ulimit='grc -es --colour=auto bash -c "ulimit $@"'
 
