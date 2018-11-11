@@ -500,6 +500,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="➜  "
     export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='green'
     export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='black'
+    export POWERLEVEL9K_VCS_BACKGROUND='yellow'
+    export POWERLEVEL9K_VCS_FOREGROUND='black'
     export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 #     export POWERLEVEL9K_COLOR_SCHEME='light'
     source ~/dotfile/powerlevel9k/powerlevel9k.zsh-theme
