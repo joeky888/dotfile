@@ -502,6 +502,12 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='black'
     export POWERLEVEL9K_VCS_BACKGROUND='yellow'
     export POWERLEVEL9K_VCS_FOREGROUND='black'
+    export POWERLEVEL9K_VCS_CLEAN_BACKGROUND='yellow'
+    export POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
+    export POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='red'
+    export POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
+    export POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
+    export POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
     export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 #     export POWERLEVEL9K_COLOR_SCHEME='light'
     source ~/dotfile/powerlevel9k/powerlevel9k.zsh-theme
