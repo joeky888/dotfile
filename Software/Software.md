@@ -316,7 +316,7 @@ Good Software Design
 * Always use simple English
 * Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warrning
 * Host on github if open source, host on Gogs/Gitea for self-hosting
-* Multiple languages other than just English
+* i18n, Multiple languages other than just English
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies
