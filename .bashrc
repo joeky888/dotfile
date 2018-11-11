@@ -313,18 +313,19 @@ upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
   cd ~/dotfile
   git pull origin master
-  git pull --recurse-submodules --depth 1
-  git submodule update --init --recursive --remote --merge
+#   git pull --recurse-submodules --depth 1
+#   git submodule update --init --recursive --remote --merge
+  git submodule update --init
   git submodule foreach git pull
 
   cd - ;
 
-  if [ -d $HOME/dotfile/powerlevel9k ]; then
-    cd $HOME/dotfile/powerlevel9k
-    rm -rf shunit2
-    git reset --hard
-    cd - ;
-  fi
+#   if [ -d $HOME/dotfile/powerlevel9k ]; then
+#     cd $HOME/dotfile/powerlevel9k
+#     rm -rf shunit2
+#     git reset --hard
+#     cd - ;
+#   fi
 
   rm -rf ~/.bashrc
   rm -rf ~/.bash_profile
