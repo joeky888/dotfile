@@ -112,6 +112,7 @@ fi
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
 [ -d $HOME/dotfile/grc ] && export PATH=$HOME/dotfile/grc:$PATH
 [ -d $HOME/dotfile/neofetch ] && export PATH=$HOME/dotfile/neofetch:$PATH
+[ -d $HOME/dotfile/inxi ] && export PATH=$HOME/dotfile/inxi:$PATH
 [ -d $HOME/.linuxbrew ] && export PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
 
 if [[ -d "$HOME/node" ]]; then
@@ -484,15 +485,27 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else
     export MAIN_THEME='red'
   fi
-  update_prompt() {
-    NEWLINE_NO_OMZ=$'\n'
-    # %B=light_color %F=color %K=background
-    PROMPT="╭─%B%F{$MAIN_THEME}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─%B%F{red}>%F{yellow}>%F{green}> "
-  }
-  update_prompt
-  add-zsh-hook chpwd update_prompt
-  add-zsh-hook preexec update_prompt
-  add-zsh-hook precmd update_prompt
+  if [ -f $HOME/dotfile/powerlevel9k/powerlevel9k.zsh-theme ]; then # powerlevel9k.zsh-theme is available
+    export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+    export POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+    export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+    export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="➜  "
+    export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='red'
+    export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='black'
+    export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+#     export POWERLEVEL9K_COLOR_SCHEME='light'
+    source ~/dotfile/powerlevel9k/powerlevel9k.zsh-theme
+  else
+    update_prompt() {
+      NEWLINE_NO_OMZ=$'\n'
+      # %B=light_color %F=color %K=background
+      PROMPT="╭─%B%F{$MAIN_THEME}%n@%M%F{blue} %~%F{yellow}%K{default} $(git_branch_info) "${NEWLINE_NO_OMZ}"%K{default}%F{default}╰─%B%F{red}>%F{yellow}>%F{green}> "
+    }
+    update_prompt
+    add-zsh-hook chpwd update_prompt
+    add-zsh-hook preexec update_prompt
+    add-zsh-hook precmd update_prompt
+  fi
   zle_highlight=(none)
   if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
     source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

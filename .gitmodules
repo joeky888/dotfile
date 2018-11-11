@@ -22,3 +22,11 @@
     path = neofetch
     url = https://github.com/dylanaraps/neofetch.git
     shallow = true
+[submodule "inxi"]
+    path = inxi
+    url = https://github.com/smxi/inxi.git
+    shallow = true
+[submodule "powerlevel9k"]
+    path = powerlevel9k
+    url = https://github.com/bhilburn/powerlevel9k.git
+    shallow = true
