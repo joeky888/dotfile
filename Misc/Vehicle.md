@@ -13,5 +13,6 @@ A good helmet
 汽車
 =====
 * 8891.com.tw
+* Hot大聯盟
 * u-car.com.tw
 * Android 車機
