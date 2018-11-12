@@ -317,7 +317,7 @@ upgradeDotfile() {
 #   git pull --recurse-submodules --depth 1
 #   git submodule update --init --recursive --remote --merge
   git submodule update --init
-  git submodule foreach git pull
+  git submodule foreach git pull origin master
 
   cd - ;
 
@@ -510,7 +510,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
     export POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='red'
     export POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-    export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
+#     export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 #     export POWERLEVEL9K_COLOR_SCHEME='light'
     source ~/dotfile/powerlevel9k/powerlevel9k.zsh-theme
   else

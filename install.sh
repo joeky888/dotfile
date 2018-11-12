@@ -49,7 +49,7 @@ InstallDotfile()
 #   git pull --recurse-submodules --depth 1 &&\
 #   git submodule foreach git pull origin master && cd -
   git submodule update --init
-  git submodule foreach git pull
+  git submodule foreach git pull origin master
   cd - ;
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.pip/
@@ -106,7 +106,7 @@ InstallDotfileCygwin()
 #   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
   cd $Home/dotfile
   git submodule update --init
-  git submodule foreach git pull
+  git submodule foreach git pull origin master
   cd - ;
   mkdir -p $Home/AppData/Local/nvim
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
