@@ -123,16 +123,20 @@ fi
 if [ -f "$HOME/go/bin/go" ]; then
   export GOROOT="$HOME/go"
   export GOPATH="$GOROOT/tool"
+  export GOBIN=$GOPATH/bin
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -f "$HOME/golang/bin/go" ]; then
   export GOROOT="$HOME/golang"
   export GOPATH="$HOME/go"
+  export GOBIN=$GOPATH/bin
   export PATH=$GOPATH/bin:$GOROOT/bin:$PATH
 elif [ -d "$HOME/go" ]; then
   export GOPATH=$HOME/go
+  export GOBIN=$GOPATH/bin
   export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 else
   export GOPATH="$HOME/go"
+  export GOBIN=$GOPATH/bin
 fi
 
 [ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all'
