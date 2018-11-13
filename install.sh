@@ -19,7 +19,6 @@ InstallDotfile()
   rm -rf ~/.fbtermrc
   rm -rf ~/.Xresources
   rm -rf ~/.xprofile
-  rm -rf ~/.minttyrc
   rm -rf ~/.vimrc
   rm -rf ~/.pythonrc
   rm -rf ~/.pip/pip.conf
@@ -43,7 +42,6 @@ InstallDotfile()
   ln -sf $Home/dotfile/.yarnrc ~/.yarnrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.xprofile ~/.xprofile
-  ln -sf $Home/dotfile/.minttyrc ~/.minttyrc
   cd $Home/dotfile && git pull &&\
 #   git submodule update --init --recursive --remote --merge --depth 1 &&\
 #   git pull --recurse-submodules --depth 1 &&\
