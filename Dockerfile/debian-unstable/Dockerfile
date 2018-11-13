@@ -11,3 +11,7 @@ RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
 ENV EDITOR nano
 
 CMD ["bash"]
+
+# docker build . -t debian:joeky
+# docker run --name deb --net host -it debian:joeky bash
+

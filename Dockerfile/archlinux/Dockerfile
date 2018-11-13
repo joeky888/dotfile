@@ -84,3 +84,7 @@ RUN sed -i "s/\s+$//g" /root/.bashrc
 ENV EDITOR nano
 
 SHELL ["/bin/bash"]
+
+# docker build . -t arch:joeky
+# docker run --name arch --net host -it arch:joeky bash
+
