@@ -8,7 +8,7 @@ RUN echo "deb mirror://mirrors.ubuntu.com/mirrors.txt devel main restricted univ
 RUN apt update -q
 RUN apt upgrade -qy
 RUN apt autoclean && apt clean
-RUN apt install -qy build-essential curl vim locales \
+RUN apt install -qy build-essential curl vim locales
 
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen; \
