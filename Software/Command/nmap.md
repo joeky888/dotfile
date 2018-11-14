@@ -4,6 +4,8 @@ Scan mac address and ip on local network
 * $ ifconfig -a # Get myip
 * nmap -sn myip/24
 * $ sudo nmap -sn 192.168.1.0/24 # sudo is required to get mac addresses
+* Or
+* $ arp -a # Windows only
 ```conf
 192.168.1.0/24 的 24 指的是子網路遮罩
 
