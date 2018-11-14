@@ -110,10 +110,41 @@ fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
-[ -d $HOME/dotfile/grc ] && export PATH=$HOME/dotfile/grc:$PATH
-[ -d $HOME/dotfile/neofetch ] && export PATH=$HOME/dotfile/neofetch:$PATH
-[ -d $HOME/dotfile/inxi ] && export PATH=$HOME/dotfile/inxi:$PATH
 [ -d $HOME/.linuxbrew ] && export PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
+
+function getModulePath()
+{
+  if [[ -d "$HOME/dotfile/$1" ]]; then
+    echo "$HOME/dotfile/$1"
+  elif [[ -d "$HOME/dotfiles/$1" ]]; then
+    echo "$HOME/dotfiles/$1"
+  elif [[ -d "$HOME/.$1" ]]; then
+    echo "$HOME/.$1"
+  elif [[ -d "$HOME/$1" ]]; then
+    echo "$HOME/$1"
+  elif [[ -d "/usr/share/$1" ]]; then
+    echo "/usr/share/$1"
+  elif [[ -d "/usr/local/share/$1" ]]; then
+    echo "/usr/local/share/$1"
+  elif [[ -d "/usr/share/zsh/plugins/$1" ]]; then
+    echo "/usr/share/zsh/plugins/$1"
+  elif [[ -d "/usr/bin/$1" ]]; then
+    echo "/usr/bin/$1"
+  else
+    echo ""
+  fi;
+}
+
+GRC_PATH=$(getModulePath grc)
+NEOFETCH_PATH=$(getModulePath neofetch)
+INXI_PATH=$(getModulePath inxi)
+POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
+ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
+OH_MY_ZSH_PATH=$(getModulePath oh-my-zsh)
+
+[ -n "$GRC_PATH" ]     && export PATH=$GRC_PATH:$PATH
+[ -n "$NEOFETCH_PATH" ]  && export PATH=$NEOFETCH_PATH:$PATH
+[ -n "$INXI_PATH" ]      && export PATH=$INXI_PATH:$PATH
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH
@@ -457,12 +488,12 @@ git_branch_info() {
 }
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
-  export ZSH=$HOME/dotfile/oh-my-zsh
   ZSH_THEME=""
 #   plugins=($(find $ZSH/plugins -maxdepth 1 -printf "%f "))
   plugins=(git docker docker-compose adb golang)
   DISABLE_AUTO_UPDATE="true"
-  if [ -f $ZSH/oh-my-zsh.sh ]; then
+  if [ -n "$OH_MY_ZSH_PATH" ]; then
+    export ZSH=$OH_MY_ZSH_PATH
     save_aliases=$(alias -L) # Store current aliases before oh-my-zsh
     source $ZSH/oh-my-zsh.sh
     compdef vman=man # Complete vman as man command
@@ -499,7 +530,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else
     export MAIN_THEME='red'
   fi
-  if [ -f $HOME/dotfile/powerlevel9k/powerlevel9k.zsh-theme ]; then # powerlevel9k.zsh-theme is available
+  if [ -n "$POWERLEVEL9K_PATH" ]; then # powerlevel9k.zsh-theme is available
     export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
     export POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
     export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
@@ -516,7 +547,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
 #     export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 #     export POWERLEVEL9K_COLOR_SCHEME='light'
-    source ~/dotfile/powerlevel9k/powerlevel9k.zsh-theme
+    source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
   else
     update_prompt() {
       NEWLINE_NO_OMZ=$'\n'
@@ -529,8 +560,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     add-zsh-hook precmd update_prompt
   fi
   zle_highlight=(none)
-  if [ -f $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]; then
-    source $HOME/dotfile/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+  if [ -n "$ZSH_SYNTAX_PATH" ]; then
+    source $ZSH_SYNTAX_PATH/zsh-syntax-highlighting.zsh
     typeset -A ZSH_HIGHLIGHT_STYLES
     zle_highlight=(default:bold)
     ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
