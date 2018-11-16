@@ -62,6 +62,25 @@ Mouse without x
     * Edit .tmux.conf
     * set -g mouse off
 
+Boot without X Desktop
+=====
+* Temporary
+    * Boot
+    * When grub shows, press E
+    * Add `3` to the end of the line `linux /boot/vmlinuzxxx`
+```conf
+linux /boot/vmlinuz-4.10-x86_64 root=UUID=85460fc6-666d-4be2-88a6-b0ef8c01b532 rw quiet resume=UUID=2e69bc09-e974-4568-9675-5293031cfd40 3
+```
+    * Ctrl-X to save and boot
+* Permanent
+    * Add `3` to the `GRUB_CMDLINE_LINUX_DEFAULT`
+    * $ sudoedit /etc/default/grub && sudo update-grub
+```conf
+GRUB_CMDLINE_LINUX_DEFAULT="quiet 3"
+# Or just
+GRUB_CMDLINE_LINUX_DEFAULT="3"
+```
+
 Mount a USB drive
 =====
 * $ lsblk

@@ -38,16 +38,6 @@ Unstable and testing package (Manjaro)
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
 * $ sudo pacman-mirrors -f 0
 
-Boot without X desktop
-=====
-* Boot
-* When grub shows, press E
-* Add `3` to the end of the line `linux /boot/vmlinuzxxx`
-```conf
-linux /boot/vmlinuz-4.10-x86_64 root=UUID=85460fc6-666d-4be2-88a6-b0ef8c01b532 rw quiet resume=UUID=2e69bc09-e974-4568-9675-5293031cfd40 3
-```
-* Ctrl-X to save and boot
-
 Install fbterm (recommand)
 =====
 * $ yay -S fbterm-git
