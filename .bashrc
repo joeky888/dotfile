@@ -431,7 +431,6 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.fbtermrc ~/.fbtermrc
     ln -sf $HOME/dotfile/.xprofile ~/.xprofile
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
-    ln -sf $HOME/dotfile/.minttyrc ~/.minttyrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   fi;
