@@ -6,7 +6,7 @@
 
 # font family names/pixelsize used by fbterm, multiple font family names must be separated by ','
 # and using a fixed width font as the first is strongly recommended
-font-names=Ubuntu Mono, Droid Sans Fallback, mono
+font-names=Iosevka Term, Iosevka, Sarasa Mono TC, Ubuntu Mono, Noto Sans CJK TC,Noto Sans CJK SC,Noto Sans TC,Noto Sans SC,Droid Sans Fallback,DroidMono,Wenquanyi Micro Hei,WenQuanYi Zen Hei, mono
 font-size=20
 
 # force font width (and/or height), usually for non-fixed width fonts
