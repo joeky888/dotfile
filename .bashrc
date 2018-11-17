@@ -438,8 +438,8 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
-    ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
-    ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
+    ln -sf $HOME/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
+    ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
   fi;
 }
 
