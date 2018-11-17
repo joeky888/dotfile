@@ -386,6 +386,8 @@ upgradeDotfile() {
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/Documents/WindowsPowerShell/profile.ps1
   rm -rf ~/.grc
+  rm -rf ~/.config/alacritty/alacritty.yml
+  rm -rf ~/.alacritty.yml
 
   mkdir -p ~/.grc
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
@@ -411,11 +413,13 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   else
     mkdir -p ~/.config/nvim/
+    mkdir -p ~/.config/alacritty/
     mkdir -p ~/.pip/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
@@ -434,6 +438,8 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
+    ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
+    ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
   fi;
 }
 

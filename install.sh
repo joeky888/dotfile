@@ -26,6 +26,8 @@ InstallDotfile()
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/.grc
+  rm -rf ~/.config/alacritty/alacritty.yml
+  rm -rf ~/.alacritty.yml
 
   git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -50,6 +52,7 @@ InstallDotfile()
   git submodule foreach git pull origin master
   cd - ;
   mkdir -p $Home/.config/nvim/
+  mkdir -p $Home/.config/alacritty/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
@@ -57,6 +60,8 @@ InstallDotfile()
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
+  ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
+  ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
 }
 
 InstallDotfileCygwin()
@@ -85,6 +90,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.alacritty.yml"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
@@ -101,6 +107,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
 #   cd $Home/dotfile && git pull origin master && git submodule update --init --recursive --remote --merge --depth 1 && git submodule foreach git pull origin master && cd -
   cd $Home/dotfile
   git submodule update --init
