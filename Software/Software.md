@@ -373,7 +373,7 @@ Dev Tools
 * Good IDE:
     * Support performance analyzer (Profiler)
 * Mobile and embbed system
-    * React Native
+    * ReactXP: React + React Native
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
 * Desktop app
@@ -388,7 +388,7 @@ Dev Tools
     * Golang
     * Java Playframework - Full-featured
     * C++ Crow - Very small and fast
-* Web frontend: React.js, vue.js, Qt for WebAssembly
+* Web frontend: React.js, Vue.js, Qt for WebAssembly
 * Browser extension: WebExtension API
     * Install mozilla/web-ext
     * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
