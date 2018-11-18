@@ -24,6 +24,12 @@ GRUB_GFXPAYLOAD_LINUX=1024x768x16
 ```
 * $ sudo reboot
 
+Install yaft (yet another framebuffer terminal)
+=====
+* $ git clone --depth 1 https://github.com/uobikiemukot/yaft
+* $ make
+* $ sudo ./yaft
+
 Change the default 16 colors of fbterm
 =====
 ```conf
