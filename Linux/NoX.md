@@ -209,6 +209,12 @@ Clear system log greater than 10MB
 =====
 * $ sudo journalctl --vacuum-size=10M
 
+Get nvidia gpu usage
+=====
+* $ nvidia-smi
+* Or
+* $ nvidia-smi -l 1 # Refresh interval of 1 second
+
 cat, more, less and cmd.exe type command with color
 =====
 ```sh
