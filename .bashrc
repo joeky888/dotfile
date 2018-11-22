@@ -296,7 +296,7 @@ alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ffmpeg='ffmpeg -err_detect ignore_err'
 alias l='ls -lah'
-alias ll='ls -al'
+alias ll='ls -lah'
 alias ls='ls -F --color=auto --show-control-chars'
 alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
@@ -1203,7 +1203,7 @@ if [ -r \$script ] ; then
 fi
 done
 alias ls="ls --color=auto"
-alias ll="ls --color=auto -al"
+alias ll="ls --color=auto -alh"
 alias l="ls --color=auto -alh"
 export Blk="\e[0;30m"
 export Red="\e[0;31m"
