@@ -73,6 +73,7 @@ CLI
     * grafana - beautiful monitoring tool
     * enry - Get source code filetype distribution of current folder
     * gotty - SSH alternative via browser Webshell $ gotty -w bash
+    * bat - cURL/httpie written in Go
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
