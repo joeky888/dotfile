@@ -11,7 +11,9 @@ Static compile
 ```sh
 CGO_ENABLED=0 go build
 # Or
-go build -ldflags "-w -s -linkmode external -extldflags '-s -static'"
+CGO_ENABLED=1 go build -ldflags "-w -s -linkmode external -extldflags '-s -static'"
+# Or
+CGO_ENABLED=1 go build -ldflags "-w -s -extldflags '-s -static'"
 ```
 
 CGO on Windows powershell

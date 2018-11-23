@@ -229,7 +229,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   elif [[ $(command -v pacman) ]]; then
     #pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
     pac=pacman
-    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig htop --noconfirm --needed
+    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig upx htop --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
