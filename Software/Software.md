@@ -382,7 +382,10 @@ Dev Tools
 * Desktop app
     * Proton-native, react native syntax and builds native apps (Using libui)
     * libui, native UI and small bianry size, for C/C++ and Go
-    * Executable size as small as possible, for personal use : QtLite, or github.com/zserge/webview
+    * Executable size as small as possible, for personal use :
+        * QtLite
+        * github.com/zserge/webview - C/C++/Go backend, html fronend
+        * github.com/zserge/lorca - Pure Go backend, html fronend
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
 * Windows / XBOX only
