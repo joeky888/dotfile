@@ -74,6 +74,7 @@ CLI
     * enry - Get source code filetype distribution of current folder
     * gotty - SSH alternative via browser Webshell $ gotty -w bash
     * bat - cURL/httpie written in Go
+    * hget - aria2/axel download accelerator in go
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
@@ -82,10 +83,7 @@ CLI
     * ffsend - send.firefox.com cli client
 ```sh
 # $ go help get
-go get -insecure -u -v github.com/ncw/rclone
-go get -insecure -u -v github.com/ncw/rclone/...
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
-go get -insecure -u -v github.com/iikira/downloader
 BaiduPCS-Go config set -max_parallel 64
 BaiduPCS-Go config set -savedir $HOME/Desktop
 BaiduPCS-Go config set -cache_size 16384 # 16MB
