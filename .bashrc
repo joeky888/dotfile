@@ -218,6 +218,7 @@ fi
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
+alias calc2="python -c 'import sys; print(eval(\"\".join(sys.argv[1:])))'"
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
