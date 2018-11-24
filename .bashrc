@@ -295,9 +295,11 @@ alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ffmpeg='ffmpeg -err_detect ignore_err'
-alias l='ls -lah'
-alias ll='ls -lah'
-alias ls='ls -F --color=auto --show-control-chars'
+if ls --version | grep -q GNU ; then
+  alias ls='ls -F --color=auto --show-control-chars'
+  alias l='ls -lah'
+  alias ll='ls -lah'
+fi
 alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
@@ -798,6 +800,10 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
+    alias l='gls -lah'
+    alias ll='gls -lah'
+  else
+    alias ls='ls -G'
   fi
   alias grep='grep --color=auto'
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
@@ -813,7 +819,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   cd ~
   export SUDO=""
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-  alias ls='ls -G'
   alias grep='grep --color=auto'
 else # Unknown OS
   true
