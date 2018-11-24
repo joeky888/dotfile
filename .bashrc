@@ -94,7 +94,7 @@ if [ -n $CONDA_2 ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2=$(echo $CONDA_2/bin/conda)
   alias pip2=$(echo $CONDA_2/bin/pip)
-  upgradeConda2() { $(echo $CONDA_2/bin/conda) -n base conda -y; $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradeConda2() { $(echo $CONDA_2/bin/conda) -n base conda -y 2>/dev/null ; $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
   upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
@@ -104,7 +104,7 @@ if [ -n $CONDA_3 ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3=$(echo $CONDA_3/bin/conda)
   alias pip3=$(echo $CONDA_3/bin/pip)
-  upgradeConda3() { $(echo $CONDA_3/bin/conda) -n base conda -y; $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradeConda3() { $(echo $CONDA_3/bin/conda) -n base conda -y 2>/dev/null ; $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
   upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
