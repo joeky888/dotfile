@@ -352,6 +352,7 @@ Good Software Design
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
 * Proxy setting
+* Embbed RPC server
 * Import SSL certificates
 * Use emojis in git commit message ✔️  ❌
 * Use date as version number, e.g. Version YYYY.MM.DD.001
