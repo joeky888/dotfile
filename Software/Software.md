@@ -75,6 +75,7 @@ CLI
     * gotty - SSH alternative via browser Webshell $ gotty -w bash
     * bat - cURL/httpie written in Go
     * hget - aria2/axel download accelerator in go
+    * rclone - Google drive (and more) client
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
@@ -105,7 +106,7 @@ BaiduPCS-Go config set -user_agent="Test"
 * OpenCC
 * Aria2
 * Monitorix
-* Google-drive-ocamlfuse / rclone
+* Google-drive-ocamlfuse
 * Docker
 * Shellcheck
 * Hollywood - Hacker tool collection
