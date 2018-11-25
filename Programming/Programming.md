@@ -73,7 +73,7 @@ Python
 
 Go
 =====
-* fasthttp/fasthttprouter - Super fast for simple web server/router
+* fasthttp/fasthttprouter - Super fast for http(s) client and server
 * iris - Fatest web framework
 
 Java

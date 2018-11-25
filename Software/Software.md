@@ -67,6 +67,7 @@ CLI
     * mkcert - Certificates generator
     * kurly - curl clone written in go
     * hey - loadtest tool written in go
+    * bombardier - loadtest tool powered by fasthttp
     * gotop - top-like tool
     * ctop - top-like tool for Docker containers
     * syncthing - sync files between 2 PCs
