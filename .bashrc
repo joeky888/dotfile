@@ -67,7 +67,6 @@ export EDITOR="$VISUAL"
 export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
-export CGO_ENABLED=0
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=20 --connect-timeout=20 --file-allocation=none --check-certificate=false --content-disposition-default-utf8=true --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --parameterized-uri=true" # aria2 & bypy
 if [ $(command -v aria2c) ] && aria2c --version | grep -q "Async DNS" && [ -f /etc/resolv.conf ] ; then
   export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=$(grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' /etc/resolv.conf | tr '\n' ',' | sed 's/,$//')" # aria2 & bypy
