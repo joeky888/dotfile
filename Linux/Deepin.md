@@ -209,3 +209,8 @@ Install conky
 =====
 * $ sudo apt-fast install conky conky-manager -y
 * $ conky-manager
+
+Unable to remove dock from toolbar
+=====
+* Check ~/.local/share/applications and /usr/share/applications
+* Remove all empty or temp files
