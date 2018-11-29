@@ -1,3 +1,8 @@
+Performance
+=====
+* Don't use too many mutex lock
+* Use pointer when using append() function
+
 Constructor of a class
 =====
 ```go
