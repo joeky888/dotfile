@@ -245,12 +245,12 @@ alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-  [ $(command -v curl) ] && alias curl='curl --retry 2 --connect-timeout 5 --max-time 5 --retry-delay 0 --retry-max-time 20 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
+  [ $(command -v curl) ] && alias curl='curl --retry 1 --connect-timeout 5 --max-time 5 --retry-delay 0 --retry-max-time 20 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --user-agent="$(youtube-dl --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --read-timeout=10 --verbose'
-  [ $(command -v curl) ] && alias curl='curl --retry 2 --connect-timeout 5 --max-time 5 --retry-delay 0 --retry-max-time 20 -LC - '
+  [ $(command -v curl) ] && alias curl='curl --retry 1 --connect-timeout 5 --max-time 5 --retry-delay 0 --retry-max-time 20 -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16'
 fi
