@@ -149,7 +149,7 @@ Windows
     * $ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
     * $ scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
     * $ scoop bucket add dorado https://github.com/h404bi/dorado
-    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg cmake micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
+    * $ scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
 <!--     * $ scoop bucket add rasa https://github.com/rasa/scoops.git -->
 <!--     * $ scoop install noto-fonts # Install noto fonts will take a long time, and annoying dialog will keep showing -->
 ```sh
