@@ -91,7 +91,6 @@ https://linux.cn/rss.xml
 https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
 https://feeds.feedburner.com/engadget
-https://feeds2.feedburner.com/webupd8
 https://feeds.feedburner.com/TechCrunch
 https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
