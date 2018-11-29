@@ -71,7 +71,7 @@ Diff 2 file
 * Hit F1 -> Compare active file with -> Select b.txt
 * Note that only b.txt can be modified
 
-Auto completion
+Typscript auto completion
 =====
 * Install DefinitelyTyped like this
 * $ npm install --save-dev @types/d3
@@ -79,3 +79,9 @@ Auto completion
 ```javascript
 /// <reference path="/home/joeky/project/node_modules/@types/d3/index.d.ts" />
 ```
+
+Golang auto completion
+=====
+* Install vscode-go extension
+* Install all recommend go packages from vscode-go
+* Enable auto-save
