@@ -1,0 +1,16 @@
+version: '2'
+services:
+    freelan:
+        image: freelan:2.0.0
+        build:
+            context: ./
+            dockerfile: ./Dockerfile
+        container_name: freelan
+        restart: always
+        tty: true
+        ports:
+            - "1194:1194/udp"
+        logging:
+            driver: json-file
+            options:
+                max-size: 5m
