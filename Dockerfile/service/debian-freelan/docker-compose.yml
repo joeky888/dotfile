@@ -9,7 +9,7 @@ services:
         restart: always
         tty: true
         ports:
-            - "1194:1194/udp"
+            - "12000:12000/udp"
         logging:
             driver: json-file
             options:
