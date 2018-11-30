@@ -306,7 +306,7 @@ Gaming
 * Mumu - Android emulator
 * RetroArch - Console emulator
     * RetroPie
-* PCSX2 - PS2 emulator
+* Freelan - virual local network/vpn
 
 Good Software Design
 =====
