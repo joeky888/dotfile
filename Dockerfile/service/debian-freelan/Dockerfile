@@ -61,7 +61,7 @@ RUN sed -i "s/\s*$//g" /root/.profile
 #######################
 
 EXPOSE 12000/udp
-ENTRYPOINT ["/bin/freelan", "-f", "--tap_adapter.enabled=off", "--switch.relay_mode_enabled=yes", "--security.passphrase", "joeky888"]
+ENTRYPOINT ["/usr/sbin/freelan", "-f", "--tap_adapter.enabled=off", "--switch.relay_mode_enabled=yes", "--security.passphrase", "joeky888"]
 ENV ENV="/root/.profile"
 ENV EDITOR vim
 
