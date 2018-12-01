@@ -255,7 +255,7 @@ Android
 * LINE
 * Skype
 * Barcode Scanner ZXing
-* Sogou input method
+* Sogou input method / Trime(同文)
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
