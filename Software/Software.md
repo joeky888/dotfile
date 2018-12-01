@@ -220,6 +220,7 @@ Mac (Hack-intosh)
     * MacVim / VimR
     * Free Download Manager
 * WPS Office
+* Squirrel
 * Spectacle (Window manager)
 
 Linux
