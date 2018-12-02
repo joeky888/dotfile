@@ -38,6 +38,12 @@ Unstable and testing package (Manjaro)
 * $ sudo pacman-mirrors --api --set-branch testing # Or unstable
 * $ sudo pacman-mirrors -f 0
 
+Mhwd
+=====
+* $ mhwd -l # list all available driver
+* $ mhwd -i pci video-nvidia # Install a driver
+* $ mhwd -r pci video-nvidia # Remove a driver
+
 Install fbterm (recommand)
 =====
 * $ yay -S fbterm-git
