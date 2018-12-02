@@ -41,8 +41,12 @@ Unstable and testing package (Manjaro)
 Mhwd
 =====
 * $ mhwd -l # list all available driver
-* $ mhwd -i pci video-nvidia # Install a driver
-* $ mhwd -r pci video-nvidia # Remove a driver
+* Install a driver
+* $ mhwd -i pci video-nvidia
+* Remove a driver
+* $ mhwd -r pci video-nvidia
+* $ sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.back
+* $ sudo touch /etc/X11/xorg.conf
 
 Install fbterm (recommand)
 =====
