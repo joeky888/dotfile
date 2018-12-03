@@ -20,7 +20,7 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/" > /etc/apk/repositori
 RUN apk update
 RUN apk add --upgrade --force apk-tools
 RUN apk upgrade
-RUN apk add --update --no-cache nano openrc
+RUN apk add --update --no-cache nano
 RUN rm -f /var/cache/apk/*
 
 #######################
@@ -72,3 +72,6 @@ ENV EDITOR nano
 
 SHELL ["/bin/ash"]
 # ENTRYPOINT ["busybox", "ash"]
+
+# docker build . -t alpine:joeky
+# docker run --name alp --net host -it alpine:joeky sh
