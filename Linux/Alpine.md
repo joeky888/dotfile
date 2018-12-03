@@ -2,6 +2,8 @@ Unpack and install a .apk file
 =====
 * $ wget http://dl-cdn.alpinelinux.org/alpine/edge/testing/x86/apk-tools-static-xxx.apk
 * $ tar zxvf apk-tools-static-xxx.apk
+* Or
+* $ mkdir ./extract && tar zxvf apk-tools-static-xxx.apk -C ./extract
 * $ mkdir -p /lib/apk/db
 * $ mkdir -p /var/cache/apk
 * $ mkdir -p /etc/apk/world
