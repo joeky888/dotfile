@@ -11,3 +11,6 @@ Query
 =====
 * > SELECT * FROM tableName; # Get all data from a table
 
+UI
+=====
+* Sqlitebrowser - written in Qt
