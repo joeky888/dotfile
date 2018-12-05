@@ -283,6 +283,10 @@ alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --write-sub
 alias streamlink-mpv="streamlink -p mpv --default-stream best"
 alias streamlink-mpv-1080p="streamlink -p mpv --default-stream 1080p"
 alias streamlink-mpv-720p="streamlink -p mpv --default-stream 720p"
+alias streamlink-mpv-480p="streamlink -p mpv --default-stream 480p"
+alias mpv-1080p='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
+alias mpv-720p='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
+alias mpv-480p='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
 alias aria2c-asus-proxy-kungfu='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
 alias aria2c-asus-proxy-zscaler='aria2c --all-proxy=gateway.zscaler.net:80'
 alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16'
