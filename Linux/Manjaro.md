@@ -48,6 +48,18 @@ Mhwd
 * $ sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.back
 * $ sudo touch /etc/X11/xorg.conf
 
+Mhwd Nvidia on laptop
+=====
+* $ sudo mhwd -a pci nonfree 0300 # Or sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
+* $ sudoedit /etc/default/grub
+```conf
+GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
+```
+* $ sudo update-grub
+* $ sudo gpasswd -a $(whoami) bumblebee
+* $ sudo reboot
+* $ optirun blender && optirun google-chrome-stable
+
 Install fbterm (recommand)
 =====
 * $ yay -S fbterm-git
