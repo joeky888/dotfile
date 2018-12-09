@@ -50,6 +50,7 @@ Mhwd
 
 Mhwd Nvidia on laptop
 =====
+* From `https://gist.github.com/mauri870/5a54e415140875b9150ca31c491811f6`
 * $ sudo mhwd -a pci nonfree 0300 # Or sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
 * $ sudoedit /etc/default/grub
 ```conf
