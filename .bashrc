@@ -302,7 +302,7 @@ alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ffmpeg='ffmpeg -err_detect ignore_err'
-if ls --version | grep -q GNU 2>/dev/null ; then
+if ls --version 2>/dev/null | grep -q GNU ; then
   alias ls='ls -F --color=auto --show-control-chars'
   alias l='ls -lah'
   alias ll='ls -lah'
