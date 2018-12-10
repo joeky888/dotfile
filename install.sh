@@ -275,7 +275,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   chsh -s $(command -v zsh) $(whoami)
   brew install mpv --with-bundle
   brew tap homebrew/cask
-  brew cask install hyper visual-studio-code squirrel
+  brew cask install hyper visual-studio-code squirrel alacritty
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-versions
 #   brew tap homebrew/cask-drivers

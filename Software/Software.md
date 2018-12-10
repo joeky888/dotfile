@@ -213,6 +213,7 @@ Windows XP
 
 Mac (Hack-intosh)
 =====
+* Alacritty
 * Hyper
 <!-- * iTerm2 and iTerm2-Color-Schemes -->
 * Dr. Unarchiver
