@@ -224,12 +224,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
 #   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg fontconfig traceroute dnsutils mtr-tiny rsync python3 wget tig htop -y
+    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     $SUDO apt-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
     #pac=$([ -f /usr/bin/powerpill ] && echo "powerpill" || echo "pacman")
     pac=pacman
-    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools rsync python3 wget tig upx htop --noconfirm --needed
+    $SUDO $pac -S p7zip base-devel command-not-found nano ffmpeg fontconfig traceroute openssl net-tools iproute2 bind-tools python3 wget tig upx htop --noconfirm --needed
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
@@ -271,18 +271,12 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip rsync
+  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip htop
   chsh -s $(command -v zsh) $(whoami)
-  brew install mpv --with-bundle
   brew tap homebrew/cask
-  brew cask install hyper visual-studio-code squirrel alacritty
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-versions
 #   brew tap homebrew/cask-drivers
-#   brew cask install spectacle
-#   brew install mas
-#   brew cask install macvim iterm2
-#   brew linkapps
   InstallMiniconda MacOSX
   InstallDotfile
   InstallPy3UTF8
@@ -314,7 +308,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
-  apt-cyg install openssh rsync bind-utils bash-completion tig tar python3
+  apt-cyg install openssh bind-utils bash-completion tig tar python3
   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
@@ -350,7 +344,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
   apt update && apt upgrade
   termux-setup-storage
-  apt install -y man vim micro git tig zsh tmux curl aria2 rsync bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
+  apt install -y man vim micro git tig zsh tmux curl aria2 bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
   apt install -y tar wget clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
   apt install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallDotfile
