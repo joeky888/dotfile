@@ -74,17 +74,27 @@ fi
 
 function getCondaPath()
 {
-  if [[ -d "$HOME/Miniconda$1" ]]; then
-    echo "$HOME/Miniconda$1"
-  elif [[ -d "$HOME/miniconda$1" ]]; then
-    echo "$HOME/miniconda$1"
-  elif [[ -d "$HOME/Anaconda$1" ]]; then
-    echo "$HOME/Anaconda$1"
-  elif [[ -d "$HOME/anaconda$1" ]]; then
-    echo "$HOME/anaconda$1"
-  else
-    echo ""
-  fi;
+  Possible_Path=(   "$HOME/Miniconda$1" \
+                    "$HOME/miniconda$1" \
+                    "$HOME/Anaconda$1" \
+                    "$HOME/anaconda$1" \
+                    "/usr/local/homebrew/Miniconda$1" \
+                    "/usr/local/homebrew/miniconda$1" \
+                    "/usr/local/homebrew/Anaconda$1" \
+                    "/usr/local/homebrew/anaconda$1" \
+                    "/usr/local/Miniconda$1" \
+                    "/usr/local/miniconda$1" \
+                    "/usr/local/Anaconda$1" \
+                    "/usr/local/anaconda$1"
+  );
+
+  for pth in "${Possible_Path[@]}" ; do
+    if [[ -d "$pth" ]]; then
+      echo "$pth"
+      return
+    fi
+  done
+  echo ""
 }
 
 CONDA_2=$(getCondaPath 2)
@@ -113,25 +123,25 @@ fi
 
 function getModulePath()
 {
-  if [[ -d "$HOME/dotfile/$1" ]]; then
-    echo "$HOME/dotfile/$1"
-  elif [[ -d "$HOME/dotfiles/$1" ]]; then
-    echo "$HOME/dotfiles/$1"
-  elif [[ -d "$HOME/.$1" ]]; then
-    echo "$HOME/.$1"
-  elif [[ -d "$HOME/$1" ]]; then
-    echo "$HOME/$1"
-  elif [[ -d "/usr/share/$1" ]]; then
-    echo "/usr/share/$1"
-  elif [[ -d "/usr/local/share/$1" ]]; then
-    echo "/usr/local/share/$1"
-  elif [[ -d "/usr/share/zsh/plugins/$1" ]]; then
-    echo "/usr/share/zsh/plugins/$1"
-  elif [[ -d "/usr/bin/$1" ]]; then
-    echo "/usr/bin/$1"
-  else
-    echo ""
-  fi;
+  Possible_Path=(   "$HOME/dotfile/$1" \
+                    "$HOME/dotfiles/$1" \
+                    "$HOME/.$1" \
+                    "$HOME/anaconda$1" \
+                    "$HOME/$1" \
+                    "/usr/share/$1" \
+                    "/usr/local/share/$1" \
+                    "/usr/local/homebrew/anaconda$1" \
+                    "/usr/share/zsh/plugins/$1" \
+                    "/usr/bin/$1"
+  );
+
+  for pth in "${Possible_Path[@]}" ; do
+    if [[ -d "$pth" ]]; then
+      echo "$pth"
+      return
+    fi
+  done
+  echo ""
 }
 
 GRC_PATH=$(getModulePath grc)
