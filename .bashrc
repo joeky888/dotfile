@@ -74,25 +74,23 @@ fi
 
 function getCondaPath()
 {
-  Possible_Path=(   "$HOME/Miniconda$1" \
-                    "$HOME/miniconda$1" \
-                    "$HOME/Anaconda$1" \
-                    "$HOME/anaconda$1" \
-                    "/usr/local/homebrew/Miniconda$1" \
-                    "/usr/local/homebrew/miniconda$1" \
-                    "/usr/local/homebrew/Anaconda$1" \
-                    "/usr/local/homebrew/anaconda$1" \
-                    "/usr/local/Miniconda$1" \
-                    "/usr/local/miniconda$1" \
-                    "/usr/local/Anaconda$1" \
-                    "/usr/local/anaconda$1"
+  Possible_Prefix=( "$HOME" \
+                    "/usr/local" \
+                    "/usr/local/homebrew"
+  )
+  Possible_Path=(   "Miniconda$1" \
+                    "miniconda$1" \
+                    "Anaconda$1" \
+                    "anaconda$1"
   );
 
-  for pth in "${Possible_Path[@]}" ; do
-    if [[ -d "$pth" ]]; then
-      echo "$pth"
-      return
-    fi
+  for pre in "${Possible_Prefix[@]}" ; do
+    for pth in "${Possible_Path[@]}" ; do
+      if [[ -d "$pre/$pth" ]]; then
+        echo "$pre/$pth"
+        return
+      fi
+    done
   done
   echo ""
 }
