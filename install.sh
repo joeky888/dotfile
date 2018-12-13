@@ -277,8 +277,8 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-versions
 #   brew tap homebrew/cask-drivers
-  InstallMiniconda MacOSX
   InstallDotfile
+  InstallMiniconda MacOSX
   InstallPy3UTF8
 
 
