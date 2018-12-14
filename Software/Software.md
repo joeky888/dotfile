@@ -125,20 +125,14 @@ Dev
 
 Windows
 =====
-* Process Monitor
 * build-extra (git for Windows) or msys2
-* Cygwin
-* Chocolatey
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
-* Microsoft .NET Framework Repair Tool
-* Microsoft .NET Framework Cleanup Tool
 * Greenshot
 * Clink
 * Rufus
-* Caffeinated (http://desmondbrand.com/caffeinated)
-* x64dbg / snowman
 * Rainmeter (with Circle-Weather)
 * MPC-HC
+* All in One Runtimes
 * Sarasa Mono TC font (for console)
 * OpenJDK
     * Zulu
