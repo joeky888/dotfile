@@ -3,4 +3,4 @@
 @reg delete HKLM\HARDWARE\ACPI\DSDT\VBOX__ /f
 @reg add HKLM\HARDWARE\DESCRIPTION\System /v SystemBiosVersion /t REG_MULTI_SZ /d "NOBOX - 1" /f
 @reg add HKLM\HARDWARE\DESCRIPTION\System /v VideoBiosVersion /t REG_MULTI_SZ /d "" /f
-@exit
+pause
