@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Transfer all personal settings to public
+# Convert all personal settings to public
 # Usefull when I don't own this machine
 
 perl -C -Mutf8 -ni -e 'print if !/template/' ~/dotfile/.gitconfig

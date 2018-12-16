@@ -87,3 +87,29 @@ Expose port
 =====
 * Host port 80 container port 8080
 * $ docker -p 80:8080
+
+Multiple service in a container using Supervisord
+=====
+* `ENTRYPOINT ["/usr/bin/supervisord", "-c", "/cube/supervisord.conf", "--loglevel", "debug"]`
+```dosini
+# supervisord.conf
+
+[supervisord]
+nodaemon=true
+
+[program:xvfb]
+command=/usr/bin/Xvfb :1 -screen 0 1024x768x16
+autorestart=true
+user=root
+priority=100
+
+[program:cube]
+environment =
+    DISPLAY=":1",
+    WINEPREFIX=/wine,
+    WINEARCH=win64
+command=sh -c "sleep 30s; /usr/bin/wine64 /cube/Server.exe"
+autorestart=true
+user=root
+priority=200
+```
