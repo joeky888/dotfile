@@ -301,7 +301,7 @@ alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
-alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16" bypy -d --retry 1 --downloader aria2'
+alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
 alias bypy-processes-2='bypy --processes 2'
 alias bypy-processes-4='bypy --processes 4'
 alias bypy-processes-8='bypy --processes 8'
