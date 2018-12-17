@@ -1,6 +1,5 @@
 Install
 =====
-* Don't install wine-staging, it's an App
-* $ brew cask install xquartz
-* $ brew install wine winetricks
-* $ winecfg
+* $ brew cask install xquartz wine-staging
+* $ brew install winetricks
+* $ /Applications/Wine Staging.app/Contents/Resources/wine/bin/winecfg

@@ -830,6 +830,9 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
     alias ls='ls -G'
   fi
   alias grep='grep --color=auto'
+  if [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ]; then
+    export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
+  fi
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export SUDO=""
