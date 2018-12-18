@@ -71,7 +71,7 @@ Install a .msu file (Windows Update file)
 Set environment variables
 =====
 * means system side variable
-* $ PYTHONIOENCODING="UTF-16" # Or `export PYTHONIOENCODING="UTF-16"`
+* $ export PYTHONIOENCODING="UTF-16"
 * $ wine cmd
 
 Tab completion
