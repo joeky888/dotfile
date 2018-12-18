@@ -64,6 +64,22 @@ $Shortcut.Save()
     * Name "4 - Control Panel.lnk"
 * Reboot
 
+Set MPV as default player
+=====
+* $ scoop install mpv
+```sh
+Set-ExecutionPolicy RemoteSigned -Force
+$url = "https://raw.githubusercontent.com/rossy/mpv-install/master/mpv-install.bat"
+$path = "$env:TEMP\mpv-install.bat"
+(New-Object System.Net.WebClient).DownloadFile($url, $path)
+$url = "https://raw.githubusercontent.com/rossy/mpv-install/master/mpv-document.ico"
+$path = "$env:USERPROFILE\scoop\apps\mpv\current\mpv-document.ico"
+(New-Object System.Net.WebClient).DownloadFile($url, $path)
+
+Get-Content "$env:TEMP\mpv-install.bat" | Set-Content "$env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat"
+cmd.exe /c $env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat
+```
+
 God mode
 =====
 * Rename an empty folder to "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
