@@ -77,6 +77,7 @@ CLI
     * bat - cURL/httpie written in Go
     * hget - aria2/axel download accelerator in go
     * rclone - Google drive (and more) client
+    * autopprof - Easy-to-use performance profiler
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
