@@ -269,7 +269,6 @@ Android
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
 * APKPure - Google Play alternative
-* Baidu Map
 * Qemu Limbo
 * SystemPanel 2
 * F-Droid
