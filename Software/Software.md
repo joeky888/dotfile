@@ -78,6 +78,7 @@ CLI
     * hget - aria2/axel download accelerator in go
     * rclone - Google drive (and more) client
     * autopprof - Easy-to-use performance profiler
+    * go-freelan - freelan-compatible implementation
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
