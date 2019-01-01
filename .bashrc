@@ -367,11 +367,11 @@ upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
 #   cd ~/dotfile
-  git --work-tree ~/dotfile pull origin master
+  git -C ~/dotfile pull origin master
 #   git pull --recurse-submodules --depth 1
 #   git submodule update --init --recursive --remote --merge
-  git --work-tree ~/dotfile submodule update --init
-  git --work-tree ~/dotfile submodule foreach git pull origin master
+  git -C ~/dotfile submodule update --init
+  git -C ~/dotfile submodule foreach git pull origin master
 
 #   cd - ;
 
