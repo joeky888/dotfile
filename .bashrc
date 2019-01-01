@@ -366,21 +366,14 @@ killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
-  cd ~/dotfile
-  git pull origin master
+#   cd ~/dotfile
+  git --work-tree ~/dotfile pull origin master
 #   git pull --recurse-submodules --depth 1
 #   git submodule update --init --recursive --remote --merge
-  git submodule update --init
-  git submodule foreach git pull origin master
+  git --work-tree ~/dotfile submodule update --init
+  git --work-tree ~/dotfile submodule foreach git pull origin master
 
-  cd - ;
-
-#   if [ -d $HOME/dotfile/powerlevel9k ]; then
-#     cd $HOME/dotfile/powerlevel9k
-#     rm -rf shunit2
-#     git reset --hard
-#     cd - ;
-#   fi
+#   cd - ;
 
   rm -rf ~/.bashrc
   rm -rf ~/.bash_profile
