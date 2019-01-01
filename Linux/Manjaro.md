@@ -13,6 +13,8 @@ Pacman
     * $ /var/cache/pacman/pkg # Find the package
 * Upgrade all AUR packages
     * $ yay -Syyu --aur
+* Clear all cache
+    * $ sudo pacman -Scc
 
 Use aria2 as backend of pacman
 =====
