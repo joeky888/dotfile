@@ -332,6 +332,7 @@ alias google-chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
 alias opera-ignoreCrt='opera --ignore-certificate-errors'
 alias opera-developer-ignoreCrt='opera-developer --ignore-certificate-errors'
 alias 7zExtractToFolder='7z -o* x'
+alias watch='watch --color'
 
 export SUDO=''
 if (( $EUID != 0 )); then
