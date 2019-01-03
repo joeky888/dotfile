@@ -271,7 +271,7 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip htop
+  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip htop watch
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
   brew tap homebrew/cask-fonts
