@@ -17,6 +17,10 @@ Clone all branches
 * $ git clone -b AnyBranchName URL
 * $ git branch -a
 
+Push all branches and tags
+=====
+* $ git push --mirror
+
 Fetch/Pull a new branch
 =====
 * $ vim .git/config
