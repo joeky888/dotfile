@@ -78,3 +78,10 @@ Git push won't do anything (Everything up-to-date)
 Merge commit from another branch
 =====
 * $ git cherry-pick d42c389f
+
+Pack to git bundle (.bundle files)
+=====
+* $ git bundle create repo.bundle --all
+* Unpack
+* $ git bundle verify repo.bundle
+* $ git clone repo.bundle
