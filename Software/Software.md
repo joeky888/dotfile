@@ -92,7 +92,7 @@ BaiduPCS-Go config set -max_parallel 64
 BaiduPCS-Go config set -savedir $HOME/Desktop
 BaiduPCS-Go config set -cache_size 16384 # 16MB
 BaiduPCS-Go config set -max_download_load 5 # 5 Files one time
-BaiduPCS-Go config set -appid=310646 # Or 309847 or 266719
+BaiduPCS-Go config set -appid=309847 # Or 310646 or 266719
 BaiduPCS-Go config set -user_agent="Test"
 ```
 * Nodejs
