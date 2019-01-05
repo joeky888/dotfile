@@ -23,3 +23,10 @@ Pack
 cd $HOME/folder
 sudo tar czvf ../pack.tar.gz . # Pack
 ```
+
+Use xz
+=====
+* Compress
+* $ xz file.txt
+* Decompress
+* $ xz -d file.txt.xz
