@@ -214,3 +214,7 @@ Unable to remove dock from toolbar
 =====
 * Check ~/.local/share/applications and /usr/share/applications
 * Remove all empty or temp files
+
+Gnome files (Nautilus) fullscreen to normal screen
+=====
+* Use dconf-editor to disable Gnome files starting with fullscreen

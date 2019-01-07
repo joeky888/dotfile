@@ -82,3 +82,7 @@ Install virtualbox
 * $ sudo powerpill -S [kernel version]-virtualbox-host-modules
 * $ sudo modprobe vboxdrv
 * $ sudo gpasswd -a $(whoami) vboxusers
+
+No Network interface in NetworkManager
+=====
+* Remove Network driver in MHWD
