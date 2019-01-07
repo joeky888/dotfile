@@ -50,7 +50,7 @@ Software
 
 CLI
 =====
-* Miniconda
+* Miniconda/python
     * youtube-dl
     * you-get
     * ykdl
@@ -59,6 +59,7 @@ CLI
     * speedtest-cli
     * glances
     * danmaku2ass (m13253)
+    * dbcli - Cli for mysql, sqlite and Postgresql with syntax highlighting
 * Go
     * BaiduPCS-Go
     * Micro (text editor)
@@ -423,6 +424,7 @@ Experience
 | Manjaro Linux                     |  (2018-)      |
 | Alpine Linux                      |  (2018-)      |
 | FreeBSD                           |  (2017-)      |
+| Docker                            |  (2018-)      |
 | Git                               |  (2014-)      |
 | Bash                              |  (2014-)      |
 | Zsh                               |  (2015-)      |
