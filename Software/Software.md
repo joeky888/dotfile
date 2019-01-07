@@ -219,7 +219,6 @@ Mac (Hack-intosh)
 * WPS Office
 * Squirrel
 * Spectacle (Window manager)
-* $ brew cask install hyper alacritty visual-studio-code sogouinput mpv phantomjs opera google-chrome skype teamviewer obs krita spectacle
 
 Linux
 =====
