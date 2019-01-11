@@ -95,6 +95,13 @@ Install mono or dotnet
     * $ sh winetricks xna40 # Optional
     * $ wine file.exe
 
+Gaming performance
+=====
+* Disable wine debug messages
+```sh
+WINEDEBUG=-all wine game.exe
+```
+
 Install powershell 2
 =====
 * Use Windows XP
