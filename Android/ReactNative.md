@@ -77,3 +77,13 @@ distributionUrl=https\://services.gradle.org/distributions/gradle-4.4.1-all.zip
 Push app to the store (TODO)
 =====
 * Use Microsoft/react-native-code-push
+
+Html vs React Native
+=====
+```html
+              <div> | <View>
+             <span> | <Text>
+<input type="text"> | <InputText>
+           <button> | <Button>
+             <img>  | <Image>
+```
