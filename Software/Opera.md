@@ -86,6 +86,7 @@ https://ithelp.ithome.com.tw/rss/articles/tech
 https://www.kocpc.com.tw/feed
 http://www.oschina.net/news/rss
 https://linux.cn/rss.xml
+http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
 
 * English
 https://feeds.feedburner.com/d0od
