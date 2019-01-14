@@ -5,11 +5,13 @@ XTerm*termName: xterm-256color
 XTerm*geometry: 80x32
 XTerm*saveLines: 1024000
 XTerm*scrollBar: True
+XTerm*rightScrollBar: on
 XTerm*loginshell: False
 XTerm*cursorBlink: False
 XTerm*visualBell: False
 XTerm*pointerShape: left_ptr
 xterm*selectToClipboard: true
+XTerm*vt100*rightScrollBar :true
 
 ! Fonts and Encoding
 XTerm*utf8: True
