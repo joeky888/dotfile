@@ -81,7 +81,7 @@ Push app to the store (TODO)
 Html vs React Native
 =====
 ```html
-              <div> | <View>
+              <div> | <View> or <KeyboardAvoidingView>
              <span> | <Text>
 <input type="text"> | <InputText>
            <button> | <TouchableOpacity> or <Button>
