@@ -1,20 +1,15 @@
 Install with npm
 =====
 * Download nodejs LTS, because the latest version isn't always compatible with RN
-* $ npm install -g create-react-native-app
+* $ npm install -g expo-cli
 * Install watchman (https://github.com/facebook/watchman)
     * $ yaourt -S watchman
 * Install Android Studio, JDK and python2
 
-Install with yarn
-=====
-* $ npm install -g yarn
-* $ yarn global add create-react-native-app
-
 Init
 ======
 * Install Expo app and open the project
-* $ create-react-native-app ProjectName
+* $ expo init ProjectName
 * $ cd ProjectName
 * $ `rm -rf node_modules`
 * $ npm install && npm audit fix --force # or yarn install
