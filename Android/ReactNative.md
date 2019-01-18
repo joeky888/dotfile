@@ -21,9 +21,15 @@ Init
 * $ npm run ios
 * Press capital `R` in terminal to restart and clear cache
 
-Build apk
+Build Android apk
 =====
-* $ expo ba # Or expo build:android
+* Offline (failed)
+    * $ expo eject
+    * $ `rm -rf node_modules ./android/.gradle`
+    * $ npm i
+    * Open android folder and Build with Android studio
+* Expo online
+    * $ expo ba # Or expo build:android
 
 Push app to the store (TODO)
 =====
