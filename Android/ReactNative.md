@@ -21,6 +21,10 @@ Init
 * $ npm run ios
 * Press capital `R` in terminal to restart and clear cache
 
+Build apk
+=====
+* $ expo ba # Or expo build:android
+
 Push app to the store (TODO)
 =====
 * Use Microsoft/react-native-code-push
