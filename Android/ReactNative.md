@@ -4,7 +4,6 @@ Install with npm
 * $ npm install -g expo-cli
 * Install watchman (https://github.com/facebook/watchman)
     * $ yaourt -S watchman
-* Install Android Studio, JDK and python2
 
 Init
 ======
@@ -23,7 +22,7 @@ Init
 
 Build Android apk
 =====
-* Offline (failed)
+* Offline (Epic fail!)
     * $ expo eject
     * $ `rm -rf node_modules ./android/.gradle`
     * $ npm i
