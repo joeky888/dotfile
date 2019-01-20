@@ -184,6 +184,10 @@ if [[ -d "$HOME/zulu" ]]; then
   export JAVA_HOME=~/zulu
 fi
 
+if [[ -d "$HOME/Android/Sdk" ]]; then
+  export ANDROID_HOME="$HOME/Android/Sdk"
+fi
+
 if [[ -d "$HOME/.local/bin" ]]; then
   export PATH=~/.local/bin:$PATH
 fi
