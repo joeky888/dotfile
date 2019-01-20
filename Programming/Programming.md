@@ -17,17 +17,12 @@ Code Design
 
 Javascript
 =====
-* VS code: Editor
-* TypeScript + JSX
 * d3.js
 * pixi.js - Fast WebGL d3.js replacement
 * Zepto.js - Lightweight jquery-like lib
-* preactjs - Lightweight reactjs-like lib
-* infernojs - Lightweight reactjs-like lib
 * vue.js
 * clipboard.js - Copy to clipboard
-* WebAssembly - For bigger projects
-* WebRTC
+* WebAssembly
 * Microlight.js - Global code highting
 * flatpickr.js - Calendar date time picker
 * fetch
