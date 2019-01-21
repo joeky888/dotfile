@@ -389,6 +389,7 @@ Dev Tools
         * github.com/zserge/lorca - Pure Go backend, html fronend
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
+    * go-flutter-desktop-embedder - Flutter Engine in Go
 * Windows / XBOX only
     * Universal Windows Platform (.AppX)
 * Web server backend
