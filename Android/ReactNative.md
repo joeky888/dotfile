@@ -23,11 +23,10 @@ Init
 Build Android apk
 =====
 * Method 1: Offline
-    * Edit package.json and set react-native to latest version like `0.58.0`
+    * $ vim package.json
+        * Edit package.json and set react-native to latest version like `0.58.0`
     * $ expo eject
     * $ `rm -rf node_modules && npm i`
-    * $ npm i
-    * $ mkdir android/app/src/main/assets
     * $ vim index.js
 ```js
 import { AppRegistry } from "react-native"
@@ -38,12 +37,15 @@ AppRegistry.registerComponent(appName, () => App)
     * Make sure AppName in app.json is correct! Like this
 ```json
 {
-  "name": "RssNewsMan",
-  "expo": {
-    "name": "RssNewsMan"
-  }
+    "name": "RssNewsMan",
+    "displayName": "RssNewsMan",
+    "expo": {
+        "name": "RssNewsMan"
+    }
 }
 ```
+    * $ npm i scheduler
+    * $ mkdir android/app/src/main/assets
     * $ react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
     * Open android folder and Build with Android studio
 * Method 2: Expo online
