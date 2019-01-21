@@ -73,6 +73,7 @@ Go
 =====
 * fasthttp/fasthttprouter - Super fast for http(s) client and server
 * iris - Fatest web framework
+* github.com/buger/jsonparser - Get and Set json value without code reflection
 
 Java
 =====
