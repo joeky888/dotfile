@@ -1,7 +1,7 @@
 Install with npm
 =====
 * Download nodejs LTS, because the latest version isn't always compatible with RN
-* $ npm install -g expo-cli
+* $ npm install -g expo-cli react-native-cli
 * Install watchman (https://github.com/facebook/watchman)
     * $ yaourt -S watchman
 
@@ -23,9 +23,13 @@ Init
 Build Android apk
 =====
 * Offline (Epic fail!)
+    * Edit package.json and set react-native to latest version like `0.58.0`
     * $ expo eject
-    * $ `rm -rf node_modules ./android/.gradle`
+    * $ `rm -rf node_modules && npm i`
     * $ npm i
+    * $ mkdir android/app/src/main/assets
+    * Make sure AppName in index.js is correct!
+    * $ react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
     * Open android folder and Build with Android studio
 * Expo online
     * $ expo ba # Or expo build:android
