@@ -100,4 +100,4 @@ Phonemic:
     m	n	ŋ	h	w	l	r	j
 
 * Mobile UI
-    ☰   ↻   ↺   🔍
+    ☰   ↻   ↺   ⌕  ⌖
