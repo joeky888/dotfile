@@ -48,6 +48,7 @@ AppRegistry.registerComponent(appName, () => App)
     * $ mkdir android/app/src/main/assets
     * $ react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res
     * Open android folder and Build with Android studio
+        * File -> Invalidate Caches/Restart
 * Method 2: Expo online
     * $ expo ba # Or expo build:android
 
