@@ -98,3 +98,6 @@ Phonemic:
 * voiced:
     b	v	ð	d	z	ʒ	ʤ	g
     m	n	ŋ	h	w	l	r	j
+
+* Mobile UI
+    ☰   ↻   ↺   🔍
