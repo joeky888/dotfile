@@ -268,9 +268,9 @@ else
   [ $(command -v axel) ] && alias axel='axel --num-connections=16'
 fi
 if hash aria2c 2>/dev/null >/dev/null ; then
-  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
+  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
 else
-  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
+  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors'
 fi
 alias curl-asus-proxy-kungfu='curl -x 10.78.20.186:3128 -U kungfu:howkungfu'
 alias curl-asus-proxy-zscaler='curl -x gateway.zscaler.net:80'
@@ -290,9 +290,9 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias youtube-dl-asus-proxy-kungfu='youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
-alias youtube-dl-asus-proxy-zscaler='youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=gateway.zscaler.net:80"'
-alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --write-sub --sub-lang zh-tw,zh-cn,zh-hk,zh-hant,zh-hans,zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16" -o "%(title)s.%(ext)s" --write-sub --sub-lang zh-TW,zh-HK,zh-Hant,zh-CN,zh-Hans,en,enUS,English --ignore-errors'
+alias youtube-dl-asus-proxy-kungfu='youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
+alias youtube-dl-asus-proxy-zscaler='youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=gateway.zscaler.net:80"'
+alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16" -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors'
 alias streamlink-mpv="streamlink -p mpv --default-stream best"
 alias streamlink-mpv-1080p="streamlink -p mpv --default-stream 1080p"
 alias streamlink-mpv-720p="streamlink -p mpv --default-stream 720p"
