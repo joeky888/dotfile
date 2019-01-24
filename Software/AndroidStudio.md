@@ -17,8 +17,8 @@ Keymapping
     * Close -> Right Click -> Add Keyboard Shortcut -> Ctrl W
     * Redo -> Right Click -> Add Keyboard Shortcut -> Ctrl Y
     * Column Selection Mode -> Right Click -> Add Keyboard Shortcut -> Ctrl Q
-    * Move Line Up -> Right Click -> Add Keyboard Shortcut -> Pageup
-    * Move Line Down -> Right Click -> Add Keyboard Shortcut -> Pagedown
+    * Move Line Up -> Right Click -> Add Keyboard Shortcut -> Ctrl U
+    * Move Line Down -> Right Click -> Add Keyboard Shortcut -> Ctrl J
     * Comment with Line Comment -> Right Click -> Add Keyboard Shortcut -> Ctrl \
 
 Colored logcat

@@ -28,8 +28,8 @@ Qt Creator
 <shortcut id="TextEditor.GotoLineEnd"/><key value="Ctrl+E"/></shortcut>
 <shortcut id="TextEditor.GotoLineStart"/><key value="Ctrl+A"/></shortcut>
 <shortcut id="QtCreator.SelectAll"><key value="Ctrl+G"/></shortcut>
-<shortcut id="TextEditor.MoveLineUp"><key value="PgUp"/></shortcut>
-<shortcut id="TextEditor.MoveLineDown"><key value="PgDown"/></shortcut>
+<shortcut id="TextEditor.MoveLineUp"><key value="Ctrl+U"/></shortcut>
+<shortcut id="TextEditor.MoveLineDown"><key value="Ctrl+J"/></shortcut>
 <shortcut id="TextEditor.viewLineUp"><key value="Ctrl+Up"/></shortcut>
 <shortcut id="TextEditor.viewPageDown"><key value="Ctrl+Down"/></shortcut>
 ```
