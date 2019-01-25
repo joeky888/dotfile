@@ -1302,7 +1302,7 @@ dict() {
   if [ $# -eq 0 ]; then
     echo "Usage: dict <word>"
   else
-    grep $GREP_OPTIONS --color=auto -RiIn -C 5 $1 $HOME/dict
+    cat $HOME/dict/Dictionary.txt | grep $1 -n -C 5 --color=auto
   fi;
 }
 
