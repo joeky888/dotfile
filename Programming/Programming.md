@@ -31,6 +31,7 @@ Javascript
 * React/React Native
     * react-spring - Animation lib
     * react-navigation - Routing and navigation for react native
+    * react-native-swiper - UI swiper component
 
 CSS
 =====
