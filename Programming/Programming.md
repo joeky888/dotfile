@@ -28,6 +28,9 @@ Javascript
 * fetch
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
+* React/React Native
+    * react-spring - Animation lib
+    * react-navigation - Routing and navigation for react native
 
 CSS
 =====
