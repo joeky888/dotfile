@@ -406,6 +406,7 @@ upgradeDotfile() {
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
+  rm -rf ~/.config/mpv/mpv.conf
 
   mkdir -p ~/.grc
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
@@ -435,9 +436,11 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   else
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
+    mkdir -p ~/.config/mpv/
     mkdir -p ~/.pip/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
@@ -458,6 +461,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
     ln -sf $HOME/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
+    ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
   fi;
 }
 
