@@ -200,13 +200,14 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install -y git aria2
     InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install vim tmux zsh curl bash-completion -y
+    $SUDO apt-fast install vim tmux zsh curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -Sy git aria2 --noconfirm --needed
+    $SUDO pacman -Sy git --noconfirm --needed
     InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast -Syu vim tmux zsh curl bash-completion yay --noconfirm --needed
+    $SUDO apt-fast -Syu vim tmux zsh curl aria2 bash-completion yay --noconfirm --needed
+    $SUDO cp /etc/pacman.conf /etc/pacman.conf.bak
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
