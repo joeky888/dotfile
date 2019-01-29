@@ -200,10 +200,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install -y git aria2
     InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install vim tmux zsh curl aria2 bash-completion -y
+    $SUDO apt-fast install vim tmux zsh curl bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -S git --noconfirm --needed
+    $SUDO pacman -S git aria2 --noconfirm --needed
     InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
     $SUDO cp /etc/pacman.conf /etc/pacman.conf.bak
@@ -211,7 +211,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
-    $SUDO apt-fast -Syu vim tmux zsh curl aria2 bash-completion yay --noconfirm --needed
+    $SUDO apt-fast -Syu vim tmux zsh curl bash-completion yay --noconfirm --needed
 #     [ -f /usr/bin/powerpill ] && $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
   else
     echo "Distro does not support at this moment."
