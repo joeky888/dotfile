@@ -71,7 +71,7 @@ Python
     * Curses - standard python built-in lib
     * urwid
     * picotui - Minimal pure python lib without using ncurses, MicroPython supported
-* japronto - Asynchronous HTTP server for py >= 3.5
+* japronto - Asynchronous HTTP server for py >= 3.5, but written in C
 
 Go
 =====
