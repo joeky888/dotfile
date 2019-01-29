@@ -157,7 +157,7 @@ InstallPIP()
   echo y | $SUDO pip install youtube-dl
   echo y | $SUDO pip install you-get
   echo y | $SUDO pip install ptpython
-  echo y | $SUDO pip install Glances
+#   echo y | $SUDO pip install Glances
 #   echo y | $SUDO pip install streamlink
 #   echo y | $SUDO pip install ykdl
 #   echo y | $SUDO pip install bypy
@@ -174,7 +174,7 @@ InstallMiniconda()
   echo y | ~/Miniconda3/bin/pip install you-get
   echo y | ~/Miniconda3/bin/pip install speedtest-cli
   echo y | ~/Miniconda3/bin/pip install ptpython
-  echo y | ~/Miniconda3/bin/pip install Glances
+#   echo y | ~/Miniconda3/bin/pip install Glances
 #   echo y | ~/Miniconda3/bin/pip install streamlink
 #   echo y | ~/Miniconda3/bin/pip install bypy
 #   echo y | ~/Miniconda3/bin/pip install ykdl
