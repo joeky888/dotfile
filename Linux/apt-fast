@@ -34,7 +34,7 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep\
   if [ $(command -v apt-get) ]; then
     apt-get -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
   elif [ $(command -v pacman) ]; then
-    pacman -Sup "${@:2}" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+    pacman -Sup $(echo "${@:1}" | sed "s/-[a-zA-Z]\+//g") | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
   fi
 
 elif echo "$@" | grep -q "update"; then
@@ -42,4 +42,4 @@ elif echo "$@" | grep -q "update"; then
 fi
 
 echo $APT $@
-$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list && /var/cache/pacman/pkg/apt-fast.list
+$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list && rm -f /var/cache/pacman/pkg/apt-fast.list
