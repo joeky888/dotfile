@@ -196,13 +196,17 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
   export Home="$HOME"
   if [[ $(command -v apt) ]]; then
-    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
     $SUDO apt update
-    $SUDO apt-fast install vim tmux zsh git curl aria2 bash-completion -y
+    $SUDO apt install -y git
+    InstallDotfile
+    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+    $SUDO apt-fast install vim tmux zsh curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
+    $SUDO pacman -Sy git --noconfirm --needed
+    InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast -Syu vim tmux zsh git curl aria2 bash-completion yay --noconfirm --needed
+    $SUDO apt-fast -Syu vim tmux zsh curl aria2 bash-completion yay --noconfirm --needed
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
@@ -212,7 +216,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     echo "Distro does not support at this moment."
     exit 1
   fi
-  InstallDotfile
 #   mkdir -p ~/.config/openbox
 #   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
 #   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
