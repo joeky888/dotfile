@@ -28,6 +28,7 @@ InstallDotfile()
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
+  rm -rf ~/.config/mpv/mpv.conf
 
   git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -53,6 +54,7 @@ InstallDotfile()
   cd - ;
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.config/alacritty/
+  mkdir -p $Home/.config/mpv/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
@@ -62,6 +64,7 @@ InstallDotfile()
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
   ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
+  ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
 }
 
 InstallDotfileCygwin()
@@ -73,6 +76,8 @@ InstallDotfileCygwin()
   mkdir -p $Home/.pip/
   mkdir -p $Home/pip/
   mkdir -p $Home/.grc/
+  mkdir -p $Home/AppData/Local/nvim
+  mkdir -p $Home/AppData/Local/mpv
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -113,10 +118,10 @@ InstallDotfileCygwin()
   git submodule update --init
   git submodule foreach git pull origin master
   cd - ;
-  mkdir -p $Home/AppData/Local/nvim
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
