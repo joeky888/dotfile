@@ -203,7 +203,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt-fast install vim tmux zsh curl aria2 bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -Sy git --noconfirm --needed
+    $SUDO pacman -S git --noconfirm --needed
     InstallDotfile
     $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
     $SUDO apt-fast -Syu vim tmux zsh curl aria2 bash-completion yay --noconfirm --needed
