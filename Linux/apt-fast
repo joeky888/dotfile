@@ -4,8 +4,13 @@
 
 APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
 
-if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
-  cd /var/cache/apt/archives/;
+if [ $(command -v pacman) ]; then
+  APT="pacman"
+fi
+
+if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep\|-S"; then
+  cd /var/cache/apt/archives/ 2>/dev/null;
+  cd /var/cache/pacman/pkg/ 2>/dev/null;
 
   DOWNLOADARGS='-c -s16 -k1M -x16'
   DNS=""
@@ -21,11 +26,18 @@ if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"
   # Donload unfinished jobs
   [ $(command -v aria2c) ] || $APT install -y aria2
   [[ -f /var/cache/apt/archives/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
+  [[ -f /var/cache/pacman/pkg/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs
-  apt-get -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  if [ $(command -v apt-get) ]; then
+    apt-get -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  elif [ $(command -v pacman) ]; then
+    pacman -Sup "${@:2}" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" > apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  fi
+
 elif echo "$@" | grep -q "update"; then
   $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
 fi
 
-$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list
+echo $APT $@
+$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list && /var/cache/pacman/pkg/apt-fast.list
