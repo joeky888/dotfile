@@ -2,45 +2,45 @@
 
 [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
-APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
-InstallNoAsk="install -y"
+DOWNLOADARGS='-c -s16 -k1M -x16'
+DNS=""
 
-if [ $(command -v pacman) ]; then
-  APT="pacman"
-  InstallNoAsk="-S --noconfirm --needed"
+if ping -c 1 -W 1 180.76.76.76 2>/dev/null | grep -q -i "ttl"; then
+  DNS="--async-dns-server=180.76.76.76"
 fi
 
-if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep\|-S"; then
-  cd /var/cache/apt/archives/ 2>/dev/null;
-  cd /var/cache/pacman/pkg/ 2>/dev/null;
+if ping -c 1 -W 2 8.8.8.8 2>/dev/null | grep -q -i "ttl"; then
+  DNS="--async-dns-server=8.8.8.8"
+fi
 
-  DOWNLOADARGS='-c -s16 -k1M -x16'
-  DNS=""
+if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
+  APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
+  cd /var/cache/apt/archives/
 
-  if ping -c 1 -W 1 180.76.76.76 2>/dev/null | grep -q -i "ttl"; then
-    DNS="--async-dns-server=180.76.76.76"
-  fi
-
-  if ping -c 1 -W 2 8.8.8.8 2>/dev/null | grep -q -i "ttl"; then
-    DNS="--async-dns-server=8.8.8.8"
-  fi
-
-  # Donload unfinished jobs
-  [ $(command -v aria2c) ] || $APT $InstallNoAsk aria2
+  # Download unfinished jobs
+  [ $(command -v aria2c) ] || $APT install -y aria2
   [[ -f /var/cache/apt/archives/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
+
+  # Create new jobs
+  $APT -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+
+  echo $APT $@
+  $APT $@ && rm -f /var/cache/apt/archives/apt-fast.list
+elif echo "$@" | grep -q "update"; then
+  APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
+  $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
+
+elif echo "$@" | grep -q "\-S"; then
+  cd /var/cache/pacman/pkg/
+
+  # Download unfinished jobs
+  [ $(command -v aria2c) ] || pacman -S --noconfirm --needed aria2
   [[ -f /var/cache/pacman/pkg/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs
-  if [ $(command -v apt-get) ]; then
-    apt-get -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-  elif [ $(command -v pacman) ]; then
-    pacman -Syup | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-    pacman -Sup $(echo "${@:1}" | sed "s/-[a-zA-Z]\+//g") | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-  fi
+  pacman -Syup | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  pacman -Sup $(echo "${@:1}" | sed "s/-[a-zA-Z]\+//g") | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
 
-elif echo "$@" | grep -q "update"; then
-  $APT -o 'Acquire::Queue-mode=access; APT::Acquire=Retries 3;' update
+  echo "pacman $@"
+  pacman $@ && rm -f /var/cache/pacman/pkg/apt-fast.list
 fi
-
-echo $APT $@
-$APT $@ && rm -f /var/cache/apt/archives/apt-fast.list && rm -f /var/cache/pacman/pkg/apt-fast.list
