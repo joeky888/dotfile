@@ -39,7 +39,7 @@ elif echo "$@" | grep -q "\-S"; then
 
   # Create new jobs
   pacman -Syup | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-  pacman -Sup $(echo "${@:1}" | sed "s/-[a-zA-Z]\+//g") | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  pacman -Sup $(echo $@ | sed "s/-[a-zA-Z]\+//g") | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
 
   echo "pacman $@"
   pacman $@ && rm -f /var/cache/pacman/pkg/apt-fast.list
