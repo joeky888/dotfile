@@ -23,14 +23,17 @@ if [[ "$OSTYPE" == "darwin"* ]] && echo "$@" | grep -q "upgrade\|install"; then
   [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs
-  packages=$(echo " ${@:1} " | perl -C -Mutf8 -pe "s/ -[a-zA-Z-]\+//g")$(brew outdated --quiet)
-  for package in "$packages"
+  packages=($(echo " ${@:2} " | perl -C -Mutf8 -pe "s/ -[a-zA-Z-]\+//g")$(brew outdated --quiet))
+
+  for package in "${packages[@]}"
   do
-    while read -r pkg; do
-      filename=$(echo "$pkg" | grep -o "\-\-.*" | perl -C -Mutf8 -pe "s/^--//")
+    echo "Fetching $package"
+
+    while read -r dep; do
+      filename=$(echo "$dep" | perl -C -Mutf8 -pe "s/.*--//")
       echo "$baseurl/bottles/$filename" | tee -a apt-fast.list
-      echo " out=$(basename $pkg)" | tee -a apt-fast.list
-    done <<< `brew --cache $(echo "$package $(brew deps $package) ")`
+      echo " out=$(echo "$dep" | perl -C -Mutf8 -pe "s/.*\///")" | tee -a apt-fast.list
+    done <<< "$(brew --cache $(brew deps $package))"
   done
 
   [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
