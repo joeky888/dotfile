@@ -29,15 +29,13 @@ if [[ "$OSTYPE" == "darwin"* ]] && echo "$@" | grep -q "upgrade\|install"; then
   do
     echo "Fetching $package"
 
-    filename=$(echo "$package" | perl -C -Mutf8 -pe "s/.*--//")
-    echo "$baseurl/bottles/$filename" | tee -a apt-fast.list
-    echo " out=$(echo "$package" | perl -C -Mutf8 -pe "s/.*\///")" | tee -a apt-fast.list
+    alldeps=$(echo -e "${package}\n$(brew deps $package)")
 
     while read -r dep; do
       filename=$(echo "$dep" | perl -C -Mutf8 -pe "s/.*--//")
       echo "$baseurl/bottles/$filename" | tee -a apt-fast.list
       echo " out=$(echo "$dep" | perl -C -Mutf8 -pe "s/.*\///")" | tee -a apt-fast.list
-    done <<< "$(brew --cache $(brew deps $package))"
+    done <<< "$(brew --cache $(echo \\"${alldeps}\\"))"
   done
 
   [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
