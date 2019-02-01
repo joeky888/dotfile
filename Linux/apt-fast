@@ -1,6 +1,6 @@
 #!/bin/bash
 
-[ "`whoami`" = root ] || exec sudo "$0" "$@"
+# [ "`whoami`" = root ] || exec sudo "$0" "$@"
 
 DOWNLOADARGS='-c -s16 -k1M -x16'
 DNS=""
@@ -13,16 +13,34 @@ if ping -c 1 -W 2 8.8.8.8 2>/dev/null | grep -q -i "ttl"; then
   DNS="--async-dns-server=8.8.8.8"
 fi
 
+if echo "$@" | grep -q "upgrade\|install"; then
+  cd ~/Library/Caches/Homebrew/downloads
+  brew outdated --quiet
+
+  # Download unfinished jobs
+  [ $(command -v aria2c) ] || brew install aria2
+  [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
+
+  baseurl=$([ ${HOMEBREW_BOTTLE_DOMAIN} ] && echo "${HOMEBREW_BOTTLE_DOMAIN}" || echo "https://homebrew.bintray.com/bottles")
+  while read -r pkgs; do
+    filename=$(echo "$pkgs" | grep -o "\-\-.*" | perl -C -Mutf8 -pe "s/^--//")
+    echo "$baseurl/$filename" | tee -a apt-fast.list
+    echo " out=$(basename $pkgs)" | tee -a apt-fast.list
+  done <<< `brew --cache $(echo "ffmpeg $(brew deps ffmpeg) $(brew outdated --quiet)")`
+fi
+
+exit 0
+
 if echo "$@" | grep -q "upgrade\|install\|dist-upgrade\|full-upgrade\|build-dep"; then
   APT=$([ $(command -v apt) ] && echo "apt" || echo "apt-get")
   cd /var/cache/apt/archives/
 
   # Download unfinished jobs
   [ $(command -v aria2c) ] || $APT install -y aria2
-  [[ -f /var/cache/apt/archives/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
+  [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs
-  $APT -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  $APT -y --print-uris $@ | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list && rm -f apt-fast.list
 
   echo $APT $@
   $APT $@ && rm -f /var/cache/apt/archives/apt-fast.list
@@ -35,11 +53,11 @@ elif echo "$@" | grep -q "\-S"; then
 
   # Download unfinished jobs
   [ $(command -v aria2c) ] || pacman -S --noconfirm --needed aria2
-  [[ -f /var/cache/pacman/pkg/apt-fast.list ]] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
+  [ -f apt-fast.list ] && aria2c $DOWNLOADARGS $DNS -i apt-fast.list
 
   # Create new jobs
-  pacman -Syup --print-format "%l" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
-  pacman $@ --print --print-format "%l" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
+  pacman -Syup --print-format "%l" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee apt-fast.list
+  pacman $@ --print --print-format "%l" | grep -E -o -e "(ht|f)tp[s]?://[^\']+" | tee -a apt-fast.list && aria2c -c $DOWNLOADARGS $DNS -i apt-fast.list
 
   echo "pacman $@"
   pacman $@ && rm -f /var/cache/pacman/pkg/apt-fast.list
