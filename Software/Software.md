@@ -165,7 +165,7 @@ $Shortcut.Save()
     * $ PowerShellGet\Install-Module posh-git -Scope CurrentUser
     * $ PowerShellGet\Install-Module posh-docker -Scope CurrentUser
     * $ PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
-    * $ choco install 7zip git poshgit vscode greenshot wps-office-free obs-studio nomacs virtualbox fontforge sumatrapdf.commandline xnviewmp hyper gimp inkscape -y --pre
+    * $ choco install 7zip git poshgit vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp gimp inkscape -y --pre
     * $ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
     * Gaming dlls
         * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
