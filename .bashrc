@@ -529,7 +529,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     [ $(command -v pacman) ] && compdef powerpill=pacman && \
       compdef yaourt=pacman && \
       compdef yay=pacman
-    [ $(command -v apt) ] && compdef apt-fast=apt # Complete apt-fast as apt command
+    [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
     [ $(command -v pacman) ] && compdef apt-fast=pacman # Complete apt-fast as apt command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
