@@ -30,9 +30,6 @@ RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/
 #                   #
 #####################
 
-# RUN pacman -S --noconfirm --needed powerpill
-# RUN powerpill -Syyu --noconfirm --needed
-# RUN pacman -S --noconfirm --needed nano powerpill
 RUN bash -c "pacman -Qdtq | pacman -Rs - || echo ok"
 RUN rm -rf /var/cache/pacman/pkg/*
 

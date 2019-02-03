@@ -11,10 +11,10 @@ sudo chroot $HOME/Alpine /bin/bash -l
 Arch / Manjaro (Failed)
 =====
 ```sh
-sudo powerpill -S arch-install-scripts
+sudo app-fast -S arch-install-scripts
 mkdir $HOME/Arch
 
-sudo pacstrap -cdGM $HOME/Arch base filesystem pacman linux powerpill
+sudo pacstrap -cdGM $HOME/Arch base filesystem pacman linux
 sudoedit $HOME/Arch/etc/pacman-mirrors.conf
 sudo cp $(command -v arch-chroot) $HOME/Arch/bin
 sudo $HOME/Arch/bin/arch-chroot $HOME/Arch /bin/bash -l
@@ -29,7 +29,7 @@ sudo tar zxvf arch.tar.gz -C $HOME/Arch # Unpack
 Debian
 =====
 ```sh
-sudo powerpill -S debootstrap
+sudo app-fast -S debootstrap
 
 mkdir $HOME/Debian ; cd $HOME/Debian
 
