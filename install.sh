@@ -199,19 +199,19 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt update
     $SUDO apt install -y git aria2
     InstallDotfile
-    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
-    $SUDO apt-fast install vim tmux zsh curl bash-completion -y
+    $SUDO install ~/dotfile/app-fast/app-fast /usr/bin/app-fast
+    $SUDO app-fast install vim tmux zsh curl bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
     $SUDO pacman -S git aria2 --noconfirm --needed
     InstallDotfile
-    $SUDO install ~/dotfile/Linux/apt-fast /usr/bin/apt-fast
+    $SUDO install ~/dotfile/app-fast/app-fast /usr/bin/app-fast
     $SUDO cp /etc/pacman.conf /etc/pacman.conf.bak
     $SUDO sed -i '/XferCommand/d' /etc/pacman.conf
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
-    $SUDO apt-fast -S vim tmux zsh curl bash-completion yay --noconfirm --needed
+    $SUDO app-fast -S vim tmux zsh curl bash-completion yay --noconfirm --needed
 #     [ -f /usr/bin/powerpill ] && $SUDO sed -i 's/^python3/\/usr\/bin\/python3/' $(which powerpill)
   else
     echo "Distro does not support at this moment."
@@ -234,10 +234,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
 #   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
-    $SUDO apt-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
-    $SUDO apt-fast install libssl-dev -y
+    $SUDO app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
+    $SUDO app-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    $SUDO apt-fast -S --noconfirm --needed p7zip base-devel command-not-found nano ffmpeg atool fontconfig traceroute openssl net-tools iproute2 bind-tools python3 wget tig upx htop
+    $SUDO app-fast -S --noconfirm --needed p7zip base-devel command-not-found nano ffmpeg atool fontconfig traceroute openssl net-tools iproute2 bind-tools python3 wget tig upx htop
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
@@ -279,13 +279,17 @@ elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
   export SUDO=""
   [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
   brew update
-  brew install git vim coreutils ffmpeg aria2 tig tmux p7zip htop watch atool
+  brew install git aria2
+  InstallDotfile
+
+  install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
+  /usr/local/bin/app-fast install vim coreutils ffmpeg tig tmux p7zip htop watch atool
+
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-versions
 #   brew tap homebrew/cask-drivers
-  InstallDotfile
   InstallMiniconda MacOSX
   InstallPy3UTF8
 

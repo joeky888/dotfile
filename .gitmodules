@@ -30,3 +30,7 @@
     path = powerlevel9k
     url = https://github.com/bhilburn/powerlevel9k.git
     shallow = true
+[submodule "app-fast"]
+    path = app-fast
+    url = https://github.com/joeky888/app-fast.git
+    shallow = true

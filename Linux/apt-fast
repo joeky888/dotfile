@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#####################################
+#                                   #
+#  Deprecated! Use app-fast instead #
+#                                   #
+#####################################
+
 DOWNLOADARGS='-c -s16 -k1M -x16'
 DNS=""
 
