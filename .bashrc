@@ -414,6 +414,7 @@ upgradeDotfile() {
 
   if [[ "$OSTYPE" == "cygwin" ]]; then
     mkdir -p ~/AppData/Local/nvim/
+    mkdir -p ~/AppData/Local/mpv/
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
