@@ -115,10 +115,10 @@ Packages
   * $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * Manjaro
   * $ sudo pacman -Rs vim laptop-mode-tools ; sudo pacman -Qdtq | pacman -Rs -
-  * $ sudo powerpill -S --noconfirm --needed tlp # Or laptop-mode-tools
+  * $ sudo app-fast -S --noconfirm --needed tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ sudo powerpill -S --noconfirm --needed gvim code fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -R --noconfirm xarchiver
+  * $ sudo app-fast -S --noconfirm --needed gvim code fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -R --noconfirm xarchiver
   * $ yay -S earlyoom
 <!--   * $ yay -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
@@ -140,7 +140,7 @@ Disable Gnome keyring when opening the browser
 
 Install Rime Pinyin IME (Manjaro)
 =====
-* $ sudo powerpill -S --noconfirm --needed fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
+* $ sudo app-fast -S --noconfirm --needed fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
 * Goto fcitx settings, add Rime, remove all other IMEs
 * $ mkdir -p ~/.config/fcitx/rime/
 * $ vim ~/.config/fcitx/rime/default.custom.yaml

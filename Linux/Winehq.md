@@ -6,7 +6,7 @@ Install Wine
 * $ sudo dpkg --add-architecture i386 && sudo apt-fast update
 * $ sudo apt-fast install --install-recommends wine64-development wine64-development-preloader wine64-development-tools winbind cabextract zenity -y && winecfg-development
 * Or
-* $ `sudo powerpill -Sy --needed wine-staging-nine wine-mono wine_gecko cabextract zenity && winecfg`
+* $ `sudo app-fast -Sy --needed wine-staging-nine wine-mono wine_gecko cabextract zenity && winecfg`
 
 Install CJK font
 =====
