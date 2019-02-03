@@ -39,7 +39,7 @@ mkdir $HOME/Debian ; cd $HOME/Debian
 sudo debootstrap --arch amd64 unstable $PWD http://cdn-fastly.deb.debian.org/debian/
 
 echo "deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free" | sudo tee $PWD/etc/apt/sources.list
-sudo install ~/dotfile/Linux/apt-fast $PWD/usr/bin
+sudo install ~/dotfile/app-fast/app-fast $PWD/usr/bin
 
 cd $HOME/Debian
 sudo tar czvf ../deb.tar.gz . # Pack

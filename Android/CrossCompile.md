@@ -28,7 +28,6 @@ export CPPFLAGS="-I$PWD/$NDK_PREFIX/sysroot/usr/include/ -I$PWD/sysroot/usr/incl
 Busybox (arm gcc)
 =====
 ```sh
-#sudo apt-fast install libpam0g-dev libsepol1-dev libselinux1-dev libncurses5-dev libncursesw5-dev -y
 cd android-ndk
 git clone --depth 1 https://github.com/mirror/busybox busybox
 

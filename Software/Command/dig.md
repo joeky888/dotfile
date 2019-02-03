@@ -2,7 +2,7 @@ Install dig
 =====
 * $ apt-cyg install bind-utils
 * OR
-* $ sudo apt-fast install dnsutils
+* $ sudo app-fast install dnsutils
 
 Find out ip of a host
 =====

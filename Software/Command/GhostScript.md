@@ -36,7 +36,7 @@ Convert a input.pdf to greyscale
 Multiple pages pdf to one long page pdf (N-up)
 =====
 * Currently this is not available on Cygwin
-* sudo apt-fast install texlive-extra-utils texlive-latex-recommended --no-install-recommends -y
+* sudo app-fast install texlive-extra-utils texlive-latex-recommended --no-install-recommends -y
 * Vertically
 ```sh
 pdfjam input.pdf --nup 1x2 --no-landscape --outfile merge.pdf
