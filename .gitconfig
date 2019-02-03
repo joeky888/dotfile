@@ -37,7 +37,7 @@
 	quotepath = false
 	ignorecase = false
 	pager = vim +' \
-setlocal gdefault |\
+let gflag = &gdefault ? \"g\" : \"\" |\
 %sm/\\e.\\{-}m//e |\
 setlocal ft=git |\
 setlocal buftype=nofile |\
@@ -48,10 +48,10 @@ exe \"normal! gg\" |\
 hi iBlueInfo ctermfg=0 ctermbg=39 |\
 echo \"aaa\" |\
 redir => aaa |\
-silent exe \"%s/^+//ne\" |\
+silent exe \"%s/^+//ne\" . gflag |\
 redir END |\
 redir => ddd |\
-silent exe \"%s/^-//ne\" |\
+silent exe \"%s/^-//ne\" . gflag |\
 redir END |\
 noh |\
 redraw! |\
