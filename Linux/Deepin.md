@@ -110,9 +110,9 @@ Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
 Packages
 =====
 * Deepin
-  * $ sudo apt-fast install sogoupinyin adb fastboot opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux qpdfview evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
-  * $ sudo apt-fast install tlp -y # For laptop, in case deepin is unable to reboot
-  * $ sudo apt purge tlp -y && sudo apt-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
+  * $ sudo app-fast install sogoupinyin adb fastboot opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux qpdfview evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
+  * $ sudo app-fast install tlp -y # For laptop, in case deepin is unable to reboot
+  * $ sudo apt purge tlp -y && sudo app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * Manjaro
   * $ sudo pacman -Rs vim laptop-mode-tools ; sudo pacman -Qdtq | pacman -Rs -
   * $ sudo app-fast -S --noconfirm --needed tlp # Or laptop-mode-tools
@@ -185,7 +185,7 @@ Nvidia driver
 
 Run Android apk files
 =====
-* $ sudo apt-fast install archon-integration deepin-archon -y
+* $ sudo app-fast install archon-integration deepin-archon -y
 ```sh
 AndroidApkRun(){
   apk=$1
@@ -207,7 +207,7 @@ Install Line
 
 Install conky
 =====
-* $ sudo apt-fast install conky conky-manager -y
+* $ sudo app-fast install conky conky-manager -y
 * $ conky-manager
 
 Unable to remove dock from toolbar

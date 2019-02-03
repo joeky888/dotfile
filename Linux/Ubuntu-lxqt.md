@@ -7,7 +7,7 @@ Get latest ubuntu package
 
 Install LXQT
 =====
-* $ sudo apt-fast install lxqt xorg openbox compton chromium-codecs-ffmpeg-extra shutter opencc vim-gtk3 nomacs network-manager network-manager-gnome file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt-fast purge connman xarchiver vim -y
+* $ sudo app-fast install lxqt xorg openbox compton chromium-codecs-ffmpeg-extra shutter opencc vim-gtk3 nomacs network-manager network-manager-gnome file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge connman xarchiver vim -y
 * $ lxqt-config-appearance # Select dark theme
 
 Disable suspend when closing laptop lid
@@ -20,7 +20,7 @@ HandleLidSwitch=ignore
 
 Transparet background with openbox
 =====
-* $ sudo apt-fast install compton
+* $ sudo app-fast install compton
 * $ ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
 * $ lxqt-config-session
 * Go to Autostart tab and add a new command

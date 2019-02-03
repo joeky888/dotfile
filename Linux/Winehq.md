@@ -1,10 +1,10 @@
 Install Wine
 =====
-* $ sudo apt-fast update
-* $ sudo apt-fast install --install-recommends wine32-development wine32-development-preloader wine32-development-tools winbind cabextract zenity -y && winecfg-development
+* $ sudo app-fast update
+* $ sudo app-fast install --install-recommends wine32-development wine32-development-preloader wine32-development-tools winbind cabextract zenity -y && winecfg-development
 * Or
-* $ sudo dpkg --add-architecture i386 && sudo apt-fast update
-* $ sudo apt-fast install --install-recommends wine64-development wine64-development-preloader wine64-development-tools winbind cabextract zenity -y && winecfg-development
+* $ sudo dpkg --add-architecture i386 && sudo app-fast update
+* $ sudo app-fast install --install-recommends wine64-development wine64-development-preloader wine64-development-tools winbind cabextract zenity -y && winecfg-development
 * Or
 * $ `sudo app-fast -Sy --needed wine-staging-nine wine-mono wine_gecko cabextract zenity && winecfg`
 
@@ -84,7 +84,7 @@ Tab completion
 Install mono or dotnet
 =====
 1. Using Linux Mono
-    * $ sudo apt-fast install --install-recommends mono-complete mono-runtime -y
+    * $ sudo app-fast install --install-recommends mono-complete mono-runtime -y
     * $ mono file.exe
 2. Using winetricks dotnet
     * $ rm -rf ~/.wine
