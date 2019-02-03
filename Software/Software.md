@@ -209,7 +209,7 @@ Mac (Hack-intosh)
 =====
 * Alacritty
 * Hyper
-<!-- * iTerm2 and iTerm2-Color-Schemes -->
+* iTerm2 and iTerm2-Color-Schemes
 * Dr. Unarchiver
 * Homebrew and Homebrew Cask
     * MacVim / VimR
@@ -220,11 +220,9 @@ Mac (Hack-intosh)
 
 Linux
 =====
-* Qupzilla
 * NetworkManager / nmtui
-* shutter
+* Shutter
 * Conky (with weather)
-* alacritty (terminal emulator but it's new, one have to compile it from source)
 * Linuxbrew (package manager without root)
 
 WineHQ
@@ -426,7 +424,7 @@ Experience
 | Git                               |  (2014-)      |
 | Bash                              |  (2014-)      |
 | Zsh                               |  (2015-)      |
-| Fish                              |  (2018-)      |
+| Fish                              |  (2018)       |
 | Tmux                              |  (2015-)      |
 | Docker                            |  (2016-)      |
 | Youtube-dl                        |  (2015-)      |
