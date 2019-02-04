@@ -339,7 +339,7 @@ alias opera-ignoreCrt='opera --ignore-certificate-errors'
 alias opera-developer-ignoreCrt='opera-developer --ignore-certificate-errors'
 alias 7zExtractToFolder='7z -o* x'
 alias watch='watch --color'
-alias transmission-daemon-start-here='transmission-daemon -f -T -w $PWD -a "127.0.0.*,192.168.*.*"'
+alias transmission-daemon-start-here='transmission-daemon -f -T -w $PWD --incomplete-dir $PWD -a "127.0.0.1,192.168.*.*"'
 
 export SUDO=''
 if (( $EUID != 0 )); then
