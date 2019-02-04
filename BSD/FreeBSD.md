@@ -30,7 +30,7 @@ Search and Install ports packages
 * For sudoers
 * $ sudo -E make install clean # -E means preserving env variables
 
-Make pkg faster, and get latest packags
+Make pkg faster, and get latest packages
 =====
 * $ sudoedit /etc/resolv.conf && sudo resolvconf -u
 ```conf
