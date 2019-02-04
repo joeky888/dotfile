@@ -370,7 +370,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 
 
 
-elif [[ "$OSTYPE" == "freebsd"* ]] || [[ "$OSTYPE" == "FreeBSD"* ]]; then # FreeBSD or TrueOS
+elif [[ "$OSTYPE" == "freebsd"* ]] || [[ "$OSTYPE" =~ "FreeBSD" ]]; then # FreeBSD or TrueOS
   export Home="$HOME"
   $SUDO pkg update -f
   $SUDO pkg -y install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip bind-tools
