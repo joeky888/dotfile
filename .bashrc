@@ -831,7 +831,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
   export SUDO=""
-elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
+elif [ "$OSTYPE" =~ "darwin" ]; then # Mac OSX
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
     alias l='gls -lah'
@@ -1212,11 +1212,11 @@ Forever()
 
 OpenFileExplorer()
 {
-  if [[ "$OSTYPE" == "linux-gnu" || "$OSTYPE" == "freebsd"* ]]; then # Linux + FreeBSD
+  if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" =~ "freebsd" ]; then # Linux + FreeBSD
     xdg-open . > /dev/null 2>&1 &!;
-  elif [[ "$OSTYPE" == "msys" || "$OSTYPE" == "cygwin" ]]; then # Windows
+  elif [ "$OSTYPE" == "msys" ] || [ "$OSTYPE" == "cygwin" ]; then # Windows
     explorer.exe .
-  elif [[ "$OSTYPE" == "darwin"* ]]; then # Mac OSX
+  elif [ "$OSTYPE" =~ "darwin" ]; then # Mac OSX
     open .
   else # Unknown OS
     true
