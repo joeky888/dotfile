@@ -148,10 +148,12 @@ INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 OH_MY_ZSH_PATH=$(getModulePath oh-my-zsh)
+APP_FAST_PATH=$(getModulePath app-fast)
 
-[ -n "$GRC_PATH" ]     && export PATH=$GRC_PATH:$PATH
+[ -n "$GRC_PATH" ]       && export PATH=$GRC_PATH:$PATH
 [ -n "$NEOFETCH_PATH" ]  && export PATH=$NEOFETCH_PATH:$PATH
 [ -n "$INXI_PATH" ]      && export PATH=$INXI_PATH:$PATH
+[ -n "$APP_FAST_PATH" ]  && export PATH=$APP_FAST_PATH:$PATH
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=~/node/bin:$PATH
