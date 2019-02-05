@@ -4,6 +4,43 @@ Install without desktop
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
 * $ setup
 
+Pre-install
+=====
+* Windows
+  * Use `dd` mode when burn into the USB drive with rufus
+* Unix
+  * $ sudo fdisk -l
+  * $ sudo dd bs=4M if=/path/to/manjaro.iso of=/dev/sd[drive letter] status=progress
+  * e.g. /dev/sdb
+* When enter to the grub menu, select non-free driver
+* Press `E` to edit boot option
+  * Add boot option `systemd.mask=mhwd-live.service` to the first line
+* Enter boot
+* Before starting the GUI installation
+  * $ sudo nano /usr/lib/calamares/modules/mhwdcfg/main.py
+```python
+Change:
+def run(self):
+  for b in self.bus:
+  for id in self.identifier['net']:
+  self.configure(b, id)
+  for id in self.identifier['video']:
+  self.configure(b, id)
+  return None
+
+To:
+def run(self):
+  return None
+```
+* Now start GUI installation
+
+Install
+=====
+* Format 300MB fat32 to "/boot/efi"
+  * Flag "bootable"
+  * Flag "esp"
+* Format the rest to ext4
+
 Pacman
 =====
 * Upgrade packages
