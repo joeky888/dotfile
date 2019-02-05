@@ -274,7 +274,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 
 
-elif [ "$OSTYPE" =~ "darwin" ]; then # Mac OSX
+elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
   export Home="$HOME"
   export SUDO=""
   [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
