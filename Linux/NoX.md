@@ -14,7 +14,7 @@ Install Fbterm
 * $ grub> vbeinfo # Or videoinfo
 * Pick one from stdout, ex: 1024x768x16
 * $ grub> reboot
-* $ sudoedit /etc/default/grub && sudo update-grub && sudo update-grub2
+* $ sudoedit /etc/default/grub && sudo update-grub
 ```conf
 # In this order
 GRUB_CMDLINE_LINUX_DEFAULT="nomodeset"

@@ -47,4 +47,4 @@ Install Nvidia driver (Epic fail!!)
 * $ sudo rm /etc/X11/xorg.conf
 * $ sudo nvidia-xconfig
 * $ sudo optirun nvidia-settings -c :8
-* $ sudo update-grub && sudo update-grub2
+* $ sudo update-grub
