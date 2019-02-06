@@ -1,5 +1,6 @@
 Install
 =====
+* $ app-fast -S chrpath
 * $ pip3 install nuitka
 
 Usage
