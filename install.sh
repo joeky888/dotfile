@@ -336,13 +336,13 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
   pacman -R catgets libcatgets --noconfirm
-  pacman -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 python3-pip --noconfirm --needed
+  app-fast -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 python3-pip --noconfirm --needed
 #   sed -i '/XferCommand/d' /etc/pacman.conf
 #   sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 %u' /etc/pacman.conf
   sed -i '/./d' /etc/fstab
   echo 'C:/Users /home ntfs binary,noacl,auto 1 1' >> /etc/fstab
   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-  pacman -S mingw-w64-x86_64-aria2 --noconfirm --needed
+  app-fast -S mingw-w64-x86_64-aria2 --noconfirm --needed
 #   pacman -S mingw-w64-x86_64-toolchain --noconfirm
 #   InstallGRC # Windows can not use python os.fork()
   InstallPy3UTF8
