@@ -1,4 +1,4 @@
-FROM archimg/base:latest
+FROM archlinux/base:latest
 
 ################
 #              #
