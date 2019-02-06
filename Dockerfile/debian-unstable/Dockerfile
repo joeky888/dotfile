@@ -14,4 +14,4 @@ CMD ["bash"]
 
 # docker build . -t debian:joeky
 # docker run --name deb --net host -it debian:joeky bash
-
+# docker cp ~/dotfile/app-fast/app-fast deb:/bin/
