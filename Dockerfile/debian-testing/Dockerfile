@@ -17,3 +17,5 @@ CMD ["bash"]
 # docker build . -t debian:joeky
 # docker run --name deb --net host -it debian:joeky bash
 # docker cp ~/dotfile/app-fast/app-fast deb:/bin/
+# docker cp ~/dotfile/.bashrc deb:/root/
+# docker cp ~/dotfile/vimrc/.vimrc deb:/root/

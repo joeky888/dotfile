@@ -20,3 +20,5 @@ ENV EDITOR vim
 # docker build . -t ubuntu:joeky
 # docker run --name u1 --net host -it ubuntu:joeky bash
 # docker cp ~/dotfile/app-fast/app-fast u1:/bin/
+# docker cp ~/dotfile/.bashrc u1:/root/
+# docker cp ~/dotfile/vimrc/.vimrc u1:/root/

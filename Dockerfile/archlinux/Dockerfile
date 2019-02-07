@@ -86,3 +86,5 @@ SHELL ["/bin/bash"]
 # docker build . -t arch:joeky
 # docker run --name arch --net host -it arch:joeky bash
 # docker cp ~/dotfile/app-fast/app-fast arch:/bin/
+# docker cp ~/dotfile/.bashrc arch:/root/
+# docker cp ~/dotfile/vimrc/.vimrc arch:/root/
