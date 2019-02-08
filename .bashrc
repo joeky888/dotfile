@@ -95,9 +95,9 @@ function getCondaPath()
   echo ""
 }
 
-CONDA_2=$(getCondaPath 2)
+export CONDA_2=$(getCondaPath 2)
 
-if [ -n $CONDA_2 ]; then
+if [ -n "$CONDA_2" ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2=$(echo $CONDA_2/bin/conda)
   alias pip2=$(echo $CONDA_2/bin/pip)
@@ -105,9 +105,9 @@ if [ -n $CONDA_2 ]; then
   upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
-CONDA_3=$(getCondaPath 3)
+export CONDA_3=$(getCondaPath 3)
 
-if [ -n $CONDA_3 ]; then
+if [ -n "$CONDA_3" ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3=$(echo $CONDA_3/bin/conda)
   alias pip3=$(echo $CONDA_3/bin/pip)
