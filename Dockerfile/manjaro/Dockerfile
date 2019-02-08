@@ -1,4 +1,4 @@
-FROM archlinux/base:latest
+FROM carterjones/manjaro:latest
 
 ################
 #              #
@@ -15,13 +15,9 @@ RUN echo $'[ownstuff]\n\
 SigLevel = Never\n\
 Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.conf
 
-RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring vim yay
-# Arch Linux Pacman Mirrorlist Generator
+RUN pacman -Sy --noconfirm --needed sed gzip curl archlinuxcn-keyring vim yay
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' | tee /etc/pacman.d/mirrorlist.bak"
-RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist.bak
-RUN cat /etc/pacman.d/mirrorlist.bak
-RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/mirrorlist"
+RUN pacman-mirrors --country "Taiwan,China"
 
 
 #####################
@@ -83,8 +79,8 @@ ENV EDITOR vim
 
 SHELL ["/bin/bash"]
 
-# docker build . -t arch:joeky
-# docker run --name arch --net host -it arch:joeky bash
-# docker cp ~/dotfile/app-fast/app-fast arch:/bin/
-# docker cp ~/dotfile/.bashrc arch:/root/
-# docker cp ~/dotfile/vimrc/.vimrc arch:/root/
+# docker build . -t mj:joeky
+# docker run --name mj --net host -it mj:joeky bash
+# docker cp ~/dotfile/app-fast/app-fast mj:/bin/
+# docker cp ~/dotfile/.bashrc mj:/root/
+# docker cp ~/dotfile/vimrc/.vimrc mj:/root/
