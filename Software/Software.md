@@ -243,6 +243,7 @@ Android
     * Video Speed Controller
     * User Agent Switcher (by Alexander Schlarb)
     * Absolute Enable Right Click & Copy
+* Opera browser beta
 * Clock by Google
 * Facebook Messenger
 * LINE
