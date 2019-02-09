@@ -531,11 +531,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     source $ZSH/oh-my-zsh.sh
     compdef vman=man # Complete vman as man command
     compdef Forever=sudo # Complete Forever as sudo command
-    [ $(command -v pacman) ] && compdef powerpill=pacman && \
-      compdef yaourt=pacman && \
-      compdef yay=pacman
     [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
-    [ $(command -v pacman) ] && compdef apt-fast=pacman && compdef app-fast=pacman # Complete apt-fast as apt command
+    [ $(command -v pacman) ] && compdef yay=pacman && compdef app-fast=pacman # Complete app-fast as pacman command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
     unalias -m '*' # Remove all aliases
