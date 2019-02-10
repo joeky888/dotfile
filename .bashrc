@@ -255,6 +255,7 @@ alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/str
 alias upgradeAnnie='go get -insecure -u -v github.com/iawia002/annie'
 alias upgradeBaiduPCS='go get -insecure -u -v github.com/iikira/BaiduPCS-Go'
 alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
+alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getNtust='you-get -x 140.118.31.62:3128'
