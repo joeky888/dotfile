@@ -27,7 +27,7 @@ RUN pacman-mirrors --country "Taiwan,China"
 #####################
 
 RUN bash -c "pacman -Qdtq | pacman -Rs --noconfirm - || echo ok"
-RUN rm -rf /var/cache/pacman/pkg/*
+RUN pacman -Scc --noconfirm
 
 #######################
 #                     #

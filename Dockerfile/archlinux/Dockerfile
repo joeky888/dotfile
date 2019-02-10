@@ -31,7 +31,7 @@ RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/
 #####################
 
 RUN bash -c "pacman -Qdtq | pacman -Rs --noconfirm - || echo ok"
-RUN rm -rf /var/cache/pacman/pkg/*
+RUN pacman -Scc --noconfirm
 
 #######################
 #                     #
