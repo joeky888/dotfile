@@ -291,12 +291,12 @@ alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias streamlink-mpv="streamlink -p mpv --default-stream best"
-alias streamlink-mpv-1080p="streamlink -p mpv --default-stream 1080p"
-alias streamlink-mpv-720p="streamlink -p mpv --default-stream 720p"
-alias streamlink-mpv-480p="streamlink -p mpv --default-stream 480p"
-alias mpv-1080p='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
-alias mpv-720p='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
-alias mpv-480p='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
+alias streamlink-mpv-1080="streamlink -p mpv --default-stream 1080p"
+alias streamlink-mpv-720="streamlink -p mpv --default-stream 720p"
+alias streamlink-mpv-480="streamlink -p mpv --default-stream 480p"
+alias mpv-1080='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
+alias mpv-720='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
+alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
