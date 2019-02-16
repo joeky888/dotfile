@@ -258,7 +258,6 @@ alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
 alias sudoRoot='sudo -H ' # $HOME = /root
 alias sudoUser='sudo -E ' # $HOME = /home/$USER
-alias you-getNtust='you-get -x 140.118.31.62:3128'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=4 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
@@ -276,8 +275,6 @@ if hash aria2c 2>/dev/null >/dev/null ; then
 else
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors'
 fi
-alias curl-asus-proxy-kungfu='curl -x 10.78.20.186:3128 -U kungfu:howkungfu'
-alias curl-asus-proxy-zscaler='curl -x gateway.zscaler.net:80'
 alias which='which -a'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30]+bestaudio/best'"
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30]+bestaudio/best'"
@@ -292,11 +289,7 @@ alias youtube-dl-auto-sub="youtube-dl --write-auto-sub"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
-alias youtube-dlNtust='youtube-dl --proxy 140.118.31.62:3128'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias youtube-dl-asus-proxy-kungfu='youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu"'
-alias youtube-dl-asus-proxy-zscaler='youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader-args "-c -s16 -k1M -x16 -j16 --enable-rpc=false --all-proxy=gateway.zscaler.net:80"'
-alias youtube-dl-asus-crt='command youtube-dl --no-check-certificate --write-sub --all-subs --embed-subs --external-downloader aria2c --external-downloader-args "--check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16" -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors'
 alias streamlink-mpv="streamlink -p mpv --default-stream best"
 alias streamlink-mpv-1080p="streamlink -p mpv --default-stream 1080p"
 alias streamlink-mpv-720p="streamlink -p mpv --default-stream 720p"
@@ -304,9 +297,6 @@ alias streamlink-mpv-480p="streamlink -p mpv --default-stream 480p"
 alias mpv-1080p='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
 alias mpv-720p='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
 alias mpv-480p='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
-alias aria2c-asus-proxy-kungfu='aria2c --all-proxy=kungfu:howkungfu@10.78.20.186:3128 --all-proxy-user=kungfu --all-proxy-passwd=howkungfu'
-alias aria2c-asus-proxy-zscaler='aria2c --all-proxy=gateway.zscaler.net:80'
-alias aria2c-asus-crt='command aria2c --check-certificate=true --ca-certificate=$HOME/Documents/asus.com.crt -c -s16 -k1M -x16 -j16'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
@@ -327,7 +317,6 @@ fi
 alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
-alias ssh-asus-inside='ssh joeky@10.78.20.186'
 alias ssh-asus-ml='ssh joeky@zenboml-api.eastasia.cloudapp.azure.com'
 alias ssh-asus-temp='ssh -p 50022 joeky@contextualintelligence-temp.southeastasia.cloudapp.azure.com'
 alias ssh-asus-jump='ssh -p 22681 chungyi@ai800mjp01.southeastasia.cloudapp.azure.com'
@@ -361,11 +350,7 @@ elif $(echo | grep --exclude=.cvs "" > /dev/null 2>&1); then
 fi
 alias grep="grep $GREP_OPTIONS"
 
-proxyNtust() { export http_proxy="140.118.31.62:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
-proxyAsusZscaler() { export http_proxy="gateway.zscaler.net:80" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
-proxyAsusInToOut() { export http_proxy="kungfu:howkungfu@10.78.20.186:3128" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
-proxyAsusOutToIn() { export http_proxy="kungfu:howkungfu@ceasar.dlinkdns.com:5566" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
 EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && export LC_NUMERIC="zh_TW.Big5" && export LC_TIME="zh_TW.Big5" && export LC_COLLATE="zh_TW.Big5" && export LC_MONETARY="zh_TW.Big5" && export LC_MESSAGES="zh_TW.Big5" && export LC_ALL="zh_TW.Big5" ;}
