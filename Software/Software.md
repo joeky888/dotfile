@@ -249,7 +249,6 @@ Android
 * Facebook Messenger
 * LINE
 * Skype
-* Barcode Scanner ZXing
 * Sogou input method / Trime(同文)
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
@@ -272,7 +271,9 @@ Android
 * tw.gov.invoice
 * F-Droid
     * OpenLauncher
+    * MaterialOS Icon Pack
     * Firefox Klar (5.0+) / Fennec (4.1+)
+    * Barcode Scanner ZXing
     * Newpipe
     * YalpStore
     * Your local weather
