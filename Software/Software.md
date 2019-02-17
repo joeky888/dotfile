@@ -245,6 +245,7 @@ Android
     * Absolute Enable Right Click & Copy
 * Opera browser beta
 * Clock by Google
+* Gmail
 * Facebook Messenger
 * LINE
 * Skype
