@@ -301,10 +301,6 @@ alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent=
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
-alias bypy-processes-2='bypy --processes 2'
-alias bypy-processes-4='bypy --processes 4'
-alias bypy-processes-8='bypy --processes 8'
-alias bypy-processes-16='bypy --processes 16'
 alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
 alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
@@ -318,10 +314,6 @@ alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 alias ssh-asus-ml='ssh joeky@zenboml-api.eastasia.cloudapp.azure.com'
-alias ssh-asus-temp='ssh -p 50022 joeky@contextualintelligence-temp.southeastasia.cloudapp.azure.com'
-alias ssh-asus-jump='ssh -p 22681 chungyi@ai800mjp01.southeastasia.cloudapp.azure.com'
-alias ssh-asus-rtc='ssh -p 30022 joeky@sprtc-dev.eastasia.cloudapp.azure.com'
-alias ssh-asus-sip='ssh -p 35622 joeky@adatestsip.southeastasia.cloudapp.azure.com'
 alias ptt-ssh='ssh bbsu@ptt.cc'
 alias ptt-telnet-443='telnet ptt.cc 443'
 alias ptt-telnet-3000='telnet ptt.cc 3000'
@@ -338,17 +330,17 @@ if (( $EUID != 0 )); then
   export SUDO='sudo'
 fi
 
-export GREP_OPTIONS=""
+export GREP_ARGS=""
 if $(echo | grep --color=auto "" > /dev/null 2>&1); then
-  export GREP_OPTIONS="$GREP_OPTIONS --color=auto"
+  export GREP_ARGS="$GREP_ARGS --color=auto"
 fi
 export VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
 if $(echo | grep --exclude-dir=.cvs "" > /dev/null 2>&1); then
-  export GREP_OPTIONS="$GREP_OPTIONS --exclude-dir=$VCS_FOLDERS"
+  export GREP_ARGS="$GREP_ARGS --exclude-dir=$VCS_FOLDERS"
 elif $(echo | grep --exclude=.cvs "" > /dev/null 2>&1); then
-  export GREP_OPTIONS="$GREP_OPTIONS --exclude=$VCS_FOLDERS"
+  export GREP_ARGS="$GREP_ARGS --exclude=$VCS_FOLDERS"
 fi
-alias grep="grep $GREP_OPTIONS"
+alias grep="grep $GREP_ARGS"
 
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
@@ -368,8 +360,6 @@ upgradeDotfile() {
 #   git submodule update --init --recursive --remote --merge
   git -C ~/dotfile submodule update --init
   git -C ~/dotfile submodule foreach git pull origin master
-
-#   cd - ;
 
   rm -rf ~/.bashrc
   rm -rf ~/.bash_profile
@@ -508,7 +498,6 @@ git_branch_info() {
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME=""
-#   plugins=($(find $ZSH/plugins -maxdepth 1 -printf "%f "))
   plugins=(git docker docker-compose adb golang)
   DISABLE_AUTO_UPDATE="true"
   if [ -n "$OH_MY_ZSH_PATH" ]; then
@@ -570,8 +559,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
     export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="➜  "
 
-#     export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
-#     export POWERLEVEL9K_COLOR_SCHEME='light'
     source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
   else
     update_prompt() {
@@ -662,7 +649,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
   unsetopt AUTOCD # Don't cd to the directory by just typing its name
   setopt INC_APPEND_HISTORY # Use bash-like history
-  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check`"
+  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
@@ -722,7 +709,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
       source $f
     done
   fi
-  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check`"
+  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check | sed 's/\r//'`"
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   shopt -s histappend # Append history
   shopt -s checkwinsize # Checks the window size after each command
