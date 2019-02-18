@@ -28,7 +28,7 @@ Extension
 =====
 * HookyQR.beautify
 * hoovercj.vscode-power-mode
-* streetsidesoftware.code-spell-checker
+* ms-vscode.go
 
 Key
 =====
@@ -108,6 +108,6 @@ Typscript auto completion
 
 Golang auto completion
 =====
-* Install vscode-go extension
+* Install ms-vscode.go extension
 * Install all recommend go packages from vscode-go
 * Enable auto-save
