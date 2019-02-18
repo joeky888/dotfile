@@ -7,6 +7,7 @@ Post-installed
 =====
 * System Preferences -> Dock -> Automatically hide and show the Dock -> Check
 * System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
+* System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
 * Enable Mojave dark theme
 * $ brew cask install hyper xnviewmp visual-studio-code mpv phantomjs opera google-chrome skype teamviewer obs krita font-iosevka font-ubuntu # spectacle
 
