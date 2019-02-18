@@ -22,6 +22,7 @@ nameserver 114.114.114.114
 
 Hyper terminal
 =====
+* $ hyper i hyperocean
 * $ vim ~/.hyper.js
 ```js
 css: `
