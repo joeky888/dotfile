@@ -22,12 +22,14 @@ nameserver 114.114.114.114
 
 Hyper terminal
 =====
+* $ vim ~/.hyper.js
 ```js
 css: `
   .xterm {
     cursor: default;
   }
   `,
+fontFamily: 'Iosevka, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 colors: {
   black:          '#1B1D1E',
   red:            '#E90000',
