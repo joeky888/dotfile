@@ -810,9 +810,8 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
     alias ls='ls -G'
   fi
   alias grep='grep --color=auto'
-  if [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ]; then
-    export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
-  fi
+  [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
+  [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export SUDO=""
