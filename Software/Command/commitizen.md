@@ -5,4 +5,4 @@ Install
 Usage
 =====
 * $ git add --all
-* $ git cz
+* $ git cz # Replace git commit
