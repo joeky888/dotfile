@@ -217,21 +217,6 @@ if [[ -d "/opt/bin" ]]; then
   export PATH=$PATH:/opt/bin
 fi
 
-if [[ -d "/usr/local/opt/coreutils/libexec/gnubin" ]]; then
-  # This is for mac
-  export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-fi
-
-if [[ -d "/usr/local/opt/coreutils/libexec/gnuman" ]]; then
-  # This is for mac
-  export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-fi
-
-if [[ -d "/usr/local/opt/grep/libexec/gnubin" ]]; then
-  # This is for mac
-  export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-fi
-
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
@@ -815,6 +800,10 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
     alias ls='ls -G'
   fi
   alias grep='grep --color=auto'
+  [ -d "/usr/local/opt/coreutils/libexec/gnubin" ] && export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+  [ -d "/usr/local/opt/coreutils/libexec/gnuman" ] && export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
+  [ -d "/usr/local/opt/grep/libexec/gnubin" ]      && export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
+  [ -d "/usr/local/opt/findutils/libexec/gnubin" ] && export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
   [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
   [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
