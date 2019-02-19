@@ -1,6 +1,7 @@
 Install
 =====
-* $ npm i -g commitizen
+* $ npm i -g commitizen cz-conventional-changelog
+* $ echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
 
 Usage
 =====
