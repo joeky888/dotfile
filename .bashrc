@@ -805,6 +805,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
   [ -d "/usr/local/opt/grep/libexec/gnubin" ]      && export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
   [ -d "/usr/local/opt/findutils/libexec/gnubin" ] && export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
   [ -d "/usr/local/opt/file-formula/bin" ] && export PATH="/usr/local/opt/file-formula/bin:$PATH"
+  [ -d "/usr/local/opt/gnu-sed/libexec/gnubin" ] && export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
   [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
   [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
