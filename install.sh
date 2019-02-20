@@ -282,8 +282,8 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
   brew install git aria2
   InstallDotfile
 
-  install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
-  /usr/local/bin/app-fast install vim coreutils grep findutils file-formula gnu-sed make automake autoconf ffmpeg tig tmux p7zip htop watch atool
+#   install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
+  ~/dotfile/app-fast/app-fast install vim coreutils grep findutils file-formula gnu-sed make automake autoconf wget ffmpeg tig tmux p7zip htop watch atool
 
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
