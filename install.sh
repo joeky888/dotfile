@@ -283,7 +283,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
   InstallDotfile
 
 #   install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
-  ~/dotfile/app-fast/app-fast install vim coreutils grep findutils file-formula gnu-sed make automake autoconf wget ffmpeg tig tmux p7zip htop watch atool
+  ~/dotfile/app-fast/app-fast install vim coreutils grep findutils file-formula gnu-sed make automake autoconf wget ffmpeg tig tmux p7zip htop watch atool nmap
 
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
