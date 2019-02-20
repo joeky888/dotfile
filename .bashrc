@@ -800,13 +800,20 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
     alias ls='ls -G'
   fi
   alias grep='grep --color=auto'
-  [ -d "/usr/local/opt/coreutils/libexec/gnubin" ] && export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-  [ -d "/usr/local/opt/coreutils/libexec/gnuman" ] && export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-  [ -d "/usr/local/opt/grep/libexec/gnubin" ]      && export PATH="/usr/local/opt/grep/libexec/gnubin:$PATH"
-  [ -d "/usr/local/opt/findutils/libexec/gnubin" ] && export PATH="/usr/local/opt/findutils/libexec/gnubin:$PATH"
-  [ -d "/usr/local/opt/file-formula/bin" ] && export PATH="/usr/local/opt/file-formula/bin:$PATH"
-  [ -d "/usr/local/opt/gnu-sed/libexec/gnubin" ] && export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-  [ -d "/usr/local/opt/make/libexec/gnubin" ] && export PATH="/usr/local/opt/make/libexec/gnubin:$PATH"
+
+  for tool in /usr/local/opt/*/bin; do
+    export PATH="$tool:$PATH"
+  done
+  for tool in /usr/local/opt/*/libexec/gnubin; do
+    export PATH="$tool:$PATH"
+  done
+  for m in /usr/local/opt/*/share/man; do
+    export MANPATH="$m:$MANPATH"
+  done
+  for m in /usr/local/opt/*/libexec/gnuman; do
+    export MANPATH="$m:$MANPATH"
+  done
+
   [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
   [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
