@@ -29,8 +29,12 @@ Check a port is open or not on the host
 =====
 * $ nmap 192.168.0.1 -p 5901
 
-Scan all open port on the host
+Scan all open ports on the host
 =====
 * $ nmap -p- 192.168.0.1
 * Or
 * $ nmap -Pn -p- 192.168.0.1
+
+Scan a range of ports on the host
+=====
+* $ nmap -p 1025-9999 127.0.0.1
