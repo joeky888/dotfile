@@ -69,7 +69,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 sudo pacman -Syy && sudo app-fast -S --noconfirm --needed archlinuxcn-keyring
-sudo app-fast -S --noconfirm --needed teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term
+sudo app-fast -S --noconfirm --needed teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term ttf-iosevka
 ```
 
 Unstable and testing package (Manjaro)
