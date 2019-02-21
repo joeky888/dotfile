@@ -96,12 +96,18 @@ Multiple service in a container using Supervisord
 
 [supervisord]
 nodaemon=true
+stdout_logfile=/dev/stdout
+stderr_logfile=/dev/stderr
+stdout_events_enabled=true
 
 [program:xvfb]
 command=/usr/bin/Xvfb :1 -screen 0 1024x768x16
 autorestart=true
 user=root
 priority=100
+stdout_logfile=/dev/stdout
+stderr_logfile=/dev/stderr
+stdout_events_enabled=true
 
 [program:cube]
 environment =
@@ -112,4 +118,7 @@ command=sh -c "sleep 30s; /usr/bin/wine64 /cube/Server.exe"
 autorestart=true
 user=root
 priority=200
+stdout_logfile=/dev/stdout
+stderr_logfile=/dev/stderr
+stdout_events_enabled=true
 ```
