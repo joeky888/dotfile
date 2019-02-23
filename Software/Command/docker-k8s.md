@@ -1,0 +1,24 @@
+Minikube
+=====
+* Install virtualbox, kubectl and minikube
+```sh
+# docker pull
+minikube start --vm-driver=virtualbox
+
+# docker run
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+
+# docker ps -a
+kubectl get pod
+
+# docker exec container cat /etc/hostname
+kubectl exec podName -- cat /etc/hostname
+
+# docker logs -f container
+kubectl logs -f podName
+
+# docker rm and docker stop
+kubectl delete deployment hello-minikube
+kubectl delete pod hello-minikube-6fd785d459-dmr7x
+```
+
