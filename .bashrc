@@ -490,7 +490,7 @@ git_branch_info() {
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME=""
-  plugins=(git docker docker-compose adb golang)
+  plugins=(git docker docker-compose adb golang kubectl)
   DISABLE_AUTO_UPDATE="true"
   if [ -n "$OH_MY_ZSH_PATH" ]; then
     export ZSH=$OH_MY_ZSH_PATH
