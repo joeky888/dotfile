@@ -354,16 +354,19 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export SUDO=''
   export Home="$HOME"
-  apt update && apt upgrade
+
+  apt update
   termux-setup-storage
-  apt install -y man vim micro git tig zsh tmux curl aria2 bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
-  apt install -y tar wget clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
-  apt install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
+  apt install -y git aria2
   InstallDotfile
+  ~/dotfile/app-fast/app-fast full-upgrade -y
+  ~/dotfile/app-fast/app-fast install -y man vim micro git tig zsh tmux curl aria2 bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
+  ~/dotfile/app-fast/app-fast install -y tar wget clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
+  ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
   InstallPy3UTF8
   InstallGRC
-  apt install -y proot bsdtar
+  ~/dotfile/app-fast/app-fast install -y proot bsdtar
   #InstallAlpine
 
 
