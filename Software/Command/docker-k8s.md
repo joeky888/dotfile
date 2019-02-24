@@ -26,7 +26,10 @@ kubectl delete deployment hello-minikube
 kubectl delete pod hello-minikube-6fd785d459-dmr7x
 
 # Get all clusters
-kubectl get service
+kubectl get service -o wide
+
+# Get all nodes
+kubectl get node -o wide
 
 # docker-compose up -d -f service.yml
 kubectl create -f ./service.yml
