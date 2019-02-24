@@ -520,6 +520,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle '*' single-ignored show # Don't show menu when there is only one match
 #     zstyle ':completion:*' list-colors "exfxcxdxbxegedabagacad" # Popup colors
 #     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
+    [ $(command -v kubectl) ] && source <(kubectl completion zsh)
   fi
   export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:';
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
@@ -704,6 +705,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     done
   fi
   [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check | sed 's/\r//'`"
+  [ $(command -v kubectl) ] && source <(kubectl completion bash)
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   shopt -s histappend # Append history
   shopt -s checkwinsize # Checks the window size after each command
