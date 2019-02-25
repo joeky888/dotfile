@@ -30,6 +30,10 @@ Outlook style
 * Alt+V -> Layout -> Vertical View
 * Preference -> Privicy -> Allow remote content in messeges -> Check
 
+Dark theme
+=====
+* Install TT DeepDark theme
+
 Signatures
 =====
 * Press Alt key -> Tools -> Account Settings -> Signature text
