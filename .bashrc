@@ -39,7 +39,7 @@ TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
-  [ $(command -v xrdb)] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+  [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   # echo -e -n "\x1b[\x30 q" # changes to blinking block
   # echo -e -n "\x1b[\x31 q" # changes to blinking block also
