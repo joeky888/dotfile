@@ -220,6 +220,8 @@ if [[ -d "/opt/bin" ]]; then
   export PATH=$PATH:/opt/bin
 fi
 
+[ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH" # macOS homebrew
+
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
@@ -799,7 +801,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
   export SUDO=""
-elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
+elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
     alias l='ls -lah'
@@ -1197,7 +1199,7 @@ OpenFileExplorer()
     xdg-open . > /dev/null 2>&1 &!;
   elif [ "$OSTYPE" == "msys" ] || [ "$OSTYPE" == "cygwin" ]; then # Windows
     explorer.exe .
-  elif echo "$OSTYPE" | grep -q "darwin" ; then # Mac OSX
+  elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
     open .
   else # Unknown OS
     true
