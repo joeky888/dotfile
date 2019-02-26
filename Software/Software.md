@@ -423,6 +423,7 @@ Experience
 | Manjaro Linux                     |  (2018-)      |
 | Alpine Linux                      |  (2018-)      |
 | FreeBSD                           |  (2017-)      |
+| macOS                             |  (2019-)      |
 | Docker                            |  (2018-)      |
 | Git                               |  (2014-)      |
 | Bash                              |  (2014-)      |
@@ -433,6 +434,7 @@ Experience
 | Youtube-dl                        |  (2015-)      |
 | You-get                           |  (2016-)      |
 | FFmpeg                            |  (2015-)      |
+| Qemu                              |  (2017-)      |
 | Sublime Text                      |  (2014-2015)  |
 | Adobe Brackets                    |  (2015-2016)  |
 | Vim                               |  (2016-)      |
