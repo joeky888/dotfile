@@ -6,6 +6,22 @@ go tool dist list -json
 vim go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
 ```
 
+Go mod (Golang >= 1.11)
+=====
+* $ export GO111MODULE=on
+* $ go mod init
+* $ go mod download
+
+Build go project in dockerfile
+=====
+```dockerfile
+RUN mkdir -p $GOPATH/src/myproject
+WORKDIR $GOPATH/src/myproject
+ADD . .
+RUN go get -d ./...
+RUN go build -o /bin/myexe
+```
+
 Static compile
 =====
 ```sh
