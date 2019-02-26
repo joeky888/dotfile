@@ -35,9 +35,10 @@ emulator() {
     pid=$(ps -h -o ppid -p $pid 2>/dev/null)
     ps -h -o comm -p $pid 2>/dev/null;
 }
+TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [[ "$(emulator)" == "xterm" ]] || [[ "$(emulator)" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
+if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb)] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   # echo -e -n "\x1b[\x30 q" # changes to blinking block
