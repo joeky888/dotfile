@@ -5,3 +5,9 @@ Install qemu and kvm (Failed)
 * $ brew services start libvirt
 * Rerestart macOS
 * $ brew services list
+
+HVF (TODO)
+=====
+* Use `qemu -accel hvf`
+* $ app-fast install qemu
+
