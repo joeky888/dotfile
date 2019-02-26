@@ -12,9 +12,14 @@ Go mod (Golang >= 1.11)
 * $ go mod init
 * $ go mod download
 
-Build go project in dockerfile
+Build go project in dockerfile (Assume the dockerfile is on the root of the project)
 =====
 ```dockerfile
+ENV GOPATH /go
+ENV CGO_ENABLED 0
+RUN go get -u -v github.com/golang/dep/cmd/dep
+ENV GO111MODULE on
+
 RUN mkdir -p $GOPATH/src/myproject
 WORKDIR $GOPATH/src/myproject
 ADD . .
