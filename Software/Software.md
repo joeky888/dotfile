@@ -80,6 +80,7 @@ CLI
     * rclone - Google drive (and more) client
     * autopprof - Easy-to-use performance profiler
     * go-freelan - freelan-compatible implementation
+    * caddy - apache/nginx alternative
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
