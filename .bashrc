@@ -501,6 +501,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
     [ $(command -v pacman) ] && compdef yay=pacman && compdef app-fast=pacman # Complete app-fast as pacman command
+    [ $(command -v brew) ] && compdef app-fast=brew # Complete app-fast as pacman command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
     unalias -m '*' # Remove all aliases
