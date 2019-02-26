@@ -289,6 +289,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
   brew tap homebrew/cask
   brew tap homebrew/cask-fonts
   brew tap homebrew/cask-versions
+  brew tap beeftornado/rmtree
 #   brew tap homebrew/cask-drivers
   InstallMiniconda MacOSX
   InstallPy3UTF8
