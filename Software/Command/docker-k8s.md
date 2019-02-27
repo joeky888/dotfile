@@ -1,6 +1,6 @@
 Minikube
 =====
-* Install virtualbox, kubectl and minikube
+* Install virtualbox, kubectl, minikube and helm
 ```sh
 # docker pull
 minikube start --vm-driver=virtualbox
