@@ -3,7 +3,8 @@ Install without desktop
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
 * $ setup
-* Use cfdisk for partitions
+* Use cfdisk for partitions, add bootable flag
+* Install networkmanager
 
 Pre-install
 =====
