@@ -3,9 +3,15 @@ Install without desktop
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
 * $ setup
-* Use cfdisk for partitions, add bootable flag
+* Partitions
+  * Select "Automatical partitioning"
+  * Select "Partition Disk" again
+  * Use cfdisk for partitions, add bootable flag
+* Don't use pacman-mirrors, it will take a lot of time
+* Don't install yay and base-devl, it will take a lot of time
 * Install networkmanager
 * Set root password and add an user
+* $ sudo systemctl enable NetworkManager && sudo systemctl restart NetworkManager
 
 Pre-install
 =====
