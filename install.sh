@@ -201,7 +201,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO apt install -y git aria2
     InstallDotfile
     $SUDO install ~/dotfile/app-fast/app-fast /usr/bin/app-fast
-    $SUDO app-fast install vim tmux zsh curl bash-completion -y
+    app-fast install vim tmux zsh curl bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
     $SUDO pacman -S git aria2 --noconfirm --needed
@@ -212,7 +212,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO sed -i '/Color/d' /etc/pacman.conf
     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
 #     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
-    $SUDO app-fast -S vim tmux zsh curl bash-completion yay --noconfirm --needed
+    app-fast -S vim tmux zsh curl bash-completion yay --noconfirm --needed
   else
     echo "Distro does not support at this moment."
     exit 1
@@ -234,10 +234,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
 #   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
-    $SUDO app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
-    $SUDO app-fast install libssl-dev -y
+    app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
+    app-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    $SUDO app-fast -S --noconfirm --needed p7zip base-devel command-not-found nano ffmpeg atool fontconfig traceroute openssl net-tools iproute2 bind-tools python3 wget tig upx htop
+    app-fast -S --noconfirm --needed p7zip base-devel command-not-found nano ffmpeg atool fontconfig traceroute openssl net-tools iproute2 bind-tools python3 wget tig upx htop
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf

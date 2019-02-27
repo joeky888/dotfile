@@ -3,7 +3,7 @@
 
 Setup
 =====
-* $ sudo app-fast install pidgin-libnotify -y
+* $ app-fast install pidgin-libnotify -y
 * Tools -> Plugins -> History -> Check
 * Tools -> Plugins -> Message Notification -> Check -> Configure Plugin
     * Check "Raise conversation"
@@ -13,7 +13,7 @@ Setup
 
 Connect to Skype for business (AKA Lync)
 =====
-* $ sudo app-fast install pidgin-sipe -> Add
+* $ app-fast install pidgin-sipe -> Add
     * Chage Protocol to "Office Communicator"
     * Username -> `Joeky_Zhan@asus.com`
     * Login -> `ASUS\Joeky_Zhan`

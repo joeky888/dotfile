@@ -11,7 +11,7 @@ sudo chroot $HOME/Alpine /bin/bash -l
 Arch / Manjaro (Failed)
 =====
 ```sh
-sudo app-fast -S arch-install-scripts
+app-fast -S arch-install-scripts
 mkdir $HOME/Arch
 
 sudo pacstrap -cdGM $HOME/Arch base filesystem pacman linux
@@ -29,7 +29,7 @@ sudo tar zxvf arch.tar.gz -C $HOME/Arch # Unpack
 Debian
 =====
 ```sh
-sudo app-fast -S debootstrap
+app-fast -S debootstrap
 
 mkdir $HOME/Debian ; cd $HOME/Debian
 

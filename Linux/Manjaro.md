@@ -44,7 +44,7 @@ Install
 Pacman
 =====
 * Upgrade packages
-    * $ sudo app-fast -Syyu ; sudo pacman -Rsc $(pacman -Qdtq)
+    * $ app-fast -Syyu ; sudo pacman -Rsc $(pacman -Qdtq)
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
@@ -68,8 +68,8 @@ SigLevel = Never
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
-sudo pacman -Syy && sudo app-fast -S --noconfirm --needed archlinuxcn-keyring
-sudo app-fast -S --noconfirm --needed teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term ttf-iosevka
+sudo pacman -Syy && app-fast -S --noconfirm --needed archlinuxcn-keyring
+app-fast -S --noconfirm --needed teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term ttf-iosevka
 ```
 
 Unstable and testing package (Manjaro)
@@ -102,21 +102,21 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 
 Install fbterm (recommand)
 =====
+* $ app-fast -S gpm libx86
+* $ sudo systemctl enable gpm && sudo systemctl restart gpm
 * $ yay -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -a -G video $(whoami)
-* $ sudo app-fast -S gpm libx86
-* $ sudo systemctl enable gpm
 
 Install qemu
 =====
-* $ sudo app-fast -S qemu-arch-extra
+* $ app-fast -S qemu-arch-extra
 
 Install virtualbox
 =====
 * $ uname -a # Get kernel version
-* $ sudo app-fast -S virtualbox
-* $ sudo app-fast -S [kernel version]-virtualbox-host-modules
+* $ app-fast -S virtualbox
+* $ app-fast -S [kernel version]-virtualbox-host-modules
 * $ sudo modprobe vboxdrv
 * $ sudo gpasswd -a $(whoami) vboxusers
 

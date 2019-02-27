@@ -1,11 +1,11 @@
 Install Fbterm
 =====
 * $ sudo apt remove fbterm -y
-* $ sudo app-fast install libgpm-dev libfontconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
+* $ app-fast install libgpm-dev libfontconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
 * $ git clone https://github.com/j16180339887/fbterm.git && cd fbterm
 * $ ./configure && make && sudo make install
-* $ sudo app-fast install fontconfig -y
-* $ sudo app-fast install virtualbox-guest-dkms -y # for virtualbox
+* $ app-fast install fontconfig -y
+* $ app-fast install virtualbox-guest-dkms -y # for virtualbox
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
@@ -57,7 +57,7 @@ color-15=FFFFFF
 Mouse without x
 =====
 * Make sure fbterm is installed and functional
-* $ sudo app-fast install gpm -y
+* $ app-fast install gpm -y
 * $ sudo systemctl enable gpm
 * Left mouse click is Copy
 * Right mouse click is Paste
@@ -117,7 +117,7 @@ Change timezone
 
 Listen to music without x
 =====
-* $ sudo app-fast install alsa alsa-tools vlc-nox -y
+* $ app-fast install alsa alsa-tools vlc-nox -y
 * $ sudo usermod -a -G audio $(whoami)
 * $ sudo reboot
 * $ alsamixer # Adjust volume
