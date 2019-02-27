@@ -5,6 +5,7 @@ Install without desktop
 * $ setup
 * Use cfdisk for partitions, add bootable flag
 * Install networkmanager
+* Set root password and add an user
 
 Pre-install
 =====
