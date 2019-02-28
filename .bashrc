@@ -35,14 +35,13 @@ emulator() {
     pid=$(ps -h -o ppid -p $pid 2>/dev/null)
     ps -h -o comm -p $pid 2>/dev/null;
 }
-# basename "/"$(ps -f -p $(cat /proc/$(echo $$)/stat | cut -d \  -f 4) | tail -1 | sed 's/^.* //')
-[ -z "$TERM_EMU" ] && export TERM_EMU="$(emulator)"
+[ -z "$TERM_EMU" ] && export TERM_EMU="$(emulator)" || export TERM_EMU="running"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
-if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
+if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]] || [[ "$TERM_EMU" == "running" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
-  if [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+  if [ $(command -v zsh) ] &&[[ "$TERM_EMU" != "running" ]] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
     exec zsh
   fi
