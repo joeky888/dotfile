@@ -292,6 +292,7 @@ alias streamlink-mpv-480="streamlink -p mpv --default-stream 480p"
 alias mpv-1080='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
 alias mpv-720='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
 alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
+alias aria2cYouku='aria2c --all-proxy=proxy.uku.im:443'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
