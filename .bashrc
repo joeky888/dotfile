@@ -41,6 +41,10 @@ whichTTY=$(tty | sed -e "s:/dev/::")
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
+  if [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+    export ZSH_IS_RUNNING=1
+    exec zsh
+  fi
   # echo -e -n "\x1b[\x30 q" # changes to blinking block
   # echo -e -n "\x1b[\x31 q" # changes to blinking block also
   # echo -e -n "\x1b[\x32 q" # changes to steady block
