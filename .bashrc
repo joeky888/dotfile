@@ -35,6 +35,7 @@ emulator() {
     pid=$(ps -h -o ppid -p $pid 2>/dev/null)
     ps -h -o comm -p $pid 2>/dev/null;
 }
+# basename "/"$(ps -f -p $(cat /proc/$(echo $$)/stat | cut -d \  -f 4) | tail -1 | sed 's/^.* //')
 [ -z "$TERM_EMU" ] && export TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
