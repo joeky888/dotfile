@@ -42,7 +42,7 @@ if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROG
   export TERM_EMU_IS_RUNNING="1"
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
-  if [ $(command -v zsh) ] && [[ "$TERM_EMU" == "1" ]] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+  if [ $(command -v zsh) ] && [[ "$TERM_EMU_IS_RUNNING" == "1" ]] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
     exec zsh
   fi
