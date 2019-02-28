@@ -43,6 +43,7 @@ if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROG
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   if [ $(command -v zsh) ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
+    export NO_TMUX=1
     exec zsh
   fi
   # echo -e -n "\x1b[\x30 q" # changes to blinking block
@@ -54,7 +55,7 @@ if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROG
 elif [ $(command -v fbterm) ] && [[ $whichTTY == tty3 ]] ; then
   [ $(command -v zsh) ] && exec fbterm -- zsh -c 'TERM=fbterm exec zsh'
   [ $(command -v bash) ] && exec fbterm -- bash -c 'TERM=fbterm exec bash'
-elif [ $(command -v tmux) ] && [ -f ~/.tmux.conf ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
   cd ~
   if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
