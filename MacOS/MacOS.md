@@ -5,6 +5,13 @@ Make Ctrl key work
 
 Post-installed
 =====
+* System Preferences -> Network -> Wi-FI -> Advanced -> DNS -> + ->
+```
+8.8.4.4
+180.76.76.76
+8.8.8.8
+114.114.114.114
+```
 * System Preferences -> Dock -> Automatically hide and show the Dock -> Check
 * System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
 * System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
@@ -12,16 +19,6 @@ Post-installed
 * Enable Mojave dark theme
 * $ brew cask install alacritty xnviewmp visual-studio-code mpv phantomjs opera google-chrome skype teamviewer obs krita qbittorrent adobe-acrobat-reader android-platform-tools font-iosevka font-ubuntu # spectacle
 * $ `brew update && app-fast upgrade && brew cask upgrade && brew cleanup -s && rm -f ~/Library/Caches/Homebrew/downloads/*; brew doctor`
-
-DNS
-=====
-* System Preferences -> Network -> Select interface
-```resolv
-nameserver 8.8.4.4
-nameserver 180.76.76.76
-nameserver 8.8.8.8
-nameserver 114.114.114.114
-```
 
 Hyper terminal
 =====
