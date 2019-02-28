@@ -35,13 +35,13 @@ emulator() {
     pid=$(ps -h -o ppid -p $pid 2>/dev/null)
     ps -h -o comm -p $pid 2>/dev/null;
 }
-TERM_EMU="$(emulator)"
+[ -z "$TERM_EMU" ] && export TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
-  if [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+  if [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
     exec zsh
   fi
