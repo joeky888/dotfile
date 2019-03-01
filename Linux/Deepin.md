@@ -77,11 +77,11 @@ Packages
   * $ app-fast install tlp -y # For laptop, in case deepin is unable to reboot
   * $ sudo apt purge tlp -y && app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * Manjaro
-  * $ sudo pacman -Rs vim laptop-mode-tools ; sudo pacman -Qdtq | pacman -Rs -
-  * $ app-fast -S --noconfirm --needed tlp # Or laptop-mode-tools
+  * $ sudo pacman -Rsuc vim laptop-mode-tools
+  * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ app-fast -S --noconfirm --needed gvim code fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -R --noconfirm xarchiver
+  * $ app-fast -S gvim code fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
 <!--   * $ yay -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
@@ -103,7 +103,7 @@ Disable Gnome keyring when opening the browser
 
 Install Rime Pinyin IME (Manjaro)
 =====
-* $ app-fast -S --noconfirm --needed fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
+* $ app-fast -S fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
 * Goto fcitx settings, add Rime, remove all other IMEs
 * $ mkdir -p ~/.config/fcitx/rime/
 * $ vim ~/.config/fcitx/rime/default.custom.yaml
