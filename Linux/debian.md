@@ -27,11 +27,11 @@ Install latest packages
 * Add "deb http://ftp.<COUNTRY>.debian.org/debian/ unstable main contrib non-free"
 ```debsources
 # unstable, there is no security update for unstable
-deb http://ftp.tw.debian.org/debian/ unstable main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free
 
 # testing
-deb http://ftp.tw.debian.org/debian/ testing main contrib non-free
-deb http://ftp.tw.debian.org/debian testing-updates main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian testing-updates main contrib non-free
 deb http://security.debian.org/ testing/updates main contrib non-free
 ```
 
