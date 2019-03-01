@@ -49,6 +49,8 @@ Install xfce4
 ```sh
 echo "exec startxfce4" > ~/.xinitrc
 startx || reboot
+# Disable xfce4 auto logout
+sudo apt purge light-locker
 ```
 
 Install Nvidia driver (Epic fail!!)
