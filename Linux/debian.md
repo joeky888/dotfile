@@ -52,10 +52,10 @@ echo "exec startxfce4" > ~/.xinitrc
 # Auto login
 sudo groupadd -r autologin
 sudo gpasswd -a $(whoami) autologin
-sudo echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf
-sudo echo "autologin-user=$(whoami)" >> /etc/lightdm/lightdm.conf
-sudo echo "autologin-user-timeout=0" >> /etc/lightdm/lightdm.conf
-sudo echo "autologin-session=xfce" >> /etc/lightdm/lightdm.conf
+echo "[SeatDefaults]" | sudo tee -a /etc/lightdm/lightdm.conf
+echo "autologin-user=$(whoami)" | sudo tee -a /etc/lightdm/lightdm.conf
+echo "autologin-user-timeout=0" | sudo tee -a /etc/lightdm/lightdm.conf
+echo "autologin-session=xfce" | sudo tee -a /etc/lightdm/lightdm.conf
 
 sudo reboot
 ```
