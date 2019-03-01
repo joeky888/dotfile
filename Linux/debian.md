@@ -24,7 +24,6 @@ Install latest packages
 * Download debian iso with non-free firmware
 * unstable > testing > stable
 * $ sudoedit /etc/apt/sources.list
-* Add "deb http://ftp.<COUNTRY>.debian.org/debian/ unstable main contrib non-free"
 ```debsources
 # unstable, there is no security update for unstable
 deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free
@@ -47,6 +46,10 @@ Install xfce4
     * $ app-fast install xfce4
 * Method 3 - full installation
     * $ app-fast install xfce4-goodies
+```sh
+echo "exec startxfce4" > ~/.xinitrc
+startx || reboot
+```
 
 Install Nvidia driver (Epic fail!!)
 =====
