@@ -39,6 +39,15 @@ Enable multi-architecture
 =====
 * $ sudo dpkg --add-architecture i386
 
+Install xfce4
+=====
+* Method 1
+    * Just use debian xfce live iso
+* Method 2 - minimal installation
+    * $ app-fast install xfce4
+* Method 3 - full installation
+    * $ app-fast install xfce4-goodies
+
 Install Nvidia driver (Epic fail!!)
 =====
 * $ sudo apt purge xserver-xorg-video-nouveau -y
