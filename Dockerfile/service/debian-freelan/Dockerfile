@@ -69,3 +69,7 @@ SHELL ["/bin/bash"]
 
 # docker-compose up -d --build
 # docker exec -it controller /bin/bash
+# cd "C:\Program Files\FreeLAN\bin"
+# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.1/24
+# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.2/24
+# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.3/24
