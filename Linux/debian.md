@@ -43,7 +43,7 @@ Install xfce4
 * Method 1
     * Just use debian xfce live iso
 * Method 2 - minimal installation
-    * $ app-fast install xfce4 xfce4-terminal ; sudo apt purge light-locker -y
+    * $ app-fast install xfce4 xfce4-terminal lightdm ; sudo apt purge light-locker -y
 * Method 3 - full installation
     * $ app-fast install xfce4-goodies ; sudo apt purge light-locker -y
 ```sh
