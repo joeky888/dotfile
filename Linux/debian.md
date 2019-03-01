@@ -48,7 +48,16 @@ Install xfce4
     * $ app-fast install xfce4-goodies ; sudo apt purge light-locker -y
 ```sh
 echo "exec startxfce4" > ~/.xinitrc
-startx || reboot
+
+# Auto login
+sudo groupadd -r autologin
+sudo gpasswd -a $(whoami) autologin
+sudo echo "[SeatDefaults]" >> /etc/lightdm/lightdm.conf
+sudo echo "autologin-user=$(whoami)" >> /etc/lightdm/lightdm.conf
+sudo echo "autologin-user-timeout=0" >> /etc/lightdm/lightdm.conf
+sudo echo "autologin-session=xfce" >> /etc/lightdm/lightdm.conf
+
+sudo reboot
 ```
 
 Install Nvidia driver (Epic fail!!)
