@@ -37,6 +37,41 @@ $Shortcut.TargetPath = "$env:SYSTEMROOT\\System32\\WindowsPowerShell\\v1.0\\powe
 $Shortcut.Save()
 ```
 
+Install softwares
+=====
+* Scoop
+```sh
+Set-ExecutionPolicy RemoteSigned -Force
+iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
+scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
+scoop bucket add dorado https://github.com/h404bi/dorado
+scoop install win32-openssh vim busybox qemu youtube-dl curl aria2 ffmpeg micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
+```
+* Setup mpv
+```sh
+# "" means "(Default)" which equals "@"
+[Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
+[Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\\Desktop\\mpv.lnk")
+$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv\\current\\mpv.exe"
+$Shortcut.Save()
+```
+* Chocolatey
+```sh
+Set-ExecutionPolicy RemoteSigned -Force
+Unblock-File $profile.CurrentUserAllHosts
+New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
+PowerShellGet\Install-Module posh-git -Scope CurrentUser
+PowerShellGet\Install-Module posh-docker -Scope CurrentUser
+PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
+choco install 7zip git poshgit vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp gimp inkscape krita -y --pre
+choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
+```
+* Gaming dlls
+    * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
+
+
 Mono sound
 =====
 * Setting -> Ease of Access settings -> Other options -> Audio options -> Mono audio -> Check
