@@ -290,10 +290,10 @@ alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
-alias streamlink-mpv="streamlink -p mpv --default-stream best"
-alias streamlink-mpv-1080="streamlink -p mpv --default-stream 1080p"
-alias streamlink-mpv-720="streamlink -p mpv --default-stream 720p"
-alias streamlink-mpv-480="streamlink -p mpv --default-stream 480p"
+alias streamlink-mpv="streamlink --verbose-player -p mpv --default-stream best"
+alias streamlink-mpv-1080="streamlink --verbose-player -p mpv --default-stream 1080p"
+alias streamlink-mpv-720="streamlink --verbose-player -p mpv --default-stream 720p"
+alias streamlink-mpv-480="streamlink --verbose-player -p mpv --default-stream 480p"
 alias mpv-1080='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best"'
 alias mpv-720='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best"'
 alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best"'
