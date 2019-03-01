@@ -18,6 +18,8 @@ Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.
 RUN pacman -Sy --noconfirm --needed sed gzip curl archlinuxcn-keyring vim yay
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 RUN pacman-mirrors --country "Taiwan,China"
+ENV TZ Asia/Taipei
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 
 #####################

@@ -20,8 +20,10 @@ RUN echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/" > /etc/apk/repositori
 RUN apk update
 RUN apk add --upgrade --force apk-tools
 RUN apk upgrade
-RUN apk add --update --no-cache nano
+RUN apk add --update --no-cache nano tzdata
 RUN rm -f /var/cache/apk/*
+ENV TZ Asia/Taipei
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 #######################
 #                     #

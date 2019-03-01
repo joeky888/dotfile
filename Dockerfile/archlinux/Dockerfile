@@ -22,6 +22,8 @@ RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protoc
 RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist.bak
 RUN cat /etc/pacman.d/mirrorlist.bak
 RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/mirrorlist"
+ENV TZ Asia/Taipei
+RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 
 #####################
