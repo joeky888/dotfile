@@ -21,6 +21,10 @@ Post-installed
 * $ brew cask install baidunetdisk
 * $ `brew update && app-fast upgrade && brew cask upgrade && brew cleanup -s && rm -f ~/Library/Caches/Homebrew/downloads/*; brew doctor`
 
+Can not open an app due to "Unkown developer"
+=====
+* System Preferences > Security & Privacy > General > Open Anyway
+
 Hyper terminal
 =====
 * $ hyper i hyperocean
