@@ -43,14 +43,12 @@ Install xfce4
 * Method 1
     * Just use debian xfce live iso
 * Method 2 - minimal installation
-    * $ app-fast install xfce4 xfce4-terminal
+    * $ app-fast install xfce4 xfce4-terminal ; sudo apt purge light-locker -y
 * Method 3 - full installation
-    * $ app-fast install xfce4-goodies
+    * $ app-fast install xfce4-goodies ; sudo apt purge light-locker -y
 ```sh
 echo "exec startxfce4" > ~/.xinitrc
 startx || reboot
-# Disable xfce4 auto logout
-sudo apt purge light-locker
 ```
 
 Install Nvidia driver (Epic fail!!)
