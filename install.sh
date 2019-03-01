@@ -314,7 +314,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   rm -rf /bin/setup-x86_64.exe
   curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install p7zip wget curl aria2 git vim nano tmux bc zsh atool
+  apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh atool
   InstallDotfileCygwin
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
