@@ -9,7 +9,10 @@ Install qemu and kvm (Failed)
 HVF (TODO)
 =====
 * Use `qemu -accel hvf`
-* Note that Manjaro ISOs are not working
+* Note that
+    * Manjaro ISOs are NOT working
+    * debian-netinst.iso is working
+    * Windows XP iso is workding
 * $ app-fast install qemu
 ```sh
 #!/bin/bash
