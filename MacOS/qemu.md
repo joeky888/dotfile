@@ -21,7 +21,7 @@ qemu-img create -f qcow2 windows.img 30G
 
 qemu-system-x86_64 \
     -accel hvf -cpu host \
-    -m 2G -netdev user,id=n0 -device rtl8139,netdev=n0 \
+    -m 3G -netdev user,id=n0 -device rtl8139,netdev=n0 \
     -soundhw hda \
     -hda windows.img \
     -cdrom windows.iso
@@ -38,9 +38,14 @@ qemu-img create -f qcow2 manjaro.img 30G
 
 qemu-system-x86_64 \
     -accel hvf -cpu host \
-    -m 2G -netdev user,id=n0 -device rtl8139,netdev=n0 \
+    -m 3G -netdev user,id=n0 -device rtl8139,netdev=n0 \
     -soundhw hda \
     --bios OVMF.fd \
     -hda manjaro.img \
     -cdrom manjaro.iso
 ```
+* In the Boot menu
+    * Highlight line "driver=free" and press E
+    * Change "driver=free" to "driver=intel"
+    * Highlight line "Boot" and press E
+    * Change "driver=free" to "driver=intel"
