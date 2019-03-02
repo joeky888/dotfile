@@ -21,8 +21,7 @@ Pre-install
   * $ sudo fdisk -l
   * $ sudo dd bs=4M if=/path/to/manjaro.iso of=/dev/sd[drive letter] status=progress
   * e.g. /dev/sdb
-* When enter to the grub menu, select non-free driver
-* Press `E` to edit boot option
+* When enter to the grub menu, highlight line "Boot" and press E to edit
   * Add boot option `systemd.mask=mhwd-live.service` to the first line
 * Enter boot
 * Before starting the GUI installation
