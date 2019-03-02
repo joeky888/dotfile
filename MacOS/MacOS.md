@@ -16,6 +16,7 @@ Post-installed
 * System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
 * System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
 * System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
+* System Preferences > General > Recent Items > None
 * Enable Mojave dark theme
 * $ brew cask install alacritty xnviewmp visual-studio-code mpv phantomjs opera google-chrome skype teamviewer obs gimp krita qbittorrent adobe-acrobat-reader android-platform-tools font-iosevka font-ubuntu # spectacle
 * $ brew cask install baidunetdisk
