@@ -76,7 +76,7 @@ SigLevel = Never
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
-sudo pacman -Syy && app-fast -S --noconfirm --needed archlinuxcn-keyring
+app-fast -Syy --noconfirm --needed archlinuxcn-keyring
 app-fast -S teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term ttf-iosevka
 ```
 
