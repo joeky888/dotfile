@@ -884,6 +884,7 @@ if [ $(command -v grc) ] ; then
           irclog \
           iwconfig \
           journalctl \
+          kubectl \
           last \
           lastb \
           lastlog \
