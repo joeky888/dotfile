@@ -352,6 +352,7 @@ Dev Tools
     * Qt + QML
 * Desktop app
     * Nuklear - Single header opengl-based GUI lib, for C and Go
+        * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
     * Proton-native, react native syntax and builds native apps (Using libui)
     * libui, native UI and small bianry size, for C/C++ and Go
     * Executable size as small as possible, for personal use :
