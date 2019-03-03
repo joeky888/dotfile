@@ -242,6 +242,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
+  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/iosevka.ttf --dir=/ -o usr/share/fonts/truetype/iosevka.ttf
   fc-cache -fv
   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   if [ -n "$SUDO" ]; then
