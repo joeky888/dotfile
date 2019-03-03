@@ -7,7 +7,7 @@ Add submodule
 =====
 ```sh
 cd ~/dotfile
-git submodule add --depth 1 https://github.com/robbyrussell/oh-my-zsh.git
+git submodule add -b branchName -- https://github.com/robbyrussell/oh-my-zsh.git
 ```
 * Add "shallow = true" to .gitmodules
 * $ git submodule update --init
