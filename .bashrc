@@ -948,7 +948,7 @@ if [ $(command -v grc) ] ; then
   alias limit='grc -es --colour=auto bash -c "limit $@"'
   alias ulimit='grc -es --colour=auto bash -c "ulimit $@"'
 
-  if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null ; then
+  if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null >/dev/null; then
     source <(kubectl completion zsh)
   fi
 
