@@ -359,7 +359,7 @@ upgradeDotfile() {
 #   git pull --recurse-submodules --depth 1
 #   git submodule update --init --recursive --remote --merge
   git -C ~/dotfile submodule update --init
-  git -C ~/dotfile submodule foreach git pull origin master
+  git -C ~/dotfile submodule foreach git pull
 
   rm -rf ~/.bashrc
   rm -rf ~/.bash_profile
