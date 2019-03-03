@@ -26,6 +26,8 @@
 	prompt = false
 [pull]
 	rebase = true
+[push]
+	default = current
 [alias]
 	history = log -p
 	summary = log --stat
