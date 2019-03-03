@@ -46,8 +46,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.xprofile ~/.xprofile
   cd $Home/dotfile && git pull &&\
-  git submodule update --init
-  git submodule foreach git pull
+  git submodule update --init --remote
   cd - ;
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.config/alacritty/
@@ -111,8 +110,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cd $Home/dotfile
-  git submodule update --init
-  git submodule foreach git pull
+  git submodule update --init --remote
   cd - ;
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
