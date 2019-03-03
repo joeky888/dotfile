@@ -530,7 +530,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
-  [ $(command -v kubectl) ] && _kubectl () {;};
+  [ $(command -v kubectl) ] && _kubectl () { true; } # For grc
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
   else
