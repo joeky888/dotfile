@@ -494,7 +494,7 @@ git_branch_info() {
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME=""
-  plugins=(git docker docker-compose adb golang kubectl)
+  plugins=(git docker docker-compose adb golang)
   DISABLE_AUTO_UPDATE="true"
   if [ -n "$OH_MY_ZSH_PATH" ]; then
     export ZSH=$OH_MY_ZSH_PATH
@@ -525,12 +525,12 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle '*' single-ignored show # Don't show menu when there is only one match
 #     zstyle ':completion:*' list-colors "exfxcxdxbxegedabagacad" # Popup colors
 #     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
-    [ $(command -v kubectl) ] && source <(kubectl completion zsh)
   fi
   export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:';
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
+  [ $(command -v kubectl) ] && _kubectl () {;};
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
   else
@@ -947,6 +947,10 @@ if [ $(command -v grc) ] ; then
 #   alias jobs='grc -es --colour=auto bash -c "jobs $@"' # Comment out because it breaks powerlevel9k theme
   alias limit='grc -es --colour=auto bash -c "limit $@"'
   alias ulimit='grc -es --colour=auto bash -c "ulimit $@"'
+
+  if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null ; then
+    source <(kubectl completion zsh)
+  fi
 
   # Clean up variables
   unset cmds cmd
