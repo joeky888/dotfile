@@ -9,7 +9,7 @@
 }
 @font-face {
     font-family: "CJK";
-    src: local("Noto Sans CJK TC"),local("Noto Sans CJK SC"),local("Noto Sans TC"),local("Noto Sans SC"),local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Microsoft JhengHei"),local("Microsoft YaHei");
+    src: local("Noto Sans CJK TC"),local("Noto Sans CJK SC"),local("Noto Sans TC"),local("Noto Sans SC"),local("Iosevka"),local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Microsoft JhengHei"),local("Microsoft YaHei");
     unicode-range: U+2E80-FAFF;
 }
 *, * *, *[id], *[class], *[name]{
