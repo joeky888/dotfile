@@ -260,13 +260,13 @@ Android
     * Flash light
     * Auto rotate
 * Not on Google/F-droid
-    * Alpha VNC (beta) (No root, Android 5.0+)
+    * Alpha VNC (beta) (No root, Android 5.0+), use Scrcpy instead
     * Entware-ng (root, Termux alternative, Android 4.2.2+)
     * 豌豆荚 wandoujia
     * 應用寶
     * 迅雷
 * Not an app but related to Android
-    * Scrcpy - Control Android via adb
+    * Scrcpy - Control Android via adb (Android 5+)
 
 iOS
 =====
