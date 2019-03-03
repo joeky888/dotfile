@@ -9,7 +9,7 @@ Install Fbterm
 * $ sudo fc-cache -fv
 * $ fc-list # Check font is installed or not
 * $ sudo chmod u-s $(which fbterm) # If try to use fbterm hotkeys, use "u+s" instead
-* $ sudo usermod -a -G video $(whoami)
+* $ sudo usermod -aG video $(whoami)
 * Reboot OS, when it shows boot menu, type "c" switch to grub mode
 * $ grub> vbeinfo # Or videoinfo
 * Pick one from stdout, ex: 1024x768x16

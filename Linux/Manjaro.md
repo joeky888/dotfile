@@ -114,7 +114,7 @@ Install fbterm (recommand)
 * $ sudo systemctl enable gpm && sudo systemctl restart gpm
 * $ yay -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
-* $ sudo usermod -a -G video $(whoami)
+* $ sudo usermod -aG video $(whoami)
 
 Install qemu
 =====
