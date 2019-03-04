@@ -1,3 +1,17 @@
+Archlinux k8s
+=====
+* Install etcd (optional)
+```sh
+yay -S etcd-bin
+sudo systemctl enable etcd.service
+sudo systemctl restart etcd.service
+```
+* Install kubernetes and helm
+```sh
+yay -S kubernetes-bin
+yay -S kubernetes-helm-bin
+```
+
 Minikube
 =====
 * Install virtualbox, kubectl, minikube and helm
