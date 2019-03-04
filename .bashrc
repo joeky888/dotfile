@@ -651,6 +651,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   setopt INC_APPEND_HISTORY # Use bash-like history
   [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
   [ $(command -v helm) ] && source <(helm completion zsh)
+  [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
@@ -713,6 +714,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check | sed 's/\r//'`"
   [ $(command -v kubectl) ] && source <(kubectl completion bash)
   [ $(command -v helm) ] && source <(helm completion bash)
+  [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   shopt -s histappend # Append history
   shopt -s checkwinsize # Checks the window size after each command
