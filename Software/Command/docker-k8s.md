@@ -8,8 +8,40 @@ sudo systemctl restart etcd.service
 ```
 * Install kubernetes and helm
 ```sh
+app-fast -S ebtables ethtool socat
 yay -S kubernetes-bin
 yay -S kubernetes-helm-bin
+mkdir -o ~/.kube
+cp /etc/kubernetes/config ~/.kube/config
+rm -rf ~/.helm
+
+sudoedit /usr/llib/systemd/system/docker.service
+    Add `--exec-opt native.cgroupdriver=systemd` to the end of ExecStart
+sudoedit /etc/kubernetes/kubelet
+    KUBELET_ADDRESS="--address=0.0.0.0"
+    KUBELET_HOSTNAME=""
+    KUBELET_API_SERVER=""
+    KUBELET_ARGS="--cgroup-driver=systemd --runtime-cgroups=/systemd/system.slice --kubelet-cgroups=/systemd/system.slice"
+sudo systemctl daemon-reload
+sudo systemctl restart docker
+sudo systemctl restart kubelet
+systemctl status docker  # Make sure docker is not dead
+systemctl status kubelet # Make sure kubelet is not dead
+sudo systemctl set-property docker.service MemoryAccounting=yes
+sudo systemctl set-property docker.service CPUAccounting=yes
+systemctl show docker | grep Accounting
+sudo systemctl restart kubelet
+
+sudo kubeadm reset
+sudo rm -rf /var/lib/etcd/*
+sudo kubeadm init --apiserver-advertise-address=0.0.0.0 --pod-network-cidr=10.254.0.0/16 --ignore-preflight-errors=all
+
+sudo systemctl restart kubelet.service
+sudo systemctl restart kube-scheduler.service
+sudo systemctl restart kube-apiserver.service
+
+helm init
+helm version
 ```
 
 Minikube
