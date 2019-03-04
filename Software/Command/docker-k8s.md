@@ -11,9 +11,9 @@ sudo systemctl restart etcd.service
 app-fast -S ebtables ethtool socat
 yay -S kubernetes-bin
 yay -S kubernetes-helm-bin
-mkdir -o ~/.kube
-cp /etc/kubernetes/config ~/.kube/config
-rm -rf ~/.helm
+mkdir -o ~/.kube && cp /etc/kubernetes/config ~/.kube/config && rm -rf ~/.helm
+
+sudo systemctl enable kubelet
 
 sudoedit /usr/llib/systemd/system/docker.service
     Add `--exec-opt native.cgroupdriver=systemd` to the end of ExecStart
@@ -22,11 +22,17 @@ sudoedit /etc/kubernetes/kubelet
     KUBELET_HOSTNAME=""
     KUBELET_API_SERVER=""
     KUBELET_ARGS="--cgroup-driver=systemd --runtime-cgroups=/systemd/system.slice --kubelet-cgroups=/systemd/system.slice"
+sudoedit /etc/kubernetes/apiserver
+    KUBE_API_ADDRESS="--insecure-bind-address=0.0.0.0 --insecure-port=8080"
+    KUBE_ETCD_SERVERS="--etcd-servers=http://127.0.0.1:2380"
+    KUBE_SERVICE_ADDRESSES="--service-cluster-ip-range=10.254.0.0/16"
 sudo systemctl daemon-reload
 sudo systemctl restart docker
 sudo systemctl restart kubelet
-systemctl status docker  # Make sure docker is not dead
-systemctl status kubelet # Make sure kubelet is not dead
+sudo systemctl restart kube-apiserver
+systemctl status docker     # Make sure it is not dead
+systemctl status kubelet    # Make sure it is not dead
+systemctl status kube-apiserver  # Make sure it is not dead
 sudo systemctl set-property docker.service MemoryAccounting=yes
 sudo systemctl set-property docker.service CPUAccounting=yes
 systemctl show docker | grep Accounting
@@ -34,7 +40,7 @@ sudo systemctl restart kubelet
 
 sudo kubeadm reset
 sudo rm -rf /var/lib/etcd/*
-sudo kubeadm init --apiserver-advertise-address=0.0.0.0 --pod-network-cidr=10.254.0.0/16 --ignore-preflight-errors=all
+sudo kubeadm init --apiserver-advertise-address=0.0.0.0 --pod-network-cidr=10.254.0.0/16 --ignore-preflight-errors=all --v=7 # Verbose level 7 out of 10
 
 sudo systemctl restart kubelet.service
 sudo systemctl restart kube-scheduler.service
