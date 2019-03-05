@@ -43,4 +43,4 @@ Scan a range of ports on the host
 Scan with progress bar
 =====
 * Refresh every 2 seconds
-* $ nmap --stats-every 2s
+* $ alias nmap='nmap --stats-every 2s'
