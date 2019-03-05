@@ -78,8 +78,8 @@ kubectl logs -f podName
 kubectl delete deployment hello-minikube
 kubectl delete pod hello-minikube-6fd785d459-dmr7x
 
-# Get all
-kubectl get all -o wide
+# Get all, like docker ps -a
+kubectl get all --all-namespaces -o wide
 
 # docker-compose up -d -f service.yml
 kubectl create -f ./service.yml
