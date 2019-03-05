@@ -39,3 +39,8 @@ Scan a range of ports on the host
 =====
 * Scan ports 1000~1024 and 1025~9999
 * $ nmap -p 1000-1024,1025-9999 127.0.0.1
+
+Scan with progress bar
+=====
+* Refresh every 2 seconds
+* $ nmap --stats-every 2s
