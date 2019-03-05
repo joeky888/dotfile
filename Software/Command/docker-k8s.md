@@ -57,39 +57,6 @@ Minikube
 # docker pull
 minikube start --vm-driver=virtualbox
 minikube dashboard
-
-# docker run
-kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
-
-# docker ps -a deployment
-kubectl get deployment -o wide
-# docker ps -a pod
-kubectl get pod -o wide
-# docker ps -a service
-kubectl get service -o wide
-
-# docker exec container cat /etc/hostname
-kubectl exec podName -- cat /etc/hostname
-
-# docker logs -f container
-kubectl logs -f podName
-
-# docker rm and docker stop
-kubectl delete deployment hello-minikube
-kubectl delete pod hello-minikube-6fd785d459-dmr7x
-
-# Get all, like docker ps -a
-kubectl get all --all-namespaces -o wide
-
-# docker-compose up -d -f service.yml
-kubectl create -f ./service.yml
-
-# delete all pods
-kubectl delete --all pods --namespace=default
-# deete all deployments
-kubectl delete --all deployments --namespace=default
-# delete all services
-kubectl delete --all services --namespace=default
 ```
 
 Uninstall Minikube
@@ -102,4 +69,42 @@ sudo rm /usr/local/bin/localkube /usr/local/bin/minikube
 systemctl stop '*kubelet*.mount'
 sudo rm -rf /etc/kubernetes/
 docker system prune -af --volumes
+```
+
+Kubectl
+=====
+```sh
+# docker run
+kubectl run hello-minikube --image=k8s.gcr.io/echoserver:1.10 --port=8080
+
+# Get all, like docker ps -a
+kubectl get all --all-namespaces -o wide
+# docker ps -a deployment from default namespace
+kubectl --namespace=default get deployment -o wide
+# docker ps -a pod
+kubectl --namespace=default get pod -o wide
+# docker ps -a service
+kubectl --namespace=default get service -o wide
+
+# docker exec -it container /bin/sh
+kubectl exec -it podName -- /bin/sh
+
+# docker logs -f container
+kubectl logs -f podName
+
+# docker rm and docker stop
+kubectl delete deployment hello-minikube
+kubectl delete pod hello-minikube-6fd785d459-dmr7x
+
+# docker-compose up -d -f service.yml
+kubectl apply -f ./service.yml
+
+# delete all from default namespace
+kubectl delete --all all --namespace=default
+# delete all pods
+kubectl delete --all pods --namespace=default
+# deete all deployments
+kubectl delete --all deployments --namespace=default
+# delete all services
+kubectl delete --all services --namespace=default
 ```
