@@ -14,7 +14,7 @@ IP: 192.168.1.0
 也可以直接寫成 192.168.1.0/24
 
 因爲
- 8 -> 11111111 00000000 00000000 00000000 -> 255.0.0.0
+08 -> 11111111 00000000 00000000 00000000 -> 255.0.0.0
 16 -> 11111111 11111111 00000000 00000000 -> 255.255.0.0
 24 -> 11111111 11111111 11111111 00000000 -> 255.255.255.0
 32 -> 11111111 11111111 11111111 11111111 -> 255.255.255.255
@@ -42,5 +42,8 @@ Scan a range of ports on the host
 
 Scan with progress bar
 =====
-* Refresh every 2 seconds
+* Method 1: manually get progress
+    * $ nmap -p- localhost
+    * Press up/down/left/right keys on the keyboard
+* Method 2: Refresh every 2 seconds
 * $ alias nmap='nmap --stats-every 2s'
