@@ -44,6 +44,6 @@ Scan with progress bar
 =====
 * Method 1: manually get progress
     * $ nmap -p- localhost
-    * Press up/down/left/right keys on the keyboard
+    * Press enter/space/up/down/left/right keys on the keyboard
 * Method 2: Refresh every 2 seconds
 * $ alias nmap='nmap --stats-every 2s'
