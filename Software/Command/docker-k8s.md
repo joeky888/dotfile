@@ -1,4 +1,4 @@
-Archlinux k8s
+Archlinux k8s (TODO)
 =====
 * Install etcd (optional)
 ```sh
