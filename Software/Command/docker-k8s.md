@@ -1,3 +1,15 @@
+Archlinux k3s (Recommend, Linux only)
+=====
+```sh
+git clone --depth 1 https://github.com/rancher/k3s
+cd k3s
+docker-compose up -d
+
+# Download hyperkube from https://github.com/rancher/k3s/releases
+
+./hyperkube kubectl --kubeconfig ./kubeconfig.yaml get all --all-namespaces -o wide | grcat ~/.grc/conf.kubectl
+```
+
 Archlinux k8s (TODO)
 =====
 * Install etcd (optional)
