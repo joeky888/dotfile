@@ -6,7 +6,7 @@ cd k3s
 docker-compose up -d
 
 # Download hyperkube from https://github.com/rancher/k3s/releases
-
+# No need to use `sudo`
 ./hyperkube kubectl --kubeconfig ./kubeconfig.yaml get all --all-namespaces -o wide | grcat ~/.grc/conf.kubectl
 ```
 
