@@ -330,18 +330,6 @@ if (( $EUID != 0 )); then
   export SUDO='sudo'
 fi
 
-export GREP_ARGS=""
-if $(echo | grep --color=auto "" > /dev/null 2>&1); then
-  export GREP_ARGS="$GREP_ARGS --color=auto"
-fi
-export VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
-if $(echo | grep --exclude-dir=.cvs "" > /dev/null 2>&1); then
-  export GREP_ARGS="$GREP_ARGS --exclude-dir=$VCS_FOLDERS"
-elif $(echo | grep --exclude=.cvs "" > /dev/null 2>&1); then
-  export GREP_ARGS="$GREP_ARGS --exclude=$VCS_FOLDERS"
-fi
-alias grep="grep $GREP_ARGS"
-
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
@@ -857,6 +845,18 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 
+export GREP_ARGS=""
+if echo "" | grep --color=auto "" 2>/dev/null > /dev/null; then
+  export GREP_ARGS="$GREP_ARGS --color=auto"
+fi
+export VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
+if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
+  export GREP_ARGS="$GREP_ARGS --exclude-dir=$VCS_FOLDERS"
+elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
+  export GREP_ARGS="$GREP_ARGS --exclude=$VCS_FOLDERS"
+fi
+alias grep='grep $(echo $GREP_ARGS)'
+
 if [ $(command -v grc) ] ; then
   cmds=(  ant \
           as \
@@ -1318,4 +1318,3 @@ finish() {
   fi;
 }
 trap finish EXIT
-
