@@ -639,6 +639,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   setopt INC_APPEND_HISTORY # Use bash-like history
   [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
   [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
+  [ $(command -v helm) ] && source <(helm completion zsh)
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
