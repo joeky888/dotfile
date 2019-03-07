@@ -519,6 +519,10 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
   [ $(command -v kubectl) ] && _kubectl () { true; } # For grc
+  [ $(command -v kubectl) ] && source <(kubectl completion zsh)
+  [ $(command -v helm) ] && source <(helm completion zsh)
+  [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
+  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
   else
@@ -637,9 +641,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   unsetopt INC_APPEND_HISTORY_TIME # Use bash-like history
   unsetopt AUTOCD # Don't cd to the directory by just typing its name
   setopt INC_APPEND_HISTORY # Use bash-like history
-  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
-  [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
-  [ $(command -v helm) ] && source <(helm completion zsh)
 
   # alt + arrow key to move
   bindkey "^[[1;3C" forward-word
