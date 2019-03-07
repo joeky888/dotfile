@@ -638,7 +638,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   unsetopt AUTOCD # Don't cd to the directory by just typing its name
   setopt INC_APPEND_HISTORY # Use bash-like history
   [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
-  [ $(command -v helm) ] && source <(helm completion zsh)
   [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
 
   # alt + arrow key to move
@@ -954,6 +953,11 @@ if [ $(command -v grc) ] ; then
 
   if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null >/dev/null; then
     source <(kubectl completion zsh)
+    [ $(command -v helm) ] && source <(helm completion zsh)
+  fi
+
+  if [ -n "$ZSH_VERSION" ] && hash helm 2>/dev/null >/dev/null; then
+    source <(helm completion zsh)
   fi
 
   # Clean up variables
