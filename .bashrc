@@ -803,7 +803,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   else
     alias ls='ls -G'
   fi
-  alias grep='grep --color=auto'
+  alias sudoedit='sudo vim'
 
   for tool in /usr/local/opt/*/bin; do
     export PATH="$tool:$PATH"
