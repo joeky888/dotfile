@@ -833,7 +833,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   cd ~
   export SUDO=""
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
-  alias grep='grep --color=auto'
+  true
 else # Unknown OS
   true
 fi
@@ -846,17 +846,18 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 
-export GREP_ARGS=""
-if echo "" | grep --color=auto "" 2>/dev/null > /dev/null; then
-  export GREP_ARGS="$GREP_ARGS --color=auto"
-fi
+# export GREP_COLOR=""
+# if echo "" | grep --color=auto "" 2>/dev/null > /dev/null; then
+#   export GREP_COLOR="--color=auto"
+# fi
 export VCS_FOLDERS="{.bzr,CVS,.git,.hg,.svn}"
 if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
-  export GREP_ARGS="$GREP_ARGS --exclude-dir=$VCS_FOLDERS"
+  export GREP_VCS="--exclude-dir=$VCS_FOLDERS"
+  alias grep="grep --color=auto --exclude-dir=$VCS_FOLDERS"
 elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
-  export GREP_ARGS="$GREP_ARGS --exclude=$VCS_FOLDERS"
+  export GREP_VCS="--exclude=$VCS_FOLDERS"
+  alias grep="grep --color=auto --exclude=$VCS_FOLDERS"
 fi
-alias grep='grep $(echo $GREP_ARGS)'
 
 if [ $(command -v grc) ] ; then
   cmds=(  ant \
