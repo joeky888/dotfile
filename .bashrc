@@ -454,26 +454,26 @@ elif [ $(command -v gvim) ]; then
     fi;
   }
 fi
-if [ $(command -v nvim) ]; then
-  nvim()
-  {
-    if [ "$#" == 0 ]; then
-      command nvim -u ~/.vimrc
-    else
-      command nvim -u ~/.vimrc -p "$@"
-    fi;
-  }
-fi
-if [ $(command -v mvim) ]; then # MacVim
-  mvim()
-  {
-    if [ "$#" == 0 ]; then
-      command mvim > /dev/null 2>&1
-    else
-      command mvim -p --remote-tab-silent "$@" > /dev/null 2>&1
-    fi;
-  }
-fi
+# if [ $(command -v nvim) ]; then
+#   nvim()
+#   {
+#     if [ "$#" == 0 ]; then
+#       command nvim -u ~/.vimrc
+#     else
+#       command nvim -u ~/.vimrc -p "$@"
+#     fi;
+#   }
+# fi
+# if [ $(command -v mvim) ]; then # MacVim
+#   mvim()
+#   {
+#     if [ "$#" == 0 ]; then
+#       command mvim > /dev/null 2>&1
+#     else
+#       command mvim -p --remote-tab-silent "$@" > /dev/null 2>&1
+#     fi;
+#   }
+# fi
 
 git_branch_info() {
   if git rev-parse --git-dir 1>/dev/null 2>&1; then
