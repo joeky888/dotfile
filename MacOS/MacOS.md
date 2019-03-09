@@ -18,7 +18,7 @@ Post-installed
 * System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Preferences > General > Recent Items > None
 * Enable Mojave dark theme
-* $ brew cask install alacritty xnviewmp visual-studio-code mpv phantomjs opera google-chrome skype teamviewer obs gimp krita qbittorrent adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu # spectacle
+* $ brew cask install alacritty xnviewmp visual-studio-code mpv phantomjs opera google-chrome skype teamviewer obs the-unarchiver gimp krita qbittorrent adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu # spectacle
 * $ brew cask install baidunetdisk
 * $ `brew update && app-fast upgrade && brew cask upgrade && brew cleanup -s && rm -f ~/Library/Caches/Homebrew/downloads/*; brew doctor`
 
