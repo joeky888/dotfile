@@ -1,15 +1,16 @@
 version: '2'
 services:
-    freelan:
-        image: freelan:2.0.0
+    omnidb:
+        image: omnidb:1.0.0
         build:
             context: ./
             dockerfile: ./Dockerfile
-        container_name: freelan
+        container_name: omnidb
         restart: always
         tty: true
         ports:
-            - "12000:12000/udp"
+            - "8000:8000/tcp"
+            - "25482:25482/tcp"
         logging:
             driver: json-file
             options:
