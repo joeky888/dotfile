@@ -14,8 +14,10 @@ MYSQL Query
 
 Import .gz to database (mysql)
 =====
+* $ zcat < [Database].sql.gz | mysql -u root -ppass [Database Name in MySQL]
+* Or with progress bar
 * $ apt install pv -y
-* $ zcat dbpackfile.sql.gz | pv -cN zcat | mysql -uuser -ppass dbname
+* $ zcat [Database].sql.gz | pv -cN zcat | mysql -uuser -ppass [Database Name in MySQL]
 
 UI
 =====
