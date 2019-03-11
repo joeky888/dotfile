@@ -59,7 +59,6 @@ CLI
     * speedtest-cli
     * glances
     * danmaku2ass (m13253)
-    * dbcli - Cli for mysql, sqlite and Postgresql with syntax highlighting
 * Go
     * BaiduPCS-Go
     * Micro (text editor)
@@ -127,6 +126,9 @@ Dev
 * gVim x64
 * Brackets
 * Visual Studio Code Insiders
+* Database
+    * sqlpad - SQL web client for MySQL/Postgres `npm install npm -g`
+    * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
 
 Windows
 =====
