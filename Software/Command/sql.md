@@ -9,8 +9,18 @@ Sqlite Query
 
 MYSQL Query
 =====
-* > `SELECT table_name FROM information_schema.tables;` # Get all tables
-* > SELECT * FROM tableName; # Get all data from a table
+* See also ~/dotfile/Programming/RelationalDB.md
+```sql
+show databases; /* List all databases */
+create database [DatabaseName]; /* Create a database */
+describe [DatabaseName]; /* Get info from a database */
+use [DatabaseName]; /* Use a database */
+
+show tables; /* List all tables */
+
+SELECT table_name FROM information_schema.tables; /* Get all tables */
+SELECT * FROM tableName; /* Get all data from a table */
+```
 
 Import .gz to database (mysql)
 =====
