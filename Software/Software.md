@@ -81,6 +81,7 @@ CLI
     * autopprof - Easy-to-use performance profiler
     * go-freelan - freelan-compatible implementation
     * caddy - apache/nginx alternative
+    * archiver - 7zip alternative but it doesn't support 7z format
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
