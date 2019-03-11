@@ -14,10 +14,10 @@ MYSQL Query
 
 Import .gz to database (mysql)
 =====
-* $ zcat < [Database].sql.gz | mysql -u root -ppass [Database Name in MySQL]
+* $ zcat < [Database].sql.gz | mysql -h 127.0.0.1 --port=3306 -u root -ppass [Database Name in MySQL]
 * Or with progress bar
 * $ apt install pv -y
-* $ zcat [Database].sql.gz | pv -cN zcat | mysql -uuser -ppass [Database Name in MySQL]
+* $ zcat [Database].sql.gz | pv -cN zcat | mysql -h 127.0.0.1 --port=3306 -uuser -ppass [Database Name in MySQL]
 
 UI
 =====
