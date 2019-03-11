@@ -127,7 +127,7 @@ Dev
 * Brackets
 * Visual Studio Code Insiders
 * Database
-    * omnidb-server (Not omnidb-app) - SQL web client for MySQL/Postgres
+    * omnidb-app - SQL web client for MySQL/Postgres
     * sqlpad - SQL web client for MySQL/Postgres
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
 
