@@ -340,6 +340,25 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallproc() { $SUDO kill -9 $(pgrep $@) ;}
 killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
+cp-progress() {
+  cp "$1" "$2" &
+
+  while true
+  do
+    size1=$(stat --printf="%s" "$1")
+    size2=$(stat --printf="%s" "$2")
+    p="100.00"
+
+    echo -en "\e[1A"
+    perl -E 'eval "say (@ARGV)"' "$p * $size2 / $size1"
+
+    if [ $size1 -eq $size2 ]; then
+      break;
+    fi;
+
+    sleep 1s
+  done;
+}
 upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
