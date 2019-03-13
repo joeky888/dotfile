@@ -1,3 +1,10 @@
+Equal sign
+=====
+*  = Set a variable
+* := Overrite a variable
+* ?= Set a variable only if it is null
+* += Append a string to the variable
+
 pkg-config
 =====
 * Get all includes and libs path
