@@ -3,6 +3,10 @@ Archlinux k3s (Recommend, Linux only)
 ```sh
 git clone --depth 1 https://github.com/rancher/k3s
 cd k3s
+vim docker-compose.yml
+    Update versions of images to latest
+    Add network_mode: host
+    Add restart: always
 docker-compose up -d
 
 # Download hyperkube from https://github.com/rancher/k3s/releases
