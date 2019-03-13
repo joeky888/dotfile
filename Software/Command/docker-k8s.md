@@ -4,7 +4,7 @@ Archlinux k3s (Recommend, Linux only)
 git clone --depth 1 https://github.com/rancher/k3s
 cd k3s
 vim docker-compose.yml
-    Add network_mode: host
+    # Add network_mode: host -> Don't do it
     Add restart: always
     Update image tags to latest
 docker-compose up -d
