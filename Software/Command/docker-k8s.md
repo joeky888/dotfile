@@ -23,7 +23,7 @@ sudo systemctl restart etcd.service
 app-fast -S ebtables ethtool socat
 yay -S kubernetes-bin
 yay -S kubernetes-helm-bin
-mkdir -o ~/.kube && cp /etc/kubernetes/config ~/.kube/config && rm -rf ~/.helm
+mkdir -p ~/.kube && cp /etc/kubernetes/config ~/.kube/config && rm -rf ~/.helm
 
 sudo systemctl enable kubelet
 
