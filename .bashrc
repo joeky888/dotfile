@@ -542,7 +542,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   [ $(command -v kubectl) ] && source <(kubectl completion zsh)
   [ $(command -v helm) ] && source <(helm completion zsh)
   [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
-  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check | sed 's/\r//'`"
+  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check`"
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
   else
@@ -722,7 +722,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
       source $f
     done
   fi
-  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check | sed 's/\r//'`"
+  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check`"
   [ $(command -v kubectl) ] && source <(kubectl completion bash)
   [ $(command -v helm) ] && source <(helm completion bash)
   [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
