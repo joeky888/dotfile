@@ -4,14 +4,24 @@ Archlinux k3s (Recommend, Linux only)
 git clone --depth 1 https://github.com/rancher/k3s
 cd k3s
 vim docker-compose.yml
-    Update versions of images to latest
     Add network_mode: host
     Add restart: always
+    Update image tags to latest
 docker-compose up -d
 
 # Download hyperkube from https://github.com/rancher/k3s/releases
 # No need to use `sudo`
 ./hyperkube kubectl --kubeconfig ./kubeconfig.yaml get all --all-namespaces -o wide | grcat ~/.grc/conf.kubectl
+
+# Uninstall
+docker rm -f k3s_server_1 k3s_node_1
+docker rmi `docker images -q`
+rm kubeconfig.yaml
+#sudo rm -rf /var/lib/rancher /etc/rancher
+rm -rf ~/.kube
+docker network prune
+docker volume prune
+docker system prune
 ```
 
 Archlinux k8s (TODO)
