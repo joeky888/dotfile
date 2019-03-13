@@ -4,7 +4,7 @@ Archlinux k3s (Recommend, Linux only)
 git clone --depth 1 https://github.com/rancher/k3s
 cd k3s
 vim docker-compose.yml
-    # Add network_mode: host -> Don't do it
+    Add network_mode: host to server # Don't add to node
     Add restart: always
     Update image tags to latest
 docker-compose up -d
@@ -21,7 +21,6 @@ rm kubeconfig.yaml
 rm -rf ~/.kube
 docker network prune
 docker volume prune
-docker system prune
 ```
 
 Archlinux k8s (TODO)
