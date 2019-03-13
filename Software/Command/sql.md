@@ -17,6 +17,7 @@ describe [DatabaseName]; /* Get info from a database */
 use [DatabaseName]; /* Use a database */
 
 show tables; /* List all tables */
+show create table [TableName] /* Get structure of a table */
 
 SELECT table_name FROM information_schema.tables; /* Get all tables */
 SELECT * FROM tableName; /* Get all data from a table */
