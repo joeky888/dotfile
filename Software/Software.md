@@ -355,6 +355,7 @@ Dev Tools
     * Support performance analyzer (Profiler)
 * Mobile and embbed system
     * ReactXP: React + React Native
+    * GuiLite
     * Qt + Native WebView (with html5 + WebAssembly)
     * Qt + QML
 * Desktop app
@@ -362,6 +363,7 @@ Dev Tools
         * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
     * Proton-native, react native syntax and builds native apps (Using libui)
     * libui, native UI and small bianry size, for C/C++ and Go
+    * GuiLite - The smallest GUI library for all platform - 5k lines code
     * Executable size as small as possible, for personal use :
         * QtLite
         * github.com/zserge/webview - C/C++/Go backend, html fronend
