@@ -3,6 +3,9 @@ Setting
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-md-extensions -> Enable (Material design)
 * chrome://flags/#save-page-as-mhtml -> Enable
+* chrome://settings -> Search "VPN" -> Enable
+* chrome://settings -> Search "Opera Turbo" -> Enable
+* chrome://Plugins -> Search "flash" -> Enable
 <!-- * chrome://flags/#smooth-scrolling -> Enable -->
 <!-- * chrome://flags/#personal-news-notifications -> Enable -->
 <!-- * chrome://flags/#enable-quic -> Enable -->
@@ -21,9 +24,7 @@ Setting
 <!-- * chrome://flags/#disable-background-video-track -> Enable -->
 <!-- * chrome://flags/#enable-new-print-preview -> Enable -->
 <!-- * chrome://flags/#enable-async-image-decoding -> Enable -->
-* chrome://Plugins -> Search "flash" -> Enable
-* chrome://settings -> Search "VPN" -> Enable
-* chrome://settings -> Search "Opera Turbo" -> Enable
+* Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 
 Extension
 =====
