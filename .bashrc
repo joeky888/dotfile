@@ -153,6 +153,7 @@ NEOFETCH_PATH=$(getModulePath neofetch)
 INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
+ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
 OH_MY_ZSH_PATH=$(getModulePath oh-my-zsh)
 APP_FAST_PATH=$(getModulePath app-fast)
 
@@ -642,6 +643,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     #      Gray     #
     #################
     ZSH_HIGHLIGHT_STYLES[comment]='fg=59'
+  fi
+  if [ -n $ZSH_AUTOSUGGESTIONS_PATH ];then
+    source $ZSH_AUTOSUGGESTIONS_PATH/zsh-autosuggestions.zsh
   fi
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
