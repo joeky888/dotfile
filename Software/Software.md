@@ -130,6 +130,7 @@ Dev
     * omnidb-app - SQL web client for MySQL/Postgres
     * sqlpad - SQL web client for MySQL/Postgres
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
+    * redis-commander - Web ui for redis
     * sqlitebrowser - Sqlite ui written in Qt
 
 Windows
