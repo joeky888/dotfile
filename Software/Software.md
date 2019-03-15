@@ -314,7 +314,8 @@ Good Software Design
 * GUI but command line is also available for shell scripting
 * Human readable configuration files
 * Configuration files are all backward compatible
-* Configuration files are under $HOME, and easy to find
+* Configuration files are under $HOME, and easily to be found
+* Configuration files are sharing same columns with command args, like `mpv --volume=100` and `volume=100` in conf
 * Configuration files support variables, system variables and if-else statements
 * 100% Extentable code for future use
 * A Class of dialog can be easily called and override the method after yes/no clicked
