@@ -128,7 +128,7 @@ Dev
 * Visual Studio Code Insiders
 * Database
     * omnidb-app - SQL web client for MySQL/Postgres
-    * sqlpad - SQL web client for MySQL/Postgres
+    * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
     * redis-commander - Web ui for redis
     * sqlitebrowser - Sqlite ui written in Qt
