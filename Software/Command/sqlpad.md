@@ -6,4 +6,4 @@ Install
 * $ node server.js --dir ../db --port 3010 --base-url '/sqlpad' --admin "joeky@gmail.com" --passphrase  "joeky@gmail.com"
 * Open localhost:3010/sqlpad and sign up with "joeky@gmail.com" "joeky"
 * Login
-* DB connections -> Add connection
+* New Query -> DB connections -> Add connection
