@@ -295,9 +295,9 @@ alias streamlink-mpv-best="streamlink --verbose-player --player 'mpv --cache=600
 alias streamlink-mpv-1080="streamlink --verbose-player --player 'mpv --cache=600000' --default-stream 1080p"
 alias streamlink-mpv-720="streamlink --verbose-player --player 'mpv --cache=600000' --default-stream 720p"
 alias streamlink-mpv-480="streamlink --verbose-player --player 'mpv --cache=600000' --default-stream 480p"
-alias mpv-1080='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best" --cache=1048576' # 1GB youtube-dl cache
-alias mpv-720='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best" --cache=600000'
-alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best" --cache=600000'
+alias mpv-1080='mpv --ytdl-format="bestvideo[height<=1080][fps<=30]+bestaudio/best" --cache=1048576 --cache-secs=1200' # 1GB youtube-dl cache
+alias mpv-720='mpv --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best" --cache=600000 --cache-secs=1200'
+alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best" --cache=600000 --cache-secs=1200'
 alias mpv-mute='mpv --mute=yes'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
