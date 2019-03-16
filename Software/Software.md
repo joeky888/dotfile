@@ -127,7 +127,7 @@ Dev
 * Brackets
 * Visual Studio Code Insiders
 * Database
-    * omnidb-app - SQL web client for MySQL/Postgres
+    * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
     * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
     * redis-commander - Web ui for redis
