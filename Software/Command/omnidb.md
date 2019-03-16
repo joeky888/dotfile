@@ -4,3 +4,8 @@ Install
 * $ pip3 install -r requirements.txt
 * $ python OmniDB/omnidb-server.py # Just python, don't use python2 or python3
 * Open 127.0.0.1:15106, Login as admin/admin
+
+Set utf8
+=====
+* $ cd OmniDB && grep -RiIn "pymysql.connect"
+* Append `charset='utf8', use_unicode=True` to the function "pymysql.connect"
