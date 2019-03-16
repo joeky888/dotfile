@@ -118,20 +118,24 @@ BaiduPCS-Go config set -user_agent="Test"
 
 Dev
 =====
-* Godot
-* Android Studio
-* Qt Creator
-* Eclipse
-* PyCharm Community Edition
-* gVim x64
-* Brackets
-* Visual Studio Code Insiders
+* IDE
+    * Godot
+    * Android Studio
+    * Qt Creator
+    * Eclipse
+    * PyCharm Community Edition
+    * gVim x64
+    * Brackets
+    * Visual Studio Code Insiders
 * Database
+    * sqlectron - SQL client electron app
     * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
     * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
     * redis-commander - Web ui for redis
     * sqlitebrowser - Sqlite ui written in Qt
+* Http
+    * insomnia - curl/postman alternative, HTTP and GraphQL Client
 
 Windows
 =====
