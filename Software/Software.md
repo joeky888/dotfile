@@ -128,7 +128,8 @@ Dev
     * Brackets
     * Visual Studio Code Insiders
 * Database
-    * sqlectron - SQL client electron app
+    * sqlectron - MySQL/Postgres client electron app
+    * falcon - MySQL/Postgres client electron app
     * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
     * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
