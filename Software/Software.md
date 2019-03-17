@@ -174,6 +174,7 @@ Windows XP
 * Aria2 (static build)
 * git 2.10.0
 * Qt 5.6 (For development, I'm not sure if the apps built with latest Qt still runs on XP)
+* NW.js v0.14.7
 * Python 2 (Miniconda 2 Latest, Anaconda 2 Latest)
 * Python 3.4.3 (Miniconda 3 Latest, Anaconda 3 v2.3)
 * Sumatra PDF
