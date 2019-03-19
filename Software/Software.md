@@ -81,6 +81,7 @@ CLI
     * go-freelan - freelan-compatible implementation
     * caddy - apache/nginx alternative
     * archiver - 7zip alternative but it doesn't support 7z format
+    * tinygo - subset of golang compiler, small output binary size
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
