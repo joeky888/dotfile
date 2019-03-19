@@ -87,6 +87,7 @@ CLI
     * hashcat - fatest password cracking tool
 * Rust
     * ffsend - send.firefox.com cli client
+    * swc - super-fast javascript to javascript compiler written in rust
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
