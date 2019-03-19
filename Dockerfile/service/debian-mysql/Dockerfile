@@ -71,7 +71,7 @@ RUN chmod 644 /etc/mysql/my.cnf
 #                     #
 #######################
 
-EXPOSE 3306
+EXPOSE 3306/tcp
 ENTRYPOINT ["bash", "-c", "chown -R mysql:mysql /var/lib/mysql /var/run/mysqld; /usr/sbin/mysqld --initialize; /usr/sbin/mysqld;"]
 ENV ENV="/root/.profile"
 ENV EDITOR vim

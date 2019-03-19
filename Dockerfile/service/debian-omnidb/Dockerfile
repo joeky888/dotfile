@@ -79,5 +79,5 @@ ENV EDITOR vim
 SHELL ["/bin/bash"]
 
 # docker-compose up -d --build
-# docker exec -it controller /bin/bash
+# docker exec -it omnidb /bin/bash
 # Open http://localhost:8000 User:admin Password:admin
