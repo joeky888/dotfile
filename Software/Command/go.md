@@ -36,16 +36,17 @@ Debug in vscode
 * vscode -> Debug -> Open Configurations
 ```json
 {
-    "name": "Launch remote",
+    "name": "Launch debug",
     "type": "go",
     "request": "launch",
-    "mode": "remote",
+    "mode": "debug",
     "remotePath": "",
     "port": 2345,
     "host": "127.0.0.1",
-    "program": "${fileDirname}",
-    "env": {},
-    "args": []
+    "program": "${workspaceFolder}",
+    "env": { "MY_GOPATH":"/GOGO" },
+    "args": ["-f", "/etc/config/run-libgo.yaml", "run"],
+    "showLog": true
 }
 ```
 * Now break points should work
