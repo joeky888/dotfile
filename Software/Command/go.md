@@ -27,6 +27,27 @@ RUN go get -d ./...
 RUN go build -o /bin/myexe
 ```
 
+Debug in vscode, but shows logs in terminal (Remote debug mode, recommend)
+=====
+* $ go get -u -v github.com/go-delve/delve/cmd/dlv
+* This is remote debugging mode so setting args and env in vscode json doesn't work
+* $ cd /path/to/project && MYGOPATH=/GOGO dlv debug --headless --listen=:2345 --log --api-version=2 -- -f /etc/config/run-libgo.yaml other:args
+* vscode -> Debug -> Open Configurations
+```json
+{
+    "name": "Launch remote",
+    "type": "go",
+    "request": "launch",
+    "mode": "remote",
+    "remotePath": "${workspaceFolder}",
+    "port": 2345,
+    "host": "127.0.0.1",
+    "program": "${workspaceFolder}",
+    "showLog": true
+}
+```
+* Now break points should work
+
 Debug in vscode
 =====
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
