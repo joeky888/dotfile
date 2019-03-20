@@ -135,7 +135,7 @@ Dev
     * falcon - MySQL/Postgres client electron app
     * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
-    * redis-commander - Web ui for redis
+    * redis-commander - Web ui for redis `npm i -g redis-commander@latest`
     * sqlitebrowser - Sqlite ui written in Qt
 * Http
     * insomnia - curl/postman alternative, HTTP and GraphQL Client
