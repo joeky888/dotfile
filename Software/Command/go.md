@@ -31,6 +31,8 @@ Debug in vscode
 =====
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
 * $ cd /path/to/project && dlv debug --headless --listen=:2345 --log --api-version=2
+* Or a while loop to keep it running
+* $ while true; do dlv debug --headless --listen=:2345 --log --api-version=2; done;
 * vscode -> Debug -> Open Configurations
 ```json
 {
