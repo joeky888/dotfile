@@ -44,7 +44,8 @@ Debug in vscode
     "port": 2345,
     "host": "127.0.0.1",
     "program": "${fileDirname}",
-    "env": {}
+    "env": {},
+    "args": []
 }
 ```
 * Now break points should work
