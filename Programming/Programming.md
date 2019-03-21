@@ -32,6 +32,7 @@ Javascript
     * react-spring - Animation lib
     * react-navigation - Routing and navigation for react native
     * react-native-swiper - UI swiper component
+    * preact - 3KB React alternative with the same modern API
 
 CSS
 =====
