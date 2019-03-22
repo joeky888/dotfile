@@ -509,7 +509,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -n "$OH_MY_ZSH_PATH" ]; then
     export ZSH=$OH_MY_ZSH_PATH
     save_aliases=$(alias -L) # Store current aliases before oh-my-zsh
-    source $ZSH/oh-my-zsh.sh
+    source $ZSH/oh-my-zsh.sh > /dev/null
     compdef vman=man # Complete vman as man command
     compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
