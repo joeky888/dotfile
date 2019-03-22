@@ -24,7 +24,7 @@ Javascript
 * clipboard.js - Copy to clipboard
 * WebAssembly
 * Microlight.js - Global code highting
-* flatpickr.js - Calendar date time picker
+* tiny-date-picker - Calendar date time picker
 * fetch
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
