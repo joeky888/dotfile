@@ -52,6 +52,7 @@ Extension
 * Video Speed Controller
 * Reddit Enhancement Suite
 * Hacker News Enhancement Suite
+* Quora Unblocker
 * Privacy Badger
 * BaiduExporter
 * Secure Shell Extension
