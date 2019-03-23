@@ -257,6 +257,7 @@ Android
 * Qemu Limbo
 * SystemPanel 2
 * tw.gov.invoice
+* Matlog - Material Logcat reader
 * F-Droid
     * OpenLauncher
     * MaterialOS Icon Pack
