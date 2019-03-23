@@ -25,6 +25,7 @@ Javascript
 * WebAssembly
 * Microlight.js - Global code highting
 * tiny-date-picker - Calendar date time picker
+* micromodal.js - Tiny, dependency-free pop-up dialog
 * fetch
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
@@ -38,6 +39,7 @@ CSS
 =====
 * postcss-cssnext - Compile modern CSS to old CSS
 * pure-css - 4.5KB css framework (ie8+) based on normalize.css
+* microtip.css - Lightweight tooptip lib
 
 Browser
 =====
