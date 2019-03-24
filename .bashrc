@@ -590,7 +590,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     source $ZSH_SYNTAX_PATH/zsh-syntax-highlighting.zsh
     typeset -A ZSH_HIGHLIGHT_STYLES
     zle_highlight=(default:bold)
-    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern root line)
+    ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern line)
     #################
     #      None     #
     #################
