@@ -198,12 +198,8 @@ Mac (Hack-intosh)
 * Hyper
 * iTerm2 and iTerm2-Color-Schemes
 * Dr. Unarchiver
-* Homebrew and Homebrew Cask
-    * MacVim / VimR
-    * Free Download Manager
 * WPS Office
 * Squirrel
-* Spectacle (Window manager)
 
 Linux
 =====
