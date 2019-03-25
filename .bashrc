@@ -510,7 +510,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export ZSH=$OH_MY_ZSH_PATH
     save_aliases=$(alias -L) # Store current aliases before oh-my-zsh
     source $ZSH/oh-my-zsh.sh
-    compdef vman=man # Complete vman as man command
+    # compdef vman=man # Don't do it, it takes too much time
     compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
     [ $(command -v pacman) ] && compdef yay=pacman && compdef app-fast=pacman # Complete app-fast as pacman command
@@ -1014,7 +1014,7 @@ fi
 
 vman() {
   # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
-  man $@ | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
+  MANPAGER=cat man $@ | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
 }
 
 curlToAria2()
