@@ -29,6 +29,7 @@ InstallDotfile()
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
   rm -rf ~/.config/mpv/mpv.conf
+  rm -rf ~/.hammerspoon/init.lua
 
   git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -53,6 +54,7 @@ InstallDotfile()
   mkdir -p $Home/.config/mpv/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
+  mkdir -p $Home/.hammerspoon/
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
@@ -61,6 +63,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
   ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
+  ln -sf $Home/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
 }
 
 InstallDotfileCygwin()

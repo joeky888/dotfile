@@ -392,6 +392,7 @@ upgradeDotfile() {
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
   rm -rf ~/.config/mpv/mpv.conf
+  rm -rf ~/.hammerspoon/init.lua
 
   mkdir -p ~/.grc
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
@@ -449,6 +450,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
+    ln -sf $HOME/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
   fi;
 }
 
