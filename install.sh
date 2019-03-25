@@ -272,7 +272,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
 
 
-elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
+elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   export Home="$HOME"
   export SUDO=""
   [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -281,7 +281,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # Mac OSX
   InstallDotfile
 
 #   install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
-  ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux p7zip htop watch atool nmap mtr
+  ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux p7zip htop watch atool nmap mtr shellcheck
 
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
