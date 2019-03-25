@@ -1,8 +1,17 @@
+Setting
+=====
+* View -> Time Display Format -> Date and Time of Day
+* View -> Name Resolution -> Check all three options
+
+
 Filter
 =====
 ```sh
 # Search key word
 frame contains "mozilla"
+
+# Search only http port 80
+http
 
 # Searcb tcp port 443 on either src or dst
 tcp.port == 443
