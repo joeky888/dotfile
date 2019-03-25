@@ -18,6 +18,17 @@ ssh
 ssh B_username@192.168.0.2 -p 8888 -t tmux attach || tmux new
 ```
 
+Port forward (using ssh tunnel)
+=====
+* ssh -NfL LocalPort:ServerHost:ServerPort user@server
+    * -N Don't execute command
+    * -f Run in background
+    * -L Enable ssh tunnel
+```sh
+# Forward 192.168.1.102:80 to localhost:31280 via 168.95.1.1
+ssh -NfL 31280:192.168.1.102:80 user@168.95.1.1
+```
+
 ssh config file
 =====
 * $ sudo apt install netcat -y # For proxy
