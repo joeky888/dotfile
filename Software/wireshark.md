@@ -1,6 +1,6 @@
 Filter
 =====
-```lua
+```sh
 # Search key word
 frame contains "mozilla"
 
