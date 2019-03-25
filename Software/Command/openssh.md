@@ -27,6 +27,7 @@ Port forward (using ssh tunnel)
 ```sh
 # Forward 192.168.1.102:80 to localhost:31280 via 168.95.1.1
 ssh -NfL 31280:192.168.1.102:80 user@168.95.1.1
+pkill ssh
 ```
 
 ssh config file
