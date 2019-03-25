@@ -26,6 +26,7 @@ Javascript
 * Microlight.js - Global code highting
 * tiny-date-picker - Calendar date time picker
 * micromodal.js - Tiny, dependency-free pop-up dialog
+* anime.js - Lightweight Animation lib
 * fetch
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
