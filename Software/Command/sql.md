@@ -22,6 +22,19 @@ show create table [TableName] /* Get structure of a table */
 SELECT table_name FROM information_schema.tables; /* Get all tables */
 SELECT * FROM tableName; /* Get all data from a table */
 ```
+* Insert if not exist, Update if exist
+```sql
+-- Mysql and Sqlite
+REPLACE INTO table (id, field, field2)
+       SELECT 3, 'C', 'Z'
+       WHERE NOT EXISTS (SELECT 1 FROM table WHERE id=3);
+
+-- Postgresql - Use Update and Insert at the same time
+UPDATE table SET field='C', field2='Z' WHERE id=3;
+INSERT INTO table (id, field, field2)
+       SELECT 3, 'C', 'Z'
+       WHERE NOT EXISTS (SELECT 1 FROM table WHERE id=3);
+```
 
 Import .gz to database (mysql)
 =====
