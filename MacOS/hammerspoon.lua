@@ -1,11 +1,13 @@
-hyper = {"ctrl","cmd"}
+hyper2 = {"ctrl","cmd"}
+hyper3 = {"ctrl","alt","cmd"}
 hs.window.animationDuration=0
 
-hs.hotkey.bind(hyper, "Up", function()
+hs.hotkey.bind(hyper2, "Up", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
+
   if( win:isFullScreen() ) then
     win:setFullScreen(false)
   elseif (f.x == max.x and f.y == max.y and f.h == max.h and f.w == max.w) then
@@ -15,21 +17,24 @@ hs.hotkey.bind(hyper, "Up", function()
   end
 end)
 
-hs.hotkey.bind(hyper, "Down", function()
+hs.hotkey.bind(hyper2, "Down", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
+
   if( win:isFullScreen() ) then
     win:setFullScreen(false)
-  elseif (f.x == max.x and f.y == max.y and f.h == max.h and f.w == max.w) then
-    win:setFullScreen(true)
   else
-    win:setFrame(screen:fullFrame())
+    f.x = max.w / 7
+    f.y = max.h / 7
+    f.w = max.w / 1.5
+    f.h = max.h / 1.5
+    win:setFrame(f)
   end
 end)
 
-hs.hotkey.bind(hyper, "Left", function()
+hs.hotkey.bind(hyper2, "Left", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
@@ -46,11 +51,12 @@ hs.hotkey.bind(hyper, "Left", function()
   end
 end)
 
-hs.hotkey.bind(hyper, "Right", function()
+hs.hotkey.bind(hyper2, "Right", function()
   local win = hs.window.focusedWindow()
   local f = win:frame()
   local screen = win:screen()
   local max = screen:frame()
+
   if( win:isFullScreen() ) then
     win:setFullScreen(false)
   else
@@ -60,6 +66,24 @@ hs.hotkey.bind(hyper, "Right", function()
     f.h = max.h
     win:setFrame(f)
   end
-
 end)
 
+function nextScreen()
+  local win = hs.window.focusedWindow()
+  local f = win:frame()
+  local screen = win:screen()
+  local max = screen:frame()
+
+  if( win:isFullScreen() ) then
+    win:setFullScreen(false)
+  end
+  win:moveToScreen(screen:next())
+  hs.timer.doAfter(1, function()
+    win:setFullScreen(true)
+  end)
+end
+
+hs.hotkey.bind(hyper3, "Up", nextScreen)
+hs.hotkey.bind(hyper3, "Down", nextScreen)
+hs.hotkey.bind(hyper3, "Right", nextScreen)
+hs.hotkey.bind(hyper3, "Left", nextScreen)
