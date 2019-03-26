@@ -1,6 +1,6 @@
-hyper2 = {"ctrl","cmd"}
-hyper3 = {"ctrl","alt","cmd"}
-hs.window.animationDuration=0
+hyper2 = {"ctrl","cmd"} -- Resize window
+hyper3 = {"ctrl","alt","cmd"} -- Move window to another monitor
+hs.window.animationDuration=0 -- Disable animation
 
 hs.hotkey.bind(hyper2, "Up", function()
   local win = hs.window.focusedWindow()
