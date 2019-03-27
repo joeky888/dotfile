@@ -11,8 +11,8 @@ Usage
 * -n : Use numeric-only IP addresses i.e. do not use DNS to resolve ip addresses.
 * -w 1 : Set time out value to 1.
 ```sh
-# Check a port is opening or not
-nc -v 192.168.0.1 5000
+# Check port 21,22,80 is opening or not
+nc -v 192.168.0.1 21 22 80
 
 # Scan tcp port 1-1000 and 2000-3000
 nc -vnz -w 1 192.168.0.1 1-1000 2000-3000
