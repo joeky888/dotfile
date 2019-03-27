@@ -106,6 +106,10 @@ BaiduPCS-Go config set -user_agent="Test"
     * pm2
     * cloc # Programing language usage analyzer
     * git-stats
+* Network tools
+    * Nmap
+    * Netcat
+    * Snort
 * BusyBox / Toybox
 * Neofetch
 * TestDisk / PhotoRec
