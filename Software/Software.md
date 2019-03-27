@@ -110,6 +110,7 @@ BaiduPCS-Go config set -user_agent="Test"
     * Nmap
     * Netcat
     * Snort
+    * sqlmap
 * BusyBox / Toybox
 * Neofetch
 * TestDisk / PhotoRec
