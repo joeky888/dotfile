@@ -31,6 +31,7 @@
 [alias]
 	history = log -p
 	summary = log --stat
+	diff2   = diff --no-index # Compare 2 non-git files/folders
 [core]
 	editor = vim -c 'normal! gg'
 	autocrlf = false
