@@ -707,7 +707,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   bindkey "^X" CutToClipboard # Ctrl X to cut to Clipboard.txt
   bindkey "^G" FindFilesToExec # Ctrl G to execute command on multiple files
   bindkey "^F" Forever # Ctrl F to run a command Forever
-  bindkey "^O" OpenFileExplorer # Ctrl F to run a command Forever
+  bindkey "^O" OpenFileExplorer # Ctrl O to open file explorer here
 elif [[ -n "$BASH_VERSION" ]]; then # Bash
   complete -cf sudo # complete sudo command
   complete -cf man # complete man command
@@ -1242,11 +1242,11 @@ Forever()
 
 OpenFileExplorer()
 {
-  if [ "$OSTYPE" == "linux-gnu" ] || [ "$OSTYPE" =~ "freebsd" ]; then # Linux + FreeBSD
+  if [ "$OSTYPE" = "linux-gnu" ] || echo "$OSTYPE" | grep -q "freebsd"; then # Linux + FreeBSD
     xdg-open . > /dev/null 2>&1 &!;
-  elif [ "$OSTYPE" == "msys" ] || [ "$OSTYPE" == "cygwin" ]; then # Windows
+  elif [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "cygwin" ]; then # Windows
     explorer.exe .
-  elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
+  elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
     open .
   else # Unknown OS
     true
