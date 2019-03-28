@@ -430,6 +430,7 @@ upgradeDotfile() {
     mkdir -p ~/.config/alacritty/
     mkdir -p ~/.config/mpv/
     mkdir -p ~/.pip/
+    mkdir -p ~/.hammerspoon/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
     ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
