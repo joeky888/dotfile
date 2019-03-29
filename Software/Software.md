@@ -147,6 +147,7 @@ Dev
 
 Windows
 =====
+* Fluent Terminal / Hyper
 * build-extra (git for Windows) or msys2
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Greenshot
