@@ -6,6 +6,7 @@ Setting (search `json`)
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
+    "editor.detectIndentation": true,
     "files.encoding": "utf8",
     "files.eol": "\r\n",
     "files.trimTrailingWhitespace": true,
@@ -20,7 +21,12 @@ Setting (search `json`)
     "editor.snippetSuggestions": "top",
     "terminal.integrated.fontSize": 18,
     "workbench.editor.enablePreview": false,
-    "editor.dragAndDrop": false
+    "editor.dragAndDrop": false,
+    "window.zoomLevel": 0,
+    "[go]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false
+    }
 }
 ```
 
