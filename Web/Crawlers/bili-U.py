@@ -23,19 +23,30 @@ for u in sys.argv[1:]:
 # Remove duplicates
 url = list(set(url))
 
+class Video():
+    def __init__(self, url, outop, idx):
+        self.url     = url
+        self.outop   = outop
+        self.idx     = idx
+        self.process = subprocess.Popen( self.getJob() )
+    def getJob(self):
+        return ["you-get", self.url, self.outop, self.idx]
+
 for idx, u in enumerate(url):
-    processes.append( [subprocess.Popen([ "you-get", u, "-o", str(idx) ]), u, idx] )
+    processes.append(
+        Video(u, "-o", str(idx))
+    )
     while len(processes) >= MAX_DOWNLOAD_AT_ONCE or (idx == len(url)-1 and len(processes) > 0):
         time.sleep(.1)
-        for i, p in enumerate(processes):
+        for i, video in enumerate(processes):
             # if p[0].returncode == None, it means that downloading is not finished
-            if p[0].poll() == 0:
+            if video.process.poll() == 0:
                 # Succeed
                 processes.pop(i)
-            elif p[0].returncode != None:
+            elif video.process.returncode != None:
                 # Failed
                 processes.pop(i)
-                Error.append( [subprocess.Popen([ "you-get", p[1], "-o", str(p[2]) ]), p[1], p[2]] )
+                Error.append( Video(video.url, video.outop, video.idx) )
                 time.sleep(.1)
         processes.extend(Error)
         Error = []
