@@ -180,6 +180,11 @@ wpa-psk <your_wpa_key>
 
 Add dns server
 =====
+* $ sudoedit /etc/resolvconf.conf && sudo resolvconf -u
+```resolv
+name_servers="180.76.76.76 114.114.114.114 8.8.4.4 8.8.8.8"
+```
+* Or
 * $ sudoedit /etc/resolv.conf
 * Or
 * $ sudoedit /run/resolvconf/resolv.conf
