@@ -63,6 +63,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 Unblock-File $profile.CurrentUserAllHosts
 New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
 PowerShellGet\Install-Module posh-git -Scope CurrentUser
+PowerShellGet\Install-Module oh-my-posh -Scope CurrentUser
 PowerShellGet\Install-Module posh-docker -Scope CurrentUser
 PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
 choco install 7zip git poshgit fluent-terminal vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp gimp inkscape krita -y --pre
