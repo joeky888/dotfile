@@ -73,7 +73,7 @@ CLI
     * syncthing - sync files between 2 PCs
     * grafana - beautiful monitoring tool
     * enry - Get source code filetype distribution of current folder
-    * gotty - SSH alternative via browser Webshell $ gotty -w bash
+    * gotty - SSH alternative via browser Webshell (there is an improved version called `ttyd` in C) $ gotty -w bash
     * bat - cURL/httpie written in Go
     * hget - aria2/axel download accelerator in go
     * rclone - Google drive (and more) client
@@ -86,6 +86,7 @@ CLI
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
     * hashcat - fatest password cracking tool
+    * ttyd - SSH alternative via browser Webshell inspired by gotty
 * Rust
     * ffsend - send.firefox.com cli client
     * swc - super-fast javascript to javascript compiler written in rust
