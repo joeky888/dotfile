@@ -34,6 +34,14 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 * Or
 * $ git fetch --all
 
+Upgrade a forked project
+=====
+* $ git remote add author https://github.com/robbyrussell/oh-my-zsh.git
+* $ git remote add myfork https://github.com/joeky/oh-my-zsh.git
+* $ git remote -v # Should see 2 remote url
+* $ git pull author # Fetch and merge author's repo to local
+* $ git push myfork
+
 Modify a commit message
 =====
 * $ git commit --amend
