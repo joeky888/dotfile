@@ -27,6 +27,7 @@ Javascript
 * tiny-date-picker - Calendar date time picker
 * micromodal.js - Tiny, dependency-free pop-up dialog
 * laxxx.js - 3KB alternative to anime.js Animation lib
+* Day.js - 2KB alternative to Moment.js parsing date time
 * fetch
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
