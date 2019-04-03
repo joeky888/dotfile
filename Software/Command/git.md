@@ -56,6 +56,11 @@ git restore a single file
 * Or
 * $ git checkout HEAD -- my-file.txt
 
+git rebase error
+=====
+* First, fix Conflicts
+* $ git rebase --skip
+
 Export and import a patch
 =====
 * $ git diff > save.patch
