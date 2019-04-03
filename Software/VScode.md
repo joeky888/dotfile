@@ -24,7 +24,7 @@ Setting (search `json`)
     "editor.dragAndDrop": false,
     "window.zoomLevel": 0,
     "[go]": {
-        "editor.formatOnSave": false,
+        "editor.formatOnSave": true,
         "editor.tabSize": 8,
         "editor.insertSpaces": false
     }
