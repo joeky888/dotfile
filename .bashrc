@@ -302,7 +302,7 @@ alias mpv-mute='mpv --mute=yes'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true'
-alias bypy='DOWNLOADER_ARGUMENTS="-c -s1 -k1M -x1 -j1 -t10 --connect-timeout=10 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
+alias bypy='DOWNLOADER_ARGUMENTS="-c -s2 -k1M -x2 -j2 -t10 --connect-timeout=10 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
 alias annie-playlist="annie -p"
 alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
