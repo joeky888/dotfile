@@ -284,6 +284,7 @@ Android
     * 豌豆荚 wandoujia
     * 應用寶
     * 迅雷
+    * Manhuaren - Don't use google play version
 * Not an app but related to Android
     * Scrcpy - Control Android via adb (Android 5+)
 
