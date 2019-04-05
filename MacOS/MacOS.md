@@ -17,6 +17,7 @@ Post-installed
 * System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
 * System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Preferences > General > Recent Items > None
+* Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
 * $ brew cask install alacritty hammerspoon xnviewmp visual-studio-code mpv phantomjs opera google-chrome flash-ppapi skype teamviewer obs the-unarchiver gimp krita qbittorrent adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu
 * $ brew cask install baidunetdisk
