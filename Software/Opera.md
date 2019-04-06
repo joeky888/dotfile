@@ -82,6 +82,7 @@ http://www.azofreeware.com/feeds/posts/default
 https://www.kocpc.com.tw/feed
 http://www.oschina.net/news/rss
 https://linux.cn/rss.xml
+https://studygolang.com/feed.xml
 http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
 
 * English
@@ -91,7 +92,6 @@ https://feeds.feedburner.com/engadget
 https://feeds.feedburner.com/TechCrunch
 https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
-https://blog.qt.io/feed
 
 * Github
 ```
