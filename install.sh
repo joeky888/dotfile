@@ -358,16 +358,16 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   termux-setup-storage
   apt install -y git aria2
   InstallDotfile
-  cd ~/dotfile/app-fast && git reset --hard
+  # cd ~/dotfile/app-fast && git reset --hard
   ~/dotfile/app-fast/app-fast full-upgrade -y
-  ~/dotfile/app-fast/app-fast install -y man vim micro git tig zsh tmux curl aria2 bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
-  ~/dotfile/app-fast/app-fast install -y tar wget clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
-  ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
+  ~/dotfile/app-fast/app-fast install -y man vim micro git tig zsh tmux curl aria2 tar wget bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
+  # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
+  # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
   InstallPy3UTF8
   InstallGRC
-  ~/dotfile/app-fast/app-fast install -y proot bsdtar
-  #InstallAlpine
+  # ~/dotfile/app-fast/app-fast install -y proot bsdtar
+  # InstallAlpine
 
 
 
