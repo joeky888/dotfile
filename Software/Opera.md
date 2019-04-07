@@ -35,6 +35,7 @@ Extension
 * Full Page Screen Capture
 * SimpleUndoClose
 * Tampermonkey
+    * https://greasyfork.org/zh-CN/scripts/39504-百度网盘直链下载助手
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
