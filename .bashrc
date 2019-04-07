@@ -1032,6 +1032,7 @@ curlToAria2()
   # Need to be updated
   PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--header/g" | sed "s/ '--compressed'//g" )
 
+  local DOWNLOADER_ARGUMENTS='-c -s16 -k1M -x16 -j16 -t3 --connect-timeout=3 --file-allocation=none' # 3s timeout for faster retrying
   echo "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
   eval "aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
   while [ $? -ne 0 ]; do
