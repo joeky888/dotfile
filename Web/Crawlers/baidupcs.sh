@@ -9,7 +9,7 @@ FILE_LIST=( 01.zip \
 curlToAria2()
 {
   PARAMS=""
-  BASE_URL="https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=265486&"
+  BASE_URL="https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=265486&path=/apps/bypy/火影/"
 
   for PARAM in "${@:2}"
   do
