@@ -850,6 +850,8 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
 
   [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
   [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
+
+  [ $(command -v go) ] && export GOROOT="/usr/local/opt/golang/libexec"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export SUDO=""
