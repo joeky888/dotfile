@@ -22,7 +22,6 @@ Windows Registry Editor Version 5.00
 ; "PopupColors"=dword:000000f5
 
 ; Monokai
-; Invoke-Item C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
 [HKEY_CURRENT_USER\Console]
 "ColorTable00"=dword:001e1d1b
 "ColorTable01"=dword:00ffaf00
@@ -43,21 +42,17 @@ Windows Registry Editor Version 5.00
 "ScreenColors"=dword:00000001
 "PopupColors"=dword:000000f6
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.6]
-"JavaHome"="C:\\zulu"
+; [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.6]
+; "JavaHome"="C:\\zulu"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.7]
-"JavaHome"="C:\\zulu"
+; [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.7]
+; "JavaHome"="C:\\zulu"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.8]
-"JavaHome"="C:\\zulu"
+; [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.8]
+; "JavaHome"="C:\\zulu"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.9]
-"JavaHome"="C:\\zulu"
-
-; Set to UTF-8, if something goes wrong, just delete it
-; [HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor]
-; "Autorun"="@chcp 65001>nul & cmd"
+; [HKEY_LOCAL_MACHINE\SOFTWARE\JavaSoft\Java Runtime Environment\1.9]
+; "JavaHome"="C:\\zulu"
 
 ; [HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command]
 ; @="C:\\ProgramData\\chocolatey\\bin\\gvim.exe -p --remote-tab-silent \"%1\""
@@ -65,14 +60,14 @@ Windows Registry Editor Version 5.00
 ; [HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command]
 ; @="C:\\ProgramData\\chocolatey\\bin\\gvim.exe -p --remote-tab-silent \"%1\""
 
-[HKEY_CLASSES_ROOT\jar_auto_file\shell\Open\command]
-@="C:\\zulu\\bin\\java.exe -jar \"%1\""
+; [HKEY_CLASSES_ROOT\jar_auto_file\shell\Open\command]
+; @="C:\\zulu\\bin\\java.exe -jar \"%1\""
+
+; [HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
+; "JAVA_TOOL_OPTIONS"=" -Dfile.encoding=UTF8 "
 
 [HKEY_CLASSES_ROOT\*\shell\Open with invert color\command]
 @="C:\\ProgramData\\chocolatey\\bin\\SumatraPDF.exe -invert-colors \"%1\""
-
-[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Environment]
-"JAVA_TOOL_OPTIONS"=" -Dfile.encoding=UTF8 "
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Themes\Personalize]
 "AppsUseLightTheme"=dword:00000000
