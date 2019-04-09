@@ -21,3 +21,4 @@ bind generic	<C-W>	view-close
 set ignore-case	        = yes
 set mouse               = true
 set mouse-scroll        = 1         # Number of lines to scroll via the mouse
+set diff-highlight      = true
