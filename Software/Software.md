@@ -143,6 +143,7 @@ Dev
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
     * redis-commander - Web ui for redis `npm i -g redis-commander@latest`
     * sqlitebrowser - Sqlite ui written in Qt
+    * mysql2sqlite - Convert mysqldump sql to sqlite sql syntax, useful for offline testing
 * Http
     * insomnia - curl/postman alternative, HTTP and GraphQL Client
 
