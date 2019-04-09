@@ -59,6 +59,8 @@ git restore a single file
 git rebase error
 =====
 * First, fix Conflicts
+* $ git add --all
+* $ git commit -m "Merge conflicts"
 * $ git rebase --skip
 
 Export and import a patch
