@@ -100,3 +100,8 @@ Pack to git bundle (.bundle files)
 * Unpack
 * $ git bundle verify repo.bundle
 * $ git clone repo.bundle
+
+Collection of github badges
+=====
+* ![GitHub stars](https://img.shields.io/github/stars/joeky888/app-fast.svg?style=social&label=Stars)
+* ![GitHub forks](https://img.shields.io/github/forks/joeky888/app-fast.svg?style=social&label=Fork)
