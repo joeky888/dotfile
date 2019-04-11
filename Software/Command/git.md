@@ -24,7 +24,7 @@ Push all branches and tags
 Fetch/Pull a new branch
 =====
 * $ vim .git/config
-```conf
+```gitconfig
 # Change this line
 fetch = +refs/heads/master:refs/remotes/origin/master
 # To
