@@ -141,7 +141,7 @@ Dev
     * falcon - MySQL/Postgres client electron app
     * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
     * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
-    * redis-commander - Web ui for redis `npm i -g redis-commander@latest`
+    * redis-commander - Web ui for redis
     * sqlitebrowser - Sqlite ui written in Qt
     * mysql2sqlite - Convert mysqldump sql to sqlite sql syntax, useful for offline testing
 * Http
