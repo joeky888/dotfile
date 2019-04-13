@@ -1,9 +1,9 @@
 #!/bin/zsh
 
-FILE_LIST=( 01.zip \
-            02.zip \
-            03.zip \
-            04.zip
+FILE_LIST=( '01.zip' \
+            '02.zip' \
+            '03.zip' \
+            '04.zip'
           );
 
 curlToAria2()
@@ -21,12 +21,12 @@ curlToAria2()
   for f in "${FILE_LIST[@]}" ; do
 
     local DOWNLOADER_ARGUMENTS='-c -s16 -k1M -x16 -j16 -t3 --connect-timeout=3 --file-allocation=none' # 3s timeout for faster retrying
-    echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o $f"
-    eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o $f"
+    echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+    eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
     while [ $? -ne 0 ]; do
       echo "Retrying curlToAria2 ..."
-      echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o $f"
-      eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o $f"
+      echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+      eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
     done;
 
   done
