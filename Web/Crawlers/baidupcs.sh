@@ -21,12 +21,12 @@ curlToAria2()
   for f in "${FILE_LIST[@]}" ; do
 
     local DOWNLOADER_ARGUMENTS='-c -s16 -k1M -x16 -j16 -t3 --connect-timeout=3 --file-allocation=none' # 3s timeout for faster retrying
-    echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
-    eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+    $(exit 1)
     while [ $? -ne 0 ]; do
       echo "Retrying curlToAria2 ..."
-      echo "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
-      eval "aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+      local cmd="aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+      echo "$cmd"
+      eval "$cmd"
     done;
 
   done
@@ -37,7 +37,7 @@ curlToAria2 'https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=2654
 -H 'Connection: keep-alive' \
 -H 'Upgrade-Insecure-Requests: 1' \
 -H 'DNT: 1' \
--H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4)' \
+-H 'User-Agent: Mozilla/5.0' \
 -H 'Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8' \
 -H 'Referer: https://pan.baidu.com/disk/home?' \
 -H 'Accept-Encoding: gzip, deflate, br' \
