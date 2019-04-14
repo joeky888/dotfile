@@ -264,12 +264,12 @@ if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
-  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --user-agent="$(youtube-dl --dump-user-agent)"'
+  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --timeout 10 --user-agent="$(youtube-dl --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
-  [ $(command -v axel) ] && alias axel='axel --num-connections=16'
+  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --timeout 10'
 fi
 if hash aria2c 2>/dev/null >/dev/null ; then
   alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
