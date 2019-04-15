@@ -9,7 +9,7 @@ FROM debian:testing
 RUN echo "deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" > /etc/apt/sources.list
 RUN echo "deb http://cdn-fastly.deb.debian.org/debian-security testing/updates main contrib non-free" >> /etc/apt/sources.list
 RUN apt update
-RUN apt install -y curl vim gnupg locales tzdata freelan
+RUN apt install -y curl vim gnupg locales tzdata redis-server
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
     echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen; \
     echo "LANG=en_US.UTF-8" > /etc/locale.conf; \
@@ -61,16 +61,12 @@ RUN sed -i "s/\s*$//g" /root/.bashrc
 #                     #
 #######################
 
-EXPOSE 12000/udp
-ENTRYPOINT ["/usr/sbin/freelan", "-f", "--tap_adapter.enabled=off", "--switch.relay_mode_enabled=yes", "--security.passphrase", "joeky888"]
+EXPOSE 6379/tcp
+ENTRYPOINT ["/usr/bin/redis-server", "--bind", "0.0.0.0", "--port", "6379"]
 ENV ENV="/root/.profile"
 ENV EDITOR vim
 
 SHELL ["/bin/bash"]
 
 # docker-compose up -d --build
-# docker exec -it freelan /bin/bash
-# cd "C:\Program Files\FreeLAN\bin"
-# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.1/24
-# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.2/24
-# .\freelan.exe --security.passphrase "joeky888" --fscp.contact myServerAddr.com:12000 --tap_adapter.ipv4_address_prefix_length 9.0.0.3/24
+# docker exec -it redis /bin/bash
