@@ -7,3 +7,8 @@ Usage
 * $ echo 'theme = "ananke"' >> config.toml
 * Add a content
 * $ hugo new posts/my-first-post.md
+
+Start debug server
+=====
+* $ cd mysite
+* $ hugo server -D
