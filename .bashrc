@@ -1238,9 +1238,9 @@ Forever()
   # Forever loop until the job is done
   # while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
   if [[ -n "$ZSH_VERSION" ]]; then
-    BUFFER='while true; do '$BUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
+    BUFFER='count=0; while true; do echo $((count++)); '$BUFFER' ; if [ $? -eq 0 ]; then break; fi; done ;'
   elif [[ -n "$BASH_VERSION" ]]; then
-    READLINE_LINE='while true; do '$READLINE_LINE' ; if [ $? -eq 0 ]; then break; fi; done ;'
+    READLINE_LINE='count=0; while true; do echo $((count++)); '$READLINE_LINE' ; if [ $? -eq 0 ]; then break; fi; done ;'
   fi;
 }
 
