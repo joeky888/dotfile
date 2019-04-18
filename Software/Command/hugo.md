@@ -11,4 +11,4 @@ Usage
 Start debug server
 =====
 * $ cd mysite
-* $ hugo server -D
+* $ hugo server -D --disableFastRender
