@@ -272,9 +272,9 @@ else
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
 if hash aria2c 2>/dev/null >/dev/null ; then
-  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors --external-downloader aria2c --external-downloader-args $DOWNLOADER_ARGUMENTS'
+  alias youtube-dl="youtube-dl -o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --ignore-errors --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 else
-  alias youtube-dl='youtube-dl -o "%(title)s.%(ext)s" --write-sub --all-subs --embed-subs --ignore-errors'
+  alias youtube-dl="youtube-dl -o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --ignore-errors"
 fi
 alias which='which -a'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30]+bestaudio/best'"
