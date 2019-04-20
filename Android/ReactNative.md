@@ -62,7 +62,7 @@ Html vs React Native
 ```html
               <div> | <View> or <KeyboardAvoidingView>
              <span> | <Text>
-<input type="text"> | <InputText>
+<input type="text"> | <TextInput>
            <button> | <TouchableOpacity> or <Button>
               <img> | <Image>
            <ul><li> | <ListView>
