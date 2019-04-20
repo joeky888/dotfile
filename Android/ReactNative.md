@@ -8,7 +8,7 @@ Install with npm
 Init
 ======
 * Install Expo app and open the project
-* Make sure all other Network interfaces are disabled
+* Make sure all other Network interfaces/Firewall are disabled
 * $ expo init ProjectName
 * $ cd ProjectName
 * $ `rm -rf node_modules`
