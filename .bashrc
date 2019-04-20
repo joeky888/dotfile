@@ -1036,9 +1036,10 @@ curlToAria2()
   PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--header/g" | sed "s/ '--compressed'//g" )
 
   local DOWNLOADER_ARGUMENTS='-c -s16 -k1M -x16 -j16 -t3 --connect-timeout=3 --file-allocation=none' # 3s timeout for faster retrying
+  local count=0
   $(exit 1)
   while [ $? -ne 0 ]; do
-    echo "Retrying curlToAria2 ..."
+    echo "Retrying curlToAria2 ... $((count++))"
     local cmd="aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
