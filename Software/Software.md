@@ -146,6 +146,8 @@ Dev
     * mysql2sqlite - Convert mysqldump sql to sqlite sql syntax, useful for offline testing
 * Http
     * insomnia - curl/postman alternative, HTTP and GraphQL Client
+* React Native
+    * Code Push - Hot-fix app by replacing the js bundle file
 
 Windows
 =====
