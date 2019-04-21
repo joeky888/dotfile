@@ -63,8 +63,7 @@ Extension
 * 飛比價格購物幫手
 * LXRSS
     * Custom New Tab Page (Opera Extension) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
-* Deprecated
-    * Free Proxy to Unblock any sites (For pan.baidu.com, EDIT: Use Opera VPN instead)
+* Touch VPN (For pan.baidu.com, EDIT: Use Opera VPN instead)
 
 RSS list
 =====
