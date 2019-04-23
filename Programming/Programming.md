@@ -85,6 +85,7 @@ Go
 * iris - Fatest web framework
 * https://github.com/valyala/fastjson - Get and Set json value without code reflection
 * github.com/buger/jsonparser - Get and Set json value without code reflection
+* pp - Colored pretty printer for Go sturct
 
 Java
 =====
