@@ -1,4 +1,4 @@
-Archlinux k3s (Recommend, Linux only)
+Archlinux k3s (Recommend, Linux only), Or microk8s
 =====
 ```sh
 git clone --depth 1 https://github.com/rancher/k3s
