@@ -11,6 +11,7 @@ Go mod (Golang >= 1.11)
 * $ export GO111MODULE=on
 * $ go mod init
 * $ go mod download
+* $ go mod tidy
 
 Build go project in dockerfile (Assume the dockerfile is on the root of the project)
 =====
