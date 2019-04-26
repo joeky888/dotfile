@@ -11,6 +11,7 @@ New project
 =====
 * $ cordova create hello com.example.hello "HelloWorld"
 * $ cd hello
+* $ rm -rf www; cp -r path/to/myweb www
 * $ cordova platform remove ios; cordova platform add https://github.com/apache/cordova-ios.git
 * $ cordova prepare
 * $ cordova run ios --device # Or cordova emulate ios
