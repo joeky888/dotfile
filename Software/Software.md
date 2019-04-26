@@ -148,6 +148,7 @@ Dev
     * insomnia - curl/postman alternative, HTTP and GraphQL Client
 * React Native
     * Code Push - Hot-fix app by replacing the js bundle file
+    * vscode-react-native - Vscode extension
 
 Windows
 =====
