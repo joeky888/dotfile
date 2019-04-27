@@ -9,9 +9,12 @@ Install
 
 New project
 =====
-* $ cordova create hello com.example.hello "HelloWorld"
+* $ cordova create hello com.joeky.hello "HelloWorld"
 * $ cd hello
 * $ rm -rf www; cp -r path/to/myweb www
 * $ cordova platform remove ios; cordova platform add https://github.com/apache/cordova-ios.git
 * $ cordova prepare
+* Use Xcode to open ./platforms/ios/xxx.xcodeproj
+    * Select project name from file tree (on the left) -> General -> Team -> Joeky Zhan (Personal Team)
 * $ cordova run ios --device # Or cordova emulate ios
+* iOS device setting -> General -> Trust joeky's email
