@@ -149,6 +149,7 @@ Dev
 * React Native
     * Code Push - Hot-fix app by replacing the js bundle file
     * vscode-react-native - Vscode extension
+    * eslint-config-airbnb - Airbnb's js rules
 
 Windows
 =====
