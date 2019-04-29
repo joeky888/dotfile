@@ -84,6 +84,7 @@ http://www.oschina.net/news/rss
 https://linux.cn/rss.xml
 https://studygolang.com/feed.xml
 http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
+https://www.ithome.com/rss
 
 * English
 https://feeds.feedburner.com/d0od
