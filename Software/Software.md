@@ -150,6 +150,7 @@ Dev
     * Code Push - Hot-fix app by replacing the js bundle file
     * vscode-react-native - Vscode extension
     * eslint-config-airbnb - Airbnb's js rules
+    * react-native-router-flux - Navigation router for react-native
 
 Windows
 =====
