@@ -13,7 +13,7 @@ New project
 * $ cd hello
 * $ rm -rf www; cp -r path/to/myweb www
 * $ cordova platform remove ios; cordova platform add https://github.com/apache/cordova-ios.git#master
-* $ cordova plugin rm cordova-plugin-wkwebview-engine; cordova plugin add https://github.com/apache/cordova-plugin-wkwebview-engine.git#master
+* $ cordova plugin rm cordova-plugin-ionic-webview; cordova plugin add https://github.com/ionic-team/cordova-plugin-ionic-webview.git#master
 * $ cordova prepare
 * Use Xcode to open ./platforms/ios/xxx.xcodeproj
     * Select project name from file tree (on the left) -> General -> Team -> Joeky Zhan (Personal Team)
