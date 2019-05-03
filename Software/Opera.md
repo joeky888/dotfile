@@ -85,6 +85,7 @@ https://linux.cn/rss.xml
 https://studygolang.com/feed.xml
 http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
 https://www.ithome.com/rss
+https://www.freebuf.com/feed
 
 * English
 https://feeds.feedburner.com/d0od
