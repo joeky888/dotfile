@@ -152,6 +152,7 @@ Dev
     * vscode-react-native - Vscode extension
     * eslint-config-airbnb - Airbnb's js rules
     * react-native-router-flux - Navigation router for react-native
+    * jadx - Decompile apk/jar
 
 Windows
 =====
@@ -294,6 +295,7 @@ Android
     * Manhuaren - Don't use google play version
 * Not an app but related to Android
     * Scrcpy - Control Android via adb (Android 5+)
+    * jadx - Decompile apk/jar
 
 iOS
 =====
