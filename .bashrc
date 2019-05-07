@@ -1250,9 +1250,9 @@ FindFilesToExec()
 {
 # find . -iname '*.jpg' -exec sh -c '$BUFFER mv "$0" "$0".backup' {} \;
   if [[ -n "$ZSH_VERSION" ]]; then
-    BUFFER="find . -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
+    BUFFER="find . -not -iwholename '*.git*' -iname '*.jpg' -exec sh -c '$BUFFER \"\$0\"' {} \;"
   elif [[ -n "$BASH_VERSION" ]]; then
-    READLINE_LINE="find . -iname '*.jpg' -exec sh -c '$READLINE_LINE \"\$0\"' {} \;"
+    READLINE_LINE="find . -not -iwholename '*.git*' -iname '*.jpg' -exec sh -c '$READLINE_LINE \"\$0\"' {} \;"
   fi;
 }
 
