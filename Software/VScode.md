@@ -23,10 +23,15 @@ Setting (search `json`)
     "workbench.editor.enablePreview": false,
     "editor.dragAndDrop": false,
     "window.zoomLevel": 0,
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
     "[go]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 8,
         "editor.insertSpaces": false
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
     }
 }
 ```
@@ -36,6 +41,7 @@ Extension
 * HookyQR.beautify
 * hoovercj.vscode-power-mode
 * ms-vscode.go
+* eslint
 
 Key
 =====
