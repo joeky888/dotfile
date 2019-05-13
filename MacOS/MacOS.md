@@ -21,7 +21,7 @@ Post-installed
 * Enable Mojave dark theme
 * $ brew cask install alacritty hammerspoon xnviewmp visual-studio-code mpv phantomjs opera google-chrome flash-ppapi skype teamviewer obs the-unarchiver gimp krita qbittorrent adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu
 * $ brew cask install baidunetdisk
-* $ brew update && app-fast upgrade && brew cask upgrade && brew cleanup -s --prune 0 && brew doctor
+* $ brew update && app-fast upgrade && brew cask upgrade --greedy && brew cleanup -s --prune 0 && brew doctor
 
 Can not open an app due to "Unkown developer"
 =====
