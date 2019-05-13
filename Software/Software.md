@@ -83,6 +83,7 @@ CLI
     * archiver - 7zip alternative but it doesn't support 7z format
     * tinygo - subset of golang compiler, small output binary size
     * termshark - TUI version of Wireshark
+    * Mattermost - Slack alternative, written in Go, React native and electron
 * C
     * Shellinabox - SSH alternative via browser Webshell
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
