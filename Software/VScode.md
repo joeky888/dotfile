@@ -42,6 +42,7 @@ Extension
 * hoovercj.vscode-power-mode
 * ms-vscode.go
 * eslint
+* Markdown All in One (opt+shift+f to format tables)
 
 Key
 =====
