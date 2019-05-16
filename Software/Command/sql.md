@@ -36,6 +36,11 @@ INSERT INTO table (id, field, field2)
        WHERE NOT EXISTS (SELECT 1 FROM table WHERE id=3);
 ```
 
+Export all database
+=====
+* $ mysqldump -h 127.0.0.1 --port=3306 -u user -p123456 --opt --all-databases > db.sql
+* $ mysqldump -h 127.0.0.1 --port=3306 -u user -p123456 --opt --all-databases | gzip > "db.sql.gz"
+
 Import .gz to database (mysql)
 =====
 * $ zcat < [Database].sql.gz | mysql -h 127.0.0.1 --port=3306 -u root -ppass [Database Name in MySQL]
