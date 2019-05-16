@@ -40,6 +40,8 @@ Export all database
 =====
 * $ mysqldump -h 127.0.0.1 --port=3306 -u user -p123456 --opt --all-databases --skip-lock-tables > db.sql
 * $ mysqldump -h 127.0.0.1 --port=3306 -u user -p123456 --opt --all-databases --skip-lock-tables | gzip > "db.sql.gz"
+* Limit rows
+* $ mysqldump -h 127.0.0.1 --port=3306 -u user -p123456 --opt --all-databases --skip-lock-tables --where="1 limit 1000" > db.sql
 
 Import .gz to database (mysql)
 =====
