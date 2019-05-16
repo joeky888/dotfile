@@ -5,3 +5,5 @@ Install cli
 Usage
 =====
 * $ drone exec .drone.yml
+* If yaml file contains docker volume
+* $ drone exec --trusted
