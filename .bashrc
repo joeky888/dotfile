@@ -74,6 +74,7 @@ export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --file-allocation=none --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --parameterized-uri=true" # aria2 & bypy
+export TORRENT_ARGUMENTS='--enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true --bt-tracker="udp://tracker.coppersurfer.tk:6969/announce,http://tracker.internetwarriors.net:1337/announce,udp://tracker.opentrackr.org:1337/announce"'
 if [ $(command -v aria2c) ] && aria2c --version | grep -q "Async DNS" && [ -f /etc/resolv.conf ] ; then
   export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=$(grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' /etc/resolv.conf | tr '\n' ',' | sed 's/,$//')" # aria2 & bypy
 fi
@@ -301,9 +302,9 @@ alias mpv-480='mpv --ytdl-format="bestvideo[height<=480][fps<=30]+bestaudio/best
 alias mpv-mute='mpv --mute=yes --ytdl-format="bestvideo[height<=720][fps<=30]+bestaudio/best" --cache=600000 --cache-secs=1800'
 alias mpv-ass2srt='mpv --sub-ass-override=strip'
 alias mpv-3Dto2D='mpv --vf=stereo3d=out=ml'
-alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS)  --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true --bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,http://tracker.internetwarriors.net:1337/announce,udp://tracker.opentrackr.org:1337/announce'
-alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true --bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,http://tracker.internetwarriors.net:1337/announce,udp://tracker.opentrackr.org:1337/announce'
-alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --enable-dht=true --bt-enable-lpd=true --enable-peer-exchange=true --bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,http://tracker.internetwarriors.net:1337/announce,udp://tracker.opentrackr.org:1337/announce'
+alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-"'
+alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-"'
+alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-"'
 alias bypy='bypy -d --retry 1 --downloader aria2'
 alias annie-playlist="annie -p"
 alias scp='scp -v'
