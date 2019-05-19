@@ -908,13 +908,11 @@ alias ......='cd ../../../../../'
 #   export GREP_COLOR="--color=auto"
 # fi
 export VCS_FOLDERS=".bzr,CVS,.git,.hg,.svn"
-export VCS_FOLDERS_MORE="$VCS_FOLDERS,vendor,node_modules"
+export VCS_FOLDERS_MORE="$VCS_FOLDERS,vendor,node_modules,oh-my-zsh"
 if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
-#   export GREP_VCS="--exclude-dir={$VCS_FOLDERS}"
   alias grep="grep --color=auto --exclude-dir={$VCS_FOLDERS}"
   alias grepi="grep --color=auto --exclude-dir={$VCS_FOLDERS_MORE}"
 elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
-#   export GREP_VCS="--exclude={$VCS_FOLDERS}"
   alias grepi="grep --color=auto --exclude={$VCS_FOLDERS_MORE}"
 fi
 
