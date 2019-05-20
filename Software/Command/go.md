@@ -71,6 +71,27 @@ Debug in vscode
 ```
 * Now break points should work
 
+Debug in go test
+=====
+* $ go get -u -v github.com/go-delve/delve/cmd/dlv
+* Don't start dlv server
+* vscode -> Debug -> Open Configurations
+```json
+{
+    "name": "Launch testing",
+    "type": "go",
+    "request": "launch",
+    "mode": "test",
+    "remotePath": "",
+    "port": 2345,
+    "host": "127.0.0.1",
+    "program": "${workspaceFolder}/integration",
+    "env": { "MY_GOPATH":"/GOGO" },
+    "args": ["--godog.tags=B2bHistoryOrder"],
+    "showLog": true
+}
+```
+
 Static compile
 =====
 ```sh
