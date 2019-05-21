@@ -154,7 +154,7 @@ Dev
     * eslint-config-airbnb - Airbnb's js rules
     * react-native-router-flux - Navigation router for react-native
     * jadx - Decompile apk/jar
-    * Expo remote chrome debug-ui
+    * Expo remote chrome debug-ui Or https://github.com/facebook/react-devtool
 
 Windows
 =====
