@@ -156,7 +156,7 @@ Dev
     * jadx - Decompile apk/jar
     * Debugging
         * Expo remote chrome debug-ui
-        * https://github.com/facebook/react-devtool
+        * https://github.com/facebook/react-devtools
         * React-native-debugger
         * Reactotron
 
