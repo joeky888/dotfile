@@ -88,6 +88,19 @@ t.OnChange = func() {
 t.OnChange()
 ```
 
+Reflect interface value
+=====
+```go
+val := reflect.ValueOf(unkownTypeInterface)
+
+val.Interface() // Original value
+val.Addr().Interface() // Get address (if original value is vlue)
+val.Elem().Interface() // Get value (if original value is address)
+
+val.Index(i) // Get i-th element (if original value is an array)
+val.Index(i).Set(someValue) // Set i-th element (if original value is an array)
+```
+
 Colorful output
 =====
 ```go
