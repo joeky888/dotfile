@@ -62,7 +62,7 @@ Extension
 * Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
 * 飛比價格購物幫手
 * LXRSS
-    * Custom New Tab Page (Opera Extension) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
+    * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
 * Touch VPN (For pan.baidu.com, EDIT: Use Opera VPN instead)
 
 RSS list
