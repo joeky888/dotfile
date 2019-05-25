@@ -99,6 +99,9 @@ val.Elem().Interface() // Get value (if original value is address)
 
 val.Index(i) // Get i-th element (if original value is an array)
 val.Index(i).Set(someValue) // Set i-th element (if original value is an array)
+val.Len() // Get array length (if original value is an array)
+
+val.Kind() == reflect.Uint32 // Check type
 ```
 
 Colorful output
