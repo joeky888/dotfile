@@ -94,6 +94,7 @@ https://feeds.feedburner.com/TechCrunch
 https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 http://feeds.bbci.co.uk/news/technology/rss.xml
+https://www.pcgamer.com/rss
 
 * Github
 ```
