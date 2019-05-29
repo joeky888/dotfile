@@ -231,7 +231,6 @@ fi
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
-# [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
 alias tmux2SplitHorizontal='tmux split-window -v'
@@ -258,8 +257,8 @@ alias upgradeAnnie='go get -insecure -u -v github.com/iawia002/annie'
 alias upgradeBaiduPCS='go get -insecure -u -v github.com/iikira/BaiduPCS-Go'
 alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
-alias sudoRoot='sudo -H ' # $HOME = /root
-alias sudoUser='sudo -E ' # $HOME = /home/$USER
+# alias sudoRoot='sudo -H ' # $HOME = /root
+# alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
