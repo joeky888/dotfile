@@ -231,7 +231,7 @@ fi
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
-[ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
+# [ $(command -v nano) ] && alias nano='nano --smarthome --nonewlines --nowrap --mouse --smooth --autoindent'
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
 alias tmux2SplitHorizontal='tmux split-window -v'
