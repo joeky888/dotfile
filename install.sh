@@ -20,6 +20,7 @@ InstallDotfile()
   rm -rf ~/.Xresources
   rm -rf ~/.xprofile
   rm -rf ~/.vimrc
+  rm -rf ~/.nanorc
   rm -rf ~/.pythonrc
   rm -rf ~/.pip/pip.conf
   rm -rf ~/.condarc
@@ -36,6 +37,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
   ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
   ln -sf $Home/dotfile/.bashrc ~/.zshrc
+  ln -sf $Home/dotfile/.nanorc ~/.nanorc
   ln -sf $Home/dotfile/.tigrc ~/.tigrc
   ln -sf $Home/dotfile/.gitconfig ~/.gitconfig
   ln -sf $Home/dotfile/.gitmessage ~/.gitmessage
@@ -81,6 +83,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.nanorc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
@@ -100,6 +103,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.nanorc" "%USERPROFILE%\dotfile\.nanorc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
@@ -241,12 +245,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/iosevka.ttf --dir=/ -o usr/share/fonts/truetype/iosevka.ttf
   fc-cache -fv
-  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
-  if [ -n "$SUDO" ]; then
-    sudo bash -c 'find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc'
-  else
-    find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
-  fi
+#   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+#   if [ -n "$SUDO" ]; then
+#     sudo bash -c 'find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc'
+#   else
+#     find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
+#   fi
   $SUDO localectl set-locale LANG="en_US.UTF-8"
   $SUDO localectl set-locale LANGUAGE="en_US.UTF-8"
   $SUDO localectl set-locale LC_CTYPE="en_US.UTF-8"
@@ -317,7 +321,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
-  find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
+#   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
   apt-cyg install openssh bind-utils bash-completion tig tar python3
   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
@@ -378,7 +382,7 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
 #   $SUDO pkg update -f
   echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip bind-tools
   chsh -s $(command -v zsh) $(whoami)
-  find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
+#   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
   echo y | $SUDO pkg install coreutils bash-completion gcc binutils automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP

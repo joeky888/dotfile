@@ -375,6 +375,7 @@ upgradeDotfile() {
   rm -rf ~/.bash_profile
   rm -rf ~/.tmux.conf
   rm -rf ~/.zshrc
+  rm -rf ~/.nanorc
   rm -rf ~/.tigrc
   rm -rf ~/.gitconfig
   rm -rf ~/.gitmessage
@@ -412,6 +413,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.nanorc" "%USERPROFILE%\dotfile\.nanorc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
@@ -439,6 +441,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
     ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
     ln -sf $HOME/dotfile/.bashrc ~/.zshrc
+    ln -sf $HOME/dotfile/.nanorc ~/.nanorc
     ln -sf $HOME/dotfile/.pythonrc ~/.pythonrc
     ln -sf $HOME/dotfile/.pip.ini ~/.pip/pip.conf
     ln -sf $HOME/dotfile/.condarc ~/.condarc

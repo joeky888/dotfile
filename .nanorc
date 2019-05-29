@@ -1,0 +1,17 @@
+bind ^S savefile    main
+bind ^W exit        main
+bind ^F whereis     main
+bind ^R replace     main
+bind ^C copy     main
+bind ^V paste     main
+bind ^X cut     main
+bind ^N nextword     main
+bind ^P prevword     main
+bind ^Z undo     main
+bind ^Y redo     main
+bind ^Q mark     main
+bind ^\ comment     main
+
+set mouse
+set smarthome
+set nowrap
