@@ -91,7 +91,7 @@ t.OnChange()
 Reflect interface value
 =====
 ```go
-val := reflect.ValueOf(unkownTypeInterface)
+val := reflect.ValueOf(unkownTypeInterfaceObj)
 
 val.Interface() // Original value
 val.Addr().Interface() // Get address (if original value is vlue)
@@ -102,6 +102,10 @@ val.Index(i).Set(someValue) // Set i-th element (if original value is an array)
 val.Len() // Get array length (if original value is an array)
 
 val.Kind() == reflect.Uint32 // Check type
+
+/* Assign value to a new variable */
+typ := reflect.TypeOf(unkownTypeInterfaceObj)
+newVal := reflect.New(typ).Interface()
 ```
 
 Colorful output
