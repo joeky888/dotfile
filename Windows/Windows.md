@@ -45,7 +45,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
 scoop bucket add dorado https://github.com/h404bi/dorado
-scoop install win32-openssh vim lazygit busybox qemu youtube-dl curl aria2 ffmpeg micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
+scoop install aria2 win32-openssh vim lazygit busybox qemu youtube-dl curl ffmpeg micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
 ```
 * Setup mpv
 ```sh
