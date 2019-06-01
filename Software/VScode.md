@@ -1,9 +1,10 @@
 Setting (search `json`)
 =====
-```json
+```js
 {
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
+    "terminal.integrated.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace"
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
@@ -28,10 +29,24 @@ Setting (search `json`)
     "[go]": {
         "editor.formatOnSave": true,
         "editor.tabSize": 8,
-        "editor.insertSpaces": false
+        "editor.insertSpaces": false,
+        "files.eol": "\n"
+    },
+    "go.useLanguageServer": true,
+    "go.languageServerExperimentalFeatures": {
+            "diagnostics": true
+    },
+    "gopls": {
+        "usePlaceholders": true
     },
     "[javascript]": {
         "editor.formatOnSave": true
+    },
+    "terminal.integrated.env.osx": {
+      "VS_CODE": "true"
+    },
+    "terminal.integrated.env.linux": {
+      "VS_CODE": "true"
     }
 }
 ```

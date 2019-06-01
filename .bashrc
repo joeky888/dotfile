@@ -38,6 +38,10 @@ emulator() {
 export TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
+if [ -n "$VS_CODE" ]; then
+  export NO_TMUX=1
+fi
+
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
