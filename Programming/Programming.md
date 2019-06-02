@@ -33,7 +33,7 @@ Javascript
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
 * React/React Native
     * react-spring - Animation lib
-    * react-navigation - Routing and navigation for react native
+    * react-native-router-flux - react-navigation based routing and navigation for react native
     * react-native-swiper - UI swiper component
     * preact - 3KB React alternative with the same modern API
 
