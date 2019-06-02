@@ -20,7 +20,7 @@ Post-installed
 * System Preferences > Displays > Automatically adjust brightness > Uncheck
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
-* $ brew cask install alacritty hammerspoon xnviewmp visual-studio-code mpv phantomjs opera google-chrome flash-ppapi skype teamviewer obs the-unarchiver gimp krita qbittorrent adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu
+* $ brew cask install alacritty hammerspoon xnviewmp visual-studio-code mpv phantomjs opera google-chrome flash-ppapi skype teamviewer obs the-unarchiver gimp krita adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu
 * $ brew cask install baidunetdisk
 * $ brew update && app-fast upgrade && brew cask upgrade --greedy && brew cleanup -s --prune 0 && brew doctor
 
