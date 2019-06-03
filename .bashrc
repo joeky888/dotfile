@@ -399,6 +399,7 @@ upgradeDotfile() {
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
+  rm -rf ~/.myclirc
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.hammerspoon/init.lua
 
@@ -428,6 +429,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
@@ -460,6 +462,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
     ln -sf $HOME/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
+    ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
     ln -sf $HOME/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
   fi;

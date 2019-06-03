@@ -29,6 +29,7 @@ InstallDotfile()
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
+  rm -rf ~/.myclirc
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.hammerspoon/init.lua
 
@@ -48,6 +49,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.yarnrc ~/.yarnrc
   ln -sf $Home/dotfile/.Xresources ~/.Xresources
   ln -sf $Home/dotfile/.xprofile ~/.xprofile
+  ln -sf $Home/dotfile/.myclirc ~/.myclirc
   cd $Home/dotfile && git pull &&\
   git submodule update --init --remote
   cd - ;
@@ -98,6 +100,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.alacritty.yml"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.myclirc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
@@ -116,6 +119,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
   cd $Home/dotfile
   git submodule update --init --remote
   cd - ;
