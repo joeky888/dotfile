@@ -36,6 +36,7 @@ Extension
 * SimpleUndoClose
 * Tampermonkey
     * https://greasyfork.org/zh-CN/scripts/39504-百度网盘直链下载助手
+    * https://github.com/syhyz1990/baiduyun
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
