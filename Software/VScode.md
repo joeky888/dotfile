@@ -24,6 +24,8 @@ Setting (search `json`)
     "workbench.editor.enablePreview": false,
     "editor.dragAndDrop": false,
     "window.zoomLevel": 0,
+    "debug.console.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
+    "debug.console.fontSize": 20,
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
     "[go]": {
