@@ -10,7 +10,6 @@ Software
 * Nmap / Zenmap
 * Teamviewer
 * Free Download Manager (Open Source, Win+Mac only)
-* Baidu Pan(BaiduExporter/百度网盘直接下载助手增强版)
 * UNetbootin
 * deepin-boot-maker
 * Gimp
@@ -60,7 +59,6 @@ CLI
     * glances
     * danmaku2ass (m13253)
 * Go
-    * BaiduPCS-Go
     * Micro (text editor)
     * annie - youtube-dl like video downloader
     * hugo - html generator
