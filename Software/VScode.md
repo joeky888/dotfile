@@ -50,6 +50,7 @@ Setting (search `json`)
     "terminal.integrated.env.linux": {
       "VS_CODE": "true"
     },
+    "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
       "terminal.background":"#090300",
       "terminal.foreground":"#A5A2A2",
