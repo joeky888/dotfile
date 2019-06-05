@@ -11,7 +11,6 @@ Software
 * Teamviewer
 * Free Download Manager (Open Source, Win+Mac only)
 * UNetbootin
-* deepin-boot-maker
 * Gimp
 * Inkscape
 * Blender
@@ -29,7 +28,6 @@ Software
 * Audacity
 * LMMS
 * Qt
-* qTox
 * Cheat Engine
 * WPS Office (Hong Kong)
 * SoftMaker FreeOffice
@@ -167,7 +165,6 @@ Windows
 * Clink
 * Rufus
 * Rainmeter (with Circle-Weather)
-* MPC-HC
 * All in One Runtimes
 * Sarasa Mono TC font (for console)
 * OpenJDK
@@ -396,12 +393,10 @@ Dev Tools
     * libui, native UI and small bianry size, for C/C++ and Go
     * GuiLite - The smallest GUI library for all platform - 5k lines code
     * Executable size as small as possible, for personal use :
-        * QtLite
         * github.com/zserge/webview - C/C++/Go backend, html fronend
         * github.com/zserge/lorca - Pure Go backend, html fronend
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
-    * go-flutter-desktop-embedder - Flutter Engine in Go
 * Windows / XBOX only
     * Universal Windows Platform (.AppX)
 * Web server backend
@@ -413,9 +408,8 @@ Dev Tools
     * Install mozilla/web-ext
     * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
 * CLI
-    * Pure Python, Python libs written in pure python
     * Micropython, pure python lib
-    * Go, static compile by default (single executable file) and easily cross-compile to other platforms
+    * Go, pure Go lib
     * C and C++, could be built by gcc, mingw and Clang
 * Linux CLI/Driver
     * Fbterm, modify the source of the Fbterm
@@ -423,8 +417,8 @@ Dev Tools
     * Yaft, modify the source of the Yaft
 * Data
     * Huge and complicated: Json
-    * Small or configurations: TOML
-* OS, embbed system: Alpine Linux, FreeBSD
+    * Small or configurations: TOML、 YAML
+* OS, embbed system: Alpine Linux, FreeBSD and Busybox/Toybox
 
 Experience
 =====
