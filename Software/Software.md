@@ -16,7 +16,6 @@ Software
 * Blender
 * Makehuman
 * Sweet home 3D
-* ngPlant
 * Fritzing
 * FontForge
 * VLC
@@ -30,7 +29,6 @@ Software
 * Qt
 * Cheat Engine
 * WPS Office (Hong Kong)
-* SoftMaker FreeOffice
 * Libre Office
 * GSView
 * Nomacs
@@ -55,7 +53,6 @@ CLI
     * bypy
     * speedtest-cli
     * glances
-    * danmaku2ass (m13253)
 * Go
     * Micro (text editor)
     * annie - youtube-dl like video downloader
@@ -117,7 +114,6 @@ BaiduPCS-Go config set -user_agent="Test"
 * OpenCC
 * Aria2
 * Monitorix
-* Google-drive-ocamlfuse
 * Docker
 * Shellcheck
 * Hollywood - Hacker tool collection
@@ -162,14 +158,11 @@ Windows
 * build-extra (git for Windows) or msys2
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Greenshot
-* Clink
 * Rufus
-* Rainmeter (with Circle-Weather)
 * All in One Runtimes
 * Sarasa Mono TC font (for console)
 * OpenJDK
     * Zulu
-    * ojdkbuild - Windows only
     * AdoptOpenJDK
 
 Windows XP
@@ -295,7 +288,7 @@ Android
     * 豌豆荚 wandoujia
     * 應用寶
     * 迅雷
-    * Manhuaren - Don't use google play version
+    * Manhuaren 漫畫人 - Don't use google play version
 * Not an app but related to Android
     * Scrcpy - Control Android via adb (Android 5+)
     * jadx - Decompile apk/jar
@@ -430,7 +423,7 @@ Experience
 | Deepin Linux                      |  (2017-)      |
 | Manjaro Linux                     |  (2018-)      |
 | Alpine Linux                      |  (2018-)      |
-| FreeBSD                           |  (2017-)      |
+| FreeBSD                           |  (2017-2018)  |
 | macOS                             |  (2019-)      |
 | Docker                            |  (2018-)      |
 | Git                               |  (2014-)      |
