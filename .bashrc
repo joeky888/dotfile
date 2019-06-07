@@ -492,26 +492,6 @@ elif [ $(command -v gvim) ]; then
     fi;
   }
 fi
-# if [ $(command -v nvim) ]; then
-#   nvim()
-#   {
-#     if [ "$#" == 0 ]; then
-#       command nvim -u ~/.vimrc
-#     else
-#       command nvim -u ~/.vimrc -p "$@"
-#     fi;
-#   }
-# fi
-if [ $(command -v mvim) ]; then # MacVim
-  mvim()
-  {
-    if [ "$#" == 0 ]; then
-      command mvim > /dev/null 2>&1
-    else
-      command mvim -p --remote-tab-silent "$@" > /dev/null 2>&1
-    fi;
-  }
-fi
 
 git_branch_info() {
   if git rev-parse --git-dir 1>/dev/null 2>&1; then
@@ -590,28 +570,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
 #     export P9K_MULTILINE_LAST_PROMPT_PREFIX_ICON=""
 #     export P9K_MULTILINE_FIRST_PROMPT_PREFIX_ICON="➜  "
     export P9K_IGNORE_VAR_WARNING=true
-
-    # These are for old powerlevel9k theme
-#     export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='118'
-#     export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='black'
-#     export POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='039'
-#     export POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='black'
-#     export POWERLEVEL9K_DIR_HOME_BACKGROUND='039'
-#     export POWERLEVEL9K_DIR_HOME_FOREGROUND='black'
-#     export POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='039'
-#     export POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='black'
-#     export POWERLEVEL9K_VCS_BACKGROUND='011'
-#     export POWERLEVEL9K_VCS_FOREGROUND='black'
-#     export POWERLEVEL9K_VCS_CLEAN_BACKGROUND='011'
-#     export POWERLEVEL9K_VCS_CLEAN_FOREGROUND='black'
-#     export POWERLEVEL9K_VCS_UNTRACKED_BACKGROUND='009'
-#     export POWERLEVEL9K_VCS_UNTRACKED_FOREGROUND='black'
-#     export POWERLEVEL9K_VCS_MODIFIED_BACKGROUND='009'
-#     export POWERLEVEL9K_VCS_MODIFIED_FOREGROUND='black'
-#     export POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-#     export POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-#     export POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-#     export POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="➜  "
 
     source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
   else
@@ -1362,12 +1320,6 @@ StartAlpine()
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $newhome/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $newhome/etc/apk/repositories; \
   echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $newhome/etc/apk/repositories
-  ChrootHome $newhome
-}
-
-StartArch()
-{
-  export newhome=$HOME/Arch
   ChrootHome $newhome
 }
 
