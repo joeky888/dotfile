@@ -309,7 +309,7 @@ alias mpv-3Dto2D='mpv --vf=stereo3d=out=ml'
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-"'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-"'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-"'
-alias bypy='bypy -d --retry 1 --downloader aria2'
+alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
 alias annie-playlist="annie -p"
 alias scp='scp -v'
 alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
