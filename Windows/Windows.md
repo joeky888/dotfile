@@ -73,6 +73,13 @@ choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredi
 * Gaming dlls
     * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
 
+Git config
+=====
+* For Powershell
+```sh
+git config --system core.autocrlf false
+git config --system core.fileMode false
+```
 
 Mono sound
 =====

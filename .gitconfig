@@ -36,7 +36,7 @@
 	editor = vim -c 'normal! gg'
 	autocrlf = false
 	safecrlf = false
-	fileMode = true
+	# fileMode = true
 	quotepath = false
 	ignorecase = false
 	pager = vim +' \
