@@ -47,16 +47,10 @@ iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
 scoop bucket add dorado https://github.com/h404bi/dorado
 scoop install aria2 win32-openssh vim lazygit busybox qemu youtube-dl curl ffmpeg micro adb nmap go upx nodejs phantomjs mpv miniconda2 miniconda3
-```
-* Setup mpv
-```sh
-# "" means "(Default)" which equals "@"
+
+# "" means "(Default)" which equals to "@"
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
-$WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\\Desktop\\mpv.lnk")
-$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv\\current\\mpv.exe"
-$Shortcut.Save()
 ```
 * Chocolatey
 ```sh
@@ -122,6 +116,11 @@ $path = "$env:USERPROFILE\scoop\apps\mpv\current\mpv-document.ico"
 
 Get-Content "$env:TEMP\mpv-install.bat" | Set-Content "$env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat"
 cmd.exe /c $env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat
+
+$WshShell = New-Object -comObject WScript.Shell
+$Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\\Desktop\\mpv.lnk")
+$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv\\current\\mpv.exe"
+$Shortcut.Save()
 ```
 
 God mode
