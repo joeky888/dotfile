@@ -34,7 +34,7 @@ Debug in vscode, but shows logs in terminal (Remote debug mode, recommend)
 * This is remote debugging mode so setting args and env in vscode json doesn't work
 * $ cd /path/to/project && MYGOPATH=/GOGO dlv debug --headless --listen=:2345 --log --api-version=2 -- -f /etc/config/run-libgo.yaml other:args
 * vscode -> Debug -> Open Configurations
-```json
+```js
 {
     "name": "Launch remote",
     "type": "go",
@@ -44,7 +44,8 @@ Debug in vscode, but shows logs in terminal (Remote debug mode, recommend)
     "port": 2345,
     "host": "127.0.0.1",
     "program": "${workspaceFolder}",
-    "showLog": true
+    "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
+    "showLog": false
 }
 ```
 * Now break points should work
@@ -54,7 +55,7 @@ Debug in vscode
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
 <!-- * $ cd /path/to/project && dlv debug --headless --listen=:2345 --log --api-version=2 -->
 * vscode -> Debug -> Open Configurations
-```json
+```js
 {
     "name": "Launch debug",
     "type": "go",
@@ -66,6 +67,7 @@ Debug in vscode
     "program": "${workspaceFolder}",
     "env": { "MY_GOPATH":"/GOGO" },
     "args": ["-f", "/etc/config/run-libgo.yaml", "run"],
+    "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
     "showLog": true
 }
 ```
@@ -76,7 +78,7 @@ Debug in go test
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
 * Don't start dlv server
 * vscode -> Debug -> Open Configurations
-```json
+```js
 {
     "name": "Launch testing",
     "type": "go",
@@ -88,6 +90,7 @@ Debug in go test
     "program": "${workspaceFolder}/integration",
     "env": { "MY_GOPATH":"/GOGO" },
     "args": ["--godog.tags=B2bHistoryOrder"],
+    "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
     "showLog": true
 }
 ```
