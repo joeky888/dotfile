@@ -77,6 +77,7 @@ export EDITOR="$VISUAL"
 export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
+export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --ignore-errors"
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --file-allocation=none --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=true" # aria2 & bypy
 export TORRENT_ARGUMENTS="--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker=udp://tracker.coppersurfer.tk:6969/announce,http://tracker.internetwarriors.net:1337/announce,udp://tracker.opentrackr.org:1337/announce"
 if [ $(command -v aria2c) ] && aria2c --version | grep -q "Async DNS" && [ -f /etc/resolv.conf ] ; then
@@ -277,9 +278,9 @@ else
 fi
 [ $(command -v mycli) ] && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 if hash aria2c 2>/dev/null >/dev/null ; then
-  alias youtube-dl="youtube-dl -o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --ignore-errors --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+  alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 else
-  alias youtube-dl="youtube-dl -o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --ignore-errors"
+  alias youtube-dl="youtube-dl $DL_ARGUMENTS"
 fi
 alias which='which -a'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30]+bestaudio/best'"
