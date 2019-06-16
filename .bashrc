@@ -645,6 +645,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   fi
   if [ -n $ZSH_AUTOSUGGESTIONS_PATH ];then
     source $ZSH_AUTOSUGGESTIONS_PATH/zsh-autosuggestions.zsh
+    export ZSH_AUTOSUGGEST_USE_ASYNC=1
   fi
   export KEYTIMEOUT=1 # Make ESC faster
   setopt NO_NOMATCH # disable zsh match filename
