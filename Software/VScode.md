@@ -1,10 +1,11 @@
 Setting (search `json`)
 =====
+* View -> Command Palette -> Search for "open settings (json)"
 ```js
 {
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
-    "terminal.integrated.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace"
+    "terminal.integrated.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
@@ -84,9 +85,11 @@ Extension
 * ms-vscode.go
 * eslint
 * Markdown All in One (opt+shift+f to format tables)
+* Gitlens
 
 Key
 =====
+* View -> Command Palette -> Search for "keyboard shortcuts (json)"
 ```json
 [
     { "key": "ctrl+k", "command": "editor.action.deleteLines",
