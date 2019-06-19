@@ -121,6 +121,7 @@ Key
     { "key": "ctrl+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "ctrl+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "ctrl+p", "command": "editor.action.addSelectionToPreviousFindMatch" },
+    { "key": "ctrl+q", "command": "editor.action.insertCursorBelow" },
     { "key": "ctrl+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" },
     { "key": "alt+enter", "command": "editor.action.quickFix"},
@@ -148,6 +149,7 @@ Key
     { "key": "cmd+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "cmd+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "cmd+p", "command": "editor.action.addSelectionToPreviousFindMatch" },
+    { "key": "cmd+q", "command": "editor.action.insertCursorBelow" },
     { "key": "cmd+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" }
 ]
