@@ -1,6 +1,6 @@
 Install
 =====
-* $ pip2 install -U sqlmap
+* $ pip3 install -U sqlmap
 
 Usage
 =====
