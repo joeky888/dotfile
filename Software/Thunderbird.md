@@ -1,6 +1,7 @@
 Asus Exchange setting Using ExQuilla (Closed source)
 =====
 * Press "Alt" key -> Tool -> Extensions -> Search "Exchange" -> install "ExQuilla"
+* Or download xpi from https://github.com/rocwhite168/exquilla/releases
 * Tool -> ExQuilla for Microsoft Exchange -> Add Microsoft Exchange Account
 * `Email Address "Joeky_Zhan@asus.com"`
 * `Password "YOUR_Password"`
