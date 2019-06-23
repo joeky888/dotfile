@@ -9,7 +9,7 @@ FILE_LIST=( '01.zip' \
 curlToAria2()
 {
   PARAMS=""
-  BASE_URL="https://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=265486&path=/apps/bypy/火影/"
+  BASE_URL="http://pcs.baidu.com/rest/2.0/pcs/file?method=download&app_id=265486&path=/apps/bypy/火影/"
 
   for PARAM in "${@:2}"
   do
@@ -25,7 +25,7 @@ curlToAria2()
     $(exit 1)
     while [ $? -ne 0 ]; do
       echo "Retrying curlToAria2 ... $((count++))"
-      local cmd="aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}' ${PARAMS} -o '$f'"
+      local cmd="aria2c ${DOWNLOADER_ARGUMENTS} '${BASE_URL}${f}&random=0.4880368004558413&app_id=498065' ${PARAMS} -o '$f'"
       echo "$cmd"
       eval "$cmd"
     done;
