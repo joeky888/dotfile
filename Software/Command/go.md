@@ -28,32 +28,31 @@ RUN go get -d ./...
 RUN go build -o /bin/myexe
 ```
 
-Debug in vscode, but shows logs in terminal (Remote debug mode, recommend)
-=====
-* $ go get -u -v github.com/go-delve/delve/cmd/dlv
-* This is remote debugging mode so setting args and env in vscode json doesn't work
-* $ cd /path/to/project && MYGOPATH=/GOGO dlv debug --headless --listen=:2345 --log --api-version=2 -- -f /etc/config/run-libgo.yaml other:args
-* vscode -> Debug -> Open Configurations
-```js
-{
-    "name": "Launch remote",
-    "type": "go",
-    "request": "launch",
-    "mode": "remote",
-    "remotePath": "${workspaceFolder}",
-    "port": 2345,
-    "host": "127.0.0.1",
-    "program": "${workspaceFolder}",
-    "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
-    "showLog": false
-}
-```
-* Now break points should work
+<!-- Debug in vscode, but shows logs in terminal (Remote debug mode, recommend) -->
+<!-- ===== -->
+<!-- * $ go get -u -v github.com/go-delve/delve/cmd/dlv -->
+<!-- * This is remote debugging mode so setting args and env in vscode json doesn't work -->
+<!-- * $ cd /path/to/project && MYGOPATH=/GOGO dlv debug --headless --listen=:2345 --log --api-version=2 -- -f /etc/config/run-libgo.yaml other:args -->
+<!-- * vscode -> Debug -> Open Configurations -->
+<!-- ```js -->
+<!-- { -->
+<!--     "name": "Launch remote", -->
+<!--     "type": "go", -->
+<!--     "request": "launch", -->
+<!--     "mode": "remote", -->
+<!--     "remotePath": "${workspaceFolder}", -->
+<!--     "port": 2345, -->
+<!--     "host": "127.0.0.1", -->
+<!--     "program": "${workspaceFolder}", -->
+<!--     "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1 -->
+<!--     "showLog": false -->
+<!-- } -->
+<!-- ``` -->
+<!-- * Now break points should work -->
 
 Debug in vscode
 =====
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
-<!-- * $ cd /path/to/project && dlv debug --headless --listen=:2345 --log --api-version=2 -->
 * vscode -> Debug -> Open Configurations
 ```js
 {
@@ -65,10 +64,13 @@ Debug in vscode
     "port": 2345,
     "host": "127.0.0.1",
     "program": "${workspaceFolder}",
-    "env": { "MY_GOPATH":"/GOGO" },
+    "env": {
+        "MY_GOPATH":"/GOGO",
+        "GODEBUG": "netdns=go+2"
+    },
     "args": ["-f", "/etc/config/run-libgo.yaml", "run"],
     "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
-    "showLog": true
+    "showLog": false
 }
 ```
 * Now break points should work
@@ -88,10 +90,13 @@ Debug in go test
     "port": 2345,
     "host": "127.0.0.1",
     "program": "${workspaceFolder}/integration",
-    "env": { "MY_GOPATH":"/GOGO" },
+    "env": {
+        "MY_GOPATH":"/GOGO",
+        "GODEBUG": "netdns=go+2"
+    },
     "args": ["--godog.tags=B2bHistoryOrder"],
     "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
-    "showLog": true
+    "showLog": false
 }
 ```
 
