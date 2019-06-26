@@ -86,11 +86,11 @@ fi
 
 function getCondaPath()
 {
-  Possible_Prefix=( "$HOME" \
+  local Possible_Prefix=( "$HOME" \
                     "/usr/local" \
                     "/usr/local/homebrew"
   )
-  Possible_Path=(   "Miniconda$1" \
+  local Possible_Path=(   "Miniconda$1" \
                     "miniconda$1" \
                     "Anaconda$1" \
                     "anaconda$1"
@@ -133,7 +133,7 @@ fi
 
 function getModulePath()
 {
-  Possible_Path=(   "$HOME/dotfile/$1" \
+  local Possible_Path=(   "$HOME/dotfile/$1" \
                     "$HOME/dotfiles/$1" \
                     "$HOME/.$1" \
                     "$HOME/anaconda$1" \
@@ -151,7 +151,7 @@ function getModulePath()
       return
     fi
   done
-  echo ""
+  echo "";
 }
 
 GRC_PATH=$(getModulePath grc)
