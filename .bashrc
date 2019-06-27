@@ -848,6 +848,8 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   [ -d "/Applications/Wine Staging.app/Contents/Resources/wine/bin" ] && export PATH="$PATH:/Applications/Wine Staging.app/Contents/Resources/wine/bin"
   [ -d "/Applications/Docker.app/Contents/Resources/bin" ] && export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
   [ -d "/Applications/calibre.app/Contents/MacOS" ] && export PATH="$PATH:/Applications/calibre.app/Contents/MacOS"
+  [ -d "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin" ] && export PATH="$PATH:/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin"
+  [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ] && export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
 
   [ $(command -v go) ] && export GOROOT="/usr/local/opt/golang/libexec"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
