@@ -40,6 +40,17 @@ Setting (search `json`)
     "go.languageServerExperimentalFeatures": {
             "diagnostics": true
     },
+    "go.delveConfig": {
+        "dlvLoadConfig": {
+            "followPointers": true,
+            "maxVariableRecurse": 1,
+            "maxStringLen": 300,
+            "maxArrayValues": 300,
+            "maxStructFields": -1
+          },
+          "apiVersion": 2,
+          "showGlobalVariables": true
+    },
     "gopls": {
         "usePlaceholders": true
     },
