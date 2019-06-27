@@ -3,41 +3,6 @@ Performance
 * Don't use too many mutex lock
 * Use pointer when using append() function
 
-Constructor of a class
-=====
-```go
-package mything
-
-type Thing struct {
-    Name  string
-    Num   int
-}
-
-func NewThing(someParameter string) *Thing {
-    this := new(Thing)
-    this.Name = someParameter
-    this.Num = 33 // <- a very sensible default value
-    return this
-}
-// Or with err
-func NewThing(someParameter string) (*Thing, error) {
-    this := new(Thing)
-    this.Name = someParameter
-    this.Num = 33 // <- a very sensible default value
-    return this, nil
-}
-// Or just
-func NewThing(someParameter string) *Thing {
-    return &Thing{someParameter, 33}
-}
-```
-* Usage
-```go
-import "mything"
-
-t := mything.NewThing("hi")
-```
-
 Class method get/set
 =====
 ```go
@@ -103,9 +68,14 @@ val.Len() // Get array length (if original value is an array)
 
 val.Kind() == reflect.Uint32 // Check type
 
-/* Assign value to a new variable */
+/* Create value to a new variable */
 typ := reflect.TypeOf(unkownTypeInterfaceObj)
 newVal := reflect.New(typ).Interface()
+
+/* Create slice of a type */
+arr := reflect.MakeSlice(reflect.SliceOf(typ), 0, 0)
+arr = reflect.Append(arr, someVal) // Push a value to slice
+arr.Interface()
 ```
 
 Colorful output
