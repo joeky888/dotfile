@@ -1,10 +1,12 @@
 Install for docker archlinux
 =====
-* $ app-fast -S clang llvm lld
-* $ go get -d github.com/tinygo-org/tinygo
-* $ cd $GOPATH/src/github.com/tinygo-org/tinygo
-* $ GO111MODULE=on go mod vendor
-* $ go install
+```sh
+app-fast -S go clang llvm lld --needed
+go get -d github.com/tinygo-org/tinygo
+cd $GOPATH/src/github.com/tinygo-org/tinygo
+GO111MODULE=on go mod vendor
+go install
+```
 
 Webassembly
 =====
