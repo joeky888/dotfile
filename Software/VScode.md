@@ -9,6 +9,7 @@ Setting (search `json`)
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
+    "editor.formatOnSave": true,
     "files.encoding": "utf8",
     "files.eol": "\r\n",
     "files.trimTrailingWhitespace": true,
@@ -31,14 +32,13 @@ Setting (search `json`)
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
     "[go]": {
-        "editor.formatOnSave": true,
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
-            "diagnostics": true
+        "diagnostics": true
     },
     "go.delveConfig": {
         "dlvLoadConfig": {
