@@ -159,6 +159,7 @@ Key
     { "key": "cmd+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "cmd+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "cmd+q", "command": "editor.action.insertCursorBelow" },
+    { "key": "cmd+y", "command": "redo", "when": "editorTextFocus" },
     { "key": "cmd+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" }
 ]
