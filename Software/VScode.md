@@ -132,6 +132,7 @@ Key
     { "key": "ctrl+r", "command": "editor.action.startFindReplaceAction" },
     { "key": "ctrl+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "ctrl+q", "command": "editor.action.insertCursorBelow" },
+    { "key": "ctrl+y", "command": "redo", "when": "editorTextFocus" },
     { "key": "ctrl+b", "command": "HookyQR.beautify",
         "when": "editorTextFocus" },
     { "key": "alt+enter", "command": "editor.action.quickFix"},
