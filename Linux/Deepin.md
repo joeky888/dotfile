@@ -73,7 +73,7 @@ Acquire::http::Proxy "http://username:password@proxy.hinet.net:80";
 Packages
 =====
 * Deepin
-  * $ app-fast install sogoupinyin adb fastboot gimp krita opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux qpdfview evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
+  * $ app-fast install sogoupinyin adb fastboot krita opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux qpdfview evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
   * $ app-fast install tlp -y # For laptop, in case deepin is unable to reboot
   * $ sudo apt purge tlp -y && app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
 * Manjaro
@@ -81,7 +81,7 @@ Packages
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ app-fast -S gvim code gimp krita fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
+  * $ app-fast -S gvim code krita fcitx-gtk2 fcitx-gtk3 fcitx-qt4 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
 <!--   * $ yay -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
