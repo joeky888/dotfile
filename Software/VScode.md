@@ -11,7 +11,7 @@ Setting (search `json`)
     "editor.detectIndentation": true,
     "editor.formatOnSave": true,
     "files.encoding": "utf8",
-    "files.eol": "\r\n",
+    "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
     "powermode.enabled": true,
