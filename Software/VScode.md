@@ -97,6 +97,7 @@ Extension
 * eslint
 * Markdown All in One (opt+shift+f to format tables)
 * Gitlens
+* Vscode-proto3
 
 Key
 =====
