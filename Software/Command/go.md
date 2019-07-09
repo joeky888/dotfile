@@ -13,6 +13,11 @@ Go mod (Golang >= 1.11)
 * $ go mod download
 * $ go mod tidy
 
+Vscode upgrade all go tools
+=====
+* Hit `Ctrl+P` enter `> go Install/Update tools`
+* Select all and update
+
 Build go project in dockerfile (Assume the dockerfile is on the root of the project)
 =====
 ```dockerfile
