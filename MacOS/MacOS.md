@@ -21,6 +21,7 @@ Post-installed
 * System Preferences > Keyboard >
     * Key Repeat > Set to Fastest
     * Delay Until Repeat > Set to Shortest
+* System Preferences > General > Default web browser > Firefox
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
 * $ brew cask install alacritty hammerspoon xnviewmp vscodium mpv phantomjs opera google-chrome flash-ppapi wpsoffice skype teamviewer obs the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu
