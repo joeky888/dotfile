@@ -268,8 +268,6 @@ alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive
 alias upgradeBaiduPCS='go get -insecure -u -v github.com/iikira/BaiduPCS-Go'
 alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
-# alias sudoRoot='sudo -H ' # $HOME = /root
-# alias sudoUser='sudo -E ' # $HOME = /home/$USER
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
