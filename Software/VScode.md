@@ -31,6 +31,11 @@ Setting (search `json`)
     "debug.internalConsoleOptions": "openOnSessionStart",
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
+    "[makefile]": {
+        "editor.tabSize": 8,
+        "editor.insertSpaces": false,
+        "files.eol": "\n"
+    },
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
