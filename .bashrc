@@ -340,11 +340,6 @@ alias 7zExtractToFolder='7z -o* x'
 alias watch='watch --color'
 alias transmission-daemon-start-here='transmission-daemon -f -T -w $PWD --incomplete-dir $PWD -a "127.0.0.1,192.168.*.*"'
 
-export SUDO=''
-if (( $EUID != 0 )); then
-  export SUDO='sudo'
-fi
-
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
@@ -352,8 +347,7 @@ EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && e
 EncodingToTwUtf8() { export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" && export LC_NUMERIC="zh_TW.UTF-8" && export LC_TIME="zh_TW.UTF-8" && export LC_COLLATE="zh_TW.UTF-8" && export LC_MONETARY="zh_TW.UTF-8" && export LC_MESSAGES="zh_TW.UTF-8" && export LC_ALL="zh_TW.UTF-8" ;}
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
-killallproc() { $SUDO kill -9 $(pgrep $@) ;}
-killallStopped() { $SUDO kill -9 $(jobs -ps | cut -d' ' -f4) ;}
+killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
@@ -794,18 +788,9 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
 fi
 
 if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
-  RestartNetworking() {
-    $SUDO systemctl restart networking.service
-    $SUDO systemctl restart dnsmasq.service
-    $SUDO systemctl restart systemd-hostnamed.service
-    $SUDO ip -s -s neigh flush all
-    $SUDO ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
-    $SUDO systemctl restart teamviewerd.service;
-    $SUDO systemctl restart NetworkManager.service
-  }
+  true
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
-  export SUDO=""
 elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
@@ -839,7 +824,6 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   [ $(command -v go) ] && export GOROOT="/usr/local/opt/golang/libexec"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
-  export SUDO=""
   export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
   alias apt-cyg-Manage='setup-x86_64.exe --package-manager --wait'
   alias apt-cyg-Upgrade="aria2c 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe && setup-x86_64.exe --no-desktop --no-shortcuts --no-startmenu --quiet-mode --wait --upgrade-also --delete-orphans"
@@ -848,7 +832,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   alias mtuForWifiNormal='cygstart --action=runas netsh interface ipv4 set subinterface Wi-Fi mtu=1500 store=persistent'
 elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   cd ~
-  export SUDO=""
 elif [[ "$OSTYPE" == "freebsd"* ]]; then # FreeBSD or TrueOS
   true
 else # Unknown OS
