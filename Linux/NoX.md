@@ -220,6 +220,16 @@ Get nvidia gpu usage
 * Or
 * $ nvidia-smi -l 1 # Refresh interval of 1 second
 
+Install wi-fi driver (usb wifi adapter)
+=====
+* For Ubuntu
+* $ app-fast install rtl8812au-dkms
+* For others
+    * Enable security boot (because open source drivers are not signed)
+    * Reboot
+    * Compile and install rtl8812au-dkms from source
+    * $ sudo modprobe -a rtl8812au
+
 cat, more, less and cmd.exe type command with color
 =====
 ```sh
