@@ -821,6 +821,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   [ -d "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin" ] && export PATH="$PATH:'/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin'"
   [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ] && export PATH="$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'"
 
+  export HOMEBREW_NO_INSTALL_CLEANUP=1
   [ $(command -v go) ] && export GOROOT="/usr/local/opt/golang/libexec"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
