@@ -49,7 +49,7 @@ syntax_style = monokai
 key_bindings = emacs
 
 # Enabling this option will show the suggestions in a wider menu. Thus more items are suggested.
-wider_completion_menu = False
+wider_completion_menu = True
 
 # MySQL prompt
 # \D - The full current date
@@ -64,7 +64,7 @@ wider_completion_menu = False
 # \s - Seconds of the current time
 # \t - Product type (Percona, MySQL, MariaDB)
 # \u - Username
-prompt = '\t \u@\h:\d\n-> '
+prompt = '\t \u@\h:\p:\d\n-> '
 prompt_continuation = '-> '
 
 # Skip intro info on startup and outro info on exit
