@@ -9,10 +9,8 @@ Software
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
-* Free Download Manager (Open Source, Win+Mac only)
+* Free Download Manager
 * UNetbootin
-* Gimp
-* Inkscape
 * Blender
 * Makehuman
 * Sweet home 3D
