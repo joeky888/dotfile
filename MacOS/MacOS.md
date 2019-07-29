@@ -15,6 +15,7 @@ Post-installed
 * System Preferences -> Dock -> Automatically hide and show the Dock -> Check
 * System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
 * System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
+* System Preferences > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
 * System Preferences > General > Recent Items > None
 * System Preferences > Displays > Automatically adjust brightness > Uncheck
 * System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
