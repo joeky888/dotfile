@@ -19,4 +19,4 @@ Or install a desktop environment
 
 # Start GUI program without desktop environment
 $ XWin :0 -clipboard -multiwindow
-$ DISPLAY=:0.0 gimp
+$ DISPLAY=:0.0 krita
