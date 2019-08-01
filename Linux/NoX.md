@@ -223,7 +223,7 @@ Get nvidia gpu usage
 Install wi-fi driver (usb wifi adapter)
 =====
 * For Ubuntu
-* $ app-fast install rtl8812au-dkms
+* $ app-fast install rtl8812au-dkms # Try r8168-dkms if it doesn't work
 * For others
     * Enable security boot (because open source drivers are not signed)
     * Reboot
