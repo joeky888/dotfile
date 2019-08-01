@@ -41,6 +41,7 @@ Setting (search `json`)
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
+    "go.testFlags": ["-count=1"],
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
         "diagnostics": true
