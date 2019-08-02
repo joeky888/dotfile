@@ -4,4 +4,4 @@ Install
 
 Dark theme
 =====
-* Use https://github.com/caiceA/slack-black-theme
+* $ curl -s https://raw.githubusercontent.com/caiceA/slack-black-theme/master/slack-dark-mode.sh | zsh
