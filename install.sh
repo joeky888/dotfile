@@ -162,7 +162,7 @@ InstallPIP()
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | $SUDO pip install youtube-dl
   echo y | $SUDO pip install you-get
-  echo y | $SUDO pip install ptpython
+#   echo y | $SUDO pip install ptpython
 #   echo y | $SUDO pip install Glances
 #   echo y | $SUDO pip install streamlink
 #   echo y | $SUDO pip install ykdl
@@ -178,8 +178,8 @@ InstallMiniconda()
   rm -rf ~/Miniconda3 && aria2c "https://repo.continuum.io/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
   echo y | ~/Miniconda3/bin/pip install you-get
-  echo y | ~/Miniconda3/bin/pip install speedtest-cli
-  echo y | ~/Miniconda3/bin/pip install ptpython
+#   echo y | ~/Miniconda3/bin/pip install speedtest-cli
+#   echo y | ~/Miniconda3/bin/pip install ptpython
 #   echo y | ~/Miniconda3/bin/pip install Glances
 #   echo y | ~/Miniconda3/bin/pip install streamlink
 #   echo y | ~/Miniconda3/bin/pip install bypy
@@ -288,7 +288,6 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   brew install git aria2
   InstallDotfile
 
-#   install ~/dotfile/app-fast/app-fast /usr/local/bin/app-fast
   ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux p7zip htop watch atool nmap mtr shellcheck
 
   chsh -s $(command -v zsh) $(whoami)
