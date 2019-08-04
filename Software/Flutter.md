@@ -1,6 +1,8 @@
 Docker
 =====
 * $ docker run --name flutter -it cirrusci/flutter bash
+    * $ sudo chown cirrus:cirrus -R /home/cirrus/
+* $ docker cp flutter-app flutter:/home/cirrus
 
 Vscode
 =====
