@@ -1,3 +1,7 @@
+Docker
+=====
+* $ docker run --name flutter -it cirrusci/flutter bash
+
 Vscode
 =====
 * Install flutter and add flutter/bin to PATH
