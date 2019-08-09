@@ -133,18 +133,6 @@ InstallDotfileCygwin()
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 }
 
-InstallGRC()
-{
-#   rm -rf grc
-#   git clone --depth 1 https://github.com/garabik/grc.git grc && cd grc
-#   if [ $(command -v termux-fix-shebang) ]; then
-#     find . -type f -exec termux-fix-shebang {} \;
-#   fi
-#   $SUDO zsh install.sh $PREFIX $PREFIX && cd ..
-#   rm -rf grc
-  noinstall=1
-}
-
 InstallPy3UTF8()
 {
 #   python3 <<END
@@ -270,7 +258,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
   $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   InstallMiniconda Linux
-  InstallGRC
   InstallPy3UTF8
 
 
@@ -330,7 +317,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
-  InstallGRC
   InstallPy3UTF8
 
 
@@ -350,7 +336,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   app-fast -S mingw-w64-x86_64-aria2 --noconfirm --needed
 #   pacman -S mingw-w64-x86_64-toolchain --noconfirm
-#   InstallGRC # Windows can not use python os.fork()
   InstallPy3UTF8
 
 
@@ -372,7 +357,6 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
   InstallPy3UTF8
-  InstallGRC
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
   # InstallAlpine
 
@@ -390,7 +374,6 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
   echo y | $SUDO pkg install coreutils bash-completion gcc binutils automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP
   InstallPy3UTF8
-  InstallGRC
 #   echo y | $SUDO pkg install clang-devel
 
 
