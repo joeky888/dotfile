@@ -84,49 +84,6 @@ if [ $(command -v aria2c) ] && aria2c --version | grep -q "Async DNS" && [ -f /e
   export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=$(grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' /etc/resolv.conf | tr '\n' ',' | sed 's/,$//')" # aria2 & bypy
 fi
 
-function getCondaPath()
-{
-  local Possible_Prefix=( "$HOME" \
-                    "/usr/local" \
-                    "/usr/local/homebrew"
-  )
-  local Possible_Path=(   "Miniconda$1" \
-                    "miniconda$1" \
-                    "Anaconda$1" \
-                    "anaconda$1"
-  );
-
-  for pre in "${Possible_Prefix[@]}" ; do
-    for pth in "${Possible_Path[@]}" ; do
-      if [[ -d "$pre/$pth" ]]; then
-        echo "$pre/$pth"
-        return
-      fi
-    done
-  done
-  echo ""
-}
-
-export CONDA_2=$(getCondaPath 2)
-
-if [ -n "$CONDA_2" ]; then
-  export PATH=$CONDA_2/bin:$PATH
-  alias conda2=$(echo $CONDA_2/bin/conda)
-  alias pip2=$(echo $CONDA_2/bin/pip)
-  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
-  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
-fi
-
-export CONDA_3=$(getCondaPath 3)
-
-if [ -n "$CONDA_3" ]; then
-  export PATH=$CONDA_3/bin:$PATH
-  alias conda3=$(echo $CONDA_3/bin/conda)
-  alias pip3=$(echo $CONDA_3/bin/pip)
-  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
-  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
-fi
-
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
 [ -d $HOME/.linuxbrew ] && export PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
@@ -853,6 +810,50 @@ if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
 elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
   alias grepi="grep --color=auto --exclude={$VCS_FOLDERS_MORE}"
 fi
+
+function getCondaPath()
+{
+  local Possible_Prefix=( "$HOME" \
+                    "/usr/local" \
+                    "/usr/local/homebrew"
+  )
+  local Possible_Path=(   "Miniconda$1" \
+                    "miniconda$1" \
+                    "Anaconda$1" \
+                    "anaconda$1"
+  );
+
+  for pre in "${Possible_Prefix[@]}" ; do
+    for pth in "${Possible_Path[@]}" ; do
+      if [[ -d "$pre/$pth" ]]; then
+        echo "$pre/$pth"
+        return
+      fi
+    done
+  done
+  echo ""
+}
+
+export CONDA_2=$(getCondaPath 2)
+
+if [ -n "$CONDA_2" ]; then
+  export PATH=$CONDA_2/bin:$PATH
+  alias conda2=$(echo $CONDA_2/bin/conda)
+  alias pip2=$(echo $CONDA_2/bin/pip)
+  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+fi
+
+export CONDA_3=$(getCondaPath 3)
+
+if [ -n "$CONDA_3" ]; then
+  export PATH=$CONDA_3/bin:$PATH
+  alias conda3=$(echo $CONDA_3/bin/conda)
+  alias pip3=$(echo $CONDA_3/bin/pip)
+  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+fi
+
 
 if [ $(command -v grc) ] ; then
   cmds=(  ant \
