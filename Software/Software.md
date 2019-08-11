@@ -253,6 +253,7 @@ Android
 * Here WeGo
 * Amaze File Manager
 * WPS office
+* org.cwb Weather
 * Starfire 星火直播
 * WiFiAnalyzer open source
 * Advanced Download Manager
@@ -271,7 +272,6 @@ Android
     * Barcode Scanner ZXing
     * Newpipe
     * YalpStore
-    * Your local weather
     * Open Camera
     * Busybox
     * LibreTorrent
