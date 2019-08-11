@@ -15,7 +15,7 @@ RUN echo $'[ownstuff]\n\
 SigLevel = Never\n\
 Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.conf
 
-RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring vim yay
+RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring sudo vim yay
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' | tee /etc/pacman.d/mirrorlist.bak"
@@ -25,6 +25,19 @@ RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/
 ENV TZ Asia/Taipei
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
+#####################
+#                   #
+# Add sudoer joeky  #
+#                   #
+#####################
+
+ENV USER joeky
+RUN /usr/sbin/useradd $USER && \
+    echo "$USER ALL=(root) NOPASSWD:ALL" > /etc/sudoers.d/user && \
+    chmod 0440 /etc/sudoers.d/user
+ENV HOME /home/$USER
+RUN mkdir -p $HOME
+RUN chown -R $USER:$USER $HOME
 
 #####################
 #                   #
@@ -70,10 +83,10 @@ export BBlu="\e[1;34m"                    \n\
 export BPur="\e[1;35m"                    \n\
 export BCya="\e[1;36m"                    \n\
 export BWhi="\e[1;37m"                    \n\
-export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# " \n\
+export PS1="╭─${BCya}\\\\u@\h ${BGre}\w${BWhi} \n╰─\$ " \n\
 export LC_ALL="en_US.UTF-8"               \n\
-export LANG="en_US.UTF-8"' > /root/.bashrc
-RUN sed -i "s/\s+$//g" /root/.bashrc
+export LANG="en_US.UTF-8"' > $HOME/.bashrc
+RUN sed -i "s/\s+$//g" $HOME/.bashrc
 
 #######################
 #                     #
@@ -85,8 +98,8 @@ ENV EDITOR vim
 
 SHELL ["/bin/bash"]
 
-# docker build . -t arch:root
-# docker run --name arch --net host -it arch:root bash
+# docker build . -t arch:joeky
+# docker run --name arch --net host -it arch:joeky su - joeky -c /bin/bash
 # docker cp ~/dotfile/app-fast/app-fast arch:/bin/
 # docker cp ~/dotfile/.bashrc arch:/root/
 # docker cp ~/dotfile/vimrc/.vimrc arch:/root/
