@@ -81,6 +81,8 @@ Python
 
 Go
 =====
+* Gin and Gorm
+    * https://github.com/gothinkster/golang-gin-realworld-example-app
 * fasthttp/fasthttprouter - Super fast for http(s) client and server
 * iris - Fatest web framework
 * json
