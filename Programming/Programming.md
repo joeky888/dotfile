@@ -32,6 +32,8 @@ Javascript
     * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
     * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
 * React/React Native
+    * A real world example app
+        * https://github.com/gothinkster/react-redux-realworld-example-app
     * react-spring - Animation lib
     * react-native-router-flux - react-navigation based routing and navigation for react native
     * react-native-swiper - UI swiper component
