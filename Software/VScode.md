@@ -49,7 +49,6 @@ Setting (search `json`)
     "go.lintTool":"golangci-lint",
     "go.lintFlags": [
         "--enable-all",
-        "--enable=staticcheck",
     ],
     "go.delveConfig": {
         "dlvLoadConfig": {
