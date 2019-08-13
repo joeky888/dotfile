@@ -784,7 +784,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ] && export PATH="$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'"
 
   export HOMEBREW_NO_INSTALL_CLEANUP=1
-  [ $(command -v go) ] && export GOROOT="/usr/local/opt/golang/libexec"
+  [ $(command -v /usr/local/opt/golang/bin/go) ] && export GOROOT="/usr/local/opt/golang/libexec"
 elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   export DISPLAY=:0.0
   export PKG_CONFIG_PATH=$PKG_CONFIG_PATH:/usr/lib/pkgconfig:/usr/local/lib/pkgconfig
