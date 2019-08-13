@@ -243,7 +243,6 @@ else
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
-[ $(command -v mycli) ] && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 if hash aria2c 2>/dev/null >/dev/null ; then
   alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 else
@@ -859,6 +858,8 @@ if [ -n "$CONDA_3" ]; then
   upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
   upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
+
+hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 
 
 if [ $(command -v grc) ] ; then
