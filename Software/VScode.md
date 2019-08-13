@@ -46,6 +46,10 @@ Setting (search `json`)
     "go.languageServerExperimentalFeatures": {
         "diagnostics": true
     },
+    "go.lintTool":"golangci-lint",
+	"go.lintFlags": [
+            "--fast",
+    ],
     "go.delveConfig": {
         "dlvLoadConfig": {
             "followPointers": true,
