@@ -47,8 +47,9 @@ Setting (search `json`)
         "diagnostics": true
     },
     "go.lintTool":"golangci-lint",
-	"go.lintFlags": [
-            "--fast",
+    "go.lintFlags": [
+        "--enable-all",
+        "--enable=staticcheck",
     ],
     "go.delveConfig": {
         "dlvLoadConfig": {
