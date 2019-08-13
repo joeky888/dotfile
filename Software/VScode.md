@@ -48,7 +48,8 @@ Setting (search `json`)
     },
     "go.lintTool":"golangci-lint",
     "go.lintFlags": [
-        "--enable-all",
+        // "--enable-all",
+        "--fast",
     ],
     "go.delveConfig": {
         "dlvLoadConfig": {
