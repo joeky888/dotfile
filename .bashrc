@@ -416,7 +416,7 @@ stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl 
 if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
   gvim()
   {
-    gv=$( [ -f $(cygpath $ProgramData/chocolatey/bin/gvim.exe) ] && cygpath $ProgramData/chocolatey/bin/gvim.exe || cygpath $USERPROFILE/scoop/shims/gvim.exe )
+    gv=$(cygpath $(which gvim.exe))
     if [ "$#" == 0 ]; then
       $gv &!
     else
