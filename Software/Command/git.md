@@ -1,3 +1,8 @@
+git https push without password
+=====
+* $ cd git-project
+* $ git config credential.helper store
+
 git diff ignore
 =====
 * ignore all line break, tabs, whitespaces ("\n \t \ "), using POSIX regex
