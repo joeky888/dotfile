@@ -17,3 +17,11 @@ Services
 * Restart a service
 * $ snap restart xxx
 
+Install docker
+=====
+```sh
+sudo snap install docker --edge # Must use edge version
+# sudo groupadd --system docker
+# sudo usermod -aG docker $(whoami)
+# newgrp docker
+```
