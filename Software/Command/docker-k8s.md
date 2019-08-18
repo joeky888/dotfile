@@ -1,4 +1,12 @@
-Archlinux k3s (Recommend, Linux only), Or microk8s
+Archlinux microK8s (native, Linux only)
+=====
+```sh
+app-fast -S snapd || yay -S snapd
+sudo systemctl enable apparmor.service
+sudo systemctl enable snapd.apparmor.service
+```
+
+Archlinux k3s (native, Linux only)
 =====
 ```sh
 git clone --depth 1 https://github.com/rancher/k3s
