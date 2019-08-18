@@ -1,9 +1,7 @@
 Archlinux microK8s (native, Linux only)
 =====
 ```sh
-app-fast -S snapd || yay -S snapd
-sudo systemctl enable apparmor.service
-sudo systemctl enable snapd.apparmor.service
+snap install microk8s --classic
 ```
 
 Archlinux k3s (native, Linux only)
