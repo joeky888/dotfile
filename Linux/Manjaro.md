@@ -128,6 +128,17 @@ Install virtualbox
 * $ sudo modprobe vboxdrv
 * $ sudo gpasswd -a $(whoami) vboxusers
 
+Install snapd
+=====
+```sh
+app-fast -S snapd  || yay -S snapd
+sudo systemctl enable --now apparmor.service
+sudo systemctl enable --now snapd.apparmor.service
+sudo systemctl enable --now snapd.socket
+
+app-fast -S linux-apparmor # Install/Boot only if systemctl status apparmor.service is failed
+```
+
 No Network interface in NetworkManager
 =====
 * Remove Network driver in MHWD
