@@ -4,7 +4,7 @@ Search package
 
 Install softwares
 =====
-* $ snap install microk8s --classic
+* $ sudo snap install microk8s --beta --classic
 
 Upgrade all packages
 =====

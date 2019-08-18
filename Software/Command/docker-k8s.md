@@ -1,7 +1,24 @@
 Archlinux microK8s (native, Linux only)
 =====
 ```sh
-snap install microk8s --classic
+sudo snap install microk8s --beta --classic
+sudo snap install helm --beta --classic
+
+sudo iptables -P FORWARD ACCEPT
+sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
+microk8s.enable dns
+microk8s.enable storage
+# microk8s.enable ingress || microk8s.enable istio
+microk8s.status
+microk8s.inspect
+
+rm -rf ~/.helm
+KUBECONFIG=$(find /snap/microk8s/ -name client.config | head -n 1) helm init
+
+# Uninstall
+microk8s.disable storage
+microk8s.reset
+sudo snap remove microk8s helm
 ```
 
 Archlinux k3s (native, Linux only)
