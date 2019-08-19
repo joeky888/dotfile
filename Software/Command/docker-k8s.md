@@ -1,6 +1,7 @@
 Archlinux microK8s (native, Linux only)
 =====
 ```sh
+sudo snap install docker --edge # If docker is not installed
 sudo snap install microk8s helm --edge --classic
 
 sudo iptables -P FORWARD ACCEPT
