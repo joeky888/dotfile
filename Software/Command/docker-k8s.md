@@ -1,8 +1,7 @@
 Archlinux microK8s (native, Linux only)
 =====
 ```sh
-sudo snap install microk8s --beta --classic
-sudo snap install helm --beta --classic
+sudo snap install microk8s helm --edge --classic
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
