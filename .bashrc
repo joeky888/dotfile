@@ -206,6 +206,8 @@ fi
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
+alias base64-decode="perl -MMIME::Base64 -e 'print decode_base64(@ARGV[0])'"
+alias base64-encode='perl -MMIME::Base64 -e "print encode_base64(@ARGV[0])"'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
