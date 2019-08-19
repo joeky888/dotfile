@@ -491,7 +491,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   if [ -n "$POWERLEVEL9K_PATH" ] && [[ "$OSTYPE" != "linux-android" ]] ; then # powerlevel9k.zsh-theme is available
 
     export P9K_CONTEXT_DEFAULT_BACKGROUND='155'
-    export P9K_CONTEXT_DEFAULT_FOREGROUND='black'
+    export P9K_CONTEXT_DEFAULT_FOREGROUND='238'
     export P9K_DIR_DEFAULT_BACKGROUND='039'
     export P9K_DIR_DEFAULT_FOREGROUND='238'
     export P9K_DIR_HOME_BACKGROUND='039'
