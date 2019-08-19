@@ -18,7 +18,7 @@ microk8s.status
 microk8s.inspect
 
 rm -rf ~/.helm
-KUBECONFIG=$(find /snap/microk8s/ -name client.config | head -n 1) helm init
+KUBECONFIG=/snap/microk8s/current/client.config helm init
 
 # Uninstall
 microk8s.disable storage
