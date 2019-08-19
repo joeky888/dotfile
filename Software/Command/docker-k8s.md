@@ -2,7 +2,12 @@ Archlinux microK8s (native, Linux only)
 =====
 ```sh
 sudo snap install docker --edge # If docker is not installed
-sudo snap install microk8s helm --edge --classic
+# sudo groupadd --system docker
+# sudo usermod -aG docker $(whoami)
+# newgrp docker
+
+sudo snap install microk8s --edge --classic
+sudo snap install helm --edge --classic
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
