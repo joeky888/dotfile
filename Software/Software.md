@@ -222,6 +222,9 @@ Linux
     * Gnome System Monitor (x64, arm64)
     * NetworkManager (x64, arm64)
     * Remmina (x64, arm64)
+    * RetroArch (x64, arm64)
+    * VLC
+    * WoeUSB
     * Skype
     * Krita
     * VScode
