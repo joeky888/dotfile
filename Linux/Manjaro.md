@@ -8,7 +8,7 @@ Install without desktop
   * Select "Partition Disk" again
   * Use cfdisk for partitions, add bootable flag
 * Don't use pacman-mirrors, it will take a lot of time
-* Don't install yay and base-devl, it will take a lot of time
+* Don't install yay and base-devel, it will take a lot of time
 * Install networkmanager
 * Set root password and add an user
 * $ sudo systemctl enable NetworkManager && sudo systemctl restart NetworkManager
