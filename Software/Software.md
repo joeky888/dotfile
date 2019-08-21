@@ -233,12 +233,13 @@ Linux
     * Opera
     * Obs-Studio
     * draw.io
-    * CLI
+    * Dev tools
         * jq
         * conda
         * node
         * go
         * ubuntu-make
+        * Android studio
 
 WineHQ
 =====
