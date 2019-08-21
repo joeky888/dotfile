@@ -223,6 +223,7 @@ Linux
     * NetworkManager (x64, arm64)
     * Remmina (x64, arm64)
     * RetroArch (x64, arm64)
+    * WPS Office
     * VLC
     * WoeUSB
     * Skype
@@ -231,6 +232,12 @@ Linux
     * Slack
     * Opera
     * Obs-Studio
+    * draw.io
+    * CLI
+        * jq
+        * conda
+        * node
+        * go
 
 WineHQ
 =====
