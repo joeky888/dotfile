@@ -33,28 +33,6 @@ RUN go get -d ./...
 RUN go build -o /bin/myexe
 ```
 
-<!-- Debug in vscode, but shows logs in terminal (Remote debug mode, recommend) -->
-<!-- ===== -->
-<!-- * $ go get -u -v github.com/go-delve/delve/cmd/dlv -->
-<!-- * This is remote debugging mode so setting args and env in vscode json doesn't work -->
-<!-- * $ cd /path/to/project && MYGOPATH=/GOGO dlv debug --headless --listen=:2345 --log --api-version=2 -- -f /etc/config/run-libgo.yaml other:args -->
-<!-- * vscode -> Debug -> Open Configurations -->
-<!-- ```js -->
-<!-- { -->
-<!--     "name": "Launch remote", -->
-<!--     "type": "go", -->
-<!--     "request": "launch", -->
-<!--     "mode": "remote", -->
-<!--     "remotePath": "${workspaceFolder}", -->
-<!--     "port": 2345, -->
-<!--     "host": "127.0.0.1", -->
-<!--     "program": "${workspaceFolder}", -->
-<!--     "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1 -->
-<!--     "showLog": false -->
-<!-- } -->
-<!-- ``` -->
-<!-- * Now break points should work -->
-
 Debug in vscode
 =====
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
@@ -101,6 +79,28 @@ Debug in go test
     },
     "args": ["--godog.tags=B2bHistoryOrder"],
     "buildFlags": "-tags 'TAG1 TAG2 TAG3'", // go build -tag TAG1
+    "showLog": false
+}
+```
+
+Debug in vscode, but shows logs in terminal (Remote debug mode)
+=====
+* $ go get -u -v github.com/go-delve/delve/cmd/dlv
+* This is remote debugging mode so setting args and env in vscode json doesn't work
+* $ cd /path/to/project && MYGOPATH=/GOGO REDIS=host.docker.internal dlv debug --headless --listen=:2345 --log --api-version=2 --build-flags "-tags 'TAG1 TAG2 TAG3'" -- -f /etc/config/run-libgo.yaml other:args
+* Break points in vscode should work
+* vscode -> Debug -> Open Configurations
+```js
+{
+    "name": "Launch remote",
+    "type": "go",
+    "request": "attach",
+    "mode": "remote",
+    "remotePath": "/absolute/path/to/the/remote/project",
+    "port": 2345,
+    "host": "127.0.0.1",
+    //"program": "${workspaceFolder}", // This won't work
+    //"buildFlags": "-tags 'TAG1 TAG2 TAG3'", // This won't work
     "showLog": false
 }
 ```
