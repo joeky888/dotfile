@@ -4,9 +4,17 @@ Install without desktop
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
 * $ setup
 * Partitions
-  * Select "Automatical partitioning"
-  * Select "Partition Disk" again
-  * Use cfdisk for partitions, add bootable flag
+  * BIOS (Virtualbox)
+    * Use fdisk for partitions, use dos
+    * m # Show all commands
+    * o # Create dos disk label
+    * n # New partition
+    * a # Add a bootable flag
+    * p # Print partitions
+    * w # Write
+    * q # Quit
+  * UEFI
+    * TODO
 * Don't use pacman-mirrors, it will take a lot of time
 * Don't install yay and base-devel, it will take a lot of time
 * Install networkmanager
