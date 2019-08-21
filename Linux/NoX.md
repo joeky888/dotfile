@@ -2,7 +2,7 @@ Install Fbterm
 =====
 * $ sudo apt remove fbterm -y
 * $ app-fast install libgpm-dev libfontconfig1-dev libfreetype6-dev libx86-dev pkg-config -y
-* $ git clone https://github.com/j16180339887/fbterm.git && cd fbterm
+* $ git clone --depth 1 https://github.com/joeky888/fbterm.git && cd fbterm
 * $ ./configure && make && sudo make install
 * $ app-fast install fontconfig -y
 * $ app-fast install virtualbox-guest-dkms -y # for virtualbox
