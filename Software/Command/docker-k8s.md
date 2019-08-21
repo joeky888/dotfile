@@ -161,3 +161,15 @@ kubectl delete --all deployments --namespace=default
 # delete all services
 kubectl delete --all services --namespace=default
 ```
+
+k8s dashboard
+=====
+* 使用 k8s 內建的 web ui 查看 cluster 狀況
+```sh
+# 取得 admin 使用者的 token
+kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | grep admin | awk '{print $1}')
+kubectl proxy
+* 瀏覽器輸入 http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/
+* 輸入剛剛得到的 token 登入
+```
+
