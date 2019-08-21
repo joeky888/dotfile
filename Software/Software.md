@@ -238,6 +238,7 @@ Linux
         * conda
         * node
         * go
+        * ubuntu-make
 
 WineHQ
 =====
