@@ -139,9 +139,9 @@ Install virtualbox
 Install snapd
 =====
 ```sh
-app-fast -S snapd  || yay -S snapd
-sudo systemctl enable --now apparmor.service
-sudo systemctl enable --now snapd.apparmor.service
+app-fast -S snapd
+#sudo systemctl enable --now apparmor.service
+#sudo systemctl enable --now snapd.apparmor.service
 sudo systemctl enable --now snapd.socket
 
 app-fast -S linux-apparmor # Install/Boot only if systemctl status apparmor.service is failed
