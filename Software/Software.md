@@ -239,6 +239,7 @@ Linux
         * node
         * go
         * ubuntu-make
+        * google-cloud-sdk
         * Android studio
 
 WineHQ
