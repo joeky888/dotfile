@@ -208,7 +208,7 @@ Add an user to sudoer group
 
 Get log of systemd
 =====
-* $ sudo journalctl -u SERVICE-NAME.service
+* $ sudo journalctl -xeu SERVICE-NAME.service
 
 Clear system log greater than 10MB
 =====
