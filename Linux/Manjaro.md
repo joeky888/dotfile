@@ -30,6 +30,7 @@ Install without desktop
     * Format sda2 to ext4
     * Format sda1 to vfat f32 -> mount to "/boot/efi"
 * Don't use pacman-mirrors, it will take a lot of time
+* Don't refresh keys, it will take a lot of time
 * Don't install yay and base-devel, it will take a lot of time
 * Install networkmanager
 * Set root password and add an user
