@@ -18,7 +18,7 @@ Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.
 RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring sudo vim yay
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
-RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=CN&protocol=http&ip_version=4' | tee /etc/pacman.d/mirrorlist.bak"
+RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=TW&protocol=http&ip_version=4' | tee /etc/pacman.d/mirrorlist.bak"
 RUN sed -i 's/^#S/S/' /etc/pacman.d/mirrorlist.bak
 RUN cat /etc/pacman.d/mirrorlist.bak
 RUN bash -c "rankmirrors -n 10 /etc/pacman.d/mirrorlist.bak | tee /etc/pacman.d/mirrorlist"
