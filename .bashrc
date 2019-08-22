@@ -1,5 +1,5 @@
 if [ -z "$PS1" ]; then
-   return # Prevent scp command hangs
+   exit 0 # Prevent scp command hangs
 fi
 
 export LANG="en_US.UTF-8"
@@ -419,16 +419,17 @@ if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
   gvim()
   {
     gv=$(cygpath $(which gvim.exe))
-    if [ "$#" == 0 ]; then
-      $gv &!
+    background=$([ -n "$ZSH_VERSION" ] && echo "&!" || echo "&")
+    if [ "$#" = 0 ]; then
+      $gv $background
     else
-      $gv -p --remote-tab-silent "$@" &!
+      $gv -p --remote-tab-silent "$@" $background
     fi;
   }
 elif [ $(command -v gvim) ]; then
   gvim()
   {
-    if [ "$#" == 0 ]; then
+    if [ "$#" = 0 ]; then
       command gvim > /dev/null 2>&1
     else
       command gvim -p --remote-tab-silent "$@" > /dev/null 2>&1
@@ -1219,8 +1220,9 @@ Forever()
 
 OpenFileExplorer()
 {
+  background=$([ -n "$ZSH_VERSION" ] && echo "&!" || echo "&")
   if [ "$OSTYPE" = "linux-gnu" ] || echo "$OSTYPE" | grep -q "freebsd"; then # Linux + FreeBSD
-    xdg-open . > /dev/null 2>&1 &!;
+    xdg-open . > /dev/null 2>&1 $background
   elif [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "cygwin" ]; then # Windows
     explorer.exe .
   elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
