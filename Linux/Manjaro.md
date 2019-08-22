@@ -13,13 +13,27 @@ Install without desktop
     * p # Print partitions
     * w # Write
     * q # Quit
-  * UEFI
-    * TODO
+  * UEFI (Failed, TODO)
+    * Use fdisk for partitions, use gpt
+    * m # Show all commands
+    * g # Create gpt disk label
+    * n -> Enter "2048" ~ "500000" # New partition
+    * p # Print partitions
+    * t -> Use "1" (EFI System) # Change type
+    * x # Expert mode
+    * A # Add bootable flag
+    * r # return normal mode
+    * n -> Format reset to Linux Filesystem # New partition
+    * p # Print partitions
+    * w # Write
+    * q # Quit
+    * Format sda2 to ext4
+    * Format sda1 to vfat f32 -> mount to "/boot/efi"
 * Don't use pacman-mirrors, it will take a lot of time
 * Don't install yay and base-devel, it will take a lot of time
 * Install networkmanager
 * Set root password and add an user
-* $ sudo systemctl enable NetworkManager && sudo systemctl restart NetworkManager
+* $ sudo systemctl enable --now NetworkManager
 
 Pre-install
 =====
