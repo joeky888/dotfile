@@ -66,7 +66,7 @@ git rebase error
 * First, fix Conflicts
 * $ git add --all
 * $ git commit -m "Merge conflicts"
-* $ git rebase --skip
+* $ git rebase --continue
 
 Export and import a patch
 =====
