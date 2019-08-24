@@ -7,6 +7,10 @@ Docker
 * $ flutter pub get
 * $ flutter build apk --release
 
+List dependencies
+=====
+* $ flutter packages pub deps
+
 Vscode
 =====
 * Install flutter and add flutter/bin to PATH
