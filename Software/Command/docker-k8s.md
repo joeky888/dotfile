@@ -9,6 +9,7 @@ sudo snap install docker --edge # If docker is not installed
 sudo snap install microk8s --edge --classic
 sudo snap install helm --edge --classic
 
+sudo usermod -aG microk8s $(whoami)
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
 microk8s.enable dns
