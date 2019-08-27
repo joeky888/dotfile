@@ -61,12 +61,17 @@ git restore a single file
 * Or
 * $ git checkout HEAD -- my-file.txt
 
-git rebase error
+git rebase conflict
 =====
-* First, fix Conflicts without commit it
+* First, fix Conflicts WITHOUT committing it
 * $ git add --all
-<!-- * $ git commit -m "Merge conflicts" -->
 * $ git rebase --continue
+
+git merge conflict
+=====
+* First, fix Conflicts WITHOUT committing it
+* $ git add --all
+* $ git merge --continue
 
 Export and import a patch
 =====
