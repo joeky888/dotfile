@@ -9,9 +9,9 @@ while true; do
 #     ifdown --exclude=lo -a && sudo ifup --exclude=lo -a
 #     systemctl restart systemd-resolved.service
 #     systemctl restart systemd-networkd.service
-    systemctl restart networking.service
-    systemctl restart teamviewerd.service
-    systemctl restart NetworkManager.service
+    systemctl restart networking.service || echo ok
+    systemctl restart teamviewerd.service || echo ok
+    systemctl restart NetworkManager.service || echo ok
     echo $(date +"%m/%d/%Y %I:%M:%p") >> /home/Reconnect.log
     if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
       sed -i '1d' /home/Reconnect.log
@@ -21,7 +21,7 @@ while true; do
   if [[ $(command -v teamviewer) ]]; then
     systemctl is-active teamviewerd.service >/dev/null 2>&1
     if [[ $? != 0 ]]; then # if exit code is not zero, restart
-      systemctl restart teamviewerd.service
+      systemctl restart teamviewerd.service || echo ok
       echo $(date +"%m/%d/%Y %I:%M:%S:%p") "teamviewer" >> /home/Reconnect.log
       if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
         sed -i '1d' /home/Reconnect.log
