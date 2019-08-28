@@ -1,6 +1,6 @@
 Docker
 =====
-* $ docker run --name flutter -it cirrusci/flutter bash
+* $ docker run --name flutter -p 8080:8080 -it cirrusci/flutter bash
     * $ sudo chown cirrus:cirrus -R /home/cirrus/
 * $ docker cp flutter-app flutter:/home/cirrus
 * $ flutter packages get
