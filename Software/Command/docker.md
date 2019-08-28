@@ -88,6 +88,12 @@ Expose port
 * Host port 80 container port 8080
 * $ docker -p 80:8080
 
+Unable to ping/curl from outside of container
+=====
+* Change hostname from "127.0.0.1" to "0.0.0.0"
+* $ ./myserver -host 127.0.0.1 # (X)
+* $ ./myserver -host 0.0.0.0 # (O)
+
 Multiple service in a container using Supervisord
 =====
 * `ENTRYPOINT ["/usr/bin/supervisord", "-c", "/cube/supervisord.conf", "--loglevel", "debug"]`
