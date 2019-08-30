@@ -11,6 +11,13 @@ List dependencies
 =====
 * $ flutter packages pub deps
 
+Set channel
+=====
+* $ flutter channel stable # Set to stable
+* $ flutter channel beta   # Set to beta
+* $ flutter channel dev    # Set to dev
+* $ flutter upgrade
+
 Vscode
 =====
 * Install flutter and add flutter/bin to PATH
