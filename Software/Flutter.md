@@ -21,7 +21,7 @@ Vscode
     "name": "Flutter run",
     "type": "dart",
     "request": "launch",
-    "program": "lib/main.dart"
+    "program": "lib/main.dart" // Make sure there is NO string like "flutter_web" in pubspec.yaml
 },
 {
     "name": "Flutter: Attach to Device",
