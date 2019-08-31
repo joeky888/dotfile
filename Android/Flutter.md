@@ -33,6 +33,6 @@ Vscode
 {
     "name": "Flutter: Attach to Device",
     "type": "dart",
-    "request": "attach"
+    "request": "attach" // Don't use attach mode. launch mode can run on VM and physical devices
 }
 ```
