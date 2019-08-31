@@ -12,7 +12,7 @@ while true; do
     systemctl restart networking.service || echo ok
     systemctl restart teamviewerd.service || echo ok
     systemctl restart NetworkManager.service || echo ok
-    echo $(date +"%m/%d/%Y %I:%M:%p") >> /home/Reconnect.log
+    echo $(date +"%m/%d/%Y %I:%M:%S:%p") >> /home/Reconnect.log
     if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
       sed -i '1d' /home/Reconnect.log
     fi
