@@ -110,6 +110,7 @@ Extension
 * Gitlens
 * Vscode-proto3
 * Shellcheck
+* Versionlens - Check update for package.json
 
 Key
 =====
