@@ -481,9 +481,9 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
-  [ $(command -v kubectl) ] && _kubectl () { true; } # For grc
-  [ $(command -v kubectl) ] && source <(kubectl completion zsh)
-  [ $(command -v helm) ] && source <(helm completion zsh)
+  [ ! $(command -v grc) ] && [ $(command -v kubectl) ] && _kubectl () { true; } # For grc
+  [ ! $(command -v grc) ] && [ $(command -v kubectl) ] && source <(kubectl completion zsh)
+  [ ! $(command -v grc) ] && [ $(command -v helm) ] && source <(helm completion zsh)
   [ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
   [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check` | tr -d '\r'"
   if (( $EUID != 0 )); then
