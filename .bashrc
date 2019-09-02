@@ -962,10 +962,11 @@ if [ $(command -v grc) ] ; then
 
   if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null >/dev/null; then
     source <(kubectl completion zsh)
-    [ $(command -v helm) ] && source <(helm completion zsh)
+    # [ $(command -v helm) ] && source <(helm completion zsh)
   fi
 
   if [ -n "$ZSH_VERSION" ] && hash helm 2>/dev/null >/dev/null; then
+    eval "function helm { grc -es --colour=auto -c conf.kubectl $(command -v helm) \"\$@\" }"
     source <(helm completion zsh)
   fi
 
