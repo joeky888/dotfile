@@ -945,6 +945,8 @@ if [ $(command -v grc) ] ; then
           whois
   );
 
+  function _kubectl () { true; }
+
   # Set alias for available commands.
   for cmd in "${cmds[@]}" ; do
     if [[ -n "$ZSH_VERSION" ]] && [ $(command -v $cmd) ] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
