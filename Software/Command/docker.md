@@ -94,6 +94,13 @@ Unable to ping/curl from outside of container
 * $ ./myserver -host 127.0.0.1 # (X)
 * $ ./myserver -host 0.0.0.0 # (O)
 
+Use host network
+=====
+* Windows and mac
+    * Use "host.docker.internal"
+* Linux
+    * Use "--net=host" and/or static ip like "192.168.x.x"
+
 Multiple service in a container using Supervisord
 =====
 * `ENTRYPOINT ["/usr/bin/supervisord", "-c", "/cube/supervisord.conf", "--loglevel", "debug"]`
