@@ -47,12 +47,17 @@ Setting (search `json`)
     "go.testFlags": ["-count=1"],
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
+        "format": false, // Disable to use "go.formatTool"
         "diagnostics": true
     },
     "go.lintTool":"golangci-lint",
     "go.lintFlags": [
         // "--enable-all",
         "--fast",
+    ],
+    "go.formatTool": "goimports",
+    "go.formatFlags": [
+        "-e",
     ],
     "go.delveConfig": {
         "dlvLoadConfig": {
