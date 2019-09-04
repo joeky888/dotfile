@@ -5,7 +5,7 @@ Setting (search `json`)
 {
     "editor.fontSize": 20,
     "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
-    "terminal.integrated.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
+    "terminal.integrated.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "editor.wordWrap": "off",
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
@@ -26,7 +26,7 @@ Setting (search `json`)
     "workbench.editor.enablePreview": false,
     "editor.dragAndDrop": false,
     "window.zoomLevel": 0,
-    "debug.console.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
+    "debug.console.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "debug.console.fontSize": 20,
     "debug.internalConsoleOptions": "openOnSessionStart",
     "eslint.autoFixOnSave": true,
