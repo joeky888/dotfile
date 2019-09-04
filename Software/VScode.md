@@ -39,7 +39,10 @@ Setting (search `json`)
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
-        "files.eol": "\n"
+        "files.eol": "\n",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        },
     },
     "go.testFlags": ["-count=1"],
     "go.useLanguageServer": true,
