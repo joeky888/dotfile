@@ -66,7 +66,8 @@ Setting (search `json`)
           "showGlobalVariables": true
     },
     "gopls": {
-        "usePlaceholders": true
+        "usePlaceholders": true,
+        "enhancedHover": true,
     },
     "[javascript]": {
         "editor.formatOnSave": true
