@@ -18,3 +18,9 @@ FLUSH PRIVILEGES;
 
 # Redis latest
 docker run --name redis -p 6379:6379  --restart always -d redis
+
+# Golang latest
+docker run --name go -it golang bash
+
+# Flutter latest
+docker run --name flutter -it cirrusci/flutter bash
