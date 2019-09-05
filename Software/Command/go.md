@@ -12,6 +12,8 @@ Go mod (Golang >= 1.11)
 * $ go mod init
 * $ go mod download
 * $ go mod tidy
+* For Golang >- 1.13
+* $ go mod edit -go=1.13
 
 Vscode upgrade all go tools
 =====
