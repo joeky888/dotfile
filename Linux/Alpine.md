@@ -9,3 +9,9 @@ Unpack and install a .apk file
 * $ mkdir -p /etc/apk/world
 * $ mkdir -p /etc/apk/world.new
 * $ ./apk-tools-static add --allow-untrusted glibc-2.21-r2.apk glibc-bin-2.21-r2.apk # NOT WORKING
+
+List of static binary packages
+======
+* busybox-static
+* apk-tools-static
+
