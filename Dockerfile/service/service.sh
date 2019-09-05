@@ -21,6 +21,10 @@ docker run --name redis -p 6379:6379  --restart always -d redis
 
 # Golang latest
 docker run --name go -it golang bash
+docker cp ~/dotfile/app-fast/app-fast go:/bin
+docker cp ~/dotfile/vimrc/.vimrc go:/root
 
 # Flutter latest
 docker run --name flutter -it cirrusci/flutter bash
+docker cp ~/dotfile/app-fast/app-fast flutter:/bin
+docker cp ~/dotfile/vimrc/.vimrc go:/home/cirrus
