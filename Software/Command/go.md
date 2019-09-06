@@ -107,6 +107,48 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
 }
 ```
 
+Debug using lldb for mac, gdb for Linux and Windows
+=====
+* Install ms-vscode.cpptools vscode extension
+* Make sure lldb command is available
+* ./vscode/launch.json
+```js
+{
+    "type": "cppdbg",
+    "request": "launch",
+    "name": "cpp debugger",
+    "preLaunchTask": "go build for gdb/lldb",
+    "cwd": "${workspaceRoot}",
+    "program": "${workspaceRoot}/myfile.exe",
+    "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb"
+     },
+     "osx": {
+        "MIMode": "lldb"
+     },
+     "windows": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
+     }
+}
+```
+* ./vscode/tasks.json
+```js
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "go build for gdb/lldb",
+            "type": "shell",
+            "command": "go build -ldflags=-compressdwarf=false -o myfile.exe"
+        }
+    ]
+}
+```
+
 Static compile
 =====
 ```sh
