@@ -92,6 +92,10 @@ git restore a commit
     * $ git status # Conflicts check
     * $ git commit
 
+Delete all branches other than master and develop
+=====
+* $ git for-each-ref --format '%(refname:short)' refs/heads | grep -v -E "master|develop" | xargs git branch -D
+
 Git push won't do anything (Everything up-to-date)
 =====
 * There must be another branch
