@@ -511,8 +511,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export P9K_VCS_MODIFIED_FOREGROUND='238'
     export P9K_PROMPT_ON_NEWLINE=true
     export P9K_RPROMPT_ON_NEWLINE=true
-#     export P9K_MULTILINE_LAST_PROMPT_PREFIX_ICON=""
-#     export P9K_MULTILINE_FIRST_PROMPT_PREFIX_ICON="➜  "
     export P9K_IGNORE_VAR_WARNING=true
 
     source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
