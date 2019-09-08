@@ -158,7 +158,7 @@ Test with lldb for mac, gdb for Linux and Windows
 {
     "type": "cppdbg",
     "request": "launch",
-    "name": "cpp debugger",
+    "name": "cpp testing",
     "preLaunchTask": "go test for gdb/lldb",
     "cwd": "${workspaceRoot}/integration",
     "program": "${workspaceRoot}/integration/integration.test",
