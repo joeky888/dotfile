@@ -107,7 +107,7 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
 }
 ```
 
-Debug using lldb for mac, gdb for Linux and Windows
+Debug with lldb for mac, gdb for Linux and Windows
 =====
 * Install ms-vscode.cpptools vscode extension
 * Make sure lldb command is available
@@ -148,6 +148,52 @@ Debug using lldb for mac, gdb for Linux and Windows
     ]
 }
 ```
+
+Test with lldb for mac, gdb for Linux and Windows
+=====
+* Install ms-vscode.cpptools vscode extension
+* Make sure lldb command is available
+* ./vscode/launch.json
+```js
+{
+    "type": "cppdbg",
+    "request": "launch",
+    "name": "cpp debugger",
+    "preLaunchTask": "go test for gdb/lldb",
+    "cwd": "${workspaceRoot}/integration",
+    "program": "${workspaceRoot}/integration/integration.test",
+    "linux": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "/usr/bin/gdb"
+     },
+     "osx": {
+        "MIMode": "lldb"
+     },
+     "windows": {
+        "MIMode": "gdb",
+        "miDebuggerPath": "C:\\MinGw\\bin\\gdb.exe"
+     }
+}
+```
+* ./vscode/tasks.json
+```js
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "go test for gdb/lldb",
+            "type": "shell",
+            "options": {
+                "cwd": "${workspaceFolder}/integration"
+            },
+            "command": "go test -c -ldflags=-compressdwarf=false -tags integration"
+        }
+    ]
+}
+```
+
 
 Static compile
 =====
