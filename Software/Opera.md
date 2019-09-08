@@ -100,8 +100,10 @@ https://www.pcgamer.com/rss
 
 * Github
 ```
-http://github-trends.ryotarai.info/rss/github_trends_all_daily.rss
-http://github-trends.ryotarai.info/rss/github_trends_all_weekly.rss
+https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml
+https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml
+https://mshibanami.github.io/GitHubTrendingRSS/weekly/go.xml
+https://mshibanami.github.io/GitHubTrendingRSS/weekly/rust.xml
 ```
 
 
