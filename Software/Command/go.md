@@ -194,6 +194,12 @@ Test with lldb for mac, gdb for Linux and Windows
 }
 ```
 
+Build vscode-go extension to .vsix file
+=====
+* $ npm run compile
+* $ npm i -g vsce
+* $ vsce package
+
 
 Static compile
 =====
