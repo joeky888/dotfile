@@ -9,5 +9,4 @@ channels:
   - intel
   # - conda-canary
   # - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-  # - msys2
 
