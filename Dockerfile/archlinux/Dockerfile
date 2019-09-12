@@ -15,7 +15,7 @@ RUN echo $'[ownstuff]\n\
 SigLevel = Never\n\
 Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.conf
 
-RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring vim yay
+RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring vim yay bash-completion
 # Arch Linux Pacman Mirrorlist Generator
 RUN mv /etc/pacman.d/mirrorlist /etc/pacman.d/mirrorlist.bak
 RUN bash -c "curl -fsSLk 'http://www.archlinux.org/mirrorlist/?country=TW&protocol=http&ip_version=4' | tee /etc/pacman.d/mirrorlist.bak"
