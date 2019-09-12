@@ -220,6 +220,10 @@ Get nvidia gpu usage
 * Or
 * $ nvidia-smi -l 1 # Refresh interval of 1 second
 
+List installed kernel drivers
+=====
+* $ lspci -knn
+
 Install wi-fi driver (usb wifi adapter)
 =====
 * For Ubuntu
