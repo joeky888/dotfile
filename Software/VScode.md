@@ -120,6 +120,7 @@ Extension
 * Vscode-proto3
 * Shellcheck
 * Versionlens - Check update for package.json
+* humao.rest-client - Postman-like http client, support curl
 
 Key
 =====
