@@ -63,8 +63,8 @@ Setting (search `json`)
         "dlvLoadConfig": {
             "followPointers": true,
             "maxVariableRecurse": 1,
-            "maxStringLen": 300,
-            "maxArrayValues": 300,
+            "maxStringLen": 1024,
+            "maxArrayValues": 1024,
             "maxStructFields": -1
           },
           "apiVersion": 2,
