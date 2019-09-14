@@ -159,7 +159,7 @@ if ! [ "$GOPATH" ]; then
 fi
 fi
 
-[ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all'
+[ $(command -v go) ] && alias upgradeGo='go get -insecure -v -u all; go clean -cache'
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
@@ -223,7 +223,7 @@ alias tmuxResizeDown='tmux resize-pane -D'
 alias tmuxResizeLeft='tmux resize-pane -L'
 alias tmuxResizeRight='tmux resize-pane -R'
 alias tmuxClearHistory='tmux clear-history'
-alias upgradeConda='conda update -n base conda -y && conda update --all --yes'
+alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
 alias upgradeBypy='pip install --upgrade https://github.com/houtianze/bypy/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
@@ -847,7 +847,7 @@ if [ -n "$CONDA_2" ]; then
   export PATH=$CONDA_2/bin:$PATH
   alias conda2=$(echo $CONDA_2/bin/conda)
   alias pip2=$(echo $CONDA_2/bin/pip)
-  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_2/bin/conda) clean --yes --all ;}
   upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
@@ -857,7 +857,7 @@ if [ -n "$CONDA_3" ]; then
   export PATH=$CONDA_3/bin:$PATH
   alias conda3=$(echo $CONDA_3/bin/conda)
   alias pip3=$(echo $CONDA_3/bin/pip)
-  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes ;}
+  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_3/bin/conda) clean --yes --all ;}
   upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
