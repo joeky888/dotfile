@@ -29,6 +29,7 @@ Setting (search `json`)
     "debug.console.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "debug.console.fontSize": 20,
     "debug.internalConsoleOptions": "openOnSessionStart",
+    "debug.allowBreakpointsEverywhere": true,
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
     "[makefile]": {
