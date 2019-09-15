@@ -105,11 +105,12 @@ app-fast -S teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-ios
 
 Unstable and testing package (Manjaro)
 =====
+* $ app-fast -S pacman-mirrors-dev
 * $ pacman-mirrors -G # Get current branch
-* $ sudo pacman-mirrors -aS testing # Or unstable
+* $ sudo pacman-mirrors --test-async -aS testing # Or unstable
 * Or
-* $ sudo pacman-mirrors --api --set-branch testing # Or unstable
-* $ sudo pacman-mirrors -f 0
+* $ sudo pacman-mirrors --test-async --api --set-branch testing # Or unstable
+* $ sudo pacman-mirrors --test-async -f 0
 
 Mhwd
 =====
