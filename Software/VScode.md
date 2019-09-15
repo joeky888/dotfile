@@ -72,7 +72,6 @@ Setting (search `json`)
     },
     "gopls": {
         "usePlaceholders": true,
-        "enhancedHover": true,
     },
     "[javascript]": {
         "editor.formatOnSave": true
