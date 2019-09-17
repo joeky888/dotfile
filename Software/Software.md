@@ -322,6 +322,7 @@ iOS
 =====
 * Cydia
     * NewTerm 2
+* Dataplicity (for Pi)
 
 Gaming
 =====
