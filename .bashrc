@@ -129,7 +129,7 @@ APP_FAST_PATH=$(getModulePath app-fast)
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=$HOME/node/bin:$PATH
-  alias upgradeNpm='~/node/bin/npm install -g npm@latest ; ~/node/bin/npm update -g'
+  alias upgradeNpm='~/node/bin/npm install -g npm@latest; ~/node/bin/npm update -g'
 else
   export NPM_PACKAGES="$HOME/.npm-packages"
   export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
@@ -231,7 +231,6 @@ alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/arch
 alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
 alias upgradeAnnie='go get -insecure -u -v github.com/iawia002/annie'
 alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive/master.zip'
-# alias upgradeBaiduPCS='go get -insecure -u -v github.com/iikira/BaiduPCS-Go'
 alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
 alias you-getYouku='you-get -y proxy.uku.im:443'
