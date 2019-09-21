@@ -87,6 +87,7 @@ Go
     * https://github.com/gothinkster/golang-gin-realworld-example-app
 * fasthttp/fasthttprouter - Super fast for http(s) client and server
 * iris - Fatest web framework
+* algernon - Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support
 * json
     * If code reflection is painful, just unmarsharl to string map
 ```go
