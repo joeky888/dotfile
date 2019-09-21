@@ -181,3 +181,8 @@ Unable to remove dock from toolbar
 Gnome files (Nautilus) fullscreen to normal screen
 =====
 * Use dconf-editor to disable Gnome files starting with fullscreen
+
+Multiple desktop
+=====
+* On desktop -> win+s -> click + to add a new desktop
+* win+left/right to switch between desktops
