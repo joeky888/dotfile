@@ -127,6 +127,11 @@ God mode
 =====
 * Rename an empty folder to "GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}"
 
+Multiple desktop
+=====
+* win+tab to create new a desktop
+* ctrl+win+left/right to switch between desktops
+
 Delete a Disk partition
 =====
 * Open powershell as admin, run `diskpart`
