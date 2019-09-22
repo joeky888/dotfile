@@ -229,7 +229,7 @@ alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtub
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
 alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
-alias upgradeAnnie='GO111MODULE=on go get -insecure -u -v github.com/iawia002/annie'
+alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie'
 alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive/master.zip'
 alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
