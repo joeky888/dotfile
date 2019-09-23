@@ -303,6 +303,7 @@ Android
     * LibreTorrent
     * ScreenCam
     * Simple Gallery
+    * Kiwix - offline wikipedia
 * Drop-down menu items
     * Screenshot
     * Flash light
