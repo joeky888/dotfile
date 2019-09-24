@@ -304,6 +304,7 @@ Android
     * ScreenCam
     * Simple Gallery
     * Kiwix - offline wikipedia
+    * Slide for Reddit - offline reddit
 * Drop-down menu items
     * Screenshot
     * Flash light
