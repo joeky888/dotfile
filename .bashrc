@@ -231,7 +231,7 @@ alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/arch
 alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
 alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie'
 alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive/master.zip'
-alias upgradeGotop='go get -insecure -u -v github.com/cjbassi/gotop'
+alias upgradeGotop='GO111MODULE=on go get -insecure -v github.com/cjbassi/gotop'
 alias upgradeRclone='go get -insecure -u -v github.com/ncw/rclone'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
