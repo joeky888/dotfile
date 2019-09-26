@@ -159,7 +159,7 @@ if ! [ "$GOPATH" ]; then
 fi
 fi
 
-[ $(command -v go) ] && alias upgradeGo='GO111MODULE=on go get -insecure -v -u all; go clean -cache'
+[ $(command -v go) ] && alias upgradeGo='GO111MODULE=on go get -insecure -v all; go clean -cache'
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
@@ -223,8 +223,7 @@ alias tmuxResizeDown='tmux resize-pane -D'
 alias tmuxResizeLeft='tmux resize-pane -L'
 alias tmuxResizeRight='tmux resize-pane -R'
 alias tmuxClearHistory='tmux clear-history'
-alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
-alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
+alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
 alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
