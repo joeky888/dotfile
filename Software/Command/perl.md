@@ -22,6 +22,17 @@ perl -C -Mutf8 -ni -e 'print if !/mystring/' ~/path/file
 perl -C -Mutf8 -ni -e 'print if !/mystring/i' ~/path/file
 ```
 
+Extract regex from multiple lines
+=====
+```txt
+start here
+and
+multiple lines
+end here
+and the rest
+```
+* $ `perl -0777 -ne 'print $1 if /(start.*?end)/s;' file.txt`
+
 Replace logs with terminal colors to html
 =====
 ```sh
