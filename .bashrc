@@ -207,8 +207,10 @@ fi
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
-alias base64-decode="perl -MMIME::Base64 -e 'print decode_base64(@ARGV[0])'"
-alias base64-encode='perl -MMIME::Base64 -e "print encode_base64(@ARGV[0])"'
+alias base64-decode='/usr/bin/perl -MMIME::Base64 -e "print decode_base64(@ARGV[0])"'
+alias base64-encode='/usr/bin/perl -MMIME::Base64 -e "print encode_base64(@ARGV[0])"'
+alias url-decode='/usr/bin/perl -MURI::Escape -e "print uri_unescape(@ARGV[0])"'
+alias url-encode='/usr/bin/perl -MURI::Escape -e "print uri_escape(@ARGV[0])"'
 alias tmux2SplitHorizontal='tmux split-window -v'
 alias tmux2SplitVertical='tmux split-window -h'
 alias tmux3SplitHorizontal='tmux split-window -v && tmux split-window -v && tmux select-layout even-vertical'
@@ -279,8 +281,6 @@ alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRE
 alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
 alias annie-playlist="annie -p"
 alias scp='scp -v'
-alias UrlDecode='python2 -c "import sys, urllib as ul; print ul.unquote_plus(sys.argv[1])"'
-alias UrlEncode='python2 -c "import sys, urllib as ul; print ul.quote_plus(sys.argv[1])"'
 alias ffmpeg='ffmpeg -err_detect ignore_err'
 if ls --version 2>/dev/null | grep -q GNU ; then
   alias ls='ls -F --color=auto --show-control-chars'
