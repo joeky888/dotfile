@@ -159,7 +159,7 @@ if ! [ "$GOPATH" ]; then
 fi
 fi
 
-[ $(command -v go) ] && alias upgradeGo='GO111MODULE=on go get -insecure -v -u all; go clean -cache'
+[ $(command -v go) ] && alias upgradeGo='GO111MODULE="" go get -insecure -v -u all; go clean -cache'
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=~/zulu/bin:$PATH
