@@ -1,24 +1,29 @@
 # Cursor navigation
-bind generic	j	move-down
-bind generic	u	move-up
-bind generic	<Down>	move-down
-bind generic	<Up>	move-up
-bind generic	<C-U>	move-half-page-up
-bind generic	<C-K>	move-half-page-up
-bind generic	<C-J>	move-half-page-down
-bind generic	<PgUp>	move-half-page-up
-bind generic	<PgDown> move-half-page-down
-bind generic	<Space>	move-page-down
-bind generic	<Home>	move-first-line
-bind generic	<End>	move-last-line
-bind generic	o	maximize
-bind generic	O	maximize
-bind generic	<C-O>	maximize
-bind generic	/	search
-bind generic	<C-F>	search
-bind generic	<C-W>	view-close
+bind generic         j    move-down
+bind generic         u    move-up
+bind generic    <Down>    move-down
+bind generic      <Up>    move-up
+bind generic     <C-U>    move-half-page-up
+bind generic     <C-K>    move-half-page-up
+bind generic     <C-J>    move-half-page-down
+bind generic    <PgUp>    move-half-page-up
+bind generic  <PgDown>    move-half-page-down
+bind generic   <Space>    move-page-down
+bind generic    <Home>    move-first-line
+bind generic     <End>    move-last-line
+bind generic         o    maximize
+bind generic         O    maximize
+bind generic     <C-O>    maximize
+bind generic         /    search
+bind generic     <C-F>    search
+bind generic     <C-W>    view-close
 
-set ignore-case	        = yes
+set ignore-case         = yes
 set mouse               = true
 set mouse-scroll        = 3         # Number of lines to scroll via the mouse
 set diff-highlight      = true
+
+# Show untracked
+set show-untracked              = yes
+set status-show-untracked-dirs  = yes # Show files in untracked directories? (status)
+set status-show-untracked-files = yes # Show untracked files?
