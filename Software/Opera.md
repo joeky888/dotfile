@@ -1,8 +1,6 @@
 Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
-* chrome://flags/#enable-md-extensions -> Enable (Material design)
-* chrome://flags/#save-page-as-mhtml -> Enable
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://Plugins -> Search "flash" -> Enable
@@ -63,7 +61,7 @@ Extension
 * 飛比價格購物幫手
 * LXRSS
     * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
-* Touch VPN (For pan.baidu.com, EDIT: Use Opera VPN instead)
+* Touch VPN (For pan.baidu.com)
 
 RSS list
 =====
