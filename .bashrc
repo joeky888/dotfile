@@ -174,6 +174,10 @@ if [[ -d "$HOME/flutter" ]]; then
   export PATH="$PATH:$HOME/flutter/bin"
 fi
 
+if [[ -d "/usr/share/git/diff-highlight/" ]]; then
+  export PATH=/usr/share/git/diff-highlight/:$PATH
+fi
+
 if [[ -d "$HOME/.local/bin" ]]; then
   export PATH=~/.local/bin:$PATH
 fi
