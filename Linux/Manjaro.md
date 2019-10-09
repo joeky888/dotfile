@@ -170,6 +170,3 @@ No Network interface in NetworkManager
 =====
 * Remove Network driver in MHWD
 
-Use AUR in docker container
-=====
-* Use this script https://github.com/greyltc/docker-archlinux-aur
