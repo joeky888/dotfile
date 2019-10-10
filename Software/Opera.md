@@ -33,7 +33,7 @@ Extension
 * Full Page Screen Capture
 * SimpleUndoClose
 * Tampermonkey (Opera addon)
-    * https://github.com/syhyz1990/baiduyun
+    * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
