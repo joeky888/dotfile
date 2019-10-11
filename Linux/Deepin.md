@@ -186,3 +186,10 @@ Multiple desktop
 =====
 * On desktop -> win+s -> click + to add a new desktop
 * win+left/right to switch between desktops
+
+Opera beta is unable to play mp4
+=====
+```sh
+app-fast -S opera-ffmpeg-codecs
+sudo ln -sf /usr/lib/opera/lib_extra/libffmpeg.so /usr/lib/opera-beta/libffmpeg.so
+```
