@@ -4,8 +4,8 @@
 [user]
 	# Comment out this on server
 	# Also comment out commit.template
-	name = Joeky Zhan
-	email = jj16180339887@gmail.com
+	name = Joeky
+	email = joeky5888@gmail.com
 [rerere]
 	enabled = 1
 	autoupdate = 1
