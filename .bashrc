@@ -129,7 +129,7 @@ APP_FAST_PATH=$(getModulePath app-fast)
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=$HOME/node/bin:$PATH
-  alias upgradeNpm='~/node/bin/npm install -g npm@latest; ~/node/bin/npm update -g'
+  alias upgradeNpm="$HOME/node/bin/npm install -g npm@latest; $HOME/node/bin/npm update -g"
 else
   export NPM_PACKAGES="$HOME/.npm-packages"
   export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
