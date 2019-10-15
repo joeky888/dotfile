@@ -28,6 +28,57 @@ sudo systemctl enable libvirtd.service
 sudo systemctl restart libvirtd.service
 ```
 
+Enable GPU passthrough (After KVM is enabled) ...FAILED
+=====
+* Disable nouveau
+    * $ sudoedit /etc/modprobe.d/blacklist-nouveau.conf
+```conf
+blacklist nouveau
+options nouveau modeset=0
+```
+* Enable iommu (add `intel_iommu=on`)
+```sh
+sudoedit /etc/default/grub && sudo update-grub
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash intel_iommu=on" # Use intel_iommu=on for intel
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=on" # Use amd_iommu=on for amd
+```
+* Get PCI ID of NVIDIA
+    * $ lspci -nn | grep -i nvidia
+```sh
+# If it shows
+01:00.0 3D controller [0302]: NVIDIA Corporation GP107M [GeForce GTX 1050 Mobile] [10de:1c8d] (rev ff)
+02:00.1 Audio device [0403]: NVIDIA Corporation GP104 High Definition Audio Controller [10de:10f0] (rev a1)
+# Which means ID is 10de:1c8d and 10de:10f0
+
+sudoedit /etc/modprobe.d/vfio.conf # Add the following
+options vfio-pci ids=10de:1c8d,10de:10f0
+
+sudoedit /etc/modules-load.d/vfio-pci.conf # Add the following
+vfio-pci
+
+sudo update-initramfs -u
+```
+* Install OVMF for UEFT booting
+    * $ app-fast -S ovmf
+    * $ sudoedit /etc/libvirt/qemu.conf
+```conf
+nvram = [
+    "/usr/share/ovmf/x64/OVMF_CODE.fd:/usr/share/ovmf/x64/OVMF_VARS.fd"
+]
+```
+* Boot Windows
+```sh
+qemu-img create -f qcow2 windows.img 100G
+
+qemu-system-x86_64 \
+    -enable-kvm -cpu host \
+    -m 2G -netdev user,id=n0 -device rtl8139,netdev=n0 \
+    -soundhw hda \
+    --bios /usr/share/ovmf/x64/OVMF_CODE.fd \
+    -hda windows.img \
+    -cdrom WindowsX64.iso
+```
+
 Install qemu on Windows
 =====
 * $ scoop install qemu
