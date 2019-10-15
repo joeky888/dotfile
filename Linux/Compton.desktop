@@ -1,6 +1,0 @@
-[Desktop Entry]
-Exec=compton -CGb --config ~/.config/compton.conf
-Name=Compton
-OnlyShowIn=LXQt;
-Type=Application
-Version=1.0

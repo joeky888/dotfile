@@ -210,22 +210,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     echo "Distro does not support at this moment."
     exit 1
   fi
-#   mkdir -p ~/.config/openbox
-#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/rc.xml
-#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxqt-rc.xml
-#   ln -sf ~/dotfile/Linux/.config_openbox_rc.xml ~/.config/openbox/lxde-rc.xml
-#   ln -sf ~/dotfile/Linux/compton.conf ~/.config/compton.conf
-#   ln -sf ~/dotfile/Linux/Compton.desktop ~/.config/autostart/Compton.desktop
-#   [[ $(command -v zsh) ]] && $SUDO chsh -s $(command -v zsh) root
   [[ $(command -v zsh) ]] && chsh -s $(command -v zsh) $(whoami)
 #   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
 #   $SUDO chmod 755 /usr/bin/reconnect
 #   $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
 #   $SUDO chmod 755 /lib/systemd/system/reconnect.service
-#   $SUDO install ~/dotfile/Linux/sddm.conf /etc/sddm.conf
 #   $SUDO systemctl enable reconnect.service
-#   $SUDO desktop-file-install ~/dotfile/Linux/BaiduCloud.desktop
-#   $SUDO desktop-file-install ~/dotfile/Linux/gvim.desktop
   if [[ $(command -v apt) ]]; then
     app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y

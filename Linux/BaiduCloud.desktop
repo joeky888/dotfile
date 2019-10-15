@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Name=Baidu Cloud
-Type=Application
-Categories=Network;FileTransfer;
-StartupNotify=true
-Icon=/home/joeky/.wine/drive_c/users/joeky/Application Data/baidu/BaiduNetdisk/netdisk_logo.ico
-Exec=wine "/home/joeky/.wine/drive_c/users/joeky/Application Data/baidu/BaiduNetdisk/BaiduNetdisk.exe"
-Terminal=false
