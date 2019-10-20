@@ -49,5 +49,5 @@ sudo cp asus.com.crt /etc/ca-certificates/trust-source/anchors/
 # sudo cat asus.com.crt >> /etc/ssl/certs/ca-certificates.crt
 sudo trust extract-compat
 sudo update-ca-trust extract
-sudo pacman-mirrors -f 0
+sudo pacman-mirrors --use-async -f 0
 ```

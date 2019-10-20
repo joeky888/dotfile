@@ -97,15 +97,6 @@ app-fast -Syy --noconfirm --needed archlinuxcn-keyring
 app-fast -S teamviewer skypeforlinux-stable-bin ttf-wps-fonts wps-office ttf-iosevka-term ttf-iosevka
 ```
 
-Unstable and testing package (Manjaro)
-=====
-* $ app-fast -S pacman-mirrors-dev
-* $ pacman-mirrors -G # Get current branch
-* $ sudo pacman-mirrors --test-async -aS testing # Or unstable
-* Or
-* $ sudo pacman-mirrors --test-async --api --set-branch testing # Or unstable
-* $ sudo pacman-mirrors --test-async -f 0
-
 Mhwd
 =====
 * $ mhwd -l # list all available driver
