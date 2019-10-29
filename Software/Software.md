@@ -291,6 +291,10 @@ Android
 * SystemPanel 2
 * tw.gov.invoice
 * Matlog - Material Logcat reader
+* Serverless Bluetooth Keyboard/Mouse for PC / Phone
+    * Use android phone as a bluetooth mouse/keyboard
+    * Enable android tv bluetooth
+    * install this app on phone
 * F-Droid
     * OpenLauncher
     * MaterialOS Icon Pack
