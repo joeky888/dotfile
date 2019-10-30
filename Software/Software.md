@@ -252,7 +252,6 @@ Android
 =====
 * Firefox Beta
     * Stylus + Midnight Surfing Global Dark Style
-    * Undo Close for mobile
     * uBlock Origin
     * Privacy Badger
     * Video Background Play Fix
@@ -307,7 +306,6 @@ Android
     * LibreTorrent
     * ScreenCam
     * Simple Gallery
-    * Kiwix - offline wikipedia
     * Slide for Reddit - offline reddit
 * Drop-down menu items
     * Screenshot
