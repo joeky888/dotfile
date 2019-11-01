@@ -15,6 +15,13 @@ Code Design
         * `>>`  right shift
         * `~`   bitwise NOT
 
+RX
+=====
+* Use case
+    1. User keeps input, like keydown or mouse move
+    2. Big file slice
+    3. Socket/WebSocket
+
 Javascript
 =====
 * d3.js
