@@ -127,7 +127,7 @@ Dev
     * PyCharm Community Edition
     * gVim x64
     * Brackets
-    * Visual Studio Code Insiders
+    * VSCodium
 * Database
     * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
     * sqlectron - MySQL/Postgres client electron app
