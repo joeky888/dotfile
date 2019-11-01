@@ -262,7 +262,6 @@ Android
     * Search by Image - Reverse Image Search (by Armin Sebastian)
     * about:config
         * Search "ocsp" and set "security.ssl.enable_ocsp_must_staple" to false
-* Opera browser beta
 * Clock by Google
 * Gmail
 * Facebook Messenger
