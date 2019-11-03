@@ -146,6 +146,7 @@ Dev
     * react-native-router-flux - Navigation router for react-native
     * jadx - Decompile apk/jar
     * Debugging
+        * vscode and expo remote attaching debug
         * Expo remote chrome debug-ui
         * https://github.com/facebook/react-devtools
         * React-native-debugger
