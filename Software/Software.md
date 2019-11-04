@@ -151,6 +151,10 @@ Dev
         * https://github.com/facebook/react-devtools
         * React-native-debugger
         * Reactotron
+* K8S
+    * Istio - service mesh
+    * Linkerd - service mesh
+    * kubefwd - forward services to local for debugging
 
 Windows
 =====
