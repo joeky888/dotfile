@@ -248,7 +248,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
   $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   InstallMiniconda Linux
-  InstallPy3UTF8
 
 
 
@@ -274,7 +273,6 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   brew tap beeftornado/rmtree
 #   brew tap homebrew/cask-drivers
   InstallMiniconda MacOSX
-  InstallPy3UTF8
 
 
 
@@ -307,7 +305,6 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
-  InstallPy3UTF8
 
 
 
@@ -326,7 +323,6 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
   app-fast -S mingw-w64-x86_64-aria2 --noconfirm --needed
 #   pacman -S mingw-w64-x86_64-toolchain --noconfirm
-  InstallPy3UTF8
 
 
 
@@ -346,7 +342,6 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
-  InstallPy3UTF8
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
   # InstallAlpine
 
@@ -363,7 +358,6 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
   InstallDotfile
   echo y | $SUDO pkg install coreutils bash-completion gcc binutils automake autogen autotools autoconf pkgconf libtool gmake ncurses cmake ubuntu-font
   InstallPIP
-  InstallPy3UTF8
 #   echo y | $SUDO pkg install clang-devel
 
 
