@@ -155,6 +155,7 @@ Dev
     * Istio - service mesh
     * Linkerd - service mesh
     * kubefwd - forward services to local for debugging
+    * caddy - https reverse proxy
 
 Windows
 =====
