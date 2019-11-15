@@ -7,7 +7,7 @@ FROM debian:testing
 ################
 
 RUN echo "deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free" > /etc/apt/sources.list
-RUN echo "deb http://cdn-fastly.deb.debian.org/debian-security testing/updates main contrib non-free" >> /etc/apt/sources.list
+# RUN echo "deb http://cdn-fastly.deb.debian.org/debian-security testing/updates main contrib non-free" >> /etc/apt/sources.list
 RUN apt update
 RUN apt install -y curl vim gnupg locales tzdata freelan
 RUN echo "LC_ALL=en_US.UTF-8" >> /etc/environment; \
