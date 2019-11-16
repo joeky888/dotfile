@@ -14,11 +14,3 @@ kubectl cluster-info # Make sure no error
 kubectl get nodes    # Make sure no error
 ```
 
-Install helm
-=====
-```sh
-app-fast install kubernetes-helm
-helm init
-helm version
-```
-
