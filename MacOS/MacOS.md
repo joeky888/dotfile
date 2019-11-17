@@ -26,7 +26,7 @@ Post-installed
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
 * $ xcode-select --install
-* $ brew cask install alacritty hammerspoon xnviewmp vimr vscodium mpv phantomjs docker-edge opera-beta google-chrome firefox-developer-edition flash-ppapi wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu microsoft-remote-desktop-beta
+* $ brew cask install alacritty hammerspoon xnviewmp vimr vscodium mpv phantomjs docker-edge helm opera-beta google-chrome firefox-developer-edition flash-ppapi wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu microsoft-remote-desktop-beta
 * $ brew update && app-fast upgrade && brew cask upgrade --greedy && brew cleanup -s --prune 0 && brew doctor
 
 Can not open an app due to "Unkown developer"
