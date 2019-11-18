@@ -164,7 +164,7 @@ Key
     { "key": "ctrl+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "ctrl+q", "command": "editor.action.insertCursorBelow" },
     { "key": "ctrl+y", "command": "redo", "when": "editorTextFocus" },
-    { "key": "ctrl+b", "command": "HookyQR.beautify",
+    { "key": "ctrl+b", "command": "editor.action.formatDocument",
         "when": "editorTextFocus" },
     { "key": "alt+enter", "command": "editor.action.quickFix"},
 
@@ -192,7 +192,7 @@ Key
     { "key": "cmd+n", "command": "editor.action.addSelectionToNextFindMatch" },
     { "key": "cmd+q", "command": "editor.action.insertCursorBelow" },
     { "key": "cmd+y", "command": "redo", "when": "editorTextFocus" },
-    { "key": "cmd+b", "command": "HookyQR.beautify",
+    { "key": "cmd+b", "command": "editor.action.formatDocument",
         "when": "editorTextFocus" }
 ]
 ```
