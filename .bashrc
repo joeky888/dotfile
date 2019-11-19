@@ -235,6 +235,7 @@ alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/arch
 alias upgradeStreamlink='pip install --upgrade https://github.com/streamlink/streamlink/archive/master.zip'
 alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie'
 alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive/master.zip'
+alias upgradeLitecli='pip install --upgrade https://github.com/dbcli/litecli/archive/master.zip'
 alias upgradeGotop='GO111MODULE=on go get -insecure -v github.com/cjbassi/gotop'
 alias upgradeRclone='GO111MODULE=on go get -insecure -u -v github.com/ncw/rclone'
 alias you-getYouku='you-get -y proxy.uku.im:443'
