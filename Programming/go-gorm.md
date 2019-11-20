@@ -28,7 +28,7 @@ func main() {
 	db.Create(&OrderItem{OrderID: 1})
 
 	var order Order
-	db.Preload("OrderItems").Where("id = 1").Find(&order)
+	db.Preload("OrderItems").Where("id = 1").First(&order)
 	fmt.Printf("%+v", order)
 }
 ```
@@ -65,7 +65,7 @@ func main() {
 	db.Create(&OrderItem{OrderItemID: 2, OrderIDOfOrderItem: 1})
 
 	var order Order
-	db.Preload("OrderItems").Where("order_id = 1").Find(&order)
+	db.Preload("OrderItems").Where("order_id = 1").First(&order)
 	fmt.Printf("%+v", order)
 }
 ```
