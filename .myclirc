@@ -117,3 +117,6 @@ output.even-row = ""
 # Use the -d option to reference a DSN.
 [alias_dsn]
 # example_dsn = mysql://[user[:password]@][host][:port][/dbname]
+
+[client]
+default-character-set=utf8
