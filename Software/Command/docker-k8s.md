@@ -12,14 +12,23 @@ sudo snap install helm --edge --classic
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
-microk8s.enable dns
-microk8s.enable storage
+microk8s.enable dns storage helm ingress # Enable ingress so there is no need to install metallb and ingress controller
 # microk8s.enable ingress || microk8s.enable istio
 microk8s.status
 microk8s.inspect
 
 rm -rf ~/.helm
 KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
+
+# Get kubect-apiserver
+Edit /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
+Or /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
+And set the --insecure-bind-address=127.0.0.1 to 0.0.0.0
+microk8s.stop && microk8s.start
+
+# Get kubectl-apiserver token and cert
+microk8s.kubectl get secret
+microk8s.kubectl get secret default-token-s5cmn -o yaml
 
 # Uninstall
 microk8s.disable storage
