@@ -155,3 +155,8 @@ No Network interface in NetworkManager
 =====
 * Remove Network driver in MHWD
 
+Remote controll Windows OS
+=====
+* $ app-fast -S remmina freerdp
+* $ killall remmina
+
