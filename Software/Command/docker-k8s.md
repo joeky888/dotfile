@@ -12,8 +12,10 @@ sudo snap install helm --edge --classic
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
-microk8s.enable dns storage helm ingress # Enable ingress so there is no need to install metallb and ingress controller
-# microk8s.enable ingress || microk8s.enable istio
+
+# Enable ingress so there is no need to install metallb and ingress controller
+# It will create a namespace ingress but we don't have to install our cluster into this namespace
+microk8s.enable dns storage helm ingress
 microk8s.status
 microk8s.inspect
 
