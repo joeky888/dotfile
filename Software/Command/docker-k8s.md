@@ -30,7 +30,7 @@ microk8s.stop && microk8s.start
 
 # Get kubectl-apiserver token and cert
 microk8s.kubectl get secret
-microk8s.kubectl get secret default-token-s5cmn -o yaml
+microk8s.kubectl get secret default-token-xxxxx -o yaml
 
 # Uninstall
 microk8s.disable storage
