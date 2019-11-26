@@ -18,6 +18,7 @@ Post-installed
 * System Preferences > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
 * System Preferences > General > Recent Items > None
 * System Preferences > Displays > Automatically adjust brightness > Uncheck
+* System Preferences > Bluetooth > Show bluetooth in menu bar
 * System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Preferences > Keyboard >
     * Key Repeat > Set to Fastest
