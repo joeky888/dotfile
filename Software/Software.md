@@ -267,6 +267,7 @@ Android
     * User Agent Switcher (by Alexander Schlarb)
     * Absolute Enable Right Click & Copy
     * Search by Image - Reverse Image Search (by Armin Sebastian)
+    * Remove Google Redirection
     * about:config
         * Search "ocsp" and set "security.ssl.enable_ocsp_must_staple" to false
 * Clock by Google
