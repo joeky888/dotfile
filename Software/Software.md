@@ -391,7 +391,7 @@ Good Software Design
 * Embbed RPC server
 * Import SSL certificates
 * Hotfix without reinstalling the whole app
-* Use emojis in git commit message ✔️  ❌
+* Use emojis in git commit message ✅ ❌
 * Use date as version number, e.g. Version YYYY.MM.DD.001
 * Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
