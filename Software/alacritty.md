@@ -18,7 +18,7 @@ font:
 cursor:
   style: Beam
 ##############################
-background_opacity: 0.6
+background_opacity: 0.9
 ```
 
 Color (Monokai soda)
