@@ -9,5 +9,5 @@ Usage
 =====
 ```sh
 redis-commander --clear-config
-redis-commander --redis-host 127.0.0.1 --redis-port 6379 --noload --nosave --port 8088
+redis-commander --redis-host 127.0.0.1 --redis-port 6379 --redis-password "xxxx" --noload --nosave --port 8088
 ```
