@@ -82,6 +82,7 @@ Setting (search `json`)
     },
     "gopls": {
         "usePlaceholders": true,
+        "completeUnimported": true,
     },
     "[javascript]": {
         "editor.formatOnSave": true
