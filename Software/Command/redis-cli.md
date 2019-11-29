@@ -8,3 +8,8 @@ Set field value with namespace-prefixed
 * $ HSET namespace field value
 * $ HGET namespace field
 * $ HGETALL namespace
+
+Set a password to a new redis server
+=====
+* $ CONFIG SET requirepass "mypass"
+
