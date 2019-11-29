@@ -19,6 +19,11 @@ cursor:
   style: Beam
 ##############################
 background_opacity: 0.9
+##############################
+window:
+  dimensions:
+    columns: 130
+    lines: 30
 ```
 
 Color (Monokai soda)
