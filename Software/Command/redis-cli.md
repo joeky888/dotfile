@@ -12,4 +12,5 @@ Set field value with namespace-prefixed
 Set a password to a new redis server
 =====
 * $ CONFIG SET requirepass "mypass"
-
+* Or
+* $ redis-server --requirepass yourpassword
