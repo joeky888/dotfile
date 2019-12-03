@@ -167,6 +167,8 @@ Key
     { "key": "ctrl+y", "command": "redo", "when": "editorTextFocus" },
     { "key": "ctrl+b", "command": "editor.action.formatDocument",
         "when": "editorTextFocus" },
+    { "key": "ctrl+[Slash]", "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly" }
     { "key": "alt+enter", "command": "editor.action.quickFix"},
 
      { "key": "cmd+k", "command": "editor.action.deleteLines",
@@ -194,7 +196,9 @@ Key
     { "key": "cmd+q", "command": "editor.action.insertCursorBelow" },
     { "key": "cmd+y", "command": "redo", "when": "editorTextFocus" },
     { "key": "cmd+b", "command": "editor.action.formatDocument",
-        "when": "editorTextFocus" }
+        "when": "editorTextFocus" },
+    { "key": "cmd+[Slash]", "command": "editor.action.commentLine",
+        "when": "editorTextFocus && !editorReadonly" }
 ]
 ```
 
