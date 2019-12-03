@@ -1,3 +1,14 @@
+SQL and Golang numbers
+=====
+* TINYINT = int8
+* SMALLINT = int16
+* INT = int32
+* BIGINT = int64
+* TINYINT UNSIGNED = uint8
+* SMALLINT UNSIGNED = uint16
+* INT UNSIGNED = uint32
+* BIGINT UNSIGNED = uint64
+
 Preloading with gorm.Model
 =====
 ```go
