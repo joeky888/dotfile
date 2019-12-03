@@ -8,6 +8,9 @@ SQL and Golang numbers
 * SMALLINT UNSIGNED = uint16 = (0~65535)
 * INT UNSIGNED = uint32 = (0~4294967295)
 * BIGINT UNSIGNED = uint64 = (0~18446744073709551615)
+* FLOAT = float32 = (-3.402823466E+38~3.402823466E+38)
+* DOUBLE = float64 = (-1.7976931348623157E+308~1.7976931348623157E+308)
+* DECIMAL(6,2) = `6 total number of digits, 4 before and 2 after the decimal point` = (github.com/shopspring/)decimal.Decimal
 
 Preloading with gorm.Model
 =====
