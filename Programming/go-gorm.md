@@ -1,16 +1,18 @@
-SQL and Golang numbers
-=====
-* TINYINT = int8 = (-128~127)
-* SMALLINT = int16 = (-32768~327677)
-* INT = int32 = (-2147483648~2147483647)
-* BIGINT = int64 = (-9223372036854775808~9223372036854775807)
-* TINYINT UNSIGNED = uint8 = (0~255)
-* SMALLINT UNSIGNED = uint16 = (0~65535)
-* INT UNSIGNED = uint32 = (0~4294967295)
-* BIGINT UNSIGNED = uint64 = (0~18446744073709551615)
-* FLOAT = float32 = (-3.402823466E+38~3.402823466E+38)
-* DOUBLE = float64 = (-1.7976931348623157E+308~1.7976931348623157E+308)
-* DECIMAL(6,2) = `6 total number of digits, 4 before and 2 after the decimal point` = (github.com/shopspring/)decimal.Decimal
+### SQL and Golang numbers
+
+| MySQL           | Go              | Range                                                            |
+| --------------- | --------------- | ---------------------------------------------------------------- |
+| TINYINT         | int8            | (-128~127)                                                       |
+| SMALLINT        | int16           | (-32768~327677)                                                  |
+| INT             | int32           | (-2147483648~2147483647)                                         |
+| BIGINT          | int64           | (-9223372036854775808~9223372036854775807)                       |
+| TINYINT         | uint8           | (0~255)                                                          |
+| SMALLINT        | uint16          | (0~65535)                                                        |
+| INT UNSIGNED    | uint32          | (0~4294967295)                                                   |
+| BIGINT UNSIGNED | uint64          | (0~18446744073709551615)                                         |
+| FLOAT           | float32         | (-3.402823466E+38~3.402823466E+38)                               |
+| DOUBLE          | float64         | (-1.7976931348623157E+308~1.7976931348623157E+308)               |
+| DECIMAL(6,2)    | decimal.Decimal | 6 total number of digits, 4 before and 2 after the decimal point |
 
 Preloading with gorm.Model
 =====
