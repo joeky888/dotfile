@@ -1217,9 +1217,9 @@ Forever()
   # Forever loop until the job is done
   # while true; do $* ; if [ $? -eq 0 ]; then break; fi; done ;
   if [[ -n "$ZSH_VERSION" ]]; then
-    BUFFER='count=0; while true; do echo "$((count++)): $(date "+%m/%d/%Y %I:%M:%S:%p")"; '$BUFFER' && break; done ;'
+    BUFFER='count=0; while true; do echo -e "\n$((count++)): $(date "+%m/%d/%Y %I:%M:%S:%p")"; '$BUFFER' && break; done ;'
   elif [[ -n "$BASH_VERSION" ]]; then
-    READLINE_LINE='count=0; while true; do echo $((count++)): $(date "+%m/%d/%Y %I:%M:%S:%p"); '$READLINE_LINE' && break; done ;'
+    READLINE_LINE='count=0; while true; do echo -e "\n$((count++)): $(date "+%m/%d/%Y %I:%M:%S:%p")"; '$READLINE_LINE' && break; done ;'
   fi;
 }
 
