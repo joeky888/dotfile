@@ -85,3 +85,37 @@ func main() {
 	fmt.Printf("%+v", order)
 }
 ```
+
+Insert or Update
+=====
+```go
+package main
+
+import (
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+)
+
+type Order struct {
+	ID   uint32 `gorm:"primary_key;AUTO_INCREMENT"`
+	Name string
+}
+
+func main() {
+	db, err := gorm.Open("sqlite3", "test.db")
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+	db.LogMode(true)
+
+	db.AutoMigrate(
+		&Order{},
+	)
+
+	o := Order{ID: 1, Name: "453"}
+	db.Where("id = ?", o.ID).Assign(o).FirstOrCreate(&o)
+}
+
+```
+
