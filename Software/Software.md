@@ -289,6 +289,11 @@ Android
 * Starfire 星火直播
 * WiFiAnalyzer open source
 * Advanced Download Manager
+    * Settings -> Downloading
+        * Folder for files -> Set to SDcard/Download
+        * Create empty file -> Uncheck
+        * Simultaneous downloads -> Set to max
+        * Threads pre download -> Set to max
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
