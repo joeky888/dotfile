@@ -114,6 +114,9 @@ func main() {
 	)
 
 	o := Order{ID: 1, Name: "453"}
+	// Method 1
+	db.Where("id = ?", o.ID).Save(&o)
+	// Method 2
 	db.Where("id = ?", o.ID).Assign(o).FirstOrCreate(&o)
 }
 
