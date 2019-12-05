@@ -293,6 +293,7 @@ Android
         * Downloading
             * Folder for files -> Set to SDcard/Download
             * Create empty file -> Check (Makes download faster on SD cards)
+            * Auto-resume -> Check
             * Simultaneous downloads -> Set to max
             * Threads pre download -> Set to max
         * Automation
