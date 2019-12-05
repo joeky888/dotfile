@@ -17,6 +17,6 @@ bind ^\ comment         main
 set mouse
 set smarthome
 set nowrap
-set autoindent
+#set autoindent
 set nonewlines
 
