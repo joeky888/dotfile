@@ -290,10 +290,13 @@ Android
 * WiFiAnalyzer open source
 * Advanced Download Manager
     * Settings -> Downloading
-        * Folder for files -> Set to SDcard/Download
-        * Create empty file -> Uncheck
-        * Simultaneous downloads -> Set to max
-        * Threads pre download -> Set to max
+        * Downloading
+            * Folder for files -> Set to SDcard/Download
+            * Create empty file -> Uncheck
+            * Simultaneous downloads -> Set to max
+            * Threads pre download -> Set to max
+        * Automation
+            * Only via Wi-Fi -> Auto-start downloads
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
