@@ -258,7 +258,7 @@ WineHQ
 Android
 =====
 * Firefox Beta
-    * Stylus + Midnight Surfing Global Dark Style
+    * Dark Reader
     * uBlock Origin
     * Privacy Badger
     * Video Background Play Fix
