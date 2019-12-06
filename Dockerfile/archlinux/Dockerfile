@@ -11,9 +11,9 @@ SigLevel = Never\n\
 Server = http://cdn.repo.archlinuxcn.org/$arch' >> /etc/pacman.conf
 
 # Mingw
-RUN echo $'[ownstuff]\n\
-SigLevel = Never\n\
-Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.conf
+# RUN echo $'[ownstuff]\n\
+# SigLevel = Never\n\
+# Server = https://martchus.no-ip.biz/repo/arch/ownstuff/os/$arch' >> /etc/pacman.conf
 
 RUN pacman -Sy --noconfirm --needed sed gzip curl pacman-contrib archlinuxcn-keyring vim yay bash-completion
 # Arch Linux Pacman Mirrorlist Generator
