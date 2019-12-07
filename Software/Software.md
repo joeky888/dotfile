@@ -279,7 +279,6 @@ Android
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
-* DroidVim
 * VLC
 * mpv-android
 * Here WeGo
@@ -323,6 +322,11 @@ Android
     * ScreenCam
     * Simple Gallery
     * Slide for Reddit - offline reddit
+        * golang
+        * rust
+        * rust_gamedev
+        * programming
+        * commandline
 * Drop-down menu items
     * Screenshot
     * Flash light
