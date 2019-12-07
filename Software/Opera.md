@@ -28,6 +28,7 @@ Extension
 =====
 * Install Chrome Extension
 * Adblock Plus
+* Dark Reader
 * Search by Image (by Google)
 * Stylish / Stylus
 * Full Page Screen Capture
