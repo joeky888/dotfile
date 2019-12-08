@@ -1,3 +1,17 @@
+###########################################
+#                                         #
+# docker-compose for running remote debug #
+#                                         #
+###########################################
+
+mycode:
+  image: golang
+  build: .
+  restart: alaways
+  ports:
+    - 8080:8080
+  volumes:
+    - .:/go/src/mycode
 
 # Redis with password
 redis:
