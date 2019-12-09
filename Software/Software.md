@@ -83,6 +83,7 @@ CLI
 * Rust
     * ffsend - send.firefox.com cli client
     * swc - super-fast javascript to javascript compiler written in rust
+    * websocat - cli websocket client
 ```sh
 # $ go help get
 go get -insecure -u -v github.com/iikira/BaiduPCS-Go
