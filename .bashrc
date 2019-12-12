@@ -89,6 +89,7 @@ fi
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
 [ -d $HOME/.linuxbrew ] && export PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
 [ -f $HOME/.private.sh ] && source $HOME/.private.sh
+[ -d $HOME/.cargo/bin ] && export PATH="$HOME/.cargo/bin:$PATH"
 
 function getModulePath()
 {
@@ -1333,5 +1334,3 @@ finish() {
   fi;
 }
 trap finish EXIT
-
-export PATH="$HOME/.cargo/bin:$PATH"
