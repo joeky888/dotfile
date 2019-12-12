@@ -129,6 +129,7 @@ Extension
 * Shellcheck
 * Versionlens - Check update for package.json
 * humao.rest-client - Postman-like http client, support curl
+* rust-lang.rust
 
 Key
 =====
