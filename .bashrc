@@ -1333,3 +1333,5 @@ finish() {
   fi;
 }
 trap finish EXIT
+
+export PATH="$HOME/.cargo/bin:$PATH"
