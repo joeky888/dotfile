@@ -130,6 +130,7 @@ Extension
 * Versionlens - Check update for package.json
 * humao.rest-client - Postman-like http client, support curl
 * rust-lang.rust
+* be5invis.toml
 
 Key
 =====
