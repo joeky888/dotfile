@@ -2,7 +2,7 @@ Install without desktop
 =====
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
-* $ sudo pacman-mirrors --use-async -f 0
+* $ sudo pacman-mirrors -f 0 # --use-async
 * $ setup
 * Partitions
   * BIOS (Virtualbox)
