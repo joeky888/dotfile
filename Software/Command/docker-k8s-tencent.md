@@ -1,6 +1,7 @@
 騰訊雲
 =====
 * All ingress service should using NordPort
+* Add `kubernetes.io/ingress.class: "qcloud"` to ingress
 
 Save kube context
 =====
