@@ -1,0 +1,1 @@
+Install rust using curl
