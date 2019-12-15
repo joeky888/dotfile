@@ -185,6 +185,7 @@ Gnome files (Nautilus) fullscreen to normal screen
 Multiple desktop
 =====
 * On desktop -> win+s -> click + to add a new desktop
+* shift+win left/right to move current window to a new desktop
 * win+left/right to switch between desktops
 
 Opera beta is unable to play mp4
