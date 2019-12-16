@@ -1226,9 +1226,9 @@ Forever()
 
 OpenFileExplorer()
 {
-  background=$([ -n "$ZSH_VERSION" ] && echo "&!" || echo "&")
+  background=$([ -n "$ZSH_VERSION" ] && echo '&!' || echo '&')
   if [ "$OSTYPE" = "linux-gnu" ] || echo "$OSTYPE" | grep -q "freebsd"; then # Linux + FreeBSD
-    xdg-open . > /dev/null 2>&1 $background
+    eval "xdg-open . > /dev/null 2>&1 $background"
   elif [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "cygwin" ]; then # Windows
     explorer.exe .
   elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
