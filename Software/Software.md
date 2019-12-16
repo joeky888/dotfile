@@ -2,14 +2,10 @@ Software
 =====
 * XnView MP
 * sogou pinyin/zhuyin
-* Opera Developer
-* Chrome Developer
 * Firefox Developer `https://www.mozilla.org/en-US/firefox/developer/all/`
-* Adobe Flash Player Beta
 * Wireshark
 * Nmap / Zenmap
 * Teamviewer
-* Free Download Manager
 * UNetbootin
 * Blender
 * Makehuman
@@ -30,16 +26,13 @@ Software
 * Libre Office
 * GSView
 * Nomacs
-* Popcorn Time
 * GeoGebra
 * Virtualbox
 * TigerVNC
-* Sikuli / SikuliX
 * Zulu
 * JComicDownloader
 * JDownloader
 * LanguageTool
-* Cutter - reverse engineering framework
 
 CLI
 =====
