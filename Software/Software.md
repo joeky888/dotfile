@@ -4,7 +4,7 @@ Software
 * sogou pinyin/zhuyin
 * Firefox Developer `https://www.mozilla.org/en-US/firefox/developer/all/`
 * Wireshark
-* Nmap / Zenmap
+* Nmap
 * Teamviewer
 * UNetbootin
 * Blender
@@ -14,7 +14,6 @@ Software
 * FontForge
 * VLC
 * MPV player
-* Natron
 * OBS MP
 * Aegisub
 * Kdenlive
@@ -117,10 +116,6 @@ Dev
     * Godot
     * Android Studio
     * Qt Creator
-    * Eclipse
-    * PyCharm Community Edition
-    * gVim x64
-    * Brackets
     * VSCodium
 * Database
     * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
