@@ -5,7 +5,6 @@
 ###########################################
 
 mycode:
-  image: golang
   build: .
   restart: alaways
   ports:
