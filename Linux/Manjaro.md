@@ -158,6 +158,8 @@ No Network interface in NetworkManager
 
 Remote controll Windows OS
 =====
+* $ sudo snap install remmina
+* Or
 * $ app-fast -S remmina freerdp
 * $ killall remmina
 
