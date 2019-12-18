@@ -11,6 +11,8 @@ Install softwares
     * helm
     * krita
     * remmina
+    * blender
+    * android-studio
 
 Upgrade all packages
 =====
