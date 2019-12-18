@@ -5,6 +5,7 @@ Search package
 Install softwares
 =====
 * $ sudo snap install microk8s --beta --classic
+* Install docker, microk8s, helm and krita
 
 Upgrade all packages
 =====
