@@ -37,6 +37,14 @@ Setting (search `json`)
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
+    "rust-analyzer.enableCargoWatchOnStartup": "enabled",
+    "rust-analyzer.lruCapacity": 1024,
+    "rust-analyzer.featureFlags": {
+        "lsp.diagnostics": true,
+        "completion.insertion.add-call-parenthesis": true,
+        "completion.enable-postfix": true,
+        "notifications.workspace-loaded": true,
+    },
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
