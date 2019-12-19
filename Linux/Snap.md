@@ -13,6 +13,7 @@ Install softwares
     * remmina
     * blender
     * android-studio
+    * obs-studio
 
 Upgrade all packages
 =====
