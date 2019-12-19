@@ -146,32 +146,9 @@ Nvidia driver
 * Don't use bumblebee
 * $ deepin-graphics-driver-manager
 
-Run Android apk files
-=====
-* $ app-fast install archon-integration deepin-archon -y
-```sh
-AndroidApkRun(){
-  apk=$1
-  if [ -z $apk ];then
-    echo "apk needed."
-    exit 1
-  fi
-  ret=$(/usr/lib/node_modules/chromeos-apk/chromeos-apk --archon -t --scale --name "Android App" "$apk")
-  ret=${ret#Directory \" }
-  ret=${ret% \" created*}
-  /lastore/framework/myarchon/archonrun --silent-launch --load-and-launch-app=$ret
-}
-```
-* $ AndroidApkRun xxx.apk
-
 Install Line
 =====
 * Install Line Chrome App, don't use wine to do this
-
-Install conky
-=====
-* $ app-fast install conky conky-manager -y
-* $ conky-manager
 
 Unable to remove dock from toolbar
 =====
@@ -194,3 +171,4 @@ Opera beta is unable to play mp4
 app-fast -S opera-ffmpeg-codecs
 sudo ln -sf /usr/lib/opera/lib_extra/libffmpeg.so /usr/lib/opera-beta/libffmpeg.so
 ```
+
