@@ -1,6 +1,7 @@
 Setup
 =====
 * Install rust using curl
+* $ rustup update stable
 * Make sure
     * Node and npm is installed
     * `code` command is available in system path
