@@ -35,13 +35,6 @@ sudo snap remove microk8s helm
 Remote control via token
 =====
 ```sh
-### This doesn't work
-#Edit /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
-#Or /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
-#And set the --insecure-bind-address=127.0.0.1 to 0.0.0.0
-#microk8s.stop && microk8s.start
-###
-
 # Get kubectl-apiserver token and cert
 microk8s.kubectl get secret
 microk8s.kubectl get secret default-token-xxxxx -o yaml
