@@ -149,7 +149,7 @@ InstallPIP()
 {
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | $SUDO pip install youtube-dl
-  echo y | $SUDO pip install you-get
+#   echo y | $SUDO pip install you-get
 #   echo y | $SUDO pip install ptpython
 #   echo y | $SUDO pip install Glances
 #   echo y | $SUDO pip install streamlink
@@ -165,7 +165,7 @@ InstallMiniconda()
   rm -rf ~/Miniconda2 && aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod 777 Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
   rm -rf ~/Miniconda3 && aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install youtube-dl
-  echo y | ~/Miniconda3/bin/pip install you-get
+#   echo y | ~/Miniconda3/bin/pip install you-get
 #   echo y | ~/Miniconda3/bin/pip install speedtest-cli
 #   echo y | ~/Miniconda3/bin/pip install ptpython
 #   echo y | ~/Miniconda3/bin/pip install Glances
