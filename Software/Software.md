@@ -332,6 +332,7 @@ iOS
 * Cydia
     * NewTerm 2
 * Dataplicity (for Pi)
+* Brave (Open source browser with ad blocker)
 
 Gaming
 =====
