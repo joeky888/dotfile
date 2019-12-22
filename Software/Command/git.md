@@ -12,7 +12,7 @@ Add submodule
 =====
 ```sh
 cd ~/dotfile
-git submodule add -b branchName -- https://github.com/robbyrussell/oh-my-zsh.git
+git submodule add -b branchName -- https://github.com/ohmyzsh/oh-my-zsh.git
 ```
 * Add "shallow = true" to .gitmodules
 * $ git submodule update --init
@@ -41,7 +41,7 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 
 Upgrade a forked project
 =====
-* $ git remote add author https://github.com/robbyrussell/oh-my-zsh.git
+* $ git remote add author https://github.com/ohmyzsh/oh-my-zsh.git
 * $ git remote add myfork https://github.com/joeky/oh-my-zsh.git
 * $ git remote -v # Should see 2 remote url
 * $ git pull author # Fetch and merge author's repo to local
