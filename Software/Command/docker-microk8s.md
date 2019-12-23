@@ -35,6 +35,10 @@ sudo snap remove microk8s helm
 Remote control via token
 =====
 ```sh
+# View read-only config file to get port
+# /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
+# Or /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
+
 # Get kubectl-apiserver token and cert
 microk8s.kubectl get secret
 microk8s.kubectl get secret default-token-xxxxx -o yaml
