@@ -144,13 +144,13 @@ type User struct {
 
 type IP []string
 
-// Value 实现方法
+// Value Overide
 func (p IP) Value() (driver.Value, error) {
 	str, err := json.Marshal(p)
 	return string(str), err
 }
 
-// Scan 实现方法
+// Scan Overide
 func (p *IP) Scan(input interface{}) error {
 	in := strings.TrimPrefix(strings.TrimSuffix(input.(string), "'"), "'")
 	err := json.Unmarshal([]byte(in), p)
