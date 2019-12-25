@@ -151,8 +151,7 @@ func (p IP) Value() (driver.Value, error) {
 
 // Scan Override
 func (p *IP) Scan(input interface{}) error {
-	err := json.Unmarshal([]byte(input.(string)), p)
-	return err
+	return json.Unmarshal([]byte(input.(string)), p)
 }
 
 func main() {
