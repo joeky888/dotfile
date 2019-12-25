@@ -129,7 +129,6 @@ package main
 
 import (
 	"database/sql/driver"
-	"strings"
 	"encoding/json"
 	"fmt"
 
@@ -144,16 +143,15 @@ type User struct {
 
 type IP []string
 
-// Value Overide
+// Value Override
 func (p IP) Value() (driver.Value, error) {
 	str, err := json.Marshal(p)
 	return string(str), err
 }
 
-// Scan Overide
+// Scan Override
 func (p *IP) Scan(input interface{}) error {
-	in := strings.TrimPrefix(strings.TrimSuffix(input.(string), "'"), "'")
-	err := json.Unmarshal([]byte(in), p)
+	err := json.Unmarshal([]byte(input.(string)), p)
 	return err
 }
 
@@ -176,5 +174,4 @@ func main() {
 	db.Where("id = ?", 1).First(&u)
 	fmt.Printf("%+v\n", u)
 }
-
 ```
