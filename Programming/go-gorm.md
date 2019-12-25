@@ -122,3 +122,59 @@ func main() {
 
 ```
 
+Json array
+=====
+```go
+package main
+
+import (
+	"database/sql/driver"
+	"strings"
+	"encoding/json"
+	"fmt"
+
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+)
+
+type User struct {
+	ID  uint32 `gorm:"primary_key;AUTO_INCREMENT"`
+	IPs IP     `gorm:"type:json"`
+}
+
+type IP []string
+
+// Value 实现方法
+func (p IP) Value() (driver.Value, error) {
+	str, err := json.Marshal(p)
+	return string(str), err
+}
+
+// Scan 实现方法
+func (p *IP) Scan(input interface{}) error {
+	in := strings.TrimPrefix(strings.TrimSuffix(input.(string), "'"), "'")
+	err := json.Unmarshal([]byte(in), p)
+	return err
+}
+
+func main() {
+	db, err := gorm.Open("sqlite3", "test.db")
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+	db.LogMode(true)
+
+	// Create table
+	db.AutoMigrate(
+		&User{},
+	)
+
+	var u User
+	db.Create(&User{IPs: IP{"0.0.0.0", "1.1.1.1"}})
+
+	db.Where("id = ?", 1).First(&u)
+	fmt.Printf("%+v\n", u)
+}
+
+```
