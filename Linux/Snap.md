@@ -14,6 +14,7 @@ Install softwares
     * blender
     * android-studio
     * obs-studio
+    * vscode
 
 Upgrade all packages
 =====
