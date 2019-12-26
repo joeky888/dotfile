@@ -51,3 +51,9 @@ kubectl config use-context microk8s
 kubectl --insecure-skip-tls-verify get all --all-namespaces
 ```
 
+Change default dns from 8.8.8.8 to x.x.x.x
+=====
+```sh
+microk8s.kubectl edit -n kube-system cm/coredns
+```
+
