@@ -15,6 +15,7 @@ Install softwares
     * android-studio
     * obs-studio
     * vscode
+    * alacritty
 
 Upgrade all packages
 =====
