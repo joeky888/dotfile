@@ -120,7 +120,7 @@ INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
-OH_MY_ZSH_PATH=$(getModulePath oh-my-zsh)
+OHMYZSH_PATH=$(getModulePath ohmyzsh)
 APP_FAST_PATH=$(getModulePath app-fast)
 
 [ -n "$GRC_PATH" ]       && export PATH=$GRC_PATH:$PATH
@@ -453,8 +453,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME=""
   plugins=(git docker docker-compose adb golang)
   DISABLE_AUTO_UPDATE="true"
-  if [ -n "$OH_MY_ZSH_PATH" ]; then
-    export ZSH=$OH_MY_ZSH_PATH
+  if [ -n "$OHMYZSH_PATH" ]; then
+    export ZSH=$OHMYZSH_PATH
     save_aliases=$(alias -L) # Store current aliases before oh-my-zsh
     source $ZSH/oh-my-zsh.sh
     # compdef vman=man # Don't do it, it takes too much time
