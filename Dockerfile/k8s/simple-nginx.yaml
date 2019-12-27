@@ -1,3 +1,4 @@
+# From https://github.com/linkerd/linkerd-examples/blob/master/getting-started/k8s/nginx.yml
 ---
 kind: ReplicationController
 apiVersion: v1
