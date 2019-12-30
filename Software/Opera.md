@@ -4,24 +4,8 @@ Setting
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://Plugins -> Search "flash" -> Enable
-<!-- * chrome://flags/#smooth-scrolling -> Enable -->
-<!-- * chrome://flags/#personal-news-notifications -> Enable -->
-<!-- * chrome://flags/#enable-quic -> Enable -->
-<!-- * chrome://flags/#toolkit-bookmarks -> Enable -->
-<!-- * chrome://flags/#enable-suggestions-with-substring-match -> Enable -->
-<!-- * chrome://flags/#enable-simple-cache-backend -> Enable -->
-<!-- * chrome://flags/#enable-client-lo-fi -> Enable -->
-<!-- * chrome://flags/#enable-module-scripts-import-meta-url -> Enable -->
-<!-- * chrome://flags/#enable-javascript-harmony -> Enable -->
-<!-- * chrome://flags/#enable-asm-webassembly -> Enable -->
-<!-- * chrome://flags/#enable-webassembly -> Enable -->
-<!-- * chrome://flags/#enable-webassembly-streaming -> Enable -->
-<!-- * chrome://flags/#enable-future-v8-vm-features -> Enable -->
-<!-- * chrome://flags/#enable-experimental-web-platform-features -> Enable -->
-<!-- * chrome://flags/#overlay-scrollbars -> Enable (Automatically hidding scrollbar) -->
-<!-- * chrome://flags/#disable-background-video-track -> Enable -->
-<!-- * chrome://flags/#enable-new-print-preview -> Enable -->
-<!-- * chrome://flags/#enable-async-image-decoding -> Enable -->
+* chrome://flags/#opera-doh -> Enable
+* chrome://flags/#enable-quic -> Enable
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 
 Extension
