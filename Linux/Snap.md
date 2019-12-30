@@ -16,6 +16,7 @@ Install softwares
     * obs-studio
     * vscode
     * alacritty
+    * chromium
     * firefox
 
 Upgrade all packages
