@@ -238,7 +238,6 @@ alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie
 alias upgradeMycli='pip install --upgrade https://github.com/dbcli/mycli/archive/master.zip'
 alias upgradeLitecli='pip install --upgrade https://github.com/dbcli/litecli/archive/master.zip'
 alias upgradeGotop='GO111MODULE=on go get -insecure -v github.com/cjbassi/gotop'
-alias upgradeRclone='GO111MODULE=on go get -insecure -v github.com/ncw/rclone'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
