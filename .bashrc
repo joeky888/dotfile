@@ -298,8 +298,7 @@ alias less='less -R'
 alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 alias ptt-ssh='ssh bbsu@ptt.cc'
-alias ptt-telnet-443='telnet ptt.cc 443'
-alias ptt-telnet-3000='telnet ptt.cc 3000'
+alias ptt-telnet-23='telnet ptt.cc 23'
 alias ptt-wss='ws -o https://term.ptt.cc wss://ws.ptt.cc/bbs' # go get -u -v github.com/hashrocket/ws
 alias chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
 alias google-chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
