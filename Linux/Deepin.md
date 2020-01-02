@@ -134,7 +134,7 @@ patch:
 #     - schema: emoji         # emoji表情
 ```
 * $ git clone --depth 1 https://github.com/rime-aca/dictionaries ~/.dict
-* $ `ln -sf ~/.dict/*.dict.yaml ~/.config/fcitx/rime/`
+* $ `ln -sf ~/.dict/luna_pinyin.dict/*.dict.yaml ~/.config/fcitx/rime/`
 * $ `vim ~/.config/fcitx/rime/luna_pinyin_tw.custom.yaml`
 ```yaml
 patch:
