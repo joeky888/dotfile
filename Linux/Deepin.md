@@ -133,7 +133,16 @@ patch:
 #     - schema: ipa_xsampa    # X-SAMPA 國際音標
 #     - schema: emoji         # emoji表情
 ```
+* $ git clone --depth 1 https://github.com/rime-aca/dictionaries ~/.dict
+* $ `ln -sf ~/.dict/*.dict.yaml ~/.config/fcitx/rime/`
+* $ `vim ~/.config/fcitx/rime/luna_pinyin_tw.custom.yaml`
+```yaml
+patch:
+  # 載入朙月拼音擴充詞庫
+  "translator/dictionary": luna_pinyin.extended
+```
 * Right click fcitx tray icon -> Scheme list -> 明月拼音(臺灣正體)
+* Right click fcitx tray icon -> Restart
 
 Install Zhuyin IM
 =====
