@@ -1,6 +1,8 @@
 BoldAsFont=no
 Transparency=medium
-Font=Iosevka
+Font=Consolas
+FontChoice=Han:2;
+Font2=Microsoft Yahei
 FontHeight=15
 FontWeight=400
 FontIsBold=no
