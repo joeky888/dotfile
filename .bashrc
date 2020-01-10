@@ -93,23 +93,26 @@ fi
 
 function getModulePath()
 {
-  local Possible_Path=(   "$HOME/dotfile/$1" \
-                    "$HOME/dotfiles/$1" \
-                    "$HOME/.$1" \
-                    "$HOME/anaconda$1" \
-                    "$HOME/$1" \
-                    "/usr/share/$1" \
-                    "/usr/local/share/$1" \
-                    "/usr/local/homebrew/anaconda$1" \
-                    "/usr/share/zsh/plugins/$1" \
-                    "/usr/bin/$1"
-  );
+  for PATH_ARG in "$@"
+  do
+    local Possible_Path=(   "$HOME/dotfile/$PATH_ARG" \
+                      "$HOME/dotfiles/$PATH_ARG" \
+                      "$HOME/.$PATH_ARG" \
+                      "$HOME/anaconda$PATH_ARG" \
+                      "$HOME/$PATH_ARG" \
+                      "/usr/share/$PATH_ARG" \
+                      "/usr/local/share/$PATH_ARG" \
+                      "/usr/local/homebrew/anaconda$PATH_ARG" \
+                      "/usr/share/zsh/plugins/$PATH_ARG" \
+                      "/usr/bin/$PATH_ARG"
+    );
 
-  for pth in "${Possible_Path[@]}" ; do
-    if [[ -d "$pth" ]]; then
-      echo "$pth"
-      return
-    fi
+    for pth in "${Possible_Path[@]}" ; do
+      if [[ -d "$pth" ]]; then
+        echo "$pth"
+        return
+      fi
+    done
   done
   echo "";
 }
@@ -121,8 +124,7 @@ POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
 APP_FAST_PATH=$(getModulePath app-fast)
-OHMYZSH_PATH=$(getModulePath oh-my-zsh)
-[ -z $OHMYZSH_PATH ] && OHMYZSH_PATH=$(getModulePath ohmyzsh)
+OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 
 [ -n "$GRC_PATH" ]       && export PATH=$GRC_PATH:$PATH
 [ -n "$NEOFETCH_PATH" ]  && export PATH=$NEOFETCH_PATH:$PATH
