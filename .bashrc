@@ -110,7 +110,7 @@ function getModulePath()
     for pth in "${Possible_Path[@]}" ; do
       if [[ -d "$pth" ]]; then
         echo "$pth"
-        return
+        return 0
       fi
     done
   done
