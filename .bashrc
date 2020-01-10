@@ -120,8 +120,9 @@ INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
-OHMYZSH_PATH=$(getModulePath ohmyzsh)
 APP_FAST_PATH=$(getModulePath app-fast)
+OHMYZSH_PATH=$(getModulePath oh-my-zsh)
+[ -z $OHMYZSH_PATH ] && OHMYZSH_PATH=$(getModulePath ohmyzsh)
 
 [ -n "$GRC_PATH" ]       && export PATH=$GRC_PATH:$PATH
 [ -n "$NEOFETCH_PATH" ]  && export PATH=$NEOFETCH_PATH:$PATH
