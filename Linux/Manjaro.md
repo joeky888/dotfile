@@ -156,7 +156,7 @@ No Network interface in NetworkManager
 =====
 * Remove Network driver in MHWD
 
-Remote controll Windows OS
+Remote control Windows OS
 =====
 * $ sudo snap install remmina
 * Or

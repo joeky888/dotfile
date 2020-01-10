@@ -83,7 +83,6 @@ Packages
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
   * $ app-fast -S gvim code krita fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs firefox-developer-edition chromium pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
-<!--   * $ yay -S visual-studio-code-bin teamviewer skypeforlinux-stable-bin # Use Arch CN repo instaed -->
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
 * $ sudoedit /etc/systemd/system/earlyoom.service # Or
