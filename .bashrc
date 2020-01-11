@@ -592,7 +592,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     #################
     ZSH_HIGHLIGHT_STYLES[comment]='fg=59'
   fi
-  if [ -n $ZSH_AUTOSUGGESTIONS_PATH ];then
+  if [ -n "$ZSH_AUTOSUGGESTIONS_PATH" ];then
     source $ZSH_AUTOSUGGESTIONS_PATH/zsh-autosuggestions.zsh
     export ZSH_AUTOSUGGEST_USE_ASYNC=1
   fi
