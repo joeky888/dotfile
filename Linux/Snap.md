@@ -18,6 +18,7 @@ Install softwares
     * alacritty
     * chromium
     * firefox
+    * brave
 
 Upgrade all packages
 =====
