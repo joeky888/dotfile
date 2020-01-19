@@ -166,8 +166,8 @@ fi
 [ $(command -v go) ] && alias upgradeGo='GO111MODULE="" go get -insecure -v -u all; go clean -cache'
 
 if [[ -d "$HOME/zulu" ]]; then
-  export PATH=~/zulu/bin:$PATH
-  export JAVA_HOME=~/zulu
+  export PATH=$HOME/zulu/bin:$PATH
+  export JAVA_HOME=$HOME/zulu
 fi
 
 if [[ -d "$HOME/Android/Sdk" ]]; then
@@ -179,7 +179,7 @@ if [[ -d "$HOME/flutter" ]]; then
 fi
 
 if [[ -d "/usr/share/git/diff-highlight/" ]]; then
-  export PATH=/usr/share/git/diff-highlight/:$PATH
+  export PATH=/usr/share/git/diff-highlight:$PATH
 fi
 
 if [[ -d "$HOME/.local/bin" ]]; then
