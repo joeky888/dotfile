@@ -270,7 +270,6 @@ Android
 * Amaze File Manager
 * WPS office
 * org.cwb Weather
-* Starfire 星火直播
 * WiFiAnalyzer open source
 * Advanced Download Manager
     * Settings -> Downloading
