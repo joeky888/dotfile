@@ -281,6 +281,7 @@ Android
             * Threads pre download -> Set to max
         * Automation
             * Only via Wi-Fi -> Auto-start downloads
+* LibreTorrent
 * EtchDroid
 * TWRP Recovery
 * Magisk / Xposed
