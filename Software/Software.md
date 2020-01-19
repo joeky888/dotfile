@@ -281,6 +281,7 @@ Android
             * Threads pre download -> Set to max
         * Automation
             * Only via Wi-Fi -> Auto-start downloads
+* EtchDroid
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
