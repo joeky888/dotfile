@@ -281,12 +281,10 @@ Android
             * Threads pre download -> Set to max
         * Automation
             * Only via Wi-Fi -> Auto-start downloads
-* LibreTorrent
 * EtchDroid
 * TWRP Recovery
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
-* APKPure - Google Play alternative
 * Google Lens
 * Qemu Limbo
 * SystemPanel 2
@@ -300,7 +298,6 @@ Android
 * F-Droid
     * OpenLauncher
     * MaterialOS Icon Pack
-    * Firefox Klar (5.0+) / Fennec (4.1+)
     * Barcode Scanner ZXing
     * Newpipe
     * YalpStore
