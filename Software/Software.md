@@ -286,9 +286,11 @@ Android
 * Magisk / Xposed
 * Opengapps (flash it if gapps are not functional)
 * APKPure - Google Play alternative
+* Google Lens
 * Qemu Limbo
 * SystemPanel 2
 * tw.gov.invoice
+* tw.gov.tra.twtraffic
 * Matlog - Material Logcat reader
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
     * Use android phone as a bluetooth mouse/keyboard
