@@ -267,6 +267,7 @@ Android
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
 * VLC
 * mpv-android
+* Google translate
 * Here WeGo / Maps.me
 * Amaze File Manager
 * WPS office
