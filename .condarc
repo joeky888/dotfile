@@ -1,12 +1,12 @@
 ssl_verify: false
 show_channel_urls: true
-channels:
-  - defaults
-  - main
-  - free
-  - conda-forge
-  - bioconda
-  - intel
+# channels:
+  # - defaults
+  # - main
+  # - free
+  # - conda-forge
+  # - bioconda
+  # - intel
   # - conda-canary
   # - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
 
