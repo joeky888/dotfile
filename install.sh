@@ -285,11 +285,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 #   export SUDO='cygstart --action=runas "$@" '
   export SUDO=""
   export Home=$(cygpath -u "$USERPROFILE")
-  if ! [[ $(command -v choco) ]]; then # Don't reinstall chocolatey
-    cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
-    cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-    [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
-  fi
+#   if ! [[ $(command -v choco) ]]; then # Don't reinstall chocolatey
+#     cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
+#     cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
+#     [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
+#   fi
   rm -rf /bin/apt-cyg
   rm -rf /bin/setup-x86_64.exe
   curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
