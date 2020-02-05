@@ -128,6 +128,7 @@ GRC_PATH=$(getModulePath grc)
 NEOFETCH_PATH=$(getModulePath neofetch)
 INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
+POWERLEVEL10K_PATH=$(getModulePath powerlevel10k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
 APP_FAST_PATH=$(getModulePath app-fast)
@@ -531,6 +532,8 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     export P9K_IGNORE_VAR_WARNING=true
 
     source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
+  elif [ -n "$POWERLEVEL10K_PATH" ] && [[ "$OSTYPE" != "linux-android" ]] ; then # powerlevel10k.zsh-theme is available
+    source $POWERLEVEL10K_PATH/powerlevel10k.zsh-theme
   else
     update_prompt() {
       NEWLINE_NO_OMZ=$'\n'
