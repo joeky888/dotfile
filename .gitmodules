@@ -35,7 +35,7 @@
 	path = zsh-autosuggestions
 	url = https://github.com/zsh-users/zsh-autosuggestions.git
 	shallow = true
-[submodule "powerlevel9k"]
-	path = powerlevel9k
-	url = https://github.com/bhilburn/powerlevel9k.git
-	branch = next
+[submodule "powerlevel10k"]
+	path = powerlevel10k
+	url = https://github.com/romkatv/powerlevel10k.git
+	branch = master
