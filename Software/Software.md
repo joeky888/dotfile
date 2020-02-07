@@ -335,6 +335,8 @@ iOS
     * NewTerm 2
 * Dataplicity (for Pi)
 * Brave (Open source browser with ad blocker)
+* iSH - https://github.com/tbodt/ish
+* LibTerm - https://github.com/ColdGrub1384/LibTerm
 
 Gaming
 =====
