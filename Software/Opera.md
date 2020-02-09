@@ -60,7 +60,6 @@ https://feeds.feedburner.com/pcadv
 https://feeds.feedburner.com/cool3c-show
 https://www.ithome.com.tw/rss
 https://www.kocpc.com.tw/feed
-http://techcrunch.cn/feed
 http://www.azofreeware.com/feeds/posts/default
 http://www.oschina.net/news/rss
 https://linux.cn/rss.xml
