@@ -1,9 +1,7 @@
 #! /bin/bash
 
 export SUDO=''
-if (( $EUID != 0 )); then
-  export SUDO='sudo'
-fi
+[ "`whoami`" = "root" ] || export SUDO='sudo'
 
 InstallDotfile()
 {
@@ -363,5 +361,5 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
 
 
 else # Unknown OS
-  echo "Unknown OS"
+  echo "Unknown OS: $OSTYPE"
 fi
