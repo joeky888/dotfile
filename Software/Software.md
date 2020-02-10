@@ -308,6 +308,7 @@ Android
     * LibreTorrent
     * ScreenCam
     * Simple Gallery
+    * Tachiyomi - offline comic viewer
     * Slide for Reddit - offline reddit
         * golang
         * rust
