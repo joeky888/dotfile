@@ -146,6 +146,7 @@ Dev
     * kubefwd - forward services to local for debugging
     * Caddy - https reverse proxy
     * Vitess - horizontal scaling of MySQL
+    * Vector(https://github.com/timberio/vector) - Logstash alternative writtin rust
 
 Windows
 =====
