@@ -265,6 +265,7 @@ Android
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
+    * https://github.com/dulwich/dulwich - Pure-Python Git implementation
 * VLC
 * mpv-android
 * Google translate
