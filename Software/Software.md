@@ -311,6 +311,7 @@ Android
     * ScreenCam
     * Simple Gallery
     * Tachiyomi - offline comic viewer
+    * KDE Connect
     * Slide for Reddit - offline reddit
         * golang
         * rust
