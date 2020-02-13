@@ -336,8 +336,8 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   InstallDotfile
   # cd ~/dotfile/app-fast && git reset --hard
   ~/dotfile/app-fast/app-fast full-upgrade -y
-  ~/dotfile/app-fast/app-fast install -y man vim micro git tig zsh tmux curl aria2 tar wget bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
-  # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make file patch perl silversearcher-ag
+  ~/dotfile/app-fast/app-fast install -y man vim micro git tig zsh tmux curl aria2 file tar wget bash-completion htop openssh mosh grep sed gawk python ffmpeg p7zip
+  # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
@@ -362,4 +362,7 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
 
 else # Unknown OS
   echo "Unknown OS: $OSTYPE"
+  export SUDO=''
+  export Home="$HOME"
+  InstallDotfile
 fi
