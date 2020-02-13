@@ -362,7 +362,4 @@ elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
 
 else # Unknown OS
   echo "Unknown OS: $OSTYPE"
-  export SUDO=''
-  export Home="$HOME"
-  InstallDotfile
 fi
