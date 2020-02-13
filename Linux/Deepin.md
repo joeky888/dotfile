@@ -180,3 +180,13 @@ app-fast -S opera-ffmpeg-codecs
 sudo ln -sf /usr/lib/opera/lib_extra/libffmpeg.so /usr/lib/opera-beta/libffmpeg.so
 ```
 
+Opera/Chrome can not display colored emoji
+=====
+* Reinstall emoji font
+* Refresh cache
+```sh
+sudo pacman -Rsuc noto-fonts-emoji
+app-fast -S noto-fonts-emoji
+fc-cache -f -v
+```
+
