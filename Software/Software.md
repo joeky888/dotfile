@@ -318,6 +318,7 @@ Android
         * rust_gamedev
         * programming
         * commandline
+        * devops
 * Drop-down menu items
     * Screenshot
     * Flash light
