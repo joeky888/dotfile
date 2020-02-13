@@ -94,7 +94,6 @@ ExecStart=/usr/bin/earlyoom -m 3
 * $ sudo systemctl restart earlyoom.service
 * $ sudo systemctl daemon-reload
 * Setting -> Personalization -> Font -> Standard Font -> Noto Sans CJK TC
-* Set MPV to use hardware acceleration
 
 Disable Gnome keyring when opening the browser
 =====
