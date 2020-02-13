@@ -12,8 +12,12 @@
     src: local("Noto Sans CJK TC"),local("Noto Sans CJK SC"),local("Noto Sans TC"),local("Noto Sans SC"),local("Iosevka"),local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Microsoft JhengHei"),local("Microsoft YaHei");
     unicode-range: U+2E80-FAFF;
 }
+@font-face {
+    font-family: "EMOJI";
+    src: local("Noto Color Emoji"),local("Noto Emoji"),local("FontAwesome"),local("FontawesomeCom"),local("fontello"),local("Material Icons"),local("VideoJS"),local("icomoon"),local("Ionicons"),local("icons"),local("iconfont-toolbar"),local("jw-icons"),local("Material Icons"),local("Glyphicons Halflings"),local("Circular");
+}
 *, * *, *[id], *[class], *[name]{
-    font-family: "ASCII","CJK","Noto Color Emoji","Noto Emoji","FontAwesome","FontawesomeCom","fontello","Material Icons","VideoJS","icomoon","Ionicons","icons","iconfont-toolbar","jw-icons","Material Icons","Glyphicons Halflings","Circular",sans-serif !important;
+    font-family: "EMOJI", "ASCII","CJK", sans-serif !important;
     font-weight: 400 !important;
 }
 
