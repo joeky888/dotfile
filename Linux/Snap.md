@@ -22,6 +22,7 @@ Install softwares
     * VScode
     * Slack
     * Opera
+    * Opera-beta
     * Chromium
     * Firefox
     * Brave
