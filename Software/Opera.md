@@ -1,11 +1,15 @@
 Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
-* chrome://settings -> Search "VPN" -> Enable
-* chrome://settings -> Search "Opera Turbo" -> Enable
-* chrome://Plugins -> Search "flash" -> Enable
 * chrome://flags/#opera-doh -> Enable
 * chrome://flags/#enable-quic -> Enable
+* chrome://settings -> Search "VPN" -> Enable
+* chrome://settings -> Search "Opera Turbo" -> Enable
+* chrome://settings -> Search "Font"
+    * Standard font -> Noto Sans CJK TC
+    * Serif font -> Noto Sans CJK TC
+    * Sans-serif font -> Noto Sans CJK TC
+* chrome://Plugins -> Search "flash" -> Enable
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 
 Extension
