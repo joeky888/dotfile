@@ -81,7 +81,7 @@ Packages
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ app-fast -S gvim code krita fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-configtool fcitx-sogoupinyin wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
+  * $ app-fast -S gvim code krita fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-configtool wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools opera opera-ffmpeg-codecs firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
