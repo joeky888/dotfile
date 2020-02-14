@@ -6,20 +6,36 @@ Install softwares
 =====
 * $ sudo snap install microk8s --beta --classic
 * Packages
-    * docker
-    * microk8s
-    * helm
-    * krita
-    * remmina
-    * blender
-    * android-studio
-    * obs-studio
-    * vscode
-    * alacritty
-    * chromium
-    * firefox
-    * brave
-    * opera
+    * Docker (x64, arm64)
+    * microK8s (x64, arm64)
+    * helm (x64, arm64)
+    * Gnome System Monitor (x64, arm64)
+    * NetworkManager (x64, arm64)
+    * Remmina (x64, arm64)
+    * RetroArch (x64, arm64)
+    * Blender
+    * WPS Office
+    * VLC
+    * WoeUSB
+    * Skype
+    * Krita
+    * VScode
+    * Slack
+    * Opera
+    * Chromium
+    * Firefox
+    * Brave
+    * Obs-Studio
+    * draw.io
+    * Dev tools
+        * jq
+        * conda
+        * node
+        * go
+        * ubuntu-make
+        * google-cloud-sdk
+        * Android studio
+
 
 Upgrade all packages
 =====

@@ -213,31 +213,6 @@ Linux
 * Conky (with weather)
 * Linuxbrew (package manager without root)
 * Snapcraft
-    * Docker (x64, arm64)
-    * microK8s (x64, arm64)
-    * helm (x64, arm64)
-    * Gnome System Monitor (x64, arm64)
-    * NetworkManager (x64, arm64)
-    * Remmina (x64, arm64)
-    * RetroArch (x64, arm64)
-    * WPS Office
-    * VLC
-    * WoeUSB
-    * Skype
-    * Krita
-    * VScode
-    * Slack
-    * Opera
-    * Obs-Studio
-    * draw.io
-    * Dev tools
-        * jq
-        * conda
-        * node
-        * go
-        * ubuntu-make
-        * google-cloud-sdk
-        * Android studio
 
 WineHQ
 =====
