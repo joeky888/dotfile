@@ -19,6 +19,7 @@ Install softwares
     * chromium
     * firefox
     * brave
+    * opera
 
 Upgrade all packages
 =====
