@@ -28,6 +28,8 @@ Install softwares
     * Brave
     * Obs-Studio
     * draw.io
+    * Games
+        * Veloren (Cubeworld-like game in rust)
     * Dev tools
         * jq
         * conda
