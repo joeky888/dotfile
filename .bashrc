@@ -296,7 +296,6 @@ alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
-alias mpv-gpu-intel="mpv --hwdec=vaapi" # echo "hwdec=vaapi" >> /etc/mpv/mpv.conf
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
@@ -398,7 +397,6 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   else
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
