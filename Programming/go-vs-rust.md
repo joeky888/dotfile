@@ -28,3 +28,30 @@ xs.push(6);
 println!("Vector: {:?}", xs);
 ```
 
+Hashmap
+=====
+* Go uses map
+```go
+attended := map[string]bool{
+    "Ann": true,
+    "Joe": true,
+}
+if val, ok := attended["Ann"]; ok {
+    //do something here
+}
+```
+* Rust uses hashmap
+```go
+let mut hash = HashMap::new();
+
+hash.insert("one", "eins");
+hash.insert("two", "zwei");
+hash.insert("three", "drei");
+
+let data = match hash.get("one") {
+    None => "",
+    Some(v) => *v
+};
+assert_eq!(data, "eins");
+```
+
