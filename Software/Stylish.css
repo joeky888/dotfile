@@ -3,13 +3,13 @@
 /* Font */
 @font-face {
     font-family: "ASCII";
-    src: local("Ubuntu Mono"),local("Consolas");
+    src: local("Ubuntu Mono"),local("Inconsolata"),local("Droid Sans Mono"),local("DejaVu Sans Mono"),local("Monaco"),local("Consolas");
 /*     src: local("Arial"); */
     unicode-range: U+00-7F,U+FF01-FF5E;
 }
 @font-face {
     font-family: "CJK";
-    src: local("Noto Sans CJK TC"),local("Noto Sans CJK SC"),local("Noto Sans TC"),local("Noto Sans SC"),local("Iosevka"),local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Microsoft JhengHei"),local("Microsoft YaHei");
+    src: local("Noto Sans CJK TC"),local("Noto Sans CJK SC"),local("Noto Sans TC"),local("Noto Sans SC"),local("Iosevka"),local("Droid Sans Fallback"),local("DroidMono"),local("Wenquanyi Micro Hei"),local("WenQuanYi Zen Hei"),local("Sarasa Mono TC"),local("Hiragino Sans GB"),local("Microsoft JhengHei"),local("Microsoft YaHei");
     unicode-range: U+2E80-FAFF;
 }
 @font-face {
@@ -17,7 +17,7 @@
     src: local("Noto Color Emoji"),local("Noto Emoji"),local("FontAwesome"),local("FontawesomeCom"),local("fontello"),local("Material Icons"),local("VideoJS"),local("icomoon"),local("Ionicons"),local("icons"),local("iconfont-toolbar"),local("jw-icons"),local("Material Icons"),local("Glyphicons Halflings"),local("Circular");
 }
 *, * *, *[id], *[class], *[name]{
-    font-family: "EMOJI", "ASCII","CJK", sans-serif !important;
+    font-family: "ASCII","EMOJI","CJK", sans-serif !important;
     font-weight: 400 !important;
 }
 
