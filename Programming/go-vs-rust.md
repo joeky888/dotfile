@@ -55,3 +55,28 @@ let data = match hash.get("one") {
 assert_eq!(data, "eins");
 ```
 
+Struct and Method
+=====
+```go
+type Cart struct {
+    Name  string
+    Price int
+}
+
+func (this *Cart) GetPrice() {
+    fmt.Println("price:", this.Price)
+}
+```
+```rust
+#[derive(Debug)]
+struct Cart {
+    Name: u32,
+    Price: u32,
+}
+
+impl Cart {
+    pub fn GetPrice(&self) -> u32 {
+        self.Name * self.Price
+    }
+}
+```
