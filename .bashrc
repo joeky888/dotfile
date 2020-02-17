@@ -900,6 +900,7 @@ if [ -n "$CONDA_3" ]; then
 fi
 
 hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
+hash litecli 2>/dev/null >/dev/null && alias litecli='LESS="-SRXF" litecli' # Disable word wrapping
 
 
 if [ $(command -v grc) ] ; then
