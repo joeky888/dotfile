@@ -17,7 +17,7 @@
     src: local("Noto Color Emoji"),local("Noto Emoji"),local("FontAwesome"),local("FontawesomeCom"),local("fontello"),local("Material Icons"),local("VideoJS"),local("icomoon"),local("Ionicons"),local("icons"),local("iconfont-toolbar"),local("jw-icons"),local("Material Icons"),local("Glyphicons Halflings"),local("Circular");
 }
 *, * *, *[id], *[class], *[name]{
-    font-family: "ASCII","EMOJI","CJK", sans-serif !important;
+    font-family: "ASCII","EMOJI","CJK",monospace,sans-serif !important;
     font-weight: 400 !important;
 }
 
