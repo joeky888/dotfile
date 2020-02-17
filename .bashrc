@@ -277,7 +277,6 @@ alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+
 alias youtube-dl-playlist="youtube-dl --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
 alias youtube-dl-thumbnail="youtube-dl --write-thumbnail --write-all-thumbnails --skip-download"
 alias youtube-dl-filename-ascii="youtube-dl --restrict-filenames"
-alias youtube-dl-annotations="youtube-dl --write-annotations"
 alias youtube-dl-auto-sub="youtube-dl --write-auto-sub"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
