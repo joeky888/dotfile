@@ -26,10 +26,10 @@ Extension
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
-* HackBar
+<!-- * HackBar -->
 * User-Agent Switcher for Chrome by Google
-* HTTPS Everywhere
-* Disconnect
+<!-- * HTTPS Everywhere -->
+<!-- * Disconnect -->
 * Remove Google Redirection
 * Get CRX
 * Enhanced Github
