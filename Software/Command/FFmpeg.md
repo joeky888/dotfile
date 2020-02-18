@@ -126,7 +126,7 @@ Mashup videos (Merge video clips into one, placing them next to each other)
 * Use Blender video editor, Or
 ```sh
 # Merge two videos
-ffmpeg -i input1.mp4 -i input2.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' \ -map [vid] -c:v libx264 -crf 23 -preset veryfast output.mp4
+ffmpeg -i input1.mp4 -i input2.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][1:v]overlay=W/2:0[vid]' -map [vid] -c:v libx264 -crf 23 -preset veryfast output.mp4
 ```
 
 Convert Video to GIF
