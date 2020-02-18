@@ -17,7 +17,7 @@ ffmpeg -i a.jpg -i b.jpg -i c.jpg -filter_complex vstack=inputs=3 merge.png
 ffmpeg -i a.jpg -i b.jpg -i c.jpg -filter_complex hstack=inputs=3 merge.png
 ```
 
-Embed sub.srt to input.mp4 (hardsub) TODO: this makes low quality videos get low quality subtitles
+Embed sub.srt to input.mp4 (hardsub) TODO: this makes low quality videos get low quality subtitles (One possible way is to increase the quality of the video first)
 =====
 * $ ffmpeg -i sub.srt sub.ass
 * Then edit font and fontsize in sub.ass
