@@ -3,13 +3,16 @@ Null and non-Null
 * Go uses `nil`
 * Rust uses Option<T> which throws Some and None
     * Option<T>.unwrap() will give the value or panic if the value is None
+    * Option<T>.expect("Some error msg here") same with unwrap but gives msg when panic
 
 Error handling
 =====
 * Go uses `err != nil`
 * Rust uses Result<T> which throws Ok and Err
+    * Result<T>.unwrap() will give the value or panic if the value is None
+    * Result<T>.expect("Some error msg here") same with unwrap but gives msg when panic
 
-Interface
+Interface (a collection of methods that others can implement)
 =====
 * Go uses interface
 * Rust uses trait
