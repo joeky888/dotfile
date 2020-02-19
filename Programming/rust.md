@@ -9,6 +9,11 @@ Error handling
 * Go uses `err != nil`
 * Rust uses Result<T> which throws Ok and Err
 
+Interface
+=====
+* Go uses interface
+* Rust uses trait
+
 Anonymous function (closure)
 =====
 * Go uses `func(x) { print(x) }`
