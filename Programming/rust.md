@@ -2,6 +2,7 @@ Null and non-Null
 =====
 * Go uses `nil`
 * Rust uses Option<T> which throws Some and None
+    * Option<T>.unwrap() will give the value or panic if the value is None
 
 Error handling
 =====
