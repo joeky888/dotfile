@@ -1,8 +1,9 @@
 BoldAsFont=no
 Transparency=medium
 Font=Consolas
-FontChoice=Han:2;
+FontChoice=CJK:2;Private:3;
 Font2=Microsoft Yahei
+Font3=Segoe UI Emoji
 FontHeight=15
 FontWeight=400
 FontIsBold=no
