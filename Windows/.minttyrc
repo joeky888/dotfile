@@ -1,9 +1,10 @@
 BoldAsFont=no
 Transparency=medium
 Font=Consolas
-FontChoice=CJK:2;Private:3;
+FontChoice=CJK:2;PictoSymbols:3;Private:4;
 Font2=Microsoft Yahei
-Font3=Segoe UI Emoji
+Font3=Cascadia Mono PL
+Font4=Cascadia Mono PL
 FontHeight=15
 FontWeight=400
 FontIsBold=no

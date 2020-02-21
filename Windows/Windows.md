@@ -61,7 +61,7 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser
 PowerShellGet\Install-Module oh-my-posh -Scope CurrentUser
 PowerShellGet\Install-Module posh-docker -Scope CurrentUser
 PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
-choco install 7zip git poshgit openssl.light skype vscodium greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave -y --pre
+choco install cascadiamonopl 7zip git poshgit openssl.light skype vscodium greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave -y --pre
 choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
 ```
 * Gaming dlls
