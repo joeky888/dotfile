@@ -89,3 +89,9 @@ impl Cart {
     }
 }
 ```
+
+Smart pointer
+=====
+* Go doesn't have smart pointers
+* Rust uses Box<T>
+
