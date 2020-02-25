@@ -299,6 +299,7 @@ alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORREN
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
+alias annie="annie -C"
 alias annie-playlist="annie -p"
 alias scp='scp -v'
 alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
