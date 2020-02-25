@@ -112,6 +112,10 @@ Shift subtitle timing
 * Advance 0.7s
 * $ ffmpeg -itsoffset -0.7 -i input.ass output.ass
 
+Danmu(danmaku) to .ass
+=====
+* $ ./danmaku2ass.py -o ../output.ass -s `ffprobe -select_streams v:0 -show_entries stream=width,height -of csv=s=x:p=0 ../input.mp4` -fn "Noto Sans CJK TC" -fs 48 -dm 15 -ds 15 input.xml
+
 Copy encoding if convert coding is not available
 =====
 * Video
