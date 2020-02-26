@@ -32,6 +32,10 @@ Enable GPU passthrough (After KVM is enabled) ...FAILED
 =====
 * Disable nouveau
     * $ sudoedit /etc/modprobe.d/blacklist-nouveau.conf
+* Uninstall all nvidia drivers (pacman -Ss nvidia)
+    * Uninstall all bumblebee drivers (pacman -Ss bumblebee)
+    * Uninstall all cuda drivers (pacman -Ss cuda)
+    * Now `lspci -nnk` should print nvidia driver is "vfio-pci"
 ```conf
 blacklist nouveau
 options nouveau modeset=0
@@ -51,7 +55,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet splash amd_iommu=on" # Use amd_iommu=on for am
 # Which means ID is 10de:1c8d and 10de:10f0
 
 sudoedit /etc/modprobe.d/vfio.conf # Add the following
-options vfio-pci ids=10de:1c8d,10de:10f0
+options vfio-pci ids=01:00.0,02:00.1
 
 sudoedit /etc/modules-load.d/vfio-pci.conf # Add the following
 vfio-pci
