@@ -79,6 +79,7 @@ qemu-system-x86_64 \
     -m 2G -netdev user,id=n0 -device rtl8139,netdev=n0 \
     -soundhw hda \
     --bios /usr/share/ovmf/x64/OVMF_CODE.fd \
+    -device vfio-pci,host=01:00.0 `#Add pci id here` \
     -hda windows.img \
     -cdrom WindowsX64.iso
 ```
