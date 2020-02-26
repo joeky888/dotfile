@@ -37,7 +37,6 @@ Setting (search `json`)
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
-    // "rust-analyzer.raLspServerPath": "ra_lsp_server",
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.featureFlags": {
