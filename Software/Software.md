@@ -72,6 +72,7 @@ CLI
     * upx - Ultimate Packer executables, `upx --lzma file.exe`
     * hashcat - fatest password cracking tool
     * ttyd - SSH alternative via browser Webshell inspired by gotty
+    * axel - lightweight aria2 alternative
 * Rust
     * ffsend - send.firefox.com cli client
     * swc - super-fast javascript to javascript compiler written in rust
