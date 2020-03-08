@@ -276,11 +276,11 @@ Windows Registry Editor Version 5.00
 
 /* 取代字型 */
 /* Wine 1.1.13 改這裡似乎看不出有什麼用，不過改就改了，沒差啦 */
-"Microsoft Sans Serif"="wqy-microhei.ttf,WenQuanYi Micro Hei"
-"SimSun"="wqy-microhei.ttf,WenQuanYi Micro Hei"
-"Tahoma"="wqy-microhei.ttf,WenQuanYi Micro Hei"
-"PMingLiU"="wqy-microhei.ttf,WenQuanYi Micro Hei"
-"Lucida Sans Unicode"="wqy-microhei.ttf,WenQuanYi Micro Hei"
+"Microsoft Sans Serif"="wqy-microhei.ttc,WenQuanYi Micro Hei"
+"SimSun"="wqy-microhei.ttc,WenQuanYi Micro Hei"
+"Tahoma"="wqy-microhei.ttc,WenQuanYi Micro Hei"
+"PMingLiU"="wqy-microhei.ttc,WenQuanYi Micro Hei"
+"Lucida Sans Unicode"="wqy-microhei.ttc,WenQuanYi Micro Hei"
 
 /* Replace default fonts */
 [HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Control\FontAssoc\Associated DefaultFonts]

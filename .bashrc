@@ -301,6 +301,7 @@ alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRE
 alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
 alias annie="annie -C"
 alias annie-playlist="annie -p"
+alias wine-optimize="WINEDEBUG=-all wine"
 alias scp='scp -v'
 alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
 if ls --version 2>/dev/null | grep -q GNU ; then

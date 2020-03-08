@@ -6,14 +6,19 @@ Install Wine
 * $ sudo dpkg --add-architecture i386 && app-fast update
 * $ app-fast install --install-recommends wine64-development wine64-development-preloader wine64-development-tools winbind cabextract zenity -y && winecfg-development
 * Or
-* $ `app-fast -Sy --needed wine-staging wine-mono wine_gecko cabextract zenity && winecfg`
+* $ `app-fast -Sy --needed expac` # To install optional dependencies of wine-staging
+* $ `app-fast -Sy --needed wine-staging $(expac -S '%o' wine-staging) wine-mono wine-gecko cabextract zenity && winecfg`
+    * winecfg -> Staging
+        * Enable VAAPI as backend for DXVA2 GPU decoding -> check
+        * Hide wine version from applications -> check
+        * Enable GTK3 Theming -> check
 
 Install CJK font
 =====
 1. manual
     * Install a Chinese input method on Linux
 ```sh
-aria2c "https://github.com/j16180339887/CJK-font/raw/master/wqy-microhei.ttc" -d / -o ~/.wine/drive_c/windows/Fonts/wqy-microhei.ttc && wine regedit ~/dotfile/Linux/cjk.reg
+aria2c "https://github.com/joeky888/CJK-font/raw/master/wqy-microhei.ttc" -d / -o ~/.wine/drive_c/windows/Fonts/wqy-microhei.ttc && wine regedit ~/dotfile/Linux/cjk.reg
 ```
     * 如果想使用其它字體，也可直接將相應的ttf或ttc文件複製到~/.wine/drive\_c/windows/Fonts/，再用其文件名替換上面的wqy-zenhei.ttc即可
 2. Using winetricks
@@ -25,7 +30,7 @@ aria2c "https://github.com/j16180339887/CJK-font/raw/master/wqy-microhei.ttc" -d
 Install winetricks and winetricks packages
 =====
 * $ aria2c https://raw.githubusercontent.com/Winetricks/winetricks/master/src/winetricks
-* Don't See https://github.com/Winetricks/winetricks/blob/master/files/verbs/download.txt because it's outdated
+* Don't track https://github.com/Winetricks/winetricks/blob/master/files/verbs/download.txt because it's outdated
 * $ bash winetricks list-all
 * $ bash winetricks busybox cmd 7zip lucida ie8 msxml3 msxml4 msxml6 xmllite d3dx9 d3dx10 d3dxof d3drm directmusic directplay quartz wininet xact xinput xna31 xna40 allcodecs
 * $ bash winetricks vb6run vcrun2005 vcrun2008 vcrun2010 vcrun2012 vcrun2013 vcrun2015
