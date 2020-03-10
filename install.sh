@@ -79,6 +79,7 @@ InstallDotfileCygwin()
   mkdir -p $Home/.grc/
   mkdir -p $Home/AppData/Local/nvim
   mkdir -p $Home/AppData/Roaming/mpv
+  mkdir -p $Home/AppData/Roaming/alacritty
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -125,6 +126,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf

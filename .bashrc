@@ -373,6 +373,7 @@ upgradeDotfile() {
   if [[ "$OSTYPE" == "cygwin" ]]; then
     mkdir -p ~/AppData/Local/nvim/
     mkdir -p ~/AppData/Roaming/mpv
+    mkdir -p ~/AppData/Roaming/alacritty
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
@@ -398,6 +399,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   else
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
