@@ -75,32 +75,15 @@ git config --system core.autocrlf false
 git config --system core.fileMode false
 ```
 
+Install alacritty to use Cygwin
+=====
+* $ choco install alacritty -y
+* Edit shortcut on the Desktop
+    * C:\ProgramData\alacritty\alacritty.exe --command C:\cygwin64\bin\bash.exe --login -i
+
 Mono sound
 =====
 * Setting -> Ease of Access settings -> Other options -> Audio options -> Mono audio -> Check
-
-Win8+ Set Powershell.exe to default shell to WinX
-=====
-* Control Panel -> Appearance and Personalization -> Taskbar and Navigation -> Navigation -> Coner navigation -> Check
-* Or
-* Setting -> Personalization -> Taskbar -> Replace cmd with Powershell in the menu -> Check
-
-Add Control Panel to the WinX menu
-=====
-```sh
-# Powershell
-$WshShell = New-Object -comObject WScript.Shell
-$Shortcut = $WshShell.CreateShortcut("$env:LocalAppdata\\Microsoft\\Windows\\WinX\\Group2\\4 - Control Panel.lnk")
-$Shortcut.TargetPath = "%windir%\system32\control.exe"
-$Shortcut.Arguments = "shell:::{26EE0668-A00A-44D7-9371-BEB064C98683}"
-$Shortcut.Save()
-```
-* Or
-* Open file explorer and go to %LocalAppdata%\Microsoft\Windows\WinX\Group2
-* Create a shourtcut
-    * Location "%windir%\system32\control.exe"
-    * Name "4 - Control Panel.lnk"
-* Reboot
 
 Set MPV as default player
 =====
