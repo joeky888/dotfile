@@ -14,7 +14,6 @@
 }
 @font-face {
     font-family: "EMOJI";
-    "", "", ""
     src: local("Apple Color Emoji"),local("Segoe UI Emoji"),local("Segoe UI Symbol"),local("Noto Color Emoji"),local("Noto Emoji"),local("FontAwesome"),local("FontawesomeCom"),local("fontello"),local("Material Icons"),local("VideoJS"),local("icomoon"),local("Ionicons"),local("icons"),local("iconfont-toolbar"),local("jw-icons"),local("Material Icons"),local("Glyphicons Halflings"),local("Circular");
 }
 *, * *, *[id], *[class], *[name]{
