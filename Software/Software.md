@@ -343,6 +343,7 @@ Good Software Design
 * Less dependencies
 * Progress bar
 * Built-in shell
+* Variable encryption
 * TUI/GUI dashboard and resource monitor
     * Google image "大數據可視化"
     * PointDownload
