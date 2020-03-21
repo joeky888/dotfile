@@ -1,3 +1,7 @@
 Compile
 =====
-* $ LDFLAGS="--static" && make defconfig && make
+* $ make defconfig && CFLAGS="--static" make
+
+Enable all experimental "pending" commands
+=====
+* $ make allyesconfig && make
