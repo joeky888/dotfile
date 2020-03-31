@@ -141,13 +141,14 @@ Dev
         * https://github.com/facebook/react-devtools
         * React-native-debugger
         * Reactotron
-* K8S
+* K8S DevOps
     * Istio - service mesh
     * Linkerd - service mesh
     * kubefwd - forward services to local for debugging
     * Caddy - https reverse proxy
     * Vitess - horizontal scaling of MySQL
     * Vector(https://github.com/timberio/vector) - Logstash alternative writtin rust
+    * HFish - honeypot written in Go
 
 Windows
 =====
