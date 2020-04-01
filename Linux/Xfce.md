@@ -8,5 +8,7 @@ Install arc theme
 * Xfce Settings Manager -> Window Manager -> Style -> ARK-Dark
 * Xfce Settings Manager -> Appearance -> Style -> ARK-Dark
 * Xfce Settings Manager -> Appearance -> Icons -> Windows-10-Icons
-* Note: another active alternative is [Flatabulous](https://www.xfce-look.org/p/1171746)
+* Active alternatives
+    * https://github.com/jnsh/arc-theme
+    * https://github.com/andreisergiu98/arc-flatabulous-theme
 
