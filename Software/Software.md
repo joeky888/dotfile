@@ -224,6 +224,9 @@ WineHQ
 
 Android
 =====
+* Deverloper options
+    * Advanced restart -> Check
+    * Android debugging -> Check
 * Firefox Beta
     * Dark Reader
     * uBlock Origin

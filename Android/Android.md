@@ -1,3 +1,33 @@
+LineageOS
+=====
+* Press volume down + power to boot to twrp
+* Flash LineageOS rom by using twrp (Don't install gapps yet)
+* Install Magisk
+    * Install Magisk manager
+    * Install Magisk
+    * Install Magisk modules
+        * Magisk manager -> Downloads -> Search "MagiskHid Props Config" and install
+        * Magisk manager -> Downloads -> Search "SQLite" and install
+        * Magisk manager -> Modules -> + -> https://magiskroot.net/md/SafetyPatch-v3.zip
+        * Magisk manager -> Modules -> + -> https://magiskroot.net/md/Petnoire's_SafetyNet_Spoofer.zip
+        * Magisk manager -> Modules -> + -> https://github.com/stylemessiah/GPay-SQLite-Fix
+        * Magisk manager -> Settings -> Magisk Hide -> Check
+* Bypass safetynet (https://www.youtube.com/watch?v=LiQor-mXNq8)
+    * Install RIRU MANAGER APK
+    * Magisk manager -> Downloads -> Search "Riru core" and install
+    * Magisk manager -> Downloads -> Search "EdXposed (YAHFA)" and install
+    * Install EdXposedManager.apk -> https://github.com/ElderDrivers/EdXposedManager/releases
+    * Install HiddenCore module (com-cofface-ivader-7-xxx.apk) -> On google drive
+    * EdXposed Manager -> Modules -> HiddenCore Module -> Check -> Reboot
+* Install gapps via twrp
+* Magisk manager
+    * Check safetynet
+        * If failed -> EdXposed Manager -> Modules -> HiddenCore Module -> Uncheck -> Check -> Reboot
+    * Magisk Hide -> Google Play services -> Check
+* Install Google pay
+    * If failed -> https://twitter.com/topjohnwu/status/1237656703929180160
+
+
 A good Android phone
 =====
 * Heavy battery and long battery life
@@ -18,7 +48,7 @@ A good Android phone
 * 將 zip 放到 sd
 * 進入 recovery 刷入 zip
 
-Flash a new rom by PC
+Flash a new rom using cli
 =====
 * Install adb and fastboot on PC
 * unlock the phone
