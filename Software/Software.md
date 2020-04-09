@@ -254,7 +254,6 @@ Android
 * Amaze File Manager
 * WPS office
 * org.cwb Weather
-* WiFiAnalyzer open source
 * Advanced Download Manager
     * Settings -> Downloading
         * Downloading
@@ -286,7 +285,6 @@ Android
     * YalpStore
     * Open Camera
     * EtchDroid
-    * Busybox
     * LibreTorrent
     * ScreenCam
     * Simple Gallery
