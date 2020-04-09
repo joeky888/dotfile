@@ -25,7 +25,22 @@ LineageOS
         * If failed -> EdXposed Manager -> Modules -> HiddenCore Module -> Uncheck -> Check -> Reboot
     * Magisk Hide -> Google Play services -> Check
 * Install Google pay
-    * If failed -> https://twitter.com/topjohnwu/status/1237656703929180160
+    * If failed -> https://www.youtube.com/watch?v=wKYC0r-m0Mo
+        * Magisk manager -> Modules -> Remove "SafetyPatch" "Xposed" "Riru"
+        * EdXposed manager -> Modules -> Remove all
+        * Uninstall EdXposed manager
+        * Magisk manager -> Downloads -> Search "MagiskHid Props Config" and reinstall
+        * Open Termux
+```sh
+su
+props
+1 # Edit device fingerprint
+f # Pick a certified figerprint
+1 # Asus
+7 # Asus Zenfone Max Pro M1
+y # Comfirm
+y # Reboot
+```
 
 
 A good Android phone
