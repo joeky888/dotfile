@@ -268,7 +268,7 @@ else
   alias youtube-dl="youtube-dl $DL_ARGUMENTS"
 fi
 alias which='which -a'
-alias curl-status='curl -o /dev/null -L -s -w "Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
+alias curl-status='curl -o /dev/null -L -s -w "Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
