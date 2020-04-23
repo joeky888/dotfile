@@ -268,6 +268,7 @@ else
   alias youtube-dl="youtube-dl $DL_ARGUMENTS"
 fi
 alias which='which -a'
+alias curl-speedtest='curl -o /dev/null -s -w "DNS Resolve: %{time_namelookup}\nClient -> Server: %{time_connect}\nServer Response: %{time_starttransfer}\nTotal time: %{time_total}\n"'
 alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
