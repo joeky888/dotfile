@@ -38,5 +38,8 @@
 [submodule "powerlevel10k"]
 	path = powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k.git
-	branch = master
+	shallow = true
+[submodule "bashtop"]
+	path = bashtop
+	url = https://github.com/aristocratos/bashtop.git
 	shallow = true
