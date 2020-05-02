@@ -174,6 +174,7 @@ fi
 fi
 
 [ $(command -v go) ] && alias upgradeGo='GO111MODULE="" go get -insecure -v -u all; go clean -cache'
+[ -d "$HOME/.tiup" ] && export PATH=/home/joeky/.tiup/bin:$PATH
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=$HOME/zulu/bin:$PATH
