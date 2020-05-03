@@ -23,6 +23,9 @@ set mouse               = true
 set mouse-scroll        = 3         # Number of lines to scroll via the mouse
 # set diff-highlight      = true    # Disable because I can't get it work on Windows
 
+set main-view-id        = yes       # Show commit hash
+set main-view-id-width  = 7         # Limit commit hash length
+
 # Show untracked
 set show-untracked              = yes
 set status-show-untracked-dirs  = yes # Show files in untracked directories? (status)
