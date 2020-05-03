@@ -227,6 +227,7 @@ Android
 * Deverloper options
     * Advanced restart -> Check
     * Android debugging -> Check
+* Backup IMEI code -> `*#06#`
 * Firefox Beta
     * Dark Reader
     * uBlock Origin
