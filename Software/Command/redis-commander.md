@@ -2,7 +2,7 @@ Install
 =====
 ```sh
 npm install -g redis-commander@latest
-rm ~/node/lib/node_modules/redis-commander/config/local-development.json
+rm ~/.npm-packages/lib/node_modules/redis-commander/config/local-development.json
 ```
 
 Usage
