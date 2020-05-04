@@ -152,6 +152,13 @@ sudo systemctl enable --now snapd.socket
 app-fast -S linux-apparmor # Install/Boot only if systemctl status apparmor.service is failed
 ```
 
+Downgrade a package
+=====
+* $ `DOWNGRADE_FROM_ALA=1 downgrade PackageName`
+* Undo downgrading
+  * Remove "IgnorePkg=xxx" in /etc/pacman.conf
+  * $ app-fast -S PackageName # Reinstall PackageName
+
 No Network interface in NetworkManager
 =====
 * Remove Network driver in MHWD
