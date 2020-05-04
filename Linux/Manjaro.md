@@ -156,7 +156,7 @@ Downgrade a package
 =====
 * $ `DOWNGRADE_FROM_ALA=1 downgrade PackageName`
 * Undo downgrading
-  * Remove "IgnorePkg=xxx" in /etc/pacman.conf
+  * Remove "IgnorePkg=xxx" and "IgnoreGroup=xxx" in /etc/pacman.conf
   * $ app-fast -S PackageName # Reinstall PackageName
 
 No Network interface in NetworkManager
