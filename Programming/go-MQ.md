@@ -15,5 +15,5 @@ NATS
 =====
 * Nats clients support both Multicast and Load Balancer
 * client.Subscribe for Multicast
-* client.QueueSubscribe for Load Balancer (Like NSQ topice/channel)
+* client.QueueSubscribe for Load Balancer (Like NSQ topic/channel)
 
