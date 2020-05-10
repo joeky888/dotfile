@@ -1,3 +1,27 @@
+Use make on windows
+=====
+* Create a file make.bat
+```dosbatch
+@ECHO off
+if /I %1 == default goto :default
+if /I %1 == install goto :install
+if /I %1 == clean goto :clean
+
+goto :eof ::can be ommited to run the `default` function similarly to makefiles
+
+:default
+echo DEFAULT
+goto :eof
+
+:install
+echo INSTALL
+goto :eof
+
+:clean
+echo CLEAN
+goto :eof
+```
+
 Equal sign
 =====
 *  = Set a variable
