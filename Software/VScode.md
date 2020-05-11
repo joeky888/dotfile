@@ -142,6 +142,7 @@ Extension
 * vadimcn.vscode-lldb
 * ms-azuretools.vscode-docker
 * be5invis.toml
+* hediet.vscode-drawio
 
 Key
 =====
