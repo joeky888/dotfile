@@ -1,5 +1,6 @@
 After installed
 =====
+* Setting -> Personlization -> Dark theme
 * Setting -> Power Management -> Disable computer auto sleeping
 * Setting -> Power Management -> Disable suspend on lid closed
 * Setting -> Account -> auto login
