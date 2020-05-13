@@ -5,7 +5,9 @@ Performance
 
 3 Ways to controll goroutines
 =====
-* context.Done()
+* <-context.Done()
+    * context.cancel() // context.WithCancel
+    * time.Second // context.WithDeadline
 * <-channels
 * sync.WaitGroup.Wait()
 
