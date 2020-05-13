@@ -5,7 +5,9 @@ Fork
 
 Pull request
 =====
-* Get patch diff
-* https://github.com/USER/REPO/pull/PRNUMBER.patch
-* https://github.com/linuxdeepin/qt5integration/pull/26.patch
-
+* Get patch
+    * https://github.com/USER/REPO/pull/PRNUMBER.patch
+    * https://github.com/linuxdeepin/qt5integration/pull/26.patch
+* Get diff
+    * https://github.com/USER/REPO/pull/PRNUMBER.diff
+    * https://github.com/linuxdeepin/qt5integration/pull/26.diff
