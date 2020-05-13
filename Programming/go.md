@@ -3,6 +3,12 @@ Performance
 * Don't use too many mutex lock
 * Use pointer when using append() function
 
+3 Ways to controll goroutines
+=====
+* context.Done()
+* <-channels
+* sync.WaitGroup.Wait()
+
 Class method get/set
 =====
 ```go
