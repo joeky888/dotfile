@@ -12,6 +12,13 @@ VScode integration (install rust-analyzer from source)
 * $ git clone --depth 1 https://github.com/rust-analyzer/rust-analyzer && cd rust-analyzer
 * $ cargo xtask install
 
+VScode release
+=====
+* Run
+    * $ cargo run --release
+* Build
+    * $ cargo build --release
+
 VScode debug
 =====
 ```js
