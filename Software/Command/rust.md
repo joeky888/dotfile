@@ -3,10 +3,6 @@ Setup
 * Install rust using curl
 * $ rustup update stable
 
-Upgrade
-=====
-* $ rustup update
-
 VScode integration (install rust-analyzer from source)
 =====
 * Make sure
@@ -16,3 +12,28 @@ VScode integration (install rust-analyzer from source)
 * $ git clone --depth 1 https://github.com/rust-analyzer/rust-analyzer && cd rust-analyzer
 * $ cargo xtask install
 
+VScode debug
+=====
+```js
+{
+    "type": "lldb",
+    "request": "launch",
+    "name": "Debug executable 'rust-playground'",
+    "cargo": {
+        "args": [
+            "build",
+            "--bin=rust-playground",
+            "--package=rust-playground"
+        ],
+        "filter": {
+            "name": "rust-playground",
+            "kind": "bin"
+        }
+    },
+    "env": {
+        "DATABASE_HOST": "mysql",
+    },
+    "args": [],
+    "cwd": "${workspaceFolder}"
+}
+```
