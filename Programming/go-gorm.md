@@ -1,3 +1,12 @@
+Faster time range
+=====
+```sql
+-- This is slow
+select * from transferlog_seamless where unix_timestamp(`CreateTime`) >= 1539101010 limit 1000
+-- This is way faster
+select * from transferlog_seamless where `CreateTime` > "2018-10-10 00:03:30" limit 1000
+```
+
 ### SQL and Golang numbers
 
 | MySQL           | Go              | Range                                                            |
