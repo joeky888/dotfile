@@ -95,12 +95,6 @@ Setting (search `json`)
     "[javascript]": {
         "editor.formatOnSave": true
     },
-    "terminal.integrated.env.osx": {
-      "VS_CODE": "true"
-    },
-    "terminal.integrated.env.linux": {
-      "VS_CODE": "true"
-    },
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
