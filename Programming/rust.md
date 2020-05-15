@@ -1,3 +1,8 @@
+Install new packages to current project
+=====
+* $ go get github.com/xxx/xxx
+* $ cargo install actix-cors
+
 Null and non-Null
 =====
 * Go uses `nil`
