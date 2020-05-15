@@ -45,6 +45,7 @@ Setting (search `json`)
         "completion.enable-postfix": true,
         "notifications.workspace-loaded": true,
     },
+    "rust-analyzer.inlayHints.enable": false,
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
