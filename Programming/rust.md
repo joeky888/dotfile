@@ -1,7 +1,8 @@
 Install new packages to current project
 =====
 * $ go get github.com/xxx/xxx
-* $ cargo install actix-cors
+* $ cargo install cargo-edit # Must install cargo-edit firsttt
+* $ cargo add xxx
 
 Null and non-Null
 =====
