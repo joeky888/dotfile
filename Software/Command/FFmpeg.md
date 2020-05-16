@@ -101,6 +101,13 @@ Set audio track title
 * Set second track title to "粵語"
 * $ ffmpeg -i input.mp4 -map 0 -metadata:s:a:1 title="粵語" output.mp4
 
+Set track language
+=====
+* FFmpeg use ISO 639-2 codes for languages
+* [](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)
+* ffmpeg -i input.mp4 -metadata:s:a:0 language=eng out.mkv
+* ffmpeg -i input.mp4 -metadata:s:s:0 language=eng out.mkv
+
 Extract subtitle
 =====
 * $ ffmpeg -i Movie.mkv -map 0:s:0 subs.srt
