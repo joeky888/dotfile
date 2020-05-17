@@ -1,0 +1,20 @@
+# Input named "playground"
+[sources.playground]
+  type = "docker"
+
+# Output data
+# [sinks.out]
+#   inputs   = ["playground"]
+#   type     = "console"
+#   encoding = "text"
+
+
+[sinks.elasticsearch]
+  # General
+  type = "elasticsearch" # required
+  inputs = ["playground"] # required
+  compression = "none" # optional, default
+  healthcheck = true # optional, default
+  host = "http://elasticsearch:9200" # optional, no default
+  index = "vector-%F" # optional, default
+  id_key = "id" # optional, no default

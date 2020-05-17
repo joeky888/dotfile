@@ -1,0 +1,97 @@
+version: "3"
+services:
+  # playground:
+  #   build: .
+  #   restart: always
+  #   ports:
+  #     - 8080:8080
+  #   volumes:
+  #     - .:/go/src/playground
+  #   environment:
+  #     DATABASE_HOST: mysql,
+  #     REDIS_HOST: redis,
+  #   depends_on:
+  #     - redis
+  #     - mysql
+
+  ############################
+  #                          #
+  # Redis with webui + MySQL #
+  #                          #
+  ############################
+  redis:
+    image: redis:4.0
+    restart: always
+    ports:
+      - 6379:6379
+    command: ['redis-server', '--requirepass', '123456']
+    deploy:
+      replicas: 1
+
+  redis-commander:
+    container_name: redis-commander
+    hostname: redis-commander
+    image: rediscommander/redis-commander:latest
+    restart: always
+    environment:
+    - REDIS_HOST=redis
+    - REDIS_PORT=6379
+    - REDIS_PASSWORD=123456
+    ports:
+    - "8081:8081"
+
+  mysql:
+    image: mysql:8.0
+    restart: always
+    # volumes:
+    #   - ../mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: "123456"
+      MYSQL_DATABASE: "playground"
+      TZ: "Asia/Taipei"
+    ports:
+      - 3306:3306
+    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_general_ci', '--default_authentication_plugin=mysql_native_password', '--sql_mode=']
+
+  #####################################################
+  #                                                   #
+  # Elasticsearch + Vector + Kibana + Clean up script #
+  #                                                   #
+  #####################################################
+  vector:
+    image: timberio/vector:nightly-2020-05-11-alpine
+    restart: always
+    depends_on:
+      - elasticsearch
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./dockerconfig/vector.toml:/vector.toml
+    command: ["--config", "/vector.toml"]
+
+  elasticsearch:
+    image: elasticsearch:7.6.2
+    restart: always
+    environment:
+      discovery.type: single-node
+    command: ["elasticsearch", "-Elogger.level=WARN"]
+
+  elasticsearch-cleanup:
+    image: curlimages/curl:7.70.0
+    restart: always
+    entrypoint: ["/bin/sh", "-c"]
+    environment:
+      LOG_EXPIRE_DAY: 14 # Keep 2 weeks of logs
+      WORK_MIN: 1m # Clean logs every 1 mins, 1m=1min; 1h=1hour; 1d=1day
+    # curl -XDELETE http://elasticsearch:9200/*-$(date -d "2 week ago" +%Y.%m.%d)
+    command: ["while true; do date '+%m/%d/%Y %I:%M:%S:%p'; curl -i -XDELETE http://elasticsearch:9200/\\*-`date -d@\"$$(( $$(date +%s) - 86400 * $${LOG_EXPIRE_DAY} ))\" +%Y.%m.%d`; sleep $${WORK_MIN}; done ;"]
+
+  # Setting -> Management -> Index patterns -> Create -> "vector*" -> @timestamp
+  # Setting -> Discover
+  kibana:
+    image: kibana:7.6.2
+    restart: always
+    environment:
+      ELASTICSEARCH_HOSTS: http://elasticsearch:9200
+      SERVER_HOST: 0.0.0.0
+    ports:
+      - "5601:5601"
