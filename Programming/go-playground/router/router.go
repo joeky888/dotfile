@@ -7,12 +7,14 @@ import (
 	"strings"
 	"time"
 
+	"github.com/chenjiandongx/ginprom"
 	"github.com/gin-contrib/cors"
 	"github.com/gin-contrib/gzip"
 	"github.com/gin-gonic/gin"
 	"github.com/joeky888/go-playground/cache"
 	"github.com/joeky888/go-playground/endpoint"
 	"github.com/joeky888/go-playground/util"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"go.uber.org/zap"
 )
 
@@ -24,8 +26,12 @@ func InitRouter() *gin.Engine {
 	// r.Use(gin.Logger(), gin.Recovery())
 
 	r.Use(ginzap(util.Logger, "Mon Jan 2 15:04:05 -0700 MST 2006", true))
-	r.Use(gzip.Gzip(gzip.DefaultCompression))
+	// For grafana
+	metrics := r.Group("metrics")
+	metrics.Use(ginprom.PromMiddleware(nil))
+	metrics.GET("/", ginprom.PromHandler(promhttp.Handler()))
 
+	r.Use(gzip.Gzip(gzip.DefaultCompression))
 	r.Use(cors.New(cors.Config{
 		AllowOrigins: []string{
 			"*",

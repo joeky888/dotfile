@@ -1,18 +1,18 @@
 version: "3"
 services:
-  # playground:
-  #   build: .
-  #   restart: always
-  #   ports:
-  #     - 8080:8080
-  #   volumes:
-  #     - .:/go/src/playground
-  #   environment:
-  #     DATABASE_HOST: mysql,
-  #     REDIS_HOST: redis,
-  #   depends_on:
-  #     - redis
-  #     - mysql
+  playground:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    # volumes:
+    #   - .:/go/src/playground
+    environment:
+      DATABASE_HOST: mysql
+      REDIS_HOST: redis
+    depends_on:
+      - redis
+      - mysql
 
   ############################
   #                          #
@@ -95,3 +95,24 @@ services:
       SERVER_HOST: 0.0.0.0
     ports:
       - "5601:5601"
+
+  prometheus:
+    image: prom/prometheus:v2.18.1
+    container_name: prometheus
+    ports:
+      - 9090:9090
+    volumes:
+      # - /var/data/prometheus:/prometheus
+      - ./dockerconfig/prometheus.yml:/etc/prometheus/prometheus.yml
+
+  # Login with admin/admin
+  # cogwheel -> Data Sources -> Add data source -> "Prometheus" type -> http://prometheus:9090 -> Save & Test
+  # + -> Import -> Import via panel json -> https://github.com/chenjiandongx/ginprom/blob/master/ginprom-service.json
+  # Or add a new dashboard and panels inside of the new dashboard
+  grafana:
+    image: grafana/grafana:7.0.0-beta3
+    depends_on:
+      - prometheus
+    ports:
+      - 3000:3000
+    # user: "104"
