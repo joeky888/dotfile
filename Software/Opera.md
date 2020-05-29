@@ -78,6 +78,7 @@ https://www.ithome.com/rss
 https://www.freebuf.com/feed
 https://www.infoq.cn/feed
 https://rust.cc/rss
+https://rsshub.app/toutiao/today
 
 * English
 https://feeds.feedburner.com/d0od
