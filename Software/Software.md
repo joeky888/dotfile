@@ -202,6 +202,7 @@ Windows XP
 
 Mac (Hack-intosh)
 =====
+* https://github.com/sickcodes/Docker-OSX
 * Alacritty
 * Hyper
 * iTerm2 and iTerm2-Color-Schemes
