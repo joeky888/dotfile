@@ -21,6 +21,10 @@ Init
 * $ npm run ios
 * Press capital `R` in terminal to restart and clear cache
 
+Upgrade expo and react-native
+=====
+* $ cd project && expo upgrade
+
 Build Android apk
 =====
 * Method 1: Offline
