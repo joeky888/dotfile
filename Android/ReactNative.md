@@ -63,20 +63,14 @@ Push app to the store (TODO)
 
 Debug in vscode (using attach mode)
 =====
-* $ expo start
-* Open expo app and scan qr code to enter app
-* Attach started app using vscode debugger, make sure chrome debug ui is disabled for now when shaking the phone
 ```js
 {
-        "name": "Attach to packager",
-        "cwd": "${workspaceRoot}",
-        "type": "reactnative",
-        "request": "attach",
-        "sourceMaps": true,
-        "address": "localhost",
-        "port": "19001",
-        "trace": "verbose",
-},
+            "name": "Debug in Exponent",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "launch",
+            "platform": "exponent"
+        }
 ```
 * Shake phone -> Select "Debug JS Remotely"
 
