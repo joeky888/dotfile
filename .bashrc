@@ -317,6 +317,7 @@ alias ptt-telnet-23='telnet ptt.cc 23'
 alias ptt-wss='ws -o https://term.ptt.cc wss://ws.ptt.cc/bbs' # go get -u -v github.com/hashrocket/ws
 alias chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
 alias google-chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
+[ $(command -v google-chrome-stable) ] && export CHROME_BIN="google-chrome-stable"
 alias opera-ignoreCrt='opera --ignore-certificate-errors'
 alias opera-developer-ignoreCrt='opera-developer --ignore-certificate-errors'
 alias 7zExtractToFolder='7z -o* x'
