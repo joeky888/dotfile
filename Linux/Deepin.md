@@ -109,6 +109,7 @@ Install Rime Pinyin IME (Manjaro)
 * $ vim ~/.config/fcitx/rime/default.custom.yaml
 ```yaml
 patch:
+  "translator/dictionary": zhwiki
   schema_list:
     - schema: luna_pinyin_tw       # 朙月拼音 臺灣正體模式
     - schema: luna_pinyin          # 朙月拼音
@@ -133,13 +134,29 @@ patch:
 #     - schema: ipa_xsampa    # X-SAMPA 國際音標
 #     - schema: emoji         # emoji表情
 ```
-* $ git clone --depth 1 https://github.com/rime-aca/dictionaries ~/.dict
-* $ `ln -sf ~/.dict/luna_pinyin.dict/*.dict.yaml ~/.config/fcitx/rime/`
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.cn_en.dict.yaml -P ~/.config/fcitx/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.extended.dict.yaml -P ~/.config/fcitx/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.hanyu.dict.yaml -P ~/.config/fcitx/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.poetry.dict.yaml -P ~/.config/fcitx/rime/
+* $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200601.dict.yaml -O ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
+* $ opencc -i ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml -c s2twp.json -o ~/.config/fcitx/rime/zhwiki.dict.yaml
+* $ vim ~/.config/fcitx/rime/zhwiki.dict.yaml # Add import table
+```yaml
+name: zhwiki
+version: "0.1"
+sort: by_weight
+import_tables:
+  - luna_pinyin
+  - luna_pinyin.hanyu
+  - luna_pinyin.poetry
+  - luna_pinyin.cn_en
+```
+* $ rm ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
 * $ `vim ~/.config/fcitx/rime/luna_pinyin_tw.custom.yaml`
 ```yaml
 patch:
   # 載入朙月拼音擴充詞庫
-  "translator/dictionary": luna_pinyin.extended
+  "translator/dictionary": zhwiki
 ```
 * Right click fcitx tray icon -> Scheme list -> 明月拼音(臺灣正體)
 * Right click fcitx tray icon -> Restart
