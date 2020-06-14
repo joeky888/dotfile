@@ -412,6 +412,7 @@ Dev Tools
         * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
     * libui, native UI and small bianry size, for C/C++ and Go
     * GuiLite - The smallest GUI library for all platform - 5k lines code
+    * LVGL - 16K RAM GUI library for embedded Linux, ESP32
     * Executable size as small as possible, for personal use :
         * github.com/zserge/webview - C/C++/Go backend, html fronend
         * github.com/zserge/lorca - Pure Go backend, html fronend
