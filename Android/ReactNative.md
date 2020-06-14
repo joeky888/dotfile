@@ -73,6 +73,7 @@ Debug in vscode (using attach mode)
         }
 ```
 * Shake phone -> Select "Debug JS Remotely"
+* Stop -> Stop debugger in vscode -> $ killall ngrok node
 
 Html vs React Native
 =====
