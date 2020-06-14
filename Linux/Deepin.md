@@ -109,7 +109,6 @@ Install Rime Pinyin IME (Manjaro)
 * $ vim ~/.config/fcitx/rime/default.custom.yaml
 ```yaml
 patch:
-  "translator/dictionary": zhwiki
   schema_list:
     - schema: luna_pinyin_tw       # 朙月拼音 臺灣正體模式
     - schema: luna_pinyin          # 朙月拼音
@@ -140,23 +139,27 @@ patch:
 * $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.poetry.dict.yaml -P ~/.config/fcitx/rime/
 * $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200601.dict.yaml -O ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
 * $ opencc -i ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml -c s2twp.json -o ~/.config/fcitx/rime/zhwiki.dict.yaml
-* $ vim ~/.config/fcitx/rime/zhwiki.dict.yaml # Add import table
+* $ vim ~/.config/fcitx/rime/luna_pinyin.extended.dict.yaml # Add import table
 ```yaml
-name: zhwiki
-version: "0.1"
+name: luna_pinyin.extended
+version: "2015.12.02"
 sort: by_weight
+use_preset_vocabulary: true
+#此處爲明月拼音擴充詞庫（基本）默認鏈接載入的詞庫，有朙月拼音官方詞庫、明月拼音擴充詞庫（漢語大詞典）、明月拼音擴充詞庫（詩詞）、明月拼音擴充詞庫（含西文的詞彙）。如果不需要加載某个詞庫請將其用「#」註釋掉。
+#雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
 import_tables:
   - luna_pinyin
   - luna_pinyin.hanyu
   - luna_pinyin.poetry
   - luna_pinyin.cn_en
+  - zhwiki # <- Add this
 ```
 * $ rm ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
 * $ `vim ~/.config/fcitx/rime/luna_pinyin_tw.custom.yaml`
 ```yaml
 patch:
   # 載入朙月拼音擴充詞庫
-  "translator/dictionary": zhwiki
+  "translator/dictionary": luna_pinyin.extended
 ```
 * Right click fcitx tray icon -> Scheme list -> 明月拼音(臺灣正體)
 * Right click fcitx tray icon -> Restart
