@@ -14,7 +14,7 @@ Useful params
 * List all CPUs
 * $ qemu-system-aarch64 -machine help
 * SSH port from host 2222
-* $ PORT=2222 qemu -net nic -net user,hostfwd=tcp::${PORT}-:22
+* $ PORT=22222 qemu -net nic -net user,hostfwd=tcp::${PORT}-:22,hostfwd=tcp::22280-:80
 
 Enable KVM
 =====
@@ -76,7 +76,8 @@ qemu-img create -f qcow2 windows.img 100G
 
 qemu-system-x86_64 \
     -enable-kvm -cpu host \
-    -m 2G -netdev user,id=n0 -device rtl8139,netdev=n0 \
+    -m 2G \
+    -net nic,model=rtl8139 \
     -soundhw hda \
     --bios /usr/share/ovmf/x64/OVMF_CODE.fd \
     -device vfio-pci,host=01:00.0 `#Add pci id here` \
