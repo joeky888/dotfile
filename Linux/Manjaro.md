@@ -124,7 +124,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 Install fbterm (recommand)
 =====
 * $ app-fast -S gpm libx86
-* $ sudo systemctl enable gpm && sudo systemctl restart gpm
+* $ sudo systemctl enable --now gpm
 * $ yay -S fbterm-git
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -aG video $(whoami)
