@@ -125,7 +125,8 @@ Install fbterm (recommand)
 =====
 * $ app-fast -S gpm libx86
 * $ sudo systemctl enable --now gpm
-* $ yay -S fbterm-git
+* $ git clone --depth 1 https://github.com/ccapitalK/fbterm && cd fbterm
+* $ configure && make && sudo make install
 * $ sudo chmod u-s $(which fbterm)
 * $ sudo usermod -aG video $(whoami)
 
