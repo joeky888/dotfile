@@ -20,8 +20,8 @@ qemu-system-x86_64 \
     -net user,hostname=windowsvm \
     -soundhw hda \
     -hda windows.img \
-    -redir tcp:${VM_SSH_PORT}::22 \
-    -redir tcp:${VM_EXTRA_PORT}::${VM_EXTRA_PORT}
+    -net user,hostfwd=tcp::${VM_SSH_PORT}-:22 \
+    -net user,hostfwd=tcp::${VM_EXTRA_PORT}-:${VM_EXTRA_PORT}
 ```
 
 Install with kvm

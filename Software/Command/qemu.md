@@ -14,7 +14,7 @@ Useful params
 * List all CPUs
 * $ qemu-system-aarch64 -machine help
 * SSH port from host 2222
-* $ qemu -redir tcp:2222::22
+* $ PORT=2222 qemu -net nic -net user,hostfwd=tcp::${PORT}-:22
 
 Enable KVM
 =====
