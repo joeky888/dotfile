@@ -170,6 +170,7 @@ patch:
 ```
 * Right click fcitx tray icon -> Scheme list -> 明月拼音(臺灣正體)
 * Right click fcitx tray icon -> Restart
+* $ cp /usr/share/applications/fcitx5.desktop ~/.config/autostart/
 
 Install Zhuyin IM
 =====
