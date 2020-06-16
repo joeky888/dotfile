@@ -103,7 +103,7 @@ Disable Gnome keyring when opening the browser
 
 Install Rime Pinyin IME (Manjaro)
 =====
-* $ app-fast -S fcitx fcitx-rime fcitx-im fcitx-configtool fcitx-configtool
+* $ app-fast -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime
 * Goto fcitx settings, add Rime, remove all other IMEs
 * $ mkdir -p ~/.config/fcitx/rime/
 * $ vim ~/.config/fcitx/rime/default.custom.yaml
