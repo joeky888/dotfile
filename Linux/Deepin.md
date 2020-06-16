@@ -168,7 +168,10 @@ patch:
   # 載入朙月拼音擴充詞庫
   "translator/dictionary": luna_pinyin.extended
 ```
-* Right click fcitx tray icon -> Scheme list -> 明月拼音(臺灣正體)
+* $ git clone --depth 1 https://github.com/hosxy/fcitx5-dark-transparent.git ~/.local/share/fcitx5/themes/fcitx5-dark-transparent
+* Right click fcitx tray icon -> Configure -> Addons -> Classic User Interface ->
+    * Font -> Noto Sans CJK -> Size 14
+    * Theme -> fcitx5-dark-transparent
 * Right click fcitx tray icon -> Restart
 * $ cp /usr/share/applications/fcitx5.desktop ~/.config/autostart/
 
