@@ -82,7 +82,7 @@ Packages
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
-  * $ app-fast -S gvim code krita fcitx-gtk2 fcitx-gtk3 fcitx-qt5 fcitx-configtool wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
+  * $ app-fast -S gvim code krita fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
 * $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
 * Dowload the LibreOffice.appimage
@@ -103,10 +103,17 @@ Disable Gnome keyring when opening the browser
 
 Install Rime Pinyin IME (Manjaro)
 =====
-* $ app-fast -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime
+* $ app-fast -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5
+* $ `vim ~/.pam_environment`
+```sh
+GTK_IM_MODULE=fcitx
+QT_IM_MODULE=fcitx
+XMODIFIERS=@im=fcitx
+```
+* $ fcitx5
 * Goto fcitx settings, add Rime, remove all other IMEs
-* $ mkdir -p ~/.config/fcitx/rime/
-* $ vim ~/.config/fcitx/rime/default.custom.yaml
+* $ mkdir -p ~/.local/share/fcitx5/rime/
+* $ vim ~/.local/share/fcitx5/rime/default.custom.yaml
 ```yaml
 patch:
   schema_list:
@@ -133,13 +140,13 @@ patch:
 #     - schema: ipa_xsampa    # X-SAMPA 國際音標
 #     - schema: emoji         # emoji表情
 ```
-* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.cn_en.dict.yaml -P ~/.config/fcitx/rime/
-* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.extended.dict.yaml -P ~/.config/fcitx/rime/
-* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.hanyu.dict.yaml -P ~/.config/fcitx/rime/
-* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.poetry.dict.yaml -P ~/.config/fcitx/rime/
-* $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200601.dict.yaml -O ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
-* $ opencc -i ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml -c s2twp.json -o ~/.config/fcitx/rime/zhwiki.dict.yaml
-* $ vim ~/.config/fcitx/rime/luna_pinyin.extended.dict.yaml # Add import table
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.cn_en.dict.yaml -P ~/.local/share/fcitx5/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.extended.dict.yaml -P ~/.local/share/fcitx5/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.hanyu.dict.yaml -P ~/.local/share/fcitx5/rime/
+* $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.poetry.dict.yaml -P ~/.local/share/fcitx5/rime/
+* $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200601.dict.yaml -O ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
+* $ opencc -i ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml -c s2twp.json -o ~/.local/share/fcitx5/rime/zhwiki.dict.yaml
+* $ vim ~/.local/share/fcitx5/rime/luna_pinyin.extended.dict.yaml # Add import table
 ```yaml
 name: luna_pinyin.extended
 version: "2015.12.02"
@@ -154,8 +161,8 @@ import_tables:
   - luna_pinyin.cn_en
   - zhwiki # <- Add this
 ```
-* $ rm ~/.config/fcitx/rime/zhwiki-tmp.dict.yaml
-* $ `vim ~/.config/fcitx/rime/luna_pinyin_tw.custom.yaml`
+* $ rm ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
+* $ `vim ~/.local/share/fcitx5/rime/luna_pinyin_tw.custom.yaml`
 ```yaml
 patch:
   # 載入朙月拼音擴充詞庫
