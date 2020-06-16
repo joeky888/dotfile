@@ -35,6 +35,7 @@ Container
         * Need to access/control other pods
         * Very like the `volumes: /var/run/docker.sock:/var/run/docker.sock` in docker-compose.yml
 * grpc vs restful - grpc is a persistent tcp connection (長連接) and is better for communications in microservice
+* Distributed Redis lock should add timeout to prevent crashing
 * mq broadcasting
     * Multicast 多播
     * Loadbalance 單播
