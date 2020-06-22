@@ -77,8 +77,17 @@ Packages
   * $ app-fast install sogoupinyin adb fastboot krita opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux qpdfview evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
   * $ app-fast install tlp -y # For laptop, in case deepin is unable to reboot
   * $ sudo apt purge tlp -y && app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
-* Manjaro
-  * $ sudo pacman -Rsuc vim laptop-mode-tools
+* Manjaro xfce to deepin
+  * $ sudo pacman -Rsuc vim laptop-mode-tools xfce4 xfce4-goodies blueman
+  * $ app-fast -Syyu # Must upgrade packages before installing deepin
+  * $ app-fast -S deepin lightdm && sudo systemctl enable lightdm.service && sudoedit /etc/lightdm/lightdm.conf
+```dosini
+[Seat:*]
+greeter-session=lightdm-deepin-greeter
+autologin-user=joeky
+user-session=deepin
+```
+  * $ sudo reboot
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable tlp && sudo systemctl restart tlp
   * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
