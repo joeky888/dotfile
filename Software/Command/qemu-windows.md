@@ -6,6 +6,7 @@ qemu-img create -f qcow2 windows.img 30G
 
 qemu-system-x86_64 \
     -m 2G \
+    -net user \
     -net nic,model=rtl8139 \
     -soundhw hda \
     -hda windows.img \
@@ -32,6 +33,7 @@ qemu-img create -f qcow2 windows.img 30G
 qemu-system-x86_64 \
     -enable-kvm -cpu host \
     -m 2G \
+    -net user \
     -net nic,model=rtl8139 \
     -soundhw hda \
     -hda windows.img \
