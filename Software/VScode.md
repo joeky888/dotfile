@@ -14,6 +14,7 @@ Setting (search `json`)
     "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
+    "explorer.compactFolders": false,
     "powermode.enabled": true,
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai",
