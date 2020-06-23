@@ -19,7 +19,7 @@ Install softwares
     * WoeUSB
     * Skype
     * Krita
-    * VScode
+    * Codium by Snapcrafters (vscode)
     * Slack
     * Opera
     * Opera-beta

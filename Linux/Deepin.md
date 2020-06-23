@@ -88,6 +88,12 @@ greeter-session=lightdm-deepin-greeter
 autologin-user=joeky
 user-session=deepin
 ```
+  * $ echo $QT_QPA_PLATFORMTHEME # Should output "deepin"
+      * If it doesn't output "deepin"
+      * Remove the env setting from
+      * /etc/environment
+      * ~/.profile
+      * ~/.xinitrc
   * $ sudo reboot
   * $ app-fast -S libdbusmenu-glib gconf # Reinstall these packages to make snapd work
   * $ app-fast -S tlp # Or laptop-mode-tools
