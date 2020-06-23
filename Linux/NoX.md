@@ -180,6 +180,9 @@ wpa-psk <your_wpa_key>
 
 Add dns server
 =====
+* $ nmcli connection show
+* $ nmcli connection mod <CONNECTION-NAME> ipv4.dns "8.8.8.8 8.8.4.4"
+* Or
 * $ sudoedit /etc/resolvconf.conf && sudo resolvconf -u
 ```resolv
 name_servers="180.76.76.76 114.114.114.114 8.8.4.4 8.8.8.8"
