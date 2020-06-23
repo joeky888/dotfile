@@ -3,6 +3,7 @@ After installed
 * Setting -> Personlization -> Dark theme
 * Setting -> Power Management -> Disable computer auto sleeping
 * Setting -> Power Management -> Disable suspend on lid closed
+* Setting -> Touchpad -> Natural scrolling -> Check
 * Setting -> Account -> auto login
 * Setting -> Time and Date -> Auto-Sync
 * Setting -> Update -> Update Settings -> Auto-download Updates -> Uncheck
@@ -89,12 +90,10 @@ user-session=deepin
 ```
   * $ sudo reboot
   * $ app-fast -S tlp # Or laptop-mode-tools
-  * $ sudo systemctl enable tlp && sudo systemctl restart tlp
-  * $ sudo systemctl enable tlp-sleep && sudo systemctl restart tlp-sleep
+  * $ sudo systemctl enable --now tlp
+  * $ sudo systemctl enable --now tlp-sleep
   * $ app-fast -S gvim code krita fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
-* $ mkdir -p ~/.config/SogouPY/phrase/ && cat $HOME/dotfile/Software/sogou.ini > ~/.config/SogouPY/phrase/PhraseEdit.txt
-* Dowload the LibreOffice.appimage
 * $ sudoedit /etc/systemd/system/earlyoom.service # Or
 * $ sudoedit /usr/lib/systemd/system/earlyoom.service
 ```conf
