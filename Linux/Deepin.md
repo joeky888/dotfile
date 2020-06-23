@@ -89,6 +89,7 @@ autologin-user=joeky
 user-session=deepin
 ```
   * $ sudo reboot
+  * $ app-fast -S libdbusmenu-glib gconf # Reinstall these packages to make snapd work
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable --now tlp
   * $ sudo systemctl enable --now tlp-sleep
