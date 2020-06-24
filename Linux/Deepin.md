@@ -81,7 +81,7 @@ Packages
 * Manjaro xfce to deepin
   * $ sudo pacman -Rsuc vim laptop-mode-tools xfce4 xfce4-goodies blueman
   * $ app-fast -Syyu # Must upgrade packages before installing deepin
-  * $ app-fast -S deepin lightdm && sudo systemctl enable lightdm.service && sudoedit /etc/lightdm/lightdm.conf
+  * $ app-fast -S deepin deepin-screenshot lightdm && sudo systemctl enable lightdm.service && sudoedit /etc/lightdm/lightdm.conf
 ```dosini
 [Seat:*]
 greeter-session=lightdm-deepin-greeter
