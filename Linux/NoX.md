@@ -139,6 +139,7 @@ NetworkManager without X
 =====
 * $ nmtui # Or
 * $ nmcli device show | grep CONNECTION # Get device name
+* $ nmcli dev wifi list # List all wifi ssid available
 * $ sudoedit "/etc/NetworkManager/system-connections/${DeviceName}" # TODO
 * $ sudo systemctl restart NetworkManager
 
