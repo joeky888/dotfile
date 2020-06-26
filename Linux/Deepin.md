@@ -99,6 +99,7 @@ user-session=deepin
   * $ app-fast -S tlp # Or laptop-mode-tools
   * $ sudo systemctl enable --now tlp
   * $ sudo systemctl enable --now tlp-sleep
+  * $ kwin_x11 --replace # Switch to deepin window manager
   * $ app-fast -S gvim code krita fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools firefox-developer-edition chromium brave-beta pepper-flash nomacs qpdfview file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
 * $ sudoedit /etc/systemd/system/earlyoom.service # Or
