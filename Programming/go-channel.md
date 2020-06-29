@@ -1,4 +1,4 @@
-Unbuffered channel
+Unbuffered channel (Sync)
 =====
 ```go
 func main() {
@@ -24,7 +24,7 @@ func main() {
 // Print GO GO GO
 ```
 
-Buffered channel
+Buffered channel (Async)
 =====
 ```go
 func main() {
