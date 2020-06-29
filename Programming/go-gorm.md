@@ -58,7 +58,44 @@ func main() {
 }
 ```
 
-Preloading with foreign key
+Preloading with foreign key and OrderItemID stored on Order table
+=====
+```go
+type Order struct {
+	OrderID    uint
+	ItemID     uint
+	OrderItems []*OrderItem `gorm:"foreignkey:OrderItemID; association_foreignkey:ItemID"`
+}
+
+type OrderItem struct {
+	OrderItemID uint
+}
+
+func main() {
+	db, err := gorm.Open("sqlite3", "test.db")
+	if err != nil {
+		panic(err)
+	}
+	defer db.Close()
+	db.LogMode(true)
+
+	db.AutoMigrate(
+		&Order{},
+		&OrderItem{},
+	)
+
+	db.Create(&Order{OrderID: 1, ItemID: 1})
+	db.Create(&Order{OrderID: 2, ItemID: 2})
+	db.Create(&OrderItem{OrderItemID: 1})
+	db.Create(&OrderItem{OrderItemID: 2})
+
+	var order Order
+	db.Preload("OrderItems").Where("order_id = 1").First(&order)
+	fmt.Printf("%+v", order)
+}
+```
+
+Preloading with foreign key and OrderID stored on OrderItem table
 =====
 ```go
 type Order struct {
