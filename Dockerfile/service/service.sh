@@ -3,6 +3,9 @@
 # Mysql 8 newcatuser with password newcatpwd
 docker run --name mysql -p 3306:3306 --restart always -e MYSQL_USER=newcatuser -e MYSQL_PASSWORD=newcatpwd -e MYSQL_ROOT_PASSWORD=123456 -d mysql:8.0
 
+# Mysql 5.7 newcatuser with password newcatpwd
+docker run --name mysql -p 3306:3306 --restart always -e MYSQL_USER=newcatuser -e MYSQL_PASSWORD=newcatpwd -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8mb4
+
 # Mysql 5.7 root with password 123456
 # docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
 docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8
