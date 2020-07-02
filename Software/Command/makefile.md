@@ -39,7 +39,7 @@ pkg-config --cflags --libs gstreamer-1.0 gstreamer-app-1.0
 
 ldd
 ====
-* Get all dependencies of a executable
+* Get all dependencies of an executable
 ```sh
 ldd /bin/ffmpeg
 ```

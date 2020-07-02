@@ -1,6 +1,6 @@
-Warrning, wxWidgets is FAT than I thought. So there is no way I'll use it anymore.
+Warrning, wxWidgets is way bloated than I thought. So there is no way I'll use it again.
 
-Also, it is way much hard to use compare to Qt.
+It is also way much harder to use compare to Qt.
 
 The following tutorial is a failure, I can not compile it successfully.
 
