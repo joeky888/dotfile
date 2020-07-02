@@ -5,7 +5,7 @@ Build a program which get better support for gdb
 Start gdb
 =====
 * $ gdb -tui a.exe
-* Set break point on line 10 and display value
+* Set a break point on line 10 and display its value
 * (gdb) run
 * (gdb) break 10
 * (gdb) display VARIABLENAME
