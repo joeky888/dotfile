@@ -17,6 +17,13 @@
 Preloading with gorm.Model
 =====
 ```go
+package main
+
+import (
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+)
+
 type Order struct {
 	gorm.Model
 	OrderItems []OrderItem
@@ -52,6 +59,13 @@ func main() {
 Preloading with foreign key and OrderItemID stored on Order table
 =====
 ```go
+package main
+
+import (
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+)
+
 type Order struct {
 	OrderID    uint
 	ItemID     uint
@@ -89,6 +103,13 @@ func main() {
 Preloading with foreign key and OrderID stored on OrderItem table
 =====
 ```go
+package main
+
+import (
+	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/sqlite"
+)
+
 type Order struct {
 	OrderID    uint
 	OrderItems []OrderItem `gorm:"foreignkey:OrderIDOfOrderItem; association_foreignkey:OrderID"`
