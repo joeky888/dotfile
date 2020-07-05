@@ -275,6 +275,7 @@ Android
 * SystemPanel 2
 * tw.gov.invoice
 * tw.gov.tra.twtraffic
+* Easy Wallet
 * Matlog - Material Logcat reader
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
     * Use android phone as a bluetooth mouse/keyboard
