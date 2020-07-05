@@ -1,8 +1,16 @@
+Wireshark without sudo
+=====
+* $ sudo groupadd wireshark
+* $ sudo usermod -aG wireshark $(whoami)
+* $ sudo reboot
+* $ wireshark
+
 Setting
 =====
+* Select network interface
+    * Capture -> Options -> (select the interface) -> Start
 * View -> Time Display Format -> Date and Time of Day
 * View -> Name Resolution -> Check all three options
-
 
 Filter
 =====
