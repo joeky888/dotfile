@@ -12,6 +12,10 @@ Setting
 * View -> Time Display Format -> Date and Time of Day
 * View -> Name Resolution -> Check all three options
 
+Capture localhost -> localhost on Linux
+=====
+* Use the Loopback network interface "lo"
+
 Filter
 =====
 ```sh
