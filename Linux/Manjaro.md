@@ -108,10 +108,13 @@ Mhwd
 * $ sudo mv /etc/X11/xorg.conf /etc/X11/xorg.conf.back
 * $ sudo touch /etc/X11/xorg.conf
 
-Mhwd Nvidia on laptop
+Mhwd Nvidia on laptop (bumblebee)
 =====
 * From `https://gist.github.com/mauri870/5a54e415140875b9150ca31c491811f6`
-* $ sudo mhwd -a pci nonfree 0300 # Or sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
+* bumblebee
+  * $ sudo mhwd -a pci nonfree 0300 # Or sudo mhwd -i pci video-hybrid-intel-nvidia-bumblebee
+* prime
+  * $ sudo mhwd -a pci nonfree 0300 # Or sudo mhwd -i pci video-hybrid-intel-nvidia-prime
 * $ sudoedit /etc/default/grub
 ```conf
 GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
@@ -119,7 +122,10 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 * $ sudo update-grub
 * $ sudo gpasswd -a $(whoami) bumblebee
 * $ sudo reboot
-* $ optirun blender && optirun google-chrome-stable
+* bumblebee
+  * $ optirun blender && optirun google-chrome-stable
+* prime
+   $ prime-run blender && prime-run google-chrome-stable
 
 Install fbterm (recommand)
 =====
