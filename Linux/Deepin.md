@@ -160,8 +160,8 @@ patch:
 * $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.extended.dict.yaml -P ~/.local/share/fcitx5/rime/
 * $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.hanyu.dict.yaml -P ~/.local/share/fcitx5/rime/
 * $ wget https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna_pinyin.poetry.dict.yaml -P ~/.local/share/fcitx5/rime/
-* $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200601.dict.yaml -O ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
-* $ opencc -i ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml -c s2twp.json -o ~/.local/share/fcitx5/rime/zhwiki.dict.yaml
+* $ wget https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.1/zhwiki-20200620.dict.yaml -O ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
+* $ opencc -i ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml -c s2t.json -o ~/.local/share/fcitx5/rime/zhwiki.dict.yaml
 * $ vim ~/.local/share/fcitx5/rime/luna_pinyin.extended.dict.yaml # Add import table
 ```yaml
 name: luna_pinyin.extended
