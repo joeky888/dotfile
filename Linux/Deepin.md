@@ -192,6 +192,8 @@ patch:
     * Theme -> fcitx5-dark-transparent
 * Right click fcitx tray icon -> Restart
 * $ cp /usr/share/applications/fcitx5.desktop ~/.config/autostart/
+* $ sudo reboot
+* $ duolaameng # 哆啦A夢
 
 Install Zhuyin IM
 =====
