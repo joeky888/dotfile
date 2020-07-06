@@ -97,6 +97,7 @@ Setting (search `json`)
     "[javascript]": {
         "editor.formatOnSave": true
     },
+    "csharp.referencesCodeLens.enabled": false,
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
