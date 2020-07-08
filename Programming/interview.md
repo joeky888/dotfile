@@ -1,5 +1,6 @@
-3 ways to control a Goroutine
+4 ways to control a Goroutine
 =====
+* Mutex lock
 * Channel and Select
     * buffered channel and unbuffered channed (Async and Sync)
 * Waitgroup
