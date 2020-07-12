@@ -15,6 +15,10 @@
 | DOUBLE            | float64         | (-1.7976931348623157E+308~1.7976931348623157E+308)               |
 | DECIMAL(6,2)      | decimal.Decimal | 6 total number of digits, 4 before and 2 after the decimal point |
 
+Bulk insert and upsert(update or insert)
+=====
+* [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
+
 Preloading with gorm.Model
 =====
 ```go
