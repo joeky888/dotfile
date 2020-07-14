@@ -325,6 +325,7 @@ iOS
 * Brave (Open source browser with ad blocker)
 * iSH - https://github.com/tbodt/ish
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
+* Blokada - Ad block
 
 Gaming
 =====
