@@ -39,7 +39,7 @@ export TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 
-if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
+if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   if [ $(command -v zsh) ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
