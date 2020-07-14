@@ -206,6 +206,30 @@ Nvidia driver
 * Don't use bumblebee
 * $ deepin-graphics-driver-manager
 
+VPN connection
+=====
+* $ yay -S libreswan networkmanager-l2tp
+* $ sudo systemctl restart NetworkManager
+* Add a vpn connection in networkmanager
+  * Type: L2TP
+  * Gateway: VPN server addr
+  * Username: myusername
+  * Password: mypassword
+  * Enable IPsec -> Set "mykey" to Pre-Shared Key (PSK)
+* $ cd /etc/NetworkManager
+* $ sudo -s
+* $ vim ./system-connections/VPNxxxx.nmconnection
+```conf
+# Remove these lines
+#ipsec-esp=
+#ipsec-gateway-id=
+#ipsec-group-name=
+#ipsec-ike=
+```
+* $ sudo systemctl restart NetworkManager
+* $ nmtui
+  * Active a connection -> VPN
+
 Install Line
 =====
 * Install Line Chrome App, don't use wine to do this
