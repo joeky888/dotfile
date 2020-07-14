@@ -38,6 +38,7 @@ Setting (search `json`)
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
+    "rust-client.engine": "rust-analyzer",
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.featureFlags": {
@@ -127,7 +128,10 @@ Setting (search `json`)
 
 Extension
 =====
-* matklad.rust-analyzer
+* Rust
+    * vadimcn.vscode-lldb
+    * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
+    * or matklad.rust-analyzer
 * ms-vscode.go
 * eslint
 * Markdown All in One (opt+shift+f to format tables)
@@ -136,7 +140,6 @@ Extension
 * Shellcheck
 * Versionlens - Check update for package.json
 * humao.rest-client - Postman-like http client, support curl
-* vadimcn.vscode-lldb
 * ms-azuretools.vscode-docker
 * be5invis.toml
 * hediet.vscode-drawio
