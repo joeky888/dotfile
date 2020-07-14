@@ -17,7 +17,7 @@
 
 Bulk insert and upsert(update or insert)
 =====
-* [](https://github.com/t-tiger/gorm-bulk-insert)
+* [](https://github.com/t-tiger/gorm-bulk-insert) or [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
 ```go
 db := db.Model(&MyType{}).
 		Set(
