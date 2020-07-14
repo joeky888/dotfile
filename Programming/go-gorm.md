@@ -17,7 +17,15 @@
 
 Bulk insert and upsert(update or insert)
 =====
-* [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
+* [](https://github.com/t-tiger/gorm-bulk-insert)
+```go
+db := db.Model(&MyType{}).
+		Set(
+			"gorm:insert_option",
+			"ON DUPLICATE KEY UPDATE field1 = VALUES(field1)",
+		)
+gormbulk.BulkInsert(db, sliceValue, 3000)
+```
 
 Preloading with gorm.Model
 =====
