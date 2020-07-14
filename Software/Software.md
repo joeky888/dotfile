@@ -287,6 +287,7 @@ Android
     * Barcode Scanner ZXing
     * Newpipe
     * YalpStore
+    * Blokada - AD block
     * Open Camera
     * EtchDroid
     * LibreTorrent
