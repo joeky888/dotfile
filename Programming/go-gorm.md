@@ -27,6 +27,19 @@ db := db.Model(&MyType{}).
 gormbulk.BulkInsert(db, sliceValue, 3000)
 ```
 
+Soft delete and hard delete
+=====
+```go
+type Order struct {
+	gorm.Model
+}
+
+// Soft delete
+db.Delete(&order)
+// Hard delete
+db.Unscoped().Delete(&order)
+```
+
 Preloading with gorm.Model
 =====
 ```go
