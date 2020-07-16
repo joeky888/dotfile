@@ -1,6 +1,9 @@
 Setup with dotnet and vscode
 =====
-* $ app-fast -S dotnet-sdk mono mono-tools
+* Linux
+    * $ app-fast -S dotnet-sdk mono mono-tools
+* Windows
+    * $ choco install dotnetcore-sdk -y
 * Install unityhub then install unity (Login with joeky5888@gmail.com)
 * Install vscode not vscodium # Because vscodium doesn't compatible with these extensions
     * Install extension "@id:Unity.unity-debug"
