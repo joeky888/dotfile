@@ -43,3 +43,8 @@
 	path = bashtop
 	url = https://github.com/aristocratos/bashtop.git
 	shallow = true
+[submodule "diff-highlight"]
+	path = diff-highlight
+	url = https://github.com/joeky888/diff-highlight.git
+	branch = master
+	shallow = true
