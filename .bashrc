@@ -130,13 +130,15 @@ POWERLEVEL10K_PATH=$(getModulePath powerlevel10k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
 APP_FAST_PATH=$(getModulePath app-fast)
+DIFF_HIGHLIGHT_PATH=$(getModulePath diff-highlight)
 OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 
-[ -n "$GRC_PATH" ]       && export PATH=$GRC_PATH:$PATH
-[ -n "$NEOFETCH_PATH" ]  && export PATH=$NEOFETCH_PATH:$PATH
-[ -n "$BASHTOP_PATH" ]   && export PATH=$BASHTOP_PATH:$PATH
-[ -n "$INXI_PATH" ]      && export PATH=$INXI_PATH:$PATH
-[ -n "$APP_FAST_PATH" ]  && export PATH=$APP_FAST_PATH:$PATH
+[ -n "$GRC_PATH" ]            && export PATH=$GRC_PATH:$PATH
+[ -n "$NEOFETCH_PATH" ]       && export PATH=$NEOFETCH_PATH:$PATH
+[ -n "$BASHTOP_PATH" ]        && export PATH=$BASHTOP_PATH:$PATH
+[ -n "$INXI_PATH" ]           && export PATH=$INXI_PATH:$PATH
+[ -n "$APP_FAST_PATH" ]       && export PATH=$APP_FAST_PATH:$PATH
+[ -n "$DIFF_HIGHLIGHT_PATH" ] && export PATH=$DIFF_HIGHLIGHT_PATH:$PATH
 
 if [[ -d "$HOME/node" ]]; then
   export PATH=$HOME/node/bin:$PATH
@@ -171,7 +173,6 @@ fi
 fi
 
 [ $(command -v go) ] && alias upgradeGo='GO111MODULE="" go get -insecure -v -u all; go clean -cache'
-[ -d "$HOME/.tiup" ] && export PATH=/home/joeky/.tiup/bin:$PATH
 
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=$HOME/zulu/bin:$PATH
@@ -184,10 +185,6 @@ fi
 
 if [[ -d "$HOME/flutter" ]]; then
   export PATH="$PATH:$HOME/flutter/bin"
-fi
-
-if [[ -d "/usr/share/git/diff-highlight/" ]]; then
-  export PATH=/usr/share/git/diff-highlight:$PATH
 fi
 
 if [[ -d "$HOME/.local/bin" ]]; then
