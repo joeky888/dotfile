@@ -73,6 +73,7 @@ CLI
     * hashcat - fatest password cracking tool
     * ttyd - SSH alternative via browser Webshell inspired by gotty
     * axel - lightweight aria2 alternative
+    * rtty - SSH alternative via browser https://github.com/zhaojh329/rtty
 * Rust
     * ffsend - send.firefox.com cli client
     * swc - super-fast javascript to javascript compiler written in rust
@@ -434,7 +435,7 @@ Dev Tools
 * CLI
     * Micropython, pure python lib
     * Go, pure Go lib
-    * C and C++, could be built by gcc, mingw and Clang
+    * C and C++, https://github.com/idealvin/co libco, golang-style lib
 * Linux CLI/Driver
     * Fbterm, modify the source of the Fbterm
 * FreeBSD CLI/Driver
