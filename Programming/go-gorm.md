@@ -56,7 +56,7 @@ func GenUpdatePgsql(value interface{}, excludeColumns map[string]bool) string {
 	sql := "UPDATE SET "
 	rv := reflect.TypeOf(value)
 	if rv.Kind() == reflect.Ptr {
-		// *struct 轉回 struct 才能使用 .NumField()
+		// *struct -> struct in order to use .NumField()
 		rv = rv.Elem()
 	}
 
