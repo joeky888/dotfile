@@ -31,7 +31,7 @@ func InitLogger() {
 		panic(err)
 	}
 	cfg.EncoderConfig.EncodeTime = zapcore.TimeEncoder(func(t time.Time, enc zapcore.PrimitiveArrayEncoder) {
-		enc.AppendString(t.UTC().Format("2006-01-02T15:04:05Z0700"))
+		enc.AppendString(t.UTC().Add(8 * time.Hour).Format("2006-01-02T15:04:05Z0700"))
 		// 2019-08-13T04:39:11Z
 	})
 	cfg.EncoderConfig.EncodeDuration = zapcore.StringDurationEncoder
@@ -52,6 +52,6 @@ func InitLogger() {
 
 	Logger = logger
 	// if err := logger.Sync(); err != nil {
-	// 	panic(err)
+	//	panic(err)
 	// }
 }
