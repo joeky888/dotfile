@@ -19,12 +19,88 @@ Bulk insert and upsert(update or insert)
 =====
 * [](https://github.com/t-tiger/gorm-bulk-insert) or [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
 ```go
+// For mysql, spcifying which columns to update
 db := db.Model(&MyType{}).
 		Set(
 			"gorm:insert_option",
-			"ON DUPLICATE KEY UPDATE field1 = VALUES(field1)",
+			"ON DUPLICATE KEY UPDATE field1 = VALUES(field1), field2 = VALUES(field2)",
+		)
+// For pgsql, spcifying which columns to update
+db := db.Model(&MyType{}).
+		Set(
+			"gorm:insert_option",
+			"ON CONFLICT (city_key) DO UPDATE SET city_key = EXCLUDED.city_key, city_id = EXCLUDED.city_id",
 		)
 gormbulk.BulkInsert(db, sliceValue, 3000)
+```
+* The DUPLICATE/CONFLICT update sql can be auto genareted
+```go
+type Order struct {
+	gorm.Model
+	Name	     string `gorm:"column:tagname"`
+	LongName     string
+	VeryLongName string
+	ID	     string
+}
+
+var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
+var matchAllCap = regexp.MustCompile("([a-z0-9])([A-Z])")
+
+func ToSnakeCase(str string) string {
+	snake := matchFirstCap.ReplaceAllString(str, "${1}_${2}")
+	snake = matchAllCap.ReplaceAllString(snake, "${1}_${2}")
+	return strings.ToLower(snake)
+}
+
+func GenUpdatePgsql(value interface{}, excludeColumns map[string]bool) string {
+	sql := "UPDATE SET "
+	rv := reflect.TypeOf(value)
+	if rv.Kind() == reflect.Ptr {
+		// *struct 轉回 struct 才能使用 .NumField()
+		rv = rv.Elem()
+	}
+
+	sqlStrs := make([]string, 0)
+	for i := 0; i < rv.NumField(); i++ {
+		field := rv.Field(i)
+
+		if _, ok := excludeColumns[field.Name]; ok {
+			continue
+		}
+
+		filedSnake := ""
+
+		for _, value := range strings.Split(field.Tag.Get("gorm"), ";") {
+			if value == "" {
+				continue
+			}
+			v := strings.Split(value, ":")
+			k := strings.TrimSpace(strings.ToUpper(v[0]))
+			if k == "COLUMN" {
+				filedSnake = strings.TrimSpace(v[1])
+				break
+			}
+		}
+
+		if filedSnake == "" {
+			filedSnake = ToSnakeCase(field.Name)
+		}
+
+		log.Println(filedSnake)
+		sqlStrs = append(sqlStrs, filedSnake+" = EXCLUDED."+filedSnake)
+	}
+
+	return sql + strings.Join(sqlStrs, ", ")
+}
+
+func main() {
+	exclude := map[string]bool{
+		"ID":    true,
+		"Model": true,
+	}
+	order := &Order{}
+	log.Println(GenUpdatePgsql(order, exclude))
+}
 ```
 
 Soft delete and hard delete
