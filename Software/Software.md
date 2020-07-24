@@ -78,17 +78,6 @@ CLI
     * ffsend - send.firefox.com cli client
     * swc - super-fast javascript to javascript compiler written in rust
     * websocat - cli websocket client
-```sh
-# $ go help get
-go get -insecure -u -v github.com/iikira/BaiduPCS-Go
-BaiduPCS-Go config set -max_parallel 8
-BaiduPCS-Go config set -savedir $HOME/Desktop
-BaiduPCS-Go config set -cache_size 16384 # 16MB
-BaiduPCS-Go config set -max_download_load 5 # 5 Files one time
-BaiduPCS-Go config set -appid=421937 # 309847/310646/312618/323309/419237
-BaiduPCS-Go config set -user_agent="Test"
-BaiduPCS-Go config set -user_agent="netdisk;4.4.0.6;PC;PC-Windows;6.2.9200;WindowsBaiduYunGuanJia"
-```
 * Nodejs
     * gtop
     * vtop
