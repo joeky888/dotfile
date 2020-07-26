@@ -48,6 +48,10 @@ Setting (search `json`)
         "notifications.workspace-loaded": true,
     },
     "rust-analyzer.inlayHints.enable": false,
+    "[csharp]": {
+        "editor.tabSize": 4,
+        "editor.insertSpaces": false,
+    },
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
