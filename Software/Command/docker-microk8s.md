@@ -15,7 +15,7 @@ sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
 
 # Enable ingress so there is no need to install metallb and ingress controller
 # It will create a namespace ingress but we don't have to install our cluster into this namespace
-microk8s.enable dns storage helm ingress
+microk8s.enable dns storage helm helm3 ingress
 microk8s.status
 microk8s.inspect
 
