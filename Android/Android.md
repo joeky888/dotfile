@@ -107,7 +107,7 @@ ADB
 =====
 * Connecting from pc to phone
     * $ adb kill-server
-    * $ adb devices
+    * $ adb devices # If it doesn't show any device, try to install the driver
     * Copy the serial number of the output
 * Install .apk to phone
     * Put xxx.apk to same folder with cmd.exe

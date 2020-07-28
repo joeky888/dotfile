@@ -3,7 +3,7 @@
 * Mutex lock
 * Channel and Select
     * buffered channel and unbuffered channed (Async and Sync)
-* Waitgroup
+* Waitgroup, Errgroup
 * Context
     * WithCancel - Use cancel() function to break goroutine
     * WithDeadline - Use timer to break goroutine
