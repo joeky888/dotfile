@@ -18,6 +18,7 @@ sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
 microk8s.enable dns storage helm helm3 ingress
 microk8s.status
 microk8s.inspect
+microk8s.ctr image ls # Like `docker images`
 
 rm -rf ~/.helm
 KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
