@@ -4,32 +4,34 @@
 #                                         #
 ###########################################
 
-mycode:
-  build: .
-  restart: always
-  ports:
-    - 8080:8080
-  volumes:
-    - .:/go/src/mycode
+version: "3"
+services:
+  mycode:
+    build: .
+    restart: always
+    ports:
+      - 8080:8080
+    volumes:
+      - .:/go/src/mycode
 
-# Redis with password
-redis:
-  image: redis:4.0
-  restart: always
-  ports:
-    - 6379:6379
-  command: ['redis-server', '--requirepass', '45645655']
+  # Redis with password
+  redis:
+    image: redis:4.0
+    restart: always
+    ports:
+      - 6379:6379
+    command: ['redis-server', '--requirepass', '45645655']
 
-# Mysql root with password, with default encodings
-mysql:
-  image: mysql:8.0
-  restart: always
-  volumes:
-    - ../mysql:/var/lib/mysql
-  environment:
-    MYSQL_ROOT_PASSWORD: password
-    TZ: "Asia/Taipei"
-  ports:
-    - 3306:3306
-  command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_general_ci', '--default_authentication_plugin=mysql_native_password', '--sql_mode=']
+  # Mysql root with password, with default encodings
+  mysql:
+    image: mysql:8.0
+    restart: always
+    volumes:
+      - ../mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      TZ: "Asia/Taipei"
+    ports:
+      - 3306:3306
+    command: ['mysqld', '--character-set-server=utf8', '--collation-server=utf8_general_ci', '--default_authentication_plugin=mysql_native_password', '--sql_mode=']
 
