@@ -23,6 +23,8 @@ microk8s.ctr image ls # Like `docker images`
 rm -rf ~/.helm
 KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
 
+# vim /var/snap/microk8s/current/args/kube-apiserver # Edit configs and microk8s.stop && microk8s.start
+
 # Get kubectl-apiserver token and cert
 microk8s.kubectl get secret
 microk8s.kubectl get secret default-token-xxxxx -o yaml
