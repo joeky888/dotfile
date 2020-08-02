@@ -35,14 +35,6 @@ gormbulk.BulkInsert(db, sliceValue, 3000)
 ```
 * The DUPLICATE/CONFLICT update sql can be auto genareted
 ```go
-type Order struct {
-	gorm.Model
-	Name	     string `gorm:"column:tagname"`
-	LongName     string
-	VeryLongName string
-	ID	     string
-}
-
 var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
 var matchAllCap = regexp.MustCompile("([a-z0-9])([A-Z])")
 
@@ -52,54 +44,80 @@ func ToSnakeCase(str string) string {
 	return strings.ToLower(snake)
 }
 
-func GenUpdatePgsql(value interface{}, excludeColumns map[string]bool) string {
-	sql := "UPDATE SET "
-	rv := reflect.TypeOf(value)
-	if rv.Kind() == reflect.Ptr {
-		// *struct -> struct in order to use .NumField()
-		rv = rv.Elem()
+func getSqlName(field reflect.StructField) string {
+	fieldSnake := ""
+
+	for _, value := range strings.Split(field.Tag.Get("gorm"), ";") {
+		if value == "skip" {
+			return ""
+		}
+		if value == "" {
+			continue
+		}
+		v := strings.Split(value, ":")
+		k := strings.TrimSpace(strings.ToUpper(v[0]))
+		if k == "COLUMN" {
+			fieldSnake = strings.TrimSpace(v[1])
+			break
+		}
 	}
 
-	sqlStrs := make([]string, 0)
-	for i := 0; i < rv.NumField(); i++ {
-		field := rv.Field(i)
+	if fieldSnake == "" {
+		fieldSnake = ToSnakeCase(field.Name)
+	}
 
-		if _, ok := excludeColumns[field.Name]; ok {
+	return fieldSnake
+}
+
+func getFieldType(typ reflect.Type) []string {
+	filedsStr := make([]string, 0)
+	for i := 0; i < typ.NumField(); i++ {
+		fieldTyp := typ.Field(i).Type
+
+		if fieldTyp.Kind() == reflect.Ptr {
+			fieldTyp = fieldTyp.Elem()
+		}
+
+		if fieldTyp.Name() == "Time" { // time.Time is a struct kind, ignore
+			filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
 			continue
 		}
 
-		filedSnake := ""
-
-		for _, value := range strings.Split(field.Tag.Get("gorm"), ";") {
-			if value == "" {
-				continue
-			}
-			v := strings.Split(value, ":")
-			k := strings.TrimSpace(strings.ToUpper(v[0]))
-			if k == "COLUMN" {
-				filedSnake = strings.TrimSpace(v[1])
-				break
-			}
+		if fieldTyp.Kind() == reflect.Struct {
+			filedsStr = append(filedsStr, getFieldType(fieldTyp)...)
+			continue
 		}
 
-		if filedSnake == "" {
-			filedSnake = ToSnakeCase(field.Name)
-		}
+		filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
+	}
 
-		log.Println(filedSnake)
-		sqlStrs = append(sqlStrs, filedSnake+" = EXCLUDED."+filedSnake)
+	return filedsStr
+}
+
+func GenUpdatePgsql(value interface{}) string {
+	sql := "UPDATE SET "
+
+	typ := reflect.TypeOf(value)
+	if typ.Kind() == reflect.Ptr {
+		// *struct -> struct in order to use .NumField()
+		typ = typ.Elem()
+	}
+
+	sqlFields := getFieldType(typ)
+
+	sqlStrs := make([]string, 0, len(sqlFields))
+	for i := 0; i < len(sqlFields); i++ {
+		if sqlFields[i] != "" { // Not `skip`
+			sqlStrs = append(sqlStrs, sqlFields[i]+" = EXCLUDED."+sqlFields[i])
+		}
 	}
 
 	return sql + strings.Join(sqlStrs, ", ")
 }
 
 func main() {
-	exclude := map[string]bool{
-		"ID":    true,
-		"Model": true,
-	}
 	order := &Order{}
-	log.Println(GenUpdatePgsql(order, exclude))
+	log.Println(GenUpdatePgsql(order))
 }
 ```
 
