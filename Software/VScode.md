@@ -38,6 +38,10 @@ Setting (search `json`)
         "editor.insertSpaces": false,
         "files.eol": "\n"
     },
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+    },
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.lruCapacity": 1024,
