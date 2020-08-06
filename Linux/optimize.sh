@@ -17,7 +17,7 @@ function upsert()
     fi
 }
 
-upsert "fs.file-max"                  "fs.file-max = 200000"          /etc/sysctl.conf
+upsert "fs.file-max"                "fs.file-max = 200000"          /etc/sysctl.conf
 upsert "\*\s*soft\s*nofile"         "* soft  nofile  200000"        /etc/security/limits.conf
 upsert "\*\s*hard\s*nofile"         "* hard  nofile  200000"        /etc/security/limits.conf
 upsert "root\s*soft\s*nofile"       "root soft nofile 200000"       /etc/security/limits.conf
@@ -27,4 +27,4 @@ upsert "\*\s*hard\s*nproc"          "* hard  nproc  200000"         /etc/securit
 upsert "root\s*soft\s*nproc"        "root soft nproc 200000"        /etc/security/limits.conf
 upsert "root\s*hard\s*nproc"        "root hard nproc 200000"        /etc/security/limits.conf
 
-sysctl -p /etc/sysctl.conf
+sysctl -p --system
