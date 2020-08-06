@@ -29,3 +29,5 @@ upsert "root\s*soft\s*nproc"            "root soft nproc 524288"                
 upsert "root\s*hard\s*nproc"            "root hard nproc 524288"                    /etc/security/limits.conf
 
 sysctl -p --system
+
+echo "Please re-login the shell"
