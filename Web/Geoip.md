@@ -11,23 +11,21 @@ Download Geolite1
 =====
 * https://www.miyuru.lk/geoiplegacy
 
-Convert .MMDB to .DAT (Geolite2 -> Geolite1) for nginx in docker
+.DAT format (Geolite1) for nginx in docker
 =====
-* Use https://github.com/sherpya/geolite2legacy
+* Download https://github.com/v2ray/geoip
+* Or https://github.com/Loyalsoldier/v2ray-rules-dat
 * Redirect www.example.com to cn.example.com for china
 ```conf
 load_module modules/ngx_http_geoip_module.so;
 
 http{
-    geoip_country /usr/share/nginx/country.dat;
+    geoip_country /usr/share/nginx/geoip.dat; # <--- import .dat file here
 
     server {
         listen       80;
         listen  [::]:80;
         server_name  localhost;
-
-        #charset koi8-r;
-        #access_log  /var/log/nginx/host.access.log  main;
 
         location / {
             if ($geoip_country_code = CN) {
