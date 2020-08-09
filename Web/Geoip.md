@@ -16,10 +16,24 @@ Download Geolite1
 * Download geoip.dat from archlinux package "geoip-database"
 * Redirect www.example.com to cn.example.com for china
 ```conf
-load_module modules/ngx_http_geoip_module.so;
+load_module modules/ngx_http_geoip_module.so; # Load module here
 
 http{
     geoip_country /usr/share/nginx/geoip.dat; # <--- import .dat file here
+
+    fastcgi_param GEOIP_ADDR $remote_addr; # Declare all these variables
+    fastcgi_param GEOIP_COUNTRY_CODE $geoip_country_code;
+    fastcgi_param GEOIP_COUNTRY_NAME $geoip_country_name;
+    fastcgi_param GEOIP_REGION $geoip_region;
+    fastcgi_param GEOIP_REGION_NAME $geoip_region_name;
+    fastcgi_param GEOIP_CITY $geoip_city;
+    fastcgi_param GEOIP_AREA_CODE $geoip_area_code;
+    fastcgi_param GEOIP_LATITUDE $geoip_latitude;
+    fastcgi_param GEOIP_LONGITUDE $geoip_longitude;
+    fastcgi_param GEOIP_POSTAL_CODE $geoip_postal_code;
+
+    real_ip_header X-Forwarded-For; # Add this if nginx is behind a load balancer
+    set_real_ip_from 0.0.0.0/0;     # Add this if nginx is behind a load balancer
 
     server {
         listen       80;
@@ -27,7 +41,7 @@ http{
         server_name  localhost;
 
         location / {
-            if ($geoip_country_code = CN) {
+            if ($geoip_country_code = CN) { # CN is China
                 rewrite ^ $scheme://cn.example.com$request_uri? redirect;
             }
             root   /usr/share/nginx/html;
