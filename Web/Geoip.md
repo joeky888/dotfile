@@ -13,8 +13,7 @@ Download Geolite1
 
 .DAT format (Geolite1) for nginx in docker
 =====
-* Download https://github.com/v2ray/geoip
-* Or https://github.com/Loyalsoldier/v2ray-rules-dat
+* Download geoip.dat from archlinux package "geoip-database"
 * Redirect www.example.com to cn.example.com for china
 ```conf
 load_module modules/ngx_http_geoip_module.so;
