@@ -54,6 +54,18 @@ kubectl config use-context microk8s
 kubectl --insecure-skip-tls-verify get all --all-namespaces
 ```
 
+Install cert-manager
+=====
+* Must point the dns server (like godaddy and cloudflare) to the cluster first
+* Install cert-manager via helm chart and install it into the "cert-manager" namaspace
+* Install a Custom Resource Definitions via kubectl apply
+* Troubleshooting
+    * $ microk8s.kubectl get all -n cert-manager
+    * $ microk8s.kubectl get crd -n cert-manager
+    * $ microk8s.kubectl get challenges -n cert-manager
+    * $ microk8s.kubectl get cert -n myapp
+    * $ microk8s.kubectl get secret -n myapp
+
 Change default dns from 8.8.8.8 to x.x.x.x
 =====
 ```sh
