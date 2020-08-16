@@ -87,7 +87,7 @@ Debug in go test
 
 Debug in vscode, but shows logs in terminal (Remote debug mode)
 =====
-* $ go get -u -v github.com/go-delve/delve/cmd/dlv
+* $ go build github.com/go-delve/delve/cmd/dlv
 * This is remote debugging mode so setting args and env in vscode json doesn't work
 * dlv debug = go run with dlv, so "go" is needed and the project source code is required
 * dlv exec = ./myexe with dlv, so there is no need to install "go"
