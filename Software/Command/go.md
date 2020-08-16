@@ -91,7 +91,7 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
 * This is remote debugging mode so setting args and env in vscode json doesn't work
 * dlv debug = go run with dlv, so "go" is needed and the project source code is required
 * dlv exec = ./myexe with dlv, so there is no need to install "go"
-* $ MYGOPATH=/GOGO REDIS=host.docker.internal dlv exec --continue --headless --listen=:2345 --log --api-version=2 --build-flags "-tags 'TAG1 TAG2 TAG3'" ./myexec -- -f /etc/config/run-libgo.yaml other:args
+* $ MYGOPATH=/GOGO REDIS=host.docker.internal dlv exec --continue --headless --listen=:2345 --accept-multiclient --api-version=2 --build-flags "-tags 'TAG1 TAG2 TAG3'" ./myexec -- -f /etc/config/run-libgo.yaml other:args
 * Break points in vscode should work, re-connect if it doesn't
 * vscode -> Debug -> Open Configurations
 ```js
