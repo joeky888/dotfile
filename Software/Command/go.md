@@ -105,7 +105,8 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
     "host": "127.0.0.1",
     //"program": "${workspaceFolder}", // This won't work
     //"buildFlags": "-tags 'TAG1 TAG2 TAG3'", // This won't work
-    "showLog": false
+    "showLog": true,
+    "trace": "log"
 }
 ```
 
