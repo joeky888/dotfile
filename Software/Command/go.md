@@ -103,7 +103,7 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
     //"remotePath": "/absolute/path/to/the/remote/project", # This won't work in dlv exec mode, but is required in dlv debug mode
     "port": 2345,
     "host": "127.0.0.1",
-    //"program": "${workspaceFolder}", // This won't work
+    //"cwd": "${workspaceFolder}", // This won't work
     //"buildFlags": "-tags 'TAG1 TAG2 TAG3'", // This won't work
     "showLog": true,
     "trace": "log"
