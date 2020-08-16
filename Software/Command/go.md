@@ -89,10 +89,10 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
 =====
 * $ go get -u -v github.com/go-delve/delve/cmd/dlv
 * This is remote debugging mode so setting args and env in vscode json doesn't work
-* dlv debug = go run with dlv, so "go" is needed
+* dlv debug = go run with dlv, so "go" is needed and the project source code is required
 * dlv exec = ./myexe with dlv, so there is no need to install "go"
-* $ cd /path/to/project && MYGOPATH=/GOGO REDIS=host.docker.internal dlv debug --headless --listen=:2345 --log --api-version=2 --build-flags "-tags 'TAG1 TAG2 TAG3'" -- -f /etc/config/run-libgo.yaml other:args
-* Break points in vscode should work
+* $ MYGOPATH=/GOGO REDIS=host.docker.internal dlv exec --continue --headless --listen=:2345 --log --api-version=2 --build-flags "-tags 'TAG1 TAG2 TAG3'" ./myexec -- -f /etc/config/run-libgo.yaml other:args
+* Break points in vscode should work, re-connect if it doesn't
 * vscode -> Debug -> Open Configurations
 ```js
 {
@@ -100,7 +100,7 @@ Debug in vscode, but shows logs in terminal (Remote debug mode)
     "type": "go",
     "request": "attach",
     "mode": "remote",
-    "remotePath": "/absolute/path/to/the/remote/project",
+    //"remotePath": "/absolute/path/to/the/remote/project", # This won't work in dlv exec mode, but is required in dlv debug mode
     "port": 2345,
     "host": "127.0.0.1",
     //"program": "${workspaceFolder}", // This won't work
