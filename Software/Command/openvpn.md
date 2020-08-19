@@ -1,0 +1,9 @@
+Docker compose and configuration
+=====
+* https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md
+
+Troubleshooting
+=====
+* Unable to connect to vpn
+    * Disable ipv6
+
