@@ -6,6 +6,12 @@ go tool dist list -json
 vim go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
 ```
 
+Unable to go get on private repo
+=====
+* Change joeky888 to the repo name
+* $ GOPRIVATE="gitlab.com/joeky888,bitbucket.org/joeky888,github.com/joeky888" go get
+* $ GOPRIVATE="gitlab.com/joeky888,bitbucket.org/joeky888,github.com/joeky888" go build
+
 Go mod (Golang >= 1.11)
 =====
 * $ export GO111MODULE=on
