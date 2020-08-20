@@ -58,6 +58,11 @@ Install cert-manager
 * Must point the dns server (like godaddy and cloudflare) to the cluster first
 * Install cert-manager via helm chart and install it into the "cert-manager" namaspace
 * Install a Custom Resource Definitions via kubectl apply
+* Add these line to ingress annotations
+    * kubernetes.io/ingress.class: nginx
+    * kubernetes.io/tls-acme: "true"
+    * nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    * cert-manager.io/cluster-issuer: letsencrypt-prod
 * Troubleshooting
     * $ microk8s.kubectl get all -n cert-manager
     * $ microk8s.kubectl get crd -n cert-manager
