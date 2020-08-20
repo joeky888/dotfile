@@ -69,6 +69,13 @@ Install cert-manager
     * $ microk8s.kubectl get challenges -n cert-manager
     * $ microk8s.kubectl get cert -n myapp
     * $ microk8s.kubectl get secret -n myapp
+        * In case everything doesn't work, use these settings to disable https for self-signed
+            * acme.cert-manager.io/http01-edit-in-place: "true"
+            * cert-manager.io/cluster-issuer: letsencrypt-prod
+            * cert-manager.io/issue-temporary-certificate: "true"
+            * kubernetes.io/ingress.class: nginx
+            * kubernetes.io/tls-acme: "true"
+            * nginx.ingress.kubernetes.io/ssl-redirect: "false"
 
 Change default dns from 8.8.8.8 to x.x.x.x
 =====
