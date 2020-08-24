@@ -30,3 +30,4 @@ CDN (AWS Cloudfront) for k8s ingress
     * Alternate Domain Names (CNAMEs) -> Add "www.mydomain.com"
         * Custom SSL Certificate (example.com) -> Request or Import a Certificate with ACM
             * Use cname validation
+            * Go to godday/cloudflair add cname for aws certificate validation
