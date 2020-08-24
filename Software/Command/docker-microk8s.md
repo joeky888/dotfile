@@ -11,6 +11,7 @@ sudo usermod -aG microk8s $(whoami)
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
+sudo apt install iptables-persistent -y # Store iptables setting, select "Yes" when installing
 
 # Enable ingress so there is no need to install metallb and ingress controller
 # It will create a namespace ingress but we don't have to install our cluster into this namespace
