@@ -18,6 +18,10 @@ Set channel
 * $ flutter channel dev    # Set to dev
 * $ flutter upgrade
 
+New project
+=====
+* $ flutter create projectname
+
 Vscode
 =====
 * Install flutter and add flutter/bin to PATH
