@@ -5,6 +5,7 @@ Docker
 * $ docker cp flutter-app flutter:/home/cirrus
 * $ flutter packages get
 * $ flutter pub get
+* $ flutter run
 * $ flutter build apk --release
 
 List dependencies
