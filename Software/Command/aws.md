@@ -24,7 +24,7 @@ CDN (AWS Cloudfront) for k8s ingress
     * Minimum Origin SSL Protocol: TLSv1.2
     * Origin Protocol Policy: HTTP only
     * Viewer Protocol Policy: Redirect HTTP to HTTPS
-    * Allowed HTTP Methods: GET, HEAD, OPTIONS
+    * Allowed HTTP Methods: GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE
     * Cache and origin request settings: Use legacy cache settings
         * Whitelist -> Add -> "Host"
     * Alternate Domain Names (CNAMEs) -> Add "www.mydomain.com"
