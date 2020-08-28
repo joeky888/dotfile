@@ -10,5 +10,5 @@ RUN go build -o /app
 FROM curlimages/curl:7.70.0
 COPY --from=builder /app /app
 COPY --from=builder /go/src/playground/config /config
-HEALTHCHECK --interval=5s --timeout=3s CMD curl --fail http://localhost:8080/health || exit 1
+HEALTHCHECK --interval=5s --timeout=3s CMD curl --fail http://localhost:8080/health || kill 1
 ENTRYPOINT ["/app"]
