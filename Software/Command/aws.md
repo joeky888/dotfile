@@ -14,6 +14,7 @@ Control EKS
 ```sh
 aws eks update-kubeconfig --name CLUSTER_NAME --region REGION_CODE
 kubectl get all
+kubectl describe configmap -n kube-system aws-auth # Should give something like this - userarn: arn:aws:iam::xxxxxxxxx:user/Joeky
 ```
 
 CDN (AWS Cloudfront) for k8s ingress
