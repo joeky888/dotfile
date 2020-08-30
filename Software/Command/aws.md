@@ -17,7 +17,7 @@ kubectl get all
 # If one is unable to control, see https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html
 kubectl describe configmap -n kube-system aws-auth # Should give something like this - userarn: arn:aws:iam::xxxxxxxxx:user/Joeky
 # If the user is not in the configmap, add it manually
-kubectl edit -n kube-system configmap/aws-auth
+kubectl edit -n kube-system configmap/aws-auth # Add userarn, username and groups
 ```
 
 CDN (AWS Cloudfront) for k8s ingress
