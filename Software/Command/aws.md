@@ -14,6 +14,7 @@ Control EKS
 ```sh
 aws eks update-kubeconfig --name CLUSTER_NAME --region REGION_CODE
 kubectl get all
+# If one is unable to control, see https://docs.aws.amazon.com/eks/latest/userguide/add-user-role.html
 kubectl describe configmap -n kube-system aws-auth # Should give something like this - userarn: arn:aws:iam::xxxxxxxxx:user/Joeky
 ```
 
