@@ -56,7 +56,7 @@ kubectl --insecure-skip-tls-verify get all --all-namespaces
 
 Install cert-manager
 =====
-* Must point the dns server (like godaddy and cloudflare) to the cluster first
+* Must point the dns server (like godaddy and cloudflare) to the cluster first, USE DNS-Only NOT PROXY
 * Install cert-manager via helm chart and install it into the "cert-manager" namaspace
 * Install a Custom Resource Definitions via kubectl apply
 * Add these line to ingress annotations
