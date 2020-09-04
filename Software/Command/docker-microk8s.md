@@ -54,6 +54,12 @@ kubectl config use-context microk8s
 kubectl --insecure-skip-tls-verify get all --all-namespaces
 ```
 
+Clear images like `docker rmi $(docker images -q)`
+=====
+```sh
+microk8s.ctr image rm `microk8s.ctr image list | awk {'print $1'}`
+```
+
 Install cert-manager
 =====
 * Must point the dns server (like godaddy and cloudflare) to the cluster first, USE DNS-Only NOT PROXY
