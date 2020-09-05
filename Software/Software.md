@@ -140,6 +140,7 @@ Dev
     * Vector(https://github.com/timberio/vector) - Logstash alternative writtin rust
     * HFish - honeypot written in Go
     * k9s - htop-like manager for k8s
+    * Reloader (https://github.com/stakater/Reloader) - Restart pods if configmap changes
 
 Windows
 =====
