@@ -15,112 +15,6 @@
 | DOUBLE            | float64         | (-1.7976931348623157E+308~1.7976931348623157E+308)               |
 | DECIMAL(6,2)      | decimal.Decimal | 6 total number of digits, 4 before and 2 after the decimal point |
 
-Bulk insert and upsert(update or insert)
-=====
-* [](https://github.com/t-tiger/gorm-bulk-insert) or [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
-```go
-// For mysql, spcifying which columns to update
-db := db.Model(&MyType{}).
-		Set(
-			"gorm:insert_option",
-			"ON DUPLICATE KEY UPDATE field1 = VALUES(field1), field2 = VALUES(field2)",
-		)
-// For pgsql, spcifying which columns to update
-db := db.Model(&MyType{}).
-		Set(
-			"gorm:insert_option",
-			"ON CONFLICT (city_key) DO UPDATE SET city_key = EXCLUDED.city_key, city_id = EXCLUDED.city_id",
-		)
-gormbulk.BulkInsert(db, sliceValue, 3000)
-```
-* The DUPLICATE/CONFLICT update sql can be auto genareted
-```go
-var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
-var matchAllCap = regexp.MustCompile("([a-z0-9])([A-Z])")
-
-func ToSnakeCase(str string) string {
-	snake := matchFirstCap.ReplaceAllString(str, "${1}_${2}")
-	snake = matchAllCap.ReplaceAllString(snake, "${1}_${2}")
-	return strings.ToLower(snake)
-}
-
-func getSqlName(field reflect.StructField) string {
-	fieldSnake := ""
-
-	for _, value := range strings.Split(field.Tag.Get("gorm"), ";") {
-		if value == "skip" {
-			return ""
-		}
-		if value == "" {
-			continue
-		}
-		v := strings.Split(value, ":")
-		k := strings.TrimSpace(strings.ToUpper(v[0]))
-		if k == "COLUMN" {
-			fieldSnake = strings.TrimSpace(v[1])
-			break
-		}
-	}
-
-	if fieldSnake == "" {
-		fieldSnake = ToSnakeCase(field.Name)
-	}
-
-	return fieldSnake
-}
-
-func getFieldType(typ reflect.Type) []string {
-	filedsStr := make([]string, 0)
-	for i := 0; i < typ.NumField(); i++ {
-		fieldTyp := typ.Field(i).Type
-
-		if fieldTyp.Kind() == reflect.Ptr {
-			fieldTyp = fieldTyp.Elem()
-		}
-
-		if fieldTyp.Name() == "Time" { // time.Time is a struct kind, ignore
-			filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
-			continue
-		}
-
-		if fieldTyp.Kind() == reflect.Struct {
-			filedsStr = append(filedsStr, getFieldType(fieldTyp)...)
-			continue
-		}
-
-		filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
-	}
-
-	return filedsStr
-}
-
-func GenUpdatePgsql(value interface{}) string {
-	sql := "UPDATE SET "
-
-	typ := reflect.TypeOf(value)
-	if typ.Kind() == reflect.Ptr {
-		// *struct -> struct in order to use .NumField()
-		typ = typ.Elem()
-	}
-
-	sqlFields := getFieldType(typ)
-
-	sqlStrs := make([]string, 0, len(sqlFields))
-	for i := 0; i < len(sqlFields); i++ {
-		if sqlFields[i] != "" { // Not `skip`
-			sqlStrs = append(sqlStrs, sqlFields[i]+" = EXCLUDED."+sqlFields[i])
-		}
-	}
-
-	return sql + strings.Join(sqlStrs, ", ")
-}
-
-func main() {
-	order := &Order{}
-	log.Println(GenUpdatePgsql(order))
-}
-```
-
 Transaction
 =====
 * Must be called inside of db.Transaction closure
@@ -322,6 +216,12 @@ func main() {
 
 ```
 
+Bool with optional quotes "true" / true / "false" / false
+=====
+```go
+
+```
+
 Json array
 =====
 ```go
@@ -373,5 +273,111 @@ func main() {
 
 	db.Where("id = ?", 1).First(&u)
 	fmt.Printf("%+v\n", u)
+}
+```
+
+Bulk insert and upsert(update or insert)
+=====
+* [](https://github.com/t-tiger/gorm-bulk-insert) or [](https://github.com/bombsimon/gorm-bulk/blob/master/examples/bulk_insert.go)
+```go
+// For mysql, spcifying which columns to update
+db := db.Model(&MyType{}).
+		Set(
+			"gorm:insert_option",
+			"ON DUPLICATE KEY UPDATE field1 = VALUES(field1), field2 = VALUES(field2)",
+		)
+// For pgsql, spcifying which columns to update
+db := db.Model(&MyType{}).
+		Set(
+			"gorm:insert_option",
+			"ON CONFLICT (city_key) DO UPDATE SET city_key = EXCLUDED.city_key, city_id = EXCLUDED.city_id",
+		)
+gormbulk.BulkInsert(db, sliceValue, 3000)
+```
+* The DUPLICATE/CONFLICT update sql can be auto genareted
+```go
+var matchFirstCap = regexp.MustCompile("(.)([A-Z][a-z]+)")
+var matchAllCap = regexp.MustCompile("([a-z0-9])([A-Z])")
+
+func ToSnakeCase(str string) string {
+	snake := matchFirstCap.ReplaceAllString(str, "${1}_${2}")
+	snake = matchAllCap.ReplaceAllString(snake, "${1}_${2}")
+	return strings.ToLower(snake)
+}
+
+func getSqlName(field reflect.StructField) string {
+	fieldSnake := ""
+
+	for _, value := range strings.Split(field.Tag.Get("gorm"), ";") {
+		if value == "skip" {
+			return ""
+		}
+		if value == "" {
+			continue
+		}
+		v := strings.Split(value, ":")
+		k := strings.TrimSpace(strings.ToUpper(v[0]))
+		if k == "COLUMN" {
+			fieldSnake = strings.TrimSpace(v[1])
+			break
+		}
+	}
+
+	if fieldSnake == "" {
+		fieldSnake = ToSnakeCase(field.Name)
+	}
+
+	return fieldSnake
+}
+
+func getFieldType(typ reflect.Type) []string {
+	filedsStr := make([]string, 0)
+	for i := 0; i < typ.NumField(); i++ {
+		fieldTyp := typ.Field(i).Type
+
+		if fieldTyp.Kind() == reflect.Ptr {
+			fieldTyp = fieldTyp.Elem()
+		}
+
+		if fieldTyp.Name() == "Time" { // time.Time is a struct kind, ignore
+			filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
+			continue
+		}
+
+		if fieldTyp.Kind() == reflect.Struct {
+			filedsStr = append(filedsStr, getFieldType(fieldTyp)...)
+			continue
+		}
+
+		filedsStr = append(filedsStr, getSqlName(typ.Field(i)))
+	}
+
+	return filedsStr
+}
+
+func GenUpdatePgsql(value interface{}) string {
+	sql := "UPDATE SET "
+
+	typ := reflect.TypeOf(value)
+	if typ.Kind() == reflect.Ptr {
+		// *struct -> struct in order to use .NumField()
+		typ = typ.Elem()
+	}
+
+	sqlFields := getFieldType(typ)
+
+	sqlStrs := make([]string, 0, len(sqlFields))
+	for i := 0; i < len(sqlFields); i++ {
+		if sqlFields[i] != "" { // Not `skip`
+			sqlStrs = append(sqlStrs, sqlFields[i]+" = EXCLUDED."+sqlFields[i])
+		}
+	}
+
+	return sql + strings.Join(sqlStrs, ", ")
+}
+
+func main() {
+	order := &Order{}
+	log.Println(GenUpdatePgsql(order))
 }
 ```
