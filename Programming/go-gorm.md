@@ -216,12 +216,6 @@ func main() {
 
 ```
 
-Bool with optional quotes "true" / true / "false" / false
-=====
-```go
-
-```
-
 Json array
 =====
 ```go
