@@ -11,7 +11,7 @@ docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ROOT_PASSWORD=123
 docker run --name mysql -p 3306:3306 --restart always -e MYSQL_ALLOW_EMPTY_PASSWORD=yes  -d mysql:5.7 --character-set-server=utf8
 
 # Mysql 5.7 with username libgo password 123456
-docker run --name mysql -p 3306:3306 --restart always -e MYSQL_USER=libgo -e MYSQL_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8
+docker run --name mysql -p 3306:3306 --restart always -e MYSQL_USER=sevenoneJP -e MYSQL_PASSWORD=Hg6hZkBVMWGRg8Gg -e MYSQL_DATABASE=sevenone-jp-api -e MYSQL_ROOT_PASSWORD=123456 -d mysql:5.7 --character-set-server=utf8
 
 # Tidb root with password 123456
 docker run --name tidb -p 3306:4000 -p 10080:10080 --restart always -d pingcap/tidb
