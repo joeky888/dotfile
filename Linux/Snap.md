@@ -38,6 +38,7 @@ Install softwares
         * ubuntu-make
         * google-cloud-sdk
         * Android studio
+        * devoperator # This include kubectl aws-cli eksctl
 
 
 Upgrade all packages
