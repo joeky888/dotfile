@@ -20,6 +20,11 @@ kubectl describe configmap -n kube-system aws-auth # Should give something like 
 kubectl edit -n kube-system configmap/aws-auth # Add userarn, username and groups undert the "mapUsers" field
 ```
 
+AWS New iam user and groups
+=====
+* Add New group named "admin" and give it permission "AdministratorAccess"
+* Add New group named "developer" and give it permission "AmazonEC2ContainerRegistryPowerUser"
+
 CDN (AWS Cloudfront) for k8s ingress
 =====
 * Remove k8s https tls configs to make it http-only, because cloudfront goes https
