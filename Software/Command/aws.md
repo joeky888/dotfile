@@ -22,7 +22,7 @@ kubectl edit -n kube-system configmap/aws-auth # Add userarn, username and group
 
 AWS New iam user and groups
 =====
-* Add New group named "admin" and give it permission "AdministratorAccess"
+* Add New group named "admin" and give it permission "AdministratorAccess" and "AWSBillingReadOnlyAccess"
 * Add New group named "developer" and give it permission "AmazonEC2ContainerRegistryPowerUser"
 
 CDN (AWS Cloudfront) for k8s ingress
