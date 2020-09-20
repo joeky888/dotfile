@@ -217,6 +217,7 @@ WineHQ
 
 Android
 =====
+* Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
 * Deverloper options
     * Advanced restart -> Check
     * Android debugging -> Check
