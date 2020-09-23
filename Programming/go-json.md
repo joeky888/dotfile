@@ -1,3 +1,11 @@
+Json notes
+=====
+* Always using github.com/json-iterator/go
+* Make sure "omitempty" is combined with pointer type, otherwise it will be removed for zero-values (0 and "")
+```go
+Field *string `json:"field,omitempty"`
+```
+
 Flatten json and Nested json
 =====
 * Flatten
