@@ -1,3 +1,18 @@
+Flatten json and Nested json
+=====
+* Flatten
+```go
+type MyStruct struct {
+	gorm.Model
+}
+```
+* Nested
+```go
+type MyStruct struct {
+	Model gorm.Model
+}
+```
+
 Bool with optional quotes "true" / true / "false" / false
 =====
 ```go
