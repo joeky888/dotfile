@@ -2,6 +2,13 @@ Build a program which get better support for gdb
 =====
 * $ gcc -g a.cpp
 
+Stack trace a crashed program
+====
+* $ gdb a.exe
+* (gdb) run
+* (gdb) run # Keep running until it is crashed
+* (gdb) bt full # Keep running until it is crashed
+
 Start gdb
 =====
 * $ gdb -tui a.exe
