@@ -17,7 +17,7 @@ Set channel
 * $ flutter channel stable # Set to stable
 * $ flutter channel beta   # Set to beta
 * $ flutter channel dev    # Set to dev
-* $ flutter upgrade
+* $ flutter upgrade --force
 
 New project
 =====
