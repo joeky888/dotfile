@@ -1015,7 +1015,7 @@ if [ $(command -v grc) ] ; then
 
   if [ -n "$ZSH_VERSION" ] && hash helm 2>/dev/null >/dev/null; then
     eval "function helm { grc -es --colour=auto -c conf.kubectl $(command -v helm) \"\$@\" }"
-    source <(helm completion zsh)
+    source <(helm completion zsh 2>/dev/null)
   fi
 
   # Clean up variables
