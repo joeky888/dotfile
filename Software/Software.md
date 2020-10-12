@@ -318,6 +318,7 @@ iOS
 * iSH - https://github.com/tbodt/ish
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
 * Blokada - Ad block
+* 超級簽 - https://sapp.xin
 
 Gaming
 =====
