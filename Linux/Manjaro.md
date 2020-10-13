@@ -177,3 +177,6 @@ Remote control Windows OS
 * $ app-fast -S remmina freerdp
 * $ killall remmina
 
+Krita crashed on startup
+=====
+* $ firejail --noprofile --blacklist=/usr/lib/qt/plugins/platforms/libdxcb.so krita
