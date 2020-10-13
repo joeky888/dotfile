@@ -4,6 +4,7 @@ Install with npm
 * $ npm install -g expo-cli react-native-cli
 * Install watchman (https://github.com/facebook/watchman)
     * $ yaourt -S watchman
+* $ react-native doctor
 
 Init
 ======
