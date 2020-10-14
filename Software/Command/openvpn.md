@@ -1,12 +1,13 @@
-Docker compose and configuration
+Docker compose and configuration with ipv6 supported
 =====
 * https://github.com/kylemanna/docker-openvpn/blob/master/docs/docker-compose.md
 ```yaml
-version: '3'
+version: '2.1'
 services:
   openvpn:
     cap_add:
      - NET_ADMIN
+     - SYS_MODULE
     image: kylemanna/openvpn
     container_name: openvpn
     ports:
@@ -14,6 +15,22 @@ services:
     restart: always
     volumes:
       - /home/vpn/openvpn:/etc/openvpn
+    sysctls:
+      - net.ipv6.conf.all.disable_ipv6=0
+      - net.ipv6.conf.default.forwarding=1
+      - net.ipv6.conf.all.forwarding=1
+    networks:
+      network-openvpn:
+
+networks:
+  network-openvpn:
+    enable_ipv6: true
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.27.1.0/24
+        - subnet: fdcb:37eb:3cf0:73c3::/64
 ```
 
 Usage
@@ -42,5 +59,5 @@ docker-compose run --rm openvpn ovpn_revokeclient $CLIENTNAME remove # Remove us
 Troubleshooting
 =====
 * Unable to connect to vpn on macOS
-    * Disable ipv6
+    * Disable ipv6 on macOS
 
