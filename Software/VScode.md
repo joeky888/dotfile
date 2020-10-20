@@ -106,6 +106,9 @@ Setting (search `json`)
     "[javascript]": {
         "editor.formatOnSave": true
     },
+    "[typescript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "csharp.referencesCodeLens.enabled": false,
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
