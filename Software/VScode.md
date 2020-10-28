@@ -31,8 +31,10 @@ Setting (search `json`)
     "debug.console.fontSize": 20,
     "debug.internalConsoleOptions": "openOnSessionStart",
     "debug.allowBreakpointsEverywhere": true,
-    "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
     "[makefile]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
@@ -52,10 +54,6 @@ Setting (search `json`)
         "notifications.workspace-loaded": true,
     },
     "rust-analyzer.inlayHints.enable": false,
-    "[csharp]": {
-        "editor.tabSize": 4,
-        "editor.insertSpaces": false,
-    },
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
@@ -109,7 +107,6 @@ Setting (search `json`)
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
-    "csharp.referencesCodeLens.enabled": false,
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
@@ -133,6 +130,15 @@ Setting (search `json`)
       "terminal.ansiRed":"#f4005f",
       "terminal.ansiWhite":"#c4c5b5",
       "terminal.ansiYellow":"#fa8419"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
     }
 }
 ```
