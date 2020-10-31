@@ -380,6 +380,10 @@ upgradeDotfile() {
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
+    rm -rf ~/AppData/Roaming/Code/User/keybindings.json
+    rm -rf ~/AppData/Roaming/Code/User/settings.json
+    rm -rf ~/AppData/Roaming/VSCodium/User/keybindings.json
+    rm -rf ~/AppData/Roaming/VSCodium/User/settings.json
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
