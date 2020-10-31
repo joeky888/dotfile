@@ -370,10 +370,13 @@ upgradeDotfile() {
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 
-  if [[ "$OSTYPE" == "cygwin" ]]; then
+  case $OSTYPE in
+  cygwin)
     mkdir -p ~/AppData/Local/nvim/
     mkdir -p ~/AppData/Roaming/mpv
     mkdir -p ~/AppData/Roaming/alacritty
+    mkdir -p ~/AppData/Roaming/Code/User
+    mkdir -p ~/AppData/Roaming/VSCodium/User
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
@@ -402,12 +405,16 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
-  else
+    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+    ;;
+  *)
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
     mkdir -p ~/.config/mpv/
     mkdir -p ~/.pip/
-    mkdir -p ~/.hammerspoon/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
     ln -sf $HOME/dotfile/.tmux.conf ~/.tmux.conf
@@ -430,8 +437,29 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
-    ln -sf $HOME/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
-  fi;
+
+    case $OSTYPE in
+    linux-gnu)
+      mkdir -p ~/.config/Code/User
+      mkdir -p ~/.config/VSCodium/User
+      ln -sf $HOME/dotfile/.vscode.settings.js ~/.config/Code/User/settings.json
+      ln -sf $HOME/dotfile/.vscode.settings.js ~/.config/VSCodium/User/settings.json
+      ln -sf $HOME/dotfile/.vscode.keybindings.js ~/.config/Code/User/keybindings.json
+      ln -sf $HOME/dotfile/.vscode.keybindings.js ~/.config/VSCodium/User/keybindings.json
+      ;;
+    darwin)
+      mkdir -p ~/.hammerspoon/
+      mkdir -p "$HOME/Library/Application Support/Code/User"
+      mkdir -p "$HOME/Library/Application Support/VSCodium/User"
+      ln -sf $HOME/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
+      ln -sf $HOME/dotfile/.vscode.settings.js "$HOME/Library/Application Support/Code/User/settings.json"
+      ln -sf $HOME/dotfile/.vscode.settings.js "$HOME/Library/Application Support/VSCodium/User/settings.json"
+      ln -sf $HOME/dotfile/.vscode.keybindings.js "$HOME/Library/Application Support/Code/User/keybindings.json"
+      ln -sf $HOME/dotfile/.vscode.keybindings.js "$HOME/Library/Application Support/VSCodium/User/keybindings.json"
+      ;;
+    esac
+    ;;
+  esac
 }
 
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S

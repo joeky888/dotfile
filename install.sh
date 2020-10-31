@@ -30,6 +30,12 @@ InstallDotfile()
   rm -rf ~/.myclirc
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.hammerspoon/init.lua
+  rm -rf "$Home/Library/Application Support/Code/User/settings.json"
+  rm -rf "$Home/Library/Application Support/VSCodium/User/settings.json"
+  rm -rf "$Home/.config/Code/User/settings.json"
+  rm -rf "$Home/.config/VSCodium/User/settings.json"
+  rm -rf "$Home/.config/Code/User/keybindings.json"
+  rm -rf "$Home/.config/VSCodium/User/keybindings.json"
 
   git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
@@ -57,6 +63,10 @@ InstallDotfile()
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
   mkdir -p $Home/.hammerspoon/
+  mkdir -p "$Home/Library/Application Support/Code/User"
+  mkdir -p "$Home/Library/Application Support/VSCodium/User"
+  mkdir -p "$Home/.config/Code/User"
+  mkdir -p "$Home/.config/VSCodium/User"
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
@@ -65,7 +75,28 @@ InstallDotfile()
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
   ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
-  ln -sf $Home/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
+
+  case $OSTYPE in
+  linux-gnu)
+    ln -sf $Home/dotfile/.vscode.settings.js ~/.config/Code/User/settings.json
+    ln -sf $Home/dotfile/.vscode.settings.js ~/.config/VSCodium/User/settings.json
+    ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/Code/User/keybindings.json
+    ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/VSCodium/User/keybindings.json
+    ;;
+  darwin)
+    ln -sf $Home/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
+    ln -sf $Home/dotfile/.vscode.settings.js "$Home/Library/Application Support/Code/User/settings.json"
+    ln -sf $Home/dotfile/.vscode.settings.js "$Home/Library/Application Support/VSCodium/User/settings.json"
+    ln -sf $Home/dotfile/.vscode.keybindings.js "$Home/Library/Application Support/Code/User/keybindings.json"
+    ln -sf $Home/dotfile/.vscode.keybindings.js "$Home/Library/Application Support/VSCodium/User/keybindings.json"
+    ;;
+  cygwin)
+    echo "Cygwin"
+    ;;
+  *)
+    echo "Unknown OS"
+    ;;
+  esac
 }
 
 InstallDotfileCygwin()
@@ -80,6 +111,8 @@ InstallDotfileCygwin()
   mkdir -p $Home/AppData/Local/nvim
   mkdir -p $Home/AppData/Roaming/mpv
   mkdir -p $Home/AppData/Roaming/alacritty
+  mkdir -p $Home/AppData/Roaming/Code/User
+  mkdir -p $Home/AppData/Roaming/VSCodium/User
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
@@ -126,6 +159,10 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
