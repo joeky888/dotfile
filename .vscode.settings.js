@@ -6,6 +6,7 @@
     "editor.tabSize": 4,
     "editor.detectIndentation": true,
     "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "files.encoding": "utf8",
     "files.eol": "\n",
     "files.trimTrailingWhitespace": true,
