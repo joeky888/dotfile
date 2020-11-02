@@ -1,3 +1,12 @@
+Buffered vs Unbuffered
+=====
+* Buffered chan is Async while Unbffered chan is Sync
+    * Buffered channel will not wait for the receiver
+* Buffered Channel can also be used in
+    * thread pool
+    * rate limit
+    * batch and buffer mode (eg. batch 10 items every sec in a memory buffer of 999 items)
+
 Unbuffered channel (Sync)
 =====
 ```go
