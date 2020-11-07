@@ -128,7 +128,6 @@ function getModulePath()
 
 GRC_PATH=$(getModulePath grc)
 NEOFETCH_PATH=$(getModulePath neofetch)
-BASHTOP_PATH=$(getModulePath bashtop)
 INXI_PATH=$(getModulePath inxi)
 POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 POWERLEVEL10K_PATH=$(getModulePath powerlevel10k)
@@ -140,7 +139,6 @@ OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 
 [ -n "$GRC_PATH" ]            && export PATH=$GRC_PATH:$PATH
 [ -n "$NEOFETCH_PATH" ]       && export PATH=$NEOFETCH_PATH:$PATH
-[ -n "$BASHTOP_PATH" ]        && export PATH=$BASHTOP_PATH:$PATH
 [ -n "$INXI_PATH" ]           && export PATH=$INXI_PATH:$PATH
 [ -n "$APP_FAST_PATH" ]       && export PATH=$APP_FAST_PATH:$PATH
 [ -n "$DIFF_HIGHLIGHT_PATH" ] && export PATH=$DIFF_HIGHLIGHT_PATH:$PATH
@@ -312,7 +310,7 @@ if ls --version 2>/dev/null | grep -q GNU ; then
   alias ll='ls -lah'
 fi
 alias less='less -R'
-alias termux-ssh-server-start='pkill sshd ; sshd && logcat -s "syslog:*"'
+alias termux-ssh-server-start='pkill sshd; sshd && logcat -s "syslog:*"'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 alias ptt-ssh='ssh bbsu@ptt.cc'
 alias ptt-telnet-23='telnet ptt.cc 23'
