@@ -42,6 +42,9 @@ whichTTY=$(tty | sed -e "s:/dev/::")
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_EMU" == "java" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
+  if [ $(command -v fish) ] && [ "$OSTYPE" = "cygwin" ] && [ -z "$FISH_VERSION" ]; then
+    exec fish
+  fi
   if [ $(command -v zsh) ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
     export NO_TMUX=1
@@ -64,6 +67,8 @@ elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [[ $TER
   elif [[ $TERM != fbterm ]] ; then
     [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
   fi
+elif [ -z $TMUX ] && [ $(command -v fish) ] && [ "$OSTYPE" = "cygwin" ]; then
+  exec fish
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
   exec zsh
@@ -363,6 +368,7 @@ upgradeDotfile() {
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
   rm -rf ~/.myclirc
+  rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.hammerspoon/init.lua
 
@@ -380,10 +386,12 @@ upgradeDotfile() {
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
+    mkdir -p ~/.config/fish/
     rm -rf ~/AppData/Roaming/Code/User/keybindings.json
     rm -rf ~/AppData/Roaming/Code/User/settings.json
     rm -rf ~/AppData/Roaming/VSCodium/User/keybindings.json
     rm -rf ~/AppData/Roaming/VSCodium/User/settings.json
+    rm -rf ~/.config/fish/config.fish
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -404,8 +412,8 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
-    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
@@ -415,6 +423,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
     ;;
   *)
+    mkdir -p ~/.config/fish/
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
     mkdir -p ~/.config/mpv/
@@ -441,6 +450,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
+    ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
 
     case $OSTYPE in
     linux-gnu)

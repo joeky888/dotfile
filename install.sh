@@ -28,6 +28,7 @@ InstallDotfile()
   rm -rf ~/.config/alacritty/alacritty.yml
   rm -rf ~/.alacritty.yml
   rm -rf ~/.myclirc
+  rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.hammerspoon/init.lua
   rm -rf "$Home/Library/Application Support/Code/User/settings.json"
@@ -60,6 +61,7 @@ InstallDotfile()
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.config/alacritty/
   mkdir -p $Home/.config/mpv/
+  mkdir -p $Home/.config/fish/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
   mkdir -p $Home/.hammerspoon/
@@ -70,6 +72,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
+  ln -sf $Home/dotfile/.config.fish ~/.config/fish/config.fish
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -105,6 +108,7 @@ InstallDotfileCygwin()
   rm -rf ~/.grc
   git clone --depth=1 https://github.com/joeky888/dotfile.git $Home/dotfile
   mkdir -p $Home/Documents/WindowsPowerShell
+  mkdir -p $Home/.config/fish/
   mkdir -p $Home/.pip/
   mkdir -p $Home/pip/
   mkdir -p $Home/.grc/
@@ -133,6 +137,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.alacritty.yml"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.myclirc"
+  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.config\fish\config.fish"
   cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
@@ -152,6 +157,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
   cd $Home/dotfile
   git submodule update --init --remote
   cd - ;
@@ -331,11 +337,11 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   rm -rf /bin/setup-x86_64.exe
   curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh atool
+  apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh fish atool
   InstallDotfileCygwin
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-  sed -i 's/.*db_shell.*/db_shell: \/bin\/zsh/' /etc/nsswitch.conf
+  sed -i 's/.*db_shell.*/db_shell: \/bin\/fish/' /etc/nsswitch.conf
 #   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
   apt-cyg install openssh bind-utils bash-completion tig tar python3
