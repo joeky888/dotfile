@@ -1,8 +1,8 @@
 set fish_greeting # Disable fish messages on start
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_pipestatus $pipestatus
-    set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+#     set -l last_pipestatus $pipestatus
+#     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
     set -l normal (set_color normal)
     set fish_color_user red --bold
     set fish_color_host cyan --bold
@@ -29,17 +29,17 @@ function fish_prompt --description 'Write out the prompt'
 
     # If we're running via SSH, change the host color.
     set -l color_host $fish_color_host
-    if set -q SSH_TTY
-        set color_host $fish_color_host_remote
-    end
+#     if set -q SSH_TTY
+#         set color_host $fish_color_host_remote
+#     end
 
     # Write pipestatus
     # If the status was carried over (e.g. after `set`), don't bold it.
-    set -l bold_flag --bold
-    set -q __fish_prompt_status_generation; or set -g __fish_prompt_status_generation $status_generation
-    if test $__fish_prompt_status_generation = $status_generation
-        set bold_flag
-    end
+#     set -l bold_flag --bold
+#     set -q __fish_prompt_status_generation; or set -g __fish_prompt_status_generation $status_generation
+#     if test $__fish_prompt_status_generation = $status_generation
+#         set bold_flag
+#     end
 #     set __fish_prompt_status_generation $status_generation
 #     set -l prompt_status (__fish_print_pipestatus "[" "]" "|" (set_color $fish_color_status) (set_color $bold_flag $fish_color_status) $last_pipestatus)
 
