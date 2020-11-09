@@ -1,5 +1,12 @@
 set fish_greeting # Disable fish messages on start
 
+bind -k up history-prefix-search-backward
+bind -k down history-prefix-search-forward
+bind \eOA history-prefix-search-backward
+bind \eOB history-prefix-search-forward
+bind \e\[A history-prefix-search-backward
+bind \e\[B history-prefix-search-forward
+
 function fish_prompt --description 'Write out the prompt'
 #     set -l last_pipestatus $pipestatus
 #     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
