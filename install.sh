@@ -377,7 +377,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 
   apt update
   termux-setup-storage
-  apt install -y --assume-yes git aria2 python
+  apt install -y --assume-yes git aria2 python termux-tools
   InstallDotfile
   # cd ~/dotfile/app-fast && git reset --hard
   ~/dotfile/app-fast/app-fast full-upgrade -y
@@ -385,6 +385,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   InstallPIP
+  chsh -s fish
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
   # InstallAlpine
 
