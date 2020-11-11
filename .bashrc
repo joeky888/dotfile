@@ -129,7 +129,6 @@ function getModulePath()
 GRC_PATH=$(getModulePath grc)
 NEOFETCH_PATH=$(getModulePath neofetch)
 INXI_PATH=$(getModulePath inxi)
-POWERLEVEL9K_PATH=$(getModulePath powerlevel9k)
 POWERLEVEL10K_PATH=$(getModulePath powerlevel10k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
 ZSH_AUTOSUGGESTIONS_PATH=$(getModulePath zsh-autosuggestions)
@@ -553,30 +552,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   else
     export MAIN_THEME='red'
   fi
-  if [ -n "$POWERLEVEL9K_PATH" ] && [[ "$OSTYPE" != "linux-android" ]] ; then # powerlevel9k.zsh-theme is available
-
-    export P9K_CONTEXT_DEFAULT_BACKGROUND='155'
-    export P9K_CONTEXT_DEFAULT_FOREGROUND='238'
-    export P9K_DIR_DEFAULT_BACKGROUND='039'
-    export P9K_DIR_DEFAULT_FOREGROUND='238'
-    export P9K_DIR_HOME_BACKGROUND='039'
-    export P9K_DIR_HOME_FOREGROUND='238'
-    export P9K_DIR_HOME_SUBFOLDER_BACKGROUND='039'
-    export P9K_DIR_HOME_SUBFOLDER_FOREGROUND='238'
-    export P9K_VCS_BACKGROUND='190'
-    export P9K_VCS_FOREGROUND='238'
-    export P9K_VCS_CLEAN_BACKGROUND='190'
-    export P9K_VCS_CLEAN_FOREGROUND='238'
-    export P9K_VCS_UNTRACKED_BACKGROUND='162'
-    export P9K_VCS_UNTRACKED_FOREGROUND='238'
-    export P9K_VCS_MODIFIED_BACKGROUND='162'
-    export P9K_VCS_MODIFIED_FOREGROUND='238'
-    export P9K_PROMPT_ON_NEWLINE=true
-    export P9K_RPROMPT_ON_NEWLINE=true
-    export P9K_IGNORE_VAR_WARNING=true
-
-    source $POWERLEVEL9K_PATH/powerlevel9k.zsh-theme
-  elif [ -n "$POWERLEVEL10K_PATH" ] && [[ "$OSTYPE" != "linux-android" ]] ; then # powerlevel10k.zsh-theme is available
+  if [ -n "$POWERLEVEL10K_PATH" ]; then # powerlevel10k.zsh-theme is available
     export POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='118'
     export POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='black'
     export POWERLEVEL9K_CONTEXT_REMOTE_BACKGROUND='118' # SSH
