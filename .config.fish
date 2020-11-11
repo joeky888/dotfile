@@ -8,8 +8,8 @@ bind \e\[A history-prefix-search-backward
 bind \e\[B history-prefix-search-forward
 
 function fish_prompt --description 'Write out the prompt'
-#     set -l last_pipestatus $pipestatus
-#     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+    set -l last_pipestatus $pipestatus
+    set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
     set -l normal (set_color normal)
     set fish_color_user red --bold
     set fish_color_host cyan --bold
@@ -24,6 +24,13 @@ function fish_prompt --description 'Write out the prompt'
     set -g __fish_git_prompt_color_untrackedfiles red
     set -g __fish_git_prompt_color_cleanstate yellow --bold
 
+    set color_status green
+    set print_status "✓"
+    if [ "$last_pipestatus" != "0" ]
+        set color_status red
+        set print_status "$last_pipestatus"
+    end
+
     # Color the prompt differently when we're root
     set -l color_cwd $fish_color_cwd
     set -l suffix \n'> '
@@ -34,7 +41,7 @@ function fish_prompt --description 'Write out the prompt'
         set suffix \n'# '
     end
 
-    echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal $suffix
+    echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal $suffix
 end
 
 set -U fish_user_paths ~/dotfile/app-fast $fish_user_paths
