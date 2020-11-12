@@ -73,6 +73,13 @@ Install
   * Flag "esp"
 * Format the rest to ext4
 
+Switch to other branches
+=====
+* sudo pacman-mirrors --api --set-branch stable
+* sudo pacman-mirrors --api --set-branch testing
+* sudo pacman-mirrors --api --set-branch unstable
+* sudo pacman-mirrors -f 0 && app-fast -Syyu
+
 Pacman
 =====
 * Upgrade packages
