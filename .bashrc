@@ -242,6 +242,7 @@ alias tmuxResizeRight='tmux resize-pane -R'
 alias tmuxClearHistory='tmux clear-history'
 alias upgradeBashrc='curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc'
 alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
+alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/l1ving/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
@@ -280,6 +281,17 @@ alias youtube-dl-auto-sub="youtube-dl --write-auto-sub"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
+alias youtube-dlc-360="youtube-dlc -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
+alias youtube-dlc-480="youtube-dlc -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
+alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
+alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+alias youtube-dlc-playlist="youtube-dlc --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
+alias youtube-dlc-thumbnail="youtube-dlc --write-thumbnail --write-all-thumbnails --skip-download"
+alias youtube-dlc-filename-ascii="youtube-dlc --restrict-filenames"
+alias youtube-dlc-auto-sub="youtube-dlc --write-auto-sub"
+alias youtube-dlc-audio='youtube-dlc --extract-audio'
+alias youtube-dlc-audio-MP3='youtube-dlc --extract-audio --audio-format mp3'
+alias youtube-dlc-audio-Opus='youtube-dlc --extract-audio --audio-format opus'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias streamlink-mpv-best="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --default-stream best"
 alias streamlink-mpv-1080="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --default-stream 1080p"
