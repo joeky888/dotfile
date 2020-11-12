@@ -78,7 +78,7 @@ Switch to other branches
 * sudo pacman-mirrors --api --set-branch stable
 * sudo pacman-mirrors --api --set-branch testing
 * sudo pacman-mirrors --api --set-branch unstable
-* sudo pacman-mirrors -f 0 && app-fast -Syyu
+* app-fast -Syyu
 
 Pacman
 =====
