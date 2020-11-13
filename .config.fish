@@ -16,13 +16,6 @@ set -Ua fish_user_paths $HOME/dotfile/diff-highlight
 # set -gx PATH $PATH $HOME/dotfile/inxi
 # set -gx PATH $PATH $HOME/dotfile/diff-highlight
 
-# Overide __fish_git_prompt_dirty by adding "--no-pager"
-function __fish_git_prompt_dirty --description "fish_git_prompt helper, tells whether or not the current branch has tracked, modified files"
-    # Like staged, invert the status because we want 0 to mean there are dirty files.
-    not command git --no-pager diff --no-ext-diff --quiet --exit-code 2>/dev/null
-    and echo $___fish_git_prompt_char_dirtystate
-end
-
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
