@@ -277,7 +277,7 @@ Android
     * OpenLauncher
     * MaterialOS Icon Pack
     * Barcode Scanner ZXing
-    * Newpipe
+    * Newpipe (Using this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
     * YalpStore
     * Blokada - AD block
     * Open Camera
