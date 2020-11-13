@@ -11,10 +11,10 @@
 	autoupdate = 1
 [color]
 	ui = true
-[diff]
-	tool = vimdiff3
-[difftool]
-	prompt = false
+# [diff]
+# 	tool = vimdiff3
+# [difftool]
+# 	prompt = false
 [http]
 	sslVerify = false
 [merge]
