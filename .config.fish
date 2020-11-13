@@ -45,9 +45,9 @@ function fish_prompt --description 'Write out the prompt'
 end
 
 set -U fish_user_paths ""
-set -Ua fish_user_paths ~/dotfile/app-fast
-set -Ua fish_user_paths ~/dotfile/inxi
-set -Ua fish_user_paths ~/dotfile/diff-highlight
+set -Ua fish_user_paths $HOME/dotfile/app-fast
+set -Ua fish_user_paths $HOME/dotfile/inxi
+set -Ua fish_user_paths $HOME/dotfile/diff-highlight
 
 set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
 set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
