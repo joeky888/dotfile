@@ -44,9 +44,10 @@ function fish_prompt --description 'Write out the prompt'
     echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal $suffix
 end
 
-set -U fish_user_paths ~/dotfile/app-fast $fish_user_paths
-set -U fish_user_paths ~/dotfile/inxi $fish_user_paths
-set -U fish_user_paths ~/dotfile/diff-highlight $fish_user_paths
+set -U fish_user_paths ""
+set -Ua fish_user_paths ~/dotfile/app-fast
+set -Ua fish_user_paths ~/dotfile/inxi
+set -Ua fish_user_paths ~/dotfile/diff-highlight
 
 set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
 set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
