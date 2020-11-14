@@ -16,22 +16,27 @@ set -Ua fish_user_paths $HOME/dotfile/diff-highlight
 # set -gx PATH $PATH $HOME/dotfile/inxi
 # set -gx PATH $PATH $HOME/dotfile/diff-highlight
 
+# For command line highlighting
+set fish_color_command green --bold
+set fish_color_comment black --bold
+
+# For prompt
+set fish_color_user red --bold
+set fish_color_host cyan --bold
+set fish_color_cwd green --bold
+set -g __fish_git_prompt_showdirtystate 1
+set -g __fish_git_prompt_showuntrackedfiles 1
+set -g __fish_git_prompt_color_branch yellow --bold
+set -g __fish_git_prompt_color_dirtystate red
+set -g __fish_git_prompt_color_stagedstate red
+set -g __fish_git_prompt_color_invalidstate red
+set -g __fish_git_prompt_color_untrackedfiles red
+set -g __fish_git_prompt_color_cleanstate yellow --bold
+
 function fish_prompt --description 'Write out the prompt'
     set -l last_pipestatus $pipestatus
     set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
     set -l normal (set_color normal)
-    set fish_color_user red --bold
-    set fish_color_host cyan --bold
-    set fish_color_cwd green --bold
-
-    set -g __fish_git_prompt_showdirtystate 1
-    set -g __fish_git_prompt_showuntrackedfiles 1
-    set -g __fish_git_prompt_color_branch yellow --bold
-    set -g __fish_git_prompt_color_dirtystate red
-    set -g __fish_git_prompt_color_stagedstate red
-    set -g __fish_git_prompt_color_invalidstate red
-    set -g __fish_git_prompt_color_untrackedfiles red
-    set -g __fish_git_prompt_color_cleanstate yellow --bold
 
     set color_status green
     set print_status "✓"
