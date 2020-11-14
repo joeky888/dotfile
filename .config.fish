@@ -9,9 +9,9 @@ bind \e\[B history-prefix-search-forward
 bind \cr history-token-search-backward
 
 set -U fish_user_paths ""
-set -Ua fish_user_paths $HOME/dotfile/app-fast
-set -Ua fish_user_paths $HOME/dotfile/inxi
-set -Ua fish_user_paths $HOME/dotfile/diff-highlight
+set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
+set -U fish_user_paths $HOME/dotfile/inxi $fish_user_paths
+set -U fish_user_paths $HOME/dotfile/diff-highlight $fish_user_paths
 
 # set -gx PATH $PATH $HOME/dotfile/app-fast
 # set -gx PATH $PATH $HOME/dotfile/inxi
