@@ -6,6 +6,7 @@ bind \eOA history-prefix-search-backward
 bind \eOB history-prefix-search-forward
 bind \e\[A history-prefix-search-backward
 bind \e\[B history-prefix-search-forward
+bind \cr history-token-search-backward
 
 set -U fish_user_paths ""
 set -Ua fish_user_paths $HOME/dotfile/app-fast
