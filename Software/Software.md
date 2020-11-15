@@ -410,8 +410,8 @@ Dev Tools
     * GuiLite - The smallest GUI library for all platform - 5k lines code
     * LVGL - 16K RAM GUI library for embedded Linux, ESP32
     * Executable size as small as possible, for personal use :
-        * github.com/zserge/webview - C/C++/Go backend, html fronend
-        * github.com/zserge/lorca - Pure Go backend, html fronend
+        * github.com/webview/webview - C/C++/Go backend, html fronend
+        * github.com/tauri-apps/tauri - Rust backend, html frontend
     * Development time as fast as possible: Electron (FreeBSD is not supported)
     * As powerful as possible: Qt
 * Windows / XBOX only
