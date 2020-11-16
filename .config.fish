@@ -64,14 +64,20 @@ set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-ra
 set DOWNLOADER_ARGUMENTS "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=false" # aria2 & bypy
 set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 
-alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
-alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s '\n' | tr '\n' ',')"
-alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc="youtube-dlc $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+if type -q aria2c
+    alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
+    alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s '\n' | tr '\n' ',')"
+end
+if type -q youtube-dl
+    alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+    alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
+    alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+end
+if type -q youtube-dlc
+    alias youtube-dlc="youtube-dlc $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+    alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
+    alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+end
 alias upgradeYoutubedl='pip install --upgrade https://github.com/l1ving/youtube-dl/archive/master.zip'
 alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 
