@@ -746,7 +746,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   fi
   [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check` | tr -d '\r'"
   [ $(command -v kubectl) ] && source <(kubectl completion bash)
-  [ $(command -v helm) ] && source <(helm completion bash)
+  [ $(command -v helm) ] && source <(helm completion bash 2>/dev/null)
   [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   shopt -s histappend # Append history
