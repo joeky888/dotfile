@@ -36,7 +36,7 @@ Software
 CLI
 =====
 * Miniconda/python
-    * youtube-dl
+    * youtube-dlc
     * you-get
     * ykdl
     * streamlink
@@ -45,7 +45,7 @@ CLI
     * glances
 * Go
     * Micro (text editor)
-    * annie - youtube-dl like video downloader
+    * annie - video downloader
     * hugo - html generator
     * mkcert - Certificates generator
     * kurly - curl clone written in go
