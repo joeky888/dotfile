@@ -55,7 +55,7 @@ Services
 Clean up old packages
 =====
 ```sh
-snap list --all | while read snapname ver rev trk pub notes; do if [ "$notes" = "*disabled*" ]; then sudo snap remove "$snapname" --revision="$rev"; fi; done
+snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *disabled* ]]; then sudo snap remove "$snapname" --revision="$rev"; fi; done
 ```
 
 Install docker
