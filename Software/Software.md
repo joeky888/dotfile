@@ -232,6 +232,12 @@ Android
     * about:config
         * Search "ocsp" and set "security.ssl.enable_ocsp_must_staple" to false
 * Yandex Browser (beta) + Adblock fast
+* Yahoo Finance
+    * ^DJI
+    * ^DJUSTC
+    * NQ=F
+    * NET (Cloudflare)
+    * U (Unity)
 * Clock by Google
 * Gmail
 * Facebook Messenger
