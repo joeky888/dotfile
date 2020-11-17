@@ -113,6 +113,15 @@
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
+    "terraform.languageServer": {
+        "external": true,
+        "pathToBinary": "",
+        "args": [
+            "serve"
+        ],
+        "maxNumberOfProblems": 100,
+        "trace.server": "off"
+    },
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
@@ -136,6 +145,6 @@
       "terminal.ansiRed":"#f4005f",
       "terminal.ansiWhite":"#c4c5b5",
       "terminal.ansiYellow":"#fa8419"
-    },
+    }
 }
 
