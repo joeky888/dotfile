@@ -68,7 +68,7 @@ alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+
 alias youtube-dlc="youtube-dlc $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
-alias upgradeYoutubedl='pip install --upgrade https://github.com/l1ving/youtube-dl/archive/master.zip'
+alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 
 function upgradeDotfile

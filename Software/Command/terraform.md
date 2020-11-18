@@ -5,3 +5,4 @@ Init
 Apply
 =====
 * $ terraform validate
+* $ terraform plan
