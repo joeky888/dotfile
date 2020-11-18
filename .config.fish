@@ -86,7 +86,7 @@ alias upgradeYoutubedl='pip install --upgrade https://github.com/l1ving/youtube-
 alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 
 function upgradeDotfile
-    if test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
+    if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
     git -C ~/dotfile pull
     git -C ~/dotfile submodule update --init --remote
 end
