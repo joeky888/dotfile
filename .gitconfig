@@ -11,10 +11,10 @@
 	autoupdate = 1
 [color]
 	ui = true
-# [diff]
-# 	tool = vimdiff3
-# [difftool]
-# 	prompt = false
+[diff]
+	tool = vimdiff3
+[difftool]
+	prompt = false
 [http]
 	sslVerify = false
 [merge]
@@ -67,15 +67,15 @@ echohl iBlueInfo | echon \"     Info     \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -
-# [color "diff-highlight"]
-# 	oldNormal = red bold
-# 	oldHighlight = red bold 52
-# 	newNormal = green bold
-# 	newHighlight = green bold 22
-# [color "diff"]
-# 	meta = yellow
-# 	frag = magenta bold
-# 	commit = yellow bold
-# 	old = red bold
-# 	new = green bold
-# 	whitespace = red reverse
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = yellow
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
