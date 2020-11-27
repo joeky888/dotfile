@@ -145,6 +145,8 @@
       "terminal.ansiRed":"#f4005f",
       "terminal.ansiWhite":"#c4c5b5",
       "terminal.ansiYellow":"#fa8419"
-    }
+    },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }
 
