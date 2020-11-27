@@ -80,7 +80,7 @@ export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
-export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --script-opts=ytdl_hook-ytdl_path=youtube-dlc --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
+export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --script-opts=ytdl_hook-ytdl_path=youtube-dl --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=false" # aria2 & bypy
 export TORRENT_ARGUMENTS="--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 if [ $(command -v aria2c) ]; then
@@ -242,7 +242,6 @@ alias tmuxResizeRight='tmux resize-pane -R'
 alias tmuxClearHistory='tmux clear-history'
 alias upgradeBashrc='curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc'
 alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
-alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip install --upgrade https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip install --upgrade https://github.com/zhangn1985/ykdl/archive/master.zip'
@@ -281,17 +280,6 @@ alias youtube-dl-auto-sub="youtube-dl --write-auto-sub"
 alias youtube-dl-audio='youtube-dl --extract-audio'
 alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
 alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
-alias youtube-dlc-360="youtube-dlc -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-480="youtube-dlc -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-playlist="youtube-dlc --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
-alias youtube-dlc-thumbnail="youtube-dlc --write-thumbnail --write-all-thumbnails --skip-download"
-alias youtube-dlc-filename-ascii="youtube-dlc --restrict-filenames"
-alias youtube-dlc-auto-sub="youtube-dlc --write-auto-sub"
-alias youtube-dlc-audio='youtube-dlc --extract-audio'
-alias youtube-dlc-audio-MP3='youtube-dlc --extract-audio --audio-format mp3'
-alias youtube-dlc-audio-Opus='youtube-dlc --extract-audio --audio-format opus'
 alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
 alias streamlink-mpv-best="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --default-stream best"
 alias streamlink-mpv-1080="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --default-stream 1080p"

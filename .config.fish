@@ -65,11 +65,7 @@ alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --u
 alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc="youtube-dlc $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-alias youtube-dlc-720="youtube-dlc -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dlc-1080="youtube-dlc -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
 alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
-alias upgradeYtdlc='pip install --upgrade https://github.com/blackjack4494/yt-dlc/archive/master.zip'
 
 function upgradeDotfile
     if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
