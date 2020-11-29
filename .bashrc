@@ -80,7 +80,7 @@ export PYTHONIOENCODING="UTF-8"
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
-export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --script-opts=ytdl_hook-ytdl_path=youtube-dl --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors=,write-auto-sub="
+export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --script-opts=ytdl_hook-ytdl_path=youtube-dl --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang=en"
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=false" # aria2 & bypy
 export TORRENT_ARGUMENTS="--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 if [ $(command -v aria2c) ]; then
