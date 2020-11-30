@@ -10,4 +10,5 @@ terraform get -update=true
 terraform init
 terraform plan -var-file=config/${env}.tfvars
 terraform apply -var-file=config/${env}.tfvars
+TF_LOG=DEBUG terraform apply -var-file=config/${env}.tfvars # Verbose mode
 ```
