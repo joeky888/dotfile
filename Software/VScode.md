@@ -16,6 +16,7 @@ Extension
 * be5invis.toml
 * hediet.vscode-drawio
 * serayuzgur.crates
+* ms-kubernetes-tools.vscode-kubernetes-tools
 
 Diff 2 file
 =====
