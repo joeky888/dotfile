@@ -17,7 +17,7 @@ Install softwares
     * WPS Office
     * VLC
     * WoeUSB
-    * Skype
+    * Skype # Doesn't support IME
     * Krita
     * Codium by Snapcrafters (vscode)
     * Slack
