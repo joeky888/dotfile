@@ -24,7 +24,7 @@
     "workbench.editor.enablePreview": false,
     "editor.dragAndDrop": false,
     "window.zoomLevel": 0,
-    "debug.console.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
+    "debug.console.fontFamily": "'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "debug.console.fontSize": 20,
     "debug.internalConsoleOptions": "openOnSessionStart",
     "debug.allowBreakpointsEverywhere": true,
