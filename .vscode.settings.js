@@ -42,14 +42,7 @@
         "editor.insertSpaces": true,
     },
     "rust-client.engine": "rust-analyzer",
-    "rust-analyzer.enableCargoWatchOnStartup": "enabled",
     "rust-analyzer.lruCapacity": 1024,
-    "rust-analyzer.featureFlags": {
-        "lsp.diagnostics": true,
-        "completion.insertion.add-call-parenthesis": true,
-        "completion.enable-postfix": true,
-        "notifications.workspace-loaded": true,
-    },
     "rust-analyzer.inlayHints.enable": false,
     "[go]": {
         "editor.tabSize": 8,
