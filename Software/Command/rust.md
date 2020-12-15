@@ -23,7 +23,7 @@ VScode debug
 * On Windows use ms-vscode.cpptools
 ```js
 {
-    "name": "(Unix) Debug executable 'rust-playground'",
+    "name": "(Unix) Debug 'rust-playground' with vadimcn.vscode-lldb",
     "type": "lldb",
     "request": "launch",
     "cargo": {
@@ -44,7 +44,7 @@ VScode debug
     "cwd": "${workspaceFolder}"
 },
 {
-    "name": "(Windows) Launch",
+    "name": "(Windows) Debug 'rust-playground' with ms-vscode.cpptools",
     "type": "cppvsdbg",
     "request": "launch",
     "program": "${workspaceFolder}/target/debug/rust-playground.exe",
