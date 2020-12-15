@@ -19,11 +19,13 @@ VScode new project
 
 VScode debug
 =====
+* On Linux and macOS use vadimcn.vscode-lldb
+* On Windows use ms-vscode.cpptools
 ```js
 {
+    "name": "(Unix) Debug executable 'rust-playground'",
     "type": "lldb",
     "request": "launch",
-    "name": "Debug executable 'rust-playground'",
     "cargo": {
         "args": [
             "build",
@@ -40,5 +42,19 @@ VScode debug
     },
     "args": [],
     "cwd": "${workspaceFolder}"
+},
+{
+    "name": "(Windows) Launch",
+    "type": "cppvsdbg",
+    "request": "launch",
+    "program": "${workspaceFolder}/target/debug/rust-playground.exe",
+    "stopAtEntry": false,
+    "cwd": "${workspaceFolder}",
+    "sourceFileMap": {
+        "/rustc/5e1a799842ba6ed4a57e91f7ab9435947482f7d8": "${env:USERPROFILE}/.rustup/toolchains/stable-x86_64-pc-windows-msvc/lib/rustlib/src/rust"
+    },
+    "symbolSearchPath": "https://msdl.microsoft.com/download/symbols",
+    "environment": [],
+    "args": []
 }
 ```

@@ -12,7 +12,6 @@
     "files.trimTrailingWhitespace": true,
     "files.autoSave": "afterDelay",
     "explorer.compactFolders": false,
-    "powermode.enabled": true,
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
@@ -41,9 +40,11 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
     },
+    "[rust]": {
+        "editor.defaultFormatter": "matklad.rust-analyzer"
+    },
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
-    "rust-analyzer.inlayHints.enable": false,
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
@@ -140,6 +141,6 @@
       "terminal.ansiYellow":"#fa8419"
     },
     "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
 }
 
