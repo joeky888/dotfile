@@ -38,6 +38,11 @@ if err != nil {
 }
 ```
 
+String vs str
+=====
+* Always use &str not str which means `char*` in C++
+* String means std::string in C++
+
 Interface (a collection of methods that others can implement)
 =====
 * Go uses interface
