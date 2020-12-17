@@ -38,6 +38,18 @@ if err != nil {
 }
 ```
 
+Question mark ?
+=====
+* Used to simplified match-case statements
+* Gets the value or returns the error from the Promise Result<T> or Option<T>
+* Result<String, std::io::Error>? means
+```go
+if err != nil {
+    return err
+}
+return val
+```
+
 String vs str
 =====
 * Always use &str not str which means `char*` in C++, immutable
