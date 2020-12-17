@@ -55,6 +55,11 @@ String vs str
 * Always use &str not str which means `char*` in C++, immutable
 * String means std::string in C++, mutable
 
+Sprint
+=====
+* Go uses fmt.Sprint
+* Rust uses format!("{} {}!", hello, world);
+
 Interface (a collection of methods that others can implement)
 =====
 * Go uses interface
