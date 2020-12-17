@@ -40,8 +40,8 @@ if err != nil {
 
 String vs str
 =====
-* Always use &str not str which means `char*` in C++
-* String means std::string in C++
+* Always use &str not str which means `char*` in C++, immutable
+* String means std::string in C++, mutable
 
 Interface (a collection of methods that others can implement)
 =====
