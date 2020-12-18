@@ -27,9 +27,12 @@ AWS New iam user and groups
 
 CDN (AWS Cloudfront) for k8s ingress
 =====
-* Remove k8s https tls configs to make it http-only, because cloudfront goes https
+* Remove k8s https tls configs to make it http-only, because cloudfront goes https, otherwise will trigger error maximum redirects (20) exceeded
+    * nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    * nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
 * Create Cloudfront Distribution for one domain (a distribution is for one domain only)
     * Origin Domain Name: loadbalancer (http://xx.elb.ap-northeast-1.amazonaws.com) OR pure-ip(Non-lb)
+    * Origin Path: Leave it empty
     * Minimum Origin SSL Protocol: TLSv1.2
     * Origin Protocol Policy: HTTP only
     * Viewer Protocol Policy: Redirect HTTP to HTTPS
@@ -39,4 +42,4 @@ CDN (AWS Cloudfront) for k8s ingress
     * Alternate Domain Names (CNAMEs) -> Add "www.mydomain.com"
         * Custom SSL Certificate (example.com) -> Request or Import a Certificate with ACM
             * Use cname validation
-            * Go to godday/cloudflair add cname for aws certificate validation
+            * Go to godday/cloudflare add cname for aws certificate validation
