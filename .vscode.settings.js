@@ -41,10 +41,15 @@
         "editor.insertSpaces": true,
     },
     "[rust]": {
-        "editor.defaultFormatter": "matklad.rust-analyzer"
+        "editor.defaultFormatter": "matklad.rust-analyzer",
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true,
+            "source.fixAll": true,
+        },
     },
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
+    "rust-analyzer.updates.channel": "nightly",
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
