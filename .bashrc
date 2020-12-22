@@ -294,7 +294,7 @@ alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
-alias mpv-1080-auto-sub="mpv --video-aspect-override=16:9 ${PLAYER_ARGUMENTS},write-auto-sub=,write-sub=,sub-lang=en"
+alias mpv-1080-auto-sub="mpv --video-aspect-override=16:9 --ytdl-format='bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best' ${PLAYER_ARGUMENTS},write-auto-sub=,write-sub=,sub-lang=en"
 alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
