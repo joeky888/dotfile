@@ -231,9 +231,9 @@ Android
     * Search by Image - Reverse Image Search (by Armin Sebastian)
     * about:config
         * Search "ocsp" and set "security.ssl.enable_ocsp_must_staple" to false
-* Yandex Browser (beta) + Adblock fast
+* Kiwi Browser + ublock + Dark Reader
 * Yahoo Finance
-    * ^DJI
+    * QQQ
     * ^DJUSTC
     * NQ=F
     * NET (Cloudflare)
