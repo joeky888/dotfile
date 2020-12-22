@@ -286,6 +286,7 @@ Android
     * Newpipe (Using this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
     * YalpStore
     * Blokada - AD block
+    * DNS66 - Block ads/hosts via DNS
     * Open Camera
     * EtchDroid
     * LibreTorrent
