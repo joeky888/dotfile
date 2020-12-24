@@ -45,3 +45,10 @@ CDN (AWS Cloudfront) for k8s ingress
         * Custom SSL Certificate (example.com) -> Request or Import a Certificate with ACM
             * Use cname validation
             * Go to godday/cloudflare add cname for aws certificate validation
+    * Disable caches for /api/ route (Dynamic Content)
+        * Create Behavior (New)
+            * Path Pattern -> `/api/*`
+            * Viewer Protocol Policy -> Redirect HTTP to HTTPS
+            * Allowed HTTP Methods -> GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE
+            * Cache Policy -> Managed-CachingDisabled
+            * Origin Request Policy -> Managed-AllViewer
