@@ -1,7 +1,7 @@
 Setup
 =====
 * Install rust using curl
-* $ rustup update stable
+* $ rustup update beta # Channels can be "stable" "beta" "nightly"
 
 VScode integration
 =====
