@@ -1,5 +1,6 @@
 set fish_greeting # Disable fish messages on start
 
+# Docs: https://fishshell.com/docs/current/cmds/bind.html
 bind -k up history-prefix-search-backward
 bind -k down history-prefix-search-forward
 bind \eOA history-prefix-search-backward
@@ -7,6 +8,8 @@ bind \eOB history-prefix-search-forward
 bind \e\[A history-prefix-search-backward
 bind \e\[B history-prefix-search-forward
 bind \cr history-token-search-backward
+# bind \cZ undo # Available in fish >= 3.2.0
+# bind \cY redo # Available in fish >= 3.2.0
 
 set -U fish_user_paths ""
 set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
