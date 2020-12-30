@@ -25,7 +25,7 @@
 	shallow = true
 [submodule "app-fast"]
 	path = app-fast
-	url = https://github.com/joeky888/app-fast.git
+	url = https://github.com/app-fast/app-fast.git
 	shallow = true
 [submodule "grc"]
 	path = grc
