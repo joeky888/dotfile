@@ -21,9 +21,11 @@ set fish_color_command green --bold
 set fish_color_comment black --bold
 
 # For prompt
+set fish_color_cwd green --bold
 set fish_color_user red --bold
 set fish_color_host cyan --bold
-set fish_color_cwd green --bold
+set fish_color_quote bryellow
+set fish_color_comment brblack
 set -g __fish_git_prompt_showdirtystate 1
 set -g __fish_git_prompt_showuntrackedfiles 1
 set -g __fish_git_prompt_color_branch yellow --bold
