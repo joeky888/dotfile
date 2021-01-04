@@ -212,8 +212,11 @@ Add an user to sudoer group
 
 Get log of systemd
 =====
+* basic usage
+* $ systemctl --type=service # List all services
+* $ journalctl -f -u SERVICE-NAME.service
 * With time range
-* $ sudo journalctl --since "2018-08-30 14:10:10" --until "2018-09-02 12:05:50" -u SERVICE-NAME.service
+* $ journalctl --since "2018-08-30 14:10:10" --until "2018-09-02 12:05:50" -u SERVICE-NAME.service
 
 Clear system log greater than 10MB
 =====
