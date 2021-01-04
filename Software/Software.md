@@ -222,7 +222,7 @@ Android
     * Advanced restart -> Check
     * Android debugging -> Check
 * Backup IMEI code -> `*#06#`
-* Firefox Beta
+* Firefox Beta -> Add-ons -> Add-ons Manager
     * Dark Reader
     * uBlock Origin
     * Video Speed Controller
