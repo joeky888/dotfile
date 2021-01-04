@@ -13,7 +13,7 @@
     "files.autoSave": "afterDelay",
     "explorer.compactFolders": false,
     "editor.minimap.enabled": true,
-    "workbench.colorTheme": "Monokai Dimmed",
+    "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "solid",
     "git.ignoreMissingGitWarning": true,
