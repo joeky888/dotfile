@@ -47,7 +47,8 @@ CDN (AWS Cloudfront) for k8s ingress
         * Cache Policy -> Select "Forward-Host-Header"
     * Alternate Domain Names (CNAMEs) -> Add "www.mydomain.com"
         * Custom SSL Certificate (example.com) -> Request or Import a Certificate with ACM
-            * Use cname validation
+            * Set Domain name to wildchar domain `*.mydomain.com` and (optional) add original domain `mydomain.com`
+            * Use DNS cname validation
             * Go to godday/cloudflare add cname for aws certificate validation
     * Disable caches for /api/ route (Dynamic Content)
         * Create Behavior (New)
