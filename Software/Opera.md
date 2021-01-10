@@ -92,8 +92,6 @@ https://www.pcgamer.com/rss
 
 * Github
 ```
-https://mshibanami.github.io/GitHubTrendingRSS/daily/all.xml
-https://mshibanami.github.io/GitHubTrendingRSS/weekly/all.xml
 https://mshibanami.github.io/GitHubTrendingRSS/weekly/go.xml
 https://mshibanami.github.io/GitHubTrendingRSS/weekly/rust.xml
 ```
