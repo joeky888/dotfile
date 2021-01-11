@@ -73,6 +73,6 @@ Build snap package locally
 sudo snap install snapcraft --classic
 sudo snap install multipass
 git clone https://github.com/snapcrafters/codium && cd codium
-snapcraft --debug
+snapcraft clean && snapcraft build --debug
 sudo snap install ./codium_1.46.1_amd64.snap --dangerous --devmode
 ```
