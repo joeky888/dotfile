@@ -9,6 +9,13 @@ Manage key pairs (Create and Delete)
 * Open https://console.aws.amazon.com/ec2 -> NETWORK & SECURITY (On the left)
     * Key Pairs
 
+Generate aws compatible key pairs using cli
+=====
+```sh
+ssh-keygen
+ssh-keygen -f mykey.pub -m 'PEM' -e > mykey.pem
+```
+
 AMI list with image name and id
 =====
 * https://thecloudmarket.com
