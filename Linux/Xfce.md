@@ -12,3 +12,7 @@ Install arc theme
     * https://github.com/jnsh/arc-theme
     * https://github.com/andreisergiu98/arc-flatabulous-theme
 
+Add new startup program
+=====
+* Open xfce4-session-settings
+    * Application Autostart -> enable the software
