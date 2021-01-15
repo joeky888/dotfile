@@ -15,7 +15,7 @@ sudo apt install iptables-persistent -y # Store iptables setting, select "Yes" w
 
 # Enable ingress so there is no need to install metallb and ingress controller
 # It will create a namespace ingress but we don't have to install our cluster into this namespace
-microk8s.enable dns storage helm helm3 ingress metrics-server
+microk8s.enable dns storage helm3 ingress metrics-server
 microk8s.status
 microk8s.inspect
 microk8s.ctr image ls # Like `docker images`
