@@ -51,6 +51,8 @@ Services
 * $ snap services
 * Restart a service
 * $ snap restart xxx
+* Log a service
+* $ snap logs -f xxx
 
 Clean up old packages
 =====
