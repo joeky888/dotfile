@@ -81,7 +81,7 @@ Install cert-manager
             * acme.cert-manager.io/http01-edit-in-place: "true"
             * cert-manager.io/cluster-issuer: letsencrypt-prod
             * cert-manager.io/issue-temporary-certificate: "true"
-            * kubernetes.io/ingress.class: nginx # This line should be removed in version 1.20+
+            * kubernetes.io/ingress.class: nginx # This line should be removed or use the value "public" in version 1.20+
             * kubernetes.io/tls-acme: "true"
             * nginx.ingress.kubernetes.io/ssl-redirect: "false"
 
