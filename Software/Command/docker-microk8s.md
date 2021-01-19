@@ -19,6 +19,7 @@ microk8s.enable dns storage helm3 ingress metrics-server
 microk8s.status
 microk8s.inspect
 microk8s.ctr image ls # Like `docker images`
+curl 127.0.0.1 # Try this to check ingress load balancer is working or not
 
 rm -rf ~/.helm
 KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
@@ -43,8 +44,8 @@ Remote control via token
 # Or /snap/microk8s/current/microk8s-resources/default-args/kube-apiserver
 
 # Get kubectl-apiserver token and cert
-microk8s.kubectl get secret
-microk8s.kubectl get secret default-token-xxxxx -o yaml
+token=$(microk8s kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)
+microk8s kubectl -n kube-system describe secret $token
 
 # On remote machine, default apiserver port is 16443
 kubectl config set-credentials microk8s-secret --token=ayJhbGciOiJSUzI1NiIsImtpZCI6Ilo5Y3RxN1dGU1diNmtBTHFNNmFSQ1lQR3hzVDZtWVR6NWRzVVV6R2Nsd0kifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJkZWZhdWx0Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZWNyZXQubmFtZSI6ImRlZmF1bHQtdG9rZW4tczVjbW4iLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC5uYW1lIjoiZGVmYXVsdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6ImI5NGE0NjBjLTc2MDgtNDc5OC1hMzY2LTcxMmFiODI3NmNlYiIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDpkZWZhdWx0OmRlZmF1bHQifQ.KNbZ9sD2sUAzNxwHuPg5QeJLqNXBCO5xwkwM-PXXJXxiZU8-DSPR-RBeCRYROdCiPAIhkxT4QQiS396g6Sc8hXDecsg3hwzL1XyDsby3a4YwXXVlUJyx7XBMQs2mi5Q_3zKWl-GGJTAbNJQZSL81Kzkuf51RpfkC_s5820Vbw5wPQzQ6_g9QeN5q3CEI63eliMs85KJo_53ifCKsUMq1V7buPputwFwp_6BoFYjYN6qvUqDYQGKbCHPJjRQ-jPsd2zKROTP9M691kldGdahqA-uo8c3i3p8GcCY11L0qJ27L3OLrBB9F7Pr3eq6mx4uA_ZEeb5IliepuTPIdWEeKag
@@ -80,7 +81,7 @@ Install cert-manager
             * acme.cert-manager.io/http01-edit-in-place: "true"
             * cert-manager.io/cluster-issuer: letsencrypt-prod
             * cert-manager.io/issue-temporary-certificate: "true"
-            * kubernetes.io/ingress.class: nginx
+            * kubernetes.io/ingress.class: nginx # This line should be removed in version 1.20+
             * kubernetes.io/tls-acme: "true"
             * nginx.ingress.kubernetes.io/ssl-redirect: "false"
 
