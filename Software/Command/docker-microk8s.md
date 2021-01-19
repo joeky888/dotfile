@@ -38,6 +38,38 @@ microk8s.reset
 sudo snap remove microk8s helm
 ```
 
+Ingress not working
+=====
+* Make sure your 80 and 443 ports are working and are not blocked by a firewall (e.g docker run --rm -p 80:80 nginx && curl `Your_Public_IP`)
+* Run microk8s.enable dns ingress
+* Make sure your ingress api version is set to apiVersion: networking.k8s.io/v1
+* Make sure you have removed this line kubernetes.io/ingress.class: nginx
+* Run microk8s.kubectl get ingress -A and make sure `ADDRESS` is set to `127.0.0.1` and is not empty
+* Example
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: http-ingress
+  annotations:
+    # kubernetes.io/ingress.class: nginx # Try to remove this line or maybe set it to "public"
+    # cert-manager.io/cluster-issuer: letsencrypt-prod # This is for cert-manager
+    # kubernetes.io/tls-acme: "true" # This is for cert-manager
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: web
+            port:
+              number: 80
+```
+
 Remote control via token
 =====
 ```sh
