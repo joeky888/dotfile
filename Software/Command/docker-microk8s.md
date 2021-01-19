@@ -26,8 +26,8 @@ KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
 vim /var/snap/microk8s/current/args/kube-apiserver # Add `--allow-privileged` && microk8s.stop && microk8s.start
 
 # Get kubectl-apiserver token and cert
-microk8s.kubectl get secret
-microk8s.kubectl get secret default-token-xxxxx -o yaml
+token=$(microk8s kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)
+microk8s kubectl -n kube-system describe secret $token
 
 # Uninstall
 microk8s.disable storage
