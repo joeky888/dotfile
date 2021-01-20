@@ -24,8 +24,7 @@ zgrep CONFIG_KVM /proc/config.gz # You should see CONFIG_KVM_INTEL or CONFIG_KVM
 
 app-fast -S virt-manager qemu-arch-extra vde2 ebtables dnsmasq bridge-utils openbsd-netcat --needed
 sudo usermod -aG libvirt $(whoami)
-sudo systemctl enable libvirtd.service
-sudo systemctl restart libvirtd.service
+sudo systemctl start --now libvirtd.service
 ```
 
 Enable GPU passthrough (After KVM is enabled) ...FAILED
