@@ -22,7 +22,7 @@ qemu-img create -f qcow2 windows.img 30G
 qemu-system-x86_64 \
     -accel hvf -cpu host \
     -m 3G -netdev user,id=n0 -device rtl8139,netdev=n0 \
-    -soundhw hda \
+    -device intel-hda -device hda-duplex \
     -hda windows.img \
     -cdrom windows.iso
 ```
@@ -40,7 +40,7 @@ qemu-system-x86_64 \
     -accel hvf -cpu host \
     -smp 1 \ # due to macOS qemu bug, should be fixed soon
     -m 3G -netdev user,id=n0 -device rtl8139,netdev=n0 \
-    -soundhw hda \
+    -device intel-hda -device hda-duplex \
     --bios OVMF.fd \
     -hda manjaro.img \
     -cdrom manjaro.iso

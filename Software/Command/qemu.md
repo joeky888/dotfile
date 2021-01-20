@@ -77,7 +77,7 @@ qemu-system-x86_64 \
     -enable-kvm -cpu host \
     -m 2G \
     -net nic,model=rtl8139 \
-    -soundhw hda \
+    -device intel-hda -device hda-duplex \
     --bios /usr/share/ovmf/x64/OVMF_CODE.fd \
     -device vfio-pci,host=01:00.0 `#Add pci id here` \
     -hda windows.img \
