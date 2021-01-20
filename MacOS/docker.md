@@ -1,7 +1,7 @@
 Install
 =====
 ```sh
-brew cask install docker
+brew install --cask docker
 export PATH="$PATH:/Applications/Docker.app/Contents/Resources/bin"
 ```
 * Launch the Docker app. Click next. It will ask for privileged access

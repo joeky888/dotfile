@@ -3,7 +3,7 @@ Install
 * $ npm install -g gitbook-cli
 * Install calibre and export path
 ```sh
-brew cask install calibre
+brew install --cask calibre
 export PATH="$PATH:/Applications/calibre.app/Contents/MacOS"
 ```
 To PDF
