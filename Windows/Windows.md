@@ -47,7 +47,7 @@ Set-ExecutionPolicy RemoteSigned -Force
 iex (new-object net.webclient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
 scoop bucket add dorado https://github.com/h404bi/dorado
-scoop install aria2 win32-openssh vim lazygit busybox qemu youtube-dl curl ffmpeg mpv-git micro adb nmap go upx nodejs phantomjs miniconda2 miniconda3
+scoop install aria2 win32-openssh fd rga vim lazygit busybox qemu youtube-dl curl ffmpeg mpv-git micro adb nmap go upx nodejs phantomjs miniconda2 miniconda3
 
 # "" means "(Default)" which equals to "@"
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
