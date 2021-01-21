@@ -49,6 +49,9 @@ Ingress not working
 * Run `curl 127.0.0.1` should give 404 not found
   * Getting "Connection refused"
     * microk8s.inspect
+    * Remove microk8s
+    * Reboot
+    * Install microk8s again
 * Example
 ```yaml
 apiVersion: networking.k8s.io/v1
