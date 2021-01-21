@@ -11,6 +11,7 @@ sudo usermod -aG microk8s $(whoami)
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
+sudo ufw allow in on cni0 && sudo ufw allow out on cni0
 sudo apt install iptables-persistent -y # Store iptables setting, select "Yes" when installing
 
 # Enable ingress so there is no need to install metallb and ingress controller
@@ -45,6 +46,9 @@ Ingress not working
 * Make sure your ingress api version is set to apiVersion: networking.k8s.io/v1
 * Make sure you have removed this line kubernetes.io/ingress.class: nginx
 * Run microk8s.kubectl get ingress -A and make sure `ADDRESS` is set to `127.0.0.1` and is not empty
+* Run `curl 127.0.0.1` should give 404 not found
+  * Getting "Connection refused"
+    * microk8s.inspect
 * Example
 ```yaml
 apiVersion: networking.k8s.io/v1
