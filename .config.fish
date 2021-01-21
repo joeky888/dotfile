@@ -7,6 +7,12 @@ bind \eOA history-prefix-search-backward
 bind \eOB history-prefix-search-forward
 bind \e\[A history-prefix-search-backward
 bind \e\[B history-prefix-search-forward
+bind \e\[1\;3A history-prefix-search-backward
+bind \e\[1\;3B history-prefix-search-forward
+bind \e\[1\;5A history-prefix-search-backward
+bind \e\[1\;5B history-prefix-search-forward
+bind \e\[1\;9A history-prefix-search-backward
+bind \e\[1\;9B history-prefix-search-forward
 bind \cr history-token-search-backward
 # bind \cZ undo # Available in fish >= 3.2.0
 # bind \cY redo # Available in fish >= 3.2.0
