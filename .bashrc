@@ -242,13 +242,13 @@ alias url-encode='/usr/bin/perl -MURI::Escape -e "print uri_escape(@ARGV[0])"'
 alias tmuxClearHistory='tmux clear-history'
 alias upgradeBashrc='curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc'
 alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
-alias upgradeYoutubedl='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/ytdl-org/youtube-dl/archive/master.zip'
-alias upgradeYou-get='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/soimort/you-get/archive/develop.zip'
-alias upgradeYkdl='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/zhangn1985/ykdl/archive/master.zip'
-alias upgradeStreamlink='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
+alias upgradeYoutubedl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/ytdl-org/youtube-dl/archive/master.zip'
+alias upgradeYou-get='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/soimort/you-get/archive/develop.zip'
+alias upgradeYkdl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/zhangn1985/ykdl/archive/master.zip'
+alias upgradeStreamlink='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
 alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie'
-alias upgradeMycli='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/mycli/archive/master.zip'
-alias upgradeLitecli='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/litecli/archive/master.zip'
+alias upgradeMycli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/mycli/archive/master.zip'
+alias upgradeLitecli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/litecli/archive/master.zip'
 alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash youtube-dl 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
@@ -335,7 +335,7 @@ EncodingToTwUtf8() { export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" 
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
-upgradePip() { pip install --upgrade pip && pip install --upgrade $(pip freeze -l | sed "s/==.*//") && pip install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+upgradePip() { pip3 install --upgrade pip && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip3 install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
   git -C ~/dotfile pull
