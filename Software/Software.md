@@ -357,6 +357,7 @@ Good Software Design
     * PointDownload
 * Sci-Fi User interface, such as "Circle SeekBar"
 * Smooth scrolling
+* Can limit cpu/gpu/network usage
 * 4:3 16:9 16:10 18:9 supported
 * 4k and 8k resolution supported
 * Easily porting to another system
