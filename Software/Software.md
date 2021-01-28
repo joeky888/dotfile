@@ -292,6 +292,7 @@ Android
   * Simple Gallery
   * Tachiyomi - offline comic viewer
   * KDE Connect
+  * Coffee - Make the screen stay awake
   * Slide for Reddit - offline reddit
     * golang
     * rust
