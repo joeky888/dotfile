@@ -151,7 +151,7 @@ XMODIFIERS=@im=fcitx
 ```yaml
 patch:
   schema_list:
-    - schema: luna_pinyin          # 朙月拼音
+#     - schema: luna_pinyin          # 朙月拼音
     - schema: luna_pinyin_tw       # 朙月拼音 臺灣正體模式
 #     - schema: luna_pinyin_simp     # 朙月拼音 简化字模式
 #     - schema: terra_pinyin         # 地球拼音 dì qiú pīn yīn
