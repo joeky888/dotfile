@@ -1,7 +1,6 @@
 Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
-* chrome://flags/#opera-doh -> Enable
 * chrome://flags/#enable-quic -> Enable
 * chrome://flags/#disable-accelerated-video-decode -> Enable
     * Not available on Linux
