@@ -263,7 +263,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
-    app-fast -S --noconfirm --needed p7zip base-devel command-not-found nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
+    app-fast -S --noconfirm --needed p7zip base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
