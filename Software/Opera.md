@@ -2,12 +2,11 @@ Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-quic -> Enable
-* chrome://flags/#disable-accelerated-video-decode -> Enable
-    * Not available on Linux
-    * chrome://flags/#ignore-gpu-blacklist -> Disable
+* chrome://flags/#enable-accelerated-video-decode -> Enable
+    * chrome://flags/#ignore-gpu-blacklist -> Enable (Or try to disable it if doesn't work)
     * Also install h264ify chrome extension
     * Play an youtube hd video and open a new tab enter chrome://media-internals
-        * video coder name should be MojoVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
+        * video coder name should be MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://settings -> Search "Font"
