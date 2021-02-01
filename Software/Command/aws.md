@@ -18,6 +18,8 @@ ssh-keygen -m PEM
 AMI list with image name and id
 =====
 * https://thecloudmarket.com
+* Or
+* Go to aws console -> EC2 -> AMIs (On the left panel)
 
 Control EKS
 =====
