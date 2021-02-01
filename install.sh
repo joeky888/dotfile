@@ -257,13 +257,19 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #   $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
 #   $SUDO chmod 755 /usr/bin/reconnect
 #   $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-#   $SUDO chmod 755 /lib/systemd/system/reconnect.service
 #   $SUDO systemctl enable reconnect.service
   if [[ $(command -v apt) ]]; then
     app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y
   elif [[ $(command -v pacman) ]]; then
     app-fast -S --noconfirm --needed p7zip base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
+  fi
+
+  if [[ $(command -v pacman-mirrors) ]]; then
+    $SUDO install ~/dotfile/Linux/pacmirror /usr/bin/pacmirror
+    $SUDO chmod 755 /usr/bin/pacmirror
+    $SUDO install ~/dotfile/Linux/pacmirror.service /lib/systemd/system/pacmirror.service
+    $SUDO systemctl enable --now pacmirror.service
   fi
 
   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf

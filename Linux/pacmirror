@@ -1,0 +1,7 @@
+#!/bin/bash
+
+while true; do
+  sleep 40s
+  pacman-mirrors -f 0 || echo ok
+  sleep 12h
+done

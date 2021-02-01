@@ -1,0 +1,9 @@
+[Unit]
+Description=pacman-mirrors reordering every 12hr
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/pacmirror
+
+[Install]
+WantedBy=multi-user.target
