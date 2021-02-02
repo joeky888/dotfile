@@ -20,6 +20,8 @@ AMI list with image name and id
 * https://thecloudmarket.com
 * Or
 * Go to aws console -> EC2 -> AMIs (On the left panel)
+* Or for eks ami go to
+* https://github.com/awslabs/amazon-eks-ami/releases
 
 Control EKS
 =====
