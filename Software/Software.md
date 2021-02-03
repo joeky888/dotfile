@@ -300,7 +300,7 @@ Android
     * programming
     * commandline
     * devops
-    * wallstreetbets
+    * stocks
 * Drop-down menu items
   * Screenshot
   * Flash light
