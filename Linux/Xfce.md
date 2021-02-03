@@ -15,6 +15,19 @@ After installed
     * Hardware clock in local time zone -> Check
 * $ app-fast -S gvim mpv code krita krita-plugin-gmic fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition brave-beta nomacs file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
 
+Auto login
+=====
+* $ sudoedit /etc/lightdm/lightdm.conf
+```conf
+[Seat:*]
+greeter-session=lightdm-gtk-greeter
+user-session=xfce
+session-wrapper=/etc/lightdm/Xsession
+autologin-user=joeky # Add this line
+```
+* $ sudo groupadd -r autologin
+* $ sudo gpasswd -a joeky autologin
+
 Install arc theme
 =====
 * $ git clone --depth 1 https://github.com/ParrotSec/parrot-themes ~/parrot
