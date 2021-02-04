@@ -83,7 +83,7 @@ Switch to other branches
 Pacman
 =====
 * Upgrade packages
-    * $ app-fast -Syyu ; sudo pacman -Rsuc $(pacman -Qdtq)
+    * $ app-fast -Syyu; sudo pacman -Rsuc $(pacman -Qdtq)
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
