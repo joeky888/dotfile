@@ -132,7 +132,9 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 * bumblebee
   * $ optirun blender && optirun google-chrome-stable
 * prime
-   $ prime-run blender && prime-run google-chrome-stable
+  * $ prime-run blender && prime-run google-chrome-stable
+  * Or
+  * $ DRI_PRIME=1 prime-run blender && DRI_PRIME=1 prime-run google-chrome-stable
 
 Install Rime Pinyin IME (Manjaro)
 =====
