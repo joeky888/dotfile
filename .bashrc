@@ -304,7 +304,7 @@ alias annie="annie -C"
 alias annie-playlist="annie -p"
 alias wine-optimize="WINEDEBUG=-all wine"
 alias scp='scp -v'
-alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
+alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto -hide_banner'
 if ls --version 2>/dev/null | grep -q GNU ; then
   alias ls='ls -F --color=auto --show-control-chars'
   alias l='ls -lah'
