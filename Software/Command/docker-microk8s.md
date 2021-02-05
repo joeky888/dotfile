@@ -68,6 +68,9 @@ metadata:
     more_set_headers "X-Frame-Options: Deny";
     more_set_headers "X-Xss-Protection: 1; mode=block";
     more_set_headers "X-Content-Type-Options: nosniff";
+    if ($request_uri = "/") {
+      add_header 'Cache-Control' "public, max-age=30";
+    }
 spec:
   rules:
   - http:
