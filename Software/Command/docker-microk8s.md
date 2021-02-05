@@ -64,6 +64,10 @@ metadata:
     # kubernetes.io/tls-acme: "true" # This is for cert-manager
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "false"
+  nginx.ingress.kubernetes.io/configuration-snippet : |
+    more_set_headers "X-Frame-Options: Deny";
+    more_set_headers "X-Xss-Protection: 1; mode=block";
+    more_set_headers "X-Content-Type-Options: nosniff";
 spec:
   rules:
   - http:
