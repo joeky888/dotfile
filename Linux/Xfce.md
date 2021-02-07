@@ -13,6 +13,8 @@ After installed
 * Manjaro Settings Manager ->
     * Set time and date automatically -> Check
     * Hardware clock in local time zone -> Check
+* Manjaro Notifier ->
+    * Only notify recommanded kernels -> check
 * $ app-fast -S gvim mpv code krita krita-plugin-gmic fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition brave-beta nomacs file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
 
 Auto login
