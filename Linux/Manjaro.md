@@ -185,6 +185,7 @@ aria2c https://github.com/rime-aca/dictionaries/raw/master/luna_pinyin.dict/luna
 ln -sf ~/dotfile/Linux/joeky.dict.yaml ~/.local/share/fcitx5/rime
 aria2c https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases/download/0.2.2/zhwiki-20210120.dict.yaml -d ~/.local/share/fcitx5/rime/ -o zhwiki-tmp.dict.yaml
 opencc -i ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml -c s2t.json -o ~/.local/share/fcitx5/rime/zhwiki.dict.yaml
+rm ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
 ```
 * $ vim ~/.local/share/fcitx5/rime/luna_pinyin.extended.dict.yaml # Add import table
 ```yaml
@@ -195,12 +196,12 @@ use_preset_vocabulary: true
 #此處爲明月拼音擴充詞庫（基本）默認鏈接載入的詞庫，有朙月拼音官方詞庫、明月拼音擴充詞庫（漢語大詞典）、明月拼音擴充詞庫（詩詞）、明月拼音擴充詞庫（含西文的詞彙）。如果不需要加載某个詞庫請將其用「#」註釋掉。
 #雙拼不支持 luna_pinyin.cn_en 詞庫，請用戶手動禁用。
 import_tables:
+  - joeky  # <- Add this
+  - zhwiki # <- Add this
   - luna_pinyin
   - luna_pinyin.hanyu
   - luna_pinyin.poetry
   - luna_pinyin.cn_en
-  - zhwiki # <- Add this
-  - joeky  # <- Add this
 ```
 * $ rm ~/.local/share/fcitx5/rime/zhwiki-tmp.dict.yaml
 * $ `vim ~/.local/share/fcitx5/rime/luna_pinyin_tw.custom.yaml`
