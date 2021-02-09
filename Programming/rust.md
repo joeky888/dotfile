@@ -17,26 +17,7 @@ Error handling
 * Rust uses Result<T> which throws Ok and Err
     * Result<T>.unwrap() will give the value or panic if the value is None
     * Result<T>.expect("Some error msg here") same with unwrap but gives msg when panic
-    * `Result<T>.unwrap_or_else(|err| panic!("Couldn't read: {}", err.description()))` same with expect but gives both error and custom msg
-* unwrap looks like this in go
-```go
-if err != nil {
-    panic(err)
-}
-```
-* expect looks like this in go
-```go
-if err != nil {
-    panic(Errors.new("Some error"))
-}
-```
-* `unwrap_or_else(|err| panic!("Couldn't read: {}", err.description()))`
-```go
-// This one is more recommended
-if err != nil {
-    panic(fmt.Sprintf("Couldn't read %v", err))
-}
-```
+    * `Result<T>.unwrap_or_else(|err| panic!("Couldn't read: {}", err.to_string()))` same with expect but gives both error and custom msg
 
 Question mark ?
 =====
