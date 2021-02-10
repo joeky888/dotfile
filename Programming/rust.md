@@ -4,6 +4,15 @@ Install new packages to current project
 * $ cargo install cargo-edit # Must install cargo-edit firsttt
 * $ cargo add xxx
 
+Print
+=====
+* Print value and address
+```rust
+let x = 1;
+let ptr_y = &x;
+println!("x: {}, ptr_y: {}, address: {:p}", x, ptr_y, ptr_y);
+```
+
 Null and non-Null
 =====
 * Go uses `nil`
