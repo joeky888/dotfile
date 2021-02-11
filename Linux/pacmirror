@@ -3,5 +3,5 @@
 while true; do
   sleep 40s
   pacman-mirrors -f 0 || echo ok
-  sleep 6h
+  sleep 3h
 done
