@@ -67,6 +67,8 @@ sudo snap install docker --edge # Must use edge version
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
+# sudo snap disable docker
+# sudo snap enable docker
 ```
 
 Build snap package locally
