@@ -1,4 +1,4 @@
-Archlinux microK8s (native, Linux only, minimal ram 2G)
+microK8s (native, Linux only, minimal ram 2G)
 =====
 ```sh
 sudo snap install docker --edge # If docker is not installed
