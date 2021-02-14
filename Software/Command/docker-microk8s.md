@@ -1,12 +1,12 @@
 microK8s (native, Linux only, minimal ram 2G)
 =====
 ```sh
-sudo snap install docker --edge # If docker is not installed
+sudo snap install docker # If docker is not installed
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
 
-sudo snap install microk8s --edge --classic
+sudo snap install microk8s --classic
 sudo usermod -aG microk8s $(whoami)
 
 sudo iptables -P FORWARD ACCEPT

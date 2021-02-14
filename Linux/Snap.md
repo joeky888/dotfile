@@ -63,7 +63,7 @@ snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *
 Install docker
 =====
 ```sh
-sudo snap install docker --edge # Must use edge version
+sudo snap install docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
