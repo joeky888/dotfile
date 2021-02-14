@@ -8,6 +8,7 @@ sudo snap install docker # If docker is not installed
 
 sudo snap install microk8s --classic
 sudo usermod -aG microk8s $(whoami)
+vim /var/snap/microk8s/current/args/kube-apiserver # Add `--allow-privileged` && microk8s.stop && microk8s.start
 
 sudo iptables -P FORWARD ACCEPT
 sudo ufw allow in on cbr0 && sudo ufw allow out on cbr0
@@ -22,9 +23,6 @@ microk8s.inspect
 microk8s.ctr image ls # Like `docker images`
 curl 127.0.0.1 # Try this to check ingress load balancer is working or not
 Also make sure all ingresses has apiVersion: networking.k8s.io/v1 in version 1.20+
-
-
-vim /var/snap/microk8s/current/args/kube-apiserver # Add `--allow-privileged` && microk8s.stop && microk8s.start
 
 # Get kubectl-apiserver token
 token=$(microk8s kubectl -n kube-system get secret | grep default-token | cut -d " " -f1)
