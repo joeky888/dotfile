@@ -24,9 +24,6 @@ curl 127.0.0.1 # Try this to check ingress load balancer is working or not
 Also make sure all ingresses has apiVersion: networking.k8s.io/v1 in version 1.20+
 
 
-rm -rf ~/.helm
-KUBECONFIG=/snap/microk8s/current/microk8s-resources/client.config helm init
-
 vim /var/snap/microk8s/current/args/kube-apiserver # Add `--allow-privileged` && microk8s.stop && microk8s.start
 
 # Get kubectl-apiserver token
@@ -34,9 +31,7 @@ token=$(microk8s kubectl -n kube-system get secret | grep default-token | cut -d
 microk8s kubectl -n kube-system describe secret $token
 
 # Uninstall
-microk8s.disable storage
-microk8s.reset
-sudo snap remove microk8s helm
+sudo snap remove microk8s
 ```
 
 Ingress not working
