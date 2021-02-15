@@ -285,7 +285,7 @@ Android
   * YalpStore
   * Blokada - AD block
   * DNS66 - Block ads/hosts via DNS
-  * Open Camera
+  * Simple Camera
   * EtchDroid
   * LibreTorrent
   * ScreenCam
