@@ -37,6 +37,7 @@ Extension
 <!-- * HTTPS Everywhere -->
 <!-- * Disconnect -->
 * Remove Google Redirection
+* Wappalyzer
 * Get CRX
 * Enhanced Github
 * No Coin
