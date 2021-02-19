@@ -1,4 +1,4 @@
-Multicast vs Load Balancer
+Multicast vs Load Balancer(Unicast)
 =====
 * Multicast broadcasts messages to every subscribers
     * For clients like WebSocket broadcasting
