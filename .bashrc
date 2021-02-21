@@ -96,7 +96,6 @@ fi
 
 [ -f $HOME/.pythonrc ] && export PYTHONSTARTUP=$HOME/.pythonrc
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
-[ -d $HOME/.linuxbrew ] && export PATH="$HOME/.linuxbrew/bin:$HOME/.linuxbrew/sbin:$PATH"
 [ -f $HOME/.private.sh ] && source $HOME/.private.sh
 [ -d $HOME/.cargo/bin ] && export PATH="$HOME/.cargo/bin:$PATH"
 
@@ -537,17 +536,11 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     zstyle ':completion:*:*:*:*:*' menu select# selected entry highlighting
     zstyle ':completion:*' matcher-list 'm:{a-zA-Z-_}={A-Za-z_-}' 'r:|=*' 'l:|=* r:|=*' # Case insensitive
     zstyle '*' single-ignored show # Don't show menu when there is only one match
-#     zstyle ':completion:*' list-colors "exfxcxdxbxegedabagacad" # Popup colors
-#     PROMPT="%B%F{red}%n%B%F{yellow}@%B%F{green}%M %{$reset_color%}\n➜ %B%F{blue}%~"${NEWLINE_NO_OMZ}"%{$reset_color%}$ "
   fi
   export LS_COLORS='no=00:fi=00:di=01;34:ln=01;36:pi=40;33:so=01;35:bd=40;33;01:cd=40;33;01:or=01;05;37;41:mi=01;05;37;41:ex=01;32:*.cmd=01;32:*.exe=01;32:*.com=01;32:*.btm=01;32:*.bat=01;32:*.sh=01;32:*.csh=01;32:*.tar=01;31:*.tgz=01;31:*.arj=01;31:*.taz=01;31:*.lzh=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.gz=01;31:*.bz2=01;31:*.bz=01;31:*.tz=01;31:*.rpm=01;31:*.cpio=01;31:*.jpg=01;35:*.gif=01;35:*.bmp=01;35:*.xbm=01;35:*.xpm=01;35:*.png=01;35:*.tif=01;35:';
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
-  #[ ! $(command -v grc) ] && [ $(command -v kubectl) ] && _kubectl () { true; } # For grc
-  #[ ! $(command -v grc) ] && [ $(command -v kubectl) ] && source <(kubectl completion zsh)
-  #[ ! $(command -v grc) ] && [ $(command -v helm) ] && source <(helm completion zsh)
-  #[ $(command -v kubeadm) ] && source <(kubeadm completion zsh)
   [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check` | tr -d '\r'"
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
@@ -1299,86 +1292,6 @@ OpenFileExplorer()
   fi;
 }
 
-ChrootHome()
-{
-  newhome=$1
-  unset LD_PRELOAD
-
-  export SUDO=''
-  if (( $EUID != 0 )); then
-    export SUDO='sudo'
-  fi
-  if [[ "$OSTYPE" == "linux-android" ]]; then
-    export SUDO=''
-  fi
-
-  echo 'export CHARSET=UTF-8
-export PAGER=less
-umask 022
-for script in /etc/profile.d/*.sh ; do
-if [ -r \$script ] ; then
-  . \$script
-fi
-done
-alias ls="ls --color=auto"
-alias ll="ls --color=auto -alh"
-alias l="ls --color=auto -alh"
-export Blk="\e[0;30m"
-export Red="\e[0;31m"
-export Gre="\e[0;32m"
-export Yel="\e[0;33m"
-export Blu="\e[0;34m"
-export Pur="\e[0;35m"
-export Cya="\e[0;36m"
-export Whi="\e[0;37m"
-export BBla="\e[1;30m"
-export BRed="\e[1;31m"
-export BGre="\e[1;32m"
-export BYel="\e[1;33m"
-export BBlu="\e[1;34m"
-export BPur="\e[1;35m"
-export BCya="\e[1;36m"
-export BWhi="\e[1;37m"
-export PS1="╭─${BRed}\\\\u@\h ${BGre}\w${BWhi} \n╰─# "
-export HOME=/root
-export PATH=/bin:/usr/bin:/sbin:/usr/sbin
-export LC_ALL="en_US.UTF-8"
-export LANG="en_US.UTF-8"' | $SUDO tee $newhome/etc/profile
-
-  [ -f /etc/resolv.conf ] && cat /etc/resolv.conf | $SUDO tee $newhome/etc/resolv.conf
-  [ -f /system/etc/resolv.conf ] && cat /system/etc/resolv.conf > $newhome/etc/resolv.conf
-  [ $(command -v getprop) ] && getprop | sed -n -e 's/^\[net\.dns.\]: \[\(.*\)\]/\1/p' | sed '/^\s*$/d' | sed 's/^/nameserver /' > $newhome/etc/resolv.conf
-  [ -s $newhome/etc/resolv.conf ] || echo "nameserver 8.8.8.8" > $newhome/etc/resolv.conf
-
-  export CHROOT_SHELL=/bin/sh
-  [ -f $newhome/bin/bash ] && CHROOT_SHELL=/bin/bash
-#   [ -f $newhome/bin/zsh ] && CHROOT_SHELL=/bin/zsh
-
-  cd $newhome # This isn't necessary
-  if [ $(command -v proot) ]; then
-    proot --link2symlink -0 -r $newhome -b /dev/ -b /sys/ -b /proc/ -b /storage/ -b $HOME -w $HOME /usr/bin/env -i HOME=/root TERM="$TERM" LANG=$LANG PATH=/bin:/usr/bin:/sbin:/usr/sbin $CHROOT_SHELL --login
-  elif [ $(command -v fakechroot) ] && [ $(command -v fakeroot) ]; then
-    fakechroot fakeroot chroot $PWD $CHROOT_SHELL -l
-  else
-    $SUDO chroot $PWD $CHROOT_SHELL -l
-  fi;
-}
-
-StartAlpine()
-{
-  export newhome=$HOME/Alpine
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/main/"       > $newhome/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/community/" >> $newhome/etc/apk/repositories; \
-  echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/"   >> $newhome/etc/apk/repositories
-  ChrootHome $newhome
-}
-
-StartDebian()
-{
-  export newhome=$HOME/Debian
-  ChrootHome $newhome
-}
-
 dict() {
   if [ $# -eq 0 ]; then
     echo "Usage: dict <word>"
@@ -1387,11 +1300,3 @@ dict() {
   fi;
 }
 
-finish() {
-  if [[ "$TERM" = "screen" ]] && [[ -n "$TMUX" ]]; then
-    true
-#     TODO
-#     Do somethihng when bash is closing
-  fi;
-}
-trap finish EXIT
