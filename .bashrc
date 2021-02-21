@@ -297,7 +297,7 @@ if ls --version 2>/dev/null | grep -q GNU ; then
   alias ll='ls -lah'
 fi
 alias less='less -R'
-alias termux-ssh-server-start='pkill sshd; sshd && logcat -s "syslog:*"'
+alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias termux-scp='rsync --archive --new-compress --verbose --partial --partial-dir=.rsync-partial --progress --rsh="ssh -p8022"' # termux-scp root@192.168.78.100:~/storage/external-1/j.mp4 ~/Desktop
 alias ptt-ssh='ssh bbsu@ptt.cc'
 alias ptt-telnet-23='telnet ptt.cc 23'
