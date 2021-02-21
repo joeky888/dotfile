@@ -80,6 +80,7 @@ alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+be
 alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
 alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
+alias termux-ssh-server-start='pkill sshd; sshd && logcat -s "syslog:*"'
 
 function upgradeDotfile
     if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
