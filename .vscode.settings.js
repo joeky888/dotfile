@@ -61,16 +61,6 @@
     "go.testFlags": ["-count=1"],
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
-        "format": false, // Disable to use "go.formatTool"
-        "autoComplete": true,
-        "rename": true,
-        "goToDefinition": true,
-        "signatureHelp": true,
-        "goToTypeDefinition": true,
-        "goToImplementation": true,
-        "documentSymbols": true,
-        "workspaceSymbols": true,
-        "findReferences": true,
         "diagnostics": true,
     },
     "go.lintTool":"golangci-lint",
