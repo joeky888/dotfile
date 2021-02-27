@@ -63,7 +63,7 @@ RSS list
 =====
 * 中文
 https://feeds.feedburner.com/techbang
-https://www.gamebase.com.tw/news/rss/0
+https://news.gamebase.com.tw/rss.xml
 http://news.everydayhealth.com.tw/feed
 https://feeds.feedburner.com/engadget/cstb
 https://technews.tw/tn-rss/
