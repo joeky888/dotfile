@@ -1,0 +1,13 @@
+version: "3"
+services:
+  app:
+    image: nginx
+    build:
+      context: ./
+      dockerfile: ./nginx.dockerfile
+    ports:
+      - "8080:80"
+    # This will read every env variables start with "APP"
+    environment:
+      - "APP_URL=https://production.example.com"
+      - "APP_ENV=production"
