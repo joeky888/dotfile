@@ -265,6 +265,9 @@ Android
       * Only via Wi-Fi -> Auto-start downloads
 * TWRP Recovery
 * Magisk / Xposed
+* Fubon bank
+  * If if crashes on startup, install the app "Servicely" (root required)
+  * Servicesly -> Services -> 富邦行動銀行 find a short-named service `?.??` and disable it
 * Opengapps (flash it if gapps are not functional)
 * Google Lens
 * Qemu Limbo
