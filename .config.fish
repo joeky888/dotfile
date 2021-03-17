@@ -1,4 +1,5 @@
-set fish_greeting # Disable fish messages on start
+# Disable fish messages on start
+set fish_greeting
 
 # Docs: https://fishshell.com/docs/current/cmds/bind.html
 bind -k up history-prefix-search-backward
