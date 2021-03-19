@@ -85,6 +85,7 @@ CLI
   * pm2
   * cloc # Programing language usage analyzer
   * git-stats
+  * esbuild
 * Network tools
   * Nmap
   * Netcat
