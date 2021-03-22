@@ -86,6 +86,9 @@
         "usePlaceholders": true,
         "completeUnimported": true,
     },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
