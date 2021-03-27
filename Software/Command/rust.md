@@ -3,6 +3,18 @@ Setup
 * Install rust using curl
 * $ rustup update beta # Channels can be "stable" "beta" "nightly"
 
+Setup for windows
+=====
+```sh
+scoop install rustup
+rustup set default-host beta-x86_64-pc-windows-gnu
+rustup toolchain list
+rustup update beta
+rustup toolchain uninstall stable-x86_64-pc-windows-gnu
+rustup toolchain uninstall stable-x86_64-pc-windows-msvc
+rustup default beta-x86_64-pc-windows-gnu
+```
+
 VScode integration
 =====
 * Install rust-lang.rust and vadimcn.vscode-lldb
