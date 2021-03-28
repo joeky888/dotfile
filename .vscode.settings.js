@@ -30,6 +30,11 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
     "[makefile]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
@@ -49,6 +54,8 @@
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.updates.channel": "nightly",
+    "lldb.launch.terminal": "console",
+    "lldb.verboseLogging": true,
     "[go]": {
         "editor.tabSize": 8,
         "editor.insertSpaces": false,
@@ -136,11 +143,6 @@
       "terminal.ansiRed":"#f4005f",
       "terminal.ansiWhite":"#c4c5b5",
       "terminal.ansiYellow":"#fa8419"
-    },
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "[html]": {
-        "editor.defaultFormatter": "vscode.html-language-features"
-    },
+    }
 }
 
