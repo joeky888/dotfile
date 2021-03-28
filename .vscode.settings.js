@@ -54,7 +54,7 @@
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.updates.channel": "nightly",
-    "lldb.launch.terminal": "console",
+    "lldb.launch.terminal": "integrated",
     "lldb.verboseLogging": true,
     "[go]": {
         "editor.tabSize": 8,
