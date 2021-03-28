@@ -53,7 +53,7 @@
     },
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
-    "rust-analyzer.updates.channel": "nightly",
+    "rust-analyzer.updates.channel": "stable",
     "lldb.launch.terminal": "integrated",
     "lldb.verboseLogging": true,
     "[go]": {
