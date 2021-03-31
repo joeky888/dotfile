@@ -45,28 +45,28 @@ set -g __fish_git_prompt_color_untrackedfiles red
 set -g __fish_git_prompt_color_cleanstate yellow --bold
 
 function fish_prompt --description 'Write out the prompt'
-    set -l last_pipestatus $pipestatus
-    set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
-    set -l normal (set_color normal)
+  set -l last_pipestatus $pipestatus
+  set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
+  set -l normal (set_color normal)
 
-    set color_status green
-    set print_status "✓"
-    if [ "$last_pipestatus" != "0" ]
-        set color_status red
-        set print_status "$last_pipestatus"
+  set color_status green
+  set print_status "✓"
+  if [ "$last_pipestatus" != "0" ]
+    set color_status red
+    set print_status "$last_pipestatus"
+  end
+
+  # Color the prompt differently when we're root
+  set -l color_cwd $fish_color_cwd
+  set -l suffix \n'> '
+  if functions -q fish_is_root_user; and fish_is_root_user
+    if set -q fish_color_cwd_root
+      set color_cwd $fish_color_cwd_root
     end
+    set suffix \n'# '
+  end
 
-    # Color the prompt differently when we're root
-    set -l color_cwd $fish_color_cwd
-    set -l suffix \n'> '
-    if functions -q fish_is_root_user; and fish_is_root_user
-        if set -q fish_color_cwd_root
-            set color_cwd $fish_color_cwd_root
-        end
-        set suffix \n'# '
-    end
-
-    echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal $suffix
+  echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal $suffix
 end
 
 set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
@@ -82,13 +82,14 @@ alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+
 alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
+alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,compress,deflate,br" --user-agent "(youtube-dl --dump-user-agent)" -LC - '
 
 function upgradeDotfile
-    if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
-    git -C ~/dotfile pull
-    git -C ~/dotfile submodule update --init --remote
+  if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
+  git -C ~/dotfile pull
+  git -C ~/dotfile submodule update --init --remote
 end
 
 function vman
-    MANPAGER=cat man $argv | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" -
+  MANPAGER=cat man $argv | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" -
 end
