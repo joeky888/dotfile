@@ -1,0 +1,22 @@
+[package]
+name = "rust-playground"
+version = "0.1.0"
+authors = ["Joeky <joeky5888@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[profile.release]
+debug = 1 # Enable backtrace
+opt-level = "z"
+lto = true
+codegen-units = 1
+
+[dependencies]
+backtrace = "0.3"
+log = "0.4.0"
+env_logger = "0.8.3"
+chrono = "0.4"
+config = "0.11"
+lazy_static = "1.4.0"
+serde = { version = "1.0", features = ["derive"] }
