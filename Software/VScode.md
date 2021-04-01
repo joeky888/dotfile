@@ -1,7 +1,7 @@
 VsCodium extension
 =====
 * find the product.json
-* $ sudo fd / product.json
+* $ sudo fd product.json /
 * Edit
 ```js
 // Replace
