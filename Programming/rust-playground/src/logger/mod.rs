@@ -31,16 +31,8 @@ pub fn init() {
             // You need to add `debug = 1` under the section [profile.release]
             // which however, will increase the binary size
 
-            let _ = writeln!(
-                buf,
-                "[{}] {} {} {}",
-                Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z"),
-                style.value(record.level()),
-                record.args(),
-                stack_trace
-            );
             writeln!(
-                &mut std::io::stderr(),
+                buf,
                 "[{}] {} {} {}",
                 Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z"),
                 style.value(record.level()),
