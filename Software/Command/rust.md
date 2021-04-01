@@ -51,6 +51,7 @@ VScode debug
     },
     "env": {
         "DATABASE_HOST": "mysql",
+        "RUST_BACKTRACE": "1",
     },
     "args": [],
     "cwd": "${workspaceFolder}"
