@@ -8,6 +8,7 @@ Setup for windows
 ```sh
 scoop install rustup
 rustup set default-host beta-x86_64-pc-windows-gnu
+rustup default beta-x86_64-pc-windows-gnu # Or this
 rustup toolchain list
 rustup update beta
 rustup toolchain uninstall stable-x86_64-pc-windows-gnu
