@@ -1,10 +1,15 @@
+use crate::environment;
 use backtrace::Backtrace;
 use chrono::prelude::Local;
-use env_logger::{fmt::Color, fmt::Style, Env};
-use std::{io::Write, time};
+use env_logger::{fmt::Color, Env};
+use std::io::Write;
 
 pub fn init() {
-    env_logger::Builder::from_env(Env::default().default_filter_or("trace"))
+    let log_level = match environment::SETTINGS.read().unwrap().debug.enable {
+        true => "debug",
+        false => "info",
+    };
+    env_logger::Builder::from_env(Env::default().default_filter_or(log_level))
         .format(|buf, record| {
             let mut level_style = buf.style();
             let mut time_style = buf.style();
@@ -14,9 +19,6 @@ pub fn init() {
 
             time_style.set_color(Color::Cyan);
             stack_style.set_color(Color::Magenta);
-            // let mut stdout = StandardStream::stdout(ColorChoice::Always);
-            // stdout.set_color(ColorSpec::new().set_fg(Some(Color::Green)))?;
-
             // Use the same color set the zap logger does
             match record.level() {
                 log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
@@ -32,8 +34,14 @@ pub fn init() {
                 }
             };
 
+            if !environment::SETTINGS.read().unwrap().debug.color {
+                time_style.set_color(Color::White);
+                level_style.set_color(Color::White);
+                stack_style.set_color(Color::White);
+            }
+
             // buf.timestamp() is the default timestamp and is human-unreadable
-            // chrono::prelude::Local can display a better local time format
+            // chrono::prelude::Local provides a better local time format
             // See https://github.com/chronotope/chrono/blob/main/src/format/strftime.rs
 
             // If you need to see the stack trace when build with --release
