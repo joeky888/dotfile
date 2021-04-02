@@ -1,25 +1,34 @@
 use backtrace::Backtrace;
-use env_logger::{fmt::Color, Env};
-use std::io::Write;
 use chrono::prelude::Local;
+use env_logger::{fmt::Color, fmt::Style, Env};
+use std::{io::Write, time};
 
 pub fn init() {
     env_logger::Builder::from_env(Env::default().default_filter_or("trace"))
         .format(|buf, record| {
-            let mut style = buf.style();
-            let mut stack_trace = String::from("");
+            let mut level_style = buf.style();
+            let mut time_style = buf.style();
+            let mut stack_style = buf.style();
 
+            let mut stack_trace = String::new();
+
+            time_style.set_color(Color::Cyan);
+            stack_style.set_color(Color::Magenta);
+            // let mut stdout = StandardStream::stdout(ColorChoice::Always);
+            // stdout.set_color(ColorSpec::new().set_fg(Some(Color::Green)))?;
+
+            // Use the same color set the zap logger does
             match record.level() {
-                log::Level::Trace => style.set_color(Color::Cyan).set_bold(true),
-                log::Level::Debug => style.set_color(Color::Blue).set_bold(true),
-                log::Level::Info => style.set_color(Color::Green).set_bold(true),
+                log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
+                log::Level::Debug => level_style.set_color(Color::Magenta),
+                log::Level::Info => level_style.set_color(Color::Blue),
                 log::Level::Warn => {
                     stack_trace = format!("\n{:?}", Backtrace::new());
-                    style.set_color(Color::Yellow).set_bold(true)
+                    level_style.set_color(Color::Yellow)
                 }
                 log::Level::Error => {
                     stack_trace = format!("\n{:?}", Backtrace::new());
-                    style.set_color(Color::Red).set_bold(true)
+                    level_style.set_color(Color::Red)
                 }
             };
 
@@ -30,15 +39,19 @@ pub fn init() {
             // If you need to see the stack trace when build with --release
             // You need to add `debug = 1` under the section [profile.release]
             // which however, will increase the binary size
+            // let timestamp = Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z");
+            // let mut colored_time = ColorSpec::new().set_fg(Some(termcolor::Color::Yellow));
 
             writeln!(
                 buf,
-                "[{}] {} {} {}",
-                Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z"),
-                style.value(record.level()),
+                "{} {} {} {}",
+                // Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]"),
+                time_style.value(Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]")),
+                level_style.value(record.level()),
                 record.args(),
-                stack_trace
+                stack_style.value(stack_trace),
             )
         })
         .init();
 }
+
