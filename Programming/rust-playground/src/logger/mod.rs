@@ -14,11 +14,12 @@ pub fn init() {
             let mut level_style = buf.style();
             let mut time_style = buf.style();
             let mut stack_style = buf.style();
+            let mut message_style = buf.style();
 
             let mut stack_trace = String::new();
 
-            time_style.set_color(Color::Cyan);
-            stack_style.set_color(Color::Magenta);
+            time_style.set_color(Color::Green);
+            message_style.set_color(Color::Cyan);
             // Use the same color set the zap logger does
             match record.level() {
                 log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
@@ -26,10 +27,12 @@ pub fn init() {
                 log::Level::Info => level_style.set_color(Color::Blue),
                 log::Level::Warn => {
                     stack_trace = format!("\n{:?}", Backtrace::new());
+                    stack_style.set_color(Color::Yellow);
                     level_style.set_color(Color::Yellow)
                 }
                 log::Level::Error => {
                     stack_trace = format!("\n{:?}", Backtrace::new());
+                    stack_style.set_color(Color::Red);
                     level_style.set_color(Color::Red)
                 }
             };
@@ -38,6 +41,7 @@ pub fn init() {
                 time_style.set_color(Color::White);
                 level_style.set_color(Color::White);
                 stack_style.set_color(Color::White);
+                message_style.set_color(Color::White);
             }
 
             // buf.timestamp() is the default timestamp and is human-unreadable
@@ -56,7 +60,7 @@ pub fn init() {
                 // Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]"),
                 time_style.value(Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]")),
                 level_style.value(record.level()),
-                record.args(),
+                message_style.value(record.args()),
                 stack_style.value(stack_trace),
             )
         })
