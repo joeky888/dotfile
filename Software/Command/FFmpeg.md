@@ -237,6 +237,16 @@ Merge VTS-01-1.VOB VTS-01-2.VOB VTS-01-3.VOB to VTS-01.VOB
 =====
 * $ cat VTS-01-\*.VOB > VTS-01.VOB
 
+Hardware acceleration
+=====
+* Windows with Nvidia
+```sh
+# Verify
+ffmpeg -version | select-string "enable-nv"
+# Usage
+ffmpeg -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i input.mp4 "-c:a" copy "-c:v" h264_nvenc output.mp4
+```
+
 Compile ffmpeg on Cygwin
 =====
 * Install (Cygwin) -> libtool yasm yasm-devel nasm binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopenjp2-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel
