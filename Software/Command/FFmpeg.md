@@ -245,6 +245,12 @@ Hardware acceleration
 ffmpeg -version | select-string "enable-nv"
 # Usage
 ffmpeg -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i input.mp4 "-c:a" copy "-c:v" h264_nvenc output.mp4
+ffmpeg -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i input.mp4 "-c:a" copy "-c:v" hevc_nvenc output.mp4
+```
+* Linux with VAAPI
+```sh
+ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 "-c:a" copy "-c:v" h264_vaapi output.mp4
+ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 "-c:a" copy "-c:v" hevc_vaapi output.mp4
 ```
 
 Compile ffmpeg on Cygwin
