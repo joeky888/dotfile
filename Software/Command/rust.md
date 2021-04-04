@@ -55,7 +55,8 @@ VScode debug
         "RUST_BACKTRACE": "1",
     },
     "args": [],
-    "cwd": "${workspaceFolder}"
+    "cwd": "${workspaceFolder}",
+    "internalConsoleOptions": "neverOpen", // This will set the default debug panel to "Terminal" instead of "Debug Console"
 },
 {
     "name": "(Windows) Debug 'rust-playground' with ms-vscode.cpptools",
