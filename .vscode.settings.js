@@ -16,6 +16,28 @@
     "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "solid",
+    "editor.semanticHighlighting.enabled": true,
+    "editor.semanticTokenColorCustomizations": {
+        "[Monokai]": {
+            "rules": {
+                "interface": {
+                    "underline": false
+                },
+                "enum": {
+                    "underline": false
+                },
+                "struct": {
+                    "underline": false
+                },
+                "namespace": {
+                    "underline": false
+                },
+                "*.mutable": {
+                    "underline": false
+                },
+            }
+        }
+    },
     "git.ignoreMissingGitWarning": true,
     "emmet.showSuggestionsAsSnippets": true,
     "editor.snippetSuggestions": "top",
@@ -67,12 +89,14 @@
             "source.organizeImports": true
         },
     },
-    "go.testFlags": ["-count=1"],
+    "go.testFlags": [
+        "-count=1"
+    ],
     "go.useLanguageServer": true,
     "go.languageServerExperimentalFeatures": {
         "diagnostics": true,
     },
-    "go.lintTool":"golangci-lint",
+    "go.lintTool": "golangci-lint",
     "go.lintFlags": [
         // "--enable-all",
         "--fast",
@@ -88,9 +112,9 @@
             "maxStringLen": 1024,
             "maxArrayValues": 1024,
             "maxStructFields": -1
-          },
-          "apiVersion": 2,
-          "showGlobalVariables": true
+        },
+        "apiVersion": 2,
+        "showGlobalVariables": true
     },
     "gopls": {
         "usePlaceholders": true,
@@ -126,26 +150,25 @@
     "terminal.integrated.rendererType": "dom",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
-      "terminal.background":"#1a1a1a",
-      "terminal.foreground":"#c4c5b5",
-      "terminalCursor.background":"#A5A2A2",
-      "terminalCursor.foreground":"#A5A2A2",
-      "terminal.ansiBlack":"#1a1a1a",
-      "terminal.ansiBlue":"#9d65ff",
-      "terminal.ansiBrightBlack":"#625e4c",
-      "terminal.ansiBrightBlue":"#9d65ff",
-      "terminal.ansiBrightCyan":"#58d1eb",
-      "terminal.ansiBrightGreen":"#98e024",
-      "terminal.ansiBrightMagenta":"#f4005f",
-      "terminal.ansiBrightRed":"#f4005f",
-      "terminal.ansiBrightWhite":"#f6f6ef",
-      "terminal.ansiBrightYellow":"#e0d561",
-      "terminal.ansiCyan":"#58d1eb",
-      "terminal.ansiGreen":"#98e024",
-      "terminal.ansiMagenta":"#f4005f",
-      "terminal.ansiRed":"#f4005f",
-      "terminal.ansiWhite":"#c4c5b5",
-      "terminal.ansiYellow":"#fa8419"
+        "terminal.background": "#1a1a1a",
+        "terminal.foreground": "#c4c5b5",
+        "terminalCursor.background": "#A5A2A2",
+        "terminalCursor.foreground": "#A5A2A2",
+        "terminal.ansiBlack": "#1a1a1a",
+        "terminal.ansiBlue": "#9d65ff",
+        "terminal.ansiBrightBlack": "#625e4c",
+        "terminal.ansiBrightBlue": "#9d65ff",
+        "terminal.ansiBrightCyan": "#58d1eb",
+        "terminal.ansiBrightGreen": "#98e024",
+        "terminal.ansiBrightMagenta": "#f4005f",
+        "terminal.ansiBrightRed": "#f4005f",
+        "terminal.ansiBrightWhite": "#f6f6ef",
+        "terminal.ansiBrightYellow": "#e0d561",
+        "terminal.ansiCyan": "#58d1eb",
+        "terminal.ansiGreen": "#98e024",
+        "terminal.ansiMagenta": "#f4005f",
+        "terminal.ansiRed": "#f4005f",
+        "terminal.ansiWhite": "#c4c5b5",
+        "terminal.ansiYellow": "#fa8419"
     }
 }
-
