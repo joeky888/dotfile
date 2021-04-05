@@ -20,6 +20,9 @@
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
+                "attribute": {
+                    "underline": false
+                },
                 "interface": {
                     "underline": false
                 },
