@@ -20,6 +20,9 @@
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
+                "unresolvedReference": {
+                    "underline": false
+                },
                 "attribute": {
                     "underline": false
                 },
