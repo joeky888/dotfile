@@ -15,7 +15,6 @@ func (p IP) Value() (driver.Value, error) {
 
 // Scan Override
 func (p *IP) Scan(input interface{}) error {
-	return json.Unmarshal([]byte(input.([]uint8)), p)
-	// Or return json.Unmarshal(input.([]byte), p)
+	return json.Unmarshal(input.([]byte), p)
 }
 ```
