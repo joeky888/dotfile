@@ -105,7 +105,7 @@
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
         // "--enable-all",
-        "--fast",
+        // "--fast",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
