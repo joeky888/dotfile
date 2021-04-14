@@ -134,6 +134,15 @@
         "usePlaceholders": true,
         "completeUnimported": true,
     },
+    "deno.enable": true,
+    "deno.lint": true,
+    "deno.codeLens.implementations": true,
+    "deno.codeLens.references": true,
+    "deno.codeLens.referencesAllFunctions": true,
+    "deno.suggest.autoImports": true,
+    "deno.suggest.completeFunctionCalls": true,
+    "deno.suggest.names": true,
+    "deno.suggest.paths": false,
     "[javascript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
