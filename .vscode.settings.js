@@ -104,8 +104,16 @@
     },
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
-        // "--enable-all",
-        // "--fast",
+        "--fast",
+        // These are default linter
+        "-E=deadcode",
+        "-E=errcheck",
+        "-E=gosimple",
+        "-E=staticcheck",
+        "-E=structcheck",
+        "-E=typecheck",
+        "-E=unused",
+        "-E=varcheck",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
