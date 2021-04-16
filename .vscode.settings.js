@@ -193,5 +193,8 @@
         "terminal.ansiRed": "#f4005f",
         "terminal.ansiWhite": "#c4c5b5",
         "terminal.ansiYellow": "#fa8419"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
     }
 }
