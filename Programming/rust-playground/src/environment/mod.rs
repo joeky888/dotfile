@@ -16,8 +16,9 @@ pub struct Settings {
 
 #[derive(Debug, Deserialize)]
 pub struct Debug {
-    pub enable: bool, // config logger level
-    pub color: bool,  // config logger color
+    pub enable: bool,   // config logger level
+    pub color: bool,    // config logger color
+    pub fileline: bool, // config logging file:line
 }
 
 #[derive(Debug, Deserialize)]
@@ -53,6 +54,7 @@ impl Settings {
 
         config.set_default("debug.enable", true)?;
         config.set_default("debug.color", true)?;
+        config.set_default("debug.fileline", true)?;
         Ok(config)
     }
 }

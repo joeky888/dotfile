@@ -2,7 +2,7 @@ use crate::environment;
 use backtrace::Backtrace;
 use chrono::prelude::Local;
 use env_logger::{fmt::Color, Env};
-use std::io::Write;
+use std::{io::Write};
 
 pub fn init() {
     let log_level = match environment::SETTINGS.read().unwrap().debug.enable {
@@ -19,31 +19,39 @@ pub fn init() {
 
             let mut stack_trace = String::new();
 
-            time_style.set_color(Color::Green);
-            message_style.set_color(Color::Cyan);
-            fileline_style.set_color(Color::Yellow).set_bold(true);
-            // Use the same color set the zap logger does
-            match record.level() {
-                log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
-                log::Level::Debug => level_style.set_color(Color::Magenta),
-                log::Level::Info => level_style.set_color(Color::Blue),
-                log::Level::Warn => {
-                    stack_trace = format!("\n{:?}", Backtrace::new());
-                    stack_style.set_color(Color::Yellow);
-                    level_style.set_color(Color::Yellow)
-                }
-                log::Level::Error => {
-                    stack_trace = format!("\n{:?}", Backtrace::new());
-                    stack_style.set_color(Color::Red);
-                    level_style.set_color(Color::Red)
-                }
-            };
+            if environment::SETTINGS.read().unwrap().debug.color {
+                time_style.set_color(Color::Green);
+                // level_style.set_color(Color::White);
+                // stack_style.set_color(Color::White);
+                message_style.set_color(Color::Cyan);
+                fileline_style.set_color(Color::Yellow).set_bold(true);
 
-            if !environment::SETTINGS.read().unwrap().debug.color {
-                time_style.set_color(Color::White);
-                level_style.set_color(Color::White);
-                stack_style.set_color(Color::White);
-                message_style.set_color(Color::White);
+                // Use the same color set the zap logger does
+                match record.level() {
+                    log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
+                    log::Level::Debug => level_style.set_color(Color::Magenta),
+                    log::Level::Info => level_style.set_color(Color::Blue),
+                    log::Level::Warn => {
+                        stack_trace = format!("\n{:?}", Backtrace::new());
+                        stack_style.set_color(Color::Yellow);
+                        level_style.set_color(Color::Yellow)
+                    }
+                    log::Level::Error => {
+                        stack_trace = format!("\n{:?}", Backtrace::new());
+                        stack_style.set_color(Color::Red);
+                        level_style.set_color(Color::Red)
+                    }
+                };
+            } else {
+                match record.level() {
+                    log::Level::Warn => {
+                        stack_trace = format!("\n{:?}", Backtrace::new());
+                    }
+                    log::Level::Error => {
+                        stack_trace = format!("\n{:?}", Backtrace::new());
+                    }
+                    _ => {}
+                };
             }
 
             // buf.timestamp() is the default timestamp and is human-unreadable
@@ -54,20 +62,24 @@ pub fn init() {
             // You need to add `debug = 1` under the section [profile.release]
             // which however, will increase the binary size
 
-            let file = match record.file() {
-                Some(file) => file,
-                None => "",
-            };
-            let line = match record.line() {
-                Some(line) => line,
-                None => 0,
-            };
+            let mut fileline = String::new();
+            if environment::SETTINGS.read().unwrap().debug.fileline {
+                let file = match record.file() {
+                    Some(file) => file,
+                    None => "",
+                };
+                let line = match record.line() {
+                    Some(line) => line,
+                    None => 0,
+                };
+                fileline = format!("{}:{}", file, line);
+            }
             writeln!(
                 buf,
                 "{} {} {} {} {}",
                 // Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]"),
                 time_style.value(Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]")),
-                fileline_style.value(format!("{}:{}", file, line)),
+                fileline_style.value(fileline),
                 level_style.value(record.level()),
                 message_style.value(record.args()),
                 stack_style.value(stack_trace),
