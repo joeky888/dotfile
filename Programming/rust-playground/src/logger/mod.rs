@@ -53,8 +53,6 @@ pub fn init() {
             // If you need to see the stack trace when build with --release
             // You need to add `debug = 1` under the section [profile.release]
             // which however, will increase the binary size
-            // let timestamp = Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z");
-            // let mut colored_time = ColorSpec::new().set_fg(Some(termcolor::Color::Yellow));
 
             let file = match record.file() {
                 Some(file) => file,
