@@ -15,11 +15,13 @@ pub fn init() {
             let mut time_style = buf.style();
             let mut stack_style = buf.style();
             let mut message_style = buf.style();
+            let mut fileline_style = buf.style();
 
             let mut stack_trace = String::new();
 
             time_style.set_color(Color::Green);
             message_style.set_color(Color::Cyan);
+            fileline_style.set_color(Color::Yellow).set_bold(true);
             // Use the same color set the zap logger does
             match record.level() {
                 log::Level::Trace => level_style.set_color(Color::Blue).set_bold(true),
@@ -54,11 +56,20 @@ pub fn init() {
             // let timestamp = Local::now().format("%Y-%m-%dT%H:%M:%S%.3f%z");
             // let mut colored_time = ColorSpec::new().set_fg(Some(termcolor::Color::Yellow));
 
+            let file = match record.file() {
+                Some(file) => file,
+                None => "",
+            };
+            let line = match record.line() {
+                Some(line) => line,
+                None => 0,
+            };
             writeln!(
                 buf,
-                "{} {} {} {}",
+                "{} {} {} {} {}",
                 // Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]"),
                 time_style.value(Local::now().format("[%Y-%m-%dT%H:%M:%S%.3f%z]")),
+                fileline_style.value(format!("{}:{}", file, line)),
                 level_style.value(record.level()),
                 message_style.value(record.args()),
                 stack_style.value(stack_trace),
