@@ -8,15 +8,47 @@ type BaseModel struct {
 	DeletedAt *time.Time `pg:",soft_delete"`
 }
 
-func (m *BaseModel) BeforeUpdate(ctx context.Context) (context.Context, error) {
-	m.UpdatedAt = time.Now()
-	return ctx, nil
-}
-
 type User struct {
 	BaseModel
 	Name   string
 	Emails []string
+}
+
+func createTable(db *pg.DB) error {
+	// Auto update the updated_at column
+	updateTrigger := `CREATE OR REPLACE FUNCTION update_trigger()
+	RETURNS TRIGGER AS $$
+	BEGIN
+	   IF row(NEW.*) IS DISTINCT FROM row(OLD.*) THEN
+	      NEW.updated_at = now();
+	      RETURN NEW;
+	   ELSE
+	      RETURN OLD;
+	   END IF;
+	END;
+	$$ language 'plpgsql'`
+
+        if _, err := db.Exec(updateTrigger); err != nil {
+		return err
+	}
+
+	if err := db.Model((*User)(nil)).CreateTable(&orm.CreateTableOptions{
+		Temp:        true,
+		IfNotExists: true,
+	}); err != nil {
+            return err
+        }
+
+        if _, err := db.Exec(fmt.Sprintf(`DROP TRIGGER IF EXISTS %s on %s;`, "update_user", "users")); err != nil {
+                return err
+        }
+
+	// Create a update function trigger "update_user" on the "users" table
+	if _, err := db.Exec(fmt.Sprintf(`CREATE TRIGGER %s BEFORE UPDATE ON %s FOR EACH ROW EXECUTE PROCEDURE update_trigger()`, "update_user", "users")); err != nil {
+		return err
+	}
+
+        return nil
 }
 ```
 
