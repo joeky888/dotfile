@@ -2,10 +2,10 @@ Add base model like ID, CreatedAt, UpdatedAt and DeletedAt
 =====
 ```go
 type BaseModel struct {
-	ID        int64      `pg:",pk"`
+	ID        int64      `pg:",pk" gorm:"primarykey"`
 	CreatedAt time.Time  `pg:"default:now()"`
 	UpdatedAt time.Time  `pg:"default:now()"`
-	DeletedAt *time.Time `pg:",soft_delete"`
+	DeletedAt *time.Time `pg:",soft_delete" gorm:"index"`
 }
 
 type User struct {
