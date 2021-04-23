@@ -3,8 +3,8 @@ Add base model like ID, CreatedAt, UpdatedAt and DeletedAt
 ```go
 type BaseModel struct {
 	ID        int64      `pg:",pk" gorm:"primarykey"`
-	CreatedAt time.Time  `pg:"default:now()"`
-	UpdatedAt time.Time  `pg:"default:now()"`
+	CreatedAt time.Time  `pg:"default:now()" gorm:"default:now()"`
+	UpdatedAt time.Time  `pg:"default:now()" gorm:"default:now()"`
 	DeletedAt *time.Time `pg:",soft_delete" gorm:"index"`
 }
 
