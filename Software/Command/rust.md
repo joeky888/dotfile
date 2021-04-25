@@ -30,6 +30,13 @@ VScode new project
 * Build
     * $ cargo build --release
 
+Merge multiple line into one (To make sure tree-shaking works)
+=====
+```sh
+cargo fmt -- --config imports_granularity=Item # Split them first
+cargo fmt -- --config imports_granularity=Crate # Then merge them
+```
+
 VScode debug
 =====
 * On Linux and macOS use vadimcn.vscode-lldb

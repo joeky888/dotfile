@@ -17,6 +17,10 @@
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "solid",
     "editor.semanticHighlighting.enabled": true,
+    "rust-analyzer.rustfmt.extraArgs": [
+        "--config",
+        "imports_granularity=Crate", // Merge imports into one line
+    ],
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
