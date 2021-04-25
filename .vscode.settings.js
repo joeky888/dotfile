@@ -17,10 +17,6 @@
     "editor.mouseWheelZoom": true,
     "editor.cursorBlinking": "solid",
     "editor.semanticHighlighting.enabled": true,
-    "rust-analyzer.rustfmt.extraArgs": [
-        "--config",
-        "imports_granularity=Crate", // Merge imports into one line
-    ],
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
@@ -86,8 +82,10 @@
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.updates.channel": "stable",
-    // "lldb.launch.terminal": "external",
-    // "lldb.verboseLogging": true,
+    "rust-analyzer.rustfmt.extraArgs": [
+        "--config",
+        "imports_granularity=Crate", // Merge imports into one line
+    ],
     "lldb.adapterEnv": {
         "RUST_BACKTRACE": "1",
     },
