@@ -3,6 +3,7 @@ Software
 * XnView MP
 * sogou pinyin/zhuyin
 * Firefox Developer `https://www.mozilla.org/en-US/firefox/developer/all/`
+* Pale moon (Browser which supports unity web play and flash player)
 * Wireshark
 * Nmap
 * Teamviewer
