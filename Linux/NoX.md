@@ -202,6 +202,16 @@ nameserver 114.114.114.114
 ```
 * $ sudo resolvconf -u
 
+Mount a new device to /home and keep it automatically mounted on boot
+=====
+* Format and make a partition to the new device
+* E.g. make a new partition named /dev/sdb1 and format it to ext4
+```sh
+sudoedit /etc/fstab
+# Add this line, change hdd to other names
+/dev/sdb1 /home/hdd ext4 defaults 0 2
+```
+
 Add an user to sudoer group
 =====
 * $ sudo usermod -aG sudo joeky
