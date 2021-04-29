@@ -210,6 +210,8 @@ Mount a new device to /home and keep it automatically mounted on boot
 sudoedit /etc/fstab
 # Add this line, change hdd to other names
 /dev/sdb1 /home/hdd ext4 defaults 0 2
+sudo systemctl daemon-reload
+sudo systemctl restart local-fs.target
 ```
 
 Add an user to sudoer group
