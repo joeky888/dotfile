@@ -994,17 +994,17 @@ if [ $(command -v grc) ] ; then
   # Set alias for available commands.
   for cmd in "${cmds[@]}" ; do
     if [[ -n "$ZSH_VERSION" ]] && [ $(command -v $cmd) ] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
-      eval "function $cmd { grc -es --colour=auto $(command -v $cmd) \"\$@\" }"
+      eval "function $cmd { grc -es $(command -v $cmd) \"\$@\" }"
       eval "compdef _$cmd $cmd"
     else
-      [ $(command -v $cmd) ] && alias $cmd="grc -es --colour=auto $(command -v $cmd)"
+      [ $(command -v $cmd) ] && alias $cmd="grc -es $(command -v $cmd)"
     fi
   done
 
-  alias configure='grc -es --colour=auto ./configure'
-#   alias jobs='grc -es --colour=auto bash -c "jobs $@"' # Comment out because it breaks powerlevel9k theme
-  alias limit='grc -es --colour=auto bash -c "limit $@"'
-  alias ulimit='grc -es --colour=auto bash -c "ulimit $@"'
+  alias configure='grc -es ./configure'
+#   alias jobs='grc -es bash -c "jobs $@"' # Comment out because it breaks powerlevel9k theme
+  alias limit='grc -es bash -c "limit $@"'
+  alias ulimit='grc -es bash -c "ulimit $@"'
 
   if [ -n "$ZSH_VERSION" ] && hash kubectl 2>/dev/null >/dev/null; then
     source <(kubectl completion zsh)
@@ -1012,7 +1012,7 @@ if [ $(command -v grc) ] ; then
   fi
 
   if [ -n "$ZSH_VERSION" ] && hash helm 2>/dev/null >/dev/null; then
-    eval "function helm { grc -es --colour=auto -c conf.kubectl $(command -v helm) \"\$@\" }"
+    eval "function helm { grc -es -c conf.kubectl $(command -v helm) \"\$@\" }"
     source <(helm completion zsh 2>/dev/null)
   fi
 
