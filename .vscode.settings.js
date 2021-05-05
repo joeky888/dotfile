@@ -20,6 +20,18 @@
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
+                "type": {
+                    "underline": false
+                },
+                "typeAlias": {
+                    "underline": false
+                },
+                "class": {
+                    "underline": false
+                },
+                "*.declaration": {
+                    "underline": false
+                },
                 "unresolvedReference": {
                     "underline": false
                 },
