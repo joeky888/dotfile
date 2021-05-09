@@ -48,7 +48,7 @@ iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
 scoop config aria2-enabled false
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
-scoop install aria2 win32-openssh fd rga neovim curl ffmpeg mpv-git adb nmap go upx nodejs phantomjs miniconda3
+scoop install aria2 win32-openssh fd rga neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3
 
 # "" means "(Default)" which equals to "@"
 [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
