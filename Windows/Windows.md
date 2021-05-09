@@ -45,14 +45,15 @@ Install softwares
 ```sh
 Set-ExecutionPolicy RemoteSigned -Force
 iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
-scoop bucket add extras https://github.com/lukesampson/scoop-extras.git
+scoop bucket add extras
 scoop config aria2-enabled false
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
-scoop install aria2 win32-openssh fd rga neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3
+scoop install aria2 win32-openssh fd rga neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm
+Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
 # "" means "(Default)" which equals to "@"
-[Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Gvim\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
-[Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\vim\current\gvim.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
+[Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\*\shell\Edit with Neovim\command","","$env:USERPROFILE\scoop\apps\neovim\current\bin\nvim-qt.exe `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
+# [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\neovim\current\bin\nvim-qt.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
 ```
 * Chocolatey
 ```sh
