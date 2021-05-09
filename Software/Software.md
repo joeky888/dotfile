@@ -146,7 +146,7 @@ Dev
 
 Windows
 =====
-* Fluent Terminal / Hyper
+* Wezterm
 * build-extra (git for Windows) or msys2
 * DirectX Repair (Enhanced Edition) DirectX dll 修復工具增強版
 * Greenshot
@@ -197,11 +197,8 @@ Mac (Hack-intosh)
 =====
 * https://github.com/sickcodes/Docker-OSX
 * Alacritty
-* Hyper
-* iTerm2 and iTerm2-Color-Schemes
 * Dr. Unarchiver
 * WPS Office
-* Squirrel
 
 Linux
 =====
