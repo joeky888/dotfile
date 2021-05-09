@@ -227,7 +227,6 @@ alias url-decode='/usr/bin/perl -MURI::Escape -e "print uri_unescape(@ARGV[0])"'
 alias url-encode='/usr/bin/perl -MURI::Escape -e "print uri_escape(@ARGV[0])"'
 alias tmuxClearHistory='tmux clear-history'
 alias upgradeBashrc='curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc'
-alias upgradeConda='conda update -n base conda -y && conda update --all --yes && conda clean --yes --all'
 alias upgradeYoutubedl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/ytdl-org/youtube-dl/archive/master.zip'
 alias upgradeYou-get='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/zhangn1985/ykdl/archive/master.zip'
@@ -321,6 +320,15 @@ EncodingToTwUtf8() { export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" 
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
+upgradeConda() {
+  os="Linux"
+  if echo "$OSTYPE" | grep -q "darwin"; then # macOS
+    os="MacOSX"
+  fi;
+  #[ -d ~/Miniconda2 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$os-x86_64.sh" && chmod 777 Miniconda2-latest-$os-x86_64.sh && bash Miniconda2-latest-$os-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$os-x86_64.sh
+  [ -d ~/Miniconda3 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$os-x86_64.sh" && chmod 777 Miniconda3-latest-$os-x86_64.sh && bash Miniconda3-latest-$os-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$os-x86_64.sh
+  [ $(command -v conda) ] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
+}
 upgradePip() { pip3 install --upgrade pip && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip3 install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
