@@ -7,13 +7,11 @@ Setup for windows
 =====
 ```sh
 scoop install rustup
-rustup set default-host beta-x86_64-pc-windows-gnu
-rustup default beta-x86_64-pc-windows-gnu # Or this
 rustup toolchain list
-rustup update beta
+rustup update stable
 rustup toolchain uninstall stable-x86_64-pc-windows-gnu
 rustup toolchain uninstall stable-x86_64-pc-windows-msvc
-rustup default beta-x86_64-pc-windows-gnu
+rustup default stable-x86_64-pc-windows-gnu # Or this
 ```
 
 VScode integration
