@@ -1,6 +1,6 @@
 Setup
 =====
-* Install rust using curl
+* $ app-fast -S rustup
 * $ rustup update beta # Channels can be "stable" "beta" "nightly"
 
 Setup for windows
