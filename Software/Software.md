@@ -1,73 +1,56 @@
 Software
 =====
 * XnView MP
-* sogou pinyin/zhuyin
+* sogou pinyin
 * Firefox Developer `https://www.mozilla.org/en-US/firefox/developer/all/`
-* Pale moon (Browser which supports unity web play and flash player)
+* Pale moon (support unity web play and flash player)
 * Wireshark
 * Nmap
 * Teamviewer
-* UNetbootin
 * Blender
 * Makehuman
 * Sweet home 3D
+* Krita
 * Fritzing
 * FontForge
-* VLC
 * MPV player
 * OBS MP
 * Aegisub
-* Kdenlive
 * Audacity
-* LMMS
 * Qt
 * Cheat Engine
 * WPS Office (Hong Kong)
-* Libre Office
 * GSView
 * Nomacs
-* GeoGebra
-* Virtualbox
-* TigerVNC
 * Zulu
-* JComicDownloader
-* JDownloader
 * LanguageTool
 
 CLI
 =====
 * Miniconda/python
-  * youtube-dlc
+  * youtube-dl
   * you-get
   * ykdl
   * streamlink
-  * bypy
   * speedtest-cli
   * glances
 * Go
   * Micro (text editor)
   * annie - video downloader
   * hugo - html generator
-  * mkcert - Certificates generator
-  * kurly - curl clone written in go
   * hey - loadtest tool written in go
   * bombardier - loadtest tool powered by fasthttp
-  * gotop - top-like tool
   * ctop - top-like tool for Docker containers
   * syncthing - sync files between 2 PCs
-  * grafana - beautiful monitoring tool
   * enry - Get source code filetype distribution of current folder
   * gotty - SSH alternative via browser Webshell (there is an improved version called `ttyd` in C) $ gotty -w bash
-  * bat - cURL/httpie written in Go
   * hget - aria2/axel download accelerator in go
   * rclone - Google drive (and more) client
   * autopprof - Easy-to-use performance profiler
-  * go-freelan - freelan-compatible implementation
   * caddy - apache/nginx alternative
-  * archiver - 7zip alternative but it doesn't support 7z format
-  * tinygo - subset of golang compiler, small output binary size
   * termshark - TUI version of Wireshark
   * Mattermost - Slack alternative, written in Go, React native and electron
+  * esbuild - An extremely fast JavaScript bundler and minifier
 * C
   * Shellinabox - SSH alternative via browser Webshell
   * upx - Ultimate Packer executables, `upx --lzma file.exe`
@@ -76,21 +59,18 @@ CLI
   * axel - lightweight aria2 alternative
   * rtty - SSH alternative via browser https://github.com/zhaojh329/rtty
 * Rust
-  * ffsend - send.firefox.com cli client
-  * swc - super-fast javascript to javascript compiler written in rust
   * websocat - cli websocket client
 * Nodejs
   * gtop
   * vtop
-  * loadtest
   * pm2
   * cloc # Programing language usage analyzer
-  * git-stats
-  * esbuild
-* Network tools
+* Network management tools
+  * Curl
+  * Nslookup
+  * Ping
   * Nmap
   * Netcat
-  * Snort
   * sqlmap
 * BusyBox / Toybox
 * Neofetch
@@ -98,7 +78,6 @@ CLI
 * FFmpeg
 * OpenCC
 * Aria2
-* Monitorix
 * Docker
 * Shellcheck
 * Hollywood - Hacker tool collection
@@ -107,26 +86,16 @@ Dev
 =====
 * IDE
   * Godot
-  * Android Studio
-  * Qt Creator
   * VSCodium
 * Database
-  * omnidb-server - SQL web client for MySQL/Postgres (omnidb-app doesn't support utf8)
-  * sqlectron - MySQL/Postgres client electron app
-  * falcon - MySQL/Postgres client electron app
-  * sqlpad - SQL web client for MySQL/Postgres (Need to install unixodbc first)
+  * DBeaver - Universal database tool and SQL client
   * dbcli/mycli/pgcli/litecli - Cli for mysql, sqlite and Postgresql with syntax highlighting
   * redis-commander - Web ui for redis
-  * sqlitebrowser - Sqlite ui written in Qt
-  * mysql2sqlite - Convert mysqldump sql to sqlite sql syntax, useful for offline testing
-* Http
-  * insomnia - curl/postman alternative, HTTP and GraphQL Client
 * React Native
   * Code Push - Hot-fix app by replacing the js bundle file
   * vscode-react-native - Vscode extension
   * eslint-config-airbnb - Airbnb's js rules
   * react-native-router-flux - Navigation router for react-native
-  * jadx - Decompile apk/jar
   * Debugging
     * vscode and expo remote attaching debug
     * Expo remote chrome debug-ui
@@ -171,7 +140,6 @@ Windows XP
 * Microsoft .NET Framework Repair Tool
 * Microsoft .NET Framework Cleanup Tool
 * Gvim
-* Micro (text editor written in go)
 * Notepad++
 * Sublime Text 2/3
 * 7zip
@@ -197,20 +165,14 @@ Mac (Hack-intosh)
 =====
 * https://github.com/sickcodes/Docker-OSX
 * Alacritty
-* Dr. Unarchiver
-* WPS Office
 
 Linux
 =====
 * NetworkManager / nmtui
-* Shutter
-* Conky (with weather)
-* Linuxbrew (package manager without root)
 * Snapcraft
 
 WineHQ
 =====
-* Busybox
 * DirectX Repair Tool (Enhanced Edition)
 * 7zip
 
@@ -228,11 +190,7 @@ Android
   * User Agent Switcher (by Alexander Schlarb)
   * Absolute Enable Right Click & Copy
   * Search by Image - Reverse Image Search (by Armin Sebastian)
-  * about:config
-    * Search "ocsp" and set "security.ssl.enable_ocsp_must_staple" to false
-* Kiwi Browser + ublock + Dark Reader
 * Yahoo Finance
-  * QQQ
   * TQQQ
   * NQ=F
 * Clock by Google
@@ -240,7 +198,7 @@ Android
 * Facebook Messenger
 * LINE
 * Skype
-* Sogou input method / Trime(同文)
+* Sogou input method
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
@@ -276,9 +234,6 @@ Android
 * Easy Wallet
 * Matlog - Material Logcat reader
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
-  * Use android phone as a bluetooth mouse/keyboard
-  * Enable android tv bluetooth
-  * install this app on phone
 * F-Droid
   * OpenLauncher
   * MaterialOS Icon Pack
@@ -292,8 +247,6 @@ Android
   * LibreTorrent
   * ScreenCam
   * Simple Gallery
-  * Tachiyomi - offline comic viewer
-  * KDE Connect
   * Coffee - Make the screen stay awake
   * Slide for Reddit - offline reddit
     * popular
@@ -303,7 +256,6 @@ Android
     * programming
     * commandline
     * devops
-    * investing
 * Drop-down menu items
   * Screenshot
   * Flash light
@@ -323,8 +275,6 @@ iOS
 =====
 * Cydia
   * NewTerm 2
-* Dataplicity (for Pi)
-* Brave (Open source browser with ad blocker)
 * iSH - https://github.com/tbodt/ish
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
 * Blokada - Ad block
@@ -333,22 +283,20 @@ iOS
 Gaming
 =====
 * Mumu - Android emulator
-* RetroArch - Console emulator
-  * RetroPie
+* RetroArch - Game console emulator
 * Freelan - virual local network/vpn
 
 Good Software Design
 =====
+* Hardware-accelerated
 * Support "Ctrl + T" New Tab
 * Support "Alt + Enter / F11" Full Screen
 * Customizable hotkeys
-* Hotkeys of other similar softwares are included, such as sublime-text has optional vi binding switcher
-* Customizable theming (and Font-Family) with json format
-* A light theme and a dark theme built-in
+* Pre-defined hotkeys from similar softwares are included, e.g. vscode has an optional vi binding switcher
+* Customizable theming and configurable font-Family
 * Always use simple English
-* Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warrning
-* Host on github if open source, host on Gogs/Gitea for self-hosting
-* i18n, Multiple languages other than just English
+* Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warning
+* i18n/i10n
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies
@@ -357,30 +305,21 @@ Good Software Design
 * Variable encryption
 * TUI/GUI dashboard and resource monitor
   * Google image "大數據可視化"
-  * PointDownload
-* Sci-Fi User interface, such as "Circle SeekBar"
+* Sci-Fi User interface and dark theme, such as "Circle SeekBar"
 * Smooth scrolling
 * Can limit cpu/gpu/network usage
 * 4:3 16:9 16:10 18:9 supported
 * 4k and 8k resolution supported
-* Easily porting to another system
-* A reminder sound after a job done (or a process finished)
+* An audio reminder sound after a job done (or a process finished)
 * GUI but command line is also available for shell scripting
-* Human readable configuration files
-* Configuration files are all backward compatible
-* Configuration files are under $HOME, and easily to be found
+* Configuration files are all backward-compatible
 * Configuration files are sharing same columns with command args, like `mpv --volume=100` and `volume=100` in conf
 * Configuration files support variables, system variables and if-else statements
-* 100% Extentable code for future use
-* A Class of dialog can be easily called and override the method after yes/no clicked
 * Allow to install extensions
-* Deploy with docker swarm
 * Responsive UI design for all device
 * Call external programs/commands
 * Current status / Connection status, like (Green)Good, (Red)Bad
-* PrintStatus() function and Error log files (in binary if closed-source)
-* Log files are available in plan-text, html and markdown format
-* Stripped binary (like gcc -s)
+* Stripped binary (upx-ed)
 * Auto updater
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
@@ -389,12 +328,11 @@ Good Software Design
 * Import SSL certificates
 * Hotfix without reinstalling the whole app
 * Use emojis in git commit message ✅ ❌
-* Use date as version number, e.g. Version YYYY.MM.DD.001
-* Create a poll with predefined option for asking user experience, not just give them a piece of blank paper
+* Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
-* Create a Wikipedia/Wikia page for it
+* Create a Wikipedia/Fandom page for it
 * Community-driven Wikipedia-like site for handling errors
-* Send crash log to server
+* Send crashing log to server
 * Feedback button in-app
 * Easter eggs
 * Software-level Factory reset
@@ -402,8 +340,6 @@ Good Software Design
   * Portable between Android and iOS
   * Most operations can be done with only one finger
   * Make small button can be easily clicked (bind clicked event with clickable layout surrounding it)
-* Web plugins
-  * Make sure it runs on Chrome, Firefox and Firefox Android
 
 Docker images
 =====
@@ -413,14 +349,10 @@ Docker images
 
 Dev Tools
 =====
-* Good IDE:
-  * Support performance analyzer (Profiler)
 * Mobile and embbed system
-  * ReactXP: React + React Native
-  * GuiLite
-  * Qt + Native WebView (with html5 + WebAssembly)
-  * Qt + QML
+  * Flutter
 * Desktop app
+  * Iced - Cross-platform GUI library for Rust (GPU-accelerated)
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
   * libui, native UI and small bianry size, for C/C++ and Go
@@ -429,28 +361,10 @@ Dev Tools
   * Executable size as small as possible, for personal use :
     * github.com/webview/webview - C/C++/Go backend, html fronend
     * github.com/tauri-apps/tauri - Rust backend, html frontend
-  * Development time as fast as possible: Electron (FreeBSD is not supported)
-  * As powerful as possible: Qt
-* Windows / XBOX only
-  * Universal Windows Platform (.AppX)
-* Web server backend
-  * Golang
-  * Java Playframework - Full-featured
-  * C++ Crow - Very small and fast
-* Web frontend: React.js, Vue.js, Qt for WebAssembly
-* Browser extension: WebExtension API
-  * Install mozilla/web-ext
-  * Modify the source of https://github.com/codebicycle/videospeed , which runs both chrome and firefox and firefox on Android
+  * Electron/Tauri - Webview app
 * CLI
-  * Micropython, pure python lib
-  * Go, pure Go lib
+  * Go
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
-* FreeBSD CLI/Driver
-  * Yaft, modify the source of the Yaft
-* Data
-  * Huge and complicated: Json
-  * Small or configurations: TOML、 YAML
-* OS, embbed system: Alpine Linux, FreeBSD and Busybox/Toybox
 
 Experience
 =====
