@@ -14,6 +14,20 @@ rustup toolchain uninstall stable-x86_64-pc-windows-msvc
 rustup default stable-x86_64-pc-windows-gnu # Or this
 ```
 
+Cross compile
+=====
+* $ app-fast -S cross
+* $ cd /path/to/project
+```sh
+# Build x64 static binary
+cross build --target x86_64-unknown-linux-musl --release
+ls target/x86_64-unknown-linux-musl/release
+
+# Build arm64 static binary
+cross build --target aarch64-unknown-linux-musl --release
+ls target/aarch64-unknown-linux-musl/release
+```
+
 VScode integration
 =====
 * Install rust-lang.rust and vadimcn.vscode-lldb
