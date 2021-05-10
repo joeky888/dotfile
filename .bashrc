@@ -257,7 +257,7 @@ alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30][ext=mp4]+be
 alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
 alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][ext=mp4]+bestaudio/best'"
 alias youtube-dl-playlist="youtube-dl --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
 alias youtube-dl-thumbnail="youtube-dl --write-thumbnail --write-all-thumbnails --skip-download"
 alias youtube-dl-filename-ascii="youtube-dl --restrict-filenames"
@@ -270,7 +270,7 @@ alias streamlink-mpv-best="streamlink --verbose-player --player 'mpv $(echo $PLA
 alias streamlink-mpv-1080="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --title '{title}' --default-stream 1080p"
 alias streamlink-mpv-720="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --title '{title}' --default-stream 720p"
 alias streamlink-mpv-480="streamlink --verbose-player --player 'mpv $(echo $PLAYER_ARGUMENTS)' --title '{title}' --default-stream 480p"
-alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
+alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-mute="mpv --mute=yes --ytdl-format='bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
@@ -279,8 +279,8 @@ alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
-alias mpv-1080-auto-sub="mpv --video-aspect-override=16:9 --ytdl-format='bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best' ${PLAYER_ARGUMENTS},write-auto-sub=,write-sub=,sub-lang=en"
-alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
+alias mpv-1080-auto-sub="mpv --video-aspect-override=16:9 --ytdl-format='bestvideo[height<=1080][ext=mp4]+bestaudio/best' ${PLAYER_ARGUMENTS},write-auto-sub=,write-sub=,sub-lang=en"
+alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][ext=mp4]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s "\n" | tr "\n" ",")'
