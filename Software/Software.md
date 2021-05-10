@@ -296,6 +296,7 @@ Android
   * KDE Connect
   * Coffee - Make the screen stay awake
   * Slide for Reddit - offline reddit
+    * popular
     * golang
     * rust
     * rust_gamedev
@@ -444,8 +445,6 @@ Dev Tools
   * Micropython, pure python lib
   * Go, pure Go lib
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
-* Linux CLI/Driver
-  * Fbterm, modify the source of the Fbterm
 * FreeBSD CLI/Driver
   * Yaft, modify the source of the Yaft
 * Data
@@ -455,41 +454,49 @@ Dev Tools
 
 Experience
 =====
-| Tool                |  Year     |
-| --------------------------------- | ------------- |
-| Windows             |  (2003-)    |
-| Ubuntu Linux            |  (2014-)    |
-| Debian Linux            |  (2016-)    |
-| Deepin Linux            |  (2017-)    |
-| Manjaro Linux           |  (2018-)    |
-| Alpine Linux            |  (2018-)    |
-| FreeBSD             |  (2017-2018)  |
-| macOS               |  (2019-)    |
-| Docker              |  (2018-)    |
-| Git               |  (2014-)    |
-| Bash                |  (2014-)    |
-| Zsh               |  (2015-)    |
-| Fish                |  (2020-)    |
-| Tmux                |  (2015-)    |
-| Docker              |  (2016-)    |
-| Youtube-dl            |  (2015-)    |
-| You-get             |  (2016-)    |
-| FFmpeg              |  (2015-)    |
-| Qemu                |  (2017-)    |
-| Sublime Text            |  (2014-2015)  |
-| Adobe Brackets          |  (2015-2016)  |
-| Vim               |  (2016-)    |
-| VSCode              |  (2016-)    |
-| PyCharm             |  (2018-)    |
-| Cygwin              |  (2015-)    |
-| Msys2/Git-SDK           |  (2016-)    |
-| Powershell            |  (2017-)    |
-| Qt                |  (2014-2016)  |
-| React Native            |  (2018-)    |
-| MS Office             |  (2010-2014)  |
-| Libre Office            |  (2014-2015)  |
-| WPS Office            |  (2015-)    |
-| Chrome              |  (2010-2015)  |
-| Opera               |  (2015-)    |
-| ZhuyinIME 注音中打        |  (2003-2016)  |
-| PinyinIME 拼音中打        |  (2016-)    |
+| Tool               | Year        |
+| ------------------ | ----------- |
+| Windows            | (2003-)     |
+| Ubuntu Linux       | (2014-)     |
+| Debian Linux       | (2016-)     |
+| Deepin Linux       | (2017-2020) |
+| Manjaro Linux      | (2018-)     |
+| Alpine Linux       | (2018-)     |
+| FreeBSD            | (2017-2018) |
+| macOS              | (2019-)     |
+| Alacritty          | (2018-)     |
+| Wezterm            | (2021-)     |
+| FBterm             | (2016-2019) |
+| Docker             | (2018-)     |
+| Git                | (2014-)     |
+| Tig                | (2018-)     |
+| Bash               | (2014-)     |
+| Zsh                | (2015-)     |
+| Fish               | (2020-)     |
+| Powershell         | (2017-)     |
+| Cygwin             | (2015-)     |
+| Msys2/Git-SDK      | (2016-2018) |
+| Tmux               | (2015-)     |
+| Docker             | (2016-)     |
+| Kubernetes/Helm    | (2019-)     |
+| Linkerd2           | (2019-)     |
+| Youtube-dl         | (2015-)     |
+| You-get            | (2016-2018) |
+| FFmpeg             | (2015-)     |
+| Qemu               | (2017-)     |
+| Sublime Text       | (2014-2015) |
+| Adobe Brackets     | (2015-2016) |
+| Vim                | (2016-)     |
+| VSCode             | (2016-)     |
+| Qt                 | (2014-2016) |
+| React Native       | (2018-2019) |
+| Flutter            | (2020-)     |
+| MS Office          | (2010-2014) |
+| Libre Office       | (2014-2015) |
+| WPS Office         | (2015-)     |
+| Chrome             | (2010-2015) |
+| Opera              | (2015-)     |
+| Brave              | (2020-)     |
+| MPV                | (2018-)     |
+| ZhuyinIME 注音中打 | (2003-2016) |
+| PinyinIME 拼音中打 | (2016-)     |
