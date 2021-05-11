@@ -290,36 +290,37 @@ Good Software Design
 =====
 * Hardware-accelerated
 * Support "Ctrl + T" New Tab
-* Support "Alt + Enter / F11" Full Screen
+* Full Screen mode
 * Customizable hotkeys
 * Pre-defined hotkeys from similar softwares are included, e.g. vscode has an optional vi binding switcher
 * Customizable theming and configurable font-Family
 * Always use simple English
-* Colorful output in the debug console (Logcat), Red -> Error, Yellow -> Warning
+* Colored level logger in the debug console (Logcat-like), Red -> Error, Yellow -> Warning
 * i18n/i10n
 * Support Private Tabs/Windows
 * Cross Platform
-* Less dependencies
+* Less dependencies without FFI
 * Progress bar
 * Built-in shell
 * Variable encryption
 * TUI/GUI dashboard and resource monitor
-  * Google image "大數據可視化"
-* Sci-Fi User interface and dark theme, such as "Circle SeekBar"
+  * Hardware-accelerated visualization
+  * Google image "Data visualization" for ideas
+* Sci-Fi User interface and dark theme, such as "Sci-fi circle SeekBar loading"
 * Smooth scrolling
 * Can limit cpu/gpu/network usage
 * 4:3 16:9 16:10 18:9 supported
 * 4k and 8k resolution supported
-* An audio reminder sound after a job done (or a process finished)
-* GUI but command line is also available for shell scripting
+* A sound reminder after a job done (or a process finished)
+* A GUI but a split command-line version is also available for shell scripting
 * Configuration files are all backward-compatible
 * Configuration files are sharing same columns with command args, like `mpv --volume=100` and `volume=100` in conf
 * Configuration files support variables, system variables and if-else statements
 * Allow to install extensions
 * Responsive UI design for all device
-* Call external programs/commands
+* Get some help from optional external programs/commands calls
 * Current status / Connection status, like (Green)Good, (Red)Bad
-* Stripped binary (upx-ed)
+* Stripped binary (upx)
 * Auto updater
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
@@ -331,11 +332,11 @@ Good Software Design
 * Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia/Fandom page for it
-* Community-driven Wikipedia-like site for handling errors
+* Community-driven Wikipedia-like site
 * Send crashing log to server
 * Feedback button in-app
 * Easter eggs
-* Software-level Factory reset
+* Software-level factory reset
 * Mobile
   * Portable between Android and iOS
   * Most operations can be done with only one finger
@@ -364,54 +365,54 @@ Dev frameworks
     * github.com/webview/webview - C/C++/Go backend, html fronend
     * github.com/tauri-apps/tauri - Rust backend, html frontend
 * CLI
-  * Go
+  * Go/Rust
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
 
 Experience
 =====
-| Tool               | Year        |
-| ------------------ | ----------- |
-| Windows            | (2003-)     |
-| Ubuntu Linux       | (2014-)     |
-| Debian Linux       | (2016-)     |
-| Deepin Linux       | (2017-2020) |
-| Manjaro Linux      | (2018-)     |
-| Alpine Linux       | (2018-)     |
-| FreeBSD            | (2017-2018) |
-| macOS              | (2019-)     |
-| Alacritty          | (2018-)     |
-| Wezterm            | (2021-)     |
-| FBterm             | (2016-2019) |
-| Docker             | (2018-)     |
-| Git                | (2014-)     |
-| Tig                | (2018-)     |
-| Bash               | (2014-)     |
-| Zsh                | (2015-)     |
-| Fish               | (2020-)     |
-| Powershell         | (2017-)     |
-| Cygwin             | (2015-)     |
-| Msys2/Git-SDK      | (2016-2018) |
-| Tmux               | (2015-)     |
-| Docker             | (2016-)     |
-| Kubernetes/Helm    | (2019-)     |
-| Linkerd2           | (2019-)     |
-| Youtube-dl         | (2015-)     |
-| You-get            | (2016-2018) |
-| FFmpeg             | (2015-)     |
-| Qemu               | (2017-)     |
-| Sublime Text       | (2014-2015) |
-| Adobe Brackets     | (2015-2016) |
-| Vim                | (2016-)     |
-| VSCode             | (2016-)     |
-| Qt                 | (2014-2016) |
-| React Native       | (2018-2019) |
-| Flutter            | (2020-)     |
-| MS Office          | (2010-2014) |
-| Libre Office       | (2014-2015) |
-| WPS Office         | (2015-)     |
-| Chrome             | (2010-2015) |
-| Opera              | (2015-)     |
-| Brave              | (2020-)     |
-| MPV                | (2018-)     |
-| ZhuyinIME 注音中打 | (2003-2016) |
-| PinyinIME 拼音中打 | (2016-)     |
+| Tool            | Year        |
+| --------------- | ----------- |
+| Windows         | (2003-)     |
+| Ubuntu Linux    | (2014-)     |
+| Debian Linux    | (2016-)     |
+| Deepin Linux    | (2017-2020) |
+| Manjaro Linux   | (2018-)     |
+| Alpine Linux    | (2018-)     |
+| FreeBSD         | (2017-2018) |
+| macOS           | (2019-)     |
+| Alacritty       | (2018-)     |
+| Wezterm         | (2021-)     |
+| FBterm          | (2016-2019) |
+| Docker          | (2018-)     |
+| Git             | (2014-)     |
+| Tig             | (2018-)     |
+| Bash            | (2014-)     |
+| Zsh             | (2015-)     |
+| Fish            | (2020-)     |
+| Powershell      | (2017-)     |
+| Cygwin          | (2015-)     |
+| Msys2/Git-SDK   | (2016-2018) |
+| Tmux            | (2015-)     |
+| Docker          | (2016-)     |
+| Kubernetes/Helm | (2019-)     |
+| Linkerd2        | (2019-)     |
+| Youtube-dl      | (2015-)     |
+| You-get         | (2016-2018) |
+| FFmpeg          | (2015-)     |
+| Qemu            | (2017-)     |
+| Sublime Text    | (2014-2015) |
+| Adobe Brackets  | (2015-2016) |
+| Vim             | (2016-)     |
+| VSCode          | (2016-)     |
+| Qt              | (2014-2016) |
+| React Native    | (2018-2019) |
+| Flutter         | (2020-)     |
+| MS Office       | (2010-2014) |
+| Libre Office    | (2014-2015) |
+| WPS Office      | (2015-)     |
+| Chrome          | (2010-2015) |
+| Opera           | (2015-)     |
+| Brave           | (2020-)     |
+| MPV             | (2018-)     |
+| ZhuyinIME       | (2003-2016) |
+| PinyinIME       | (2016-)     |
