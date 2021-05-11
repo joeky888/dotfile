@@ -252,7 +252,7 @@ Android
     * popular
     * golang
     * rust
-    * rust_gamedev
+    * `rust_gamedev`
     * programming
     * commandline
     * devops
@@ -347,21 +347,22 @@ Docker images
   * kylemanna/openvpn - Original x64 version
   * project31/aarch64-docker-openvpn - Forked aarch64 version
 
-Dev Tools
+Dev frameworks
 =====
-* Mobile and embbed system
+* Mobile
   * Flutter
-* Desktop app
-  * Iced - Cross-platform GUI library for Rust (GPU-accelerated)
+  * React native
+* Embbed system
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
   * libui, native UI and small bianry size, for C/C++ and Go
   * GuiLite - The smallest GUI library for all platform - 5k lines code
   * LVGL - 16K RAM GUI library for embedded Linux, ESP32
-  * Executable size as small as possible, for personal use :
+* Desktop app
+  * Iced - Cross-platform GUI library for Rust (GPU-accelerated)
+  * Webview:
     * github.com/webview/webview - C/C++/Go backend, html fronend
     * github.com/tauri-apps/tauri - Rust backend, html frontend
-  * Electron/Tauri - Webview app
 * CLI
   * Go
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
