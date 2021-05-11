@@ -11,10 +11,20 @@ rustup toolchain list
 rustup update stable
 rustup toolchain uninstall stable-x86_64-pc-windows-gnu
 rustup toolchain uninstall stable-x86_64-pc-windows-msvc
-rustup default stable-x86_64-pc-windows-gnu # Or this
+rustup default stable-x86_64-pc-windows-gnu
+```
+Cross compile (without cross)
+=====
+* Still need to install the gcc cross-compiler though to get it work
+```sh
+rustup target add x86_64-unknown-linux-musl --toolchain stable
+cargo build --target x86_64-unknown-linux-musl
+
+rustup target add x86_64-pc-windows-gnu --toolchain stable
+cargo build --target x86_64-pc-windows-gnu
 ```
 
-Cross compile
+Cross compile (with cross)
 =====
 * $ app-fast -S cross
 * $ cd /path/to/project
