@@ -12,6 +12,9 @@ rustup update stable
 rustup toolchain uninstall stable-x86_64-pc-windows-gnu
 rustup toolchain uninstall stable-x86_64-pc-windows-msvc
 rustup default stable-x86_64-pc-windows-gnu
+
+rustup target list
+rustup target remove xxx
 ```
 Cross compile (without cross)
 =====
