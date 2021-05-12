@@ -56,6 +56,14 @@ sed -i "s/archive/tw.archive/" /etc/apt/sources.list
 * Download and run dotfiles
 * $ `locale-gen en_US.UTF-8`
 
+Docker run with gdb/lldb support
+=====
+* Add `--cap-add=SYS_PTRACE --security-opt seccomp=unconfined` to run command
+```sh
+docker run --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -it --name ubuntu1 ubuntu bash
+lldb my.exe
+```
+
 Run an exist ubuntu container
 =====
 * $ docker ps -a # get the name of the container
