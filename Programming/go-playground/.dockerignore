@@ -1,0 +1,15 @@
+# Binary files
+go-playground
+
+# Debugger and debug tests
+*debug_bin*
+*.test
+
+# DB volumes
+mysql
+_mysql
+
+Dockerfile
+.dockerignore
+.git
+.gitignore
