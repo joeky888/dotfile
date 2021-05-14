@@ -18,6 +18,8 @@ ssh-keygen -m PEM
 AMI list with image name and id
 =====
 * https://thecloudmarket.com
+* Or ubuntu-only
+* https://cloud-images.ubuntu.com/locator/ec2/
 * Or
 * Go to aws console -> EC2 -> AMIs (On the left panel)
 * Or for eks ami go to
