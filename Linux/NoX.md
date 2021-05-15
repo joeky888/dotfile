@@ -182,7 +182,8 @@ wpa-psk <your_wpa_key>
 Add dns server
 =====
 * $ nmcli connection show
-* $ nmcli connection mod <CONNECTION-NAME> ipv4.dns "8.8.8.8 8.8.4.4"
+* $ nmcli connection mod <CONNECTION-NAME> ipv4.ignore-auto-dns yes # Ignore auto dns-server like 192.168.1.1
+* $ nmcli connection mod <CONNECTION-NAME> ipv4.dns "1.1.1.1 8.8.8.8"
 * Or
 * $ sudoedit /etc/resolvconf.conf && sudo resolvconf -u
 ```resolv
