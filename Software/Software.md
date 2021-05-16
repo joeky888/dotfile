@@ -368,6 +368,13 @@ Dev frameworks
   * Go/Rust
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
 
+Ideas to be done
+=====
+* UFC - rewritten grc in rust
+* React native webrtc + webtorrent -> A new torrent client
+* Rewritten newpipe in react-native -> with code push (hot updating)
+* Flutter + dio (http client in Dart) -> multi-thread downloader
+
 Experience
 =====
 | Tool            | Year        |
