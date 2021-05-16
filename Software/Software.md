@@ -372,7 +372,7 @@ Ideas to be done
 =====
 * UFC - rewritten grc in rust
 * React native webrtc + webtorrent + typescript -> A new torrent client
-* Rewritten newpipe in react-native + youtube-dl port -> with code push (hot updating)
+* Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> multi-thread downloader
 
 Experience
