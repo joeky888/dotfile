@@ -371,8 +371,8 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
-* React native webrtc + webtorrent -> A new torrent client
-* Rewritten newpipe in react-native -> with code push (hot updating)
+* React native webrtc + webtorrent + typescript -> A new torrent client
+* Rewritten newpipe in react-native + youtube-dl port -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> multi-thread downloader
 
 Experience
