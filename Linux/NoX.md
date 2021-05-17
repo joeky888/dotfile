@@ -184,6 +184,7 @@ Add dns server
 * $ nmcli connection show
 * $ nmcli connection mod <CONNECTION-NAME> ipv4.ignore-auto-dns yes # Ignore auto dns-server like 192.168.1.1
 * $ nmcli connection mod <CONNECTION-NAME> ipv4.dns "1.1.1.1 8.8.8.8"
+* $ sudo systemctl restart NetworkManager
 * Or
 * $ sudoedit /etc/resolvconf.conf && sudo resolvconf -u
 ```resolv
