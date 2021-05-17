@@ -193,6 +193,7 @@ Android
 * Yahoo Finance
   * TQQQ
   * NQ=F
+  * TSEC (^TWII)
 * Clock by Google
 * Gmail
 * Facebook Messenger
