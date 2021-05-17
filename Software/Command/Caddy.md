@@ -14,4 +14,4 @@ admin.example.com {
 
 Automatically https from localhost:8080 for example.com (one-liner)
 =====
-* $ caddy reverse-proxy --to 127.0.0.1:8080 --from example.com
+* $ caddy reverse-proxy --from example.com --to 127.0.0.1:8080
