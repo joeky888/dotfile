@@ -11,3 +11,7 @@ admin.example.com {
 }
 ```
 * $ caddy run --config ./Caddyfile
+
+Automatically https from localhost:8080 for example.com (one-liner)
+=====
+* $ caddy reverse-proxy --to 127.0.0.1:8080 --from example.com
