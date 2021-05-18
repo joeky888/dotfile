@@ -62,7 +62,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      - "3000:3000" # (Optional) Forwarding this port is for debugging purposes only, Caddy uses docker network to access it
+      # - "3000:3000" # (Optional) Forwarding this port is for debugging purposes only, Caddy uses docker network to access it
       - "127.0.0.1:2222:22" # 127.0.0.1:2222 This ensures port 2222 is not avaialbe from public internet
   postgres:
     image: arm64v8/postgres:13.3-alpine
