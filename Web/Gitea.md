@@ -52,7 +52,7 @@ services:
       - GITEA__cache__HOST=redis://redis:6379/0?pool_size=100&idle_timeout=180s
       - GITEA__service__DISABLE_REGISTRATION=true
       - GITEA__repository__FORCE_PRIVATE=true
-      - GITEA__ui__DEFAULT_THEME=arc-green
+      - GITEA__ui__DEFAULT_THEME=arc-green # Per-user theme setting can be found Settings -> Account -> Select default theme
     restart: always
     depends_on:
       - postgres
