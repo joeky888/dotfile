@@ -32,7 +32,7 @@ Powershell Monokai theme
 =====
 * Execute ~/dotfile/install.reg first
 * Execute this powershell script
-```sh
+```ps1
 $WshShell = New-Object -comObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut("$Home\\Desktop\\Powershell.lnk")
 $Shortcut.TargetPath = "$env:SYSTEMROOT\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
@@ -42,7 +42,7 @@ $Shortcut.Save()
 Install softwares
 =====
 * Scoop
-```sh
+```ps1
 Set-ExecutionPolicy RemoteSigned -Force
 iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras
@@ -56,7 +56,7 @@ Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\cu
 # [Microsoft.Win32.Registry]::SetValue("HKEY_CLASSES_ROOT\Applications\gvim.exe\shell\open\command","","$env:USERPROFILE\scoop\apps\neovim\current\bin\nvim-qt.exe -p --remote-tab-silent `"%1`"", [Microsoft.Win32.RegistryValueKind]::String)
 ```
 * Chocolatey
-```sh
+```ps1
 Set-ExecutionPolicy RemoteSigned -Force
 Unblock-File $profile.CurrentUserAllHosts
 New-ItemProperty -Path "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced" -Name DontUsePowerShellOnWinX -PropertyType DWord –Value 0 -force
@@ -91,7 +91,7 @@ Mono sound
 Set MPV as default player
 =====
 * $ scoop install mpv
-```sh
+```ps1
 Set-ExecutionPolicy RemoteSigned -Force
 $url = "https://raw.githubusercontent.com/rossy/mpv-install/master/mpv-install.bat"
 $path = "$env:TEMP\mpv-install.bat"

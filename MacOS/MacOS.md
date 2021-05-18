@@ -7,6 +7,7 @@ Post-installed
 =====
 * System Preferences -> Network -> Wi-FI -> Advanced -> DNS -> + ->
 ```
+1.1.1.1
 8.8.4.4
 180.76.76.76
 8.8.8.8
