@@ -297,7 +297,7 @@ Good Software Design
 * Customizable theming and configurable font-Family
 * Always use simple English
 * Colored level logger in the debug console (Logcat-like), Red -> Error, Yellow -> Warning
-* i18n/i10n
+* i18n/l10n
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies without FFI
