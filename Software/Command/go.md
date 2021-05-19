@@ -6,40 +6,10 @@ go tool dist list -json
 vim go/src/cmd/dist/build.go # Search "okgoarch" and "okgoos"
 ```
 
-Unable to go get on private repo
-=====
-* Change joeky888 to the repo name
-* $ GOPRIVATE="gitlab.com/joeky888,bitbucket.org/joeky888,github.com/joeky888" go get
-* $ GOPRIVATE="gitlab.com/joeky888,bitbucket.org/joeky888,github.com/joeky888" go build
-
-Go mod (Golang >= 1.11)
-=====
-* $ export GO111MODULE=on
-* $ go mod init
-* $ go mod download
-* $ go mod tidy
-* For Golang >- 1.13
-* $ go mod edit -go=1.13
-
 Vscode upgrade all go tools
 =====
 * Hit `Ctrl+P` enter `> go Install/Update tools`
 * Select all and update
-
-Build go project in dockerfile (Assume the dockerfile is on the root of the project)
-=====
-```dockerfile
-ENV GOPATH /go
-ENV CGO_ENABLED 0
-RUN go get -u -v github.com/golang/dep/cmd/dep
-ENV GO111MODULE on
-
-RUN mkdir -p $GOPATH/src/myproject
-WORKDIR $GOPATH/src/myproject
-ADD . .
-RUN go get -d ./...
-RUN go build -o /bin/myexe
-```
 
 Debug in vscode
 =====

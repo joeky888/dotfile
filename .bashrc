@@ -173,8 +173,6 @@ if ! [ "$GOPATH" ]; then
 fi
 fi
 
-[ $(command -v go) ] && alias upgradeGo='GO111MODULE="" go get -insecure -v -u all; go clean -cache'
-
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=$HOME/zulu/bin:$PATH
   export JAVA_HOME=$HOME/zulu
@@ -231,7 +229,7 @@ alias upgradeYoutubedl='pip3 install --upgrade --force-reinstall --no-cache-dir 
 alias upgradeYou-get='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/soimort/you-get/archive/develop.zip'
 alias upgradeYkdl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/zhangn1985/ykdl/archive/master.zip'
 alias upgradeStreamlink='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
-alias upgradeAnnie='GO111MODULE=on go get -insecure -v github.com/iawia002/annie'
+alias upgradeAnnie='go get -v github.com/iawia002/annie'
 alias upgradeMycli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/mycli/archive/master.zip'
 alias upgradeLitecli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/litecli/archive/master.zip'
 alias you-getYouku='you-get -y proxy.uku.im:443'
