@@ -7,7 +7,7 @@ wget https://github.com/k3s-io/k3s/raw/master/docker-compose.yml
 
 vim docker-compose.yml
     Add restart: always
-    Update image tags to latest
+    Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
 openssl rand -base64 45 > k3s.token
 K3S_TOKEN="$(cat k3s.token)" INSTALL_K3S_EXEC="--tls-san 0.0.0.0" docker-compose up -d --build
 
