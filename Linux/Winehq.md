@@ -7,7 +7,7 @@ Install Wine
 * $ app-fast install --install-recommends wine64-development wine64-development-preloader wine64-development-tools winbind cabextract zenity -y && winecfg-development
 * Or
 * $ `app-fast -Sy --needed expac` # To install optional dependencies of wine-staging
-* $ `app-fast -Sy --needed wine-staging $(expac -S '%o' wine-staging) wine-mono wine-gecko cabextract zenity && winecfg`
+* $ `app-fast -S --needed wine-staging $(expac -S '%o' wine-staging) wine-mono wine-gecko cabextract zenity && winecfg`
     * winecfg -> Staging
         * Enable VAAPI as backend for DXVA2 GPU decoding -> check
         * Hide wine version from applications -> check
