@@ -9,7 +9,7 @@ vim docker-compose.yml
     Add restart: always
     Update image tags to latest
 openssl rand -base64 45 > k3s.token
-K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
+K3S_TOKEN="$(cat k3s.token)" INSTALL_K3S_EXEC="--tls-san 0.0.0.0" docker-compose up -d --build
 
 sudo snap install kubectl --classic
 kubectl --kubeconfig ./kubeconfig.yaml get node # Or create soft link like this
@@ -30,5 +30,5 @@ Remote accessing
 ```sh
 vim ./kubeconfig.yaml # Edit ip from 127.0.0.1 to the real server ip
 
-kubectl --kubeconfig ./kubeconfig.yaml get node # Or copy kubeconfig file to ~/.kube/config
+kubectl --insecure-skip-tls-verify --kubeconfig ./kubeconfig.yaml get node # Or copy kubeconfig file to ~/.kube/config
 ```
