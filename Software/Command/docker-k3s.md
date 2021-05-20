@@ -25,9 +25,10 @@ rm -rf ~/.kube
 docker volume prune
 ```
 
-Token (TODO: find out what is this)
+Remote accessing
 =====
 ```sh
-# Inside docker container "server"
-cat /var/lib/rancher/k3s/server/node-token
+vim ./kubeconfig.yaml # Edit ip from 127.0.0.1 to the real server ip
+
+kubectl --kubeconfig ./kubeconfig.yaml get node # Or copy kubeconfig file to ~/.kube/config
 ```
