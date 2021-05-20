@@ -351,9 +351,11 @@ Docker images
 
 Dev frameworks
 =====
+* Web
+  * Preact + Ant design (Supports preact/react/react native)
 * Mobile
   * Flutter
-  * React native
+  * React native + Ant design (Supports preact/react/react native)
 * Embbed system
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
