@@ -9,7 +9,7 @@ vim docker-compose.yml
     Add restart: always
     Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
 openssl rand -base64 45 > k3s.token
-K3S_TOKEN="$(cat k3s.token)" INSTALL_K3S_EXEC="--tls-san 0.0.0.0" docker-compose up -d --build
+K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
 
 sudo snap install kubectl --classic
 kubectl --kubeconfig ./kubeconfig.yaml get node # Or create soft link like this
