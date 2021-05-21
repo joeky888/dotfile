@@ -8,6 +8,7 @@ wget https://github.com/k3s-io/k3s/raw/master/docker-compose.yml
 vim docker-compose.yml
     Add restart: always
     Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
+    Add `command: server --tls-san 192.168.1.100` to server # where `192.168.1.100` is the client ip to be the k8s operator
 openssl rand -base64 45 > k3s.token
 K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
 
