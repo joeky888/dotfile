@@ -55,6 +55,11 @@ services:
       - GITEA__repository__FORCE_PRIVATE=true
       - GITEA__ui__DEFAULT_THEME=arc-green # Per-user theme setting can be found Settings -> Account -> Select default theme
     restart: always
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
     depends_on:
       - postgres
       - redis
