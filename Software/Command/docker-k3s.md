@@ -6,10 +6,10 @@ curl -LO https://github.com/k3s-io/k3s/raw/master/docker-compose.yml # Or
 wget https://github.com/k3s-io/k3s/raw/master/docker-compose.yml
 
 vim docker-compose.yml
-    Add restart: always
-    Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
-    Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101` to server # where `192.168.1.xx` are the client ips of the k8s operators
-    Add `80:80` and `443:443` port exporting on the server # For ingress
+  Add restart: always
+  Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
+  Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101` to server # where `192.168.1.xx` are the client ips of the k8s operators
+  Add `80:80` and `443:443` port exporting on the server # For ingress
 openssl rand -base64 45 > k3s.token
 K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
 
@@ -34,3 +34,21 @@ vim ./kubeconfig.yaml # Edit ip from 127.0.0.1 to the real server ip
 
 kubectl --insecure-skip-tls-verify --kubeconfig ./kubeconfig.yaml get node # Or copy kubeconfig file to ~/.kube/config
 ```
+
+Ingress controller (built-in traefik)
+====
+* A default traefik ingress controller is already bundled so just test it with ~/dotfile/Dockerfile/k8s/simple-nginx.yaml
+* Make sure port 80:80 and 443:443 is configured on docker-compose server side
+* Remember to change the `kubernetes.io/ingress.class` to `traefik` instead of `nginx`
+* $ curl localhost
+
+Ingress controller (nginx)
+=====
+* Add `--disable traefik` to the docker-compose server command
+  * So it looks like this `command: server --tls-san 192.168.1.100 --disable traefik`
+* Make sure port 8080:8080, 80:80 and 443:443 is configured on docker-compose server side
+* Run docker-compose up again
+* Use helm to install nginx controller, and remember to specify the kubeconfig.yaml
+  * E.g. `helm --kubeconfig ./kubeconfig.yaml install ingress-nginx ingress-nginx/ingress-nginx`
+* Test with `~/dotfile/Dockerfile/k8s/simple-nginx.yaml`
+* $ curl localhost
