@@ -46,7 +46,7 @@ Ingress controller (nginx)
 =====
 * Add `--disable traefik` to the docker-compose server command
   * So it looks like this `command: server --tls-san 192.168.1.100 --disable traefik`
-* Make sure port 8080:8080, 80:80 and 443:443 is configured on docker-compose server side
+* Make sure port 80:80 and 443:443 is configured on docker-compose server side
 * Run docker-compose up again
 * Use helm to install nginx controller, and remember to specify the kubeconfig.yaml
   * E.g. `helm --kubeconfig ./kubeconfig.yaml install ingress-nginx ingress-nginx/ingress-nginx`
