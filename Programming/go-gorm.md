@@ -2,7 +2,7 @@
 
 | MySQL             | Go              | Range                                                            |
 | ----------------- | --------------- | ---------------------------------------------------------------- |
-| TINYINT(1)        | bool            | (0~1)                                                       |
+| TINYINT(1)        | bool            | (0~1)                                                            |
 | TINYINT           | int8            | (-128~127)                                                       |
 | SMALLINT          | int16           | (-32768~327677)                                                  |
 | INT               | int32           | (-2147483648~2147483647)                                         |
@@ -14,6 +14,21 @@
 | FLOAT             | float32         | (-3.402823466E+38~3.402823466E+38)                               |
 | DOUBLE            | float64         | (-1.7976931348623157E+308~1.7976931348623157E+308)               |
 | DECIMAL(6,2)      | decimal.Decimal | 6 total number of digits, 4 before and 2 after the decimal point |
+
+| PostgreSQL       | Go              |
+| ---------------- | --------------- |
+| boolean          | bool            |
+| smallint         | int8            |
+| smallint         | int16           |
+| integer          | int32           |
+| bigint           | int64           |
+| smallint         | uint8           |
+| integer          | uint16          |
+| bigint           | uint32          |
+| bigint           | uint64          |
+| real             | float32         |
+| double precision | float64         |
+| decimal(6,2)     | decimal.Decimal |
 
 Transaction
 =====
