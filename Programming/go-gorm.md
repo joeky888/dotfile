@@ -15,20 +15,15 @@
 | DOUBLE            | float64         | (-1.7976931348623157E+308~1.7976931348623157E+308)               |
 | DECIMAL(6,2)      | decimal.Decimal | 6 total number of digits, 4 before and 2 after the decimal point |
 
-| PostgreSQL       | Go              |
-| ---------------- | --------------- |
-| boolean          | bool            |
-| smallint         | int8            |
-| smallint         | int16           |
-| integer          | int32           |
-| bigint           | int64           |
-| smallint         | uint8           |
-| integer          | uint16          |
-| bigint           | uint32          |
-| bigint           | uint64          |
-| real             | float32         |
-| double precision | float64         |
-| decimal(6,2)     | decimal.Decimal |
+| PostgreSQL       | Go                  | Range                                                            |
+| ---------------- | ------------------- | ---------------------------------------------------------------- |
+| boolean          | bool                | (0~1)                                                            |
+| smallint         | int8,int16,uint8    | (-32768~32767)                                                   |
+| integer          | int32,uint16        | (-2147483648~2147483647)                                         |
+| bigint           | int64,uint32,uint64 | (-9223372036854775808~9223372036854775807)                       |
+| real             | float32             | 6 decimal digits precision                                       |
+| double precision | float64             | 15 decimal digits precision                                      |
+| decimal(6,2)     | decimal.Decimal     | 6 total number of digits, 4 before and 2 after the decimal point |
 
 Transaction
 =====
