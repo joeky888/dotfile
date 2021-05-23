@@ -348,7 +348,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   InstallDotfileCygwin
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-  sed -i 's/.*db_shell.*/db_shell: \/bin\/fish/' /etc/nsswitch.conf
+#   sed -i 's/.*db_shell.*/db_shell: \/bin\/fish/' /etc/nsswitch.conf
 #   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
   apt-cyg install openssh bind-utils bash-completion tig tar python3
