@@ -296,6 +296,7 @@ Good Software Design
 * Pre-defined hotkeys from similar softwares are included, e.g. vscode has an optional vi binding switcher
 * Customizable theming and configurable font-Family
 * Support multiple database service and can be configured at first time. e.g. MySQL/PostgreSQL/SQLite
+* MultiArch
 * Always use simple English
 * Colored level logger in the debug console (Logcat-like), Red -> Error, Yellow -> Warning
 * i18n/l10n
