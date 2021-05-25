@@ -2,7 +2,11 @@ cli login
 =====
 * Open aws web -> Top right corner [account(name)] -> My Security Credentials
     * Copy Access key ID and Secret (Create new if secret is lost)
-* $ aws configure
+```sh
+aws configure
+# Optional, with docker authentication
+aws ecr get-login-password --region <region> | docker login --username AWS --password-stdin <aws_account_id>.dkr.ecr.<region>.amazonaws.com
+```
 
 Manage key pairs (Create and Delete)
 =====
