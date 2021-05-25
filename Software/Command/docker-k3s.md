@@ -8,13 +8,14 @@ wget https://github.com/k3s-io/k3s/raw/master/docker-compose.yml
 vim docker-compose.yml
   Add restart: always
   Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
-  Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101` to server # where `192.168.1.xx` are the client ips of the k8s operators
+  Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101 --disable traefik` to server # where `192.168.1.xx` are the client ips of the k8s operators
   Add `80:80` and `443:443` port exporting on the server # For ingress
   Remove the volume at bottom and line `k3s-server:/var/lib/rancher/k3s` # This seems to be useless
 openssl rand -base64 45 > k3s.token
 K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
 
 sudo snap install kubectl --classic
+sudo snap install helm --classic
 kubectl --kubeconfig ./kubeconfig.yaml get node # Or create soft link like this
 mkdir -p ~/.kube/
 ln -sf $PWD/kubeconfig.yaml ~/.kube/config
