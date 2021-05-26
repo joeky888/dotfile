@@ -382,7 +382,7 @@ Ideas to be done
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> multi-thread downloader
 * Message Queue in rust and compatible with nats
-* Swoole/Workerman for mediawiki
+* Swoole/Workerman/php-pm for mediawiki
 * React native template with typescript + esbuild
 
 Experience
