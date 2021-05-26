@@ -303,6 +303,8 @@ Good Software Design
 * Support Private Tabs/Windows
 * Cross Platform
 * Less dependencies without FFI
+* IPv4/IPv6 CIDR whitelist for accessing advanced settings
+* RBAC
 * Progress bar
 * Built-in shell
 * Variable encryption
