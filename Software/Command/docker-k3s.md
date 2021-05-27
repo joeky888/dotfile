@@ -11,6 +11,12 @@ vim docker-compose.yml
   Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101 --disable traefik` to server # where `192.168.1.xx` are the client ips of the k8s operators
   Add `80:80` and `443:443` port exporting on the server # For ingress
   Remove the volume at bottom and line `k3s-server:/var/lib/rancher/k3s` # This seems to be useless
+  Increase ulimit to both server and agent services like this
+    ulimits:
+      nproc: 65535
+      nofile:
+        soft: 65535
+        hard: 65535
 openssl rand -base64 45 > k3s.token
 K3S_TOKEN="$(cat k3s.token)" docker-compose up -d --build
 
