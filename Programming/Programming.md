@@ -17,7 +17,7 @@ Code Design
 
 RX
 =====
-* Use case
+* Use cases
     1. User keeps input, like keydown or mouse move
     2. Big file slice
     3. Socket/WebSocket
