@@ -329,7 +329,7 @@ Good Software Design
 * Auto updater
 * Multiple users Co-op
 * Rewards/Praising for user's hard work
-* Proxy setting
+* Socks5 proxy setting
 * Embbed RPC server
 * Import SSL certificates
 * Hotfix without reinstalling the whole app
