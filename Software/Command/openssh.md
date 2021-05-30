@@ -65,10 +65,6 @@ ssh File transferring with GUI
 * Both Filezilla and Gnome Files (Nautilus) will work
 * Connect to server with ssh:// or sftp://
 
-What if I use 3G/4G/Wi-fi on client
-=====
-* Maybe mosh (mobile ssh) can help
-
 Find and compare the Randomart of the existing ssh key
 =====
 ```sh
