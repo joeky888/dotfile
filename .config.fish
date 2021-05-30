@@ -35,10 +35,10 @@ set fish_color_user red --bold
 set fish_color_host cyan --bold
 set fish_color_quote bryellow
 set fish_color_comment brblack
-set -g __fish_git_prompt_showdirtystate 1
+# set -g __fish_git_prompt_showdirtystate 1 # This takes too much time
 set -g __fish_git_prompt_showuntrackedfiles 1
 set -g __fish_git_prompt_color_branch yellow --bold
-set -g __fish_git_prompt_color_dirtystate red
+# set -g __fish_git_prompt_color_dirtystate red # This takes too much time
 set -g __fish_git_prompt_color_stagedstate red
 set -g __fish_git_prompt_color_invalidstate red
 set -g __fish_git_prompt_color_untrackedfiles red
