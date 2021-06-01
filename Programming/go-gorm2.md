@@ -1,4 +1,5 @@
 Custom type like Json array
+=====
 ```go
 type User struct {
 	ID  uint32 `gorm:"primary_key;AUTO_INCREMENT"`
