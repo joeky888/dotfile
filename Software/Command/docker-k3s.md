@@ -9,7 +9,7 @@ vim docker-compose.yml
   Add restart: always
   Change image tags to latest stable # The one wihtout rc1 rc2 in image tags
   Add `command: server --tls-san 192.168.1.100 --tls-san 192.168.1.101 --disable traefik` to server # where `192.168.1.xx` are the client ips of the k8s operators
-  Add `command: server --kubelet-arg='--eviction-hard=imagefs.available<50%'` # New flag for --image-gc-high-threshold=50%
+  Add `command: server --kubelet-arg=image-gc-high-threshold=40 --kubelet-arg=image-gc-low-threshold=30` # Note that these flags are deprecated
   Add `80:80` and `443:443` port exporting on the server # For ingress
   Remove the volume at bottom and line `k3s-server:/var/lib/rancher/k3s` # This seems to be useless
   Increase ulimit to both server and agent services like this
