@@ -384,6 +384,7 @@ Ideas to be done
 * Message Queue in rust and compatible with nats
 * Swoole/Workerman/php-pm/roadrunner for mediawiki
 * React native template with typescript + esbuild
+* Backstage/CMS system with meilisearch
 
 Experience
 =====
