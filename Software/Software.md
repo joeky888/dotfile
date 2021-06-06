@@ -385,6 +385,7 @@ Ideas to be done
 * Swoole/Workerman/php-pm/roadrunner for mediawiki
 * React native template with typescript + esbuild
 * Backstage/CMS system with meilisearch
+* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 
 Experience
 =====
