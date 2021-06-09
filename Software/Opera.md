@@ -5,7 +5,7 @@ Setting
 * Hardware acceleration
     * Currently Chrome on Linux works but opera on Linux doesn't work
         * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
-    * chrome://flags/#ignore-gpu-blacklist -> Enable (Or try to disable it if doesn't work)
+    * chrome://flags/#ignore-gpu-blocklist -> Enable (Or try to disable it if doesn't work)
     * chrome://gpu -> Check hardware decode is enabled
     * Also install h264ify chrome extension
     * Play an youtube hd video and open a new tab enter dev tool using Ctrl-Shift-i
