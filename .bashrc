@@ -873,6 +873,7 @@ elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
   alias grepi="grep --color=auto --exclude={$VCS_FOLDERS_MORE}"
 fi
 alias rg="rg --hidden -g '!.git|!.svn|!.hg'"
+alias fd="fd --hidden --exclude={$VCS_FOLDERS_MORE}"
 
 function getCondaPath()
 {
