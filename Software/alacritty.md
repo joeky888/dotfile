@@ -1,7 +1,7 @@
 Setting
 =====
 ```yaml
-mouse:
+mouse: # This one is deprecated
   url:
     launcher: None
 ##############################
