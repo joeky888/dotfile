@@ -2,13 +2,15 @@ Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-quic -> Enable
-* chrome://flags/#enable-accelerated-video-decode -> Enable
+* Hardware acceleration
     * Currently Chrome on Linux works but opera on Linux doesn't work
+        * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
     * chrome://flags/#ignore-gpu-blacklist -> Enable (Or try to disable it if doesn't work)
     * chrome://gpu -> Check hardware decode is enabled
     * Also install h264ify chrome extension
-    * Play an youtube hd video and open a new tab enter chrome://media-internals
-        * video coder name should be MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
+    * Play an youtube hd video and open a new tab enter dev tool using Ctrl-Shift-i
+        * 3 dots vertical dots menu -> More tools -> Media
+        * video coder name should be VDAVideoDecoder or MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://settings -> Search "Font"
