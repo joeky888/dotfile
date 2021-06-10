@@ -112,6 +112,9 @@ Dev
   * HFish - honeypot written in Go
   * k9s - htop-like manager for k8s
   * Reloader (https://github.com/stakater/Reloader) - Restart pods if configmap changes
+  * Distributed databases
+    * TiDB - MySQL compatible
+    * CockroachDB - PostgreSQL compatible
 
 Windows
 =====
