@@ -872,7 +872,7 @@ if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
 elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
   alias grepi="grep --color=auto --exclude={$VCS_FOLDERS_MORE}"
 fi
-alias rg="rg --hidden -g '!.git' -g '!.svn' -g '!.hg' -g '!CVS' -g '!.bzr' -g '!vendor' -g '!node_modules' -g '!ohmyzsh' -g '!powerlevel10k' -g '!dist' -g '!bin'"
+alias rg="rg --hidden --glob '!{$(echo $VCS_FOLDERS_MORE)}'"
 alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
 
 function getCondaPath()
