@@ -386,7 +386,7 @@ Ideas to be done
 * Flutter + dio (http client in Dart) -> multi-thread downloader
 * Message Queue in rust and compatible with nats
 * Swoole/Workerman/php-pm/roadrunner for mediawiki
-* React native template with typescript + esbuild
+* React native template with typescript + esbuild + vite
 * Backstage/CMS system with meilisearch
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 
