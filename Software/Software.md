@@ -389,6 +389,7 @@ Ideas to be done
 * React native template with typescript + esbuild + vite
 * Backstage/CMS system with meilisearch
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
+* K3S + docker-compose + host network to build a single-server multi-agent cluster
 
 Experience
 =====
