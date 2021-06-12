@@ -120,3 +120,29 @@ kubectl proxy
 * 輸入剛剛得到的 token 登入
 ```
 
+ingress nginx returns 404 when visiting `/<path>`
+=====
+* Add this line `try_files $uri $uri/ /index.html;` to frontend nginx dockerfile
+* Normally the location of the file is `/etc/nginx/conf.d/default.conf` in docker image
+```conf
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  localhost;
+
+    location / {
+        root   /usr/share/nginx/html;
+        try_files $uri $uri/ /index.html; # <----- Add this line
+        index  index.html index.htm;
+    }
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    # error_page   500 502 503 504  /50x.html;
+    # location = /50x.html {
+    #     root   /usr/share/nginx/html;
+    # }
+}
+```
+
