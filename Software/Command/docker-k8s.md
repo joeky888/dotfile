@@ -120,6 +120,82 @@ kubectl proxy
 * 輸入剛剛得到的 token 登入
 ```
 
+Custom ingress 404,500,503 page instead of nginx default backend
+=====
+* Add these annotations to the target ingress config
+```yaml
+nginx.ingress.kubernetes.io/default-backend: nginx-errors
+nginx.ingress.kubernetes.io/custom-http-errors: "404,500,503"
+```
+* Apply nginx-errors service and deployment
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: nginx-errors
+  labels:
+    app.kubernetes.io/name: nginx-errors
+    app.kubernetes.io/part-of: ingress-nginx
+spec:
+  selector:
+    app.kubernetes.io/name: nginx-errors
+    app.kubernetes.io/part-of: ingress-nginx
+  ports:
+  - port: 80
+    targetPort: 8080
+    name: http
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-errors
+  labels:
+    app.kubernetes.io/name: nginx-errors
+    app.kubernetes.io/part-of: ingress-nginx
+  annotations:
+    reloader.stakater.com/auto: "true"
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: nginx-errors
+      app.kubernetes.io/part-of: ingress-nginx
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: nginx-errors
+        app.kubernetes.io/part-of: ingress-nginx
+    spec:
+      containers:
+      - name: nginx-error-server
+        image: ghcr.io/181192/custom-error-pages:latest
+        ports:
+        - containerPort: 8080
+        env:
+        - name: DEBUG # Enable debug log
+          value: "true"
+        - name: ERROR_FILES_PATH # theme
+          value: "./themes/ghost"
+        - name: HIDE_DETAILS
+          value: "true"
+        - name: LOG_COLOR
+          value: "true"
+        livenessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 1
+          timeoutSeconds: 3
+          periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /healthz
+            port: 8080
+          initialDelaySeconds: 1
+          timeoutSeconds: 3
+          periodSeconds: 5
+```
+
 ingress nginx returns 404 when visiting `/<path>`
 =====
 * Add this line `try_files $uri $uri/ /index.html;` to frontend nginx dockerfile
