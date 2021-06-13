@@ -76,16 +76,7 @@ end
 status is-interactive
 or exit 0
 
-set -l xdg_runtime_dir "$XDG_RUNTIME_DIR"
-
-# Use tmpdir for termux
-test -z "$xdg_runtime_dir"
-and set xdg_runtime_dir "$TMPDIR"
-
-test -z "$xdg_runtime_dir"
-and set xdg_runtime_dir /tmp
-
-set -g __async_prompt_tmpdir "$xdg_runtime_dir/fish-async-prompt"
+set -g __async_prompt_tmpdir (command mktemp -d)
 mkdir -p $__async_prompt_tmpdir
 
 # Setup after the user defined prompt functions are loaded.
