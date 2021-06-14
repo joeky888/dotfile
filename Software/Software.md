@@ -386,7 +386,10 @@ Ideas to be done
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust and compatible with nats
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
-  * After some researching, php-pm doesn't support websockets, I would recommand using it in golang
+  * Websocket
+    * php-pm: doesn't support
+    * roadrunner: https://github.com/spiral/roadrunner/issues/513
+    * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
   * Frontend: vite + typescript + esbuild + ant design
   * Backend: Fiber(go)
