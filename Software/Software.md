@@ -385,7 +385,8 @@ Ideas to be done
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust and compatible with nats
-* Swoole/Workerman/php-pm/roadrunner for mediawiki
+* Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
+  * After some researching, php-pm doesn't support websockets, I would recommand using it in golang
 * Backstage/CMS system
   * Frontend: vite + typescript + esbuild + ant design
   * Backend: Fiber(go)
