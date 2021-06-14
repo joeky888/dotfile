@@ -381,15 +381,17 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
-* React native webrtc + webtorrent + typescript -> A new torrent client
+* React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
-* Flutter + dio (http client in Dart) -> multi-thread downloader
-* Message Queue in rust and compatible with nats
+* Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
+* New message queue in rust and compatible with nats
 * Swoole/Workerman/php-pm/roadrunner for mediawiki
-* React native template with typescript + esbuild + vite
-* Backstage/CMS system with meilisearch
+* Backstage/CMS system
+  * Frontend: vite + typescript + esbuild + ant design
+  * Backend: Fiber(go)
+  * meilisearch
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
-* K3S + docker-compose + host network to build a single-server multi-agent cluster
+* K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 
 Experience
 =====
