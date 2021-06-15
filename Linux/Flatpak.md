@@ -7,3 +7,7 @@ Install
 * $ flatpak install flathub io.mpv.Mpv
 * $ sudo flatpak override io.mpv.Mpv --filesystem=xdg-config/mpv:ro
 * $ flatpak install flathub-beta com.brave.Browser
+
+Uninstall an app
+======
+* $ flatpak uninstall io.mpv.Mpv --delete-data
