@@ -307,6 +307,7 @@ Good Software Design
 * Cross Platform
 * Less dependencies without FFI
 * IPv4/IPv6 CIDR whitelist for accessing advanced settings
+* Always use "Accept-Encoding: gzip,deflate,br" for each restful request
 * RBAC
 * Progress bar
 * Built-in shell
