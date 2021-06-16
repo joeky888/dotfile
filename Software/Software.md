@@ -242,7 +242,7 @@ Android
   * OpenLauncher
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
-  * Newpipe (Using this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
+  * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
   * DNS66 - Block ads/hosts via DNS
@@ -260,13 +260,13 @@ Android
     * programming
     * commandline
     * devops
+    * ufos
+    * aliens
 * Drop-down menu items
   * Screenshot
   * Flash light
   * Auto rotate
 * Not on Google/F-droid
-  * Alpha VNC (beta) (No root, Android 5.0+), use Scrcpy instead
-  * Entware-ng (root, Termux alternative, Android 4.2.2+)
   * 豌豆荚 wandoujia
   * 應用寶
   * 迅雷
