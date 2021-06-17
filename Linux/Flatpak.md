@@ -1,3 +1,9 @@
+Softwares
+=====
+* com.wps.Office
+* io.mpv.Mpv
+* io.dbeaver.DBeaverCommunity
+
 Install
 =====
 * $ app-fast -S flatpak
