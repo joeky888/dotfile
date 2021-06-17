@@ -3,6 +3,8 @@ Softwares
 * com.wps.Office
 * io.mpv.Mpv
 * io.dbeaver.DBeaverCommunity
+* com.valvesoftware.Steam.CompatibilityTool.Proton
+* com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 
 Install
 =====
