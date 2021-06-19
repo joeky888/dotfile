@@ -48,7 +48,7 @@ iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras
 scoop config aria2-enabled false
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
-scoop install aria2 win32-openssh fd rga neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup
+scoop install aria2 win32-openssh fd ripgrep neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
 # "" means "(Default)" which equals to "@"
@@ -68,7 +68,7 @@ choco install cascadiamonopl 7zip git poshgit openssl.light skype vscodium green
 choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
 ```
 * Gaming dlls
-    * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
+  * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
 
 Git config
 =====
@@ -82,7 +82,7 @@ Install alacritty to use Cygwin
 =====
 * $ choco install alacritty -y
 * Edit shortcut on the Desktop
-    * C:\ProgramData\alacritty\alacritty.exe --command C:\cygwin64\bin\bash.exe --login -i
+  * C:\ProgramData\alacritty\alacritty.exe --command C:\cygwin64\bin\bash.exe --login -i
 
 Mono sound
 =====
