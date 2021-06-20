@@ -77,7 +77,16 @@ end
 status is-interactive
 or exit 0
 
-set -g __async_prompt_tmpdir (command mktemp -d)
+set -g __async_prompt_tmpdir "$XDG_RUNTIME_DIR"
+test -z "$__async_prompt_tmpdir"
+and set -g __async_prompt_tmpdir "$TMPDIR"
+
+test -z "$__async_prompt_tmpdir"
+and set -g __async_prompt_tmpdir "$TMP"
+
+test -z "$__async_prompt_tmpdir"
+and set -g __async_prompt_tmpdir (command mktemp -d)
+
 mkdir -p $__async_prompt_tmpdir
 
 # Setup after the user defined prompt functions are loaded.
