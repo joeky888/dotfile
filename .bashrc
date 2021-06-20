@@ -67,7 +67,7 @@ elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [[ $TER
   elif [[ $TERM != fbterm ]] ; then
     [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
   fi
-elif [ -z $TMUX ] && [ $(command -v fish) ] && [ "$OSTYPE" = "cygwin" ]; then
+elif [ -z $TMUX ] && [ $(command -v fish) ] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
   exec fish
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
