@@ -24,6 +24,7 @@ set -U fish_user_paths ""
 set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/inxi $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/diff-highlight $fish_user_paths
+set -U fish_user_paths $HOME/scoop/shims $fish_user_paths
 
 # For command line highlighting
 set fish_color_command green --bold

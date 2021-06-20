@@ -472,6 +472,7 @@ stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
 if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
+  export PATH="$PATH:$HOME/scoop/shims"
   gvim()
   {
     gv=$(cygpath $(which gvim.exe))
