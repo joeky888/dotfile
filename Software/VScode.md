@@ -37,6 +37,7 @@ Extension
 * hediet.vscode-drawio
 * serayuzgur.crates
 * ms-kubernetes-tools.vscode-kubernetes-tools
+* dsznajder.es7-react-js-snippets
 
 Diff 2 file
 =====
