@@ -205,6 +205,8 @@ set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --h
 set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
 set DOWNLOADER_ARGUMENTS "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=false" # aria2 & bypy
 set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
+set VCS_FOLDERS ".bzr,CVS,.git,.hg,.svn"
+set VCS_FOLDERS_MORE "$VCS_FOLDERS,vendor,node_modules,ohmyzsh,dist,bin"
 
 # Faster navigating, overwrite oh-my-zsh settings
 alias ..='cd ..'
@@ -221,6 +223,8 @@ alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtub
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,compress,deflate,br" --user-agent "(youtube-dl --dump-user-agent)" -LC - '
+alias rg="rg --hidden --glob '!{$VCS_FOLDERS_MORE}'"
+alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
 
 function upgradeDotfile
   if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
