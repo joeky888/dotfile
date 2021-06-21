@@ -397,7 +397,10 @@ Ideas to be done
   * meilisearch
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
-* Websocket + WebRTC multiple player gaming - webrtc handles syncing all players corordenates while websocket handels the rest of the data transferation
+* Websocket + WebRTC multiple player gaming
+  * Important & Realtime -> Websocket + CDN
+  * Important & Non-Realtime -> API
+  * Trivial & Realtime -> WebRTC P2P (e.g. syncing all players corordenates and animations)
 
 Experience
 =====
