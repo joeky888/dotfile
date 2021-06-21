@@ -400,7 +400,7 @@ Ideas to be done
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN
   * Important & Non-Realtime -> API
-  * Trivial & Realtime -> WebRTC P2P (e.g. syncing all players corordenates and animations)
+  * Trivial & Realtime -> WebRTC P2P (e.g. syncing all players corordenates and animations and cheating detection)
 
 Experience
 =====
