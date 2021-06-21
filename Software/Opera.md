@@ -34,6 +34,7 @@ Extension
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
+* Marinara - Pomodoro® Assistant
 <!-- * HackBar -->
 * User-Agent Switcher for Chrome by Google
 <!-- * HTTPS Everywhere -->
