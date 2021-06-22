@@ -331,7 +331,7 @@ Good Software Design
 * Current status / Connection status, like (Green)Good, (Red)Bad
 * Stripped binary (upx)
 * Auto updater
-* Multiple users Co-op
+* Multiple users Co-op with webrtc datachannel and websockets
 * Rewards/Praising for user's hard work
 * Socks5 proxy setting
 * Embbed RPC server
