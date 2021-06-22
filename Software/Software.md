@@ -398,9 +398,9 @@ Ideas to be done
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Websocket + WebRTC multiple player gaming
-  * Important & Realtime -> Websocket + CDN
+  * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
-  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft (e.g. syncing all players corordenates and animations and cheating detection)
+  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (e.g. syncing all players corordenates and animations and cheating detection)
 
 Experience
 =====
