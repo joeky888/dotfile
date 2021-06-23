@@ -338,6 +338,7 @@ Good Software Design
 * Import SSL certificates
 * Hotfix without reinstalling the whole app
 * Use emojis in git commit message ✅ ❌
+* Biometric Locking/Unlocking
 * Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia/Fandom page for it
