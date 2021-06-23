@@ -398,7 +398,7 @@ Ideas to be done
   * meilisearch
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
-* Webassembly multiple thread downloader chrome extension
+* Webassembly+Web Workers multiple thread downloader chrome extension
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
