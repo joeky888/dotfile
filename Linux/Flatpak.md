@@ -4,6 +4,7 @@ Softwares
 * io.mpv.Mpv
 * io.dbeaver.DBeaverCommunity
 * org.kde.krita
+* org.telegram.desktop
 * com.valvesoftware.Steam.CompatibilityTool.Proton
 * com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 
@@ -17,7 +18,11 @@ Install
 * $ sudo flatpak override io.mpv.Mpv --filesystem=xdg-config/mpv:ro # Read mpv.conf
 * $ flatpak install flathub-beta com.brave.Browser
 
+Upgrade all apps
+=====
+* $ flatpak update
+
 Uninstall an app
 ======
-* $ flatpak uninstall io.mpv.Mpv --delete-data
+* $ flatpak uninstall io.mpv.Mpv --delete-data && flatpak uninstall --unused
 * $ sudo rm /var/lib/flatpak/overrides/io.mpv.Mpv
