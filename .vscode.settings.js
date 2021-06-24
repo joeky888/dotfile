@@ -123,6 +123,7 @@
         "-E=deadcode",
         "-E=errcheck",
         "-E=gosimple",
+        "-E=govet",
         "-E=staticcheck",
         "-E=structcheck",
         "-E=typecheck",
