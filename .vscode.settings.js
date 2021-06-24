@@ -118,8 +118,9 @@
     },
     "go.lintTool": "golangci-lint",
     "go.lintFlags": [
+        // Enable all fast linters
         "--fast",
-        // These are default linter
+        // and all default linter
         "-E=deadcode",
         "-E=errcheck",
         "-E=gosimple",
