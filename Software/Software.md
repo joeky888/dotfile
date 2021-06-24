@@ -116,6 +116,7 @@ Dev
     * TiDB - MySQL compatible
     * CockroachDB - PostgreSQL compatible
     * YugabyteDB - PostgreSQL compatible and High performant (No arm64 support)
+    * Citus - PostgreSQL extension that transforms Postgres into a distributed database (Maintained by Microsoft)
 
 Windows
 =====
