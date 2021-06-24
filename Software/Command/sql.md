@@ -55,5 +55,10 @@ Import .gz to database (mysql)
 PostgreSQL truncate and reset id
 =====
 ```sql
+-- Erase all data and reset id
 TRUNCATE `TABLENAME` RESTART IDENTITY CASCADE;
+
+-- Only reset id
+ALTER SEQUENCE <TABLE_NAME>_<COLUMN_NAME>_seq RESTART WITH 4044007;
+-- For example ALTER SEQUENCE public.market_prices_history_id_seq RESTART WITH 4044007;
 ```
