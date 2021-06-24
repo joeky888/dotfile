@@ -3,6 +3,7 @@ Softwares
 * com.wps.Office
 * io.mpv.Mpv
 * io.dbeaver.DBeaverCommunity
+* org.kde.krita
 * com.valvesoftware.Steam.CompatibilityTool.Proton
 * com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 
