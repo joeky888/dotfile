@@ -115,6 +115,7 @@ Dev
   * Distributed databases
     * TiDB - MySQL compatible
     * CockroachDB - PostgreSQL compatible
+    * YugabyteDB - PostgreSQL compatible and High performant (No arm64 support)
 
 Windows
 =====
