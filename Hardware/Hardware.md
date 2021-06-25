@@ -21,3 +21,8 @@ Embbed hardware
 * ESP8266/ESP32
     * Micropython
     * Arduino IDE
+
+Digital audio/video/data connector
+=====
+* DisplayPort
+* HDMI
