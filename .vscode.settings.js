@@ -130,6 +130,7 @@
         "-E=typecheck",
         "-E=unused",
         "-E=varcheck",
+        "-E=paralleltest",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
