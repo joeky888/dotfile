@@ -1,3 +1,8 @@
+Bulk Insert vs Batch Insert
+=====
+* Bulk: insert all, e.g. insert 10000 at one time
+* Batch: group insert with a buffer size, e.g. insert 1000 at one time for all 10000 records
+
 Custom type like Json array
 =====
 ```go
