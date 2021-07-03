@@ -1,12 +1,16 @@
 Softwares
 =====
-* com.wps.Office
-* io.mpv.Mpv
-* io.dbeaver.DBeaverCommunity
-* org.kde.krita
-* org.telegram.desktop
-* com.valvesoftware.Steam.CompatibilityTool.Proton
-* com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+```sh
+flatpak install flathub com.wps.Office
+flatpak install flathub io.mpv.Mpv
+flatpak install flathub io.dbeaver.DBeaverCommunity
+flatpak install flathub org.kde.krita
+flatpak install flathub org.telegram.desktop
+flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton
+flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+
+flatpak install flathub-beta com.brave.Browser
+```
 
 Install
 =====
