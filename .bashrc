@@ -471,29 +471,6 @@ upgradeDotfile() {
 stty -ixon -ixoff # In order to use Ctrl Q and ctrl S
 stty lnext '^-' stop undef start undef -ixon # Unbind Ctrl V, replace with Ctrl _
 
-if [[ "$OSTYPE" == "cygwin" || "$OSTYPE" == "msys" ]]; then
-  export PATH="$PATH:$HOME/scoop/shims"
-  gvim()
-  {
-    gv=$(cygpath $(which gvim.exe))
-    background=$([ -n "$ZSH_VERSION" ] && echo "&!" || echo "&")
-    if [ "$#" = 0 ]; then
-      $gv $background
-    else
-      $gv -p --remote-tab-silent "$@" $background
-    fi;
-  }
-elif [ $(command -v gvim) ]; then
-  gvim()
-  {
-    if [ "$#" = 0 ]; then
-      command gvim > /dev/null 2>&1
-    else
-      command gvim -p --remote-tab-silent "$@" > /dev/null 2>&1
-    fi;
-  }
-fi
-
 git_branch_info() {
   if git rev-parse --git-dir 1>/dev/null 2>&1; then
     echo "* $(git rev-parse --abbrev-ref HEAD 2>/dev/null)"
@@ -1290,14 +1267,6 @@ OpenFileExplorer()
     open .
   else # Unknown OS
     true
-  fi;
-}
-
-dict() {
-  if [ $# -eq 0 ]; then
-    echo "Usage: dict <word>"
-  else
-    cat $HOME/dict/Dictionary.txt | grep $1 -n -C 5 --color=auto
   fi;
 }
 
