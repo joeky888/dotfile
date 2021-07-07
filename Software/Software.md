@@ -389,7 +389,7 @@ Ideas to be done
 * React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
-* New message queue in rust and compatible with nats using
+* New message queue in rust and compatible with nats using KCP
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * Websocket
     * php-pm: doesn't support
@@ -405,7 +405,7 @@ Ideas to be done
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
-  * Not important & Realtime -> WebRTC(libdatachannel) P2P + KCP + Raft + Protobuffers (e.g. syncing all players corordenates and animations and cheating detection)
+  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (e.g. syncing all players corordenates and animations and cheating detection)
 
 Experience
 =====
