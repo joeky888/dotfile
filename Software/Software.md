@@ -314,6 +314,7 @@ Good Software Design
 * Progress bar
 * Built-in shell
 * Variable encryption
+* Download update patches in parallel
 * TUI/GUI dashboard and resource monitor
   * Hardware-accelerated visualization
   * Google image "Data visualization" for ideas
