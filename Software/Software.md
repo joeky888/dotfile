@@ -389,7 +389,7 @@ Ideas to be done
 * React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
-* New message queue in rust and compatible with nats using KCP
+* New message queue in rust and compatible with nats using KCP (https://github.com/skywind3000/kcp/issues/10)
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * Websocket
     * php-pm: doesn't support
