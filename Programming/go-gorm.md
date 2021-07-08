@@ -22,6 +22,8 @@
 | smallint         | int8,int16,uint8    | (-32768~32767)                                                   |
 | integer          | int32,uint16        | (-2147483648~2147483647)                                         |
 | bigint           | int64,uint32,uint64 | (-9223372036854775808~9223372036854775807)                       |
+| serial           | uint32              | (1~2147483647)                                                   |
+| bigserial        | uint64              | (1~9223372036854775807)                                          |
 | real             | float32             | 6 decimal digits precision                                       |
 | double precision | float64             | 15 decimal digits precision                                      |
 | decimal(6,2)     | decimal.Decimal     | 6 total number of digits, 4 before and 2 after the decimal point |
