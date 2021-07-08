@@ -339,6 +339,7 @@ Good Software Design
 * Socks5 proxy setting
 * Embbed RPC server
 * Import SSL certificates
+* Graceful Shutdown and Cleanup
 * Hotfix without reinstalling the whole app
 * Use emojis in git commit message ✅ ❌
 * Biometric Locking/Unlocking
