@@ -340,6 +340,7 @@ Good Software Design
 * Embbed RPC server
 * Import SSL certificates
 * Graceful Shutdown and Cleanup
+* Built-in transaction and rollback for risky i/o operations
 * Hotfix without reinstalling the whole app
 * Use emojis in git commit message ✅ ❌
 * Biometric Locking/Unlocking
