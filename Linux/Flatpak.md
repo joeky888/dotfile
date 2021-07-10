@@ -28,3 +28,7 @@ Uninstall an app
 ======
 * $ flatpak uninstall io.mpv.Mpv --delete-data && flatpak uninstall --unused
 * $ sudo rm /var/lib/flatpak/overrides/io.mpv.Mpv
+
+Add program to startup
+=====
+* $ ln -sf /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop ~/.config/autostart/
