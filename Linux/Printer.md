@@ -3,7 +3,7 @@ Samba printer
 ```sh
 app-fast -S cups ghostscript gsfonts samba smbclient cifs-utils hplip
 yay -S xerox-docucentre-driver # Fuji
-sudoedit /etc/samba/smb.conf # This step could be unnecessarily
+sudoedit /etc/samba/smb.conf # This step could be skipped
 [global]
 	workgroup = WORKGROUP
 	security = user
