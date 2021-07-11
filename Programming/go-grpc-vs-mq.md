@@ -8,6 +8,7 @@
 | Failure tolerance | No                       | Yes (At-Least-Once)                              |
 | Persistence       | No                       | Yes (Copied to disk to ensure data transmission) |
 | Protocol          | plain http/2 without tls | tcp                                              |
+| Use cases         | Request–reply            | Publish/subscribe, Data pipeline                 |
 
 ### MQTT QoS
 
