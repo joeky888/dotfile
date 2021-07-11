@@ -404,6 +404,7 @@ Ideas to be done
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
+* Rust http client and request pool
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
