@@ -26,3 +26,7 @@ Digital audio/video/data connector
 =====
 * DisplayPort
 * HDMI
+
+WIFI
+=====
+* Mesh/Unifi
