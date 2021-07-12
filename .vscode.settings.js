@@ -125,6 +125,7 @@
         "-E=errcheck",
         "-E=gosimple",
         "-E=govet",
+        "-E=ineffassign",
         "-E=staticcheck",
         "-E=structcheck",
         "-E=typecheck",
