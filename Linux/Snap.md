@@ -71,6 +71,15 @@ sudo snap install docker
 # sudo snap enable docker
 ```
 
+Snap docker error (dial tcp: lookup registry-1.docker.io ... read: connection refused)
+=====
+* Switch to another snap version
+* One of these command should work
+```sh
+sudo snap refresh docker --edge
+sudo snap refresh docker --beta
+```
+
 Build snap package locally
 =====
 ```sh

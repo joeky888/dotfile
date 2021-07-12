@@ -213,5 +213,6 @@
     },
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
-    }
+    },
+    "redhat.telemetry.enabled": false
 }
