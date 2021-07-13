@@ -42,6 +42,7 @@ services:
       - USER_GID=1000
       - GITEA__server__ROOT_URL=https://gitea.example.com
       - GITEA__server__SSH_DOMAIN=gitea.example.com
+      - GITEA__server__ENABLE_GZIP=true
       - GITEA__database__DB_TYPE=postgres
       - GITEA__database__HOST=postgres:5432
       - GITEA__database__NAME=gitea
