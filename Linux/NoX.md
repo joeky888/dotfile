@@ -209,9 +209,11 @@ Mount a new device to /home and keep it automatically mounted on boot
 * Format and make a partition to the new device
 * E.g. make a new partition named /dev/sdb1 and format it to ext4
 ```sh
+sudo fdisk -l # Get all disks
+sudo blkid # Get all UUIDs of partitions
 sudoedit /etc/fstab
 # Add this line, change hdd to other names
-/dev/sdb1 /home/hdd ext4 defaults 0 2
+UUID=f70f30a9-e66f-4454-85a9-1b8e90bbeb38 /home/hdd ext4 defaults 0 2
 sudo systemctl daemon-reload
 sudo systemctl restart local-fs.target
 ```
