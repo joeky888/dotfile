@@ -96,6 +96,10 @@ CN packages like baidu pan
 =====
 * sudoedit /etc/pacman.conf
 ```dosini
+[options]
+Color
+ParallelDownloads = 8 # pacman v6.0+
+
 [archlinuxcn]
 SigLevel = Never
 Server = https://cdn.repo.archlinuxcn.org/$arch
