@@ -98,7 +98,7 @@ CN packages like baidu pan
 ```dosini
 [options]
 Color
-ParallelDownloads = 8 # pacman v6.0+
+ParallelDownloads = 8
 
 [archlinuxcn]
 SigLevel = Never
