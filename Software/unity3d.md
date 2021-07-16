@@ -8,6 +8,7 @@ Setup with dotnet and vscode
 * Install vscode not vscodium # Because vscodium doesn't compatible with these extensions
     * Install extension "@id:Unity.unity-debug"
     * Install extension "@id:ms-dotnettools.csharp"
+    * Add `"omnisharp.useGlobalMono": "always"` to settings.json
 * Unity Editor ->
     * Edit -> Preferences -> External Tools ->
         * External Script Editor -> Browse -> /var/lib/snapd/snap/bin/code
