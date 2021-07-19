@@ -49,8 +49,7 @@ services:
       - GITEA__database__USER=gitea
       - GITEA__database__PASSWD=gitea
       - GITEA__cache__ENABLED=true
-      - GITEA__cache__ADAPTER=redis
-      - GITEA__cache__HOST=redis://redis:6379/0?pool_size=100&idle_timeout=180s
+      - GITEA__cache__ADAPTER=memory
       - GITEA__service__DISABLE_REGISTRATION=true
       - GITEA__service__REQUIRE_SIGNIN_VIEW=true
       - GITEA__repository__FORCE_PRIVATE=true
@@ -63,7 +62,6 @@ services:
       retries: 3
     depends_on:
       - postgres
-      - redis
     volumes:
       - /home/gitea/gitea:/data
       - /home/git/.ssh/:/data/git/.ssh
@@ -82,10 +80,6 @@ services:
       POSTGRES_USER: gitea
       POSTGRES_PASSWORD: gitea
       TZ: "Asia/Taipei"
-  redis:
-    image: redis:6.2.0-alpine3.13
-    restart: always
-    entrypoint: [redis-server, --port, "6379"]
   caddy:
     image: caddy:2.4.0
     restart: always
