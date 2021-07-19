@@ -403,7 +403,7 @@ Ideas to be done
   * meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
 * OpenVPN server using DaemonSet with hostNetwork: true
-* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
+* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/nanoexpress(node)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * Rust http/http2 client using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
