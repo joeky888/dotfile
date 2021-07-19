@@ -401,6 +401,7 @@ Ideas to be done
   * Frontend: vite + typescript + esbuild + ant design
   * Backend: Fiber(go)
   * meilisearch
+* Webrtc ICE server using K8S
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/static-web-server(rust)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
