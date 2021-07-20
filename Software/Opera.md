@@ -3,20 +3,20 @@ Setting
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-quic -> Enable
 * Hardware acceleration
-    * Currently Chrome on Linux works but opera on Linux doesn't work
-        * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
-    * chrome://flags/#ignore-gpu-blocklist -> Enable (Or try to disable it if doesn't work)
-    * chrome://gpu -> Check hardware decode is enabled
-    * Also install h264ify chrome extension
-    * Play an youtube hd video and open a new tab enter dev tool using Ctrl-Shift-i
-        * 3 dots vertical dots menu -> More tools -> Media
-        * video coder name should be VDAVideoDecoder or MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
+  * Currently Chrome on Linux works but opera on Linux doesn't work
+    * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
+  * chrome://flags/#ignore-gpu-blocklist -> Enable (Or try to disable it if doesn't work)
+  * chrome://gpu -> Check hardware decode is enabled
+  * Also install h264ify chrome extension
+  * Play an youtube hd video and open a new tab enter dev tool using Ctrl-Shift-i
+    * 3 dots vertical dots menu -> More tools -> Media
+    * video coder name should be VDAVideoDecoder or MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://settings -> Search "Font"
-    * Standard font -> Noto Sans CJK TC
-    * Serif font -> Noto Sans CJK TC
-    * Sans-serif font -> Noto Sans CJK TC
+  * Standard font -> Noto Sans CJK TC
+  * Serif font -> Noto Sans CJK TC
+  * Sans-serif font -> Noto Sans CJK TC
 * chrome://Plugins -> Search "flash" -> Enable
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 
@@ -30,7 +30,7 @@ Extension
 * Full Page Screen Capture
 * SimpleUndoClose
 * Tampermonkey (Opera addon)
-    * https://github.com/syhyz1990/baiduyun (Secret: 94108)
+  * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
@@ -59,7 +59,7 @@ Extension
 * Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
 * 飛比價格購物幫手
 * LXRSS
-    * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
+  * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
 * Touch VPN (For pan.baidu.com)
 
 RSS list
@@ -100,6 +100,18 @@ https://mshibanami.github.io/GitHubTrendingRSS/weekly/go.xml
 https://mshibanami.github.io/GitHubTrendingRSS/weekly/rust.xml
 ```
 
+Tor
+=====
+* Install opera addon "Onion Browser Button"
+  * https://addons.opera.com/zh-tw/extensions/details/tortm-browser-button/
+  * Download https://github.com/jeremy-jr-benthum/onion-browser-button/releases
+  * Unzip and Start local server
+  * Click the addon on the browser and hit the check button "Check the connection"
+  * Go to https://check.torproject.org/ check if it works
+* Links
+  * Collection of onion links
+    * The hidden wiki: http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php
+    * Torlinks: http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion/
 
 Bookmark script
 =====
