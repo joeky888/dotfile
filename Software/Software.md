@@ -398,7 +398,7 @@ Ideas to be done
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
-  * Frontend: vite + typescript + esbuild + ant design + nanoexpress + ssr
+  * Frontend: vite + typescript + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go)
   * meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
