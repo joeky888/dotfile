@@ -388,6 +388,7 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
+* `docker buildx` builds multi-arch docker images for Go and Rust
 * React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
