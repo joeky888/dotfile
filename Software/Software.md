@@ -408,6 +408,7 @@ Ideas to be done
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * Rust http/http2 client using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
+  * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
