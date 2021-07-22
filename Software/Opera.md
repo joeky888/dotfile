@@ -102,7 +102,8 @@ https://mshibanami.github.io/GitHubTrendingRSS/weekly/rust.xml
 
 Tor
 =====
-* Install Opera GX with add-on "Onion Browser Button"
+* Install Brave with built-in tor
+* Or install Opera GX with add-on "Onion Browser Button"
   * https://addons.opera.com/zh-tw/extensions/details/tortm-browser-button/
   * Download https://github.com/jeremy-jr-benthum/onion-browser-button/releases
   * Unzip and Start local server
