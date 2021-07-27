@@ -102,7 +102,7 @@
         "RUST_BACKTRACE": "1",
     },
     "[go]": {
-        "editor.tabSize": 8,
+        "editor.tabSize": 4,
         "editor.insertSpaces": false,
         "files.eol": "\n",
         "editor.codeActionsOnSave": {
