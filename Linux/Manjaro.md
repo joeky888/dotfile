@@ -88,7 +88,7 @@ Pacman
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
 * Upgrade all AUR packages
-    * $ yay -Syyu --aur && yay -Sc
+    * $ yay -Syyu --aur && yay -Sc --noconfirm
 * Clear all cache
     * $ sudo pacman -Scc
 
