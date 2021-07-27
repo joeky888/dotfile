@@ -3,7 +3,7 @@ package util
 import (
 	"time"
 
-	"github.com/dgrijalva/jwt-go"
+	"github.com/golang-jwt/jwt"
 	"github.com/joeky888/go-playground/config"
 	"github.com/joeky888/go-playground/database"
 )
@@ -12,7 +12,7 @@ import (
 func JwtEncrypt(uid uint32, username string) (string, error) {
 
 	tokenClaims := database.PlaygroundTokenClaims{
-		UID: uid,
+		UID:      uid,
 		UserName: username,
 		StandardClaims: jwt.StandardClaims{
 			ExpiresAt: time.Now().Unix() + config.Env.HTTP.TokenExpireSecond,
