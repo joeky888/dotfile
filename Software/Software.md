@@ -404,6 +404,7 @@ Ideas to be done
 * Backstage/CMS system
   * Frontend: vite + typescript + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go)
+  * casbin
   * meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
 * OpenVPN server using DaemonSet with hostNetwork: true
