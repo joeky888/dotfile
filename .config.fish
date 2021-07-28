@@ -236,7 +236,7 @@ alias rg="rg --hidden --glob '!{$VCS_FOLDERS_MORE}'"
 alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
 
 function upgradeDotfile
-  if not test -d ~/dotfile; git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile; end
+  if not test -d ~/dotfile; git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile; end
   git -C ~/dotfile pull
   git -C ~/dotfile submodule update --init --remote
 end

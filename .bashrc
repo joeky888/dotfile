@@ -330,7 +330,7 @@ upgradeConda() {
 }
 upgradePip() { pip3 install --upgrade pip && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip3 install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
-  [ -d ~/dotfile ] || git clone --depth 1 https://github.com/joeky888/dotfile.git ~/dotfile
+  [ -d ~/dotfile ] || git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile
   git -C ~/dotfile pull
   git -C ~/dotfile submodule update --init --remote
 
