@@ -390,7 +390,10 @@ Ideas to be done
 * UFC - rewritten grc in rust
 * Golang thread-safe websocket read/write struct with sync.RWMutex
 * Golang go-playground switch to fiber
-* docker-compose mysql/postgres singel-master/multiple-slaves sentinel mode using bitnami/mysql and bitnami/postgresql docker images
+* docker-compose mysql/postgres singel-master/multiple-slaves
+  * sentinel mode
+  * bitnami/mysql and bitnami/postgresql
+  * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
 * Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
