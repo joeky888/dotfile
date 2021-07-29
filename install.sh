@@ -38,7 +38,7 @@ InstallDotfile()
   rm -rf "$Home/.config/Code/User/keybindings.json"
   rm -rf "$Home/.config/VSCodium/User/keybindings.json"
 
-  git clone --depth=1 git@github.com:joeky888/dotfile.git $Home/dotfile
+  git clone --depth=1 git://github.com/joeky888/dotfile.git $Home/dotfile
   ln -sf $Home/dotfile/.bashrc ~/.bashrc
   ln -sf $Home/dotfile/.bashrc ~/.bash_profile
   ln -sf $Home/dotfile/.tmux.conf ~/.tmux.conf
@@ -106,7 +106,7 @@ InstallDotfileCygwin()
 {
   rm -rf $Home/dotfile
   rm -rf ~/.grc
-  git clone --depth=1 git@github.com:joeky888/dotfile.git $Home/dotfile
+  git clone --depth=1 git://github.com/joeky888/dotfile.git $Home/dotfile
   mkdir -p $Home/Documents/WindowsPowerShell
   mkdir -p $Home/.config/fish/
   mkdir -p $Home/.pip/
