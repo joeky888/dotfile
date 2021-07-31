@@ -410,6 +410,8 @@ Ideas to be done
   * casbin
   * meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
+* Terraform for rpi cluster private cloud
+* NVIDIA Jetson arm64 k3s cluster
 * OpenVPN server using DaemonSet with hostNetwork: true
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/nanoexpress(node)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
