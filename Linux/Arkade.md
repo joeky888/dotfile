@@ -1,4 +1,4 @@
-Install or Upgrade
+Install or Upgrade (Don't use sudo)
 =====
 * This will perform install if not found or upgrade if found
 ```sh
