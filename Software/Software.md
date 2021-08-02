@@ -60,6 +60,7 @@ CLI
   * rtty - SSH alternative via browser https://github.com/zhaojh329/rtty
 * Rust
   * websocat - cli websocket client
+  * rewrk - wrk-like http/h2 benchmark tool
 * Nodejs
   * gtop
   * vtop
