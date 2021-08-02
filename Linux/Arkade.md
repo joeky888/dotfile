@@ -1,5 +1,6 @@
-Install
+Install or Upgrade
 =====
+* This will perform install if not found or upgrade if found
 ```sh
 curl -sLS https://get.arkade.dev | sh
 ```
@@ -10,8 +11,9 @@ Uninstall all
 rm -rf ~/.arkade
 ```
 
-CLI tools to install
+CLI tools to install or upgrade
 =====
+* arkade get will perform install if not found or upgrade if found
 ```sh
 arkade get k9s
 arkade get yq
