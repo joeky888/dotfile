@@ -18,4 +18,5 @@ CLI tools to install or upgrade
 arkade get k9s
 arkade get yq
 arkade get linkerd2
+arkade get buildx
 ```
