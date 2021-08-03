@@ -416,6 +416,7 @@ Ideas to be done
 * OpenVPN server using DaemonSet with hostNetwork: true
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/nanoexpress(node)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
+* kubesphere + hybrid cloud
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * Rust http/http2 client using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
   * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
