@@ -316,6 +316,7 @@ Good Software Design
 * Built-in shell
 * Variable encryption
 * Download update patches in parallel
+* Plugable binaries as new subcommands like the `git cz`
 * TUI/GUI dashboard and resource monitor
   * Hardware-accelerated visualization
   * Google image "Data visualization" for ideas
