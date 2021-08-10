@@ -24,7 +24,7 @@ Extension
     * vadimcn.vscode-lldb
     * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
     * or matklad.rust-analyzer
-* ms-vscode.go
+* golang.Go
 * eslint
 * Markdown All in One (opt+shift+f to format tables)
 * Gitlens
