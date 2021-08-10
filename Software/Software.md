@@ -408,7 +408,7 @@ Ideas to be done
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs/ajax" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
+  * Frontend: vite + typescript + "rxjs/ajax+pako/zlib" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go)
   * casbin
   * Webrtc screen-sharing for debugging/presenting
