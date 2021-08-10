@@ -1,6 +1,7 @@
 Softwares
 =====
 ```sh
+flatpak install flathub com.visualstudio.code
 flatpak install flathub org.mozilla.Thunderbird
 flatpak install flathub com.wps.Office
 flatpak install flathub io.dbeaver.DBeaverCommunity
