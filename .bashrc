@@ -454,10 +454,13 @@ upgradeDotfile() {
     linux-gnu)
       mkdir -p ~/.config/Code/User
       mkdir -p ~/.config/VSCodium/User
+      mkdir -p ~/.var/app/com.visualstudio.code/config/Code/User
       ln -sf $HOME/dotfile/.vscode.settings.js ~/.config/Code/User/settings.json
       ln -sf $HOME/dotfile/.vscode.settings.js ~/.config/VSCodium/User/settings.json
+      ln -sf $HOME/dotfile/.vscode.settings.js ~/.var/app/com.visualstudio.code/config/Code/User/settings.json
       ln -sf $HOME/dotfile/.vscode.keybindings.js ~/.config/Code/User/keybindings.json
       ln -sf $HOME/dotfile/.vscode.keybindings.js ~/.config/VSCodium/User/keybindings.json
+      ln -sf $HOME/dotfile/.vscode.keybindings.js ~/.var/app/com.visualstudio.code/config/Code/User/keybindings.json
       ;;
     darwin)
       mkdir -p ~/.hammerspoon/
