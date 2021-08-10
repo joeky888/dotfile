@@ -69,7 +69,6 @@ InstallDotfile()
   mkdir -p "$Home/Library/Application Support/VSCodium/User"
   mkdir -p "$Home/.config/Code/User"
   mkdir -p "$Home/.config/VSCodium/User"
-  mkdir -p "$Home/.var/app/com.visualstudio.code/config/Code/User"
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.vimrc
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
@@ -84,10 +83,8 @@ InstallDotfile()
   linux-gnu)
     ln -sf $Home/dotfile/.vscode.settings.js ~/.config/Code/User/settings.json
     ln -sf $Home/dotfile/.vscode.settings.js ~/.config/VSCodium/User/settings.json
-    ln -sf $Home/dotfile/.vscode.settings.js ~/.var/app/com.visualstudio.code/config/Code/User/settings.json
     ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/Code/User/keybindings.json
     ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/VSCodium/User/keybindings.json
-    ln -sf $Home/dotfile/.vscode.keybindings.js ~/.var/app/com.visualstudio.code/config/Code/User/keybindings.json
     ;;
   darwin)
     ln -sf $Home/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
