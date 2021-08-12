@@ -188,6 +188,7 @@ Android
 * Deverloper options
   * Advanced restart -> Check
   * Android debugging -> Check
+* Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
 * Backup IMEI code -> `*#06#`
 * Firefox Beta -> Add-ons -> Add-ons Manager
   * Dark Reader
