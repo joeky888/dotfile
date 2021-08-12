@@ -392,7 +392,7 @@ Ideas to be done
 * UFC - rewritten grc in rust
 * Golang thread-safe websocket read/write struct with sync.RWMutex
 * Golang go-playground switch to fiber
-* Linkerd + cert-manager auto-mtls
+* Linkerd helm chart + cert-manager auto-mTLS
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
   * bitnami/mysql and bitnami/postgresql
