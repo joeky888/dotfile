@@ -200,6 +200,12 @@ Android
   * TQQQ
   * NQ=F
   * TSEC (^TWII)
+* Investing.com
+  * US Tech 100 (USTEC)
+  * TQQQ
+  * BTC/USD
+  * ETH/USD
+  * TWII
 * Clock by Google
 * Gmail
 * Facebook Messenger
