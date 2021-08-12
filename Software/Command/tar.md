@@ -23,7 +23,7 @@ Pack
 =====
 ```sh
 cd $HOME/folder
-sudo tar czvf ../pack.tar.gz . # Pack
+tar czvf ../pack.tar.gz . # Pack
 ```
 
 Use xz
