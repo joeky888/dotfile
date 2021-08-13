@@ -418,7 +418,7 @@ Ideas to be done
   * Frontend: vite + typescript + "rxjs/ajax+pako/zlib" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go)
   * casbin
-  * Webrtc screen-sharing for debugging/presenting
+  * Webrtc screen-sharing for debugging/presenting & Audio anti noise
   * meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
 * Terraform for rpi cluster private cloud
