@@ -379,6 +379,7 @@ Dev frameworks
 * Mobile
   * Flutter
   * React native + Ant design (Supports preact/react/react native)
+  * Godot
 * Embbed system
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
@@ -390,6 +391,7 @@ Dev frameworks
   * Webview:
     * github.com/webview/webview - C/C++/Go backend, html fronend
     * github.com/tauri-apps/tauri - Rust backend, html frontend
+  * Godot
 * CLI
   * Go/Rust
   * C and C++, https://github.com/idealvin/co libco, golang-style lib
