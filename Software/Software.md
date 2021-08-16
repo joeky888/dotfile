@@ -197,6 +197,7 @@ Android
   * User Agent Switcher (by Alexander Schlarb)
   * Absolute Enable Right Click & Copy
   * Search by Image - Reverse Image Search (by Armin Sebastian)
+* Yahoo News
 * Yahoo Finance
   * TQQQ
   * NQ=F
