@@ -18,3 +18,4 @@ Ideas
 * 氫汽車/電動車/生物燃料/Alternative fuel vehicle
 * Project Serpo 外星交換計劃
 * 藍腳鰹鳥
+* 莫霍克髮型(伊斯蘭禁止)
