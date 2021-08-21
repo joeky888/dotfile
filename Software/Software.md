@@ -418,7 +418,7 @@ Ideas to be done
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
   * Frontend: vite + typescript + "rxjs/ajax+pako/zlib" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
-  * Backend: Fiber(go)
+  * Backend: Fiber(go http1.1) or Actix(rust http2)
   * casbin
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
   * meilisearch
