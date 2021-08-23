@@ -109,6 +109,11 @@ Tor
     * The hidden wiki: http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php
     * Torlinks: http://torlinksge6enmcyyuxjpjkoouw4oorgdgeo7ftnq3zodj7g2zxi3kyd.onion/
 
+NSFW
+=====
+* 4chan gif board rekt threads
+* https://sora.komica.org/00
+
 Bookmark script
 =====
 * Dark
