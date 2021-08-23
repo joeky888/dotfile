@@ -400,7 +400,6 @@ Ideas to be done
 =====
 * UFC - rewritten grc in rust
 * Golang thread-safe websocket read/write struct with sync.RWMutex
-* Golang go-playground switch to fiber
 * Audacity noice reduction
 * Linkerd helm chart + cert-manager auto-mTLS
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
@@ -409,7 +408,7 @@ Ideas to be done
   * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
-* Rewritten newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
+* Rewrite newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust + linux5.1 io-uring and compatible with nats using KCP fast mode + optional mTLS (https://github.com/skywind3000/kcp/issues/10)
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
@@ -418,7 +417,7 @@ Ideas to be done
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs/ajax+pako/zlib" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
+  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go http1.1) or Actix(rust http2)
   * casbin
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
@@ -431,8 +430,9 @@ Ideas to be done
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * kubesphere UI + hybrid cloud or k3s private cloud
-* Rust http/http2 client using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
+* Rust http/http2 minimalistic single-file client library using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
   * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
+* Rewrite aria2 in rust and support TUI/WebUI
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
