@@ -48,3 +48,4 @@ PostgresSQL
 * Partitioning
   * Range Partitioning - Partition by date
   * List Partitioning - Partition by id
+  * Hash Partitioning - Custom partitioning
