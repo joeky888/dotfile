@@ -221,6 +221,9 @@ server {
     server_name  localhost;
 
     location / {
+        if ($request_uri = "/") { # Caching path / 60s in case CDN servers weren't aware of content changing
+          add_header 'Cache-Control' "public, max-age=60";
+        }
         root   /usr/share/nginx/html;
         try_files $uri $uri/ @router;
         index  index.html index.htm;
