@@ -46,3 +46,4 @@ Ideas
   * 猜想生物Wiki/未來生物
 * 歷史
   * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash
+  * Marvin Heemeyer 無敵推土機事件/懲罰者
