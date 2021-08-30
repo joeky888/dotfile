@@ -34,6 +34,13 @@ docker-compose up -d --build
 ```yaml
 version: "3.4"
 services:
+  autoheal:
+    restart: always
+    image: willfarrell/autoheal
+    environment:
+      - AUTOHEAL_CONTAINER_LABEL=all
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
   gitea:
     image: gitea/gitea:1.14.2
     container_name: gitea
