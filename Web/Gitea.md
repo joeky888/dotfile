@@ -32,7 +32,7 @@ docker-compose up -d --build
 ```
 
 ```yaml
-version: "3"
+version: "3.4"
 services:
   gitea:
     image: gitea/gitea:1.14.2
@@ -56,10 +56,11 @@ services:
       - GITEA__ui__DEFAULT_THEME=arc-green # Per-user theme setting can be found Settings -> Account -> Select default theme
     restart: always
     healthcheck:
-      test: ["CMD", "curl", "-f", "http://localhost:3000"]
-      interval: 30s
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
+      interval: 60s
       timeout: 10s
-      retries: 3
+      start_period: 45s
+      retries: 5
     depends_on:
       - postgres
     volumes:
@@ -83,6 +84,12 @@ services:
   caddy:
     image: caddy:2.4.0
     restart: always
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:2019/metrics"]
+      interval: 60s
+      timeout: 10s
+      start_period: 45s
+      retries: 5
     command: [caddy, reverse-proxy, --from, gitea.example.com, --to, gitea:3000]
     ports:
       - 80:80
