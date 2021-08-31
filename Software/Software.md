@@ -430,7 +430,10 @@ Ideas to be done
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * kubesphere UI + hybrid cloud or k3s private cloud
-* Rust http/http2 minimalistic single-file client library using hyper.rs with "Accept-Encoding: gzip,deflate,br" support and a request pool
+* Rust http/http2 minimalistic single-file client library using hyper.rs with
+  * Custom dns nameservers
+  * "Accept-Encoding: gzip,deflate,br" support
+  * a request pool
   * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
 * Rewrite aria2 in rust and support TUI/WebUI
 * Websocket + WebRTC multiple player gaming
