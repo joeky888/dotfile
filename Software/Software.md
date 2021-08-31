@@ -440,8 +440,10 @@ Ideas to be done
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
   * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (e.g. syncing all players corordenates and animations and cheating detection)
-* Godot rust 3D air combat game
-  * With all integer/float numbers capsulated by decimal types (Prevent cheat engine)
+* 3D air combat game
+  * Rust language
+  * Godot/O3DE(Open 3D Engine)
+  * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
 
 Experience
 =====
