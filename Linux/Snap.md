@@ -64,6 +64,13 @@ Install docker
 =====
 ```sh
 sudo snap install docker
+sudoedit /var/snap/docker/current/etc/docker/daemon.json
+`
+{
+    "dns": ["1.1.1.1", "8.8.8.8"]
+}
+`
+sudo snap disable docker && sudo snap enable docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
