@@ -213,6 +213,8 @@ Android
 * Facebook Messenger
 * LINE
 * Skype
+* Telegram
+* Discord
 * Sogou input method
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
