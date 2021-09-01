@@ -39,6 +39,7 @@ Ideas
   * Missing link 人類進化的缺失鏈條
 * 傳說的生物
   * 美人魚
+  * 狼人/Chupacabra/沒有銀彈(電腦科學)
   * 怪獸檔案
   * 神秘生物列表Wiki
   * 傳說生物列表Wiki
