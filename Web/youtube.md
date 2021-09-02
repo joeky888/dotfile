@@ -17,7 +17,7 @@ Ideas
   * 暗網
   * 區塊鏈
   * 反平方根快速演算法(雷神之鎚引擎原始碼)/魔術數字
-  * 4chan/8chan/Anonymous
+  * 4chan/8chan/Anonymous/WebTorrent
 * 外星
   * 外星人/趨同演化
   * 阿雷西博麥田圈
@@ -49,5 +49,6 @@ Ideas
 * 歷史
   * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash
   * Marvin Heemeyer 無敵推土機事件/懲罰者
+  * Bob Ross/ASMR
 * 哲學
   * 塔西佗陷阱 - 若公權力失去其公信力，無論如何發言或是處事，社會均將給予其負面評價
