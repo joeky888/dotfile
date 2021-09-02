@@ -425,9 +425,10 @@ Ideas to be done
 * Backstage/CMS system
   * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go http1.1) or Actix(rust http2)
-  * casbin
+  * GraphQL
+  * Casbin
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
-  * meilisearch
+  * Meilisearch
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
 * Terraform for rpi cluster private cloud
 * NVIDIA Jetson arm64 k3s cluster
