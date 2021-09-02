@@ -451,6 +451,7 @@ Ideas to be done
   * Rust language
   * Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
+  * Night vision
 
 Experience
 =====
