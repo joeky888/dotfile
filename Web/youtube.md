@@ -17,7 +17,7 @@ Ideas
   * 暗網
   * 區塊鏈
   * 反平方根快速演算法(雷神之鎚引擎原始碼)/魔術數字
-  * 4chan/8chan/Anonymous/WebTorrent
+  * 4chan/8chan/Anonymous/WebTorrent/SCP基金會
 * 外星
   * 外星人/趨同演化
   * 阿雷西博麥田圈
