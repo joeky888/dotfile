@@ -251,9 +251,10 @@ else
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
 if hash aria2c 2>/dev/null >/dev/null ; then
-  alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+  # alias youtube-dl="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+  alias youtube-dl="yt-dlp $DL_ARGUMENTS --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS'"
 else
-  alias youtube-dl="youtube-dl $DL_ARGUMENTS"
+  alias youtube-dl="yt-dlp $DL_ARGUMENTS"
 fi
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
