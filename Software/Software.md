@@ -378,10 +378,10 @@ Docker images
 Dev frameworks
 =====
 * Web
-  * Preact + Ant design (Supports preact/react/react native)
+  * Preact + Ant design/Material UI (Supports preact/react/react native)
 * Mobile
   * Flutter
-  * React native + Ant design (Supports preact/react/react native)
+  * React native + Ant design/Material UI (Supports preact/react/react native)
 * Embbed system
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
@@ -409,10 +409,10 @@ Ideas to be done
   * bitnami/mysql and bitnami/postgresql
   * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
-* React native webrtc + webtorrent + trackerslist + typescript + ant design -> A new torrent client
+* React native webrtc + webtorrent + trackerslist + typescript -> A new torrent client
   * ProGuard - Java code obfuscator
   * Enable hermes
-  * Ant design
+  * Ant design//Material UI
   * esbuild - https://github.com/expo/expo-cli/pull/3659
 * Rewrite newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
@@ -423,7 +423,7 @@ Ideas to be done
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design + nanoexpress + ssr(react-dom/server)
+  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + nanoexpress + ssr(react-dom/server)
   * Backend: Fiber(go http1.1) or Actix(rust http2)
   * GraphQL
   * Casbin
