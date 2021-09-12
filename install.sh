@@ -255,12 +255,12 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     exit 1
   fi
   [[ $(command -v zsh) ]] && chsh -s $(command -v zsh) $(whoami)
-  if [[ $(command -v NetworkManager) ]]; then
-    $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
-    $SUDO chmod 755 /usr/bin/reconnect
-    $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
-    $SUDO systemctl enable --now reconnect.service
-  fi
+#   if [[ $(command -v NetworkManager) ]]; then
+#     $SUDO install ~/dotfile/Linux/reconnect /usr/bin/reconnect
+#     $SUDO chmod 755 /usr/bin/reconnect
+#     $SUDO install ~/dotfile/Linux/reconnect.service /lib/systemd/system/reconnect.service
+#     $SUDO systemctl enable --now reconnect.service
+#   fi
   if [[ $(command -v apt) ]]; then
     app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y
