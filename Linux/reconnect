@@ -1,5 +1,6 @@
 #!/bin/bash
 
+mkdir -p /var/log/reconnect
 while true; do
   sleep 40s
   if ! ping -c 1 -W 3 8.8.8.8 | grep -q -i "ttl"; then
@@ -12,9 +13,9 @@ while true; do
     systemctl restart networking.service || echo ok
     systemctl restart teamviewerd.service || echo ok
     systemctl restart NetworkManager.service || echo ok
-    echo $(date +"%m/%d/%Y %I:%M:%S:%p") >> /home/Reconnect.log
-    if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
-      sed -i '1d' /home/Reconnect.log
+    echo $(date +"%m/%d/%Y %I:%M:%S:%p") >> /var/log/reconnect/Reconnect.log
+    if [ $(cat /var/log/reconnect/Reconnect.log | wc -l) -gt 20 ]; then
+      sed -i '1d' /var/log/reconnect/Reconnect.log
     fi
   fi
 
@@ -22,9 +23,9 @@ while true; do
     systemctl is-active teamviewerd.service >/dev/null 2>&1
     if [[ $? != 0 ]]; then # if exit code is not zero, restart
       systemctl restart teamviewerd.service || echo ok
-      echo $(date +"%m/%d/%Y %I:%M:%S:%p") "teamviewer" >> /home/Reconnect.log
-      if [ $(cat /home/Reconnect.log | wc -l) -gt 20 ]; then
-        sed -i '1d' /home/Reconnect.log
+      echo $(date +"%m/%d/%Y %I:%M:%S:%p") "teamviewer" >> /var/log/reconnect/Reconnect.log
+      if [ $(cat /var/log/reconnect/Reconnect.log | wc -l) -gt 20 ]; then
+        sed -i '1d' /var/log/reconnect/Reconnect.log
       fi
     fi
   fi
