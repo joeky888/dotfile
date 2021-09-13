@@ -12,6 +12,11 @@ console.log(`hello`);
 npx tsc -w
 ```
 
+json marsharl/unmarsharl
+=====
+* JSON.stringify()
+* JSON.parse()
+
 HTTP rxjs client with rate limit (max concurrency)
 =====
 * Support nodejs and browser (React-Native should work)
