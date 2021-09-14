@@ -347,6 +347,7 @@ Good Software Design
 * Current status / Connection status, like (Green)Good, (Red)Bad
 * Stripped binary (upx)
 * Auto updater
+* Scrolling screenshot built-in
 * Multiple users Co-op with webrtc datachannel and websockets
 * Rewards/Praising for user's hard work
 * Socks5 proxy setting
