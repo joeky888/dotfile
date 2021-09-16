@@ -347,6 +347,7 @@ Good Software Design
 * Current status / Connection status, like (Green)Good, (Red)Bad
 * Stripped binary (upx)
 * Auto updater
+* Bluetooth LAN fallback mode when no network available
 * Scrolling screenshot built-in
 * Multiple users Co-op with webrtc datachannel and websockets
 * Rewards/Praising for user's hard work
