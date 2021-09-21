@@ -30,6 +30,7 @@ InstallDotfile()
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/mpv/mpv.conf
+  rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.hammerspoon/init.lua
   rm -rf "$Home/Library/Application Support/Code/User/settings.json"
   rm -rf "$Home/Library/Application Support/VSCodium/User/settings.json"
@@ -78,6 +79,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
   ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
+  ln -sf $Home/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
 
   case $OSTYPE in
   linux-gnu)
@@ -165,12 +167,14 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf

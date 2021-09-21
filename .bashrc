@@ -368,6 +368,7 @@ upgradeDotfile() {
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/mpv/mpv.conf
+  rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.hammerspoon/init.lua
 
   mkdir -p ~/.grc
@@ -413,7 +414,9 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
