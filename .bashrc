@@ -452,6 +452,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
+    ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
     ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
 
     case $OSTYPE in
