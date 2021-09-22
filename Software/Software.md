@@ -404,6 +404,7 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
+* Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Golang thread-safe websocket read/write struct with sync.RWMutex
 * Audacity noice reduction
 * Linkerd helm chart + cert-manager auto-mTLS
