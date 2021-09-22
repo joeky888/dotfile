@@ -418,6 +418,7 @@ Ideas to be done
   * Ant design//Material UI
   * esbuild - https://github.com/expo/expo-cli/pull/3659
 * Rewrite newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
+* Build a DBeaver alternative for android/ios using React Native + TypeORM
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust + linux5.1 io-uring and compatible with nats using KCP fast mode + optional mTLS (https://github.com/skywind3000/kcp/issues/10)
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
