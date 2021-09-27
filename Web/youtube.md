@@ -55,7 +55,7 @@ Ideas
   * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash《Anastasia》
   * Marvin Heemeyer 無敵推土機事件/Marvel懲罰者
   * 畫家Bob Ross/ASMR
-  * 雙頭人/Freaks (1932 film)
+  * 雙頭女/Freaks (1932 film)
   * 歐帕茲(時代錯誤產物)/安提基特拉機械/法老直升機浮雕
 * 哲學
   * 塔西佗陷阱 - 若公權力失去其公信力，無論如何發言或是處事，社會均將給予其負面評價
