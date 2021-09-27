@@ -52,8 +52,8 @@ Ideas
   * 傳說生物列表Wiki
   * 《神秘動物圖鑑》
   * 猜想生物Wiki/未來生物/寶可夢解剖圖
-* 歷史
-  * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash
+* 歷史/人物
+  * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash《Anastasia》
   * Marvin Heemeyer 無敵推土機事件/懲罰者
   * Bob Ross/ASMR
   * 雙頭人
