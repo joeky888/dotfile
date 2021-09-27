@@ -94,6 +94,7 @@
     "rust-client.engine": "rust-analyzer",
     "rust-analyzer.lruCapacity": 1024,
     "rust-analyzer.updates.channel": "stable",
+    "rust-analyzer.checkOnSave.command": "clippy",
     "rust-analyzer.rustfmt.extraArgs": [
         "--config",
         "imports_granularity=Crate", // Merge imports into one line
