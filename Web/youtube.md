@@ -54,7 +54,7 @@ Ideas
 * 歷史/人物
   * 俄國沙皇尼古拉二世假冒生還事件/真假公主/Slash《Anastasia》
   * Marvin Heemeyer 無敵推土機事件/Marvel懲罰者
-  * Bob Ross/ASMR
+  * 畫家Bob Ross/ASMR
   * 雙頭人/Freaks (1932 film)
   * 歐帕茲(時代錯誤產物)/安提基特拉機械/法老直升機浮雕
 * 哲學
