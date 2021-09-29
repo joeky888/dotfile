@@ -422,6 +422,7 @@ Ideas to be done
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust + linux5.1 io-uring and compatible with nats using KCP fast mode + optional mTLS (https://github.com/skywind3000/kcp/issues/10)
+  * glommio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * Websocket
     * php-pm: doesn't support
