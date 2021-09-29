@@ -334,7 +334,7 @@ upgradeConda() {
   [ -d ~/Miniconda3 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$os-x86_64.sh" && chmod 777 Miniconda3-latest-$os-x86_64.sh && bash Miniconda3-latest-$os-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$os-x86_64.sh
   [ $(command -v conda) ] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
 }
-upgradePip() { pip3 install --upgrade pip && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip3 install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+upgradePip() { pip3 install --upgrade pip setuptools && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && pip3 install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile
   git -C ~/dotfile pull
@@ -894,7 +894,7 @@ if [ -n "$CONDA_2" ]; then
   alias conda2=$(echo $CONDA_2/bin/conda)
   alias pip2=$(echo $CONDA_2/bin/pip)
   upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_2/bin/conda) clean --yes --all ;}
-  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 export CONDA_3=$(getCondaPath 3)
@@ -904,7 +904,7 @@ if [ -n "$CONDA_3" ]; then
   alias conda3=$(echo $CONDA_3/bin/conda)
   alias pip3=$(echo $CONDA_3/bin/pip)
   upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_3/bin/conda) clean --yes --all ;}
-  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
+  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/master.zip ;}
 fi
 
 hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
