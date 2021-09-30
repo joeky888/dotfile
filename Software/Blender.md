@@ -14,8 +14,11 @@ Hot Keys
   * Shift-c - Centering the cursor
   * Shift-a - Adding new objects
 * Sculpiting mode
-  * f       - Scaling brush radius
-  * Shift-f - Scaling brush strength
+  * f            - Scaling brush radius
+  * Shift-f      - Scaling brush strength
+  * Ctrl-LeftMS  - Changing the direction Add <-> Subtract
+  * Shift-LeftMS - Smooth brush painting
+  * g            - Switch to grab brush
 
 TODO
 =====
