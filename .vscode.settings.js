@@ -15,6 +15,7 @@
     "editor.minimap.enabled": true,
     "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
+    "editor.bracketPairColorization.enabled": true
     "editor.cursorBlinking": "solid",
     "editor.semanticHighlighting.enabled": true,
     "editor.semanticTokenColorCustomizations": {
