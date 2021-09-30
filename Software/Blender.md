@@ -8,6 +8,15 @@ Sculpting
   * Enable X axis mirror
   * Enable Pen Size Pressure
 
+Hot Keys
+=====
+* Layout mode
+  * Shift-c - Centering the cursor
+  * Shift-a - Adding new objects
+* Sculpiting mode
+  * f       - Scaling brush radius
+  * Shift-f - Scaling brush strength
+
 TODO
 =====
 * Mech
