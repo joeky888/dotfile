@@ -122,6 +122,10 @@ struct Cart {
 }
 
 impl Cart {
+    fn new(name: u32, price: u32) -> Self {
+        Self { Name:name, Price:price }
+    }
+
     pub fn GetPrice(&self) -> u32 {
         self.Name * self.Price
     }
