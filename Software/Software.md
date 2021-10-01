@@ -223,6 +223,9 @@ Android
 * VLC
 * mpv-android
 * Google translate
+* Google Maps
+  * Add tw language to android system
+  * Add tw language to google maps in the app setting
 * Here WeGo / Maps.me
 * Amaze File Manager
 * WPS office
