@@ -19,9 +19,13 @@ Hot Keys
   * Shift-d - Duplicating
 * Edit Mode
   * Shift-r - Loop cut (Swtiching to "Vertex selection" first, and don't select anything)
-    * Mouse Wheel - Before applying a loop cut, it can increase the loop cut count
-    * F9          - After applying a loop cut, F9 can increase the loop cut count
+    * RightMS - Before applying a loop cut, it can re-center it
+    * MSWheel - Before applying a loop cut, it can increase the loop cut count
+    * F9      - After applying a loop cut, F9 can increase the loop cut count
   * i       - Loop cut (Swtiching to "Face selection" first, then select one face)
+  * m       - Merge all selected Vertices
+  * f       - Create a new face on selected Vertices
+  * o       - Turn on/off proportional editting, smooth editing all Vertices in the range
 * Sculpiting mode
   * f            - Scaling brush radius
   * Shift-f      - Scaling brush strength
