@@ -3,7 +3,10 @@ Sculpting
 * Layout mode
   * Remove everthing
   * Shift-a -> Add -> Mesh -> Ico sphere
-    * Modifier -> Add Modifier -> Subdivision Surface -> Levels Viewport -> 5 -> Apply
+    * Option 1 (Recommended)
+      * F9 -> Subdivisions -> 5
+    * Option 2
+      * Modifier Properties -> Add Modifier -> Subdivision Surface -> Levels Viewport -> 5 -> Apply
 * Sculpting mode
   * Enable X axis mirror
   * Enable Pen Size Pressure
