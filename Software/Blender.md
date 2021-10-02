@@ -16,6 +16,10 @@ Hot Keys
 * Layout mode
   * Shift-c - Centering the cursor
   * Shift-a - Adding new objects
+  * Shift-d - Duplicating
+* Edit Mode
+  * Shift-r - Loop cut (Swtiching to "Vertex selection" first, and don't select anything)
+  * i       - Loop cut (Swtiching to "Face selection" first, then select one face)
 * Sculpiting mode
   * f            - Scaling brush radius
   * Shift-f      - Scaling brush strength
