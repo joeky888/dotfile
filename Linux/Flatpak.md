@@ -9,10 +9,11 @@ flatpak install flathub org.telegram.desktop && sudo flatpak override org.telegr
 flatpak install flathub com.discordapp.Discord && sudo flatpak override --filesystem=home com.discordapp.Discord
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton-GE
-
 flatpak install flathub io.mpv.Mpv && sudo flatpak override io.mpv.Mpv --filesystem=xdg-config/mpv:ro # Read mpv.conf
-
 flatpak install flathub-beta com.brave.Browser
+
+ln -sf /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop ~/.config/autostart
+ln -sf /var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop ~/.config/autostart
 ```
 
 Install
