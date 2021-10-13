@@ -130,7 +130,7 @@ Nvidia driver
 
 VPN connection
 =====
-* $ app-fast -S strongswan networkmanager-l2tp
+* $ app-fast -S networkmanager-strongswan networkmanager-l2tp
 * $ sudo systemctl restart NetworkManager
 * Add a vpn connection in networkmanager
   * Type: L2TP
