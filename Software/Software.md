@@ -374,6 +374,7 @@ Good Software Design
   * Portable between Android and iOS
   * Most operations can be done with only one finger
   * Make small button can be easily clicked (bind clicked event with clickable layout surrounding it)
+  * RWD when splitting screen
 
 Docker images
 =====
