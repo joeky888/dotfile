@@ -16,16 +16,16 @@ ln -sf /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop 
 ln -sf /var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop ~/.config/autostart
 ```
 
-Install
+Install beta packages
 =====
 * $ app-fast -S flatpak
 * $ flatpak remote-add --if-not-exists flathub-beta https://flathub.org/beta-repo/flathub-beta.flatpakrepo # Add beta repo
-* $ flatpak update
+* $ flatpak update -y
 * $ flatpak install flathub com.wps.Office
 
 Upgrade all apps
 =====
-* $ flatpak update
+* $ flatpak update -y
 
 Uninstall an app
 ======
