@@ -11,34 +11,16 @@ Install softwares
     * helm (x64, arm64)
     * Gnome System Monitor (x64, arm64)
     * NetworkManager (x64, arm64)
-    * Remmina (x64, arm64)
-    * RetroArch (x64, arm64)
-    * Blender
-    * WPS Office
-    * VLC
     * WoeUSB
-    * Skype # Doesn't support IME
-    * Krita
-    * Codium by Snapcrafters (vscode)
-    * Slack
     * Opera
-    * Opera-beta
-    * Chromium
-    * Firefox
-    * Brave
-    * Obs-Studio
-    * draw.io
     * Games
         * Veloren (Cubeworld-like game in rust)
     * Dev tools
         * jq
-        * conda
-        * node
-        * go
         * ubuntu-make
         * google-cloud-sdk
         * Android studio
-        * devoperator # This include kubectl aws-cli eksctl
+        * devoperator # including kubectl aws-cli eksctl
 
 
 Upgrade all packages
@@ -64,12 +46,6 @@ Install docker
 =====
 ```sh
 sudo snap install docker
-sudoedit /var/snap/docker/current/etc/docker/daemon.json
-`
-{
-    "dns": ["1.1.1.1", "8.8.8.8"]
-}
-`
 sudo snap disable docker && sudo snap enable docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
