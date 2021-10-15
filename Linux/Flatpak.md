@@ -25,7 +25,7 @@ Install beta packages
 
 Upgrade all apps
 =====
-* $ flatpak update -y
+* $ flatpak update -y && flatpak uninstall --unused
 
 Uninstall an app
 ======
