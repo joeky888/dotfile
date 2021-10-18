@@ -4,23 +4,27 @@ Search package
 
 Install softwares
 =====
-* $ sudo snap install microk8s --beta --classic
+```fish
+sudo snap install microk8s --beta --classic
+sudo snap install helm --classic
+sudo snap install kubectl --classic
+sudo snap install opera-beta
+sudo snap install auto-cpufreq
+sudo snap install docker
+sudo snap disable docker && sudo snap enable docker
+# sudo groupadd --system docker
+# sudo usermod -aG docker $(whoami)
+# newgrp docker
+# sudo snap disable docker
+# sudo snap enable docker
+```
 * Packages
-    * Docker (x64, arm64)
-    * microK8s (x64, arm64)
-    * helm (x64, arm64)
-    * Gnome System Monitor (x64, arm64)
-    * NetworkManager (x64, arm64)
-    * WoeUSB
-    * Opera
-    * Games
-        * Veloren (Cubeworld-like game in rust)
-    * Dev tools
-        * jq
-        * ubuntu-make
-        * google-cloud-sdk
-        * Android studio
-        * devoperator # including kubectl aws-cli eksctl
+  * Gnome System Monitor (x64, arm64)
+  * NetworkManager (x64, arm64)
+  * WoeUSB
+  * Dev tools
+    * Android studio
+    * devoperator # including kubectl aws-cli eksctl
 
 
 Upgrade all packages
@@ -40,27 +44,6 @@ Clean up old packages
 =====
 ```sh
 snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *disabled* ]]; then sudo snap remove "$snapname" --revision="$rev"; fi; done
-```
-
-Install docker
-=====
-```sh
-sudo snap install docker
-sudo snap disable docker && sudo snap enable docker
-# sudo groupadd --system docker
-# sudo usermod -aG docker $(whoami)
-# newgrp docker
-# sudo snap disable docker
-# sudo snap enable docker
-```
-
-Snap docker error (dial tcp: lookup registry-1.docker.io ... read: connection refused)
-=====
-* Switch to another snap version
-* One of these command should work
-```sh
-sudo snap refresh docker --edge
-sudo snap refresh docker --beta
 ```
 
 Build snap package locally

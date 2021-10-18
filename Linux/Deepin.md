@@ -76,8 +76,8 @@ Packages
 =====
 * Deepin
   * $ app-fast install sogoupinyin adb fastboot krita opera-developer opera-stable noto-fonts ttf-wps-fonts vscode teamviewer skypeforlinux evince nomacs obs-studio earlyoom console-setup deepin-graphics-driver-manager deepin-remote-assistance deepin-repair-tools deepin-system-monitor deepin.com.baidu.pan opencc vim-gtk3 file-roller software-properties-gtk baobab gnome-system-monitor gnome-disk-utility -y && sudo apt purge vim foxitreader spotify-client skype -y
-  * $ app-fast install tlp -y # For laptop, in case deepin is unable to reboot
-  * $ sudo apt purge tlp -y && app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working
+<!--   * $ app-fast install tlp -y # For laptop, in case deepin is unable to reboot -->
+<!--   * $ sudo apt purge tlp -y && app-fast install laptop-mode-tools -y # For laptop, in case tlp is not working -->
 * Manjaro xfce to deepin
   * $ sudo pacman -Rsuc vim laptop-mode-tools xfce4 xfce4-goodies blueman
   * $ app-fast -Syyu # Must upgrade packages before installing deepin
@@ -96,9 +96,9 @@ user-session=deepin
       * ~/.xinitrc
   * $ sudo reboot
   * $ app-fast -S libdbusmenu-glib gconf # Reinstall these packages to make snapd work
-  * $ app-fast -S tlp # Or laptop-mode-tools
-  * $ sudo systemctl enable --now tlp
-  * $ sudo systemctl enable --now tlp-sleep
+<!--   * $ app-fast -S tlp # Or laptop-mode-tools -->
+<!--   * $ sudo systemctl enable --now tlp -->
+<!--   * $ sudo systemctl enable --now tlp-sleep -->
   * $ kwin_x11 --replace # Switch to deepin window manager
   * $ app-fast -S code krita krita-plugin-gmic fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 wqy-zenhei noto-fonts-cjk noto-fonts-extra noto-fonts-emoji deepin-boot-maker deepin-editor android-tools firefox-developer-edition chromium brave-beta pepper-flash nomacs file-roller obs-studio evince gnome-disk-utility baobab alacritty gnome-terminal ; sudo pacman -Rsuc --noconfirm xarchiver
   * $ yay -S earlyoom
