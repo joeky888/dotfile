@@ -10,6 +10,7 @@ sudo snap install helm --classic
 sudo snap install kubectl --classic
 sudo snap install opera-beta
 sudo snap install auto-cpufreq
+sudo snap run auto-cpufreq --monitor # Check the status
 sudo snap install docker
 sudo snap disable docker && sudo snap enable docker
 # sudo groupadd --system docker
