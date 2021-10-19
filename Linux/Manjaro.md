@@ -273,3 +273,8 @@ Remote control Windows OS
 * $ app-fast -S remmina freerdp
 * $ killall remmina
 
+Slow boot time
+=====
+* $ systemd-analyze
+* $ systemd-analyze blame
+
