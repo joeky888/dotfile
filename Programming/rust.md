@@ -186,5 +186,7 @@ for (key, value) in items.iter() {
 
 // rayon-rs powered hashmap(hashbrown)
 // hashbrown = { version = "0.11.2", features = ["rayon"] }
+use rayon::prelude::*;
+use hashbrown::HashMap;
 items.par_iter().for_each(|(key, value)| println!("key={} value={}", key, value));
 ```
