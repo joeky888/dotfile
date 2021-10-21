@@ -184,9 +184,8 @@ for (key, value) in items.iter() {
     result[i * 3 / 3] = data[0] + data[1] + data[0 + 1 + 2];
 });
 
-// rayon-rs powered hashmap(hashbrown)
-// hashbrown = { version = "0.11.2", features = ["rayon"] }
+// rayon-rs powered hashmap
 use rayon::prelude::*;
-use hashbrown::HashMap;
+use std::collections::HashMap;
 items.par_iter().for_each(|(key, value)| println!("key={} value={}", key, value));
 ```
