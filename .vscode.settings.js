@@ -17,8 +17,7 @@
     "editor.mouseWheelZoom": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "solid",
-    "telemetry.enableTelemetry": false,
-    "telemetry.enableCrashReporter": false,
+    "telemetry.telemetryLevel": "off",
     "editor.semanticHighlighting.enabled": true,
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
