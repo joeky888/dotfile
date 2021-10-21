@@ -137,3 +137,55 @@ Smart pointer
 * Go doesn't have smart pointers
 * Rust uses Box<T>
 
+Loop in array and hashmap
+=====
+* Go uses `for range`
+* Rust uses `iter()`
+```go
+// simple for loop
+for i := 0; i < 10; i++ {
+    fmt.Println(i)
+}
+
+// loop in built-in hashmap
+for k, v := range m {
+    fmt.Printf("key[%s] value[%s]\n", k, v)
+}
+
+// loop in thread-safe sync.Map
+m.Range(func(k, v interface{}) bool {
+    fmt.Println(k,v)
+    return true
+})
+```
+```rust
+// using for_each
+(0..10).for_each(|i| {
+    result[i * 3 / 3] = data[0] + data[1] + data[0 + 1 + 2];
+});
+
+// array with iter() and map
+let nums = vec![1, 2, 3, 4, 5];
+let nums = nums.iter().map(|x| x * 2).collect::<Vec<i32>>();
+
+// array with iter().enumerate()
+let v = vec![1, 2, 3];
+for (i, n) in v.iter().enumerate() {
+    println!("v[{}] = {}", i, n);
+}
+
+// hashmap with iter()
+for (key, value) in items.iter() {
+    println!("ITER KEY, VALUE: {} {}", key, value);
+}
+
+// rayon-rs powered for_each
+(0..3).into_par_iter().for_each(|i| {
+    result[i * 3 / 3] = data[0] + data[1] + data[0 + 1 + 2];
+});
+
+// rayon-rs powered hashmap
+for (key, value) in items.par_iter() {
+    println!("ITER KEY, VALUE: {} {}", key, value);
+}
+```
