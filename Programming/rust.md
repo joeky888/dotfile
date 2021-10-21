@@ -184,8 +184,7 @@ for (key, value) in items.iter() {
     result[i * 3 / 3] = data[0] + data[1] + data[0 + 1 + 2];
 });
 
-// rayon-rs powered hashmap
-for (key, value) in items.par_iter() {
-    println!("ITER KEY, VALUE: {} {}", key, value);
-}
+// rayon-rs powered hashmap(hashbrown)
+// hashbrown = { version = "0.11.2", features = ["rayon"] }
+items.par_iter().for_each(|(key, value)| println!("key={} value={}", key, value));
 ```
