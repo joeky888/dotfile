@@ -27,11 +27,6 @@ sudo snap disable docker && sudo snap enable docker
     * Android studio
     * devoperator # including kubectl aws-cli eksctl
 
-
-Upgrade all packages
-=====
-* $ snap refresh
-
 Services
 =====
 * List of services
@@ -44,7 +39,7 @@ Services
 Clean up old packages
 =====
 ```sh
-snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *disabled* ]]; then sudo snap remove "$snapname" --revision="$rev"; fi; done
+sudo snap refresh && snap list --all | while read snapname ver rev trk pub notes; do if [[ $notes = *disabled* ]]; then sudo snap remove "$snapname" --revision="$rev"; fi; done
 ```
 
 Build snap package locally
