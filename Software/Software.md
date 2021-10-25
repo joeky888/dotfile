@@ -184,11 +184,13 @@ WineHQ
 
 Android
 =====
-* Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
-* Deverloper options
-  * Advanced restart -> Check
-  * Android debugging -> Check
-* Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
+* Settings
+  * Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
+  * Deverloper options
+    * Advanced restart -> Check
+    * Android debugging -> Check
+  * Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
+  * Sound -> Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
 * Backup IMEI code -> `*#06#`
 * Firefox Beta -> Add-ons -> Add-ons Manager
   * Dark Reader
