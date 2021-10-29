@@ -6,7 +6,7 @@ sudo snap install docker # If docker is not installed
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
 
-sudo snap install microk8s --classic
+sudo snap install microk8s --channel=1.21/stable --classic # Must lock the version number in case it upgrades itself
 sudo usermod -aG microk8s $(whoami)
 sudoedit /var/snap/microk8s/current/args/kube-apiserver # Add `--allow-privileged` && microk8s.stop && microk8s.start
 
