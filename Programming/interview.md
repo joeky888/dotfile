@@ -41,6 +41,17 @@ Container
   * Multicast 多播
   * Loadbalance 單播
 
+Fancy and advanced Regex
+=====
+* Look around
+  * Positive lookahead: X(?=Y) -> 要找 X 而其後方必須為 Y ；而其中 X 和 Y 都可以是一個合法的表達式。 (Y is not included)
+  * Negative lookahead: X(?!Y) -> 要找 X 而其後方不可為 Y ；而其中 X 和 Y 都可以是一個合法的表達式 (Y is not included)
+  * Positive lookbehind: (?<=Y)X   -> 要找 X 而其前方必須為 Y ；而其中 X 和 Y 都可以是一個合法的表達式。 (Y is not included)
+  * Negative lookbehind: `(?<!Y)X` -> 要找 X 而其前方不可為 Y ；而其中 X 和 Y 都可以是一個合法的表達式。 (Y is not included)
+* Backreferences
+  * Regex group with references (group is reused)
+  * `(\w)\1{3}` -> 1st Group is `(\w)` which equals to `\1`, so what it actualy matches are `AAAA`, `3333` and `_____`
+
 PostgresSQL
 =====
 * VIEW
