@@ -45,6 +45,7 @@ Fancy and advanced Regex
 =====
 * Libraries
   * Go/C - Oniguruma
+  * Go   - Regexp2
   * Rust - fancy-regex
 * Look around
   * Positive lookahead: X(?=Y) -> 要找 X 而其後方必須為 Y ；而其中 X 和 Y 都可以是一個合法的表達式。 (Y is not included)
