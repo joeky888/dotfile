@@ -415,6 +415,7 @@ Ideas to be done
 * Golang thread-safe websocket read/write struct with sync.RWMutex
 * Audacity noice reduction
 * Linkerd helm chart + cert-manager auto-mTLS
+* Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
   * bitnami/mysql and bitnami/postgresql
