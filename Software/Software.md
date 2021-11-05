@@ -304,11 +304,13 @@ iOS
 * Slide - reddit client
 * 超級簽 - https://sapp.xin
 
-Gaming
+Gaming & Game dev
 =====
 * Mumu - Android emulator
 * RetroArch - Game console emulator
 * Freelan - virual local network/vpn
+* Chaos box - Proprietary NPC AI
+* Houdini - Proprietary 3D modeling tool
 
 Good Software Design
 =====
