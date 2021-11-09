@@ -235,3 +235,9 @@ server {
 }
 ```
 
+Debug cert-manager
+* $ kubectl get challenge -A
+* $ kubectl get cert -A
+* $ kubectl get ingress -A
+* $ kubectl get all -n cert-manager
+
