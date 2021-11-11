@@ -4,6 +4,7 @@ Links
 * External pages: `[https://xxx.xx Name]`
 * Internal pages with alias name: `[[JavaScript|JS lang]]`
 * Link to English wiki page: `{{link-en|Go!|Go!_(programming_language)}}`
+* 主條目: 釷燃料發電: `{{main|{{le|釷燃料發電}}}}`
 
 Reference
 ======
