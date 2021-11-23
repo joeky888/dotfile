@@ -25,7 +25,13 @@ AMI list with image name and id
 * Or ubuntu-only
 * https://cloud-images.ubuntu.com/locator/ec2/
 * Or
-* Go to aws console -> EC2 -> AMIs (On the left panel)
+* Go to aws console -> EC2 -> AMIs (On the left panel) ->
+  * Public images -> Check
+  * Owner: 099720109477
+  * Virtualization type: HVM
+  * Platform: Ubuntu
+  * AMI Name: 20.04
+  * Architecture: x64
 * Or for eks ami go to
 * https://github.com/awslabs/amazon-eks-ami/releases
 
