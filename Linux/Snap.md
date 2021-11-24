@@ -5,7 +5,6 @@ Search package
 Install softwares
 =====
 ```fish
-sudo snap install microk8s --beta --classic
 sudo snap install helm --classic
 sudo snap install kubectl --classic
 sudo snap install opera-beta
