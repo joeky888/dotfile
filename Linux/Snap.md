@@ -12,12 +12,10 @@ sudo snap install opera-beta
 sudo snap install auto-cpufreq
 sudo auto-cpufreq --install # sudo snap services
 sudo snap install docker
-sudo snap disable docker && sudo snap enable docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
 # newgrp docker
-# sudo snap disable docker
-# sudo snap enable docker
+# sudo snap disable docker && sudo snap enable docker
 ```
 * Packages
   * Gnome System Monitor (x64, arm64)
