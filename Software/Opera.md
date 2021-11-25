@@ -58,7 +58,6 @@ Extension
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Wayback Machine
 * Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
-* 飛比價格購物幫手
 * LXRSS
   * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
 * Touch VPN (For pan.baidu.com)
