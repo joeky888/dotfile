@@ -56,6 +56,7 @@ Extension
 * Secure Shell Extension
 * Selenium IDE / Katalon Recorder
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
+* Wayback Machine
 * Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
 * 飛比價格購物幫手
 * LXRSS
