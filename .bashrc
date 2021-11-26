@@ -239,11 +239,11 @@ alias upgradeAnnie='go get -v github.com/iawia002/annie'
 alias upgradeMycli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/mycli/archive/master.zip'
 alias upgradeLitecli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/litecli/archive/master.zip'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-if hash youtube-dl 2>/dev/null >/dev/null; then
-  [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(youtube-dl --dump-user-agent)"'
-  [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(youtube-dl --dump-user-agent)" -LC - '
-  [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(youtube-dl --dump-user-agent)"'
-  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10 --user-agent="$(youtube-dl --dump-user-agent)"'
+if hash yt-dlp 2>/dev/null >/dev/null; then
+  [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(yt-dlp --dump-user-agent)"'
+  [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
+  [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(yt-dlp --dump-user-agent)"'
+  [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10 --user-agent="$(yt-dlp --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
@@ -251,26 +251,25 @@ else
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
 if hash aria2c 2>/dev/null >/dev/null ; then
-  # alias youtube-dl="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-  alias youtube-dl="yt-dlp $DL_ARGUMENTS --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS'"
+  alias yt-dlp="yt-dlp $DL_ARGUMENTS --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS'"
 else
-  alias youtube-dl="yt-dlp $DL_ARGUMENTS"
+  alias yt-dlp="yt-dlp $DL_ARGUMENTS"
 fi
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
-alias youtube-dl-240="youtube-dl -f 'bestvideo[height<=240][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-360="youtube-dl -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-480="youtube-dl -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][ext=mp4]+bestaudio/best'"
-alias youtube-dl-playlist="youtube-dl --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
-alias youtube-dl-thumbnail="youtube-dl --write-thumbnail --write-all-thumbnails --skip-download"
-alias youtube-dl-filename-ascii="youtube-dl --restrict-filenames"
-alias youtube-dl-auto-sub="youtube-dl --write-auto-sub"
-alias youtube-dl-audio='youtube-dl --extract-audio'
-alias youtube-dl-audio-MP3='youtube-dl --extract-audio --audio-format mp3'
-alias youtube-dl-audio-Opus='youtube-dl --extract-audio --audio-format opus'
-alias youtube-dlYouku='youtube-dl --proxy proxy.uku.im:443'
+alias yt-dlp-240="yt-dlp -f 'bestvideo[height<=240][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-360="yt-dlp -f 'bestvideo[height<=360][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][ext=mp4]+bestaudio/best'"
+alias yt-dlp-playlist="yt-dlp --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
+alias yt-dlp-thumbnail="yt-dlp --write-thumbnail --write-all-thumbnails --skip-download"
+alias yt-dlp-filename-ascii="yt-dlp --restrict-filenames"
+alias yt-dlp-auto-sub="yt-dlp --write-auto-sub"
+alias yt-dlp-audio='yt-dlp --extract-audio'
+alias yt-dlp-audio-MP3='yt-dlp --extract-audio --audio-format mp3'
+alias yt-dlp-audio-Opus='yt-dlp --extract-audio --audio-format opus'
+alias yt-dlpYouku='yt-dlp --proxy proxy.uku.im:443'
 alias streamlink-mpv-best="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream best"
 alias streamlink-mpv-1080="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream 1080p"
 alias streamlink-mpv-720="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream 720p"

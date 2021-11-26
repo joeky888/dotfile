@@ -225,10 +225,10 @@ alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
 alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s '\n' | tr '\n' ',')"
-alias youtube-dl="youtube-dl $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-alias youtube-dl-720="youtube-dl -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias youtube-dl-1080="youtube-dl -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
-alias upgradeYoutubedl='pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip'
+alias yt-dlp="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,compress,deflate,br" --user-agent "(youtube-dl --dump-user-agent)" -LC - '
