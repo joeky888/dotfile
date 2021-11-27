@@ -36,13 +36,14 @@ helm upgrade --install linkerd2 \
   linkerd/linkerd2 --debug -n linkerd2
 
 helm upgrade --install linkerd-viz linkerd/linkerd-viz \
-		--set podAnnotations."linkerd\.io/inject"=enabled \
-		--set podAnnotations."config\.linkerd\.io/admission-webhooks"=disabled\
+		--set podAnnotations."linkerd\.io/inject"=enabled \ # This is a must
+		--set podAnnotations."config\.linkerd\.io/admission-webhooks"=disabled \ # This is a must
 		--debug -n linkerd2
 
 linkerd2 check # Varify
 linkerd2 viz check
 kubectl get pod -n linkerd-viz # Make sure viz pods are all injected by side-cars
+linkerd2 viz dashboard # Start a dashboard (grafana included)
 ```
 
 Injected to the app
