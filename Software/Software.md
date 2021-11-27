@@ -413,6 +413,9 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
+* Snapcrafters
+  * linkerd2
+  * k9s
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Switch from caddy/nginx to traefik for both docker-compose and k8s
 * Golang thread-safe websocket read/write struct with sync.RWMutex
@@ -460,7 +463,10 @@ Ideas to be done
   * "Accept-Encoding: gzip,deflate,br" support
   * a request pool
   * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
-* Rewrite aria2 in rust and support TUI/WebUI
+* Rewrite aria2 in rust and support TUI/WebUI/Flutter
+  * CLI/TUI
+  * Chrome extension
+  * Flutter Desktop/Mobile
 * Websocket + WebRTC multiple player gaming
   * Important & Realtime -> Websocket + CDN + Protobuffers
   * Important & Non-Realtime -> API
