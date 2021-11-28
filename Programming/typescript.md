@@ -9,6 +9,21 @@ vim index.ts
 `
 console.log(`hello`);
 `
+# For new version of nodejs
+- Add a line "type": "module" to package.json
+- Edit tsconfig.json
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "ES2020",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
+  }
+}
+
 npx tsc -w
 ```
 
