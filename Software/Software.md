@@ -450,6 +450,7 @@ Ideas to be done
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
   * Meilisearch
   * Rayon-rs for faster broadcasting
+  * Oniguruma webassembly regex engine
 * Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
 * Terraform for rpi cluster private cloud
 * NVIDIA Jetson arm64 k3s cluster
