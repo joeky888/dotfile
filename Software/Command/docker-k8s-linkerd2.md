@@ -44,6 +44,7 @@ linkerd2 check # Varify
 linkerd2 viz check
 kubectl get pod -n linkerd-viz # Make sure viz pods are all injected by side-cars
 linkerd2 viz dashboard # Start a dashboard (grafana included)
+curl -H "Host: localhost" http://localhost:50570 # Only localhost host header is availble
 ```
 
 Injected to the app
