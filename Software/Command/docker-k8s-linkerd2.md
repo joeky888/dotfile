@@ -19,7 +19,7 @@ step certificate create root.linkerd.cluster.local ca.crt ca.key --profile root-
 * Create intermediate-ca from root-ca
 ```sh
 step certificate create identity.linkerd.cluster.local issuer.crt issuer.key \
-  --profile intermediate-ca --not-after 8760h --no-password --insecure \
+  --profile intermediate-ca --not-after 87600h --no-password --insecure \
   --ca ca.crt --ca-key ca.key
 ```
 * Helm install
@@ -32,7 +32,7 @@ helm upgrade --install linkerd2 \
   --set-file identityTrustAnchorsPEM=ca.crt \
   --set-file identity.issuer.tls.crtPEM=issuer.crt \
   --set-file identity.issuer.tls.keyPEM=issuer.key \
-  --set identity.issuer.crtExpiry=$(date -d '+8760 hour' +"%Y-%m-%dT%H:%M:%SZ") \
+  --set identity.issuer.crtExpiry=$(date -d '+87600 hour' +"%Y-%m-%dT%H:%M:%SZ") \
   linkerd/linkerd2 --debug -n linkerd2
 
 helm upgrade --install linkerd-viz linkerd/linkerd-viz \
