@@ -37,7 +37,7 @@ helm upgrade --install linkerd2 \
 
 helm upgrade --install linkerd-viz linkerd/linkerd-viz \
 		--set podAnnotations."linkerd\.io/inject"=enabled \ # This is a must
-		--set podAnnotations."config\.linkerd\.io/admission-webhooks"=disabled \ # This is a must
+		--set podAnnotations."config\.linkerd\.io/admission-webhooks"=disabled \ # Remove this line if the injection is not working
 		--debug -n linkerd2
 
 linkerd2 check # Varify
