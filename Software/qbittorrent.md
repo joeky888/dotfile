@@ -9,7 +9,7 @@ Setting
   * Maximum active uploads -> Set to 99
   * Maximum active torrents -> Set to 99
   * Automatically add these trackers to new downloads -> Check
-    * Paste all URLs from `https://github.com/ngosang/trackerslist/blob/master/trackers_all.txt`
+    * Paste all URLs from `https://github.com/XIU2/TrackersListCollection/blob/master/all.txt`
     * Also paste these
 ```
 http://open.acgtracker.com:1096/announce
