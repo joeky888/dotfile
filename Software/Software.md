@@ -435,7 +435,8 @@ Ideas to be done
 * Rewrite newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
-* New message queue in rust + linux5.1 io-uring and compatible with nats using KCP fast mode + optional mTLS (https://github.com/skywind3000/kcp/issues/10)
+* New message queue in rust + linux5.1 io-uring and compatible with nats
+  * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
   * glommio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * Websocket
