@@ -211,7 +211,7 @@ end
 set async_prompt_functions _pure_prompt_git
 
 set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --hls-prefer-native --no-check-certificate --ignore-errors"
-set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,ignore-errors="
+set PLAYER_ARGUMENTS "--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 set DOWNLOADER_ARGUMENTS "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --parameterized-uri=false" # aria2 & bypy
 set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 set VCS_FOLDERS ".bzr,CVS,.git,.hg,.svn"
@@ -224,14 +224,14 @@ alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
 alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
-alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/ngosang/trackerslist/master/trackers_all.txt | tr -s '\n' | tr '\n' ',')"
+alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s '\n' | tr '\n' ',')"
 alias yt-dlp="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
 alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
 alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
-alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,compress,deflate,br" --user-agent "(youtube-dl --dump-user-agent)" -LC - '
+alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
 alias rg="rg --hidden --glob '!{$VCS_FOLDERS_MORE}'"
 alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
 
