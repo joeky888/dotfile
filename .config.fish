@@ -31,9 +31,10 @@ set fish_color_command green --bold
 set fish_color_comment black --bold
 
 # For prompt
-set fish_color_cwd green --bold
+set fish_color_cwd cyan --bold
+set fish_color_cwd_root red --bold
 set fish_color_user red --bold
-set fish_color_host cyan --bold
+set fish_color_host green --bold
 set fish_color_quote bryellow
 set fish_color_comment brblack
 set -g __fish_git_prompt_showdirtystate 1 # This takes too much time
@@ -53,25 +54,28 @@ function fish_prompt --description 'Write out the prompt'
   set -l last_pipestatus $pipestatus
   set -lx __fish_last_status $status # Export for __fish_print_pipestatus.
   set -l normal (set_color normal)
+  set -l red (set_color red --bold)
+  set -l yellow (set_color yellow --bold)
+  set -l green (set_color green --bold)
 
   set color_status green
   set print_status "✓"
-  if [ "$last_pipestatus" != "0" ]
-  set color_status red
-  set print_status "$last_pipestatus"
+  if [ "$last_pipestatus" -ne "0" ]
+    set color_status red
+    set print_status "$last_pipestatus"
   end
 
   # Color the prompt differently when we're root
-  set -l color_cwd $fish_color_cwd
-  set -l suffix \n'> '
-  if functions -q fish_is_root_user; and fish_is_root_user
-  if set -q fish_color_cwd_root
+  # if functions -q fish_is_root_user; and fish_is_root_user
+  if test (id -u) -eq 0
     set color_cwd $fish_color_cwd_root
-  end
-  set suffix \n'# '
+    set suffix '#'
+  else
+    set color_cwd $fish_color_cwd
+    set suffix '>'
   end
 
-  echo -n -s (set_color $fish_color_user) "$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal $suffix
+  echo -n -s (set_color $fish_color_user)"$USER" $normal @ (set_color $fish_color_host) (prompt_hostname) $normal ' ' (set_color $color_cwd) (prompt_pwd) $normal (fish_vcs_prompt) $normal (set_color $color_status) " $print_status" $normal\n$red$suffix$yellow$suffix$green$suffix' '
 end
 
 status is-interactive
@@ -223,6 +227,7 @@ alias ...='cd ../../'
 alias ....='cd ../../../'
 alias .....='cd ../../../../'
 alias ......='cd ../../../../../'
+alias l='ls -lah'
 alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
 alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s '\n' | tr '\n' ',')"
 alias yt-dlp="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
@@ -243,4 +248,11 @@ end
 
 function vman
   MANPAGER=cat man $argv | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" -
+end
+
+function upgradePip
+  pip3 install --upgrade pip setuptools
+  pip3 install --upgrade (pip freeze -l | sed "s/==.*//")
+  pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
+  pip3 install --upgrade https://github.com/requests/requests/archive/master.zip
 end
