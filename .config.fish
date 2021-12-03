@@ -253,6 +253,6 @@ end
 function upgradePip
   pip3 install --upgrade pip setuptools
   pip3 install --upgrade (pip freeze -l | sed "s/==.*//")
-  pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/master.zip
-  pip3 install --upgrade https://github.com/requests/requests/archive/master.zip
+  pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip
+  pip3 install --upgrade https://github.com/requests/requests/archive/main.zip
 end
