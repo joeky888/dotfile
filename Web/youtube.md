@@ -15,6 +15,7 @@ Ideas
 * 海森堡立方(Heisenberg cube)
 * Fatum Project 天命計劃
 * 釷發電/蘇聯核彈滅火
+* 七大奇蹟
 * 電腦科學
   * 暗網
   * 區塊鏈
