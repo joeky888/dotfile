@@ -286,8 +286,8 @@ Android
   * Flash light
   * Auto rotate
 * Not on Google/F-droid
+  * 應用寶 (Recommended)
   * 豌豆荚 wandoujia
-  * 應用寶
   * 迅雷
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
