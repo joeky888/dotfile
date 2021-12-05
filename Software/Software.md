@@ -479,6 +479,13 @@ Ideas to be done
   * Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
+* Ingress controller/Reverse proxy written in Rust
+  * http/2 and http/3
+  * http/2 weboskcet (RFC8441)
+  * Built-in default backend
+  * Whitelist with or without CDN
+  * Rate limit
+  * Compressed by default
 
 Experience
 =====
