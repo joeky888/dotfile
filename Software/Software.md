@@ -446,7 +446,7 @@ Ideas to be done
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
   * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + nanoexpress + ssr(react-dom/server)
-  * Backend: Fiber(go http1.1) for HTTP and Actix(rust http2) for Websockets
+  * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets
   * GraphQL
   * Casbin
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
@@ -457,7 +457,7 @@ Ideas to be done
 * Terraform for rpi cluster private cloud
 * NVIDIA Jetson arm64 k3s cluster
 * OpenVPN server using DaemonSet with hostNetwork: true
-* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix(rust)/nanoexpress(node)
+* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/nanoexpress(node)
 * K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
 * kubesphere UI + hybrid cloud or k3s private cloud
@@ -480,6 +480,7 @@ Ideas to be done
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
 * Ingress controller/Reverse proxy written in Rust
+  * axum
   * http/2 and http/3
   * http/2 weboskcet (RFC8441)
   * Built-in default backend
