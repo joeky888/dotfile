@@ -414,6 +414,7 @@ Dev frameworks
 Ideas to be done
 =====
 * UFC - rewritten grc in rust
+* VSCode with tree-sitter
 * Snapcrafters
   * linkerd2
   * k9s
