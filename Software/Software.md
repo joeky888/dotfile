@@ -417,6 +417,7 @@ Ideas to be done
 * Snapcrafters
   * linkerd2
   * k9s
+  * clamav
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Switch from caddy/nginx to traefik for both docker-compose and k8s
 * Golang thread-safe websocket read/write struct with sync.RWMutex
