@@ -84,6 +84,7 @@ Pacman
 =====
 * Upgrade packages
     * $ app-fast -Syyu; sudo pacman -Rsuc $(pacman -Qdtq)
+    * $ sudo pamac update && sudo pamac clean
 * Download only
     * $ pacman -Sw package
     * $ /var/cache/pacman/pkg # Find the package
