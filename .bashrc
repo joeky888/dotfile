@@ -224,10 +224,10 @@ fi
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
-alias base64-decode='/usr/bin/perl -MMIME::Base64 -e "print decode_base64(@ARGV[0])"'
-alias base64-encode='/usr/bin/perl -MMIME::Base64 -e "print encode_base64(@ARGV[0])"'
-alias url-decode='/usr/bin/perl -MURI::Escape -e "print uri_unescape(@ARGV[0])"'
-alias url-encode='/usr/bin/perl -MURI::Escape -e "print uri_escape(@ARGV[0])"'
+alias base64-decode='perl -MMIME::Base64 -e "print decode_base64(@ARGV[0])"'
+alias base64-encode='perl -MMIME::Base64 -e "print encode_base64(@ARGV[0])"'
+alias url-decode='perl -MURI::Escape -e "print uri_unescape(@ARGV[0])"'
+alias url-encode='perl -MURI::Escape -e "print uri_escape(@ARGV[0])"'
 alias tmuxClearHistory='tmux clear-history'
 alias upgradeBashrc='curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc'
 alias upgradeYoutubedl='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/ytdl-org/youtube-dl/archive/master.zip'
