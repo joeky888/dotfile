@@ -170,7 +170,7 @@ if ! [ "$GOPATH" ]; then
   else
     export GOPATH="$HOME/go"
     export GOBIN=$GOPATH/bin
-fi
+  fi
 fi
 
 if [[ -d "$HOME/zulu" ]]; then
