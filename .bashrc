@@ -270,10 +270,10 @@ alias yt-dlp-audio='yt-dlp --extract-audio'
 alias yt-dlp-audio-MP3='yt-dlp --extract-audio --audio-format mp3'
 alias yt-dlp-audio-Opus='yt-dlp --extract-audio --audio-format opus'
 alias yt-dlpYouku='yt-dlp --proxy proxy.uku.im:443'
-alias streamlink-mpv-best="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream best"
-alias streamlink-mpv-1080="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream 1080p"
-alias streamlink-mpv-720="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream 720p"
-alias streamlink-mpv-480="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg \"$PLAYER_ARGUMENTS)\" --title '{title}' --default-stream 480p"
+alias streamlink-mpv-best="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --title '{title}' --default-stream best"
+alias streamlink-mpv-1080="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --title '{title}' --default-stream 1080p"
+alias streamlink-mpv-720="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --title '{title}' --default-stream 720p"
+alias streamlink-mpv-480="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --title '{title}' --default-stream 480p"
 alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec^=avc]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec^=avc]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec^=avc]+bestaudio/best' $PLAYER_ARGUMENTS"
