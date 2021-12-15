@@ -482,6 +482,7 @@ Ideas to be done
   * Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
+  * Simple state machine built-in
 * Ingress controller/Reverse proxy written in Rust
   * axum
   * http/2 and http/3
