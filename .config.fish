@@ -255,3 +255,6 @@ function upgradePip
   pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip
   pip3 install --upgrade https://github.com/requests/requests/archive/main.zip
 end
+
+type -q helm; and helm completion fish 2>/dev/null | source
+type -q kubectl; and kubectl completion fish | source
