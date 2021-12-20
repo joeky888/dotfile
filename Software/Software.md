@@ -263,6 +263,7 @@ Android
   * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
+    * Advanced -> Networks -> All Networks -> Use DNS -> Google
   * DNS66 - Block ads/hosts via DNS
   * Simple Camera
   * EtchDroid
