@@ -302,7 +302,8 @@ iOS
   * NewTerm 2
 * iSH - https://github.com/tbodt/ish
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
-* Blokada - Ad block
+* Blokada - Ad block (Non-Free at this moment)
+* Adguard DNS
 * Slide - reddit client
 * 超級簽 - https://sapp.xin
 
