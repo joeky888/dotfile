@@ -112,7 +112,7 @@ services:
     image: "traefik:v2.5"
     container_name: "traefik"
     command:
-      - "--log.level=DEBUG"
+      # - "--log.level=DEBUG"
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false"
