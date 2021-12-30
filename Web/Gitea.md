@@ -1,7 +1,7 @@
 docker-compose for arm64 on gitea.example.com
 =====
 * Customized from https://github.com/go-gitea/gitea/blob/main/custom/conf/app.example.ini
-* Auto https cert via Caddy
+* Auto https cert via Caddy/Traefik
 * gitea ssh container port 22 forwards to host port 2222 (client -> host 22 -> host 2222 -> container 22)
 * Make sure
   * Port 22 is used for sshd on the host
@@ -61,6 +61,25 @@ services:
       - GITEA__service__REQUIRE_SIGNIN_VIEW=true
       - GITEA__repository__FORCE_PRIVATE=true
       - GITEA__ui__DEFAULT_THEME=arc-green # Per-user theme setting can be found Settings -> Account -> Select default theme
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.gitea.rule=Host(`gitea.example.com`)"
+      - "traefik.http.routers.gitea.entrypoints=websecure"
+      - "traefik.http.routers.gitea.tls=true"
+      - "traefik.http.routers.gitea.tls.certresolver=letsencrypt"
+      - 'traefik.http.routers.gitea.service=giteaservice'
+      - 'traefik.http.services.giteaservice.loadbalancer.server.port=3000'
+      - "traefik.http.middlewares.gitea_gzip.compress=true"
+      - "traefik.http.routers.gitea.middlewares=gitea_gzip@docker"
+      # Block login api
+      - "traefik.http.routers.gitea_login.rule=Host(`gitea.example.com`) && PathPrefix(`/user/login`)"
+      - "traefik.http.routers.gitea_login.tls=true"
+      - 'traefik.http.routers.gitea_login.service=gitea_loginservice'
+      - 'traefik.http.services.gitea_loginservice.loadbalancer.server.port=3000'
+      - "traefik.http.middlewares.gitea_login_whitelist.ipwhitelist.sourcerange=10.0.0.0/8,172.16.0.0/12,<OFFICE_IP>"
+      # - "traefik.http.middlewares.gitea_login_whitelist.ipwhitelist.ipstrategy.depth=2"
+      - "traefik.http.routers.gitea_login.middlewares=gitea_login_whitelist@docker"
+      - "traefik.http.routers.gitea_login.entrypoints=websecure"
     restart: always
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:3000"]
@@ -76,7 +95,7 @@ services:
       - /etc/timezone:/etc/timezone:ro
       - /etc/localtime:/etc/localtime:ro
     ports:
-      # - "3000:3000" # (Optional) Forwarding this port is for debugging purposes only, Caddy uses docker network to access it
+      # - "3000:3000" # (Optional) Forwarding this port is for debugging purposes only, Caddy/Traefik uses docker network to access it
       - "127.0.0.1:2222:22" # 127.0.0.1:2222 This ensures port 2222 is not avaialbe from public internet
   postgres:
     image: arm64v8/postgres:13.3-alpine
@@ -88,19 +107,52 @@ services:
       POSTGRES_USER: gitea
       POSTGRES_PASSWORD: gitea
       TZ: "Asia/Taipei"
-  caddy:
-    image: caddy:2.4.0
-    restart: always
+
+  traefik:
+    image: "traefik:v2.5"
+    container_name: "traefik"
+    command:
+      - "--log.level=DEBUG"
+      - "--api.insecure=true"
+      - "--providers.docker=true"
+      - "--providers.docker.exposedbydefault=false"
+      - "--entrypoints.web.address=:80"
+      - "--entrypoints.websecure.address=:443"
+      - "--entrypoints.web.http.redirections.entryPoint.to=websecure"
+      - "--entrypoints.web.http.redirections.entryPoint.scheme=https"
+      - "--entrypoints.web.http.redirections.entrypoint.permanent=true"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge=true"
+      - "--certificatesresolvers.letsencrypt.acme.httpchallenge.entrypoint=web"
+      #- "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
+      - "--certificatesresolvers.letsencrypt.acme.email=<ACME-EMAIL>"
+      - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
     healthcheck:
-      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:2019/metrics"]
-      interval: 60s
-      timeout: 10s
-      start_period: 45s
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080"]
+      interval: 10s
+      timeout: 5s
+      start_period: 5s
       retries: 5
-    command: [caddy, reverse-proxy, --from, gitea.example.com, --to, gitea:3000]
     ports:
-      - 80:80
-      - 443:443
+      - "443:443"
+      - "80:80"
+    volumes:
+      - "/home/letsencrypt:/letsencrypt"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
     depends_on:
       - gitea
+#  caddy:
+#    image: caddy:2.4.0
+#    restart: always
+#    healthcheck:
+#      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:2019/metrics"]
+#      interval: 60s
+#      timeout: 10s
+#      start_period: 45s
+#      retries: 5
+#    command: [caddy, reverse-proxy, --from, gitea.example.com, --to, gitea:3000]
+#    ports:
+#      - 80:80
+#      - 443:443
+#    depends_on:
+#      - gitea
 ```
