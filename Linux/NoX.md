@@ -183,7 +183,9 @@ Add dns server
 =====
 * $ nmcli connection show
 * $ nmcli connection mod <CONNECTION-NAME> ipv4.ignore-auto-dns yes # Ignore auto dns-server like 192.168.1.1
+* $ nmcli connection mod <CONNECTION-NAME> ipv6.ignore-auto-dns yes # Ignore auto dns-server like 192.168.1.1
 * $ nmcli connection mod <CONNECTION-NAME> ipv4.dns "1.1.1.1 8.8.8.8"
+* $ nmcli connection mod <CONNECTION-NAME> ipv6.dns "2001:4860:4860::8888 2606:4700:4700::1111"
 * $ sudo systemctl restart NetworkManager
 * Or
 * $ sudoedit /etc/resolvconf.conf && sudo resolvconf -u
