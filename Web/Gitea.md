@@ -126,6 +126,7 @@ services:
       #- "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--certificatesresolvers.letsencrypt.acme.email=<ACME-EMAIL>"
       - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+      # Enable http3, make sure aws security group has udp enabled on port 443
       - "--experimental.http3=true"
       - "--entrypoints.websecure.enablehttp3=true"
     healthcheck:
