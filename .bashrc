@@ -283,13 +283,13 @@ alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash yt-dlp 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(yt-dlp --dump-user-agent)"'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
-  [ $(command -v curl3) ] && alias curl3='curl3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
+  [ $(command -v curl3) ] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(yt-dlp --dump-user-agent)"'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10 --user-agent="$(yt-dlp --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
-  [ $(command -v curl3) ] && alias curl3='curl3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
+  [ $(command -v curl3) ] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
@@ -300,7 +300,7 @@ else
 fi
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
-alias curl3-status='curl3 -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
+alias curl3-status='curl3 --http3 -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias yt-dlp-240="yt-dlp -f 'bestvideo[height<=240][fps<=30][vcodec^=avc]+bestaudio/best'"
 alias yt-dlp-360="yt-dlp -f 'bestvideo[height<=360][fps<=30][vcodec^=avc]+bestaudio/best'"
 alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec^=avc]+bestaudio/best'"
