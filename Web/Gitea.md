@@ -126,6 +126,8 @@ services:
       #- "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--certificatesresolvers.letsencrypt.acme.email=<ACME-EMAIL>"
       - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
+      - "--experimental.http3=true"
+      - "--entrypoints.websecure.enablehttp3=true"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080"]
       interval: 10s
@@ -133,7 +135,8 @@ services:
       start_period: 5s
       retries: 5
     ports:
-      - "443:443"
+      - "443:443/udp"
+      - "443:443/tcp"
       - "80:80"
     volumes:
       - "/home/letsencrypt:/letsencrypt"
