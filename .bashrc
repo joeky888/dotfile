@@ -141,6 +141,47 @@ OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 [ -n "$APP_FAST_PATH" ]       && export PATH=$APP_FAST_PATH:$PATH
 [ -n "$DIFF_HIGHLIGHT_PATH" ] && export PATH=$DIFF_HIGHLIGHT_PATH:$PATH
 
+function getCondaPath()
+{
+  local Possible_Prefix=( "$HOME" \
+                    "/usr/local" \
+                    "/usr/local/homebrew"
+  )
+  local Possible_Path=(   "Miniconda$1" \
+                    "miniconda$1" \
+                    "Anaconda$1" \
+                    "anaconda$1"
+  );
+
+  for pre in "${Possible_Prefix[@]}" ; do
+    for pth in "${Possible_Path[@]}" ; do
+      if [[ -d "$pre/$pth" ]]; then
+        echo "$pre/$pth"
+        return
+      fi
+    done
+  done
+  echo ""
+}
+
+export CONDA_2=$(getCondaPath 2)
+if [ -n "$CONDA_2" ]; then
+  export PATH=$CONDA_2/bin:$PATH
+  alias conda2=$(echo $CONDA_2/bin/conda)
+  alias pip2=$(echo $CONDA_2/bin/pip)
+  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_2/bin/conda) clean --yes --all ;}
+  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/main.zip ;}
+fi
+
+export CONDA_3=$(getCondaPath 3)
+if [ -n "$CONDA_3" ]; then
+  export PATH=$CONDA_3/bin:$PATH
+  alias conda3=$(echo $CONDA_3/bin/conda)
+  alias pip3=$(echo $CONDA_3/bin/pip)
+  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_3/bin/conda) clean --yes --all ;}
+  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/main.zip ;}
+fi
+
 if [[ -d "$HOME/node" ]]; then
   export PATH=$HOME/node/bin:$PATH
   alias upgradeNpm="$HOME/node/bin/npm install -g npm@latest; $HOME/node/bin/npm update -g"
@@ -242,11 +283,13 @@ alias you-getYouku='you-get -y proxy.uku.im:443'
 if hash yt-dlp 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(yt-dlp --dump-user-agent)"'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
+  [ $(command -v curl3) ] && alias curl3='curl3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(yt-dlp --dump-user-agent)"'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10 --user-agent="$(yt-dlp --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
+  [ $(command -v curl3) ] && alias curl3='curl3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" -LC - '
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
@@ -257,6 +300,7 @@ else
 fi
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
+alias curl3-status='curl3 -o /dev/null --fail -L -s -w "Content Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias yt-dlp-240="yt-dlp -f 'bestvideo[height<=240][fps<=30][vcodec^=avc]+bestaudio/best'"
 alias yt-dlp-360="yt-dlp -f 'bestvideo[height<=360][fps<=30][vcodec^=avc]+bestaudio/best'"
 alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec^=avc]+bestaudio/best'"
@@ -861,49 +905,6 @@ elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
 fi
 alias rg="rg --hidden --glob '!{$(echo $VCS_FOLDERS_MORE)}'"
 alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
-
-function getCondaPath()
-{
-  local Possible_Prefix=( "$HOME" \
-                    "/usr/local" \
-                    "/usr/local/homebrew"
-  )
-  local Possible_Path=(   "Miniconda$1" \
-                    "miniconda$1" \
-                    "Anaconda$1" \
-                    "anaconda$1"
-  );
-
-  for pre in "${Possible_Prefix[@]}" ; do
-    for pth in "${Possible_Path[@]}" ; do
-      if [[ -d "$pre/$pth" ]]; then
-        echo "$pre/$pth"
-        return
-      fi
-    done
-  done
-  echo ""
-}
-
-export CONDA_2=$(getCondaPath 2)
-
-if [ -n "$CONDA_2" ]; then
-  export PATH=$CONDA_2/bin:$PATH
-  alias conda2=$(echo $CONDA_2/bin/conda)
-  alias pip2=$(echo $CONDA_2/bin/pip)
-  upgradeConda2() { $(echo $CONDA_2/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_2/bin/conda) clean --yes --all ;}
-  upgradePip2() { $(echo $CONDA_2/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_2/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && $(echo $CONDA_2/bin/pip) install --upgrade https://github.com/requests/requests/archive/main.zip ;}
-fi
-
-export CONDA_3=$(getCondaPath 3)
-
-if [ -n "$CONDA_3" ]; then
-  export PATH=$CONDA_3/bin:$PATH
-  alias conda3=$(echo $CONDA_3/bin/conda)
-  alias pip3=$(echo $CONDA_3/bin/pip)
-  upgradeConda3() { $(echo $CONDA_3/bin/conda) update --no-channel-priority --all --yes; $(echo $CONDA_3/bin/conda) clean --yes --all ;}
-  upgradePip3() { $(echo $CONDA_3/bin/pip) install --upgrade pip setuptools && $(echo $CONDA_3/bin/pip) install --upgrade $(pip freeze -l | sed "s/==.*//") && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && $(echo $CONDA_3/bin/pip) install --upgrade https://github.com/requests/requests/archive/main.zip ;}
-fi
 
 hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 hash litecli 2>/dev/null >/dev/null && alias litecli='LESS="-SRXF" litecli' # Disable word wrapping
