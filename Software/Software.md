@@ -264,6 +264,7 @@ Android
   * YalpStore
   * Blokada - AD block
     * Advanced -> Networks -> All Networks -> Use DNS -> Google
+    * Disable Android bettery optimisation for blokada
   * DNS66 - Block ads/hosts via DNS
   * Simple Camera
   * EtchDroid
