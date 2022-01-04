@@ -452,7 +452,7 @@ Ideas to be done
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
   * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + nanoexpress + ssr(react-dom/server)
-  * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets
+  * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
@@ -478,9 +478,9 @@ Ideas to be done
   * Chrome extension
   * Flutter Desktop/Mobile
 * Websocket + WebRTC multiple player gaming
-  * Important & Realtime -> Websocket + CDN + Protobuffers
+  * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
-  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (e.g. syncing all players corordenates and animations and cheating detection)
+  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
 * 3D air combat game
   * Rust language
   * Godot/O3DE(Open 3D Engine)
