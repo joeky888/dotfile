@@ -33,12 +33,12 @@ helm upgrade --install linkerd2 \
   --set-file identity.issuer.tls.crtPEM=issuer.crt \
   --set-file identity.issuer.tls.keyPEM=issuer.key \
   --set identity.issuer.crtExpiry=$(date -d '+87600 hour' +"%Y-%m-%dT%H:%M:%SZ") \
-  linkerd/linkerd2 --debug -n linkerd2
+  linkerd/linkerd2 --debug -n linkerd2 --version stable-2.11.1
 
 helm upgrade --install linkerd-viz linkerd/linkerd-viz \
 		--set podAnnotations."linkerd\.io/inject"=enabled \ # This is a must
 		--set podAnnotations."config\.linkerd\.io/admission-webhooks"=disabled \ # Remove this line if the injection is not working
-		--debug -n linkerd2
+		--debug -n linkerd2 --version 1.0.0-edge
 
 linkerd2 check # Varify
 linkerd2 viz check
