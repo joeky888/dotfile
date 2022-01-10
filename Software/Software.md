@@ -191,6 +191,11 @@ Android
     * Android debugging -> Check
   * Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
   * Sound -> Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
+  * Private DNS
+    * dns.adguard.com (Adguard ipv4/ipv6)
+    * anycast.dns.nextdns.io (NextDNS ipv4/ipv6)
+    * ipv4-HOSTNAME-1.edge.nextdns.io (NextDNS Ultralow for ipv4, get all HOSTNAMEs here https://ping.nextdns.io/)
+    * ipv6-HOSTNAME-1.edge.nextdns.io (NextDNS Ultralow for ipv6)
 * Backup IMEI code -> `*#06#`
 * Firefox Beta -> Add-ons -> Add-ons Manager
   * Dark Reader
