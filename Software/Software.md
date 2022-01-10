@@ -424,14 +424,11 @@ Ideas to be done
   * Terraform
   * clamav
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
-* Switch from caddy/nginx to traefik for both docker-compose and k8s
-* Golang thread-safe websocket read/write struct with sync.RWMutex
 * Audacity noice reduction
-* Linkerd helm chart + cert-manager auto-mTLS
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
-  * bitnami/mysql and bitnami/postgresql
+  * bitnami/mysql and bitnami/postgresql only support x64
   * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * React native webrtc + webtorrent + trackerslist + typescript -> A new torrent client
@@ -459,14 +456,13 @@ Ideas to be done
   * Meilisearch
   * dashmap (Rayon-rs) for faster broadcasting
   * Oniguruma webassembly regex engine
-* Webrtc ICE server (github.com/coturn/coturn) using DaemonSet with hostNetwork: true
-* Terraform for rpi cluster private cloud
-* NVIDIA Jetson arm64 k3s cluster
-* OpenVPN server using DaemonSet with hostNetwork: true
+* Webrtc ICE server (github.com/coturn/coturn)
+  * DaemonSet with hostNetwork: true
+  * Or traefik ingress with kind IngressRouteTCP/IngressRouteUDP
+* Terraform for RPI/NVIDIA Jetson cluster private cloud
+  * Kubesphere UI
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/nanoexpress(node)
-* K3S + docker-compose + `host: network` to build a single-server multi-agent cluster
 * Webassembly+Web Workers multiple thread downloader chrome extension
-* kubesphere UI + hybrid cloud or k3s private cloud
 * Rust http/http2 minimalistic single-file client library using hyper.rs with
   * Custom dns nameservers
   * "Accept-Encoding: gzip,deflate,br" support
@@ -495,6 +491,8 @@ Ideas to be done
   * Whitelist with or without CDN
   * Rate limit
   * Compressed by default
+* GPGPU program using either emu(rust) or gpgpu-rs
+  * Decimal/Big Int precision
 
 Experience
 =====
