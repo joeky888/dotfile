@@ -1,46 +1,46 @@
 [submodule "ohmyzsh"]
 	path = ohmyzsh
-	url = git://github.com/ohmyzsh/ohmyzsh.git
+	url = https://github.com/ohmyzsh/ohmyzsh.git
 	shallow = true
 	branch = master
 [submodule "zsh-syntax-highlighting"]
 	path = zsh-syntax-highlighting
-	url = git://github.com/zsh-users/zsh-syntax-highlighting.git
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 	shallow = true
 [submodule "vimrc"]
 	path = vimrc
-	url = git://github.com/joeky888/vimrc.git
+	url = https://github.com/joeky888/vimrc.git
 	shallow = true
 [submodule "powershell"]
 	path = powershell
-	url = git://github.com/joeky888/powershell.git
+	url = https://github.com/joeky888/powershell.git
 	shallow = true
 [submodule "neofetch"]
 	path = neofetch
-	url = git://github.com/dylanaraps/neofetch.git
+	url = https://github.com/dylanaraps/neofetch.git
 	shallow = true
 [submodule "inxi"]
 	path = inxi
-	url = git://github.com/smxi/inxi.git
+	url = https://github.com/smxi/inxi.git
 	shallow = true
 [submodule "app-fast"]
 	path = app-fast
-	url = git://github.com/app-fast/app-fast.git
+	url = https://github.com/app-fast/app-fast.git
 	shallow = true
 [submodule "grc"]
 	path = grc
-	url = git://github.com/garabik/grc.git
+	url = https://github.com/garabik/grc.git
 	branch = devel
 [submodule "zsh-autosuggestions"]
 	path = zsh-autosuggestions
-	url = git://github.com/zsh-users/zsh-autosuggestions.git
+	url = https://github.com/zsh-users/zsh-autosuggestions.git
 	shallow = true
 [submodule "powerlevel10k"]
 	path = powerlevel10k
-	url = git://github.com/romkatv/powerlevel10k.git
+	url = https://github.com/romkatv/powerlevel10k.git
 	shallow = true
 [submodule "diff-highlight"]
 	path = diff-highlight
-	url = git://github.com/joeky888/diff-highlight.git
+	url = https://github.com/joeky888/diff-highlight.git
 	branch = master
 	shallow = true
