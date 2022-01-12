@@ -149,6 +149,9 @@
         "usePlaceholders": true,
         "completeUnimported": true,
     },
+    "go.generateTestsFlags": [
+        "-parallel"
+    ],
     "deno.enable": true,
     "deno.lint": true,
     "deno.codeLens.implementations": true,
