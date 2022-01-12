@@ -421,15 +421,14 @@ Dev frameworks
 
 Ideas to be done
 =====
-* UFC - rewritten grc in rust
-* VSCode with tree-sitter
+* VSCode with tree-sitter (vscode-anycode)
 * Snapcrafters
   * linkerd2
   * k9s
   * Terraform
   * clamav
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
-* Audacity noice reduction
+* Audacity/OBS noice reduction
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
@@ -441,7 +440,7 @@ Ideas to be done
   * Enable hermes
   * Ant design//Material UI
   * esbuild - https://github.com/expo/expo-cli/pull/3659
-* Rewrite newpipe in react-native + youtube-dl port + HTTP/3 -> with code push (hot updating)
+* Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust + linux5.1 io-uring and compatible with nats
@@ -467,7 +466,7 @@ Ideas to be done
 * Terraform for RPI/NVIDIA Jetson cluster private cloud
   * Kubesphere UI
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/nanoexpress(node)
-* Webassembly+Web Workers multiple thread downloader chrome extension
+* Webassembly + Web Workers multiple thread downloader chrome extension
 * Rust http/http2 minimalistic single-file client library using hyper.rs with
   * Custom dns nameservers
   * "Accept-Encoding: gzip,deflate,br" support
@@ -478,7 +477,7 @@ Ideas to be done
   * CLI/TUI
   * Chrome extension
   * Flutter Desktop/Mobile
-* Websocket + WebRTC multiple player gaming
+* Websocket + WebRTC multiple player game
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
   * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
