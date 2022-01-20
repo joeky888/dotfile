@@ -474,6 +474,7 @@ Ideas to be done
   * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
 * Rewrite aria2 in rust and support TUI/WebUI/Flutter
   * Support http/2 (which aria2 doesn't support for accelerating)
+  * libp2p
   * CLI/TUI
   * Chrome extension
   * Flutter Desktop/Mobile
