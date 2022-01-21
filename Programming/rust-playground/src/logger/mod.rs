@@ -2,13 +2,20 @@ use crate::environment;
 use backtrace::Backtrace;
 use chrono::prelude::Local;
 use env_logger::{fmt::Color, Env};
-use std::{io::Write};
+use std::io::Write;
 
 pub fn init() {
-    let log_level = match environment::SETTINGS.read().unwrap().debug.enable {
-        true => "debug",
-        false => "info",
+    let log_level = if environment::SETTINGS
+        .read()
+        .expect("read env failed")
+        .debug
+        .enable
+    {
+        "debug"
+    } else {
+        "info"
     };
+
     env_logger::Builder::from_env(Env::default().default_filter_or(log_level))
         .format(|buf, record| {
             let mut level_style = buf.style();
@@ -19,7 +26,7 @@ pub fn init() {
 
             let mut stack_trace = String::new();
 
-            if environment::SETTINGS.read().unwrap().debug.color {
+            if environment::SETTINGS.read().expect("read env failed").debug.color {
                 time_style.set_color(Color::Green);
                 // level_style.set_color(Color::White);
                 // stack_style.set_color(Color::White);
@@ -44,10 +51,7 @@ pub fn init() {
                 };
             } else {
                 match record.level() {
-                    log::Level::Warn => {
-                        stack_trace = format!("\n{:?}", Backtrace::new());
-                    }
-                    log::Level::Error => {
+                    log::Level::Warn | log::Level::Error => {
                         stack_trace = format!("\n{:?}", Backtrace::new());
                     }
                     _ => {}
@@ -60,20 +64,17 @@ pub fn init() {
 
             // If you need to see the stack trace when build with --release
             // You need to add `debug = 1` under the section [profile.release]
-            // which however, will increase the binary size
+            // which however, this will increase the binary size
 
-            let mut fileline = String::new();
-            if environment::SETTINGS.read().unwrap().debug.fileline {
-                let file = match record.file() {
-                    Some(file) => file,
-                    None => "",
-                };
-                let line = match record.line() {
-                    Some(line) => line,
-                    None => 0,
-                };
-                fileline = format!("{}:{}", file, line);
-            }
+            // let mut fileline = String::new();
+
+            let fileline = if environment::SETTINGS.read().expect("read env failed").debug.fileline {
+                let file = record.file().unwrap_or("");
+                let line = record.line().unwrap_or(0);
+                format!("{}:{}", file, line)
+            } else {
+                String::new()
+            };
             writeln!(
                 buf,
                 "{} {} {} {} {}",
@@ -87,4 +88,3 @@ pub fn init() {
         })
         .init();
 }
-

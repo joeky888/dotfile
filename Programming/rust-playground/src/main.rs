@@ -9,6 +9,7 @@
 #![deny(clippy::panic)]
 #![deny(clippy::match_like_matches_macro)]
 #![deny(clippy::needless_update)]
+#![allow(clippy::cargo_common_metadata)]
 
 mod environment;
 mod logger;
@@ -17,8 +18,8 @@ fn main() {
     logger::init();
     // let settings = environment::Settings::new();
     // environment::SETTINGS.read().unwrap().database
-    log::debug!("{:?}", environment::SETTINGS.read().unwrap());
-    log::debug!("{:?}", environment::SETTINGS.read().unwrap().database.url);
+    log::debug!("{:?}", environment::SETTINGS.read().expect("read env failed"));
+    log::debug!("{:?}", environment::SETTINGS.read().expect("read env failed").database.url);
     // environment::init();
 
     // log::debug!("{:?}", environment::SETTINGS.read().unwrap().get_str("qqq").unwrap());
