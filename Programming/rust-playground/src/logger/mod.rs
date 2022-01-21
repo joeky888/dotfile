@@ -26,10 +26,13 @@ pub fn init() {
 
             let mut stack_trace = String::new();
 
-            if environment::SETTINGS.read().expect("read env failed").debug.color {
+            if environment::SETTINGS
+                .read()
+                .expect("read env failed")
+                .debug
+                .color
+            {
                 time_style.set_color(Color::Green);
-                // level_style.set_color(Color::White);
-                // stack_style.set_color(Color::White);
                 message_style.set_color(Color::Cyan);
                 fileline_style.set_color(Color::Yellow).set_bold(true);
 
@@ -66,9 +69,12 @@ pub fn init() {
             // You need to add `debug = 1` under the section [profile.release]
             // which however, this will increase the binary size
 
-            // let mut fileline = String::new();
-
-            let fileline = if environment::SETTINGS.read().expect("read env failed").debug.fileline {
+            let fileline = if environment::SETTINGS
+                .read()
+                .expect("read env failed")
+                .debug
+                .fileline
+            {
                 let file = record.file().unwrap_or("");
                 let line = record.line().unwrap_or(0);
                 format!("{}:{}", file, line)
@@ -88,3 +94,4 @@ pub fn init() {
         })
         .init();
 }
+
