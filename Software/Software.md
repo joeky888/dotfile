@@ -429,7 +429,7 @@ Ideas to be done
   * clamav
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
-  * NVIDIA Noise Removal is a proprietary software
+  * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
   * Rewritten in rust
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
