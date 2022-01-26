@@ -188,7 +188,7 @@
         "maxNumberOfProblems": 100,
         "trace.server": "off"
     },
-    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.gpuAcceleration": "auto",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
         "terminal.background": "#1a1a1a",
