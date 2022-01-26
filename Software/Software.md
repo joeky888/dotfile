@@ -428,7 +428,9 @@ Ideas to be done
   * Terraform
   * clamav
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
-* Audacity/OBS noice reduction
+* Audacity/OBS noice reduction + GPU acceleration
+  * NVIDIA Noise Removal is a proprietary software
+  * Rewritten in rust
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
