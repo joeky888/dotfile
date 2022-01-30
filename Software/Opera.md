@@ -19,6 +19,7 @@ Setting
   * Sans-serif font -> Noto Sans CJK TC
 * chrome://Plugins -> Search "flash" -> Enable
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
+* Settings -> Enable DOH (DNS over https)
 
 Extension
 =====
