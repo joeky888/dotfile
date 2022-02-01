@@ -54,5 +54,8 @@ Install steam and proton
       * Choose either one
 * Steam -> Choose a game on the left
   * Right click -> Properties -> Compatibility -> Force the use of a specific Steam Play compatibility tool -> Check
+  * Right click -> Properties -> General -> Launch options ->
+    * For nvidia -> `PROTON_USE_WINED3D=1 %command%`
+    * For nvidia prime -> `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia PROTON_USE_WINED3D=1 %command%`
   * Right click -> Install -> Choose a disk to install from the drop-down menu (Optional)
 
