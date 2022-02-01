@@ -45,7 +45,7 @@ Install steam and proton
 * $ flatpak install com.github.Matoking.protontricks
 * $ flatpak override --user --filesystem=/home/hdd/steam com.valvesoftware.Steam # Optional, set steam download folder to another disk drive
 * $ flatpak override --user --filesystem=/home/hdd/steam com.github.Matoking.protontricks # Optional, set steam download folder to another disk drive
-* $ flatpak run com.github.Matoking.protontricks # Optional winetricks packages
+* $ WINETRICKS_DOWNLOADER=curl flatpak run com.github.Matoking.protontricks # Optional winetricks packages
 * Relaunch Steam executable
 * Steam -> Settings
   * Downloads (Optional)
