@@ -58,7 +58,7 @@ Install steam and proton
 * Steam -> Choose a game on the left
   * Right click -> Properties -> Compatibility -> Force the use of a specific Steam Play compatibility tool -> Check
   * Right click -> Properties -> General -> Launch options ->
-    * For nvidia/intel -> `%command%`
-    * For nvidia prime (Run like `prime-run`) -> `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia %command%`
+    * For nvidia/intel -> `gamemoderun %command%`
+    * For nvidia prime (Run like `prime-run`) -> `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia gamemoderun %command%`
   * Right click -> Install -> Choose a disk to install from the drop-down menu (Optional)
 
