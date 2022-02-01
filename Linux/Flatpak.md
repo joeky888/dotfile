@@ -46,7 +46,6 @@ Install steam and proton
 * $ flatpak install flathub-beta com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 * $ flatpak install com.github.Matoking.protontricks
 * $ flatpak override --user --filesystem=/home/hdd/steam com.valvesoftware.Steam # Optional, set steam download folder to another disk drive
-* $ app-fast -S steam-native-runtime && flatpak override --user --filesystem=host-os:ro com.valvesoftware.Steam # Optional, play linux native games. TODO: Doesn't work for CS:GO
 * $ flatpak override --user --filesystem=/home/hdd/steam com.github.Matoking.protontricks # Optional, set steam download folder to another disk drive
 * $ WINETRICKS=/path/to/latest/winetricks flatpak run com.github.Matoking.protontricks # Optional winetricks packages
 * Relaunch Steam executable
