@@ -36,3 +36,23 @@ Uninstall an app
 Add program to startup
 =====
 * $ ln -sf /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop ~/.config/autostart/
+
+Install steam and proton
+=====
+* $ flatpak install flathub com.valvesoftware.Steam
+* $ flatpak install flathub-beta com.valvesoftware.Steam.CompatibilityTool.Proton
+* $ flatpak install flathub-beta com.valvesoftware.Steam.CompatibilityTool.Proton-GE
+* $ flatpak override --user --filesystem=/home/hdd/steam com.valvesoftware.Steam # Optional, set steam download folder to another disk drive
+* Relaunch Steam executable
+* Steam -> Settings
+  * Downloads (Optional)
+    * Steam Library Folders -> + -> Add another disk drive
+  * Steam Play
+    * Enable Steam Play for supported titles -> Check
+    * Enable Steam Play for all other titles -> Uncheck
+    * And the drop-down menu should show proton and proton-ge runtimes
+      * Choose either one
+* Steam -> Choose a game on the left
+  * Right click -> Properties -> Compatibility -> Force the use of a specific Steam Play compatibility tool -> Check
+  * Right click -> Install -> Choose a disk to install from the drop-down menu (Optional)
+
