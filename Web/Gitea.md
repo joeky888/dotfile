@@ -111,6 +111,7 @@ services:
   traefik:
     image: "traefik:v2.5"
     container_name: "traefik"
+    restart: always
     command:
       # - "--log.level=DEBUG"
       - "--api.insecure=true"
