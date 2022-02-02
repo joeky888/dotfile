@@ -500,6 +500,7 @@ Ideas to be done
   * Compressed by default
 * GPGPU program using either emu(rust) or gpgpu-rs
   * Decimal/Big Int precision
+* Rewrite GameMode in rust and support Windows/Linux
 
 Experience
 =====
