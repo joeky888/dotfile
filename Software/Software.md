@@ -432,6 +432,7 @@ Ideas to be done
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
   * Rewritten in rust
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
+  * Interface of fancy-regex/Oniguruma/PCRE2
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
   * sentinel mode
   * bitnami/mysql and bitnami/postgresql only support x64
