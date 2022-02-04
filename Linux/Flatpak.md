@@ -45,6 +45,7 @@ Install steam and proton
 * $ flatpak install flathub-beta com.valvesoftware.Steam.CompatibilityTool.Proton
 * $ flatpak install flathub-beta com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 * $ flatpak install com.github.Matoking.protontricks
+* $ flatpak install flathub org.freedesktop.Platform.VulkanLayer.vkBasalt # Optional, use `ENABLE_VKBASALT=1 %command%` to gain more FPS
 * $ flatpak override --user --filesystem=/home/hdd/steam com.valvesoftware.Steam # Optional, set steam download folder to another disk drive
 * $ flatpak override --user --filesystem=/home/hdd/steam com.github.Matoking.protontricks # Optional, set steam download folder to another disk drive
 * $ WINETRICKS=/path/to/latest/winetricks flatpak run com.github.Matoking.protontricks # Optional winetricks packages
