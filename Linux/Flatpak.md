@@ -64,4 +64,9 @@ Install steam and proton
     * For nvidia/intel -> `gamemoderun %command%`
     * For nvidia prime (Run like `prime-run`) -> `__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia gamemoderun %command%`
   * Right click -> Install -> Choose a disk to install from the drop-down menu (Optional)
-
+* Game env list
+```sh
+__NV_PRIME_RENDER_OFFLOAD=1 __VK_LAYER_NV_optimus=NVIDIA_only __GLX_VENDOR_LIBRARY_NAME=nvidia %command% # Run like prime-run %command%
+ENABLE_VKBASALT=1 %command% # Enable vkBasalt for better performance
+DXVK_HUD=fps # Values can be `full` `1` `devinfo,fps`, show game performance info
+```
