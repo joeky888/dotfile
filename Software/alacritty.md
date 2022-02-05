@@ -24,9 +24,8 @@ font:
 cursor:
   style: Beam
 ##############################
-background_opacity: 0.9
-##############################
 window:
+  opacity: 0.9
   dimensions:
     columns: 130
     lines: 30
