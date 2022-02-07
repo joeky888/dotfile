@@ -4,14 +4,29 @@ LineageOS
 * Flash LineageOS rom by using twrp (Don't install gapps yet)
 * Install Magisk
     * Install Magisk manager
+        * Install apk from github
     * Install Magisk
-    * Install Magisk modules
-        * Magisk manager -> Downloads -> Search "MagiskHid Props Config" and install
-        * Magisk manager -> Downloads -> Search "SQLite" and install
+        * Unpack a lineageos rom zip and copy the boot.img to somewhere in the phone storage
+        * Open Magisk manager and install the boot.img (actually this will produce a patched boot.img)
+            * Copy the patched-boot.img to the pc # Using adb pull
+            * $ adb reboot bootloader
+            * $ fastboot flash boot ./magisk-patched.boot.img
+            * $ fastboot reboot
+            * If anything goes wrong, just flash the original boot.img again
+    * Enable Zygisk
+        * Magisk settings
+            * Hide the Magisk app -> Enable
+            * Zygisk -> Enable
+            * Enforce DenyList -> Disable
+            * Configure DenyList -> Add apps to hide from safenet checking
+    * Install Zygisk modules (Bypassing safetynet)
         * Magisk manager -> Modules -> + -> https://magiskroot.net/md/SafetyPatch-v3.zip
         * Magisk manager -> Modules -> + -> https://magiskroot.net/md/Petnoire's_SafetyNet_Spoofer.zip
         * Magisk manager -> Modules -> + -> https://github.com/stylemessiah/GPay-SQLite-Fix
-        * Magisk manager -> Settings -> Magisk Hide -> Check
+        * Magisk manager -> Modules -> + -> https://github.com/LSPosed/LSPosed/releases
+        * Magisk manager -> Modules -> + -> https://github.com/LSPosed/LSPosed.github.io/releases
+        * Magisk manager -> Modules -> + -> https://github.com/kdrag0n/safetynet-fix/releases
+    * Check safetynet -> Install "YASNAC" from google play
 * Bypass safetynet (https://www.youtube.com/watch?v=LiQor-mXNq8)
     * Install RIRU MANAGER APK
     * Magisk manager -> Downloads -> Search "Riru core" and install
