@@ -42,7 +42,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   gitea:
-    image: gitea/gitea:1.14.2
+    image: gitea/gitea:1.16.1
     container_name: gitea
     environment:
       - USER_UID=1000 # Chage this by using `id` command for the user git
