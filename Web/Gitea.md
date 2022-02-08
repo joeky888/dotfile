@@ -21,13 +21,13 @@ echo "$(cat /home/git/.ssh/id_rsa.pub)" >> /home/git/.ssh/authorized_keys
 exit
 
 # Add the following content on the host
-sudo mkdir -p /app/gitea/
-sudoedit /app/gitea/gitea # This is a host path, not container
+sudo mkdir -p /usr/local/bin/
+sudoedit /usr/local/bin/gitea # This is a host path, not container
 # Add this line to the file
 ssh -p 2222 -o StrictHostKeyChecking=no git@127.0.0.1 \
     "SSH_ORIGINAL_COMMAND=\"$SSH_ORIGINAL_COMMAND\" $0 $@"
 
-sudo chmod +x /app/gitea/gitea
+sudo chmod +x /usr/local/bin/gitea
 docker-compose up -d --build
 ```
 
