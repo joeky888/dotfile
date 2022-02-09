@@ -1,8 +1,3 @@
-https://www.youtube.com/watch?v=xxxxxxxxxxx
-=====
-1. https://www.youtube.com/embed/xxxxxxxxxxx
-2. https://www.youtube.com/v/xxxxxxxxxxx
-
 Ideas
 =====
 * 深海巨大現象/伯格曼法則/高濃度氧氣生物巨大現象(Bonus: 一個假想的巨型生物星球)
@@ -45,6 +40,7 @@ Ideas
   * 藍腳鰹鳥潛水
   * 鱷龜/偽鱷龜
   * Missing link 人類進化的缺失鏈條
+  * 三重腦(爬蟲腦->本我 古哺乳動物腦->自我 新哺乳動物腦->超我)
 * 傳說的生物
   * 美人魚
   * 狼人/Chupacabra/沒有銀彈(電腦科學)
