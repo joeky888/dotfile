@@ -12,6 +12,7 @@ vim docker-compose.yml
   Add `command: server --kubelet-arg=image-gc-high-threshold=40 --kubelet-arg=image-gc-low-threshold=30` # Note that these flags are deprecated
   Add `80:80` and `443:443` port exporting on the server # For ingress
   Remove the volume at bottom and line `k3s-server:/var/lib/rancher/k3s` # This seems to be useless
+  Remove the agent service in the docker-compose # Make sure only master node exists
   Increase ulimit to both server and agent services like this
     ulimits:
       nproc: 65535
