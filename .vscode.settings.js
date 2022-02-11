@@ -13,7 +13,7 @@
     "files.autoSave": "afterDelay",
     "explorer.compactFolders": false,
     "editor.minimap.enabled": true,
-    "workbench.colorTheme": "Monokai",
+    "workbench.colorTheme": "SynthWave '84",
     "editor.mouseWheelZoom": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "solid",

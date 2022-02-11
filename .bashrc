@@ -98,6 +98,7 @@ fi
 [ -f $HOME/.pythonrc.py ] && export PYTHONSTARTUP=$HOME/.pythonrc.py
 [ -f $HOME/.private.sh ] && source $HOME/.private.sh
 [ -d $HOME/.cargo/bin ] && export PATH="$HOME/.cargo/bin:$PATH"
+[ -d $HOME/vscode ] && export PATH="$HOME/vscode/bin:$PATH"
 
 function getModulePath()
 {

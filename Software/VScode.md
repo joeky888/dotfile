@@ -20,6 +20,7 @@ VsCodium extension
 
 Extension
 =====
+* RobbOwen.synthwave-vscode
 * Rust
     * vadimcn.vscode-lldb
     * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
