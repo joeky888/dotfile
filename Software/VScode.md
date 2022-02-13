@@ -21,6 +21,8 @@ VsCodium extension
 Extension
 =====
 * RobbOwen.synthwave-vscode
+ * "Run > Enable Neon Dreams"
+  * portable version vscode must be used to get this work
 * Rust
     * vadimcn.vscode-lldb
     * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
