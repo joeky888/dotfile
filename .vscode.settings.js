@@ -20,7 +20,7 @@
     "telemetry.telemetryLevel": "off",
     "editor.semanticHighlighting.enabled": true,
     "vscode_custom_css.imports": [
-        "file:///home/joeky/dotfile/.vscode.monokai-neon-glow.css"
+        "https://raw.githubusercontent.com/joeky888/dotfile/master/.vscode.monokai-neon-glow.css"
     ],
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
