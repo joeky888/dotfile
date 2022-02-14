@@ -13,12 +13,15 @@
     "files.autoSave": "afterDelay",
     "explorer.compactFolders": false,
     "editor.minimap.enabled": true,
-    "workbench.colorTheme": "SynthWave '84",
+    "workbench.colorTheme": "Monokai",
     "editor.mouseWheelZoom": true,
     "editor.bracketPairColorization.enabled": true,
     "editor.cursorBlinking": "solid",
     "telemetry.telemetryLevel": "off",
     "editor.semanticHighlighting.enabled": true,
+    "vscode_custom_css.imports": [
+        "file:///home/joeky/dotfile/.vscode.monokai-neon-glow.css"
+    ],
     "editor.semanticTokenColorCustomizations": {
         "[Monokai]": {
             "rules": {
@@ -215,5 +218,6 @@
     "[json]": {
         "editor.defaultFormatter": "vscode.json-language-features"
     },
-    "redhat.telemetry.enabled": false
+    "redhat.telemetry.enabled": false,
+    "workbench.iconTheme": "vscode-icons"
 }

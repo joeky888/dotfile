@@ -20,9 +20,9 @@ VsCodium extension
 
 Extension
 =====
-* RobbOwen.synthwave-vscode
- * "Run > Enable Neon Dreams"
-  * portable version vscode must be used to get this work
+* be5invis.vscode-custom-css
+ * Run "> Enable Custom CSS and JS"
+* vscode-icons-team.vscode-icons
 * Rust
     * vadimcn.vscode-lldb
     * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)

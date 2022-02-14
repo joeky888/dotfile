@@ -1,0 +1,151 @@
+.mtk1 {
+  color: #f8f8f2;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 3px rgba(0, 0, 0, 0), 0 0 5px rgba(0, 0, 0, 0), 0 0 8px #f8f8f2;
+}
+
+.mtk4 {
+  text-shadow: 0 0 2px #03edf975, 0 0 4px #03edf975, 0 0 6px #03edf975, 0 0 8px #03edf975;
+}
+
+.mtk5 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(174, 129, 255, .5);
+}
+
+.mtk6 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(255, 47, 132, .5);
+}
+
+.mtk7 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(102, 217, 239, .5)
+}
+
+.mtk8 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(185, 232, 91, .5);
+}
+
+.mtk9 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(253, 151, 31, .5);
+}
+
+.mtk13 {
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0), 0 0 4px rgba(0, 0, 0, 0), 0 0 6px rgba(0, 0, 0, 0), 0 0 8px rgba(249, 199, 75, .5)
+}
+
+/* Add the subtle gradient to the editor background */
+.monaco-editor {
+  background-size: auto 100vh;
+  background-position: top;
+  background-repeat: no-repeat;
+  background: rgb(30, 32, 40);
+}
+
+/* Sweet sunset dots */
+.monaco-workbench .activitybar > .content .monaco-action-bar .badge .badge-content {
+  background: linear-gradient(to bottom, #fff951 25%, #fc28a8);
+}
+
+.monaco-workbench .activitybar > .content :not(.monaco-menu) > .monaco-action-bar .action-item.checked .active-item-indicator:before {
+  border-left-color: transparent;
+}
+
+/* Active tab neon */
+.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit.active {
+  box-shadow: inset 0 -5px 25px #fc28a825;
+  position: relative;
+}
+
+/* Active tab stripe */
+.monaco-workbench
+  .part.editor
+  > .content
+  .editor-group-container
+  > .title
+  .tabs-container
+  > .tab.sizing-fit.active::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(to right, #753a88, #cc2b5e) !important;
+  opacity: 1;
+  z-index: 6;
+}
+
+.monaco-workbench .part.editor > .content .editor-group-container > .title .tabs-container > .tab.sizing-fit::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 0px;
+  transition: opacity 1s;
+  opacity: 0;
+  z-index: 6;
+}
+
+/* Active sidebar item */
+.monaco-workbench .activitybar > .content .monaco-action-bar .action-item.checked {
+  box-shadow: inset 0 -5px 25px #fc28a825;
+  position: relative;
+}
+
+.monaco-workbench .activitybar > .content .monaco-action-bar .action-item.checked::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 3px;
+  background: linear-gradient(to right, #4389A2, #5C258D) !important;
+  opacity: 1;
+  width: 47px;
+}
+
+.monaco-workbench .activitybar > .content .monaco-action-bar .action-item::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  width: 0px;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.monaco-workbench .part.statusbar {
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027) !important;
+}
+
+@keyframes neon {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #FA1C16, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B;
+    color: #806914;
+  }
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #1041FF, 0 0 3vw #1041FF, 0 0 10vw #1041FF, 0 0 10vw #1041FF, 0 0 .4vw #8BFDFE;
+    color: #28D7FE;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #082180, 0 0 1.5vw #082180, 0 0 5vw #082180, 0 0 5vw #082180, 0 0 .2vw #082180;
+    color: #146C80;
+  }
+}
+
+.monaco-workbench .contentWidgets .codicon-lightbulb, .monaco-workbench .markers-panel-container .codicon-lightbulb {
+  animation: neon 1s ease infinite;
+}
+
+.monaco-workbench .contentWidgets .codicon-lightbulb-autofix, .monaco-workbench .markers-panel-container .codicon-lightbulb-autofix {
+  animation: flux 1s ease infinite;
+}
