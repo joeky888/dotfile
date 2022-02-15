@@ -328,6 +328,7 @@ alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
+alias mpv-1080-proxy="mpv --stream-lavf-o-append=http_proxy=proxy.uku.im:443 --ytdl-format='bestvideo[height<=1080][vcodec^=avc]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][vcodec^=avc]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-audio="mpv --no-video $PLAYER_ARGUMENTS"
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
