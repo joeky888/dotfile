@@ -34,8 +34,10 @@ InstallDotfile()
   rm -rf ~/.hammerspoon/init.lua
   rm -rf "$Home/Library/Application Support/Code/User/settings.json"
   rm -rf "$Home/Library/Application Support/VSCodium/User/settings.json"
+  rm -rf "$Home/scoop/apps/vscode/current/data/user-data/User/settings.json"
   rm -rf "$Home/.config/Code/User/settings.json"
   rm -rf "$Home/.config/VSCodium/User/settings.json"
+  rm -rf "$Home/scoop/apps/vscode/current/data/user-data/User/keybindings.json"
   rm -rf "$Home/.config/Code/User/keybindings.json"
   rm -rf "$Home/.config/VSCodium/User/keybindings.json"
 
@@ -119,28 +121,29 @@ InstallDotfileCygwin()
   mkdir -p $Home/AppData/Roaming/alacritty
   mkdir -p $Home/AppData/Roaming/Code/User
   mkdir -p $Home/AppData/Roaming/VSCodium/User
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bashrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.bash_profile"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tmux.conf"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.zshrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.nanorc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.minttyrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.vimrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\AppData\Local\nvim\init.vim"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pythonrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\pip\pip.ini"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.pip\pip.conf"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.condarc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.npmrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.yarnrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.tigrc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitconfig"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.gitmessage"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.Xresources"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.alacritty.yml"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.myclirc"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\.config\fish\config.fish"
-  cygstart --action=runas cmd.exe /c del "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1"
+  rm -f $Home/.bashrc
+  rm -f $Home/.bash_profile
+  rm -f $Home/.tmux.conf
+  rm -f $Home/.zshrc
+  rm -f $Home/.nanorc
+  rm -f $Home/.minttyrc
+  rm -f $Home/.pythonrc
+  rm -f $Home/AppData/Local/nvim/init.vim
+  rm -f $Home/pip/pip.ini
+  rm -f $Home/.pip/pip.conf
+  rm -f $Home/.condarc
+  rm -f $Home/.npmrc
+  rm -f $Home/.yarnrc
+  rm -f $Home/.tigrc
+  rm -f $Home/.gitconfig
+  rm -f $Home/.gitmessage
+  rm -f $Home/.Xresources
+  rm -f $Home/.alacritty.yml
+  rm -f $Home/.myclirc
+  rm -f $Home/.config/fish/config.fish
+  rm -f $Home/Documents/WindowsPowerShell/profile.ps1
+  rm -f $Home/scoop/apps/vscode/current/data/user-data/User/settings.json
+  rm -f $Home/scoop/apps/vscode/current/data/user-data/User/keybindings.json
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -173,6 +176,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"

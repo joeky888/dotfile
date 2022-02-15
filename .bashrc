@@ -430,6 +430,8 @@ upgradeDotfile() {
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
     mkdir -p ~/.config/fish/
+    rm -rf ~/scoop/apps/vscode/current/data/user-data/User/keybindings.json
+    rm -rf ~/scoop/apps/vscode/current/data/user-data/User/settings.json
     rm -rf ~/AppData/Roaming/Code/User/keybindings.json
     rm -rf ~/AppData/Roaming/Code/User/settings.json
     rm -rf ~/AppData/Roaming/VSCodium/User/keybindings.json
@@ -457,6 +459,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.mpv.input.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
