@@ -2,7 +2,7 @@ Install without desktop
 =====
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
-* $ sudo pacman-mirrors -f 0 # --use-async
+* $ sudo pacman-mirrors --api --set-branch stable --continent
 * $ setup
 * Partitions
   * BIOS (Virtualbox)
@@ -30,7 +30,6 @@ Install without desktop
     * q # Quit
     * Format sda2 to ext4
     * Format sda1 to vfat f32 -> mount to "/boot/efi"
-<!-- * Don't use pacman-mirrors, it will take a lot of time -->
 * Don't refresh keys, it will take a lot of time
 * Don't install yay and base-devel, it will take a lot of time
 * Install networkmanager
@@ -75,9 +74,9 @@ Install
 
 Switch to other branches
 =====
-* sudo pacman-mirrors --api --set-branch stable
-* sudo pacman-mirrors --api --set-branch testing
-* sudo pacman-mirrors --api --set-branch unstable
+* sudo pacman-mirrors --api --set-branch stable --continent
+* sudo pacman-mirrors --api --set-branch testing --continent
+* sudo pacman-mirrors --api --set-branch unstable --continent
 * app-fast -Syyu
 
 Pacman
