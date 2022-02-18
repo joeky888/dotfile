@@ -482,6 +482,7 @@ Ideas to be done
   * Chrome extension
   * Flutter Desktop/Mobile
 * Websocket + WebRTC multiple player game
+  * https://gitee.com/helloh2o/lucky (Framework implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
   * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
