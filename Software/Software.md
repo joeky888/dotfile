@@ -482,7 +482,7 @@ Ideas to be done
   * Chrome extension
   * Flutter Desktop/Mobile
 * Websocket + WebRTC multiple player game
-  * https://gitee.com/helloh2o/lucky (Server-Client implementation)
+  * https://github.com/helloh2o/lucky (Server-Client implementation)
   * https://github.com/smallnest/rpcx (Server-Server implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
