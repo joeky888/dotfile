@@ -64,6 +64,8 @@ InstallDotfile()
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.config/alacritty/
   mkdir -p $Home/.config/mpv/
+  mkdir -p $Home/.config/mpv/scripts
+  mkdir -p $Home/.config/mpv/script-opts
   mkdir -p $Home/.config/fish/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
@@ -82,6 +84,9 @@ InstallDotfile()
   ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
   ln -sf $Home/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
+  ln -sf $Home/dotfile/.mpv_thumbnail_script.conf ~/.config/mpv/script-opts/mpv_thumbnail_script.conf
+  ln -sf $Home/dotfile/.mpv_thumbnail_script_client_osc.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_client_osc.lua
+  ln -sf $Home/dotfile/.mpv_thumbnail_script_server.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_server.lua
 
   case $OSTYPE in
   linux-gnu)
@@ -121,6 +126,10 @@ InstallDotfileCygwin()
   mkdir -p $Home/AppData/Roaming/alacritty
   mkdir -p $Home/AppData/Roaming/Code/User
   mkdir -p $Home/AppData/Roaming/VSCodium/User
+  mkdir -p $Home/scoop/apps/mpv/current/portable_config/scripts
+  mkdir -p $Home/scoop/apps/mpv/current/portable_config/script-opts
+  mkdir -p $Home/scoop/apps/mpv-git/current/portable_config/scripts
+  mkdir -p $Home/scoop/apps/mpv-git/current/portable_config/script-opts
   rm -f $Home/.bashrc
   rm -f $Home/.bash_profile
   rm -f $Home/.tmux.conf
@@ -180,6 +189,14 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf

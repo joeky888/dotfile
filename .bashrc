@@ -431,13 +431,17 @@ upgradeDotfile() {
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
     mkdir -p ~/.config/fish/
-    rm -rf ~/scoop/apps/vscode/current/data/user-data/User/keybindings.json
-    rm -rf ~/scoop/apps/vscode/current/data/user-data/User/settings.json
-    rm -rf ~/AppData/Roaming/Code/User/keybindings.json
-    rm -rf ~/AppData/Roaming/Code/User/settings.json
-    rm -rf ~/AppData/Roaming/VSCodium/User/keybindings.json
-    rm -rf ~/AppData/Roaming/VSCodium/User/settings.json
-    rm -rf ~/.config/fish/config.fish
+    mkdir -p ~/scoop/apps/mpv/current/portable_config/scripts
+    mkdir -p ~/scoop/apps/mpv/current/portable_config/script-opts
+    mkdir -p ~/scoop/apps/mpv-git/current/portable_config/scripts
+    mkdir -p ~/scoop/apps/mpv-git/current/portable_config/script-opts
+    rm -f ~/scoop/apps/vscode/current/data/user-data/User/keybindings.json
+    rm -f ~/scoop/apps/vscode/current/data/user-data/User/settings.json
+    rm -f ~/AppData/Roaming/Code/User/keybindings.json
+    rm -f ~/AppData/Roaming/Code/User/settings.json
+    rm -f ~/AppData/Roaming/VSCodium/User/keybindings.json
+    rm -f ~/AppData/Roaming/VSCodium/User/settings.json
+    rm -f ~/.config/fish/config.fish
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -462,8 +466,14 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
@@ -478,6 +488,8 @@ upgradeDotfile() {
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
     mkdir -p ~/.config/mpv/
+    mkdir -p ~/.config/mpv/scripts
+    mkdir -p ~/.config/mpv/script-opts
     mkdir -p ~/.pip/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
@@ -501,7 +513,9 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
-    ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
+    ln -sf $HOME/dotfile/.mpv_thumbnail_script_client_osc.lua ~/.config/mpv/scripts/mpv_thumbnail_script_client_osc.lua
+    ln -sf $HOME/dotfile/.mpv_thumbnail_script_server.lua ~/.config/mpv/scripts/mpv_thumbnail_script_server.lua
+    ln -sf $HOME/dotfile/.mpv_thumbnail_script.conf ~/.config/mpv/script-opts/mpv_thumbnail_script.conf
     ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
 
     case $OSTYPE in
