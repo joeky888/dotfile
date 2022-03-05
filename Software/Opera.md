@@ -42,6 +42,7 @@ Extension
 <!-- * Disconnect -->
 * Remove Google Redirection
 * Wappalyzer
+* bypass-paywalls-chrome
 * Get CRX
 * Enhanced Github
 * No Coin
