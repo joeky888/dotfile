@@ -20,6 +20,7 @@ bind \cr history-token-search-backward
 # bind \cZ undo # Available in fish >= 3.2.0
 # bind \cY redo # Available in fish >= 3.2.0
 
+set fish_prompt_pwd_dir_length 0 # Show full path on the prompt
 set -U fish_user_paths ""
 set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/inxi $fish_user_paths
