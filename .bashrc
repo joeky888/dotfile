@@ -76,7 +76,8 @@ fi
 
 export VISUAL="vim"
 export EDITOR="$VISUAL"
-export PYTHONIOENCODING="UTF-8"
+export PYTHONIOENCODING="UTF-8" # Python2 UTF8
+export PYTHONUTF8=1 # Python3 UTF8
 export PYTHONHTTPSVERIFY=0
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
