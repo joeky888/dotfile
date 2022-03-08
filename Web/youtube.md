@@ -42,7 +42,7 @@
   * 鱷龜/偽鱷龜
   * Missing link 人類進化的缺失鏈條
   * 三重腦(爬蟲腦->本我 古哺乳動物腦->自我 新哺乳動物腦->超我)
-* 傳說的生物
+* 傳說的生物 (Unidentified Mysterious Animal - UMA)
   * 美人魚
   * 狼人/Chupacabra/沒有銀彈(電腦科學)
   * 《怪獸檔案》
