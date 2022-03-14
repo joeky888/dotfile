@@ -8,6 +8,7 @@ qemu-system-x86_64 \
     -m 2G \
     -net user \
     -net nic,model=rtl8139 \
+    -display sdl,gl=on \
     -device intel-hda -device hda-duplex \
     -hda windows.img \
     -cdrom WindowsX64.iso
@@ -20,6 +21,7 @@ qemu-system-x86_64 \
     -m 2G \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
+    -display sdl,gl=on \
     -hda windows.img \
     -net user,hostfwd=tcp::${VM_SSH_PORT}-:22,hostfwd=tcp::${VM_EXTRA_PORT}-:${VM_EXTRA_PORT}
 ```
@@ -36,6 +38,7 @@ qemu-system-x86_64 \
     -net user \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
+    -display sdl,gl=on \
     -hda windows.img \
     -cdrom WindowsX64.iso
 ```
@@ -48,6 +51,7 @@ qemu-system-x86_64 \
     -m 2G \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
+    -display sdl,gl=on \
     -hda windows.img \
     -net user,hostfwd=tcp::${VM_SSH_PORT}-:22,hostfwd=tcp::${VM_EXTRA_PORT}-:${VM_EXTRA_PORT}
 ```

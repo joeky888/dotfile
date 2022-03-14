@@ -11,6 +11,8 @@ Useful params
 * $ qemu -accel hax
 * Enable KVM acceleration, Linux only
 * $ qemu -enable-kvm
+* OpenGL acceleration, configuare --enable-sdl
+* $ -display sdl,gl=on
 * List all CPUs
 * $ qemu-system-aarch64 -machine help
 * SSH port from host 2222
