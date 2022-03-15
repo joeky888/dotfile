@@ -1,13 +1,10 @@
-Search package
-======
-* https://snapcraft.io/store
-
 Install softwares
 =====
 ```fish
 sudo snap install helm --classic
 sudo snap install kubectl --classic
 sudo snap install opera-beta
+sudo snap install shellcheck --edge
 sudo snap install auto-cpufreq
 sudo auto-cpufreq --install # sudo snap services
 sudo snap install docker
