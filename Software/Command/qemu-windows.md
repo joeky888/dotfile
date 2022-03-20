@@ -6,6 +6,7 @@ qemu-img create -f qcow2 windows.img 30G
 
 qemu-system-x86_64 \
     -m 2G \
+    -smp 16 \
     -net user \
     -net nic,model=rtl8139 \
     -display sdl,gl=on \
@@ -19,6 +20,7 @@ export VM_SSH_PORT=22222
 export VM_EXTRA_PORT=12345
 qemu-system-x86_64 \
     -m 2G \
+    -smp 16 \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
     -display sdl,gl=on \
@@ -35,6 +37,7 @@ qemu-img create -f qcow2 windows.img 30G
 qemu-system-x86_64 \
     -enable-kvm -cpu host \
     -m 2G \
+    -smp 16 \
     -net user \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
@@ -49,6 +52,7 @@ export VM_EXTRA_PORT=12345
 qemu-system-x86_64 \
     -enable-kvm -cpu host \
     -m 2G \
+    -smp 16 \
     -net nic,model=rtl8139 \
     -device intel-hda -device hda-duplex \
     -display sdl,gl=on \
