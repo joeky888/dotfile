@@ -422,6 +422,7 @@ Dev frameworks
 Ideas to be done
 =====
 * VSCode with tree-sitter (vscode-anycode)
+  * https://github.com/lapce/lapce
 * Snapcrafters
   * linkerd2
   * k9s
