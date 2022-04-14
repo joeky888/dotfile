@@ -1,3 +1,5 @@
+# vim: syntax=tmux
+
 # Cursor navigation
 bind generic         j    move-down
 bind generic         u    move-up
