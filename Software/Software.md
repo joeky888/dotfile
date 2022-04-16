@@ -428,6 +428,7 @@ Ideas to be done
   * k9s
   * Terraform
   * clamav
+* Flutter/Dart kcp implementation
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
@@ -482,7 +483,11 @@ Ideas to be done
   * CLI/TUI
   * Chrome extension
   * Flutter Desktop/Mobile
-* Websocket + WebRTC multiple player game
+* KCP/Websocket server
+  * KCP for mobile
+  * Websocket for browser
+  * mobile and browser can be in the same room
+* KCP/Websocket + WebRTC multiple player game
   * https://github.com/helloh2o/lucky (Server-Client implementation)
   * https://github.com/smallnest/rpcx (Server-Server implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
