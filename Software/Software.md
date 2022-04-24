@@ -428,6 +428,7 @@ Ideas to be done
   * k9s
   * Terraform
   * clamav
+* Redis chat room
 * Flutter/Dart kcp implementation
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
