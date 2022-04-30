@@ -430,6 +430,7 @@ Ideas to be done
   * clamav
 * Redis chat room
 * Flutter/Dart kcp implementation
+* Webrtc data channel inside webassembly
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
