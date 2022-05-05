@@ -459,7 +459,7 @@ Ideas to be done
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + nanoexpress + ssr(react-dom/server)
+  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + hyper-express + ssr(react-dom/server)
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
@@ -472,7 +472,7 @@ Ideas to be done
   * Or traefik ingress with kind IngressRouteTCP/IngressRouteUDP
 * Terraform for RPI/NVIDIA Jetson cluster private cloud
   * Kubesphere UI
-* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/nanoexpress(node)
+* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
 * Webassembly + Web Workers multiple thread downloader chrome extension
 * Rust http/http2 minimalistic single-file client library using hyper.rs with
   * Custom dns nameservers
