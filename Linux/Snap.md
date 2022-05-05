@@ -7,6 +7,7 @@ sudo snap install opera-beta
 sudo snap install shellcheck --edge
 sudo snap install auto-cpufreq
 sudo auto-cpufreq --install # sudo snap services
+sudo snap install cointop --edge
 sudo snap install docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
