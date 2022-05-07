@@ -1,4 +1,4 @@
-Setting
+[Setting
 =====
 ```yaml
 hints:
@@ -62,4 +62,13 @@ colors:
     magenta: '0xf4005f'
     cyan:    '0x58d1eb'
     white:   '0xf6f6ef'
+```
+
+Windows shortcut for cygwin + tmux = mintty alternative
+=====
+* Credit:
+  * https://github.com/alacritty/alacritty/issues/1687
+  * https://github.com/microsoft/terminal/issues/5132
+```sh
+C:\Users\joeky\scoop\apps\alacritty\current\alacritty.exe --command "C:\cygwin64\bin\sh.exe" --login -c "script -c tmux"
 ```
