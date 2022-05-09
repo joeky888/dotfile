@@ -106,7 +106,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 app-fast -Syy --noconfirm --needed archlinuxcn-keyring
-app-fast -S teamviewer skypeforlinux-stable-bin ttf-wps-fonts ttf-iosevka-term ttf-iosevka
+app-fast -S ttf-wps-fonts ttf-iosevka
 ```
 
 Mhwd
