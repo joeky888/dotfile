@@ -17,6 +17,10 @@ Post-install
 * Run Windows10Debloater.ps1
 * Set system non-utf to big5
 * Show hidden files and file name extensions
+* File Explorer -> Options -> General -> Privacy
+  * Show recently used files -> Uncheck
+  * Show frequently used folders -> Uncheck
+  * Clear File Explorer history -> Clear
 * Disable Sticky Keys by pressing shift key 5 times
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 * Exclude cygwin path in anti-virus
