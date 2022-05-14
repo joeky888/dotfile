@@ -234,7 +234,7 @@ Install fbterm (recommand)
 
 Install qemu
 =====
-* $ app-fast -S qemu-arch-extra
+* $ app-fast -S qemu-system-x86 qemu-desktop
 
 Install virtualbox
 =====

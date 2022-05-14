@@ -24,7 +24,7 @@ Enable KVM
 LC_ALL=C lscpu | grep Virtualization # If it outputs someting means hardware is usable
 zgrep CONFIG_KVM /proc/config.gz # You should see CONFIG_KVM_INTEL or CONFIG_KVM_AMD as ‘m’ or ‘y’
 
-app-fast -S virt-manager qemu-arch-extra vde2 ebtables dnsmasq bridge-utils openbsd-netcat --needed
+app-fast -S virt-manager qemu-desktop vde2 ebtables dnsmasq bridge-utils openbsd-netcat --needed
 sudo usermod -aG libvirt $(whoami)
 sudo systemctl start --now libvirtd.service
 ```
