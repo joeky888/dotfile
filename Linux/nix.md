@@ -15,3 +15,9 @@ Install vscode
 NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs.vscode
 ```
 
+Uninstall vscode
+=====
+```sh
+nix-env --uninstall vscode
+nix-env --delete-generations old
+```
