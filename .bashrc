@@ -261,6 +261,11 @@ if [[ -d "$HOME/.arkade/bin/" ]]; then
   export PATH=$PATH:$HOME/.arkade/bin
 fi
 
+if [[ -d "$HOME/.nix-profile/bin/" ]]; then
+  # This is for nix
+  export PATH=$PATH:$HOME/.nix-profile/bin
+fi
+
 [ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH" # macOS homebrew
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
