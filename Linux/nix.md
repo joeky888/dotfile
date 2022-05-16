@@ -19,4 +19,11 @@ Uninstall vscode
 ```sh
 nix-env --uninstall vscode
 nix-env --delete-generations old
+nix-store --gc --print-dead
+```
+
+Upgrade all packages
+=====
+```sh
+nix-channel --update && nix-env -u
 ```
