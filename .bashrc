@@ -264,6 +264,7 @@ fi
 if [[ -d "$HOME/.nix-profile/bin/" ]]; then
   # This is for nix
   export PATH=$PATH:$HOME/.nix-profile/bin
+  [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ] && source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
 [ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH" # macOS homebrew
@@ -1303,4 +1304,3 @@ OpenFileExplorer()
     true
   fi;
 }
-

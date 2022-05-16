@@ -1,12 +1,11 @@
 Install nix
 =====
 ```sh
-app-fast -S nix
-sudo systemctl enable --now nix-daemon.service
+curl --proto '=https' --tlsv1.2 -sSfL https://nixos.org/nix/install | bash
 nix-channel --add https://nixos.org/channels/nixpkgs-unstable
 nix-channel --update
-sudo usermod -aG nix-users $(whoami) # Optional
-sudo chown -R $USER:$USER /nix
+#sudo usermod -aG nix-users $(whoami) # Optional
+#sudo chown -R $USER:$USER /nix # No need anymore
 ```
 
 Install vscode
