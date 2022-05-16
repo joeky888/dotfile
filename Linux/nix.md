@@ -11,7 +11,10 @@ nix-channel --update
 Install Packages
 =====
 ```sh
-nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator nixpkgs.linkerd
+nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator \
+  nixpkgs.linkerd nixpkgs.k9s \
+  nixpkgs.terraform nixpkgs.tflint \
+  nixpkgs.protoc-gen-go
 ```
 
 Uninstall Packages

@@ -423,11 +423,6 @@ Ideas to be done
 =====
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
-* Snapcrafters
-  * linkerd2
-  * k9s
-  * Terraform
-  * clamav
 * Redis chat room
 * Flutter/Dart kcp implementation
 * Webrtc data channel inside webassembly
@@ -524,6 +519,7 @@ Experience
 | Deepin Linux    | (2017-2020) |
 | Manjaro Linux   | (2018-)     |
 | Alpine Linux    | (2018-)     |
+| Nix             | (2022-)     |
 | FreeBSD         | (2017-2018) |
 | macOS           | (2019-)     |
 | Alacritty       | (2018-)     |
