@@ -8,13 +8,13 @@ nix-channel --update
 #sudo chown -R $USER:$USER /nix # No need anymore
 ```
 
-Install vscode
+Install Packages
 =====
 ```sh
-NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs.vscode
+nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator nixpkgs.linkerd
 ```
 
-Uninstall vscode
+Uninstall Packages
 =====
 ```sh
 nix-env --uninstall vscode
