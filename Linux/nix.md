@@ -30,3 +30,20 @@ Upgrade all packages
 ```sh
 nix-channel --update && nix-env -u
 ```
+
+Install ClamAV
+=====
+```sh
+nix-env -iA nixpkgs.clamav
+sudo mkdir -p /etc/clamav && sudoedit /etc/clamav/freshclam.conf
+########### Paste this
+DatabaseDirectory /var/lib/clamav
+UpdateLogFile /var/log/freshclam.log
+LogTime yes
+DatabaseOwner root
+DatabaseMirror database.clamav.net
+###########
+
+sudo freshclam --config-file /etc/clamav/freshclam.conf
+clamscan --database /var/lib/clamav --infected -r /home # print infected only
+```
