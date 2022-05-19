@@ -21,14 +21,12 @@ Uninstall Packages
 =====
 ```sh
 nix-env --uninstall vscode
-nix-env --delete-generations old
-nix-store --gc --print-dead
 ```
 
 Upgrade all packages
 =====
 ```sh
-nix-channel --update && nix-env -u
+nix-channel --update && nix-env -u && nix-env --delete-generations old && nix-store --gc --print-dead
 ```
 
 Install ClamAV
