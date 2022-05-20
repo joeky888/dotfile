@@ -28,7 +28,7 @@ Software
 CLI
 =====
 * Miniconda/python
-  * youtube-dl
+  * yt-dlp
   * you-get
   * ykdl
   * streamlink

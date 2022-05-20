@@ -203,30 +203,11 @@ InstallDotfileCygwin()
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 }
 
-InstallPy3UTF8()
-{
-#   python3 <<END
-# import sys, os, site
-
-# pkgLocation = site.getsitepackages()
-# for location in pkgLocation:
-#   os.system(os.environ['SUDO'] + " install -D " + os.environ['Home'] + "/dotfile/Windows/sitecustomize.py " + location + "/sitecustomize.py")
-# END
-  noinstall=1
-}
-
 InstallPIP()
 {
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
   echo y | $SUDO pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip
-#   echo y | $SUDO pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip
-#   echo y | $SUDO pip install you-get
-#   echo y | $SUDO pip install ptpython
-#   echo y | $SUDO pip install Glances
 #   echo y | $SUDO pip install streamlink
-#   echo y | $SUDO pip install ykdl
-#   echo y | $SUDO pip install bypy
-#   echo y | $SUDO pip install speedtest-cli
 }
 
 InstallMiniconda()
@@ -236,14 +217,7 @@ InstallMiniconda()
   # rm -rf ~/Miniconda2 && aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod 777 Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
   rm -rf ~/Miniconda3 && aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
   echo y | ~/Miniconda3/bin/pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip
-#   echo y | ~/Miniconda3/bin/pip install --upgrade https://github.com/ytdl-org/youtube-dl/archive/master.zip
-#   echo y | ~/Miniconda3/bin/pip install you-get
-#   echo y | ~/Miniconda3/bin/pip install speedtest-cli
-#   echo y | ~/Miniconda3/bin/pip install ptpython
-#   echo y | ~/Miniconda3/bin/pip install Glances
 #   echo y | ~/Miniconda3/bin/pip install streamlink
-#   echo y | ~/Miniconda3/bin/pip install bypy
-#   echo y | ~/Miniconda3/bin/pip install ykdl
 }
 
 InstallAlpine()
