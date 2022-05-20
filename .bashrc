@@ -300,7 +300,7 @@ else
   [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
-alias yt-dlp="yt-dlp $DL_ARGUMENTS"
+alias yt-dlp="yt-dlp $DL_ARGUMENTS" # See also test_format_selection_string_ops in the repository
 alias yt-dlp-aria2c="yt-dlp --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS'"
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "HTTP%{http_version}\nContent Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
