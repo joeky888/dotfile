@@ -26,7 +26,7 @@ Extension
 * Rust
     * vadimcn.vscode-lldb
     * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
-    * rust-lang.rust-analyzer
+    * rust-lang.rust-analyzer and switch to pre-realese version
 * golang.Go
 * eslint
 * Markdown All in One (opt+shift+f to format tables)
