@@ -45,3 +45,13 @@ DatabaseMirror database.clamav.net
 sudo freshclam --config-file /etc/clamav/freshclam.conf
 clamscan --database /var/lib/clamav --infected -r /home # print infected only
 ```
+
+Install mpv
+=====
+* See `https://nixos.wiki/wiki/Nixpkgs_with_OpenGL_on_non-NixOS`
+```sh
+nix-env -iA nixpkgs.mpv-unwrapped
+nix-channel --add https://github.com/guibou/nixGL/archive/main.tar.gz nixgl && nix-channel --update
+nix-env -iA nixgl.auto.nixGLDefault nixgl.nixGLIntel
+nixGLIntel ~/.nix-profile/bin/mpv LINK
+```
