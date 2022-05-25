@@ -496,6 +496,7 @@ Ideas to be done
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
   * Simple state machine built-in
+  * Livekit - https://github.com/livekit/livekit
 * Ingress controller/Reverse proxy written in Rust
   * axum
   * http/2 and http/3
