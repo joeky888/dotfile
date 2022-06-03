@@ -490,7 +490,8 @@ Ideas to be done
   * https://github.com/smallnest/rpcx (Server-Server implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
-  * Not important & Realtime -> WebRTC(libdatachannel) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
+  * Not important & Realtime -> WebRTC(libdatachannel(ordered/unordered)) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
+  * Gamepad support
 * 3D air combat game
   * Rust language
   * Godot/O3DE(Open 3D Engine)
