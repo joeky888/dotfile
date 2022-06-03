@@ -9,6 +9,14 @@
 #![deny(clippy::panic)]
 #![deny(clippy::match_like_matches_macro)]
 #![deny(clippy::needless_update)]
+#![warn(
+    missing_copy_implementations,
+    missing_debug_implementations,
+    missing_docs,
+    rustdoc::broken_intra_doc_links,
+    trivial_numeric_casts,
+    unused_allocation
+)]
 #![allow(clippy::cargo_common_metadata)]
 
 mod environment;
