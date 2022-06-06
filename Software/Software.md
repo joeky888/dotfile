@@ -455,6 +455,7 @@ Ideas to be done
     * php-pm: doesn't support
     * roadrunner: https://github.com/spiral/roadrunner/issues/513
     * reactphp: https://github.com/ratchetphp/Ratchet
+  * PSR-7
 * Backstage/CMS system
   * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + hyper-express + ssr(react-dom/server)
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
