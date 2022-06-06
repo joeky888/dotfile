@@ -329,6 +329,7 @@ Good Software Design
 * Customizable hotkeys
 * Pre-defined hotkeys from similar softwares are included, e.g. vscode has an optional vi binding switcher
 * Customizable theming and configurable font-Family
+  * JetBrains Mono, PowerlineExtraSymbols and Noto Color Emoji offline bundled (like wezterm)
 * Support multiple database service and can be configured at first time. e.g. MySQL/PostgreSQL/SQLite
 * MultiArch
 * Always use simple English
