@@ -427,6 +427,7 @@ Ideas to be done
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
 * Redis chat room
+* Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
 * Webrtc data channel inside webassembly
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
