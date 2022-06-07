@@ -236,6 +236,7 @@ Android
 * Here WeGo / Maps.me
 * Amaze File Manager
 * WPS office
+* FBReader
 * org.cwb Weather
 * Advanced Download Manager
   * Settings -> Downloading
