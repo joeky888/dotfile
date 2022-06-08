@@ -14,7 +14,7 @@ Install Packages
 nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator \
   nixpkgs.linkerd nixpkgs.k9s \
   nixpkgs.terraform nixpkgs.tflint \
-  nixpkgs.protoc-gen-go
+  nixpkgs.protobuf nixpkgs.protoc-gen-go
 ```
 
 Uninstall Packages
