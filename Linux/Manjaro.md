@@ -72,6 +72,11 @@ Install
   * Flag "esp"
 * Format the rest to ext4
 
+Xfce dark theme
+=====
+* Settings Manager -> Appearance -> Style -> Matcha-dark-sea
+* Window Manager -> Style -> Theme -> Matcha-dark-sea
+
 Switch to other branches
 =====
 * sudo pacman-mirrors --api --set-branch stable --continent
