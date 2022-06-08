@@ -188,7 +188,8 @@ Android
   * Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
   * Deverloper options
     * Advanced restart -> Check
-    * Android debugging -> Check
+    * Debugging -> Android debugging -> Check
+    * Networking -> WiFi scan throttling -> Uncheck
   * Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
   * Sound -> Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
   * Private DNS
