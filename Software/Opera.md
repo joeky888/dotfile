@@ -59,6 +59,7 @@ Extension
 * Selenium IDE / Katalon Recorder
 * FoxyProxy (Remember to enable Proxy Mode "Use proxied based on their pre-defined pattern and proxies"; Uncheck "SOCKS proxy？")
 * Wayback Machine
+* Ruffle-rs (Flash player emulator)
 * Line (ophjlpahpchlmihnnnihgmmeilfjmjjc)
 * LXRSS
   * New Tab Start Page (by www.sermak.ca) and set to "chrome-extension://egamohfjegpahoddmbhmmhacpbepnkcb/tab.html"
