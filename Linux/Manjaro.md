@@ -79,6 +79,7 @@ Xfce dark theme
 * LightDM Setting -> Appearance ->
   * Theme -> Matcha-dark-sea
   * Background -> Color -> Black
+  * Save
 
 Switch to other branches
 =====
