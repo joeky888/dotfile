@@ -237,8 +237,8 @@ alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archi
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
-alias rg="rg --hidden --glob '!{$VCS_FOLDERS_MORE}'"
-alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
+alias rg="rg --hidden --ignore-case --glob '!{$VCS_FOLDERS_MORE}'"
+alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
 
 function upgradeDotfile
   if not test -d ~/dotfile; git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile; end
