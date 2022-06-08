@@ -2,9 +2,11 @@ Dark theme
 =====
 * Window -> Preferences -> User Interface -> Appearance -> Theme: Dark
 
-Read-Only connection
+Read-Only connection and Production connection
 =====
-* Right-Click a connection on the left -> Edit Connection -> General -> Read-only connection -> Check
+* Right-Click a connection on the left -> Edit Connection -> General ->
+  * Connection type -> Production
+  * Read-only connection -> Check
 
 Export (source) table and import to (target) local table
 =====
