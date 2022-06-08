@@ -927,8 +927,8 @@ if echo "" | grep --exclude-dir=.cvs "" 2>/dev/null > /dev/null; then
 elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
   alias grepi="grep --color=auto --exclude={$VCS_FOLDERS_MORE}"
 fi
-alias rg="rg --hidden --glob '!{$(echo $VCS_FOLDERS_MORE)}'"
-alias fd="fd --hidden --glob --exclude={$VCS_FOLDERS_MORE}"
+alias rg="rg --hidden --ignore-case --glob '!{$(echo $VCS_FOLDERS_MORE)}'"
+alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
 
 hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 hash litecli 2>/dev/null >/dev/null && alias litecli='LESS="-SRXF" litecli' # Disable word wrapping
