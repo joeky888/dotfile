@@ -1,22 +1,3 @@
-After installed
-=====
-* Settings ->
-  * Appearance ->
-    * Style -> Matcha-dark-azul
-    * Fonts -> Default Font -> Noto Sans CJK TC Medium
-    * Fonts -> Default Monospace Font -> Iosevka Medium
-  * Workspaces -> Number of workspaces -> 1
-  * Power Manager -> System -> When laptop lid is closed -> Switch off display
-  * Power Manager -> Display -> Put to sleep after -> Never
-  * Power Manager -> Display -> Switch off after -> Never
-  * Power Manager -> Security -> Automatically lock the session -> Never
-* Manjaro Settings Manager ->
-  * Set time and date automatically -> Check
-  * Hardware clock in local time zone -> Check
-* Manjaro Notifier ->
-  * Only notify recommanded kernels -> check
-* $ app-fast -S gvim mpv code krita krita-plugin-gmic fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition brave-beta nomacs file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
-
 Auto login
 =====
 * $ sudoedit /etc/lightdm/lightdm.conf

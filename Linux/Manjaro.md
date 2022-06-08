@@ -72,14 +72,30 @@ Install
   * Flag "esp"
 * Format the rest to ext4
 
-Xfce dark theme
+Xfce
 =====
-* Settings Manager -> Appearance -> Style -> Matcha-dark-sea
+* Settings ->
+  * Appearance ->
+    * Style -> Matcha-dark-sea
+    * Fonts -> Default Font -> Noto Sans CJK TC Medium
+    * Fonts -> Default Monospace Font -> Iosevka Medium
+  * Workspaces -> Number of workspaces -> 1
+  * Power Manager -> System -> When laptop lid is closed -> Switch off display
+  * Power Manager -> Display -> Put to sleep after -> Never
+  * Power Manager -> Display -> Switch off after -> Never
+  * Power Manager -> Security -> Automatically lock the session -> Never
 * Window Manager -> Style -> Theme -> Matcha-dark-sea
 * LightDM Setting -> Appearance ->
   * Theme -> Matcha-dark-sea
   * Background -> Color -> Black
   * Save
+* Manjaro Settings Manager ->
+  * Set time and date automatically -> Check
+  * Hardware clock in local time zone -> Check
+* Manjaro Notifier ->
+  * Only notify recommanded kernels -> check
+* $ app-fast -S gvim mpv code krita krita-plugin-gmic fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition brave-beta nomacs file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
+
 
 Switch to other branches
 =====
