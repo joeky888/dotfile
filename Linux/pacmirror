@@ -2,7 +2,7 @@
 
 while true; do
   sleep 40s
-  # pacman-mirrors -f 0 || echo ok
-  pacman-mirrors --continent || echo ok
+  # Allow only https because other protocols often break downloading
+  pacman-mirrors --continent --api --protocols https || echo ok
   sleep 3h
 done

@@ -1,5 +1,5 @@
 [Unit]
-Description=pacman-mirrors reordering every 12hr
+Description=pacman-mirrors reordering every 3 hours
 
 [Service]
 Type=simple
