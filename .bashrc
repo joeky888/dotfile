@@ -62,9 +62,9 @@ elif [ $(command -v fbterm) ] && [[ $whichTTY == tty3 ]] ; then
 elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   # Check if fbterm installed and x server isn't running
   cd ~
-  if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
+  if [ $(command -v fbterm) ] && [ -z $TMUX ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
     TERM=fbterm exec fbterm -- bash -c '[[ -n $(tmux ls 2>/dev/null) ]] && TERM=fbterm exec tmux attach || TERM=fbterm exec tmux'
-  elif [[ $TERM != fbterm ]] ; then
+  elif [ -z $TMUX ] && [[ $TERM != fbterm ]] ; then
     [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
   fi
 elif [ -z $TMUX ] && [ $(command -v fish) ] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
