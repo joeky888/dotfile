@@ -334,6 +334,7 @@ Good Software Design
   * JetBrains Mono, PowerlineExtraSymbols and Noto Color Emoji offline bundled (like wezterm)
 * Support multiple database service and can be configured at first time. e.g. MySQL/PostgreSQL/SQLite
 * MultiArch
+* Crossplay
 * Always use simple English
 * Colored level logger in the debug console (Logcat-like), Red -> Error, Yellow -> Warning
 * i18n/l10n
@@ -493,8 +494,9 @@ Ideas to be done
   * Chrome extension
   * Flutter Desktop/Mobile
 * KCP/Websocket server
-  * KCP for mobile
-  * Websocket for browser
+  * Crossplay
+    * KCP for mobile
+    * Websocket for browser
   * mobile and browser can be in the same room
 * KCP/Websocket + WebRTC multiple player game
   * https://github.com/helloh2o/lucky (Server-Client implementation)
