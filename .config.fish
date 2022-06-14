@@ -230,7 +230,8 @@ alias ......='cd ../../../../../'
 alias l='ls -lah'
 alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
 alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s '\n' | tr '\n' ',')"
-alias yt-dlp="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
+alias yt-dlp="yt-dlp $DL_ARGUMENTS"
+alias yt-dlp-aria2c="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
 alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
 alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
 alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip'
