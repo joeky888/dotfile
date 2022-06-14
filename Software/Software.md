@@ -448,6 +448,8 @@ Ideas to be done
   * Enable hermes
   * Ant design//Material UI
   * esbuild - https://github.com/expo/expo-cli/pull/3659
+  * swc - https://github.com/expo/expo/pull/17297
+  * mobx-react-lite
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
