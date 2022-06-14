@@ -427,6 +427,7 @@ Ideas to be done
 =====
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
+* Nomad + Damon TUI
 * Redis chat room
 * Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
