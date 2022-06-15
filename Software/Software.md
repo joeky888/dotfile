@@ -432,7 +432,7 @@ Ideas to be done
 * Redis chat room
 * Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
-* Webrtc data channel inside webassembly
+* Webrtc data channel inside webassembly inside web workers
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
@@ -499,6 +499,10 @@ Ideas to be done
     * Websocket for browser
   * mobile and browser can be in the same room
 * KCP/Websocket + WebRTC multiple player game
+  * Each webassembly code runs in a separated web worker
+    * Frontend + http - Main thread
+    * Websocket - wasm in a web worker
+    * Webrtc - wasm in another web worker
   * https://github.com/helloh2o/lucky (Server-Client implementation)
   * https://github.com/smallnest/rpcx (Server-Server implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
