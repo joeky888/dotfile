@@ -265,6 +265,7 @@ Android
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
 * F-Droid
   * OpenLauncher
+  * Termux
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
   * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
