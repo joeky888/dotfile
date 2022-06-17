@@ -1,3 +1,13 @@
+Install manjaro
+=====
+```sh
+apt install proot-distro -y
+proot-distro list
+proot-distro install manjaro-aarch64
+
+proot-distro login manjaro-aarch64
+```
+
 Install numpy matplotlib pandas jupyter
 =====
 * Install
