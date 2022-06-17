@@ -388,7 +388,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 
   apt update
   termux-setup-storage
-  apt install -y --assume-yes git openssh aria2
+  apt install -y --assume-yes git aria2
   InstallDotfile
   # cd ~/dotfile/app-fast && git reset --hard
   # ~/dotfile/app-fast/app-fast full-upgrade -y
