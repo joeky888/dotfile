@@ -431,6 +431,8 @@ Ideas to be done
   * https://github.com/lapce/lapce
 * Nomad + Damon TUI
 * Redis chat room
+* KeyDB vs DragonflyDB
+* Rust + Mold linker - https://github.com/rui314/mold
 * Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
 * Webrtc data channel inside webassembly inside web workers
@@ -526,7 +528,7 @@ Ideas to be done
   * Rate limit
   * Compressed by default
 * GPGPU program using either emu(rust) or gpgpu-rs
-  * Decimal/Big Int precision
+  * Decimal/BigInt precision
 * Rewrite GameMode in rust and support Windows/Linux
 * Rust with distributed compiler
 
