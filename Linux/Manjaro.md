@@ -79,6 +79,7 @@ Xfce
     * Style -> Matcha-dark-sea
     * Fonts -> Default Font -> Noto Sans CJK TC Medium
     * Fonts -> Default Monospace Font -> Iosevka Medium
+  * Panel -> Appearance -> Dark mode -> Check
   * Workspaces -> Number of workspaces -> 1
   * Power Manager -> System -> When laptop lid is closed -> Switch off display
   * Power Manager -> Display -> Put to sleep after -> Never
