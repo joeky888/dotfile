@@ -387,6 +387,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export Home="$HOME"
 
   apt update
+  termux-change-repo
   termux-setup-storage
   # apt install -y --assume-yes git aria2
   apt install -y --assume-yes aria2 fish proot-distro

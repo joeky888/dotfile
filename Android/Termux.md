@@ -1,7 +1,3 @@
-After install
-=====
-* $ termux-change-repo # Switch to cloudflare mirror
-
 Install manjaro using proot
 =====
 ```sh
