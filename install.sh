@@ -386,7 +386,6 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   export SUDO=''
   export Home="$HOME"
 
-  apt update
   termux-change-repo
   termux-setup-storage
   # apt install -y --assume-yes git aria2
