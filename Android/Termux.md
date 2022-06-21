@@ -5,7 +5,9 @@ apt install proot-distro -y
 proot-distro list
 proot-distro install manjaro-aarch64
 
-proot-distro login manjaro-aarch64
+proot-distro login manjaro-aarch64 # Enter chroot
+
+proot-distro remove manjaro-aarch64 # Remove chroot
 ```
 
 Install numpy matplotlib pandas jupyter
