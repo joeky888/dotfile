@@ -1,4 +1,4 @@
-Install manjaro using proot
+In`jstall manjaro using proot
 =====
 ```sh
 apt install proot-distro -y
@@ -6,6 +6,7 @@ proot-distro list
 proot-distro install manjaro-aarch64
 
 proot-distro login manjaro-aarch64 # Enter chroot
+pacman-mirrors --api --set-branch stable --protocols https --continent
 
 proot-distro remove manjaro-aarch64 # Remove chroot
 ```

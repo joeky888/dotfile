@@ -106,9 +106,9 @@ Xfce
 
 Switch to other branches
 =====
-* sudo pacman-mirrors --api --set-branch stable --continent
-* sudo pacman-mirrors --api --set-branch testing --continent
-* sudo pacman-mirrors --api --set-branch unstable --continent
+* sudo pacman-mirrors --api --set-branch stable --protocols https --continent
+* sudo pacman-mirrors --api --set-branch testing --protocols https --continent
+* sudo pacman-mirrors --api --set-branch unstable --protocols https --continent
 * app-fast -Syyu
 
 Pacman
