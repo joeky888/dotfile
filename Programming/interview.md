@@ -1,3 +1,7 @@
+Questions to ask
+=====
+* [link](https://github.com/bater/reverse-interview-zh_tw)
+
 4 ways to control a Goroutine
 =====
 * Mutex lock
