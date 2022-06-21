@@ -277,16 +277,17 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO systemctl enable --now pacmirror.service
   fi
 
-  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
-  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
-  $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/iosevka.ttf --dir=/ -o usr/share/fonts/truetype/iosevka.ttf
-  fc-cache -fv
+#   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/DroidSansFallback.ttf --dir=/ -o usr/share/fonts/truetype/DroidSansFallback.ttf
+#   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/UbuntuMono.ttf --dir=/ -o usr/share/fonts/truetype/UbuntuMono.ttf
+#   $SUDO aria2c https://raw.githubusercontent.com/joeky888/CJK-font/master/iosevka.ttf --dir=/ -o usr/share/fonts/truetype/iosevka.ttf
+#   fc-cache -fv
 #   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
 #   if [ -n "$SUDO" ]; then
 #     sudo bash -c 'find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc'
 #   else
 #     find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > /etc/nanorc
 #   fi
+  if [ $(command -v localectl) ]; then
   $SUDO localectl set-locale LANG="en_US.UTF-8"
   $SUDO localectl set-locale LANGUAGE="en_US.UTF-8"
   $SUDO localectl set-locale LC_CTYPE="en_US.UTF-8"
@@ -301,6 +302,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
   $SUDO localectl set-locale LC_TELEPHONE="en_US.UTF-8"
   $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
   $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
+  fi
   InstallMiniconda Linux
 
 
