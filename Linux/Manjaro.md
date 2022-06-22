@@ -2,7 +2,6 @@ Install without desktop
 =====
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
-* $ sudo pacman-mirrors --api --set-branch stable --protocols https --continent
 * $ setup
 * Partitions
   * BIOS (Virtualbox)
@@ -121,8 +120,6 @@ Pacman
     * $ /var/cache/pacman/pkg # Find the package
 * Upgrade all AUR packages
     * $ yay -Syyu --aur && yay -Scc --noconfirm
-* Clear all cache
-    * $ sudo pacman -Scc
 
 CN packages like baidu pan
 =====
