@@ -243,7 +243,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     app-fast install vim tmux zsh curl bash-completion -y
 
   elif [[ $(command -v pacman) ]]; then
-    $SUDO pacman -S git aria2 --needed # --noconfirm removed for root user
+    $SUDO pacman -S git aria2 --needed --noconfirm
     InstallDotfile
     $SUDO install ~/dotfile/app-fast/app-fast /usr/bin/app-fast
 #     $SUDO cp /etc/pacman.conf /etc/pacman.conf.bak
@@ -251,7 +251,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #     $SUDO sed -i '/Color/d' /etc/pacman.conf
 #     $SUDO sed -i '/\[options\]/a Color' /etc/pacman.conf
 #     $SUDO sed -i '/\[options\]/a XferCommand = aria2c -c -s16 -k1M -x16 --dir=/ -o %o %u' /etc/pacman.conf
-    app-fast -S vim tmux zsh curl bash-completion yay --needed # --noconfirm removed for root user
+    app-fast -S vim tmux zsh curl bash-completion yay --needed --noconfirm
   else
     echo "Distro does not support at this moment."
     exit 1

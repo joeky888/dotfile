@@ -2,7 +2,7 @@ Install without desktop
 =====
 * Login as manjaro/manjaro
 * $ nmtui # Or edit file directly, see ~/dotfile/Linux/NoX.md
-* $ sudo pacman-mirrors --api --set-branch stable --continent
+* $ sudo pacman-mirrors --api --set-branch stable --protocols https --continent
 * $ setup
 * Partitions
   * BIOS (Virtualbox)

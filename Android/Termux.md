@@ -5,10 +5,10 @@ apt install proot-distro -y
 proot-distro list
 proot-distro install manjaro-aarch64
 
-proot-distro login manjaro-aarch64 # Enter chroot
+proot-distro login manjaro-aarch64 -- /bin/fish
 pacman-mirrors --api --set-branch stable --protocols https --continent
 
-proot-distro remove manjaro-aarch64 # Remove chroot
+proot-distro remove manjaro-aarch64 # Danger: Remove chroot
 ```
 
 Install numpy matplotlib pandas jupyter
