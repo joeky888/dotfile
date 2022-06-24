@@ -258,6 +258,42 @@ function upgradePip
   pip3 install --upgrade https://github.com/requests/requests/archive/main.zip
 end
 
+# Load Nix config
+# Set up the per-user profile.
+# This part should be kept in sync with nixpkgs:nixos/modules/programs/shell.nix
+
+set -l NIX_LINK $HOME/.nix-profile
+
+# Set up environment.
+# This part should be kept in sync with nixpkgs:nixos/modules/programs/environment.nix
+set -g -x NIX_PROFILES "/nix/var/nix/profiles/default $HOME/.nix-profile"
+
+# Set $NIX_SSL_CERT_FILE so that Nixpkgs applications like curl work.
+if test -e /etc/ssl/certs/ca-certificates.crt
+  set -g -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-certificates.crt
+else if test -e /etc/ssl/ca-bundle.pem # openSUSE Tumbleweed
+  set -g -x NIX_SSL_CERT_FILE /etc/ssl/ca-bundle.pem
+else if test -e /etc/ssl/certs/ca-bundle.crt # Old NixOS
+  set -g -x NIX_SSL_CERT_FILE /etc/ssl/certs/ca-bundle.crt
+else if test -e /etc/pki/tls/certs/ca-bundle.crt # Fedora, CentOS
+  set -g -x NIX_SSL_CERT_FILE /etc/pki/tls/certs/ca-bundle.crt
+else if test -e "$NIX_LINK/etc/ssl/certs/ca-bundle.crt" # fall back to cacert in Nix profile
+  set -g -x NIX_SSL_CERT_FILE "$NIX_LINK/etc/ssl/certs/ca-bundle.crt"
+else if test -e "$NIX_LINK/etc/ca-bundle.crt" # old cacert in Nix profile
+  set -g -x NIX_SSL_CERT_FILE "$NIX_LINK/etc/ca-bundle.crt"
+end
+
+# Only use MANPATH if it is already set. In general `man` will just simply
+# pick up `.nix-profile/share/man` because is it close to `.nix-profile/bin`
+# which is in the $PATH. For more info, run `manpath -d`.
+set -g -x MANPATH "$NIX_LINK/share/man:$MANPATH"
+set -U fish_user_paths $NIX_LINK/bin $fish_user_paths
+
+# NIX CHANNELS
+if not test -e $HOME/.nix-channels
+  echo 'http://nixos.org/channels/nixpkgs-unstable nixpkgs' > $HOME/.nix-channels
+end
+
 type -q helm; and helm completion fish 2>/dev/null | source
 type -q kubectl; and kubectl completion fish | source
 
