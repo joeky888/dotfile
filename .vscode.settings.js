@@ -90,16 +90,15 @@
         "editor.insertSpaces": true,
     },
     "[rust]": {
-        "editor.defaultFormatter": "matklad.rust-analyzer",
+        "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.codeActionsOnSave": {
             "source.organizeImports": true,
             "source.fixAll": true,
         },
     },
     "rust-client.engine": "rust-analyzer",
-    "rust-analyzer.lruCapacity": 1024,
-    "rust-analyzer.updates.channel": "stable",
     "rust-analyzer.checkOnSave.command": "clippy",
+    "rust-analyzer.lru.capacity": 1024,
     "rust-analyzer.rustfmt.extraArgs": [
         "--config",
         "imports_granularity=Crate", // Merge imports into one line
@@ -219,5 +218,5 @@
         "editor.defaultFormatter": "vscode.json-language-features"
     },
     "redhat.telemetry.enabled": false,
-    "workbench.iconTheme": "vscode-icons"
+    "workbench.iconTheme": "vscode-icons",
 }
