@@ -297,8 +297,9 @@ Android
   * Auto rotate
 * Not on Google/F-droid
   * 應用寶 (Recommended)
+    * Sogo intput
+    * Sogou fanyi - With offline dictionary
   * 豌豆荚 wandoujia
-  * 迅雷
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
 * Not an app but related to Android
