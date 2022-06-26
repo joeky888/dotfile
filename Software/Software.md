@@ -485,7 +485,7 @@ Ideas to be done
   * Kubesphere UI
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
 * Webassembly + Web Workers multiple thread downloader chrome extension
-* Gitlab CVE auto exploit tool supports cli, android/ios (https://github.com/liamg/traitor)
+* Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Rust http/http2 minimalistic single-file client library using hyper.rs with
   * Custom dns nameservers
   * "Accept-Encoding: gzip,deflate,br" support
