@@ -220,6 +220,7 @@ set DOWNLOADER_ARGUMENTS "--continue=true --timeout=12 --connect-timeout=12 --co
 set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 set VCS_FOLDERS "**/.bzr/*,**/CVS/*,**/.git/*,**/.hg/*,**/.svn/*"
 set VCS_FOLDERS_MORE "$VCS_FOLDERS,**/vendor/*,**/node_modules/*,**/ohmyzsh/*,**/dist/*,**/bin/*"
+set NIXPKGS_ALLOW_UNFREE 1
 
 # Faster navigating, overwrite oh-my-zsh settings
 alias ..='cd ..'
