@@ -5,10 +5,8 @@ sudo snap install helm --classic
 sudo snap install kubectl --classic
 sudo snap install opera-beta
 sudo snap install chromium --beta
-sudo snap install shellcheck --edge
 sudo snap install auto-cpufreq
 sudo auto-cpufreq --install # sudo snap services
-sudo snap install cointop --edge
 sudo snap install docker
 # sudo groupadd --system docker
 # sudo usermod -aG docker $(whoami)
@@ -21,7 +19,6 @@ sudo snap install docker
   * WoeUSB
   * Dev tools
     * Android studio
-    * devoperator # including kubectl aws-cli eksctl
 
 Services
 =====
