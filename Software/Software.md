@@ -436,6 +436,7 @@ Ideas to be done
 * Rust + Mold linker - https://github.com/rui314/mold
 * Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
+* OBS studio alternative for android/ios
 * Webrtc data channel inside webassembly inside web workers
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
