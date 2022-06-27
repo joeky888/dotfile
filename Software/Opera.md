@@ -12,18 +12,15 @@ Setting
     * 3 dots vertical dots menu -> More tools -> Media
     * video coder name should be VDAVideoDecoder or MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
 * chrome://settings -> Search "VPN" -> Enable
-* chrome://settings -> Search "Opera Turbo" -> Enable
 * chrome://settings -> Search "Font"
   * Standard font -> Noto Sans CJK TC
   * Serif font -> Noto Sans CJK TC
   * Sans-serif font -> Noto Sans CJK TC
-* chrome://Plugins -> Search "flash" -> Enable
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 * Settings -> Enable DOH (DNS over https)
 
 Extension
 =====
-* Install Chrome Extension
 * Adblock Plus
 * Dark Reader
 * Search by Image (by Google)
@@ -35,11 +32,7 @@ Extension
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
-* Marinara - Pomodoro® Assistant
-<!-- * HackBar -->
 * User-Agent Switcher for Chrome by Google
-<!-- * HTTPS Everywhere -->
-<!-- * Disconnect -->
 * Remove Google Redirection
 * Wappalyzer
 * bypass-paywalls-chrome
