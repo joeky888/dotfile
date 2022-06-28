@@ -171,27 +171,18 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 
 Install Sogou IME
 =====
-* $ app-fast -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-chinese-addons kcm-fcitx5
+* $ app-fast -S fcitx-configtool
+* $ yay -S fcitx-sogoupinyin # If failed, try download .deb from official site then move .deb to ~/.cache/yay/fcitx-sogoupinyin and try again
 * $ `vim ~/.pam_environment`
 ```sh
 GTK_IM_MODULE=fcitx
 QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 ```
-* $ yay -S fcitx5-pinyin-sougou
-* $ fcitx5
-* $ git clone --depth 1 https://github.com/hosxy/fcitx5-dark-transparent.git ~/.local/share/fcitx5/themes/fcitx5-dark-transparent
-* fcitx5-configtool -> Configure ->
-  * Input Method ->
-    * Add Pinyin
-    * Add English (US)
-  * Global Options ->
-    * Trigger Input Method -> Left Shift
-  * Addons -> Classic User Interface ->
-    * Font -> Noto Sans CJK -> Size 14
-    * Theme -> fcitx5-dark-transparent
+* $ fcitx # Start IME server
+* $ fcitx-configtool -> Add sogoupinyin
 * Right click fcitx tray icon -> Restart
-* $ ln -sf /usr/share/applications/org.fcitx.Fcitx5.desktop ~/.config/autostart/
+* $ ln -sf /usr/share/applications/fcitx.desktop ~/.config/autostart/
 * $ sudo reboot
 
 Install Rime Pinyin IME
