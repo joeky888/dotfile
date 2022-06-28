@@ -183,6 +183,7 @@ XMODIFIERS=@im=fcitx
 * $ fcitx-configtool -> Add sogoupinyin
 * Right click fcitx tray icon -> Restart
 * $ ln -sf /usr/share/applications/fcitx.desktop ~/.config/autostart/
+* $ mkdir -p ~/.config/sogoupinyin/dict/PCPYDict/phrase && ln -sf $HOME/dotfile/Software/sogou.ini ~/.config/sogoupinyin/dict/PCPYDict/phrase/PhraseEdit.txt
 * $ sudo reboot
 
 Install Rime Pinyin IME
