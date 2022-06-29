@@ -180,7 +180,7 @@ QT_IM_MODULE=fcitx
 XMODIFIERS=@im=fcitx
 ```
 * $ fcitx # Start IME server
-* $ fcitx-configtool -> Add sogoupinyin
+* $ fcitx-configtool -> Add sogoupinyin and Remove all others
 * Right click fcitx tray icon -> Restart
 * $ ln -sf /usr/share/applications/fcitx.desktop ~/.config/autostart/
 * $ sudo reboot
