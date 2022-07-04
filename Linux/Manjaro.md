@@ -183,7 +183,9 @@ XMODIFIERS=@im=fcitx
 * $ fcitx-configtool -> Add sogoupinyin and Remove all others
 * Right click fcitx tray icon -> Restart
 * $ ln -sf /usr/share/applications/fcitx.desktop ~/.config/autostart/
-* $ sudo reboot
+* Sogou Settings -> 常用 ->
+  * 標點配對：自動補全成對標點 -> Uncheck
+  * 智能調整數字後標點 -> Uncheck
 
 Install Rime Pinyin IME
 =====
