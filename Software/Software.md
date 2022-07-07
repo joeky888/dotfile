@@ -299,6 +299,7 @@ Android
   * 應用寶 (Recommended)
     * Sogo intput
     * Sogou fanyi - With offline dictionary
+    * Zaza remote - Universal Infrared TV Remote
   * 豌豆荚 wandoujia
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
