@@ -2,6 +2,8 @@ Setting
 =====
 * chrome://flags/#enable-parallel-downloading -> Enable
 * chrome://flags/#enable-quic -> Enable
+* chrome://flags/#enable-vulkan -> Enable
+* chrome://flags/#enable-experimental-webassembly-features -> Enable
 * Hardware acceleration
   * Currently Chrome on Linux works but opera on Linux doesn't work
     * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
@@ -85,7 +87,7 @@ https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
 https://feeds.feedburner.com/engadget
 https://feeds.feedburner.com/TechCrunch
-https://opensource.com/feed
+`jhttps://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 http://feeds.bbci.co.uk/news/technology/rss.xml
 https://www.pcgamer.com/rss
