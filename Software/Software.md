@@ -501,6 +501,9 @@ Ideas to be done
   * CLI/TUI
   * Chrome extension
   * Flutter Desktop/Mobile
+  * uri.txt multiple files in a list
+    * Like aria2c --input-file
+    * Support "dir=", "out=" and "md5=" section to verify downloading
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
