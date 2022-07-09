@@ -416,6 +416,7 @@ Dev frameworks
   * libui, native UI and small bianry size, for C/C++ and Go
   * GuiLite - The smallest GUI library for all platform - 5k lines code
   * LVGL - 16K RAM GUI library for embedded Linux, ESP32
+  * Rust egui - https://github.com/emilk/egui
   * Rust no-std - https://github.com/rust-embedded/awesome-embedded-rust#no-std-crates
 * Desktop app
   * Iced - Cross-platform GUI library for Rust (GPU-accelerated)
