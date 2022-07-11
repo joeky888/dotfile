@@ -474,7 +474,7 @@ Ideas to be done
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + hyper-express + ssr(react-dom/server)
+  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + hyper-express + ssr(react-dom/server) + bun(https://github.com/oven-sh/bun)
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
