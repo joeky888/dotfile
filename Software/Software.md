@@ -498,7 +498,7 @@ Ideas to be done
 * Rewrite aria2 in rust and support TUI/WebUI/Flutter
   * Support http/2 (which aria2 doesn't support for accelerating)
   * libp2p
-  * CLI/TUI
+  * CLI/TUI/IMGUI
   * Chrome extension
   * Flutter Desktop/Mobile
   * uri.txt multiple files in a list
