@@ -51,6 +51,7 @@ AWS New iam user and groups
 * Add New group named "admin" and give it permission "AdministratorAccess" and "AWSBillingReadOnlyAccess"
   * Make sure root account "IAM User and Role Access to Billing Information" is checked # https://www.youtube.com/watch?v=rWhnnqPTd6Y
 * Add New group named "developer" and give it permission "AmazonEC2ContainerRegistryPowerUser"
+* Add New group named "S3andDynamoOnly" and give it permission "AmazonS3FullAccess" and "AmazonDynamoDBFullAccess"
 
 CDN (AWS Cloudfront) for k8s ingress
 =====
