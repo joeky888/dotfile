@@ -221,6 +221,7 @@ set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 -
 set VCS_FOLDERS "**/.bzr/*,**/CVS/*,**/.git/*,**/.hg/*,**/.svn/*"
 set VCS_FOLDERS_MORE "$VCS_FOLDERS,**/vendor/*,**/node_modules/*,**/ohmyzsh/*,**/dist/*,**/bin/*"
 set NIXPKGS_ALLOW_UNFREE 1
+set PIP_USE_FEATURE "fast-deps" # Enable pip parallel downloading
 
 # Faster navigating, overwrite oh-my-zsh settings
 alias ..='cd ..'

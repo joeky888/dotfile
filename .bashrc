@@ -79,6 +79,7 @@ export EDITOR="$VISUAL"
 export PYTHONIOENCODING="UTF-8" # Python2 UTF8
 export PYTHONUTF8=1 # Python3 UTF8
 export PYTHONHTTPSVERIFY=0
+export PIP_USE_FEATURE=fast-deps # Enable pip parallel downloading
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
 export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
