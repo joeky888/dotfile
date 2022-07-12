@@ -12,6 +12,7 @@ docker-compose for arm64 on gitea.example.com
   * No CDN is used, don't use cloudflare/cloudfront it will block port 22 forwarding
   * Minimal ram is 512MB, but 1GB is recommended
   * Minimal cpu is 1 vcpu
+  * Make sure "HostkeyAlgorithms" and "PubkeyAcceptedKeyTypes" is configured in ~/.ssh/config (https://github.com/go-gitea/gitea/issues/17798#issuecomment-1020592141)
 * Steps
 ```sh
 # Create a user named git
