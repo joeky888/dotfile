@@ -4,6 +4,8 @@ docker-compose for arm64 on gitea.example.com
 * Auto https cert via Caddy/Traefik
 * gitea ssh container port 22 forwards to host port 2222 (client -> host 22 -> host 2222 -> container 22)
 * Make sure
+  * Database and permissions are created according to doc https://docs.gitea.io/en-us/database-prep
+    * Otherwise, migration will fail
   * Port 22 is used for sshd on the host
   * gitea.example.com is registerd and pointed to the server address
   * Server is arm64 based. Otherwise change the docker image tag
