@@ -139,6 +139,7 @@
         "-E=paralleltest",
         "-E=gosec",
         "-E=gocritic",
+        "-E=revive",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
