@@ -138,6 +138,7 @@
         "-E=varcheck",
         "-E=paralleltest",
         "-E=gosec",
+        "-E=gocritic",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
