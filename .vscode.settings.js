@@ -152,6 +152,7 @@
     "gopls": {
         "usePlaceholders": true,
         "completeUnimported": true,
+        "ui.semanticTokens": true
     },
     "go.generateTestsFlags": [
         "-parallel"
