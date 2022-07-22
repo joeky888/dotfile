@@ -83,6 +83,10 @@ Xfce
       * Dark mode -> Check
       * Adjust size automatically -> Check
     * Items -> Window Buttons -> Double Click ->
+      * (Add 2 "Separator" above and below "Window Buttons")
+        * Click these 2 "Separator" ->
+          * Style -> Transparent
+          * Expand -> Check
       * Show button labels -> Uncheck
       * Sorting order -> None, allow drag-and-drop
   * Workspaces -> Number of workspaces -> 1
