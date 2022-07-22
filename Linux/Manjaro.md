@@ -76,6 +76,7 @@ Xfce
 * Settings ->
   * Appearance ->
     * Style -> Matcha-dark-sea
+    * Icons -> Sea (Deepin icon theme)
     * Fonts -> Default Font -> Noto Sans CJK TC Medium
     * Fonts -> Default Monospace Font -> Iosevka Medium
   * Panel ->
