@@ -196,7 +196,11 @@
     "terminal.integrated.gpuAcceleration": "auto",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
-        "terminal.background": "#1a1a1a",
+        "editor.lineHighlightBackground": "#4c3761",
+        "activityBar.background": "#180f21",
+        "editor.background": "#180f21",
+        "sideBar.background": "#180f21",
+        "terminal.background": "#180f21",
         "terminal.foreground": "#c4c5b5",
         "terminalCursor.background": "#A5A2A2",
         "terminalCursor.foreground": "#A5A2A2",
