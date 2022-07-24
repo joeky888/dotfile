@@ -196,6 +196,10 @@
     "terminal.integrated.gpuAcceleration": "auto",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
+        "sideBarSectionHeader.background": "#180f21",
+        "tab.inactiveBackground": "#4c3761",
+        "list.hoverBackground": "#4c3761",
+        "toolbar.hoverBackground": "#4c3761",
         "editor.lineHighlightBackground": "#4c3761",
         "activityBar.background": "#180f21",
         "editor.background": "#180f21",
