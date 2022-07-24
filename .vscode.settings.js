@@ -198,7 +198,9 @@
     "workbench.colorCustomizations": {
         "sideBarSectionHeader.background": "#180f21",
         "tab.inactiveBackground": "#4c3761",
-        "list.hoverBackground": "#4c3761",
+        "list.hoverBackground": "#180f21",
+        "list.activeSelectionBackground": "#4c3761",
+        "list.inactiveSelectionBackground": "#4c3761",
         "toolbar.hoverBackground": "#4c3761",
         "editor.lineHighlightBackground": "#4c3761",
         "activityBar.background": "#180f21",
