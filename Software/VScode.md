@@ -39,7 +39,6 @@ Extension
 * hediet.vscode-drawio
 * serayuzgur.crates
 * ms-kubernetes-tools.vscode-kubernetes-tools
-* ms-vscode.makefile-tools
 
 Diff 2 file
 =====
