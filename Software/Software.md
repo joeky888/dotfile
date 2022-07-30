@@ -281,6 +281,7 @@ Android
   * Simple Gallery
   * Coffee - Make the screen stay awake
   * Slide for Reddit - offline reddit
+    * Settings -> General -> Sorting -> Top -> 24hrs
     * popular
     * LifeProTips
     * golang
