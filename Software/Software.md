@@ -282,15 +282,18 @@ Android
   * Coffee - Make the screen stay awake
   * Slide for Reddit - offline reddit
     * popular
+    * LifeProTips
     * golang
     * rust
     * `rust_gamedev`
     * reactnative
+    * flutterdev
     * programming
     * commandline
     * devops
     * ufos
     * aliens
+    * Create a "Collection" and check everything above
 * Drop-down menu items
   * Screenshot
   * Flash light

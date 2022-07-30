@@ -87,7 +87,7 @@ https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
 https://feeds.feedburner.com/engadget
 https://feeds.feedburner.com/TechCrunch
-`jhttps://opensource.com/feed
+https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 http://feeds.bbci.co.uk/news/technology/rss.xml
 https://www.pcgamer.com/rss
