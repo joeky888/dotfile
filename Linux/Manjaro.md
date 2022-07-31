@@ -331,3 +331,12 @@ Slow boot time
 * $ systemd-analyze blame
 * $ systemd-analyze critical-chain
 
+Speedup desktop linux
+=====
+* Source: https://christitus.com/speedup-linux/
+* $ sudoedit /etc/default/grub
+```
+# Append "mitigations=off" and "zswap.enabled=1", like this
+GRUB_CMDLINE_LINUX="zswap.enabled=1 rhgb quiet mitigations=off"
+```
+* $ sudo update-grub
