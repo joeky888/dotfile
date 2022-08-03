@@ -263,6 +263,7 @@ Android
 * Easy Wallet
 * Matlog - Material Logcat reader
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
+* AccuBattery - Battery health keeper
 * F-Droid
   * OpenLauncher
   * Termux
