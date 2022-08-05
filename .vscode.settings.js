@@ -140,7 +140,6 @@
         "-E=gosec",
         "-E=gocritic",
         "-E=revive",
-        "-E=tagliatelle",
     ],
     "go.formatTool": "goimports",
     "go.formatFlags": [
