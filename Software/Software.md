@@ -303,8 +303,8 @@ Android
 * Not on Google/F-droid
   * 應用寶 (Recommended)
     * Sogo intput
-    * Sogou fanyi - With offline dictionary
     * Zaza remote - Universal Infrared TV Remote
+    * 金山詞霸 - Offlice dictionary
   * 豌豆荚 wandoujia
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
