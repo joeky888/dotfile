@@ -79,8 +79,6 @@ http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
 https://www.ithome.com/rss
 https://www.freebuf.com/feed
 https://www.infoq.cn/feed
-https://rust.cc/rss
-https://rsshub.app/toutiao/today
 
 * English
 https://feeds.feedburner.com/d0od
@@ -91,12 +89,6 @@ https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
 http://feeds.bbci.co.uk/news/technology/rss.xml
 https://www.pcgamer.com/rss
-
-* Github
-```
-https://mshibanami.github.io/GitHubTrendingRSS/weekly/go.xml
-https://mshibanami.github.io/GitHubTrendingRSS/weekly/rust.xml
-```
 
 Tor
 =====
