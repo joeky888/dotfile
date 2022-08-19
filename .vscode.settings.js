@@ -113,7 +113,6 @@
         "editor.codeActionsOnSave": {
             "source.organizeImports": true
         },
-        "editor.semanticHighlighting.enabled": false,
     },
     "go.testFlags": [
         "-count=1"
