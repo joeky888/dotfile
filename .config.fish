@@ -234,8 +234,9 @@ alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
 alias aria2c-bt-qBittorrent="aria2c $DOWNLOADER_ARGUMENTS $TORRENT_ARGUMENTS --user-agent='qBittorrent/4.1.1' --peer-id-prefix='-qB4110-' --bt-tracker=(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s '\n' | tr '\n' ',')"
 alias yt-dlp="yt-dlp $DL_ARGUMENTS"
 alias yt-dlp-aria2c="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --external-downloader-args '$DOWNLOADER_ARGUMENTS'"
-alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][ext=mp4]+bestaudio/best'"
-alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=30][ext=mp4]+bestaudio/best'"
+alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best'"
+alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best'"
+alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=60][vcodec!^=av01]+bestaudio/best'"
 alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
@@ -260,6 +261,14 @@ function upgradePip
   pip3 install --upgrade (pip freeze -l | sed "s/==.*//")
   pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip
   pip3 install --upgrade https://github.com/requests/requests/archive/main.zip
+end
+
+function mpv-termux-480
+  am start --user 0 -a android.intent.action.VIEW -d (yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' --get-url $argv) -n is.xyz.mpv/.MPVActivity
+end
+
+function mpv-termux-audio
+  am start --user 0 -a android.intent.action.VIEW -d (yt-dlp -f 'bestaudio/best' --no-video --get-url $argv) -n is.xyz.mpv/.MPVActivity
 end
 
 # Load Nix config
