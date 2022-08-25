@@ -264,7 +264,6 @@ function upgradePip
 end
 
 function mpv-termux
-  # NOTE: This alias requires ffmpeg
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
