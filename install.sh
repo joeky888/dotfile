@@ -391,7 +391,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   termux-change-repo
   termux-setup-storage
   # apt install -y --assume-yes git aria2
-  apt install -y --assume-yes aria2 fish proot-distro
+  apt install -y --assume-yes aria2 fish libxml2 libxslt proot-distro
   # InstallDotfile
   # ~/dotfile/app-fast/app-fast install -y man vim git tig zsh fish tmux curl file tar wget bash-completion htop openssh grep sed gawk ffmpeg p7zip proot-distro
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
