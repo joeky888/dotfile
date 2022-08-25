@@ -1,4 +1,4 @@
-In`jstall manjaro using proot
+Install manjaro using proot
 =====
 ```sh
 apt install proot-distro -y
