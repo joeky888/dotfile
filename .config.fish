@@ -273,7 +273,7 @@ function mpv-termux-audio
 end
 
 function streamlink-termux-480
-  streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --title '{title}' --default-stream worst $argv
+  streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream worst $argv
 end
 
 
