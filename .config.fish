@@ -265,7 +265,7 @@ function upgradePip
 end
 
 function mpv-termux
-  am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'worst' --get-url $argv)
+  am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
 function mpv-termux-audio
@@ -273,7 +273,7 @@ function mpv-termux-audio
 end
 
 function streamlink-termux
-  streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream worst $argv
+  streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best $argv
 end
 
 
