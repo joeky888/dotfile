@@ -237,7 +237,8 @@ alias yt-dlp-aria2c="yt-dlp $DL_ARGUMENTS --external-downloader aria2c --externa
 alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best'"
 alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best'"
 alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=60][vcodec!^=av01]+bestaudio/best'"
-alias upgradeYtdlp='pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip'
+alias upgradeYtdlp='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip'
+alias upgradeStreamlink='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
@@ -269,6 +270,10 @@ end
 
 function mpv-termux-audio
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
+end
+
+function streamlink-termux-480
+  streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --title '{title}' --default-stream 480p
 end
 
 # Load Nix config
