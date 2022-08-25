@@ -264,11 +264,11 @@ function upgradePip
 end
 
 function mpv-termux-480
-  am start --user 0 -a android.intent.action.VIEW -d (yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' --get-url $argv) -n is.xyz.mpv/.MPVActivity
+  am start --user 0 -a android.intent.action.VIEW -d "(yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' --get-url $argv)" -n is.xyz.mpv/.MPVActivity
 end
 
 function mpv-termux-audio
-  am start --user 0 -a android.intent.action.VIEW -d (yt-dlp -f 'bestaudio/best' --no-video --get-url $argv) -n is.xyz.mpv/.MPVActivity
+  am start --user 0 -a android.intent.action.VIEW -d "(yt-dlp -f 'bestaudio/best' --no-video --get-url $argv)" -n is.xyz.mpv/.MPVActivity
 end
 
 # Load Nix config
