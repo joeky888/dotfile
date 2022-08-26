@@ -246,7 +246,8 @@ alias curl-status='curl -o /dev/null --fail -L -s -w "HTTP%{http_version}\nConte
 alias rg="rg --hidden --ignore-case --glob '!{$VCS_FOLDERS_MORE}'"
 alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
 alias upgradeFishrc="curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.config.fish > ~/.config/fish/config.fish"
-alias streamlink-termux="streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best"
+alias streamlink-mpv-termux="streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best"
+alias streamlink-vlc-termux="streamlink --loglevel debug --verbose-player --player 'am start -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best"
 
 function upgradeDotfile
   if not test -d ~/dotfile; git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile; end
@@ -271,6 +272,14 @@ end
 
 function mpv-termux-audio
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
+end
+
+function vlc-termux
+  am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
+end
+
+function vlc-termux-audio
+  am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
 # Load Nix config
