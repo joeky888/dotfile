@@ -275,6 +275,7 @@ function mpv-termux-audio
 end
 
 function vlc-termux
+  # Ref: https://wiki.videolan.org/Android_Player_Intents/
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
