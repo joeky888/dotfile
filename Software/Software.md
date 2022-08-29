@@ -305,6 +305,7 @@ Android
     * Sogo intput
     * Zaza remote - Universal Infrared TV Remote
     * 金山詞霸 - Offlice dictionary
+    * 多看閱讀 - Epub reader
   * 豌豆荚 wandoujia
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
