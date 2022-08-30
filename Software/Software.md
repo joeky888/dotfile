@@ -397,6 +397,7 @@ Good Software Design
 * Feedback button in-app
 * Easter eggs
 * Software-level factory reset
+* Anti-debugging
 * Mobile
   * Portable between Android and iOS
   * Most operations can be done with only one finger
