@@ -191,7 +191,11 @@ Android
     * Debugging -> Android debugging -> Check
     * Networking -> WiFi scan throttling -> Uncheck
   * Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
-  * Sound -> Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
+  * Sound ->
+    * Screen locking sounds -> Uncheck
+    * Chargin sounds and vibration -> Uncheck
+    * Touch sounds -> Uncheck
+    * Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
   * Private DNS
     * dns.adguard.com (Adguard ipv4/ipv6)
     * anycast.dns.nextdns.io (NextDNS ipv4/ipv6)
