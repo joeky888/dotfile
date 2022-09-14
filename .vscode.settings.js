@@ -184,15 +184,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
     },
-    "terraform.languageServer": {
-        "external": true,
-        "pathToBinary": "",
-        "args": [
-            "serve"
-        ],
-        "maxNumberOfProblems": 100,
-        "trace.server": "off"
-    },
     "terminal.integrated.gpuAcceleration": "auto",
     "workbench.editor.tabSizing": "shrink",
     "workbench.colorCustomizations": {
@@ -232,4 +223,6 @@
     },
     "redhat.telemetry.enabled": false,
     "workbench.iconTheme": "vscode-icons",
+    "terraform.languageServer.enable": true,
+    "terraform.languageServer.path": "",
 }
