@@ -192,6 +192,7 @@ Android
     * Debugging -> Android debugging -> Check
     * Networking -> WiFi scan throttling -> Uncheck
   * Apps & notifications -> Notifications -> Advanced -> Default notification sound -> Tones
+  * Do Not Disturb -> Restrict notifications -> No sound from notifications
   * Sound ->
     * Screen locking sounds -> Uncheck
     * Chargin sounds and vibration -> Uncheck
