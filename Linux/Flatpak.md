@@ -10,6 +10,7 @@ flatpak install flathub com.github.xournalpp.xournalpp
 flatpak install flathub com.skype.Client
 flatpak install flathub org.telegram.desktop && sudo flatpak override org.telegram.desktop --filesystem=xdg-desktop
 flatpak install flathub com.discordapp.Discord && sudo flatpak override --filesystem=home com.discordapp.Discord
+flatpak install flathub us.zoom.Zoom
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton-GE
 flatpak install flathub io.mpv.Mpv && sudo flatpak override io.mpv.Mpv --filesystem=xdg-config/mpv:ro # Read mpv.conf
