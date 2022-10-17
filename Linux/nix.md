@@ -15,7 +15,8 @@ nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator \
   nixpkgs.linkerd nixpkgs.k9s \
   nixpkgs.terraform nixpkgs.tflint \
   nixpkgs.protobuf nixpkgs.protoc-gen-go \
-  nixpkgs.shellcheck nixpkgs.jq
+  nixpkgs.shellcheck nixpkgs.jq \
+  nixpkgs.bun
 ```
 
 Uninstall Packages
