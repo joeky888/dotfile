@@ -126,16 +126,13 @@
         // Enable all fast linters
         "--fast",
         // and all default linter
-        "-E=deadcode",
         "-E=errcheck",
         "-E=gosimple",
         "-E=govet",
         "-E=ineffassign",
         "-E=staticcheck",
-        "-E=structcheck",
         "-E=typecheck",
         "-E=unused",
-        "-E=varcheck",
         "-E=paralleltest",
         "-E=gosec",
         "-E=gocritic",
