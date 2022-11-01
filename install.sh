@@ -264,10 +264,10 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 #     $SUDO systemctl enable --now reconnect.service
 #   fi
   if [ $(command -v apt) ]; then
-    app-fast install p7zip-full p7zip-rar build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
+    app-fast install build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y
   elif [ $(command -v pacman) ]; then
-    app-fast -S --noconfirm --needed p7zip base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
+    app-fast -S --noconfirm --needed base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
   fi
 
   if [ $(command -v pacman-mirrors) ] && [ $(command -v systemctl) ]; then
@@ -320,7 +320,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   brew install git aria2
   InstallDotfile
 
-  ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux p7zip htop watch atool nmap mtr shellcheck
+  ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
 
   chsh -s $(command -v zsh) $(whoami)
   brew tap homebrew/cask
@@ -350,7 +350,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
   rm -rf /bin/setup-x86_64.exe
   curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
   curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install p7zip wget curl aria2 git vim nano tmux zsh fish atool
+  apt-cyg install wget curl aria2 git vim nano tmux zsh fish atool
   InstallDotfileCygwin
   grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
   grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
@@ -371,7 +371,7 @@ elif [[ "$OSTYPE" == "msys" ]]; then # Msys
   export SUDO=''
   export Home="$HOME"
 #   pacman -R catgets libcatgets --noconfirm
-  app-fast -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs p7zip perl ruby python2 python3 python3-pip --noconfirm --needed
+  app-fast -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs perl ruby python2 python3 python3-pip --noconfirm --needed
 #   sed -i '/XferCommand/d' /etc/pacman.conf
 #   sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 %u' /etc/pacman.conf
 #   sed -i '/./d' /etc/fstab
@@ -393,7 +393,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # apt install -y --assume-yes git aria2
   apt install -y --assume-yes aria2 fish libxml2 libxslt proot-distro
   # InstallDotfile
-  # ~/dotfile/app-fast/app-fast install -y man vim git tig zsh fish tmux curl file tar wget bash-completion htop openssh grep sed gawk ffmpeg p7zip proot-distro
+  # ~/dotfile/app-fast/app-fast install -y man vim git tig zsh fish tmux curl file tar wget bash-completion htop openssh grep sed gawk ffmpeg proot-distro
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   # InstallPIP
@@ -409,7 +409,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 elif echo "$OSTYPE" | grep -i -q "freebsd"; then # FreeBSD or TrueOS
   export Home="$HOME"
 #   $SUDO pkg update -f
-  echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 p7zip bind-tools
+  echo y | $SUDO pkg install tmux zsh git tig vim-lite nano curl python3 aria2 bind-tools
   chsh -s $(command -v zsh) $(whoami)
 #   find /usr/local/share/nano/ -iname "*.nanorc" -exec echo include {} \; > ~/.nanorc
   InstallDotfile
