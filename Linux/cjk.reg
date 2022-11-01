@@ -206,7 +206,7 @@ Windows Registry Editor Version 5.00
 "FontSmoothing"="2"
 
 /* 替換字型1 */
-/* 這裡以 WenQuanYi Micro Hei 為例，請自行改成你要的字型名稱 */
+/* 這裡以 Noto Sans CJK TC Medium 為例，請自行改成你要的字型名稱 */
 /* 我很懶，所以都改成同一種字型。你也可以改成多種不同的字型 */
 [HKEY_LOCAL_MACHINE\Software\Microsoft\Windows NT\CurrentVersion\FontSubstitutes]
 "Arial Baltic,186"="Noto Sans CJK TC Medium"
