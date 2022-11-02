@@ -204,13 +204,17 @@ Android
     * ipv4-HOSTNAME-1.edge.nextdns.io (NextDNS Ultralow for ipv4, get all HOSTNAMEs here https://ping.nextdns.io/)
     * ipv6-HOSTNAME-1.edge.nextdns.io (NextDNS Ultralow for ipv6)
 * Backup IMEI code -> `*#06#`
-* Firefox Beta -> Add-ons -> Add-ons Manager
-  * Dark Reader
-  * uBlock Origin
-  * Video Speed Controller
-  * User Agent Switcher (by Alexander Schlarb)
-  * Absolute Enable Right Click & Copy
-  * Search by Image - Reverse Image Search (by Armin Sebastian)
+* Firefox Beta ->
+  * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
+  * Add-ons -> Add-ons Manager
+    * Dark Reader
+    * uBlock Origin
+    * Video Speed Controller
+    * User Agent Switcher (by Alexander Schlarb)
+    * Absolute Enable Right Click & Copy
+    * Search by Image - Reverse Image Search (by Armin Sebastian)
+* Yandex
+  * chrome://flags/#incognito-screenshot -> Enable (But doesn't work)
 * Yahoo News
 * Yahoo Finance
   * TQQQ
