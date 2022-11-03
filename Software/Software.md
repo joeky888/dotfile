@@ -451,6 +451,7 @@ Ideas to be done
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
 * Nomad + Damon TUI
+* WebTransport
 * Redis chat room
 * KeyDB vs DragonflyDB
 * Rust + Mold linker - https://github.com/rui314/mold
