@@ -3,7 +3,6 @@ Softwares
 ```sh
 flatpak install flathub org.mozilla.Thunderbird
 flatpak install flathub com.wps.Office
-flatpak install flathub io.dbeaver.DBeaverCommunity
 flatpak install flathub org.kde.krita
 flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.github.xournalpp.xournalpp
