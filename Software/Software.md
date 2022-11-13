@@ -232,6 +232,7 @@ Android
 * LINE
 * Skype
 * Telegram
+  * Options > Settings > Data and Storage > Storage Usage > Keep media for "1 month"
 * Discord
 * Sogou input method
 * Hacker's Keyboard
