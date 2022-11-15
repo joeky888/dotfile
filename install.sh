@@ -315,18 +315,18 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   export Home="$HOME"
   export SUDO=""
-  [ $(command -v brew) ] || /usr/bin/ruby -e "$(curl -fksSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  [ $(command -v brew) ] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   brew update
-  brew install git aria2
+  brew install git aria2 zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make opencc ffmpeg tig htop watch atool nmap mtr shellcheck
   InstallDotfile
 
-  ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
+  # ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
 
-  chsh -s $(command -v zsh) $(whoami)
-  brew tap homebrew/cask
-  brew tap homebrew/cask-fonts
-  brew tap homebrew/cask-versions
-  brew tap beeftornado/rmtree
+  #chsh -s $(command -v zsh) $(whoami)
+  #brew tap homebrew/cask
+  #brew tap homebrew/cask-fonts
+  #brew tap homebrew/cask-versions
+  #brew tap beeftornado/rmtree
 #   brew tap homebrew/cask-drivers
   InstallMiniconda MacOSX
 
