@@ -870,6 +870,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
+  [ -f /opt/homebrew/bin/brew ] && eval $(/opt/homebrew/bin/brew shellenv)
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
     alias l='ls -lah'
