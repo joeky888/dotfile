@@ -46,6 +46,10 @@ set -g __fish_git_prompt_color_invalidstate red
 set -g __fish_git_prompt_color_untrackedfiles red
 set -g __fish_git_prompt_color_cleanstate yellow --bold
 
+if test -f /opt/homebrew/bin/brew
+  eval (/opt/homebrew/bin/brew shellenv)
+end
+
 # Aync git promt
 # Ref: https://github.com/pure-fish/pure/wiki/Async-git-Prompt
 # Ref: https://github.com/acomagu/fish-async-prompt
