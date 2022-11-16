@@ -20,6 +20,7 @@ Post-installed
 * System Settings > Desktop & Dock > Recent documents, applications and servers > None
 * System Settings > Displays > Automatically adjust brightness > Uncheck
 * System Settings > Bluetooth > Show bluetooth in menu bar
+* System Settings > VPN > Show vpn in menu bar
 * System Settings > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Settings > Keyboard >
     * Key Repeat > Set to Fastest
