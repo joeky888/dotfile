@@ -315,9 +315,9 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   export Home="$HOME"
   export SUDO=""
-  [ $(command -v brew) ] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-  brew update
-  brew install git aria2 zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make opencc ffmpeg tig htop watch atool nmap mtr shellcheck
+  [ $(command -v /opt/homebrew/bin/brew) ] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+  /opt/homebrew/bin/brew update
+  /opt/homebrew/bin/brew install git aria2 zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make opencc ffmpeg tig htop watch atool nmap mtr shellcheck
   InstallDotfile
 
   # ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
