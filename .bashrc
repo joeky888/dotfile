@@ -69,7 +69,7 @@ elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [ -z $T
   fi
 elif [ -z $TMUX ] && [ $(command -v fish) ] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
   exec fish
-elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
   exec zsh
 fi

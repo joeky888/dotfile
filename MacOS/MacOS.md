@@ -1,11 +1,11 @@
 Make Ctrl key work
 =====
-* System Preferences -> Keyboard -> Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
+* System Settings -> Keyboard -> Keyboard Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
 * Command + Option + D -> Hide dock
 
 Post-installed
 =====
-* System Preferences -> Network -> Wi-FI -> Advanced -> DNS -> + ->
+* System Settings -> Network -> Wi-FI -> Advanced -> DNS -> + ->
 ```
 1.1.1.1
 8.8.4.4
@@ -13,27 +13,28 @@ Post-installed
 8.8.8.8
 114.114.114.114
 ```
-* System Preferences -> Dock -> Automatically hide and show the Dock -> Check
-* System Preferences > Security & Privacy > General > Advanced dialog -> Disable auto-logout
-* System Preferences > Accessibility > Mouse & Trackpad > Trackpad > Check "Enable dragging" > three finger drag
-* System Preferences > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
-* System Preferences > General > Recent Items > None
-* System Preferences > Displays > Automatically adjust brightness > Uncheck
-* System Preferences > Bluetooth > Show bluetooth in menu bar
-* System Preferences > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
-* System Preferences > Keyboard >
+* System Settings -> Dock -> Automatically hide and show the Dock -> Check
+* System Settings > Security & Privacy > General > Advanced dialog -> Disable auto-logout
+* System Settings > Accessibility > Pointer Control > Trackpad Options > Check "Enable dragging" > three finger drag
+* System Settings > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
+* System Settings > Desktop & Dock > Recent documents, applications and servers > None
+* System Settings > Displays > Automatically adjust brightness > Uncheck
+* System Settings > Bluetooth > Show bluetooth in menu bar
+* System Settings > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
+* System Settings > Keyboard >
     * Key Repeat > Set to Fastest
     * Delay Until Repeat > Set to Shortest
-* System Preferences > General > Default web browser > Firefox
+* System Settings > General > Default web browser > Firefox
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
 * $ xcode-select --install
-* $ brew install --cask alacritty hammerspoon xnviewmp vimr visual-studio-code mpv phantomjs docker-edge helm opera-beta google-chrome firefox-developer-edition telegram-desktop wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher font-iosevka font-ubuntu microsoft-remote-desktop-beta
+* $ brew tap homebrew/cask-fonts && brew install font-iosevka
+* $ brew install --cask alacritty hammerspoon xnviewmp vimr visual-studio-code mpv phantomjs docker-edge helm opera-beta google-chrome firefox-developer-edition telegram-desktop wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher font-ubuntu microsoft-remote-desktop-beta
 * $ brew update && app-fast upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune 0 && brew doctor
 
 Can not open an app due to "Unkown developer"
 =====
-* System Preferences > Security & Privacy > General > Open Anyway
+* System Settings > Security & Privacy > General > Open Anyway
 
 Hyper terminal
 =====
