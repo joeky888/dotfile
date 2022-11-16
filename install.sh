@@ -212,10 +212,10 @@ InstallPIP()
 
 InstallMiniconda()
 {
-  [ "$(uname -m)" == "x86_64" ] || return;
+  ARCH=$(uname -m)
   [ -z $1 ] && return;
   # rm -rf ~/Miniconda2 && aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod 777 Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
-  rm -rf ~/Miniconda3 && aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$1-x86_64.sh" && chmod 777 Miniconda3-latest-$1-x86_64.sh && bash Miniconda3-latest-$1-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-x86_64.sh
+  rm -rf ~/Miniconda3 && aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$1-$ARCH.sh" && chmod 777 Miniconda3-latest-$1-$ARCH.sh && bash Miniconda3-latest-$1-$ARCH.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$1-$ARCH.sh
   echo y | ~/Miniconda3/bin/pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip
 #   echo y | ~/Miniconda3/bin/pip install streamlink
 }
