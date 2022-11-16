@@ -95,7 +95,7 @@ InstallDotfile()
     ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/Code/User/keybindings.json
     ln -sf $Home/dotfile/.vscode.keybindings.js ~/.config/VSCodium/User/keybindings.json
     ;;
-  darwin)
+  darwin*)
     ln -sf $Home/dotfile/MacOS/hammerspoon.lua ~/.hammerspoon/init.lua
     ln -sf $Home/dotfile/.vscode.settings.js "$Home/Library/Application Support/Code/User/settings.json"
     ln -sf $Home/dotfile/.vscode.settings.js "$Home/Library/Application Support/VSCodium/User/settings.json"
