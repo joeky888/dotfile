@@ -39,6 +39,8 @@ export TERM_EMU="$(emulator)"
 
 whichTTY=$(tty | sed -e "s:/dev/::")
 
+[ -f /opt/homebrew/bin/brew ] && eval $(/opt/homebrew/bin/brew shellenv) # Homebrew path
+
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_EMU" == "java" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
@@ -268,8 +270,6 @@ if [[ -d "$HOME/.nix-profile/bin/" ]]; then
   # export PATH=$PATH:$HOME/.nix-profile/bin
   [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ] && source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
-
-[ -d "/usr/local/sbin" ] && export PATH="/usr/local/sbin:$PATH" # macOS homebrew
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
@@ -870,7 +870,6 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then # Ubuntu
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   alias ls='ls -F --color=auto'
 elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
-  [ -f /opt/homebrew/bin/brew ] && eval $(/opt/homebrew/bin/brew shellenv)
   if [ $(command -v gls) ]; then
     alias ls='gls -F --color=auto --show-control-chars'
     alias l='ls -lah'
