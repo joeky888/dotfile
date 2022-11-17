@@ -106,6 +106,10 @@ json.Unmarshal(jsonStr, &inInterface)
     * github.com/buger/jsonparser - Get and Set json value without code reflection
 * pp - Colored pretty printer for Go sturct
 
+Rust
+=====
+* All common libs are listed here https://blessed.rs/crates
+
 Java
 =====
 * Eclipse: IDE
