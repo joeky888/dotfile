@@ -377,12 +377,12 @@ EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && expo
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 upgradeConda() {
-  os="Linux"
+  OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS
-    os="MacOSX"
+    OS="MacOSX"
   fi;
-  #[ -d ~/Miniconda2 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$os-x86_64.sh" && chmod 777 Miniconda2-latest-$os-x86_64.sh && bash Miniconda2-latest-$os-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$os-x86_64.sh
-  [ -d ~/Miniconda3 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$os-x86_64.sh" && chmod 777 Miniconda3-latest-$os-x86_64.sh && bash Miniconda3-latest-$os-x86_64.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$os-x86_64.sh
+  ARCH="$(uname -m)"
+  [ -d ~/Miniconda3 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$OS-$ARCH.sh" && chmod 777 Miniconda3-latest-$OS-$ARCH.sh && bash Miniconda3-latest-$OS-$ARCH.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$OS-$ARCH.sh
   [ $(command -v conda) ] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
 }
 upgradePip() { pip3 install --upgrade pip setuptools && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && pip3 install --upgrade https://github.com/requests/requests/archive/main.zip ;}
