@@ -25,7 +25,6 @@ Extension
 * vscode-icons-team.vscode-icons
 * Rust
   * vadimcn.vscode-lldb
-  * rust-lang.rust (`"rust-client.engine": "rust-analyzer"`)
   * rust-lang.rust-analyzer and switch to pre-realese version
 * golang.Go
 * eslint
