@@ -18,6 +18,7 @@ Setting
   * Standard font -> Noto Sans CJK TC
   * Serif font -> Noto Sans CJK TC
   * Sans-serif font -> Noto Sans CJK TC
+  * Fixed-width font -> Noto Sans Mono CJK TC
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 * Settings -> Enable DOH (DNS over https)
 
