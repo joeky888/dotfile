@@ -17,6 +17,9 @@ nix-env -iA nixpkgs.awscli2 nixpkgs.aws-iam-authenticator \
   nixpkgs.protobuf nixpkgs.protoc-gen-go \
   nixpkgs.shellcheck nixpkgs.jq \
   nixpkgs.bun
+
+# All packages without free licences
+NIXPKGS_ALLOW_UNFREE=1 nix-env -iA nixpkgs._7zz
 ```
 
 Uninstall Packages
