@@ -14,6 +14,8 @@ Post-installed
 114.114.114.114
 ```
 * System Settings -> Dock -> Automatically hide and show the Dock -> Check
+* System Settings -> Battery -> Low Power Mode -> Only on Battery
+* System Settings -> Battery -> Options -> Wake for network access -> Never
 * System Settings > Security & Privacy > General > Advanced dialog -> Disable auto-logout
 * System Settings > Accessibility > Pointer Control > Trackpad Options > Check "Enable dragging" > three finger drag
 * System Settings > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
@@ -33,7 +35,7 @@ Post-installed
 * $ brew tap homebrew/cask-fonts && brew install font-iosevka font-noto-sans-cjk font-ubuntu font-ubuntu-mono
 * $ brew tap homebrew/cask-versions
 * $ brew install --cask alacritty visual-studio-code mpv docker-edge opera-beta google-chrome-dev brave-browser-beta firefox-developer-edition opera-gx telegram-desktop dbeaver-community wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput openvpn-connect
-* $ brew update && app-fast upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune 0 && brew doctor
+* $ brew update && brew upgrade && brew cleanup -s --prune=all && brew doctor
 
 Can not open an app due to "Unkown developer"
 =====
