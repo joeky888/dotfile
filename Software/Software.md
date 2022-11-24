@@ -484,7 +484,7 @@ Ideas to be done
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
 * New message queue in rust + linux5.1 io-uring and compatible with nats
   * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
-  * glommio
+  * monoio https://github.com/bytedance/monoio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * Websocket
     * php-pm: doesn't support
