@@ -250,6 +250,7 @@ Android
 * WPS office
 * FBReader
 * org.cwb Weather
+* feeder.co - RSS Feed Reader
 * Advanced Download Manager
   * Settings -> Downloading
     * Downloading
@@ -327,6 +328,7 @@ Android
 
 iOS
 =====
+* feeder.co - RSS Feed Reader
 * Cydia
   * NewTerm 2
 * iSH - https://github.com/tbodt/ish
