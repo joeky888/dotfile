@@ -30,6 +30,7 @@ Extension
 * Stylish / Stylus
 * Full Page Screen Capture
 * SimpleUndoClose
+* RSS Feed Reader (feeder.co)
 * Tampermonkey (Opera addon)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * RightToCopy
