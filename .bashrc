@@ -324,7 +324,7 @@ alias streamlink-mpv-best="streamlink --loglevel debug --verbose-player --player
 alias streamlink-mpv-1080="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --title '{title}' --default-stream 1080p"
 alias streamlink-mpv-720="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --title '{title}' --default-stream 720p"
 alias streamlink-mpv-480="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --title '{title}' --default-stream 480p"
-alias streamlink-download="streamlink --loglevel debug --stream-segment-threads 10 --title '{title}' --default-stream best -o '{title}.mp4'"
+alias streamlink-download="streamlink --loglevel debug --stream-segment-threads 10 --title '{title}' --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4'"
 alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
