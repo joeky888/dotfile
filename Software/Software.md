@@ -329,6 +329,8 @@ Android
 iOS
 =====
 * feeder.co - RSS Feed Reader
+* brave
+  * Setting -> Brave Shields and Privacy -> Private Browsing Only -> Check
 * Cydia
   * NewTerm 2
 * iSH - https://github.com/tbodt/ish
