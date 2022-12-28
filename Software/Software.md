@@ -263,6 +263,7 @@ Android
       * Only via Wi-Fi -> Auto-start downloads
 * TWRP Recovery
 * Magisk / Xposed
+  * Fix GPay https://github.com/HuskyDG/safetynet-integrity-fix
 * Fubon bank
   * If if crashes on startup, install the app "Servicely" (root required)
   * Servicesly -> Services -> 富邦行動銀行 find a short-named service `?.??` and disable it
