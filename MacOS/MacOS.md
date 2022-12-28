@@ -41,33 +41,9 @@ Can not open an app due to "Unkown developer"
 =====
 * System Settings > Security & Privacy > General > Open Anyway
 
-Hyper terminal
+Nslookup alternative
 =====
-* $ hyper i hyperocean
-* $ vim ~/.hyper.js
-```js
-css: `
-  .xterm {
-    cursor: default;
-  }
-  `,
-fontFamily: 'Iosevka, Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-colors: {
-  black:          '#1B1D1E',
-  red:            '#E90000',
-  green:          '#00AF00',
-  yellow:         '#F4BF75',
-  blue:           '#00AFFF',
-  magenta:        '#AE81FF',
-  cyan:           '#A1EFE4',
-  white:          '#F8F8F2',
-  lightBlack:     '#7E8E91',
-  lightRed:       '#F92672',
-  lightGreen:     '#A6E22E',
-  lightYellow:    '#FFFF00',
-  lightBlue:      '#66D9EF',
-  lightMagenta:   '#AE81FF',
-  lightCyan:      '#A1EFE4',
-  lightWhite:     '#F8F8F2'
-},
-```
+* By default nslookup won't use ipv6
+* $ dig A one.one.one.one # Only prints ipv4
+* $ dig AAAA one.one.one.one # Only prints ipv6
+* $ host one.one.one.one # Prints ipv4/ipv6
