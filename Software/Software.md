@@ -415,6 +415,8 @@ Good Software Design
 * Easter eggs
 * Software-level factory reset
 * Anti-debugging
+* Workarounds for shitty Networks
+  * Enable Nagle's algorithm
 * Mobile
   * Portable between Android and iOS
   * Most operations can be done with only one finger
