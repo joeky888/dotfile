@@ -47,6 +47,7 @@ Javascript
     * react-native-swiper - UI swiper component
     * preact - 3KB React alternative with the same modern API
     * Tamagui - ½ the time with 2x performance.
+    * react-native-mmkv - The fastest key/value storage for React Native
 
 CSS
 =====
