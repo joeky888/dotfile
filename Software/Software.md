@@ -467,6 +467,7 @@ Ideas to be done
 * Flutter/Dart kcp implementation
 * OBS studio alternative for android/ios
 * Webrtc data channel inside webassembly inside web workers
+* React native udp + kcpjs
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
