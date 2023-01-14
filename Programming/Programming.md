@@ -49,6 +49,10 @@ Javascript
     * Tamagui - ½ the time with 2x performance.
     * react-native-mmkv - The fastest key/value storage for React Native
     * react-native-fast-image - performant React Native image component.
+    * polaris-viz - Chart lib for data visualization
+    * flash-list - Faster FlatList
+    * react-native-jsi-cpr - Turbo module multithread http client
+    * @shopify/react-native-skia - Canvas support and skia engine based
 
 CSS
 =====
