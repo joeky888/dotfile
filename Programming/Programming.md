@@ -54,6 +54,7 @@ Javascript
     * flash-list - Faster FlatList
     * react-native-jsi-cpr - Turbo module multithread http client
     * @shopify/react-native-skia - Canvas support and skia engine based
+    * react-native-reanimated - Animation turbo module
 
 CSS
 =====
