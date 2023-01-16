@@ -456,6 +456,8 @@ Dev frameworks
 
 Ideas to be done
 =====
+* Facebook sapling replace git clone command
+  * https://github.com/facebook/sapling
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
 * Nomad + Damon TUI
