@@ -186,6 +186,7 @@ WineHQ
 Android
 =====
 * Settings
+  * Display > Dark theme > Pure black > On
   * Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
   * Deverloper options
     * Advanced restart -> Check
