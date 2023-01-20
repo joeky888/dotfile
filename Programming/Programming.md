@@ -5,22 +5,26 @@ Code Design
 * Use Enum and Switch-Case instead of If-Else
 * Use Ternary Operator `? :` instead a single If-Else
 * Optimization
-    * Compute elapsed time
-    * Use Map-Reduce (or other ways) if For-loop is slow
-    * Use Bitwise operations
-        * `&`   bitwise AND
-        * `|`   bitwise inclusive OR
-        * `^`   bitwise XOR (eXclusive OR)
-        * `<<`  left shift
-        * `>>`  right shift
-        * `~`   bitwise NOT
+  * Compute elapsed time
+  * Use Map-Reduce (or other ways) if For-loop is slow
+  * Use Bitwise operations
+    * `&` bitwise AND
+    * `|` bitwise inclusive OR
+    * `^` bitwise XOR (eXclusive OR)
+    * `<<`  left shift
+    * `>>`  right shift
+    * `~` bitwise NOT
+
+Documentation tools
+=====
+* facebook/docusaurus - mdx based react powered doc tool with i18n
 
 RX
 =====
 * Use cases
-    1. User keeps input, like keydown or mouse move
-    2. Big file slice
-    3. Socket/WebSocket
+  1. User keeps input, like keydown or mouse move
+  2. Big file slice
+  3. Socket/WebSocket
 
 Javascript
 =====
@@ -37,24 +41,27 @@ Javascript
 * Day.js - 2KB alternative to Moment.js parsing date time
 * Webp-hero - webp format polyfill
 * fetch
-    * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
-    * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
+  * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
+  * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
 * React/React Native
-    * react-i18next - i18n for react and react-native
-    * A real world example app
-        * https://github.com/gothinkster/react-redux-realworld-example-app
-    * react-spring - Animation lib
-    * react-native-router-flux - react-navigation based routing and navigation for react native
-    * react-native-swiper - UI swiper component
-    * preact - 3KB React alternative with the same modern API
-    * Tamagui - ½ the time with 2x performance.
-    * react-native-mmkv - The fastest key/value storage for React Native
-    * react-native-fast-image - performant React Native image component.
-    * polaris-viz - Chart lib for data visualization
-    * flash-list - Faster FlatList
-    * react-native-jsi-cpr - Turbo module multithread http client
-    * @shopify/react-native-skia - Canvas support and skia engine based
-    * react-native-reanimated - Animation turbo module
+  * react-i18next - i18n for react and react-native
+  * A real world example app
+    * https://github.com/gothinkster/react-redux-realworld-example-app
+  * react-native-ui-kitten - UI Library based on Eva Design System with Dark Mode
+    * button, checkbox, calendar, datepicker and more
+    * https://github.com/akveo/react-native-ui-kitten/tree/master/src/components/ui
+  * react-spring - Animation lib
+  * react-native-router-flux - react-navigation based routing and navigation for react native
+  * react-native-swiper - UI swiper component
+  * preact - 3KB React alternative with the same modern API
+  * Tamagui - ½ the time with 2x performance.
+  * react-native-mmkv - The fastest key/value storage for React Native
+  * react-native-fast-image - performant React Native image component.
+  * polaris-viz - Chart lib for data visualization
+  * flash-list - Faster FlatList
+  * react-native-jsi-cpr - Turbo module multithread http client
+  * @shopify/react-native-skia - Canvas support and skia engine based
+  * react-native-reanimated - Animation turbo module
 
 CSS
 =====
@@ -72,47 +79,47 @@ C and C++
 * Qt Creator
 * Cmake
 * Hardware checking
-    * `https://github.com/google/cpu_features`
+  * `https://github.com/google/cpu_features`
 * Console interface
-    * PDCurses
-    * Ncurses
-    * Termbox
+  * PDCurses
+  * Ncurses
+  * Termbox
 * Porgress bar
-    * `https://github.com/doches/progressbar`
+  * `https://github.com/doches/progressbar`
 * Math
-    * Boost
+  * Boost
 * Single file libs
-    * `https://github.com/RandyGaul/tinyheaders`
-    * `https://github.com/nothings/single_file_libs`
+  * `https://github.com/RandyGaul/tinyheaders`
+  * `https://github.com/nothings/single_file_libs`
 * Web
-    * Crow - Micro web framework for C++ (BSD license)
+  * Crow - Micro web framework for C++ (BSD license)
 
 Python
 =====
 * PyCharm: IDE (Open source and free for both Personal and Commercial use)
 * colorama: Simple cross-platform colored terminal text
-    * `https://github.com/tartley/colorama`
+  * `https://github.com/tartley/colorama`
 * urwid: Console interface
-    * Curses - standard python built-in lib
-    * urwid
-    * picotui - Minimal pure python lib without using ncurses, MicroPython supported
+  * Curses - standard python built-in lib
+  * urwid
+  * picotui - Minimal pure python lib without using ncurses, MicroPython supported
 * japronto - Asynchronous HTTP server for py >= 3.5, but written in C
 
 Go
 =====
 * Gin and Gorm
-    * https://github.com/gothinkster/golang-gin-realworld-example-app
+  * https://github.com/gothinkster/golang-gin-realworld-example-app
 * fasthttp/fasthttprouter - Super fast for http(s) client and server
 * iris - Fatest web framework
 * algernon - Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support
 * json
-    * If code reflection is painful, just unmarsharl to string map
+  * If code reflection is painful, just unmarsharl to string map
 ```go
 var inInterface map[string]interface{}
 json.Unmarshal(jsonStr, &inInterface)
 ```
-    * https://github.com/valyala/fastjson - Get and Set json value without code reflection
-    * github.com/buger/jsonparser - Get and Set json value without code reflection
+  * https://github.com/valyala/fastjson - Get and Set json value without code reflection
+  * github.com/buger/jsonparser - Get and Set json value without code reflection
 * pp - Colored pretty printer for Go sturct
 
 Rust
@@ -125,8 +132,8 @@ Java
 * IntelliJ IDEA: IDE
 * Android Studio: IDE
 * Web server
-    * Playframework - Full-featured
-    * dropwizard - small and very fast
+  * Playframework - Full-featured
+  * dropwizard - small and very fast
 
 Data
 =====
@@ -139,7 +146,7 @@ Comment
 * Important comments should be surrounding by the comment characters
 ```vim
 """"""""""""""""""""""
-"      Settings      "
+"    Settings    "
 """"""""""""""""""""""
 ```
 ```c
