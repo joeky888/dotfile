@@ -172,6 +172,12 @@ Mac (Hack-intosh)
 * https://github.com/sickcodes/Docker-OSX
 * Alacritty
 * iina plus fork - https://github.com/iina-plus/iina
+* List of softwares don't install using homebrew
+  * opera-beta
+  * opera-gx
+  * brave-browser-beta
+  * google-chrome-dev
+  * firefox-developer-edition
 
 Linux
 =====
