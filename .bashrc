@@ -895,6 +895,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   [ -d "/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin" ] && export PATH="$PATH:'/Applications/Visual Studio Code - Insiders.app/Contents/Resources/app/bin'"
   [ -d "/Applications/Visual Studio Code.app/Contents/Resources/app/bin" ] && export PATH="$PATH:'/Applications/Visual Studio Code.app/Contents/Resources/app/bin'"
   [ -d "/Applications/IINA.app/Contents/MacOS" ] && export PATH="$PATH:/Applications/IINA.app/Contents/MacOS"
+  [ -d "/Applications/Android Studio.app/Contents/jbr/Contents/Home" ] && export JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" && export PATH="$PATH:$JAVA_HOME/bin"
 
   export HOMEBREW_NO_INSTALL_CLEANUP=1
   [ $(command -v /usr/local/opt/golang/bin/go) ] && export GOROOT="/usr/local/opt/golang/libexec"
