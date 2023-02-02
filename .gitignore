@@ -9,3 +9,4 @@ clipboard.txt
 *.pyc
 *.swp
 .vscode/
+.DS_Store
