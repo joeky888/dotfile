@@ -1093,8 +1093,55 @@ curlToAria2()
   local count=0
   $(exit 1)
   while [ $? -ne 0 ]; do
+    sleep 1
     echo "Retrying curlToAria2 ... $((count++))"
     local cmd="aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
+    echo "$cmd"
+    eval "$cmd"
+  done;
+}
+
+curlToYtDlp()
+{
+  PARAMS=""
+
+  for PARAM in "$@"
+  do
+    PARAMS="${PARAMS} '${PARAM}'"
+  done
+
+  # Need to be updated
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--add-header/g" | sed "s/ '--compressed'//g" )
+
+  local count=0
+  $(exit 1)
+  while [ $? -ne 0 ]; do
+    sleep 1
+    echo "Retrying curlToYtDlp ... $((count++))"
+    local cmd="yt-dlp $DL_ARGUMENTS ${PARAMS}"
+    echo "$cmd"
+    eval "$cmd"
+  done;
+}
+
+curlToStreamlink()
+{
+  PARAMS=""
+
+  for PARAM in "$@"
+  do
+    PARAMS="${PARAMS} '${PARAM}'"
+  done
+
+  # Need to be updated
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)' / \1='\2' /g" | sed "s/ '--compressed'//g" )
+
+  local count=0
+  $(exit 1)
+  while [ $? -ne 0 ]; do
+    sleep 1
+    echo "Retrying curlToStreamlink ... $((count++))"
+    local cmd="streamlink --loglevel debug --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4' ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
   done;
