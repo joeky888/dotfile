@@ -1124,7 +1124,7 @@ curlToYtDlp()
   done;
 }
 
-curlToStreamlink()
+curlToStreamlink-mpv()
 {
   PARAMS=""
 
@@ -1141,7 +1141,7 @@ curlToStreamlink()
   while [ $? -ne 0 ]; do
     sleep 1
     echo "Retrying curlToStreamlink ... $((count++))"
-    local cmd="streamlink --loglevel debug --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4' ${PARAMS}"
+    local cmd="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
   done;
