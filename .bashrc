@@ -86,6 +86,7 @@ export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
 export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false" # aria2 & bypy
+export STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --hls-segment-attempts 1000 --hls-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 export TORRENT_ARGUMENTS="--enable-dht=true --enable-dht6=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
 export NIXPKGS_ALLOW_UNFREE=1
 if [ $(command -v aria2c) ]; then
@@ -320,11 +321,11 @@ alias yt-dlp-audio='yt-dlp --extract-audio'
 alias yt-dlp-audio-MP3='yt-dlp --extract-audio --audio-format mp3'
 alias yt-dlp-audio-Opus='yt-dlp --extract-audio --audio-format opus'
 alias yt-dlpYouku='yt-dlp --proxy proxy.uku.im:443'
-alias streamlink-mpv-best="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best"
-alias streamlink-mpv-1080="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream 1080p"
-alias streamlink-mpv-720="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream 720p"
-alias streamlink-mpv-480="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream 480p"
-alias streamlink-download="streamlink --loglevel debug --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4'"
+alias streamlink-mpv-best="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream best"
+alias streamlink-mpv-1080="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 1080p"
+alias streamlink-mpv-720="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 720p"
+alias streamlink-mpv-480="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 480p"
+alias streamlink-download="streamlink $STREAMLINK_ARGUMENTS --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4'"
 alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
@@ -1141,7 +1142,7 @@ curlToStreamlink-mpv()
   while [ $? -ne 0 ]; do
     sleep 1
     echo "Retrying curlToStreamlink ... $((count++))"
-    local cmd="streamlink --loglevel debug --verbose-player --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --default-stream best ${PARAMS}"
+    local cmd="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes --keep-open=yes' --default-stream best ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
   done;
