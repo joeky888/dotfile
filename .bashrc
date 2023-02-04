@@ -1142,7 +1142,7 @@ curlToStreamlink-mpv()
   while [ $? -ne 0 ]; do
     sleep 1
     echo "Retrying curlToStreamlink ... $((count++))"
-    local cmd="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes --keep-open=yes' --default-stream best ${PARAMS}"
+    local cmd="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream best ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
   done;
