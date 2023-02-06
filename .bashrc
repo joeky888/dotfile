@@ -377,7 +377,7 @@ EncodingToTwUtf8() { export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" 
 EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
 EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
 killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
-mpv-fast() { command yt-dlp --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS' -f best -o - "$1" | mpv --cache=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
+mpv-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - "$1" | mpv --cache=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
 upgradeConda() {
   OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS

@@ -73,6 +73,10 @@
     "debug.internalConsoleOptions": "openOnSessionStart",
     "debug.allowBreakpointsEverywhere": true,
     "eslint.alwaysShowStatus": true,
+    "eslint.rules.customizations": [
+        { "rule": "*", "severity": "error" },
+    ],
+    "eslint.codeActionsOnSave.mode": "all",
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
