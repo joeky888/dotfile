@@ -476,6 +476,12 @@ Ideas to be done
 * Flutter/Dart kcp implementation
 * OBS studio alternative for android/ios
 * Webrtc data channel inside webassembly inside web workers
+* React Native Video player as a mpv alternative for mobile
+  * Oniguruma regex engine for parsing website
+  * https://github.com/reason211/m3u8-downloader as m3u8 accelerated downloader
+  * Top-of-the-screen secondary subtitle support
+  * Danmaku/Comments mode switcher for live streaming comments
+  * Picture in picture
 * React native udp + kcpjs
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
