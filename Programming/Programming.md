@@ -47,6 +47,7 @@ Javascript
   * react-i18next - i18n for react and react-native
   * A real world example app
     * https://github.com/gothinkster/react-redux-realworld-example-app
+  * react-native-lottie-splash-screen - Splash screen using Adobe After Effects animations
   * react-native-ui-kitten - UI Library based on Eva Design System with Dark Mode
     * button, checkbox, calendar, datepicker and more
     * https://github.com/akveo/react-native-ui-kitten/tree/master/src/components/ui
