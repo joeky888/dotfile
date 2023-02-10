@@ -15,7 +15,7 @@ LineageOS
             * Zygisk -> Enable
             * Enforce DenyList -> Disable
             * Configure DenyList -> Add apps to hide from safenet checking
-    * Install Zygisk modules (Bypassing safetynet)
+    * Install Zygisk modules (Bypassing safetynet) 注意 LSPosed module 會造成 adb device 變成 unauthorized，開發的時候要關閉 LSPosed modules
         * Magisk manager -> Modules -> + -> https://github.com/LSPosed/LSPosed/releases
         * Magisk manager -> Modules -> + -> https://github.com/LSPosed/LSPosed.github.io/releases
         * Magisk manager -> Modules -> + -> https://github.com/kdrag0n/safetynet-fix/releases
