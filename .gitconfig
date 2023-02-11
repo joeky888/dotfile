@@ -17,6 +17,7 @@
 	prompt = false
 [http]
 	sslVerify = false
+	maxRequests = 16
 [merge]
 	conflictstyle = diff3
 	tool = vimdiff3
