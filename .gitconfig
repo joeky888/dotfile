@@ -79,3 +79,7 @@ echohl iBlueInfo | echon \"     Info     \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -
+[fetch]
+	parallel = 8
+[submodule]
+	fetchJobs = 8
