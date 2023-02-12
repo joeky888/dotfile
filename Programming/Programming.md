@@ -63,6 +63,7 @@ Javascript
   * react-native-jsi-cpr - Turbo module multithread http client
   * @shopify/react-native-skia - Canvas support and skia engine based
   * react-native-reanimated - Animation turbo module
+  * code push server - https://github.com/shm-open/code-push-server
 
 CSS
 =====
