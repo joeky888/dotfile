@@ -1,5 +1,6 @@
 Install ftp client "Midnight Commander"
 =====
+* `scoop install mc` or `brew install midnight-commander`
 * $ mc
 * Click "Right" on the menu -> "FTP Link" -> Type "username:password@host" Then hit Enter
 * Now the left panel should be pwd, right panel should be ftp server
