@@ -1,8 +1,13 @@
-Install ftp client "Midnight Commander"
+Install ftp client "Midnight Commander" for macOS/Linux
 =====
-* `scoop install mc` or `brew install midnight-commander`
+* $ brew install midnight-commander
 * $ mc
 * Click "Right" on the menu -> "FTP Link" -> Type "username:password@host" Then hit Enter
 * Now the left panel should be pwd, right panel should be ftp server
 * F5 to Copy file
 * F10 to exit
+
+Install ftp client winscp for Windows
+=====
+* $ choco install winscp -y
+* Click shortcut on the desktop
