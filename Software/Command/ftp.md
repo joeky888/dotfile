@@ -7,7 +7,8 @@ Install ftp client "Midnight Commander" for macOS/Linux
 * F5 to Copy file
 * F10 to exit
 
-Install ftp client winscp for Windows
+Install ftp client winscp or filezilla for Windows
 =====
 * $ choco install winscp -y
+* $ choco install filezilla -y
 * Click shortcut on the desktop
