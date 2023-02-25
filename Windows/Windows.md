@@ -69,11 +69,11 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser
 PowerShellGet\Install-Module oh-my-posh -Scope CurrentUser
 PowerShellGet\Install-Module posh-docker -Scope CurrentUser
 PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
-choco install cascadiamonopl 7zip git poshgit openssl.light skype vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave discord -y
-choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y --pre
+choco install cascadiamonopl 7zip git poshgit openssl.light skype vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave discord messenger -y
+choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y
 ```
 * Gaming dlls
-  * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y -pre
+  * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y
 
 Git config
 =====
