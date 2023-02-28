@@ -477,6 +477,7 @@ Ideas to be done
 * OBS studio alternative for android/ios
 * Webrtc data channel inside webassembly inside web workers
 * React Native Video player as a mpv alternative for mobile
+  * libvlc as kernel
   * Oniguruma regex engine for parsing website
   * https://github.com/reason211/m3u8-downloader as m3u8 accelerated downloader
   * Top-of-the-screen secondary subtitle support
