@@ -545,6 +545,7 @@ Ideas to be done
   * libp2p
   * CLI/TUI/IMGUI
   * Chrome extension
+    * https://github.com/GoogleChromeLabs/comlink
   * Flutter Desktop/Mobile
   * uri.txt multiple files in a list
     * Like aria2c --input-file
