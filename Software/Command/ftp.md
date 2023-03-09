@@ -6,6 +6,7 @@ Install ftp client "Midnight Commander" for macOS/Linux
 * Now the left panel should be pwd, right panel should be ftp server
 * F5 to Copy file
 * F10 to exit
+* Options -> Appearance -> Change Skin to a dark theme
 
 Install ftp client winscp or filezilla for Windows
 =====
