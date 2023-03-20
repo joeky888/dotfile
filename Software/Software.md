@@ -506,7 +506,7 @@ Ideas to be done
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
-* New message queue in rust + linux5.1 io-uring and compatible with nats
+* New message queue in rust + linux5.1 io-uring + reuseport and compatible with nats
   * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
   * monoio https://github.com/bytedance/monoio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
