@@ -467,9 +467,7 @@ Ideas to be done
   * https://github.com/facebook/sapling
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
-* Nomad + Damon TUI
 * WebTransport (Websocket over QUIC) on Edge server
-* Redis chat room
 * KeyDB vs DragonflyDB
 * Rust + Mold linker - https://github.com/rui314/mold
 * Webassembly m3u8 downloader chrome extension
@@ -487,7 +485,7 @@ Ideas to be done
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
-  * Rewritten in rust
+  * Rewrite in rust
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
   * Interface of fancy-regex/Oniguruma/PCRE2
 * docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
@@ -499,9 +497,6 @@ Ideas to be done
   * ProGuard - Java code obfuscator
   * Enable hermes
   * Ant design//Material UI
-  * esbuild - https://github.com/expo/expo-cli/pull/3659
-  * swc - https://github.com/expo/expo/pull/17297
-  * mobx-react-lite
   * rn-nodeify
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
@@ -510,10 +505,6 @@ Ideas to be done
   * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
   * monoio https://github.com/bytedance/monoio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
-  * Websocket
-    * php-pm: doesn't support
-    * roadrunner: https://github.com/spiral/roadrunner/issues/513
-    * reactphp: https://github.com/ratchetphp/Ratchet
   * PSR-7
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
@@ -526,15 +517,10 @@ Ideas to be done
   * Meilisearch
   * dashmap (Rayon-rs) for faster broadcasting
   * Oniguruma webassembly regex engine
-* Webrtc ICE server (github.com/coturn/coturn)
-  * DaemonSet with hostNetwork: true
-  * Or traefik ingress with kind IngressRouteTCP/IngressRouteUDP
-* Terraform for RPI/NVIDIA Jetson cluster private cloud
-  * Kubesphere UI
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
 * Webassembly + Web Workers multiple thread downloader chrome extension
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
-* Rust http/http2 minimalistic single-file client library using hyper.rs with
+* Rust http/http2 minimalistic single-file http client library using hyper.rs with
   * Custom dns nameservers
   * "Accept-Encoding: gzip,deflate,br" support
   * a request pool
@@ -556,7 +542,7 @@ Ideas to be done
     * Websocket for browser
   * mobile and browser can be in the same room
   * Ingress domain/0 forward to service selector: statefulset.kubernetes.io/pod-name: app-0 # /0 -> app-0; /1 -> app-1
-* KCP/Websocket + WebRTC multiple player game
+* KCP/Websocket + WebRTC multiplayer game
   * Each webassembly code runs in a separated web worker
     * Frontend + http - Main thread
     * Websocket - wasm in a web worker
@@ -568,7 +554,7 @@ Ideas to be done
   * Not important & Realtime -> WebRTC(libdatachannel(ordered/unordered)) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
   * Gamepad support
 * 3D air combat game
-  * Rust language
+  * Rust
   * Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
@@ -585,7 +571,6 @@ Ideas to be done
 * GPGPU program using either emu(rust) or gpgpu-rs
   * Decimal/BigInt precision
 * Rewrite GameMode in rust and support Windows/Linux
-* Rust with distributed compiler
 
 Experience
 =====
