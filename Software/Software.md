@@ -516,6 +516,7 @@ Ideas to be done
   * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
   * Meilisearch
   * dashmap (Rayon-rs) for faster broadcasting
+    * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
   * Oniguruma webassembly regex engine
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
 * Webassembly + Web Workers multiple thread downloader chrome extension
