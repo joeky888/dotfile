@@ -476,7 +476,7 @@ Ideas to be done
 * Webrtc data channel inside webassembly inside web workers
 * React Native Video player as a mpv alternative for mobile
   * libvlc as kernel
-  * Oniguruma regex engine for parsing website
+  * Oniguruma regex engine for parsing website, maybe build with zig cc
   * https://github.com/reason211/m3u8-downloader as m3u8 accelerated downloader
   * Top-of-the-screen secondary subtitle support
   * Danmaku/Comments mode switcher for live streaming comments
@@ -517,7 +517,7 @@ Ideas to be done
   * Meilisearch
   * dashmap (Rayon-rs) for faster broadcasting
     * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
-  * Oniguruma webassembly regex engine
+  * Oniguruma webassembly regex engine, maybe build with zig cc
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
 * Webassembly + Web Workers multiple thread downloader chrome extension
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
