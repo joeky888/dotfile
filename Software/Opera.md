@@ -24,7 +24,7 @@ Setting
 
 Opera GX Only
 =====
-* Enable "Early bird" in the settings
+* Enable "Early bird" in the settings - opera://settings/early_bird
 
 Extension
 =====
