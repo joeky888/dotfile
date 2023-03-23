@@ -347,6 +347,7 @@ alias annie-playlist="annie -p"
 alias wine-optimize="WINEDEBUG=-all wine"
 alias scp='scp -v'
 alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
+alias nvim-qt="NVIM_GUI=1 nvim-qt"
 if ls --version 2>/dev/null | grep -q GNU ; then
   alias ls='ls -F --color=auto --show-control-chars'
   alias l='ls -lah'
