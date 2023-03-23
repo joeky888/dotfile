@@ -22,6 +22,10 @@ Setting
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 * Settings -> Enable DOH (DNS over https)
 
+Opera GX Only
+=====
+* Enable "Early bird" in the settings
+
 Extension
 =====
 * Adblock Plus
