@@ -463,6 +463,7 @@ Dev frameworks
 
 Ideas to be done
 =====
+* Rust with zig cc for cross-compiling
 * Facebook sapling replace git clone command
   * https://github.com/facebook/sapling
 * VSCode with tree-sitter (vscode-anycode)
