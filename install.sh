@@ -267,7 +267,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     app-fast install build-essential automake command-not-found nano ffmpeg atool fontconfig traceroute dnsutils mtr-tiny python3 wget tig htop -y
     app-fast install libssl-dev -y
   elif [ $(command -v pacman) ]; then
-    app-fast -S --noconfirm --needed base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop
+    app-fast -S --noconfirm --needed base-devel nano ripgrep fd ffmpeg atool fontconfig traceroute mtr nmap openssl net-tools iproute2 bind python3 wget tig upx htop btop
   fi
 
   if [ $(command -v pacman-mirrors) ] && [ $(command -v systemctl) ]; then
@@ -317,7 +317,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   export SUDO=""
   [ $(command -v /opt/homebrew/bin/brew) ] || /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
   /opt/homebrew/bin/brew update
-  /opt/homebrew/bin/brew install git aria2 zsh vim tmux neovim curl coreutils grep findutils file-formula gnu-sed make opencc ffmpeg tig htop watch atool nmap mtr shellcheck
+  /opt/homebrew/bin/brew install git aria2 zsh vim tmux neovim curl coreutils grep findutils file-formula gnu-sed make opencc ffmpeg tig htop btop watch atool nmap mtr shellcheck
   InstallDotfile
 
   # ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
