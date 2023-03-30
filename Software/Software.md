@@ -510,7 +510,7 @@ Ideas to be done
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
 * Backstage/CMS system
-  * Frontend: vite + typescript + "rxjs(ajax)+pako(zlib)" + esbuild + ant design//Material UI + hyper-express + ssr(react-dom/server) + bun(https://github.com/oven-sh/bun)
+  * Frontend: vite + esbuild + ant design/Material UI + ssr(react-dom/server) + bun
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
@@ -519,8 +519,9 @@ Ideas to be done
   * dashmap (Rayon-rs) for faster broadcasting
     * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
   * Oniguruma webassembly regex engine, maybe build with zig cc
-* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)
+* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)/bun
 * Webassembly + Web Workers multiple thread downloader chrome extension
+  * Comlink
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Rust http/http2 minimalistic single-file http client library using hyper.rs with
   * Custom dns nameservers
