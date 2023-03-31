@@ -511,7 +511,7 @@ Ideas to be done
     * https://phabricator.wikimedia.org/T225597
 * Backstage/CMS system
   * Frontend: vite + esbuild + ant design/Material UI/tailwindcss + ssr(react-dom/server) + bun
-    * Frontend for mobile: preact + purecss + static file server without ssr
+    * Frontend for mobile: preact + purecss + goober + static file server without ssr
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
