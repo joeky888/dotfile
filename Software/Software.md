@@ -439,7 +439,7 @@ Docker images
 Dev frameworks
 =====
 * Web
-  * Preact + Ant design/Material UI (Supports preact/react/react native)
+  * Preact + Ant design/Material UI/tailwindcss  (Supports preact/react/react native)
 * Mobile
   * Flutter
   * React native + Ant design/Material UI (Supports preact/react/react native)
@@ -497,7 +497,7 @@ Ideas to be done
 * React native webrtc + webtorrent + trackerslist + typescript -> A new torrent client
   * ProGuard - Java code obfuscator
   * Enable hermes
-  * Ant design//Material UI
+  * Ant design/Material UI
   * rn-nodeify
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
@@ -510,7 +510,8 @@ Ideas to be done
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
 * Backstage/CMS system
-  * Frontend: vite + esbuild + ant design/Material UI + ssr(react-dom/server) + bun
+  * Frontend: vite + esbuild + ant design/Material UI/tailwindcss + ssr(react-dom/server) + bun
+    * Frontend for mobile: preact + purecss + static file server without ssr
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
