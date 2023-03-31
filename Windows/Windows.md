@@ -53,7 +53,7 @@ iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras
 scoop config aria2-enabled false
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
-scoop install aria2 fd ripgrep neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup gitui
+scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup gitui
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
 # "" means "(Default)" which equals to "@"
