@@ -245,7 +245,7 @@ alias upgradeYtdlp='pip install --upgrade --force-reinstall --no-cache-dir https
 alias upgradeStreamlink='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
-alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
+alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
 alias curl-status='curl -o /dev/null --fail -L -s -w "HTTP%{http_version}\nContent Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias rg="rg --hidden --ignore-case --glob '!{$VCS_FOLDERS_MORE}'"
 alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
