@@ -5,14 +5,8 @@ Setting
 * chrome://flags/#enable-vulkan -> Enable
 * chrome://flags/#enable-experimental-webassembly-features -> Enable
 * Hardware acceleration
-  * Currently Chrome on Linux works but opera on Linux doesn't work
-    * chrome://flags/#enable-accelerated-video-decode -> Enable (This one is deprecated, use --enable-features=VaapiVideoDecoder instead)
-  * chrome://flags/#ignore-gpu-blocklist -> Enable (Or try to disable it if doesn't work)
-  * chrome://gpu -> Check hardware decode is enabled
-  * Also install h264ify chrome extension
-  * Play an youtube hd video and open a new tab enter dev tool using Ctrl-Shift-i
-    * 3 dots vertical dots menu -> More tools -> Media
-    * video coder name should be VDAVideoDecoder or MojoVideoDecoder or GpuVideoDecoder instead of FFmpegVideoDecoder or VpxVideoDecoder
+  * chrome://settings -> Search "Hardware acceleration" -> Enable
+  * Install extension "Not yet, AV1"
 * chrome://settings -> Search "VPN" -> Enable
 * chrome://settings -> Search "Font"
   * Standard font -> Noto Sans CJK TC
@@ -20,7 +14,7 @@ Setting
   * Sans-serif font -> Noto Sans CJK TC
   * Fixed-width font -> Noto Sans Mono CJK TC
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
-* Settings -> Enable DOH (DNS over https)
+* Settings -> Enable DOH (DNS over https) and use Cloudlare DNS
 
 Opera GX Only
 =====
