@@ -51,7 +51,12 @@ Install softwares
 Set-ExecutionPolicy RemoteSigned -Force
 iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras
-scoop config aria2-enabled false
+scoop config aria2-enabled true
+scoop config aria2-retry-wait 3
+scoop config aria2-split 16
+scoop config aria2-max-connection-per-server 16
+scoop config aria2-min-split-size 1M
+scoop config aria2-options "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=2 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false"
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
 scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup gitui
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
