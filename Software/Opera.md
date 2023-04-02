@@ -31,6 +31,7 @@ Extension
 * Adblock Plus
 * Dark Reader
 * Search by Image (by Google)
+* Not yet, AV1
 * Stylish / Stylus
 * Full Page Screen Capture
 * SimpleUndoClose
