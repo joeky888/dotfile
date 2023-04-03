@@ -110,9 +110,9 @@ window:
 # Font configuration
 font:
   normal:
-    family: Iosevka
+    family: Iosevka Nerd Font Medium
   bold:
-    family: Iosevka
+    family: Iosevka Nerd Font Bold
   size: 16.0
 
     # The `style` can be specified to pick a specific face.

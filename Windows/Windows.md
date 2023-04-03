@@ -9,6 +9,7 @@ Post-install
 * Install wi-fi drivers (optional)
 * Install choco
 * Install Sarasa Mono TC, Ubuntu mono and Droid Mono fonts
+  * choco install nerd-fonts-iosevka
 * Install Media Feature Pack
   *  Settings > Apps > Apps and Features > Optional features > Add a feature. Find the "Media Feature Pack"
 * Disable battery automatically sleeping -> Setting -> System -> Power & Sleep -> Sleep -> Never
