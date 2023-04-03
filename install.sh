@@ -29,6 +29,7 @@ InstallDotfile()
   rm -rf ~/.alacritty.yml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
+  rm -rf ~/.config/startship.toml
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.hammerspoon/init.lua
@@ -78,6 +79,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
   ln -sf $Home/dotfile/.config.fish ~/.config/fish/config.fish
+  ln -sf $Home/dotfile/startship.toml ~/.config/startship.toml
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
   ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
@@ -150,6 +152,7 @@ InstallDotfileCygwin()
   rm -f $Home/.alacritty.yml
   rm -f $Home/.myclirc
   rm -f $Home/.config/fish/config.fish
+  rm -f $Home/.config/startship.toml
   rm -f $Home/Documents/WindowsPowerShell/profile.ps1
   rm -f $Home/scoop/apps/vscode/current/data/user-data/User/settings.json
   rm -f $Home/scoop/apps/vscode/current/data/user-data/User/keybindings.json
@@ -172,6 +175,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\startship.toml" "%USERPROFILE%\dotfile\startship.toml"
   cd $Home/dotfile
   git submodule update --init --remote
   cd - ;
