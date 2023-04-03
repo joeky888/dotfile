@@ -5,6 +5,8 @@ return {
   color_scheme = "Molokai",
   window_background_opacity = 0.8,
   text_background_opacity = 0.9,
+  front_end = "WebGpu",
+  webgpu_power_preference = "HighPerformance", -- Prefer dGPU
   leader = { key="b", mods="CTRL", timeout_milliseconds=1500 }, -- Like tmux ctrl-b
   keys = {
     {key="LeftArrow", mods="CTRL|SHIFT", action=wezterm.action{ ActivateTabRelative=-1} }, -- Move to left tab
