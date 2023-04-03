@@ -421,7 +421,7 @@ upgradeDotfile() {
   rm -rf ~/.alacritty.yml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
-  rm -rf ~/.config/startship.toml
+  rm -rf ~/.config/starship.toml
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.hammerspoon/init.lua
@@ -452,7 +452,7 @@ upgradeDotfile() {
     rm -f ~/AppData/Roaming/VSCodium/User/keybindings.json
     rm -f ~/AppData/Roaming/VSCodium/User/settings.json
     rm -f ~/.config/fish/config.fish
-    rm -f ~/.config/startship.toml
+    rm -f ~/.config/starship.toml
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -474,7 +474,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\startship.toml" "%USERPROFILE%\dotfile\startship.toml"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\starship.toml" "%USERPROFILE%\dotfile\starship.toml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
