@@ -59,7 +59,7 @@ scoop config aria2-min-split-size 1M
 scoop config aria2-options "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=50 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false"
 # scoop bucket add dorado https://github.com/chawyehsu/dorado
 scoop bucket add nerd-fonts
-scoop install CascadiaCode-NF # Then set powershell to use this font
+scoop install CascadiaCode-NF UbuntuMono-NF # Then set powershell to use this font
 scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup gitui
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
