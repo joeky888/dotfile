@@ -1,6 +1,6 @@
 {
     "editor.fontSize": 20,
-    "editor.fontFamily": "'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
+    "editor.fontFamily": "'UbuntuMono Nerd Font', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
     "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font', 'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "editor.wordWrap": "off",
     "editor.tabSize": 2,
