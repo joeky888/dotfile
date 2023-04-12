@@ -348,6 +348,13 @@ iOS
 * Slide - reddit client
 * 超級簽 - https://sapp.xin
 
+TinyOS - List of small OSes
+=====
+* TinyXP - XP alternative
+* Tiny10 - Win10 alternative
+* Tiny11 - Win11 alternative
+* FydeOS - ChromeOS alternative
+
 Gaming & Game dev
 =====
 * Mumu - Android emulator
