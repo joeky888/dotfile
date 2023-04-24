@@ -18,6 +18,6 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ########
 pacman -Sy pacman-contrib reflector rsync
 reflector -a 10 -c cn,jp,sg -f 10 -p https --sort rate --save /etc/pacman.d/mirrorlist
-pacman -Sy archlinuxcn-keyring yay
+pacman -Sy archlinuxcn-keyring yay bash-completion
 
 ```
