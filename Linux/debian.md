@@ -30,7 +30,7 @@ deb http://cdn-fastly.deb.debian.org/debian/ unstable main contrib non-free
 
 # testing
 deb http://cdn-fastly.deb.debian.org/debian/ testing main contrib non-free
-deb http://cdn-fastly.deb.debian.org/debian-security testing/updates main contrib non-free
+deb http://cdn-fastly.deb.debian.org/debian-security testing-security main contrib non-free
 
 ### Debug only ###
 deb http://cdn-fastly.deb.debian.org/debian-debug testing-debug main contrib non-free
