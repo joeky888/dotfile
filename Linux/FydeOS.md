@@ -21,3 +21,13 @@ reflector -a 10 -c cn,jp,sg -f 10 -p https --sort rate --save /etc/pacman.d/mirr
 pacman -Sy archlinuxcn-keyring yay bash-completion
 
 ```
+
+Install snapd and flatpak (debian)
+=====
+```sh
+sudo apt update && sudo apt full-upgrade -y
+sudo apt install libsquashfuse0 squashfuse fuse snapd flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+* Reboot FydeOS
+
