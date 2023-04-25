@@ -31,3 +31,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 ```
 * Reboot FydeOS
 
+
+Install chromebrew (Not recommended)
+=====
+* Ctrl Shift T
+```sh
+shell # Enter chronos shell
+curl https://raw.githubusercontent.com/skycocker/chromebrew/master/install.sh | bash
+```
