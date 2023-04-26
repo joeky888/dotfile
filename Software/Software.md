@@ -491,6 +491,8 @@ Ideas to be done
   * Danmaku/Comments mode switcher for live streaming comments
   * Picture in picture
 * React native udp + kcpjs
+* Rewrite kafka in rust
+* Rewrite dbeaver in rust
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
