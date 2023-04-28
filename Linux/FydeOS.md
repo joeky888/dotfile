@@ -44,12 +44,7 @@ shell # Enter chronos shell
 curl https://raw.githubusercontent.com/skycocker/chromebrew/master/install.sh | bash
 ```
 
-Change resolution of crostini apps
+Change resolution for crostini apps
 =====
-```sh
-xrandr # Show all device name
-xrandr --output Device_Name --mode 2560x1440
-```
-* How to add new mode, e.g 1024x768 with fps 25
-  * https://unix.stackexchange.com/a/227894
+* Settings -> Device -> Displays -> Set Display size to 1280x720
 
