@@ -1,3 +1,8 @@
+Enable flags
+=====
+* chrome://flags/#crostini-gpu-support -> Check
+* Reboot
+
 Install Archlinux subsystem
 =====
 * Enable Linux subsystem and give it 30+GB space, as much as possible
@@ -19,7 +24,6 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 pacman -Sy pacman-contrib reflector rsync
 reflector -a 10 -c cn,jp,sg -f 10 -p https --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Sy archlinuxcn-keyring yay bash-completion
-
 ```
 
 Install snapd and flatpak (debian)
@@ -39,3 +43,13 @@ Install chromebrew (Not recommended)
 shell # Enter chronos shell
 curl https://raw.githubusercontent.com/skycocker/chromebrew/master/install.sh | bash
 ```
+
+Change resolution of crostini apps
+=====
+```sh
+xrandr # Show all device name
+xrandr --output Device_Name --mode 2560x1440
+```
+* How to add new mode, e.g 1024x768 with fps 25
+  * https://unix.stackexchange.com/a/227894
+
