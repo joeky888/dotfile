@@ -448,9 +448,12 @@ Dev frameworks
 =====
 * Web
   * Preact + Ant design/Material UI/tailwindcss  (Supports preact/react/react native)
+  * React Native web
+  * Flutter web
 * Mobile
   * Flutter
   * React native + Ant design/Material UI (Supports preact/react/react native)
+  * Godot
 * Embbed system
   * Nuklear - Single header opengl-based GUI lib, for C and Go
     * Using GDI+ for Windows, and SDL2 for other systems will make smaller binaries
@@ -493,6 +496,7 @@ Ideas to be done
 * React native udp + kcpjs
 * Rewrite kafka in rust
 * Rewrite dbeaver in rust
+  * Godot frontend and rust backend
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
