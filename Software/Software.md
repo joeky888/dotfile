@@ -498,6 +498,7 @@ Ideas to be done
 * Rewrite dbeaver in rust
   * Godot frontend (Low processor mode) and rust backend
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
+  * Using grafana/k6 to benchmark them
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
   * Rewrite in rust
