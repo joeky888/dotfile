@@ -34,6 +34,7 @@ sudo apt install libsquashfuse0 squashfuse fuse snapd flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
 * Reboot FydeOS
+* Note that sudo is required for installing any flathub apps
 
 
 Install chromebrew (Not recommended)
