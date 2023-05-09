@@ -1,8 +1,3 @@
-Enable flags
-=====
-* chrome://flags/#crostini-gpu-support -> Check
-* Reboot
-
 Install Archlinux subsystem
 =====
 * Enable Linux subsystem and give it 30+GB space, as much as possible
@@ -48,4 +43,9 @@ curl https://raw.githubusercontent.com/skycocker/chromebrew/master/install.sh | 
 Change resolution for crostini apps
 =====
 * Settings -> Device -> Displays -> Set Display size to 1280x720
+
+Enable flags (Do this after archlinux is installed!)
+=====
+* chrome://flags/#crostini-gpu-support -> Check
+* Reboot
 
