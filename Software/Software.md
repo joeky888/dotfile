@@ -494,7 +494,7 @@ Ideas to be done
   * Danmaku/Comments mode switcher for live streaming comments
   * Picture in picture
 * React native udp + kcpjs
-* Rewrite kafka in rust
+* Kafka vs Redpanda
 * Rewrite dbeaver in rust
   * Godot frontend (Low processor mode) and rust backend
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
