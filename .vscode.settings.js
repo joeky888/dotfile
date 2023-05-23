@@ -111,6 +111,7 @@
     "lldb.adapterEnv": {
         "RUST_BACKTRACE": "1",
     },
+    "lldb.launch.terminal": "integrated", // macOS need this to debug rust code
     "[go]": {
         "editor.tabSize": 4,
         "editor.insertSpaces": false,
