@@ -495,6 +495,7 @@ Ideas to be done
   * Picture in picture
 * React native udp + kcpjs
 * Kafka vs Redpanda
+* Pure js cluster with bun as http/ws servers and deno as backend web workers
 * Rewrite dbeaver in rust
   * Godot frontend (Low processor mode) and rust backend
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
