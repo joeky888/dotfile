@@ -189,3 +189,8 @@ use rayon::prelude::*;
 use std::collections::HashMap;
 items.par_iter().for_each(|(key, value)| println!("key={} value={}", key, value));
 ```
+
+Spawn thread and Join
+=====
+* tokio::join! for For IO-bound tasks, will run tasks concurrently in the same thread
+* tokio::spawn! for CPU-bound tasks, creates a new thread for each
