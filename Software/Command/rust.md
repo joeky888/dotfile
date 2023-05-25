@@ -1,7 +1,8 @@
 Setup
 =====
 * $ app-fast -S rustup
-* $ rustup update beta # Channels can be "stable" "beta" "nightly"
+* $ rustup update stable # Channels can be "stable" "beta" "nightly"
+* $ cargo install --locked cargo-vet # cargo vet
 
 Setup for windows
 =====
