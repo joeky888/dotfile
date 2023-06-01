@@ -602,7 +602,7 @@ Fast Alternatives
 | Cassandra     | ScyllaDB                      |
 | Kafka         | Redpanda                      |
 | Elasticsearch | Clickhouse                    |
- |WebSockets||
+| WebSockets    | KCP/Webtransport              |
 
 Experience
 =====
