@@ -593,6 +593,17 @@ Ideas to be done
   * Decimal/BigInt precision
 * Rewrite GameMode in rust and support Windows/Linux
 
+Fast Alternatives
+=====
+| Old           | New                           |
+| ------------- | ----------------------------- |
+| PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |
+| Redis         | KeyDB/DragonflyDB             |
+| Cassandra     | ScyllaDB                      |
+| Kafka         | Redpanda                      |
+| Elasticsearch | Clickhouse                    |
+ |WebSockets||
+
 Experience
 =====
 | Tool            | Year        |
