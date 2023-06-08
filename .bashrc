@@ -389,6 +389,9 @@ upgradeConda() {
   [ $(command -v conda) ] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
 }
 upgradePip() { pip3 install --upgrade pip setuptools && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && pip3 install --upgrade https://github.com/requests/requests/archive/main.zip ;}
+dnslookup-google() { for rrtype in A AAAA CNAME HTTPS; do RRTYPE=$rrtype dnslookup $1 https://dns.google/dns-query | sed -e 's/^;; opcode: QUERY, status: //' -e 's/, id: .*$//' -e 's/^dnslookup.*//' -e 's/^;; flags.*//' -e 's/^;; .* SECTION://' -e '/^$/d' ; done }
+dnslookup-cloudflare() { for rrtype in A AAAA CNAME HTTPS; do RRTYPE=$rrtype dnslookup $1 https://cloudflare-dns.com/dns-query | sed -e 's/^;; opcode: QUERY, status: //' -e 's/, id: .*$//' -e 's/^dnslookup.*//' -e 's/^;; flags.*//' -e 's/^;; .* SECTION://' -e '/^$/d'; done }
+dnslookup-adguard() { for rrtype in A AAAA CNAME HTTPS; do RRTYPE=$rrtype dnslookup $1 https://dns.adguard.com/dns-query | sed -e 's/^;; opcode: QUERY, status: //' -e 's/, id: .*$//' -e 's/^dnslookup.*//' -e 's/^;; flags.*//' -e 's/^;; .* SECTION://' -e '/^$/d'; done }
 upgradeDotfile() {
   [ -d ~/dotfile ] || git clone --depth 1 git@github.com:joeky888/dotfile.git ~/dotfile
   git -C ~/dotfile pull
