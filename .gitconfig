@@ -84,3 +84,5 @@ echohl None ' -
 	parallel = 8
 [submodule]
 	fetchJobs = 8
+[branch]
+	autosetuprebase = always
