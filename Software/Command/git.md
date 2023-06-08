@@ -39,6 +39,10 @@ fetch = +refs/heads/*:refs/remotes/origin/*
 * Or
 * $ git fetch --all
 
+Merge a branch
+=====
+* $ git rebase --merge master # Merge master changes into current branch
+
 Upgrade a forked project
 =====
 * $ git remote add author https://github.com/ohmyzsh/ohmyzsh.git
