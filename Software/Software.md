@@ -603,6 +603,7 @@ Fast Alternatives
 | Kafka         | Redpanda                      |
 | Elasticsearch | Clickhouse                    |
 | WebSockets    | KCP/Webtransport              |
+| Wordpress     | Hugo/Lemmy                    |
 
 Experience
 =====
