@@ -538,6 +538,9 @@ Ideas to be done
     * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
   * Oniguruma webassembly regex engine, maybe build with zig cc
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)/bun
+* A Wordpress clone
+* A Reddit clone
+* A 4chan clone
 * Webassembly + Web Workers multiple thread downloader chrome extension
   * Comlink
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
