@@ -538,6 +538,7 @@ Ideas to be done
     * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
   * Oniguruma webassembly regex engine, maybe build with zig cc
 * Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)/bun
+* Kubernetes new logging stack using Vector.dev + Clickhouse + TTL expired data
 * A Wordpress clone
 * A Reddit clone
 * A 4chan clone
