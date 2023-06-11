@@ -338,6 +338,7 @@ alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
 alias mpv-1080-proxy="mpv --stream-lavf-o-append=http_proxy=proxy.uku.im:443 --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-audio="mpv --no-video --keep-open=no --input-terminal=yes $PLAYER_ARGUMENTS"
+alias mpv-boost="mpv --video-sync=display-resample-desync --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS" # Drop frames when video is accelerated, useful for 4k videos
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
