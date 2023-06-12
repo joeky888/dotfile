@@ -37,6 +37,7 @@ Extension
 * Set Character Encoding
 * User-Agent Switcher for Chrome by Google
 * Remove Google Redirection
+* Load Lazyload Images
 * Wappalyzer
 * bypass-paywalls-chrome
 * Get CRX
