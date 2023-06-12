@@ -606,7 +606,7 @@ Fast Alternatives
 | Redis         | KeyDB/DragonflyDB             |
 | Cassandra     | ScyllaDB                      |
 | Kafka         | Redpanda                      |
-| Elasticsearch | Clickhouse                    |
+| Elasticsearch | Clickhouse/OpenObserve        |
 | WebSockets    | KCP/Webtransport              |
 | Wordpress     | Hugo/Lemmy                    |
 
