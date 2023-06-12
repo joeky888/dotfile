@@ -609,6 +609,7 @@ Fast Alternatives
 | Elasticsearch | Clickhouse/OpenObserve        |
 | WebSockets    | KCP/Webtransport              |
 | Wordpress     | Hugo/Lemmy                    |
+| Hey           | Oha/Wrk                       |
 
 Experience
 =====
