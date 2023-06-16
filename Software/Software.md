@@ -158,7 +158,7 @@ Windows XP
 * Sumatra PDF
 * Greenshot
 * Rime input method
-* Yahoo KeyKey
+* Yahoo KeyKey + 詞音加強版
 * Sogou input (zhuyin/pinyin)
 * WPS office
 * VLC
