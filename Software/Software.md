@@ -598,18 +598,18 @@ Ideas to be done
   * Decimal/BigInt precision
 * Rewrite GameMode in rust and support Windows/Linux
 
-Fast Alternatives
+Fast or lightweight or clustering Alternatives
 =====
-| Old           | New                           |
-| ------------- | ----------------------------- |
-| PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |
-| Redis         | KeyDB/DragonflyDB             |
-| Cassandra     | ScyllaDB                      |
-| Kafka         | Redpanda                      |
-| Elasticsearch | Clickhouse/OpenObserve        |
-| WebSockets    | KCP/Webtransport              |
-| Wordpress     | Hugo/Lemmy                    |
-| Hey           | Oha/Wrk                       |
+| Old           | New                           | Notes                                                         |
+| ------------- | ----------------------------- | ------------------------------------------------------------- |
+| PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |                                                               |
+| Redis         | KeyDB/DragonflyDB             |                                                               |
+| Cassandra     | ScyllaDB                      |                                                               |
+| Kafka         | Redpanda/Nats                 | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
+| Elasticsearch | Clickhouse/OpenObserve        | Log, Cold data (with zstd compression)                        |
+| WebSockets    | KCP/Webtransport              |                                                               |
+| Wordpress     | Hugo/Lemmy                    |                                                               |
+| Hey           | Oha/Wrk                       |                                                               |
 
 Experience
 =====
