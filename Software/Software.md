@@ -607,6 +607,7 @@ Fast or lightweight or clustering Alternatives
 | Cassandra     | ScyllaDB                      |                                                               |
 | Kafka         | Redpanda/Nats                 | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
 | Elasticsearch | Clickhouse/OpenObserve        | Log, Cold data (with zstd compression)                        |
+| Clickhouse    | Databend                      | Databend is a low-cost Clickhouse-compatible alternative      |
 | WebSockets    | KCP/Webtransport              |                                                               |
 | Wordpress     | Hugo/Lemmy                    |                                                               |
 | Hey           | Oha/Wrk                       |                                                               |
