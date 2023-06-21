@@ -327,7 +327,6 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   # ~/dotfile/app-fast/app-fast install bash zsh vim neovim curl coreutils grep findutils file-formula gnu-sed make automake autoconf wget opencc ffmpeg tig tmux htop watch atool nmap mtr shellcheck
 
   #chsh -s $(command -v zsh) $(whoami)
-  #brew tap homebrew/cask
   #brew tap homebrew/cask-fonts
   #brew tap homebrew/cask-versions
   #brew tap beeftornado/rmtree
