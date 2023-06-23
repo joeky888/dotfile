@@ -604,7 +604,7 @@ Fast or lightweight or clustering Alternatives
 | ------------- | ----------------------------- | ------------------------------------------------------------- |
 | PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |                                                               |
 | Redis         | KeyDB/DragonflyDB             |                                                               |
-| Prometheus    | VictoriaMetrics               |                                                               |
+| Prometheus    | VictoriaMetrics               | Prometheus-compatible, zstd compressed                        |
 | Cassandra     | ScyllaDB                      |                                                               |
 | Kafka         | Redpanda/Nats                 | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
 | Elasticsearch | Clickhouse/OpenObserve        | Log, Cold data (with zstd compression)                        |
