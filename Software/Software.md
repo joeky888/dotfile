@@ -60,7 +60,8 @@ CLI
   * rtty - SSH alternative via browser https://github.com/zhaojh329/rtty
 * Rust
   * websocat - cli websocket client
-  * rewrk - wrk-like http/h2 benchmark tool
+  * rewrk - wrk-like http/h2 benchmarking tool
+  * oha - hey-like http benchmarking tool
 * Nodejs
   * gtop
   * vtop
@@ -513,13 +514,18 @@ Ideas to be done
   * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * React native webrtc + webtorrent + trackerslist + typescript -> A new torrent client
+  * Gopeed already did this using flutter and go
   * ProGuard - Java code obfuscator
   * Enable hermes
   * Ant design/Material UI
   * rn-nodeify
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
+* React native load testing app
+  * Sci-fi UI
+  * Using oha (https://github.com/hatoo/oha)
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
+  * Gopeed has already done it
 * New message queue in rust + linux5.1 io-uring + reuseport and compatible with nats
   * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
   * monoio https://github.com/bytedance/monoio
