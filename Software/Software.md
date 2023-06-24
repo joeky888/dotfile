@@ -617,7 +617,8 @@ Fast or lightweight or clustering Alternatives
 | Clickhouse    | Databend                      | Databend is a low-cost Clickhouse-compatible alternative      |
 | WebSockets    | KCP/Webtransport              |                                                               |
 | Wordpress     | Hugo/Lemmy                    |                                                               |
-| Hey           | Oha/Wrk                       |                                                               |
+| Hey/Wrk       | Oha/ReWrk                     |                                                               |
+| Neofetch      | Fastfetch                     |                                                               |
 
 Experience
 =====
