@@ -524,6 +524,7 @@ Ideas to be done
 * React native load testing app
   * Sci-fi UI
   * Using oha (https://github.com/hatoo/oha)
+  * Wappalyzer-core to identify tech stack
 * Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
   * Gopeed has already done it
 * New message queue in rust + linux5.1 io-uring + reuseport and compatible with nats
