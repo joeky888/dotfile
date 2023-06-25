@@ -611,11 +611,13 @@ Fast or lightweight or clustering Alternatives
 | ------------- | ----------------------------- | ------------------------------------------------------------- |
 | PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |                                                               |
 | Redis         | KeyDB/DragonflyDB             |                                                               |
-| Prometheus    | VictoriaMetrics               | Prometheus-compatible, zstd compressed                        |
 | Cassandra     | ScyllaDB                      |                                                               |
 | Kafka         | Redpanda/Nats                 | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
 | Elasticsearch | Clickhouse/OpenObserve        | Log, Cold data (with zstd compression)                        |
 | Clickhouse    | Databend                      | Databend is a low-cost Clickhouse-compatible alternative      |
+| Fluent Bit    | Vector.dev                    |                                                               |
+| Node exporter | Vector.dev (Host metrics)     | Metrics collector                                             |
+| Prometheus    | VictoriaMetrics               | Prometheus-compatible, zstd compressed                        |
 | WebSockets    | KCP/Webtransport              |                                                               |
 | Wordpress     | Hugo/Lemmy                    |                                                               |
 | Hey/Wrk       | Oha/ReWrk                     |                                                               |
