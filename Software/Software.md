@@ -609,6 +609,7 @@ Fast or lightweight or clustering Alternatives
 =====
 | Old           | New                           | Notes                                                         |
 | ------------- | ----------------------------- | ------------------------------------------------------------- |
+| Kubernetes    | Nomad/K3S                     | Use case: Edge servers                                        |
 | PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |                                                               |
 | Redis         | KeyDB/DragonflyDB             |                                                               |
 | Cassandra     | ScyllaDB                      |                                                               |
