@@ -609,7 +609,7 @@ Fast or lightweight or clustering Alternatives
 =====
 | Old           | New                           | Notes                                                         |
 | ------------- | ----------------------------- | ------------------------------------------------------------- |
-| Kubernetes    | Nomad/K3S                     | Use case: Edge servers                                        |
+| Kubernetes    | Nomad/K3S                     | Nomad: Stateful, K3S: Stateless                               |
 | PostgreSQL    | TiDB/YugabyteDB/Tigerbeetledb |                                                               |
 | Redis         | KeyDB/DragonflyDB             |                                                               |
 | Cassandra     | ScyllaDB                      |                                                               |
