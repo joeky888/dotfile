@@ -340,14 +340,12 @@ iOS
 * feeder.co - RSS Feed Reader
 * brave
   * Setting -> Brave Shields and Privacy -> Private Browsing Only -> Check
+* iSH - Alpine Linux shell for iOS.
 * Cydia
   * NewTerm 2
-* iSH - https://github.com/tbodt/ish
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
 * Blokada - Ad block (Non-Free at this moment)
 * Adguard DNS
-* Slide - reddit client
-* 超級簽 - https://sapp.xin
 
 TinyOS - List of small OSes
 =====
