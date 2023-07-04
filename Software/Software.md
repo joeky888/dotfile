@@ -615,6 +615,7 @@ Fast or lightweight or clustering Alternatives
 | Kafka                 | Redpanda/Nats                        | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
 | Elasticsearch         | Clickhouse/OpenObserve               | Log, Cold data (with zstd compression)                        |
 | Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative      |
+| DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL         |
 | Fluent Bit            | Vector.dev                           |                                                               |
 | Node exporter         | Vector.dev (Host metrics)            | Metrics collector                                             |
 | Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                        |
