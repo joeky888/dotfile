@@ -611,7 +611,7 @@ Fast or lightweight or clustering Alternatives
 | Cloudflare/Cloudfront | Global Accelerator/Cloudflare Worker | Supports: tcp/udp, Multi-region LB                            |
 | PostgreSQL            | TiDB/YugabyteDB/Tigerbeetledb        |                                                               |
 | Redis                 | KeyDB/DragonflyDB                    |                                                               |
-| Cassandra             | ScyllaDB                             |                                                               |
+| Cassandra             | ScyllaDB                             | Cassandra-compatible, ZSTD, S3 backup                         |
 | Kafka                 | Redpanda/Nats                        | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
 | Elasticsearch         | Clickhouse/OpenObserve               | Log, Cold data (with zstd compression)                        |
 | Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative      |
