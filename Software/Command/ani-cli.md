@@ -4,7 +4,7 @@ Patch
 ```diff
  play_episode() {
      [ -z "$episode" ] && get_episode_url
-+    YTDLP_ARGS="--concurrent-fragments 16 --no-check-certificate --ignore-errors --downloader aria2c"
++    YTDLP_ARGS="--concurrent-fragments 16 --no-check-certificate --ignore-errors --downloader aria2c --no-cache-dir"
      case "$player_function" in
 +        yt-dlp) nohup sh -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}episode-${ep_no}-${mode}' -" >/dev/null 2>&1 & ;;
          debug) printf "All links:\n%s\nSelected link:\n%s\n" "$links" "$episode" ;;
