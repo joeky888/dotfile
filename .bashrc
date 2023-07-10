@@ -949,6 +949,7 @@ elif echo "" | grep --exclude=.cvs "" 2>/dev/null > /dev/null; then
 fi
 alias rg="rg --hidden --ignore-case --glob '!{$(echo $VCS_FOLDERS_MORE)}'"
 alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
+alias fuzzy='rg --line-number --with-filename . --color=always --smart-case --field-match-separator " " | fzf --ansi --preview "bat --color=always {1} --highlight-line {2}" --preview-window ~8,+{2}-5'
 
 hash mycli 2>/dev/null >/dev/null && alias mycli='LESS="-SRXF" mycli' # Disable word wrapping
 hash litecli 2>/dev/null >/dev/null && alias litecli='LESS="-SRXF" litecli' # Disable word wrapping

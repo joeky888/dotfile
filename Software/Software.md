@@ -605,24 +605,24 @@ Ideas to be done
 
 Fast or lightweight or clustering Alternatives
 =====
-| Old                   | New                                  | Notes                                                         |
-| --------------------- | ------------------------------------ | ------------------------------------------------------------- |
-| Kubernetes            | Nomad/K3S                            | Nomad: Stateful, K3S: Stateless                               |
-| Cloudflare/Cloudfront | Global Accelerator/Cloudflare Worker | Supports: tcp/udp, Multi-region LB                            |
-| PostgreSQL            | TiDB/YugabyteDB/Tigerbeetledb        |                                                               |
-| Redis                 | KeyDB/DragonflyDB                    |                                                               |
-| Cassandra             | ScyllaDB                             | Cassandra-compatible, ZSTD, S3 backup                         |
-| Kafka                 | Redpanda/Nats                        | Redpanda: Internet-facing, streaming / Nats: In-cluster, text |
-| Elasticsearch         | Clickhouse/OpenObserve               | Log, Cold data (with zstd compression)                        |
-| Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative      |
-| DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL         |
-| Fluent Bit            | Vector.dev                           |                                                               |
-| Node exporter         | Vector.dev (Host metrics)            | Metrics collector                                             |
-| Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                        |
-| WebSockets            | KCP/Webtransport                     |                                                               |
-| Wordpress             | Hugo/Lemmy                           |                                                               |
-| Hey/Wrk               | Oha/ReWrk                            |                                                               |
-| Neofetch              | Fastfetch                            |                                                               |
+| Old                   | New                                  | Notes                                                                       |
+| --------------------- | ------------------------------------ | --------------------------------------------------------------------------- |
+| Kubernetes            | Nomad/K3S                            | Nomad: Stateful, K3S: Stateless                                             |
+| Cloudflare/Cloudfront | Global Accelerator/Cloudflare Worker | Supports: tcp/udp, Multi-region LB                                          |
+| PostgreSQL            | TiDB/YugabyteDB/Tigerbeetledb        |                                                                             |
+| Redis                 | KeyDB/DragonflyDB                    |                                                                             |
+| Cassandra             | ScyllaDB                             | Cassandra-compatible, ZSTD, S3 backup                                       |
+| Kafka                 | Redpanda/Nats                        | Redpanda: Internet-facing, streaming and S3 backup / Nats: In-cluster, text |
+| Elasticsearch         | Clickhouse/OpenObserve               | Log, Cold data (with zstd compression)                                      |
+| Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative                    |
+| DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL                       |
+| Fluent Bit            | Vector.dev                           |                                                                             |
+| Node exporter         | Vector.dev (Host metrics)            | Metrics collector                                                           |
+| Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                                      |
+| WebSockets            | KCP/Webtransport                     |                                                                             |
+| Wordpress             | Hugo/Lemmy                           |                                                                             |
+| Hey/Wrk               | Oha/ReWrk                            |                                                                             |
+| Neofetch              | Fastfetch                            |                                                                             |
 
 Experience
 =====
