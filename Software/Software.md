@@ -617,6 +617,7 @@ Fast or lightweight or clustering Alternatives
 | Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative                    |
 | DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL                       |
 | Fluent Bit            | Vector.dev                           |                                                                             |
+| ElasticSearch/Loki    | VictoriaLogs                         |                                                                             |
 | Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                                      |
 | WebSockets            | KCP/Webtransport                     |                                                                             |
 | Wordpress             | Hugo/Lemmy                           |                                                                             |
