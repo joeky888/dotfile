@@ -618,6 +618,7 @@ Fast or lightweight or clustering Alternatives
 | DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL                       |
 | Fluent Bit            | Vector.dev                           |                                                                             |
 | ElasticSearch/Loki    | VictoriaLogs                         |                                                                             |
+| Linkerd2              | Cilium                               |                                                                             |
 | Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                                      |
 | WebSockets            | KCP/Webtransport                     |                                                                             |
 | Wordpress             | Hugo/Lemmy                           |                                                                             |
