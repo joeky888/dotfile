@@ -624,6 +624,7 @@ Fast or lightweight or clustering Alternatives
 | Wordpress             | Hugo/Lemmy                           |                                                                             |
 | Hey/Wrk               | Oha/ReWrk                            |                                                                             |
 | Neofetch              | Fastfetch                            |                                                                             |
+| Lua                   | Wren(C), Cyber(Zig)                  |                                                                             |
 
 Experience
 =====
