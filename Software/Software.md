@@ -625,7 +625,7 @@ Fast or lightweight or clustering Alternatives
 | Hey/Wrk               | Oha/ReWrk                            |                                                                             |
 | Neofetch              | Fastfetch                            |                                                                             |
 | Lua                   | Wren(C), Cyber(Zig)                  |                                                                             |
-| Webpack               | Turbopack, Rspack                    |                                                                             |
+| Webpack               | Turbopack, Vite, Rspack              |                                                                             |
 
 Experience
 =====
