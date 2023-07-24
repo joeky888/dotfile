@@ -613,13 +613,13 @@ Fast or lightweight or clustering Alternatives
 | Redis                 | KeyDB/DragonflyDB                    |                                                                             |
 | Cassandra             | ScyllaDB                             | Cassandra-compatible, ZSTD, S3 backup                                       |
 | Kafka                 | Redpanda/Nats                        | Redpanda: Internet-facing, streaming and S3 backup / Nats: In-cluster, text |
-| Elasticsearch         | Clickhouse/OpenObserve               | Log, Cold data (with zstd compression)                                      |
+| Elasticsearch         | Clickhouse/OpenObserve/GreptimeDB    | Log, Cold data (with zstd compression)                                      |
 | Clickhouse            | Databend                             | Databend is a low-cost Clickhouse-compatible alternative                    |
 | DGraph                | SurrealDB                            | For Recommandation engine, Social Graph using GraphQL                       |
 | Fluent Bit            | Vector.dev                           |                                                                             |
 | ElasticSearch/Loki    | VictoriaLogs                         |                                                                             |
 | Linkerd2              | Cilium                               |                                                                             |
-| Prometheus            | VictoriaMetrics                      | Prometheus-compatible, zstd compressed                                      |
+| Prometheus            | VictoriaMetrics/GreptimeDB           | Prometheus-compatible, zstd compressed                                      |
 | WebSockets            | KCP/Webtransport                     |                                                                             |
 | Wordpress             | Hugo/Lemmy                           |                                                                             |
 | Hey/Wrk               | Oha/ReWrk                            |                                                                             |
