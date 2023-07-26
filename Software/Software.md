@@ -485,7 +485,6 @@ Ideas to be done
 * Webassembly m3u8 downloader chrome extension
 * Flutter/Dart kcp implementation
 * OBS studio alternative for android/ios
-* Webrtc data channel inside webassembly inside web workers
 * React Native Video player as a mpv alternative for mobile
   * libvlc as kernel
   * Oniguruma regex engine for parsing website, maybe build with zig cc
@@ -498,7 +497,9 @@ Ideas to be done
 * A central eks/gke/aks + Cassandra with multiple edge k3s + ScyllaDB clusters management
 * Pure js cluster with bun as http/ws servers and deno as backend web workers
 * Rewrite dbeaver in rust
-  * Godot frontend (Low processor mode) and rust backend
+  * Godot frontend (Low processor mode)
+  * Cocos Engine frontend
+  * rust backend
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
   * Using grafana/k6 to benchmark them
 * Audacity/OBS noice reduction + GPU acceleration
@@ -577,16 +578,21 @@ Ideas to be done
   * Each webassembly code runs in a separated web worker
     * Frontend + http - Main thread
     * Websocket - wasm in a web worker
-    * Webrtc - wasm in another web worker
+    * Webrtc
   * https://github.com/helloh2o/lucky (Server-Client implementation)
   * https://github.com/smallnest/rpcx (Server-Server implementation)
   * Important & Realtime -> Websocket + CDN + Protobuffers (protobuf lite/light)
   * Important & Non-Realtime -> API
   * Not important & Realtime -> WebRTC(libdatachannel(ordered/unordered)) P2P + Raft + Protobuffers (protobuf lite/light) (e.g. syncing all players corordenates and animations and cheating detection)
   * Gamepad support
+* Webrtc for Cocos Engine
+  * libdatachannel (C++)
+  * pion/datachannel (Go, need ffi)
+  * React Native Webrtc (Mobile)
+  * Flutter Webrtc (Mobile and Desktop)
 * 3D air combat game
   * Rust
-  * Godot/O3DE(Open 3D Engine)
+  * Cocos/Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
   * Simple state machine built-in
