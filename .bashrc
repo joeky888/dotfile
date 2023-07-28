@@ -598,7 +598,7 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
   autoload bashcompinit && bashcompinit
   autoload -U add-zsh-hook
-  [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check` | tr -d '\r'"
+  # [ $(command -v pip) ] && eval "`pip completion --zsh --disable-pip-version-check` | tr -d '\r'"
   if (( $EUID != 0 )); then
     export MAIN_THEME='green'
   else
@@ -788,7 +788,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
       source $f
     done
   fi
-  [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check` | tr -d '\r'"
+  # [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check` | tr -d '\r'"
   [ $(command -v kubectl) ] && source <(kubectl completion bash)
   [ $(command -v helm) ] && source <(helm completion bash 2>/dev/null)
   [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
