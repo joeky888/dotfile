@@ -61,6 +61,7 @@ scoop config aria2-options "--continue=true --timeout=12 --connect-timeout=12 --
 scoop bucket add nerd-fonts
 scoop install CascadiaCode-NF UbuntuMono-NF # Then set powershell to use this font
 scoop install twemoji-color-font # MPV uses this font
+scoop install Noto-CJK-Mega-OTC # Browsers font set to "Noto Sans CJK"
 scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs phantomjs miniconda3 wezterm rustup gitui blender
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
