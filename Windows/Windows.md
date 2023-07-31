@@ -110,15 +110,15 @@ $url = "https://raw.githubusercontent.com/rossy/mpv-install/master/mpv-install.b
 $path = "$env:TEMP\mpv-install.bat"
 (New-Object System.Net.WebClient).DownloadFile($url, $path)
 $url = "https://raw.githubusercontent.com/rossy/mpv-install/master/mpv-document.ico"
-$path = "$env:USERPROFILE\scoop\apps\mpv\current\mpv-document.ico"
+$path = "$env:USERPROFILE\scoop\apps\mpv-git\current\installer\mpv-document.ico"
 (New-Object System.Net.WebClient).DownloadFile($url, $path)
 
 Get-Content "$env:TEMP\mpv-install.bat" | Set-Content "$env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat"
-cmd.exe /c $env:USERPROFILE\scoop\apps\mpv\current\mpv-install.bat
+cmd.exe /c $env:USERPROFILE\scoop\apps\mpv-git\current\installer\mpv-install.bat
 
 $WshShell = New-Object -comObject WScript.Shell
 $Shortcut = $WshShell.CreateShortcut("$env:USERPROFILE\\Desktop\\mpv.lnk")
-$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv\\current\\mpv.exe"
+$Shortcut.TargetPath = "$env:USERPROFILE\\scoop\\apps\\mpv-git\\current\\installer\\mpv.exe"
 $Shortcut.Save()
 ```
 
