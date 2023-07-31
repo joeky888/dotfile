@@ -201,7 +201,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\wezterm\current\wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
   cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
