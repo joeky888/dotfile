@@ -360,7 +360,7 @@ elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
 #   sed -i 's/.*db_shell.*/db_shell: \/bin\/fish/' /etc/nsswitch.conf
 #   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
 
-  apt-cyg install openssh bind-utils bash-completion tig tar python3
+  apt-cyg install openssh bind-utils bash-completion tig tar python3 python3-pip
 #   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
 #   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
   InstallPIP
