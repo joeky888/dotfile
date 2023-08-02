@@ -1,7 +1,7 @@
 {
     "editor.fontSize": 20,
-    "editor.fontFamily": "'UbuntuMono Nerd Font', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', monospace",
-    "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font', 'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
+    "editor.fontFamily": "'UbuntuMono Nerd Font', 'Ubuntu Mono', 'Droid Sans Fallback', 'Noto Sans CJK TC', 'Consolas', 'NSimsun', monospace",
+    "terminal.integrated.fontFamily": "'UbuntuMono Nerd Font', 'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Noto Sans CJK TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "editor.wordWrap": "off",
     "editor.tabSize": 2,
     "editor.detectIndentation": true,
@@ -74,7 +74,10 @@
     "debug.allowBreakpointsEverywhere": true,
     "eslint.alwaysShowStatus": true,
     "eslint.rules.customizations": [
-        { "rule": "*", "severity": "error" },
+        {
+            "rule": "*",
+            "severity": "error"
+        },
     ],
     "eslint.codeActionsOnSave.mode": "all",
     "editor.codeActionsOnSave": {

@@ -86,3 +86,7 @@ echohl None ' -
 	fetchJobs = 8
 [branch]
 	autosetuprebase = always
+[credential "https://git.ttech.cc"]
+	provider = generic
+[url "git@git.ttech.cc:"]
+	insteadOf = https://git.ttech.cc/
