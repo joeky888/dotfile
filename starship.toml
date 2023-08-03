@@ -29,6 +29,8 @@ $line_break\
 $python\
 $character"""
 
+command_timeout = 5000
+
 # Disable the blank line at the start of the prompt
 # add_newline = true
 
