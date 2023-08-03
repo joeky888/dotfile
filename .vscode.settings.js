@@ -68,7 +68,7 @@
     "terminal.integrated.fontSize": 18,
     "workbench.editor.enablePreview": false,
     "editor.dragAndDrop": false,
-    "debug.console.fontFamily": "'UbuntuMono Nerd Font', 'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Sarasa Mono TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
+    "debug.console.fontFamily": "'UbuntuMono Nerd Font', 'Iosevka', 'Ubuntu Mono', 'Droid Sans Fallback', 'Noto Sans CJK TC', 'Consolas', 'NSimsun', 'Monaco', monospace",
     "debug.console.fontSize": 20,
     "debug.internalConsoleOptions": "openOnSessionStart",
     "debug.allowBreakpointsEverywhere": true,
