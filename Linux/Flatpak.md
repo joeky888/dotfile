@@ -7,6 +7,7 @@ flatpak install flathub io.dbeaver.DBeaverCommunity
 flatpak install flathub org.kde.krita
 flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.github.xournalpp.xournalpp
+flatpak install flathub com.jgraph.drawio.desktop
 flatpak install flathub com.skype.Client
 flatpak install flathub org.telegram.desktop && sudo flatpak override org.telegram.desktop --filesystem=xdg-desktop
 flatpak install flathub com.discordapp.Discord && sudo flatpak override --filesystem=home com.discordapp.Discord
