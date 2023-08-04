@@ -140,7 +140,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 app-fast -Syy --noconfirm --needed archlinuxcn-keyring
-app-fast -S ttf-wps-fonts ttf-iosevka ttf-ubuntu-mono-nerd ttf-twemoji-color
+yay -S ttf-wps-fonts ttf-iosevka ttf-ubuntu-mono-nerd ttf-twemoji-color
 ```
 
 Mhwd
