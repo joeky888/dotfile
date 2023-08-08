@@ -628,6 +628,7 @@ Fast or lightweight or clustering Alternatives
 | Prometheus            | VictoriaMetrics/GreptimeDB           | Prometheus-compatible, zstd compressed                                      |
 | WebSockets            | KCP/Webtransport                     |                                                                             |
 | Wordpress             | Hugo/Lemmy                           |                                                                             |
+| Firebase              | Supabase                             |                                                                             |
 | Hey/Wrk               | Oha/ReWrk                            |                                                                             |
 | Neofetch              | Fastfetch                            |                                                                             |
 | Lua                   | Wren(C), Cyber(Zig)                  |                                                                             |
