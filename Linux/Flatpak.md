@@ -43,6 +43,11 @@ Add program to startup
 =====
 * $ ln -sf /var/lib/flatpak/exports/share/applications/org.telegram.desktop.desktop ~/.config/autostart/
 
+Fix tofu font for an app, e.g com.google.Chrome
+=====
+* $ flatpak run --command=fc-cache com.google.Chrome -f -v
+* Shutdown all com.google.Chrome processes and restart it again
+
 Install steam and proton
 =====
 * $ flatpak install flathub com.valvesoftware.Steam
