@@ -518,6 +518,7 @@ Ideas to be done
   * Enable hermes
   * Ant design/Material UI
   * rn-nodeify
+* EKS on the new aws local zone ap-northeast-1-tpe-1a
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
 * Build a DBeaver alternative for android/ios using React Native/Flutter
 * React native load testing app
