@@ -9,7 +9,7 @@ flatpak install flathub org.qbittorrent.qBittorrent
 flatpak install flathub com.github.xournalpp.xournalpp
 flatpak install flathub com.jgraph.drawio.desktop
 flatpak install flathub com.skype.Client
-flatpak install flathub org.telegram.desktop && sudo flatpak override org.telegram.desktop --filesystem=xdg-desktop
+flatpak install flathub org.telegram.desktop && sudo flatpak override org.telegram.desktop --filesystem=home
 flatpak install flathub com.discordapp.Discord && sudo flatpak override --filesystem=home com.discordapp.Discord
 flatpak install flathub us.zoom.Zoom
 flatpak install flathub com.valvesoftware.Steam.CompatibilityTool.Proton
