@@ -53,6 +53,10 @@ AWS New iam user and groups
 * Add New group named "developer" and give it permission "AmazonEC2ContainerRegistryPowerUser"
 * Add New group named "S3andDynamoOnly" and give it permission "AmazonS3FullAccess" and "AmazonDynamoDBFullAccess"
 
+Low cost best practice
+=====
+* Cloudwatch -> Logs -> Log groups -> Set all "Retention"s to "1 week"
+
 CDN (AWS Cloudfront) for k8s ingress
 =====
 * Remove k8s https tls configs to make it http-only, because cloudfront goes https, otherwise will trigger error maximum redirects (20) exceeded
