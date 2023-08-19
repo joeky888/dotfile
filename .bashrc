@@ -331,21 +331,16 @@ alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestau
 alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-mute="mpv --mute=yes --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
-alias mpv-loop="mpv --loop --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
-alias mpv-1080-proxy="mpv --stream-lavf-o-append=http_proxy=proxy.uku.im:443 --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-audio="mpv --no-video --keep-open=no --input-terminal=yes $PLAYER_ARGUMENTS"
 alias mpv-boost="mpv --video-sync=display-resample-desync --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS" # Drop frames when video is accelerated, useful for 4k videos
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
-alias bypy='DOWNLOADER_ARGUMENTS="-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none" bypy -d --retry 1 --downloader aria2'
-alias annie="annie -C"
-alias annie-playlist="annie -p"
 alias wine-optimize="WINEDEBUG=-all wine"
 alias scp='scp -v'
 alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
@@ -374,12 +369,6 @@ alias python3-simple-http='python3 -m http.server'
 
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
-EncodingToEN() { export LANG="en_US.UTF-8" && export LC_CTYPE="en_US.UTF-8" && export LC_NUMERIC="en_US.UTF-8" && export LC_TIME="en_US.UTF-8" && export LC_COLLATE="en_US.UTF-8" && export LC_MONETARY="en_US.UTF-8" && export LC_MESSAGES="en_US.UTF-8" && export LC_ALL="en_US.UTF-8" ;}
-EncodingToBig5() { export LANG="zh_TW.Big5" && export LC_CTYPE="zh_TW.Big5" && export LC_NUMERIC="zh_TW.Big5" && export LC_TIME="zh_TW.Big5" && export LC_COLLATE="zh_TW.Big5" && export LC_MONETARY="zh_TW.Big5" && export LC_MESSAGES="zh_TW.Big5" && export LC_ALL="zh_TW.Big5" ;}
-EncodingToTwUtf8() { export LANG="zh_TW.UTF-8" && export LC_CTYPE="zh_TW.UTF-8" && export LC_NUMERIC="zh_TW.UTF-8" && export LC_TIME="zh_TW.UTF-8" && export LC_COLLATE="zh_TW.UTF-8" && export LC_MONETARY="zh_TW.UTF-8" && export LC_MESSAGES="zh_TW.UTF-8" && export LC_ALL="zh_TW.UTF-8" ;}
-EncodingToGBK() { export LANG="zh_CN.GBK" && export LC_CTYPE="zh_CN.GBK" && export LC_NUMERIC="zh_CN.GBK" && export LC_TIME="zh_CN.GBK" && export LC_COLLATE="zh_CN.GBK" && export LC_MONETARY="zh_CN.GBK" && export LC_MESSAGES="zh_CN.GBK" && export LC_ALL="zh_CN.GBK" ;}
-EncodingToChUtf8() { export LANG="zh_CN.UTF-8" && export LC_CTYPE="zh_CN.UTF-8" && export LC_NUMERIC="zh_CN.UTF-8" && export LC_TIME="zh_CN.UTF-8" && export LC_COLLATE="zh_CN.UTF-8" && export LC_MONETARY="zh_CN.UTF-8" && export LC_MESSAGES="zh_CN.UTF-8" && export LC_ALL="zh_CN.UTF-8" ;}
-killallStopped() { kill -9 $(jobs -ps | cut -d' ' -f4) ;}
 mpv-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | mpv --cache=yes --force-seekable=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
 iina-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-seekable=yes --mpv-force-media-title="$(yt-dlp --get-title $1)" ; }
 upgradeConda() {
