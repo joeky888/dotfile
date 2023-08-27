@@ -6,3 +6,4 @@ Electric arc lighter 電弧式打火機
 放大鏡眼鏡
 劍傘 武士傘
 彈弓射魚
+Starry sky galaxy nails 星空(鑽)銀河美甲
