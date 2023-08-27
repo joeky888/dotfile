@@ -28,12 +28,8 @@ Patch
 +    STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-la
 +
 +    if [[ "$episode" == *m3u8 ]]; then # m3u8
-+        echo streamlink
-+        echo $episode
 +        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title
 +    else
-+        echo yt-dlp
-+        echo $episode
 +        nohup sh -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}episode
 +    fi
 ```
