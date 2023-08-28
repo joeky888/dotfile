@@ -53,8 +53,8 @@
 	# filemode = false # Set to false on Windows
 	ignorecase = false
 	pager = vim +' \
-let gflag = &gdefault ? \"g\" : \"\" |\
-%sm/\\e.\\{-}m//e |\
+let gflag = &gdefault ? \"\" : \"g\" |\
+silent exe \"%sm/\\\\e.\\\\{-}m//e\" . gflag |\
 setlocal ft=git |\
 setlocal buftype=nofile |\
 exe \"g/^+++/d\" |\
