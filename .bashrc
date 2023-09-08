@@ -84,7 +84,7 @@ export PYTHONHTTPSVERIFY=0
 export PIP_USE_FEATURE=fast-deps # Enable pip parallel downloading
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
-export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --force-seekable=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
+export PLAYER_ARGUMENTS="--cache=yes --cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=10 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false" # aria2 & bypy
 export STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 export TORRENT_ARGUMENTS="--enable-dht=true --enable-dht6=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5"
@@ -369,8 +369,8 @@ alias python3-simple-http='python3 -m http.server'
 
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
-mpv-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | mpv --cache=yes --force-seekable=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
-iina-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-seekable=yes --mpv-force-media-title="$(yt-dlp --get-title $1)" ; }
+mpv-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
+iina-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --get-title $1)" ; }
 upgradeConda() {
   OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS
