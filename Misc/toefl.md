@@ -50,4 +50,6 @@ Vocabulary
 =====
 * approve 核准 vs. approve of 認同
 * behavior 行為(盡量用單數，不要加 s 就算是複數)
-*
+* Social norms 社會規範(非強制性)、Rule of law (沒有s) 法治(強制性)
+  * regulate one’s behavior/moderate one’s behavior (非強制)
+  * Restrict one’s behavior/Forbit one's behavior (強制)
