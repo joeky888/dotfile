@@ -40,10 +40,10 @@ conclude: 40
 | Definitions               | refer to, known as, means, called                                   |
 | Descriptions/Examples     | for example, for instance                                           |
 | Classification            | kind, type, group, places                                           |
-| Sequences                 | Dates, time, 1st 2nd 3nd, after, develop                            |
-| Compare and contrast      |                                                                     |
+| Sequences (有序的)        | Dates, time, 1st 2nd 3nd, after, develop                            |
+| Compare and contrast      | both, like, similar - however, on the other hand, whereas           |
 | Cause and Effect (因果句) | because, thus, therefore, result, impact, in order to, consequently |
-| Problem and Solution      |                                                                     |
+| Problem and Solution      | problem, issue, challenge, obstacle                                 |
 | Attitude and Opinion      | Should, ought to                                                    |
 
 Vocabulary
