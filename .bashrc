@@ -370,8 +370,8 @@ alias python3-simple-http='python3 -m http.server'
 
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
-mpv-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
-iina-fast() { command yt-dlp $DL_ARGUMENTS -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --get-title $1)" ; }
+mpv-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --get-title $1)" - ; }
+iina-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --get-title $1)" ; }
 upgradeConda() {
   OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS

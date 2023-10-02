@@ -1,5 +1,9 @@
 學號: 11111209019
 
+同義字網站
+=====
+* https://www.collinsdictionary.com/
+
 comparison and contrast 對比句
 problem and solution 問答句
 negative correlation 負相關
