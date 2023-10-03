@@ -492,12 +492,10 @@ Ideas to be done
   * Picture in picture
 * Rewrite dbeaver using native/game engine
   * Support android and ios
-* Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
-  * Using grafana/k6 to benchmark them
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
-  * Interface of fancy-regex/Oniguruma/PCRE2
+  * Interfacing fancy-regex/Oniguruma/PCRE2
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
