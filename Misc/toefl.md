@@ -82,3 +82,5 @@ Vocabulary
     * is deleterious to
     * is toxic to
 * overburdened 重擔(較輕微的說法) / overwhelmed 重擔(較嚴重的說法)
+* governments 政府(大部分的情況下都會加 s)
+* lay bare 顯現、揭露(一個存在已久但不為人知的事)
