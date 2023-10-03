@@ -26,7 +26,8 @@ introduction 30
 * Hook (optional) 廣告詞(例:你最近睡得好嗎)
 * Background (rephrasing the topic) -> 必須寫
   * 前後顛倒(A of B 改成 B of A) 不改原意
-  * Paraphrasing 釋義改寫
+  * [Macro 宏觀] Paraphrasing 釋義改寫 (找出句型 對比、時間、因果)
+  * [Micro 微觀] Collocation 改寫單詞與片語
 * Thesis statement (the main idea of the whole essay) -> 必須寫，有幾個 resason 接下來的 Body 就會有幾段
   * Topic + Position + Reason
   * Thesis statement (1): I totally / completely / partly agree with this idea for the following reasons
@@ -57,3 +58,27 @@ Vocabulary
 * Social norms 社會規範(非強制性)、Rule of law (沒有s) 法治(強制性)
   * regulate one’s behavior/moderate one’s behavior (非強制)
   * Restrict one’s behavior/Forbit one's behavior (強制)
+* To + [V]ing (注意不是用原型動詞)
+  * [N] is the key to [V]ing
+  * [N] is the solution to [V]ing
+  * [N] is the shortcut to [V]ing
+  * [N] is the path to [V]ing
+* 優點 缺點
+  * advantages and disadvantages
+    * benefits and drawbacks
+    * upsides and downsides
+    * strengths and weaknesses
+    * (the) positives and (the) negatives
+  * is advantageous to
+    * is beneficial to
+    * is conducive to
+      * … to one’s advantage
+      * … to one’s benefit
+  * is disadvantageous to
+    * is detrimental to
+      * … to one’s disadvantage
+      * … to one’s detriment
+    * is harmful to
+    * is deleterious to
+    * is toxic to
+* overburdened 重擔(較輕微的說法) / overwhelmed 重擔(較嚴重的說法)
