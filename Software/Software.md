@@ -479,57 +479,32 @@ Ideas to be done
   * https://github.com/facebook/sapling
 * VSCode with tree-sitter (vscode-anycode)
   * https://github.com/lapce/lapce
-* WebTransport (Websocket over QUIC) on Edge server
-* KeyDB vs DragonflyDB
 * Rust + Mold linker - https://github.com/rui314/mold
-* Webassembly m3u8 downloader chrome extension
-* Flutter/Dart kcp implementation
+* Webassembly + Web Workers m3u8 downloader chrome extension
+  * Comlink
 * OBS studio alternative for android/ios
 * React Native Video player as a mpv alternative for mobile
   * libvlc as kernel
-  * Oniguruma regex engine for parsing website, maybe build with zig cc
+  * Oniguruma regex engine for parsing website, maybe with zig cc
   * https://github.com/reason211/m3u8-downloader as m3u8 accelerated downloader
   * Top-of-the-screen secondary subtitle support
   * Danmaku/Comments mode switcher for live streaming comments
   * Picture in picture
-* React native udp + kcpjs
-* Kafka vs Redpanda
-* A central eks/gke/aks + Cassandra with multiple edge k3s + ScyllaDB clusters management
-* Pure js cluster with bun as http/ws servers and deno as backend web workers
-* Rewrite dbeaver in rust
-  * Godot frontend (Low processor mode)
-  * Cocos Engine frontend
-  * rust backend
+* Rewrite dbeaver using native/game engine
+  * Support android and ios
 * Benchmark websocket servers uWebsockets(nodejs), fasthttp/websocket(go), gobwas/ws(go), actix(rust), warp(rust), tungstenite(rust)
   * Using grafana/k6 to benchmark them
 * Audacity/OBS noice reduction + GPU acceleration
   * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
-  * Rewrite in rust
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
   * Interface of fancy-regex/Oniguruma/PCRE2
-* docker-compose mysql/postgres singel-master/multiple-slaves (Failover cluster)
-  * sentinel mode
-  * bitnami/mysql and bitnami/postgresql only support x64
-  * x64/arm64
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
-* React native webrtc + webtorrent + trackerslist + typescript -> A new torrent client
-  * Gopeed already did this using flutter and go
-  * ProGuard - Java code obfuscator
-  * Enable hermes
-  * Ant design/Material UI
-  * rn-nodeify
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
-* Build a DBeaver alternative for android/ios using React Native/Flutter
-* React native load testing app
+* Mobile http load testing app
   * Sci-fi UI
   * Using oha (https://github.com/hatoo/oha)
   * Wappalyzer-core to identify tech stack
-* Flutter + dio (http client in Dart) -> a multi-thread downloader and a torrent client
-  * Gopeed has already done it
-* New message queue in rust + linux5.1 io-uring + reuseport and compatible with nats
-  * Support tcp compatible mode and http/2 mode for mTLS (Service mesh)
-  * monoio https://github.com/bytedance/monoio
 * Swoole/Workerman/php-pm/roadrunner/reactphp for mediawiki
   * PSR-7
     * https://phabricator.wikimedia.org/T194397
@@ -540,35 +515,11 @@ Ideas to be done
   * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
   * GraphQL
   * Casbin
-  * Webrtc screen-sharing for debugging/presenting & audio noise reduction (Noise Cancellation)
   * Meilisearch
-  * dashmap (Rayon-rs) for faster broadcasting
-    * wasm compatible - https://github.com/xacrimon/dashmap/issues/173
-  * Oniguruma webassembly regex engine, maybe build with zig cc
-* Static file server benchmark: nginx/openlitespeed/fiber(go)/actix/axum(rust)/hyper-express(node)/bun
-* Kubernetes new logging stack using Vector.dev + Clickhouse + TTL expired data + sink to http alertmanager
 * A Wordpress clone
 * A Reddit clone
 * A 4chan clone
-* Webassembly + Web Workers multiple thread downloader chrome extension
-  * Comlink
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
-* Rust http/http2 minimalistic single-file http client library using hyper.rs with
-  * Custom dns nameservers
-  * "Accept-Encoding: gzip,deflate,br" support
-  * a request pool
-  * https://rustcc.cn/article?id=914538d3-2b8a-4c1b-a5ba-e16a40387a54
-* Rewrite aria2 in rust and support TUI/WebUI/Flutter
-  * ☆ Looks like someone did it in Go https://github.com/monkeyWie/gopeed
-  * Support http/2 (which aria2 doesn't support for accelerating)
-  * libp2p
-  * CLI/TUI/IMGUI
-  * Chrome extension
-    * https://github.com/GoogleChromeLabs/comlink
-  * Flutter Desktop/Mobile
-  * uri.txt multiple files in a list
-    * Like aria2c --input-file
-    * Support "dir=", "out=" and "md5=" section to verify downloading
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
