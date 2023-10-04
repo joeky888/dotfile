@@ -51,6 +51,17 @@ conclude: 40
 | Problem and Solution      | problem, issue, challenge, obstacle                                 |
 | Attitude and Opinion      | Should, ought to                                                    |
 
+Question Type for Listening (通常會照這個順序去問聽力問題)
+====
+1. Content (main topic)
+2. Purpose (reason for speaking)
+3. Detail (Specifc ideas)
+4. Function (Use of a Phase)
+5. Attitude ()
+6. Organization ()
+7. Connecting content ()
+8. Inference ()
+
 Vocabulary
 =====
 * approve 核准 vs. approve of 認同
