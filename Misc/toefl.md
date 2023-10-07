@@ -95,3 +95,16 @@ Vocabulary
 * overburdened 重擔(較輕微的說法) / overwhelmed 重擔(較嚴重的說法)
 * governments 政府(大部分的情況下都會加 s)
 * lay bare 顯現、揭露(一個存在已久但不為人知的事)
+* Quite a few = An abundance of 許多的
+* Reach a consensus 達成共識
+* The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
+* As far as I concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
+* As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
+* It's my impression that xxx 我的觀點是(適用第一段結尾)
+* They spare no effort 他們不遺餘力
+* having attained remarkable achievements 達成了不起的目標
+* Create moral dilemma 製造道德疑慮(比如人體器官複製)
+* May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
+* More and more High-profile buzzward 越來越多的備受矚目的新用詞
+* be terminally-ill 是病危的
+* To clonclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
