@@ -1109,6 +1109,29 @@ curlToYtDlp()
   done;
 }
 
+curlToMpv-fast()
+{
+  PARAMS=""
+
+  for PARAM in "$@"
+  do
+    PARAMS="${PARAMS} '${PARAM}'"
+  done
+
+  # Need to be updated
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--add-header/g" | sed "s/ '--compressed'//g" )
+
+  local count=0
+  $(exit 1)
+  while [ $? -ne 0 ]; do
+    sleep 1
+    echo "Retrying curlToMPV ... $((count++))"
+    local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
+    echo "$cmd"
+    eval "$cmd"
+  done;
+}
+
 curlToStreamlink-mpv()
 {
   PARAMS=""
