@@ -1125,7 +1125,7 @@ curlToMpv-fast()
   $(exit 1)
   while [ $? -ne 0 ]; do
     sleep 1
-    echo "Retrying curlToMPV ... $((count++))"
+    echo "Retrying curlToMpv-fast ... $((count++))"
     local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
     echo "$cmd"
     eval "$cmd"
