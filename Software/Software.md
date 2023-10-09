@@ -499,6 +499,7 @@ Ideas to be done
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
 * Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
+  * Rewrite yt-dlp using Vlang + PCRE + QuickJS
 * Mobile http load testing app
   * Sci-fi UI
   * Using oha (https://github.com/hatoo/oha)
