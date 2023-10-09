@@ -518,6 +518,10 @@ Ideas to be done
 * A Reddit clone
 * A 4chan clone
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
+* Rapid transaction system 大量訂單/搶票系統
+  * Frontend: Edge server
+  * Hot data: TiDB/Yugabyte
+  * Cold data: ReadySet + Clickhouse/Databend
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
