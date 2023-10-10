@@ -108,3 +108,4 @@ Vocabulary
 * More and more High-profile buzzward 越來越多的備受矚目的新用詞
 * be terminally-ill 是病危的
 * To clonclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
+* tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
