@@ -518,6 +518,7 @@ Ideas to be done
 * A Wordpress clone
 * A Reddit clone
 * A 4chan clone
+* Webmaster Tools (站長工具) using Edge servers
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Rapid transaction system 大量訂單/搶票系統
   * Frontend: Edge server
