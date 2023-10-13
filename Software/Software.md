@@ -521,8 +521,9 @@ Ideas to be done
 * Webmaster Tools (站長工具) using Edge servers
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Rapid transaction system 大量訂單/搶票系統
-  * Frontend: Edge server
-  * Hot data: TiDB/Yugabyte
+  * Frontend: Multi-region s3
+  * Backend: Edge server
+  * Hot data: TiDB/Yugabyte and Turso
   * Cold data: ReadySet + Clickhouse/Databend
 * KCP/Websocket server
   * Crossplay
