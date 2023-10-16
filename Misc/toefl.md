@@ -75,11 +75,12 @@ Vocabulary
   * [N] is the shortcut to [V]ing
   * [N] is the path to [V]ing
 * 優點 缺點
-  * advantages and disadvantages
+  * advantages and disadvantages (事務的優缺點)
     * benefits and drawbacks
     * upsides and downsides
     * strengths and weaknesses
     * (the) positives and (the) negatives
+    * merits and demerits (人的優缺點)
   * is advantageous to
     * is beneficial to
     * is conducive to
@@ -98,7 +99,7 @@ Vocabulary
 * Quite a few = An abundance of 許多的
 * Reach a consensus 達成共識
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
-* As far as I concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
+* As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
 * As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
 * It's my impression that xxx 我的觀點是(適用第一段結尾)
 * They spare no effort 他們不遺餘力
@@ -109,3 +110,24 @@ Vocabulary
 * be terminally-ill 是病危的
 * To clonclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
+* In a sense of (N) 從..的觀點來看 (適合句首)
+* It seems to me that 從我的的觀點來看 (適合句首)
+* [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
+
+九大行星
+
+| 水星    | 金星  | 地球  | 火星   | 木星    | 土星   | 天王星 | 海王星  | 冥王星   |
+| ------- |
+| Mercury | Venus | Earth | Mars   | Jupiter | Saturn | Uranus | Neptune | Pluto    |
+| My      | Very  | Easy  | Method | Just    | Speeds | Up     | Naming  | Planets. |
+
+註: 火星跟木星之間的軌道上有 Asteroid belt (主小行星帶)
+
+
+歸納法 Organization
+====
+* Introduction
+* Body
+  * Concept 1 pro and cons
+  * Concept 2 pro and cons
+* Conclusion
