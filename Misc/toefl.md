@@ -3,6 +3,7 @@
 同義字網站
 =====
 * https://www.collinsdictionary.com/
+* https://ozdic.com/
 
 comparison and contrast 對比句
 problem and solution 問答句
@@ -69,7 +70,8 @@ Vocabulary
 * Social norms 社會規範(非強制性)、Rule of law (沒有s) 法治(強制性)
   * regulate one’s behavior/moderate one’s behavior (非強制)
   * Restrict one’s behavior/Forbit one's behavior (強制)
-* To + [V]ing (注意不是用原型動詞)
+* pandemic 全球傳染病 / epidemic 國內大地區傳染病(如腸病毒) / endemic 國內小地方傳染病(如禽流感，這詞較少使用)
+* [N] is the sth To + [V]ing (注意不是用原型動詞)
   * [N] is the key to [V]ing
   * [N] is the solution to [V]ing
   * [N] is the shortcut to [V]ing
@@ -94,9 +96,43 @@ Vocabulary
     * is deleterious to
     * is toxic to
 * overburdened 重擔(較輕微的說法) / overwhelmed 重擔(較嚴重的說法)
+* Obesity is closely associated with tax
+* A is closely connected with/to B A與B相互相關
+  * A is closely related with/to B A與B相互相關
+  * A is closely tied to B A與B相互相關
+  * A is closely associated with B A與B相互相關
+  * A and B are closely intertwined A與B相互相關、互相糾纏 (可能是具體的，也可能是譬喻)
+  * A got entangled in B A被B糾纏 (可能是具體的，也可能是譬喻)
+  * A is inextricably entwined with B A被B高度糾纏 (可能是具體的，也可能是譬喻)
+  * A be/become mired in B A身陷B情況 (可能是具體的，也可能是譬喻)
+* 價格上升下降
+  * 上升
+    * Price rose sharply 價格飛漲 (有點譬喻感的形容)
+    * Price rose steeply 價格飛漲 (有點譬喻感的形容)
+    * rose noticeably
+    * rose considerably
+    * rose substantially
+    * rose significantly
+    * rose drastically
+    * rose dramatically
+  * 下降
+    * stock plummeted
+    * stock tumbled
+* 課稅的說法
+  * charge (someone) a health tax on something
+  * introduce a health tax on junk food
+  * impose a health tax on junk food
+  * levy a health tax on junk food
+  * put a health tax on junk food
+  * place a health tax on junk food
+* in curbing the spread of N 遏止xx的成長
 * governments 政府(大部分的情況下都會加 s)
-* lay bare 顯現、揭露(一個存在已久但不為人知的事)
+* allowances [n.] (非政府的 旅遊 生活)定期補貼金 零用錢 / subsidy [n.可數] (政府的)補助金;津貼 / reimbursement [n.不可數] 報銷;退款
+* lay bare the details of 顯現、揭露細節(一個存在已久但不為人知的事)
+* unveil = roll out = announce [a plan] 揭露一個(新)計劃
 * Quite a few = An abundance of 許多的
+* the state and the individual 國家與個人 (不加s的時候 指的是 個人 這個群體，類似的用法有 the rich, the poor, the underprivileged, the disadvantaged)
+  * The individuals are taxed on the amount of junk food (這時候的 individuals 指的是個人)
 * Reach a consensus 達成共識
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
 * As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
@@ -108,11 +144,30 @@ Vocabulary
 * May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
 * More and more High-profile buzzward 越來越多的備受矚目的新用詞
 * be terminally-ill 是病危的
-* To clonclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
+* To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
 * In a sense of (N) 從..的觀點來看 (適合句首)
 * It seems to me that 從我的的觀點來看 (適合句首)
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
+* nip [N] in the bud 對 xx 防患於未然
+* In the short term, ... / In the long term, ... 適合舉例 Body 1 跟 Body 2 的開頭
+* ; (Semicolon) 分號 [用法同 , so 或 , and] 例 She broke her leg; she didn’t join the match. (=She broke her leg, so she didn’t join the match.)
+* the spread of disease(s) 疾病散佈寫法，注意 spread 不可數
+  * the spread of infection
+  * the spread of virus
+  * the spread of viral infection
+* A 優先於 B 的寫法
+  * prioritize
+    * prioritize A over B
+    * choose A over B
+    * pick A over B
+  * priority
+    * A is one’s top priority
+    * A takes/has priority over B
+  * precedence
+    * A takes precedence over B
+    * A should be given precedence.
+
 
 九大行星
 
