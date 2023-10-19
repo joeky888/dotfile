@@ -195,7 +195,7 @@ Android
 * Settings
   * Display > Dark theme > Pure black > On
   * Mobile data 4G LTE -> Access Point Names (APN) -> Choose default ISP -> APN protocol -> IPv4/IPv6
-  * Deverloper options
+  * Developer options
     * Advanced restart -> Check
     * Debugging -> Android debugging -> Check
     * Networking -> WiFi scan throttling -> Uncheck
