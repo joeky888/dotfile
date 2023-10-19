@@ -302,21 +302,8 @@ Android
   * ScreenCam
   * Simple Gallery
   * Coffee - Make the screen stay awake
-  * Slide for Reddit - offline reddit
-    * Settings -> General -> Sorting -> Top -> 24hrs
-    * popular
-    * LifeProTips
-    * golang
-    * rust
-    * `rust_gamedev`
-    * reactnative
-    * flutterdev
-    * programming
-    * commandline
-    * devops
-    * ufos
-    * aliens
-    * Create a "Collection" and check everything above
+  * Reddit
+  * Feedly
 * Drop-down menu items
   * Screenshot
   * Flash light
