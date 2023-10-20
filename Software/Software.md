@@ -333,6 +333,7 @@ iOS
 * LibTerm - https://github.com/ColdGrub1384/LibTerm
 * Blokada - Ad block (Non-Free at this moment)
 * Adguard DNS
+* TablePlus
 
 TinyOS - List of small OSes
 =====
