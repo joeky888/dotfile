@@ -11,6 +11,10 @@ pacman-mirrors --api --set-branch stable --protocols https --continent
 proot-distro remove manjaro-aarch64 # Danger: Remove chroot
 ```
 
+ANI CLI
+=====
+* $ ANI_CLI_PLAYER=android_vlc bash ./ani-cli --dub one punch
+
 Install numpy matplotlib pandas jupyter
 =====
 * Install
@@ -28,3 +32,4 @@ import nose, nose2, numpy, scipy
 numpy.test('full')
 scipy.test('full')
 ```
+
