@@ -1,3 +1,7 @@
+Leetcode
+=====
+* 90% of the problems can be solved using hashmap and priority queue
+
 Questions to ask
 =====
 * [link](https://github.com/bater/reverse-interview-zh_tw)

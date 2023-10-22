@@ -167,7 +167,15 @@ Vocabulary
   * precedence
     * A takes precedence over B
     * A should be given precedence.
-
+* abolishment of death sentence 死刑廢除
+* some are [for|in favor of] it, others are against it 有人支持 有人不支持
+* two wrongs don't make a right 兩惡不能為善
+* these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
+* a chance to reform themselves 一個機會讓他們改過自新
+* may fall victim to death sentence 淪為死刑的犧牲品
+* based on the reasons above 基於上述理由
+* Happiness [lies in|consists in] contentment 幸福[在於]知足
+* victim's families / victim's dependants 受害者家屬
 
 九大行星
 
