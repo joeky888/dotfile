@@ -221,6 +221,16 @@ Android
     * User Agent Switcher (by Alexander Schlarb)
     * Absolute Enable Right Click & Copy
     * Search by Image - Reverse Image Search (by Armin Sebastian)
+  * about:config (About:config is available in the Beta and Nightly versions) https://www.reddit.com/r/firefox/comments/11shvus
+    * gfx.webrender.all: true
+    * gfx.webrender.software: false
+    * gfx.webrender.software.opengl: false
+    * gfx.webrender.fallback.software: false
+    * media.hardware-video-decoding.enabed: false (Deprecated)
+    * network.process.enabled: true
+    * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
+    * browser.cache.disk.meta_memory_limit: 1,000=1MB(Default: 256 = 250KB)
+    * browser.cache.disk.smart_size.enabled: false
 * Yandex
   * chrome://flags/#incognito-screenshot -> Enable (But doesn't work)
 * Yahoo News
