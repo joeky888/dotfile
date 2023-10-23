@@ -523,6 +523,9 @@ Ideas to be done
   * Backend: Edge server
   * Hot data: TiDB/Yugabyte and Turso
   * Cold data: ReadySet + Clickhouse/Databend
+* Nomad as CI/CD cluster, use drone and drone runner to trigger nomad cluster
+  * The cluster is mixed with windows, macOS and docker
+  * Try to deploy non-containered job like Cocos creator
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
