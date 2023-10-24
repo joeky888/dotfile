@@ -27,7 +27,7 @@ introduction 30
 * Hook (optional) 廣告詞(例:你最近睡得好嗎)
 * Background (rephrasing the topic) -> 必須寫
   * 前後顛倒(A of B 改成 B of A) 不改原意
-  * [Macro 宏觀] Paraphrasing 釋義改寫 (找出句型 對比、時間、因果)
+  * [Macro 宏觀] Paraphrasing 釋義改寫 (找出句型 對比、時間、因果、邏輯、Content knowledge內容知識)
   * [Micro 微觀] Collocation 改寫單詞與片語
 * Thesis statement (the main idea of the whole essay) -> 必須寫，有幾個 resason 接下來的 Body 就會有幾段
   * Topic + Position + Reason
@@ -126,12 +126,17 @@ Vocabulary
   * put a health tax on junk food
   * place a health tax on junk food
 * in curbing the spread of N 遏止xx的成長
-* governments 政府(大部分的情況下都會加 s)
+* governments 全世界的政府(大部分的寫作情況下，沒有指定國家都會加 s)
+  * The Russian government 俄羅斯聯邦政府 前面有國家或聯邦國 不用加 S，注意用 Russian 不是 Russia
+  * The U.S. government 美國政府 (不用加 S)
+  * The Soviet Union government 蘇聯政府 (不用加 S)
+  * The European Union 歐盟 (不用加 S)
+  * The United Nations 聯合國 (注意加 s)
 * allowances [n.] (非政府的 旅遊 生活)定期補貼金 零用錢 / subsidy [n.可數] (政府的)補助金;津貼 / reimbursement [n.不可數] 報銷;退款
 * lay bare the details of 顯現、揭露細節(一個存在已久但不為人知的事)
 * unveil = roll out = announce [a plan] 揭露一個(新)計劃
 * Quite a few = An abundance of 許多的
-* the state and the individual 國家與個人 (不加s的時候 指的是 個人 這個群體，類似的用法有 the rich, the poor, the underprivileged, the disadvantaged)
+* the state and the individual 國家與個人 (不加s的時候 指的是 個人 這個群體，類似的用法有 the rich, the poor(歧視 不要用這個詞), the underprivileged窮人, the disadvantaged窮人)
   * The individuals are taxed on the amount of junk food (這時候的 individuals 指的是個人)
 * Reach a consensus 達成共識
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
@@ -146,6 +151,7 @@ Vocabulary
 * be terminally-ill 是病危的
 * To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
+  * overcome a hurdle  / clear a hurdle  / get over a hurdle 克服一個障礙 (可數做 hurdles)
 * In a sense of (N) 從..的觀點來看 (適合句首)
 * It seems to me that 從我的的觀點來看 (適合句首)
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
@@ -176,15 +182,31 @@ Vocabulary
 * based on the reasons above 基於上述理由
 * Happiness [lies in|consists in] contentment 幸福[在於]知足
 * victim's families / victim's dependants 受害者家屬
+* People are fretting about/over XXX 人們對 XXX 杞人憂天 (非必要的憂心，如 Covid 疫苗副作用)
+* cases of [adverse reaction] to certain vaccines 特定疫苗的[不良反應]
+* symptoms 症狀(病人主觀敘述 頭痛、噁心、疲勞) vs indications 適應症(客觀可觀察到的症狀 高血壓、X光影像異常、體溫升高)
+* in the wild 在野外 vs. in the wilderness 在淨土(尚未受到大規模人類活動改造的自然地帶)
+* en dash vs em dash 短破折號 vs 長破折號
+* vague 模糊(多個意思) vs. ambiguous 多詞義(兩個意思以上)
+* reduction in + 量詞 / reduction of + 數字
+* school is becoming more demanding 課業越來越繁重 (正式用法)
+* on social media 在社交媒體上 (注意用 on)
+* 集合 廣義集合 特定集合
+  * in therapeutic settings (廣義集合)
+  * in therapeutic contexts (廣義集合)
+  * in the therapeutic setting (特定集合)
+  * in the therapeutic context (特定集合)
+* In this digital age 在這數位時代 (適合句子開頭)
+* despite the sanctions by G7 儘管被 G7 制裁 (適合句尾)
+* D-day is [upon us] 諾曼第登陸日[即將到來]
+  * The season of midterms is [upon us] 期中考[快到了]
 
-九大行星
+九大行星 (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 
 | 水星    | 金星  | 地球  | 火星   | 木星    | 土星   | 天王星 | 海王星  | 冥王星   |
 | ------- |
 | Mercury | Venus | Earth | Mars   | Jupiter | Saturn | Uranus | Neptune | Pluto    |
 | My      | Very  | Easy  | Method | Just    | Speeds | Up     | Naming  | Planets. |
-
-註: 火星跟木星之間的軌道上有 Asteroid belt (主小行星帶)
 
 
 歸納法 Organization
