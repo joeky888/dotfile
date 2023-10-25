@@ -22,7 +22,7 @@ Opera GX Only
 
 Extension
 =====
-* Adblock Plus
+* uBlock Origin Development Build (cgbcahbpdhpcegmbfconppldiemgcoii)
 * Dark Reader
 * Search by Image (by Google)
 * Not yet, AV1
