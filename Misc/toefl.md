@@ -184,7 +184,7 @@ Vocabulary
 * victim's families / victim's dependants 受害者家屬
 * People are fretting about/over XXX 人們對 XXX 杞人憂天 (非必要的憂心，如 Covid 疫苗副作用)
 * cases of [adverse reaction] to certain vaccines 特定疫苗的[不良反應]
-* symptoms 症狀(病人主觀敘述 頭痛、噁心、疲勞) vs indications 適應症(客觀可觀察到的症狀 高血壓、X光影像異常、體溫升高)
+* symptoms 症狀(病人主觀敘述 頭痛、噁心、疲勞) vs indications 適應症(又稱 Medical Signs 簡稱 Signs，客觀可觀察到的症狀 高血壓、X光影像異常、體溫升高)
 * in the wild 在野外 vs. in the wilderness 在淨土(尚未受到大規模人類活動改造的自然地帶)
 * en dash vs em dash 短破折號 vs 長破折號
 * vague 模糊(多個意思) vs. ambiguous 多詞義(兩個意思以上)
