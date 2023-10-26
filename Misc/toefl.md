@@ -200,6 +200,8 @@ Vocabulary
 * despite the sanctions by G7 儘管被 G7 制裁 (適合句尾)
 * D-day is [upon us] 諾曼第登陸日[即將到來]
   * The season of midterms is [upon us] 期中考[快到了]
+* That's just it! = No! 並非如此
+* specialize rd.專業化 vs. standardize pm.標準化 (兩個詞是反義詞)
 
 九大行星 (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 
