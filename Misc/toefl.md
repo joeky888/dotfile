@@ -67,7 +67,7 @@ Vocabulary
 =====
 * approve 核准 vs. approve of 認同
 * behavior 行為(盡量用單數，不要加 s 就算是複數)
-* Social norms 社會規範(非強制性)、Rule of law (沒有s) 法治(強制性)
+* Social norms 社會規範(非強制性)、Rule of law (沒有s) 法治(強制性)、Regulation (可數n.) 條例規章(不一定具法律強制性或政府規定 比如公司學校規定 因此範圍比 law 更廣，如 safety/health/traffic/fire/security regulations)
   * regulate one’s behavior/moderate one’s behavior (非強制)
   * Restrict one’s behavior/Forbit one's behavior (強制)
 * pandemic 全球傳染病 / epidemic 國內大地區傳染病(如腸病毒) / endemic 國內小地方傳染病(如禽流感，這詞較少使用)
@@ -138,12 +138,10 @@ Vocabulary
 * Quite a few = An abundance of 許多的
 * the state and the individual 國家與個人 (不加s的時候 指的是 個人 這個群體，類似的用法有 the rich, the poor(歧視 不要用這個詞), the underprivileged窮人, the disadvantaged窮人)
   * The individuals are taxed on the amount of junk food (這時候的 individuals 指的是個人)
-* Reach a consensus 達成共識
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
 * As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
 * As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
 * It's my impression that xxx 我的觀點是(適用第一段結尾)
-* They spare no effort 他們不遺餘力
 * having attained remarkable achievements 達成了不起的目標
 * Create moral dilemma 製造道德疑慮(比如人體器官複製)
 * May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
@@ -157,7 +155,6 @@ Vocabulary
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
 * nip [N] in the bud 對 xx 防患於未然
 * In the short term, ... / In the long term, ... 適合舉例 Body 1 跟 Body 2 的開頭
-* ; (Semicolon) 分號 [用法同 , so 或 , and] 例 She broke her leg; she didn’t join the match. (=She broke her leg, so she didn’t join the match.)
 * the spread of disease(s) 疾病散佈寫法，注意 spread 不可數
   * the spread of infection
   * the spread of virus
@@ -186,7 +183,6 @@ Vocabulary
 * cases of [adverse reaction] to certain vaccines 特定疫苗的[不良反應]
 * symptoms 症狀(病人主觀敘述 頭痛、噁心、疲勞) vs indications 適應症(又稱 Medical Signs 簡稱 Signs，客觀可觀察到的症狀 高血壓、X光影像異常、體溫升高)
 * in the wild 在野外 vs. in the wilderness 在淨土(尚未受到大規模人類活動改造的自然地帶)
-* en dash vs em dash 短破折號 vs 長破折號
 * vague 模糊(多個意思) vs. ambiguous 多詞義(兩個意思以上)
 * reduction in + 量詞 / reduction of + 數字
 * school is becoming more demanding 課業越來越繁重 (正式用法)
@@ -202,6 +198,10 @@ Vocabulary
   * The season of midterms is [upon us] 期中考[快到了]
 * That's just it! = No! 並非如此
 * specialize rd.專業化 vs. standardize pm.標準化 (兩個詞是反義詞)
+* Thank you for your message/inquiry/enquiry. 謝謝你的來信
+* 一段至少要有三個句子
+* I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
+* enter the workforce 進入職場
 
 九大行星 (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 
@@ -218,3 +218,26 @@ Vocabulary
   * Concept 1 pro and cons
   * Concept 2 pro and cons
 * Conclusion
+
+標點符號
+=====
+* ; (Semicolon) 分號 [用法同 , so 或 , and] 例 She broke her leg; she didn’t join the match. (=She broke her leg, so she didn’t join the match.)
+  * 有時候 However, 的前方會用分號 表示上句尚未結束，如 ....; However, ....
+* en dash vs em dash 短破折號 vs 長破折號
+
+Vocabularies 論述文常用單字片語
+=====
+* keen (adj.) 敏銳的
+* sanction (n.)制裁
+* jeopardize (vt.) 危急
+* rejuvenated (vi.) 恢復活力的
+* recession (n.) 經濟衰退時期 -- during the period of economic recession
+* proclaim (vt.) 宣佈
+* thought-provoking (adj.) 發人深思的 -- The following is my viewpoint on this thought-provoking issue.
+* spare no effort 不遺餘力 -- They spare no effort in perfecting cloning technology
+* reach a consensus 達成共識 -- They may never reach a consensus
+* malady n. (不可數) (身體的)大病、(社會的)弊病 -- the malady facing the education system 教育制度面臨的弊病
+* malaise n. (不可數) (身體的)小病、(社會的)不滿 -- They claim it is a symptom of a deeper and more general malaise in society 他們聲稱這表明了社會中人們更深層更廣泛的不
+* excruciating adj. 極痛苦的 -- from excruciating pain of losing their beloved family
+* dilemma n. (可數) 兩難困境 -- in a dilemma
+* ambivalent adj. 矛盾情緒的 -- He has ambivalent feelings towards his father
