@@ -147,6 +147,7 @@ Vocabulary
 * May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
 * More and more High-profile buzzward 越來越多的備受矚目的新用詞
 * be terminally-ill 是病危的
+* content (內容物不可數) vs contents (內容物可數)
 * To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
   * overcome a hurdle  / clear a hurdle  / get over a hurdle 克服一個障礙 (可數做 hurdles)
@@ -202,6 +203,26 @@ Vocabulary
 * 一段至少要有三個句子
 * I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
 * enter the workforce 進入職場
+* media / data / aganda 可以用單數 is/has 或複數 are/have ，一旦在文章開始選擇了單數就得一路寫單數到結束
+* Mounting/growing/increasing concerns of [A]s over [B]s A越來越擔心B (注意 concern + s)
+* shorts / reels 短影片
+* an internet troll 酸民
+  * leave insulting messages
+  * leave offensive comments
+  * to annoy someone
+    * The remark angered him. 評論激怒了他
+    * antagonize him. 激怒了(比 anger 更強的字眼)
+    * Remarks are full of vitriol. 評論都是尖酸刻薄的話 (vitriol 不可數名詞，屬於正規用法)
+    * virulent hatred 惡毒的厭惡
+    * virulent racism 惡毒的種族主義
+    * virulent racial discrimination 惡毒的種族歧視
+    * virulent racial bias 惡毒的種族偏頗
+  * get trolled on social media 被網路暴力
+  * be doxxed 被肉搜 (未經他人同意)
+* shape your views/thoughts/thinking/opinions (網路媒體會)塑造你的思維
+  * instill A into B 灌輸 A想法 進入 B人
+* some = possibly all 中文雖然翻譯叫一些，但有可能指的是全部
+
 
 九大行星 (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 
@@ -219,11 +240,33 @@ Vocabulary
   * Concept 2 pro and cons
 * Conclusion
 
-標點符號
+標點符號 (Punctuation)
 =====
 * ; (Semicolon) 分號 [用法同 , so 或 , and] 例 She broke her leg; she didn’t join the match. (=She broke her leg, so she didn’t join the match.)
   * 有時候 However, 的前方會用分號 表示上句尚未結束，如 ....; However, ....
-* en dash vs em dash 短破折號 vs 長破折號
+* Comma splice 以逗號把兩句或以上的獨立句子連在一起，這叫做 comma splice 是十分常見的錯誤，下列三種方式解決
+  * That agent has lied many times, people don't trust him. (x)
+    * 第一種方法是使用正確的標點符號，例如「;」分號（semi colon），把兩句連接。
+    * The agent has lied many times; people don't trust him. (o)
+  * Inflation is seriously affecting people's lives, the government has to tackle the problem as soon as possible. (x)
+    * 第二種方法是用「.」句號（full stop）把兩句句子分隔開
+    * Inflation is seriously affecting people's lives. The government has to tackle the problem as soon as possible. (o)
+  * I like the movie very much, the visual effects are really stunning.(x)
+    * 第三種方法是使用連接詞，例如簡單的and、but等等，或者用when、because等等更加清楚地說明兩句的關係。
+    * I like the movie very much because the visual effects are really stunning.
+* hyphen 連字號 vs. en dash 短破折號 v.s em dash 長破折號
+  * hyphen 用來連結單字
+    * a dog-friendly hotel
+    * closed-door meetings
+    * 數字 twenty-one, ninety-nine
+    * 2009-PRESENT
+  * en dash 常與 hypen 搞混，主要用來鏈接大寫單字跟小寫單字成組合單字
+    * Elvis Presley–style dance moves (這裡的 Elvis Presley 是人名)
+    * pre–World War II buildings
+  * em dashes 用來強調，跟逗號同義，通常強於逗號 但弱於分號。也可以用在未完的停頓句
+    * The new nurse—who was wearing the same purple scrubs as the old nurse—entered the room with a tray of Jello.
+    * I opened the door, and there she stood—my long lost sister.
+    * Wait! I forgot to tell you—
 
 Vocabularies 論述文常用單字片語
 =====
@@ -241,3 +284,6 @@ Vocabularies 論述文常用單字片語
 * excruciating adj. 極痛苦的 -- from excruciating pain of losing their beloved family
 * dilemma n. (可數) 兩難困境 -- in a dilemma
 * ambivalent adj. 矛盾情緒的 -- He has ambivalent feelings towards his father
+* discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
+* consent n. (不可數) 許可 (=permission) -- if your parents give their consent.
+* antagonize vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)

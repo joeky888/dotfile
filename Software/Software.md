@@ -344,6 +344,7 @@ iOS
 * Blokada - Ad block (Non-Free at this moment)
 * Adguard DNS
 * TablePlus
+* Yattee
 
 TinyOS - List of small OSes
 =====
