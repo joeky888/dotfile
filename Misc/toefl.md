@@ -224,13 +224,38 @@ Vocabulary
 * some = possibly all 中文雖然翻譯叫一些，但有可能指的是全部
 
 
-九大行星 (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
+天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
+航太學(工程) aeronautics
 
 | 水星    | 金星  | 地球  | 火星   | 木星    | 土星   | 天王星 | 海王星  | 冥王星   |
-| ------- |
+| ------- | ----- | ----- | ------ | ------- | ------ | ------ | ------- | -------- |
 | Mercury | Venus | Earth | Mars   | Jupiter | Saturn | Uranus | Neptune | Pluto    |
 | My      | Very  | Easy  | Method | Just    | Speeds | Up     | Naming  | Planets. |
 
+
+動物學 Zoology
+
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 靈長類  | 人類學       |
+| ------ | ------- | --------- | --------- | ------- | ------------ |
+| Mammal | Reptile | Amphibian | Arthropod | Primate | Anthropology |
+
+植物學 Botany
+
+| 播種   | 灌溉     | 施肥      |
+| ------ | -------- | --------- |
+| sowing | irrigate | fertilize |
+
+氣象學 meteorology
+
+| 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結         | 凝華(氣變冰) | 降雨/降冰雹   | 滲透         | 地表徑流                     | 冰雹 | 雪崩      |
+| ---------- | ------------------ | ----------- | ------------------ | ------------ | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
+| Atmosphere | hydrological cycle | Evaporation | Transpiration      | condensation | Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
+
+地質學 Geology
+
+| 化石   | 化石燃料    |
+| ------ | ----------- |
+| Fossil | Fossil fuel |
 
 歸納法 Organization
 ====
