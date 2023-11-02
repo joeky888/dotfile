@@ -243,10 +243,10 @@ Vocabulary
 標點符號 (Punctuation)
 =====
 * ; (Semicolon) 分號 [用法同 , so 或 , and] 例 She broke her leg; she didn’t join the match. (=She broke her leg, so she didn’t join the match.)
-  * 有時候 However, 的前方會用分號 表示上句尚未結束，如 ....; However, ....
+  * 有時候 However, 的前方會用分號 表示上句尚未結束，如 ....; however, ....
 * Comma splice 以逗號把兩句或以上的獨立句子連在一起，這叫做 comma splice 是十分常見的錯誤，下列三種方式解決
   * That agent has lied many times, people don't trust him. (x)
-    * 第一種方法是使用正確的標點符號，例如「;」分號（semi colon），把兩句連接。
+    * 第一種方法是使用正確的標點符號，例如「;」分號（semi colon），把兩句連接。注意分號後用小寫
     * The agent has lied many times; people don't trust him. (o)
   * Inflation is seriously affecting people's lives, the government has to tackle the problem as soon as possible. (x)
     * 第二種方法是用「.」句號（full stop）把兩句句子分隔開
