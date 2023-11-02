@@ -6,13 +6,13 @@ Code Design
 * Use Ternary Operator `? :` instead a single If-Else
 * Optimization
   * Compute elapsed time
-  * Use Map-Reduce (or other ways) if For-loop is slow
+  * 90% of the problems can be solved using hashmap and priority queue
   * Use Bitwise operations
     * `&` bitwise AND
     * `|` bitwise inclusive OR
     * `^` bitwise XOR (eXclusive OR)
-    * `<<`  left shift
-    * `>>`  right shift
+    * `<<` left shift
+    * `>>` right shift
     * `~` bitwise NOT
 
 Documentation tools
@@ -28,10 +28,7 @@ RX
 
 Javascript
 =====
-* d3.js
 * pixi.js - Fast WebGL d3.js replacement
-* Zepto.js - Lightweight jquery-like lib
-* vue.js
 * clipboard.js - Copy to clipboard
 * WebAssembly
 * Microlight.js - Global code highting
@@ -39,10 +36,6 @@ Javascript
 * micromodal.js - Tiny, dependency-free pop-up dialog
 * laxxx.js - 3KB alternative to anime.js Animation lib
 * Day.js - 2KB alternative to Moment.js parsing date time
-* Webp-hero - webp format polyfill
-* fetch
-  * github.com/github/fetch - window.fetch JavaScript polyfill (Frontend)
-  * github.com/bitinn/node-fetch - window.fetch for Node.js (Backend)
 * React/React Native
   * react-i18next - i18n for react and react-native
   * A real world example app
@@ -93,36 +86,15 @@ C and C++
 * Single file libs
   * `https://github.com/RandyGaul/tinyheaders`
   * `https://github.com/nothings/single_file_libs`
-* Web
-  * Crow - Micro web framework for C++ (BSD license)
 
 Python
 =====
 * PyCharm: IDE (Open source and free for both Personal and Commercial use)
-* colorama: Simple cross-platform colored terminal text
-  * `https://github.com/tartley/colorama`
-* urwid: Console interface
-  * Curses - standard python built-in lib
-  * urwid
-  * picotui - Minimal pure python lib without using ncurses, MicroPython supported
-* japronto - Asynchronous HTTP server for py >= 3.5, but written in C
+* socketify.py
 
 Go
 =====
-* Gin and Gorm
-  * https://github.com/gothinkster/golang-gin-realworld-example-app
-* fasthttp/fasthttprouter - Super fast for http(s) client and server
-* iris - Fatest web framework
-* algernon - Small self-contained pure-Go web server with Lua, Markdown, HTTP/2, QUIC, Redis and PostgreSQL support
-* json
-  * If code reflection is painful, just unmarsharl to string map
-```go
-var inInterface map[string]interface{}
-json.Unmarshal(jsonStr, &inInterface)
-```
-  * https://github.com/valyala/fastjson - Get and Set json value without code reflection
-  * github.com/buger/jsonparser - Get and Set json value without code reflection
-* pp - Colored pretty printer for Go sturct
+* goFiber and Gorm
 
 Rust
 =====
