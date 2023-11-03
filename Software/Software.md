@@ -422,7 +422,8 @@ Good Software Design
 * Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia/Fandom page for it
-* Community-driven Wikipedia-like site
+* Community-driven Wikipedia-like/Fandom-like site
+  * Use edge server (Like hono) and edge db (Like turso/supabase)
 * Send crashing log to server
 * Feedback button in-app
 * Easter eggs
