@@ -422,8 +422,6 @@ Good Software Design
 * Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
 * Create a Wikipedia/Fandom page for it
-* Community-driven Wikipedia-like/Fandom-like site
-  * Use edge server (Like hono) and edge db (Like turso/supabase)
 * Send crashing log to server
 * Feedback button in-app
 * Easter eggs
@@ -508,16 +506,12 @@ Ideas to be done
   * PSR-7
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
-* Backstage/CMS system
-  * Frontend: vite + esbuild + ant design/Material UI/tailwindcss + ssr(react-dom/server) + bun
-    * Frontend for mobile: preact + purecss + goober + Million.js + static file server without ssr
-  * Backend: Fiber(go http1.1) for HTTP and Actix/axum(rust http2) for Websockets (protobuf lite/light)
-  * GraphQL
-  * Casbin
-  * Meilisearch
 * A Wordpress clone
 * A Reddit clone
 * A 4chan clone
+* A zhihu clone
+* A Wikipedia/Fandom clone
+  * Use edge server (Like hono) and edge db (Like turso/supabase)
 * Webmaster Tools (站長工具) using Edge servers
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Rapid transaction system 大量訂單/搶票系統
