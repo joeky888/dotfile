@@ -514,6 +514,7 @@ Ideas to be done
   * Use edge server (Like hono) and edge db (Like turso/supabase)
 * Webmaster Tools (站長工具) using Edge servers
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
+* Wireshark/TermShark using ImGui/Nuklear
 * Rapid transaction system 大量訂單/搶票系統
   * Frontend: Multi-region s3
   * Backend: Edge server
