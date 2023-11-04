@@ -222,6 +222,7 @@ Vocabulary
 * shape your views/thoughts/thinking/opinions (網路媒體會)塑造你的思維
   * instill A into B 灌輸 A想法 進入 B人
 * some = possibly all 中文雖然翻譯叫一些，但有可能指的是全部
+* be going to 正要去(肯定會做) vs. will 將要去(不一定會做)
 
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
