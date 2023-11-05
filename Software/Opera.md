@@ -15,6 +15,7 @@ Setting
   * Fixed-width font -> Noto Sans Mono CJK TC
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 * Settings -> Enable DOH (DNS over https) and use Cloudlare DNS
+* Settings -> Enable Battery saver
 
 Opera GX Only
 =====
