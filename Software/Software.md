@@ -349,8 +349,8 @@ iOS
 TinyOS - List of small OSes
 =====
 * TinyXP - XP alternative
-* Tiny10 - Win10 alternative
-* Tiny11 - Win11 alternative
+* Tiny10 - Win10 alternative + massgrave scripts
+* Tiny11 - Win11 alternative + massgrave scripts
 * ReviOS - Win10/11 alternative
 * FydeOS - ChromeOS alternative
 
