@@ -255,6 +255,7 @@ alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --
 alias curl-status='curl -o /dev/null --fail -L -s -w "HTTP%{http_version}\nContent Type: %{content_type}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias rg="rg --hidden --ignore-case --glob '!{$VCS_FOLDERS_MORE}'"
 alias fd="fd --hidden --ignore-case --glob --exclude={$VCS_FOLDERS_MORE}"
+alias upgradeBashrc="curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc -o ~/.bashrc"
 alias upgradeFishrc="curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.config.fish > ~/.config/fish/config.fish"
 alias streamlink-mpv-termux="streamlink --loglevel debug --verbose-player --player 'am start -n is.xyz.mpv/.MPVActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best"
 alias streamlink-vlc-termux="streamlink --loglevel debug --verbose-player --player 'am start -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -a android.intent.action.VIEW -d' --player-http --stream-segment-threads 10 --title '{title}' --default-stream best"
