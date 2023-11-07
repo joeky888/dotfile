@@ -25,12 +25,14 @@ Conclude: 40
 introduction 30
 =====
 * Hook (optional) 廣告詞(例:你最近睡得好嗎)
-* Background (rephrasing the topic) -> 必須寫
+* Background (rephrasing the topic) -> 必須寫 (算是 Introduction)
   * 前後顛倒(A of B 改成 B of A) 不改原意
   * [Macro 宏觀] Paraphrasing 釋義改寫 (找出句型 對比、時間、因果、邏輯、Content knowledge內容知識)
   * [Micro 微觀] Collocation 改寫單詞與片語
-* Thesis statement (the main idea of the whole essay) -> 必須寫，有幾個 resason 接下來的 Body 就會有幾段
-  * Topic + Position + Reason
+  * cohesion 凝聚力，上句跟下句有共同重點
+* Thesis statement (the main idea of the whole essay) -> 必須寫，有幾個 reason 接下來的 Body 就會有幾段
+  * Topic + Position + Reasons -> 議論文的 thesis statement (不可以寫客觀事實，因為無法辯論/議論)
+    * 主題(例如 Technology) + 態度(Agree/Disagree/Increase/Decrease/is/isn't) + 原因(because 理由1, 理由2 ... 有幾個理由就幾段)
   * Thesis statement (1): I totally / completely / partly agree with this idea for the following reasons
   * Thesis statement (2): I completely agree / disagree with this, because ______, ______ and _____.
 
@@ -41,16 +43,16 @@ body 60-80 x 3
 conclude: 40
 =====
 
-| Sentence                  | Examples                                                            |
-| ------------------------- | ------------------------------------------------------------------- |
-| Definitions               | refer to, known as, means, called                                   |
-| Descriptions/Examples     | for example, for instance                                           |
-| Classification            | kind, type, group, places                                           |
-| Sequences (有序的)        | Dates, time, 1st 2nd 3nd, after, develop                            |
-| Compare and contrast      | both, like, similar - however, on the other hand, whereas           |
-| Cause and Effect (因果句) | because, thus, therefore, result, impact, in order to, consequently |
-| Problem and Solution      | problem, issue, challenge, obstacle                                 |
-| Attitude and Opinion      | Should, ought to                                                    |
+| Sentence                    | Examples                                                                     |
+| --------------------------- | ---------------------------------------------------------------------------- |
+| Definitions                 | refer to, known as, means, called                                            |
+| Descriptions/Examples       | for example, for instance                                                    |
+| Classification              | kind, type, group, places                                                    |
+| Sequences (有序的)          | Dates, time, 1st 2nd 3nd, after, develop                                     |
+| Compare and contrast 對比句 | but, Nevertheless, both, like, similar - however, on the other hand, whereas |
+| Cause and Effect (因果句)   | because, thus, therefore, result, impact, in order to, consequently          |
+| Problem and Solution        | problem, issue, challenge, obstacle                                          |
+| Attitude and Opinion        | Should, ought to                                                             |
 
 Question Type for Listening (通常會照這個順序去問聽力問題)
 ====
@@ -223,7 +225,10 @@ Vocabulary
   * instill A into B 灌輸 A想法 進入 B人
 * some = possibly all 中文雖然翻譯叫一些，但有可能指的是全部
 * be going to 正要去(肯定會做) vs. will 將要去(不一定會做)
-
+* whereby (學術英文常用)
+  * = by which 藉以
+  * = in which / with which 在…的情況下
+* hava a productive Saturday 有個很棒的星期六
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
