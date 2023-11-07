@@ -221,7 +221,7 @@ Android
     * User Agent Switcher (by Alexander Schlarb)
     * Absolute Enable Right Click & Copy
     * Search by Image - Reverse Image Search (by Armin Sebastian)
-  * about:config (About:config is available in the Beta and Nightly versions) https://www.reddit.com/r/firefox/comments/11shvus
+  * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
     * gfx.webrender.all: true
     * gfx.webrender.software: false
     * gfx.webrender.software.opengl: false
@@ -231,6 +231,13 @@ Android
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
     * browser.cache.disk.meta_memory_limit: 1,000=1MB(Default: 256 = 250KB)
     * browser.cache.disk.smart_size.enabled: false
+    * Enable DOH (https://www.reddit.com/r/firefox/comments/r8nc41)
+      * network.trr.mode: 2
+      * network.trr.uri: https://cloudflare-dns.com/dns-query
+      * network.trr.bootstrapAddress: https://cloudflare-dns.com/dns-query
+    * Faster networking
+      * network.http.max-connections: 1000
+      * network.http.max-persistent-connections-per-server: 16
 * Yandex
   * chrome://flags/#incognito-screenshot -> Enable (But doesn't work)
 * Yahoo News
