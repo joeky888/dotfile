@@ -234,7 +234,7 @@ Android
     * Enable DOH (https://www.reddit.com/r/firefox/comments/r8nc41)
       * network.trr.mode: 2
       * network.trr.uri: https://cloudflare-dns.com/dns-query
-      * network.trr.bootstrapAddress: https://cloudflare-dns.com/dns-query
+      * network.trr.bootstrapAddress: 8.8.8.8
     * Faster networking
       * network.http.max-connections: 1000
       * network.http.max-persistent-connections-per-server: 16
