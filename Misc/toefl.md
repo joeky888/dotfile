@@ -229,6 +229,7 @@ Vocabulary
   * = by which 藉以
   * = in which / with which 在…的情況下
 * hava a productive Saturday 有個很棒的星期六
+* It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
