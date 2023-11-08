@@ -275,7 +275,7 @@ Android
 * WPS office
 * FBReader
 * org.cwb Weather
-* feeder.co - RSS Feed Reader
+* feeder.co - Offline RSS Feed Reader
 * Advanced Download Manager
   * Settings -> Downloading
     * Downloading

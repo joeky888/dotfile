@@ -84,7 +84,6 @@ https://www.freebuf.com/feed
 https://www.infoq.cn/feed
 
 * English
-https://feeds.feedburner.com/d0od
 https://www.phoronix.com/rss.php
 https://feeds.feedburner.com/engadget
 https://feeds.feedburner.com/TechCrunch
