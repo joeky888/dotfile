@@ -232,6 +232,7 @@ set VCS_FOLDERS "**/.bzr/*,**/CVS/*,**/.git/*,**/.hg/*,**/.svn/*"
 set VCS_FOLDERS_MORE "$VCS_FOLDERS,**/vendor/*,**/node_modules/*,**/ohmyzsh/*,**/dist/*,**/bin/*"
 set NIXPKGS_ALLOW_UNFREE 1
 set PIP_USE_FEATURE "fast-deps" # Enable pip parallel downloading
+set STREAMLINK_ARGUMENTS "--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 
 # Faster navigating, overwrite oh-my-zsh settings
 alias ..='cd ..'
