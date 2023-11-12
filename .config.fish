@@ -288,9 +288,7 @@ function mpv-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
-function mpv-termux-streamlink-best
-  streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d' --title "{url}" --player-continuous-http --default-stream best
-end
+alias mpv-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d' --player-continuous-http --default-stream best"
 
 function vlc-termux-ytdlp
   # Ref: https://wiki.videolan.org/Android_Player_Intents/
@@ -301,9 +299,7 @@ function vlc-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
-function vlc-termux-streamlink-best
-  streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity' --title "{url}" --player-continuous-http --default-stream best
-end
+alias vlc-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity' --player-continuous-http --default-stream best"
 
 # Load Nix config
 # Set up the per-user profile.
