@@ -299,7 +299,7 @@ function vlc-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
-alias vlc-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'am start -W -S -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -a android.intent.action.VIEW -d' --player-continuous-http --default-stream best"
+alias vlc-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'bash -c "am start -W -S -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -a android.intent.action.VIEW -d"' --player-continuous-http --default-stream best"
 
 # Load Nix config
 # Set up the per-user profile.
