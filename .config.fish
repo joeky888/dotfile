@@ -279,21 +279,29 @@ function upgradePip
   pip3 install --upgrade https://github.com/requests/requests/archive/main.zip
 end
 
-function mpv-termux
+function mpv-termux-ytdlp
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
-function mpv-termux-audio
+function mpv-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
-function vlc-termux
+function mpv-termux-streamlink-best
+  streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d' --title "{url}" --player-continuous-http --default-stream best
+end
+
+function vlc-termux-ytdlp
   # Ref: https://wiki.videolan.org/Android_Player_Intents/
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
-function vlc-termux-audio
+function vlc-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
+end
+
+function vlc-termux-streamlink-best
+  streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity' --title "{url}" --player-continuous-http --default-stream best
 end
 
 # Load Nix config
