@@ -242,9 +242,9 @@ Vocabulary
 
 動物學 Zoology
 
-| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 靈長類  | 人類學       |
-| ------ | ------- | --------- | --------- | ------- | ------------ |
-| Mammal | Reptile | Amphibian | Arthropod | Primate | Anthropology |
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 靈長類  | 人類學       | 食草動物  | 食肉動物  | 軟體動物 | 甲殼動物   |
+| ------ | ------- | --------- | --------- | ------- | ------------ | --------- | --------- | -------- | ---------- |
+| Mammal | Reptile | Amphibian | Arthropod | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
 
 植物學 Botany
 
@@ -263,6 +263,18 @@ Vocabulary
 | 化石   | 化石燃料    |
 | ------ | ----------- |
 | Fossil | Fossil fuel |
+
+考古學 Archeology
+
+| 木炭     | 發掘          |
+| -------- | ------------- |
+| Charcoal | (v.) Excavate |
+
+古生物學 Paleontology
+
+| 下蛋      |
+| --------- |
+| laid eggs |
 
 歸納法 Organization
 ====
