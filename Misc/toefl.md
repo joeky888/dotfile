@@ -230,6 +230,7 @@ Vocabulary
   * = in which / with which 在…的情況下
 * hava a productive Saturday 有個很棒的星期六
 * It goes without saying, ... 不言而喻...(接著要說的大家都懂)
+* in haste 急忙的
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -276,12 +277,21 @@ Vocabulary
 | --------- |
 | laid eggs |
 
-歸納法 Organization
+歸納法 Organization/Induction (正反面都要寫)
 ====
 * Introduction
 * Body
   * Concept 1 pro and cons
   * Concept 2 pro and cons
+* Conclusion
+
+演繹法 deduction (只寫正面/反面)
+=====
+* thesis statement
+* Body 列舉法
+  * First issue is that
+  * Second,
+  * Third,
 * Conclusion
 
 標點符號 (Punctuation)
@@ -331,3 +341,4 @@ Vocabularies 論述文常用單字片語
 * discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
 * consent n. (不可數) 許可 (=permission) -- if your parents give their consent.
 * antagonize vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)
+* assimilation n. 同化
