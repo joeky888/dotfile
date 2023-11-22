@@ -231,6 +231,11 @@ Vocabulary
 * hava a productive Saturday 有個很棒的星期六
 * It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 * in haste 急忙的
+* 反對 oppose / be opposed to / object to
+  * I oppose your idea.
+  * I'm oppose to your idea.
+  * I object to your idea.
+* In an attempt to V. 企圖；試圖 (注意有個 an)
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -243,9 +248,9 @@ Vocabulary
 
 動物學 Zoology
 
-| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 靈長類  | 人類學       | 食草動物  | 食肉動物  | 軟體動物 | 甲殼動物   |
-| ------ | ------- | --------- | --------- | ------- | ------------ | --------- | --------- | -------- | ---------- |
-| Mammal | Reptile | Amphibian | Arthropod | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  | 人類學       | 食草動物  | 食肉動物  | 軟體動物 | 甲殼動物   |
+| ------ | ------- | --------- | --------- | ---------- | ------- | ------------ | --------- | --------- | -------- | ---------- |
+| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
 
 植物學 Botany
 
@@ -341,4 +346,12 @@ Vocabularies 論述文常用單字片語
 * discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
 * consent n. (不可數) 許可 (=permission) -- if your parents give their consent.
 * antagonize vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)
-* assimilation n. 同化
+* assimilation n. 同化 吸收作用 -- the assimilation of facts 事實的接受
+* advocate n. vt. He advocates reforming the prison system. 他主張改良監獄制度
+* impel compel repel impulsive compulsive repulsive
+  * impel vt. 驅使；迫使 -- He said he had been impelled to crime by poverty. 他說貧困逼得他犯罪
+  * compel vt. 強迫 -- They often compelled us to work twelve or fourteen hours a day. 他們常常強迫我們每天工作十二或十四小時
+  * repel vt. 擊退、排斥、抵制 -- A country must have the will to repel any invader. 一個國家得有決心擊退任何入侵者
+  * impulsive adj. 衝動的、有推動力的 -- She is an impulsive person; we never know what she will do next. 她是個容易衝動的人；我們從來不知道她下一步想做什麼
+  * compulsive adj. 強迫的、難以抑制的 -- a compulsive liar 說謊成性的人
+  * repulsive adj. 令人厭惡的、排斥的 -- His behavior was repulsive. 他的行為令人厭惡
