@@ -236,6 +236,12 @@ Vocabulary
   * I'm oppose to your idea.
   * I object to your idea.
 * In an attempt to V. 企圖；試圖 (注意有個 an)
+* Now that / Seeing that 既然
+* In conclusion, it is my conviction that ... 我深信... (適合最後一段)
+* long for / hunger for / thirst for 渴望
+* while / whilst / whereas others would like to... [然而,但]其他人希望...
+* if we don't [follow suit] 如果我們不[照做]
+* A. be at B's disposal A是樂意效勞B的 -- I am at your disposal.
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -355,3 +361,17 @@ Vocabularies 論述文常用單字片語
   * impulsive adj. 衝動的、有推動力的 -- She is an impulsive person; we never know what she will do next. 她是個容易衝動的人；我們從來不知道她下一步想做什麼
   * compulsive adj. 強迫的、難以抑制的 -- a compulsive liar 說謊成性的人
   * repulsive adj. 令人厭惡的、排斥的 -- His behavior was repulsive. 他的行為令人厭惡
+* spontaneously adj. 自然的，自發的 -- This story may prompt you to burst spontaneously into uncontrollable sobs. 這個故事可能會讓你不由自主地抽泣起來。
+* duty obligation responsibility liability 都有責任、義務的意思
+  * obligation = duty 義務(法律上必須做的事)
+  * responsibility 責任(應該要做的事)
+  * liability 麻煩；累贅；債務 (肇事責任)
+* felon n. 重罪犯
+* conscience n. (可數) 良心
+* authorities concerned n. (政府)有關當局、相關部門
+* all parties involved n. 涉及的所有人
+* tangible adj. 具體的 -- We need tangible evidence if we're going to take legal action. 如果我們要採取法律行動，就需要有實實在在的證據。
+* diligently / industriously adv. 勤奮地
+* weak-minded / feeble adj. 性格軟弱的 (注意 feeble-minded 是弱智的，別誤用)
+* admonish / remind vt. 勸告、力勸 -- Her teacher admonished her to work harder for her exams. 她的老師勸告她想通過考試就要更努力地學習。
+*
