@@ -58,9 +58,9 @@ proot-distro login manjaro --user joeky --shared-tmp -- /bin/bash -c "export DIS
 * Install https://github.com/termux/termux-x11/releases
   * Download app-arm64-v8a-debug.apk
 * Exit termux
-* Install and launch termux X11 in the background
+* Launch termux X11 in the background
 * Click termux widget on the desktop
-  * If xfce4 panel (toolbar on the top of desktop) doesn't show up -> Run command $ xfce4-panel
+  * If xfce4 panel (toolbar on the top of desktop) doesn't show up -> Open xfce terminal and run this command once $ xfce4-panel
 
 
 ANI CLI
