@@ -3,13 +3,65 @@ Install manjaro using proot
 ```sh
 apt install proot-distro -y
 proot-distro list
-proot-distro install manjaro-aarch64
+proot-distro install manjaro
 
-proot-distro login manjaro-aarch64 -- /bin/fish
+proot-distro login manjaro --shared-tmp -- /bin/fish
 pacman-mirrors --api --set-branch stable --protocols https --continent
 
-proot-distro remove manjaro-aarch64 # Danger: Remove chroot
+proot-distro remove manjaro # Uninstall: Remove chroot
 ```
+
+Manjaro with XFCE
+=====
+```sh
+pacman -S sudo vim
+useradd -mG root -s /bin/bash joeky
+passwd joeky
+nano /etc/sudoers
+  joeky ALL=(ALL) ALL # Add this line
+su joeky
+sudo pacman -S vim networkmanager xorg xorg-server pulseaudio noto-fonts-cjk git openssh fakeroot base-devel xfce4 xfce4-goodies lightdm pamac-cli
+
+exit
+```
+* Install Termux Widget from f-droid
+* $ apt install -y x11-repo
+* $ apt install -y termux-x11-nightly
+* $ apt install -y virglrenderer-android
+* $ mkdir -p ~/.shortcuts && nano ~/.shortcuts/start_manjaro.sh # Do it but not in proot manjaro
+```bash
+#!/bin/bash
+
+# 中止所有舊行程
+killall -9 termux-x11 Xwayland pulseaudio virgl_test_server_android termux-wake-lock
+
+# 啟動Termux X11
+am start --user 0 -n com.termux.x11/com.termux.x11.MainActivity
+XDG_RUNTIME_DIR=${TMPDIR}
+termux-x11 :0 -ac &
+sleep 3
+
+# 啟動PulseAudio
+pulseaudio --start --load="module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1" --exit-idle-time=-1
+pacmd load-module module-native-protocol-tcp auth-ip-acl=127.0.0.1 auth-anonymous=1
+
+# 啟動GPU加速的virglserver
+virgl_test_server_android &
+
+# 登入proot Arch Linux，並啟動PulseAudio、Fcitx5、桌面環境
+proot-distro login manjaro --user joeky --shared-tmp -- /bin/bash -c "export DISPLAY=:0 PULSE_SERVER=tcp:127.0.0.1 && export XDG_RUNTIME_DIR=${TMPDIR} && dbus-launch --exit-with-session startxfce4"
+```
+* $ chmod +x ~/.shortcuts/start_manjaro.sh
+* Settings -> Developers options -> Enable `Allow screen overlays`
+* Settings -> Apps -> Termux -> Permissions -> ... (On the top right) -> All permissions -> Enable `Display Over Other Apps`
+* Go to desktop -> Add widget -> Termux Widget -> Shoud show `start_manjaro.sh`
+* Install https://github.com/termux/termux-x11/releases
+  * Download app-arm64-v8a-debug.apk
+* Exit termux
+* Install and launch termux X11 in the background
+* Click termux widget on the desktop
+  * If xfce4 panel (toolbar on the top of desktop) doesn't show up -> Run command $ xfce4-panel
+
 
 ANI CLI
 =====
