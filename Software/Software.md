@@ -307,6 +307,7 @@ Android
   * Termux
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
+  * Pipepipe (Newpipe alternative)
   * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
