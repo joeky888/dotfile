@@ -27,7 +27,9 @@ Patch
 +    YTDLP_ARGS="--concurrent-fragments 16 --no-check-certificate --ignore-errors --downloader aria2c --no-cache-dir"
 +    STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-la
 +
-+    if [[ "$episode" == *m3u8 ]]; then # m3u8
++    if [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
++        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $DL_ARGUMENTS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}" >/dev/null 2>&1 &
++    elif [[ "$episode" == *m3u8 ]]; then # m3u8
 +        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title
 +    else
 +        nohup sh -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}episode

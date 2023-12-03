@@ -288,15 +288,15 @@ Vocabulary
 | --------- |
 | laid eggs |
 
-歸納法 Organization/Induction (正反面都要寫)
+歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
 * Introduction
 * Body
-  * Concept 1 pro and cons
-  * Concept 2 pro and cons
-* Conclusion
+  * On one hand, Concept 1 pro and cons
+  * On the other hand, Concept 2 pro and cons
+* Conclusion + thesis statement
 
-演繹法 deduction (只寫正面/反面)
+演繹法 deduction (只寫正面/反面) 倒三角
 =====
 * thesis statement
 * Body 列舉法
@@ -374,4 +374,4 @@ Vocabularies 論述文常用單字片語
 * diligently / industriously adv. 勤奮地
 * weak-minded / feeble adj. 性格軟弱的 (注意 feeble-minded 是弱智的，別誤用)
 * admonish / remind vt. 勸告、力勸 -- Her teacher admonished her to work harder for her exams. 她的老師勸告她想通過考試就要更努力地學習。
-*
+* prestigious adj. 聲望很高的
