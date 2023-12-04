@@ -29,9 +29,9 @@ Patch
 +
 +    if [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
 +        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $DL_ARGUMENTS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}" >/dev/null 2>&1 &
-+    elif [[ "$episode" == *m3u8 ]]; then # m3u8
++    elif [[ "$episode" == *m3u8 ]]; then # Desktop m3u8: streamlink + mpv
 +        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '$episode'" >/dev/null 2>&1 &
-+    else
++    else # yt-dlp + mpv
 +        nohup sh -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}Episode ${ep_no}' -" >/dev/null 2>&1 &
 +    fi
 ```
