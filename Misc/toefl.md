@@ -258,11 +258,20 @@ Vocabulary
 | ------ | ------- | --------- | --------- | ---------- | ------- | ------------ | --------- | --------- | -------- | ---------- |
 | Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
 
+
+| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. |
+| ----------- | ------- | ----------------- | ----------- |
+| extremities | microbe | replenish         | trek        |
+
 植物學 Botany
 
-| 播種   | 灌溉     | 施肥      |
-| ------ | -------- | --------- |
-| sowing | irrigate | fertilize |
+| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 |
+| ------ | -------- | --------- | -------------- | ------ |
+| sowing | irrigate | fertilize | insulated      | scarce |
+
+| 真菌類(菇類) | 藻類  |
+| ------------ | ----- |
+| Fungus       | Algae |
 
 氣象學 meteorology
 
@@ -375,3 +384,18 @@ Vocabularies 論述文常用單字片語
 * weak-minded / feeble adj. 性格軟弱的 (注意 feeble-minded 是弱智的，別誤用)
 * admonish / remind vt. 勸告、力勸 -- Her teacher admonished her to work harder for her exams. 她的老師勸告她想通過考試就要更努力地學習。
 * prestigious adj. 聲望很高的
+* state-of-the-art adj. 最先進的 -- a state-of-the-art computer 最先進的電腦
+* be unheard-of 前所未聞的 -- It was unheard-of for an unmarried couple to live together. 未婚同居，這在以前是聞所未聞的事。
+* be unaware of 未意識到的 -- I was completely unaware of the problem. 我根本沒意識到這個問題。
+* dietary adj. 飲食的 -- Do you have any special dietary requirements? 你有甚麼特殊的飲食要求嗎？
+* national n. (可數) 公民、國人 -- 30 people, including six Mexican nationals, were killed in yesterday's plane crash. 在昨天的空難中有30人喪生，包括6名墨西哥公民。
+* excessive adj. 過量的 -- Excessive exercise can sometimes cause health problems. 過度的運動有時也會導致健康問題。
+* partake of v. 攝取 -- Would you care to partake of a little wine with us? 你願意和我們一起喝點酒嗎？
+* feed on v. 以..為主食 -- Cows feed on hay. 牛以乾草為食。
+* a noticeable extent/deree/point 達到顯著的程度
+* arise from v. 起源於
+* incidence n. 發生率 -- an increased incidence of cancer near nuclear power stations 核電站附近癌症發病率的上升
+* prevalence n. 盛行率、蔓延 -- the prevalence of smoking among teenagers 青少年吸煙的普遍性
+* rampancy n. 猖獗、蔓生 -- Political corruption was a major reason for the rampancy of organized crime. 政治腐敗是組織犯罪猖獗的主因
+* distress/dismay n. 苦難、不幸
+* detrimental/inimical/noxious adj. 有害的
