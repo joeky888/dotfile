@@ -105,7 +105,7 @@ Xfce
   * Hardware clock in local time zone -> Check
 * Manjaro Notifier ->
   * Only notify recommanded kernels -> check
-* $ app-fast -S gvim mpv fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
+* $ pacman -S gvim mpv fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
 
 
 Switch to other branches
@@ -113,12 +113,12 @@ Switch to other branches
 * sudo pacman-mirrors --api --set-branch stable --protocols https --continent
 * sudo pacman-mirrors --api --set-branch testing --protocols https --continent
 * sudo pacman-mirrors --api --set-branch unstable --protocols https --continent
-* app-fast -Syyu
+* pacman -Syyu
 
 Pacman
 =====
 * Upgrade packages
-    * $ app-fast -Syyu; sudo pacman -Rsuc $(pacman -Qdtq)
+    * $ pacman -Syyu; sudo pacman -Rsuc $(pacman -Qdtq)
     * $ sudo pamac update && sudo pamac clean
 * Download only
     * $ pacman -Sw package
@@ -139,7 +139,7 @@ SigLevel = Never
 Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
-app-fast -Syy --noconfirm --needed archlinuxcn-keyring
+pacman -Syy --noconfirm --needed archlinuxcn-keyring
 yay -S ttf-wps-fonts ttf-iosevka ttf-ubuntu-mono-nerd ttf-twemoji-color
 ```
 
@@ -176,7 +176,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="acpi_osi=! acpi_osi=\"Windows 2009\""
 
 Install Sogou IME
 =====
-* $ app-fast -S fcitx-configtool
+* $ pacman -S fcitx-configtool
 * $ yay -S fcitx-sogoupinyin # If failed, try download .deb from official site then move .deb to ~/.cache/yay/fcitx-sogoupinyin and try again
 * $ `vim ~/.pam_environment`
 ```sh
@@ -194,7 +194,7 @@ XMODIFIERS=@im=fcitx
 
 Install Rime Pinyin IME
 =====
-* $ app-fast -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5
+* $ pacman -S fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5
 * $ `vim ~/.pam_environment`
 ```sh
 GTK_IM_MODULE=fcitx
@@ -277,7 +277,7 @@ patch:
 
 Install fbterm (recommand)
 =====
-* $ app-fast -S gpm libx86
+* $ pacman -S gpm libx86
 * $ sudo systemctl enable --now gpm
 * $ cd /tmp && git clone --depth 1 https://github.com/ccapitalK/fbterm && cd fbterm
 * $ configure && make && sudo make install
@@ -286,25 +286,25 @@ Install fbterm (recommand)
 
 Install qemu
 =====
-* $ app-fast -S qemu-system-x86 qemu-desktop
+* $ pacman -S qemu-system-x86 qemu-desktop
 
 Install virtualbox
 =====
 * $ uname -a # Get kernel version
-* $ app-fast -S virtualbox
-* $ app-fast -S [kernel version]-virtualbox-host-modules
+* $ pacman -S virtualbox
+* $ pacman -S [kernel version]-virtualbox-host-modules
 * $ sudo modprobe vboxdrv
 * $ sudo gpasswd -a $(whoami) vboxusers
 
 Install snapd
 =====
 ```sh
-app-fast -S snapd
+pacman -S snapd
 #sudo systemctl enable --now apparmor.service
 #sudo systemctl enable --now snapd.apparmor.service
 sudo systemctl enable --now snapd.socket
 
-app-fast -S linux-apparmor # Install/Boot only if systemctl status apparmor.service is failed
+pacman -S linux-apparmor # Install/Boot only if systemctl status apparmor.service is failed
 ```
 
 Downgrade a package
@@ -312,7 +312,7 @@ Downgrade a package
 * $ `DOWNGRADE_FROM_ALA=1 downgrade PackageName`
 * Undo downgrading
   * Remove "IgnorePkg=xxx" and "IgnoreGroup=xxx" in /etc/pacman.conf
-  * $ app-fast -S PackageName # Reinstall PackageName
+  * $ pacman -S PackageName # Reinstall PackageName
 
 No Network interface in NetworkManager
 =====
@@ -322,7 +322,7 @@ Remote control Windows OS
 =====
 * $ sudo snap install remmina
 * Or
-* $ app-fast -S remmina freerdp
+* $ pacman -S remmina freerdp
 * $ killall remmina
 
 Slow boot time
