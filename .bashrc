@@ -24,6 +24,10 @@ export HISTFILESIZE=50000
 export HISTSIZE=50000
 export SAVEHIST=50000
 
+if [[ -d "$HOME/bin" ]]; then
+  export PATH=$PATH:$HOME/bin # In case fish/zellij/tmux is downloaded to ~/bin
+fi
+
 if [[ "$TERM" == "xterm"* ]]; then
   export TERM=xterm-256color
 elif [[ "$TERM" == "screen"* ]]; then
@@ -253,9 +257,6 @@ if [[ -d "$HOME/.local/bin" ]]; then
   export PATH=~/.local/bin:$PATH
 fi
 
-if [[ -d "$HOME/bin" ]]; then
-  export PATH=$PATH:$HOME/bin
-fi
 
 if [[ -d "/sbin" ]]; then
   export PATH=$PATH:/sbin
