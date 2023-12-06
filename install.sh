@@ -404,6 +404,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   chsh -s fish
   apt install python-pip -y
   pip install --upgrade --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip
+  pip install streamlink
   apt install -y zellij # This will failed on arm32 system
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
   # InstallAlpine
