@@ -41,6 +41,21 @@ whichTTY=$(tty | sed -e "s:/dev/::")
 
 [ -f /opt/homebrew/bin/brew ] && eval $(/opt/homebrew/bin/brew shellenv) # Homebrew path
 
+if [[ "$(uname -a)" == *ndroid* ]] && [ $(command -v zellij) ] && [ $(command -v fish) ]; then # Android Termux
+  # $ zellij setup --generate-auto-start bash >> ~/.bashrc
+  if [[ -z "$ZELLIJ" ]]; then
+    if [[ "$ZELLIJ_AUTO_ATTACH" == "true" ]]; then
+        SHELL=fish exec zellij attach -c
+    else
+        SHELL=fish exec zellij
+    fi
+
+    if [[ "$ZELLIJ_AUTO_EXIT" == "true" ]]; then
+        exit
+    fi
+  fi
+fi
+
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_EMU" == "java" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
