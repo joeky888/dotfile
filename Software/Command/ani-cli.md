@@ -36,4 +36,4 @@ Patch
 +    fi
 ```
 * $ `ANI_CLI_PLAYER=yt-dlp ./ani-cli --dub one punch`
-* $ `ANI_CLI_PLAYER=android_vlc bash ./ani-cli --dub one punch` # Termux
+* $ `ANI_CLI_PLAYER=android_vlc bash ~/storage/downloads/ani-cli/ani-cli --dub one punch` # Termux
