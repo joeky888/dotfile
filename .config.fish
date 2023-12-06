@@ -24,6 +24,7 @@ set -U fish_user_paths ""
 set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/inxi $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/diff-highlight $fish_user_paths
+set -U fish_user_paths $HOME/bin $fish_user_paths
 
 if test -f /opt/homebrew/bin/brew
   eval (/opt/homebrew/bin/brew shellenv)
