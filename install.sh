@@ -402,6 +402,8 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # InstallPIP
   mkdir -p ~/.config/fish && curl https://raw.githubusercontent.com/joeky888/dotfile/master/.config.fish -o ~/.config/fish/config.fish
   chsh -s fish
+  apt install python-pip -y
+  pip install --upgrade --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip
   apt install -y zellij # This will failed on arm32 system
   # ~/dotfile/app-fast/app-fast install -y proot bsdtar
   # InstallAlpine
