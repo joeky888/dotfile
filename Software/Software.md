@@ -262,6 +262,7 @@ Android
 * Sogou input method
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
+  * Daily build: https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush
 * Pydroid 3 (terminal for Android 4.4+, adb push aria2c /data/data/ru.iiec.pydroid3/files/ )
   * https://github.com/dulwich/dulwich - Pure-Python Git implementation
 * VLC
