@@ -317,7 +317,7 @@ Android
   * DNS66 - Block ads/hosts via DNS
   * Simple Camera
   * EtchDroid
-  * LibreTorrent
+  * BiglyBT
   * ScreenCam
   * Simple Gallery
   * Coffee - Make the screen stay awake

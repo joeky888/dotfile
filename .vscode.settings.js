@@ -81,7 +81,7 @@
     ],
     "eslint.codeActionsOnSave.mode": "all",
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll.eslint": "explicit"
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
@@ -100,8 +100,8 @@
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true,
-            "source.fixAll": true,
+            "source.organizeImports": "explicit",
+            "source.fixAll": "explicit"
         },
     },
     "rust-client.engine": "rust-analyzer",
@@ -120,7 +120,7 @@
         "editor.insertSpaces": false,
         "files.eol": "\n",
         "editor.codeActionsOnSave": {
-            "source.organizeImports": true
+            "source.organizeImports": "explicit"
         },
     },
     "go.testFlags": [
@@ -185,7 +185,7 @@
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
         "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
+        "editor.wordBasedSuggestions": "off"
     },
     "[markdown]": {
         "editor.defaultFormatter": "yzhang.markdown-all-in-one"
