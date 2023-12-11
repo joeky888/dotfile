@@ -28,7 +28,9 @@ Patch
 +    STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 +
 +    if [[ "$episode" == *m3u8 ]] && [[ "$(uname -a)" == *ndroid* ]]; then # Termux m3u8: streamlink + vlc
++        killall -9 streamlink || true
 +        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'am' --player-external-http --player-external-http-port 34567 --player-arg 'start --user 0 -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -d vlc://{playerinput}' --default-stream best '$episode'" >/dev/null 2>&1 &
++        sleep 10s # VLC will crash if the stream is not ready yet
 +        nohup am start --user 0 -a android.intent.action.VIEW -d "http://127.0.0.1:34567" -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}" >/dev/null 2>&1 &
 +    elif [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
 +        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $YTDLP_ARGS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}"
