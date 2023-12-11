@@ -289,8 +289,6 @@ function mpv-termux-ytdlp-audio
   am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
-alias mpv-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'am start -a android.intent.action.VIEW -n is.xyz.mpv/.MPVActivity -d' --player-continuous-http --player-args 'vlc://{playerinput}'  --default-stream best"
-
 function vlc-termux-ytdlp
   # Ref: https://wiki.videolan.org/Android_Player_Intents/
   am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
@@ -301,7 +299,7 @@ function vlc-termux-ytdlp-audio
 end
 
 # VLC is unable to auto-launch on android 13+, so just manully open vlc and play http://127.0.0.1:4567
-alias vlc-termux-streamlink-best-httpstream="streamlink $STREAMLINK_ARGUMENTS --player 'am start -n org.videolan.vlc/.StartActivity -a android.intent.action.VIEW -d' --player-external-http --player-external-http-port 4567 --player-args 'vlc://http://127.0.0.1:4567' --default-stream best"
+alias vlc-termux-streamlink-best-httpstream="streamlink $STREAMLINK_ARGUMENTS --player 'am' --player-http --player-arg 'start --user 0 -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -d vlc://{playerinput}' --default-stream best"
 
 # Load Nix config
 # Set up the per-user profile.
