@@ -397,5 +397,23 @@ Vocabularies 論述文常用單字片語
 * incidence n. 發生率 -- an increased incidence of cancer near nuclear power stations 核電站附近癌症發病率的上升
 * prevalence n. 盛行率、蔓延 -- the prevalence of smoking among teenagers 青少年吸煙的普遍性
 * rampancy n. 猖獗、蔓生 -- Political corruption was a major reason for the rampancy of organized crime. 政治腐敗是組織犯罪猖獗的主因
+* rampant adj. 猖獗的、泛濫的 -- rampant corruption 腐敗猖獗
 * distress/dismay n. 苦難、不幸
 * detrimental/inimical/noxious adj. 有害的
+* culinary adj. 烹飪的，廚房的
+* profound adj. 深刻的、強烈的 (約等於 impressive 但更為正式的用詞)
+* conformity n. 一致性、從眾行為
+* juxtapose vt. 將...並列排好 -- juxtapose ... with ...將 ... 與 ... 並列排置
+* prosper vi. （人或企業）成功;（尤指經濟上）繁榮，昌盛 -- Lots of microchip manufacturing companies prospered at that time. 許多生產晶片的公司都是在那時候發達起來的。
+* real vs. true vs. authentic 意思都是真正的
+  * real 強調事實是真人真事 -- I found a real fossil on the beach. 我在沙灘上找到了一塊真正的化石。
+  * authentic 指的是可靠可信的、道地的
+    * 常用在需要鑒別真假的場景 -- This is an authentic vase from the Ming dynasty. 這是一个真正的明朝花瓶。
+    * 道地的、原汁原味的 -- Behaving in a [authentic manner] at work 以[真誠的方式]工作
+* sensation n. 感覺、知覺。造成轟動的事 -- Their affair caused a sensation. 他們的曖昧關係引起了轟動。
+* be fond of / be into + Ving 喜愛去
+* patriot n. (通常會加s) 愛國者、愛國主義者
+* manifest vt. 顯現、顯而易見 -- The workers chose to manifest their dissatisfaction in a series of strikes. 工人決定藉一連串罷工來表達他們的不滿。
+* eye-popping adj. 大飽眼福的、吃驚的
+* with an eye to + Ving 試圖.. -- He bought the cottage with an eye to retiring there. 他買下那所鄉間小屋以備退休後住在那裡。
+* 
