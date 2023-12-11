@@ -25,11 +25,9 @@ Patch
 -        *) nohup "$player_function" "$episode" >/dev/null 2>&1 & ;;
 -    esac
 +    YTDLP_ARGS="--concurrent-fragments 16 --no-check-certificate --ignore-errors --downloader aria2c --no-cache-dir"
-+    STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
++    STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 +
-+    if [[ "$episode" == *m3u8 ]] && [[ "$(uname -a)" == *ndroid* ]]; then # Termux m3u8: streamlink + vlc
-+        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'am' --player-http --player-arg 'start --user 0 -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -d vlc://{playerinput}' --default-stream best '$episode'" >/dev/null 2>&1 &
-+    elif [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
++    if [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
 +        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $DL_ARGUMENTS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}" >/dev/null 2>&1 &
 +    elif [[ "$episode" == *m3u8 ]]; then # Desktop m3u8: streamlink + mpv
 +        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '$episode'" >/dev/null 2>&1 &
