@@ -416,4 +416,4 @@ Vocabularies 論述文常用單字片語
 * manifest vt. 顯現、顯而易見 -- The workers chose to manifest their dissatisfaction in a series of strikes. 工人決定藉一連串罷工來表達他們的不滿。
 * eye-popping adj. 大飽眼福的、吃驚的
 * with an eye to + Ving 試圖.. -- He bought the cottage with an eye to retiring there. 他買下那所鄉間小屋以備退休後住在那裡。
-* 
+* novel adj. 新奇的 n. 小說 -- a novel idea/suggestion 新穎的觀點／建議
