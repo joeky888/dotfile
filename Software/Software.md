@@ -337,7 +337,9 @@ Android
   * 豌豆荚 wandoujia
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
+* Android TV
   * SmartTube Beta - Best newpipe alternative on Android TVs
+  * Background App Killer
 * Not an app but related to Android
   * Scrcpy - Control Android via adb (Android 5+)
   * jadx - Decompile apk/jar
