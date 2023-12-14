@@ -500,15 +500,9 @@ Ideas to be done
   * Top-of-the-screen secondary subtitle support
   * Danmaku/Comments mode switcher for live streaming comments
   * Picture in picture
-* Rewrite dbeaver using native/game engine
-  * Support android and ios
-* Steam Deck + Tiny11 + FydeOS
-* Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
-  * Interfacing fancy-regex/Oniguruma/PCRE2
+* Steam Deck + Tiny11 + FydeOS + BlackArch
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
-* Rewrite newpipe in react-native + yt-dlp port + HTTP/3 -> with code push (hot updating)
-  * Rewrite yt-dlp using Vlang + PCRE + QuickJS
 * Mobile http load testing app
   * Sci-fi UI
   * Using oha (https://github.com/hatoo/oha)
@@ -564,16 +558,10 @@ Ideas to be done
   * Simple state machine built-in
   * Livekit - https://github.com/livekit/livekit
 * Ingress controller/Reverse proxy written in Rust
-  * axum
   * http/2 and http/3
-  * http/2 weboskcet (RFC8441)
   * Built-in default backend
-  * Whitelist with or without CDN
   * Rate limit
   * Compressed by default
-* GPGPU program using either emu(rust) or gpgpu-rs
-  * Decimal/BigInt precision
-* Rewrite GameMode in rust and support Windows/Linux
 
 Fast or lightweight or clustering Alternatives
 =====
