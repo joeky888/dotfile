@@ -317,7 +317,6 @@ Android
   * DNS66 - Block ads/hosts via DNS
   * Simple Camera
   * EtchDroid
-  * BiglyBT
   * ScreenCam
   * Simple Gallery
   * Coffee - Make the screen stay awake
@@ -338,7 +337,8 @@ Android
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
 * Android TV
-  * SmartTube Beta - Best newpipe alternative on Android TVs
+  * SmartTube Beta
+  * BiglyBT
   * Background App Killer
 * Not an app but related to Android
   * Scrcpy - Control Android via adb (Android 5+)
@@ -502,8 +502,7 @@ Ideas to be done
   * Picture in picture
 * Rewrite dbeaver using native/game engine
   * Support android and ios
-* Audacity/OBS noice reduction + GPU acceleration
-  * NVIDIA Noise Removal is a proprietary software and is only for NVIDIA RTX
+* Steam Deck + Tiny11 + FydeOS
 * Regex engine in browsers using wasm, Oniguruma vs fancy-regex (benchmark/size comparison)
   * Interfacing fancy-regex/Oniguruma/PCRE2
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci

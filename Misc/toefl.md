@@ -417,3 +417,4 @@ Vocabularies 論述文常用單字片語
 * eye-popping adj. 大飽眼福的、吃驚的
 * with an eye to + Ving 試圖.. -- He bought the cottage with an eye to retiring there. 他買下那所鄉間小屋以備退休後住在那裡。
 * novel adj. 新奇的 n. 小說 -- a novel idea/suggestion 新穎的觀點／建議
+* attest vt. 證實 -- His achievements attest his devotion to science. 他的成就是他對科學的獻身精神的明證。
