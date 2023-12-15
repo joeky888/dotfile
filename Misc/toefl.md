@@ -140,22 +140,14 @@ Vocabulary
 * Quite a few = An abundance of 許多的
 * the state and the individual 國家與個人 (不加s的時候 指的是 個人 這個群體，類似的用法有 the rich, the poor(歧視 不要用這個詞), the underprivileged窮人, the disadvantaged窮人)
   * The individuals are taxed on the amount of junk food (這時候的 individuals 指的是個人)
-* The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
-* As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
-* As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
-* It's my impression that xxx 我的觀點是(適用第一段結尾)
 * having attained remarkable achievements 達成了不起的目標
 * Create moral dilemma 製造道德疑慮(比如人體器官複製)
 * May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
 * More and more High-profile buzzward 越來越多的備受矚目的新用詞
 * be terminally-ill 是病危的
 * content (內容物不可數) vs contents (內容物可數)
-* To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
   * overcome a hurdle  / clear a hurdle  / get over a hurdle 克服一個障礙 (可數做 hurdles)
-* In a sense of (N) 從..的觀點來看 (適合句首)
-* It seems to me that 從我的的觀點來看 (適合句首)
-* [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
 * nip [N] in the bud 對 xx 防患於未然
 * In the short term, ... / In the long term, ... 適合舉例 Body 1 跟 Body 2 的開頭
 * the spread of disease(s) 疾病散佈寫法，注意 spread 不可數
@@ -176,7 +168,6 @@ Vocabulary
 * abolishment of death sentence 死刑廢除
 * some are [for|in favor of] it, others are against it 有人支持 有人不支持
 * two wrongs don't make a right 兩惡不能為善
-* these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
 * a chance to reform themselves 一個機會讓他們改過自新
 * may fall victim to death sentence 淪為死刑的犧牲品
 * based on the reasons above 基於上述理由
@@ -203,7 +194,6 @@ Vocabulary
 * specialize rd.專業化 vs. standardize pm.標準化 (兩個詞是反義詞)
 * Thank you for your message/inquiry/enquiry. 謝謝你的來信
 * 一段至少要有三個句子
-* I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
 * enter the workforce 進入職場
 * media / data / aganda 可以用單數 is/has 或複數 are/have ，一旦在文章開始選擇了單數就得一路寫單數到結束
 * Mounting/growing/increasing concerns of [A]s over [B]s A越來越擔心B (注意 concern + s)
@@ -229,7 +219,6 @@ Vocabulary
   * = by which 藉以
   * = in which / with which 在…的情況下
 * hava a productive Saturday 有個很棒的星期六
-* It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 * in haste 急忙的
 * 反對 oppose / be opposed to / object to
   * I oppose your idea.
@@ -237,11 +226,29 @@ Vocabulary
   * I object to your idea.
 * In an attempt to V. 企圖；試圖 (注意有個 an)
 * Now that / Seeing that 既然
-* In conclusion, it is my conviction that ... 我深信... (適合最後一段)
 * long for / hunger for / thirst for 渴望
 * while / whilst / whereas others would like to... [然而,但]其他人希望...
 * if we don't [follow suit] 如果我們不[照做]
 * A. be at B's disposal A是樂意效勞B的 -- I am at your disposal.
+
+開頭 結尾
+=====
+* In conclusion, it is my conviction that ... 我深信... (適合最後一段)
+* The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
+* As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
+* As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
+* It's my impression that xxx 我的觀點是(適用第一段結尾)
+* I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
+* In a sense of (N) 從..的觀點來看 (適合句首)
+* It seems to me that 從我的的觀點來看 (適合句首)
+* [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
+* these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
+* To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
+* It goes without saying, ... 不言而喻...(接著要說的大家都懂)
+* It is deemed that people should ... 人們被認為應該 ... (適合開頭與結尾)
+* I firmly believe that 我堅信... (適合結尾開頭)
+* When it comes to ... 當提到 (適合開頭)
+* People look upon N/Ving as N/Ving 人們把 xx 視為 ... (適合開頭)
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -418,3 +425,23 @@ Vocabularies 論述文常用單字片語
 * with an eye to + Ving 試圖.. -- He bought the cottage with an eye to retiring there. 他買下那所鄉間小屋以備退休後住在那裡。
 * novel adj. 新奇的 n. 小說 -- a novel idea/suggestion 新穎的觀點／建議
 * attest vt. 證實 -- His achievements attest his devotion to science. 他的成就是他對科學的獻身精神的明證。
+* thorny adj. 棘手的(問題)、多刺的 -- the thorny issue of taxation 棘手的稅收問題
+* the ruling party 執政黨
+* public facilities 公共設施
+* ... has/have steadily worsened ...每況愈下
+* predilection n. 偏好 -- Ever since she was a child, she has had a predilection for spicy food. 從孩提時起，她就偏好辛辣食物。
+* Consider 的用法
+  * 注意 沒有 consider as 這種用法！
+  * consider (to be) -- I consider it (to be) a great honor to be invited to join the club. (我認為被邀請加入此俱樂部是很大的榮幸)
+  * I’m considering changing my job. (我正考慮換工作)
+* dexterous adj. 靈活的、熟練的、機靈的 (Dexter 為人名德克斯特)
+  * a dexterous movement 敏捷的動作
+  * She was lively and dexterous intellectually. 她既活潑又頭腦靈活。
+* abominable = abhorrent adj. 令人憎惡的；可惡的 -- 電影常見字 abomination 令人厭惡的事情
+* traffic jam / traffic congestion / traffic gridlock 塞車、交通阻塞、擁塞、擁擠
+* traffic flow / traffic volume n.(uc) 交通量 -- Reduce the traffic flow 減少交通量
+* commuter(s) n. 通勤者 (通常加s)
+* of all kinds 各式各樣的 -- Shoes of all kinds 各式各樣的鞋子
+* handle / resolve / tackle / address vt. 處理、解決(問題)
+* impartially adv. 公平地、秉公無私地 -- the police are impartially handled. 警察秉公地處理。
+* emission / exhaust n. （引擎排出的）廢氣;（尤指汽車的）尾氣 -- Car exhaust is the main reason for the city's pollution. 汽車排出的廢氣是造成城市污染的主要原因。

@@ -221,6 +221,7 @@ Android
     * User Agent Switcher (by Alexander Schlarb)
     * Absolute Enable Right Click & Copy
     * Search by Image - Reverse Image Search (by Armin Sebastian)
+    * Bypass Paywalls Clean
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
     * gfx.webrender.all: true
     * gfx.webrender.software: false
@@ -500,7 +501,7 @@ Ideas to be done
   * Top-of-the-screen secondary subtitle support
   * Danmaku/Comments mode switcher for live streaming comments
   * Picture in picture
-* Steam Deck + Tiny11 + FydeOS + BlackArch
+* Steam Deck + Tiny11 + FydeOS + Waydroid + BlackArch
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
 * Mobile http load testing app
