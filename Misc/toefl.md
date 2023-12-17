@@ -230,13 +230,13 @@ Vocabulary
 * while / whilst / whereas others would like to... [然而,但]其他人希望...
 * if we don't [follow suit] 如果我們不[照做]
 * A. be at B's disposal A是樂意效勞B的 -- I am at your disposal.
+* 逗號不能在一行的最前面
 
 開頭 結尾
 =====
 * In conclusion, it is my conviction that ... 我深信... (適合最後一段)
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
 * As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
-* As far as I am concerned 就我而言 (適用第一段結尾，注意 Be concered)
 * It's my impression that xxx 我的觀點是(適用第一段結尾)
 * I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
 * In a sense of (N) 從..的觀點來看 (適合句首)
@@ -247,8 +247,14 @@ Vocabulary
 * It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 * It is deemed that people should ... 人們被認為應該 ... (適合開頭與結尾)
 * I firmly believe that 我堅信... (適合結尾開頭)
+* I deem that 我堅信... (精英英文，適合結尾開頭)
 * When it comes to ... 當提到 (適合開頭)
 * People look upon N/Ving as N/Ving 人們把 xx 視為 ... (適合開頭)
+* In addition, I would like to supplement that xxx (另外，我想補充)
+* I take sides with <名字> who advocates the benefits|drawbacks which include... 我與xx站同一邊，他的想法包括...
+* I am on the same page with <名字> who ... 我與xx站同一邊，他覺得...
+* On the other hand, <名字> raised the relevant point that ... but he/she didn't mention that 另一方面，xx 認為...，但他少了...
+* Take N for example, ... 舉例來說
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -445,3 +451,4 @@ Vocabularies 論述文常用單字片語
 * handle / resolve / tackle / address vt. 處理、解決(問題)
 * impartially adv. 公平地、秉公無私地 -- the police are impartially handled. 警察秉公地處理。
 * emission / exhaust n. （引擎排出的）廢氣;（尤指汽車的）尾氣 -- Car exhaust is the main reason for the city's pollution. 汽車排出的廢氣是造成城市污染的主要原因。
+* harmonious adj. 和諧的
