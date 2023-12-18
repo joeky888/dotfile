@@ -227,6 +227,8 @@ Android
     * gfx.webrender.software: false
     * gfx.webrender.software.opengl: false
     * gfx.webrender.fallback.software: false
+    * gfx.webgpu.force-enabled: true
+    * dom.webgpu.enabled: true
     * media.hardware-video-decoding.enabed: false (Deprecated)
     * network.process.enabled: true
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
