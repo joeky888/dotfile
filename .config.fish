@@ -303,7 +303,7 @@ alias vlc-termux-streamlink-best="streamlink $STREAMLINK_ARGUMENTS --player 'am'
 function vlc-termux-streamlink-best-httpstream
   killall -9 streamlink || true
   bash -c "streamlink $STREAMLINK_ARGUMENTS --player-external-http --player-external-http-port 34567 --default-stream best '$argv'" &
-  sleep 10s
+  sleep 20s
   nohup am start --user 0 -a android.intent.action.VIEW -d "http://127.0.0.1:34567" -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity >/dev/null 2>&1 &
 end
 
