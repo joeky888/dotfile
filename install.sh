@@ -404,9 +404,9 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   chsh -s fish
   apt install python-pip -y
   pip install --upgrade --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip
+  # Ref: https://stackoverflow.com/a/77604799
+  CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install --upgrade --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip
   apt install -y zellij # This will failed on arm32 system
-  # ~/dotfile/app-fast/app-fast install -y proot bsdtar
-  # InstallAlpine
 
 
 
