@@ -515,9 +515,9 @@ Ideas to be done
     * https://phabricator.wikimedia.org/T194397
     * https://phabricator.wikimedia.org/T225597
 * A Wordpress clone
-* A Reddit clone
-* A 4chan clone
-* A zhihu clone
+* A Reddit clone -- Lemmy can do this
+* A 4chan clone -- Lemmy can do this
+* A zhihu clone -- Lemmy can do this
 * A Wikipedia/Fandom clone
   * Use edge server (Like hono) and edge db (Like turso/supabase)
 * Webmaster Tools (站長工具) using Edge servers
