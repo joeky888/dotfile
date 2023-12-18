@@ -384,6 +384,7 @@ alias transmission-daemon-start-here='transmission-daemon -f -T -w $PWD --incomp
 alias python2-simple-http='python2 -m SimpleHTTPServer'
 alias python3-simple-http='python3 -m http.server'
 alias scrcpy-max-speed='scrcpy --max-size=1024 --max-fps=10'
+alias scrcpy-audio='scrcpy --no-video'
 
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
