@@ -29,15 +29,15 @@ Patch
 +
 +    if [[ "$episode" == *m3u8 ]] && [[ "$(uname -a)" == *ndroid* ]]; then # Termux m3u8: streamlink + vlc
 +        killall -9 streamlink || true
-+        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'am' --player-external-http --player-external-http-port 34567 --player-arg 'start --user 0 -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -d vlc://{playerinput}' --default-stream best '$episode'" >/dev/null 2>&1 &
++        nohup bash -c "streamlink $STREAMLINK_ARGUMENTS --player-external-http --player-external-http-port 34567 --default-stream best '$episode'" >/dev/null 2>&1 &
 +        sleep 10s # VLC will crash if the stream is not ready yet
 +        nohup am start --user 0 -a android.intent.action.VIEW -d "http://127.0.0.1:34567" -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}" >/dev/null 2>&1 &
 +    elif [[ "$(uname -a)" == *ndroid* ]]; then # Termux: yt-dlp + vlc
 +        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $YTDLP_ARGS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}"
 +    elif [[ "$episode" == *m3u8 ]]; then # Desktop m3u8: streamlink + mpv
-+        nohup sh -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '$episode'" >/dev/null 2>&1 &
++        nohup bash -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '$episode'" >/dev/null 2>&1 &
 +    else # yt-dlp + mpv
-+        nohup sh -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}Episode ${ep_no}' -" >/dev/null 2>&1 &
++        nohup bash -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}Episode ${ep_no}' -" >/dev/null 2>&1 &
 +    fi
 ```
 * $ `ANI_CLI_PLAYER=yt-dlp ./ani-cli --dub one punch`
