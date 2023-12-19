@@ -222,6 +222,8 @@ Android
     * Absolute Enable Right Click & Copy
     * Search by Image - Reverse Image Search (by Armin Sebastian)
     * Bypass Paywalls Clean
+    * Violentmonkey
+      * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
     * gfx.webrender.all: true
     * gfx.webrender.software: false

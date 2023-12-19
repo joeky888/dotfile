@@ -32,8 +32,11 @@ Extension
 * Full Page Screen Capture
 * SimpleUndoClose
 * RSS Feed Reader (feeder.co)
-* Tampermonkey (Opera addon)
+* Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
+* Violentmonkey (Open source)
+  * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
+    * Click toolbox on the left -> Click 組件 on the bottom left -> 在線 -> Install 合集包 (下載器、常用功能包)
 * RightToCopy
 * Enable Copy by keakon.net
 * Set Character Encoding
