@@ -214,6 +214,7 @@ Android
 * Backup IMEI code -> `*#06#`
 * Firefox Beta ->
   * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
+  * Setting -> External download manager -> Check
   * Add-ons -> Add-ons Manager
     * Dark Reader
     * uBlock Origin
