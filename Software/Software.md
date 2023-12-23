@@ -346,6 +346,9 @@ Android
   * SmartTube Beta
   * Bilibilitv 修復版
   * BiglyBT
+  * Firefox Beta + Desktop user agent
+    * Google search my user agent -> Request for Desktop site -> Copy agent from website
+    * Go to about:config -> Add new entry -> general.useragent.override (String) -> Paste the agent value from the previous step
   * Background App Killer
 * Not an app but related to Android
   * Scrcpy - Control Android via adb (Android 5+)
