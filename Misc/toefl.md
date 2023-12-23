@@ -452,3 +452,7 @@ Vocabularies 論述文常用單字片語
 * impartially adv. 公平地、秉公無私地 -- the police are impartially handled. 警察秉公地處理。
 * emission / exhaust n. （引擎排出的）廢氣;（尤指汽車的）尾氣 -- Car exhaust is the main reason for the city's pollution. 汽車排出的廢氣是造成城市污染的主要原因。
 * harmonious adj. 和諧的
+* Durability vs. Endurance vs. Stamina 都是名詞
+  * Durability (通常指非生物) 長時間高強度情況下的耐壞力(出現刮痕、損毀) - High Durability 通常表示可以在高強度的使用情況下扔不會損毀
+  * Endurance  (通常指生物的) 長時間高強度情況下的耐力，如長跑能力
+  * Stamina = Endurance 如長跑能力
