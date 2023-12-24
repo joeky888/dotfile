@@ -346,6 +346,7 @@ Android
   * SmartTube Beta
   * Bilibilitv 修復版
     * Daily build -> https://github.com/qidian55/bilibilitv1.6.6-repair/blob/main/mybv.apk
+    * Alternatives -> https://github.com/HCLonely/awesome-bilibili-extra#第三方客户端
   * BiglyBT
   * Firefox Beta + Desktop user agent
     * Google search my user agent -> Request for Desktop site -> Copy agent from website
