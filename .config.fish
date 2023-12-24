@@ -291,11 +291,11 @@ end
 
 function vlc-termux-ytdlp
   # Ref: https://wiki.videolan.org/Android_Player_Intents/
-  am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
+  am start -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'best' --get-url $argv)
 end
 
 function vlc-termux-ytdlp-audio
-  am start -a android.intent.action.VIEW -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
+  am start -a android.intent.action.VIEW -n org.videolan.vlc/.StartActivity -e "title" (yt-dlp --get-title $argv) -d (yt-dlp $DL_ARGUMENTS -f 'bestaudio/best' --no-video --get-url $argv)
 end
 
 # VLC is unable to auto-launch on android 13+, so just manully open vlc and play http://127.0.0.1:4567
