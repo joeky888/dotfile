@@ -231,7 +231,6 @@ Android
     * gfx.webgpu.force-enabled: true
     * dom.webgpu.enabled: true
     * media.hardware-video-decoding.enabed: false (Deprecated)
-    * network.process.enabled: true
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
     * browser.cache.disk.meta_memory_limit: 1,000=1MB(Default: 256 = 250KB)
     * browser.cache.disk.smart_size.enabled: false
@@ -240,6 +239,7 @@ Android
       * network.trr.uri: https://cloudflare-dns.com/dns-query
       * network.trr.bootstrapAddress: 8.8.8.8
     * Faster networking
+      * network.process.enabled: true
       * network.http.max-connections: 1000
       * network.http.max-persistent-connections-per-server: 16
 * Yandex
