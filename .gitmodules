@@ -15,10 +15,6 @@
 	path = powershell
 	url = https://github.com/joeky888/powershell.git
 	shallow = true
-[submodule "neofetch"]
-	path = neofetch
-	url = https://github.com/dylanaraps/neofetch.git
-	shallow = true
 [submodule "inxi"]
 	path = inxi
 	url = https://github.com/smxi/inxi.git
