@@ -152,7 +152,6 @@ function getModulePath()
 }
 
 GRC_PATH=$(getModulePath grc)
-NEOFETCH_PATH=$(getModulePath neofetch)
 INXI_PATH=$(getModulePath inxi)
 POWERLEVEL10K_PATH=$(getModulePath powerlevel10k)
 ZSH_SYNTAX_PATH=$(getModulePath zsh-syntax-highlighting)
@@ -162,7 +161,6 @@ DIFF_HIGHLIGHT_PATH=$(getModulePath diff-highlight)
 OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 
 [ -n "$GRC_PATH" ]            && export PATH=$GRC_PATH:$PATH
-[ -n "$NEOFETCH_PATH" ]       && export PATH=$NEOFETCH_PATH:$PATH
 [ -n "$INXI_PATH" ]           && export PATH=$INXI_PATH:$PATH
 [ -n "$APP_FAST_PATH" ]       && export PATH=$APP_FAST_PATH:$PATH
 [ -n "$DIFF_HIGHLIGHT_PATH" ] && export PATH=$DIFF_HIGHLIGHT_PATH:$PATH
