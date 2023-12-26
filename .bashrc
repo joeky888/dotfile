@@ -238,6 +238,9 @@ if ! [ "$GOPATH" ]; then
   fi
 fi
 
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+
 if [[ -d "$HOME/zulu" ]]; then
   export PATH=$HOME/zulu/bin:$PATH
   export JAVA_HOME=$HOME/zulu
@@ -798,6 +801,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
   [ $(command -v kubectl) ] && source <(kubectl completion bash)
   [ $(command -v helm) ] && source <(helm completion bash 2>/dev/null)
   [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
+  [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
   shopt -s histappend # Append history
   shopt -s checkwinsize # Checks the window size after each command
@@ -1383,3 +1387,4 @@ OpenFileExplorer()
     true
   fi;
 }
+
