@@ -341,6 +341,7 @@ Android
   * Manhuaren 漫畫人 - Don't use google play version
   * Lawnchair Launcher - Latest version is on github only
 * Android TV
+  * Settings > Developer options > find “Wi-Fi scan throttling” > Disable
   * SmartTube Beta
   * Bilibilitv 修復版
     * Daily build -> https://github.com/qidian55/bilibilitv1.6.6-repair/blob/main/mybv.apk
