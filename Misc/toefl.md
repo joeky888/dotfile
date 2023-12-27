@@ -272,9 +272,9 @@ Vocabulary
 | Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
 
 
-| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. |
-| ----------- | ------- | ----------------- | ----------- |
-| extremities | microbe | replenish         | trek        |
+| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   |
+| ----------- | ------- | ----------------- | ----------- | ------------- |
+| extremities | microbe | replenish         | trek        | innate/inborn |
 
 植物學 Botany
 
@@ -456,3 +456,6 @@ Vocabularies 論述文常用單字片語
   * Durability (通常指非生物) 長時間高強度情況下的耐壞力(出現刮痕、損毀) - High Durability 通常表示可以在高強度的使用情況下扔不會損毀
   * Endurance  (通常指生物的) 長時間高強度情況下的耐力，如長跑能力
   * Stamina = Endurance 如長跑能力
+* impersonal adj. 不友善的 冷淡的 -- a impersonal manner 冷淡的態度
+* incentive n. 激勵、鼓勵 -- Bonus payments provide an incentive to work harder. 支付獎金能鼓勵人們更努力工作。
+* cultivate v. 耕作;栽培;種植 -- The villagers cultivate mostly maize and beans. 村民們主要種植玉米和豆類。
