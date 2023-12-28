@@ -373,7 +373,7 @@ Vocabularies 論述文常用單字片語
 * ambivalent adj. 矛盾情緒的 -- He has ambivalent feelings towards his father
 * discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
 * consent n. (不可數) 許可 (=permission) -- if your parents give their consent.
-* antagonize vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)
+* antagonize = provoke vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)
 * assimilation n. 同化 吸收作用 -- the assimilation of facts 事實的接受
 * advocate n. vt. He advocates reforming the prison system. 他主張改良監獄制度
 * impel compel repel impulsive compulsive repulsive
