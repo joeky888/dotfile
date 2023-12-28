@@ -1,67 +1,64 @@
-[Setting
+Setting
 =====
-```yaml
-hints:
-  enabled:
-   - regex: "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)\
-             [^\u0000-\u001F\u007F-\u009F<>\"\\s{-}\\^⟨⟩`]+"
-     command: xdg-open
-     post_processing: true
-     mouse:
-       enabled: false # 👈
-       mods: None
+```toml
+[[hints.enabled]]
+command = "xdg-open"
+post_processing = true
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini:|gopher:|https:|http:|news:|file:|git:|ssh:|ftp:)[^\u0000-\u001F\u007F-<>\"\\s{-}\\^⟨⟩`]+"
+
+[hints.enabled.mouse]
+enabled = false
+mods = "None"
 ##############################
-selection:
-  save_to_clipboard: true
+[selection]
+save_to_clipboard = true
 ##############################
-font:
-  normal:
-    family: Iosevka
-  bold:
-    family: Iosevka
-  size: 16.0
+[font]
+size = 18.0
+[font.bold]
+family = "UbuntuMono Nerd Font"
+
+[font.normal]
+family = "UbuntuMono Nerd Font"
 ##############################
-cursor:
-  style: Beam
+[cursor]
+style = "Beam"
 ##############################
-window:
-  opacity: 0.9
-  dimensions:
-    columns: 130
-    lines: 30
+[window]
+opacity = 0.9
+[window.dimensions]
+columns = 130
+lines = 30
 ```
 
 Color (Monokai soda)
 =====
-```yaml
+```toml
 # Colors (Monokai Soda)
-colors:
-  # Default colors
-  primary:
-    background: '0x1a1a1a'
-    foreground: '0xc4c5b5'
 
-  # Normal colors
-  normal:
-    black:   '0x1a1a1a'
-    red:     '0xf4005f'
-    green:   '0x98e024'
-    yellow:  '0xfa8419'
-    blue:    '0x9d65ff'
-    magenta: '0xf4005f'
-    cyan:    '0x58d1eb'
-    white:   '0xc4c5b5'
+[colors.bright]
+black = "0x625e4c"
+blue = "0x9d65ff"
+cyan = "0x58d1eb"
+green = "0x98e024"
+magenta = "0xf4005f"
+red = "0xf4005f"
+white = "0xf6f6ef"
+yellow = "0xe0d561"
 
-  # Bright colors
-  bright:
-    black:   '0x625e4c'
-    red:     '0xf4005f'
-    green:   '0x98e024'
-    yellow:  '0xe0d561'
-    blue:    '0x9d65ff'
-    magenta: '0xf4005f'
-    cyan:    '0x58d1eb'
-    white:   '0xf6f6ef'
+[colors.normal]
+black = "0x1a1a1a"
+blue = "0x9d65ff"
+cyan = "0x58d1eb"
+green = "0x98e024"
+magenta = "0xf4005f"
+red = "0xf4005f"
+white = "0xc4c5b5"
+yellow = "0xfa8419"
+
+[colors.primary]
+background = "0x1a1a1a"
+foreground = "0xc4c5b5"
 ```
 
 Windows shortcut for cygwin + tmux = mintty alternative

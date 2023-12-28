@@ -429,8 +429,8 @@ upgradeDotfile() {
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/Documents/WindowsPowerShell/profile.ps1
   rm -rf ~/.grc
-  rm -rf ~/.config/alacritty/alacritty.yml
-  rm -rf ~/.alacritty.yml
+  rm -rf ~/.config/alacritty/alacritty.toml
+  rm -rf ~/.alacritty.toml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/starship.toml
@@ -482,7 +482,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
@@ -493,7 +493,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
-    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
@@ -527,8 +527,8 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.Xresources ~/.Xresources
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.vimrc
     ln -sf $HOME/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
-    ln -sf $HOME/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
-    ln -sf $HOME/dotfile/.alacritty.yml ~/.alacritty.yml
+    ln -sf $HOME/dotfile/.alacritty.toml ~/.config/alacritty/alacritty.toml
+    ln -sf $HOME/dotfile/.alacritty.toml ~/.alacritty.toml
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
     ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf

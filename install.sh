@@ -25,8 +25,8 @@ InstallDotfile()
   rm -rf ~/.config/nvim/init.vim
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/.grc
-  rm -rf ~/.config/alacritty/alacritty.yml
-  rm -rf ~/.alacritty.yml
+  rm -rf ~/.config/alacritty/alacritty.toml
+  rm -rf ~/.alacritty.toml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
   rm -rf ~/.config/starship.toml
@@ -82,8 +82,8 @@ InstallDotfile()
   ln -sf $Home/dotfile/starship.toml ~/.config/starship.toml
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
-  ln -sf $Home/dotfile/.alacritty.yml ~/.config/alacritty/alacritty.yml
-  ln -sf $Home/dotfile/.alacritty.yml ~/.alacritty.yml
+  ln -sf $Home/dotfile/.alacritty.toml ~/.config/alacritty/alacritty.toml
+  ln -sf $Home/dotfile/.alacritty.toml ~/.alacritty.toml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
   ln -sf $Home/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
   ln -sf $Home/dotfile/.mpv_thumbnail_script.conf ~/.config/mpv/script-opts/mpv_thumbnail_script.conf
@@ -149,7 +149,7 @@ InstallDotfileCygwin()
   rm -f $Home/.gitconfig
   rm -f $Home/.gitmessage
   rm -f $Home/.Xresources
-  rm -f $Home/.alacritty.yml
+  rm -f $Home/.alacritty.toml
   rm -f $Home/.myclirc
   rm -f $Home/.config/fish/config.fish
   rm -f $Home/.config/starship.toml
@@ -172,7 +172,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\starship.toml" "%USERPROFILE%\dotfile\starship.toml"
@@ -188,7 +188,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.yml" "%USERPROFILE%\dotfile\.alacritty.yml"
+  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
