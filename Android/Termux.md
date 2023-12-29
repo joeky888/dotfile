@@ -11,7 +11,7 @@ pacman-mirrors --api --set-branch stable --protocols https --continent
 proot-distro remove manjaro # Uninstall: Remove chroot
 ```
 
-Manjaro with XFCE
+Manjaro with XFCE (Don't try this, UX is terrible)
 =====
 ```sh
 pacman -S sudo vim

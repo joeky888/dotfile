@@ -400,13 +400,14 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
   # ~/dotfile/app-fast/app-fast install -y libtool ncurses-utils python-dev libffi-dev libcrypt-dev openssl-dev readline-dev
   # InstallPIP
+  curl -L https://raw.githubusercontent.com/joeky888/dotfile/master/.bashrc > ~/.bashrc
   mkdir -p ~/.config/fish && curl https://raw.githubusercontent.com/joeky888/dotfile/master/.config.fish -o ~/.config/fish/config.fish
-  chsh -s fish
+  # chsh -s fish
+  apt install -y zellij # This will failed on arm32 system
   apt install python-pip -y
   pip install --upgrade --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip
   # Ref: https://stackoverflow.com/a/77604799
   CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install --upgrade --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip
-  apt install -y zellij # This will failed on arm32 system
 
 
 
