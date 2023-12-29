@@ -216,11 +216,9 @@ Android
   * Add-ons -> Add-ons Manager
     * Dark Reader
     * uBlock Origin
-    * Video Speed Controller
-    * User Agent Switcher (by Alexander Schlarb)
-    * Absolute Enable Right Click & Copy
-    * Search by Image - Reverse Image Search (by Armin Sebastian)
     * Bypass Paywalls Clean
+    * SponsorBlock
+      * Intro -> Auto Skip
     * Violentmonkey
       * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
@@ -228,11 +226,9 @@ Android
     * gfx.webrender.software: false
     * gfx.webrender.software.opengl: false
     * gfx.webrender.fallback.software: false
-    * gfx.webgpu.force-enabled: true
     * dom.webgpu.enabled: true
-    * media.hardware-video-decoding.enabed: false (Deprecated)
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
-    * browser.cache.disk.meta_memory_limit: 1,000=1MB(Default: 256 = 250KB)
+    * browser.cache.disk.metadata_memory_limit: 1,000=1MB(Default: 256 = 250KB)
     * browser.cache.disk.smart_size.enabled: false
     * Enable DOH (https://www.reddit.com/r/firefox/comments/r8nc41)
       * network.trr.mode: 2
@@ -264,6 +260,7 @@ Android
   * Options > Settings > Data and Storage > Storage Usage > Keep media for "1 month"
 * Discord
 * Sogou input method
+* Gboard
 * Hacker's Keyboard
 * Termux (terminal for Android 5+)
   * Daily build: https://github.com/termux/termux-app/actions/workflows/debug_build.yml?query=branch%3Amaster+event%3Apush
@@ -277,6 +274,7 @@ Android
   * Add tw language to google maps in the app setting
 * Here WeGo / Maps.me
 * Amaze File Manager
+* Little File Explorer - Smalle file manager for android 1.0+
 * WPS office
 * FBReader
 * org.cwb Weather
@@ -300,7 +298,6 @@ Android
 * Opengapps (flash it if gapps are not functional)
 * Google Lens
 * Qemu Limbo
-* SystemPanel 2
 * tw.gov.invoice
 * tw.gov.tra.twtraffic
 * Easy Wallet
@@ -318,14 +315,11 @@ Android
   * Blokada - AD block
     * Advanced -> Networks -> All Networks -> Use DNS -> Google
     * Disable Android bettery optimisation for blokada
-  * DNS66 - Block ads/hosts via DNS
   * Simple Camera
   * EtchDroid
-  * ScreenCam
   * Simple Gallery
-  * Coffee - Make the screen stay awake
-  * Reddit
-  * Feedly
+* Reddit
+* Feedly
 * Drop-down menu items
   * Screenshot
   * Flash light

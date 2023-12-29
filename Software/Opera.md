@@ -32,6 +32,8 @@ Extension
 * Full Page Screen Capture
 * SimpleUndoClose
 * RSS Feed Reader (feeder.co)
+* SponsorBlock
+  * Intro -> Auto Skip
 * Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * Violentmonkey (Open source)
@@ -79,10 +81,7 @@ https://feeds.feedburner.com/pcadv
 https://feeds.feedburner.com/cool3c-show
 https://www.ithome.com.tw/rss
 https://www.kocpc.com.tw/feed
-http://www.azofreeware.com/feeds/posts/default
 http://www.oschina.net/news/rss
-https://linux.cn/rss.xml
-http://feeds.bbci.co.uk/zhongwen/trad/rss.xml
 https://www.ithome.com/rss
 https://www.freebuf.com/feed
 https://www.infoq.cn/feed
