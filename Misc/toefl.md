@@ -312,7 +312,7 @@ Vocabulary
 
 歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
-* Introduction
+* Introduction (僅介紹 沒有站立場)
 * Body
   * On one hand, Concept 1 pro and cons
   * On the other hand, Concept 2 pro and cons
@@ -320,11 +320,11 @@ Vocabulary
 
 演繹法 deduction (只寫正面/反面) 倒三角
 =====
-* thesis statement
+* Intro + thesis statement (有立場選擇)
 * Body 列舉法
-  * First issue is that
-  * Second,
-  * Third,
+  * First issue is that | For one thing,
+  * Second, | For another thing,
+  * Third, | For the last thing,
 * Conclusion
 
 標點符號 (Punctuation)
