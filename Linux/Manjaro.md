@@ -140,7 +140,7 @@ Server = https://cdn.repo.archlinuxcn.org/$arch
 ```
 ```sh
 pacman -Syy --noconfirm --needed archlinuxcn-keyring
-yay -S ttf-wps-fonts ttf-iosevka ttf-ubuntu-mono-nerd ttf-twemoji-color
+yay -S ttf-wps-fonts ttf-iosevka ttf-ubuntu-mono-nerd ttf-twemoji-color fnm-bin
 ```
 
 Mhwd
