@@ -25,6 +25,7 @@ set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/inxi $fish_user_paths
 set -U fish_user_paths $HOME/dotfile/diff-highlight $fish_user_paths
 set -U fish_user_paths $HOME/bin $fish_user_paths
+set -U fish_user_paths $HOME/go/bin $fish_user_paths
 
 if test -f /opt/homebrew/bin/brew
   eval (/opt/homebrew/bin/brew shellenv)
@@ -234,9 +235,6 @@ set VCS_FOLDERS_MORE "$VCS_FOLDERS,**/vendor/*,**/node_modules/*,**/ohmyzsh/*,**
 set NIXPKGS_ALLOW_UNFREE 1
 set PIP_USE_FEATURE "fast-deps" # Enable pip parallel downloading
 set STREAMLINK_ARGUMENTS "--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
-set GOPATH "$HOME/go"
-set GOBIN "$GOPATH/bin"
-set -U fish_user_paths $GOPATH/bin $fish_user_paths
 
 # Faster navigating, overwrite oh-my-zsh settings
 alias ..='cd ..'
