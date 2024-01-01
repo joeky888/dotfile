@@ -252,6 +252,7 @@ alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][vcodec!^=av01]+best
 alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][fps<=60][vcodec!^=av01]+bestaudio/best'"
 alias upgradeYtdlp='pip install --upgrade --force-reinstall --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip'
 alias upgradeStreamlink='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip'
+alias upgradeGopeed='go install github.com/GopeedLab/gopeed/cmd/gopeed@main'
 alias python3-simple-server='python3 -m http.server'
 alias termux-ssh-server-start='pkill sshd; echo "listening :8022"; sshd -D -p 8022'
 alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate" --user-agent "(yt-dlp --dump-user-agent)" -LC - '
