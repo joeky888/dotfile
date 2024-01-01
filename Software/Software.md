@@ -500,11 +500,13 @@ Ideas to be done
 * OBS studio alternative for android/ios
 * React Native Video player as a mpv alternative for mobile
   * libvlc as kernel
-  * Oniguruma regex engine for parsing website, maybe with zig cc
+  * Oniguruma regex engine for parsing website
   * https://github.com/reason211/m3u8-downloader as m3u8 accelerated downloader
   * Top-of-the-screen secondary subtitle support
-  * Danmaku/Comments mode switcher for live streaming comments
+  * Danmaku/Comments mode switch for live streaming comments
   * Picture in picture
+  * Sponsorblock
+  * Multi-thread video/audio Downloader
 * Steam Deck + Tiny11 + FydeOS + Waydroid + BlackArch
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
