@@ -2,7 +2,10 @@ Install node-lts
 =====
 * Install nvm using curl
 ```bash
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
-nvm install --lts
-nvm use --lts
+brew install fnm
+fnm install --lts
+fnm use lts/latest
+fnm ls
+
+fnm uninstall v20.10.0 # Remove LTS
 ```

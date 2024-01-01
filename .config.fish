@@ -367,4 +367,3 @@ if type -q grc
     end
   end
 end
-
