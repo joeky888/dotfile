@@ -459,3 +459,4 @@ Vocabularies 論述文常用單字片語
 * impersonal adj. 不友善的 冷淡的 -- a impersonal manner 冷淡的態度
 * incentive n. 激勵、鼓勵 -- Bonus payments provide an incentive to work harder. 支付獎金能鼓勵人們更努力工作。
 * cultivate v. 耕作;栽培;種植 -- The villagers cultivate mostly maize and beans. 村民們主要種植玉米和豆類。
+* seminar /ˈsem.ə.nɑːr/ n. 專題討論會;研討會 -- I attended practically every lecture and seminar when I was a student. 我上學的時候，幾乎參加了每一場講座和研討會。
