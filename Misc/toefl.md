@@ -144,7 +144,7 @@ Vocabulary
 * Create moral dilemma 製造道德疑慮(比如人體器官複製)
 * May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
 * More and more High-profile buzzward 越來越多的備受矚目的新用詞
-* be terminally-ill 是病危的
+* be terminally-ill / be torturous bed-bound / be bedridden 是病危的、極度痛苦臥病的
 * content (內容物不可數) vs contents (內容物可數)
 * tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
   * overcome a hurdle  / clear a hurdle  / get over a hurdle 克服一個障礙 (可數做 hurdles)
@@ -256,6 +256,9 @@ Vocabulary
 * On the other hand, <名字> raised the relevant point that ... but he/she didn't mention that 另一方面，xx 認為...，但他少了...
 * Take N for example, ... 舉例來說
 * Incidentally, ... 順便一提，... -- Incidentally, I wanted to have a word with you about your travel expenses. 順便說一句，我打算和你談一下你的開支報銷問題。
+* As is known (to everyone) those who always 如眾所周知的每個人都..
+* Thumbing through / skimming 翻閱歷史人物的..
+* I come to realize that... 我逐漸意識到...
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -367,6 +370,16 @@ Vocabulary
     * I opened the door, and there she stood—my long lost sister.
     * Wait! I forgot to tell you—
 
+高級片語
+=====
+1. adj/adv/n. + as/though + S + V./do/did/does 倒裝句
+  * ... , tiny as it is, ... 雖小
+  * , tiny though it is,
+  * , shout as he did, ，雖然他大聲地叫，
+2. Without/If it were not for + N, we might 若不是現在有，我們可能就
+  * If it were not for the dedication of individuals who take the responsibility.. 若不是有致力於此的人們自願..
+
+
 Vocabularies 論述文常用單字片語
 =====
 * keen (adj.) 敏銳的
@@ -380,7 +393,7 @@ Vocabularies 論述文常用單字片語
 * reach a consensus 達成共識 -- They may never reach a consensus
 * malady n. (不可數) (身體的)大病、(社會的)弊病 -- the malady facing the education system 教育制度面臨的弊病
 * malaise n. (不可數) (身體的)小病、(社會的)不滿 -- They claim it is a symptom of a deeper and more general malaise in society 他們聲稱這表明了社會中人們更深層更廣泛的不
-* excruciating adj. 極痛苦的 -- from excruciating pain of losing their beloved family
+* excruciating adj. 極痛苦的、折磨人的 -- from excruciating pain of losing their beloved family
 * dilemma n. (可數) 兩難困境 -- in a dilemma
 * ambivalent adj. 矛盾情緒的 -- He has ambivalent feelings towards his father
 * discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
@@ -400,6 +413,8 @@ Vocabularies 論述文常用單字片語
   * obligation = duty 義務(法律上必須做的事)
   * responsibility 責任(應該要做的事)
   * liability 麻煩；累贅；債務 (肇事責任)
+  * mandated adj.（法律、條文）規定的
+  * responsible / accountable / culpable adj 對一切負責的 -- We are culpable for ... 我們要負起這一切的..問題
 * felon n. 重罪犯
 * conscience n. (可數) 良心
 * authorities concerned n. (政府)有關當局、相關部門
@@ -474,3 +489,35 @@ Vocabularies 論述文常用單字片語
 * seminar /ˈsem.ə.nɑːr/ n. 專題討論會;研討會 -- I attended practically every lecture and seminar when I was a student. 我上學的時候，幾乎參加了每一場講座和研討會。
 * prolonged adj. 長期的 -- Prolonged use of the drug is known to have harmful side-effects. 據了解，長期服用此藥會產生對人體有害的副作用。
 * lounge /laʊndʒ/ n.（飯店、機場、劇院等的）休息廳，等候室
+* labored adj. 吃力的、勤奮的 -- Her breathing was heavy and labored. 她的呼吸沉重而吃力。
+* take on + N 承擔
+* well-being n. 幸福 -- People doing yoga benefit from an increased feeling of well-being. 練瑜伽的人內心的幸福感會不斷增強。
+* have resulted from + N 起因於..
+* waters n. 海域
+* dam(s) n. 水壩 (通常加 s)
+* wander v. 閒晃 -- We spent the morning wandering around the old part of the city. 我們整個上午都在老城區閒逛。
+* steadfastly adv. 堅定地；不動搖地；不變地 -- She was steadfastly in support of women's rights. 她堅定不移地支持女性權益。
+* Thanks to N 幸虧
+* social ills/evils/vices n. 社會弊病
+* faucet /ˈfɑː.sət/ n. 水龍頭 (通常加s)
+* Fire hose n. 消防軟管 (通常加s)
+* watering v. 灌溉
+* green lawn n. 草坪、草皮(通常加s)
+* polished adj. 拋光過的;擦亮的 -- a highly polished floor 擦得很亮的地板
+* resorted to + N 訴諸於，憑藉著.. -- It was after the failure of this attempt that he resorted to force. 是這次嘗試失敗之後他才訴諸武力的。
+* execution of euthanasia /ˌjuː.θəˈneɪ.ʒə/ n. 執行安樂死
+* refute v. 反駁 -- to refute a person/theory/argument/claim 駁斥一個人／理論／論點／說法
+* life-support equipment n. 維生儀器 (equipment 通常為單數的集合名詞)
+* in a coma / in a unconscious state / narcosis n. 昏迷的狀態 (narcosis 為醫學用詞)
+* financial debt n. 財務赤字
+* hazardous adj. 危險的 -- a hazardous journey/occupation 危險的旅行／職業
+* definitely / be bound to.. adv. 必定地
+* escape from / retreat from 逃出、逃避
+* persevere to the end adj. 堅持到底的 -- What is important is to be persistent to the end. 重要的是要堅持到底。
+* skim v. 撇去……表面的浮物；撇去，去除[（+off/away）] -- She skimmed the soup to remove most of the fat. 她撇去了湯上的大部分浮油。
+* detriment / impairment n. 傷害、損害 -- a great detriment -- Are you sure that I can follow this diet without detriment to my health? 你能肯定我遵循這樣的飲食不會對健康有害嗎？
+* adversity n. 逆境、不幸 -- She was always cheerful in adversity. 身處逆境時，她也從不垂頭喪氣。
+* embody v. 具體表現；體現、收錄 -- embodied good sportsmanship 體現運動精神 -- Kennett embodied in one man an unusual range of science, music, and religion. 肯尼特集科學、音樂、宗教等方面一系列非凡成就於一身。
+* imagine / envision v. 想像 I always envisioned that I would return home at some point. 我總是設想我會在某個時候回家。
+* in one's course of life 在..的生命過程中
+* testify / prove / attest vi./vt.證明
