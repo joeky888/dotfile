@@ -255,6 +255,7 @@ Vocabulary
 * I am on the same page with <名字> who ... 我與xx站同一邊，他覺得...
 * On the other hand, <名字> raised the relevant point that ... but he/she didn't mention that 另一方面，xx 認為...，但他少了...
 * Take N for example, ... 舉例來說
+* Incidentally, ... 順便一提，... -- Incidentally, I wanted to have a word with you about your travel expenses. 順便說一句，我打算和你談一下你的開支報銷問題。
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -264,6 +265,9 @@ Vocabulary
 | Mercury | Venus | Earth | Mars   | Jupiter | Saturn | Uranus | Neptune | Pluto    |
 | My      | Very  | Easy  | Method | Just    | Speeds | Up     | Naming  | Planets. |
 
+| 分子     | 原子 |
+| -------- | ---- |
+| Molecule | Atom |
 
 動物學 Zoology
 
@@ -272,9 +276,9 @@ Vocabulary
 | Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
 
 
-| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   |
-| ----------- | ------- | ----------------- | ----------- | ------------- |
-| extremities | microbe | replenish         | trek        | innate/inborn |
+| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   | 單個大羽毛 |
+| ----------- | ------- | ----------------- | ----------- | ------------- | ---------- |
+| extremities | microbe | replenish         | trek        | innate/inborn | plume      |
 
 植物學 Botany
 
@@ -294,9 +298,17 @@ Vocabulary
 
 地質學 Geology
 
-| 化石   | 化石燃料    |
-| ------ | ----------- |
-| Fossil | Fossil fuel |
+| 化石   | 化石燃料    | 海拔高度  | 赤道    | 窪地坑、火山口 | 北回歸線         | 南回歸線            |
+| ------ | ----------- | --------- | ------- | -------------- | ---------------- | ------------------- |
+| Fossil | Fossil fuel | elevation | equator | crater         | Tropic of Cancer | Tropic of Capricorn |
+
+| 地殼(皮) | 地幔(最厚;岩石層) | 地核 | 壕溝、海溝 | 板塊  |
+| -------- | ----------------- | ---- | ---------- | ----- |
+| Crust    | Mantle            | Core | Trench     | plate |
+
+| 地表下的岩漿 | 噴發出的岩漿 |
+| ------------ | ------------ |
+| Magma        | Lava         |
 
 考古學 Archeology
 
@@ -460,3 +472,5 @@ Vocabularies 論述文常用單字片語
 * incentive n. 激勵、鼓勵 -- Bonus payments provide an incentive to work harder. 支付獎金能鼓勵人們更努力工作。
 * cultivate v. 耕作;栽培;種植 -- The villagers cultivate mostly maize and beans. 村民們主要種植玉米和豆類。
 * seminar /ˈsem.ə.nɑːr/ n. 專題討論會;研討會 -- I attended practically every lecture and seminar when I was a student. 我上學的時候，幾乎參加了每一場講座和研討會。
+* prolonged adj. 長期的 -- Prolonged use of the drug is known to have harmful side-effects. 據了解，長期服用此藥會產生對人體有害的副作用。
+* lounge /laʊndʒ/ n.（飯店、機場、劇院等的）休息廳，等候室
