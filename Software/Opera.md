@@ -36,7 +36,7 @@ Extension
   * Unpaid/Self Promotion -> Auto Skip
   * Interaction Reminder (Subscribe) -> Auto Skip
   * Intermission/Intro Animation -> Auto Skip
-  * Preview/Recap/Hook -> Auto Skip
+  * Preview/Recap/Hook -> Show in seekbar
 * Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * Violentmonkey (Open source)
