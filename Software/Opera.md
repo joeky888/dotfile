@@ -33,7 +33,10 @@ Extension
 * SimpleUndoClose
 * RSS Feed Reader (feeder.co)
 * SponsorBlock
-  * Intro -> Auto Skip
+  * Unpaid/Self Promotion -> Auto Skip
+  * Interaction Reminder (Subscribe) -> Auto Skip
+  * Intermission/Intro Animation -> Auto Skip
+  * Preview/Recap/Hook -> Auto Skip
 * Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * Violentmonkey (Open source)
