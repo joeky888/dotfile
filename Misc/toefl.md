@@ -259,6 +259,7 @@ Vocabulary
 * As is known (to everyone) those who always 如眾所周知的每個人都..
 * Thumbing through / skimming 翻閱歷史人物的..
 * I come to realize that... 我逐漸意識到...
+* Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -491,7 +492,7 @@ Vocabularies 論述文常用單字片語
 * lounge /laʊndʒ/ n.（飯店、機場、劇院等的）休息廳，等候室
 * labored adj. 吃力的、勤奮的 -- Her breathing was heavy and labored. 她的呼吸沉重而吃力。
 * take on + N 承擔
-* well-being n. 幸福 -- People doing yoga benefit from an increased feeling of well-being. 練瑜伽的人內心的幸福感會不斷增強。
+* well-being = welfare n. 幸福 -- People doing yoga benefit from an increased feeling of well-being. 練瑜伽的人內心的幸福感會不斷增強。
 * have resulted from + N 起因於..
 * waters n. 海域
 * dam(s) n. 水壩 (通常加 s)
