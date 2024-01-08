@@ -34,7 +34,7 @@ Post-installed
 * $ brew install sevenzip go node fnm ripgrep fd erdtree
 * $ brew tap homebrew/cask-fonts && brew install font-iosevka font-noto-sans-cjk font-ubuntu font-ubuntu-mono font-ubuntu-mono-nerd-font font-twitter-color-emoji
 * $ brew tap homebrew/cask-versions
-* $ brew install --cask alacritty visual-studio-code mpv docker-edge telegram-desktop dbeaver-community wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput openvpn-connect
+* $ brew install --cask alacritty visual-studio-code mpv docker telegram-desktop dbeaver-community wpsoffice skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput openvpn-connect
 * $ brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune=all && brew doctor
 
 Can not open an app due to "Unkown developer"
