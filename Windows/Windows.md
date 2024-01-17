@@ -62,7 +62,7 @@ scoop bucket add nerd-fonts
 scoop install CascadiaCode-NF UbuntuMono-NF # Then set powershell to use this font
 scoop install twemoji-color-font # MPV uses this font
 scoop install Noto-CJK-Mega-OTC # Browsers font set to "Noto Sans CJK"
-scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs-lts phantomjs miniconda3 wezterm rustup gitui starship blender
+scoop install aria2 fd ripgrep erdtree neovim curl ffmpeg mpv-git adb go upx nodejs-lts phantomjs miniconda3 wezterm rustup gitui fastfetch bottom starship blender
 Set the wezterm desktop shortcut target to 'C:\Users\joeky\scoop\apps\wezterm\current\wezterm-gui.exe start -- powershell.exe'
 
 # "" means "(Default)" which equals to "@"
@@ -78,7 +78,7 @@ PowerShellGet\Install-Module posh-git -Scope CurrentUser
 PowerShellGet\Install-Module oh-my-posh -Scope CurrentUser
 PowerShellGet\Install-Module posh-docker -Scope CurrentUser
 PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
-choco install cascadiamonopl 7zip-zstd git poshgit openssl.light skype vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave discord messenger -y
+choco install onefetch cascadiamonopl 7zip-zstd git poshgit openssl.light skype vscode greenshot wps-office-free obs-studio nomacs fontforge sumatrapdf.commandline xnviewmp krita brave discord messenger -y
 choco install directx vcredist2005 vcredist2008 vcredist2010 vcredist2012 vcredist2013 vcredist2015 vcredist2017 vcredist-all -y
 ```
 * Gaming dlls

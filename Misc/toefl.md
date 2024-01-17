@@ -316,9 +316,9 @@ Vocabulary
 
 考古學 Archeology
 
-| 木炭     | 發掘          |
-| -------- | ------------- |
-| Charcoal | (v.) Excavate |
+| 木炭     | 發掘          | 通風           | 陶器(的)     |
+| -------- | ------------- | -------------- | ------------ |
+| Charcoal | (v.) Excavate | n. ventilation | adj. ceramic |
 
 古生物學 Paleontology
 
@@ -522,3 +522,4 @@ Vocabularies 論述文常用單字片語
 * imagine / envision v. 想像 I always envisioned that I would return home at some point. 我總是設想我會在某個時候回家。
 * in one's course of life 在..的生命過程中
 * testify / prove / attest vi./vt.證明
+* That's a given! 當然！
