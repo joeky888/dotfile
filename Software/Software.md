@@ -239,8 +239,10 @@ Android
       * network.process.enabled: true
       * network.http.max-connections: 1000
       * network.http.max-persistent-connections-per-server: 16
-* Yandex
+* Yandex (Don't install beta/alpha version, they're lack features)
   * chrome://flags/#incognito-screenshot -> Enable (But doesn't work)
+  * The following steps should be done after all extensions are installed
+    * Settings > More settings > Site capabilities > Always open desktop versions of all websites
 * Yahoo News
 * Yahoo Finance
   * TQQQ

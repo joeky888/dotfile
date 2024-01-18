@@ -286,9 +286,9 @@ Vocabulary
 
 植物學 Botany
 
-| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 |
-| ------ | -------- | --------- | -------------- | ------ |
-| sowing | irrigate | fertilize | insulated      | scarce |
+| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 | 繁榮的                |
+| ------ | -------- | --------- | -------------- | ------ | --------------------- |
+| sowing | irrigate | fertilize | insulated      | scarce | flourishing, thriving |
 
 | 真菌類(菇類) | 藻類  |
 | ------------ | ----- |
@@ -325,6 +325,12 @@ Vocabulary
 | 下蛋      |
 | --------- |
 | laid eggs |
+
+語言學 Linguistics
+
+| 方言    |
+| ------- |
+| dialect |
 
 歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
@@ -523,3 +529,30 @@ Vocabularies 論述文常用單字片語
 * in one's course of life 在..的生命過程中
 * testify / prove / attest vi./vt.證明
 * That's a given! 當然！
+* prominent adj. 傑出的
+* subsequent adj. 隨後的
+* meticulous adj. 細緻的，嚴謹的 -- Many hours of meticulous preparation have gone into writing the book. 為寫此書，投入了大量時間細心做前期準備。
+* unsophisticated adj. 天真的(個性)、不成熟的、純的 -- an unsophisticated wine 味道純的葡萄酒
+* vibrant adj. 充滿活力的 -- a vibrant city / a vibrant personality
+* cluttered adj. 凌亂的
+* contrived /kənˈtraɪvd/ adj. 人為而不自然的;牽強的 His excuse sounded a bit contrived. 他的理由聽起來有點假。
+* plays a dominate role 舉足輕重的角色
+* Generally speaking, 一般而言，
+* impoverished adj. 窮苦的 -- a impoverished family
+* time-honoured adj. 古老但受尊重的
+* heritage n. = legacy 民族遺產
+* boomy adj. 景氣好的 -- boomy tourism 景氣好的觀光業
+* receptionist n. 接待人員、櫃檯人員
+* peddle v. (巡回)兜售、沿街叫賣 -- These products are generally peddled (from) door to door. 這些產品通常是挨家挨戶進行兜售的。
+* embark on/upon + N 從事、開始做 -- We're embarking upon a new project later this year. 今年晚些時候我們會著手進行一個新企劃。
+* gizmo(s) n. (通常加s) 小裝置;小發明;小東西 -- electronic gizmos 小電子裝置
+* sanitary adj. 衛生的，清潔的，乾淨的 -- Cholera thrives in poor sanitary conditions. 霍亂在衛生條件差的環境裡容易蔓延。
+* senator n. 參議員
+* acute /əˈkjuːt/ adj. 十分嚴重的 She felt acute embarrassment/anxiety/concern at his behaviour.她對他的行為感到極其尷尬／憂慮／擔憂。
+* double-edged adj. 雙面刃的
+* to strike a balance（在爭論中）找到折衷辦法，求得平衡點
+* interpersonal adj. 人際關係的
+* intercontenetal adj. 洲際的
+* international adj. 國際的
+* shouble be taken into consideration 應該要考慮進去
+* nuance n. （外表、意義、聲音等的）細微差別 -- You failed to notice the nuances in his remarks this time. 你並不了解他這次說話中的細微差別。
