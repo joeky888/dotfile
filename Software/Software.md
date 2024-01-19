@@ -179,6 +179,7 @@ Mac (Hack-intosh)
   * brave-browser-beta
   * google-chrome-dev
   * firefox-developer-edition
+* Bluestack (android emulator supporting intel/m1)
 
 Linux
 =====
