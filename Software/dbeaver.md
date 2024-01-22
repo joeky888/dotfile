@@ -1,6 +1,7 @@
-Dark theme
+Dark theme and font
 =====
 * Window -> Preferences -> User Interface -> Appearance -> Theme: Dark
+* Window > Preferences > User Interface > Appearance > Colors and Fonts > DBeaver Fonts > Monospace font
 
 Read-Only connection and Production connection
 =====
