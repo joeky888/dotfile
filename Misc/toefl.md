@@ -243,7 +243,7 @@ Vocabulary
 * It seems to me that 從我的的觀點來看 (適合句首)
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
 * these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
-* To conclude = In conclusion = To recapitulate 總結(適用最後一段的開頭)
+* To conclude = In conclusion = To recapitulate = To sum up 總結(適用最後一段的開頭)
 * It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 * It is deemed that people should ... 人們被認為應該 ... (適合開頭與結尾)
 * I firmly believe that 我堅信... (適合結尾開頭)
@@ -260,6 +260,7 @@ Vocabulary
 * Thumbing through / skimming 翻閱歷史人物的..
 * I come to realize that... 我逐漸意識到...
 * Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
+* Generally speaking, 一般而言，
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -269,9 +270,9 @@ Vocabulary
 | Mercury | Venus | Earth | Mars   | Jupiter | Saturn | Uranus | Neptune | Pluto    |
 | My      | Very  | Easy  | Method | Just    | Speeds | Up     | Naming  | Planets. |
 
-| 分子     | 原子 |
-| -------- | ---- |
-| Molecule | Atom |
+| 分子     | 原子 | 化學合成物 | 物質      |
+| -------- | ---- | ---------- | --------- |
+| molecule | atom | synthesis  | substance |
 
 動物學 Zoology
 
@@ -284,21 +285,33 @@ Vocabulary
 | ----------- | ------- | ----------------- | ----------- | ------------- | ---------- |
 | extremities | microbe | replenish         | trek        | innate/inborn | plume      |
 
+| 休眠 n.  | 可發育的 adj. |
+| -------- | ------------- |
+| dormancy | viable        |
+
 植物學 Botany
 
-| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 | 繁榮的                |
-| ------ | -------- | --------- | -------------- | ------ | --------------------- |
-| sowing | irrigate | fertilize | insulated      | scarce | flourishing, thriving |
+| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 | 繁榮的                | 花粉   | 植物、植被 |
+| ------ | -------- | --------- | -------------- | ------ | --------------------- | ------ | ---------- |
+| sowing | irrigate | fertilize | insulated      | scarce | flourishing, thriving | pollen | vegetation |
 
-| 真菌類(菇類) | 藻類  |
-| ------------ | ----- |
-| Fungus       | Algae |
+| 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  |
+| ------------ | ----- | ------------- | ----------- | ------- |
+| Fungus       | Algae | alpine plants | shrub, bush | conifer |
 
 氣象學 meteorology
 
-| 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結         | 凝華(氣變冰) | 降雨/降冰雹   | 滲透         | 地表徑流                     | 冰雹 | 雪崩      |
-| ---------- | ------------------ | ----------- | ------------------ | ------------ | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
-| Atmosphere | hydrological cycle | Evaporation | Transpiration      | condensation | Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
+| 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結         |
+| ---------- | ------------------ | ----------- | ------------------ | ------------ |
+| Atmosphere | hydrological cycle | Evaporation | Transpiration      | condensation |
+
+| 凝華(氣變冰) | 降雨/降冰雹   | 滲透         | 地表徑流                     | 冰雹 | 雪崩      |
+| ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
+| Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
+
+| 水份、濕氣 |
+| ---------- |
+| moisture   |
 
 地質學 Geology
 
@@ -310,9 +323,9 @@ Vocabulary
 | -------- | ----------------- | ---- | ---------- | ----- |
 | Crust    | Mantle            | Core | Trench     | plate |
 
-| 地表下的岩漿 | 噴發出的岩漿 |
-| ------------ | ------------ |
-| Magma        | Lava         |
+| 地表下的岩漿 | 噴發出的岩漿 | 土壤 |
+| ------------ | ------------ | ---- |
+| Magma        | Lava         | soil |
 
 考古學 Archeology
 
@@ -320,11 +333,13 @@ Vocabulary
 | -------- | ------------- | -------------- | ------------ |
 | Charcoal | (v.) Excavate | n. ventilation | adj. ceramic |
 
-古生物學 Paleontology
+古生物學 Paleontology  /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
 | 下蛋      |
 | --------- |
 | laid eggs |
+
+鳥類學 Ornithology  /ˌɔːr.nəˈθɑː.lə.dʒi/
 
 語言學 Linguistics
 
@@ -338,7 +353,7 @@ Vocabulary
 * Body
   * On one hand, Concept 1 pro and cons
   * On the other hand, Concept 2 pro and cons
-* Conclusion + thesis statement
+* Conclusion + thesis statement (有立場選擇)
 
 演繹法 deduction (只寫正面/反面) 倒三角
 =====
@@ -385,7 +400,9 @@ Vocabulary
   * , shout as he did, ，雖然他大聲地叫，
 2. Without/If it were not for + N, we might 若不是現在有，我們可能就
   * If it were not for the dedication of individuals who take the responsibility.. 若不是有致力於此的人們自願..
-
+3. in spite of / for all / with all 縱使、即使
+4. to some degree / to some extent 在某種程度上
+5. of a kind 同一類的 -- Creatures of a kind 同類
 
 Vocabularies 論述文常用單字片語
 =====
@@ -415,6 +432,7 @@ Vocabularies 論述文常用單字片語
   * impulsive adj. 衝動的、有推動力的 -- She is an impulsive person; we never know what she will do next. 她是個容易衝動的人；我們從來不知道她下一步想做什麼
   * compulsive adj. 強迫的、難以抑制的 -- a compulsive liar 說謊成性的人
   * repulsive adj. 令人厭惡的、排斥的 -- His behavior was repulsive. 他的行為令人厭惡
+  * compelling adj. 很有說服力的 -- compelling evidence 強而有力的證據
 * spontaneously adj. 自然的，自發的 -- This story may prompt you to burst spontaneously into uncontrollable sobs. 這個故事可能會讓你不由自主地抽泣起來。
 * duty obligation responsibility liability 都有責任、義務的意思
   * obligation = duty 義務(法律上必須做的事)
@@ -439,7 +457,7 @@ Vocabularies 論述文常用單字片語
 * excessive adj. 過量的 -- Excessive exercise can sometimes cause health problems. 過度的運動有時也會導致健康問題。
 * partake of v. 攝取 -- Would you care to partake of a little wine with us? 你願意和我們一起喝點酒嗎？
 * feed on v. 以..為主食 -- Cows feed on hay. 牛以乾草為食。
-* a noticeable extent/deree/point 達到顯著的程度
+* a noticeable extent/degree/point 達到顯著的程度
 * arise from v. 起源於
 * incidence n. 發生率 -- an increased incidence of cancer near nuclear power stations 核電站附近癌症發病率的上升
 * prevalence n. 盛行率、蔓延 -- the prevalence of smoking among teenagers 青少年吸煙的普遍性
@@ -495,6 +513,7 @@ Vocabularies 論述文常用單字片語
 * cultivate v. 耕作;栽培;種植 -- The villagers cultivate mostly maize and beans. 村民們主要種植玉米和豆類。
 * seminar /ˈsem.ə.nɑːr/ n. 專題討論會;研討會 -- I attended practically every lecture and seminar when I was a student. 我上學的時候，幾乎參加了每一場講座和研討會。
 * prolonged adj. 長期的 -- Prolonged use of the drug is known to have harmful side-effects. 據了解，長期服用此藥會產生對人體有害的副作用。
+* prolong vt. 延長 -- People have all along been seeking to prolong life. 人們一直在尋求長壽之道。
 * lounge /laʊndʒ/ n.（飯店、機場、劇院等的）休息廳，等候室
 * labored adj. 吃力的、勤奮的 -- Her breathing was heavy and labored. 她的呼吸沉重而吃力。
 * take on + N 承擔
@@ -520,7 +539,7 @@ Vocabularies 論述文常用單字片語
 * hazardous adj. 危險的 -- a hazardous journey/occupation 危險的旅行／職業
 * definitely / be bound to.. adv. 必定地
 * escape from / retreat from 逃出、逃避
-* persevere to the end adj. 堅持到底的 -- What is important is to be persistent to the end. 重要的是要堅持到底。
+* persevere to the end adj. 堅持到底的 -- What is important is to be persevere to the end. 重要的是要堅持到底。
 * skim v. 撇去……表面的浮物；撇去，去除[（+off/away）] -- She skimmed the soup to remove most of the fat. 她撇去了湯上的大部分浮油。
 * detriment / impairment n. 傷害、損害 -- a great detriment -- Are you sure that I can follow this diet without detriment to my health? 你能肯定我遵循這樣的飲食不會對健康有害嗎？
 * adversity n. 逆境、不幸 -- She was always cheerful in adversity. 身處逆境時，她也從不垂頭喪氣。
@@ -537,7 +556,6 @@ Vocabularies 論述文常用單字片語
 * cluttered adj. 凌亂的
 * contrived /kənˈtraɪvd/ adj. 人為而不自然的;牽強的 His excuse sounded a bit contrived. 他的理由聽起來有點假。
 * plays a dominate role 舉足輕重的角色
-* Generally speaking, 一般而言，
 * impoverished adj. 窮苦的 -- a impoverished family
 * time-honoured adj. 古老但受尊重的
 * heritage n. = legacy 民族遺產
@@ -554,5 +572,50 @@ Vocabularies 論述文常用單字片語
 * interpersonal adj. 人際關係的
 * intercontenetal adj. 洲際的
 * international adj. 國際的
-* shouble be taken into consideration 應該要考慮進去
+* should be taken into consideration 應該要考慮進去
 * nuance n. （外表、意義、聲音等的）細微差別 -- You failed to notice the nuances in his remarks this time. 你並不了解他這次說話中的細微差別。
+* drastic adj. （尤指行動）嚴厲的，猛烈的，激烈的 -- drastic measures 嚴厲的措施
+* abrupt adj. 突然的 -- an abrupt change/movement 突變／突發情況
+* tilt v. （使）傾斜 -- Anna looked up at him with her head tilted to one side. 安娜歪著腦袋，抬眼望著他。
+* impetus /ˈɪm.pə.t̬əs/ n. 促進，刺激 -- homelessness has given (a) fresh impetus to the cause. 圍繞無家可歸者對這項事業是一股新的推動力
+* stubby adj. 短粗的;矮壯的 -- stubby fingers 短粗的手指
+* bias n.
+  * 偏見 -- a strong bias against him 對他有強烈的偏見
+  * 趨勢、偏好 -- a scientific bias at an early age. 從小就有對科學的偏愛
+* exquisite  /ɪkˈskwɪz.ɪt/ adj. 精緻的;優雅的 -- this exquisite painting.
+* mammoth /ˈmæm.əθ/ adj. 巨大的 n. 長毛象 -- a mammoth task 艱巨任務, mammoth military budget 龐大的軍事支出
+* manufacturing weapons of mass destruction 製造大規模破壞武器
+* a sheer waste of money 純粹浪費錢
+* barbaric /bɑːrˈber.ɪk/ adj. 殘暴的;野蠻的;粗俗的 -- barbaric acts of violence 野蠻的暴力行為
+* appropriation
+  * n. 據為己有 -- The author objected to the appropriation of his story by an amateur filmmaker. 作者反對業餘電影製作人盜用他的故事。
+  * n. 撥款 -- The committee approved an appropriation of £10,000. 委員會批准撥款一萬英鎊。
+* impoverished /ɪmˈpɑː.vɚ.ɪʃt/ adj. 赤貧的 -- an impoverished society 貧窮的社會
+* atone for 補償 -- aton for the damages 為破壞而補償
+* insolvent  /ɪnˈsɑːl.vənt/ adj. 無力償還的 -- in insolvent state 處於無力償還的狀態
+* squander /ˈskwɑːn.dɚ/ v. 浪費(機會)、揮霍(金錢) -- squander a whole year's savings 花盡全年的積蓄
+* armament /ˈɑːr.mə.mənt/ n. 武裝戰備 -- money is being spent on armament. 軍備開支
+  * nuclear armament 核武
+* financial assistance 金援
+* recipient n. (通常加s) 受領者 -- welfare recipient 接受福利救濟的人
+* alleviate [əˋlivɪ͵et] vt. 減輕；緩和 -- did nothing to alleviate her pain/suffering. 對減輕她的病痛／痛苦沒有絲毫作用
+* backfire vi. 產生反效果
+* to seek profit 中飽私囊
+* plague /pleɪɡ/ vt. 困擾;折磨 -- is still plagued by.. 依舊被其困擾
+* stand by 袖手旁觀 -- We can't stand by while millions of people starve. 數百萬人在忍饑挨餓，我們不能袖手旁觀。
+* at the expense of 犧牲 -- at the expense of other countries' economic welfare 犧牲其他國家的經濟福利
+* immerse vt. 泡在(水)、入迷 -- She immersed herself in Jewish history and culture. 她沉浸於猶太歷史和文化之中。
+* astray [əstˋrei] adv. 離開正道 -- We missed the track and went astray. 我們走錯了道，迷路了。
+* comprise vt. 組成；包含 -- The Union comprises fifty states. 美國有五十個洲。
+* synthesis [ˋsinθisis] n. 綜合體、化學合成物 -- protein synthesis 蛋白合成物
+* augment [ɔ:gˋment] vt. vi. 增大、加強 -- The impact of the report was augmented by its timing. 由於發表的時間選得好，這篇報導的影響更大了。
+* deformation n. 變形；損壞 -- the deformation of a solid by pressure 固體受壓力而變形
+* ailment [ˋeilmənt] n. （輕微的）疾病 -- He got timely treatment for his ailment. 他的病得到及時治療。
+  * curing ailment 治療疾病
+* rod [rɑd] n. 竿子、棍棒
+* disintegrate vt. vi. 解體 -- rocks disintegrated by frost and rain 因受霜打雨淋而崩解的岩石
+* sacred [ˋsekrɪd] = holy adj. 神聖的 -- He made a sacred promise. 他作出了鄭重的許諾。
+* tactful adj. 機智的、得體的 -- it wasn't very tactful of you to mention his first wife 你提起他的第一個妻子，這不太得體
+* accommodate vt. = satisfy 能容納、可搭載 -- The hotel can accommodate 500 tourists. 這家旅館可住五百名觀光客。
+* typify vt. 象征 -- Desert are typified by warm days 沙漠的特征是高溫的白天
+* prone adj. 易於..的 -- Mother is prone to headaches. 我母親經常頭痛。
