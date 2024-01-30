@@ -347,6 +347,12 @@ Vocabulary
 | ------- |
 | dialect |
 
+政府機構 Governmental body
+
+| 法務部              | 勞工局          |
+| ------------------- | --------------- |
+| Ministry of Justice | Bureau of Labor |
+
 歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
 * Introduction (僅介紹 沒有站立場)
@@ -644,3 +650,4 @@ Vocabularies 論述文常用單字片語
 * legislate /ˈledʒ.ə.sleɪt/ vi. vt. 立法、制定 -- It is not necessary to legislate against gambling. 沒有必要立法禁賭。
 * perpetrator = lawbreaker [͵pə:piˋtreitə] n. 犯罪者；行兇者 -- The perpetrators of the massacre must be brought to justice as war criminals. 大屠殺的參與者必須被當作戰犯繩之以法。
 * perpetrate /ˈpɝː.pə.treɪt/ vt. 犯(罪) -- who perpetrated this dreadful deed? 這件可怕的事是誰幹的？
+* radically-aging adj. 急劇惡化的
