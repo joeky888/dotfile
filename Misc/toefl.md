@@ -651,3 +651,4 @@ Vocabularies 論述文常用單字片語
 * perpetrator = lawbreaker [͵pə:piˋtreitə] n. 犯罪者；行兇者 -- The perpetrators of the massacre must be brought to justice as war criminals. 大屠殺的參與者必須被當作戰犯繩之以法。
 * perpetrate /ˈpɝː.pə.treɪt/ vt. 犯(罪) -- who perpetrated this dreadful deed? 這件可怕的事是誰幹的？
 * radically-aging adj. 急劇惡化的
+* perplex vt. 困惑著、複雜化 -- His strange behavior had greatly perplexed her. 他的古怪行為使她大惑不解。
