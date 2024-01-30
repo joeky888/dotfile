@@ -243,7 +243,7 @@ Vocabulary
 * It seems to me that 從我的的觀點來看 (適合句首)
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
 * these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
-* To conclude = In conclusion = To recapitulate = To sum up 總結(適用最後一段的開頭)
+* To conclude = In conclusion = To recapitulate = To sum up = In a nutshell = In summary 總結(適用最後一段的開頭)
 * It goes without saying, ... 不言而喻...(接著要說的大家都懂)
 * It is deemed that people should ... 人們被認為應該 ... (適合開頭與結尾)
 * I firmly believe that 我堅信... (適合結尾開頭)
@@ -351,15 +351,15 @@ Vocabulary
 ====
 * Introduction (僅介紹 沒有站立場)
 * Body
-  * On one hand, Concept 1 pro and cons
-  * On the other hand, Concept 2 pro and cons
+  * On one hand | For one thing, Concept 1 pro and cons
+  * On the other hand, | For another thing, Concept 2 pro and cons
 * Conclusion + thesis statement (有立場選擇)
 
 演繹法 deduction (只寫正面/反面) 倒三角
 =====
 * Intro + thesis statement (有立場選擇)
 * Body 列舉法
-  * First issue is that | For one thing,
+  * First issue is that | For one thing | For one hand | To start with,
   * Second, | For another thing,
   * Third, | For the last thing,
 * Conclusion
@@ -411,7 +411,7 @@ Vocabularies 論述文常用單字片語
 * jeopardize (vt.) 危急
 * rejuvenated (vi.) 恢復活力的
 * recession (n.) 經濟衰退時期 -- during the period of economic recession
-* proclaim (vt.) 宣佈
+* proclaim (vt.) (官方的)宣佈
 * thought-provoking (adj.) 發人深思的 -- The following is my viewpoint on this thought-provoking issue.
 * spare no effort 不遺餘力 -- They spare no effort in perfecting cloning technology
 * reach a consensus 達成共識 -- They may never reach a consensus
@@ -423,7 +423,7 @@ Vocabularies 論述文常用單字片語
 * discrimination n.(不可數) 歧視 -- racial/sex/age discrimination
 * consent n. (不可數) 許可 (=permission) -- if your parents give their consent.
 * antagonize = provoke vt. 激怒 -- I don't want to antagonize him (這個詞比 anger 更重一些)
-* assimilation n. 同化 吸收作用 -- the assimilation of facts 事實的接受
+* assimilation [ə͵sɪm!ˋeʃən] n. 同化 吸收作用 -- the assimilation of facts 事實的接受
 * advocate n. vt. He advocates reforming the prison system. 他主張改良監獄制度
 * impel compel repel impulsive compulsive repulsive
   * impel vt. 驅使；迫使 -- He said he had been impelled to crime by poverty. 他說貧困逼得他犯罪
@@ -448,7 +448,7 @@ Vocabularies 論述文常用單字片語
 * diligently / industriously adv. 勤奮地
 * weak-minded / feeble adj. 性格軟弱的 (注意 feeble-minded 是弱智的，別誤用)
 * admonish / remind vt. 勸告、力勸 -- Her teacher admonished her to work harder for her exams. 她的老師勸告她想通過考試就要更努力地學習。
-* prestigious adj. 聲望很高的
+* prestigious [prɛsˋtɪdʒɪəs] adj. 聲望很高的
 * state-of-the-art adj. 最先進的 -- a state-of-the-art computer 最先進的電腦
 * be unheard-of 前所未聞的 -- It was unheard-of for an unmarried couple to live together. 未婚同居，這在以前是聞所未聞的事。
 * be unaware of 未意識到的 -- I was completely unaware of the problem. 我根本沒意識到這個問題。
@@ -498,6 +498,7 @@ Vocabularies 論述文常用單字片語
 * abominable = abhorrent adj. 令人憎惡的；可惡的 -- 電影常見字 abomination 令人厭惡的事情
 * traffic jam / traffic congestion / traffic gridlock 塞車、交通阻塞、擁塞、擁擠
 * traffic flow / traffic volume n.(uc) 交通量 -- Reduce the traffic flow 減少交通量
+* commute vt. 減刑 -- His sentence was commuted from death to life imprisonment. 他由死刑改判為終身監禁。
 * commuter(s) n. 通勤者 (通常加s)
 * of all kinds 各式各樣的 -- Shoes of all kinds 各式各樣的鞋子
 * handle / resolve / tackle / address vt. 處理、解決(問題)
@@ -516,6 +517,7 @@ Vocabularies 論述文常用單字片語
 * prolong vt. 延長 -- People have all along been seeking to prolong life. 人們一直在尋求長壽之道。
 * lounge /laʊndʒ/ n.（飯店、機場、劇院等的）休息廳，等候室
 * labored adj. 吃力的、勤奮的 -- Her breathing was heavy and labored. 她的呼吸沉重而吃力。
+* laborious adj. 費力的，吃力的；勤勉的 -- Ants and bees are laborious insects. 螞蟻與蜜蜂是勤勞的昆蟲。
 * take on + N 承擔
 * well-being = welfare n. 幸福 -- People doing yoga benefit from an increased feeling of well-being. 練瑜伽的人內心的幸福感會不斷增強。
 * have resulted from + N 起因於..
@@ -619,3 +621,26 @@ Vocabularies 論述文常用單字片語
 * accommodate vt. = satisfy 能容納、可搭載 -- The hotel can accommodate 500 tourists. 這家旅館可住五百名觀光客。
 * typify vt. 象征 -- Desert are typified by warm days 沙漠的特征是高溫的白天
 * prone adj. 易於..的 -- Mother is prone to headaches. 我母親經常頭痛。
+* parole n. 假釋 -- He's been released on parole. 他獲假釋出獄。
+* pardon v. 寬恕；赦免 -- pardon me 不好意思, political prisoners have been pardoned 政治犯被赦免了
+* convict n. 罪犯 -- an escaped convict 逃犯, ex-convicts = ex-cons 前科犯
+* ill-gotten adj. 非法獲得的 -- He deposited his ill-gotten gains in foreign bank accounts. 他把自己非法獲得的金錢存進外國銀行帳戶。
+* ill-disposed adj. 不懷好意的
+* ill-intentioned adj. 居心不良的
+* detain vt. 拘留；耽擱 -- The police detained the man to make further inquiries. 警察拘留了那個人以作進一步的審問。
+* wrongdoer n. 違法者 -- It took her a long time to figure out who the wrongdoer was. 她用了很長時間才琢磨出誰是做壞事的人。
+* strain n. 病株、沉重壓力 -- Their constant arguments were putting a strain on their marriage. 他們持續不斷的爭吵使他們的婚姻關係非常緊張。
+* degenerate adj. 衰退的；墮落的 -- He didn't let riches and luxury make him degenerate. 他不因財富和奢華而自甘墮落。
+* expenditure [ɪkˋspɛndɪtʃɚ] (c.) n. 消費；支出 -- Training a dog requires the expenditure of time and effort. 訓練一條狗需化時間和精力。
+* confined adj. 監禁的；受限制的 -- in this confined space. 狹窄的地方
+* judicial [dʒuˋdɪʃəl] adj. 司法的 -- a judicial system 司法系統, judicial review 司法審查
+* life imprisonment = life sentence 無期徒刑, 25-year life sentence 25 年有期徒刑
+* contribute to N. = benefits = be prone to 有益於、造成 -- Smoking contributed to his early death. 吸煙導致他早逝。
+* deterrent [dɪˋtɝrənt] = intimidating adj. 威懾的；令人生畏的 n. 威懾物 -- a nuclear deterrent 核威懾力
+* rehabituate vi. 重新恢復正常生活 -- Lawbreakers rarely rehabituate after the process of local community service 犯人幾乎無法重新再地方生活
+* recommit vt. 重犯、再犯；重新委託
+* crackdown(s) on crimes 打擊犯罪 -- There has been a series of government crackdowns on safety in factories. 針對工廠安全問題，政府有一系列的處罰措施。
+* hardened criminals/repeat offenders 累犯
+* legislate /ˈledʒ.ə.sleɪt/ vi. vt. 立法、制定 -- It is not necessary to legislate against gambling. 沒有必要立法禁賭。
+* perpetrator = lawbreaker [͵pə:piˋtreitə] n. 犯罪者；行兇者 -- The perpetrators of the massacre must be brought to justice as war criminals. 大屠殺的參與者必須被當作戰犯繩之以法。
+* perpetrate /ˈpɝː.pə.treɪt/ vt. 犯(罪) -- who perpetrated this dreadful deed? 這件可怕的事是誰幹的？
