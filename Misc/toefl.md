@@ -559,6 +559,7 @@ Vocabularies 論述文常用單字片語
 * prominent adj. 傑出的
 * subsequent adj. 隨後的
 * meticulous adj. 細緻的，嚴謹的 -- Many hours of meticulous preparation have gone into writing the book. 為寫此書，投入了大量時間細心做前期準備。
+* sophisticated adj. 富有經驗的；頂尖的 -- She is a sophisticated woman. 她是一個老於世故的女人。
 * unsophisticated adj. 天真的(個性)、不成熟的、純的 -- an unsophisticated wine 味道純的葡萄酒
 * vibrant adj. 充滿活力的 -- a vibrant city / a vibrant personality
 * cluttered adj. 凌亂的
@@ -652,3 +653,14 @@ Vocabularies 論述文常用單字片語
 * perpetrate /ˈpɝː.pə.treɪt/ vt. 犯(罪) -- who perpetrated this dreadful deed? 這件可怕的事是誰幹的？
 * radically-aging adj. 急劇惡化的
 * perplex vt. 困惑著、複雜化 -- His strange behavior had greatly perplexed her. 他的古怪行為使她大惑不解。
+* incorporate vt. vi. 包含 組成；吸收[（+in/into）]；併入[（+with）] -- We will incorporate your suggestion in this new plan. 我們將把你的建議納入這一新的計畫
+* impediment to /ɪmˈped.ə.mənt/ n.[C]妨礙，阻礙；障礙物[（+to）] -- The main impediment to development is the country's huge foreign debt. 發展的主要障礙是國家欠下的巨額外債
+* perceive that [pɚˋsiv] 察覺；認為[O3][O4][+that] -- He gradually perceived that his parents had been right. 他漸漸地了解到他的父母是對的。
+* interdependent = connected adj. 相互依賴的；互助的 -- All living things are interdependent. 所有的生物都是互相依存的。
+* capital punishment 死刑 -- There is no capital punishment in some countries. 有些國家沒有死刑。
+* counterproductive adj. 産生相反作用的；事與願違的，適得其反的 -- Improved safety measures in cars can be counterproductive as they encourage people to drive faster. 提高車輛安全性的措施可能會適得其反，因爲這會激勵人們開快車。
+* proposition n. 提議，建議[C]；【口】（向女性）求歡，挑逗[C] -- The students discussed the proposition that man is basically good. 學生們討論了這麼一個論點，即人性本善。
+* discernible adj. 能看出的;可辨別出的;能明白的 -- There is no discernible reason why this should be the case. 沒有理由可以解釋為甚麼會這樣。
+* radical adj. 激進的、徹底的 -- I do not share his radical views. 我不同意他的激進觀點。
+* prospect n. (好事的)指望；預期；盼望的事物[U][（+of）]、前途 -- There's not much prospect that this war will be over soon. 這場戰爭不大可能很快結束。
+* rejoice to [V] vi. 欣喜 -- They will be rejoiced to see you. 他們將非常樂於見你。
