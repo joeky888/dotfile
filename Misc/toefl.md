@@ -353,6 +353,28 @@ Vocabulary
 | ------------------- | --------------- |
 | Ministry of Justice | Bureau of Labor |
 
+財經法律政治
+
+| 制裁 n.  | 重罪犯 n. | (政府)有關當局 n.     | 國人、公民 n. | 愛國者 n.  | 執政黨 n.        | 幸福 n.              |
+| -------- | --------- | --------------------- | ------------- | ---------- | ---------------- | -------------------- |
+| sanction | felon(s)  | authorities concerned | national(s)   | patriot(s) | the ruling party | well-being = welfare |
+
+| 社會弊病 n.             | 執行安樂死 n.           | 財政赤字 n.    | 參議員 n. | 假釋 n. | 赦免 n. |
+| ----------------------- | ----------------------- | -------------- | --------- | ------- | ------- |
+| social ills/evils/vices | execution of euthanasia | financial debt | senator   | parole  | pardon  |
+
+| 罪犯 n. | 前科犯 n.             | 非法獲得的 adj. | 拘留 v. | 違法者 n. | 消費、支出 n. | 監禁的 adj. |
+| ------- | --------------------- | --------------- | ------- | --------- | ------------- | ----------- |
+| convict | ex-convicts = ex-cons | ill-gotten      | detain  | wrongdoer | expenditure   | confined    |
+
+| 司法系統        | 無期徒刑                          | 再犯 v.  | 打擊犯罪               | 累犯 n.                             |
+| --------------- | --------------------------------- | -------- | ---------------------- | ----------------------------------- |
+| judicial system | life imprisonment = life sentence | recommit | crackdown(s) on crimes | hardened criminals/repeat offenders |
+
+| 立法 制定 vi. vt. | 犯罪者 n.                | 犯罪 vt.            | 死刑 n.                            |
+| ----------------- | ------------------------ | ------------------- | ---------------------------------- |
+| legislate         | perpetrator = lawbreaker | perpetrate = commit | capital punishment = death penalty |
+
 歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
 * Introduction (僅介紹 沒有站立場)
@@ -413,7 +435,7 @@ Vocabulary
 Vocabularies 論述文常用單字片語
 =====
 * keen (adj.) 敏銳的
-* sanction (n.)制裁
+* sanction (n.) 制裁
 * jeopardize (vt.) 危急
 * rejuvenated (vi.) 恢復活力的
 * recession (n.) 經濟衰退時期 -- during the period of economic recession
