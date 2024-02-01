@@ -59,3 +59,9 @@ Golang auto completion
 * Install ms-vscode.go extension
 * Install all recommend go packages from vscode-go
 * Enable auto-save
+
+Macos use native tabs by default
+=====
+* `"window.nativeTabs": true`
+* System setting > Desktop and Dock > Prefer tabs when opening documents > Always
+* $ code .

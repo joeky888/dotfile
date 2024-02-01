@@ -476,7 +476,7 @@ Vocabularies 論述文常用單字片語
 * diligently / industriously adv. 勤奮地
 * weak-minded / feeble adj. 性格軟弱的 (注意 feeble-minded 是弱智的，別誤用)
 * admonish / remind vt. 勸告、力勸 -- Her teacher admonished her to work harder for her exams. 她的老師勸告她想通過考試就要更努力地學習。
-* prestigious [prɛsˋtɪdʒɪəs] adj. 聲望很高的
+* prestigious [prɛsˋtɪdʒɪəs] adj. 聲望很高的(獎項|機構|學校)
 * state-of-the-art adj. 最先進的 -- a state-of-the-art computer 最先進的電腦
 * be unheard-of 前所未聞的 -- It was unheard-of for an unmarried couple to live together. 未婚同居，這在以前是聞所未聞的事。
 * be unaware of 未意識到的 -- I was completely unaware of the problem. 我根本沒意識到這個問題。
