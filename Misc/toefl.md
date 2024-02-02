@@ -319,13 +319,13 @@ Vocabulary
 | ------ | ----------- | --------- | ------- | -------------- | ---------------- | ------------------- |
 | Fossil | Fossil fuel | elevation | equator | crater         | Tropic of Cancer | Tropic of Capricorn |
 
-| 地殼(皮) | 地幔(最厚;岩石層) | 地核 | 壕溝、海溝 | 板塊  |
-| -------- | ----------------- | ---- | ---------- | ----- |
-| Crust    | Mantle            | Core | Trench     | plate |
+| 地殼(皮) | 地幔(最厚;岩石層) | 地核 | 壕溝、海溝 | 板塊  | 北半球           | 南半球           |
+| -------- | ----------------- | ---- | ---------- | ----- | ---------------- | ---------------- |
+| Crust    | Mantle            | Core | Trench     | plate | North Hemisphere | South Hemisphere |
 
-| 地表下的岩漿 | 噴發出的岩漿 | 土壤 |
-| ------------ | ------------ | ---- |
-| Magma        | Lava         | soil |
+| 地表下的岩漿 | 噴發出的岩漿 | 土壤 | 島     | 半島      | 盆地  | 水庫            | 水壩 |
+| ------------ | ------------ | ---- | ------ | --------- | ----- | --------------- | ---- |
+| Magma        | Lava         | soil | insula | peninsula | basin | water reservoir | dam  |
 
 考古學 Archeology
 
@@ -397,6 +397,9 @@ Rephrasing 改變措辭 替代字語料小抄
 | terrible            | adj. 可恨的 糟糕的                  | abominable                 | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                                 |
 | important           | adj. 重要的 凸起的 顯眼的           | prominent                  | very prominent people 名人 / play prominent part 扮演重要的一環                                                                               |
 | careful             | adj. 細心的 一絲不苟的 細緻的       | meticulous                 | The operation required meticulous care from the surgeons 這手術需要外科醫師小心處理                                                           |
+| consist of          | vt. 包含 組成                       | comprise                   | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                                 |
+| use up              | vt. 耗盡                            | exhaust                    | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                                              |
+| long                | adj. 延長的 長期的                  | prolonged                  | each meeting would then be prolonged by 10 minutes 每個會議可能會延長十分鐘                                                                   |
 
 
 歸納法 Organization/Induction (正反面都要寫) 正三角

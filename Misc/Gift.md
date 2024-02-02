@@ -12,3 +12,4 @@ Ninja DZ401 雙槽氣炸鍋
 Minecraft 火炬夜燈
 熔岩燈
 三合一沐浴露
+Rugged phone 軍規三防手機/平板
