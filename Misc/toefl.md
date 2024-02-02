@@ -375,6 +375,30 @@ Vocabulary
 | ----------------- | ------------------------ | ------------------- | ---------------------------------- |
 | legislate         | perpetrator = lawbreaker | perpetrate = commit | capital punishment = death penalty |
 
+Rephrasing 改變措辭 替代字語料小抄
+
+| Original            | 中文                                | Rephrase                   | Example                                                                                                                                       |
+| ------------------- | ----------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| danger              | vt. 危急                            | jeopardize                 | she could jeopardize her whole future. 她可能會危急未來前途                                                                                   |
+| painful             | adj. 痛苦的                         | excruciating               | It is excruciating to do 做這事是很痛苦的                                                                                                     |
+| anger               | vt. 激怒                            | antagonize = provoke       | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                                      |
+| intake              | n. (食物)攝取；(思想)接受、融入同化 | assimilation               | Poor assimilation of vitamins 維他命攝取不良 / assimilation of new ideas 新思想的採納                                                         |
+| agree               | vi. 同意 n. 答應                    | consent to [V]/[N]         | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                                        |
+| agreement           | n. 共識                             | consensus                  | reach a consensus 達成共識                                                                                                                    |
+| hard to choose      | n. 左右為難 兩難困境                | dilemma                    | in a moral dilemma 倫理兩難 (比如死刑)                                                                                                        |
+| treated differently | n(U). 區別 歧視、識別能力(鑑別力)   | discrimination             | There is racial/sex/age discrimination in my country 我國家有種族/性別/年齡歧視                                                               |
+| support             | vt. 擁護 支持                       | advocate                   | He advocates the return of capital punishment. 他主張恢復死刑                                                                                 |
+| actual/practical    | adj. 實際的 具體的                  | tangible                   | The government brought few tangible benefits to the poor. 政府沒有給窮人帶來多少實際好處。                                                    |
+| warn                | vt. 告誡；警告；提醒                | admonish sb against N/Ving | His friends admonished him against drinking. 朋友們力勸他不要酗酒。                                                                           |
+| harmful             | adj. 有害的 不利的                  | detrimental                | Their decision could be detrimental to the future of the company. 他們的決定可能會對公司的未來產生不利影響。                                  |
+| action              | n(C). (好或壞的)行為 功勞           | deed                       | a lot of evil deeds are done in the name of religion. 很多壞事都是打著宗教旗幟做的 / helping people and doing good deeds.幫助別人，經常做好事 |
+| famous              | n(C). 著名的(機構&學校&獎項)        | prestigious                | a prestigious university 享有盛譽的大學 / a prestigious literary award 頗具聲望的文學獎                                                       |
+| deep                | adj. 深切的 強烈的 深奧的           | profound                   | a profound mystery 難解的奧秘 / a profound effect on her life 對她有深遠的影響                                                                |
+| terrible            | adj. 可恨的 糟糕的                  | abominable                 | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                                 |
+| important           | adj. 重要的 凸起的 顯眼的           | prominent                  | very prominent people 名人 / play prominent part 扮演重要的一環                                                                               |
+| careful             | adj. 細心的 一絲不苟的 細緻的       | meticulous                 | The operation required meticulous care from the surgeons 這手術需要外科醫師小心處理                                                           |
+
+
 歸納法 Organization/Induction (正反面都要寫) 正三角
 ====
 * Introduction (僅介紹 沒有站立場)
@@ -686,3 +710,8 @@ Vocabularies 論述文常用單字片語
 * radical adj. 激進的、徹底的 -- I do not share his radical views. 我不同意他的激進觀點。
 * prospect n. (好事的)指望；預期；盼望的事物[U][（+of）]、前途 -- There's not much prospect that this war will be over soon. 這場戰爭不大可能很快結束。
 * rejoice to [V] vi. 欣喜 -- They will be rejoiced to see you. 他們將非常樂於見你。
+* stray vi.迷路，誤入歧途[（+from）]；閒逛；流浪 adj.迷路的，走失的；流浪的 n.[C]迷路者；流浪者 -- We are trying to help those young people who have strayed. 我們想幫助那些迷途的年輕人。
+* incline vi (+to/towards). vt. 傾斜；(內心)傾向於 -- I incline to his view on the matter. 我贊同他對這個問題的觀點。
+* intrigue [ɪnˋtrig] n.陰謀策劃[U]；密謀[C] vi.耍陰謀[（+with/against）] vt. （尤指因奇怪、不尋常或神秘的）迷上 -- They are intriguing against the government. 他們正密謀反對政府。
+* intrigued adj.好奇的；迷住的 -- she was intrigued by his story 她被他的故事迷住了
+* intake n. 吸收；攝取 -- a high sugar intake 高糖攝取量
