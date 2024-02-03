@@ -377,29 +377,33 @@ Vocabulary
 
 Rephrasing 改變措辭 替代字語料小抄
 
-| Original            | 中文                                | Rephrase                   | Example                                                                                                                                       |
-| ------------------- | ----------------------------------- | -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| danger              | vt. 危急                            | jeopardize                 | she could jeopardize her whole future. 她可能會危急未來前途                                                                                   |
-| painful             | adj. 痛苦的                         | excruciating               | It is excruciating to do 做這事是很痛苦的                                                                                                     |
-| anger               | vt. 激怒                            | antagonize = provoke       | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                                      |
-| intake              | n. (食物)攝取；(思想)接受、融入同化 | assimilation               | Poor assimilation of vitamins 維他命攝取不良 / assimilation of new ideas 新思想的採納                                                         |
-| agree               | vi. 同意 n. 答應                    | consent to [V]/[N]         | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                                        |
-| agreement           | n. 共識                             | consensus                  | reach a consensus 達成共識                                                                                                                    |
-| hard to choose      | n. 左右為難 兩難困境                | dilemma                    | in a moral dilemma 倫理兩難 (比如死刑)                                                                                                        |
-| treated differently | n(U). 區別 歧視、識別能力(鑑別力)   | discrimination             | There is racial/sex/age discrimination in my country 我國家有種族/性別/年齡歧視                                                               |
-| support             | vt. 擁護 支持                       | advocate                   | He advocates the return of capital punishment. 他主張恢復死刑                                                                                 |
-| actual/practical    | adj. 實際的 具體的                  | tangible                   | The government brought few tangible benefits to the poor. 政府沒有給窮人帶來多少實際好處。                                                    |
-| warn                | vt. 告誡；警告；提醒                | admonish sb against N/Ving | His friends admonished him against drinking. 朋友們力勸他不要酗酒。                                                                           |
-| harmful             | adj. 有害的 不利的                  | detrimental                | Their decision could be detrimental to the future of the company. 他們的決定可能會對公司的未來產生不利影響。                                  |
-| action              | n(C). (好或壞的)行為 功勞           | deed                       | a lot of evil deeds are done in the name of religion. 很多壞事都是打著宗教旗幟做的 / helping people and doing good deeds.幫助別人，經常做好事 |
-| famous              | n(C). 著名的(機構&學校&獎項)        | prestigious                | a prestigious university 享有盛譽的大學 / a prestigious literary award 頗具聲望的文學獎                                                       |
-| deep                | adj. 深切的 強烈的 深奧的           | profound                   | a profound mystery 難解的奧秘 / a profound effect on her life 對她有深遠的影響                                                                |
-| terrible            | adj. 可恨的 糟糕的                  | abominable                 | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                                 |
-| important           | adj. 重要的 凸起的 顯眼的           | prominent                  | very prominent people 名人 / play prominent part 扮演重要的一環                                                                               |
-| careful             | adj. 細心的 一絲不苟的 細緻的       | meticulous                 | The operation required meticulous care from the surgeons 這手術需要外科醫師小心處理                                                           |
-| consist of          | vt. 包含 組成                       | comprise                   | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                                 |
-| use up              | vt. 耗盡                            | exhaust                    | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                                              |
-| long                | adj. 延長的 長期的                  | prolonged                  | each meeting would then be prolonged by 10 minutes 每個會議可能會延長十分鐘                                                                   |
+| Original            | 中文                                | Rephrase                           | Example                                                                                                                                       |
+| ------------------- | ----------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| danger              | vt. 危急                            | jeopardize                         | she could jeopardize her whole future. 她可能會危急未來前途                                                                                   |
+| painful             | adj. 痛苦的                         | excruciating                       | It is excruciating to do 做這事是很痛苦的                                                                                                     |
+| anger               | vt. 激怒                            | antagonize = provoke               | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                                      |
+| intake              | n. (食物)攝取；(思想)接受、融入同化 | assimilation                       | Poor assimilation of vitamins 維他命攝取不良 / assimilation of new ideas 新思想的採納                                                         |
+| agree               | vi. 同意 n. 答應                    | consent to [V]/[N]                 | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                                        |
+| agreement           | n. 共識                             | consensus                          | reach a consensus 達成共識                                                                                                                    |
+| hard to choose      | n. 左右為難 兩難困境                | dilemma                            | in a moral dilemma 倫理兩難 (比如死刑)                                                                                                        |
+| treated differently | n(U). 區別 歧視、識別能力(鑑別力)   | discrimination                     | There is racial/sex/age discrimination in my country 我國家有種族/性別/年齡歧視                                                               |
+| support             | vt. 擁護 支持                       | advocate                           | He advocates the return of capital punishment. 他主張恢復死刑                                                                                 |
+| actual/practical    | adj. 實際的 具體的                  | tangible                           | The government brought few tangible benefits to the poor. 政府沒有給窮人帶來多少實際好處。                                                    |
+| warn                | vt. 告誡；警告；提醒                | admonish sb against N/Ving         | His friends admonished him against drinking. 朋友們力勸他不要酗酒。                                                                           |
+| harmful             | adj. 有害的 不利的                  | detrimental                        | Their decision could be detrimental to the future of the company. 他們的決定可能會對公司的未來產生不利影響。                                  |
+| action              | n(C). (好或壞的)行為 功勞           | deed                               | a lot of evil deeds are done in the name of religion. 很多壞事都是打著宗教旗幟做的 / helping people and doing good deeds.幫助別人，經常做好事 |
+| famous              | n(C). 著名的(機構&學校&獎項)        | prestigious                        | a prestigious university 享有盛譽的大學 / a prestigious literary award 頗具聲望的文學獎                                                       |
+| deep                | adj. 深切的 強烈的 深奧的           | profound                           | a profound mystery 難解的奧秘 / a profound effect on her life 對她有深遠的影響                                                                |
+| terrible            | adj. 可恨的 糟糕的                  | abominable                         | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                                 |
+| important           | adj. 重要的 凸起的 顯眼的           | prominent                          | very prominent people 名人 / play prominent part 扮演重要的一環                                                                               |
+| careful             | adj. 細心的 一絲不苟的 細緻的       | meticulous                         | The operation required meticulous care from the surgeons 這手術需要外科醫師小心處理                                                           |
+| consist of          | vt. 包含 組成                       | comprise                           | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                                 |
+| use up              | vt. 耗盡                            | exhaust                            | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                                              |
+| long                | adj. 延長的 長期的                  | prolonged                          | each meeting would then be prolonged by 10 minutes 每個會議可能會延長十分鐘                                                                   |
+| obstacle            | n. 威懾力量；制止物                 | act/serve as a deterrent to N      | Tougher prison sentences may act/serve as a deterrent to other would-be offenders. 從嚴判決可以起到震懾其他潛在犯罪者的作用。                 |
+| fascinated/fancy    | n. 迷人的                           | intrigued                          | she was intrigued by his story 她被他的故事迷住了                                                                                             |
+| happy               | vi. vt. 高興 欣喜                   | rejoice [+at/over-N][+to-v][+that] | I rejoice to hear of your promotion. 聽說你高升我非常高興 / Let us rejoice together on your success. 讓我們共同慶祝你的成功                   |
+| future              | n. 前景 預期                        | prospect                           | The prospects of the car industry are brightening. 汽車工業前途看好                                                                           |
 
 
 歸納法 Organization/Induction (正反面都要寫) 正三角
@@ -668,7 +672,7 @@ Vocabularies 論述文常用單字片語
 * synthesis [ˋsinθisis] n. 綜合體、化學合成物 -- protein synthesis 蛋白合成物
 * augment [ɔ:gˋment] vt. vi. 增大、加強 -- The impact of the report was augmented by its timing. 由於發表的時間選得好，這篇報導的影響更大了。
 * deformation n. 變形；損壞 -- the deformation of a solid by pressure 固體受壓力而變形
-* ailment [ˋeilmənt] n. （輕微的）疾病 -- He got timely treatment for his ailment. 他的病得到及時治療。
+* ailment [ˋeilmənt] n. （輕微的）疾病、不舒服 -- He got timely treatment for his ailment. 他的病得到及時治療。
   * curing ailment 治療疾病
 * rod [rɑd] n. 竿子、棍棒
 * disintegrate vt. vi. 解體 -- rocks disintegrated by frost and rain 因受霜打雨淋而崩解的岩石

@@ -80,7 +80,6 @@ https://news.gamebase.com.tw/rss.xml
 http://news.everydayhealth.com.tw/feed
 https://feeds.feedburner.com/engadget/cstb
 https://technews.tw/tn-rss/
-https://feeds.feedburner.com/pcadv
 https://feeds.feedburner.com/cool3c-show
 https://www.ithome.com.tw/rss
 https://www.kocpc.com.tw/feed

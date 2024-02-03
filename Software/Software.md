@@ -323,7 +323,7 @@ Android
   * EtchDroid
   * Simple Gallery
 * Reddit
-* Feedly
+* Feeder.co
 * Drop-down menu items
   * Screenshot
   * Flash light
@@ -367,6 +367,7 @@ iOS
 * Adguard DNS
 * TablePlus
 * Yattee
+* Feeder.co
 
 TinyOS - List of small OSes
 =====
