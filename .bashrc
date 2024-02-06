@@ -346,7 +346,7 @@ alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]
 alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-mute="mpv --mute=yes --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
 alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
-alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml $PLAYER_ARGUMENTS"
+alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml --hwdec=auto-copy $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
 alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"

@@ -404,6 +404,8 @@ Rephrasing 改變措辭 替代字語料小抄
 | fascinated/fancy    | n. 迷人的                           | intrigued                          | she was intrigued by his story 她被他的故事迷住了                                                                                             |
 | happy               | vi. vt. 高興 欣喜                   | rejoice [+at/over-N][+to-v][+that] | I rejoice to hear of your promotion. 聽說你高升我非常高興 / Let us rejoice together on your success. 讓我們共同慶祝你的成功                   |
 | future              | n. 前景 預期                        | prospect                           | The prospects of the car industry are brightening. 汽車工業前途看好                                                                           |
+| poor                | adj. 貧困                           | impoverished                       | an impoverished young actor. 赤貧的年輕演員                                                                                                   |
+| poor                | n. 貧困                             | destitution                        | Destitution has become a major problem in the capital. 貧困成了這個都市的主要問題。                                                           |
 
 
 歸納法 Organization/Induction (正反面都要寫) 正三角
@@ -523,7 +525,7 @@ Vocabularies 論述文常用單字片語
 * rampancy n. 猖獗、蔓生 -- Political corruption was a major reason for the rampancy of organized crime. 政治腐敗是組織犯罪猖獗的主因
 * rampant adj. 猖獗的、泛濫的 -- rampant corruption 腐敗猖獗
 * distress/dismay n. 苦難、不幸
-* detrimental/inimical/noxious adj. 有害的
+* detrimental/inimical/noxious/injurious/adverse adj. 有害的
 * culinary adj. 烹飪的，廚房的
 * profound adj. 深刻的、強烈的 (約等於 impressive 但更為正式的用詞)
 * conformity n. 一致性、從眾行為
@@ -722,3 +724,28 @@ Vocabularies 論述文常用單字片語
 * intrigue [ɪnˋtrig] n.陰謀策劃[U]；密謀[C] vi.耍陰謀[（+with/against）] vt. （尤指因奇怪、不尋常或神秘的）迷上 -- They are intriguing against the government. 他們正密謀反對政府。
 * intrigued adj.好奇的；迷住的 -- she was intrigued by his story 她被他的故事迷住了
 * intake n. 吸收；攝取 -- a high sugar intake 高糖攝取量
+* adverse adj. 逆向的，相反的；不良的，有害的 -- adverse weather conditions 惡劣的天氣, adverse circumstances/winds 逆境／逆風
+* luxurious/extravagangt[ɪkˋstrævəgənt]/deluxe[dɪˋlʌks] adj. 奢侈的
+* unfounded adj. 沒有事實根據的 -- to prove to be unfounded 被證明是空穴來風
+* deviate [ˋdivɪ͵et] vi. vt. 背棄 越軌 脫軌 -- to deviate from one's beliefs/principles 背離信仰／原則, to deviate from a path/the truth/the topic of a conversation 偏離路線／事實／話題
+* means n. 手段，方法；工具[M][G]；財產；資力；收入[K] -- He is living beyond his means. 他入不敷出, It is all a means to an end. 這只是達到目的的一種手段
+* tendency n.[C]傾向；癖性；天分[（+to/toward）][+to-v]；趨勢，潮流[（+to/toward）][+to-v] -- He has a tendency towards pessimism. 他有悲觀的傾向, His new magazine has anarchic tendencies. 他的新雜誌有無政府主義傾向
+* news coverage 新聞報導, negative news coverage 負面新聞報導
+* keep a abreast of + N 跟上，並駕齊驅 -- We must keep abreast of times. 我們必須跟上時代的步伐。
+* prejudiced adj. 懷偏見的, 歧視的 -- a prejudiced view of people with disabilities 一個歧視殘障人士的觀點
+* cannot be too ... 越...越好 -- Readers can not be too cautious in choosing to believe the media 讀者越小心選擇媒體越好
+* the press 新聞界、新聞媒體 -- The power of the press is very great. 新聞報刊的力量是極大的
+* lament [ləˋmɛnt] vi. vt. adj. n.[C] 哀悼(的) -- The widow lamented the death of her only child. 寡婦為她獨生子的死而悲痛
+* lingua franca 世界通用語
+* akin [əˋkɪn] adj. 相似的 有血親關係的 -- My friend's feelings are akin to mine. 我那位朋友的感受和我相近
+* irreparable [ɪˋrɛpərəb!] adj. 無法挽回的 -- irreparable damage will be done to the coastline. 對海岸線造成無可補救的破壞
+* irretrievable [͵ɪrɪˋtrivəb!] adj. 無法挽回的 -- an irretrievable loss 不可彌補的損失
+* glance at 窺視 -- have a glance at .. 看一眼
+* glimpse at 窺視 -- He glimpsed at my new watch 他看了一眼我的新手錶
+* millennia [mɪˋlɛnɪə] n. 數千年時間 -- like millennia ago 就像幾千年前
+* regreting/regrettable adj. 令人遺憾的 -- a regrettable failure 可悲的失敗
+* depict [dɪˋpɪkt] vt. 描畫；雕出；描述 -- The book depicts him as a rather unpleasant character. 這本書把他描寫成一個不太討人喜歡的人。
+* distinguished adj. 聞名的 著名的 傑出的
+* complement n.[C] 補充 -- Homework is a necessary complement to classroom study. 家庭作業是課堂教學的必要補充。
+* lamentable [ˋlæməntəb!] adj. 可悲的 -- a lamentable accident 不幸的事故
+* life expectancy 預期壽命、平均壽命 -- Life expectancies are increasing all over the world 世界壽命正在增加中
