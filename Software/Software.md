@@ -314,6 +314,11 @@ Android
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
   * Pipepipe (Newpipe alternative)
+    * SponsorBlock
+      * Unpaid/Self Promotion -> Auto Skip
+      * Interaction Reminder (Subscribe) -> Auto Skip
+      * Intermission/Intro Animation -> Auto Skip
+      * Preview/Recap/Hook -> Show in seekbar
   * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
@@ -367,7 +372,7 @@ iOS
 * Adguard DNS
 * TablePlus
 * Yattee
-* Feeder.co
+* Install dot (TLS) profile https://github.com/paulmillr/encrypted-dns
 
 TinyOS - List of small OSes
 =====
