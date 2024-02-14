@@ -465,7 +465,7 @@ upgradeDotfile() {
     rm -f ~/AppData/Roaming/VSCodium/User/settings.json
     rm -f ~/.config/fish/config.fish
     rm -f ~/.config/starship.toml
-    rm -f ~/.config/zed/settings.js
+    rm -f ~/.config/zed/settings.json
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -536,7 +536,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
     ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
     ln -sf $HOME/dotfile/startfish.toml ~/.config/startfish.toml
-    ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.js
+    ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.json
 
     case $OSTYPE in
     linux-gnu)

@@ -33,7 +33,7 @@ InstallDotfile()
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.hammerspoon/init.lua
-  rm -rf  ~/.config/zed/settings.js
+  rm -rf  ~/.config/zed/settings.json
   rm -rf "$Home/Library/Application Support/Code/User/settings.json"
   rm -rf "$Home/Library/Application Support/VSCodium/User/settings.json"
   rm -rf "$Home/scoop/apps/vscode/current/data/user-data/User/settings.json"
@@ -91,7 +91,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.mpv_thumbnail_script.conf ~/.config/mpv/script-opts/mpv_thumbnail_script.conf
   ln -sf $Home/dotfile/.mpv_thumbnail_script_client_osc.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_client_osc.lua
   ln -sf $Home/dotfile/.mpv_thumbnail_script_server.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_server.lua
-  ln -sf $Home/dotfile/.zed.settings.js ~/.config/zed/settings.js
+  ln -sf $Home/dotfile/.zed.settings.js ~/.config/zed/settings.json
 
   case $OSTYPE in
   linux-gnu)
