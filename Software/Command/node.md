@@ -1,6 +1,5 @@
 Install node-lts
 =====
-* Install nvm using curl
 ```bash
 brew install fnm
 fnm install --lts
