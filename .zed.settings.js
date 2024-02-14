@@ -13,7 +13,7 @@
   "buffer_font_family": "UbuntuMono Nerd Font",
   "soft_wrap": "none",
   "format_on_save": "on",
-  "autosave": "on_window_change",
+  "autosave": "on_focus_change",
   "remove_trailing_whitespace_on_save": true,
   "theme": "Ayu Dark",
   "terminal": {

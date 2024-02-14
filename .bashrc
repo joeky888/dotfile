@@ -466,6 +466,7 @@ upgradeDotfile() {
     rm -f ~/.config/fish/config.fish
     rm -f ~/.config/starship.toml
     rm -f ~/.config/zed/settings.json
+    rm -f ~/.config/zed/keymap.json
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
@@ -537,6 +538,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
     ln -sf $HOME/dotfile/startfish.toml ~/.config/startfish.toml
     ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.json
+    ln -sf $HOME/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
 
     case $OSTYPE in
     linux-gnu)
