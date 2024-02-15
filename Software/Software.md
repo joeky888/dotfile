@@ -455,7 +455,7 @@ Good Software Design
 * Easter eggs
 * Software-level factory reset
 * Anti-debugging
-* Workarounds for shitty Networks
+* Workarounds for weak Networks
   * Enable Nagle's algorithm
 * Mobile
   * Portable between Android and iOS
