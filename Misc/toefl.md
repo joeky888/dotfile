@@ -222,7 +222,7 @@ Vocabulary
 * in haste 急忙的
 * 反對 oppose / be opposed to / object to
   * I oppose your idea.
-  * I'm oppose to your idea.
+  * I'm opposed to your idea.
   * I object to your idea.
 * In an attempt to V. 企圖；試圖 (注意有個 an)
 * Now that / Seeing that 既然
@@ -234,6 +234,7 @@ Vocabulary
 
 開頭 結尾
 =====
+* People have a diversity of stances reguarding 人們對於..有不同的立場 (適合第一段開頭)
 * In conclusion, it is my conviction that ... 我深信... (適合最後一段)
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
 * As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
@@ -261,6 +262,7 @@ Vocabulary
 * I come to realize that... 我逐漸意識到...
 * Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
 * Generally speaking, 一般而言，
+* However, such research is inconclusive 然而這些研究是無結論的
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -309,9 +311,9 @@ Vocabulary
 | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
 | Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
 
-| 水份、濕氣 |
-| ---------- |
-| moisture   |
+| 水份、濕氣 | 雨量計      | 滲出 漏出               | 流出    | 湧入   | 浸濕、滲透  |
+| ---------- | ----------- | ----------------------- | ------- | ------ | ----------- |
+| moisture   | rain gauges | seep(n. v.) seepage(n.) | outflow | inflow | soak (into) |
 
 地質學 Geology
 
@@ -326,6 +328,10 @@ Vocabulary
 | 地表下的岩漿 | 噴發出的岩漿 | 土壤 | 島     | 半島      | 盆地  | 水庫            | 水壩 |
 | ------------ | ------------ | ---- | ------ | --------- | ----- | --------------- | ---- |
 | Magma        | Lava         | soil | insula | peninsula | basin | water reservoir | dam  |
+
+| (橫跨/途徑)陸地上的 adj. | 池塘 | 多山丘的、陡峭的 | 死水 停滯水 閉塞之處 |
+| ------------------------ | ---- | ---------------- | -------------------- |
+| overland                 | pond | hilly            | backwater            |
 
 考古學 Archeology
 
@@ -374,6 +380,20 @@ Vocabulary
 | 立法 制定 vi. vt. | 犯罪者 n.                | 犯罪 vt.            | 死刑 n.                            |
 | ----------------- | ------------------------ | ------------------- | ---------------------------------- |
 | legislate         | perpetrator = lawbreaker | perpetrate = commit | capital punishment = death penalty |
+
+| n. 佣金、犯罪行為 vt. 委託 任命 | n.[C]（政府）長官 | vt. 委派             |
+| ------------------------------- | ----------------- | -------------------- |
+| commission                      | commissioner      | delegate [ˋdɛlə͵get] |
+
+職業
+
+| 內科醫師  | 外科醫師 | 泊車小弟、男僕 | 房產經紀人         | 企業家                      |
+| --------- | -------- | -------------- | ------------------ | --------------------------- |
+| physician | surgeon  | valet          | real estate  agent | entrepreneur [͵ɑntrəprəˋnɝ] |
+
+| 領導人、指揮家 | 會議代表；代表團團員 |
+| -------------- | -------------------- |
+| conductor      | delegate             |
 
 Rephrasing 改變措辭 替代字語料小抄
 
@@ -453,7 +473,7 @@ Rephrasing 改變措辭 替代字語料小抄
     * I opened the door, and there she stood—my long lost sister.
     * Wait! I forgot to tell you—
 
-高級片語
+片語
 =====
 1. adj/adv/n. + as/though + S + V./do/did/does 倒裝句
   * ... , tiny as it is, ... 雖小
@@ -464,6 +484,11 @@ Rephrasing 改變措辭 替代字語料小抄
 3. in spite of / for all / with all 縱使、即使
 4. to some degree / to some extent 在某種程度上
 5. of a kind 同一類的 -- Creatures of a kind 同類
+6. 使役動詞
+   * make + O + 原V/p.p
+   * have + O + 原V/p.p
+   * let  + O + 原V/be p.p
+   * get  + O + p.p/to 原V
 
 Vocabularies 論述文常用單字片語
 =====
@@ -571,7 +596,7 @@ Vocabularies 論述文常用單字片語
   * Endurance  (通常指生物的) 長時間高強度情況下的耐力，如長跑能力
   * Stamina = Endurance 如長跑能力
 * impersonal adj. 不友善的 冷淡的 -- a impersonal manner 冷淡的態度
-* incentive n. 激勵、鼓勵 -- Bonus payments provide an incentive to work harder. 支付獎金能鼓勵人們更努力工作。
+* incentive [ɪnˋsɛntɪv] n.刺激；鼓勵；動機[U][C][（+to）][+to-v] adj.刺激的；鼓勵的，獎勵的 -- Bonus payments provide an incentive to work harder. 支付獎金能鼓勵人們更努力工作。
 * cultivate v. 耕作;栽培;種植 -- The villagers cultivate mostly maize and beans. 村民們主要種植玉米和豆類。
 * seminar /ˈsem.ə.nɑːr/ n. 專題討論會;研討會 -- I attended practically every lecture and seminar when I was a student. 我上學的時候，幾乎參加了每一場講座和研討會。
 * prolonged adj. 長期的 -- Prolonged use of the drug is known to have harmful side-effects. 據了解，長期服用此藥會產生對人體有害的副作用。
@@ -670,6 +695,7 @@ Vocabularies 論述文常用單字片語
 * at the expense of 犧牲 -- at the expense of other countries' economic welfare 犧牲其他國家的經濟福利
 * immerse vt. 泡在(水)、入迷 -- She immersed herself in Jewish history and culture. 她沉浸於猶太歷史和文化之中。
 * astray [əstˋrei] adv. 離開正道 -- We missed the track and went astray. 我們走錯了道，迷路了。
+* stray vi.迷路，誤入歧途[（+from）]；閒逛；流浪 adj.迷路的，走失的；流浪的 n.[C]迷路者；流浪者 -- We are trying to help those young people who have strayed. 我們想幫助那些迷途的年輕人。
 * comprise vt. 組成；包含 -- The Union comprises fifty states. 美國有五十個洲。
 * synthesis [ˋsinθisis] n. 綜合體、化學合成物 -- protein synthesis 蛋白合成物
 * augment [ɔ:gˋment] vt. vi. 增大、加強 -- The impact of the report was augmented by its timing. 由於發表的時間選得好，這篇報導的影響更大了。
@@ -719,10 +745,10 @@ Vocabularies 論述文常用單字片語
 * radical adj. 激進的、徹底的 -- I do not share his radical views. 我不同意他的激進觀點。
 * prospect n. (好事的)指望；預期；盼望的事物[U][（+of）]、前途 -- There's not much prospect that this war will be over soon. 這場戰爭不大可能很快結束。
 * rejoice to [V] vi. 欣喜 -- They will be rejoiced to see you. 他們將非常樂於見你。
-* stray vi.迷路，誤入歧途[（+from）]；閒逛；流浪 adj.迷路的，走失的；流浪的 n.[C]迷路者；流浪者 -- We are trying to help those young people who have strayed. 我們想幫助那些迷途的年輕人。
 * incline vi (+to/towards). vt. 傾斜；(內心)傾向於 -- I incline to his view on the matter. 我贊同他對這個問題的觀點。
 * intrigue [ɪnˋtrig] n.陰謀策劃[U]；密謀[C] vi.耍陰謀[（+with/against）] vt. （尤指因奇怪、不尋常或神秘的）迷上 -- They are intriguing against the government. 他們正密謀反對政府。
 * intrigued adj.好奇的；迷住的 -- she was intrigued by his story 她被他的故事迷住了
+* captivated by / intrigued in + N - 對 N 著迷
 * intake n. 吸收；攝取 -- a high sugar intake 高糖攝取量
 * adverse adj. 逆向的，相反的；不良的，有害的 -- adverse weather conditions 惡劣的天氣, adverse circumstances/winds 逆境／逆風
 * luxurious/extravagangt[ɪkˋstrævəgənt]/deluxe[dɪˋlʌks] adj. 奢侈的
@@ -735,7 +761,6 @@ Vocabularies 論述文常用單字片語
 * prejudiced adj. 懷偏見的, 歧視的 -- a prejudiced view of people with disabilities 一個歧視殘障人士的觀點
 * cannot be too ... 越...越好 -- Readers can not be too cautious in choosing to believe the media 讀者越小心選擇媒體越好
 * the press 新聞界、新聞媒體 -- The power of the press is very great. 新聞報刊的力量是極大的
-* lament [ləˋmɛnt] vi. vt. adj. n.[C] 哀悼(的) -- The widow lamented the death of her only child. 寡婦為她獨生子的死而悲痛
 * lingua franca 世界通用語
 * akin [əˋkɪn] adj. 相似的 有血親關係的 -- My friend's feelings are akin to mine. 我那位朋友的感受和我相近
 * irreparable [ɪˋrɛpərəb!] adj. 無法挽回的 -- irreparable damage will be done to the coastline. 對海岸線造成無可補救的破壞
@@ -747,5 +772,41 @@ Vocabularies 論述文常用單字片語
 * depict [dɪˋpɪkt] vt. 描畫；雕出；描述 -- The book depicts him as a rather unpleasant character. 這本書把他描寫成一個不太討人喜歡的人。
 * distinguished adj. 聞名的 著名的 傑出的
 * complement n.[C] 補充 -- Homework is a necessary complement to classroom study. 家庭作業是課堂教學的必要補充。
+* lament [ləˋmɛnt] vi. vt. adj. n.[C] 哀悼(的) -- The widow lamented the death of her only child. 寡婦為她獨生子的死而悲痛
 * lamentable [ˋlæməntəb!] adj. 可悲的 -- a lamentable accident 不幸的事故
 * life expectancy 預期壽命、平均壽命 -- Life expectancies are increasing all over the world 世界壽命正在增加中
+* efficiency gains 效率提升
+* conversely = On the other hand = On the contrary (adv.) 反過來說/相反地, (適合句子中間使用) -- ... . Conversely, .... 反過來說 -- this is good or conversely may be bad 這好或反過來說 更糟
+* gauge [gedʒ] n.標準尺寸，標準規格[U][C]；測量儀器；規，表，計[C] vt.量，測；估計，判斷 -- My car's gas gauge indicated that there was little gas left. 我車上的汽油表顯示剩下的油不多了。
+* per annum (abbr. p.a.) (拉丁語) 每年的
+* an uprising 起義 / a revolt [ri`volt] 反叛 / rebel 叛變
+* uproot vt. vi. 根除、滅絕、遷移、改變生活方式 -- Many people were uprooted from their homes by the flood. 水災令許多人背井離鄉。
+* triumph [ˋtraɪəmf] = victory = success n. vi. 勝利 -- is overmatched triumphs 是無與倫比的勝利 -- The football team achieved a complete triumph. 足球隊大獲全勝。
+* overmatched adj. 被超過的 被擊敗的
+* sought to = attempted to = tried to 嘗試
+* is left in place 是確立的、是保留的
+* strikes/touches the chord with people 觸動人心
+* ill-equipped/ill-armed 武裝不良
+* persecute [ˋpɝsɪ͵kjut] vt. 迫害、殘害、困擾 為難[（+with）] -- They persecute those who do not conform to their ideas. 他們迫害那些不信奉他們思想的人。
+* agitated [ˋædʒə͵tetɪd] adj. 激動的 令人不安的 vt. 使激動；使焦慮 vi. 鼓動；煽動[（+for/against）] -- His fiery speech agitated the crowd. 他激昂的演說鼓動了聽眾。
+* playwright n.[C] 創作家、劇作家
+* excel vt. 勝過，優於[（+in/at）] -- She excels the rest of the class in English. 她的英文在班上勝過任何同學。 -- vi. 突出；勝過他人[（+in/at）] -- He excels at volleyball. 他擅長打排球。
+* fluctuate /ˈflʌk.tʃu.eɪt/ vi.（尤指持續）(水位高度、價格、體重)波動，起伏不定 -- Vegetable prices fluctuate according to the season. 蔬菜價格隨著季節變化而漲落。
+* preceded by 而先 vs. followed by 而後
+* incidental adj.附帶的 瑣碎的 偶然的 n. 雜項 -- it is incidental to my purpose 這不是我的主要目的
+* shuttle [ˋʃʌt!] n. 往返兩地間的運輸服務 vi. vt. 往返運送 -- We shuttled the passengers to the city center by helicopter. 我們使用直升機往返不停地將旅客
+* reimburse [͵riɪmˋbɝs] vt. 償還；歸還；補償；賠償
+* A + as soon as + B 大約等於 No sooner + A + than + B - 一...就... - No sooner had I started mowing the lawn than it started raining. 我剛開始修剪草坪就下起了雨。
+* instructive adj. 有教育意義的；有啟發性的 -- The lecture was instructive 這講演有意義
+* instruct vt. 指示，命令 -- He instructed me to deliver it to a customer. 他吩咐我把東西送去給顧客。
+* valet [ˋvælɪt] n.[C] 男僕從 泊車小弟
+* underway adj.在進行中的 -- Don't worry, help is already underway. 別擔心，援助已在進行中。
+* antique [ænˋtik] adj.古代的，古老的；年代久遠的 n.古物；古董 -- That car is positively antique. 那輛汽車的式樣確實是陳舊過時了。
+* real estate [ɪsˋtet] agent -- 房地產經紀人
+* semifinalist [͵sɛməˋfaɪn!ɪst] n. 準決賽者、前四強
+* finalist [ˋfaɪn!ɪst] n.決賽者、冠亞軍參賽者、前二強
+* expressly adv.明顯地；明確地；特別地 -- I told you expressly to report to me everyday. 我明確告訴過你每天要向我匯報。
+* interpretation 解釋 翻譯 - a wonderful interpretation of the symphony 對那首交響樂的極佳詮釋
+* presentable [prɪˋzɛntəb!] adj.可見人的；漂亮的 像樣的 -- I must go and make myself presentable 我得去打扮一下好見人
+* substantially [səbˋstænʃəlɪ] 可觀地; 相當多地
+* squabble vi.（為瑣事）爭吵 +about/over+原因 +with+對象 -- What are you children squabbling about now? 你們這些孩子在吵什麼？ -- to squabble with sb. 與某人爭吵
