@@ -23,7 +23,7 @@ bind generic     <C-W>    view-close
 set ignore-case         = yes
 set mouse               = true
 set mouse-scroll        = 3         # Number of lines to scroll via the mouse
-set diff-highlight      = true    # Disable because I can't get it work on Windows
+set diff-highlight      = false    # Disable because I can't get it work on Windows
 
 set main-view-id        = yes       # Show commit hash
 set main-view-id-width  = 7         # Limit commit hash length

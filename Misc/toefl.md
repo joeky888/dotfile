@@ -809,4 +809,8 @@ Vocabularies 論述文常用單字片語
 * interpretation 解釋 翻譯 - a wonderful interpretation of the symphony 對那首交響樂的極佳詮釋
 * presentable [prɪˋzɛntəb!] adj.可見人的；漂亮的 像樣的 -- I must go and make myself presentable 我得去打扮一下好見人
 * substantially [səbˋstænʃəlɪ] 可觀地; 相當多地
-* squabble vi.（為瑣事）爭吵 +about/over+原因 +with+對象 -- What are you children squabbling about now? 你們這些孩子在吵什麼？ -- to squabble with sb. 與某人爭吵
+* squabble /ˈskwɑː.bəl/ vi.（為瑣事）爭吵 +about/over+原因 +with+對象 -- What are you children squabbling about now? 你們這些孩子在吵什麼？ -- to squabble with sb. 與某人爭吵
+* entitled adj. 為所欲為的、有權利的 -- These kids are spoiled, entitled, self-absorbed, and apathetic. 這些孩子被寵壞了，為所欲為、自戀且冷漠。
+* entitle vt. 給權力 給資格 給稱號 [（+to）][O2] -- He entitled the book Love Story. 他把書取名為《愛的故事》 -- This ticket entitles you to a free lunch. 憑這張票你可免費享用午餐。
+* renovate [ˋrɛnə͵vet] vt.更新；重做；修理 -- He renovates old houses and sells them at a profit. 他靠翻修老房子再出售賺錢。
+* innovate [ˋɪnə͵vet] vt.創立，創始 vi. 革新，改革 -- The fashion industry is always desperate to innovate. 時裝界總是竭盡全力地進行創新。
