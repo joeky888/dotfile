@@ -263,6 +263,7 @@ Vocabulary
 * Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
 * Generally speaking, 一般而言，
 * However, such research is inconclusive 然而這些研究是無結論的
+* In my opinion, = From my perspective, 我的觀點，適合句首
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -297,9 +298,19 @@ Vocabulary
 | ------ | -------- | --------- | -------------- | ------ | --------------------- | ------ | ---------- |
 | sowing | irrigate | fertilize | insulated      | scarce | flourishing, thriving | pollen | vegetation |
 
-| 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  |
-| ------------ | ----- | ------------- | ----------- | ------- |
-| Fungus       | Algae | alpine plants | shrub, bush | conifer |
+| 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  | 開花植物/被子植物 | 莖   | 傳花粉昆蟲 |
+| ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
+| Fungus       | Algae | alpine plants | shrub, bush | conifer | angiosperms       | stem | pollinator |
+
+| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 |
+| -------- | --------- | ------------ |
+| botanist | sediment  | deposit      |
+
+形態學、構造學 morphology
+
+| 無定型的(如液體) | 變態          |
+| ---------------- | ------------- |
+| amorphous        | metamorphosis |
 
 氣象學 meteorology
 
@@ -814,3 +825,14 @@ Vocabularies 論述文常用單字片語
 * entitle vt. 給權力 給資格 給稱號 [（+to）][O2] -- He entitled the book Love Story. 他把書取名為《愛的故事》 -- This ticket entitles you to a free lunch. 憑這張票你可免費享用午餐。
 * renovate [ˋrɛnə͵vet] vt.更新；重做；修理 -- He renovates old houses and sells them at a profit. 他靠翻修老房子再出售賺錢。
 * innovate [ˋɪnə͵vet] vt.創立，創始 vi. 革新，改革 -- The fashion industry is always desperate to innovate. 時裝界總是竭盡全力地進行創新。
+* a national census [ˋsɛnsəs] n.[C] 人口普查
+* appalling [əˋpɔlɪŋ] adj. 駭人的 低劣的 -- It is appalling that so many people evade paying taxes. 那麼多人逃稅，真是驚人。
+* under dispute 仍在爭論中
+* dispersal [dɪˋspɝs!] n.U 散布；傳播 -- After the dispersal of the crowd, 人群散開後，
+* call into question 對 ... 表示懷疑 -- His honesty was called into question. 他是否誠實令人懷疑。
+* relic [ˋrɛlɪk] n.[C] 遺物；遺風，遺俗 -- This custom is a relic of ancient times. 這習俗乃是古代遺風。
+* amenity [əˋminətɪ] n.（環境等的）舒適，適意，優雅；（性情等的）愉快 -- This hotel is equipped with many amenities, such as a swimming pool 這家旅館有許多舒適便利的設施，如游泳池
+* hospitality [͵hɑspɪˋtælətɪ] n.[U]好客；殷勤招待；（對新思想等的）接受能力，理解力 -- Many thanks for the hospitality you showed me. 非常感謝你對我的款待。 The natives are noted for their hospitality. 當地人以好客著稱。
+* subtle [ˋsʌt!] adj. (注意發音) 微妙的，難捉摸的 -- She smiled a subtle smile. 她神祕地笑了笑。
+* quaint [kwent] adj.古雅的；奇特而有趣的；古怪的 -- They lived in a quaint little house. 他們住在一幢老式而別緻的小房子裡。
+*
