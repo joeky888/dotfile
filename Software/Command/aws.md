@@ -85,3 +85,74 @@ CDN (AWS Cloudfront) for k8s ingress
       * Allowed HTTP Methods -> GET, HEAD, OPTIONS, PUT, POST, PATCH, DELETE
       * Cache Policy -> Managed-CachingDisabled
       * Origin Request Policy -> Managed-AllViewer
+
+S3 cors
+=====
+* Bucket policy
+```json
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "Stmt1405592139000",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "s3:GetObject",
+            "Resource": [
+                "arn:aws:s3:::xinango/*",
+                "arn:aws:s3:::xinango"
+            ]
+        }
+    ]
+}
+```
+* Cross-origin resource sharing (CORS)
+```json
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "HEAD"
+        ],
+        "AllowedOrigins": [
+            "https://*.shian.fun",
+            "https://*.xinan-ai.com",
+            "https://xinan-ai.com"
+        ],
+        "ExposeHeaders": []
+    },
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET",
+            "HEAD",
+            "POST",
+            "PUT",
+            "DELETE"
+        ],
+        "AllowedOrigins": [
+            "https://*.frp.neplus.com.tw",
+            "https://admin-dev.shian.fun",
+            "https://admin-prod.shian.fun"
+        ],
+        "ExposeHeaders": []
+    }
+]
+```
+
+S3 cors with cloudfront
+=====
+* Behavior -> Edit
+* Viewer protocol policy -> Redirect HTTP to HTTPS
+* Allowed HTTP methods -> GET, HEAD, OPTIONS
+  * Cache HTTP methods -> Check "OPTIONS"
+* Cache policy -> CachingOptimized
+* Origin request policy -> CORS-S3Origin
+* Troubleshooting
+  * Clear cache
+    * Select distribution to clear -> Invalidations -> Create Invalidation -> Add "/" and "/*"

@@ -279,9 +279,13 @@ Vocabulary
 
 動物學 Zoology
 
-| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  | 人類學       | 食草動物  | 食肉動物  | 軟體動物 | 甲殼動物   |
-| ------ | ------- | --------- | --------- | ---------- | ------- | ------------ | --------- | --------- | -------- | ---------- |
-| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology | Herbivore | Carnivore | Mollusca | Crustacean |
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  | 人類學       |
+| ------ | ------- | --------- | --------- | ---------- | ------- | ------------ |
+| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology |
+
+ | 食草動物  | 食肉動物  | 雜食動物 | 軟體動物 | 甲殼動物   |
+ | --------- | --------- | -------- | -------- | ---------- |
+ | Herbivore | Carnivore | Omnivore | Mollusca | Crustacean |
 
 
 | 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   | 單個大羽毛 |
@@ -835,4 +839,26 @@ Vocabularies 論述文常用單字片語
 * hospitality [͵hɑspɪˋtælətɪ] n.[U]好客；殷勤招待；（對新思想等的）接受能力，理解力 -- Many thanks for the hospitality you showed me. 非常感謝你對我的款待。 The natives are noted for their hospitality. 當地人以好客著稱。
 * subtle [ˋsʌt!] adj. (注意發音) 微妙的，難捉摸的 -- She smiled a subtle smile. 她神祕地笑了笑。
 * quaint [kwent] adj.古雅的；奇特而有趣的；古怪的 -- They lived in a quaint little house. 他們住在一幢老式而別緻的小房子裡。
-*
+* designate [ˋdɛzɪg͵net] vt.標出；表明；指定 adj.指定的，選定的 -- He was designated to lead the expedition. 他被指派率領遠征隊
+* wait on 伺候 -- They all wait on the king. 他們都伺候國王
+* enlistment [ɪnˋlɪstmənt] n.[U] 徵募；應徵入伍 -- enlistment center 國軍報名處
+* vacate [ˋveket] vt. vi. 空出；搬出 -- ‘guests must vacate their rooms by midday’ “客人必須在中午前退房”
+* expedient [ɪkˋspidɪənt] = convenient adj.方便的；有利的；權宜的 -- a short-term expedient 一時的權宜之計 -- I thought it expedient to tell her about it. 我認為將此事告訴她為好。
+* expedite [ˋɛkspɪ͵daɪt] vt. 加速 -- Something needs to be done to expedite the process. 需要採取措施以加快進度。
+* on sick leave 請病假
+* celebrated [ˋsɛlə͵bretɪd] adj.著名的，馳名的 -- a celebrated painter 著名畫家
+* blockbuster [ˋblɑk͵bʌstɚ] n. 大轟動 大製作電影巨片 -- Mission Impossible is the newest blockbuster movie in the market. 不可能的任務是最近上市的賣座強片。
+* blockade [blɑˋked] n.封鎖；道路阻塞 拒馬 vt.封鎖 -- The ships blockaded the port. 軍艦封鎖了那個港市
+* aeroplane n.【英】飛機[C]
+* aerophobia [ˋɛrəˋfobɪə] n.【醫】高空恐怖症 (害怕搭飛機)
+* acrophobia [͵ækrəˋfobɪə] n.【心】懼高症，恐高症
+* resort [rɪˋzɔrt] n. 度假勝地 vi.訴諸，憑藉，求助 -- It was after the failure of this attempt that he resorted to force. 是這次嘗試失敗之後他才訴諸武力的。
+* malfunction [mælˋfʌŋkʃən] vi.發生故障；機能失常 n.機能不全 --
+* postage n.郵資，郵費[U] -- The postage for airmail is 50 cents. 一封航空信的郵資是美金五毛
+* be off the payroll = 離職 (不在薪資名冊) = resigned
+* culprit [ˋkʌlprɪt] n.[C]被控犯罪的人；刑事被告；罪犯；肇事者
+* culpable [ˋkʌlpəb!] adj. 該責備的；有罪的
+* accomplice [əˋkɑmplɪs] n.共犯，同謀，幫兇[C]
+* opine [oˋpaɪn] vt.想；以為；認為 vi.發表意見
+* malicious [məˋlɪʃəs] adj.惡意的，懷恨的 蓄意的 -- The malicious neighbor spread the gossip. 那個不懷好意的鄰居散布了流言蜚語
+* 
