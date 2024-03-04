@@ -87,6 +87,7 @@ http://www.oschina.net/news/rss
 https://www.ithome.com/rss
 https://www.freebuf.com/feed
 https://www.infoq.cn/feed
+http://sputniknews.cn/export/rss2/archive/index.xml
 
 * English
 https://www.phoronix.com/rss.php

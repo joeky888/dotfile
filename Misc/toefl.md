@@ -234,7 +234,7 @@ Vocabulary
 
 開頭 結尾
 =====
-* People have a diversity of stances reguarding 人們對於..有不同的立場 (適合第一段開頭)
+* People have a diversity of stances regarding 人們對於..有不同的立場 (適合第一段開頭)
 * In conclusion, it is my conviction that ... 我深信... (適合最後一段)
 * The following is my viewpoint on this thought-provoking 以下是我發人省思的議題(適用第一段結尾)
 * As far as I am concerned, the advantages of xxx outweigh its disadvantages 以下是我的觀點(適用第一段結尾，同時有正反例的)
@@ -283,18 +283,22 @@ Vocabulary
 | ------ | ------- | --------- | --------- | ---------- | ------- | ------------ |
 | Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology |
 
- | 食草動物  | 食肉動物  | 雜食動物 | 軟體動物 | 甲殼動物   |
- | --------- | --------- | -------- | -------- | ---------- |
- | Herbivore | Carnivore | Omnivore | Mollusca | Crustacean |
+ | 食草動物  | 食肉動物  | 雜食動物 | 軟體動物 | 甲殼動物   | 齧齒目動物 |
+ | --------- | --------- | -------- | -------- | ---------- | ---------- |
+ | Herbivore | Carnivore | Omnivore | Mollusca | Crustacean | rodent     |
 
 
-| 四肢        | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   | 單個大羽毛 |
-| ----------- | ------- | ----------------- | ----------- | ------------- | ---------- |
-| extremities | microbe | replenish         | trek        | innate/inborn | plume      |
+| 四肢             | 微生物  | 補充 v.(營養、水) | 長途跋涉 v. | 天生的 adj.   | 單個大羽毛 |
+| ---------------- | ------- | ----------------- | ----------- | ------------- | ---------- |
+| extremities/limb | microbe | replenish         | trek        | innate/inborn | plume      |
 
-| 休眠 n.  | 可發育的 adj. |
-| -------- | ------------- |
-| dormancy | viable        |
+| 休眠 n.  | 可發育的 adj. | 毛孔 氣孔 | 神經元 | 神經生物學   | 產前的 胎兒期的 | 產後的 出生後的 |
+| -------- | ------------- | --------- | ------ | ------------ | --------------- | --------------- |
+| dormancy | viable        | pore      | neuron | neurobiology | prenatal        | postnatal       |
+
+| 唾液腺 |
+| ------ |
+| gland  |
 
 植物學 Botany
 
@@ -306,9 +310,9 @@ Vocabulary
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
 | Fungus       | Algae | alpine plants | shrub, bush | conifer | angiosperms       | stem | pollinator |
 
-| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 |
-| -------- | --------- | ------------ |
-| botanist | sediment  | deposit      |
+| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  |
+| -------- | --------- | ------------ | ----- |
+| botanist | sediment  | deposit      | maize |
 
 形態學、構造學 morphology
 
@@ -318,9 +322,9 @@ Vocabulary
 
 氣象學 meteorology
 
-| 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結         |
-| ---------- | ------------------ | ----------- | ------------------ | ------------ |
-| Atmosphere | hydrological cycle | Evaporation | Transpiration      | condensation |
+| 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結                              |
+| ---------- | ------------------ | ----------- | ------------------ | --------------------------------- |
+| Atmosphere | hydrological cycle | Evaporation | Transpiration      | condensation (n.) / condense (v.) |
 
 | 凝華(氣變冰) | 降雨/降冰雹   | 滲透         | 地表徑流                     | 冰雹 | 雪崩      |
 | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
@@ -646,6 +650,7 @@ Vocabularies 論述文常用單字片語
 * skim v. 撇去……表面的浮物；撇去，去除[（+off/away）] -- She skimmed the soup to remove most of the fat. 她撇去了湯上的大部分浮油。
 * detriment / impairment n. 傷害、損害 -- a great detriment -- Are you sure that I can follow this diet without detriment to my health? 你能肯定我遵循這樣的飲食不會對健康有害嗎？
 * adversity n. 逆境、不幸 -- She was always cheerful in adversity. 身處逆境時，她也從不垂頭喪氣。
+* adversary n. 死敵
 * embody v. 具體表現；體現、收錄 -- embodied good sportsmanship 體現運動精神 -- Kennett embodied in one man an unusual range of science, music, and religion. 肯尼特集科學、音樂、宗教等方面一系列非凡成就於一身。
 * imagine / envision v. 想像 I always envisioned that I would return home at some point. 我總是設想我會在某個時候回家。
 * in one's course of life 在..的生命過程中
@@ -861,4 +866,49 @@ Vocabularies 論述文常用單字片語
 * accomplice [əˋkɑmplɪs] n.共犯，同謀，幫兇[C]
 * opine [oˋpaɪn] vt.想；以為；認為 vi.發表意見
 * malicious [məˋlɪʃəs] adj.惡意的，懷恨的 蓄意的 -- The malicious neighbor spread the gossip. 那個不懷好意的鄰居散布了流言蜚語
-* 
+* manufacturing plant 製造工廠 (plant 可作為工廠 並非植物)
+* power plant 發電廠
+* elaborate [ɪˋlæbə͵ret] vt.精心製作；詳盡闡述 adj. 精心製作的 -- They made elaborate costumes for the play. 他們為這齣戲精心製作戲裝。They elaborated a plan of study. 他們仔細制訂了學習計畫
+* perceptual [pɚˋsɛptʃʊəl] adj.感知的；知覺的 -- Perceptual skills 感知能力 Perceptula development 感知力發展
+* perceive [pɚˋsiv] vt.察覺；感知[O3][O4][+that]；意識到 -- He gradually perceived that his parents had been right. 他漸漸地了解到他的父母是對的
+* perceptiveness [pɚˋsɛptɪvnɪs] n.感知力；覺察力
+* perception [pɚˋsɛptɪvnɪs] n.感知，感覺；察覺[U]；認識，觀念；看法[C][（+of）] -- public perception 大眾觀感 -- My perception of the problem is quite different. 我對這個問題的理解則完全不同
+* nature 先天 vs. nurture 後天 (n.[U]營養物 vt.養育，培育，教養)
+* trigger off vt.啟動; 引發 -- The racial killings at the weekend have triggered off a wave of protests. 週末發生的種族屠殺引發抗議浪潮。
+* musing [ˋmjuzɪŋ] adj. 沉思的 若有所思的
+* binocular [bɪˋnɑkjəlɚ] adj.雙眼的 n.雙筒望遠鏡 -- binocular vision 雙眼視力
+* undertake vt.試圖；著手做；進行，從事；承擔，接受；同意；答應；保證 -- The work was undertaken by members of the committee. 此項工作由委員會成員承擔 -- I can not undertake that you will make a profit. 我不能擔保你會獲利
+* contend [kənˋtɛnd] vi. 爭奪，競爭 vt. 堅決主張 -- The police contended that the difficulties they faced were too severe. 警察強調說他們面臨的困難太嚴重了
+* peculiar [pɪˋkjuljɚ] adj.奇怪的；罕見的 n.特權 -- I have my own peculiar way of doing things. 我有自己獨特的做事方式
+* agree upon ph.對……取得一致意見 -- The two sides agreed upon a cease-fire. 雙方達成了停火協議
+* analogous to = similar to 類似於
+* strikingly 顯著地；顯目地；突出地 -- a strikingly pretty girl 一個非常漂亮的姑娘
+* mound [maʊnd] n.[C]土墩；土石堆；一堆（+of）-- There's a mound of books on my desk. 我的書桌上有一堆書
+* festive [ˋfɛstɪv] adj. 節日的；歡樂的，歡鬧的 -- The atmosphere is really festive and friendly. 氣氛真是歡樂而友好
+* inadequate [ɪnˋædəkwɪt] adj. 不充分的；不適當的；不夠格的 -- His income is inadequate to pay for it. 他的收入不夠支付此事的費用
+* remnant [ˋrɛmnənt] n.[C]殘餘，剩餘；遺跡；遺風 adj.殘餘的 -- Even today remnants of this practice remain. 直至今日這一習俗仍然殘存著
+* in the event that S+V+O = if 假如
+* attribute to 歸功於
+* have confidence in 對...有信心
+* a joint venture 合資
+* booth [buθ] n.[C] 貨攤 小房間 (餐廳等的）雅座 -- He went into the phone booth and dialed the number. 他走進電話亭撥了號碼
+* be made in writing 以書面形式
+* concentrate on/upon 全神貫注
+* consist of = be made up of = be composed of 組合
+* consist in = lie in 在於 -- Happiness consists in contentment 幸福在於知足
+* consist with 與..一致 -- Action should consist with word 行動需跟上口語
+* tardiness [ˋtɑrdɪnɪs] n.緩慢；遲延；不情願 --  apologized for my tardiness in getting here. 我為我來遲了表示歉意。
+* preliminary [prɪˋlɪmə͵nɛrɪ] adj.預備的；初步的 n.[C]初步；開端 初試 -- Preliminary arrangements have been made for the talks. 會談的準備工作已經就緒
+* in line with 符合、有相同觀點 -- His ideas are exactly in line with mine. 他的觀點和我的完全一致
+* Now that = Seeing that = Since = Because 既然
+* bimonthly [ˋbaɪˋmʌnθlɪ] adj. 隔月（的）；兩月一次（的）
+* coincide [͵koɪnˋsaɪd] vi. 同時發生；同位，重疊 -- My holiday coincides with John's. 我的假期與約翰的假期碰巧在同一時間
+* nuisance [ˋnjusns] n.討厭的人 麻煩事[C] 【律】妨害行為，騷擾行為 -- He was nothing but a nuisance and a rascal. 他是一個十足的討厭鬼和惡棍
+* commence [kəˋmɛns] vt.開始；著手[+v-ing][+to-v] vi.開始 (+with) -- She commenced to cry. 她開始哭了起來
+* thorough [ˋθɝo][kəˋmɛns] adj.徹底的；完全的；周密的；完善的 -- The film was a thorough success. 這電影獲得極大的成功
+* placement test 分級(班)測驗
+* adjacent [əˋdʒesənt] a.[Z毗連的，鄰接的；前後相接的 -- The two families live on adjacent streets. 這兩家住在兩條相鄰的街上
+* personnel [͵pɝsnˋɛl] n.[G]（總稱）人員，員工；人事部門 -- All personnel of the company are eligible for the retirement plan. 公司所有員工都有資格參加這項退休計畫
+* withhold the truth 隱瞞事實
+* The villagers have never heard of the Han-dynasty, [let alone] its succssors. 村民沒有聽過漢朝，[遑論]其後面的朝代
+* asisit ... in 幫助
