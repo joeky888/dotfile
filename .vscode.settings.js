@@ -232,4 +232,5 @@
     "workbench.iconTheme": "vscode-icons",
     "terraform.languageServer.enable": true,
     "terraform.languageServer.path": "",
+    "editor.stickyScroll.enabled": false,
 }

@@ -241,6 +241,7 @@ Vocabulary
 * It's my impression that xxx 我的觀點是(適用第一段結尾)
 * I reckon that the advantages of ... outweigh the disadvantages. 我認為優點勝於缺點 (適合論述文第一段)
 * In a sense of (N) 從..的觀點來看 (適合句首)
+* From my vantage point, 從我的觀點來看， (適合句首)
 * It seems to me that 從我的的觀點來看 (適合句首)
 * [Ving] conduced to my deep understanding of [N] xx主張有助於我對xx的認知 (適合第一段主旨重點)
 * these proponents are convinced that ...., these opponents insist that 支持者認為...，反對者堅持 (適合論述第一段，有押韻)
@@ -410,9 +411,9 @@ Vocabulary
 | --------- | -------- | -------------- | ------------------ | --------------------------- |
 | physician | surgeon  | valet          | real estate  agent | entrepreneur [͵ɑntrəprəˋnɝ] |
 
-| 領導人、指揮家 | 會議代表；代表團團員 |
-| -------------- | -------------------- |
-| conductor      | delegate             |
+| 領導人、指揮家 | 會議代表；代表團團員 | 皮膚科醫生    |
+| -------------- | -------------------- | ------------- |
+| conductor      | delegate             | dermatologist |
 
 Rephrasing 改變措辭 替代字語料小抄
 
@@ -912,3 +913,29 @@ Vocabularies 論述文常用單字片語
 * withhold the truth 隱瞞事實
 * The villagers have never heard of the Han-dynasty, [let alone] its succssors. 村民沒有聽過漢朝，[遑論]其後面的朝代
 * asisit ... in 幫助
+* OCD 強迫症 (Obsessive-Compulsive Disorder)
+* germ [dʒɝm] n.[C]微生物；細菌；病菌 -- Disease is usually caused by germs. 疾病常由病菌造成。
+* deprive [dɪˋpraɪv] vt.剝奪，從……奪走；使喪失[（+of）]；免去……的聖職 -- he was deprived of his rights 他被剝奪了權利
+* pharmaceutical [͵fɑrməˋsjutɪk!] adj. 製藥的；配藥的；配藥學的 -- the pharmaceutical industry 製藥業
+* clinical trials 臨床試驗
+* chronic [ˋkrɑnɪk] a.[Z]（病）慢性的；（人）久病的；長期的，不斷的 -- She's developed a chronic cough. 她的咳嗽已成了一種慢性病
+* acute adj. 敏銳的；劇烈的；急性的 -- acute pain 劇痛 -- He is a man of acute intelligence. 他非常聰穎
+* chronicle [ˋkrɑnɪk!] n.[C]編年史，年代記，歷史 vt.把……載入編年史；記錄 -- chronicle the growth of a town 記載某個城鎮的發展史
+* aggravate [ˋægrə͵vet] vt.加重；增劇；使惡化；【口】激怒；使惱火 -- Ice water aggravated my toothache. 冰水使我的牙痛加重了
+* drug trafficking 販毒
+* human trafficking 人口販賣
+* arson [ˋɑrsn] n.縱火（罪），放火（罪）-- arson murder 縱火謀殺
+* Law enforcement 執法 打擊犯罪(的行為) -- a law-enforcement officer 執法官員 -- asking for more strict law enforcement against the crime 要求嚴厲打擊違法犯罪行為
+* have confidence in 對..有信心
+* be conscious of 意識到..
+* outrage [ˋaʊt͵redʒ] n.惡行，暴行[C][（+on/upon）] vt. 激怒 -- They committed outrages on innocent citizens. 他們對無辜的市民犯下了暴行
+* outrageous [aʊtˋredʒəs] adj. 極不道德的、無恥的、令人吃驚的 -- It was downright outrageous for him to make such a proposal. 他提出這樣的建議是非常令人震驚的
+* downright [ˋdaʊn͵raɪt] adj.完全的 率直的 adv.完全地 -- a downright insult 十足的侮辱
+* downplay [ˋdaʊnple] vt.將……輕描淡寫；貶低；低估 -- exaggerated the benefits and downplay the drawbacks
+* fall a victim to... 淪為犧牲品
+* uneventful [͵ʌnɪˋvɛntfəl] adj.平靜無事的 -- an uneventful life/career 平凡的一生／職業生涯
+* be apt to... 易於...、有……傾向的 -- John is apt to be impulsive. 約翰易於衝動
+* onslaught on n.突擊，猛攻[C] -- The politician made a violent onslaught on the unions. 該政客猛烈抨擊工會
+* elaborate adj. 精心製作的 vt.vi. 精心製作、詳細說明 -- They made elaborate costumes for the play. 他們為這齣戲精心製作戲裝
+* spectator n.（比賽等的）觀眾；旁觀者
+* specter n. [C]鬼怪；幽靈
