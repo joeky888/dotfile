@@ -256,15 +256,18 @@ Vocabulary
 * I take sides with <名字> who advocates the benefits|drawbacks which include... 我與xx站同一邊，他的想法包括...
 * I am on the same page with <名字> who ... 我與xx站同一邊，他覺得...
 * On the other hand, <名字> raised the relevant point that ... but he/she didn't mention that 另一方面，xx 認為...，但他少了...
-* Take N for example, ... 舉例來說
+* Take N for example. ... 舉例來說
 * Incidentally, ... 順便一提，... -- Incidentally, I wanted to have a word with you about your travel expenses. 順便說一句，我打算和你談一下你的開支報銷問題。
 * As is known (to everyone) those who always 如眾所周知的每個人都..
 * Thumbing through / skimming 翻閱歷史人物的..
 * I come to realize that... 我逐漸意識到...
 * Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
 * Generally speaking, 一般而言，
+* By and large, 一般而言，(較正式的用法)
 * However, such research is inconclusive 然而這些研究是無結論的
 * In my opinion, = From my perspective, 我的觀點，適合句首
+* I hold/deem/opine S are condusive for being a ... 我認為S有益於... (適合句首)
+* It is my persuasion that... 我深信... (適合句首)
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -297,9 +300,13 @@ Vocabulary
 | -------- | ------------- | --------- | ------ | ------------ | --------------- | --------------- |
 | dormancy | viable        | pore      | neuron | neurobiology | prenatal        | postnatal       |
 
-| 唾液腺 |
-| ------ |
-| gland  |
+| 唾液腺 | 異域物種形成          | 同域物種形成         | 幼崽 幼苗 後代 | 酵素 酶 |
+| ------ | --------------------- | -------------------- | -------------- | ------- |
+| gland  | Allopatric speciation | Sympatric speciation | offspring      | enzyme  |
+
+| 嗜極生物     | 覓食 V.  |
+| ------------ | -------- |
+| extremophile | foraging |
 
 植物學 Botany
 
@@ -341,17 +348,21 @@ Vocabulary
 | ------ | ----------- | --------- | ------- | -------------- | ---------------- | ------------------- |
 | Fossil | Fossil fuel | elevation | equator | crater         | Tropic of Cancer | Tropic of Capricorn |
 
-| 地殼(皮) | 地幔(最厚;岩石層) | 地核 | 壕溝、海溝 | 板塊  | 北半球           | 南半球           |
-| -------- | ----------------- | ---- | ---------- | ----- | ---------------- | ---------------- |
-| Crust    | Mantle            | Core | Trench     | plate | North Hemisphere | South Hemisphere |
+| 地殼(皮) | 地幔(最厚;岩石層) | 地核 | 壕溝、海溝 | 板塊                   | 北半球           | 南半球           |
+| -------- | ----------------- | ---- | ---------- | ---------------------- | ---------------- | ---------------- |
+| Crust    | Mantle            | Core | Trench     | plate / tectonic plate | North Hemisphere | South Hemisphere |
 
 | 地表下的岩漿 | 噴發出的岩漿 | 土壤 | 島     | 半島      | 盆地  | 水庫            | 水壩 |
 | ------------ | ------------ | ---- | ------ | --------- | ----- | --------------- | ---- |
 | Magma        | Lava         | soil | insula | peninsula | basin | water reservoir | dam  |
 
-| (橫跨/途徑)陸地上的 adj. | 池塘 | 多山丘的、陡峭的 | 死水 停滯水 閉塞之處 |
-| ------------------------ | ---- | ---------------- | -------------------- |
-| overland                 | pond | hilly            | backwater            |
+| (橫跨/途徑)陸地上的 adj. | 池塘 | 多山丘的、陡峭的 | 死水 停滯水 閉塞之處 | 細流、小涓流 |
+| ------------------------ | ---- | ---------------- | -------------------- | ------------ |
+| overland                 | pond | hilly            | backwater            | trickle      |
+
+| 冰河    |
+| ------- |
+| glacier |
 
 考古學 Archeology
 
@@ -372,6 +383,16 @@ Vocabulary
 | 方言    |
 | ------- |
 | dialect |
+
+物質
+
+| 金   | 銀     | 銅                    | 鐵   | 鋼    | 錫  | 鈦       |
+| ---- | ------ | --------------------- | ---- | ----- | --- | -------- |
+| gold | silver | copper純銅/bronze青銅 | iron | steel | tin | titanium |
+
+| 碳     |
+| ------ |
+| carbon |
 
 政府機構 Governmental body
 
@@ -411,9 +432,9 @@ Vocabulary
 | --------- | -------- | -------------- | ------------------ | --------------------------- |
 | physician | surgeon  | valet          | real estate  agent | entrepreneur [͵ɑntrəprəˋnɝ] |
 
-| 領導人、指揮家 | 會議代表；代表團團員 | 皮膚科醫生    |
-| -------------- | -------------------- | ------------- |
-| conductor      | delegate             | dermatologist |
+| 領導人、指揮家 | 會議代表；代表團團員 | 皮膚科醫生    | 接待人員、櫃檯人員 |
+| -------------- | -------------------- | ------------- | ------------------ |
+| conductor      | delegate             | dermatologist | receptionist       |
 
 Rephrasing 改變措辭 替代字語料小抄
 
@@ -423,7 +444,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | painful             | adj. 痛苦的                         | excruciating                       | It is excruciating to do 做這事是很痛苦的                                                                                                     |
 | anger               | vt. 激怒                            | antagonize = provoke               | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                                      |
 | intake              | n. (食物)攝取；(思想)接受、融入同化 | assimilation                       | Poor assimilation of vitamins 維他命攝取不良 / assimilation of new ideas 新思想的採納                                                         |
-| agree               | vi. 同意 n. 答應                    | consent to [V]/[N]                 | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                                        |
+| agree               | vi. 同意 n. 答應                    | consent/assent to [V]/[N]          | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                                        |
 | agreement           | n. 共識                             | consensus                          | reach a consensus 達成共識                                                                                                                    |
 | hard to choose      | n. 左右為難 兩難困境                | dilemma                            | in a moral dilemma 倫理兩難 (比如死刑)                                                                                                        |
 | treated differently | n(U). 區別 歧視、識別能力(鑑別力)   | discrimination                     | There is racial/sex/age discrimination in my country 我國家有種族/性別/年齡歧視                                                               |
@@ -464,6 +485,19 @@ Rephrasing 改變措辭 替代字語料小抄
   * Second, | For another thing,
   * Third, | For the last thing,
 * Conclusion
+
+Writing ideas
+=====
+* Medical science
+  * Antibiotics decreased the death rate in the 20th centry
+  * Vaccines saves millions of lives during the pandemic
+* Music
+  * "We Are The World" by Michael Jackson in 1985 to save children starvation in Africa
+* Greate invention in past 100y
+  * Automobiles
+  * satellite
+  * smartphone
+  * LLM AI chatgpt
 
 標點符號 (Punctuation)
 =====
@@ -509,6 +543,8 @@ Rephrasing 改變措辭 替代字語料小抄
    * have + O + 原V/p.p
    * let  + O + 原V/be p.p
    * get  + O + p.p/to 原V
+7. 感官動詞 + Ving/V
+  * I saw a flock of birds fly/flying over the sky
 
 Vocabularies 論述文常用單字片語
 =====
@@ -670,7 +706,6 @@ Vocabularies 論述文常用單字片語
 * time-honoured adj. 古老但受尊重的
 * heritage n. = legacy 民族遺產
 * boomy adj. 景氣好的 -- boomy tourism 景氣好的觀光業
-* receptionist n. 接待人員、櫃檯人員
 * peddle v. (巡回)兜售、沿街叫賣 -- These products are generally peddled (from) door to door. 這些產品通常是挨家挨戶進行兜售的。
 * embark on/upon + N 從事、開始做 -- We're embarking upon a new project later this year. 今年晚些時候我們會著手進行一個新企劃。
 * gizmo(s) n. (通常加s) 小裝置;小發明;小東西 -- electronic gizmos 小電子裝置
@@ -939,3 +974,42 @@ Vocabularies 論述文常用單字片語
 * elaborate adj. 精心製作的 vt.vi. 精心製作、詳細說明 -- They made elaborate costumes for the play. 他們為這齣戲精心製作戲裝
 * spectator n.（比賽等的）觀眾；旁觀者
 * specter n. [C]鬼怪；幽靈
+* colossal /kəˈlɑː.səl/ adj. 巨大的，龐大的(體積、金額) -- This is indeed a colossal success. 這確實是個巨大的成功
+* gargantuan [gɑrˋgæntʃʊən] adj.龐大的 -- a gargantuan appetite 驚人的食慾
+* ensue [ɛnˋsu] vi.【書】接著發生；接踵而來 -- After the heavy rains, floods ensued. 大雨之後，接著發生了洪水 -- ensuing months 接著的幾個月
+* patriarch [ˋpetrɪ͵ɑrk] n.[C]家長；族長 創始人，元老
+* matriarch [ˋmetrɪ͵ɑrk] n.[C] n.女家長；女統治者
+* anarchy n.[U]無政府（狀態）；政治混亂 -- moral anarchy 道德混亂 -- Anarchy reigned following the death of the king. 國王死後出現了無政府混亂狀態。
+* intermittent [͵ɪntɚˋmɪtnt] adj.間歇的；時斷時續的 -- Today will be mostly fine and sunny, with intermittent showers. 今天大部分時間天氣晴朗，有間斷陣雨。
+* imperceptable [͵ɪmpɚˋsɛptəb!] adj.察覺不出的，感覺不到的[（+to）]；極細微的 -- imperceptible changes 細微的變化
+* ingenious [ɪnˋdʒinjəs] adj.心靈手巧的；善於創造文明的；足智多謀的；製作精巧的 -- It took a lot of imagination to come up with such an ingenious plan. 設計出如此巧妙的方案需有極大的想像力。
+* famine [ˋfæmɪn] = starvation n.饑荒[C][U]；飢餓[U] -- Drought has caused famine in Africa. 乾旱在非洲造成了饑荒
+* east-bound 往東的(列車)
+* be bound for 駛往..、開向..
+* patronage [ˋpætrənɪdʒ] n.[U]資助，贊助；資助人身分 -- under the patronage of sb. 在某人的贊助下
+* produce 農產品 vs. product 工業產品
+* whereabouts [ˋhwɛrəˋbaʊts] n.行蹤，下落 -- Do you know her whereabouts? 你知道她的下落嗎？
+* superintendent [͵supərɪnˋtɛndənt] n.[C]監督人，監管者；（機關，企業等的）主管，負責人
+* demolition [͵dɛməˋlɪʃən] n.破壞、建築物拆除 -- demolition area 建築物拆除區
+* detour [ˋditʊr] n.vt.vi. 繞道 -- They made a detour to avoid the town center. 他們繞道而行，避開市中心。
+* luncheon [ˋlʌntʃən] n.C. 午餐會
+* fill someone in 向……報告最新狀況、跟...說發生什麽事了 -- Can you fill me in? 你可以跟我說一下發生了什麼嗎？
+* fetal [ˋfit!] adj.胎兒的；胎的 -- fetal education 胎教
+* fatal adj. 致命的
+* paradigm [ˋpærə͵daɪm] n.範例
+* cognitive [ˋkɑgnətɪv] adj.認知的；認識的 -- mild cognitive impairment 【醫】輕度認知能力受損
+* regimen [ˋrɛdʒə͵mɛn] n.【醫】攝生；（病人的）食物療法；養生法 -- The management prescribed a set of regimen for the new employees. 管理階層為新進員工制定
+* proliferation [prə͵lɪfəˋreʃən] n.【生】增殖；激增；擴散 -- The past two years have seen the proliferation of TV channels. 過去的兩年見證了電視頻道（數量的）激增。
+* correlation [͵kɔrəˋleʃən] n.相互關係，關聯[C][（+between）]；相關性[U] -- a high/poor correlation 高／低相關性
+* vigorous [ˋvɪgərəs] adj.精力充沛的；壯健的；強有力的 -- make a vigorous speech 發表強有力的演說
+* invariable [ɪnˋvɛrɪəb!] adj.不變的；恆定的，一律的 -- an invariable temperature 恆溫
+* consecutively [kənˋsɛkjətɪvlɪ] -- adv.連續地；連貫地 -- the sentences to run or be served consecutively 連續執行的判決／需連續服的刑期
+* aforementioned/above-metioned adj.前面提及的，上述的 -- in the aforementioned statement
+* quantum leap 大耀進 -- Sending an expedition to explore Mars was considered a quantum leap in mankind's aerospace technology. 人類到火星探險被認為是太空科技的一個大躍進。
+* large-scale weapons of mass destruction 大規模毀滅性武器
+* are condusive [to V|for Ving] 有助於 -- advancements in technology are condusive to preserve/for perserving traditional ways of life 科技進步有助於保留傳統文化
+* disseminate [dɪˋsɛmə͵net] vt.散播；宣傳 -- to desseminate knowledge 傳播知識
+* delicacy [ˋdɛləkəsɪ] n.精美；柔軟；嬌嫩；優雅[U]；佳餚 -- caviar and other delicacies 魚子醬及其他美味食品
+* coexist with / go hand in hand with 共存 -- technology can coexist with our traditional skills 科技可以跟傳統文化共存
+* unconsciously = unawarely adv. 不知不覺地
+* 
