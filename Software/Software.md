@@ -358,6 +358,7 @@ Android
 * Not an app but related to Android
   * Scrcpy - Control Android via adb (Android 5+)
   * jadx - Decompile apk/jar
+  * universal-android-debloater-next-generation - ADB debloater - https://github.com/Universal-Debloater-Alliance/
 
 iOS
 =====

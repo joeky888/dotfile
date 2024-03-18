@@ -318,9 +318,9 @@ Vocabulary
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
 | Fungus       | Algae | alpine plants | shrub, bush | conifer | angiosperms       | stem | pollinator |
 
-| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  |
-| -------- | --------- | ------------ | ----- |
-| botanist | sediment  | deposit      | maize |
+| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  | 光合作用       |
+| -------- | --------- | ------------ | ----- | -------------- |
+| botanist | sediment  | deposit      | maize | photosynthesis |
 
 形態學、構造學 morphology
 
@@ -1012,4 +1012,51 @@ Vocabularies 論述文常用單字片語
 * delicacy [ˋdɛləkəsɪ] n.精美；柔軟；嬌嫩；優雅[U]；佳餚 -- caviar and other delicacies 魚子醬及其他美味食品
 * coexist with / go hand in hand with 共存 -- technology can coexist with our traditional skills 科技可以跟傳統文化共存
 * unconsciously = unawarely adv. 不知不覺地
-* 
+* indispensable to/for [͵ɪndɪsˋpɛnsəb!] adj. 必需的(+to/for) n. 必須的人(或物) -- A library is indispensable to a college. 大學裡圖書館是必不可少的
+* dispensable [dɪˋspɛnsəb!] adj.非必要的 可有可無的
+* instrumental [͵ɪnstrəˋmɛnt!] adj. 有幫助的 儀器的 -- instrumental navigation 儀表導航 n.[C]器樂曲
+* aristocratic [͵ærɪstəˋkrætɪk] = royal 貴族的 勢利的
+* lateral [ˋlætərəl] adj. 側面的 -- a lateral view 側面圖
+* manifest vt. = show 顯現 展示
+* manifestation [͵mænəfɛsˋteʃən] n.顯示，表明；證實 -- Fever is one manifestation of a cold. 發燒是受涼的一種表現
+* shrine [ʃraɪn] n. 聖壇；小廟
+* niche [nɪtʃ] n. 壁龕(牆壁厚度上建造的凹槽)；合適的職務（或地位等）
+* niche market 縫隙市場、小眾市場
+* pylon [ˋpaɪlɑn] 【空】指示塔；目標塔 【電】高壓線鐵塔 【EDF】生怪的塔
+* enclosed [ɪnˋklozd] adj.封閉的 與世隔絕的 -- an enclosed space/garden 封閉的空間／園子
+* carve [kɑrv] vt. 雕刻；切開；切（肉菜）-- The statue was carved out of marble. 那雕像是用大理石雕刻的
+* arid [ˋærɪd] = dry adj.乾旱的；乾燥的 枯燥的；無生氣的 -- The audience soon grew tired of his arid speech. 沒多久聽眾對他枯燥無味的演說就感到厭膩了
+* prohibitive [prəˋhɪbɪtɪv] adj.（費用、價格等）過高的；禁止的 -- The cost of making them by hand is prohibitive. 用手工製作它們的成本過高
+* exorbitant [ɪgˋzɔrbətənt] adj.（要求或收費等的）過高的；過分的 -- The conditions of this house are very satisfying to me, but its price is exorbitant. 這棟房子的條件非常令我滿意，但價格實在過高了
+* infertile [ɪnˋfɝtɪl] adj.不肥沃的,不毛之地的,不結果實的
+* verge n. 邊緣 界限
+* exterior [ɪkˋstɪrɪɚ] n. adj. 外部 外觀的
+* brokerage [ˋbrokərɪdʒ] n. 仲介費、佣金 -- To save brokerage fee, he decided to manage his own stocks. 為了節約佣金，他決定自己管理自己的股票。
+* associate adj. 夥伴的 副的 非正式的 -- associate agent 半正式的員工 associate professor 副教授
+* adjunct [ˋædʒʌŋkt] n. 附屬 附屬的 兼職的 -- adjunct professor 兼職教授
+* expedite [ˋɛkspɪ͵daɪt] vt. 促進；發送；探險
+* expedition [͵ɛkspɪˋdɪʃən] n.遠征；探險 -- They did an expedition to the Himalayas. 他們到喜馬拉雅山去考察了一次。
+* second vt.支持，贊同 -- I second that 我支持
+* outlay [ˋaʊt͵le] n. 費用 成本
+* layout n. 布局
+* strenuous [ˋstrɛnjʊəs] adj. 費力的 耗力的 -- Is swimming a strenuous exercise? 游泳是很費力的運動嗎？
+* I'm flattered by your vote of confidence. 我對你的稱讚受寵若驚
+* perquisite [ˋpɝkwəzɪt] = perk 額外補貼；福利 -- The perquisites of this job include health insurance and a performance bonus. 工作福利包括健保跟獎金
+* transcript n. 抄本 成績單 -- a university transcript 大學成績單
+* fabric [ˋfæbrɪk] 織物；構造；組織 -- The whole social fabric was threatened with disintegration. 整個社會結構有瓦解的危險
+* sturdy [ˋstɝdɪ] = durable adj.健壯的 堅固的 -- Children need sturdy clothes. 孩子們需要結實的衣服
+* oversee [ˋovɚˋsi] vt. 監視；監督；俯瞰
+* overlook vt. 看漏；忽略；俯瞰
+* jury [ˋdʒʊrɪ] n. 陪審團
+* intensive adj. 加強的；密集的 -- Intensive Care Unit 加護病房 vs. intense adj.強烈的，劇烈的 -- intense pain
+* second to none 不亞於任何人, 最佳 -- He is second to none. 他不亞於任何人
+* talent n. 藝人；天資
+* malfunction /ˌmælˈfʌŋk.ʃən/ n. 故障 失靈 -- Shortly before the crash the pilot had reported a malfunction of the aircraft's navigation system. 就在飛機墜毀前不久，飛行員曾報告說導航系統失靈。
+* edifying [ˋɛdə͵faɪɪŋ] adj.有教化意味的；有益的 -- edifying books 有教化意義的書籍
+* antecedent [͵æntəˋsidənt] n.先例 adj.先前的 -- a person of shady antecedents 背景可疑的人
+* qualify vt. 使合格；緩和，減輕 -- I'd like to qualify my criticisms of the school's failings, by adding that it's a very happy place. 關於我對這所學校不盡人意之處的批評我想補充一點，就是這是一個令人感到愉快的地方
+* tiered [tɪrd] adj.階級的 階梯式的 -- I ordered a two-tiered cake to celebrate our 20th wedding anniversary. 為了紀念我們結婚二十周年，我訂了一個兩層的蛋糕。
+* conglomerate [kənˋglɑmərɪt] n.聚集物 企業集團 adj.聚成一團的，成塊的 -- They can be said to be the largest conglomerate of Taiwan. 他們可以說是台灣最大的企業集團
+* transnational [trænsˋnæʃənəl] adj.跨國的 -- transnational drug trafficking 跨境販毒
+* pigment [ˋpɪgmənt] n.顏料 vt.著色 vi.呈現顏色
+* bleaching adj. 漂白的
