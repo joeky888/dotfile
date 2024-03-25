@@ -34,12 +34,12 @@ Post-installed
 * $ brew install sevenzip go node fnm ripgrep fd erdtree fastfetch onefetch bottom
 * $ brew tap homebrew/cask-fonts && brew install font-iosevka font-noto-sans-cjk font-ubuntu font-ubuntu-mono font-ubuntu-mono-nerd-font font-twitter-color-emoji
 * $ brew tap homebrew/cask-versions
-* $ brew install --cask alacritty visual-studio-code mpv docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput openvpn-connect
+* $ brew install --cask alacritty visual-studio-code mpv docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput openvpn-connect wpsoffice
 * $ brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune=all && brew doctor
 
 App store
 =====
-* WPS Office
+* Messenger
 
 Can not open an app due to "Unkown developer"
 =====

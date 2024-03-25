@@ -360,9 +360,9 @@ Vocabulary
 | ------------------------ | ---- | ---------------- | -------------------- | ------------ |
 | overland                 | pond | hilly            | backwater            | trickle      |
 
-| 冰河    |
-| ------- |
-| glacier |
+| 冰河    | 地熱       |
+| ------- | ---------- |
+| glacier | geothermal |
 
 考古學 Archeology
 
@@ -432,9 +432,14 @@ Vocabulary
 | --------- | -------- | -------------- | ------------------ | --------------------------- |
 | physician | surgeon  | valet          | real estate  agent | entrepreneur [͵ɑntrəprəˋnɝ] |
 
-| 領導人、指揮家 | 會議代表；代表團團員 | 皮膚科醫生    | 接待人員、櫃檯人員 |
-| -------------- | -------------------- | ------------- | ------------------ |
-| conductor      | delegate             | dermatologist | receptionist       |
+| 領導人、指揮家 | 會議代表；代表團團員 | 皮膚科醫生    | 接待人員、櫃檯人員 | 室內設計師         |
+| -------------- | -------------------- | ------------- | ------------------ | ------------------ |
+| conductor      | delegate             | dermatologist | receptionist       | interior decorator |
+
+| 顧問 指導老師 | 庭園設計家 |
+| ------------- | ---------- |
+| counselor     | landscaper |
+
 
 Rephrasing 改變措辭 替代字語料小抄
 
@@ -498,6 +503,35 @@ Writing ideas
   * satellite
   * smartphone
   * LLM AI chatgpt
+* Wathcing tv/Playing games
+  * addictive
+  * mind development
+  * violence
+  * don't squander precious time on games
+* Environment
+  * eco-friendly
+  * nuclear power plants are now considered green/sustainable/renewable energy
+  * adopting plant-based diets
+  * governments' endeavor to enhance the conscience of the general public by educating
+  * citizes awareness of their improper actions are actually contributed to greenhouse gas emissions and all sorts of pollutions
+  * riding bicycles
+  * deforestation
+  * highly toxic chemicals
+* Private healthcare 私人醫療
+  * shorting waiting list
+  * faster treatment
+  * customized/personalized services
+  * have their own room and more comfortable facilities
+* Public healthcare 公共醫療
+  * available for free / can afford it
+  * the money is mainly from taxes
+  * everyone enjoys the same quality of care and treatment
+* Economic inequality / Wealth Inequality 貧富差距(越來越大)
+  * put more tax on the rich
+  * gov should help less fortunate citizens
+  * welfare benefits such as unemployment and sickness pay
+* Cultural difference 文化差異
+  * statue of Stalin in Russia is untouchable
 
 標點符號 (Punctuation)
 =====
@@ -610,6 +644,7 @@ Vocabularies 論述文常用單字片語
 * culinary adj. 烹飪的，廚房的
 * profound adj. 深刻的、強烈的 (約等於 impressive 但更為正式的用詞)
 * conformity n. 一致性、從眾行為
+* uniformity n.一致；單調；相同；統一
 * juxtapose vt. 將...並列排好 -- juxtapose ... with ...將 ... 與 ... 並列排置
 * prosper vi. （人或企業）成功;（尤指經濟上）繁榮，昌盛 -- Lots of microchip manufacturing companies prospered at that time. 許多生產晶片的公司都是在那時候發達起來的。
 * real vs. true vs. authentic 意思都是真正的
@@ -821,6 +856,7 @@ Vocabularies 論述文常用單字片語
 * akin [əˋkɪn] adj. 相似的 有血親關係的 -- My friend's feelings are akin to mine. 我那位朋友的感受和我相近
 * irreparable [ɪˋrɛpərəb!] adj. 無法挽回的 -- irreparable damage will be done to the coastline. 對海岸線造成無可補救的破壞
 * irretrievable [͵ɪrɪˋtrivəb!] adj. 無法挽回的 -- an irretrievable loss 不可彌補的損失
+* inreversible adj. 不可逆
 * glance at 窺視 -- have a glance at .. 看一眼
 * glimpse at 窺視 -- He glimpsed at my new watch 他看了一眼我的新手錶
 * millennia [mɪˋlɛnɪə] n. 數千年時間 -- like millennia ago 就像幾千年前
@@ -1060,3 +1096,62 @@ Vocabularies 論述文常用單字片語
 * transnational [trænsˋnæʃənəl] adj.跨國的 -- transnational drug trafficking 跨境販毒
 * pigment [ˋpɪgmənt] n.顏料 vt.著色 vi.呈現顏色
 * bleaching adj. 漂白的
+* breach vt. 破壞，違反；侵害；衝破，突破；撕裂
+* bogus [ˋbogəs] adj. 贗造的；假貨的 -- bogus caller 假稱官員的來訪者
+* indignation [͵ɪndɪgˋneʃən] n.憤怒；憤慨，義憤 義憤填膺 忿忿不平 -- feel indignation at gross injustice 對極端的不公平感到憤慨
+* fierce [fɪrs] adj. 兇猛的；殘酷的；好鬥的；狂熱的；強烈的 -- After a fierce battle the enemy was forced to retreat. 激戰之後，敵人被迫撤退了
+* ferocious [fəˋroʃəs] adj. 兇猛的；殘忍的 -- a ferocious attack 一場兇猛的進攻
+* single out 選出 挑出 -- The boss singled me out for blame. 老板把我挑出來加以指責
+* chasm [ˋkæzəm] n.[C]（地表的）陷窟；裂隙；峽谷 （意見、感情等的）隔閡，分歧 -- There was a deep political chasm between the two countries which nearly led to war. 這兩個國家間政治上分歧殊深，幾乎引發戰爭。
+* mouthpiece [ˋmaʊθ͵pis] n. 代言人；喉舌 -- The newspaper was only a mouthpiece of certain rich people. 這家報紙不過是某些富人的喉舌。
+* In stark contrast with... 與...形成鮮明的反差
+* glitter [ˋglɪtɚ] vi.光彩奪目 閃閃發光 n.閃光，閃耀
+* glittering [ˈglɪtərɪŋ] adj.閃閃發光的 輝煌的(事跡)
+* assist ... with/in 幫助...以...
+* seedling [ˋsidlɪŋ] n. 籽生植物；幼苗
+* inequality [ɪnɪˋkwɑlətɪ] n.不均等；不平等 -- inequality of treatment 待遇上的不平等
+* nourish [ˋnɝɪʃ] vt.養育；滋養 -- We need good food to nourish the starving infants. 我們需要好食品滋養這些挨餓的嬰兒。
+* nurture [ˋnɝtʃɚ] vt.養育，培育，教養 n.[U]營養物，食物；養育 -- mother's duty to nurture her children 母親養育子女的責任
+* skeptical [ˋskɛptɪk!] adj. 懷疑的，多疑的 -- Many were skeptical about this solution. 許多人對這一解決辦法表示懷疑
+* Renaissance [rəˋnesns] n.文藝復興(時期)
+* explicit [ɪkˋsplɪsɪt] adj.詳盡的；清楚的；明確的 -- A sexaully explicit film 明顯露骨的電影
+* unanimously [jʊˋnænəməslɪ] adv.無異議地；全體一致地 -- All four proposals to the committee were unanimously approved. 提交給委員會的四項提案均獲得全體通過。
+* aesthetic [ɛsˋθɛtɪk] = artistic adj.美學的；藝術的；審美的 n.美學 -- an aesthetic person 有審美眼光的人
+* refined sugar 精煉的糖
+* genteel [dʒɛnˋtil] adj.彬彬有禮的；有教養的 -- from a genteel family. 出身於有教養的家庭
+* communal [ˋkɑmjʊn!] adj.自治體的；公共的；社區的 -- the communal life 集體生活
+* octave [ˋɑktev] adj.八個一組的；八行的；高八度音的
+* articulate [ɑrˋtɪkjə͵let] vt.清晰地吐（字）；明確有力地表達 -- Articulate your words so that we can understand what you are saying. 說話要清楚，這樣我們才能聽明白你的話。
+* temperament [ˋtɛmprəmənt] n.氣質；性情，性格、喜怒無常；急躁 -- He has a romantic temperament. 他富有浪漫氣質
+* virtuoso [͵vɝtʃʊˋoso] n.藝術愛好者 adj.(藝術領域)技藝精湛的 行家的
+* Baroque [bəˋrok] adj.巴羅克式的；過分裝飾的；新奇怪異的
+* treatise [ˋtritɪs] n.論文；專著 -- a treatise on sth. 關於某研究課題的論文
+* ensemble [ɑnˋsɑmb!] n.整體；總效果 【音】合奏，合唱 -- The coat, hat, and shoes make an attractive ensemble. 這外套、帽子和鞋子配成一套引人注目的服裝。
+* succinct [səkˋsɪŋkt] adj.簡練的；簡潔的；壓縮在小範圍內 -- could you be a little more succinct? 你能不能再簡明扼要一點？
+* austerity [ɔˋstɛrətɪ] n.(經濟上)樸素 苦行 擲節 -- A peculiar austerity marked his judgments of modern life. 他對現代生活的批評帶著一種特殊的苛刻
+* susceptible [səˋsɛptəb!] adj.易被感動的，易動感情的，易受影響的 -- We are all susceptible to advertising. 我們都容易受廣告的影響。
+* refrain from [rɪˋfren] vi.忍住；抑制，節制 戒除 -- please refrain from smoking 請勿吸煙
+* parade [pəˋred] n.遊行 vi.遊行 -- The soldiers paraded by. 士兵們列隊走過
+* masquerade [͵mæskəˋred] n.面具舞會；化裝舞會
+* reiterate [riˋɪtə͵ret] vt.重申 -- Let me reiterate that we have absolutely no plans to increase taxation. 讓我再一次重申我們絕對沒有增稅的計畫
+* head chef 主廚，sous chef /ˈsuː ˌʃef/ 副主廚
+* in stock (倉儲)有庫存, out of stock 無庫存
+* on..leave 因..請假 -- on personal leave 事假, on maternity leave 產假, on annual leave 年假, on sick leave 病假
+* pastry [ˋpestrɪ] n.糕餅 -- a pastry shop 糕餅店
+* budget airline/flight 廉價航空
+* pertain [pɚˋten] vi. 有關，關於 -- a book pertaining to birds 有關鳥類的書
+* brochure [broˋʃʊr] n.小冊子[C] 指南 -- an advertising brochure 廣告冊子
+* mow [mo] vt.（用鐮刀等）刈草 -- mow the lawn 給草坪割草
+* itinerary [aɪˋtɪnə͵rɛrɪ] n.[C]旅程；路線 旅行計畫 -- He has some more places to visit on his itinerary. 他在旅途中還有幾個地方要遊覽
+* momentum [moˋmɛntəm] n.氣勢，衝力，動力；推動力 -- a campaign that gained momentum 勢頭增大的一場運動
+* assort [əˋsɔrt] vt.分類 配合
+* pact [pækt] n.契約；協定；條約 -- to make a pact with sb. 與某人簽署條約
+* punch in / log in  打卡下班
+* punch out / log out 打卡下班
+* plenty of 許多(注意沒有 a 在最前面)
+* revere [rɪˋvɪr] vt.【書】尊敬，崇敬；敬畏 -- Students revere the old professor. 學生尊敬這位老教授
+* homage [ˋhɑmidʒ] n.尊敬；敬意；崇敬 -- The Imperial Guards presented homage to the king. 皇家警衛隊向國王宣誓效忠
+* sacrilege [ˋsækrəlɪdʒ] n.褻瀆；悖理逆天的行為 -- it is sacrilege to do ... 做…是褻瀆行為
+* let alone = much less = not to metion 更何況、遑論
+* hospitality [͵hɑspɪˋtælətɪ] n.[U]好客；殷勤招待 (新思想)接受能力，理解力 -- Many thanks for the hospitality you showed me. 非常感謝你對我的款待
+*
