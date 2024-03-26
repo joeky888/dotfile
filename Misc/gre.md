@@ -83,30 +83,43 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | abscond           | v.           | 潛逃、逃亡                                              | [æbˋskɑnd]                                                         |
 | abstain           | v.           | 戒除、棄權                                              | [əbˋsten]                                                          |
 | abstemious        | adj.         | (飲食)節制的；節省的                                    | [æbˋstimɪəs]                                                       |
+| abstinence        | n.           | (飲食)節制；禁飲；戒酒                                  | [ˋæbstənəns]                                                       |
+| absurd            | adj.         | 荒謬的；可笑的                                          | [əbˋsɝd]                                                           |
+| accept            | vt.vi.       | 接納，忍受；同意                                        |                                                                    |
 | indulging         | adj.         | 縱慾的                                                  | /ɪnˈdʌldʒ/                                                         |
 | abstruse          | adj.         | 深奧的 難解的                                           | [æbˋstrus]                                                         |
 | abysmal           | adj.         | 糟糕的、極其深的                                        | [əˋbɪzm!]                                                          |
+| acerbic           | adj.         | （語言或態度）尖刻的，尖酸的                            | [əˋsɝbɪk]                                                          |
 | acme              | n.           | 頂點、頂峰                                              | [ˋækmɪ] pinnacle 頂峰 summit 頂峰                                  |
 | acumen            | n.           | 精明、敏銳                                              | [əˋkjumən]                                                         |
+| acute             | adj.         | 尖銳的；敏銳的；劇烈的                                  | [əˋkjut]                                                           |
 | adamant           | adj.         | 固執的、堅定不移的                                      | [ˋædəmənt]                                                         |
 | adjudicate        | vi.          | 裁決、判決                                              | [əˋdʒudɪ͵ket]                                                      |
-| admonish          | vt.          | 訓誡、警告                                              | [ədˋmɑnɪʃ] reprimand 警告                                          |
+| admonish          | vt.          | 訓誡，警告，告誡                                        | [ədˋmɑnɪʃ] reprimand 警告                                          |
 | admonitory        | adj.         | 忠告的、告誡的                                          | [ədˋmɑnə͵torɪ]                                                     |
+| adulation         | n.           | 諂媚，奉承；吹捧                                        | [͵ædʒəˋleʃən]                                                      |
 | adulterate        | vt.          | 摻雜、慘假                                              | [əˋdʌltə͵ret]                                                      |
 | adultery          | n.           | 通姦                                                    | [əˋdʌltərɪ]                                                        |
 | aesthete          | n.           | 審美家                                                  | [ˋɛsθit]                                                           |
 | aesthetic         | adj.         | 美學的、審美的、藝術的                                  | [ɛsˋθɛtɪk]                                                         |
 | affable           | adj.         | 和藹可親的                                              | [ˋæfəb!]⭐️常考                                                      |
 | affluent          | adj.         | 富裕的、富有的                                          | [ˋæflʊənt]                                                         |
-| aggrandize        | vt.          | 誇大、增加                                              | [əˋgræn͵daɪz]                                                      |
+| aggravate         | vt.          | 加重；增劇；使惡化                                      | [ˋægrə͵vet]                                                        |
+| aggrandize        | vt.          | 加大，強化；誇張，吹捧                                  | [əˋgræn͵daɪz]                                                      |
 | alacrity          | n.           | 快速、活潑、歡快                                        |                                                                    |
+| alarmist          | adj.         | 危言聳聽的；大驚小怪的；憂慮的                          | [əˋlɑrmɪst]                                                        |
 | alleviate         | v.           | 緩解、減輕                                              | [əˋlivɪ͵et]⭐️常考   mitigate 減緩                                   |
+| all-encompassing  | adj.         | 包羅萬象的                                              | [ɪnˋkʌmpəs] encompass 包含、圍繞                                   |
 | altruism          | n.           | 利他主義；利他行為                                      | [ˋæltrʊ͵ɪzəm]                                                      |
+| allure            | n.vt.vi.     | n.誘惑力，魅力 v.引誘，誘惑，誘人                       | [əˋlɪʊr]                                                           |
 | philanthropy      | n.           | 慈善家；慈善行為；慈善事業                              | [fɪˋlænθrəpɪ]                                                      |
+| altruistic        | adj.         | 無私的；利他的；利他主義的                              | [æmˋbɪvələnt]                                                      |
+| analytic          | adj.         | 善於分析的；冷靜客觀的                                  | [͵æn!ˋɪtɪk]                                                        |
 | amalgam           | n.           | 混合物；【化】汞合金                                    | [əˋmælgəm]                                                         |
 | amalgamate        | v.           | 合併、融合                                              | [əˋmælgəmet]                                                       |
+| ambivalent        | adj.         | （對同一人或事物）有矛盾情緒的                          | [æmˋbɪvələnt]                                                      |
 | ambivalence       | n.           | 矛盾心理、猶豫不決                                      | [æmˋbɪvələns]                                                      |
-| ameliorate        | v.           | 改善、改進                                              | [əˋmiljə͵ret]                                                      |
+| ameliorate        | vi.          | 改善、改進                                              | [əˋmiljə͵ret]                                                      |
 | amenable          | adj.         | 順從的、易受影響的                                      | [əˋminəb!]                                                         |
 | monarch           | n.           | 君主、女王、國王                                        | [ˋmɑnɚk]                                                           |
 | amiable           | adj.         | 和藹可親的                                              | [ˋemɪəb!]                                                          |
@@ -120,23 +133,30 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | abnegation        | n.           | 放棄；自制；自我克制；否認                              | [͵æbnɪˋgeʃən]                                                      |
 | abound            | vi.          | 大量存在；充滿；富足多產                                | [əˋbaʊnd]                                                          |
 | absolve           | vt.          | 免除(責任，義務)；免罪，寬恕，使免受罰                  | [əbˋsɑlv]                                                          |
-| anachronism       | n.           | 時代錯誤、時代誤植                                      |                                                                    |
-| analogous         | adj.         | 相似的                                                  |                                                                    |
-| analogy           | n.           | 類比                                                    |                                                                    |
-| rivalry           | n.           | 敵對                                                    |                                                                    |
-| anarchy           | n.           | 無政府狀態、混亂狀態                                    |                                                                    |
-| anathema          | n.           | 令人憎恨改的人或事                                      | abhor 憎恨的事物                                                   |
-| anemic            | adj.         | 貧血的、缺乏活力的                                      | anemia 血                                                          |
-| animosity         | n.           | 敵意、仇恨                                              |                                                                    |
-| anodyne           | adj.n.       | 緩解的、止痛的、安慰物、緩解方法                        |                                                                    |
-| anoint            | v.           | 塗油 拔擢                                               | ⭐️常考                                                              |
+| anachronistic     | adj.         | 時代錯誤的；過時的                                      | [ə͵nækrəˋnɪstɪk]                                                   |
+| anachronism       | n.           | 時代錯誤、時代誤植                                      | [əˋnækrə͵nɪzəm]                                                    |
+| analogous         | adj.         | 相似的，類似的；可比擬的                                | [əˋnæləgəs]                                                        |
+| analogy           | n.           | 相似，類似；比擬；類推，類比                            | [əˋnælədʒɪ]                                                        |
+| rivalry           | n.           | 敵對；競爭；對抗                                        | [ˋraɪv!rɪ]                                                         |
+| anarchy           | n.           | 無政府狀態、混亂狀態；無法無天                          | [ˋænɚkɪ]                                                           |
+| anathema          | n.           | 令人憎恨改的人或事                                      | [əˋnæθəmə] abhor 憎恨的事物                                        |
+| anecdote          | n.           | 軼事，趣聞；祕史，祕聞                                  | [ˋænɪk͵dot]                                                        |
+| anemic            | adj.         | 貧血的、缺乏活力的                                      | [əˋnimɪk] anemia 血                                                |
+| animosity         | n.           | 敵意、仇恨                                              | [͵ænəˋmɑsətɪ]                                                      |
+| anodyne           | adj.n.       | 緩解的、止痛的；n.止痛劑，安慰物、緩解方法              | [ˋænodaɪn]                                                         |
+| anoint            | vt.          | （用油或軟膏等）塗油；拔擢，神聖化                      | [əˋnɔɪnt] ⭐️常考                                                    |
 | anomalous         | adj.         | 異常的                                                  | [əˋnɑmələs] ⭐️常考                                                  |
 | anomaly           | n.           | 異常現象                                                | [əˋnɑməlɪ] ⭐️常考                                                   |
+| annihilate        | vt.          | 殲滅，消滅                                              | [əˋnaɪə͵let]                                                       |
+| antagonist        | n.           | 敵手，對手；對立者，反對者                              | [ænˋtægənɪst]                                                      |
+| antagonistic      | adj.         | 對抗（性）的；敵對的；反對的                            | [æn͵tægəˋnɪstɪk]                                                   |
 | antedated         | vt.          | 在時間上早於                                            | [͵æntɪˋdetɪd] ante- 之前-                                          |
 | antic             | n. adj.      | 滑稽動作、滑稽的                                        | [ˋæntɪk]                                                           |
 | antipathy         | n.           | 反感、厭惡                                              | [ænˋtɪpəθɪ]                                                        |
 | antiquated        | adj.         | 過時的、陳舊的                                          | [ˋæntə͵kwetɪd]                                                     |
 | antithetical      | adj.         | 對立的、相反的                                          | [͵æntɪˋθɛtɪk!]                                                     |
+| antediluvian      | adj.         | 老舊的，過時的，上古的；(聖經)大洪水前時代的人          | [ˋæntɪdɪˋluvɪən]                                                   |
+| apathy            | n.           | 冷淡；無興趣；漠不關心                                  | [ˋæpəθɪ]                                                           |
 | apathetic         | adj.         | 冷漠的、無動於衷的                                      | [͵æpəˋθɛtɪk] indifferent 漠不關心的                                |
 | apex              | n.           | 頂點 最高點                                             | acme 最高點                                                        |
 | aphorism          | n.           | 格言、警句                                              | [ˋæfə͵rɪzəm]                                                       |
@@ -151,24 +171,37 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | apothegm          | n.           | 格言、箴言                                              | [ˋæpə͵θɛm]                                                         |
 | apotheosis        | n.           | 頂點 巔峰                                               | [ə͵pɑθɪˋosɪs] = acme = apex                                        |
 | appease           | v.           | 安撫、平息                                              | [əˋpiz] peace 和平                                                 |
+| apposite          | adj.         | 相關的，適當的，貼切的                                  | [ˋæpəzɪt]                                                          |
 | appreciable       | adj.         | 可察覺的、相當大的                                      | [əˋpriʃɪəb!]                                                       |
+| apprehensive      | adj.         | 憂慮的，恐懼的；善於領會的，敏悟的                      | [͵æprɪˋhɛnsɪv]                                                     |
 | apprehension      | n.           | 憂慮、理解                                              | [͵æprɪˋhɛnʃən] ⭐️常考  He is quick of apprehension 他理解力很敏銳   |
 | apprise           | v.           | 通知、告知                                              | [əˋpraɪz]                                                          |
-| approbation       | n.           | 認可、讚許                                              | [͵æprəˋbeʃən]                                                      |
+| approbation       | n.           | 認可，讚同；讚許，讚賞                                  | [͵æprəˋbeʃən]                                                      |
 | approbatory       | adj.         | 讚許的                                                  | [͵əproˋbetərɪ]                                                     |
 | accolade          | n.           | 讚許                                                    | [͵ækəˋled]                                                         |
+| acclaim           | n.vt.vi.     | 歡呼；喝采；稱讚                                        | [əˋklem]                                                           |
 | acclamation       | n.           | 歡呼 喝彩                                               | [ɪmˋbɛz!]                                                          |
-| appropriate       | v.           | 挪用                                                    | adj. 適當的                                                        |
+| accommodate       | vt.          | 能容納；能提供；採納                                    | [əˋkɑmə͵det]                                                       |
+| acquiescence      | n.           | 默認；默許；默從                                        | [͵ækwɪˋɛsəns]                                                      |
+| adroit            | adj.         | 靈巧的；敏捷的；熟練的                                  | [əˋdrɔɪt]                                                          |
+| apt               | adj.         | 易於……的，有……傾向的；恰當的，貼切的                    | [æpt]                                                              |
+| appropriate       | vt.          | 挪用                                                    | adj. 適當的                                                        |
 | embezzle          | vt.          | 挪用公款                                                |                                                                    |
-| embezzlement      | n.           | 挪用公款                                                | K[ɪmˋbɛz!mənt]                                                     |
+| embezzlement      | n.           | 挪用公款                                                | [ɪmˋbɛz!mənt]                                                      |
+| adversarial       | adj.         | 敵手的；對手的；對抗的                                  | [͵ædvɚˋsɛrɪəl]                                                     |
+| adverse           | adj.         | 逆向的，相反的；反面的；不利的                          | [ædˋvɝs]                                                           |
+| affinity          | n.           | 異性吸引力，密切關係，緊密關係；喜好，本性，傾向        | [əˋfɪnətɪ]                                                         |
+| aghast            | adj.         | 嚇呆的；驚駭的；驚恐的                                  | [əˋgæst]                                                           |
 | appurtenant       | adj.         | 附屬的、附帶的                                          | [əˋpɝtənənt]                                                       |
-| arbitrary         | adj.         | 隨心所欲的 反覆無常的，任性多變的                       | [ˋɑrbə͵trɛrɪ]                                                      |
+| arbitrary         | adj.         | 隨心所欲的 反覆無常的，任性多變的；獨裁的，專制的       | [ˋɑrbə͵trɛrɪ]                                                      |
 | arcane            | adj.         | 深奧的、神秘的                                          | [ɑrˋken]                                                           |
 | arch              | adj.         | 淘氣的、詼諧的                                          |                                                                    |
 | mischievous       | adj.         | 淘氣的  有害的 惡作劇的                                 | [ˋmɪstʃɪvəs]                                                       |
 | archaic           | adj.         | 古老的、陳舊的                                          | [ɑrˋkeɪk]                                                          |
+| archetype         | n.           | (模仿、改編)原型；典型，典範                            | [ˋɑrkɪ͵taɪp]                                                       |
 | arduous           | adj.         | 費力的、艱巨的                                          | [ˋɑrdʒʊəs]                                                         |
 | arrant            | adj.         | 極度的、徹頭徹尾的                                      | [ˋærənt] downright 徹頭徹尾的                                      |
+| arrest            | vt.          | 吸引(注意力)；阻止，阻撓；逮捕                          | [əˋrɛst]                                                           |
 | arriviste         | n.           | 暴發戶、突然展露頭角的人                                | [͵ærɪˋvist]                                                        |
 | arrogate          | vt.          | 冒稱、霸佔                                              | [ˋærə͵get]                                                         |
 | artful            | adj.         | 狡猾的、技巧高超的                                      | [ˋɑrtfəl] ⭐️常考 cunning 狡猾, The Art of War 孫子兵法              |
@@ -849,7 +882,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | magisterial       | adj.         | 權威的；威嚴的；地方治安推事的                          | [͵mædʒɪsˋtɪrɪəl]                                                   |
 | magnanimity       | n.           | 寬宏大量；慷慨大度                                      | [͵mægnəˋnɪmətɪ] ⭐️                                                  |
 | magnanimous       | adj.         | 寬宏大量的；慷慨大度的                                  | [mægˋnænəməs] ⭐️                                                    |
-| maladroit         | adj.         | 笨拙的；不老練的；不靈巧的                              | [͵mæləˋdrɔɪt]                                                      |
+| maladroit         | adj.         | 笨拙的；不老練的；不靈巧的                              | [͵mæləˋdrɔɪt] adroit 精明的，靈巧的                                |
 | malady            | n.           | 疾病；(社會的)弊病，腐敗，歪風                          | [ˋmælədɪ]                                                          |
 | malapropism       | n.           | 文字誤用；荒唐用字；(尤指音似而意義不同的字)            | [ˋmæləprɑp͵ɪzəm] tfs悟空                                           |
 | malevolent        | adj.         | 有惡意的；壞心腸的；有害的                              | [məˋlɛvələnt]                                                      |
