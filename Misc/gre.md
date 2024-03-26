@@ -5,136 +5,129 @@ Magoosh gre app 測驗
 填空 3_0725c 下 - GRE實戰班S7 - 1:31:00 OV p.64 第五題
 閱讀 1_0808C 下 - 文章解讀P132 56:00
 
-|                   |      |                        |                                     |
-| ----------------- | ---- | ---------------------- | ----------------------------------- |
-| ingominous        | adj. | 可恥的 丟臉的          |                                     |
-| impregnate        | vt.  | 使懷孕                 |                                     |
-| impregnable       | adj. | 堅不可摧的、攻不破的   |                                     |
-| indigent          | adj. | 貧困的                 |                                     |
-| indolence         | n.   | 懶惰、怠惰             |                                     |
-| imperceptible     | adj. | 無法理解的、察覺不到的 |                                     |
-| imperceptibly     | adv. | 察覺不到地、難以察覺地 |                                     |
-| tardiness         | n.   | 遲到                   |                                     |
-| irrelevant        | adj. | 不相關的               |                                     |
-| incarnate         | adj. | 化身的、人性化的       | carn 肉身 incarnate 化為肉身        |
-| carnivore         | n.   | 肉食性動物             |                                     |
-| herbivore         | n.   | 草食性動物             |                                     |
-| omnivore          | n.   | 雜食性動物             |                                     |
-| impeach           | v.   | 彈劾                   |                                     |
-| incite            | v.   | 煽動、激勵             | incite mobs 煽動暴民                |
-| indigenous        | adj. | 本地的、土生土長的     |                                     |
-| intrinsic         | adj. | 內在的、內部的         |                                     |
-| extrinsic         | adj. | 外來的、外在的         |                                     |
-| preclude          | v.   | 預先阻止、排除         |                                     |
-| precedent         | n.   | 先例、前例             | predecessor 前任者 successor 後任者 |
-| prenatal          | adj. | 產前的                 |                                     |
-| relentlessly      | adv. | 無情地 堅決地          |                                     |
-| lucid             | adj. | 清晰的，明白易懂的     |                                     |
-| luna              | n.   | 月亮                   |                                     |
-| lumen             | n.   | 流明(亮度單位)         |                                     |
-| luminary          | n.   | 傑出人物、名人         |                                     |
-| elucidate         | v.   | 闡明、解釋             |                                     |
-| illuminate        | v.   | 照明、啟發             |                                     |
-| lackluster        | adj. | 沒有光澤的、無生氣的   |                                     |
-| qualify           | v.   | 減少                   | n. 資格                             |
-| intimate          | v.   | 提示、暗示、通知       | adj. 親密的                         |
-| innocuous         | adj. | 無毒的 無害的          |                                     |
-| noxious           | adj. | 有毒的 有害的          |                                     |
-| nominal           | adj. | 名義上的、名不副實的   |                                     |
-| nomenclature      | n.   | 命名法、術語           |                                     |
-| renown            | n.   | 名聲、聲譽             |                                     |
-| misnomer          | n.   | 誤稱、不準確的名稱     |                                     |
-| counteract        | v.   | 抵消、對抗             |                                     |
-| counterargument   | n.   | 反對觀點               |                                     |
-| contradict        | v.   | 反駁、否認、抵觸       |                                     |
-| testimony         | n.   | 證詞                   |                                     |
-| testify           | v.   | 作證                   |                                     |
-| alibi             | n.   | 不在場證明             |                                     |
-| technophile       | n.   | 技術迷、喜歡科技的人   |                                     |
-| pedophile         | n.   | 戀童者                 |                                     |
-| biblophile        | n.   | 愛書的？！聖經？       |                                     |
-| technocrat        | n.   | 技術專家、技術官僚     |                                     |
-| pioneering        | adj. | 開創性的、先驅的       |                                     |
-| orthodox          | adj. | 正統的、傳統的         |                                     |
-| eccentric         | adj. | 古怪的、離心的         |                                     |
-| trifling          | adj. | 微不足道的、瑣碎的     |                                     |
-| ameliorate        | v.   | 改善、改進             |                                     |
-| ascertain         | v.   | 查明、確定             |                                     |
-| exacerbate        | v.   | 使惡化、加劇           | (⭐️常考)                             |
-| overlook          | v.   | 忽略、忽視             |                                     |
-| plausible         | adj. | 貌似真實的、似乎可信的 |                                     |
-| entitlement       | n.   | 特權、權力             |                                     |
-| entitled          | adj. | 自以為是的、有權利的   |                                     |
-| superficiality    | n.   | 膚淺、淺薄             |                                     |
-| superficial       | adj. | 表面的、膚淺的         |                                     |
-| vain              | adj. | 徒勞的、虛榮的         |                                     |
-| vanity            | n.   | 虛榮、自負             |                                     |
-| temper            | v.   | 調和、控制             | n. 脾氣、氣質                       |
-| temperance        | n.   | 節制、自制             |                                     |
-| principle         | n.   | 原則                   |                                     |
-| principal         | n.   | 高中含以下的校長       |                                     |
-| notoriety         | n.   | 惡名昭彰               |                                     |
-| emnience          | n.   | 卓越、顯赫、傑出       |                                     |
-| eminent           | adj. | 卓越的                 |                                     |
-| preeminent        | adj. | 卓越的                 |                                     |
-| tumultuous        | adj. | 混亂的、騷動的         |                                     |
-| tumult            | n.   | 喧嘩、騷動             |                                     |
-| providential      | adj. | 天意的、幸運的         |                                     |
-| dispassionate     | adj. | 冷靜的、客觀的         |                                     |
-| counterproductive | adj. | 適得其反的、反效果的   |                                     |
-|                   |      |                        |                                     |
+|                   |        |                                    |                                           |
+| ----------------- | ------ | ---------------------------------- | ----------------------------------------- |
+| ignominious       | adj.   | 可恥的 丟臉的                      | [͵ɪgnəˋmɪnɪəs]                            |
+| impregnate        | vt.    | 使懷孕；使充滿；使飽和             | [ɪmˋprɛg͵net]                             |
+| impregnable       | adj.   | 堅不可摧的、攻不破的               | [ɪmˋprɛgnəb!]                             |
+| indigent          | adj.   | 貧困的；貧乏的                     | [ˋɪndədʒənt]                              |
+| indolence         | n.     | 懶惰、怠惰                         | [ˋɪndələns]                               |
+| imperceptible     | adj.   | 無法理解的、察覺不到的             | [͵ɪmpɚˋsɛptəb!]                           |
+| imperceptibly     | adv.   | 察覺不到地、難以察覺地             | [͵ɪmpɚˋsɛptəblɪ]                          |
+| tardiness         | n.     | 遲到                               | [ˋtɑrdɪnɪs]                               |
+| irrelevant        | adj.   | 不相關的                           | [ɪˋrɛləvənt]                              |
+| incarnate         | adj.   | 化身的、人性化的                   | [ɪnˋkɑr͵net] carn 肉身 incarnate 化為肉身 |
+| carnivore         | n.     | 肉食性動物                         | [ˋkɑrnə͵vɔr]                              |
+| herbivore         | n.     | 草食性動物                         | [ˋhɝbə͵vɔr]                               |
+| omnivore          | n.     | 雜食性動物                         | [ˋɑmnə͵vɔr]                               |
+| impeach           | v.     | 彈劾                               |                                           |
+| incite            | v.     | 煽動、激勵                         | [ɪnˋsaɪt]incite mobs 煽動暴民             |
+| intrinsic         | adj.   | 內在的、內部的                     | [ɪnˋtrɪnsɪk]                              |
+| extrinsic         | adj.   | 外來的、外在的                     | [ɛkˋstrɪnsɪk]                             |
+| prenatal          | adj.   | 產前的；胎兒期的                   | [priˋnet!]                                |
+| relentlessly      | adv.   | 無情地 堅決地；殘酷地              | [rɪˋlɛntlɪslɪ]                            |
+| lumen             | n.     | 流明(亮度單位)                     |                                           |
+| luminary          | n.     | 傑出人物、名人                     | [ˋlumə͵nɛrɪ]                              |
+| illuminate        | v.     | 照明、啟發                         | [ɪˋlumə͵net]                              |
+| lackluster        | adj.   | 沒有光澤的、無生氣的               | [ˋlæk͵lʌstɚ]                              |
+| intimate          | vt.    | 提示、暗示、通知                   | [ˋɪntəmɪt] adj. 親密的                    |
+| noxious           | adj.   | 有毒的 有害的                      | [ˋnɑkʃəs]                                 |
+| nominal           | adj.   | 名義上的、名不副實的               | [ˋnɑmən!]                                 |
+| nomenclature      | n.     | 命名法、術語                       | [ˋnomən͵kletʃɚ]                           |
+| renown            | n.     | 名聲、聲譽                         | [rɪˋnaʊn]                                 |
+| misnomer          | n.     | 誤稱、不準確的名稱                 | [͵mɪsˋnomɚ]                               |
+| counteract        | vt.    | 抵消、對抗                         | [͵kaʊntɚˋækt]                             |
+| counterargument   | n.     | 反對觀點                           | [ˋkaʊntɚ͵ɑrgjʊmənt]                       |
+| contradict        | v.     | 反駁、否認、抵觸                   | [͵kɑntrəˋdɪkt]                            |
+| testimony         | n.     | 證詞                               | [ˋtɛstə͵monɪ]                             |
+| testify           | vi.vt. | 作證；證實                         | [ˋtɛstə͵faɪ]                              |
+| alibi             | n.     | 不在場證明                         | [ˋælə͵baɪ]                                |
+| technophile       | n.     | 技術迷、喜歡科技的人               | [ˈteknəʊfaɪl]                             |
+| pedophile         | n.     | 戀童者                             | [͵pidəˋfaɪ!]                              |
+| bibliophile       | n.     | 愛書的；愛收藏書的人               | [ˋbɪblɪə͵faɪl]                            |
+| technocrat        | n.     | 技術專家、技術官僚                 | [ˋtɛknə͵kræt]                             |
+| pioneering        | adj.   | 開創性的、先驅的                   | [paɪəˋnɪərɪŋ]                             |
+| orthodox          | adj.   | 正統的、傳統的                     | [ˋɔrθə͵dɑks]                              |
+| eccentric         | adj.   | 古怪的、離心的                     | [ɪkˋsɛntrɪk]                              |
+| trifling          | adj.   | 微不足道的、瑣碎的                 | [ˋtraɪflɪŋ]                               |
+| ameliorate        | vi.    | 改善、改進                         | [əˋmiljə͵ret]                             |
+| ascertain         | vt.    | 查明、確定                         | [͵æsɚˋten]                                |
+| exacerbate        | vt.    | 使惡化、加劇                       | [ɪgˋzæsɚ͵bet] (⭐️常考)                     |
+| overlook          | vt.    | 忽略、忽視；眺望                   | [͵ovɚˋlʊk]                                |
+| superficiality    | n.     | 膚淺、淺薄                         | [͵supɚ͵fɪʃɪˋælətɪ]                        |
+| superficial       | adj.   | 表面的、膚淺的                     | [ˋsupɚˋfɪʃəl]                             |
+| vain              | adj.   | 徒勞的、虛榮的                     |                                           |
+| vanity            | n.     | 虛榮、自負                         | [ˋvænətɪ]                                 |
+| temper            | vt.    | 調和、控制                         | n. 脾氣、氣質                             |
+| temperance        | n.     | 節制、自制                         | [ˋtɛmprəns]                               |
+| principle         | n.     | 原則                               |                                           |
+| principal         | n.     | 高中含以下的校長                   |                                           |
+| eminence          | n.     | （地位、成就）卓越、顯赫、傑出     | [ˋɛmənəns]                                |
+| eminent           | adj.   | （地位，學識等方面）出眾的，卓越的 | [ˋɛmənənt]                                |
+| preeminent        | adj.   | 卓越的；顯著的                     | [priˋɛmɪnənt]                             |
+| tumultuous        | adj.   | 混亂的、騷動的                     | [tjuˋmʌltʃʊəs]                            |
+| tumult            | n.     | 喧嘩、騷動                         | [ˋtjumʌlt]                                |
+| providential      | adj.   | 天意的；幸運的，天佑的             | [͵prɑvəˋdɛnʃəl]                           |
+| dispassionate     | adj.   | 冷靜的、客觀的                     | [dɪsˋpæʃənɪt]                             |
+| counterproductive | adj.   | 適得其反的、反效果的               | [ˋkaʊntɚprəˋdʌktɪv]                       |
 
 OG. p49 50 52
 
-|                  |          |                    |                           |
-| ---------------- | -------- | ------------------ | ------------------------- |
-| abate            | v.       | 減輕 減弱          |                           |
-| aberrnat         | adj.     | 反常的、異常的     |                           |
-| aberration       | n.       | 偏差、偏差行為     |                           |
-| abeyance         | n.       | 中止、擱置         |                           |
-| abjure           | v.       | 發誓放棄           |                           |
-| aboveboard       | adj.     | 光明正大的         |                           |
-| abrogate         | v.       | 廢止、廢除         |                           |
-| abscond          | v.       | 潛逃、逃亡         |                           |
-| abstain          | v.       | 戒除、棄權         |                           |
-| abstemious       | adj.     | 節制的             |                           |
-| indulging        | adj.     | 縱慾的             |                           |
-| abstruse         | adj.     | 深奧的 難解的      |                           |
-| abysmal          | adj.     | 糟糕的、極其深的   |                           |
-| aceme            | n.       | 頂點、頂峰         | pinnacle 頂峰 summit 頂峰 |
-| acumen           | n.       | 精明、敏銳         |                           |
-| adamant          | adj.     | 固執的、堅定不移的 |                           |
-| adjudicate       | v.       | 裁決、判決         |                           |
-| admonish         | v.       | 訓誡、警告         | reprimand 警告            |
-| admonitory       | adj.     | 忠告的、告誡的     |                           |
-| adulterate       | v.       | 摻雜、慘假         |                           |
-| adultery         | v.       | 通姦               |                           |
-| aesthete         | n.       | 審美家             |                           |
-| aesthetic        | adj.     | 美學的、審美的     |                           |
-| affable          | adj.     | 和藹可親的         | ⭐️常考                     |
-| affluent         | adj.     | 富裕的、富有的     |                           |
-| aggrandize       | v.       | 誇大、增加         |                           |
-| alacrity         | n.       | 快速、活潑、歡快   |                           |
-| alleviate        | v.       | 緩解、減輕         | ⭐️常考   mitigate 減緩     |
-| altruism         | n.       | 利他主義           |                           |
-| philanthrophy    | n.       | 慈善家             |                           |
-| amalgam          | n.       | 混合物             |                           |
-| amalgamate       | v.       | 合併、融合         |                           |
-| ambivalence      | n.       | 矛盾心理、猶豫不決 |                           |
-| ameliorate       | v.       | 改善、改進         |                           |
-| amenable         | adj.     | 順從的、易受影響的 |                           |
-| monarch          | n.       | 君主、女王、國王   |                           |
-| amiable          | adj.     | 和藹可親的         |                           |
-| amorphous        | adj.     | 無定型的、不規則的 |                           |
-| metamorphosis    | n.       | 完全變態           |
-| amply            | adv.     | 充分地、足夠地     |                           |
-| ample = abundant | adj.     | 充分的             |                           |
-| amuck            | adj.adv. | 發瘋的、狂暴地     |                           |
+|               |          |                              |                                   |
+| ------------- | -------- | ---------------------------- | --------------------------------- |
+| abate         | v.       | 減輕 減弱                    | [əˋbet]                           |
+| aberrant      | adj.     | 反常的、異常的               | [æˋbɛrənt]                        |
+| aberration    | n.       | 偏差、偏差行為               | [͵æbəˋreʃən]                      |
+| abeyance      | n.       | 中止、擱置                   | [əˋbeəns]                         |
+| abjure        | v.       | 發誓放棄                     | [əbˋdʒʊr]                         |
+| aboveboard    | adj.     | 光明正大的                   | [əˋbʌvˋbord]                      |
+| abrogate      | v.       | 廢止、廢除                   | [ˋæbrə͵get]                       |
+| abscond       | v.       | 潛逃、逃亡                   | [æbˋskɑnd]                        |
+| abstain       | v.       | 戒除、棄權                   | [əbˋsten]                         |
+| abstemious    | adj.     | (飲食)節制的；節省的         | [æbˋstimɪəs]                      |
+| indulging     | adj.     | 縱慾的                       | /ɪnˈdʌldʒ/                        |
+| abstruse      | adj.     | 深奧的 難解的                | [æbˋstrus]                        |
+| abysmal       | adj.     | 糟糕的、極其深的             | [əˋbɪzm!]                         |
+| acme          | n.       | 頂點、頂峰                   | [ˋækmɪ] pinnacle 頂峰 summit 頂峰 |
+| acumen        | n.       | 精明、敏銳                   | [əˋkjumən]                        |
+| adamant       | adj.     | 固執的、堅定不移的           | [ˋædəmənt]                        |
+| adjudicate    | vi.      | 裁決、判決                   | [əˋdʒudɪ͵ket]                     |
+| admonish      | vt.      | 訓誡、警告                   | [ədˋmɑnɪʃ] reprimand 警告         |
+| admonitory    | adj.     | 忠告的、告誡的               | [ədˋmɑnə͵torɪ]                    |
+| adulterate    | vt.      | 摻雜、慘假                   | [əˋdʌltə͵ret]                     |
+| adultery      | n.       | 通姦                         | [əˋdʌltərɪ]                       |
+| aesthete      | n.       | 審美家                       | [ˋɛsθit]                          |
+| aesthetic     | adj.     | 美學的、審美的、藝術的       | [ɛsˋθɛtɪk]                        |
+| affable       | adj.     | 和藹可親的                   | [ˋæfəb!]⭐️常考                     |
+| affluent      | adj.     | 富裕的、富有的               | [ˋæflʊənt]                        |
+| aggrandize    | vt.      | 誇大、增加                   | [əˋgræn͵daɪz]                     |
+| alacrity      | n.       | 快速、活潑、歡快             |                                   |
+| alleviate     | v.       | 緩解、減輕                   | [əˋlivɪ͵et]⭐️常考   mitigate 減緩  |
+| altruism      | n.       | 利他主義；利他行為           | [ˋæltrʊ͵ɪzəm]                     |
+| philanthropy  | n.       | 慈善家；慈善行為；慈善事業   | [fɪˋlænθrəpɪ]                     |
+| amalgam       | n.       | 混合物；【化】汞合金         | [əˋmælgəm]                        |
+| amalgamate    | v.       | 合併、融合                   | [əˋmælgəmet]                      |
+| ambivalence   | n.       | 矛盾心理、猶豫不決           | [æmˋbɪvələns]                     |
+| ameliorate    | v.       | 改善、改進                   | [əˋmiljə͵ret]                     |
+| amenable      | adj.     | 順從的、易受影響的           | [əˋminəb!]                        |
+| monarch       | n.       | 君主、女王、國王             | [ˋmɑnɚk]                          |
+| amiable       | adj.     | 和藹可親的                   | [ˋemɪəb!]                         |
+| amorphous     | adj.     | 無定型的、不規則的           | [əˋmɔrfəs]                        |
+| metamorphosis | n.       | 完全變態                     | [͵mɛtəˋmɔrfəsɪs]                  |
+| amply         | adv.     | 充分地、足夠地               | [ˋæmplɪ]                          |
+| ample         | adj.     | 大量的，豐富的；充足的       | [ˋæmp!]                           |
+| amuck         | adj.adv. | 發瘋的、狂暴地；殺氣騰騰地   | [əˋmʌk]                           |
+| amok          | adj.adv. | 狂亂的、殺人狂地；殺氣騰騰地 | [əˋmɑk]                           |
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
 
 |                  |              |                                                         |                                                                    |
 | ---------------- | ------------ | ------------------------------------------------------- | ------------------------------------------------------------------ |
+| abet             | vt.          | 煽動；幫助；支持；慫恿                                  | [əˋbɛt]                                                            |
+| abhorrent        | adj.         | 令人憎惡的；(道德上)可惡的                              | [əbˋhɔrənt]                                                        |
+| abnegation       | n.           | 放棄；自制；自我克制；否認                              | [͵æbnɪˋgeʃən]                                                      |
+| abound           | vi.          | 大量存在；充滿；富足多產                                | [əˋbaʊnd]                                                          |
+| absolve          | vt.          | 免除(責任，義務)；免罪，寬恕，使免受罰                  | [əbˋsɑlv]                                                          |
 | anachronism      | n.           | 時代錯誤、時代誤植                                      |                                                                    |
 | analogous        | adj.         | 相似的                                                  |                                                                    |
 | analogy          | n.           | 類比                                                    |                                                                    |
@@ -532,6 +525,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | enormity         | n.           | 罪大惡極 窮兇極惡                                       | [ɪˋnɔrmətɪ]                                                        |
 | enthrall         | vt.          | 迷住 吸引                                               | [ɪnˋθrɔl]                                                          |
 | entice           | vt.          | 誘使；慫恿；引誘                                        | [ɪnˋtaɪs]                                                          |
+| entitled         | adj.         | 自以為是的、有權利的                                    |                                                                    |
 | entitlement      | n.           | 權益 特權                                               |                                                                    |
 | entrenched       | adj.         | 根深蒂固的                                              | [ɪnˋtrɛntʃt] trench n.溝渠                                         |
 | enumerate        | vt.          | 列舉 枚舉                                               | [ɪˋnjumə͵ret]                                                      |
@@ -1087,8 +1081,8 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | pundit           | n.           | 博學者，權威人士；評論家                                | [ˋpʌndɪt]                                                          |
 | pyrrhic          | adj.         | (大寫)皮洛士式的；付出慘重代價的，慘勝的                | [ˋpɪrɪk]                                                           |
 | quail            | vi.n.        | 膽怯；畏縮  n.【俚】少女，姑娘                          | [kwel]                                                             |
-| qualify          | vt.          | 緩和，減輕；授予，准予                                  | [ˋkwɑlə͵faɪ]                                                       |
-| qualified        | vt.adj.      | vt.減弱，降低 adj.有資格的                              |                                                                    |
+| qualify          | vt.          | 緩和，減輕；授予，准予                                  | [ˋkwɑlə͵faɪ] ⭐️                                                     |
+| qualified        | vt.adj.      | vt.減弱，降低 adj.有資格的                              | ⭐️                                                                  |
 | qualm            | n.           | 疑慮；擔心；不安                                        | [kwɔm]                                                             |
 | quandary         | n.           | 困境，窘境；進退兩難                                    | [ˋkwɑndərɪ]                                                        |
 | querulous        | adj.         | 抱怨的，愛發牢騷的; 易怒的                              | [ˋkwɛrələs]                                                        |
