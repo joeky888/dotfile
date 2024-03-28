@@ -1306,33 +1306,46 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | raillery          | n.           | 幽默戲謔；逗趣玩笑                                      | [ˋrelərɪ]                                                          |
 | rakish            | adj.         | 瀟灑的；時髦的；俏皮的                                  | [ˋrekɪʃ]                                                           |
 | rankle            | vt.          | 激怒，使惱怒；使痛苦；使(傷口)疼痛                      | [ˋræŋk!]                                                           |
-| rapprochement     | n.           | 和解，修好；恢復邦交                                    | [͵ræproʃˋmɑŋ]                                                      |
+| rant              | vi.vt.       | 大聲責罵；咆哮                                          | [rænt]                                                             |
+| rapacious         | adj.         | 貪欲的，貪婪的；強取的，強奪的                          | [rəˋpeʃəs]                                                         |
+| rapprochement     | n.           | (國家或群族)和解，修好；恢復邦交                        | [͵ræproʃˋmɑŋ]                                                      |
 | rarefied          | adj.         | 變精細的；精選的；高雅的；箐英的                        | [ˋrɛrə͵faɪd]                                                       |
 | rash              | adj.         | 輕率的；急躁的，魯莽的                                  | [ræʃ]                                                              |
 | rationalize       | vt.vi.       | 辯解，合理化；為..找理由                                | [ˋræʃən!͵aɪz]                                                      |
+| raucous           | adj.         | 刺耳的；吵雜的，喧鬧的                                  | [ˋrɔkəs]                                                           |
 | ravenous          | adj.         | 餓極了的，狼吞虎嚥的；貪婪的                            | [ˋrævɪnəs]                                                         |
 | rebuke            | vt.          | 指責；斥責                                              | [rɪˋbjuk]                                                          |
 | recalcitrant      | adj.         | 反抗的；頑強的；不服從的                                | [rɪˋkælsɪtrənt]                                                    |
+| recant            | vi.vt.       | 取消，撤回；反悔；放棄(立場，信念)                      | [rɪˋkænt]                                                          |
+| recapitulate      | vi.          | 扼要重述；概括                                          | [͵rikəˋpɪtʃə͵let]                                                  |
 | recapitulation    | n.           | 概括；重述要點                                          | [͵rikə͵pɪtʃəˋleʃən]                                                |
+| reckon            | vi.vt.       | 推算，估計；認為，判斷                                  | [ˋrɛkən]                                                           |
+| recoil            | vi.          | 退縮，畏縮                                              | [rɪˋkɔɪl]                                                          |
 | reconcile         | vt.          | 和解，調和；調停，調解                                  | [ˋrɛkənsaɪl]                                                       |
 | recondite         | adj.         | 深奧的，難懂的                                          | [ˋrɛkən͵daɪt]                                                      |
 | recrimination     | n.           | 反責，反控；互相指責                                    | [rɪ͵krɪməˋneʃən]                                                   |
 | recrudesce        | vi.          | （病痛等）復發，再次發生                                | [͵rikruˋdɛs]                                                       |
+| redolent          | adj.         | 讓人想起...的，令人想起...的                            | [ˋrɛd!ənt]                                                         |
 | redoubtable       | adj.         | 可怕的；令人敬畏的；厲害的                              | [rɪˋdaʊtəb!]                                                       |
 | redress           | vt.          | 糾正，矯正；補償，賠償                                  | [rɪˋdrɛs]                                                          |
 | refractory        | adj.         | 倔強的，難治的；難管教的; 難駕馭的                      | [rɪˋfræk͵torɪ]                                                     |
+| rehabilitate      | vi.          | 使恢復原狀；使復興                                      | [͵rihəˋbɪlə͵tet]                                                   |
+| rehash            | vt.          | 重新處理；改寫；略加修改的老作品，炒冷飯                | [riˋhæʃ]                                                           |
 | relegate          | vt.          | 降級；貶低；降職                                        | [ˋrɛlə͵get]                                                        |
 | relentless        | adj.         | 殘酷的，無情的；不間斷的，持續的                        | [rɪˋlɛntlɪs] ⭐️                                                   |
 | relevant          | adj.         | 有關的；切題的；恰當的                                  | [ˋrɛləvənt]                                                        |
+| relish            | vi.vt.       | 喜愛，愛好；欣賞，珍惜                                  | [ˋrɛlɪʃ]                                                           |
 | remiss            | adj.         | 疏忽的；不小心的；不負責任的                            | [rɪˋmɪs]                                                           |
 | remonstrate       | vi.vt.       | 抗議，反對；規勸，告誡                                  | [rɪˋmɑn͵stret]                                                     |
 | renege            | vi.          | 背信；違約；食言                                        | [rɪˋnig]                                                           |
+| reprehensible     | adj.         | 應受譴責的；應斥責的                                    | [͵rɛprɪˋhɛnsəb!]                                                   |
 | replete           | adj.         | 充滿的，充足的；充斥的                                  | [rɪˋplit]                                                          |
 | reprisal          | n.           | 報復行動，報仇行動                                      | [rɪˋpraɪz!]                                                        |
 | reproach          | vt.          | 責罵，斥責                                              | [rɪˋprotʃ]                                                         |
 | reprobate         | n.           | 無賴；惡棍                                              | [ˋrɛprə͵bet]                                                       |
 | repudiate         | vt.          | 否認，否定；駁斥；拒絕接受                              | [rɪˋpjudɪ͵et]                                                      |
 | rescind           | vt.          | 廢止；取消；撤回                                        | [rɪˋsɪnd]                                                          |
+| reserved          | adj.         | 話少的；言行謹慎的                                      | [rɪˋzɝvd]                                                          |
 | reservation       | n.           | (意見)保留；疑慮；預定                                  |                                                                    |
 | resignation       | n.           | 順從，屈服；辭職                                        | [͵rɛzɪgˋneʃən]                                                     |
 | resolute          | adj.         | 堅決的，堅定的；果斷的                                  | [ˋrɛzə͵lut]                                                        |
@@ -1340,19 +1353,25 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | resolved          | adj.         | 下定決心的；堅決的                                      |                                                                    |
 | respite           | n.vt.        | 休息，暫緩；vt.（痛苦等）暫時緩解                       | [ˋrɛspɪt]                                                          |
 | restive           | adj.         | 躁動不安的，難駕馭的；倔強的，不聽話的                  | [ˋrɛstɪv]                                                          |
+| restorative       | adj.         | 恢復健康的，恢復體力的；促進康復的                      | [rɪˋstorətɪv]                                                      |
 | resurgent         | adj.         | 復活的，復甦的；復興的，再起的                          | [rɪˋsɝdʒənt]                                                       |
 | reticent          | adj.         | 沉默寡言的；謹慎的                                      | [ˋrɛtəsnt]                                                         |
 | retiring          | adj.         | 謙遜的；隱退的                                          | [rɪˋtaɪrɪŋ]                                                        |
 | retract           | vt.vi.       | 撤回，收回(聲明，諾言)；縮回，縮進(爪，舌)              | [rɪˋtrækt]                                                         |
 | reverent          | adj.         | 恭敬的，虔誠的；尊敬的                                  | [ˋrɛvərənt]                                                        |
+| reverence         | n.           | 尊敬，崇敬；敬畏                                        | [ˋrɛvərəns]                                                        |
+| rigorous          | adj.         | 嚴格的，嚴厲的；精確的，縝密的                          | [ˋrɪgərəs]                                                         |
 | rhetoric          | n.           | 雄辯術、辯才；修辭；【貶】花言巧語，浮誇之詞            | [ˋrɛtərɪk]                                                         |
 | ribald            | adj.         | 猥褻的；下流的                                          | [ˋrɪb!d]                                                           |
 | rile              | vt.          | 激怒，惹怒                                              | [raɪl]                                                             |
+| risible           | adj.         | 愚蠢可笑的；荒謬滑稽的                                  | [ˋrɪzəb!]                                                          |
 | row               | n.           | 吵架，口角；一排                                        | [raʊ]                                                              |
-| rudimentary       | adj.         | 基本的，初步的；早期的                                  | [͵rudəˋmɛntəri]                                                    |
+| rudimentary       | adj.         | 基本的，初步的；早期的，尚未充分發展的                  | [͵rudəˋmɛntəri]                                                    |
 | rustic            | adj.         | 樸素的；鄉下的，農村的                                  | [ˋrʌstɪk]                                                          |
+| sacrosanct        | adj.         | 極神聖不可侵犯的；神聖不可違背的                        | [ˋsækro͵sæŋkt]                                                     |
 | sagacious         | adj.         | 睿智的；有遠見的；有洞察力的                            | [səˋgeʃəs]                                                         |
 | sage              | n.           | 聖人，賢人                                              |                                                                    |
+| salient           | adj.         | 主要的；顯著的，重要的                                  | [ˋselɪənt]                                                         |
 | salubrious        | adj.         | (氣候、空氣)有益健康的；清爽的                          | [səˋlubrɪəs]                                                       |
 | salutary          | adj.         | 有益的，有利的；有益健康的                              | [ˋsæljə͵tɛrɪ]                                                      |
 | sanctimonious     | adj.         | 偽善的；假裝虔誠的；假裝聖潔的                          | [͵sæŋktəˋmonɪəs]                                                   |
@@ -1364,55 +1383,79 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | satiate           | vt.          | 使飽足；使充分滿足，使多給而厭膩                        | [ˋseʃɪ͵et]                                                         |
 | saturnine         | adj.         | 受土星影響的而出生的；憂鬱的，陰沉的                    | [ˋsætɚ͵naɪn]                                                       |
 | savvy             | n.adj.vi.vt. | 理解能力；悟性；常識 adj.聰明的 有見識的 v.懂 理解      | [ˋsævɪ]                                                            |
-| schadenfreude     | n.           | 【德文】因他人的不幸而感快樂；幸災樂禍                  | [ˋʃɑdən͵frɔɪdə] ⭐️                                                |
+| scant             | adj.         | 不足的；貧乏的；少量的                                  | [skænt]                                                            |
+| scant             | adj.         | 不足的；貧乏的；少量的                                  | [skænt]                                                            |
+| scaremonger       | n.           | 危言聳聽者，散播恐怖謠言者；擾亂社會民心的人            | [ˋskɛr͵mʌŋgɚ]                                                      |
+| schism            | n.           | (組織，教會，黨派)分裂                                  | [ˋsɪzm]                                                            |
 | scintillating     | adj.         | 閃爍的，才華洋溢的                                      | [ˋsɪnt!͵etɪŋ]                                                      |
 | screed            | n            | 冗長的文章；冗長的演說                                  | [skrid]                                                            |
 | scrupulous        | adj.         | 謹慎的；一絲不苟的；認真做事的                          | [ˋskrupjələs] ⭐️                                                  |
+| scrutinize        | vi.vt.       | 細閱，細看；仔細檢查，仔細觀察                          | [ˋskrutn͵aɪz]                                                      |
 | secular           | adj.         | 世俗的；非宗教的                                        | [ˋsɛkjəlɚ]                                                         |
 | sediment          | n.           | 沉積，沉澱；沉積物                                      | [ˋsɛdəmənt]                                                        |
 | sedulous          | adj.         | 勤勉的；聚精會神的；仔細的，細心的                      | [ˋsɛdʒələs]                                                        |
-| semblance         | n            | 外貌，外觀，表面上；類似，酷似                          | [ˋsɛmbləns]                                                        |
+| self-effacing     | adj          | 謙虛的，不愛出風頭的                                    | /ˌself.ɪˈfeɪ.sɪŋ/                                                  |
+| seminal           | adj.         | 開創性的; 重大的有影響力的                              | [ˋsɛmən!] adj.精液的 精子的                                        |
+| semblance         | n.           | 外貌，外觀，表面上；類似，酷似                          | [ˋsɛmbləns]                                                        |
 | sensual           | adj.         | 肉體上的；肉感的，性感的；好色的                        | [ˋsɛnʃʊəl]                                                         |
 | sententious       | adj.         | 愛說教的; 說教式的；警句似的                            | [sɛnˋtɛnʃəs]                                                       |
 | sentient          | adj.         | 有感覺力的；有感情的；有知覺的                          | [ˋsɛnʃənt]                                                         |
 | sentimental       | adj.         | 多愁善感的，傷感的                                      | [͵sɛntəˋmɛnt!]                                                     |
+| sequester         | vt.          | 隔絕，隔離；藏匿                                        | [sɪˋkwɛstɚ]                                                        |
 | serendipity       | n.           | 意外的好事，機緣巧合；善於發現新事物的能力              | [͵serənˋdipəti]                                                    |
 | serendipitous     | adj.         | 湊巧的，僥倖的；意外好結果的                            | [͵sɛrənˋdɪpɪtəs]                                                   |
 | serene            | adj.         | 安詳的；穩重的；平靜的                                  | [səˋrin]                                                           |
+| sever             | vi.vt.       | 切下，切斷；斷絕(關係，聯繫)；分離；分裂                | [ˋsɛvɚ]                                                            |
+| shrewd            | adj.         | 精明的；狡猾的；機靈的，敏銳的                          | [ʃrud]                                                             |
+| sidestep          | vt.          | 閃躲，閃避；迴避(話題)                                  | [ˋsaɪd͵stɛp]                                                       |
+| signify           | vi.vt.       | 表示；表明；示意                                        | [ˋsɪgnə͵faɪ]                                                       |
 | simulacrum        | n.           | 幻影；假象；仿製品                                      | [͵sɪmjəˋlekrəm]                                                    |
 | simultaneous      | adj.         | 同時發生的                                              | [͵saɪm!ˋtenɪəs]                                                    |
 | sinecure          | n.           | 爽缺；閒職，閒差                                        | [ˋsaɪnɪ͵kjʊr]                                                      |
 | skeptic           | n.           | 懷疑者；懷疑論者；無神論者                              | [ˋskɛptɪk]                                                         |
 | skeptical         | adj.         | 多疑的；懷疑論的                                        | [ˋskɛptɪk]                                                         |
+| sketchy           | adj.         | 草率的，粗略的；不完全的，草草完成的                    | [ˋskɛtʃɪ] adj.寫生風格的                                           |
+| skittish          | adj.         | 膽小的，易受驚嚇的；善變的，多變的(經濟，市場)          | [ˋskɪtɪʃ]                                                          |
 | slapdash          | adj.adv.     | 草率的，粗心的；匆忙地                                  | [ˋslæp͵dæʃ]                                                        |
+| sleazy            | adj.         | 齷齪的，卑劣的                                          | [ˋslizɪ]                                                           |
+| slippery          | adj.         | (問題)須小心對待的；不穩定的，不明確的(局勢)            | [ˋslɪpərɪ] adj.滑的；容易滑的；(經濟)下滑的                        |
+| slumberous        | adj.         | 催眠的，欲睡的，昏睡的                                  | [ˋslʌmbərəs]                                                       |
+| slur              | n.           | 汙辱，毀謗                                              | [slɝ]                                                              |
 | smattering        | n.           | 淺薄的知識；一知半解的知識；零碎雜湊而成的東西          | [ˋsmætərɪŋ]                                                        |
 | smug              | adj.n.       | adj. 沾沾自喜的 n.沾沾自喜的人                          | [smʌg] 安妮亞                                                      |
+| snag              | n.           | 障礙，困難                                              | [snæg]                                                             |
 | snide             | adj.         | 挖苦的，諷刺的                                          | [snaɪd]                                                            |
 | snub              | vt.n.        | n.冷落，怠慢 vt.輕視                                    | [snʌb]                                                             |
+| sobering          | adj.         | 讓人驚醒的，讓人覺得嚴重的；重大的；嚴重的              | [ˋsobərɪŋ]                                                         |
 | solecism          | n.           | 語法錯誤；失禮的行為                                    | [ˋsɑlə͵sɪzəm]                                                      |
-| solicitous        | adj.         | 掛念的，關切的；熱心的；熱切期望的                      | [səˋlɪsɪtəs]                                                       |
+| solemn            | adj.         | 隆重的，鄭重的；嚴肅的，莊嚴的                          | [ˋsɑləm]                                                           |
+| solicitous        | adj.         | 掛念的，關切的；熱心的，熱切期望的；小心謹慎的          | [səˋlɪsɪtəs]                                                       |
 | solicitude        | n.           | 擔心；掛念；關懷                                        | [səˋlɪsə͵tjud]                                                     |
+| soothe            | vi.vt.       | 緩和，減輕；安慰，平息                                  | [suð]                                                              |
 | soporific         | adj.n.       | adj.催眠的 n.安眠藥                                     | [͵sopəˋrɪfɪk]                                                      |
 | sordid            | adj.         | 骯髒的，汙穢的；卑鄙的；下賤的                          | [ˋsɔrdɪd]                                                          |
 | spartan           | adj.         | 斯巴達的；簡樸的，樸素的；好戰的                        | [ˋspɑrtn]                                                          |
 | specious          | adj.         | 外觀好看的；華而不實的；像是真實的                      | [ˋspiʃəs]                                                          |
 | spendthrift       | n.adj.       | n.敗家子 adj.揮霍的                                     | [ˋspɛnd͵θrɪft]                                                     |
 | splenetic         | adj.         | 脾氣壞的，易怒的                                        | [splɪˋnɛtɪk]                                                       |
+| spontaneous       | adj.         | 自發的，自主的；即興的，不由自主的                      | [spɑnˋtenɪəs]                                                      |
 | sporadic          | adj.         | 偶爾發生的；分散的，零星的                              | [spəˋrædɪk]                                                        |
 | spurious          | adj.         | 假的；偽造的；欺騙性的                                  | [ˋspjʊrɪəs]                                                        |
 | spurn             | vi.vt.       | 摒棄；藐視；拒絕；唾棄                                  | [spɝn]                                                             |
 | squander          | vt.vi.n.     | 揮霍，浪費                                              |                                                                    |
 | squelch           | vt.          | 制止，壓制；鎮住                                        | [skwɛltʃ]                                                          |
 | staid             | adj.         | 沉著的；穩重的；端莊的                                  | [sted]                                                             |
+| stale             | adj.         | 陳舊的，無新意的；厭倦的                                | [stel] adj.不新鮮的，腐壞的                                        |
 | stalwart          | adj.n.       | adj.堅定的，忠誠的 n.死忠成員                           | [ˋstɔlwɚt]                                                         |
 | start             | n.vt.vi.     | n.震驚，驚嚇 v.開始                                     |                                                                    |
 | staunch           | adj.vt.      | adj.忠誠的，堅定的，可靠的 vt.制止 止住                 | [stɔntʃ] = stanch                                                  |
 | steadfast         | adj.         | 不變的；堅定的，不動搖的                                | [ˋstɛd͵fæst]                                                       |
-| stem              | vi.n.        | vi.源自於；止住，阻止 n.莖                              | [stɛm]                                                             |
+| stem              | vi.n.        | vi.源自於；止住，阻止                                   | [stɛm] n.莖                                                        |
 | stigma            | n.           | 恥辱；污名                                              | [ˋstɪgmə]                                                          |
 | stipend           | n.           | 津貼；薪水                                              | [ˋstaɪpɛnd]                                                        |
 | stipulate         | vt.vi.       | 規定；約定                                              | [ˋstɪpjə͵let]                                                      |
 | stolid            | adj.         | 無動於衷的；不動感情的；冷淡的                          | [ˋstɑlɪd]                                                          |
+| stratified        | adj.         | 形成階層的；分層的                                      | [ˋstrætə͵faɪd]                                                     |
 | striated          | adj.         | 有條紋的；有痕跡的                                      | [ˋstraɪetɪd]                                                       |
 | stringent         | adj.         | 嚴厲的；迫切的                                          | [ˋstrɪndʒənt]                                                      |
 | stultify          | vt.          | 使變得無效；使顯得愚蠢                                  | [ˋstʌltə͵faɪ]                                                      |
@@ -1422,6 +1465,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | subsume           | vt.          | 包含，納入                                              | [səbˋsjum]                                                         |
 | subterfuge        | n.           | 藉口，託辭；詭計                                        | [ˋsʌbtɚ͵fjudʒ]                                                     |
 | subversive        | adj.         | 破壞性的，顛覆的                                        | [səbˋvɝsɪv]                                                        |
+| succumb           | vi.          | 屈服，禁不起                                            | [səˋkʌm]                                                           |
 | sullen            | adj.         | 不高興的，悶悶不樂的；陰沉的                            | [ˋsʌlɪn]                                                           |
 | summit            | n.           | (最高級的，政府首腦的)峰會；頂峰                        | [ˋsʌmɪt]                                                           |
 | supercilious      | adj.         | 傲慢的；輕蔑的；目中無人的                              | [͵supɚˋsɪlɪəs]                                                     |
@@ -1429,17 +1473,25 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | supersede         | vt.          | 接替，取代                                              | [͵supɚˋsid]                                                        |
 | supine            | adj.         | 仰臥的；懶散的；消極的                                  | [suˋpaɪn]                                                          |
 | supplant          | vt.          | 代替，取代                                              | [səˋplænt]                                                         |
+| supple            | adj.         | 適應力強的，能變通的；機靈的                            | [ˋsʌp!] adj.柔軟的 柔順的                                          |
+| supplicate        | vi.          | 懇求；祈願；請求                                        | [ˋsʌplɪ͵ket]                                                       |
 | supposition       | n.           | 假定；推測；猜測                                        | [͵sʌpəˋzɪʃən]                                                      |
 | surfeit           | n.           | 過量，過度                                              | [ˋsɝfɪt]                                                           |
 | surly             | adj.         | 脾氣壞的；粗暴的，粗魯的                                | [ˋsɝlɪ]                                                            |
+| surmise           | vi.vt.       | 推測；猜測，臆測                                        | [sɚˋmaɪz]                                                          |
 | surreptitious     | adj.         | 祕密的；偷偷摸摸的；鬼鬼祟祟的                          | [͵sɝəpˋtɪʃəs]                                                      |
+| susceptible       | adj.         | 容易受影響的，容易遭受的                                | [səˋsɛptəb!] adj.易動感情的，多情的                                |
 | sybarite          | n.           | 奢侈享樂者；縱欲主義者                                  | [ˋsɪbə͵raɪt]                                                       |
 | sycophant         | n.           | 拍馬者，諂媚者                                          | [ˋsɪkəfənt] ⭐️                                                    |
+| sycophantic       | adj.         | 諂媚的，拍馬的                                          | [͵sɪkəˋfæntɪk]                                                     |
+| synoptic          | adj.         | 概要的，縱觀全局的                                      | [sɪˋnɑptɪk]                                                        |
 | synthesize        | vt.          | 綜合；合成                                              | [ˋsɪnθə͵saɪz]                                                      |
 | tacit             | adj.         | 默許的，心照不宣的；不明言的，默示的                    | [ˋtæsɪt] ⭐️                                                       |
 | taciturn          | adj.         | 沉默寡言的；不太說話的                                  | [ˋtæsə͵tɝn] ⭐️                                                    |
 | tact              | n.           | 老練；機智；圓滑                                        | [tækt]                                                             |
+| tactless          | adj.         | 笨拙的；不得體的                                        | [ˋtæktlɪs]                                                         |
 | tangential        | adj.         | 離題的；【數】正切的；切線的                            | [tænˋdʒɛnʃəl]                                                      |
+| tangible          | adj.         | 實質的，具體的                                          |                                                                    |
 | tantamount        | adj.         | 等價的；同等的，相當於                                  | [ˋtæntə͵maʊnt]                                                     |
 | tarnish           | vt.          | 使失去光澤，變暗；敗壞，玷汙（名譽等）                  | [ˋtɑrnɪʃ]                                                          |
 | tawdry            | adj.         | 花俏而庸俗的，俗麗的；華而不實的                        | [ˋtɔdrɪ]                                                           |
@@ -1448,22 +1500,29 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | wanting           | adj.         | 缺少的；沒有的；不夠格的                                | [ˋwɑntɪŋ] ⭐️                                                      |
 | telltale          | adj.         | 洩露祕密的；暴露問題的                                  | [ˋtɛl͵tel]                                                         |
 | temerity          | n.           | 魯莽；冒失                                              | [təˋmɛrətɪ]                                                        |
+| temper            | vi.vt.       | 緩和，抑制                                              | [ˋtɛmpɚ] n.性情，脾氣；暴躁，怒氣                                  |
 | temperance        | n.           | 節制，節慾；自我克制                                    | [ˋtɛmprəns]                                                        |
+| temperate         | adj.         | 溫和的，適度的；有節制的                                | [ˋtɛmprɪt]                                                         |
 | tempered          | adj.         | 性情溫和的；適中的                                      | [ˋtɛmpɚd]                                                          |
 | tempestuous       | adj.         | 暴風雨般的；激烈的                                      | [tɛmˋpɛstʃʊəs]                                                     |
 | tenacious         | adj.         | 頑強的，固執的；堅韌不拔的                              | [tɪˋneʃəs]                                                         |
 | tendentious       | adj.         | 有偏見的，傾向性的                                      | [tɛnˋdɛnʃəs]                                                       |
 | tender            | adj.         | 柔軟的；溫柔的                                          | [ˋtɛndɚ]                                                           |
 | tenuous           | adj.         | 纖細的，脆弱的；稀薄的                                  | [ˋtɛnjʊəs]                                                         |
+| tepid             | adj.         | 缺乏熱情的，不熱烈的；冷淡的                            | [ˋtɛpɪd] adj.微溫的                                                |
+| terse             | adj.         | 精練的，簡練的，扼要的                                  | [tɝs]                                                              |
+| testy             | adj.         | 易怒的，火爆的                                          | [ˋtɛstɪ]                                                           |
 | thoroughgoing     | adj.         | 徹底的，完全的，全面的                                  | [ˋθɝoˋgoɪŋ]                                                        |
 | thrifty           | adj.         | 節儉的，節約的                                          | [ˋθrɪftɪ]                                                          |
 | thwart            | vt.          | 阻撓；挫敗                                              | [θwɔrt]                                                            |
 | timorous          | adj.         | 極膽怯的，提心吊膽的，膽小的                            | [ˋtɪmərəs] timid 膽小的                                            |
 | tirade            | n.           | 長篇的激進演說；激烈的發言                              | [ˋtaɪ͵red]                                                         |
-| torpor            | n            | 不活潑；遲鈍；懶散；麻木                                | [ˋtɔrpɚ]                                                           |
-| tortuous          | adj.         | （道路等）迂迴曲折的；【植】扭曲的                      | [ˋtɔrtʃʊəs]                                                        |
+| torpid            | adj.         | 遲鈍的；緩慢的(經濟成長)                                | [ˋtɔrpɪd] adj.懶散的                                               |
+| torpor            | n.           | 不活潑；遲鈍；懶散；麻木                                | [ˋtɔrpɚ]                                                           |
+| tortuous          | adj.         | 冗長複雜的，麻煩的                                      | [ˋtɔrtʃʊəs] adj.（道路等）迂迴曲折的；【植】扭曲的                 |
 | tout              | vt.vi.       | 兜售；吹捧；宣傳                                        | [taʊt]                                                             |
 | tractable         | adj.         | 順從的; 馴服的；易駕馭的                                | [ˋtræktəb!]                                                        |
+| transcend         | vi.vt.       | 超越；優於                                              | [trænˋsɛnd]                                                        |
 | transgression     | n.           | 過失；違法，罪過                                        | [trænsˋgrɛʃən]                                                     |
 | transient         | adj.         | 短暫的 暫時的                                           | [ˋtrænʃənt]                                                        |
 | transitory        | adj.         | 短暫的；瞬息的，暫時的                                  | [ˋtrænsə͵torɪ]                                                     |
@@ -1472,28 +1531,42 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | travesty          | n.           | (人或文學作品等的)滑稽模仿；拙劣的模仿；歪曲；曲解      | [ˋtrævɪstɪ]                                                        |
 | treacherous       | adj.         | 背叛的，不忠的；危險的                                  | [ˋtrɛtʃərəs]                                                       |
 | trenchant         | adj.         | (言辭)犀利的；有力的；中肯的                            | [ˋtrɛntʃənt]                                                       |
+| trepidation       | n.           | 驚恐，慌張，不安                                        | [͵trɛpəˋdeʃən]                                                     |
 | tribulation       | n.           | 苦難，磨難；煩惱事                                      | [͵trɪbjəˋleʃən]                                                    |
+| trifling          | adj.         | 不重要的；微不足道的                                    | [ˋtraɪflɪŋ]                                                        |
 | trite             | adj.         | 平庸的；陳腔濫調的                                      | [traɪt]                                                            |
 | truculence        | n.           | 野蠻；殘酷；好鬥；脅迫                                  | [ˋtrʌkjələns]                                                      |
 | truculent         | adj.         | 野蠻的；好戰的，好鬥的，好爭吵的                        | [ˋtrʌkjələnt]                                                      |
+| truism            | n.           | 老生常談；眾所皆知的道理                                | [ˋtruɪzəm]                                                         |
 | tumult            | n.           | 吵鬧；喧譁；混亂                                        | [ˋtjumʌlt]                                                         |
+| tumultuous        | adj.         | 狂暴的，激烈的，熱烈的；騷動的，吵鬧的                  | [tjuˋmʌltʃʊəs]                                                     |
 | turgid            | adj.         | 腫脹的，浮腫的；(言詞等)浮誇的；誇張的                  | [ˋtɝdʒɪd]                                                          |
 | turpitude         | n.           | 奸惡；卑鄙；墮落                                        | [ˋtɝpə͵tjud]                                                       |
 | tyro              | n.           | 初學者；生手；新手                                      | [ˋtaɪro]                                                           |
 | ubiquitous        | adj.         | 普遍存在的，無所不在的                                  | [juˋbɪkwətəs]                                                      |
 | umbrage           | n.           | 不悅；憤怒，生氣                                        | [ˋʌmbrɪdʒ]                                                         |
 | unadorned         | adj.         | 未經裝飾的；樸素的                                      | [͵ʌnəˋdɔrnd]                                                       |
-| unassailable      | adj.         | 不容置疑的; 無懈可擊的                                  | [͵ʌnəˋseləb!]                                                      |
+| unassailable      | adj.         | 毋庸置疑的，不容置疑的; 無懈可擊的，不可動搖的          | [͵ʌnəˋseləb!]                                                      |
+| unassuming        | adj.         | 不出風頭的，低調謙遜的                                  | [͵ʌnəˋsjumɪŋ]                                                      |
+| unblemished       | adj.         | 無瑕疵的；無汙點的，清白的                              | [ʌnˋblɛmɪʃt]                                                       |
+| unbounded         | adj.         | 無限的，無窮的；自由的                                  | [ʌnˋbaʊndɪd]                                                       |
 | uncanny           | adj.         | 離奇的；神秘的；不可思議的                              |                                                                    |
+| unchecked         | adj.         | 不受抑制的；不加約束的                                  | [ʌnˋtʃɛkt]                                                         |
 | uncompromising    | adj.         | 堅決的；不妥協的，不讓步的                              | [ʌnˋkɑmprə͵maɪzɪŋ]                                                 |
 | unconscionable    | adj.         | 無良的；荒謬的、無理的                                  | [ʌnˋkɑnʃənəb!]                                                     |
-| undermine         | vt.          | 挖坑道；暗中破壞；逐漸損害                              | [͵ʌndɚˋmaɪn]                                                       |
+| undercut          | vt.          | (經濟)廉價出售，削價競爭                                | [ˋʌndɚ͵kʌt] vt.削弱，貶低                                          |
+| undermine         | vt.          | 暗中破壞；逐漸損害，削弱                                | [͵ʌndɚˋmaɪn] vt.挖坑道                                             |
 | underscore        | vt.          | 劃線；強調，突出                                        | [ʌndɚˋskor]                                                        |
 | underwrite        | vt.          | 同意支付；同意承擔責任                                  | [ˋʌndɚ͵raɪt]                                                       |
+| unerring          | adj.         | 萬無一失的，沒有偏差的                                  | [ʌnˋɝɪŋ]                                                           |
 | unequivocal       | adj.         | 明確的；毫無疑問的                                      | [͵ʌnɪˋkwɪvək!]                                                     |
+| unexampled        | adj.         | 前所未聞的，前所未見的，前所未有的                      | [͵ʌnɪgˋzæmp!d]                                                     |
+| unflagging        | adj.         | 不屈不撓的，不懈的                                      | [ʌnˋflægɪŋ]                                                        |
 | unflappable       | adj.         | 不慌張的；鎮定的                                        | [͵ʌnˋflæpəb!]                                                      |
 | unforthcoming     | adj.         | 不願透露的；不合作的                                    | [ˌʌnfɔːθˈkʌmɪŋ] forthcoming 即將到來的，樂於幫助的                 |
+| unfounded         | adj.         | 無根據的，空穴來風的                                    | [ʌnˋfaʊndɪd]                                                       |
 | unimpeachable     | adj.         | 清白的；無可指責的；毋庸置疑的                          | [͵ʌnɪmˋpitʃəb!]                                                    |
+| unqualified       | adj.         | 毫無保留的，完全的，不受限制的                          | [ʌnˋkwɑlə͵faɪd] adj.不合格的                                       |
 | unnerve           | vt.          | 使緊張; 使氣餒; 使喪失勇氣；使恐懼                      | [ʌnˋnɝv]                                                           |
 | unprecedented     | adj.         | 史無前例的；無先例的，空前的                            | [ʌnˋprɛsə͵dɛntɪd]                                                  |
 | unprepossessing   | adj.         | 平凡的；不吸引人的                                      | [͵ʌnpripəˋzɛsɪŋ]                                                   |
@@ -1503,13 +1576,17 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | unseemly          | adj.         | 不合適的，不適宜的；不得體的                            | [ʌnˋsimlɪ]                                                         |
 | unstinting        | adj.         | 慷慨的；無保留的；不遺餘力的                            | [ʌnˋstɪntɪŋ]                                                       |
 | untenable         | adj.         | 難以防守的；（辯論）站不住腳的，無法維持的              | [ʌnˋtɛnəb!]                                                        |
+| untether          | vt.          | 脫離，不受限制                                          | [ʌnˋtɛðɚ] vt.從繩或鍊上解開                                        |
 | untoward          | adj.         | 難對付的；不幸的；不祥的                                | [ʌnˋtoɚd]                                                          |
 | untrammeled       | adj.         | 不受限制的；無拘無束的；自由的                          | [ʌnˋtræm!d] = untrammelled                                         |
-| unviable          | adj.         | 不能成功的;不能實現的                                   | [ʌnˈvʌɪəbl]                                                        |
+| unviable          | adj.         | 不能成功的；不能實現的                                  | [ʌnˈvʌɪəbl]                                                        |
+| unwieldy          | adj.         | 使用不便的，笨重的；複雜難用的                          | [ʌnˋwildɪ]                                                         |
 | upbraid           | vt.          | 責罵，訓斥                                              | [ʌpˋbred]                                                          |
+| upheaval          | n.           | 動蕩，騷亂                                              | [ʌpˋhiv!]                                                          |
 | urbane            | adj.         | 都市化的；彬彬有禮的；高雅的                            | [ɝˋben]                                                            |
+| utilitarian       | adj.         | 實用的，功利主義的(效益最大的)                          | [͵jutɪləˋtɛrɪən]                                                   |
 | vacillate         | vi.          | 猶豫不決；搖擺不定；躊躇                                | [ˋvæs!͵et] ⭐️                                                     |
-| vacuous           | adj.         | 空洞的；無聊的                                          | [ˋvækjʊəs]                                                         |
+| vacuous           | adj.         | 空洞的；無聊的，無意義的                                | [ˋvækjʊəs]                                                         |
 | vanquish          | vt.          | 徹底擊敗; 克服、征服                                    | [ˋvæŋkwɪʃ]                                                         |
 | vapid             | adj.         | 無趣味的；枯燥的; 愚蠢的                                | [ˋvæpɪd]                                                           |
 | variance          | n.           | 變化；變動；變異                                        |                                                                    |
@@ -1522,12 +1599,13 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | veracious         | adj.         | 誠實的；真實的                                          | [vəˋreʃəs]                                                         |
 | veracity          | n.           | 誠實；真實                                              | [vəˋræsətɪ]                                                        |
 | verbose           |              | 囉嗦的，冗長的                                          | [vɚˋbos]                                                           |
-| verisimilitude    | n.           | 似真、逼真的事物                                        | [͵vɛrəsəˋmɪlə͵tjud]                                                |
+| verisimilitude    | n.           | 似真、逼真的事物；真實性                                | [͵vɛrəsəˋmɪlə͵tjud]                                                |
 | veritable         | adj.         | 真正的，確實的，名副其實的                              | [ˋvɛrətəb!]                                                        |
 | viable            | adj.         | 可實行的；(胎兒 卵)能存活的，能養育的                   | [ˋvaɪəb!]                                                          |
 | vicarious         | adj.         | 代理的；替代的；間接的                                  | [vaɪˋkɛrɪəs]                                                       |
 | vicissitude       | n.           | 盛衰；興敗；變遷無常                                    | [vəˋsɪsə͵tjud]                                                     |
 | vie               | vi.vt.       | 競爭；使針鋒相對；爭奪                                  | [vaɪ]                                                              |
+| vigilant          | adj.         | 警戒的；警惕的                                          | [ˋvɪdʒələnt] vigilante 義警                                        |
 | vilify            | vi.          | 誹謗；中傷                                              | [ˋvɪlə͵faɪ]                                                        |
 | vindicate         | vt.          | 辯護；證明無罪                                          | [ˋvɪndə͵ket]                                                       |
 | vindictive        | adj.         | 報復性的，懷恨的                                        | [vɪnˋdɪktɪv]                                                       |
@@ -1542,13 +1620,16 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | volatile          | adj.         | (液體)易揮發的；易發作的；不穩定的                      | [ˋvɑlət!]                                                          |
 | volubility        | n.           | 健談；口若懸河；流利                                    | [͵vɑljəˋbɪlətɪ]                                                    |
 | voracious         | adj.         | 貪婪的；饑渴的；狼吞虎嚥的                              | [voˋreʃəs]                                                         |
-| wanting           | adj.         | 缺少的；不足的                                          |                                                                    |
+| wane              | n.           | 衰弱，減少                                              | [wen] wax and wane 增減，興衰                                      |
+| wanting           | adj.         | 缺少的；不足的                                          | ⭐️                                                                |
 | wanton            | adj.         | 肆無忌憚的；蠻橫放肆的；揮霍的                          | [ˋwɑntən]                                                          |
 | wax               | vt.          | 上蠟；變大，增加，增強                                  | [wæks]                                                             |
+| wayward           | adj.         | 任性的，倔強的；難以控制的                              | [ˋwewɚd]                                                           |
 | whimsical         | adj.         | 異想天開的；離題的，古怪的                              | [ˋhwɪmzɪk!]                                                        |
 | winsome           | adj.         | 迷人的；可愛的；楚楚動人的; 惹人喜愛的                  | [ˋwɪnsəm]                                                          |
 | zeal              | n.           | 熱心；熱誠；熱情                                        | [zil]                                                              |
 | zealot            | n.           | 熱心者；狂熱者；極端分子                                | [ˋzɛlət]                                                           |
+| zealous           | adj.         | 熱心的，熱情的；狂熱的，積極的                          | [ˋzɛləs]                                                           |
 | zeitgeist         | n.           | 【德語】時代精神；當代文化趨勢                          | [ˋzaɪt͵gaɪst]                                                      |
 | zenith            | n.           | 最高點；頂點；極盛時期                                  | [ˋzinɪθ]                                                           |
 |                   |              |                                                         |                                                                    |

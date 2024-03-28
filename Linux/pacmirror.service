@@ -3,6 +3,8 @@ Description=pacman-mirrors reordering every 3 hours
 
 [Service]
 Type=simple
+Restart=always
+RestartSec=1
 ExecStart=/usr/bin/pacmirror
 
 [Install]

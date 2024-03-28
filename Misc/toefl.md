@@ -267,7 +267,8 @@ Conclude: 40
 - In my opinion, = From my perspective, 我的觀點，適合句首
 - I hold/deem/opine S are condusive for being a ... 我認為S有益於... (適合句首)
 - It is my persuasion that... 我深信... (適合句首)
-- He professed that 他認為...
+- He professed/signified that 他認為...
+- A transcend/outweigh B A 優先於(超越) B
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
