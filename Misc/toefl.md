@@ -530,6 +530,8 @@ Rephrasing 改變措辭 替代字語料小抄
   - welfare benefits such as unemployment and sickness pay
 - Cultural difference 文化差異
   - statue of Stalin in Russia is untouchable
+  - Switzerland is a highly-developed agriculture country
+  - Switzerland utilized hydro and nuclear energy
 
 # 標點符號 (Punctuation)
 
@@ -726,7 +728,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - detriment / impairment n. 傷害、損害 -- a great detriment -- Are you sure that I can follow this diet without detriment to my health? 你能肯定我遵循這樣的飲食不會對健康有害嗎？
 - adversity n. 逆境、不幸 -- She was always cheerful in adversity. 身處逆境時，她也從不垂頭喪氣。
 - adversary n. 死敵
-- embody v. 具體表現；體現、收錄 -- embodied good sportsmanship 體現運動精神 -- Kennett embodied in one man an unusual range of science, music, and religion. 肯尼特集科學、音樂、宗教等方面一系列非凡成就於一身。
+- embody vt. 具體表現；體現、象征 -- embodied good sportsmanship 體現運動精神 -- Kennett embodied in one man an unusual range of science, music, and religion. 肯尼特集科學、音樂、宗教等方面一系列非凡成就於一身。
 - imagine / envision v. 想像 I always envisioned that I would return home at some point. 我總是設想我會在某個時候回家。
 - in one's course of life 在..的生命過程中
 - testify / prove / attest vi./vt.證明
@@ -753,11 +755,11 @@ Rephrasing 改變措辭 替代字語料小抄
 - double-edged adj. 雙面刃的
 - to strike a balance（在爭論中）找到折衷辦法，求得平衡點
 - interpersonal adj. 人際關係的
-- intercontenetal adj. 洲際的
+- intercontinental adj. 洲際的
 - international adj. 國際的
 - should be taken into consideration 應該要考慮進去
 - nuance n. （外表、意義、聲音等的）細微差別 -- You failed to notice the nuances in his remarks this time. 你並不了解他這次說話中的細微差別。
-- drastic adj. （尤指行動）嚴厲的，猛烈的，激烈的 -- drastic measures 嚴厲的措施
+- drastic adj.（尤指行動）嚴厲的，猛烈的，激烈的 -- drastic measures 嚴厲的措施
 - abrupt adj. 突然的 -- an abrupt change/movement 突變／突發情況
 - tilt v. （使）傾斜 -- Anna looked up at him with her head tilted to one side. 安娜歪著腦袋，抬眼望著他。
 - impetus /ˈɪm.pə.t̬əs/ n. 促進，刺激 -- homelessness has given (a) fresh impetus to the cause. 圍繞無家可歸者對這項事業是一股新的推動力
@@ -773,7 +775,6 @@ Rephrasing 改變措辭 替代字語料小抄
 - appropriation
   - n. 據為己有 -- The author objected to the appropriation of his story by an amateur filmmaker. 作者反對業餘電影製作人盜用他的故事。
   - n. 撥款 -- The committee approved an appropriation of £10,000. 委員會批准撥款一萬英鎊。
-- impoverished /ɪmˈpɑː.vɚ.ɪʃt/ adj. 赤貧的 -- an impoverished society 貧窮的社會
 - atone for 補償 -- aton for the damages 為破壞而補償
 - insolvent /ɪnˈsɑːl.vənt/ adj. 無力償還的 -- in insolvent state 處於無力償還的狀態
 - squander /ˈskwɑːn.dɚ/ v. 浪費(機會)、揮霍(金錢) -- squander a whole year's savings 花盡全年的積蓄
@@ -1133,6 +1134,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - succinct [səkˋsɪŋkt] adj.簡練的；簡潔的；壓縮在小範圍內 -- could you be a little more succinct? 你能不能再簡明扼要一點？
 - austerity [ɔˋstɛrətɪ] n.(經濟上)樸素 苦行 擲節 -- A peculiar austerity marked his judgments of modern life. 他對現代生活的批評帶著一種特殊的苛刻
 - susceptible [səˋsɛptəb!] adj.易被感動的，易動感情的，易受影響的 -- We are all susceptible to advertising. 我們都容易受廣告的影響。
+- sentimental [͵sɛntəˋmɛnt!] adj. 多愁善感的 -- a sentimental love story 感傷的愛情故事
 - refrain from [rɪˋfren] vi.忍住；抑制，節制 戒除 -- please refrain from smoking 請勿吸煙
 - parade [pəˋred] n.遊行 vi.遊行 -- The soldiers paraded by. 士兵們列隊走過
 - masquerade [͵mæskəˋred] n.面具舞會；化裝舞會
@@ -1157,4 +1159,3 @@ Rephrasing 改變措辭 替代字語料小抄
 - sacrilege [ˋsækrəlɪdʒ] n.褻瀆；悖理逆天的行為 -- it is sacrilege to do ... 做…是褻瀆行為
 - let alone = much less = not to metion 更何況、遑論
 - hospitality [͵hɑspɪˋtælətɪ] n.[U]好客；殷勤招待 (新思想)接受能力，理解力 -- Many thanks for the hospitality you showed me. 非常感謝你對我的款待
--
