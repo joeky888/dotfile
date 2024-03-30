@@ -267,8 +267,9 @@ Conclude: 40
 - In my opinion, = From my perspective, 我的觀點，適合句首
 - I hold/deem/opine S are condusive for being a ... 我認為S有益於... (適合句首)
 - It is my persuasion that... 我深信... (適合句首)
-- He professed/signified that 他認為...
+- He professed/signified/asserted that 他認為...
 - A transcend/outweigh B A 優先於(超越) B
+- All in all, contrary to common beliefs stated by ..., 總而言之，對於..的論述剛好相反，(適合結論)
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -304,9 +305,13 @@ Conclude: 40
 | ------ | --------------------- | -------------------- | -------------- | ------- |
 | gland  | Allopatric speciation | Sympatric speciation | offspring      | enzyme  |
 
-| 嗜極生物     | 覓食 V.  |
-| ------------ | -------- |
-| extremophile | foraging |
+| 嗜極生物     | 覓食 v.  | 植物或昆蟲的氣孔  | 日間的 白天的    | 夜間的 晚上的       |
+| ------------ | -------- | ----------------- | ---------------- | ------------------- |
+| extremophile | foraging | stoma單/stomata複 | diurnal[daɪˋɝn!] | nocturnal[nɑkˋtɝn!] |
+
+| 陸生(生物)  | 海生(生物) |
+| ----------- | ---------- |
+| terrestrial | aquatic    |
 
 植物學 Botany
 
@@ -318,9 +323,13 @@ Conclude: 40
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
 | Fungus       | Algae | alpine plants | shrub, bush | conifer | angiosperms       | stem | pollinator |
 
-| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  | 光合作用       |
-| -------- | --------- | ------------ | ----- | -------------- |
-| botanist | sediment  | deposit      | maize | photosynthesis |
+| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  | 光合作用       | 貧瘠的，枯燥的 | 植物或昆蟲的氣孔  |
+| -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
+| botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
+
+| 枯萎的；凋謝的 |
+| -------------- |
+| withered       |
 
 形態學、構造學 morphology
 
@@ -1069,7 +1078,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - prohibitive [prəˋhɪbɪtɪv] adj.（費用、價格等）過高的；禁止的 -- The cost of making them by hand is prohibitive. 用手工製作它們的成本過高
 - exorbitant [ɪgˋzɔrbətənt] adj.（要求或收費等的）過高的；過分的 -- The conditions of this house are very satisfying to me, but its price is exorbitant. 這棟房子的條件非常令我滿意，但價格實在過高了
 - infertile [ɪnˋfɝtɪl] adj.不肥沃的,不毛之地的,不結果實的
-- verge n. 邊緣 界限
+- verge [vɝdʒ] n. 邊緣 界限 vi.vt. 臨近 接近(某個情況的到來)
 - exterior [ɪkˋstɪrɪɚ] n. adj. 外部 外觀的
 - brokerage [ˋbrokərɪdʒ] n. 仲介費、佣金 -- To save brokerage fee, he decided to manage his own stocks. 為了節約佣金，他決定自己管理自己的股票。
 - associate adj. 夥伴的 副的 非正式的 -- associate agent 半正式的員工 associate professor 副教授
@@ -1127,7 +1136,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - octave [ˋɑktev] adj.八個一組的；八行的；高八度音的
 - articulate [ɑrˋtɪkjə͵let] vt.清晰地吐（字）；明確有力地表達 -- Articulate your words so that we can understand what you are saying. 說話要清楚，這樣我們才能聽明白你的話。
 - temperament [ˋtɛmprəmənt] n.氣質；性情，性格、喜怒無常；急躁 -- He has a romantic temperament. 他富有浪漫氣質
-- virtuoso [͵vɝtʃʊˋoso] n.藝術愛好者 adj.(藝術領域)技藝精湛的 行家的
+- virtuoso [͵vɝtʃʊˋoso] n.藝術愛好者 藝術大師 adj.(藝術領域)技藝精湛的 行家的
 - Baroque [bəˋrok] adj.巴羅克式的；過分裝飾的；新奇怪異的
 - treatise [ˋtritɪs] n.論文；專著 -- a treatise on sth. 關於某研究課題的論文
 - ensemble [ɑnˋsɑmb!] n.整體；總效果 【音】合奏，合唱 -- The coat, hat, and shoes make an attractive ensemble. 這外套、帽子和鞋子配成一套引人注目的服裝。
@@ -1147,7 +1156,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - pertain [pɚˋten] vi. 有關，關於 -- a book pertaining to birds 有關鳥類的書
 - brochure [broˋʃʊr] n.小冊子[C] 指南 -- an advertising brochure 廣告冊子
 - mow [mo] vt.（用鐮刀等）刈草 -- mow the lawn 給草坪割草
-- itinerary [aɪˋtɪnə͵rɛrɪ] n.[C]旅程；路線 旅行計畫 -- He has some more places to visit on his itinerary. 他在旅途中還有幾個地方要遊覽
+- itinerary [aɪˋtɪnə͵rɛrɪ] n.[C]旅程；路線 旅行計畫 -- travel itinerary. 旅遊旅程
 - momentum [moˋmɛntəm] n.氣勢，衝力，動力；推動力 -- a campaign that gained momentum 勢頭增大的一場運動
 - assort [əˋsɔrt] vt.分類 配合
 - pact [pækt] n.契約；協定；條約 -- to make a pact with sb. 與某人簽署條約
@@ -1159,3 +1168,11 @@ Rephrasing 改變措辭 替代字語料小抄
 - sacrilege [ˋsækrəlɪdʒ] n.褻瀆；悖理逆天的行為 -- it is sacrilege to do ... 做…是褻瀆行為
 - let alone = much less = not to metion 更何況、遑論
 - hospitality [͵hɑspɪˋtælətɪ] n.[U]好客；殷勤招待 (新思想)接受能力，理解力 -- Many thanks for the hospitality you showed me. 非常感謝你對我的款待
+- trauma [ˋtrɔmə] n[C.].【醫】外傷，傷口；感情創傷
+- resilient [rɪˋzɪlɪənt] adj.有彈力的；迅速恢復精力的 -- She's a resilient girl - she won't be unhappy for long.她是個適應力很強的女孩兒——她不會長時間沈浸於悲傷之中的
+- diurnal [daɪˋɝn!] -- 日的；日間發生的；日間活動的
+- nocturnal [nɑkˋtɝn!] -- 夜的；夜間發生的；夜間活動的
+- trickle out vi.洩漏; 陸續逃脫 (trickle vi.vt.n.涓涓細流)
+- bizarre [bɪˋzɑr] adj.奇異的；異乎尋常的 -- a bizarre situation 異乎尋常的情形
+- meek [mik] adj.溫順的，柔順的；懦弱的 -- as meek as a lamb 如羔羊一般溫順的
+- Much to my surprise/To my great surprise 令我大吃驚

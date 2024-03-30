@@ -301,7 +301,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | pastoral          | adj.         | 鄉村的                                                  | [ˋpæstərəl]                                                        |
 | bumbling          | adj.         | 笨手笨腳的 無能的                                       | [ˋbʌmblɪŋ]                                                         |
 | burdensome        | adj.         | 累贅的；令人擔憂的；繁重的                              | [ˋbɝdnsəm]                                                         |
-| burgeon           | vi.          | 急速成長 蓬勃發展                                       | [ˋbɝdʒən]                                                          |
+| burgeon           | vi.          | 急速成長 蓬勃發展                                       | [ˋbɝdʒən] n.芽；嫩枝                                               |
 | burnish           | vi.vt.       | 磨光 擦亮                                               |                                                                    |
 | buttress          | n.vt.        | 支撐物 vt.加固                                          | [ˋbʌtrɪs]                                                          |
 | byzantine         | adj.         | 拜佔庭式的、錯綜複雜的                                  | [bɪˋzæntɪn]                                                        |
