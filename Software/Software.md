@@ -210,6 +210,7 @@ Android
   * Private DNS
     * dns.adguard-dns.com (Adguard ipv4/ipv6)
     * one.one.one.one
+    * max.rethinkdns.com, sky.rethinkdns.com and rdns.deno.dev (rethinkdns opensource edge dns)
 * Backup IMEI code -> `*#06#`
 * Firefox Beta ->
   * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
