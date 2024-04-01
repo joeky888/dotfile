@@ -1176,3 +1176,11 @@ Rephrasing 改變措辭 替代字語料小抄
 - bizarre [bɪˋzɑr] adj.奇異的；異乎尋常的 -- a bizarre situation 異乎尋常的情形
 - meek [mik] adj.溫順的，柔順的；懦弱的 -- as meek as a lamb 如羔羊一般溫順的
 - Much to my surprise/To my great surprise 令我大吃驚
+- deposit [dɪˋpɑzɪt] n.保證金；押金；定金 n.存款 vt.存錢
+- beforehand = in advance 提前的 預先地
+- counterbalance = offset = compensate vt. 抵消
+- select adj. 精選的 上等的，優等的，卓越的
+- should (表示語氣較強的假設）萬一，竟然 -- If the car should break down on the way, you would have to walk back. 萬一汽車中途拋錨，你就得走回來。
+- cater [ˋketɚ] vi.vt. 提供飲食；承辦宴席；為……提供飲食；承辦伙食
+- ambivert [ˋæmbɪvɚt] n.既外向又內向的人，extrovert 外向 introvert 內向
+- faculty [ˋfæk!tɪ] n.精神機能，身體能力；技能；學院、全體教職員

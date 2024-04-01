@@ -106,7 +106,7 @@ Set track language
 * FFmpeg use ISO 639-2 codes for languages
 * [](https://en.wikipedia.org/wiki/List_of_ISO_639-2_codes)
 * ffmpeg -i input.mp4 -metadata:s:a:0 language=eng out.mkv
-* ffmpeg -i input.mp4 -metadata:s:s:0 language=eng out.mkv
+* ffmpeg -i input.mp4 -metadata:s:s:0 language=zho out.mkv
 
 Extract subtitle
 =====
