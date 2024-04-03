@@ -16,7 +16,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | indolence         | n.           | 懶惰、怠惰                                              | [ˋɪndələns]                                                        |
 | imperceptible     | adj.         | 無法理解的、察覺不到的                                  | [͵ɪmpɚˋsɛptəb!]                                                    |
 | imperceptibly     | adv.         | 察覺不到地、難以察覺地                                  | [͵ɪmpɚˋsɛptəblɪ]                                                   |
-| tardiness         | n.           | 遲到                                                    | [ˋtɑrdɪnɪs]                                                        |
+| tardiness         | n.           | 遲到，拖拖拉拉                                          | [ˋtɑrdɪnɪs]                                                        |
 | irrelevant        | adj.         | 不相關的                                                | [ɪˋrɛləvənt]                                                       |
 | incarnate         | adj.         | 化身的、人性化的                                        | [ɪnˋkɑr͵net] carn 肉身 incarnate 化為肉身                          |
 | carnivore         | n.           | 肉食性動物                                              | [ˋkɑrnə͵vɔr]                                                       |
@@ -73,7 +73,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | dispassionate     | adj.         | 冷靜的、客觀的                                          | [dɪsˋpæʃənɪt]                                                      |
 | counterproductive | adj.         | 適得其反的、反效果的                                    | [ˋkaʊntɚprəˋdʌktɪv]                                                |
 | abet              | vt.          | 煽動；幫助；支持；慫恿                                  | [əˋbɛt]                                                            |
-| abate             | v.           | 減輕 減弱                                               | [əˋbet]                                                            |
+| abate             | vi.vt.       | 減輕 減弱                                               | [əˋbet]                                                            |
 | aberrant          | adj.         | 反常的、異常的                                          | [æˋbɛrənt]                                                         |
 | aberration        | n.           | 偏差、偏差行為                                          | [͵æbəˋreʃən]                                                       |
 | abeyance          | n.           | 中止、擱置                                              | [əˋbeəns]                                                          |
@@ -169,7 +169,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | belligerent       | adj          | 好戰的                                                  | [bəˋlɪdʒərənt]                                                     |
 | bellicose         | adj          | 好戰的                                                  | [ˋbɛlə͵kos]                                                        |
 | apothegm          | n.           | 格言、箴言                                              | [ˋæpə͵θɛm]                                                         |
-| apotheosis        | n.           | 頂點 巔峰                                               | [ə͵pɑθɪˋosɪs] = acme = apex                                        |
+| apotheosis        | n.           | 神化，尊為神；最佳典範；頂峰                            | [ə͵pɑθɪˋosɪs]                                                      |
 | appease           | v.           | 安撫、平息                                              | [əˋpiz] peace 和平                                                 |
 | apposite          | adj.         | 相關的，適當的，貼切的                                  | [ˋæpəzɪt]                                                          |
 | appreciable       | adj.         | 可察覺的、相當大的                                      | [əˋpriʃɪəb!]                                                       |
@@ -195,7 +195,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | appurtenant       | adj.         | 附屬的、附帶的                                          | [əˋpɝtənənt]                                                       |
 | arbitrary         | adj.         | 隨心所欲的 反覆無常的，任性多變的；獨裁的，專制的       | [ˋɑrbə͵trɛrɪ]                                                      |
 | arcane            | adj.         | 深奧的、神秘的                                          | [ɑrˋken]                                                           |
-| arch              | adj.         | 淘氣的、詼諧的                                          |                                                                    |
+| arch              | adj.         | 淘氣的、詼諧的                                          | [ɑrtʃ]                                                             |
 | mischievous       | adj.         | 淘氣的 有害的 惡作劇的                                  | [ˋmɪstʃɪvəs]                                                       |
 | archaic           | adj.         | 古老的、陳舊的                                          | [ɑrˋkeɪk]                                                          |
 | archetype         | n.           | (模仿、改編)原型；典型，典範                            | [ˋɑrkɪ͵taɪp]                                                       |
@@ -209,7 +209,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | artifice          | n.           | 詭計、欺騙                                              | [ˋɑrtəfɪs]                                                         |
 | artless           | adj.         | 天真的、坦率的                                          | [ˋɑrtlɪs]                                                          |
 | artlessness       | n.           | 天真、樸實                                              | [ˋɑrtlɪsnɪs]                                                       |
-| ascendancy        | n.           | 優勢地位、支配地位                                      | [əˋsɛndənsɪ]                                                       |
+| ascendancy        | n.           | 優勢地位、支配地位                                      | [əˋsɛndənsɪ] ascending 上升的                                      |
 | ascetic           | n.adj.       | 苦行的 禁欲者                                           | [əˋsɛtɪk]                                                          |
 | ascribe           | v.           | 歸因於...                                               | [əˋskraɪb]                                                         |
 | askance           | adv.         | 懷疑地 斜視地                                           | [əˋskæns]                                                          |
@@ -247,7 +247,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | base              | adj.         | 卑鄙的，惡劣的                                          | base action 卑鄙行為                                               |
 | bastardization    | n.           | 敗壞                                                    |                                                                    |
 | beatific          | adj.         | 賜與祝福的；幸福快樂的                                  | [͵biəˋtɪfɪk]                                                       |
-| becoming          | adj.         | adj.得體的，相稱的                                      | [bɪˋkʌmɪŋ]                                                         |
+| becoming          | adj.         | 得體的，相稱的                                          | [bɪˋkʌmɪŋ]                                                         |
 | begrudge          | vt.          | 嫉妒；羨慕 不願給予                                     | [bɪˋgrʌdʒ]                                                         |
 | behoove           | vi.vt.       | vt.對..有必要 vi.有必要 適合                            | [bɪˋhuv]                                                           |
 | belabor           | vt.          | 責罵，抨擊；過度強調，過度說明                          | [bɪˋlebɚ]                                                          |
@@ -289,7 +289,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | broadside         | n.           | 猛烈抨擊 側面撞擊                                       | [ˋbrɔd͵saɪd]                                                       |
 | scathing          | adj.         | 傷害的；損傷的；嚴厲的                                  | [ˋskeðɪŋ]                                                          |
 | bromide           | n.           | 陳詞濫調 平凡的人,傭俗的人                              | [ˋbromaɪd]                                                         |
-| cliched           | adj.         | adj.【貶】陳腐的；陳腔濫調                              | [kliˋʃed]                                                          |
+| cliched           | adj.         | 【貶】陳腐的；陳腔濫調                                  | [kliˋʃed]                                                          |
 | brook             | vt.n.        | 容忍；容許 n.小溪                                       | [brʊk]                                                             |
 | browbeat          | vt.          | 威嚇 恐嚇                                               | [ˋbraʊ͵bit]                                                        |
 | brusquely         | adv.         | 唐突地；粗率地                                          | [ˋbrʌsklɪ]                                                         |
@@ -353,7 +353,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | chastise          | vt.          | 懲戒，責罰；痛罵、嚴厲批評                              | [tʃæsˋtaɪz]                                                        |
 | chary             | adj.         | 謹慎的 小心的                                           | [ˋtʃɛrɪ]                                                           |
 | chauvinism        | n.           | 盲目的愛國心；大男人主義                                | [ˋʃovɪn͵ɪzəm]                                                      |
-| chauvinist        | n.           | 盲目的愛國者                                            | [ˋʃovɪnɪst]                                                        |
+| chauvinist        | n.           | 盲目的愛國者；沙文主義者                                | [ˋʃovɪnɪst]                                                        |
 | patriot           | n.           | 愛國者                                                  | [ˋpetrɪət]                                                         |
 | check             | vt.          | 制止、控制，抑制                                        | vt.檢查                                                            |
 | checkered         | adj.         | 多變的；不規則的 方格花紋的                             | [ˋtʃɛkɚd]                                                          |
@@ -820,6 +820,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | humdrum           | adj.         | 平凡的；單調的 乏味的                                   | [ˋhʌm͵drʌm]                                                        |
 | hyperbole         | n.           | 誇張法 誇張之詞                                         | [haɪˋpɝbəlɪ]                                                       |
 | hypocrisy         | n.           | 偽善，虛假；虛偽                                        | [hɪˋpɑkrəsɪ]                                                       |
+| husband           | vt.          | 節約使用，節儉地管理                                    | [ˋhʌzbənd] n.丈夫                                                  |
 | iconoclast        | n.           | 偶像破壞者，持異議者                                    | [aɪˋkɑnə͵klæst] ⭐️ icon 偶像                                      |
 | iconoclastic      | adj.         | 反對偶像崇拜的 反傳統的 破舊習的                        | [aɪ͵kɑnəˋklæstɪk]                                                  |
 | ideological       | adj.         | 意識形態上的 思想體系上的                               | [͵aɪdɪəˋlɑdʒɪk!]                                                   |
