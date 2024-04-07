@@ -524,6 +524,7 @@ Rephrasing 改變措辭 替代字語料小抄
   - riding bicycles
   - deforestation
   - highly toxic chemicals
+  - alternative energy 替代能源
 - Private healthcare 私人醫療
   - shorting waiting list
   - faster treatment
@@ -1159,6 +1160,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - itinerary [aɪˋtɪnə͵rɛrɪ] n.[C]旅程；路線 旅行計畫 -- travel itinerary. 旅遊旅程
 - momentum [moˋmɛntəm] n.氣勢，衝力，動力；推動力 -- a campaign that gained momentum 勢頭增大的一場運動
 - assort [əˋsɔrt] vt.分類 配合
+- assorted [əˋsɔrtɪd] vt.各色具備的，綜合的
 - pact [pækt] n.契約；協定；條約 -- to make a pact with sb. 與某人簽署條約
 - punch in / log in 打卡下班
 - punch out / log out 打卡下班
@@ -1184,3 +1186,6 @@ Rephrasing 改變措辭 替代字語料小抄
 - cater [ˋketɚ] vi.vt. 提供飲食；承辦宴席；為……提供飲食；承辦伙食
 - ambivert [ˋæmbɪvɚt] n.既外向又內向的人，extrovert 外向 introvert 內向
 - faculty [ˋfæk!tɪ] n.精神機能，身體能力；技能；學院、全體教職員
+- hand in 提交，繳交 vs. hand out 分發；免費給予
+- anaesthesia /ˌæn.əsˈθiː.ʒə/ n.【醫】麻醉 -- general anesthesia 全身麻醉
+- defect 缺點，瑕疵 vs. defection n. 背叛

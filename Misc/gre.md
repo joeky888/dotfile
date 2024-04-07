@@ -114,6 +114,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | allure            | n.vt.vi.     | n.誘惑力，魅力 v.引誘，誘惑，誘人                       | [əˋlɪʊr]                                                           |
 | philanthropy      | n.           | 慈善家；慈善行為；慈善事業                              | [fɪˋlænθrəpɪ]                                                      |
 | altruistic        | adj.         | 無私的；利他的；利他主義的                              | [æmˋbɪvələnt]                                                      |
+| allay             | vt.          | 平息；使緩和，減輕                                      | [əˋle]                                                             |
 | analytic          | adj.         | 善於分析的；冷靜客觀的                                  | [͵æn!ˋɪtɪk]                                                        |
 | amalgam           | n.           | 混合物；【化】汞合金                                    | [əˋmælgəm]                                                         |
 | amalgamate        | v.           | 合併、融合                                              | [əˋmælgəmet]                                                       |
