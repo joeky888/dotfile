@@ -1071,7 +1071,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | mordant           | adj.         | 尖銳風趣的；尖酸逗趣的；劇烈的；有腐蝕性的              | [ˋmɔrdnt]                                                          |
 | moribund          | adj.         | 垂死的；即將滅亡的                                      | [ˋmɔrə͵bʌnd]                                                       |
 | morose            | adj.         | 脾氣壞的；悶悶不樂的；個性陰沉的                        | [məˋros]                                                           |
-| muddle            | vt.          | 使混亂，弄糟（事情等）                                  | [ˋmʌd!]                                                            |
+| muddle            | vt.          | 使混亂，弄糟（事情等）                                  | [ˋmʌd!] = confound                                                 |
 | mulct             | vt.n.        | 課……以罰金；搶奪；詐取 n.罰金；罰款                     | [mʌlkt]                                                            |
 | mundane           | adj.         | 世俗的；世界的；平凡的                                  | [ˋmʌnden]                                                          |
 | munificent        | adj.         | 大方的；寬宏的；慷慨的；豐厚的                          | [mjuˋnɪfəsnt]                                                      |
@@ -1124,7 +1124,9 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | ornate            | adj.         | 裝飾華麗的；(文章)華麗的，華美的                        | [ɔrˋnet]                                                           |
 | oscillate         | vi.vt.       | 擺動；振蕩；內心動搖；彷徨                              | [ˋɑs!et]                                                           |
 | ossify            | vi.vt.       | 骨化；硬化；僵化                                        | [ˋɑsə͵faɪ]                                                         |
-| ostentatious      | adj.         | 炫耀的，賣弄的                                          | [͵ɑstɛnˋteʃəs] ⭐️                                                 |
+| ostensible        | adj.         | 表面上的; 假裝的; 宣稱的                                | [ɑsˋtɛnsəb!]                                                       |
+| ostentation       | n.           | 炫耀，賣弄                                              | [͵ɑstɛnˋteʃən]                                                     |
+| ostentatious      | adj.         | 炫耀的，賣弄的(人)；豪華的(物)，招搖的                  | [͵ɑstɛnˋteʃəs] ⭐️                                                 |
 | ostracize         | vt.          | 放逐；排斥                                              | [ˋɑstrə͵saɪz]                                                      |
 | outdo             | vt.          | 勝過，超越；使失色                                      | [͵aʊtˋdu]                                                          |
 | outstrip          | vt.          | 勝過，超越                                              | [ˋaʊtˋstrɪp]                                                       |
@@ -1138,7 +1140,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | palimpsest        | n.           | (刮去原文)的書，重寫本                                  | [ˋpælɪmp͵sɛst]                                                     |
 | palliate          | vt.          | 緩和，減輕；辯解，掩飾                                  | [ˋpælɪ͵et]                                                         |
 | paltry            | adj.         | 微薄的(錢)；沒有價值的；沒有意義的                      | [ˋpɔltrɪ]                                                          |
-| panacea           | n.           | 萬能藥；萬靈丹                                          | [͵pænəˋsɪə] ⭐️                                                    |
+| panacea           | n.           | 萬能藥；萬靈丹                                          | [͵pænəˋsɪə] ⭐️ = elixir                                           |
 | panache           | n.           | 假威風；氣派；神氣十足                                  | [pəˋnæʃ]                                                           |
 | panegyric         | n.           | 頌詞; 頌文；讚頌                                        | [͵pænəˋdʒɪrɪk]                                                     |
 | paradoxical       | adj.         | 自相矛盾的；似非而是的                                  | [͵pærəˋdɑksɪk!]                                                    |
@@ -1553,7 +1555,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | unblemished       | adj.         | 無瑕疵的；無汙點的，清白的                              | [ʌnˋblɛmɪʃt]                                                       |
 | unbounded         | adj.         | 無限的，無窮的；自由的                                  | [ʌnˋbaʊndɪd]                                                       |
 | uncanny           | adj.         | 離奇的；神秘的；不可思議的                              |                                                                    |
-| unchecked         | adj.         | 不受抑制的；不加約束的                                  | [ʌnˋtʃɛkt]                                                         |
+| unchecked         | adj.         | 不受抑制的；不加約束的                                  | [ʌnˋtʃɛkt] check 制止、控制                                        |
 | uncompromising    | adj.         | 堅決的；不妥協的，不讓步的                              | [ʌnˋkɑmprə͵maɪzɪŋ]                                                 |
 | unconscionable    | adj.         | 無良的；荒謬的、無理的                                  | [ʌnˋkɑnʃənəb!]                                                     |
 | undercut          | vt.          | (經濟)廉價出售，削價競爭                                | [ˋʌndɚ͵kʌt] vt.削弱，貶低                                          |
@@ -1585,7 +1587,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | unwieldy          | adj.         | 使用不便的，笨重的；複雜難用的                          | [ʌnˋwildɪ]                                                         |
 | upbraid           | vt.          | 責罵，訓斥                                              | [ʌpˋbred]                                                          |
 | upheaval          | n.           | 動蕩，騷亂                                              | [ʌpˋhiv!]                                                          |
-| urbane            | adj.         | 都市化的；彬彬有禮的；高雅的                            | [ɝˋben]                                                            |
+| urbane            | adj.         | 都市化的；彬彬有禮的；高雅的                            | [ɝˋben] urban 城市的                                               |
 | utilitarian       | adj.         | 實用的，功利主義的(效益最大的)                          | [͵jutɪləˋtɛrɪən]                                                   |
 | vacillate         | vi.          | 猶豫不決；搖擺不定；躊躇                                | [ˋvæs!͵et] ⭐️                                                     |
 | vacuous           | adj.         | 空洞的；無聊的，無意義的                                | [ˋvækjʊəs]                                                         |
@@ -1593,7 +1595,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | vapid             | adj.         | 無趣味的；枯燥的; 愚蠢的                                | [ˋvæpɪd]                                                           |
 | variance          | n.           | 變化；變動；變異                                        |                                                                    |
 | vaunted           | adj.         | 自誇的，吹噓的；自吹自擂的                              | [ˋvɔntɪd]                                                          |
-| vehement          | adj.         | 感情激烈的；強烈的；猛烈的                              | [ˋviəmənt]                                                         |
+| vehement          | adj.         | 感情激烈的，激情熱烈的；強烈的；猛烈的                  | [ˋviəmənt]                                                         |
 | venality          | n.           | 貪贓枉法，唯利是圖                                      | [viˋnælətɪ]                                                        |
 | veneer            | n.           | (個性的)虛飾、虛假；外飾；鑲板                          | [vəˋnɪr]                                                           |
 | venerate          | vt.          | 尊敬；崇敬                                              | [ˋvɛnə͵ret]                                                        |
