@@ -1295,7 +1295,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | qualify           | vt.          | 緩和，減輕；授予，准予                                  | [ˋkwɑlə͵faɪ] ⭐️                                                   |
 | qualified         | vt.adj.      | vt.減弱，降低 adj.有資格的                              | ⭐️                                                                |
 | qualm             | n.           | 疑慮；擔心；不安                                        | [kwɔm]                                                             |
-| quandary          | n.           | 困境，窘境；進退兩難                                    | [ˋkwɑndərɪ]                                                        |
+| quandary          | n.           | 困境，窘境；進退兩難                                    | [ˋkwɑndərɪ] = dilemma                                              |
 | querulous         | adj.         | 抱怨的，愛發牢騷的; 易怒的                              | [ˋkwɛrələs]                                                        |
 | quiescent         | adj.         | 靜止的；沉默的 【醫】非活動性的，休眠的                 | [kwaɪˋɛsnt]                                                        |
 | quip              | n.           | 妙語，俏皮話；諷刺語                                    | [kwɪp]                                                             |
