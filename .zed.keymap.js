@@ -2,7 +2,7 @@
   {
     "context": "Editor",
     "bindings": {
-      "cmd-d": "editor::DuplicateLine",
+      "cmd-d": "editor::DuplicateLineDown",
       "cmd-q": "editor::AddSelectionBelow",
       "cmd-u": "editor::MoveLineUp",
       "cmd-j": "editor::MoveLineDown",

@@ -142,7 +142,7 @@ Conclude: 40
 - having attained remarkable achievements 達成了不起的目標
 - Create moral dilemma 製造道德疑慮(比如人體器官複製)
 - May lead to confusing and ambivalent 可能會造成矛盾情緒(比如複製人)
-- More and more High-profile buzzward 越來越多的備受矚目的新用詞
+- More and more High-profile buzzword 越來越多的備受矚目的新用詞
 - be terminally-ill / be torturous bed-bound / be bedridden 是病危的、極度痛苦臥病的
 - content (內容物不可數) vs contents (內容物可數)
 - tide me over ~= pull this off ~= pull me through this ~= against all the odds 幫我度過難關
@@ -167,7 +167,7 @@ Conclude: 40
 - abolishment of death sentence 死刑廢除
 - some are [for|in favor of] it, others are against it 有人支持 有人不支持
 - two wrongs don't make a right 兩惡不能為善
-- a chance to reform themselves 一個機會讓他們改過自新
+- a chance to reform themselves = a chance to turn over a new leaf 一個機會讓他們改過自新
 - may fall victim to death sentence 淪為死刑的犧牲品
 - based on the reasons above 基於上述理由
 - Happiness [lies in|consists in] contentment 幸福[在於]知足
@@ -271,6 +271,7 @@ Conclude: 40
 - A transcend/outweigh B A 優先於(超越) B
 - All in all, contrary to common beliefs stated by ..., 總而言之，對於..的論述剛好相反，(適合結論)
 - refute = disprove = counter 反駁
+- Provided that = If = Suppose that = Suposing that = Providing that 假如
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
 航太學(工程) aeronautics
@@ -286,9 +287,9 @@ Conclude: 40
 
 動物學 Zoology
 
-| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  | 人類學       |
-| ------ | ------- | --------- | --------- | ---------- | ------- | ------------ |
-| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate | Anthropology |
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  |
+| ------ | ------- | --------- | --------- | ---------- | ------- |
+| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate |
 
 | 食草動物  | 食肉動物  | 雜食動物 | 軟體動物 | 甲殼動物   | 齧齒目動物 |
 | --------- | --------- | -------- | -------- | ---------- | ---------- |
@@ -310,15 +311,19 @@ Conclude: 40
 | ------------ | -------- | ----------------- | ---------------- | ------------------- |
 | extremophile | foraging | stoma單/stomata複 | diurnal[daɪˋɝn!] | nocturnal[nɑkˋtɝn!] |
 
-| 陸生(生物)  | 海生(生物) | 單細胞原生生物 | 巨型動物  | 體溫調節         |
-| ----------- | ---------- | -------------- | --------- | ---------------- |
-| terrestrial | aquatic    | protist        | megafauna | thermoregulation |
+| 陸生(生物)  | 海生(生物) | 單細胞原生生物 | 巨型動物  | 體溫調節         | 兔，狐等的）洞穴 |
+| ----------- | ---------- | -------------- | --------- | ---------------- | ---------------- |
+| terrestrial | aquatic    | protist        | megafauna | thermoregulation | burrow           |
+
+| 哈欠 | 打嗝   | 羊水           | 橫膈膜    | 三個月以上未出生胎兒 | 子宮 | 恆溫動物  | 冷血動物  |
+| ---- | ------ | -------------- | --------- | -------------------- | ---- | --------- | --------- |
+| yawn | hiccup | amniotic fluid | diaphragm | fetus                | womb | endotherm | ectotherm |
 
 植物學 Botany
 
-| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | 稀缺的 | 繁榮的                | 花粉   | 植物、植被 |
-| ------ | -------- | --------- | -------------- | ------ | --------------------- | ------ | ---------- |
-| sowing | irrigate | fertilize | insulated      | scarce | flourishing, thriving | pollen | vegetation |
+| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | adj.稀缺的    | 繁榮的                | 花粉   | 植物、植被 |
+| ------ | -------- | --------- | -------------- | ------------- | --------------------- | ------ | ---------- |
+| sowing | irrigate | fertilize | insulated      | scarce/sparse | flourishing, thriving | pollen | vegetation |
 
 | 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  | 開花植物/被子植物 | 莖   | 傳花粉昆蟲 |
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
@@ -328,15 +333,19 @@ Conclude: 40
 | -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
 | botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
 
-| 枯萎的；凋謝的 | 溫帶氣候          | 植物光敏色素 |
-| -------------- | ----------------- | ------------ |
-| withered       | temperate climate | phytochrome  |
+| 枯萎的；凋謝的 | 溫帶氣候          | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
+| -------------- | ----------------- | ------------ | ------ | ----------------------------- |
+| withered       | temperate climate | phytochrome  | nectar | absorbent                     |
+
+| 孢子  | fern |
+| ----- | ---- |
+| spore | 蕨類 |
 
 形態學、構造學 morphology
 
-| 無定型的(如液體) | 變態          |
-| ---------------- | ------------- |
-| amorphous        | metamorphosis |
+| 無定型的(如液體) | 變態          | 凸     | 凹      |
+| ---------------- | ------------- | ------ | ------- |
+| amorphous        | metamorphosis | convex | concave |
 
 氣象學 meteorology
 
@@ -348,9 +357,9 @@ Conclude: 40
 | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
 | Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
 
-| 水份、濕氣 | 雨量計      | 滲出 漏出               | 流出    | 湧入   | 浸濕、滲透  |
-| ---------- | ----------- | ----------------------- | ------- | ------ | ----------- |
-| moisture   | rain gauges | seep(n. v.) seepage(n.) | outflow | inflow | soak (into) |
+| 水份、濕氣 | 雨量計      | 滲出 漏出               | 流出    | 湧入   | 浸濕、滲透  | 聖嬰現象 |
+| ---------- | ----------- | ----------------------- | ------- | ------ | ----------- | -------- |
+| moisture   | rain gauges | seep(n. v.) seepage(n.) | outflow | inflow | soak (into) | El Niño  |
 
 地質學 Geology
 
@@ -374,15 +383,39 @@ Conclude: 40
 | ------- | ---------- |
 | glacier | geothermal |
 
+Anthropology 人類學
+
+| 人類統計學 | 宗教改革    | (非宗教；教育、司法)改革 n.v. | 同性婚姻    | 右邊 右手的 |
+| ---------- | ----------- | ----------------------------- | ----------- | ----------- |
+| demography | reformation | reform                        | civil union | dexter      |
+
+| 雙手靈巧的   |     |
+| ------------ | --- |
+| ambidextrous |     |
+
 考古學 Archeology
 
-| 木炭     | 發掘          | 通風           | 陶器(的)     | 迷宮           |
-| -------- | ------------- | -------------- | ------------ | -------------- |
-| Charcoal | (v.) Excavate | n. ventilation | adj. ceramic | labyrinth/maze |
+| 木炭     | 發掘、挖掘、出土             | 通風           | 陶器(的)     | 迷宮           |
+| -------- | ---------------------------- | -------------- | ------------ | -------------- |
+| Charcoal | (v.) Excavate/exhume/unearth | n. ventilation | adj. ceramic | labyrinth/maze |
 
-| 雕刻/雕刻術       | (塗)亮光漆 n. vt.    | 基本圖案 | 古董    |
-| ----------------- | -------------------- | -------- | ------- |
-| engraving/carving | varnish/polish/glaze | motif    | antique |
+| 雕刻/雕刻術                    | (塗)亮光漆 n. vt.    | 基本圖案 | 古董    |
+| ------------------------------ | -------------------- | -------- | ------- |
+| engraving/carving/vt. inscribe | varnish/polish/glaze | motif    | antique |
+
+| 手稿       | 以日為中心的 | 以地球為中心的 | 攝政王 | 攝政(期間) | 帝王的(風範) | 王權             | 政權         |
+| ---------- | ------------ | -------------- | ------ | ---------- | ------------ | ---------------- | ------------ |
+| manuscript | heliocentric | geocentric     | regent | regency    | regal manner | regality/royalty | regime/regin |
+
+| 序言；開端           | 君主；統治者 |
+| -------------------- | ------------ |
+| preface/introduction | dynast       |
+
+Psychology 心理學
+
+| 利己主義者 | 利他主義者 | 利己主義的          | 利他主義的 | 自我中心者，自戀者          | 自戀的                 |
+| ---------- | ---------- | ------------------- | ---------- | --------------------------- | ---------------------- |
+| egoist     | altruist   | egoistic/egocentric | altruistic | narcissist/boaster/braggart | narcissistic/conceited |
 
 古生物學 Paleontology /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
@@ -394,33 +427,61 @@ Conclude: 40
 
 生理學 Physiology
 
+| (某個地帶的)動植物 | 懷孕、懷胎 | 節育、避孕                       | 核酸         | vt.排泄；分泌 |
+| ------------------ | ---------- | -------------------------------- | ------------ | ------------- |
+| flora and fauna    | conception | conception control/contraception | nucleic acid | excrete       |
+
 語言學 Linguistics
 
 | 方言    |
 | ------- |
 | dialect |
 
+音樂 Music
+
+| 獨唱 | 兩人唱 | 三人唱 |
+| ---- | ------ | ------ |
+| solo | duo    | trio   |
+
 物質
 
-| 金   | 銀     | 銅                    | 鐵   | 鋼    | 錫  | 鈦       |
-| ---- | ------ | --------------------- | ---- | ----- | --- | -------- |
-| gold | silver | copper純銅/bronze青銅 | iron | steel | tin | titanium |
+| 純金       | 金   | 銀     | 銅                    | 鐵   | 鋼    | 錫  | 鈦       |
+| ---------- | ---- | ------ | --------------------- | ---- | ----- | --- | -------- |
+| solid gold | gold | silver | copper純銅/bronze青銅 | iron | steel | tin | titanium |
 
-| 碳     |
-| ------ |
-| carbon |
+| 碳     | 保護劑、防腐劑 | 溫度調節         | 恆溫器     | 熱塑性的      | 熱固性的      |
+| ------ | -------------- | ---------------- | ---------- | ------------- | ------------- |
+| carbon | preservative   | thermoregulation | thermostat | thermoplastic | thermosetting |
+
+| 使滑潤，上潤滑油 |
+| ---------------- |
+| lubricate        |
+
+Architecture 建築學
+
+| 公寓              | 拆除     | 翻修     | 攤位，貨攤 | 公共設施/福利設施 | 度假勝地 | (建築物的)正面 |
+| ----------------- | -------- | -------- | ---------- | ----------------- | -------- | -------------- |
+| condo/condominium | demolish | renovate | stall      | amenity           | resort   | facade         |
+
+| 井架，油井鑽塔 |
+| -------------- |
+| derrick        |
 
 Medical 醫療
 
-| 加護病房                | 深切治療       |
-| ----------------------- | -------------- |
-| ICU/intensive care unit | intensive care |
+| 加護病房                | 深切治療       | 針灸        | 先天性的(疾病) | hypothermia |
+| ----------------------- | -------------- | ----------- | -------------- | ----------- |
+| ICU/intensive care unit | intensive care | acupuncture | congenital     | 低溫症      |
+
+| hypertension | hypotension | hyperthermia | hypothermia | hyperopia | myopia | presbyopia |
+| ------------ | ----------- | ------------ | ----------- | --------- | ------ | ---------- |
+| 高血壓       | 低血壓      | 體溫過高     | 體溫過低    | 遠視      | 近視   | 老花眼     |
 
 政府機構 Governmental body
 
-| 法務部              | 勞工局          |
-| ------------------- | --------------- |
-| Ministry of Justice | Bureau of Labor |
+| 法務部              | 勞工局          | 國會選舉               | 任命，就職 vt. | 政黨輪替                                   |
+| ------------------- | --------------- | ---------------------- | -------------- | ------------------------------------------ |
+| Ministry of Justice | Bureau of Labor | congressional election | install        | alternate with/alternation of ruling party |
 
 財經法律政治
 
@@ -444,9 +505,17 @@ Medical 醫療
 | ----------------- | ------------------------ | ------------------- | ---------------------------------- |
 | legislate         | perpetrator = lawbreaker | perpetrate = commit | capital punishment = death penalty |
 
-| n. 佣金、犯罪行為 vt. 委託 任命 | n.[C]（政府）長官 | vt. 委派             |
-| ------------------------------- | ----------------- | -------------------- |
-| commission                      | commissioner      | delegate [ˋdɛlə͵get] |
+| n. 佣金、犯罪行為 vt. 委託 任命 | n.[C]（政府）長官 | vt. 委派 | 繁文縟節;官僚作風 | (犯罪/審判/行動/集合)地點 |
+| ------------------------------- | ----------------- | -------- | ----------------- | ------------------------- |
+| commission                      | commissioner      | delegate | red tape          | venue                     |
+
+| 竊聽；攔截(飛彈) | 政治上是個爆炸性的問題 | 單獨監禁             | hypercritical          | hypocritical   |
+| ---------------- | ---------------------- | -------------------- | ---------------------- | -------------- |
+| interception     | political dynamite     | solitary confinement | 過度批評的；吹毛求疵的 | 虛偽的，偽善的 |
+
+| 否決權；禁令 |
+| ------------ |
+| veto         |
 
 職業
 
@@ -458,67 +527,191 @@ Medical 醫療
 | -------------- | -------------------- | ------------- | ------------------ | ------------------ |
 | conductor      | delegate             | dermatologist | receptionist       | interior decorator |
 
-| 顧問 指導老師 | 庭園設計家 |
-| ------------- | ---------- |
-| counselor     | landscaper |
+| 顧問 指導老師 | 庭園設計家 | 快遞/快遞員 | (尤指醫生、律師)開業者 | 捐助人；贊助人 |
+| ------------- | ---------- | ----------- | ---------------------- | -------------- |
+| counselor     | landscaper | courier     | practitioner           | benefactor     |
 
 Rephrasing 改變措辭 替代字語料小抄
 
-| Original            | 中文                                   | Rephrase                                | Example                                                                                                                       |
-| ------------------- | -------------------------------------- | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| danger              | vt. 危急                               | jeopardize                              | she could jeopardize her whole future. 她可能會危急未來前途                                                                   |
-| painful             | adj. 痛苦的                            | excruciating                            | It is excruciating to do 做這事是很痛苦的                                                                                     |
-| anger               | vt. 激怒                               | antagonize = provoke                    | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                      |
-| intake              | n. (食物)攝取；(思想)接受、融入同化    | assimilation                            | assimilation of new ideas 新思想的採納                                                                                        |
-| agree               | vi. 同意 n. 答應                       | consent/assent to [V]/[N]               | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                        |
-| agreement           | n. 共識                                | consensus                               | reach a consensus 達成共識                                                                                                    |
-| hard to choose      | n. 左右為難 兩難困境                   | in a ethical dilemma                    | in a moral dilemma 倫理兩難 (比如死刑)                                                                                        |
-| actual/practical    | adj. 實際的 具體的                     | tangible                                | The government brought few tangible benefits to the poor. 政府沒有給窮人帶來多少實際好處。                                    |
-| warn                | vt. 告誡；警告；提醒                   | admonish sb against N/Ving              | His friends admonished him against drinking. 朋友們力勸他不要酗酒。                                                           |
-| worsen              | vt. 使惡化；使加重；使發怒             | exacerbate N                            | The economic downturn exacerbated the unemployment crisis, leading to widespread financial hardship.                          |
-| harmful             | adj. 有害的 不利的                     | be detrimental to N                     | Their decision could be detrimental to the future of the company. 他們的決定可能會對公司的未來產生不利影響。                  |
-| deep                | adj. 深切的 強烈的 深奧的              | profound                                | a profound mystery 難解的奧秘 / a profound effect on her life 對她有深遠的影響                                                |
-| strong/tough        | adj. 適應力強的 (有彈性的)             | resilient spirit 堅韌的精神             | the community demonstrated its resilient spirit by coming together to rebuild and recover.                                    |
-| terrible            | adj. 可恨的 糟糕的                     | abominable                              | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                 |
-| important           | adj. 重要的 凸起的 顯眼的              | prominent                               | very prominent people 名人 / play prominent part 扮演重要的一環                                                               |
-| important           | adj. 至關重要的                        | imperative                              | Addressing climate change is imperative for the future of our planet.                                                         |
-| emotional           | adj. 情深的，多情的；感情用事的        | sentimental                             | She kept all the old photographs for sentimental reasons. 她保存所有這些舊照片是出於情感上的緣故。                            |
-| consist of          | vt. 包含 組成                          | A comprises N1 and N2                   | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                 |
-| use up              | vt. 耗盡                               | exhaust                                 | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
-| difficult           | adj. 錯綜複雜的；難理解的              | an intricate problem                    | The watch mechanism is extremely intricate and very difficult to repair.                                                      |
-| long                | adj. 延長的 長期的                     | prolonged                               | each meeting would then be prolonged by 10 minutes 每個會議可能會延長十分鐘                                                   |
-| obstacle            | n. 威懾力量；制止物                    | act/serve as a deterrent to N           | Tougher prison sentences may act/serve as a deterrent to other would-be offenders. 從嚴判決可以起到震懾其他潛在犯罪者的作用。 |
-| fascinated/fancy    | n. 迷人的                              | be intrigued by                         | she was intrigued by his story 她被他的故事迷住了                                                                             |
-| happy               | vi.vt. 高興 欣喜                       | rejoice [+at/over-N][+to-v][+that]      | I rejoice to hear of your promotion. 聽說你高升我非常高興 / Let us rejoice together on your success. 讓我們共同慶祝你的成功   |
-| future              | n. 前景 預期                           | prospect                                | The prospects of the car industry are brightening. 汽車工業前途看好                                                           |
-| poor                | adj. 貧困                              | impoverished families                   | an impoverished young actor. 赤貧的年輕演員                                                                                   |
-| poor                | n. 貧困                                | people experienced destitution          | Destitution has become a major problem in the capital. 貧困成了這個都市的主要問題。                                           |
-| everywhere          | adj. 無所不在                          | ubiquitous                              | Social media has become ubiquitous in modern society, influencing various aspects of people's lives.                          |
-| reduce              | vt. 減輕 緩和 (痛苦/病情/疑慮/貧困)    | alleviate N                             | Efforts should be made to alleviate poverty through sustainable development initiatives.                                      |
-| reduce              | vi.vt. 減輕 緩和 (痛苦/病情/疑慮/貧困) | mitigate N                              | Environmental regulations are enacted to mitigate the impact of industrial pollution on ecosystems.                           |
-| true                | adj. 基本的，本身的；自然本質的        | intrinsic value                         | The intrinsic value of education extends far beyond academic achievement.                                                     |
-| fundamental         | adj. 內在的；固有的，與生俱來的        | to be inherent in N                     | The problems you mention are inherent in the system.                                                                          |
-| improve             | vi. 改善；改良；使變好                 | to ameliorate N/Ving                    | Social programs are implemented to ameliorate the living conditions of marginalized communities.                              |
-| noticed             | adj. 已認知的；意識到的                | be cognizant of N                       | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
-| help                | vt. 使容易；促進；幫助                 | facilitate                              | Technology has facilitated global communication and collaboration.                                                            |
-| spread              | vt. 散播；宣傳                         | disseminate N                           | The organization runs campaigns and disseminate knowledge through seminars, reports and mailings.                             |
-| spread              | vt. 傳播；使普及                       | propagate N                             | propagate scientific knowledge 普及科學知識                                                                                   |
-| describe            | vt. 描繪；描述                         | delineate N                             | The report delineates the causes of economic inequality in the region.                                                        |
-| practical/efficient | adj. 實用的，重實效的                  | a pragmatic approach to N               | A pragmatic approach to healthcare reform considers both short-term and long-term impacts.                                    |
-| cure                | n. 萬能藥；補救之道                    | a panacea or a poison                   | Technology is not a panacea for all our problems.                                                                             |
-| bring up            | vt. 培養，促進 (收養的)                | foster skills/knowledge/economy         | Investing in education and innovation can help foster a robust economy.                                                       |
-| support             | vt. 支持，支援，強化                   | to sustain N                            | Community-driven initiatives are needed to sustain environmental conservation efforts.                                        |
-| rule/view           | n. 信條；主義；原則                    | a fundamental/core tenet                | Freedom of speech is a fundamental tenet of democratic societies.                                                             |
-| money and efforts   | n. 大量資金與努力                      | substantial funds and endless endeavors | The research team continued their project with substantial funds and endless endeavors to find a breakthrough.                |
-| extensive knowledge | n. 豐富專業知識                        | with profound expertise in N            | The teacher guided her students through the challenging project with profound expertise in science.                           |
-| latest technology   | n. 頂尖人類科技                        | pinnacle of human technology            | The smartphone, represents the pinnacle of human technology.                                                                  |
-| crime               | v. 犯罪                                | commit transgressions                   | Who is supposed to have committed these transgressions?                                                                       |
-| go down             | v. 走向退步、退化                      | head towards retrogression              | A society which sidelines women is heading towards retrogression. 一個排斥女性的社會是正在走向倒退的社會                      |
-| reject              | vt. 排斥，排擠，排除                   | sideline N                              | A society which sidelines women is heading towards retrogression. 一個排斥女性的社會是正在走向倒退的社會                      |
-| mistake             | n[C]. 過失，犯罪                       | transgression                           | Who is supposed to have committed these transgressions? 誰被認為是犯了這些過錯的人？                                          |
-| and                 | adv. 而且，                            | furthermore/moreover                    | Furthermore, he felt that he wasn't really an authority on preventive medicine.                                               |
-| so                  | adv. 因此，                            | thus/therefore/hence                    | This is a gold necklace, hence it is expensive.                                                                               |
-| but                 | adv. 但是，                            | nevertheless/nonetheless/however        | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
+| Original            | 中文                                   | Rephrase                                                    | Example                                                                                                                       |
+| ------------------- | -------------------------------------- | ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| danger              | vt. 危急                               | jeopardize                                                  | she could jeopardize her whole future. 她可能會危急未來前途                                                                   |
+| painful             | adj. 痛苦的                            | excruciating                                                | It is excruciating to do 做這事是很痛苦的                                                                                     |
+| anger               | vt. 激怒                               | antagonize = provoke                                        | I don't want to antagonize him 我不想惹惱他 / I was provoked into the argument. 我被激怒，於是吵了起來。                      |
+| intake              | n. (食物)攝取；(思想)接受、融入同化    | assimilation                                                | assimilation of new ideas 新思想的採納                                                                                        |
+| agree               | vi. 同意 n. 答應                       | consent/assent to [V]/[N]                                   | I've consented to lend her my car. 答應把車借給她 / without your consent. 未經你的允許                                        |
+| agreement           | n. 共識                                | consensus                                                   | reach a consensus 達成共識                                                                                                    |
+| hard to choose      | n. 左右為難 兩難困境                   | in a ethical dilemma                                        | in a moral dilemma 倫理兩難 (比如死刑)                                                                                        |
+| actual/practical    | adj. 實際的 具體的                     | tangible                                                    | The government brought few tangible benefits to the poor. 政府沒有給窮人帶來多少實際好處。                                    |
+| warn                | vt. 告誡；警告；提醒                   | admonish sb against N/Ving                                  | His friends admonished him against drinking. 朋友們力勸他不要酗酒。                                                           |
+| worsen              | vt. 使惡化；使加重；使發怒             | exacerbate N                                                | The economic downturn exacerbated the unemployment crisis, leading to widespread financial hardship.                          |
+| harmful             | adj. 有害的 不利的                     | be detrimental to N                                         | Their decision could be detrimental to the future of the company. 他們的決定可能會對公司的未來產生不利影響。                  |
+| deep                | adj. 深切的 強烈的 深奧的              | profound                                                    | a profound mystery 難解的奧秘 / a profound effect on her life 對她有深遠的影響                                                |
+| strong/tough        | adj. 適應力強的 (有彈性的)             | resilient spirit 堅韌的精神                                 | the community demonstrated its resilient spirit by coming together to rebuild and recover.                                    |
+| terrible            | adj. 可恨的 糟糕的                     | abominable                                                  | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                 |
+| important           | adj. 重要的 凸起的 顯眼的              | prominent                                                   | very prominent people 名人 / play prominent part 扮演重要的一環                                                               |
+| important           | adj. 至關重要的                        | imperative                                                  | Addressing climate change is imperative for the future of our planet.                                                         |
+| emotional           | adj. 情深的，多情的；感情用事的        | sentimental                                                 | She kept all the old photographs for sentimental reasons. 她保存所有這些舊照片是出於情感上的緣故。                            |
+| emotional           | adj. 易被感動的；易受影響的            | susceptible                                                 | They persuade susceptible teenagers to part with their money. 他們勸說這些易被感動的年輕人捐出他們的錢                        |
+| consist of          | vt. 包含 組成                          | A comprises N1 and N2                                       | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                 |
+| use up              | vt. 耗盡                               | exhaust                                                     | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
+| difficult           | adj. 錯綜複雜的；難理解的              | an intricate problem                                        | The watch mechanism is extremely intricate and very difficult to repair.                                                      |
+| long                | adj. 延長的 長期的                     | prolonged                                                   | each meeting would then be prolonged by 10 minutes 每個會議可能會延長十分鐘                                                   |
+| obstacle            | n. 威懾力量；制止物                    | act/serve as a deterrent to N                               | Tougher prison sentences may act/serve as a deterrent to other would-be offenders. 從嚴判決可以起到震懾其他潛在犯罪者的作用。 |
+| fascinated/fancy    | n. 迷人的                              | be intrigued by                                             | she was intrigued by his story 她被他的故事迷住了                                                                             |
+| happy               | vi.vt. 高興 欣喜                       | rejoice [+at/over-N][+to-v][+that]                          | I rejoice to hear of your promotion. 聽說你高升我非常高興 / Let us rejoice together on your success. 讓我們共同慶祝你的成功   |
+| future              | n. 前景 預期                           | prospect                                                    | The prospects of the car industry are brightening. 汽車工業前途看好                                                           |
+| poor                | adj. 貧困                              | impoverished families                                       | an impoverished young actor. 赤貧的年輕演員                                                                                   |
+| poor                | n. 貧困                                | people experienced destitution                              | Destitution has become a major problem in the capital. 貧困成了這個都市的主要問題。                                           |
+| increase            | n. 數字持續上升中                      | number has escalated                                        | But that number has escalated, and the action on Wednesday makes only a dent in those confirmable posts.                      |
+| everywhere          | adj. 無所不在                          | ubiquitous                                                  | Social media has become ubiquitous in modern society, influencing various aspects of people's lives.                          |
+| reduce              | vt. 減輕 緩和 (痛苦/病情/疑慮/貧困)    | alleviate N                                                 | Efforts should be made to alleviate poverty through sustainable development initiatives.                                      |
+| reduce              | vi.vt. 減輕 緩和 (痛苦/病情/疑慮/貧困) | mitigate N                                                  | Environmental regulations are enacted to mitigate the impact of industrial pollution on ecosystems.                           |
+| true                | adj. 基本的，本身的；自然本質的        | intrinsic value                                             | The intrinsic value of education extends far beyond academic achievement.                                                     |
+| fundamental         | adj. 內在的；固有的，與生俱來的        | to be inherent in N                                         | The problems you mention are inherent in the system.                                                                          |
+| improve             | vi. 改善；改良；使變好                 | to ameliorate N/Ving                                        | Social programs are implemented to ameliorate the living conditions of marginalized communities.                              |
+| noticed             | adj. 已認知的；意識到的                | be cognizant of N                                           | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
+| help                | vt. 使容易；促進；幫助                 | facilitate                                                  | Technology has facilitated global communication and collaboration.                                                            |
+| spread              | vt. 散播；宣傳                         | disseminate N                                               | The organization runs campaigns and disseminate knowledge through seminars, reports and mailings.                             |
+| spread              | vt. 傳播；使普及                       | propagate N                                                 | propagate scientific knowledge 普及科學知識                                                                                   |
+| describe            | vt. 描繪；描述                         | delineate N                                                 | The report delineates the causes of economic inequality in the region.                                                        |
+| increase            | vi. 激增                               | has/have proliferated                                       | The use of social media platforms has proliferated among teenagers in recent years.                                           |
+| practical/efficient | adj. 實用的，重實效的                  | a pragmatic approach to N                                   | A pragmatic approach to healthcare reform considers both short-term and long-term impacts.                                    |
+| cure                | n. 萬能藥；補救之道                    | no panacea to solve it once and for all                     | Technology is not a panacea for all our problems.                                                                             |
+| bring up            | vt. 培養，促進 (收養的)                | foster skills/knowledge/economy                             | Investing in education and innovation can help foster a robust economy.                                                       |
+| support             | vt. 支持，支援，強化                   | to sustain N                                                | Community-driven initiatives are needed to sustain environmental conservation efforts.                                        |
+| over the hills      | ad. 多年來                             | throughout the years                                        | Throughout the years, their friendship remained unwavering, a constant source of support .                                    |
+| simple method       | n. 沒有簡單的方法；沒捷徑              | no facile approach                                          | There's no facile approach; it requires dedication, practice, and a deep understanding of fundamental principles.             |
+| valuable            | n. 不可或缺的資產                      | an indispensable asset for                                  | Effective communication skills are an indispensable asset for navigating complex social situations.                           |
+| forever             | n. 活在永久幸福當中                    | live in perpetual happiness                                 | Embracing gratitude and mindfulness can lead one to live in perpetual happiness                                               |
+| superficial         | n.[U] 過度虛榮心                       | excessive vanity (注意不加s)                                | Her excessive vanity often blinds her to the beauty in others, leading to missed opportunities for genuine connections.       |
+| waste               | n. 奢侈消費                            | extravagant consumption of N                                | The extravagant consumption of luxury goods by the elite ignores the plight of those struggling with poverty.                 |
+| corner              | n.[C] 破壞壟斷                         | break/broke monopoly/monopolies on N                        | The explosion of the Russian atomic bomb broke the American monopoly on nuclear weapons.                                      |
+| reduce the risk     | n. 減少風險                            | diminish the risk of N                                      | Regular exercise and a balanced diet can help diminish the risk of heart disease and improve overall health.                  |
+| rule/view           | n. 信條；主義；原則                    | a fundamental/core tenet                                    | Freedom of speech is a fundamental tenet of democratic societies.                                                             |
+| money and efforts   | n. 大量資金與努力                      | substantial funds and endless endeavors                     | The research team continued their project with substantial funds and endless endeavors to find a breakthrough.                |
+| extensive knowledge | n. 豐富專業知識                        | with profound expertise in N                                | The teacher guided her students through the challenging project with profound expertise in science.                           |
+| creation            | n. 引人注目的創新發明                  | compelling innovation                                       | The company's compelling innovation in renewable energy technology is revolutionary                                           |
+| latest technology   | n. 頂尖人類科技                        | pinnacle of human technology                                | The smartphone, represents the pinnacle of human technology.                                                                  |
+| the spirit          | n. 無畏精神                            | indomitable will                                            | Ray Kroc's success in revolutionizing the fast-food industry is attributed to his indomitable will.                           |
+| prevent             | v. 抑制..的滋生                        | curb the spread of N                                        | Implementing stricter regulations can help curb the spread of pollution and protect the environment.                          |
+| crime               | v. 犯罪                                | commit transgressions                                       | Who is supposed to have committed these transgressions?                                                                       |
+| go down             | v. 走向退步、退化                      | head towards retrogression                                  | A society which sidelines women is heading towards retrogression. 一個排斥女性的社會是正在走向倒退的社會                      |
+| reject              | vt. 排斥，排擠，排除                   | sideline N                                                  | A society which sidelines women is heading towards retrogression. 一個排斥女性的社會是正在走向倒退的社會                      |
+| bear                | v.負荷高峰用量                         | accommodate growing peak demand                             | The power grid infrastructure needs to be upgraded to accommodate growing peak demand during hot summer months.               |
+| fastly              | adv.突飛猛進地                         | by leaps and bounds                                         | Her health is improving by leaps and bounds. 她的健康迅速好轉                                                                 |
+| and                 | adv. 而且，                            | furthermore/moreover/additionally                           | Furthermore, he felt that he wasn't really an authority on preventive medicine.                                               |
+| so                  | adv. 因此，                            | thus/therefore/hence/Now that                               | This is a gold necklace, hence it is expensive.                                                                               |
+| but                 | adv. 但是，                            | nevertheless/nonetheless/however                            | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
+| but                 | adv. 歸因於，                          | contribute to/be attributed to/give rise to/due to/owing to | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
+
+| 口說中文 | English                        | Example                                                                                                                                           |
+| -------- | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 自動自發 | spontaneous                    | I travels to different countries helped me develop a spontaneous appreciation for new cultures and experiences, enriching my perspective on life. |
+| 激起潛能 | awaken my true potential       | It has helped awaken my true potential.                                                                                                           |
+| 開拓視野 | broaden my horizons            | Traveling to different countries helped me broaden my horizons.                                                                                   |
+| 排除萬難 | Against all the odds           | Against all the odds, I managed to build a successful business from scratch.                                                                      |
+| 擴展社交 | expand my social circle        | It has helped expand my social circle.                                                                                                            |
+| 包容文化 | accommodate different cultures | It's essential for businesses to accommodate different cultures to foster inclusivity.                                                            |
+
+It is a ethical dilemma whether to develop the greenfield or not. In my opinion, the fundamental tenet
+of city should comprise vital facilities, I assent to Anna's idea that the government should develop
+the greenfields and turn it into an urban region, even it requires substancial funds, endless endeavor
+and profound expertise.
+The goverment should spend money to industrilize the regions for the sake of the long term consideration.
+Firstly, shopping malls and hospitals must be developed, otherwise, the city will end up heading torwards to retrogression.
+Secondly, nuclear power plants or hydro power plants to accomodate the power usage of a city as much as possible.
+Finally, highway and airlines should be considerd because they are also vital for turists and transportations.
+To conclude, the long term plan of a city should prioritize industrilization over leaving it abandand.
+
+While live in a city means more resources like substacial funds and people with profound expertise in each area of knowledge,
+still, people sometimes face many challenges when it comes to live in a urban area regarding transgressions and lack of exercises.
+Firstly, more people lived in the cities than in the downtowns, so the crimes are more common. The government should
+make sure there are enough police forces or national guards in the city to assure civilian's safeties. Secondly, people lived in
+the urban area are usually lack of exercises, governments cound spend substancial funds on bulding gyms and free memberships for
+the people faced obesity. To conclude, the these are two issues and the solutions to each when lived in the city.
+
+Alleviating abominable water pollution usually requires profound expertise, endless endeavors and substantial funds. Therefore,
+I approve of Kelly's stance that such construction and regulations should be shouldered by institutions like governments,
+in terms of purifying polluted water and extensive funds.
+Firstly, the government should start to gather the engineers who are expertise in building water purifying systems which
+can mitigate the pollution as much as possible. Secondly, related to my first point. The governments together with
+companies, should raise a massive funds on coming up with a solution and systems that can ensures our precious
+water can be sustainable for generations.
+To conclude, I hold that individuals hardly have the chances on this particullar issue, the governments and companies
+are more suitable for this case.
+
+(1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
+the lecture begs to differ and addressed three reasons to argue it.
+(2.) Firstly, as the reading suggests, ..... This proposal as the lecture reveals, is unlikely to be ture because ...
+(3.) Secondly, the reading cites that ..... However, the lecturer still counters that ....
+(4.) Lastly, the reading passage maintains that... . Disagreeing with this argument, the lecturer says...making
+the writer's theory unlikely to be ture.
+(5.) To sum up, the professor utilized the aforementioned three reasons to counter the perspectives in the reading.
+
+Both the reading and the lecture discuss the fossils of London Specimen and Berlin Specimen, the two birds that
+lived in the prehistoric span. While the reading proposes three reasons that the fossils are nothing short but hoaxes,
+the lecturer begs to differ and claimed that they are actual creatures in the past.
+As the reading suggests, a biologist considers the fossils are frauds because it was only two years after the Darwin's
+evolution theory was published. The lecture argues that there is no intention for Richard Owen to forge the fake fossil,
+and the abominable result might cause him to lose his fame and the research he developed throughout the years.
+Another theory in the reading is that the feathers were preserved too well, implying this could be one piece of evidence that
+they made fake fossils. However, the lecturer still counters with the compelling reason that Richard Owen is a biologist
+who might not be clueless to make the detail of such fossils. Therefore, the fossils should be genuine.
+Lastly, the reading passage maintains that one of the two blocks of limestone was perfectly split, meaning that the piece
+is a fake one. Disagreeing with this argument, the lecturer says that it was caused by dead animals who covered
+by another limestone. Furthermore, it is also observable that the other piece is polished which makes it a compelling reason.
+To sum up, the professor utilized three reasons to counter the perspective in the reading.
+
+If businesses take risk in their investments:
+It is undeniable that almost every business choises we make is going to be a risk, and we are not likely to
+profit from the investments in the short term.
+
+Does online shopping affect society in a negative way or positive way?
+Online shopping is now ubiquitous among the people, and people using the service have proliferated
+throughout the years of development.I hold that the benefits of online shopping outweigh the drawbacks in terms of
+convenience and transparency.
+Firstly, the fundamental tenet of online shopping it to facilitate the process of shopping, and for those big countries,
+it has accelerated the time spent in traffic, For example, people in America rely on services like Amazon,
+while Chinese are using Taobao, and even Russians are utilizing AliExpress despite the sanctions by G7,
+online shopping has mitigated the exacerbating recessions in Russia.
+Secondly, the cost of the items is transparent and comparable, and sometimes people are tricked to buy things with high price.
+For example, I bought a laptop last year, the prices on site and online are different, I eventually chose to buy it online
+after some struggling and I am rejoiced to the choice I made.
+To sum up, I believe that the online shopping is indispensable and not going anywhere, and people are favored for the service.
+
+The fundamental tenet of education is to make the children instill profound expertise and practical techniques,
+while there is no facile approach nor a panacea to solve the education system problems once and for all.
+One simple way to achieve it is through field trips. I approve of Cocos's compelling stances that having field trips
+have broaden her horizons, I hold that educations can benefit from field trips in terms of
+thought-provoking and starting one's own business.
+Because the field trips are conducted outside of schools, students can have more oppotunities to learn things
+that teachers have hard time providing in the classrooms, and they can facilitate the process of education and
+have profound experiences on the subjects.
+People who learn from outside of school are more likely to start their own business in the future. Elon Musk,
+the founder of Tesla and SpaceX, has started his career long before the education. His father was a
+electrical technician and had taken his son everywhere in South Africa throughout the years. Therefore,
+Musk was intrigued by his father's compelling work and eventually became one of the greatest CEO in the world.
+To sum up, I believe that children can benifit from the field trips based on the aforementioned two reasons.
+
+The fundamental tenet of educational funds is to spending on what students and educators need for,
+whether to spend substantial funds on new amenities or researching purpose is often controversial.
+I assent to Paul's compelling stance that schools should prioritise new amenities in terms of
+generating incomes and intriguing more students.
+To begin with, I believe that schools should invest in internet cafes, which provide drinks, desserts and computers
+for students. Students can accommodate different cultures and the school can benefit from the income.
+Secondly, students would be intrigued by the internet cafes, and do the research their projects together,
+which expand the social circles, awaken their true potential and develop their spontaneous behaviors.
+To sum up, I hold that the funds should used for building internet cafes based on aforementioned reasons.
+
+The fundamental tenet of food is to save people from undernutrition, whether it is in the past or the present.
+I believe people today have much advanced food in terms of healthy and nutrition.
+Firstly, companies like Impossible Food and Beyond Meat have developed some Superfood based on artificial meat,
+they provide healthy and tasty food for a affordable price. Therefore, more and more people are adapted their meat
+into their burgers or other products.
+Secondly, the nutrition provided by modern Superfood is also improved, people today can enjoy the Superfood made from
+insects and facilitate the nutrition at the same time. While, in the past, there's no such Superfood.
+To sum up, I hold that the food today is more healthy based on the aforementioned two reasons.
 
 # 歸納法 Organization/Induction (正反面都要寫) 正三角
 
@@ -581,6 +774,18 @@ Rephrasing 改變措辭 替代字語料小抄
   - statue of Stalin in Russia is untouchable
   - Switzerland is a highly-developed agriculture country
   - Switzerland utilized hydro and nuclear energy
+- Space 太空
+  - terraform the Mars
+  - Elon Musk and SpaceX
+- Startup 創業
+  - Ray Kroc, the entrepreneur and the founder of McDonald's Corporation in 1955
+  - he was a milkshake mixer salesman before starting his McDonald's business with indomitable will
+- agriculture + hunger + healthy food
+  - Beyond Meat and Impossible Food - artificial meat 人造肉 (producer of plant-based meat substitutes)
+  - Superfood - Insects are a protein-rich source of Superfood
+  - Poor harvest due to on-going war in Ukraine, they have the richest black soil in the world
+  - the three years economic recession (The Great Depression) started in 1929
+  - led to undernourishment/malnutrition and hunger 營養不良
 
 # 標點符號 (Punctuation)
 
@@ -869,7 +1074,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - life imprisonment = life sentence 無期徒刑, 25-year life sentence 25 年有期徒刑
 - contribute to N. = benefits = be prone to 有益於、造成 -- Smoking contributed to his early death. 吸煙導致他早逝。
 - deterrent [dɪˋtɝrənt] = intimidating adj. 威懾的；令人生畏的 n. 威懾物 -- a nuclear deterrent 核威懾力
-- rehabituate vi. 重新恢復正常生活 -- Lawbreakers rarely rehabituate after the process of local community service 犯人幾乎無法重新再地方生活
+- rehabituate vi. 使康復；重新恢復正常生活 -- Lawbreakers rarely rehabituate after the process of local community service 犯人幾乎無法重新再地方生活
 - recommit vt. 重犯、再犯；重新委託
 - crackdown(s) on crimes 打擊犯罪 -- There has been a series of government crackdowns on safety in factories. 針對工廠安全問題，政府有一系列的處罰措施。
 - hardened criminals/repeat offenders 累犯
@@ -1248,6 +1453,7 @@ Rephrasing 改變措辭 替代字語料小抄
 - confound [kənˋfaʊnd] = confuse = perplex = muddle with vt.使混亂；使困惑 -- Don't confound the means with the ends. 不要把手段和目的混淆起來
 - confounded [kənˋfaʊndɪd] = damned adj.狼狽的；困惑的；【口】討厭的；無理的；該死的
 - to a mutual extent 以互惠的程度 ；to a large extent 在很大的程度上；to some extent 在某種程度上
+- repent [rɪˋpɛnt] vi.vt. 悔悟，悔改；後悔
 - repentance [rɪˋpɛntəns] n. 悔悟；悔改；後悔；懺悔 -- From confession flows repentance and from repentance forgiveness. 由懺悔必生悔罪，由悔罪必得饒恕。
 - annex [əˋnɛks] vt.附加，增添；併吞；獲得，得到 -- An insurance policy was annexed to the contract. 合同上附加了保險條款
 - intensify [ɪnˋtɛnsə͵faɪ] vi.vt. 加強，強化，變激烈
@@ -1268,9 +1474,72 @@ Rephrasing 改變措辭 替代字語料小抄
 - pertain to [pɚˋten] = relate to 有關，關於 -- This lesson pertains to marine animals. 這一課講海洋動物
 - pertaining to = as to = as for 與...有關
 - tentative [ˋtɛntətɪv] = unconfirmed adj.試驗性的，嘗試的；暫時性的 -- tentative schedule 暫時的行程
+- tentatively [ˋtɛntətɪv] adv.試驗性地；暫時地
 - pertinent [ˋpɝtnənt] adj.恰當的，貼切的；中肯的 -- It might be pertinent for you to make the suggestion to the president. 你向總裁提這個建議可能比較恰當
 - demented [dɪˋmɛntɪd] = crazy adj.精神錯亂狀態的；瘋狂的 -- to drive sb. demented 把某人逼瘋
 - vehement in [ˋviəmənt] adj.感情激烈的；熱烈的；強烈的；猛烈的 -- They are vehement in their praises of the new system. 他們熱烈地讚揚這一新制度
 - appraisal [əˋprez!] n.[U] 評價；估量；估價
 - contention [kənˋtɛnʃən] n.論點，主張
 - engraving [ɪnˋgrevɪŋ] = carving n. 雕刻；雕刻術
+- On account of = Because of = Due to = Owing to 因為
+- Regarding = Concerning = Touching = Respecting 關於
+- who are between jobs/in transition 待業中的人
+- recede from [rɪˋsid] vi. 後退；遠去；變得渺茫；(經濟)衰退
+- recession n.後退；退回[U]；凹處；經濟衰退
+- recessive [rɪˋsɛsɪv] adj.後退的；退隱的；逆行的；【生】隱性的(基因)
+- dominant 【生】顯性的(基因)
+- rebut /rɪˈbʌt/ vt. 反駁;駁斥;駁回
+- rebuttal /rɪˈbʌt̬.əl/ n. 反駁;駁回;駁斥
+- reciprocal [rɪˋsɪprək!] a.[Z]相互的，交互的；互惠的，對等的
+- reciprocate [rɪˋsɪprə͵ket] vi.交換；報答；互給
+- recalcitrant [rɪˋkælsɪtrənt] = disobedient adj.反抗的；頑強的；不聽話的
+- resile from /rɪˈzaɪl/ vi. 中止履行;中輟
+- resilient [rɪˋzɪlɪənt] adj.彈回的；有彈力的；迅速恢復精力的
+- resilience [rɪˋzɪlɪəns] n.彈回；彈性；恢復力
+- tenacious [tɪˋneʃəs] adj.緊握的；堅持的，頑強的，固執的
+- tenure [ˋtɛnjʊr] n.[U]（財產、職位等的）佔有；佔有權；佔有期；任期；(教職)終身職
+- tenacity [tɪˋnæsətɪ] n.固執；堅持，頑強，不屈不撓
+- tenant n.租客，租賃 vs. joint tenancy n.(合)租屋，(合)租地
+- exempt from [ɪgˋzɛmpt] vt.免除，豁免 adj.被免除的；被豁免的 n.被免除（義務、責任）者；免稅者
+- preempt [priˋɛmpt] vt.以先買權獲得；先佔；先取；先發制人
+- forestall [forˋstɔl] vt.搶先行動以破壞（或阻止）；先發制（人）
+- premium [ˋprimɪəm] n.[C]獎品；獎金；額外補貼，津貼；保險費 adj.高級的
+- precedence [prɪˋsidns] = priority n.[U]居前；領先；優先；優先權
+- retrogress [͵rɛtrəˋgrɛs] vi.倒退；逆行；退化
+- retrograde [ˋrɛtrə͵gred] adj.adv.後退的；逆行的；退化的 vi.vt.倒退；逆行；退化
+- punctual [ˋpʌŋktʃʊəl] adj.嚴守時刻的；準時的；（表達方式等）正確的；精確的
+- punctuality [͵pʌŋktʃʊˋælətɪ] n.嚴守時間；正確；規矩
+- puncture [ˋpʌŋktʃɚ] = pierce vt.vi.刺穿，戳破 n.小孔
+- acumen [əˋkjumən] n.銳敏；聰明
+- pungent [ˋpʌndʒənt] = hot adj.（氣味等）有刺激性的；辣的；辛辣的 -- pungent odor[ˋodɚ] 辛辣味
+- pungency [ˋpʌndʒənsɪ] n.痛苦；辛辣；刺激
+- orthodox [ˋɔrθə͵dɑks] adj.正統的；傳統的，習俗的；通常的
+- altruist [ˋæltrʊ͵ɪst] n.利他主義者 = humanitarian
+- altruistic [͵æltrʊˋɪstɪk] adj.利他的；愛他的；利他主義的；無私的
+- alteration [͵ɔltəˋreʃən] n.改變，變更，修改
+- versatile [ˋvɝsət!] adj.多才多藝的；多功能的；多方面適用的 -- Versailles n.凡爾賽（巴黎西部一城市
+- verse vt.使熟練，使精通[（+in）] n.詩；韻文
+- versed [vɝst] adj.熟練的；精通的
+- stately [ˋstetlɪ] = majestic adj.有威嚴的，莊重的；高貴的
+- sole adj. 單獨的；唯一的 n.鞋底 - sole survivor 唯一生還者
+- exertion [ɪgˋzɝʃən] n.努力；費力[U][C]；（能力、權力等的）運用；行使 -- Exertion of authority over others is not always wise. 以權壓人並不總是明智的
+- refreshment n. 精力恢復；茶點，便餐；飲料
+- rapport [ræˋpor] n.密切關係；親和力 -- to establish a rapport 建立融洽關係
+- cultured [ˋkʌltʃɚd] adj.有教養的；有知識的；文雅的；人工培養的；人工養殖的 -- cultured pearls 養殖珠
+- forethought [ˋfor͵θɔt] n.事先的考慮；深謀遠慮 -- to show/have forethought 表現出／具有深謀遠慮
+- alteration 改變，變更 vs. alternation (世代)交替；(政黨)輪替
+- make light of N 不在乎
+- immaculate [ɪˋmækjəlɪt] adj.潔淨的，無汙垢的；無瑕疵的，完美的 -- immaculate behavior 純潔無瑕的行為
+- pristine [ˋprɪstin] adj.原始的；清新的；純樸的；未受污染的 -- in the pristine beach 在未受污染的海灘
+- in regard to = in relation to = in reference to = in respect to 關於
+- distinct 不同的，有區別的[（+from）]；明顯的，清楚的 vs. distinctive 有特色的，特殊的
+- emanate [ˋɛmə͵net] vi.vt. 散發；放射；產生
+- emanate from.. 發源自..；源自於..
+- evoke [ɪˋvok] vt. 喚起（記憶等）；引起；召魂 -- That old movie evoked memories of my childhood. 那部舊電影喚起了我童年的記憶
+- break out (v.) = outbreak (n.) 戰爭爆發、病毒爆發
+- preserve vs. reserve vs. conserve 保存
+  - preserve 保存，保留 (這個字最常用)
+  - reserve 保存(為了未來、訂位、存錢)
+  - conserve 保存(天然資源、水、石油、樹木)
+- solidarity [͵sɑləˋdærətɪ] n.團結；團結一致
+-

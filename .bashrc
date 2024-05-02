@@ -310,13 +310,13 @@ if hash yt-dlp 2>/dev/null >/dev/null; then
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose --user-agent="$(yt-dlp --dump-user-agent)"'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate,zstd" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
   [ $(command -v curl3) ] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate,zstd" --user-agent "$(yt-dlp --dump-user-agent)" -LC - '
-  [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS) --user-agent="$(yt-dlp --dump-user-agent)"'
+  [ $(command -v aria2c) ] && alias aria2c="aria2c $DOWNLOADER_ARGUMENTS --user-agent='$(yt-dlp --dump-user-agent)'"
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10 --user-agent="$(yt-dlp --dump-user-agent)"'
 else
   [ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
   [ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate,zstd" -LC - '
   [ $(command -v curl3) ] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: gzip,br,deflate,zstd" -LC - '
-  [ $(command -v aria2c) ] && alias aria2c='aria2c $(echo $DOWNLOADER_ARGUMENTS)'
+  [ $(command -v aria2c) ] && alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
   [ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 fi
 alias yt-dlp="yt-dlp $DL_ARGUMENTS" # See also test_format_selection_string_ops in the repository
@@ -1175,6 +1175,29 @@ curlToStreamlink-mpv()
     sleep 1
     echo "Retrying curlToStreamlink ... $((count++))"
     local cmd="streamlink $STREAMLINK_ARGUMENTS --title "{url}" --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream best ${PARAMS}"
+    echo "$cmd"
+    eval "$cmd"
+  done;
+}
+
+curlToStreamlink1080p-mpv()
+{
+  PARAMS=""
+
+  for PARAM in "$@"
+  do
+    PARAMS="${PARAMS} '${PARAM}'"
+  done
+
+  # Need to be updated
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)' / \1='\2' /g" | sed "s/ '--compressed'//g" )
+
+  local count=0
+  $(exit 1)
+  while [ $? -ne 0 ]; do
+    sleep 1
+    echo "Retrying curlToStreamlink ... $((count++))"
+    local cmd="streamlink $STREAMLINK_ARGUMENTS --title "{url}" --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 1080p ${PARAMS}"
     echo "$cmd"
     eval "$cmd"
   done;
