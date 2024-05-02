@@ -169,8 +169,8 @@ driver: smtp
 host: email-smtp.ap-northeast-1.amazonaws.com # email-smtp.<Region>.amazonaws.com
 port: 587
 from_address: mail-user@mail.example.com # iam-user@domain
-username: AKIASO5EW2XMZUOSJLGT # mail-user's accesskey
-password: BIRJQs+KeDAvjjYQ7v/sPLnvAVpArvJyY/g/2S7Kxq0z # mail-user's secretkey
+username: AXXXXXXXXXXXXXXT # mail-user's accesskey
+password: BXXXXXXXXXXXXXXXz # mail-user's secretkey
 encryption: tls
 from_name: Service
 ```
