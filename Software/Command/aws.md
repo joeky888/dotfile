@@ -160,7 +160,7 @@ S3 cors with cloudfront
 
 AWS SES
 =====
-* Create an iam named "mail-user" and grant "AmazonSesSendingAccess"
+* Go to ses aws console -> SMTP settings -> Create SMTP credentials -> enter "mail-user" -> Obtain the smtp user/password
 * Go to ses aws console and create new identity, enter domain "mail.example.com"
 * Finish DKIM verification
 * Use the access key from the "mail-user" and finish the php config
@@ -169,8 +169,9 @@ driver: smtp
 host: email-smtp.ap-northeast-1.amazonaws.com # email-smtp.<Region>.amazonaws.com
 port: 587
 from_address: mail-user@mail.example.com # iam-user@domain
-username: AXXXXXXXXXXXXXXT # mail-user's accesskey
-password: BXXXXXXXXXXXXXXXz # mail-user's secretkey
+username: AXXXXXXXXXXXXXXT # mail-user's smtp user # NOTE that this is not iam accesskey
+password: BXXXXXXXXXXXXXXXz # mail-user's smtp password # NOTE that this is not iam secretkey
 encryption: tls
 from_name: Service
 ```
+

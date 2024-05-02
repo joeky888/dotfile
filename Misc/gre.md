@@ -2,7 +2,7 @@ TKB數位學堂 身份證/身份證
 
 Magoosh gre app 測驗
 
-填空 6_0805B 下 - GRE.實戰 - 0:00:00 OG p.0 第0題
+填空 6_0805B 下 - 例題23.實戰 - 0:24:00 OG p.342 第3題
 閱讀 1_0808C 下 - 文章解讀P132 56:00
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
@@ -741,6 +741,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | flag              | n.vi.        | n.旗 vi.變疲倦 變衰弱                                   |                                                                    |
 | fledgling         | n.adj.       | 初學者 新手 adj.剛起步的 無經驗的                       | [ˋflɛdʒlɪŋ]                                                        |
 | fleece            | vt.          | 欺騙 敲詐                                               | [flis]                                                             |
+| fleeting          | adj.         | 轉瞬間的；短暫的                                        | [ˋflitɪŋ]                                                          |
 | flippant          | adj.         | 輕率的；不認真的；無禮的                                | [ˋflɪpənt]                                                         |
 | flounder          | vi.          | 掙扎 錯亂地做事                                         | /ˋflaʊndɚ/                                                         |
 | flout             | vt.vi.       | 公然藐視；嘲笑，嘲弄                                    | [flaʊt]                                                            |
@@ -967,6 +968,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | invective         | n.           | 惡言謾罵；辱罵；痛罵                                    | [ɪnˋvɛktɪv]                                                        |
 | inveterate        | adj.         | 根深蒂固的；積習已深的；頑固的；習慣性的                | [ɪnˋvɛtərɪt]                                                       |
 | invidious         | adj.         | 招致不滿的，惹人怨的；不公平的；引起反感的              | [ɪnˋvɪdɪəs]                                                        |
+| invigoration      | n.           | 精神充沛；身心愉快                                      | [ɪn͵vɪgəˋreʃən]                                                    |
 | inviolable        | adj.         | 神聖的；不可褻瀆的；不可侵犯的                          | [ɪnˋvaɪələb!]                                                      |
 | inviolate         | adj.         | 未受褻瀆的；未被侵犯的；未受損害的                      | [ɪnˋvaɪəlɪt]                                                       |
 | involved          | adj.         | 複雜的；糾纏的；混亂的                                  | [ɪnˋvɑlvd] ⭐️                                                     |
@@ -1087,6 +1089,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | modest            | adj.         | 謙虛的；適度的；穩重的                                  | [ˋmɑdɪst]                                                          |
 | modicum           | n.           | 少量 一點點                                             | [ˋmɑdɪkəm]                                                         |
 | mollify           | vi.          | 緩和；減輕；安撫；平息                                  | [ˋmɑlə͵faɪ]                                                        |
+| momentary         | adj.         | 短暫的；瞬間的                                          | [ˋmomən͵tɛrɪ]                                                      |
 | monotony          | n.           | 單調；無變化，千篇一律                                  | [məˋnɑtənɪ]                                                        |
 | moot              | vt.adj.      | vt.提出…供討論 adj.無實際意義的；假設的；爭論中的       | [mut]                                                              |
 | mordant           | adj.         | 尖銳風趣的；尖酸逗趣的；劇烈的；有腐蝕性的              | [ˋmɔrdnt]                                                          |
@@ -1366,6 +1369,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | relentless        | adj.         | 殘酷的，無情的；不間斷的，持續的                        | [rɪˋlɛntlɪs] ⭐️                                                   |
 | relevant          | adj.         | 有關的；切題的；恰當的                                  | [ˋrɛləvənt]                                                        |
 | relish            | vi.vt.       | 喜愛，愛好；欣賞，珍惜                                  | [ˋrɛlɪʃ]                                                           |
+| remedy            | n.vt.        | 治療；補救(錯誤)，糾正去除(錯誤)                        | [ˋrɛmədɪ]                                                          |
 | remiss            | adj.         | 疏忽的；不小心的；不負責任的                            | [rɪˋmɪs]                                                           |
 | remonstrate       | vi.vt.       | 抗議，反對；規勸，告誡                                  | [rɪˋmɑn͵stret]                                                     |
 | renege            | vi.          | 背信；違約；食言                                        | [rɪˋnig]                                                           |
@@ -1427,6 +1431,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | sediment          | n.           | 沉積，沉澱；沉積物                                      | [ˋsɛdəmənt]                                                        |
 | sedulous          | adj.         | 勤勉的；聚精會神的；仔細的，細心的                      | [ˋsɛdʒələs]                                                        |
 | self-effacing     | adj          | 謙虛的，不愛出風頭的                                    | /ˌself.ɪˈfeɪ.sɪŋ/                                                  |
+| self-righteous    | adj          | 自以為是的                                              | /ˌsɛlfˈrʌɪtʃəs/                                                    |
 | seminal           | adj.         | 開創性的; 重大的有影響力的                              | [ˋsɛmən!] adj.精液的 精子的                                        |
 | semblance         | n.           | 外貌，外觀，表面上；類似，酷似                          | [ˋsɛmbləns]                                                        |
 | sensual           | adj.         | 肉體上的；肉感的，性感的；好色的                        | [ˋsɛnʃʊəl]                                                         |
@@ -1666,6 +1671,7 @@ It is nothing short of a miracle (負負得正句) 完全就是奇跡
 | wax               | vt.          | 上蠟；變大，增加，增強                                  | [wæks]                                                             |
 | wayward           | adj.         | 任性的，倔強的；難以控制的                              | [ˋwewɚd]                                                           |
 | whimsical         | adj.         | 異想天開的；離題的，古怪的                              | [ˋhwɪmzɪk!]                                                        |
+| woe               | n.           | 悲哀；悲痛；困難；災難；不幸                            | [wo]                                                               |
 | winsome           | adj.         | 迷人的；可愛的；楚楚動人的; 惹人喜愛的                  | [ˋwɪnsəm]                                                          |
 | zeal              | n.           | 熱心；熱誠；熱情                                        | [zil]                                                              |
 | zealot            | n.           | 熱心者；狂熱者；極端分子                                | [ˋzɛlət]                                                           |
