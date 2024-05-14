@@ -3,7 +3,7 @@ TKB數位學堂 身份證/身份證
 Magoosh gre app 測驗
 
 填空 6_0805B 下 - 例題23.實戰 - 0:24:00 OG p.342 第3題
-閱讀 3_0815C 下 - Question 1to3 0:05:00 - OG p.不知 第不知題
+閱讀 3_0815C 下 - Question 4 1:28:00 - OG p.339 第18題
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
 anything but 根本不
@@ -392,6 +392,7 @@ nothing but 只不過
 | coalesce          | vi.          | 聯合 合併；（傷口）癒合                                 | [͵koəˋlɛs]                                                         |
 | cogent            | adj.         | 有說服力的 令人信服的                                   | [ˋkodʒənt]                                                         |
 | cohesive          | adj.         | 凝聚性的 有黏著力的                                     | [koˋhisɪv] cohesive argument 上下文有凝聚力的論點                  |
+| coin              | vt.          | 鑄造（貨幣）；創造，杜撰（新詞等）                      | n.錢幣                                                             |
 | collusion         | n.           | 共謀；勾結                                              | [kəˋluʒən]                                                         |
 | colossal          | adj.         | 巨大的；龐大的                                          | [kəˋlɑs!]                                                          |
 | collude           | vi.          | 共謀；串通                                              | [kəˋlud]                                                           |
@@ -423,6 +424,7 @@ nothing but 只不過
 | conjecture        | n.           | 推測，臆測；猜測                                        | [kənˋdʒɛktʃɚ]                                                      |
 | conniving         | adj.         | 密謀的 勾結的                                           | [kəˋnaɪvɪŋ]                                                        |
 | connoisseur       | n.           | (藝術) 鑑賞家，行家                                     | [͵kɑnəˋsɝ]                                                         |
+| connote           | vt.          | 意味著；暗示                                            | [kənˋnot]                                                          |
 | consecrate        | vt.          | 使神聖化 獻身於                                         | [ˋkɑnsɪ͵kret]                                                      |
 | conspicuous       | adj.         | 顯眼的 明顯的 引人矚目的                                | [kənˋspɪkjʊəs]                                                     |
 | constituent       | n.adj.       | n.成分 選民 adj.組成的 必要的                           | [kənˋstɪtʃʊənt]                                                    |
@@ -1264,7 +1266,8 @@ nothing but 只不過
 | portend           | vt.          | 預示，預先警告；表示，意味著                            | [porˋtɛnd]                                                         |
 | portentous        | adj.         | 凶兆的，不祥的；自命不凡的，矜持的                      | [porˋtɛntəs]                                                       |
 | posit             | vt.          | 假設；假定                                              | [ˋpɑzɪt]                                                           |
-| postulate         | n.vt.        | 假設；假定                                              | ˋpɑstʃə͵let]                                                       |
+| posthumous        | adj.         | 死後的；死後出版的，死後獲得的                          | [ˋpɑstjuməs]                                                       |
+| postulate         | n.vt.        | 假設；假定                                              | [ˋpɑstʃə͵let]                                                      |
 | powwow            | n.           | 帕瓦儀式；集會；商議；討論會                            | [ˋpaʊ͵waʊ]                                                         |
 | pragmatic         | adj.         | 務實的；實幹的；實用主義的                              | [prægˋmætɪk] ⭐️                                                   |
 | preachy           | adj.         | 愛講道的；愛嘮叨的                                      | [ˋpritʃɪ]                                                          |
@@ -1431,7 +1434,6 @@ nothing but 只不過
 | satiate           | vt.          | 使飽足；使充分滿足，使多給而厭膩                        | [ˋseʃɪ͵et]                                                         |
 | saturnine         | adj.         | 受土星影響的而出生的；憂鬱的，陰沉的                    | [ˋsætɚ͵naɪn]                                                       |
 | savvy             | n.adj.vi.vt. | 理解能力；悟性；常識 adj.聰明的 有見識的 v.懂 理解      | [ˋsævɪ]                                                            |
-| scant             | adj.         | 不足的；貧乏的；少量的                                  | [skænt]                                                            |
 | scant             | adj.         | 不足的；貧乏的；少量的                                  | [skænt]                                                            |
 | scaremonger       | n.           | 危言聳聽者，散播恐怖謠言者；擾亂社會民心的人            | [ˋskɛr͵mʌŋgɚ]                                                      |
 | schism            | n.           | (組織，教會，黨派)分裂                                  | [ˋsɪzm]                                                            |

@@ -499,9 +499,9 @@ Medical 醫療
 | ------------ | ----------- | ------------ | ----------- | --------- | ------ | ---------- |
 | 高血壓       | 低血壓      | 體溫過高     | 體溫過低    | 遠視      | 近視   | 老花眼     |
 
-| 流行病學     |
-| ------------ |
-| epidemiology |
+| 流行病學     | 新陳代謝  |
+| ------------ | --------- |
+| epidemiology | metabolic |
 
 Life 生活
 
@@ -1715,3 +1715,4 @@ To sum up, I conclude with aforementioned two opinions that support the permissi
 - suited vs. suitable 都是適合的意思
   - 人 be suited to 物 vs. 物 be suitable to 人
 - brisk [brɪsk] adj.活潑的，生氣勃勃的；輕快的 -- a brisk industry 蓬勃發展的工業
+- incur [ɪnˋkɝ] -- vt.招致，惹起，帶來；遭受 -- She incurred his wrath. 她惹得他發了火

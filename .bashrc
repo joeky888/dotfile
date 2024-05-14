@@ -1167,7 +1167,7 @@ curlToStreamlink-mpv()
   done
 
   # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)' / \1='\2' /g" | sed "s/ '--compressed'//g" )
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)'/ \1='\2' /g" | sed "s/ '--compressed'//g" )
 
   local count=0
   $(exit 1)
@@ -1190,7 +1190,7 @@ curlToStreamlink1080p-mpv()
   done
 
   # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)' / \1='\2' /g" | sed "s/ '--compressed'//g" )
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)'/ \1='\2' /g" | sed "s/ '--compressed'//g" )
 
   local count=0
   $(exit 1)
