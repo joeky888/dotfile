@@ -303,9 +303,9 @@ Conclude: 40
 | ---------------- | ------- | ----------------- | ----------- | ------------- | ---------- |
 | extremities/limb | microbe | replenish         | trek        | innate/inborn | plume      |
 
-| 休眠 n.  | 可發育的 adj. | 毛孔 氣孔 | 神經元 | 神經生物學   | 產前的 胎兒期的 | 產後的 出生後的 |
-| -------- | ------------- | --------- | ------ | ------------ | --------------- | --------------- |
-| dormancy | viable        | pore      | neuron | neurobiology | prenatal        | postnatal       |
+| 休眠 n.  | 可發育的 adj. | 毛孔 氣孔 | 多孔洞的 | 神經元 | 神經生物學   | 產前的 胎兒期的 | 產後的 出生後的 |
+| -------- | ------------- | --------- | -------- | ------ | ------------ | --------------- | --------------- |
+| dormancy | viable        | pore      | porous   | neuron | neurobiology | prenatal        | postnatal       |
 
 | 唾液腺 | 異域物種形成          | 同域物種形成         | 幼崽 幼苗 後代 | 酵素 酶 |
 | ------ | --------------------- | -------------------- | -------------- | ------- |
@@ -337,9 +337,9 @@ Conclude: 40
 | -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
 | botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
 
-| 枯萎的；凋謝的 | 溫帶氣候          | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
-| -------------- | ----------------- | ------------ | ------ | ----------------------------- |
-| withered       | temperate climate | phytochrome  | nectar | absorbent                     |
+| 枯萎的；凋謝的       | 溫帶氣候          | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
+| -------------------- | ----------------- | ------------ | ------ | ----------------------------- |
+| withered/languishing | temperate climate | phytochrome  | nectar | absorbent                     |
 
 | 孢子  | 蕨類 | 休耕地 | 多年生植物 | 一年生植物 |
 | ----- | ---- | ------ | ---------- | ---------- |
@@ -383,9 +383,13 @@ Conclude: 40
 | ------------------------ | ---- | ---------------- | -------------------- | ------------ |
 | overland                 | pond | hilly            | backwater            | trickle      |
 
-| 冰河    | 地熱       | 鹽田、鹹海 |
-| ------- | ---------- | ---------- |
-| glacier | geothermal | saline     |
+| 冰河    | 地熱       | 鹽田、鹹海 | v. 統一，聯合；加固；固化 | adj.未固化     | v.覆蓋        |
+| ------- | ---------- | ---------- | ------------------------- | -------------- | ------------- |
+| glacier | geothermal | saline     | consolidate               | unconsolidated | cover/overlie |
+
+| v. 過濾；滲透 | 有滲透性的；可穿過的 | 裂縫，破口 | 斜坡  |
+| ------------- | -------------------- | ---------- | ----- |
+| percolate     | permeable            | crevice    | slope |
 
 Anthropology 人類學
 
@@ -407,6 +411,12 @@ Psychology 心理學
 | ------------ | ---------- | ----------------- | --------- |
 | empathy      | sympathy   | dispassion/apathy | antipathy |
 
+Math 數學
+
+| 極小的        |
+| ------------- |
+| infinitesimal |
+
 考古學 Archeology
 
 | 木炭     | 發掘、挖掘、出土                    | 通風           | 陶器(的)     | 迷宮           |
@@ -421,9 +431,9 @@ Psychology 心理學
 | ---------- | ------------ | -------------- | ------ | ---------- | ------------ | ---------------- | ------------ |
 | manuscript | heliocentric | geocentric     | regent | regency    | regal manner | regality/royalty | regime/regin |
 
-| 序言；開端           | 君主；統治者 | (普通)陶器 | (高級)陶器      |
-| -------------------- | ------------ | ---------- | --------------- |
-| preface/introduction | dynast       | pottery    | porcelain/china |
+| 序言；開端           | 君主；統治者 | (普通)陶器 | (高級)陶器      | 破布，碎布；破衣褲布料 |
+| -------------------- | ------------ | ---------- | --------------- | ---------------------- |
+| preface/introduction | dynast       | pottery    | porcelain/china | rag(s)                 |
 
 | 古生代        | 中生代       | 新生代       | 大災難                |
 | ------------- | ------------ | ------------ | --------------------- |
@@ -495,9 +505,9 @@ Medical 醫療
 | ----------------------- | -------------- | ----------- | -------------- | ----------- |
 | ICU/intensive care unit | intensive care | acupuncture | congenital     | 低溫症      |
 
-| hypertension | hypotension | hyperthermia | hypothermia | hyperopia | myopia | presbyopia |
-| ------------ | ----------- | ------------ | ----------- | --------- | ------ | ---------- |
 | 高血壓       | 低血壓      | 體溫過高     | 體溫過低    | 遠視      | 近視   | 老花眼     |
+| ------------ | ----------- | ------------ | ----------- | --------- | ------ | ---------- |
+| hypertension | hypotension | hyperthermia | hypothermia | hyperopia | myopia | presbyopia |
 
 | 流行病學     | 新陳代謝  |
 | ------------ | --------- |
@@ -509,9 +519,9 @@ Life 生活
 | ------------- | --------------- | ------------------ | ----------------- | ------------ | ---------------- |
 | 嬰兒車        | 倉庫            | 家用餐具、家用廚具 | 排油煙機/通風設備 | (一樓的)露台 | (樓上懸空的)陽台 |
 
-| fixture                  | poultry | livestock |
-| ------------------------ | ------- | --------- |
-| (屋內)固定家具、固定裝置 | 家禽    | 家禽+家畜 |
+| fixture                  | poultry | livestock | colander   |
+| ------------------------ | ------- | --------- | ---------- |
+| (屋內)固定家具、固定裝置 | 家禽    | 家禽+家畜 | 濾鍋；濾器 |
 
 Work 辦公/工作
 
@@ -697,6 +707,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 永恆幸福 | the key to everlasting happiness              | Understanding oneself and cultivating meaningful relationships is often considered the key to everlasting happiness.                              |
 | 小眾市場 | a niche market                                | You have to create a niche market for your products. 你必須為你的產品創造出利基市場                                                               |
 | 空前成功 | a thorough success                            | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 將功贖罪 | have a chance to redeem myself                | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 
@@ -708,6 +719,14 @@ Rephrasing 改變措辭 替代字語料小抄
 | 除此之外(負面詞 更糟的是) | and on top of that                                                     |
 | 首先其次                  | For one thing, for another thing                                       |
 | 解法是                    | the access/approach/answer/key/solution/shortcut/cut corners to Ving/N |
+
+(1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
+the lecture begs to differ and addressed three reasons to argue it.
+(2.) Firstly, as the reading suggests, ..... This proposal as the lecture reveals, is unlikely to be ture because ...
+(3.) Secondly, the reading cites that ..... However, the lecturer still counters that ....
+(4.) Lastly, the reading passage maintains that... . Disagreeing with this argument, the lecturer says...making
+the writer's theory unlikely to be ture.
+(5.) To sum up, the professor utilized the aforementioned three reasons to counter the perspectives in the reading.
 
 It is a ethical dilemma whether to develop the greenfield or not. In my opinion, the fundamental tenet
 of city should comprise vital facilities, I assent to Anna's idea that the government should develop
@@ -735,14 +754,6 @@ companies, should raise a massive funds on coming up with a solution and systems
 water can be sustainable for generations.
 To conclude, I hold that individuals hardly have the chances on this particullar issue, the governments and companies
 are more suitable for this case.
-
-(1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
-the lecture begs to differ and addressed three reasons to argue it.
-(2.) Firstly, as the reading suggests, ..... This proposal as the lecture reveals, is unlikely to be ture because ...
-(3.) Secondly, the reading cites that ..... However, the lecturer still counters that ....
-(4.) Lastly, the reading passage maintains that... . Disagreeing with this argument, the lecturer says...making
-the writer's theory unlikely to be ture.
-(5.) To sum up, the professor utilized the aforementioned three reasons to counter the perspectives in the reading.
 
 Both the reading and the lecture discuss the fossils of London Specimen and Berlin Specimen, the two birds that
 lived in the prehistoric span. While the reading proposes three reasons that the fossils are nothing short but hoaxes,
@@ -1387,7 +1398,7 @@ To sum up, I conclude with aforementioned two opinions that support the permissi
 - coincide [͵koɪnˋsaɪd] vi. 同時發生；同位，重疊 -- My holiday coincides with John's. 我的假期與約翰的假期碰巧在同一時間
 - nuisance [ˋnjusns] n.討厭的人 麻煩事[C] 【律】妨害行為，騷擾行為 -- He was nothing but a nuisance and a rascal. 他是一個十足的討厭鬼和惡棍
 - commence [kəˋmɛns] vt.開始；著手[+v-ing][+to-v] vi.開始 (+with) -- She commenced to cry. 她開始哭了起來
-- thorough [ˋθɝo][kəˋmɛns] adj.徹底的；完全的；周密的；完善的 -- The film was a thorough success. 這電影獲得極大的成功
+- thorough [ˋθɝo] adj.徹底的；完全的；周密的；完善的 -- The film was a thorough success. 這電影獲得極大的成功
 - placement test 分級(班)測驗
 - adjacent [əˋdʒesənt] a.[Z毗連的，鄰接的；前後相接的 -- The two families live on adjacent streets. 這兩家住在兩條相鄰的街上
 - personnel [͵pɝsnˋɛl] n.[G]（總稱）人員，員工；人事部門 -- All personnel of the company are eligible for the retirement plan. 公司所有員工都有資格參加這項退休計畫
@@ -1716,3 +1727,5 @@ To sum up, I conclude with aforementioned two opinions that support the permissi
   - 人 be suited to 物 vs. 物 be suitable to 人
 - brisk [brɪsk] adj.活潑的，生氣勃勃的；輕快的 -- a brisk industry 蓬勃發展的工業
 - incur [ɪnˋkɝ] -- vt.招致，惹起，帶來；遭受 -- She incurred his wrath. 她惹得他發了火
+- overturn [͵ovɚˋtɝn] vi.vt. 使翻轉；使倒下，翻倒 -- She overturned the bottle. 她把瓶子打翻了
+- speculate [ˋspɛkjə͵let] vi.vt.推測，推斷；投機，投機買賣 -- She speculated about her friend's motives. 她猜測她朋友的動機

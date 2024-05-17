@@ -822,6 +822,7 @@ nothing but 只不過
 | harangue          | n.vi.        | 長篇慷慨激昂地演講；責罵                                | [həˋræŋ] ⭐️                                                       |
 | tirade            | n.           | 長篇的激烈演說                                          | [ˋtaɪ͵red] ⭐️                                                     |
 | filibuster        | n.vi.        | 阻撓議事的冗長發言；費力把事拖                          | [ˋfɪlə͵bʌstɚ] ⭐️                                                  |
+| handsome          | adj.         | 相當大的，可觀的                                        | [ˋhænsəm] adj. 英俊的                                              |
 | harried           | adj.         | 疲憊不堪的、被折磨的                                    | /ˈher.id/                                                          |
 | hasty             | adj.         | 倉促的，輕率的，草率的                                  | [ˋhestɪ]                                                           |
 | haughty           | adj.         | 傲慢的，自大的                                          | [ˋhɔtɪ]                                                            |
@@ -1088,6 +1089,7 @@ nothing but 只不過
 | metamorphosis     | n.           | 【生】 完全變態；（人的外表等的）完全變化               | [͵mɛtəˋmɔrfəsɪs]                                                   |
 | metaphysical      | adj.         | 抽象的；超自然的；玄學的                                | [͵mɛtəˋfɪzɪk!]                                                     |
 | meteoric          | adj.         | 流星的；流星似的突然的；迅疾的；曇花一現的              | [͵mitɪˋɔrɪk]                                                       |
+| malicious         | adj.         | 惡意的，懷恨的                                          | [məˋlɪʃəs]                                                         |
 | meticulous        | adj.         | 精細的；小心翼翼的；嚴密的；一絲不苟的                  | [məˋtɪkjələs] ⭐️                                                  |
 | mettlesome        | adj.         | 精神抖擻的；勇敢的；活潑的                              | [ˋmɛt!səm]                                                         |
 | milieu            | n.           | 社會環境；出身背景                                      | [miˋljə]                                                           |
