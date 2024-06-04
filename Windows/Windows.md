@@ -25,6 +25,7 @@ Post-install
 * cmd.exe -> netplwiz -> User must enter a user name -> Uncheck
 * Exclude cygwin path in anti-virus
 * Settings -> Personalization -> Colors -> Custom color -> Select black color
+* Settings -> Virus & threat protection settings > Manage settings > Exclusions > Add "D:" and "C:\Users\Name"
 * DNS server
 ```resolv
 nameserver 8.8.4.4
@@ -53,8 +54,8 @@ iex (New-Object System.Net.WebClient).downloadstring('https://get.scoop.sh')
 scoop bucket add extras
 scoop config aria2-enabled true
 scoop config aria2-retry-wait 3
-scoop config aria2-split 16
-scoop config aria2-max-connection-per-server 16
+scoop config aria2-split 8
+scoop config aria2-max-connection-per-server 8
 scoop config aria2-min-split-size 1M
 scoop config aria2-options "--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=50 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false"
 # scoop bucket add dorado https://github.com/chawyehsu/dorado

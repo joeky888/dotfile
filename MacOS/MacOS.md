@@ -23,6 +23,7 @@ Post-installed
 * System Settings > Displays > Automatically adjust brightness > Uncheck
 * System Settings > Bluetooth > Show bluetooth in menu bar
 * System Settings > VPN > Show vpn in menu bar
+* System Settings > Storage > Empty Trash automatically
 * System Settings > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Settings > Keyboard >
     * Key Repeat > Set to Fastest
@@ -50,3 +51,10 @@ Nslookup alternative
 * $ dig A one.one.one.one # Only prints ipv4
 * $ dig AAAA one.one.one.one # Only prints ipv6
 * $ host one.one.one.one # Prints ipv4/ipv6
+
+Wifi Troubleshooting
+=====
+* No network after connecting to wifi (Common issues with M-series generation)
+  * If it is a problem with mesh wifi, 1. connect to mesh master, and then 2. go to other mesh slave rooms
+  * Wifi -> TCP/IP > Try "Using DHCP with Manual Address" > Enter a random address "192.168.0.xxx"
+

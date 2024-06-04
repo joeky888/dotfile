@@ -249,8 +249,13 @@ ffmpeg -vsync 0 -hwaccel cuda -hwaccel_output_format cuda -i input.mp4 "-c:a" co
 ```
 * Linux with VAAPI
 ```sh
-ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 "-c:a" copy "-c:v" h264_vaapi output.mp4
-ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 "-c:a" copy "-c:v" hevc_vaapi output.mp4
+ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 -c:a copy -c:v h264_vaapi output.mp4
+ffmpeg -hwaccel vaapi -hwaccel_output_format vaapi -vaapi_device /dev/dri/renderD128 -i input.mp4 -c:a copy -c:v hevc_vaapi output.mp4
+```
+* macOS
+```sh
+ffmpeg -i input.mp4 -c:a copy -c:v h264_videotoolbox output.mp4
+ffmpeg -i input.mp4 -c:a copy -c:v hevc_videotoolbox output.mp4
 ```
 
 Compile ffmpeg on Cygwin

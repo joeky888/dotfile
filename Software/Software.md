@@ -369,7 +369,6 @@ iOS
 * iSH - Alpine Linux shell for iOS.
 * Cydia
   * NewTerm 2
-* LibTerm - https://github.com/ColdGrub1384/LibTerm
 * Blokada - Ad block (Non-Free at this moment)
 * Adguard DNS
 * TablePlus

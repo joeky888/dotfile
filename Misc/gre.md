@@ -4,10 +4,30 @@ Magoosh gre app 測驗
 
 填空 6_0805B 下 - 例題23.實戰 - 0:24:00 OG p.342 第3題
 閱讀 3_0815C 下 - Question 4 1:28:00 - OG p.339 第18題
+寫作 3_0829C 下 - Questions7to9 01:06:00 - 無課本
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
 anything but 根本不
 nothing but 只不過
+
+寫作：
+List some "buzzwords" for every scenario
+GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
+用 ChatGPT 生成更多如 "Holocaust" and "Racial segregation" 的大事件
+
+心裡學主義
+
+| 唯心主義 | 唯物主義    | 平等主義       | 資本主義   | 多元主義  | 人文主義 | 利他主義 |
+| -------- | ----------- | -------------- | ---------- | --------- | -------- | -------- |
+| idealism | materialism | egalitarianism | capitalism | pluralism | humanism | altruism |
+
+| 官僚主義      | 沙文主義   | 自由放任主義、不干涉主義 | 憤世嫉俗者/諷世者 | 懷疑主義、懷疑論 |
+| ------------- | ---------- | ------------------------ | ----------------- | ---------------- |
+| bureaucratism | chauvinism | laissez faire            | cynic             | skepticism       |
+
+| 狂熱者         |
+| -------------- |
+| lunatic fringe |
 
 |                   |              |                                                         |                                                                    |
 | ----------------- | ------------ | ------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -228,12 +248,14 @@ nothing but 只不過
 | assiduously       | adv.         | 刻苦地 勤奮地                                           | [əˋsɪdʒʊəslɪ]                                                      |
 | assuage           | v.           | 緩和 減輕                                               | [əˋswedʒ]                                                          |
 | astringent        | adj.n.       | 嚴厲的；尖酸刻薄的 n.【醫】止血藥                       | [əˋstrɪndʒənt]                                                     |
+| astute            | adj.         | 敏銳的，精明的，機敏的；狡猾的                          | [əˋstjut]                                                          |
 | asylee            | n.           | (獲准)政治避難者                                        | [əˌsaɪˈliː] = asylum seeker                                        |
 | atavism           | n.           | 隔代遺傳 返祖現象                                       | [ˋætə͵vɪzəm]                                                       |
 | attenuate         | v.           | 減弱 變薄                                               | [əˋtɛnjʊ͵et]                                                       |
 | audacious         | adj.         | 大膽的；魯莽的；目無法紀的                              | [ɔˋdeʃəs]                                                          |
 | audacity          | n.           | 大膽 魯莽                                               | [ɔˋdæsətɪ]                                                         |
 | augment           | v.           | 增加 增大                                               | [ɔgˋmɛnt] Augmented Reality，簡稱AR 擴增實境                       |
+| auspice           | n.           | 吉兆                                                    | [ˋɔspɪs]                                                           |
 | auspicious        | adj.         | 吉兆的 吉利的；有望成功的                               | [ɔˋspɪʃəs] (以飛鳥行動為根據的)                                    |
 | ominous           | adj.         | 不祥的                                                  | [ˋɑmɪnəs]                                                          |
 | austere           | adj.         | 嚴厲的 禁慾的                                           | [ɔˋstɪr]                                                           |
@@ -381,7 +403,7 @@ nothing but 只不過
 | churlish          | adj.         | 壞脾氣的、沒有禮貌的                                    | [ˋtʃɝlɪʃ]                                                          |
 | circuitous        | adj.         | 迂曲的，繞行的；拐彎抹角的，間接的                      | [sɚˋkjuɪtəs]                                                       |
 | circumscribe      | vt.          | 為……劃界線 圈出 圍繞 限制                               | [ˋsɝkəm͵skraɪb]                                                    |
-| circumspect       | adj.         | 慎重的；謹慎小心的                                      | [ˋsɝkəm͵spɛkt]                                                     |
+| circumspect       | adj.         | 慎重的；謹慎小心的 (看清楚四周)                         | [ˋsɝkəm͵spɛkt]                                                     |
 | circumstantial    | adj.         | 視情況而定的，由情況推斷的；詳盡的，詳細的              | [͵sɝkəmˋstænʃəl]                                                   |
 | circumvent        | vt.          | 規避 迴避                                               | [͵sɝkəmˋvɛnt]                                                      |
 | civility          | n.           | 禮貌，禮儀，禮節                                        | [sɪˋvɪlətɪ]                                                        |
@@ -445,6 +467,7 @@ nothing but 只不過
 | cornucopia        | n.           | 哺育宙斯神的羊角 聚寶盆 豐富                            | [͵kɔrnəˋkopɪə]                                                     |
 | corollary         | n.           | 推論；必然的結果                                        | [ˋkɔrə͵lɛrɪ]                                                       |
 | corroborate       | vt.          | 證實 鞏固                                               | [kəˋrɑbə͵ret]                                                      |
+| counteract        | vt.          | 抵消；中和                                              | [͵kaʊntɚˋækt] = neutralize                                         |
 | counterfeit       | adj.vt.vi.n. | 偽造的；假冒的；偽造；冒牌貨                            | [ˋkaʊntɚ͵fɪt]                                                      |
 | counterintuitive  | adj.         | 違背直覺的；不如預期的                                  | /ˌkaʊn.tər.ɪnˈtʃuː.ɪ.tɪv/                                          |
 | cosmology         | n.           | 宇宙學 宇宙論                                           | [kɑzˋmɑlədʒɪ]                                                      |
@@ -1066,7 +1089,7 @@ nothing but 只不過
 | mar               | vt.          | 損毀，破壞                                              | [mɑr]                                                              |
 | marginal          | adj.         | 微小的，不重要的                                        | adj.邊緣的                                                         |
 | martial           | adj.         | 戰爭的；軍事的；軍隊的；好戰的                          | [ˋmɑrʃəl]                                                          |
-| martinet          | n.           | 嚴格執行紀律的人；紀律嚴明的人                          | [͵mɑrtnˋɛt]                                                        |
+| martinet          | n.           | 嚴格執行紀律的人；紀律嚴明的人                          | [͵mɑrtnˋɛt] protomartyr n.最初殉道者                               |
 | maudlin           | adj.         | 容易流淚的；多愁善感的；感情脆弱的                      | [ˋmɔdlɪn]                                                          |
 | maunder           | vi.          | 嘮叨地講；胡扯；徘徊；閒逛                              | [ˋmɔndɚ]                                                           |
 | maverick          | n.adj.       | 特立獨行者；持不同意見的                                | [ˋmævərɪk]                                                         |
@@ -1141,6 +1164,7 @@ nothing but 只不過
 | obliging          | adj.         | 樂於助人的；有禮貌的；樂意說明的                        | [əˋblaɪdʒɪŋ]                                                       |
 | obliterate        | vt.          | 清除；摧毀，消滅                                        | [əˋblɪtə͵ret]                                                      |
 | oblique           | adj.         | 傾斜的；曲解的；間接的                                  | [əbˋlik]                                                           |
+| obnoxious         | adj.         | 討厭的，可憎的                                          | [əbˋnɑkʃəs]                                                        |
 | obscure           | adj.vt.      | 含糊不清的；晦澀的，難解的 vt.遮掩；混淆                | [əbˋskjʊr] ⭐️                                                     |
 | obsequious        | adj.         | 諂媚的，奉承的                                          | [əbˋsikwɪəs] ⭐️                                                   |
 | obstinate         | adj.         | 頑固的，固執的；頑強的                                  | [ˋɑbstənɪt]                                                        |
@@ -1646,7 +1670,7 @@ nothing but 只不過
 | unwieldy          | adj.         | 使用不便的，笨重的；複雜難用的                          | [ʌnˋwildɪ]                                                         |
 | upbraid           | vt.          | 責罵，訓斥                                              | [ʌpˋbred]                                                          |
 | upheaval          | n.           | 動蕩，騷亂                                              | [ʌpˋhiv!]                                                          |
-| urbane            | adj.         | 都市化的；彬彬有禮的；高雅的                            | [ɝˋben] urban 城市的                                               |
+| urbane            | adj.         | 都市化的；彬彬有禮的；高雅的                            | [ɝˋben] urban 城市的 bane 禍根，剋星                               |
 | utilitarian       | adj.         | 實用的，功利主義的(效益最大的)                          | [͵jutɪləˋtɛrɪən]                                                   |
 | vacillate         | vi.          | 猶豫不決；搖擺不定；躊躇                                | [ˋvæs!͵et] ⭐️                                                     |
 | vacuous           | adj.         | 空洞的；無聊的，無意義的                                | [ˋvækjʊəs]                                                         |
