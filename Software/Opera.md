@@ -43,6 +43,7 @@ Extension
   * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
     * Click toolbox on the left -> Click 組件 on the bottom left -> 在線 -> Install 合集包 (下載器、常用功能包)
 * RightToCopy
+* Elmo Chat - Your AI Web Copilot
 * Enable Copy by keakon.net
 * Set Character Encoding
 * User-Agent Switcher for Chrome by Google

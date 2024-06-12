@@ -1,4 +1,5 @@
-計量 2_0205C 下 - 提組解說 00:11:00 - OG p.213
+計量 2_0209C 下 - 例題解說P131 00:44:00 - OG p.426
+邏輯 1_0422C 下 - 例題講解P3 00:30:00 - 特別書
 
 bar chart 長條圖不會連在一起
 histogram 直方圖會連在一起
@@ -8,6 +9,11 @@ histogram 直方圖會連在一起
 看到 Quantity A Quantity B 就是比大小
 ratio (分子) to (分母)
 分子 of 分母
+
+prime number 質數 = 只有 1 跟自己，沒有因數
+Product 乘積
+unit digit 個位數
+projected 估計，預計
 
 solution 溶液(食鹽水)；liquid 溶質(鹽)
 
@@ -67,3 +73,6 @@ Permutation 排列，順序重要
 sqare of an integer = 完全平方數
 multiple of A and B = A,B 的公倍數
 divisor(s) = factor = 因數
+
+\*\*\* Logic 邏輯
+Revenue (P (price) x Q (quantity)) - cost (expense) = profit

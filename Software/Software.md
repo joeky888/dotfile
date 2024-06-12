@@ -370,6 +370,7 @@ iOS
 * Cydia
   * NewTerm 2
 * Blokada - Ad block (Non-Free at this moment)
+* Arc Search - Default browser
 * Adguard DNS
 * TablePlus
 * Yattee

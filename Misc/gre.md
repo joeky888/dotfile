@@ -730,7 +730,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | exiguous          | adj.         | 稀少的；細小的                                          | [ɛgˋzɪgjʊəs]                                                       |
 | existential       | adj.         | (哲)存在的 存在主義的                                   | [͵ɛgzɪsˋtɛnʃəl]                                                    |
 | exonerate         | vt.          | 免除 證明無罪                                           | [ɪgˋzɑnə͵ret]                                                      |
-| exorbitant        | adj.         | (收費、要求)過高的；過分的                              | [ɪgˋzɔrbətənt]                                                     |
+| exorbitant        | adj.         | (收費、要求)過高的，昂貴的；過分的                      | [ɪgˋzɔrbətənt]                                                     |
 | expansive         | adj.         | 擴張的；膨脹的；遼闊的                                  |                                                                    |
 | expatiate         | vi.          | 細說；詳述                                              | [ɛkˋspeʃɪ͵et]                                                      |
 | expel             | vt.          | 驅逐，趕走                                              | [ɪkˋspɛl]                                                          |

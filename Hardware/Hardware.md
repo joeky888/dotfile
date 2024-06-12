@@ -30,3 +30,4 @@ Digital audio/video/data connector
 WIFI
 =====
 * Mesh/Unifi
+* PCI-E/M.2 WiFi7
