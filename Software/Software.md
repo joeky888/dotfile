@@ -180,6 +180,7 @@ Mac (Hack-intosh)
   * google-chrome-dev
   * firefox-developer-edition
 * Bluestack X ("Cloud" android emulator supporting intel/m1)
+* Shortcut - video editor
 
 Linux
 =====

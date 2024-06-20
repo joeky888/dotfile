@@ -1,5 +1,5 @@
 計量 2_0209C 下 - 例題解說P131 00:44:00 - OG p.426
-邏輯 1_0422C 下 - 例題講解P3 00:30:00 - 特別書
+邏輯 2_0506C 下 - 因果類型 00:48:00 - 特別書 + OG P.547 + OV
 
 bar chart 長條圖不會連在一起
 histogram 直方圖會連在一起
@@ -76,3 +76,7 @@ divisor(s) = factor = 因數
 
 \*\*\* Logic 邏輯
 Revenue (P (price) x Q (quantity)) - cost (expense) = profit
+
+# assmption vs. support vs. weaken
+
+- assumption 比 support 還強烈，多了 bridge the gap

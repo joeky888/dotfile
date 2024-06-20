@@ -307,9 +307,9 @@ Conclude: 40
 | -------- | ------------- | --------- | -------- | ------ | ------------ | --------------- | --------------- |
 | dormancy | viable        | pore      | porous   | neuron | neurobiology | prenatal        | postnatal       |
 
-| 唾液腺 | 異域物種形成          | 同域物種形成         | 幼崽 幼苗 後代      | 酵素 酶 |
-| ------ | --------------------- | -------------------- | ------------------- | ------- |
-| gland  | Allopatric speciation | Sympatric speciation | offspring/posterity | enzyme  |
+| (唾液等產生液體的)腺體 | 異域物種形成          | 同域物種形成         | 幼崽 幼苗 後代               | 酵素 酶 |
+| ---------------------- | --------------------- | -------------------- | ---------------------------- | ------- |
+| gland                  | Allopatric speciation | Sympatric speciation | offspring/posterity/larva(e) | enzyme  |
 
 | 嗜極生物     | 浮遊生物 | 覓食 v.  | 植物或昆蟲的氣孔  | 日間的 白天的    | 夜間的 晚上的       |
 | ------------ | -------- | -------- | ----------------- | ---------------- | ------------------- |
@@ -327,13 +327,17 @@ Conclude: 40
 | -------------------- | ------------------- | ---------------------------------- | -------- |
 | hatchling            | cellular metabolism | gigantothermy                      | fibrous  |
 
-| (vi.vt.n.)徘徊、潛行、四處覓食 | 反芻                 | 唾液   | 排洩物(屎尿的高級寫法) |
-| ------------------------------ | -------------------- | ------ | ---------------------- |
-| prowl                          | ruminate/regurgitate | saliva | feces                  |
+| (vi.vt.n.)徘徊、潛行、四處覓食 | 反芻                 | 唾液   | 排洩物(屎尿的高級寫法)；有機肥料 |
+| ------------------------------ | -------------------- | ------ | -------------------------------- |
+| prowl                          | ruminate/regurgitate | saliva | (動)feces/(牛馬)dung/(人)manure  |
 
-| n.動物屍體(尚可食用的) | 腐屍    |
-| ---------------------- | ------- |
-| carcass                | carrion |
+| n.動物屍體(尚可食用的) | 腐屍    | 平衡、均衡(的狀態) | 嘔吐  | 豎起毛髮/羽毛                   |
+| ---------------------- | ------- | ------------------ | ----- | ------------------------------- |
+| carcass                | carrion | equilibrium        | vomit | erected crests/fluffed feathers |
+
+| adj.垂頭喪氣的(羽冠垂下的) | 無性生殖             |
+| -------------------------- | -------------------- |
+| crestfallen                | asexual reproduction |
 
 植物學 Botany
 
@@ -349,9 +353,9 @@ Conclude: 40
 | -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
 | botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
 
-| 枯萎的；凋謝的       | 熱帶     | 溫帶氣候          | 寒帶   | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
-| -------------------- | -------- | ----------------- | ------ | ------------ | ------ | ----------------------------- |
-| withered/languishing | tropical | temperate climate | frigid | phytochrome  | nectar | absorbent                     |
+| 枯萎的；凋謝的                  | 熱帶     | 溫帶氣候          | 寒帶   | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
+| ------------------------------- | -------- | ----------------- | ------ | ------------ | ------ | ----------------------------- |
+| withered/languishing/shrivelled | tropical | temperate climate | frigid | phytochrome  | nectar | absorbent                     |
 
 | 孢子  | 蕨類 | 休耕地 | 多年生植物 | 一年生植物 | 黴菌        | 動脈   | 靜脈 | 農藥      |
 | ----- | ---- | ------ | ---------- | ---------- | ----------- | ------ | ---- | --------- |
@@ -381,9 +385,9 @@ Pysics 物理
 | ----------- | -------- | ---------- | ----- | ---------------------- | ------------------ |
 | aerodynamic | coil     | luminosity | inert | airtight               | anaerobic          |
 
-| 離子 | 光子   | 動量、推動力 | 光線            |
-| ---- | ------ | ------------ | --------------- |
-| ion  | photon | momentum     | streak of light |
+| 離子 | 光子   | 動量、推動力 | 光線            | 光譜             |
+| ---- | ------ | ------------ | --------------- | ---------------- |
+| ion  | photon | momentum     | streak of light | spectrum/spectra |
 
 Chemistry 化學
 
@@ -419,9 +423,9 @@ Chemistry 化學
 | -------- | ----------------- | ---- | ---------- | ---------------------- | ---------------- | ---------------- |
 | Crust    | Mantle            | Core | Trench     | plate / tectonic plate | North Hemisphere | South Hemisphere |
 
-| 地表下的岩漿 | 噴發出的岩漿 | 土壤 | 島     | 半島      | 盆地  | 水庫            | 水壩 |
-| ------------ | ------------ | ---- | ------ | --------- | ----- | --------------- | ---- |
-| Magma        | Lava         | soil | insula | peninsula | basin | water reservoir | dam  |
+| 地表下的岩漿 | 噴發出的岩漿 | 土壤 | 島     | 半島      | 盆地；(火山)坑地 | 水庫            | 水壩 |
+| ------------ | ------------ | ---- | ------ | --------- | ---------------- | --------------- | ---- |
+| Magma        | Lava         | soil | insula | peninsula | basin/craters    | water reservoir | dam  |
 
 | (橫跨/途徑)陸地上的 adj. | 池塘 | 多山丘的、陡峭的 | 死水 停滯水 閉塞之處 | 細流、小涓流 |
 | ------------------------ | ---- | ---------------- | -------------------- | ------------ |
@@ -431,9 +435,13 @@ Chemistry 化學
 | ------- | ---------- | ---------- | ------------------------- | -------------- | ------------- |
 | glacier | geothermal | saline     | consolidate               | unconsolidated | cover/overlie |
 
-| v. 過濾；滲透 | 有滲透性的；可穿過的 | 裂縫，破口 | 斜坡  |
-| ------------- | -------------------- | ---------- | ----- |
-| percolate     | permeable            | crevice    | slope |
+| v. 過濾；滲透 | 有滲透性的；可穿過的 | 裂縫，破口 | 斜坡  | 沼澤；濕地              |
+| ------------- | -------------------- | ---------- | ----- | ----------------------- |
+| percolate     | permeable            | crevice    | slope | bog/swamp/wetland/marsh |
+
+| 地下水                            |
+| --------------------------------- |
+| groundwater (注意不是 underwater) |
 
 Seismology 地震學
 
@@ -455,9 +463,13 @@ Anthropology 人類學
 | ----------------------------------------- | ------ | ------------------ | ---------------------------- |
 | papyrus                                   | scribe | ordain             | colosseum/arena/amphitheater |
 
-| 石器時代    | 土石堆 | 元首；自治權；主權國家 |
-| ----------- | ------ | ---------------------- |
-| Paleolithic | mound  | sovereign              |
+| 石器時代    | 土石堆 | 元首；自治權；主權國家 | 繼承；一系列，一連串 | (農作物)產量 |
+| ----------- | ------ | ---------------------- | -------------------- | ------------ |
+| Paleolithic | mound  | sovereign              | succession           | yield        |
+
+| 民俗傳說          | 倒塌，推翻 |
+| ----------------- | ---------- |
+| folktale/folklore | topple     |
 
 Psychology 心理學
 
@@ -535,9 +547,9 @@ Math 數學
 
 生理學 Physiology
 
-| (某個地帶的)動植物 | 懷孕、懷胎 | 節育、避孕                       | 核酸         | vt.排泄；分泌 |
-| ------------------ | ---------- | -------------------------------- | ------------ | ------------- |
-| flora and fauna    | conception | conception control/contraception | nucleic acid | excrete       |
+| (某個地帶的)動植物    | 懷孕、懷胎 | 節育、避孕                       | 核酸         | vt.排泄；分泌 |
+| --------------------- | ---------- | -------------------------------- | ------------ | ------------- |
+| flora and fauna/biome | conception | conception control/contraception | nucleic acid | excrete       |
 
 語言學 Linguistics / Etymology 語源學(詞源學)
 
@@ -573,9 +585,9 @@ Industry 工業
 
 Architecture 建築學
 
-| 公寓              | 拆除     | 翻修     | 攤位，貨攤 | 公共設施/福利設施 | 度假勝地 | (建築物的)正面 |
-| ----------------- | -------- | -------- | ---------- | ----------------- | -------- | -------------- |
-| condo/condominium | demolish | renovate | stall      | amenity/amenities | resort   | facade         |
+| 公寓              | 拆除     | 翻修               | 攤位，貨攤 | 公共設施/福利設施 | 度假勝地 | (建築物的)正面 |
+| ----------------- | -------- | ------------------ | ---------- | ----------------- | -------- | -------------- |
+| condo/condominium | demolish | renovate/refurnish | stall      | amenity/amenities | resort   | facade         |
 
 | 井架，油井鑽塔 | 走廊                        | 欄杆、扶手 | (圓頂)清真寺   | 水壩 | 水庫      |
 | -------------- | --------------------------- | ---------- | -------------- | ---- | --------- |
@@ -587,7 +599,7 @@ Metallurgy 冶金學
 | ----- |
 | alloy |
 
-Medical 醫療
+Medical 醫學
 
 | 加護病房                | 深切治療       | 針灸        | 先天性的(疾病) | hypothermia |
 | ----------------------- | -------------- | ----------- | -------------- | ----------- |
@@ -601,9 +613,9 @@ Medical 醫療
 | ------------ | --------- | ----------------------------- | ------------------------- |
 | epidemiology | metabolic | dysentery/diarrhea(diarrhoea) | mortality rate/death rate |
 
-| 失眠症   |
-| -------- |
-| insomnia |
+| 失眠症   | 自閉的   | v.接種(疫苗)        | 解剖；仔細分析    | 活體解剖 | 麻醉       |
+| -------- | -------- | ------------------- | ----------------- | -------- | ---------- |
+| insomnia | autistic | inoculate/vaccinate | anatomize/dissect | vivisect | anesthesia |
 
 Life 生活
 
@@ -693,6 +705,22 @@ traffic 交通
 | ------------- | ----------------------------- | -------------------- | ----------- |
 | supreme court | driving under influence (DUI) | surplus              | confederacy |
 
+| n.監視，監督 |
+| ------------ |
+| scrutiny     |
+
+Military 軍事
+
+| 軍事演習、部隊調動 | 火車       |
+| ------------------ | ---------- |
+| maneuver           | locomotive |
+
+Mechanical 技術
+
+| (小)儀器            | (大)機器          |
+| ------------------- | ----------------- |
+| apparatus/equipment | machine/machinery |
+
 職業
 
 | 內科醫師  | 外科醫師 | 泊車小弟、男僕 | 房產經紀人        | 企業家                      |
@@ -710,6 +738,10 @@ traffic 交通
 | 養魚業                       | 園藝業       | 副業          | 互助會、 同業公會 |
 | ---------------------------- | ------------ | ------------- | ----------------- |
 | pisciculture (Pisces=雙魚座) | horticulture | a side hustle | guild             |
+
+| 管理員，服務員 | 見習生；實習 |
+| -------------- | ------------ |
+| steward        | probation    |
 
 Rephrasing 改變措辭 替代字語料小抄
 
@@ -733,13 +765,13 @@ Rephrasing 改變措辭 替代字語料小抄
 | strong/tough        | adj. 適應力強的 (有彈性的)             | resilient spirit 堅韌的精神                                             | the community demonstrated its resilient spirit by coming together to rebuild and recover.                                    |
 | terrible            | adj. 可恨的 糟糕的                     | abominable                                                              | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                 |
 | important           | adj. 重要的 凸起的 顯眼的              | prominent                                                               | very prominent people 名人 / play prominent part 扮演重要的一環                                                               |
-| important           | adj. 至關重要的                        | imperative                                                              | Addressing climate change is imperative for the future of our planet.                                                         |
+| important           | adj. 緊急迫切的                        | imperative                                                              | Addressing climate change is imperative for the future of our planet.                                                         |
 | important           | adj. 至關重要的                        | momentous                                                               | Addressing climate change is imperative for the future of our planet.                                                         |
 | emotional           | adj. 情深的，多情的；感情用事的        | sentimental                                                             | She kept all the old photographs for sentimental reasons. 她保存所有這些舊照片是出於情感上的緣故。                            |
 | emotional           | adj. 易被感動的；易受影響的            | susceptible [səˋsɛptəb!]                                                | They persuade susceptible teenagers to part with their money. 他們勸說這些易被感動的年輕人捐出他們的錢                        |
 | consist of          | vt. 包含 組成                          | A comprises N1 and N2                                                   | The class is comprised mainly of Italian and French students 這個班主要由意大利和法國學生組成                                 |
-| use up              | vt. 耗盡                               | exhaust                                                                 | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
-| use up              | vt. 耗盡(精力、金錢、資源)             | deplete                                                                 | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
+| used up             | vt. 耗盡                               | exhaust                                                                 | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
+| used up             | vt. 耗盡(精力、金錢、資源)             | deplete                                                                 | How long will it be before the world's fuel supplies are exhausted? 再過多久地球的燃料就會耗盡？                              |
 | adapt               | vi.vt. 習慣於新興科技                  | acclimatize [əˋklaɪmə͵taɪz] to emerging technologies                    | it helps employees acclimatize to emerging technologies.                                                                      |
 | difficult           | adj. 錯綜複雜的；難理解的              | an intricate problem                                                    | The watch mechanism is extremely intricate and very difficult to repair.                                                      |
 | save                | vt. 解救、脫身                         | extricate                                                               | The watch mechanism is extremely intricate and very difficult to repair.                                                      |
@@ -747,6 +779,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | obstacle            | n. 威懾力量；制止物                    | act/serve as a deterrent to N                                           | Tougher prison sentences may act/serve as a deterrent to other would-be offenders. 從嚴判決可以起到震懾其他潛在犯罪者的作用。 |
 | fascinated/fancy    | n. 迷人的                              | be intrigued by                                                         | she was intrigued by his story 她被他的故事迷住了                                                                             |
 | fascinated/fancy    | n. 迷人的                              | N is too enticing to refuse                                             | she was intrigued by his story 她被他的故事迷住了                                                                             |
+| fascinated/fancy    | n. 鑽研，探討                          | delve deeply into N                                                     | she was intrigued by his story 她被他的故事迷住了                                                                             |
 | happy               | vi.vt. 高興 欣喜                       | rejoice [+at/over-N][+to-v][+that]                                      | I rejoice to hear of your promotion. 聽說你高升我非常高興 / Let us rejoice together on your success. 讓我們共同慶祝你的成功   |
 | future              | n. 前景 預期                           | prospect                                                                | The prospects of the car industry are brightening. 汽車工業前途看好                                                           |
 | poor                | adj. 貧困                              | impoverished families                                                   | an impoverished young actor. 赤貧的年輕演員                                                                                   |
@@ -791,8 +824,10 @@ Rephrasing 改變措辭 替代字語料小抄
 | forever             | n. 活在永久幸福當中                    | live in perpetual happiness                                             | Embracing gratitude and mindfulness can lead one to live in perpetual happiness                                               |
 | company             | n. 公司、機構                          | establishment(s)                                                        | Embracing gratitude and mindfulness can lead one to live in perpetual happiness                                               |
 | superficial         | n.[U] 過度虛榮心                       | excessive vanity (注意不加s)                                            | Her excessive vanity often blinds her to the beauty in others, leading to missed opportunities for genuine connections.       |
+| superficial         | adj. 不真誠，不真實                    | inauthentic behavior                                                    | Her excessive vanity often blinds her to the beauty in others, leading to missed opportunities for genuine connections.       |
 | waste               | n. 奢侈消費                            | extravagant consumption of N                                            | The extravagant consumption of luxury goods by the elite ignores the plight of those struggling with poverty.                 |
 | corner              | n.[C] 破壞壟斷                         | break/broke monopoly/monopolies on N                                    | The explosion of the Russian atomic bomb broke the American monopoly on nuclear weapons.                                      |
+| corner              | n.[C] 利用壟斷                         | exploit a monopoly                                                      | The explosion of the Russian atomic bomb broke the American monopoly on nuclear weapons.                                      |
 | dead                | n.[U] 破瓦殘礫，建築物殘骸             | debris                                                                  | The demise of the company was sudden and unexpected. 該公司出人意料地突然倒閉了。                                             |
 | dead                | n.[C] 滅亡、沒落                       | demise of N / let to one's demise                                       | The demise of the company was sudden and unexpected. 該公司出人意料地突然倒閉了。                                             |
 | overpower           | vt. 戰勝(戰爭、疾病)                   | have vanquished N                                                       | The demise of the company was sudden and unexpected. 該公司出人意料地突然倒閉了。                                             |
@@ -814,6 +849,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | doable              | n. 可行方案                            | feasible approach                                                       | Implementing a feasible approach to renewable energy production is essential for combating climate change effectively.        |
 | faster freight      | n. 加速物流速度                        | facilitate logistics                                                    | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
 | strategy            | n. 對策；反措施，應對措施              | countermeasure                                                          | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
+| strategy            | n. 驚人的 AI 科技成長                  | phenomenal growth in AI technology.                                     | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
 | strategy            | n. 失職行為                            | malpractice(s)                                                          | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
 | strategy            | n. 超收電費                            | prevent the government from overcharging electricity bills              | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
 | strategy            | n. 跨領域學習                          | adopt interdisciplinary studies                                         | It also offered to facilitate the logistical arrangements and to render other support to the secretariat.                     |
@@ -836,46 +872,49 @@ Rephrasing 改變措辭 替代字語料小抄
 | but                 | adv. 但是，                            | nevertheless/nonetheless/however                                        | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
 | but                 | adv. 歸因於，                          | be ascribed/contribute to/be attributed to/give rise to/due to/owing to | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
 
-| 口說中文 | English                                         | Example                                                                                                                                           |
-| -------- | ----------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 自動自發 | spontaneous behavior                            | I travels to different countries helped me develop a spontaneous appreciation for new cultures and experiences, enriching my perspective on life. |
-| 激起潛能 | awaken my true potential                        | It has helped awaken my true potential.                                                                                                           |
-| 開拓視野 | broaden my horizons                             | Traveling to different countries helped me broaden my horizons.                                                                                   |
-| 排除萬難 | Against all the odds                            | Against all the odds, I managed to build a successful business from scratch.                                                                      |
-| 擴展社交 | expand my social circle                         | It has helped expand my social circle.                                                                                                            |
-| 包容文化 | accommodate different cultures                  | It's essential for businesses to accommodate different cultures to foster inclusivity.                                                            |
-| 放棄慾望 | relinquish the desire to                        | When you relinquish the desire to control your future, you can have more happiness.                                                               |
-| 竭盡全力 | with all my might                               | Despite the exhaustion, I pushed forward with all my might to reach the finish line.                                                              |
-| 無私奉獻 | selfless dedication                             | They demonstrated selfless dedication to the patients.                                                                                            |
-| 實行責任 | undertake the responsibilities for my actions   | They can undertake the primary responsibility for their own development.                                                                          |
-| 開發技能 | develop specialties                             | They can undertake the primary responsibility for their own development.                                                                          |
-| 突破極限 | reach my momentous breakthrough                 | They can undertake the primary responsibility for their own development.                                                                          |
-| 嚴重挫敗 | devastating/overwhelming frustrations/setbacks  | They can undertake the primary responsibility for their own development.                                                                          |
-| 永恆幸福 | the key to everlasting happiness                | Understanding oneself and cultivating meaningful relationships is often considered the key to everlasting happiness.                              |
-| 小眾市場 | a niche market                                  | You have to create a niche market for your products. 你必須為你的產品創造出利基市場                                                               |
-| 空前成功 | a thorough success                              | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 將功贖罪 | have a chance to redeem myself                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 缺乏動力 | unmotivated and uninspired                      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 廣泛主題 | is a broad spectrum of topics                   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 沉浸於此 | immersed in the environment of N                | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 緊密融洽 | a close-knit family/friendship                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 接觸戶外 | inhale fresh air and bask/bathe in the sun      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 有所懷疑 | cast doubt on N                                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 想像豐富 | is fertile of imagination                       | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 更高層次 | take our life to the next level                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 補充知識 | replenish knowledge                             | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 獲得成就 | develop a sense of achievement/accomplishment   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 體貼他人 | be considerate to others                        | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 同意觀點 | I fully endorse N                               | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 有系統的 | be more systematic in the way that              | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 擊退詐騙 | crack down a fraud/scam syndicate               | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 蓄意破壞 | deliberate infliction of damage on a city is .. | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 口說中文 | English                                            | Example                                                                                                                                           |
+| -------- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 自動自發 | spontaneous behavior                               | I travels to different countries helped me develop a spontaneous appreciation for new cultures and experiences, enriching my perspective on life. |
+| 激起潛能 | awaken my true potential                           | It has helped awaken my true potential.                                                                                                           |
+| 開拓視野 | broaden my horizons                                | Traveling to different countries helped me broaden my horizons.                                                                                   |
+| 排除萬難 | Against all the odds                               | Against all the odds, I managed to build a successful business from scratch.                                                                      |
+| 擴展社交 | expand my social circle                            | It has helped expand my social circle.                                                                                                            |
+| 包容文化 | accommodate different cultures                     | It's essential for businesses to accommodate different cultures to foster inclusivity.                                                            |
+| 放棄慾望 | relinquish the desire to                           | When you relinquish the desire to control your future, you can have more happiness.                                                               |
+| 竭盡全力 | with all my might                                  | Despite the exhaustion, I pushed forward with all my might to reach the finish line.                                                              |
+| 無私奉獻 | selfless dedication                                | They demonstrated selfless dedication to the patients.                                                                                            |
+| 實行責任 | undertake the responsibilities for my actions      | They can undertake the primary responsibility for their own development.                                                                          |
+| 開發技能 | develop specialties                                | They can undertake the primary responsibility for their own development.                                                                          |
+| 突破極限 | reach my momentous breakthrough                    | They can undertake the primary responsibility for their own development.                                                                          |
+| 嚴重挫敗 | devastating/overwhelming frustrations/setbacks     | They can undertake the primary responsibility for their own development.                                                                          |
+| 永恆幸福 | the key to everlasting happiness                   | Understanding oneself and cultivating meaningful relationships is often considered the key to everlasting happiness.                              |
+| 小眾市場 | a niche market                                     | You have to create a niche market for your products. 你必須為你的產品創造出利基市場                                                               |
+| 空前成功 | a thorough success                                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 將功贖罪 | have a chance to redeem myself                     | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 缺乏動力 | unmotivated and uninspired                         | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 廣泛主題 | is a broad spectrum of topics                      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 沉浸於此 | immersed in the environment of N                   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 緊密融洽 | a close-knit family/friendship                     | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 接觸戶外 | inhale fresh air and bask/bathe in the sun         | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 有所懷疑 | cast doubt(s) on N                                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 想像豐富 | is fertile of imagination                          | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 更高層次 | take our life to the next level                    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 補充知識 | replenish knowledge                                | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 獲得成就 | develop a sense of achievement/accomplishment      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 體貼他人 | be considerate to others                           | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 同意觀點 | I fully endorse N                                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 有系統的 | be more systematic in the way that                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 擊退詐騙 | crack down a fraud/scam syndicate                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 蓄意破壞 | deliberate infliction of damage on a city is ..    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 未來計劃 | always keep a weekly rundown of my future schedule | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 完備計劃 | a systematic and comprehensive schedule            | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 
 | 中文                      | English                                                                |
 | ------------------------- | ---------------------------------------------------------------------- |
 |                           | What's more                                                            |
+| 依我看                    | The way I see it                                                       |
 | 重點是                    | What truely matters                                                    |
 | 事實上                    | As a matter of fact                                                    |
 | 除此之外(負面詞 更糟的是) | and on top of that                                                     |
@@ -1064,6 +1103,9 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - Antibiotics decreased the death rate in the 20th centry
   - Vaccines saves millions of lives during the pandemic
   - Monkeypox was vanquished in 2023 (within one year)
+  - The Prohibition era 美國禁酒令 - Making Moonshine had become illegal. Facilitate the growth of Coca-Cola which was merely in a niche market
+  - smallpox 天花
+  - chickenpox 水痘
 - Music
   - "We Are The World" by Michael Jackson in 1985 to save children starvation in Africa
 - Greate invention in past 100y
@@ -1120,7 +1162,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - the three years economic recession (The Great Depression) started in 1929
   - led to undernourishment/malnutrition and hunger 營養不良
 - Website
-  - Black markets on Dark Web 暗網黑市
+  - Black markets on Dark Web 暗網黑市 -- illicit drugs/firearms 非法藥物/槍支
   - exploit the loophole(s) 鑽法律漏洞
 - Education 教育
   - awakening the true potential of students through comprehensive approaches
@@ -1129,7 +1171,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - STEM Education 製式化跨理工科整合教學(較有工作機會) vs. interest-driven courses 有興趣的科目
 - Traffic 交通
   - electric vehicle powered by sustainable energy and alleviate emissions of CO2
-  - Reduce traffic congestion using autonomous trucks reshaping the freight(貨運) industry
+  - Reduce traffic congestion using autonomous trucks and reduce the freight bills
   - encouraging public transportation
   - dashcam
   - GPS navigation and Maps on the Windshield/Helmet/Apple Vision Pro
@@ -1171,8 +1213,14 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - Video game 電玩遊戲
   - The Day Before made with Unreal Engine 5 by a Russian company called Fntastic turned out to be a fraud/scam syndicate, eventually shut down in early 2024
 - War 戰爭
-  - the Holocaust (小寫 = 大屠殺，大寫 = 二戰猶太人太屠殺) = carnage [ˋkɑrnɪdʒ] = genocide
+  - the Holocaust (小寫 = 大屠殺，大寫 = 二戰猶太人太屠殺) = carnage [ˋkɑrnɪdʒ] = genocide = decimate (vt.成批殺死)
   - Racial segregation 美國種族隔離
+  - Thucydides Trap 修昔底德陷阱 (eg. The Russia–Ukraine war/World War 3) - a political term which describes an apparent tendency towards war when an emerging power threatens to displace an existing great power as a regional or international hegemon.
+  - The Final Solution 最終解決方案 - Nazi Germany's plan for the genocide of individuals they defined as Jews during World War II
+- fraud/scam syndicate 政商、吸金詐騙(集團)
+  - Theranos (therapy+diagnosis) 血液騙局 - founded by Elizabeth Holmes, was considered to be "the next Steve Jobs", but a whistleblower debunked the all company's blood test that required very small amounts of blood is a fraud
+  - Peter Principle 彼得定律 - is a concept in management. Employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent
+  - Tacitus Trap 塔西佗陷阱 - is a political theory, which describes a situation where an unpopular government is hated no matter what it does and whether it is right or wrong.
 
 # 標點符號 (Punctuation)
 
@@ -1928,6 +1976,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - break out (v.) = outbreak (n.) 戰爭爆發、病毒爆發
 - build up (v.) = buildup of N (n.) 建構；組成
 - crack down (v.) = crackdown(s) (n.) on N 打擊；鎮壓；制裁
+- spring off (v.) 彈出 ； offspring (n.) 後代
 - preserve vs. reserve vs. conserve 保存
   - preserve 保存，保留 (這個字最常用)
   - reserve 保存(為了未來、訂位、存錢)
@@ -1942,7 +1991,6 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - stranded [ˋstrændɪd] 船隻擱淺的；（因缺乏交通工具、金錢等）滯留的，被困住的
 - distort [dɪsˋtɔrt] vt.(物理的)扭曲，扭歪；歪曲；曲解(意思)
 - devoid [dɪˋvɔɪd] adj.缺乏的；沒有的
-- maneuver [məˋnuvɚ] n.[C]（部隊等的）調動；機動；【軍】軍事演習，機動演習
 - principle n.原理，原則 vs. principal adj.首要的 n.校長；本金
 - premier [ˋprimɪɚ] adj.首要的，最大的 n. 行政院長 = prime minister 內閣總理 vs. premiere [prɪˋmjɛr] n. 首映
 - rude 粗魯 vs. crude [krud] 粗糙的，粗陋的
@@ -1964,7 +2012,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - in (high/great) demand 非常需要的; 受歡迎的 vs. on demand 隨選即用，隨買即用
 - gregarious [grɪˋgɛrɪəs] adj. 群居性的；叢生的
 - ponder [ˋpɑndɚ] vi.vt. 沉思，默想
-- rundown [ˋrʌn͵daʊn] -- n.精華、概要；減少，衰退
+- rundown [ˋrʌn͵daʊn] -- n.精華、概要；時間表；減少，衰退
 - tutelage [ˋtjut!ɪdʒ] n.保護；監護；指導
 - mainstay [ˋmen͵ste] n.唯一的依靠；支柱
 - caravan [ˋkærə͵væn] n.（來往於沙漠的）商隊

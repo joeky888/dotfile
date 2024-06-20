@@ -65,6 +65,13 @@
     },
     "git.ignoreMissingGitWarning": true,
     "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact",
+        "typescript": "typescriptreact",
+        "vue-html": "html",
+        "ejs": "html",
+    },
     "editor.snippetSuggestions": "top",
     "terminal.integrated.fontSize": 18,
     "workbench.editor.enablePreview": false,
@@ -86,6 +93,9 @@
     },
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
     "[html]": {
         "editor.defaultFormatter": "vscode.html-language-features"
     },
@@ -97,6 +107,9 @@
     "[yaml]": {
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
+    },
+    "[css]": {
+        "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
     },
     "[rust]": {
         "editor.defaultFormatter": "rust-lang.rust-analyzer",

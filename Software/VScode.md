@@ -38,6 +38,7 @@ Extension
 * hediet.vscode-drawio
 * serayuzgur.crates
 * ms-kubernetes-tools.vscode-kubernetes-tools
+* bradlc.vscode-tailwindcss
 
 Diff 2 file
 =====

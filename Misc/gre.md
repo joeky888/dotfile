@@ -300,7 +300,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | besotted          | adj.         | 著迷的 癡迷的                                           | [bɪˋsɑtɪd]                                                         |
 | bilious           | adj.         | 壞脾氣的 胃部不適的                                     | [ˋbɪljəs]                                                          |
 | bland             | adj.         | 淡而無味的(食物)；枯燥乏味的(故事)                      | [blænd]                                                            |
-| blatant           | adj.         | 公然的 明目張膽的                                       | [ˋbletnt]                                                          |
+| blatant           | adj.         | 公然的 明目張膽的                                       | [ˋbletnt] 俗麗的,炫耀的 (生物身上的艷麗色彩)                       |
 | bleak             | adj.         | 陰冷的 荒涼的 無希望的                                  | [blik]                                                             |
 | blemish           | vt.n.        | vt.玷污，損毀(名譽) n.污點，缺點                        | [ˋblɛmɪʃ]                                                          |
 | blight            | vt.vi.       | 摧殘，毀壞；使枯萎；使衰退                              | [blaɪt]                                                            |

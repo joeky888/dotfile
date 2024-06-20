@@ -1,5 +1,15 @@
 Integrate Reading
 
+通用字詞
+
+| 中文     | English                         |
+| -------- | ------------------------------- |
+| 證據不足 | due to inadequate evidence      |
+| 推敲推測 | speculated that / too arbitrary |
+| 不可行的 | unfeasible                      |
+| 不可行的 | negated by the speaker          |
+| 無根據的 | is groundless                   |
+
 1. Sending astronauts to Mars 送太空人到火星的困難
 
 | Author            | Lecturer                                          |
@@ -474,3 +484,224 @@ mingle [ˋmɪŋg!] vi.vt. 混合
 - exploitation [͵ɛksplɔɪˋteʃən] n.開採；利用
 - saline [ˋselaɪn] adj.鹹的
 - littered adj.散落的
+
+41. Red palm weevils 同時保育紅棕櫚象鼻蟲以及保護牠們侵略的紅棕櫚
+
+| Author                                           | Lecturer                                                                                            |
+| ------------------------------------------------ | --------------------------------------------------------------------------------------------------- |
+| remove weevils infested with weevils first       | difficult to decide with trees have been infected, may take the signs of yellowing leaves to emerge |
+| placing traps with chemicals to poison the pests | the chemicals may be volatile, rendering the traps ineffective if not regularly replaced            |
+| spray pesticides                                 | they live deep inside the red palm and efficient reproducing                                        |
+
+- infest [ɪnˋfɛst] vt.侵擾；騷擾；寄生
+- weevil(s) [ˋwiv!] n.象鼻蟲
+- volatile [ˋvɑlət!] adj.(液體等)易揮發的；
+- pesticides n.殺蟲劑
+
+42. Controlling tramarisk 抑止檉柳樹(一種入侵性猖獗的灌木)的蔓延
+
+| Author                                           | Lecturer                                                                |
+| ------------------------------------------------ | ----------------------------------------------------------------------- |
+| burning the trees to ashes                       | the seeds will remain and be washed to other areas by rain to regrow    |
+| blocking trees from vital sunlight               | tamarisks will salinize the soil, unfeasible to plant other vegetations |
+| a predator beetle to feed on the tamarisk leaves | the beetle only consumes the leaves from time to time, ineffective      |
+
+- salinize [ˈsælɪnaɪz] vt.鹽化 (這個字僅在英英字典查得到)
+- vegetation n.植被；（總稱）植物
+
+43. Cheatgrass problem 絹雀麥 (源於歐洲的入侵植物)
+
+| Author                                                                  | Lecturer                                                   |
+| ----------------------------------------------------------------------- | ---------------------------------------------------------- |
+| encouraging grass-feeding animals to eat                                | most herbivores do not consume cheatgrass                  |
+| burn down the plants by setting fire in a controllable & manageable way | the seeds will not be destroyed simply by burning          |
+| introducing fungi to restrain the growth                                | fungi have co-existed peacefully with them for a long time |
+
+44. New guinean flat worms 新幾內亞扁蟲(刻意引入為試圖控制對非洲大蝸牛，結果對一些太平洋島嶼上罕見的陸地蝸牛特有動物產生影響)
+
+| Author                                                                                        | Lecturer                                                                           |
+| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| introducing predators such as birds                                                           | local birds actually not really feed on such flatworms due to awful tastes         |
+| using chemicals to hold plague in check                                                       | no powerfully effective pesticides except Lindane(林丹)， but with limited success |
+| fertilizing and rumpling the soil, and kill the worm eggs with rising temperature of the soil | difficult for soil to reach such heat through fertilization                        |
+
+- hold/keep N in check 抑止N -- Please hold your voice in check. 請壓低嗓門。
+- plague(s) [pleg]n.瘟疫[C]；鼠疫
+- rumple [ˋrʌmp!] vt.vi.弄皺；使凌亂 n.褶紋，皺褶
+
+45. Snakehead fish 禁止釋放鱧魚(一種無天敵的掠食性魚類)
+
+| Author                                            | Lecturer                                                |
+| ------------------------------------------------- | ------------------------------------------------------- |
+| designing specific laws                           | the rivers are already teeming with snakehead fishes    |
+| educate the fishermen to help catch the pest fish | lead to release more snakehead fish for the profits     |
+| resorting to poison                               | poison other creatures too, cause negative consequences |
+
+- teeming [ˋtimɪŋ] a.[Z]充滿的；擁擠的；熱鬧的
+
+46. Florida pythons 佛州蟒蛇威脅當地
+
+| Author                                                   | Lecturer                                                                                  |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| take advantage of dogs' keen sense of smell to find them | Florida as many watery areas, conceal the smell,and dogs are vulnerable in water          |
+| set up traps across the state                            | could catch wrong targets because pythons tend to ambush preys rather than slither around |
+| granting locals to hunt for pythons                      | only 68 pythons have been caught, while there were 1000 snake hunters, low-efficiency     |
+
+- slither [ˋslɪðɚ] n.蜿蜒地滑行
+
+47. Yellow crazy ants 長足捷蟻 (世界百大外來入侵種之一，曾入侵澳大利亞和聖誕島)
+
+| Author                                                                              | Lecturer                                                                                               |
+| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| apply low-concentration chemicals to the infested area will keep the ants' in check | the poisonous chemical could subject other ants beneficial to human beings                             |
+| slash the broad-leafed trees, which yellow crazy ants favorable habitat             | removing trees will create more sunlight, which is a favorable condition for the crazy ants to prosper |
+| reducing human activities, which carried a magnetic pull for ants                   | impacts on local tourism, economy the scientific research                                              |
+
+- low-concentration chemicals 低濃度化學藥劑
+
+  48.False bamboo 南天竹 (入侵物種，全株有毒。若誤食會產生全身興奮、脈搏不穩、血壓下降、肌肉痙攣、呼吸麻痹)
+
+| Author                                            | Lecturer                                                                                                 |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| uprooting the plants as the very first start      | the plants are very resilient, laborious and time-consuming                                              |
+| introduce chemicals to the infested area          | the chemical solution suggests extra money and local gov may not fund the project                        |
+| introduce predators to feed on the invasive plant | predators feed on false bamboo only inhabit warmer habitats, while the infested areas are windy or humid |
+
+- uproot [ʌpˋrut] vi.vt.連根拔；根除；滅絕
+- resilient [rɪˋzɪlɪənt] adj.有彈力的；迅速恢復精力的；適應力很強的
+- laborious [ləˋborɪəs] adj.費力的，吃力的
+
+49. Russian Thistles 俄羅斯薊(又叫風滾草、刺沙蓬，源於俄羅斯以及中國大陸的新疆等地，一般生於鹽湖邊和含鹽質土壤的草地。
+    雖然是一種有害的雜草，會造成水土流失，不過在乾旱貧瘠的放牧地卻是一種很有用的牲畜飼料。)
+
+| Author                                                                         | Lecturer                                                                                     |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------- |
+| could serve as food for the cattle, enhance the nutrients they get             | contains substantial nitrogen, harmful for the cattle                                        |
+| the fast reproduction rate can create habitats for the animals                 | catch fire easily, may subject to wildfire in drier seasons                                  |
+| detoxify the local soil by generating a special fungus that removes the toxins | thistles absorb much water and cause soil erosion easily, wind can also carry away the fugus |
+
+- detoxify [diˋtɑksə͵faɪ] vt.解毒；使去毒
+- nitrogen [ˋnaɪtrədʒən] n.氮
+
+50. Lion fish 獅子魚 (入侵物種，肆虐加勒比海吃光珊瑚礁原生魚)
+
+| Author                                                               | Lecturer                                                                                                   |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| hiring more manpower so as to protect the coral reef system          | most fish-catchers faild to indentify the real lion fishes, and diminish the bio-diversity                 |
+| introduce into local fish markets for sale                           | lead to lion-fish farming with many lion-fishes fleeing from the farms and result in more serious invasion |
+| encouraging people to fish this creature, for its nutritional values | contains microorganisms that are toxic and detrimental to human beings, including vomiting                 |
+
+- coral reefs n.珊瑚礁
+- vomiting [ˈvɒmɪtɪŋ] n. 嘔吐
+
+51. Velvet trees 天鵝絨樹(又叫米氏野牡丹，入侵夏威夷物種。一個結果季可產出二十萬顆種子，成長之後長出的大片葉子又將遏制其下的植物的生長)
+
+| Author                                                            | Lecturer                                                                           |
+| ----------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| mobilizing people to updroot or cut the trees                     | under layers of soil will exposed to sunlight, and catalyze the growth             |
+| introducing parasitic fungus, will help contain the trees' growth | the fungus only survive in a moist environment, not in Hawaii                      |
+| wash off the seeds on their clothes and shoes                     | birds feeding on the fruits of the trees will still carry the seeds to many places |
+
+- mobilize [ˋmob!͵aɪz] vi.vt.動員
+- catalyze [ˋkætə͵laɪz] vt.【化】催化 = stimulate
+- parasitic [͵pærəˋsɪtɪk] adj.寄生的
+
+52. Deep sea mining 深海採礦的危險
+
+| Author                                                                               | Lecturer                                                                                    |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| sea floors harbor rich volumes of metals                                             | current technology cannot seperate useful metal from the sediment, and transported properly |
+| will not harm marine creatures, because the job is conducted 2-km away from the vent | the chemicals will spread with currents(水流), sway the sea organisms                       |
+| laws and international organizations will help contain possible pollution            | far off the coastline, rendering the regulations ineffective                                |
+
+- harbor [ˋhɑrbɚ] vi.vt.庇護；藏匿 n.[C,U]港灣，海港；避難所
+- vent [vɛnt] n.漏孔；通風孔，排氣孔
+- sway vi.vt. 搖動，搖擺；使動搖；影響
+
+53. Whitehead's first airplane 懷海德(德裔美籍科學家，聲稱 1901 年飛機試飛成功，早於萊特兄弟 1903 年首次試飛)
+
+| Author                                                        | Lecturer                                                                                                      |
+| ------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| belief merely based on several vague photos                   | photos were due to the primitive printing techniques, the rapid speed of flight and the dim light at daybreak |
+| one of his plane's wings and tires couldn't work nor take off | reconstructed aircrafts based on the design and result in success                                             |
+| not very efficient, dimming the odds of inventing             | not the design but the technology failing to catch up                                                         |
+
+54. Wind turbines 風力發電機建於美加五大湖地區的問題
+
+| Author                                                                               | Lecturer                                                                                    |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| will contribute greatly to economy by creating more employment                       | running and maintaining the turbines cost too much                                          |
+| carry less erosive fresh water, reducing the fees than that of built around seawater | freezes the water easily in winter, impose greater damage on the generators and higher fees |
+| fresh water could be recycled, save costs on water                                   | certain chemicals are added to water, pollute the sources for daily use                     |
+
+- erosive [ɪˋrosɪv] adj.腐蝕（性）的；浸蝕（性）的
+
+55. Erie Canal 伊利運河(位於紐約的運河)興建問題
+
+| Author                                                                                                             | Lecturer                                                                                           |
+| ------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------- |
+| construction was delayed as the workers subjected to diseases like malaria, because of mosquiitoes                 | it was proceeded during winter months, no mosquitoes                                               |
+| shortage of workers posed a barrier to the construction, people low willingness to work in such adverse conditions | solved by migrants as they were large in number and eager for job opportunities                    |
+| not useful due to sparsely populated to commence trade                                                             | was due to the lack of proper transportation, once the construction was done, ushered the commerce |
+
+- malaria [məˋlɛrɪə] n.[U]瘧疾；汙濁的空氣，瘴氣
+- usher [ˋʌʃɚ] n.vi.vt. 接待(員)
+- commerce [ˋkɑmɝs] n.[U]商業，貿易，交易
+
+56. Desalination of seawater 海水淡化的問題
+
+| Author                                                          | Lecturer                                                                          |
+| --------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| harmful for mariine creatures                                   | installing speakers sending out pre-recorded sounds of predators, or using lights |
+| requres a lot of fossil fuels, then global warming              | replaced by solar power, which is abundant in the area                            |
+| the salt will be dumped again into the sea, imperil the ecology | will be processed into salt for industry use                                      |
+
+- imperil [ɪmˋpɛrɪl] vt.危及
+- reservoir [ˋrɛzɚ͵vɔr] 水庫
+
+57. Compact fluorescent lamps (CFLs) 省電燈泡比較好
+
+| Author                                              | Lecturer                                                                     |
+| --------------------------------------------------- | ---------------------------------------------------------------------------- |
+| CFLs are not idal because of the pricier tag        | durable and can be used for a longer time compare to traditional light bulbs |
+| endanger the environment due to the compositions    | better than light bulbs in terms of energy efficiency                        |
+| carry only single color, not as rich as light bulbs | CFLs today are boasting a great variety of colors                            |
+
+- accusation [͵ækjəˋzeʃən] n.指控，控告
+- depreciation [dɪ͵priʃɪˋeʃən] n.貶值；輕視，貶低
+- pricier tag 【口】較高售價
+
+58. Replacing fossil fuel 替代化石燃料的問題
+
+| Author                                                             | Lecturer                                                                   |
+| ------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| introducing hydrogen-based fuel, whose side effect is purely water | doesn't result in CO2 emissions, the manufacturing process sill burns fuel |
+| adopt bio-fuel extracted from plants                               | estimated need of farmland for 2 million square kilometers                 |
+| introducing a special fuel by processing the carbon in the air     | only theoretically, immature technology                                    |
+
+- supplant [səˋplænt] vt.代替；取代
+- hydrogen-based fuel 氫燃料
+
+59. Genetically modified mosquito 釋放基因改造蚊子的問題
+
+| Author                                                                                   | Lecturer                                                           |
+| ---------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| eliminate the dengue-disseminating mosquitoes will lead to multiplication of other types | won't increase from many empirical observations                    |
+| the bites of these creatures may endanger a defective protein into human bodies          | will neither bite nor lay eggs                                     |
+| genetically modified crops harmed the ecology                                            | still helpful in terms of containing the dengue-causing mosquitoes |
+
+- dengue [ˋdɛŋgɪ] n.登革熱
+- empirical [ɛmˋpɪrɪk!] adj.以經驗（或觀察）為依據的
+- groundless [ˋgraʊndlɪs] adj.無根據的，無理由的；無基礎的
+
+60. Installing outer space solar panels 安裝外太空太陽能板問題
+
+| Author                                                                 | Lecturer                                                                                                  |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
+| will not blocked by the atmosphere on the earth                        | energy in the long run won't be voluminous, and panels will break down after some time, too costly to fix |
+| the chance of meteorite impace is low, with special radar to detect it | vulnerable to fast-traveling star dusts, whose heat and number are very likely to damge to panels         |
+| nature-friendly compared to that of in pristine areas                  | beams gathered by solar panels will damage the ozone layer, endanger the ecology on earth                 |
+
+- voluminous [vəˋlumənəs] adj.長篇的；冗長的；大量的
+- pristine [ˋprɪstin] adj.原始的；清新的；純樸的；未受污染的
+- ozone layer [ˋozon] n.臭氧層

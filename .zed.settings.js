@@ -21,5 +21,14 @@
     "copy_on_select": true,
     "line_height": "standard",
     "font_size": 16
+  },
+  // Deno is my default language server for zed
+  "languages": {
+    "TypeScript": {
+      "language_servers": ["deno", "emmet-language-server", "!typescript-language-server", "!eslint"]
+    },
+    "TSX": {
+      "language_servers": ["deno", "emmet-language-server", "!typescript-language-server", "!eslint"]
+    }
   }
 }
