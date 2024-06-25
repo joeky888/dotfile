@@ -967,8 +967,9 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | infelicitous      | adj.         | 不幸的,不吉的,不適當的                                  | [͵ɪnfəˋlɪsətəs]                                                    |
 | inflammable       | adj.         | 可燃的；易燃的；易激動的；易發怒的                      | [ɪnˋflæməb!]                                                       |
 | inflammatory      | adj.         | 激動的；煽動性的(演說)                                  | [ɪnˋflæmə͵torɪ] anti-inflammatories n.消炎藥 抗炎藥                |
+| genuine           | adj.         | 真誠的；不造作的                                        | [ˋdʒɛnjʊɪn] ⭐️                                                    |
 | ingenuity         | n.           | 心靈手巧；獨創性；巧妙(的裝置)；足智多謀                | [͵ɪndʒəˋnuətɪ] ⭐️                                                 |
-| ingenious         | adj.         | 心靈手巧的；足智多謀的；製作精巧的；巧妙的              | [ɪnˋdʒinjəs] ⭐️                                                   |
+| ingenious         | adj.         | 心靈手巧的；足智多謀的；製作精巧的；巧妙的              | [ɪnˋdʒinjəs] ⭐️ = creative                                        |
 | ingenuous         | adj.         | 純真率直的；天真無邪的                                  | [ɪnˋdʒɛnjʊəs] ⭐️                                                  |
 | ingratiate        | vt.          | 討好；迎合                                              | [ɪnˋgreʃɪ͵et]                                                      |
 | inherent          | adj.         | 內在的；固有的，與生俱來的                              | [ɪnˋhɪrənt]                                                        |
@@ -1320,7 +1321,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | presumption       | n.           | 冒昧；放肆；假定，設想，推測                            | [prɪˋzʌmpʃən]                                                      |
 | presumptuous      | adj.         | 放肆的；冒昧的；專橫的；傲慢的                          | [prɪˋzʌmptʃʊəs]                                                    |
 | preternatural     | adj.         | 超自然的；異常的；不可思議的                            | [͵pritɚˋnætʃərəl]                                                  |
-| prevail           | vi.          | 勝過，戰勝；流行，盛行，普遍                            | [prɪˋvel]                                                          |
+| prevail           | vi.          | 勝過，戰勝；流行，盛行，普遍                            | [prɪˋvel] prevalent a.流行的                                       |
 | prevalent         | adj.         | 流行的(氣氛)，盛行的(疾病)；普遍的(思想)                | [ˋprɛvələnt]                                                       |
 | prevaricate       | vi.          | 支吾其詞；說謊；欺騙                                    | [prɪˋværə͵ket]                                                     |
 | primacy           | n.           | (居於)卓越，第一位；首位；首要性                        | [ˋpraɪməsɪ]                                                        |

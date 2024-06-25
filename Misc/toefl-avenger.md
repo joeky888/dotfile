@@ -9,6 +9,7 @@ Integrate Reading
 | 不可行的 | unfeasible                      |
 | 不可行的 | negated by the speaker          |
 | 無根據的 | is groundless                   |
+| 遺留遺跡 | remnant(s)/remains              |
 
 1. Sending astronauts to Mars 送太空人到火星的困難
 

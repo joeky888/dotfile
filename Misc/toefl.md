@@ -270,7 +270,7 @@ Conclude: 40
 - He professed/signified/asserted/contended/alleged that 他認為...
 - A transcend/outweigh B A 優先於(超越) B
 - All in all, contrary to common beliefs stated by ..., 總而言之，對於..的論述剛好相反，(適合結論)
-- refute = disprove = counter = dispute = contend 反駁
+- refute = disprove = counter = dispute = contend = negate 反駁
 - Provided (that) = If = Suppose (that) = Supposing (that) = Providing (that) 假如
 
 天文學(理論) astronomy (火星跟木星之間的軌道上有 Asteroid belt 主小行星帶)
@@ -341,9 +341,9 @@ Conclude: 40
 
 植物學 Botany
 
-| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | adj.稀缺的    | 繁榮的                | 花粉   | 植物、植被 | 農場；造林地 |
-| ------ | -------- | --------- | -------------- | ------------- | --------------------- | ------ | ---------- | ------------ |
-| sowing | irrigate | fertilize | insulated      | scarce/sparse | flourishing, thriving | pollen | vegetation | plantation   |
+| 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | adj.稀缺的    | 繁榮的                | 植物、植被 | 農場；造林地 |
+| ------ | -------- | --------- | -------------- | ------------- | --------------------- | ---------- | ------------ |
+| sowing | irrigate | fertilize | insulated      | scarce/sparse | flourishing, thriving | vegetation | plantation   |
 
 | 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  | 開花植物/被子植物 | 莖   | 傳花粉昆蟲 |
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
@@ -353,17 +353,21 @@ Conclude: 40
 | -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
 | botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
 
-| 枯萎的；凋謝的                  | 熱帶     | 溫帶氣候          | 寒帶   | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
-| ------------------------------- | -------- | ----------------- | ------ | ------------ | ------ | ----------------------------- |
-| withered/languishing/shrivelled | tropical | temperate climate | frigid | phytochrome  | nectar | absorbent                     |
+| 枯萎的；凋謝的                  | 熱帶     | 溫帶氣候               | 寒帶   | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
+| ------------------------------- | -------- | ---------------------- | ------ | ------------ | ------ | ----------------------------- |
+| withered/languishing/shrivelled | tropical | temperate climate/zone | frigid | phytochrome  | nectar | absorbent                     |
 
-| 孢子  | 蕨類 | 休耕地 | 多年生植物 | 一年生植物 | 黴菌        | 動脈   | 靜脈 | 農藥      |
-| ----- | ---- | ------ | ---------- | ---------- | ----------- | ------ | ---- | --------- |
-| spore | fern | fallow | perennial  | annuals    | mildew/mold | artery | vein | pesticide |
+| (被子植物)花粉 | (裸子植物)孢子 | 蕨類 | 休耕地 | 多年生植物 | 一年生植物 | 黴菌        | 動脈   | 靜脈 | 農藥      |
+| -------------- | -------------- | ---- | ------ | ---------- | ---------- | ----------- | ------ | ---- | --------- |
+| pollen         | spore          | fern | fallow | perennial  | annuals    | mildew/mold | artery | vein | pesticide |
 
-| 纖維素    | vi.vt.發酵 | 葡萄糖  | 分泌/分泌物       | (動)卵巢/(植)子房 |
-| --------- | ---------- | ------- | ----------------- | ----------------- |
-| cellulose | ferment    | glucose | secrete/secretion | ovary/ovaries     |
+| 纖維素    | vi.vt.發酵 | 葡萄糖  | 分泌/分泌物       | (動)卵巢/(植)子房 | 樹年輪       |
+| --------- | ---------- | ------- | ----------------- | ----------------- | ------------ |
+| cellulose | ferment    | glucose | secrete/secretion | ovary/ovaries     | tree ring(s) |
+
+| 草原                     |
+| ------------------------ |
+| grassland/savanna/pampas |
 
 微生物
 
@@ -413,6 +417,10 @@ Chemistry 化學
 | --------- | ----------- | ----------- | ------ | ------ | ------------------------- |
 | barometer | thermometer | seismometer | damp   | arid   | desalt/desalination plant |
 
+| 暴風；風暴 |
+| ---------- |
+| squall     |
+
 地質學 Geology
 
 | 化石   | 化石燃料    | 海拔高度  | 赤道    | 窪地坑、火山口 | 北回歸線         | 南回歸線            |
@@ -439,9 +447,9 @@ Chemistry 化學
 | ------------- | -------------------- | ---------- | ----- | ----------------------- |
 | percolate     | permeable            | crevice    | slope | bog/swamp/wetland/marsh |
 
-| 地下水                            |
-| --------------------------------- |
-| groundwater (注意不是 underwater) |
+| 地下水                            | 凍土地帶，凍原 | 岩礁；沙洲小島 |
+| --------------------------------- | -------------- | -------------- |
+| groundwater (注意不是 underwater) | tundra         | cay            |
 
 Seismology 地震學
 
@@ -467,9 +475,9 @@ Anthropology 人類學
 | ----------- | ------ | ---------------------- | -------------------- | ------------ |
 | Paleolithic | mound  | sovereign              | succession           | yield        |
 
-| 民俗傳說          | 倒塌，推翻 |
-| ----------------- | ---------- |
-| folktale/folklore | topple     |
+| 民俗傳說          | 倒塌，推翻 | 佔優勢的；主要的；突出的 | 雄偉建築；豪華大廈 |
+| ----------------- | ---------- | ------------------------ | ------------------ |
+| folktale/folklore | topple     | predominant/principal    | edifice            |
 
 Psychology 心理學
 
@@ -521,9 +529,9 @@ Math 數學
 | ---------------------- | -------- | ------------ | ------------------- | ---------------------------------- |
 | vestigial/degenerative | hind leg | panorama     | antiquity           | stratum(單)/strata(複)             |
 
-| v. 分層；形成階層 |
-| ----------------- |
-| stratify into     |
+| v. 分層；形成階層 | 聖壇；小廟 | vt.強迫 |
+| ----------------- | ---------- | ------- |
+| stratify into     | shrine     | coerce  |
 
 地理學
 
@@ -573,9 +581,9 @@ Math 數學
 | ------ | -------------- | ---------------- | ---------- | ------------- | ------------- |
 | carbon | preservative   | thermoregulation | thermostat | thermoplastic | thermosetting |
 
-| 使滑潤，上潤滑油 | 漿狀物(紙漿、果醬) |
-| ---------------- | ------------------ |
-| lubricate        | pulp               |
+| 使滑潤，上潤滑油 | 漿狀物(紙漿、果醬) | 黑曜石   | 聚合物  |
+| ---------------- | ------------------ | -------- | ------- |
+| lubricate        | pulp               | obsidian | polymer |
 
 Industry 工業
 
@@ -592,6 +600,10 @@ Architecture 建築學
 | 井架，油井鑽塔 | 走廊                        | 欄杆、扶手 | (圓頂)清真寺   | 水壩 | 水庫      |
 | -------------- | --------------------------- | ---------- | -------------- | ---- | --------- |
 | derrick        | corridor/hallway/passageway | railing    | a domed mosque | dam  | reservoir |
+
+| 下層結構/上層結構           |
+| --------------------------- |
+| substructure/superstructure |
 
 Metallurgy 冶金學
 
@@ -617,6 +629,10 @@ Medical 醫學
 | -------- | -------- | ------------------- | ----------------- | -------- | ---------- |
 | insomnia | autistic | inoculate/vaccinate | anatomize/dissect | vivisect | anesthesia |
 
+| 心電圖機器/心電圖      |
+| ---------------------- |
+| cardiograph/cardiogram |
+
 Life 生活
 
 | pram/stroller | warehouse/depot | houseware          | ventilator        | patio        | balcony          |
@@ -627,15 +643,15 @@ Life 生活
 | ------------------------ | ------- | --------- | ---------- | ------------ | ---------- | --------- |
 | (屋內)固定家具、固定裝置 | 家禽    | 家禽+家畜 | 濾鍋；濾器 | a.戴眼鏡的   | 繼承的遺產 | 婚姻      |
 
-| kinship  | parasol  |
-| -------- | -------- |
-| 親屬關係 | 大遮陽傘 |
+| kinship  | parasol  | avenue   | heirloom | heritage |
+| -------- | -------- | -------- | -------- | -------- |
+| 親屬關係 | 大遮陽傘 | 林蔭大道 | 傳家寶   | 遺留物   |
 
 School 學校
 
-| 學校的全部課程；（一門）課程 | 學費        |
-| ---------------------------- | ----------- |
-| curriculum                   | tuition fee |
+| 學校的全部課程；（一門）課程 | 學費        | 討論                         |
+| ---------------------------- | ----------- | ---------------------------- |
+| curriculum                   | tuition fee | debate/argue/dispute/contend |
 
 Work 辦公/工作
 
@@ -705,9 +721,13 @@ traffic 交通
 | ------------- | ----------------------------- | -------------------- | ----------- |
 | supreme court | driving under influence (DUI) | surplus              | confederacy |
 
-| n.監視，監督 |
-| ------------ |
-| scrutiny     |
+| n.監視，監督 | 青少年罪行；少年犯罪   | 傳記/自傳               | v.(按分量)分配 | v.分配(資源)，分發 |
+| ------------ | ---------------------- | ----------------------- | -------------- | ------------------ |
+| scrutiny     | (juvenile) delinquency | biography/autobiography | alloot         | allocate           |
+
+| v.作偽證/n.偽證(罪) | n.陪審團 | n.陪審團的判決 |
+| ------------------- | -------- | -------------- |
+| perjure/perjury     | jury     | verdict        |
 
 Military 軍事
 
@@ -811,8 +831,15 @@ Rephrasing 改變措辭 替代字語料小抄
 | total               | adj. 徹頭徹尾的，完全的                | a thorough success                                                      | A pragmatic approach to healthcare reform considers both short-term and long-term impacts.                                    |
 | total               | adj. 徹頭徹尾的，完全的                | next-level                                                              | A pragmatic approach to healthcare reform considers both short-term and long-term impacts.                                    |
 | totally             | adv. 徹頭徹尾地，完全地                | I am utterly convinced of N                                             | A pragmatic approach to healthcare reform considers both short-term and long-term impacts.                                    |
+| cure                | n. 保護(避免被政府干擾)                | will safeguard N from government interference                           | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. 某物充滿; 某人精通                  | steeped in N                                                            | Technology is not a panacea for all our problems.                                                                             |
 | cure                | n. 萬能藥；補救之道                    | no panacea to solve it once and for all                                 | Technology is not a panacea for all our problems.                                                                             |
 | cure                | n. 全能                                | not omnipotent                                                          | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. 處於(糟糕狀況)衰退                  | was in the grip of recession                                            | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. (一個人的)成名史                    | a remarkable success story (注意不是 successful)                        | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. 貿易逆差/預算赤字                   | trade deficit/budge deficit                                             | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. 貿易順差                            | trade surplus                                                           | Technology is not a panacea for all our problems.                                                                             |
+| cure                | n. 勞動力不足                          | is deficient in manpower.                                               | Technology is not a panacea for all our problems.                                                                             |
 | bring up            | vt. 培養，促進 (收養的)                | foster skills/knowledge/economy                                         | Investing in education and innovation can help foster a robust economy.                                                       |
 | support             | vt. 支持，支援，強化                   | to sustain N                                                            | Community-driven initiatives are needed to sustain environmental conservation efforts.                                        |
 | over the hills      | ad. 多年來                             | throughout the years                                                    | Throughout the years, their friendship remained unwavering, a constant source of support.                                     |
@@ -908,6 +935,9 @@ Rephrasing 改變措辭 替代字語料小抄
 | 蓄意破壞 | deliberate infliction of damage on a city is ..    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 未來計劃 | always keep a weekly rundown of my future schedule | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 完備計劃 | a systematic and comprehensive schedule            | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 徹底鑽研 | delve into the latest technology                   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 使用王牌 | reveal the trump card                              | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 木已成舟 | The die is/was cast (骰子已擲)                     | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 
@@ -921,6 +951,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 首先其次                  | For one thing, for another thing                                       |
 | 解法是                    | the access/approach/answer/key/solution/shortcut/cut corners to Ving/N |
 | 再想想                    | may have a second thought regarding Ving                               |
+| 若不是                    | If it were not for/Were it not for N (與事實相反的假設                 |
 
 (1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
 the lecture begs to differ and addressed three reasons to argue it.
@@ -1116,8 +1147,11 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - Self-driving car
 - Wathcing tv/Playing games
   - addictive
+  - are preoccupied with tvs/games/media
   - mind development
   - violence
+  - dopamine 多巴胺 hijack mind
+  - myopia 近視
   - don't squander precious time on games
 - Environment
   - eco-friendly
@@ -1154,13 +1188,15 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - Startup 創業
   - Ray Kroc, the entrepreneur and the founder of McDonald's Corporation in 1955
   - he was a milkshake mixer salesman before starting his McDonald's business with indomitable will
-- Agriculture + hunger + healthy food
+- Agriculture + hunger + healthy food 農業 飢餓 超級食物
   - Beyond Meat and Impossible Food - artificial meat 人造肉 (producer of plant-based meat substitutes)
   - Superfood - Insects are a protein-rich source of Superfood
+  - Red king crab - an invasive species, also the largest species of king crab family, rapid proliferation, even have the ability to regenerate lost limbs. Turned into gourmet food (美食), and pricey. China importing massive amounts of Russian crab in 2023
   - Biodiesel - Production from Insects
   - Poor harvest due to on-going war in Ukraine, they have the richest black soil in the world
   - the three years economic recession (The Great Depression) started in 1929
   - led to undernourishment/malnutrition and hunger 營養不良
+  - anti-aging 抗老
 - Website
   - Black markets on Dark Web 暗網黑市 -- illicit drugs/firearms 非法藥物/槍支
   - exploit the loophole(s) 鑽法律漏洞
@@ -1177,6 +1213,10 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - GPS navigation and Maps on the Windshield/Helmet/Apple Vision Pro
   - Electric bikes
   - provide a safety net (政府提供一個安全網)
+  - In 2023, GDP of BRICS, the new syndicate, transcended that of G7. overseas commerce 跨國貿易 has increased
+- Sports 運動
+  - MotoGP - the highest class of motorcycle road racing events
+  - Stake - online casino and sports betting - transact in cryptocurrencies 加密貨幣 rather than traditional currencies, with cryptography 加密技術
 - Job training 就業培訓 (工作被機器人取代)
   - get a substantial government subsidy 取得政府的資金補助(渡過難關)
   - find a part-time job involved remote
@@ -1193,7 +1233,6 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
     - comfortable settings like a coffee machine and a minibar with refreshments (茶點) and ensure the willingness to work
     - reduce office costs
     - reduce traffic congestion, reduce emissions of CO2
-    - setup a minibar at home
     - tap into (利用) the global talent pool (世界人才)
     - self-control, autonomy
     - lead to higher job satisfaction (從業滿足感)
@@ -1202,6 +1241,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
     - boost crew's rapport (友好關係) and morale (士氣)
     - develop a sense of achievement/accomplishment/fulfillment
     - need some incentives(激勵措施)
+    - disabled employees entering workforce
   - drawbacks
     - Social Isolation
     - Communication Challenges
@@ -1218,7 +1258,8 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - Thucydides Trap 修昔底德陷阱 (eg. The Russia–Ukraine war/World War 3) - a political term which describes an apparent tendency towards war when an emerging power threatens to displace an existing great power as a regional or international hegemon.
   - The Final Solution 最終解決方案 - Nazi Germany's plan for the genocide of individuals they defined as Jews during World War II
 - fraud/scam syndicate 政商、吸金詐騙(集團)
-  - Theranos (therapy+diagnosis) 血液騙局 - founded by Elizabeth Holmes, was considered to be "the next Steve Jobs", but a whistleblower debunked the all company's blood test that required very small amounts of blood is a fraud
+  - Theranos (therapy+diagnosis) 血液騙局 - An edifice of lies (大樓般地)重重謊言 - founded by Elizabeth Holmes, was considered to be "the next Steve Jobs", but a whistleblower debunked the all company's blood test that required very small amounts of blood is a fraud, company was prosecuted and CEO was imprisone
+  - Tim Allen, an American actor and comedian - pleaded guilty to felony drug trafficking charges, finds a way to redeemed himself and voices the superhero Buzz Lightyear for the Toy Story franchise
   - Peter Principle 彼得定律 - is a concept in management. Employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent
   - Tacitus Trap 塔西佗陷阱 - is a political theory, which describes a situation where an unpopular government is hated no matter what it does and whether it is right or wrong.
 
@@ -1748,7 +1789,6 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - lateral [ˋlætərəl] adj. 側面的 -- a lateral view 側面圖
 - manifest vt. = show 顯現 展示
 - manifestation [͵mænəfɛsˋteʃən] n.顯示，表明；證實 -- Fever is one manifestation of a cold. 發燒是受涼的一種表現
-- shrine [ʃraɪn] n. 聖壇；小廟
 - niche [nɪtʃ] n. 壁龕(牆壁厚度上建造的凹槽)；合適的職務（或地位等）
 - niche market 縫隙市場、小眾市場
 - pylon [ˋpaɪlɑn] 【空】指示塔；目標塔 【電】高壓線鐵塔 【EDF】生怪的塔
@@ -1867,7 +1907,8 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - faculty [ˋfæk!tɪ] n.精神機能，身體能力；技能；學院、全體教職員
 - hand in 提交，繳交 vs. hand out 分發；免費給予
 - anaesthesia /ˌæn.əsˈθiː.ʒə/ n.【醫】麻醉 -- general anesthesia 全身麻醉
-- defect 缺點，瑕疵 vs. defection n. 背叛
+- defect 缺點，瑕疵 vs. defection n.背叛 vs. defector n.逃兵；背叛者
+- deficit [ˋdɛfɪsɪt] n.不足額；赤字[C] - a foreign trade deficit 外貿逆差
 - rigor [ˋrɪgɚ] n.嚴格；嚴厲；苛刻；精確 -- They were punished with unusual rigour. 他們遭到了非常嚴厲的懲罰。
 - rigorous [ˋrɪgərəs] adj.嚴格的；嚴厲的；苛刻的；精確的 -- He made a rigorous study of the plants in the area. 他對該地的植物進行了慎密的研究
 - foretell [forˋtɛl] vt.預言，預示[+（that）][+wh-] -- We can't foretell how the world will end. 我們不能預言世界將如何終結。
