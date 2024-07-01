@@ -291,9 +291,9 @@ Conclude: 40
 
 動物學 Zoology
 
-| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 靈長類  |
-| ------ | ------- | --------- | --------- | ---------- | ------- |
-| Mammal | Reptile | Amphibian | Arthropod | Entomology | Primate |
+| 哺乳類 | 爬蟲類  | 兩棲類    | 節肢動物  | 昆蟲學     | 脊椎動物   | 靈長類  |
+| ------ | ------- | --------- | --------- | ---------- | ---------- | ------- |
+| Mammal | Reptile | Amphibian | Arthropod | Entomology | Vertebrate | Primate |
 
 | 食草動物  | 食肉動物  | 雜食動物 | 食腐動物  | 食蟲動物    | 軟體動物 | 甲殼動物   | 齧齒目動物 | 鯨豚動物  |
 | --------- | --------- | -------- | --------- | ----------- | -------- | ---------- | ---------- | --------- |
@@ -319,9 +319,9 @@ Conclude: 40
 | ----------- | ---------- | -------------- | --------- | ---------------- | ---------------- |
 | terrestrial | aquatic    | protist        | megafauna | thermoregulation | burrow           |
 
-| 哈欠 | 打嗝   | 羊水           | 橫膈膜    | 三個月以上未出生胎兒 | 子宮 | 恆溫動物  | 冷血動物  |
-| ---- | ------ | -------------- | --------- | -------------------- | ---- | --------- | --------- |
-| yawn | hiccup | amniotic fluid | diaphragm | fetus                | womb | endotherm | ectotherm |
+| 哈欠 | 打嗝   | 羊水           | 橫膈膜    | 三個月以上未出生胎兒 | 子宮        | 恆溫動物  | 冷血動物  |
+| ---- | ------ | -------------- | --------- | -------------------- | ----------- | --------- | --------- |
+| yawn | hiccup | amniotic fluid | diaphragm | fetus                | womb/uterus | endotherm | ectotherm |
 
 | 剛從蛋殼出生的小動物 | 細胞代謝            | 巨溫性(巨大動物較能保持體溫的特性) | 纖維化的 |
 | -------------------- | ------------------- | ---------------------------------- | -------- |
@@ -335,9 +335,13 @@ Conclude: 40
 | ---------------------- | ------- | ------------------ | ----- | ------------------------------- |
 | carcass                | carrion | equilibrium        | vomit | erected crests/fluffed feathers |
 
-| adj.垂頭喪氣的(羽冠垂下的) | 無性生殖             |
-| -------------------------- | -------------------- |
-| crestfallen                | asexual reproduction |
+| adj.垂頭喪氣的(羽冠垂下的) | 無性生殖             | 滯育；發育停止(環境變糟的應對) | 懷孕期間  |
+| -------------------------- | -------------------- | ------------------------------ | --------- |
+| crestfallen                | asexual reproduction | diapause                       | gestation |
+
+| 奶頭，乳頭  | 受孕 (著床)                       | 群居的(動物) | 獨居的(動物) |
+| ----------- | --------------------------------- | ------------ | ------------ |
+| teat/tit(s) | implant/attach/fertilize/conceive | gregarious   | solitary     |
 
 植物學 Botany
 
@@ -365,9 +369,13 @@ Conclude: 40
 | --------- | ---------- | ------- | ----------------- | ----------------- | ------------ |
 | cellulose | ferment    | glucose | secrete/secretion | ovary/ovaries     | tree ring(s) |
 
-| 草原                     |
-| ------------------------ |
-| grassland/savanna/pampas |
+| 草原                     | (植物)發芽    | (植物/學派)(橫向)分支          | 縱分支/分層                  |
+| ------------------------ | ------------- | ------------------------------ | ---------------------------- |
+| grassland/savanna/pampas | bud/germinate | ramify/ramification/branch out | stratification/stratify into |
+
+| n.樹皮 |
+| ------ |
+| bark   |
 
 微生物
 
@@ -479,6 +487,12 @@ Anthropology 人類學
 | ----------------- | ---------- | ------------------------ | ------------------ |
 | folktale/folklore | topple     | predominant/principal    | edifice            |
 
+Myth 神話
+
+| 龐然大物 (聖經的河馬原型) |
+| ------------------------- |
+| behemoth = big            |
+
 Psychology 心理學
 
 | 利己主義者 | 利他主義者 | 利己主義的          | 利他主義的 | 自我中心者，自戀者          | 自戀的                 |
@@ -489,9 +503,9 @@ Psychology 心理學
 | ------------ | ---------- | ----------------- | --------- | ------------------- | ------------------- |
 | empathy      | sympathy   | dispassion/apathy | antipathy | inferiority complex | superiority complex |
 
-| 白人至上        | 喜愛的(結尾) | 討厭的(結尾) |
-| --------------- | ------------ | ------------ |
-| white supremacy | -phile       | -phobe       |
+| 白人至上        | 喜愛的(結尾) | 討厭的(結尾) | 極愛競爭的，極其好勝的 |
+| --------------- | ------------ | ------------ | ---------------------- |
+| white supremacy | -phile       | -phobe       | hypercompetitive       |
 
 Math 數學
 
@@ -535,9 +549,9 @@ Math 數學
 
 地理學
 
-| 中美洲      |
-| ----------- |
-| Mesoamerica |
+| 中美洲      | 環境宜居的；好客的 |
+| ----------- | ------------------ |
+| Mesoamerica | hospitable         |
 
 古生物學 Paleontology /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
@@ -613,17 +627,17 @@ Metallurgy 冶金學
 
 Medical 醫學
 
-| 加護病房                | 深切治療       | 針灸        | 先天性的(疾病) | hypothermia |
+| 加護病房                | 深切治療       | 針灸        | 先天性的(疾病) | 低溫症      |
 | ----------------------- | -------------- | ----------- | -------------- | ----------- |
-| ICU/intensive care unit | intensive care | acupuncture | congenital     | 低溫症      |
+| ICU/intensive care unit | intensive care | acupuncture | congenital     | hypothermia |
 
 | 高血壓       | 低血壓      | 體溫過高     | 體溫過低    | 遠視      | 近視   | 老花眼     |
 | ------------ | ----------- | ------------ | ----------- | --------- | ------ | ---------- |
 | hypertension | hypotension | hyperthermia | hypothermia | hyperopia | myopia | presbyopia |
 
-| 流行病學     | 新陳代謝  | 腹瀉                          | 死亡率                    |
-| ------------ | --------- | ----------------------------- | ------------------------- |
-| epidemiology | metabolic | dysentery/diarrhea(diarrhoea) | mortality rate/death rate |
+| 流行病學     | 新陳代謝             | 腹瀉                          | 死亡率                    |
+| ------------ | -------------------- | ----------------------------- | ------------------------- |
+| epidemiology | metabolic/metabolism | dysentery/diarrhea(diarrhoea) | mortality rate/death rate |
 
 | 失眠症   | 自閉的   | v.接種(疫苗)        | 解剖；仔細分析    | 活體解剖 | 麻醉       |
 | -------- | -------- | ------------------- | ----------------- | -------- | ---------- |
@@ -689,9 +703,9 @@ traffic 交通
 | ----------------------- | ----------------------- | -------------- | --------- | ------- | ------- |
 | social ills/evils/vices | execution of euthanasia | financial debt | senator   | parole  | pardon  |
 
-| 罪犯 n. | 前科犯 n.             | 非法獲得的 adj. | 拘留 v. | 違法者 n. | 消費、支出 n. | 監禁的 adj. |
-| ------- | --------------------- | --------------- | ------- | --------- | ------------- | ----------- |
-| convict | ex-convicts = ex-cons | ill-gotten      | detain  | wrongdoer | expenditure   | confined    |
+| 罪犯 n.                     | 前科犯 n.             | 非法獲得的 adj. | 拘留 v. | 違法者 n. | 消費、支出 n. | 監禁的 adj. |
+| --------------------------- | --------------------- | --------------- | ------- | --------- | ------------- | ----------- |
+| convict/malefactor/criminal | ex-convicts = ex-cons | ill-gotten      | detain  | wrongdoer | expenditure   | confined    |
 
 | 司法系統        | 無期徒刑                          | 再犯 v.  | 打擊犯罪               | 累犯 n.                             |
 | --------------- | --------------------------------- | -------- | ---------------------- | ----------------------------------- |
@@ -725,9 +739,13 @@ traffic 交通
 | ------------ | ---------------------- | ----------------------- | -------------- | ------------------ |
 | scrutiny     | (juvenile) delinquency | biography/autobiography | alloot         | allocate           |
 
-| v.作偽證/n.偽證(罪) | n.陪審團 | n.陪審團的判決 |
-| ------------------- | -------- | -------------- |
-| perjure/perjury     | jury     | verdict        |
+| v.作偽證/n.偽證(罪) | n.陪審團 | n.陪審團的判決 | 情願者/上訴人       | 違反(法律)/侵犯(人權/專利權) |
+| ------------------- | -------- | -------------- | ------------------- | ---------------------------- |
+| perjure/perjury     | jury     | verdict        | petitioner/appelant | infringe/infringement        |
+
+| 小派系        |
+| ------------- |
+| petty faction |
 
 Military 軍事
 
@@ -938,13 +956,16 @@ Rephrasing 改變措辭 替代字語料小抄
 | 徹底鑽研 | delve into the latest technology                   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 使用王牌 | reveal the trump card                              | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 木已成舟 | The die is/was cast (骰子已擲)                     | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 逆轉魔咒 | They may reverse the curse                         | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 
 | 中文                      | English                                                                |
 | ------------------------- | ---------------------------------------------------------------------- |
 |                           | What's more                                                            |
-| 依我看                    | The way I see it                                                       |
+| 依我看                    | The way I see it (口語用法)                                            |
+| 依我看                    | I am under the impression that (文章用法)                              |
+| 依我看                    | From my vantage point (文章用法)                                       |
 | 重點是                    | What truely matters                                                    |
 | 事實上                    | As a matter of fact                                                    |
 | 除此之外(負面詞 更糟的是) | and on top of that                                                     |
@@ -1202,6 +1223,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - exploit the loophole(s) 鑽法律漏洞
 - Education 教育
   - awakening the true potential of students through comprehensive approaches
+  - adapt the syllabus (教學大綱) based on new developments, spice up the class through Gamification (遊戲化)
   - cooperating through group projects
   - developing specialties for the workforce through real-life projects
   - STEM Education 製式化跨理工科整合教學(較有工作機會) vs. interest-driven courses 有興趣的科目
@@ -1234,7 +1256,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
     - reduce office costs
     - reduce traffic congestion, reduce emissions of CO2
     - tap into (利用) the global talent pool (世界人才)
-    - self-control, autonomy
+    - self-control, autonomy, self-disciplined (自律)
     - lead to higher job satisfaction (從業滿足感)
     - childcare at the same time
     - pandemic
@@ -1262,6 +1284,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - Tim Allen, an American actor and comedian - pleaded guilty to felony drug trafficking charges, finds a way to redeemed himself and voices the superhero Buzz Lightyear for the Toy Story franchise
   - Peter Principle 彼得定律 - is a concept in management. Employees are promoted based on their success in previous jobs until they reach a level at which they are no longer competent
   - Tacitus Trap 塔西佗陷阱 - is a political theory, which describes a situation where an unpopular government is hated no matter what it does and whether it is right or wrong.
+  - Gaza Strip/Taiwan is vulnerable to a blockade 加薩走廊/台灣封鎖 - a cyber blockade (journalist reporting/news/media restricting), a economic blockade (restrictions on imports and exports affect businesses, livelihoods), or even a energy blockade (energy shortages resulting from the blockade), use armed force to besiege the area
 
 # 標點符號 (Punctuation)
 
@@ -1777,7 +1800,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - aforementioned/above-metioned adj.前面提及的，上述的 -- in the aforementioned statement
 - quantum leap 大耀進 -- Sending an expedition to explore Mars was considered a quantum leap in mankind's aerospace technology. 人類到火星探險被認為是太空科技的一個大躍進。
 - large-scale weapons of mass destruction 大規模毀滅性武器
-- are condusive [to V|for Ving] 有助於 -- advancements in technology are condusive to preserve/for perserving traditional ways of life 科技進步有助於保留傳統文化
+- are condusive to [to V|for Ving] 有助於 -- advancements in technology are condusive to preserve/for perserving traditional ways of life 科技進步有助於保留傳統文化
 - disseminate [dɪˋsɛmə͵net] vt.散播；宣傳 -- to desseminate knowledge 傳播知識
 - delicacy [ˋdɛləkəsɪ] n.精美；柔軟；嬌嫩；優雅[U]；佳餚 -- caviar and other delicacies 魚子醬及其他美味食品
 - coexist with / go hand in hand with 共存 -- technology can coexist with our traditional skills 科技可以跟傳統文化共存

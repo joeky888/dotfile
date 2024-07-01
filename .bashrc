@@ -389,6 +389,9 @@ alias scrcpy-audio='scrcpy --no-video'
 proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http_proxy" && export ftp_proxy="$http_proxy" ;}
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 mpv-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" - ; }
+mpv-fast-4k() { mpv --hwdec=auto-safe --profile=fast --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --aid=1 --external-file=$(command yt-dlp --get-url -f bestaudio $1) $(command yt-dlp --get-url -f 'bestvideo[height<=2160][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+mpv-fast-2k() { mpv --hwdec=auto-safe --profile=fast --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --aid=1 --external-file=$(command yt-dlp --get-url -f bestaudio $1) $(command yt-dlp --get-url -f 'bestvideo[height<=1440][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+mpv-fast-1080p() { mpv --hwdec=auto-safe --profile=fast --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --aid=1 --external-file=$(command yt-dlp --get-url -f bestaudio $1) $(command yt-dlp --get-url -f 'bestvideo[height<=1080][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
 iina-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ; }
 upgradeConda() {
   OS="Linux"
@@ -587,7 +590,6 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     compdef Forever=sudo # Complete Forever as sudo command
     [ $(command -v apt) ] && compdef apt-fast=apt && compdef app-fast=apt # Complete apt-fast as apt command
     [ $(command -v pacman) ] && compdef yay=pacman && compdef app-fast=pacman # Complete app-fast as pacman command
-    [ $(command -v brew) ] && compdef app-fast=brew # Complete app-fast as pacman command
     compdef CompleteAptCyg apt-cyg # Complete apt-cyg
     unset -f upgrade_oh_my_zsh # Remove this function
     unalias -m '*' # Remove all aliases
