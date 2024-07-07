@@ -706,3 +706,16 @@ mingle [ˋmɪŋg!] vi.vt. 混合
 - voluminous [vəˋlumənəs] adj.長篇的；冗長的；大量的
 - pristine [ˋprɪstin] adj.原始的；清新的；純樸的；未受污染的
 - ozone layer [ˋozon] n.臭氧層
+
+61. Storing solar power 儲存太陽能的隱憂
+
+| Author                                                                | Lecturer                                                                          |
+| --------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| being economical                                                      | still expensive as it entails a complex form to store                             |
+| thermal storage is also applicable                                    | give rise to melted saline materials that erode the metal of the turbine (渦輪機) |
+| stationing grids collecting solar power internationally may also work | technically difficult to arrive at a consensus                                    |
+
+entail vt.承擔
+thermal [ˋθɝm!] adj.熱的；熱量的
+turbine [ˋtɝbɪn] n.渦輪機
+station vt.部署，配置 n.車站
