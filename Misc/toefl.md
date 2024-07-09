@@ -650,9 +650,14 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - The Prohibition era 美國禁酒令 - Making Moonshine had become illegal. Facilitate the growth of Coca-Cola which was merely in a niche market
   - smallpox 天花
   - chickenpox 水痘
-- Music
+- Music 音樂
   - "We Are The World" by Michael Jackson in 1985 to save children starvation in Africa
-- Greate invention in past 100y
+- Art 藝術
+  - San Diego Comic-Con - a non-profit comic book convention held annually in San Diego since 1970
+  - get a substantial government subsidy [ˋsʌbsədɪ] 取得政府的資金補助(渡過難關)
+  - and replicate a successful business model such as San Diego Comic-Con
+  - and boost tourism
+- Great invention in past 100y 百年大發明
   - Automobiles
   - satellite
   - smartphone
@@ -710,6 +715,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - the three years economic recession (The Great Depression) started in 1929
   - led to undernourishment/malnutrition and hunger 營養不良
   - anti-aging 抗老
+  - refined foods 精致食物、超加工食品
 - Website
   - Black markets on Dark Web 暗網黑市 -- illicit drugs/firearms 非法藥物/槍支
   - exploit the loophole(s) 鑽法律漏洞

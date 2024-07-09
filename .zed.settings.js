@@ -25,10 +25,20 @@
   // Deno is my default language server for zed
   "languages": {
     "TypeScript": {
-      "language_servers": ["deno", "emmet-language-server", "!typescript-language-server", "!eslint"]
+      "language_servers": [
+        "deno",
+        "emmet-language-server",
+        "!typescript-language-server",
+        "!eslint"
+      ]
     },
     "TSX": {
-      "language_servers": ["deno", "emmet-language-server", "!typescript-language-server", "!eslint"]
+      "language_servers": [
+        "deno",
+        "emmet-language-server",
+        "!typescript-language-server",
+        "!eslint"
+      ]
     }
   }
 }
