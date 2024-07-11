@@ -2296,7 +2296,7 @@ GRE 學霸字彙--高頻搭配詞
 | intricate interplay             | 複雜的互動關係             |                                  |
 | intrinsic factors               | 內部的要素                 |                                  |
 | intrinsic value                 | 固有的價值                 |                                  |
-| introspective leader            | 好自省的領導者             | [͵ɪntrəˋspɛktɪv]                 |
+| introspective leader            | 好自省的、內省的領導者     | [͵ɪntrəˋspɛktɪv]                 |
 | intrusive lighting              | 擾人的燈光                 | [ɪnˋtrusɪv]                      |
 | intrusive question              | 冒犯人的問題               | [ɪnˋtrusɪv]                      |
 | intuitive judgment              | 直覺的判斷                 | [ɪnˋtjʊɪtɪv]                     |

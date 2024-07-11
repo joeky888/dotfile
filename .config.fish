@@ -346,6 +346,8 @@ if not test -e $HOME/.nix-channels
   echo 'http://nixos.org/channels/nixpkgs-unstable nixpkgs' > $HOME/.nix-channels
 end
 
+
+# Load grc and completions
 type -q helm; and helm completion fish 2>/dev/null | source
 type -q kubectl; and kubectl completion fish | source
 
@@ -369,3 +371,7 @@ if type -q grc
     end
   end
 end
+
+# Load arkade
+set -U fish_user_paths $HOME/.arkade/bin $fish_user_paths
+

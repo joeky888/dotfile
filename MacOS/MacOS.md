@@ -32,7 +32,7 @@ Post-installed
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
 * $ xcode-select --install
-* $ brew install sevenzip go node fnm ripgrep fd erdtree fastfetch onefetch bottom
+* $ brew install neovim sevenzip go node fnm ripgrep fd erdtree fastfetch onefetch bottom
 * $ brew tap homebrew/cask-versions
 * $ brew install --cask font-noto-sans-cjk font-twitter-color-emoji font-ubuntu-mono-nerd-font alacritty visual-studio-code mpv docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput wpsoffice chatgpt
 * $ brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune=all && brew doctor
