@@ -14,7 +14,7 @@ Setting
   * Sans-serif font -> Noto Sans CJK TC
   * Fixed-width font -> Noto Sans Mono CJK TC
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
-* Settings -> Enable DOH (DNS over https) and use Cloudlare DNS
+* Settings -> Enable DOH (DNS over https) and Add Custom DNS -> Enter "https://cloudflare-dns.com/dns-query" (Only this way it will respect /etc/hosts)
 * Settings -> Enable Battery saver
 
 Opera GX Only

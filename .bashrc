@@ -95,7 +95,7 @@ elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZS
   exec zsh
 fi
 
-export VISUAL="vim"
+export VISUAL="nvim"
 export EDITOR="$VISUAL"
 export PYTHONIOENCODING="UTF-8" # Python2 UTF8
 export PYTHONUTF8=1 # Python3 UTF8
