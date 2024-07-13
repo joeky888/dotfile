@@ -734,6 +734,8 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - Electric bikes
   - provide a safety net (政府提供一個安全網)
   - In 2023, GDP of BRICS, the new syndicate, transcended that of G7. overseas commerce 跨國貿易 has increased
+- Business
+  - Xiaomi 冒牌貨但成功 - a Chinese designer and manufacturer - initially gained attention for producing cheap knockoffs like smartphones, which once were considered cheaper alternatives to brand like Apple, has become a major player in the global smartphone market. In 2023, they began to sell electric vehicles
 - Sports 運動
   - MotoGP - the highest class of motorcycle road racing events
   - Stake - online casino and sports betting - transact in cryptocurrencies 加密貨幣 rather than traditional currencies, with cryptography 加密技術
