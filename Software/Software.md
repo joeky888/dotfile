@@ -557,6 +557,7 @@ Ideas to be done
     * Websocket for browser
   * mobile and browser can be in the same room
   * Ingress domain/0 forward to service selector: statefulset.kubernetes.io/pod-name: app-0 # /0 -> app-0; /1 -> app-1
+  * Crossbeam/Disruptor-rs broadcasting
 * KCP/Websocket + WebRTC multiplayer game
   * Each webassembly code runs in a separated web worker
     * Frontend + http - Main thread
