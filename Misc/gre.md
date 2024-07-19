@@ -35,9 +35,9 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | ------------- | ---------- | ------------------------ | ----------------- | ---------------- |
 | bureaucratism | chauvinism | laissez faire            | cynic             | skepticism       |
 
-| 狂熱者         | (神)不可知論(的) | 實用主義、功利主義 | 武力外交主義/沙文主義 | 犬儒主義/憤世嫉俗、嘲笑主義 |
-| -------------- | ---------------- | ------------------ | --------------------- | --------------------------- |
-| lunatic fringe | agnostic(ism)    | utilitarianism     | jingoism              | cynicism                    |
+| 狂熱者         | (神)不可知論(的) | 實用主義、功利主義 | 武力外交主義/軍國主義(者) | 犬儒主義/憤世嫉俗、嘲笑主義 |
+| -------------- | ---------------- | ------------------ | ------------------------- | --------------------------- |
+| lunatic fringe | agnostic(ism)    | utilitarianism     | jingoism/jingoist         | cynicism                    |
 
 ## 頑固的(主義)、過時的
 
@@ -92,6 +92,22 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | interminable | tedious    |
 | ------------ | ---------- |
 | 冗長的       | 乏味冗長的 |
+
+限制、抑制 (比完全禁止稍弱的詞)
+
+| curb/kerb | check | contain | moderate | suppress | inhibit | subdue |
+| --------- | ----- | ------- | -------- | -------- | ------- | ------ |
+| 抑制      | 抑制  | 抑制    | 緩和     | 壓制     | 限制    | 限制   |
+
+| hinder | repress | retard | impede | muzzle | stem | bridle | rein |
+| ------ | ------- | ------ | ------ | ------ | ---- | ------ | ---- |
+| 阻礙   | 壓抑    | 阻礙   | 阻止   | 妨礙   | 阻止 | 限制   | 阻礙 |
+
+完全禁止
+
+| prohibit | forbid | ban  | rule out | veto | proscribe |
+| -------- | ------ | ---- | -------- | ---- | --------- |
+| 禁止     | 禁止   | 封鎖 | 排除     | 拒絕 | 禁止      |
 
 |                   |              |                                                         |                                                                    |
 | ----------------- | ------------ | ------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -473,6 +489,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | civility          | n.           | 禮貌，禮儀，禮節                                        | [sɪˋvɪlətɪ]                                                        |
 | clandestine       | adj.         | 秘密的，暗中的；偷偷摸摸的                              | [klænˋdɛstɪn]                                                      |
 | clemency          | n.           | 仁慈；寬厚                                              | [ˋklɛmənsɪ]                                                        |
+| clerical          | adj.         | 神職（人員）的                                          | [ˋklɛrɪk!]                                                         |
 | cloak             | n.           | 掩蓋，掩飾                                              | [klok] n.斗篷、披風                                                |
 | cloy              | vi.vt.       | 膩煩；倒胃口                                            | [klɔɪ]（因過量吃甜食等而）倒（胃口）                               |
 | coagulate         | vt.vi.       | 凝結 凝固                                               | [koˋægjə͵let]                                                      |
@@ -559,6 +576,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | curmudgeon        | n.           | 吝嗇鬼；存心不良的人；壞脾氣的人                        | [kɚˋmʌdʒən]                                                        |
 | cursory           | adj.         | 匆忙的；粗略的；草率的                                  | [ˋkɝsərɪ]                                                          |
 | curtail           | vt.          | 縮減，削減；省略；限制                                  | [kɝˋtel]                                                           |
+| cynical           | adj.         | 憤世嫉俗的；冷漠嘲笑的                                  | [ˋsɪnɪk!]                                                          |
 | cynicism          | n.           | 譏笑；譏諷的言詞                                        | [ˋsɪnɪsɪzəm]                                                       |
 | damp              | vt.vi.       | 減弱，減少，降低；抑制                                  | [dæmp] adj.潮濕的，有濕氣的                                        |
 | daunting          | adj.         | 令人生畏的，令人氣餒的；艱難的                          | [ˋdɔntɪŋ]                                                          |
@@ -894,6 +912,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | gluttony          | n.           | n.暴食；貪吃                                            | [ˋglʌtnɪ]                                                          |
 | goad              | n.vt.        | n.刺激物 激勵 vt. 刺激；驅使                            | [god]                                                              |
 | gossamer          | n.adj.       | n.蛛絲 薄紗 adj.輕薄的 薄弱的                           | [ˋgɑsəmɚ] ⭐️                                                      |
+| gracious          | adj.         | 親切的；和藹的                                          | [ˋgreʃəs]                                                          |
 | graft             | n.vt.vi.     | n.貪污 v.行賄                                           | [græft]                                                            |
 | grandiloquent     | adj.         | 誇張的；大言不慚的                                      | [grænˋdɪləkwənt]                                                   |
 | gregarious        | adj.         | 合群的；好社交的，愛交際的                              | [grɪˋgɛrɪəs]                                                       |
@@ -914,7 +933,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | hamstrung         | adj.         | 被限制的 被削弱的                                       | /ˈhæm.strʌŋ/ ⭐️ ham火腿 string/strung串                           |
 | haphazard         | adj.         | 無計畫的；隨意的；雜亂的                                | [͵hæpˋhæzɚd]                                                       |
 | harangue          | n.vi.        | 長篇慷慨激昂地演講；責罵                                | [həˋræŋ] ⭐️                                                       |
-| harbinger         | n.           | 先驅，先鋒                                              | [ˋhɑrbɪndʒɚ] ⭐️                                                   |
+| harbinger         | n.           | 先驅，先鋒；預兆                                        | [ˋhɑrbɪndʒɚ] ⭐️                                                   |
 | heed              | n.           | 留心，注意                                              | [hid]                                                              |
 | herald            | n.           | 先驅，先鋒                                              | [ˋhɛrəld]                                                          |
 | tirade            | n.           | 長篇的激烈演說                                          | [ˋtaɪ͵red] ⭐️                                                     |
@@ -1736,6 +1755,7 @@ GRE 的寫作題目都在 https://www.ets.org/pdfs/gre/issue-pool.pdf
 | unqualified       | adj.         | 毫無保留的，完全的，不受限制的                          | [ʌnˋkwɑlə͵faɪd] adj.不合格的                                       |
 | unnerve           | vt.          | 使緊張; 使氣餒; 使喪失勇氣；使恐懼                      | [ʌnˋnɝv]                                                           |
 | unprecedented     | adj.         | 史無前例的；無先例的，空前的                            | [ʌnˋprɛsə͵dɛntɪd]                                                  |
+| unpremeditated    | adj.         | 未事先考慮的；無預謀的                                  | [ʌnprɪˋmɛdə͵tetɪd]                                                 |
 | unprepossessing   | adj.         | 平凡的；不吸引人的                                      | [͵ʌnpripəˋzɛsɪŋ]                                                   |
 | unpropitious      | adj.         | 不吉利的；惡運的；不順遂的                              | [͵ʌnprəˋpɪʃəs]                                                     |
 | unruly            | adj.         | 難駕馭的，任性的，不守規矩的，不服管束的                | [ʌnˋrulɪ]                                                          |
@@ -2121,6 +2141,7 @@ GRE 學霸字彙--高頻搭配詞
 | diluted power                   | 被削弱的權力               | [daɪˋlutɪd]                      |
 | diminutive stature              | 嬌小的身形                 | [dəˋmɪnjətɪv]                    |
 | dire needs                      | 迫切的需求                 | [daɪr]                           |
+| dire consequences               | 嚴重的後果                 | [daɪr]                           |
 | disaffected voters              | (低對高層)失望不滿的選民   | [͵dɪsəˋfɛktɪd]                   |
 | disaffected teenagers           | (低對高層)叛逆的青少年     | [͵dɪsəˋfɛktɪd]                   |
 | discerning buyer                | 有眼光的消費者             | [dɪˋzɝnɪŋ]                       |
@@ -2171,7 +2192,7 @@ GRE 學霸字彙--高頻搭配詞
 | eccentric behavior              | 古怪的行為                 |                                  |
 | eclectic mix                    | 多樣的混合                 | [ɛˋklɛktɪk]                      |
 | ecstatic crowd                  | 狂喜的人群                 | [ɛkˋstætɪk]                      |
-| edifying film                   | 有教化意義、具啟發性的電影 | [ˋɛdə͵faɪɪŋ]                     |
+| edifying book                   | 有教化意義、具啟發性的書   | [ˋɛdə͵faɪɪŋ]                     |
 | efficacious catalyst            | 有效的催化劑、促成因素     | [͵ɛfəˋkeʃəs] [ˋkætəlɪst]         |
 | effusive welcome                | 熱切的歡迎                 | [ɪˋfjusɪv]                       |
 | egregious error                 | 極嚴重的錯誤               | [ɪˋgridʒəs]                      |
@@ -2195,7 +2216,7 @@ GRE 學霸字彙--高頻搭配詞
 | endowed talent                  | 與生俱來的才能             | [ɪnˋdaʊ]                         |
 | enervated patient               | 虛弱無力的病患             | [ˋɛnɚ͵vetɪd]                     |
 | enfettered life                 | 束縛的人生                 | [ɛnˋfɛtɚ]                        |
-| Pity engendered love            | 憐憫產生了愛情             | [ɪnˋdʒɛndɚ]                      |
+| pity engendered love            | 憐憫產生了愛情             | [ɪnˋdʒɛndɚ]                      |
 | enigmatic message               | 神秘難懂的訊息             | [͵ɛnɪgˋmætɪk]                    |
 | enlightened policy              | 開明的政策                 | [ɪnˋlaɪtnd]                      |
 | personal enmity                 | 私人的仇恨                 | [ˋɛnmətɪ]                        |
@@ -2251,6 +2272,7 @@ GRE 學霸字彙--高頻搭配詞
 | extravagant lifestyle           | 奢侈的生活方式             | [ɪkˋstrævəgənt]                  |
 | extrinsic factor                | 外部的要素                 |                                  |
 | exuberant celebration           | 熱鬧有活力的慶典           | [ɪgˋzjubərənt]                   |
+| to fabricate an excuse          | 捏造、虛構一個藉口         | [ˈfæb.rɪ.keɪt]                   |
 | facetious remark                | (不合時宜)玩笑般的發言     | [fəˋsiʃəs]                       |
 | factious department             | 派系鬥爭嚴重的部門         | [ˋfækʃəs]                        |
 | faddish diet                    | 趕時髦的飲食方式           | [ˋfædɪʃ]                         |
@@ -2279,7 +2301,7 @@ GRE 學霸字彙--高頻搭配詞
 | figurative expression           | 比喻的表達方式             | [ˋfɪgjərətɪv]                    |
 | to finagle a promotion          | 耍花招騙取到了升遷         | [fɪˋneg!]                        |
 | finicky eater                   | 挑食者，吃東西過分挑剔的人 | [ˋfɪnɪkɪ]                        |
-| fitful progress                 | 斷斷續續的進步             | [ˋfɪtfəl]                        |
+| fitful progress                 | 斷斷續續的進展             | [ˋfɪtfəl]                        |
 | flagging economy                | 疲軟的經濟                 | [ˋflægɪŋ]                        |
 | flamboyant language             | 浮誇的語言                 | [flæmˋbɔɪənt]                    |
 | fledgling vigilante             | 菜鳥的義警                 | [ˋflɛdʒlɪŋ]                      |
@@ -2314,7 +2336,8 @@ GRE 學霸字彙--高頻搭配詞
 | frivolous decision              | 輕率的決定                 | [ˋfrɪvələs]                      |
 | frugal backpacker               | 節儉的背包客               | [ˋfrug!]                         |
 | to frustrate the conspiracy     | 阻撓、挫敗這個陰謀         | [ˋfrʌs͵tret]                     |
-| fugitive feeling                | 短暫的感覺                 | [ˋfjudʒətɪv]                     |
+| fugitive impression             | 短暫的印象                 | [ˋfjudʒətɪv]                     |
+| thousands of fugitives          | 數以千計的逃亡難民         | [ˋfjudʒətɪv]                     |
 | fulsome praise                  | 過分的恭維                 | [ˋfʊlsəm]                        |
 | fungible assets                 | 易於交易的資產             | [ˋfʌndʒibl]                      |
 | furtive action                  | 偷偷摸摸的行為             | [ˋfɝtɪv]                         |
@@ -2359,7 +2382,7 @@ GRE 學霸字彙--高頻搭配詞
 | haughty politician              | 自大傲慢的政客             | [ˋhɔtɪ]                          |
 | hectic schedule                 | 極為忙碌的時程             | [ˋhɛktɪk]                        |
 | during the heyday of ...        | 在...的全盛時期、黃金時代  | [ˋhede]                          |
-| military hegemony               | 軍事霸權、領導地位         | [hiˋdʒɛmənɪ]                     |
+| military hegemony               | 軍事霸權、王者地位         | [hiˋdʒɛmənɪ]                     |
 | heretical belief                | 異端的信念                 | [həˋrɛtɪk!]                      |
 | hermetic lifestyle              | 與世隔絕的生活型態         | [hɚˋmɛtɪk]                       |
 | hidebound policy                | 守舊迂腐的政策             | [ˋhaɪd͵baʊnd]                    |
@@ -2405,6 +2428,8 @@ GRE 學霸字彙--高頻搭配詞
 | imposing building               | 宏偉的建築                 | [ɪmˋpozɪŋ]                       |
 | impotent policy                 | 無效的政策                 |                                  |
 | impromptu speech                | 即興的演講                 | [ɪmˋprɑmptju]                    |
+| jazz improvisation              | 即興演奏的爵士樂           | [͵ɪmprəvaɪˋzeʃən]                |
+| require a little improvisation  | 臨時湊合一下               | [͵ɪmprəvaɪˋzeʃən]                |
 | imprudent decision              | 輕率的決定                 | [ɪmˋprudnt]                      |
 | impudent child                  | 放肆無理的小孩             | [ˋɪmpjədnt]                      |
 | inadvertent incident            | 意外的事件                 | [͵ɪnədˋvɝtnt]                    |
@@ -2733,7 +2758,7 @@ GRE 學霸字彙--高頻搭配詞
 | palpable change                 | 明顯的改變                 | [ˋpælpəb!]                       |
 | paltry donation                 | 吝嗇的捐助                 | [ˋpɔltrɪ]                        |
 | paltry trick                    | 極其明顯的、低劣的伎倆     | [ˋpɔltrɪ]                        |
-| to dress with panache           | 衣著十分氣派、神氣         | [pəˋnæʃ]                         |
+| to dress with panache           | 衣著十分氣派、威風         | [pəˋnæʃ]                         |
 | paradoxical fact                | 矛盾的事實                 | [͵pærəˋdɑksɪk!]                  |
 | paramount importance            | 至高的重要性               | [ˋpærə͵maʊnt]                    |
 | parochial view                  | 狹隘的觀點                 | [pəˋrokiəl]                      |
@@ -2758,7 +2783,7 @@ GRE 學霸字彙--高頻搭配詞
 | perfunctory attitude            | 敷衍的態度                 | [pɚˋfʌŋktərɪ]                    |
 | perilous attempt                | 冒險的嘗試                 | [ˋpɛrələs]                       |
 | peripatetic traveler            | 四處遊歷的旅行者           | [͵pɛrəpəˋtɛtɪk]                  |
-| peripheral issue                | 不重要的議題               | [pəˋrɪfərəl]                     |
+| peripheral issue                | 不重要、次要的議題         | [pəˋrɪfərəl]                     |
 | pernicious influence            | 有害的影響                 | [pɚˋnɪʃəs]                       |
 | to perpetuate the memory        | 能永遠存在的記憶           | [pɚˋpɛtʃʊ͵et]                    |
 | perplexing situation            | 令人困惑的情勢             |                                  |
@@ -2794,7 +2819,7 @@ GRE 學霸字彙--高頻搭配詞
 | to posit an assumption          | 假設、假定一個猜想         | [ˋpɑzɪt]                         |
 | pragmatic CEO                   | 務實的執行長               | [prægˋmætɪk]                     |
 | precarious state                | 不穩定的狀況               | [prɪˋkɛrɪəs]                     |
-| precipitate decision            | 匆促的決定                 | [prɪˋsɪpətɪt]                    |
+| precipitate decision            | 魯莽匆促的決定             | [prɪˋsɪpətɪt]                    |
 | precipitous decision            | 魯莽倉促的決定             | [prɪˋsɪpətəs]                    |
 | preclude the possibility of ... | 杜絕...的發生機率          | [prɪˋklud]                       |
 | precocious child                | 早熟的孩子                 | [prɪˋkoʃəs]                      |
@@ -2805,7 +2830,7 @@ GRE 學霸字彙--高頻搭配詞
 | premonitory sign                | 預兆，預告的跡象           | [prɪˋmɑnə͵torɪ]                  |
 | prescient remark                | 預知的言論                 | [ˋprɛʃɪənt]                      |
 | pressing need                   | 迫切的需求                 | [ˋprɛsɪŋ]                        |
-| presumptuous habit              | 冒昧無禮習慣               | [prɪˋzʌmptʃʊəs]                  |
+| presumptuous habit              | 冒昧無禮的習慣             | [prɪˋzʌmptʃʊəs]                  |
 | pretentious language            | 矯揉造作的言語             | [prɪˋtɛnʃəs]                     |
 | prevalent disease               | 盛行的疾病                 | [ˋprɛvələnt]                     |
 | prevaricating reply             | 支吾其詞、搪塞說謊的回答   | [prɪˋværə͵ket]]                  |
@@ -2894,11 +2919,11 @@ GRE 學霸字彙--高頻搭配詞
 | repressive measure              | 高壓的措施                 | [rɪˋprɛsɪv]                      |
 | to reprimand the government     | 嚴厲斥責政府               | [ˋrɛprə͵mænd]                    |
 | to reproach a reprobate         | 斥責一個無賴               | [rɪˋprotʃ] [ˋrɛprə͵bet]          |
-| repugnant concept               | 令人厭惡的概念             | [rɪˋpʌgnənt]                     |
+| repugnant action                | 令人厭惡的行為             | [rɪˋpʌgnənt]                     |
 | be rescinded contract           | 撤銷廢止的合約             | [rɪˋsɪnd]                        |
 | to accept one's resignation     | 接受某人的辭呈             | [͵rɛzɪgˋneʃən]                   |
 | accept situation in resignation | 屈服、順從現狀             | [͵rɛzɪgˋneʃən]                   |
-| resilient entrepreneur          | 有韌性的企業家             | [rɪˋzɪlɪənt]                     |
+| resilient entrepreneur          | 高彈性、適應強的企業家     | [rɪˋzɪlɪənt]                     |
 | resilient firm                  | 有韌性的公司               | [rɪˋzɪlɪənt]                     |
 | have a respite                  | 暫時的休息、停工           | [ˋrɛspɪt]                        |
 | restive populations             | 暴躁不安的人民             | [ˋrɛstɪv]                        |
@@ -2931,20 +2956,22 @@ GRE 學霸字彙--高頻搭配詞
 | screeds of analysis             | 單調冗長的分析文章         | [skrid]                          |
 | a ranting screed against ...    | 針對...的憤怒長篇大論      | [skrid]                          |
 | schematic diagram               | 示意圖，概要的圖表         | [skɪˋmætɪk]                      |
+| crazy scheme                    | 瘋狂的詭計、密謀           |                                  |
+| organized scheme                | 安排有序的計劃方案         |                                  |
 | scholarly language              | 學術的用語                 | [ˋskɑlɚlɪ]                       |
 | scornful look                   | 輕蔑嘲笑的表情             | [ˋskɔrnfəl]                      |
 | scintillating talent            | 才華洋溢的天賦             | [ˋsɪnt!͵etɪŋ]                    |
 | scrupulous detective            | 謹慎一絲不苟的警探         | [ˋskrupjələs]                    |
 | secular world                   | 世俗的世界                 | [ˋsɛkjəlɚ]                       |
 | sedentary lifestyle             | 久坐的生活型態             | [ˋsɛdn͵tɛrɪ]                     |
-| seductive power                 | 吸引力，誘惑的力量         |                                  |
+| seductive dress                 | 魅力誘人的連衣裙           |                                  |
 | self-effacing leader            | 謙遜的領導者               | [ˌself.ɪˈfeɪ.sɪŋ]                |
 | self-evident truths             | 不言自明的真相             | [ˌselfˈev.ɪ.dənt]                |
 | self-righteous specialists      | 自以為是的專家             | [ˌsɛlfˈrʌɪtʃəs]                  |
 | sententious expression          | (古)簡潔有力的表達         | [sɛnˋtɛnʃəs]                     |
 | sententious expression          | (現)格言般說教式的陳腔濫調 | [sɛnˋtɛnʃəs]                     |
-| a serendipitous discovery       | 湊巧的、驚喜的發現         | [͵sɛrənˋdɪpɪtəs]                 |
-| serene face                     | 平靜安詳的臉               | [səˋrin]                         |
+| serendipitous discovery         | 湊巧的、驚喜的發現         | [͵sɛrənˋdɪpɪtəs]                 |
+| serene face                     | 平靜安詳的神情             | [səˋrin]                         |
 | serpentine plot                 | 曲折的情節                 | [ˋsɝpən͵tin]                     |
 | shoddy goods                    | 劣質的商品                 | [ˋʃɑdɪ]                          |
 | shrewd businessman              | 精明的商人                 | [ʃrud]                           |
@@ -2982,7 +3009,7 @@ GRE 學霸字彙--高頻搭配詞
 | stale phrase                    | 了無新意的用語             | [stel]                           |
 | stalwart supporter              | 忠實的支持者               | [ˋstɔlwɚt]                       |
 | startling discovery             | 驚人的發現                 | [ˋstɑrt!ɪŋ]                      |
-| static prices                   | 不變動的價格               |                                  |
+| static prices                   | 穩定的價格                 |                                  |
 | staunch supporters              | 忠誠堅定的支持者           | [stɔntʃ]                         |
 | steadfast loyalty               | 堅定不移的忠誠             | [ˋstɛd͵fæst]                     |
 | to stem inflation               | 遏止、阻擋通膨             | [stɛm]                           |

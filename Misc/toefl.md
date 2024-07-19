@@ -447,8 +447,10 @@ Rephrasing 改變措辭 替代字語料小抄
 | 完備計劃 | a systematic and comprehensive schedule            | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 徹底鑽研 | delve into the latest technology                   | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 使用王牌 | reveal the trump card                              | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
-| 木已成舟 | The die is/was cast (骰子已擲)                     | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 木已成舟 | The die is cast (骰子已擲，注意是現在式)           | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 逆轉魔咒 | They may reverse the curse                         | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 一線希望 | One silver lining is that ...                      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 神來之筆 | The decision was a masterstroke                    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 
@@ -657,6 +659,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - get a substantial government subsidy [ˋsʌbsədɪ] 取得政府的資金補助(渡過難關)
   - and replicate a successful business model such as San Diego Comic-Con
   - and boost tourism
+  - Appreciate the masterpiece
 - Great invention in past 100y 百年大發明
   - Automobiles
   - satellite
@@ -733,7 +736,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - GPS navigation and Maps on the Windshield/Helmet/Apple Vision Pro
   - Electric bikes
   - provide a safety net (政府提供一個安全網)
-  - In 2023, GDP of BRICS, the new syndicate, transcended that of G7. overseas commerce 跨國貿易 has increased
+  - In 2023, GDP of BRICS, the new economic coalition led by China and Russia, transcended that of G7, another coalition led by the United States. overseas commerce 跨國貿易 has increased
 - Business
   - Xiaomi 冒牌貨但成功 - a Chinese designer and manufacturer - initially gained attention for producing cheap knockoffs like smartphones, which once were considered cheaper alternatives to brand like Apple, has become a major player in the global smartphone market. In 2023, they began to sell electric vehicles
 - Sports 運動
