@@ -451,6 +451,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 逆轉魔咒 | They may reverse the curse                         | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 一線希望 | One silver lining is that ...                      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 神來之筆 | The decision was a masterstroke                    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 量身定制 | Resources tailored for their needs                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說轉折
 

@@ -278,6 +278,7 @@ Android
 * Google Maps
   * Add tw language to android system
   * Add tw language to google maps in the app setting
+* Google translate (For long pressing to translate)
 * Here WeGo / Maps.me
 * Amaze File Manager
 * Little File Explorer - Smalle file manager for android 1.0+
@@ -451,6 +452,7 @@ Good Software Design
 * Built-in transaction and rollback for risky i/o operations
 * Hotfix without reinstalling the whole app
 * Use emojis in git commit message ✅ ❌
+* Display a emoji country flag for each comment of the user
 * Biometric Locking/Unlocking
 * Create a poll with pre-defined option for asking user experiences, instead of a piece of blank paper
 * Testing and short Documentation and Examples in Documentation
