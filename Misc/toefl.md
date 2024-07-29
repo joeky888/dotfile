@@ -263,6 +263,7 @@ Conclude: 40
 - As much as / Even if / Even though / while / whereas some people are worried that..., some people/others counter/argure that we... (適合第一段的intro) 雖然有人覺得，而另外的人覺得
 - Generally speaking, 一般而言，
 - By and large, 一般而言，(較正式的用法)
+- is taken for granted 是理所當然
 - However, such research is inconclusive 然而這些研究是無結論的
 - In my opinion, = From my perspective, = From my vantage point 我的觀點，適合句首
 - I hold/deem/opine S are condusive for being a ... 我認為S有益於... (適合句首)
@@ -295,7 +296,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | strong/tough        | adj. 適應力強的 (有彈性的)             | resilient spirit 堅韌的精神                                             | the community demonstrated its resilient spirit by coming together to rebuild and recover.                                    |
 | terrible            | adj. 可恨的 糟糕的                     | abominable                                                              | live in abominable conditions. 活在惡劣環境中 / Murder is the most abominable crime. 謀殺是最可惡的犯罪行為。                 |
 | important           | adj. 重要的 凸起的 顯眼的              | prominent                                                               | very prominent people 名人 / play prominent part 扮演重要的一環                                                               |
-| important           | adj. 緊急迫切的                        | imperative                                                              | Addressing climate change is imperative for the future of our planet.                                                         |
+| important           | adj. 強制迫切的                        | imperative                                                              | Addressing climate change is imperative for the future of our planet.                                                         |
 | important           | adj. 至關重要的                        | momentous                                                               | Addressing climate change is imperative for the future of our planet.                                                         |
 | emotional           | adj. 情深的，多情的；感情用事的        | sentimental                                                             | She kept all the old photographs for sentimental reasons. 她保存所有這些舊照片是出於情感上的緣故。                            |
 | emotional           | adj. 易被感動的；易受影響的            | susceptible [səˋsɛptəb!]                                                | They persuade susceptible teenagers to part with their money. 他們勸說這些易被感動的年輕人捐出他們的錢                        |
@@ -327,7 +328,6 @@ Rephrasing 改變措辭 替代字語料小抄
 | noticed             | adj. 已認知的；意識到的                | be cognizant of N                                                       | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
 | crime               | n. 罪大惡極                            | enormity                                                                | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
 | crime               | n. 糟糕的公共衛生環境                  | conditions of appalling sanitation                                      | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
-| crime               | n. 優良的公共衛生環境                  | conditions of adequate sanitation                                       | It is crucial for policymakers to be cognizant of the potential consequences of their decisions.                              |
 | help                | vt. 使容易；促進；幫助                 | facilitate                                                              | Technology has facilitated global communication and collaboration.                                                            |
 | help                | vt. 使容易；促進；催化了               | serve as a catalyst for                                                 | Technology has facilitated global communication and collaboration.                                                            |
 | help                | vt. 使容易；促進；幫助                 | helped propel the N to new levels of performance                        | The innovative design of the electric motor helped propel the car to new levels of efficiency and performance.                |
@@ -352,7 +352,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | cure                | n. 勞動力不足                          | is deficient in manpower.                                               | Technology is not a panacea for all our problems.                                                                             |
 | bring up            | vt. 培養，促進 (收養的)                | foster skills/knowledge/economy                                         | Investing in education and innovation can help foster a robust economy.                                                       |
 | support             | vt. 支持，支援，強化                   | to sustain N                                                            | Community-driven initiatives are needed to sustain environmental conservation efforts.                                        |
-| over the hills      | ad. 多年來                             | throughout the years                                                    | Throughout the years, their friendship remained unwavering, a constant source of support.                                     |
+| over the years      | ad. 多年來                             | throughout the years                                                    | Throughout the years, their friendship remained unwavering, a constant source of support.                                     |
 | profitable          | adj. 可商業化的；有賣點的              | commercially viable                                                     | I'm afraid that your plan is not commercially viable.                                                                         |
 | feat                | n. 有很多大膽事跡                      | performed many daring exploits                                          | There's no facile approach; it requires dedication, practice, and a deep understanding of fundamental principles.             |
 | simple method       | n. 沒有簡單的方法；沒捷徑              | no facile approach                                                      | There's no facile approach; it requires dedication, practice, and a deep understanding of fundamental principles.             |
@@ -407,6 +407,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | and                 | adv. 而且，                            | furthermore/moreover/additionally                                       | Furthermore, he felt that he wasn't really an authority on preventive medicine.                                               |
 | so                  | adv. 因此，                            | thus/therefore/hence/Now that                                           | This is a gold necklace, hence it is expensive.                                                                               |
 | but                 | adv. 但是，                            | nevertheless/nonetheless/however                                        | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
+| despite             | adv. 儘管，                            | notwithstanding/regardless of/in spite of                               | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
 | but                 | adv. 歸因於，                          | be ascribed/contribute to/be attributed to/give rise to/due to/owing to | We can't act on your advice. Nevertheless, thank you for giving it.                                                           |
 
 | 口說中文 | English                                            | Example                                                                                                                                           |
@@ -422,7 +423,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 無私奉獻 | selfless dedication                                | They demonstrated selfless dedication to the patients.                                                                                            |
 | 實行責任 | undertake the responsibilities for my actions      | They can undertake the primary responsibility for their own development.                                                                          |
 | 開發技能 | develop specialties                                | They can undertake the primary responsibility for their own development.                                                                          |
-| 突破極限 | reach my momentous breakthrough                    | They can undertake the primary responsibility for their own development.                                                                          |
+| 突破極限 | reach the momentous breakthrough                   | They can undertake the primary responsibility for their own development.                                                                          |
 | 嚴重挫敗 | devastating/overwhelming frustrations/setbacks     | They can undertake the primary responsibility for their own development.                                                                          |
 | 永恆幸福 | the key to everlasting happiness                   | Understanding oneself and cultivating meaningful relationships is often considered the key to everlasting happiness.                              |
 | 小眾市場 | a niche market                                     | You have to create a niche market for your products. 你必須為你的產品創造出利基市場                                                               |
@@ -452,6 +453,36 @@ Rephrasing 改變措辭 替代字語料小抄
 | 一線希望 | One silver lining is that ...                      | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 神來之筆 | The decision was a masterstroke                    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 量身定制 | Resources tailored for their needs                 | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 緊急救星 | it is a lifesaver                                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 有優有缺 | Everyone has their own strengths and weaknesses    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 完美結果 | The endeavors have finally paid off                | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+
+口說模版
+
+I agree that ...
+The way I see it, I like the idea that...
+What truly matters is that...
+First, it is indispensable that
+Additionally
+
+I disagree that ...
+The way I see it, it is nothing but just a...
+What truly matters is that...
+First, it is indispensable that
+And on top of that
+
+As a matter of fact, as a software engineer, who constantly delve into the latest technology from time to time.
+It is a silver lining for me that..
+and it would be a lifesaver if..
+
+寫作模版
+
+Whether ... ...
+From my vantage point, I fully endorse A's stance that
+To begin with, I should highlight a small problem in B's statement that .., and on top of that
+what truly matters is
+Furthermore, to reaffirm/reinforce my conviction, I would like to supplement that...
+As a matter of fact, as a software engineer who constantly delve into the latest technology from time to time
 
 口說轉折
 
@@ -461,7 +492,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 依我看                    | The way I see it (口語用法)                                            |
 | 依我看                    | I am under the impression that (文章用法)                              |
 | 依我看                    | From my vantage point (文章用法)                                       |
-| 重點是                    | What truely matters                                                    |
+| 重點是                    | What truly matters                                                     |
 | 事實上                    | As a matter of fact                                                    |
 | 除此之外(負面詞 更糟的是) | and on top of that                                                     |
 | 首先其次                  | For one thing, for another thing                                       |
@@ -614,7 +645,7 @@ In the modern days, especially in the digital-era, we are facing switching jobs 
 related to the previous ones.
 
 Whether Marco Polo traveled to China was in doubt. The author addresses three evidences that
-Polo was a froud, while the lecturer refutes with three arguments.
+Polo was a fraud, while the lecturer refutes with three arguments.
 For one thing, the reading indicates that every translation of Polo's journal was different in details,
 and merely an aggregation of stories from other travelers who actually went to China. However, the lecturer
 argues that the book was originally written by a fellow prisoner, who is a French. Later years, Polo rewritten
@@ -631,8 +662,8 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 
 - Introduction (僅介紹 沒有站立場)
 - Body
-  - On one hand | For one thing, Concept 1 pro and cons
-  - On the other hand, | For another thing, Concept 2 pro and cons
+  - On one hand, Concept 1 pro and cons
+  - On the other hand, Concept 2 pro and cons
 - Conclusion + thesis statement (有立場選擇)
 
 # 演繹法 deduction (只寫正面/反面) 倒三角
@@ -685,7 +716,7 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
   - deforestation
   - highly toxic chemicals
   - alternative energy 替代能源
-  - Biodiesel - Production from Insects
+  - biodiesel - production from insects
   - appalling sanitation 糟糕的公共衛生，環境衛生；衛生設備
 - Private healthcare 私人醫療
   - shorting waiting list
@@ -1563,7 +1594,6 @@ refutes that it is either Polo's use other names, or is not worthy to metion.
 - principle n.原理，原則 vs. principal adj.首要的 n.校長；本金
 - premier [ˋprimɪɚ] adj.首要的，最大的 n. 行政院長 = prime minister 內閣總理 vs. premiere [prɪˋmjɛr] n. 首映
 - rude 粗魯 vs. crude [krud] 粗糙的，粗陋的
-- incessant [ɪnˋsɛsnt] adj.不停的，連續的，持續不斷的 -- incessant rain 連續不斷的降雨；incessant complaining 不停抱怨
 - incessant [ɪnˋsɛsnt] adj.不停的，連續的，持續不斷的 -- incessant rain 連續不斷的降雨；incessant complaining 不停抱怨
 - cessation [sɛˋseʃən] n.停止；中斷 -- a momentary cessation of breathing 短暫性的停止呼吸
 - light 輕的、照亮 vs. lighten 照亮、減輕 vs. lightning 閃電

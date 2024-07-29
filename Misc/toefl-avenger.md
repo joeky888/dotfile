@@ -7,7 +7,7 @@ Integrate Reading
 | 證據不足 | due to inadequate evidence      |
 | 推敲推測 | speculated that / too arbitrary |
 | 不可行的 | unfeasible                      |
-| 不可行的 | negated by the speaker          |
+| 不可行的 | negated by the lecturer         |
 | 無根據的 | is groundless                   |
 | 遺留遺跡 | remnant(s)/remains              |
 

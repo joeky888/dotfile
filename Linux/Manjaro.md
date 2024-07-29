@@ -105,7 +105,7 @@ Xfce
   * Hardware clock in local time zone -> Check
 * Manjaro Notifier ->
   * Only notify recommanded kernels -> check
-* $ pacman -S neovim mpv fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
+* $ pacman -S bottom neovim mpv fcitx5 fcitx5-qt fcitx5-gtk fcitx5-rime fcitx5-chinese-addons kcm-fcitx5 noto-fonts-cjk noto-fonts-extra noto-fonts-emoji android-tools firefox-developer-edition file-roller evince gnome-disk-utility baobab alacritty gnome-terminal
 
 
 Switch to other branches
