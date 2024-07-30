@@ -87,9 +87,9 @@
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
 | Fungus       | Algae | alpine plants | shrub, bush | conifer | angiosperms       | stem | pollinator |
 
-| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  | 光合作用       | 貧瘠的，枯燥的 | 植物或昆蟲的氣孔  |
-| -------- | --------- | ------------ | ----- | -------------- | -------------- | ----------------- |
-| botanist | sediment  | deposit      | maize | photosynthesis | arid           | stoma單/stomata複 |
+| 植物學家 | n. 沉澱物 | vt. vi. 沉澱 | 玉米  | 光合作用       | 貧瘠的，枯燥的  | 植物或昆蟲的氣孔  |
+| -------- | --------- | ------------ | ----- | -------------- | --------------- | ----------------- |
+| botanist | sediment  | deposit      | maize | photosynthesis | arid/desiccated | stoma單/stomata複 |
 
 | 枯萎的；凋謝的                  | 熱帶     | 溫帶氣候               | 寒帶   | 植物光敏色素 | 花蜜   | adj.n. 能吸收(水、光)的(物質) |
 | ------------------------------- | -------- | ---------------------- | ------ | ------------ | ------ | ----------------------------- |
@@ -373,6 +373,10 @@
 | --------------------------- | ----------------------------------- | ---------------------- |
 | substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed        |
 
+| 連鎖、連接 | 分裂、分離  |
+| ---------- | ----------- |
+| linkage    | disjunction |
+
 ## Metallurgy 冶金學
 
 | 合金  |
@@ -397,9 +401,9 @@
 | -------- | -------- | ------------------- | ----------------- | -------- | ---------- |
 | insomnia | autistic | inoculate/vaccinate | anatomize/dissect | vivisect | anesthesia |
 
-| 心電圖機器/心電圖      |
-| ---------------------- |
-| cardiograph/cardiogram |
+| 心電圖機器/心電圖      | 疾病、弊病                | 軀體心理學(身心綁定的學科) |
+| ---------------------- | ------------------------- | -------------------------- |
+| cardiograph/cardiogram | complaints/malady/malaise | somatopsychology           |
 
 ## Life 生活
 
@@ -427,9 +431,9 @@
 | ---------- | ------------- | ------------------------------------------- | ---------------- |
 | binder     | assembly line | personal possessions/possessions/belongings | coordinator      |
 
-| a.抗命的，不服從的        | 主管                               | 年資      |
-| ------------------------- | ---------------------------------- | --------- |
-| insubordinate/disobedient | supervisor/superintendent/overseer | seniority |
+| a.抗命的，不服從的        | 主管                               | 年資      | (發表文章時)署名 |
+| ------------------------- | ---------------------------------- | --------- | ---------------- |
+| insubordinate/disobedient | supervisor/superintendent/overseer | seniority | byline(s)        |
 
 ## traffic 交通
 
