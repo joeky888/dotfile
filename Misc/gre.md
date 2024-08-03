@@ -8,7 +8,7 @@ Magoosh gre app 測驗
 寫作 3_0829C 下 - Questions7to9 01:06:00 - 無課本
 
 實體課:
-週三帶 只要帶OV Ch3 p.17開始 跟 Mixed practice sets 閱讀全部p.101開始 + PowerPrep23 上所有題目(Mark上頁碼)
+週三帶 只要帶OV Ch3 p.17開始 跟 Mixed practice sets 閱讀全部p.101開始
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
 nothing but 只不過
