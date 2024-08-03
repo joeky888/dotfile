@@ -214,6 +214,7 @@ Android
     * max.rethinkdns.com, sky.rethinkdns.com and rdns.deno.dev (rethinkdns opensource edge dns)
 * Backup IMEI code -> `*#06#`
 * Firefox Beta ->
+  * Home Page -> Click private window icon on the top right
   * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
   * Setting -> External download manager -> Check
   * Add-ons -> Add-ons Manager
@@ -226,22 +227,25 @@ Android
       * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
     * MobiDevTools -- This one is not really useful
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
-    * gfx.webrender.all: true
-    * gfx.webrender.software: false
-    * gfx.webrender.software.opengl: false
-    * gfx.webrender.fallback.software: false
-    * dom.webgpu.enabled: true
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
     * browser.cache.disk.metadata_memory_limit: 1,000=1MB(Default: 256 = 250KB)
     * browser.cache.disk.smart_size.enabled: false
     * Enable DOH (https://www.reddit.com/r/firefox/comments/r8nc41)
       * network.trr.mode: 2
       * network.trr.uri: https://cloudflare-dns.com/dns-query
-      * network.trr.bootstrapAddress: 8.8.8.8
     * Faster networking
       * network.process.enabled: true
       * network.http.max-connections: 1000
       * network.http.max-persistent-connections-per-server: 16
+    * Switch to desktop user-agent
+      * Go to a website which shows current user-agent using desktop mode, then copy the into
+      * about:config -> + -> general.useragent.override -> String -> Paste the info -> Create
+    * These are unstable, may slow down the whole website
+      * gfx.webrender.all: true
+      * gfx.webrender.software: false
+      * gfx.webrender.software.opengl: false
+      * gfx.webrender.fallback.software: false
+      * dom.webgpu.enabled: true
 * Yandex (Don't install beta/alpha version, they're lack features)
   * chrome://flags/#incognito-screenshot -> Enable (But doesn't work)
   * The following steps should be done after all extensions are installed
@@ -354,9 +358,6 @@ Android
     * Daily build -> https://github.com/qidian55/bilibilitv1.6.6-repair/blob/main/mybv.apk
     * Alternatives -> https://github.com/HCLonely/awesome-bilibili-extra#第三方客户端
   * BiglyBT
-  * Firefox Beta + Desktop user agent
-    * Google search my user agent -> Request for Desktop site -> Copy agent from website
-    * Go to about:config -> Add new entry -> general.useragent.override (String) -> Paste the agent value from the previous step
   * Background App Killer
 * Not an app but related to Android
   * Scrcpy - Control Android via adb (Android 5+)

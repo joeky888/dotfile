@@ -1236,7 +1236,7 @@
 | sententious expression          | (現)格言般說教式的陳腔濫調 | [sɛnˋtɛnʃəs]                     |
 | serendipitous discovery         | 湊巧的、驚喜的發現         | [͵sɛrənˋdɪpɪtəs]                 |
 | serene face                     | 平靜安詳的神情             | [səˋrin]                         |
-| serpentine plot                 | 曲折的情節                 | [ˋsɝpən͵tin]                     |
+| serpentine plot                 | 曲折的、錯綜複雜的情節     | [ˋsɝpən͵tin]                     |
 | shoddy goods                    | 劣質的商品                 | [ˋʃɑdɪ]                          |
 | shrewd businessman              | 精明的商人                 | [ʃrud]                           |
 | shrewd decisions                | 英明的決定                 | [ʃrud]                           |
@@ -1390,6 +1390,8 @@
 | unwarranted interference        | 無理的干涉                 | [ʌnˋwɔrəntɪd] (無保固、無正當)   |
 | unwieldy software performance   | 低效能的軟體表現           | [ʌnˋwildɪ]                       |
 | unwieldy old computer           | 笨重不便的老電腦           | [ʌnˋwildɪ]                       |
+| unwind the bandage              | 解開繃帶                   | [ʌnˋwaɪnd]                       |
+| unwind after work               | 工作後放鬆一下             | [ʌnˋwaɪnd]                       |
 | consistently upbraided          | 不斷地斥責                 | [ʌpˋbred]                        |
 | social upheaval                 | 社會動蕩                   | [ʌpˋhiv!]                        |
 | upright man                     | 誠實正直的人               | [ˋʌp͵raɪt]                       |
