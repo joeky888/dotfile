@@ -477,6 +477,14 @@ and it would be a lifesaver if..
 
 寫作模版
 
+(1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
+the lecture begs to differ and addressed three reasons to argue it.
+(2.) Firstly, as the reading suggests, ..... This proposal as the lecture reveals, is unlikely to be ture because ...
+(3.) Secondly, the reading cites that ..... However, the lecturer still counters that ....
+(4.) Lastly, the reading passage maintains that... . Disagreeing with this argument, the lecturer says...making
+the writer's theory unlikely to be ture.
+(5.) To sum up, the professor utilized the aforementioned three reasons to counter the perspectives in the reading.
+
 Whether ... ...
 From my vantage point, I fully endorse A's stance that
 To begin with, I should highlight a small problem in B's statement that .., and on top of that
@@ -499,14 +507,6 @@ As a matter of fact, as a software engineer who constantly delve into the latest
 | 解法是                    | the access/approach/answer/key/solution/shortcut/cut corners to Ving/N |
 | 再想想                    | may have a second thought regarding Ving                               |
 | 若不是                    | If it were not for/Were it not for N (與事實相反的假設                 |
-
-(1.) Both the reading and the lecture discuss the .... While the reading proposes three reasons for this,
-the lecture begs to differ and addressed three reasons to argue it.
-(2.) Firstly, as the reading suggests, ..... This proposal as the lecture reveals, is unlikely to be ture because ...
-(3.) Secondly, the reading cites that ..... However, the lecturer still counters that ....
-(4.) Lastly, the reading passage maintains that... . Disagreeing with this argument, the lecturer says...making
-the writer's theory unlikely to be ture.
-(5.) To sum up, the professor utilized the aforementioned three reasons to counter the perspectives in the reading.
 
 # 歸納法 Organization/Induction (正反面都要寫) 正三角
 

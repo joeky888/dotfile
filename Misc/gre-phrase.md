@@ -512,6 +512,8 @@
 | fecund imagination              | 豐富的想像力               | [ˋfikənd]                        |
 | feeble opposition               | 微弱的反對                 | [fib!]                           |
 | ferocious battle                | 激烈的交戰                 | [fəˋroʃəs]                       |
+| ferocious animals               | 兇猛的動物                 | [fəˋroʃəs]                       |
+| ferocious appetite              | 驚人的食量                 | [fəˋroʃəs]                       |
 | to ferret out the truth         | 查獲、查出真相             | [ˋfɛrɪt]                         |
 | fervent supporter               | 熱情的擁護者               | [ˋfɝvənt]                        |
 | festive mood                    | 歡樂的氛圍                 | [ˋfɛstɪv]                        |
@@ -1067,7 +1069,7 @@
 | plummeting price                | 暴跌的價錢                 | [ˋplʌmɪt]                        |
 | poignant image                  | 強烈深刻的刻板印象、形象   | [ˋpɔɪnənt] po-ig叫 > 諷刺        |
 | poignant remark                 | 尖銳的批評                 | [ˋpɔɪnənt]                       |
-| polemical essay                 | 強烈反駁的文章             | [pəˋlɛmɪkəl]                     |
+| polemical essay                 | 激烈爭辯的文章             | [pəˋlɛmɪkəl] pole極-mic麥克風    |
 | pompous manager                 | 自負的經理                 | [ˋpɑmpəs]                        |
 | pompous phrases                 | 浮誇的用語                 | [ˋpɑmpəs]                        |
 | ponderous writing style         | 冗長乏味的寫作風格         | [ˋpɑndərəs]                      |
@@ -1271,7 +1273,7 @@
 | spurious argument               | 欺騙的論述                 | [ˋspjʊrɪəs]                      |
 | spurious charge                 | 錯誤的指控                 | [ˋspjʊrɪəs]                      |
 | staggering statistics           | 驚人的數據                 | [ˋstægərɪŋ]                      |
-| stagnant economy                | 停滯的經濟                 | [ˋstægnənt]                      |
+| stagnant economy                | 停滯蕭條的經濟             | [ˋstægnənt]                      |
 | staid teacher                   | 穩重端莊但古板的老師       | [sted]                           |
 | stale phrase                    | 了無新意的用語             | [stel]                           |
 | stalwart supporter              | 忠實的支持者               | [ˋstɔlwɚt]                       |

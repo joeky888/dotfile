@@ -61,9 +61,9 @@
 | ------------------------------ | -------------------- | ------ | -------------------------------- |
 | prowl                          | ruminate/regurgitate | saliva | (動)feces/(牛馬)dung/(人)manure  |
 
-| n.動物屍體(尚可食用的) | 腐屍    | 平衡、均衡(的狀態) | 嘔吐  |
-| ---------------------- | ------- | ------------------ | ----- |
-| carcass                | carrion | equilibrium        | vomit |
+| n.動物屍體(尚可食用的) | 腐屍    | 平衡、均衡(的狀態) | 嘔吐  | v.抓取 n.爪子 n.一窩蛋 | n.一窩蛋      |
+| ---------------------- | ------- | ------------------ | ----- | ---------------------- | ------------- |
+| carcass                | carrion | equilibrium        | vomit | clutch                 | clutch(es) of |
 
 | 無性生殖             | 滯育；發育停止(環境變糟的應對) | 懷孕期間  |
 | -------------------- | ------------------------------ | --------- |
@@ -135,22 +135,6 @@
 | ---------------- | ------------- | ------ | ------- |
 | amorphous        | metamorphosis | convex | concave |
 
-## Pysics 物理
-
-| 空氣動力學  | 線圈繞組 | 亮度       | 惰性  | adj.密閉的；無懈可擊的 | adj.無氧的、厭氧的 |
-| ----------- | -------- | ---------- | ----- | ---------------------- | ------------------ |
-| aerodynamic | coil     | luminosity | inert | airtight               | anaerobic          |
-
-| 離子 | 光子   | 動量、推動力 | 光線            | 光譜             |
-| ---- | ------ | ------------ | --------------- | ---------------- |
-| ion  | photon | momentum     | streak of light | spectrum/spectra |
-
-## Chemistry 化學
-
-| 甲烷、沼氣 | 成分、組成要素 |
-| ---------- | -------------- |
-| methane    | constituent    |
-
 ## 氣象學 meteorology
 
 | 大氣層     | 水循環             | 蒸發        | 蒸散(植物葉釋出水) | 凝結                              |
@@ -195,17 +179,21 @@
 | ------- | ---------- | ---------- | ------------------------- | -------------- | ------------- |
 | glacier | geothermal | saline     | consolidate               | unconsolidated | cover/overlie |
 
-| v. 過濾；滲透 | 有滲透性的；可穿過的 | 裂縫，破口 | 斜坡  | 沼澤；濕地              |
-| ------------- | -------------------- | ---------- | ----- | ----------------------- |
-| percolate     | permeable            | crevice    | slope | bog/swamp/wetland/marsh |
+| v. 過濾；滲透 | 有滲透性的；可穿過的 | 斜坡  | 沼澤；濕地              |
+| ------------- | -------------------- | ----- | ----------------------- |
+| percolate     | permeable            | slope | bog/swamp/wetland/marsh |
 
 | 地下水                            | 凍土地帶，凍原 | 岩礁；沙洲小島 | 一/大片的(土地/草地)   |
 | --------------------------------- | -------------- | -------------- | ---------------------- |
 | groundwater (注意不是 underwater) | tundra         | cay            | a/large swath(s) of .. |
 
-| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (地面)裂口、深淵 | v.(火)吞噬；(水)淹沒 |
-| --------- | --------- | ---------- | ---------------- | -------------------- |
-| root out  | take hold | coral reef | gulf             | engulf               |
+| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (地面)裂口、深淵 | (石頭)裂縫 | v.(火)吞噬；(水)淹沒 |
+| --------- | --------- | ---------- | ---------------- | ---------- | -------------------- |
+| root out  | take hold | coral reef | gulf             | crevice    | engulf               |
+
+| 北極   | 南極       |
+| ------ | ---------- |
+| Arctic | Antarctica |
 
 ## Seismology 地震學
 
@@ -241,30 +229,6 @@
 | ------------------------- | ----------------------------------- |
 | behemoth = big            | apprentice/pilgrim/apostle/adherent |
 
-## Psychology 心理學
-
-| 利己主義者 | 利他主義者 | 利己主義的          | 利他主義的 | 自我中心者，自戀者          | 自戀的                 |
-| ---------- | ---------- | ------------------- | ---------- | --------------------------- | ---------------------- |
-| egoist     | altruist   | egoistic/egocentric | altruistic | narcissist/boaster/braggart | narcissistic/conceited |
-
-| 上對下同情心 | 同等同情心 | 冷靜，公平        | 厭惡      | 自卑感              | 優越感              |
-| ------------ | ---------- | ----------------- | --------- | ------------------- | ------------------- |
-| empathy      | sympathy   | dispassion/apathy | antipathy | inferiority complex | superiority complex |
-
-| 白人至上        | 喜愛的(結尾) | 討厭的(結尾) | 極愛競爭的，極其好勝的 |
-| --------------- | ------------ | ------------ | ---------------------- |
-| white supremacy | -phile       | -phobe       | hypercompetitive       |
-
-## Math 數學
-
-| 極小的        | 成反比                                             | 長寬高尺寸                   | 相等的；相稱的                        |
-| ------------- | -------------------------------------------------- | ---------------------------- | ------------------------------------- |
-| infinitesimal | a negative relationship/in inverse proportion to N | measurements/dimensions/size | equal to/commensurate with/coordinate |
-
-| n.對稱   | n.不對稱  | 內插法        | 外插法、外推法(預測用途) |
-| -------- | --------- | ------------- | ------------------------ |
-| symmetry | asymmetry | Interpolation | Extrapolation            |
-
 ## 考古學 Archeology
 
 | 木炭     | 發掘、挖掘、出土                    | 通風 n.     | 陶器(的) | 迷宮(衍：錯綜複雜的難題) |
@@ -295,21 +259,21 @@
 | ----------------- | ---------- | ------- |
 | stratify into     | shrine     | coerce  |
 
-Art 藝術 Architecture 建築學
+## Art 藝術 Architecture 建築學
 
 | 濕壁畫(原意是fresh) | 墊子 | 石膏    | 水泥   |
 | ------------------- | ---- | ------- | ------ |
 | frescos             | mats | plaster | cement |
 
-## 地理學
+## Geography 地理學
 
 | 中美洲      | 環境宜居的；好客的 | 盤古大陸              | 雙方的、兩岸的 | 向外、向側移動   | 向內移動        |
 | ----------- | ------------------ | --------------------- | -------------- | ---------------- | --------------- |
 | Mesoamerica | hospitable         | Pangea/Supercontinent | bilateral      | lateral movement | medial movement |
 
-| 鄰近的；前後相接的 | 邊緣的、邊沿 | 靠岸地區   |
-| ------------------ | ------------ | ---------- |
-| adjacent           | verge        | waterfront |
+| 鄰近的；前後相接的  | 邊緣的、邊沿 | 靠岸地區   | 污泥   |
+| ------------------- | ------------ | ---------- | ------ |
+| adjacent/contiguous | verge        | waterfront | sludge |
 
 ## 古生物學 Paleontology /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
@@ -341,7 +305,7 @@ Art 藝術 Architecture 建築學
 | ---- | ------ | ------ | ------------------- |
 | solo | duo    | trio   | symphony/symphonies |
 
-## 物質 化學
+## 物質 Chemistry 化學
 
 | 純金       | 金   | 銀     | 銅                    | 鐵   | 鋼    | 錫  | 鈦       | 鋰電池  |
 | ---------- | ---- | ------ | --------------------- | ---- | ----- | --- | -------- | ------- |
@@ -359,15 +323,19 @@ Art 藝術 Architecture 建築學
 | --------- | ----------- |
 | herbicide | pesticide   |
 
+| 甲烷、沼氣 | 成分、組成要素 |
+| ---------- | -------------- |
+| methane    | constituent    |
+
 ## Industry 工業
 
 | 風箱、手動鼓風機 | 橡木、橡樹的(桶、家具) | 麥芽(酒的原料) | 光學望遠鏡        | 原油      |
 | ---------------- | ---------------------- | -------------- | ----------------- | --------- |
 | bellows          | oak                    | malt           | optical telescope | crude oil |
 
-| 運動的；活動的；火車頭的 | 渦輪機         | 調節器、緩衝器                   |
-| ------------------------ | -------------- | -------------------------------- |
-| locomotive               | turbine engine | damper/cushion/suspension system |
+| 運動的；活動的；火車頭的 | 渦輪機         | 調節器、緩衝器                   | 石油      |
+| ------------------------ | -------------- | -------------------------------- | --------- |
+| locomotive               | turbine engine | damper/cushion/suspension system | petroleum |
 
 ## Buildings 建築物
 
@@ -383,15 +351,49 @@ Art 藝術 Architecture 建築學
 | --------------------------- | ----------------------------------- | ---------------------- |
 | substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed        |
 
-| 連鎖、連接 | 分裂、分離  |
-| ---------- | ----------- |
-| linkage    | disjunction |
+| 連鎖、連接 | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 |
+| ---------- | ----------- | -------- | ---------- |
+| linkage    | disjunction | barn     | landfill   |
 
 ## Metallurgy 冶金學
 
 | 合金  |
 | ----- |
 | alloy |
+
+## Pysics 物理
+
+| 空氣動力學  | 線圈繞組 | 亮度       | 惰性  | adj.密閉的；無懈可擊的 | adj.無氧的、厭氧的 |
+| ----------- | -------- | ---------- | ----- | ---------------------- | ------------------ |
+| aerodynamic | coil     | luminosity | inert | airtight               | anaerobic          |
+
+| 離子 | 光子   | 動量、推動力 | 光線            | 光譜             |
+| ---- | ------ | ------------ | --------------- | ---------------- |
+| ion  | photon | momentum     | streak of light | spectrum/spectra |
+
+## Math 數學
+
+| 極小的        | 成反比                                             | 長寬高尺寸                   | 相等的；相稱的                        |
+| ------------- | -------------------------------------------------- | ---------------------------- | ------------------------------------- |
+| infinitesimal | a negative relationship/in inverse proportion to N | measurements/dimensions/size | equal to/commensurate with/coordinate |
+
+| n.對稱   | n.不對稱  | 內插法        | 外插法、外推法(預測用途) |
+| -------- | --------- | ------------- | ------------------------ |
+| symmetry | asymmetry | Interpolation | Extrapolation            |
+
+## Psychology 心理學
+
+| 利己主義者 | 利他主義者 | 利己主義的          | 利他主義的 | 自我中心者，自戀者          | 自戀的                 |
+| ---------- | ---------- | ------------------- | ---------- | --------------------------- | ---------------------- |
+| egoist     | altruist   | egoistic/egocentric | altruistic | narcissist/boaster/braggart | narcissistic/conceited |
+
+| 上對下同情心 | 同等同情心 | 冷靜，公平        | 厭惡      | 自卑感              | 優越感              |
+| ------------ | ---------- | ----------------- | --------- | ------------------- | ------------------- |
+| empathy      | sympathy   | dispassion/apathy | antipathy | inferiority complex | superiority complex |
+
+| 白人至上        | 喜愛的(結尾) | 討厭的(結尾) | 極愛競爭的，極其好勝的 |
+| --------------- | ------------ | ------------ | ---------------------- |
+| white supremacy | -phile       | -phobe       | hypercompetitive       |
 
 ## Medical 醫學
 
