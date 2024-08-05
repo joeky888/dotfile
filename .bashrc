@@ -585,7 +585,7 @@ git_branch_info() {
 
 if [[ -n "$ZSH_VERSION" ]]; then # Zsh
   ZSH_THEME=""
-  plugins=(git docker docker-compose adb golang rust deno bun)
+  plugins=(git docker docker-compose golang rust deno bun)
   DISABLE_AUTO_UPDATE="true"
   if [ -n "$OHMYZSH_PATH" ]; then
     export ZSH=$OHMYZSH_PATH
