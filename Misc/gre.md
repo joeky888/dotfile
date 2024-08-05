@@ -45,9 +45,9 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | ----------------------------------- | ---------------- | ---------------- |
 | Abolitionism/abolition/emancipation | Women's suffrage | Right to silence |
 
-| 非裔美國人民權(特別常考 Martin Luther King, Jr. 跟 Malcolm X) |
-| ------------------------------------------------------------- |
-| Civil rights movement                                         |
+| 非裔美國人民權(特別常考 Martin Luther King, Jr. 跟 Malcolm X) | 種族的 |
+| ------------------------------------------------------------- | ------ |
+| Civil rights movement                                         | ethnic |
 
 ## 頑固的(主義)、過時的
 

@@ -231,7 +231,7 @@
 | concessionary fare              | 優惠的票價(車費等)         | [kənˋsɛʃən͵ɛrɪ]                  |
 | conciliatory tone               | 安撫的語調                 | [kənˋsɪlɪə͵torɪ] reconcile調解   |
 | conclusive argument             | 令人信服、確鑿的論據       |                                  |
-| concomitant disease             | 伴隨的疾病                 | [kɑnˋkɑmətənt]                   |
+| concomitant disease             | 伴隨而來的疾病             | [kɑnˋkɑmətənt]                   |
 | concordant opinion              | 一致的看法                 | [kənˋkɔrdənt]                    |
 | condescending attitude          | 高高在上的態度             | [͵kɑndɪˋsɛndɪŋ]                  |
 | to conflate A and B             | 合併 A 跟 B (尤指文學)     | [kənˋflet]                       |
@@ -585,6 +585,7 @@
 | to glean the evidence           | 一點一滴地收集證據         | [glin] (撿)蛤蜊                  |
 | glib salesman                   | 能言善道的銷售員           | [glɪb]                           |
 | glutted with smartphones        | 過度供應、大量的智慧手機   | [glʌt]                           |
+| gluttony is a sin               | 暴飲暴食是一宗罪           | [ˋglʌtnɪ]                        |
 | to goad enemies                 | 刺激、激怒敵人             | [god] 狗日的                     |
 | gossamer wings                  | 輕薄精緻的翅膀             | [ˋgɑsəmɚ] 佳神摸                 |
 | grandiose building              | 宏偉的建築                 | [ˋgrændɪos]                      |
@@ -865,7 +866,7 @@
 | melodious sound                 | 優美的聲音                 | [məˋlodɪəs]                      |
 | melodramatic speech             | 情緒誇張的演說             | [͵mɛlədrəˋmætɪk]                 |
 | mendacious story                | 捏造的故事                 | [mɛnˋdeʃəs]                      |
-| menial task                     | 低技術含量、卑賤低級的粗活 | [ˋmɪnɪəl]                        |
+| menial task                     | 低技術含量、卑賤低級的粗活 | [ˋmɪnɪəl] 迷你活                 |
 | mercenary scheme                | 斂財的計畫                 | [ˋmɝsn͵ɛrɪ]                      |
 | mercurial temperament           | 多變的性格                 | [mɝˋkjʊrɪəl]                     |
 | meretricious report             | 華而不實的報導             | [͵mɛrəˋtrɪʃəs]                   |
@@ -1110,7 +1111,7 @@
 | profuse apologies               | 不斷地道歉                 | [prəˋfjus]                       |
 | profuse harvest                 | 豐收，大量的收成           | [prəˋfjus]                       |
 | prohibitive costs               | 高昂的成本                 | [prəˋhɪbɪtɪv]                    |
-| prolific writer                 | 高產量的作家               | [prəˋlɪfɪk]                      |
+| prolific writer                 | 高產量的作家               | [prəˋlɪfɪk] prolifer增殖         |
 | prolific minerals               | 豐富的礦石                 | [prəˋlɪfɪk]                      |
 | prolix writing style            | 冗贅的寫作風格             | [ˋprolɪks]                       |
 | prophetic indicator             | 預言性的指標               | [prəˋfɛtɪk]                      |
@@ -1129,7 +1130,7 @@
 | provisional government          | 臨時的政府                 | [prəˋvɪʒən!]                     |
 | provocative book                | 具有啟發性的書             | [prəˋvɑkətɪv]                    |
 | provocative remark              | 挑釁的言論                 | [prəˋvɑkətɪv]                    |
-| prudent investor                | 謹慎的投資人               | [ˋprudnt]                        |
+| prudent investor                | 謹慎精明的投資人           | [ˋprudnt]                        |
 | pugnacious virago               | 好鬥的悍婦                 | [pʌgˋneʃəs] [vəˋrego]            |
 | punctilious attitude            | 一絲不苟的態度             | [pʌŋkˋtɪlɪəs]                    |
 | technical pundit                | 技術的專家、權威           | [ˋpʌndɪt]                        |
@@ -1151,7 +1152,7 @@
 | rakish spy                      | 灑脫俏皮的情報員           | [ˋrekɪʃ]                         |
 | rambling talk                   | 漫無目的的閒談             | [ˋræmblɪŋ]                       |
 | rancorous dispute               | 憤怒的爭吵                 | [ˋræŋkərəs]                      |
-| rankle the hostile troops       | 激怒了敵軍                 | [ˋræŋk!]                         |
+| rankle the hostile troops       | 激怒了敵軍                 | [ˋræŋk!] r扭-ankle腳踝           |
 | rapacious landlord              | 貪婪的房東                 | [rəˋpeʃəs]                       |
 | rarefied subjects               | 高深但曲高和寡的的主題     | [ˋrɛrə͵faɪd]                     |
 | rash actions                    | 急躁的，魯莽的行為         | [ræʃ]                            |
@@ -1159,7 +1160,7 @@
 | ravenous appetite               | 餓極了的食慾               | [ˋrævɪnəs]                       |
 | rebellious troop                | 反叛的軍隊                 | [rɪˋbɛljəs]                      |
 | be rebuked by teachers          | 被老師斥責                 | [rɪˋbjuk]                        |
-| recalcitrant student            | 不服管教的學生             | [rɪˋkælsɪtrənt]                  |
+| recalcitrant student            | 頑皮不服管教的學生         | [rɪˋkælsɪtrənt]                  |
 | reciprocal relationship         | 互惠的關係                 | [rɪˋsɪprək!]                     |
 | reckless driving                | 危險的駕駛                 | [ˋrɛklɪs]                        |
 | to reconcile disputes           | 調停、和解爭端             | [ˋrɛkənsaɪl] conciliatory安撫    |
@@ -1181,9 +1182,9 @@
 | repressive measure              | 高壓的措施                 | [rɪˋprɛsɪv]                      |
 | to reprimand the government     | 嚴厲斥責政府               | [ˋrɛprə͵mænd]                    |
 | to reproach a reprobate         | 斥責一個無賴               | [rɪˋprotʃ] [ˋrɛprə͵bet]          |
-| repugnant action                | 令人厭惡的行為             | [rɪˋpʌgnənt]                     |
-| be rescinded contract           | 撤銷廢止的合約             | [rɪˋsɪnd]                        |
-| to resent having to do ...      | 厭惡去做...                | [rɪˋzɛnt]                        |
+| repugnant action                | 令人厭惡的行為             | [rɪˋpʌgnənt] re再-pug打架        |
+| be rescinded contract           | 撤銷廢止的合約             | [rɪˋsɪnd] re再-sci切             |
+| to resent having to do ...      | 厭惡去做...                | [rɪˋzɛnt] re反-sent感            |
 | to accept one's resignation     | 接受某人的辭呈             | [͵rɛzɪgˋneʃən]                   |
 | accept situation in resignation | 屈服、順從現狀             | [͵rɛzɪgˋneʃən]                   |
 | resilient entrepreneur          | 高彈性、適應強的企業家     | [rɪˋzɪlɪənt]                     |
@@ -1196,6 +1197,7 @@
 | retract a promise               | 撤回了一個諾言             | [rɪˋtrækt]                       |
 | to retrench 10 public servants  | 刪減、裁減十個公務員       | [rɪˋtrɛntʃ]                      |
 | retrospective legislation       | 有追溯效力的法規           | [͵rɛtrəˋspɛktɪv] [͵lɛdʒɪsˋleʃən] |
+| retrospective review            | 回顧性審查                 | [͵rɛtrəˋspɛktɪv] [͵lɛdʒɪsˋleʃən] |
 | reverent greeting               | 恭敬、尊敬的問好           | [ˋrɛvərənt]                      |
 | revolutionary breakthrough      | 革命性的突破               | [͵rɛvəˋluʃən͵ɛrɪ]                |
 | to rile the enemy               | 激怒敵人                   | [raɪl]                           |
@@ -1236,7 +1238,7 @@
 | self-righteous specialists      | 自以為是的專家             | [ˌsɛlfˈrʌɪtʃəs]                  |
 | sententious expression          | (古)簡潔有力的表達         | [sɛnˋtɛnʃəs]                     |
 | sententious expression          | (現)格言般說教式的陳腔濫調 | [sɛnˋtɛnʃəs]                     |
-| serendipitous discovery         | 湊巧的、驚喜的發現         | [͵sɛrənˋdɪpɪtəs]                 |
+| serendipitous discovery         | 湊巧的、驚喜的發現         | [͵sɛrənˋdɪpɪtəs] 聖人掉下        |
 | serene face                     | 平靜安詳的神情             | [səˋrin]                         |
 | serpentine plot                 | 曲折的、錯綜複雜的情節     | [ˋsɝpən͵tin]                     |
 | shoddy goods                    | 劣質的商品                 | [ˋʃɑdɪ]                          |
@@ -1249,16 +1251,16 @@
 | sketchy description             | 粗略的描述                 | [ˋskɛtʃɪ]                        |
 | skittish behavior               | 輕佻的行為                 | [ˋskɪtɪʃ]                        |
 | skittish investor               | 易受驚難以駕馭的投資者     | [ˋskɪtɪʃ]                        |
-| slapdash work                   | 草率的工作                 | [ˋslæp͵dæʃ]                      |
+| slapdash work                   | 草率的工作                 | [ˋslæp͵dæʃ] splash輕忽一撇       |
 | sluggish economy                | 蕭條的經濟                 | [ˋslʌgɪʃ]                        |
 | sluggish recovery               | (經濟)緩慢的恢復           | [ˋslʌgɪʃ]                        |
-| a smattering of knowledge       | 略懂、少量的知識           | [ˋsmætərɪŋ]                      |
-| snide comments                  | 挖苦諷刺的評論             | [snaɪd]                          |
+| a smattering of knowledge       | 略懂、少量的知識           | [ˋsmætərɪŋ] smat知識-scatter散落 |
+| snide comments                  | 挖苦諷刺的評論             | [snaɪd] 對史奈德的批評           |
 | be snubbed by the manager       | 被上司冷落                 | [snʌb]                           |
-| sober reminder                  | 嚴肅的提醒                 | [ˋsobɚ]                          |
+| sober reminder                  | 嚴肅的提醒                 | [ˋsobɚ] 說吧                     |
 | sonorous voice                  | 宏亮的嗓音                 | [səˋnorəs]                       |
 | soporific effect                | 催眠的、令人想睡的效果     | [͵sopəˋrɪfɪk]                    |
-| sordid business                 | 骯髒卑鄙的交易             | [ˋsɔrdɪd]                        |
+| sordid business                 | 骯髒卑鄙的交易             | [ˋsɔrdɪd] sor悲-did做了          |
 | sophisticated businessman       | (有年紀)老練高超的商人     | [səˋfɪstɪ͵ketɪd]                 |
 | sophisticated weapons           | 精密複雜的武器             | [səˋfɪstɪ͵ketɪd]                 |
 | sound advice                    | 有利的建議                 |                                  |
@@ -1333,7 +1335,7 @@
 | to tender one's resignation     | 正式提交辭呈               | [ˋtɛndɚ]                         |
 | to tender more money            | 提供更多資金               | [ˋtɛndɚ]                         |
 | tentative plan                  | 試驗性的、暫定未決的計劃   | [ˋtɛntətɪv]                      |
-| tenuous connection              | 微弱的關聯                 | [ˋtɛnjʊəs]                       |
+| tenuous connection              | 微弱的關聯                 | [ˋtɛnjʊəs] 天絲很薄              |
 | tenuous relationship            | 脆弱的關係                 | [ˋtɛnjʊəs]                       |
 | tepid response                  | 冷淡的反應                 | [ˋtɛpɪd]                         |
 | terse reply                     | 簡潔扼要的回覆             | [tɝs]                            |
@@ -1352,11 +1354,11 @@
 | the industry is in travail      | 工業正處於艱辛勞動困境     | [ˋtrævel] tr試圖-prevail戰勝     |
 | a travesty of history           | 對歷史的歪曲               | [ˋtrævɪstɪ]                      |
 | treacherous act                 | 背叛的行徑                 | [ˋtrɛtʃərəs]                     |
-| trenchant critic                | 尖銳中肯的批評者           | [ˋtrɛntʃənt]                     |
+| trenchant critic                | 尖銳中肯的批評者           | [ˋtrɛntʃənt] trench深溝-chant頌  |
 | trifling thing                  | 微不足道的事物             | [ˋtraɪflɪŋ]                      |
 | thrifty housekeeper             | 節儉的家庭主婦             | [ˋθrɪftɪ]                        |
-| many trials and tribulations    | 艱難困苦                   | [͵trɪbjəˋleʃən]                  |
-| break through the tribulation   | 突破困難                   | [͵trɪbjəˋleʃən]                  |
+| many trials and tribulations    | 艱難困苦                   | [͵trɪbjəˋleʃən] retribution      |
+| break through the tribulation   | 突破困難                   | [͵trɪbjəˋleʃən] 再受難(報仇)     |
 | trite banality                  | 乏味的陳腔濫調             | [traɪt] 無聊欠踹                 |
 | trivial matters                 | 瑣碎的事物                 |                                  |
 | truculent kid                   | 逞凶鬥狠的小孩             | [ˋtrʌkjələnt]                    |
