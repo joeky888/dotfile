@@ -4,6 +4,8 @@
 | miss out                    | 錯過             |     |
 | to put off an appointment   | 延遲、延後約會   |     |
 | pull it off                 | 成功完成         |     |
+| ..insofar                   | ..到目前為止     |     |
+| take liberties              | 自作主張         |     |
 
 | GRE 學霸字彙--高頻搭配詞        |                            |                                  |
 | ------------------------------- | -------------------------- | -------------------------------- |
@@ -658,7 +660,7 @@
 | imperious leader                | 專橫傲慢的領導者           | [ɪmˋpɪrɪəs]                      |
 | impertinent matters             | 無關的事物                 | [ɪmˋpɝtnənt]                     |
 | impertinent question            | 不禮貌的問題               | [ɪmˋpɝtnənt]                     |
-| imperturbable demeanor          | 泰然自若的行為舉止         | [͵ɪmpɚˋtɝbəb!] [dɪˋminɚ]         |
+| imperturbable demeanor          | 泰然自若的行為風度         | [͵ɪmpɚˋtɝbəb!] [dɪˋminɚ]         |
 | be impervious to criticism      | 不受批評影響的             | [ɪmˋpɝvɪəs] 不能滲透的           |
 | implacable hostility            | 無法化解的敵意             | [ɪmˋplækəb!]                     |
 | implacable opposition           | 堅決的反對                 | [ɪmˋplækəb!]                     |
@@ -747,7 +749,9 @@
 | interim CEO                     | 臨時的(過渡期的)執行長     | [ˋɪntərɪm]                       |
 | intermediary role               | 居中調解的角色             | [͵ɪntɚˋmidɪ͵ɛrɪ]                 |
 | interminable speech             | 冗長的演講                 | [ɪnˋtɝmənəb!]                    |
+| intermingle fact with fiction   | 混合事實與虛構             | [͵ɪntɚˋmɪŋg!]                    |
 | intermittent HTTP error 504     | 斷斷續續的 HTTP 504 錯誤   | [͵ɪntɚˋmɪtnt]                    |
+| intervene in the Vietnam War    | 干預；介入調停越南戰爭     | [͵ɪntɚˋvin] 曼哈頓隊長           |
 | intimate relationship           | 親密關係                   | [ˋɪntəmɪt]                       |
 | intimate to students            | 暗示、通知學生             | [ˋɪntəmɪt]                       |
 | intimidating captain            | 讓人懼怕的隊長             | [ɪnˋtɪmə͵detɪŋ]                  |
@@ -991,6 +995,7 @@
 | ornate poetry                   | 辭藻華麗的詩詞             | [ɔrˋnet] orn裝飾-ate過度         |
 | orotund tone                    | 高亢、誇大的語調           | [ˋorə͵tʌnd] oro說-tund大聲地     |
 | orthodox treatment              | 傳統的療法                 |                                  |
+| oscillate between A and B       | 在 A B 意見之間搖擺不定    | [ˋɑs!et] vacillate 動搖          |
 | ostensible goal                 | 佯稱的目標                 | [ɑsˋtɛnsəb!] os-tensible可伸長   |
 | ostentatious lifestyle          | 炫耀的生活方式             | [͵ɑstɛnˋteʃəs] tentatious過長    |
 | be ostracized by neighbors      | 被鄰居排擠                 | [ˋɑstrə͵saɪz] os死於-track軌跡   |
@@ -1024,7 +1029,7 @@
 | a paucity of information        | 缺乏資訊                   | [ˋpɔsətɪ]                        |
 | pecuniary benefit               | 金錢的利益                 | [pɪˋkjunɪ͵ɛrɪ]                   |
 | pecuniary penalties             | 應課罰金的懲罰             | [pɪˋkjunɪ͵ɛrɪ]                   |
-| pedantic question               | 賣弄學問的問題             | [pɪˋdæntɪk]                      |
+| pedantic question               | 書呆子式賣弄學問的問題     | [pɪˋdæntɪk]                      |
 | pedestrian phrase               | 平凡乏味的用語             | [pəˋdɛstrɪən]                    |
 | peevish teacher                 | 易怒的老師                 | [ˋpivɪʃ] 尿氣死了                |
 | pejorative term                 | 貶義詞，貶低的詞彙         | [ˋpidʒə͵retɪv]                   |
@@ -1156,6 +1161,7 @@
 | rapacious landlord              | 貪婪的房東                 | [rəˋpeʃəs]                       |
 | rarefied subjects               | 高深但曲高和寡的的主題     | [ˋrɛrə͵faɪd]                     |
 | rash actions                    | 急躁的，魯莽的行為         | [ræʃ]                            |
+| rapt attention                  | 全神貫注的注意力           |                                  |
 | raucous atmosphere              | 喧鬧的氛圍                 | [ˋrɔkəs]                         |
 | ravenous appetite               | 餓極了的食慾               | [ˋrævɪnəs]                       |
 | rebellious troop                | 反叛的軍隊                 | [rɪˋbɛljəs]                      |
@@ -1233,6 +1239,7 @@
 | sedentary lifestyle             | 久坐的生活型態             | [ˋsɛdn͵tɛrɪ]                     |
 | seductive dress                 | 魅力誘人的連衣裙           |                                  |
 | be sedulously fostered          | 精心地培育                 | [ˋsɛdʒələslɪ]                    |
+| seminal influence               | 開創性的影響               | [ˋsɛmən!] 精液的                 |
 | self-effacing leader            | 謙遜的領導者               | [ˌself.ɪˈfeɪ.sɪŋ]                |
 | self-evident truths             | 不言自明的真相             | [ˌselfˈev.ɪ.dənt]                |
 | self-righteous specialists      | 自以為是的專家             | [ˌsɛlfˈrʌɪtʃəs]                  |
@@ -1366,6 +1373,7 @@
 | tumultuous years                | 動盪的年代                 | [tjuˋmʌltʃʊəs]                   |
 | turbulent career                | 動盪混亂的職涯             | [ˋtɝbjələnt] turb擾亂            |
 | turgid prose                    | 浮誇難懂的散文             | [ˋtɝdʒɪd] 特級的                 |
+| political turmoil               | 政治動蕩、混亂             | [ˋtɝmɔɪl]                        |
 | ubiquitous phenomenon           | 隨處可見的現象             |                                  |
 | unambiguous stance              | 堅定明確的立場             | [͵ʌnæmˋbɪgjʊəs]                  |
 | unanimous choice                | 一致的選擇                 | [jʊˋnænəməs]                     |
@@ -1402,7 +1410,7 @@
 | urbane dialogue                 | 謙和有禮的談話             | [ɝˋben]                          |
 | utilitarian touchstone          | 實用主義的標準             | [͵jutɪləˋtɛrɪən]                 |
 | vacant expression               | 空洞的神情                 |                                  |
-| vacillating policies            | 猶豫、搖擺不定的政策       | [ˋvæs!͵etɪŋ] vac空-illa說        |
+| vacillating policies            | 猶豫、搖擺不定的政策       | [ˋvæs!͵etɪŋ] oscillate搖擺不定   |
 | vacuous talk                    | 空洞的演說                 | [ˋvækjʊəs] vac空-ous多           |
 | valiant effort                  | 英勇的行徑                 | [ˋvæljənt] val力量-iant狀態      |
 | valid reason                    | 正當的理由                 |                                  |

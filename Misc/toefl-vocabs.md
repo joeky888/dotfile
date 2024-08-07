@@ -11,9 +11,17 @@
 | -------- | ---- | ---------- | --------- | -------------------- | ---------------- | ---------------------- |
 | molecule | atom | synthesis  | substance | terrestrial planet   | Gas giant        | ice giant              |
 
-| 小行星   | 主小行星帶(火星跟木星之間的軌道之間) |
-| -------- | ------------------------------------ |
-| asteroid | Asteroid belt                        |
+| 類木行星/巨行星(木,土,天王星,海王星) |
+| ------------------------------------ |
+| Jovian planets                       |
+
+| 小行星   | 主小行星帶(火星跟木星之間的軌道之間) | v.沿軌道運行 n.天體、星球 | 吸積(重力吸引更多物質進入) |
+| -------- | ------------------------------------ | ------------------------- | -------------------------- |
+| asteroid | Asteroid belt                        | orb                       | accretion                  |
+
+| (通貨/星體)膨脹 | (通貨/星體)收縮 |
+| --------------- | --------------- |
+| inflation       | deflation       |
 
 ## 動物學 Zoology
 
@@ -65,17 +73,17 @@
 | ---------------------- | ------- | ------------------ | ----- | ---------------------- | ------------- |
 | carcass                | carrion | equilibrium        | vomit | clutch                 | clutch(es) of |
 
-| 無性生殖             | 滯育；發育停止(環境變糟的應對) | 懷孕期間  |
-| -------------------- | ------------------------------ | --------- |
-| asexual reproduction | diapause                       | gestation |
+| 無性生殖             | 滯育；發育停止(環境變糟的應對) | 懷孕期間  | 細胞質    | 細胞壁    | 細胞核       |
+| -------------------- | ------------------------------ | --------- | --------- | --------- | ------------ |
+| asexual reproduction | diapause                       | gestation | cytoplasm | cell wall | Cell nucleus |
 
 | 奶頭，乳頭  | 受孕 (著床)                       | 群居的(動物) | 獨居的(動物) | 次聲波(頻率小於 20HZ) |
 | ----------- | --------------------------------- | ------------ | ------------ | --------------------- |
 | teat/tit(s) | implant/attach/fertilize/conceive | gregarious   | solitary     | infrasound            |
 
-| 發動攻擊、進攻  |
-| --------------- |
-| onset/onslaught |
+| 發動攻擊、進攻  | 反捕食者效應(演化出特殊構造或本能來保護自己) |
+| --------------- | -------------------------------------------- |
+| onset/onslaught | antipredator                                 |
 
 ## 植物學 Botany
 
@@ -187,13 +195,13 @@
 | --------------------------------- | -------------- | -------------- | ---------------------- |
 | groundwater (注意不是 underwater) | tundra         | cay            | a/large swath(s) of .. |
 
-| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (石頭)裂縫 | (地面)裂口、深淵 | v.(火)吞噬；(水)淹沒 |
-| --------- | --------- | ---------- | ---------- | ---------------- | -------------------- |
-| root out  | take hold | coral reef | crevice    | gulf             | engulf               |
+| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (石頭)裂縫 | (地面)裂口、深淵 | v.(火)吞噬；(水)淹沒 | v.破裂  |
+| --------- | --------- | ---------- | ---------- | ---------------- | -------------------- | ------- |
+| root out  | take hold | coral reef | crevice    | gulf             | engulf               | rupture |
 
-| 北極   | 南極       |
-| ------ | ---------- |
-| Arctic | Antarctica |
+| 北極   | 南極       | a.(被火)熔化的 |
+| ------ | ---------- | -------------- |
+| Arctic | Antarctica | molten         |
 
 ## Seismology 地震學
 
@@ -223,11 +231,21 @@
 | ----------------- | ---------- | ---------- | ------------------------ | ------------------ | -------------- |
 | folktale/folklore | anecdote   | topple     | predominant/principal    | edifice            | staple         |
 
+| 一群人；同夥；支持者 |
+| -------------------- |
+| cohort(s)            |
+
+## 農業
+
+| 牧場    | 乳製品 | n.v.孵蛋 |
+| ------- | ------ | -------- |
+| pasture | dairy  | brood    |
+
 ## Myth 神話
 
-| 龐然大物 (聖經的河馬原型) | 學徒、使徒；死忠追隨者              |
-| ------------------------- | ----------------------------------- |
-| behemoth = big            | apprentice/pilgrim/apostle/adherent |
+| 龐然大物 (聖經的河馬原型) | 學徒、使徒；死忠追隨者              | 異教徒(非基督教) |
+| ------------------------- | ----------------------------------- | ---------------- |
+| behemoth = big            | apprentice/pilgrim/apostle/adherent | pagan            |
 
 ## 考古學 Archeology
 
@@ -271,9 +289,9 @@
 | ----------- | ------------------ | --------------------- | -------------- | ---------------- | --------------- |
 | Mesoamerica | hospitable         | Pangea/Supercontinent | bilateral      | lateral movement | medial movement |
 
-| 鄰近的；前後相接的  | 邊緣的、邊沿 | 靠岸地區   | 污泥   |
-| ------------------- | ------------ | ---------- | ------ |
-| adjacent/contiguous | verge        | waterfront | sludge |
+| 鄰近的；前後相接的  | 邊緣的、邊沿 | 靠岸地區   | 污泥   | 群島，列島  |
+| ------------------- | ------------ | ---------- | ------ | ----------- |
+| adjacent/contiguous | verge        | waterfront | sludge | archipelago |
 
 ## 古生物學 Paleontology /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
@@ -301,9 +319,13 @@
 
 ## 音樂 Music
 
-| 獨唱 | 兩人唱 | 三人唱 | 交響樂              |
-| ---- | ------ | ------ | ------------------- |
-| solo | duo    | trio   | symphony/symphonies |
+| 獨唱 | 兩人唱 | 三人唱 | 交響樂              | (一個人/團隊)全部曲目；全部作品；全部技能 |
+| ---- | ------ | ------ | ------------------- | ----------------------------------------- |
+| solo | duo    | trio   | symphony/symphonies | repertoire                                |
+
+| 藝術大師；音樂大師 |
+| ------------------ |
+| virtuoso           |
 
 ## 物質 Chemistry 化學
 
@@ -367,9 +389,9 @@
 | ----------- | -------- | ---------- | ----- | ---------------------- | ------------------ |
 | aerodynamic | coil     | luminosity | inert | airtight               | anaerobic          |
 
-| 離子 | 光子   | 動量、推動力 | 光線            | 光譜             |
-| ---- | ------ | ------------ | --------------- | ---------------- |
-| ion  | photon | momentum     | streak of light | spectrum/spectra |
+| 離子 | 光子   | 動量、推動力 | 光線            | 光譜             | 中子     |
+| ---- | ------ | ------------ | --------------- | ---------------- | -------- |
+| ion  | photon | momentum     | streak of light | spectrum/spectra | Neutrino |
 
 ## Math 數學
 
@@ -409,13 +431,17 @@
 | ------------ | -------------------- | ----------------------------- | ------------------------- |
 | epidemiology | metabolic/metabolism | dysentery/diarrhea(diarrhoea) | mortality rate/death rate |
 
-| 失眠症   | 自閉的   | v.接種(疫苗)        | 解剖；仔細分析    | 活體解剖 | 麻醉       |
-| -------- | -------- | ------------------- | ----------------- | -------- | ---------- |
-| insomnia | autistic | inoculate/vaccinate | anatomize/dissect | vivisect | anesthesia |
+| 失眠症   | 自閉的   | v.接種(疫苗)        | 解剖學  | 解剖；仔細分析    | 活體解剖 | 麻醉       |
+| -------- | -------- | ------------------- | ------- | ----------------- | -------- | ---------- |
+| insomnia | autistic | inoculate/vaccinate | anatomy | anatomize/dissect | vivisect | anesthesia |
 
-| 心電圖機器/心電圖      | 疾病、弊病                | 軀體心理學(身心綁定的學科) |
-| ---------------------- | ------------------------- | -------------------------- |
-| cardiograph/cardiogram | complaints/malady/malaise | somatopsychology           |
+| 心電圖機器/心電圖      | 疾病、弊病                | 軀體心理學(身心綁定的學科) | 傾向、易於...的體質          |
+| ---------------------- | ------------------------- | -------------------------- | ---------------------------- |
+| cardiograph/cardiogram | complaints/malady/malaise | somatopsychology           | predisposition to/towards .. |
+
+| 解毒劑   |
+| -------- |
+| antidote |
 
 ## Life 生活
 
@@ -519,9 +545,13 @@
 | ------------------- | -------- | -------------- | ------------------- | ---------------------------- |
 | perjure/perjury     | jury     | verdict        | petitioner/appelant | infringe/infringement        |
 
-| 小派系        | 定罪；指控 | 被逮捕         | (證據不足的情況)被指控的犯人 | 關稅   |
-| ------------- | ---------- | -------------- | ---------------------------- | ------ |
-| petty faction | indictment | be apprehended | alleged culprit              | tariff |
+| 小派系        | 定罪；指控 | 被逮捕         | v.沒收     | (證據不足的情況)被指控的犯人 | 關稅   |
+| ------------- | ---------- | -------------- | ---------- | ---------------------------- | ------ |
+| petty faction | indictment | be apprehended | confiscate | alleged culprit              | tariff |
+
+| 聯合企業；聯合組織                 | 干預、調停             | 懲罰、處罰；報應       |
+| ---------------------------------- | ---------------------- | ---------------------- |
+| conglomerate/syndicate/syndication | intervene/intervention | imposition/retribution |
 
 ## Military 軍事
 
