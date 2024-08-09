@@ -3,7 +3,7 @@
 邏輯 3_0522B 上 - p.14 00:44:00 - 特別書 + OG + OV
 
 實體課:
-OG + OV 都帶
+OG + 老師的筆記
 
 一題只有 105 秒，總共 27 題
 
@@ -72,7 +72,10 @@ arc 弧
 chord 弦
 right angle 直角
 right triangle 直角三角形
-hypotenuse 斜邊
+isosceles triangle 等腰三角形
+hypotenuse (直角三角形的)斜邊
+leg (直角三角形的)非斜邊的兩邊
+inscribe 內切
 
 圓周角(圓上的夾角) x2 = 圓心角(半徑上的夾角)
 
@@ -94,7 +97,28 @@ Revenue (P (price) x Q (quantity)) - cost (expense) = profit
 
 # assmption vs. support vs. weaken
 
+完整版：https://hackmd.io/@gre-toefl-note/Sy2QeyAtF
+
 - assumption 比 support 還強烈，多了 bridge the gap
+- weaken 需要另尋他因，來解釋此現象
+
+1. Weaken
+
+- 否定原因
+  - 他因(cause)
+    - 另尋他因，來解釋此現象
+  - 倒因為果
+    - 結果是原因
+  - 類比
+    - 有因無果
+    - 無因有果
+- 否定結果
+  - 複因(factor因子)
+    - 提出沒有考慮到的復合因子
+
+2. Assumption
+3. Support
+4. Evaluate
 
 Geometry 幾何學
 
@@ -114,6 +138,8 @@ Geometry 幾何學
 
 |                       |            |     |
 | --------------------- | ---------- | --- |
+| thousands             | 千位數     | 1   |
+| hundreds              | 百位數     | 2   |
 | tens                  | 十位數     | 3   |
 | unit digit/ones digit | 個位數     | 4   |
 | tenth                 | 小數第一位 | 5   |
@@ -140,13 +166,16 @@ factorial = 階層。例如： 3!
 相似三角形 AAA
 Quadrant = (四個)象限
 mutually excludsive sets = disjoints sets 沒有交集的部分(AB聯集之後，既不是A也不是B的部分)
-independent 事件 = P(A跟B同時發生) = P(A) x P(B)
+機率 P(A or B) = P(A) + P(B) - P(A and B)
+independent 獨立事件 P(A and B) = P(A) x P(B)
+dependent 相依事件 P(A and B) = 算面積交集 = 最大 min(P(A), P(B)) and 最小 0
 exhaustive event 窮盡 P(A) + P(B) = 1 (Where A B 沒有交集)
 expected value = 期望值
 postive integer 正整數 = nature number 自然數(有時候會用這個詞來唬人)
 numerator分子/denominator分母
-in terms of r = 以 r 來表示
+What is x in terms of r = 以 r 來表示 x 比如 x = 2r + 1
 diagonal 對角線
+mixed numbers 帶分數 (整數帶了一個分數)
 
 ...更多定義可以參考 OG P.138-P.141
 

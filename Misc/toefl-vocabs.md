@@ -85,6 +85,10 @@
 | --------------- | -------------------------------------------- |
 | onset/onslaught | antipredator                                 |
 
+| 隔代遺傳、返祖現象 |
+| ------------------ |
+| atavism            |
+
 ## 植物學 Botany
 
 | 播種   | 灌溉     | 施肥      | 隔熱的、絕緣的 | adj.稀缺的    | 繁榮的                | 植物、植被 | 農場；造林地 |
@@ -195,13 +199,13 @@
 | --------------------------------- | -------------- | -------------- | ---------------------- |
 | groundwater (注意不是 underwater) | tundra         | cay            | a/large swath(s) of .. |
 
-| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (石頭)裂縫 | (地面)裂口、深淵 | v.(火)吞噬；(水)淹沒 | v.破裂  |
-| --------- | --------- | ---------- | ---------- | ---------------- | -------------------- | ------- |
-| root out  | take hold | coral reef | crevice    | gulf             | engulf               | rupture |
+| 根除/剷除 | 扎根/主宰 | 珊瑚礁     | (石頭)裂縫   | (地面)裂口、深淵 | v.(火)吞噬；(水)淹沒 | v.破裂  |
+| --------- | --------- | ---------- | ------------ | ---------------- | -------------------- | ------- |
+| root out  | take hold | coral reef | crevice/rift | gulf             | engulf               | rupture |
 
-| 北極   | 南極       | a.(被火)熔化的 |
-| ------ | ---------- | -------------- |
-| Arctic | Antarctica | molten         |
+| 北極   | 南極       | a.(被火)熔化的 | (有花的)草地、牧場 |
+| ------ | ---------- | -------------- | ------------------ |
+| Arctic | Antarctica | molten         | meadow             |
 
 ## Seismology 地震學
 
@@ -237,9 +241,9 @@
 
 ## 農業
 
-| 牧場    | 乳製品 | n.v.孵蛋 |
-| ------- | ------ | -------- |
-| pasture | dairy  | brood    |
+| 牧場    | 乳製品 | n.v.孵蛋 | a.農業的 |
+| ------- | ------ | -------- | -------- |
+| pasture | dairy  | brood    | agrarian |
 
 ## Myth 神話
 
@@ -279,9 +283,9 @@
 
 ## Art 藝術 Architecture 建築學
 
-| 濕壁畫(原意是fresh) | 墊子 | 石膏    | 水泥   |
-| ------------------- | ---- | ------- | ------ |
-| frescos             | mats | plaster | cement |
+| 濕壁畫(原意是fresh) | 墊子 | 石膏    | 水泥   | 藝術的鑒賞家、行家 |
+| ------------------- | ---- | ------- | ------ | ------------------ |
+| frescos             | mats | plaster | cement | connoisseur        |
 
 ## Geography 地理學
 
@@ -289,9 +293,9 @@
 | ----------- | ------------------ | --------------------- | -------------- | ---------------- | --------------- |
 | Mesoamerica | hospitable         | Pangea/Supercontinent | bilateral      | lateral movement | medial movement |
 
-| 鄰近的；前後相接的  | 邊緣的、邊沿 | 靠岸地區   | 污泥   | 群島，列島  |
-| ------------------- | ------------ | ---------- | ------ | ----------- |
-| adjacent/contiguous | verge        | waterfront | sludge | archipelago |
+| 鄰近的；前後相接的              | 邊緣的、邊沿 | 靠岸地區   | 污泥   | 群島，列島  |
+| ------------------------------- | ------------ | ---------- | ------ | ----------- |
+| adjacent/contiguous/coterminous | verge        | waterfront | sludge | archipelago |
 
 ## 古生物學 Paleontology /ˌpæl.i.ənˈtɑː.lə.dʒi/
 
@@ -307,11 +311,15 @@
 | --------------------- | ---------- | -------------------------------- | ------------ | ------------- |
 | flora and fauna/biome | conception | conception control/contraception | nucleic acid | excrete       |
 
+| 喜好、傾向；親和力 |
+| ------------------ |
+| affinity           |
+
 ## 語言學 Linguistics / Etymology 語源學(詞源學)
 
-| 方言    | 專有名詞 (全世界唯一能使用的) | 技術術語/行話         | adj.n. 土話/本地的話 |
-| ------- | ----------------------------- | --------------------- | -------------------- |
-| dialect | proper noun                   | technical term/jargon | demotic/vernacular   |
+| 方言    | 白話、本地話 | 專有名詞 (全世界唯一能使用的) | 技術術語/行話         | adj.n. 土話/本地的話 |
+| ------- | ------------ | ----------------------------- | --------------------- | -------------------- |
+| dialect | vernacular   | proper noun                   | technical term/jargon | demotic/vernacular   |
 
 | 同型異音字(比如 tear[tɪr]眼淚/tear[tɛr]撕裂) |
 | -------------------------------------------- |
@@ -393,6 +401,10 @@
 | ---- | ------ | ------------ | --------------- | ---------------- | -------- |
 | ion  | photon | momentum     | streak of light | spectrum/spectra | Neutrino |
 
+| 速度     |
+| -------- |
+| celerity |
+
 ## Math 數學
 
 | 極小的        | 成反比                                             | 長寬高尺寸                   | 相等的；相稱的                        |
@@ -439,9 +451,9 @@
 | ---------------------- | ------------------------- | -------------------------- | ---------------------------- |
 | cardiograph/cardiogram | complaints/malady/malaise | somatopsychology           | predisposition to/towards .. |
 
-| 解毒劑   |
-| -------- |
-| antidote |
+| 解毒劑   | 凝結、凝固 |
+| -------- | ---------- |
+| antidote | coagulate  |
 
 ## Life 生活
 
@@ -552,6 +564,10 @@
 | 聯合企業；聯合組織                 | 干預、調停             | 懲罰、處罰；報應       |
 | ---------------------------------- | ---------------------- | ---------------------- |
 | conglomerate/syndicate/syndication | intervene/intervention | imposition/retribution |
+
+| v.保釋 n.保釋金 |
+| --------------- |
+| bail            |
 
 ## Military 軍事
 
