@@ -12,7 +12,6 @@
       "cmd-up": "editor::MovePageUp",
       "cmd-down": "editor::MovePageDown",
       "cmd-t": "workspace::NewFile",
-      "cmd-p": ["editor::SelectPrevious", { "replace_newest": false }],
       "cmd-n": ["editor::SelectNext", { "replace_newest": false }], // Add selection to Next Find Match
       "cmd-g": "editor::SelectAll",
       "cmd-f": [
