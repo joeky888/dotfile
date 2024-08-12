@@ -471,7 +471,7 @@ What truly matters is that...
 First, it is indispensable that
 And on top of that
 
-As a matter of fact, as a software engineer, who constantly delve into the latest technology from time to time.
+As a matter of fact, as a software engineer, who constantly delve into the latest technology.
 It is a silver lining for me that..
 and it would be a lifesaver if..
 
