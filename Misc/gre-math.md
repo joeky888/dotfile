@@ -99,7 +99,7 @@ Revenue (P (price) x Q (quantity)) - cost (expense) = profit
 
 完整版：https://hackmd.io/@gre-toefl-note/Sy2QeyAtF
 
-- assumption 比 support 還強烈，多了 bridge the gap
+- assumption (最難考題) 比 support 還強烈，多了 bridge the gap
 - weaken 需要另尋他因，來解釋此現象
 
 1. Weaken
@@ -121,6 +121,12 @@ Revenue (P (price) x Q (quantity)) - cost (expense) = profit
 4. Evaluate
 
 Geometry 幾何學
+
+匯率 歐英澳紐 美加日港
+
+| 歐  | 英  | 澳   | 紐   |     | 美                | 加   | 日  | 港  |
+| --- | --- | ---- | ---- | --- | ----------------- | ---- | --- | --- |
+|     |     | 鐵礦 | 牛奶 |     | 1 (base currency) | 原油 |     |     |
 
 |                 |                    |                                |
 | --------------- | ------------------ | ------------------------------ |

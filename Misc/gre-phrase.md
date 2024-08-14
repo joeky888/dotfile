@@ -58,7 +58,7 @@
 | agreeable solution              | 令人欣然接受的解決方案     |                                  |
 | a alarmist                      | 大驚小怪、危言聳聽者       | [əˋlɑrmɪst]                      |
 | allay the pain                  | 減緩痛苦                   | [əˋle]                           |
-| allegory novel                  | 充滿寓言、諷刺的小說       | [ˋælə͵gorɪ]                      |
+| allegory novel                  | 充滿寓言、寓意的小說       | [ˋælə͵gorɪ]                      |
 | alleviate the pain              | 減緩痛苦                   | [əˋlivɪ͵et]                      |
 | all-encompassing approaches     | 包羅萬象的方案             |                                  |
 | allure of the ladies            | 女人的誘惑力               | [əˋlɪʊr]                         |
@@ -106,6 +106,7 @@
 | achieve the apotheosis          | 達到巔峰、封神             | [ə͵pɑθɪˋosɪs]                    |
 | appease the pain                | 減緩痛苦                   |                                  |
 | apposite remark                 | 適當的言論                 | [ˋæpəzɪt]                        |
+| appraise the performance        | 評估、估計效能             | [əˋprez] 注意這個字不是讚揚      |
 | appreciable difference          | 可觀的、相當大的差異       | [əˋpriʃɪəb!]                     |
 | expressed apprehension about .. | 對..表現出擔憂             | [͵æprɪˋhɛnʃən]                   |
 | quick to apprehend              | 很快地理解、意識到         | [͵æprɪˋhɛnd]                     |
@@ -549,6 +550,7 @@
 | enigmatic message               | 神秘難懂的訊息             | [͵ɛnɪgˋmætɪk]                    |
 | enlightened policy              | 開明的政策                 | [ɪnˋlaɪtnd]                      |
 | personal enmity                 | 私人的仇恨                 | [ˋɛnmətɪ]                        |
+| be entangled in the scandal     | 捲入醜聞                   | [ɪnˋtæŋg!]                       |
 | enthralling smile               | 迷人的笑容                 | [ɪnˋθrɔlɪŋ] en使-thrall無法自拔  |
 | enticing offer                  | 迷人的、誘人的條件         | [ɪnˋtaɪsɪŋ]                      |
 | entranced children              | 著迷入神的孩子             | [ɛnˋtrænst]                      |
@@ -727,7 +729,7 @@
 | hamstrung power                 | 受限制、削弱的力量         | [ˈhæm.strʌŋ]                     |
 | a handsome fee                  | 相當大的，可觀的費用       |                                  |
 | haphazard way                   | 無秩序的、雜亂無章的方法   | [͵hæpˋhæzɚd]                     |
-| a harangue about TV news        | 滔滔不絕地談論電視新聞     | [həˋræŋ]                         |
+| a harangue about TV news        | 滔滔不絕地斥責電視新聞     | [həˋræŋ]                         |
 | hard-headed scientist           | 實事求是的科學家           |                                  |
 | harried businessman             | 被折磨的、不堪其擾的商人   | [ˈher.id]                        |
 | harrowing story                 | 悲傷的故事                 | [ˈhærəʊɪŋ]                       |
@@ -1021,7 +1023,7 @@
 | moralistic talk                 | 說教的談話                 | [͵mɔrəˋlɪstɪk]                   |
 | morbid obesity                  | 病態性的肥胖               |                                  |
 | mordant remark                  | 尖酸的言論                 | [ˋmɔrdnt]                        |
-| moribund career                 | 停滯的事業                 | [ˋmɔrə͵bʌnd]                     |
+| moribund career                 | 停滯、垂死的事業           | [ˋmɔrə͵bʌnd]                     |
 | morose expression               | 悶悶不樂的表情             | [məˋros]                         |
 | a motley collection of things   | 各式各樣的東西             | [ˋmɑtlɪ]                         |
 | mounting debts                  | 加劇的債務                 | [ˋmaʊntɪŋ]                       |
@@ -1037,7 +1039,7 @@
 | mutable policies                | 搖擺不定的政策             |                                  |
 | mutinous student                | 造反的學生                 | [ˋmjutnəs]                       |
 | myopic policymaker              | 目光短淺的政策制定者       | [maɪˋɑpɪk]                       |
-| a myriad of choices             | 無數的選擇                 | [ˋmɪrɪəd]                        |
+| a myriad of choices             | 無數的選擇                 | [ˋmɪrɪəd] stymie阻礙             |
 | nascent industry                | 新興的產業                 | [ˋnæsnt]                         |
 | nascent problem                 | 剛出現的問題               | [ˋnæsnt]                         |
 | one's natal city                | 某人出生的城市             | [ˋnet!]                          |
@@ -1164,7 +1166,7 @@
 | perennial problem               | 長年的問題                 | [pəˋrɛnɪəl]                      |
 | perfidious lover                | 負心的戀人                 | [pɚˋfɪdɪəs] per穿透-fid信任      |
 | perfunctory attitude            | 敷衍的態度                 | [pɚˋfʌŋktərɪ] per穿透-funct功能  |
-| perilous attempt                | 危險、冒險的嘗試           | [ˋpɛrələs] per穿越-il非法        |
+| perilous attempt                | 危險、冒險的嘗試           | [ˋpɛrələs] peril危險             |
 | peripatetic traveler            | 四處遊歷的旅行者           | [͵pɛrəpəˋtɛtɪk] peri周圍-pat巡邏 |
 | peripheral issue                | 不重要、次要的議題         | [pəˋrɪfərəl]                     |
 | pernicious influence            | 有害的影響                 | [pɚˋnɪʃəs] per穿越-nicious有毒   |
@@ -1303,7 +1305,7 @@
 | to redress the wrongdoings      | 矯正、革除弊端             | [rɪˋdrɛs]                        |
 | to seek redress for negligence  | 尋找補救疏忽的方式         | [rɪˋdrɛs]                        |
 | refractory teenager             | 難以管教的青少年           | [rɪˋfræk͵torɪ]                   |
-| remiss in one's duty            | 疏忽的、玩忽職守的人       | [rɪˋmɪs]                         |
+| remiss in one's duty            | 疏忽的、大意的人           | [rɪˋmɪs]                         |
 | to renege on the deal           | 違約協議                   | [rɪˋnig]                         |
 | to repudiate any suggestion     | 駁斥、拒絕任何意見         | [rɪˋpjudɪ͵et]                    |
 | be relegated to a junior job    | 降級分派到初級工作         | [ˋrɛlə͵get]                      |
@@ -1321,11 +1323,11 @@
 | accept situation in resignation | 屈服、順從現狀             | [͵rɛzɪgˋneʃən]                   |
 | resilient entrepreneur          | 高彈性、適應強的企業家     | [rɪˋzɪlɪənt]                     |
 | resilient firm                  | 有韌性的公司               | [rɪˋzɪlɪənt]                     |
-| have a respite                  | 暫時的休息、停工           | [ˋrɛspɪt] respire呼吸            |
+| have a respite                  | 暫時的休息、停工           | [ˋrɛspɪt] respire呼吸、喘口氣    |
 | resonate between two nations    | 兩國有了共鳴               | [ˋrɛzə͵net]                      |
 | restive populations             | 暴躁不安的人民             | [ˋrɛstɪv]                        |
 | resurgent inflation             | 復活的、再次發生的通膨     | [rɪˋsɝdʒənt]                     |
-| retentive memory                | 過目不忘的記性             | [rɪˋtɛntɪv]                      |
+| retentive memory                | 過目不忘的記性             | [rɪˋtɛntɪv] retention保留        |
 | reticent temperament            | 沉默寡言的性格             | [ˋrɛtəsnt]                       |
 | retract a promise               | 撤回了一個諾言             | [rɪˋtrækt]                       |
 | to retrench 10 public servants  | 刪減、裁減十個公務員       | [rɪˋtrɛntʃ]                      |
@@ -1431,7 +1433,7 @@
 | an annual stipend               | 年度固定津貼、薪水         | [ˋstaɪpɛnd]                      |
 | stolid sheriff                  | 冷淡嚴肅的警長             | [ˋstɑlɪd]                        |
 | stringent laws                  | 嚴格苛刻的法律             | [ˋstrɪndʒənt]                    |
-| stymied growth                  | 受阻的成長                 | [ˋstaɪmɪ]                        |
+| stymied growth                  | 受阻的成長                 | [ˋstaɪmɪ] myriad無數的           |
 | subdued look                    | 壓抑、悶悶不樂的臉色       | [səbˋdjud]                       |
 | subservient role                | 恭順的角色                 | [səbˋsɝvɪənt]                    |
 | substantial change              | 大幅的改變                 |                                  |
@@ -1477,7 +1479,7 @@
 | tenuous connection              | 微弱的關聯                 | [ˋtɛnjʊəs] 天絲很薄              |
 | tenuous relationship            | 脆弱的關係                 | [ˋtɛnjʊəs]                       |
 | tepid response                  | 冷淡的反應                 | [ˋtɛpɪd]                         |
-| terse reply                     | 簡潔扼要的回覆             | [tɝs]                            |
+| terse reply                     | 簡潔扼要的回覆             | [tɝs] 特小                       |
 | plan was thwarted by ...        | 計劃被..阻撓               | [θwɔrt]                          |
 | timorous child                  | 膽怯的小孩                 | [ˋtɪmərəs]                       |
 | to give a tirade                | 長篇激烈的憤怒演說         | [ˋtaɪ͵red]                       |
@@ -1516,7 +1518,10 @@
 | unconscionable requests         | 荒謬無理的請求             | [ʌnˋkɑnʃənəb!]                   |
 | undercut the competitors        | 削弱對手                   | [ˋʌndɚ͵kʌt]                      |
 | undermined the health           | 暗中逐漸損害健康           | [͵ʌndɚˋmaɪn]                     |
+| underpin the argument           | 鞏固這個論點               | [͵ʌndɚˋpɪn]                      |
 | to underwrite the costs         | 財力支援這些開銷           | [ˋʌndɚ͵raɪt]                     |
+| undue pressure                  | 過度的壓力                 |                                  |
+| undue influence                 | 不恰當的影響               |                                  |
 | unexampled advantage            | 空前的優勢                 | [͵ʌnɪgˋzæmp!d]                   |
 | an unequivocal answer           | 明確的、毫不含糊回答       | [͵ʌnɪˋkwɪvək!]                   |
 | unfeigned feelings              | 真誠無偽裝的情感           | [ʌnˋfend]                        |
