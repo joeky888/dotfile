@@ -15,10 +15,6 @@
 	path = powershell
 	url = https://github.com/joeky888/powershell.git
 	shallow = true
-[submodule "inxi"]
-	path = inxi
-	url = https://github.com/smxi/inxi.git
-	shallow = true
 [submodule "app-fast"]
 	path = app-fast
 	url = https://github.com/app-fast/app-fast.git
