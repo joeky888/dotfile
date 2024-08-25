@@ -1304,6 +1304,8 @@
 | reciprocal number               | 倒數                       | [rɪˋsɪprək!]                     |
 | reciprocal relationship         | 互惠的關係                 | [rɪˋsɪprək!]                     |
 | reckless driving                | 危險的駕駛                 | [ˋrɛklɪs]                        |
+| recoiled at a mouse             | 被老鼠(嚇到)退縮           | [rɪˋkɔɪl] recoil/knockback後坐力 |
+| recoiled after being fired      | 擊發之後的反衝後坐力       | [rɪˋkɔɪl]                        |
 | to reconcile disputes           | 調停、和解爭端             | [ˋrɛkənsaɪl] conciliatory安撫    |
 | recondite words                 | 深奧的詞語                 | [ˋrɛkən͵daɪt]                    |
 | recurrent event                 | 一再發生的事件             | [rɪˋkɝənt]                       |
