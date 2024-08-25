@@ -96,6 +96,7 @@ https://feeds.feedburner.com/engadget
 https://feeds.feedburner.com/TechCrunch
 https://opensource.com/feed
 https://feeds.feedburner.com/linuxtoday/linux
+https://thenewstack.io/blog/feed/
 http://feeds.bbci.co.uk/news/technology/rss.xml
 https://www.pcgamer.com/rss
 https://sputniknews.com/export/rss2/archive/index.xml
