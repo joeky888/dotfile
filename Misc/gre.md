@@ -8,7 +8,7 @@ Magoosh gre app 測驗
 寫作 3_0829C 下 - Questions7to9 01:06:00 - 無課本
 
 實體課:
-帶 OG，做 pp2 pp3 (1的81/82/83 23的95/96 )
+帶 OG
 
 It is nothing short of a miracle (負負得正句) 完全就是奇跡
 nothing but 只不過

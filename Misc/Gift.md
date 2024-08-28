@@ -1,5 +1,6 @@
 JUMBO BEAR 巨大熊軟糖
 Bath bomb  浴炸彈
+alcoholic chocolate / liqueur chocolate 酒心巧克力
 Electric arc lighter 電弧式打火機
 草莓大福
 麻糬餅

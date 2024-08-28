@@ -7,6 +7,7 @@
 | ..insofar                         | ..到目前為止                 |     |
 | take liberties                    | 自作主張                     |     |
 | give sb. the benefit of the doubt | 把某人往好處想(而不去怪罪他) |     |
+| argue for/argue against           | 支持/反對                    |     |
 
 | GRE 學霸字彙--高頻搭配詞        |                            |                                  |
 | ------------------------------- | -------------------------- | -------------------------------- |
@@ -578,7 +579,7 @@
 | be espoused ideas               | 被擁護、支持的主張         | [ɪsˋpaʊz] e-spouse配偶           |
 | be estranged from family        | 和家人疏離的               | [əˋstrendʒd]                     |
 | euphemistic description         | 委婉的描述                 | [͵jufəˋmɪstɪk] eu好-phem說話     |
-| euphoria of winning             | 勝利的狂喜                 | [juˋforɪə]                       |
+| euphoria of winning             | 勝利的狂喜                 | [juˋforɪə] eu好-victoria勝利     |
 | to exemplify one point          | 舉出一個例子               | [ɪgˋzɛmplə͵faɪ]                  |
 | to exemplify contemporary art   | 當代藝術的典型例子         | [ɪgˋzɛmplə͵faɪ]                  |
 | evanescent impression           | 逐漸消逝的印象             | [͵ɛvəˋnɛsnt]                     |
@@ -1537,6 +1538,7 @@
 | unexampled advantage            | 空前的優勢                 | [͵ʌnɪgˋzæmp!d]                   |
 | an unequivocal answer           | 明確的、毫不含糊回答       | [͵ʌnɪˋkwɪvək!]                   |
 | unfeigned feelings              | 真誠無偽裝的情感           | [ʌnˋfend]                        |
+| unhinged person                 | 精神錯亂的人               | [ʌnˋhɪndʒd] hinge樞紐、鉸鏈      |
 | univocal answer                 | 明確的回答                 | [juˋnɪvək!]                      |
 | unkempt essay                   | 凌亂的文章                 | [ʌnˋkɛmpt]                       |
 | unmistakable evidence           | 清楚的證據                 | [͵ʌnməˋstekəb!]                  |
