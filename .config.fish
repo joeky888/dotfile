@@ -228,7 +228,7 @@ end
 set DL_ARGUMENTS "-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --embed-metadata --sponsorblock-remove all --hls-prefer-native --no-check-certificate --ignore-errors"
 set PLAYER_ARGUMENTS "--cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 set DOWNLOADER_ARGUMENTS "--file-allocation=prealloc --continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=10 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false" # aria2 & bypy
-set TORRENT_ARGUMENTS "--enable-dht=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5 --max-upload-limit=25K"
+set TORRENT_ARGUMENTS="--enable-dht=true --enable-dht6=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5 --max-upload-limit=25K"
 set VCS_FOLDERS "**/.bzr/*,**/CVS/*,**/.git/*,**/.hg/*,**/.svn/*"
 set VCS_FOLDERS_MORE "$VCS_FOLDERS,**/vendor/*,**/node_modules/*,**/ohmyzsh/*,**/dist/*,**/bin/*"
 set NIXPKGS_ALLOW_UNFREE 1

@@ -649,7 +649,7 @@
 | figurative expression           | 比喻的表達方式             | [ˋfɪgjərətɪv]                    |
 | to finagle a promotion          | 耍花招騙取到了升遷         | [fɪˋneg!]                        |
 | finicky eater                   | 挑食者，吃東西過分挑剔的人 | [ˋfɪnɪkɪ]                        |
-| fitful progress                 | 斷斷續續的進展             | [ˋfɪtfəl]                        |
+| fitful progress                 | 斷斷續續的進展             | [ˋfɪtfəl] intermittent斷續的     |
 | flaccid performance             | 死氣沉沉的表演             | [ˋflæksɪd]                       |
 | flaccid state                   | (肌肉)鬆弛的狀態           | [ˋflæksɪd]                       |
 | flagging economy                | 疲軟的經濟                 | [ˋflægɪŋ]                        |
@@ -881,7 +881,7 @@
 | intermediary role               | 居中調解的角色             | [͵ɪntɚˋmidɪ͵ɛrɪ]                 |
 | interminable speech             | 冗長的演講                 | [ɪnˋtɝmənəb!]                    |
 | intermingle fact with fiction   | 混合事實與虛構             | [͵ɪntɚˋmɪŋg!]                    |
-| intermittent HTTP error 504     | 斷斷續續的 HTTP 504 錯誤   | [͵ɪntɚˋmɪtnt]                    |
+| intermittent HTTP error 504     | 斷斷續續的 HTTP 504 錯誤   | [͵ɪntɚˋmɪtnt] fitful斷續的       |
 | intervene in the Vietnam War    | 干預；介入調停越南戰爭     | [͵ɪntɚˋvin] 曼哈頓隊長           |
 | intimate relationship           | 親密關係                   | [ˋɪntəmɪt]                       |
 | intimate to students            | 暗示、通知學生             | [ˋɪntəmɪt]                       |
