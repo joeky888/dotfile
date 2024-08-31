@@ -887,7 +887,7 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   else
     alias ls='ls -G'
   fi
-  alias sudoedit='sudo vim'
+  alias sudoedit='sudo nvim'
 
   for tool in /usr/local/opt/*/bin; do
     export PATH="$tool:$PATH"
@@ -1076,7 +1076,7 @@ fi
 
 vman() {
   # for FreeBSD/MacOS, col -b removes backspaces, col -x replace tabs with spaces
-  MANPAGER=cat man $@ | col -bx | vim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
+  MANPAGER=cat man $@ | col -bx | nvim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
 }
 
 curlToAria2()
