@@ -273,9 +273,6 @@ if [[ -d "$HOME/.nix-profile/bin/" ]]; then
   [ -f "$HOME/.nix-profile/etc/profile.d/nix.sh" ] && source "$HOME/.nix-profile/etc/profile.d/nix.sh"
 fi
 
-if [[ $(command -v nvim) ]]; then
-  alias vim=nvim
-fi
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"

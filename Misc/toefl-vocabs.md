@@ -457,9 +457,9 @@
 
 ## Literature 文學
 
-| 精選集      | 悲歌、悼詩                 | 回憶錄 |
-| ----------- | -------------------------- | ------ |
-| anthologies | elegy/lament/requiem/dirge | memoir |
+| 精選集      | 悲歌、悼詩                            | 回憶錄 |
+| ----------- | ------------------------------------- | ------ |
+| anthologies | elegy/lament/requiem/dirge/condolence | memoir |
 
 ## Life 生活
 
