@@ -517,6 +517,7 @@ Ideas to be done
 * Rust + Mold linker - https://github.com/rui314/mold
 * Webassembly + Web Workers m3u8 downloader chrome extension
   * Comlink
+* Package cocos game into deno bianry using webgpu (alternative to electron)
 * OBS studio alternative for android/ios
 * React Native Video player as a mpv alternative for mobile
   * libvlc as kernel

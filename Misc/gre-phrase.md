@@ -106,8 +106,8 @@
 | popular apothegm                | 眾所皆知的格言警句         | [ˋæpə͵θɛm]                       |
 | achieve the apotheosis          | 達到巔峰、封神             | [ə͵pɑθɪˋosɪs]                    |
 | appease the pain                | 減緩痛苦                   |                                  |
-| apposite remark                 | 適當的言論                 | [ˋæpəzɪt]                        |
-| appraise the performance        | 評估、估計效能             | [əˋprez] 注意這個字不是讚揚      |
+| apposite remark                 | 適當的言論                 | [ˋæpəzɪt] 注意這個詞不是對立     |
+| appraise the performance        | 評估、估計效能             | [əˋprez] 注意這個詞不是讚揚      |
 | appreciable difference          | 可觀的、相當大的差異       | [əˋpriʃɪəb!]                     |
 | expressed apprehension about .. | 對..表現出擔憂             | [͵æprɪˋhɛnʃən]                   |
 | quick to apprehend              | 很快地理解、意識到         | [͵æprɪˋhɛnd]                     |
@@ -141,8 +141,8 @@
 | to assuage the pain             | 減輕痛苦                   | [əˋswedʒ]                        |
 | astringent criticism            | 嚴厲的批評                 | [əˋstrɪndʒənt] a-stringent嚴格   |
 | astronomical prices             | 高昂的價錢                 |                                  |
-| astute investment               | 精明(狡猾)的投資           | [əˋstjut] as像-tute兔            |
-| atrocious crime                 | 罪大惡極的犯罪             | [əˋtroʃəs] a-troc殘忍            |
+| astute investment               | 精明(狡猾)的投資           | [əˋstjut] as像-tute兔兔          |
+| atrocious crime                 | 罪大惡極的犯罪             | [əˋtroʃəs] enormity罪大惡極      |
 | to attenuate the power          | 削弱、衰減權力             | [əˋtɛnjʊ͵et] extenuate減輕       |
 | atypical reaction               | 非典型、異常的反應         | [eˋtɪpɪk!]                       |
 | audacious plan                  | 大膽的計畫                 | [ɔˋdeʃəs]                        |
@@ -245,7 +245,7 @@
 | calumnious statement            | 誹謗的言論                 | [kəˋlʌmnɪəs] 靠你個老母          |
 | vicious calumny                 | 惡毒的毀謗中傷             | [ˋkæləmnɪ]                       |
 | disdain to answer               | 輕蔑、不屑去回答           | [dɪsˋden]                        |
-| disturbed by canard             | 被造謠、假新聞困擾         | [kəˋnɑrd]                        |
+| disturbed by canard             | 被造謠、假新聞困擾         | [kəˋnɑrd] 坑人啊                 |
 | talk with candor                | 直白坦率的談話             | [ˋkændɚ]                         |
 | candid discussion               | 直白坦率的討論             | [ˋkændɪd]                        |
 | canned speech                   | 制式內容的演講             |                                  |
@@ -272,7 +272,7 @@
 | censurable action               | 該受責備的行為             | [ˋsɛnʃərəb!] censure責備         |
 | centrifugal force               | 離心力；使政權離散的力量   | [sɛnˋtrɪfjʊg!]                   |
 | cerebral analysis               | 理智的分析                 | [ˋsɛrəbrəl]                      |
-| chagrined the supporters        | 讓支持者失望               | [ʃəˋgrɪn]                        |
+| chagrined the supporters        | 讓支持者失望               | [ʃəˋgrɪn] 啥鬼                   |
 | much-championed idea            | 備受支持的想法             |                                  |
 | to champion civil rights        | 為公民權利而奮戰           |                                  |
 | chary investors                 | 謹慎小心的投資者           | [ˋtʃɛrɪ]                         |
@@ -342,7 +342,7 @@
 | concomitant disease             | 同時發生、伴隨而來的疾病   | [kɑnˋkɑmətənt]                   |
 | concordant opinion              | 一致的看法                 | [kənˋkɔrdənt]                    |
 | condescending attitude          | 高高在上的態度             | [͵kɑndɪˋsɛndɪŋ]                  |
-| condone the violence            | 容忍、縱容暴力             | [kənˋdon] condom套               |
+| condone the violence            | 容忍、縱容暴力             | [kənˋdon] 曼哈頓博士             |
 | extinguished the conflagration  | 撲滅了這場大火             | [͵kɑnfləˋgreʃən]                 |
 | regional conflagration          | 地區的衝突、戰火           | [͵kɑnfləˋgreʃən]                 |
 | to conflate A and B             | 合併 A 跟 B (尤指文學)     | [kənˋflet]                       |
@@ -357,13 +357,13 @@
 | conspicuous success             | 令人矚目的成功             | [kənˋspɪkjʊəs]                   |
 | conspicuous consumption         | 炫富型的消費               | [kənˋspɪkjʊəs]                   |
 | be construed as agreement       | 被理解成、解釋成是同意     | [kənˋstru]                       |
-| consummate liar                 | 技巧高超的騙子             | [ˋkɑnsə͵met]                     |
+| consummate liar                 | 技巧高超的騙子             | [ˋkɑnsə͵met] con-summate瞬美的   |
 | consummate model                | 完美的典範                 | [ˋkɑnsə͵met]                     |
 | contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv] 注意 l          |
 | contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 注意 t            |
 | contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 注意 t           |
 | contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs]                     |
-| contentious topic               | 受爭議的議題               | [kənˋtɛnʃəs]                     |
+| contentious topic               | 爭議的議題                 | [kənˋtɛnʃəs]                     |
 | hotly contested election        | 非常激烈的選舉             |                                  |
 | contiguous countries            | 相鄰的國家                 | [kənˋtɪgjʊəs]                    |
 | a small contingent              | 一個小型的派遣隊           | [kənˋtɪndʒənt]                   |
@@ -536,8 +536,8 @@
 | elusive memories                | 模糊易忘的記憶             | [ɪˋlusɪv] 躲避的、溜走的         |
 | elusive person                  | 難以找到的人               | [ɪˋlusɪv]                        |
 | elusive story                   | 難以理解的故事             | [ɪˋlusɪv]                        |
-| embellished story               | 加油添醋的故事             | [ɪmˋbɛlɪʃ] em使-bell鈴響         |
-| embellished with flowers        | 用花點綴、裝飾             | [ɪmˋbɛlɪʃ]                       |
+| embellished story               | 加油添醋的故事             | [ɪmˋbɛlɪʃ] spice up加料          |
+| embellished with flowers        | 用花點綴、裝飾             | [ɪmˋbɛlɪʃ] em使-bell鈴響         |
 | be emblematic of love           | 象徵愛的                   | [͵ɛmblɪˋmætɪk] em使-blem插入     |
 | embroiled in battles            | 捲入戰爭的                 | [ɛmˋbrɔɪld] em使-boriled烤       |
 | emergent markets                | 新興的市場                 | [ɪˋmɝdʒənt]                      |
@@ -555,7 +555,8 @@
 | enigmatic message               | 神秘難懂的訊息             | [͵ɛnɪgˋmætɪk]                    |
 | enlightened policy              | 開明的政策                 | [ɪnˋlaɪtnd]                      |
 | personal enmity                 | 私人的仇恨                 | [ˋɛnmətɪ]                        |
-| be entangled in the scandal     | 捲入醜聞                   | [ɪnˋtæŋg!]                       |
+| enormity of the crime           | 罪大惡極的犯罪             | [ɪˋnɔrmətɪ] atrocious罪大惡極    |
+| be entangled in the scandal     | 捲入醜聞                   | [ɪnˋtæŋg!] (量子)糾纏            |
 | enthralling smile               | 迷人的笑容                 | [ɪnˋθrɔlɪŋ] en使-thrall無法自拔  |
 | enticing offer                  | 迷人的、誘人的條件         | [ɪnˋtaɪsɪŋ]                      |
 | entranced children              | 著迷入神的孩子             | [ɛnˋtrænst]                      |
@@ -862,7 +863,7 @@
 | innocuous changes               | 無害的改變                 | [ɪˋnɑkjʊəs]                      |
 | inquisitive mind                | 好探人隱私的心態           | [ɪnˋkwɪzətɪv]                    |
 | insatiable thirst for knowledge | 對知識永不滿足的渴求       | [ɪnˋseʃɪəb!]                     |
-| inscrutable expression          | 難以理解的表情             | [ɪnˋskrutəb!] scrutable可理解    |
+| inscrutable expression          | 不可思議的表情             | [ɪnˋskrutəb!] scrutable可理解    |
 | an insidious foe                | 陰險狡詐的敵人             | [ɪnˋsɪdɪəs] inside暗中-dio迪奧   |
 | insipid paper                   | 枯燥乏味的論文             | [ɪnˋsɪpɪd] in不-sip好喝          |
 | insolent gesture                | 傲慢無禮的手勢             | [ˋɪnsələnt] in-solet敬禮         |
@@ -897,7 +898,7 @@
 | intrusive lighting              | 擾人的燈光                 | [ɪnˋtrusɪv]                      |
 | intrusive question              | 冒犯人的問題               | [ɪnˋtrusɪv]                      |
 | intuitive judgment              | 直覺的判斷                 | [ɪnˋtjʊɪtɪv]                     |
-| be inundated with requests      | 壓倒性的、淹沒般的請求     | [ˋɪnʌn͵det] under之下-ate吞噬    |
+| be inundated with requests      | 壓倒性的、淹沒般的請求     | [ˋɪnʌn͵det] engulf吞噬、淹沒     |
 | invalidated theory              | 推翻的理論                 | [ɪnˋvælə͵det]                    |
 | invasive species                | 入侵物種                   |                                  |
 | inverse relationship            | 逆關係，負相關的關係       |                                  |
@@ -912,7 +913,7 @@
 | irreconcilable differences      | 無法化解的分歧             | [ɪˋrɛkən͵saɪləb!]                |
 | irrefutable argument            | 無可辯駁的論證             | [ɪˋrɛfjʊtəb!]                    |
 | irremediable disaster           | 無藥可救的災難             | [͵ɪrɪˋmidɪəb!]                   |
-| irresolute reply                | 猶豫不決的回答             | [ɪˋrɛzəlut] irr--solute解法      |
+| irresolute reply                | 猶豫不決的回答             | [ɪˋrɛzəlut] irr-solute解法       |
 | irrevocable decision            | 無法改變的決定             | [ɪˋrɛvəkəb!]                     |
 | itinerant entertainer           | 巡迴表演的藝人             | [ɪˋtɪnərənt]                     |
 | jaded musician                  | 了無新意的音樂家           | [ˋdʒedɪd]                        |
@@ -1031,7 +1032,7 @@
 | moralistic talk                 | 說教的談話                 | [͵mɔrəˋlɪstɪk]                   |
 | morbid obesity                  | 病態性的肥胖               |                                  |
 | mordant remark                  | 尖酸的言論                 | [ˋmɔrdnt]                        |
-| moribund career                 | 停滯、垂死的事業           | [ˋmɔrə͵bʌnd]                     |
+| moribund career                 | 停滯、垂死的事業           | [ˋmɔrə͵bʌnd] stagnant停滯        |
 | morose expression               | 悶悶不樂的表情             | [məˋros]                         |
 | a motley collection of things   | 各式各樣的東西             | [ˋmɑtlɪ]                         |
 | mounting debts                  | 加劇的債務                 | [ˋmaʊntɪŋ]                       |
@@ -1052,7 +1053,7 @@
 | nascent problem                 | 剛出現的問題               | [ˋnæsnt]                         |
 | one's natal city                | 某人出生的城市             | [ˋnet!]                          |
 | nebulous concept                | 模糊不清的概念             | [ˋnɛbjələs]                      |
-| nefarious practice              | 邪惡不法的勾當             | [nəˋfɛrɪəs]                      |
+| nefarious practice              | 邪惡不法的勾當             | [nəˋfɛrɪəs] 哪法能如實           |
 | negligent judge                 | 疏忽失職的法官             | [ˋnɛglɪdʒənt]                    |
 | negligible effect               | 微不足道的影響             | [ˋnɛglɪdʒəb!]                    |
 | neutral language                | 中立的語言                 | [ˋnjutrəl]                       |
@@ -1170,6 +1171,7 @@
 | penitent look                   | 懊悔的神情                 | [ˋpɛnətənt]                      |
 | pensive book                    | 讓人反省的書               | [ˋpɛnsɪv]                        |
 | penurious situation             | 赤貧的狀態                 | [pəˋnjʊrɪəs] penu錢              |
+| per capita expenditure          | 人均消費                   | Total$/人                        |
 | perceptive writer               | 富有洞察力的作者           | [pɚˋsɛptɪv]                      |
 | perennial problem               | 長年的問題                 | [pəˋrɛnɪəl]                      |
 | perfidious lover                | 負心的戀人                 | [pɚˋfɪdɪəs] per穿透-fid信任      |
@@ -1211,7 +1213,7 @@
 | poignant remark                 | 尖銳的批評                 | [ˋpɔɪnənt]                       |
 | polemical essay                 | 激烈爭辯的文章             | [pəˋlɛmɪkəl] pole極-mic麥克風    |
 | pompous manager                 | 自負的經理                 | [ˋpɑmpəs]                        |
-| pompous phrases                 | 浮誇的用語                 | [ˋpɑmpəs]                        |
+| pompous phrases                 | 自大的用語                 | [ˋpɑmpəs]                        |
 | ponderous writing style         | 冗長乏味的寫作風格         | [ˋpɑndərəs]                      |
 | to posit an assumption          | 假設、假定一個猜想         | [ˋpɑzɪt]                         |
 | pragmatic CEO                   | 務實的執行長               | [prægˋmætɪk]                     |
@@ -1227,6 +1229,7 @@
 | preemptive strike               | 先發制人的攻擊             | [priˋɛmptɪv]                     |
 | premeditated assault            | 預謀的攻擊                 | [prɪˋmɛdə͵tetɪd]                 |
 | premonitory sign                | 預兆，預告的跡象           | [prɪˋmɑnə͵torɪ]                  |
+| preposterous suggestion         | 荒謬可笑的建議             | [priˋpɑstərəs]                   |
 | prescient remark                | 預知的言論                 | [ˋprɛʃɪənt]                      |
 | pressing need                   | 迫切的需求                 | [ˋprɛsɪŋ]                        |
 | presumptuous habit              | 冒昧無禮的習慣             | [prɪˋzʌmptʃʊəs] presume冒昧      |
@@ -1271,7 +1274,7 @@
 | provocative remark              | 挑釁的言論                 | [prəˋvɑkətɪv]                    |
 | prudent investor                | 謹慎精明的投資人           | [ˋprudnt]                        |
 | pugnacious virago               | 好鬥的悍婦                 | [pʌgˋneʃəs] [vəˋrego]            |
-| punctilious attitude            | 一絲不苟的態度             | [pʌŋkˋtɪlɪəs] 龐克提利益時       |
+| punctilious attitude            | 一絲不苟的態度             | [pʌŋkˋtɪlɪəs] 龐克 提利益 時     |
 | technical pundit                | 技術的專家、權威           | [ˋpʌndɪt]                        |
 | quaint idea                     | 怪異有趣的想法             | [kwent]                          |
 | qualify the criticisms          | 限制、減緩批評             | (修飾文字使得合格)               |
@@ -1363,7 +1366,7 @@
 | salutary impact                 | 有利的影響                 | [ˋsæljə͵tɛrɪ]                    |
 | sanctimonious politician        | 偽聖、偽善的政客           | [͵sæŋktəˋmonɪəs] sanct聖人-mon警 |
 | sanguine view                   | 樂觀的看法                 | [ˋsæŋgwɪn]                       |
-| sardonic film                   | 嘲諷的電影                 | [sɑrˋdɑnɪk]                      |
+| sardonic film                   | 嘲諷的電影                 | [sɑrˋdɑnɪk] 傻蛋一個             |
 | business savvy                  | 商業上的專業知識           | [ˋsævɪ]                          |
 | tech-savvy workers              | 非常了解技術的工人         | [ˋsævɪ]                          |
 | scant attention                 | 鮮少的理睬                 | [skænt]                          |
@@ -1425,7 +1428,7 @@
 | spurious argument               | 欺騙的論述                 | [ˋspjʊrɪəs]                      |
 | spurious charge                 | 錯誤的指控                 | [ˋspjʊrɪəs]                      |
 | staggering statistics           | 驚人的數據                 | [ˋstægərɪŋ]                      |
-| stagnant economy                | 停滯蕭條的經濟             | [ˋstægnənt]                      |
+| stagnant economy                | 停滯蕭條的經濟             | [ˋstægnənt] moribund停滯         |
 | stagnant water                  | 不流動、汙濁的水池         | [ˋstægnənt]                      |
 | staid teacher                   | 穩重端莊但古板的老師       | [sted] 死調的古板                |
 | stale phrase                    | 了無新意的用語             | [stel] 死故事                    |
@@ -1607,6 +1610,7 @@
 | a winsome smile                 | 迷人的、惹人喜愛的笑容     | [ˋwɪnsəm] win贏得-some人們喜愛   |
 | wistful look                    | 留戀的神情                 | [ˋwɪstfəl]                       |
 | witty remark                    | 詼諧機智的發言             | [ˋwɪtɪ]                          |
+| woe                             | 悲傷；禍患                 | [wo]                             |
 | to woo fame                     | 追求、爭取名聲             | [wu]                             |
 | worldly person                  | 處世圓滑的人               |                                  |
 | wrongheaded idea                | 頑固的念頭                 | [ˋrɔŋˋhɛdɪd]                     |
