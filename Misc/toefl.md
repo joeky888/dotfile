@@ -528,7 +528,7 @@ As a matter of fact, as a software engineer who constantly delve into the latest
 # Writing ideas
 
 - Medical science
-  - Antibiotics decreased the death rate in the 20th centry
+  - penicillin (盤尼西林) - Antibiotics decreased the death rate in the 20th centry
   - Vaccines saves millions of lives during the pandemic
   - Monkeypox was vanquished in 2023 (within one year)
   - The Prohibition era 美國禁酒令 - Making Moonshine had become illegal. Facilitate the growth of Coca-Cola which was merely in a niche market

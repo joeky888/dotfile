@@ -394,7 +394,7 @@
 | credulous child                 | 容易上當的孩子             | [ˋkrɛdʒʊləs] cred信任-ulous人    |
 | cryptic message                 | 隱晦難懂的信息             | [ˋkrɪptɪk]                       |
 | cupidity of mankind             | 人心的貪婪                 | [kjuˋpɪdətɪ]                     |
-| culminate in bankruptcy         | 以破產告終                 | [ˋkʌlmə͵net]                     |
+| culminate in bankruptcy         | 以破產告終                 | [ˋkʌlmə͵net] culmination最高點   |
 | marriage culminated friendship  | 結婚使得友誼達到最高點     | [ˋkʌlmə͵net]                     |
 | culpable act                    | 有罪的行為                 | [ˋkʌlpəb!]                       |
 | cumbersome machine              | 笨重的機器                 | [ˋkʌmbɚsəm]                      |
@@ -454,7 +454,7 @@
 | dichotomous thinking            | 二分法(無中間立場)的思維   | [daɪˋkɑtəməs]                    |
 | well-known dictum               | 有名的格言                 | [ˋdɪktəm]                        |
 | didactic novel                  | 具教育性質的小說           | [dɪˋdæktɪk]                      |
-| diffident speaker               | 缺乏自信的講者             | [ˋdɪfədənt]                      |
+| diffident speaker               | 羞怯、缺乏自信的講者       | [ˋdɪfədənt] confident自信        |
 | digressive talk                 | 離題的演說                 | [daɪˋgrɛsɪv]                     |
 | dilapidated house               | 破舊不堪的房子             | [dəˋlæpə͵detɪd] di二分裂-lapid石 |
 | to dilate on the issue          | 詳細談論這個議題           | [daɪˋlet] v.擴張、膨脹           |
@@ -468,6 +468,7 @@
 | disaffected teenagers           | (低對高層)叛逆的青少年     | [͵dɪsəˋfɛktɪd]                   |
 | to discern fact and rumor       | 識別、看出事實與謠傳       | [dɪˋzɝn]                         |
 | discerning buyer                | 有眼光的消費者             | [dɪˋzɝnɪŋ]                       |
+| marital discord                 | 婚姻不和諧                 |                                  |
 | discomfiting situation          | 令人不安的狀況             | [dɪsˋkʌmfɪt]                     |
 | disconcerting experience        | 令人焦慮不安的經驗         | [͵dɪskənˋsɝt]                    |
 | discrediting scandal            | 讓人身敗名裂的醜聞         | [dɪsˋkrɛdɪt]                     |
@@ -570,7 +571,7 @@
 | equivocal statement             | 含糊的說法                 | [ɪˋkwɪvək!]                      |
 | to eradicate discrimination     | 根除、消滅歧視             | [ɪˋrædɪ͵ket] e出-radic激進、根部 |
 | errant husband                  | 出軌的丈夫                 | [ˋɛrənt]                         |
-| errant children                 | 走入歧途的孩子             | [ɪˋrætɪk]                        |
+| errant children                 | 走入歧途的孩子             | [ˋɛrənt]                         |
 | erratic behavior                | 古怪的行為                 | [ɪˋrætɪk]                        |
 | ersatz chocolate                | 巧克力的人造廉價替代品     | [ɛrˋzɑts]                        |
 | erstwhile allies                | 往昔的盟友                 | [ˋɝst͵hwaɪl] 兒時回憶            |

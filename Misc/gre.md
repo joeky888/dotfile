@@ -28,6 +28,32 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | ----------- | ------------ | ----------- |
 | Why         | How          | What        |
 
+寫作模板：
+
+1. The debate surrounding [topic] has become increasingly prevalent in recent years.
+   While some advocate for [view A], others argue that [view B].
+   From my vantage point, I endorse [A] that [view A].
+   This essay will examine both perspectives before presenting my own view on the matter.
+
+2. On one hand, supporters of [view A] argue that [reason/idea], emphasizing its advantages in terms of [aspect].
+   This argument is primarily based on the belief that [explanation], which significantly contributes to [outcome].
+   For instance, ..., further validating the effectiveness of this approach.
+   Hence, it is clear that [view A] offers notable benefits in addressing [aspect].
+
+3. On the other hand, those who favor [view B] contend that [reason/idea], suggesting that it provides a more comprehensive solution.
+   This position is grounded in the idea that [explanation], which enables [outcome] and mitigates some of the limitations associated with [view A].
+   For example, ..., which supports the assertion that [view B] is more viable in certain contexts.
+
+4. Having weighed the benefits of both perspectives, I firmly believe that [your view] offers a more balanced solution.
+   While [view A] excels in [aspect], it falls short in addressing [issue].
+   Similarly, [view B] provides valuable insights but overlooks [critical point].
+   Therefore, [your view] strikes an ideal balance by combining the strengths of both approaches.
+
+5. In conclusion, although both [view A] and [view B] present valid arguments in the debate over [topic],
+   [your view] ultimately offers the most balanced and effective approach.
+   By addressing [key issue] and incorporating elements of both perspectives,
+   this stance provides a sustainable and pragmatic solution to the challenge at hand.
+
 ## 心裡學主義
 
 | 唯心主義 | 唯物主義    | 平等主義       | 資本主義   | 多元主義  | 人文主義 | 利他主義 |

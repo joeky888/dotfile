@@ -318,6 +318,7 @@ Android
 * F-Droid
   * OpenLauncher
   * Termux
+    * helix and LSPs
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
   * Pipepipe (Newpipe alternative)
