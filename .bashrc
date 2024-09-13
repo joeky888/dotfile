@@ -431,6 +431,7 @@ upgradeDotfile() {
   rm -rf ~/.config/starship.toml
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.config/mpv/input.conf
+  rm -rf ~/.config/helix
   rm -rf ~/.hammerspoon/init.lua
 
   mkdir -p ~/.grc
@@ -444,6 +445,7 @@ upgradeDotfile() {
     mkdir -p ~/AppData/Roaming/alacritty
     mkdir -p ~/AppData/Roaming/Code/User
     mkdir -p ~/AppData/Roaming/VSCodium/User
+    mkdir -p ~/AppData/Roaming/helix
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
@@ -458,6 +460,7 @@ upgradeDotfile() {
     rm -f ~/AppData/Roaming/Code/User/settings.json
     rm -f ~/AppData/Roaming/VSCodium/User/keybindings.json
     rm -f ~/AppData/Roaming/VSCodium/User/settings.json
+    rm -f ~/AppData/Roaming/helix/config.toml
     rm -f ~/.config/fish/config.fish
     rm -f ~/.config/starship.toml
     rm -f ~/.config/zed/settings.json
@@ -491,6 +494,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
+    cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
     cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"

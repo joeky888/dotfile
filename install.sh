@@ -71,6 +71,7 @@ InstallDotfile()
   mkdir -p $Home/.config/mpv/script-opts
   mkdir -p $Home/.config/fish/
   mkdir -p $Home/.config/zed/
+  mkdir -p $Home/.config/helix/
   mkdir -p $Home/.pip/
   mkdir -p $Home/.grc/
   mkdir -p $Home/.hammerspoon/
@@ -94,6 +95,7 @@ InstallDotfile()
   ln -sf $Home/dotfile/.mpv_thumbnail_script_server.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_server.lua
   ln -sf $Home/dotfile/.zed.settings.js ~/.config/zed/settings.json
   ln -sf $Home/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
+  ln -sf $Home/dotfile/.helix.config.toml ~/.config/helix/config.toml
 
   case $OSTYPE in
   linux-gnu)
@@ -133,6 +135,7 @@ InstallDotfileCygwin()
   mkdir -p $Home/AppData/Roaming/alacritty
   mkdir -p $Home/AppData/Roaming/Code/User
   mkdir -p $Home/AppData/Roaming/VSCodium/User
+  mkdir -p $Home/AppData/Roaming/helix
   mkdir -p $Home/scoop/apps/mpv/current/portable_config/scripts
   mkdir -p $Home/scoop/apps/mpv/current/portable_config/script-opts
   mkdir -p $Home/scoop/apps/mpv-git/current/portable_config/scripts
@@ -193,6 +196,7 @@ InstallDotfileCygwin()
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
