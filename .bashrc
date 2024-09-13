@@ -509,6 +509,7 @@ upgradeDotfile() {
     mkdir -p ~/.config/mpv/scripts
     mkdir -p ~/.config/mpv/script-opts
     mkdir -p ~/.config/zed
+    mkdir -p ~/.config/helix
     mkdir -p ~/.pip/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
