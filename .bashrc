@@ -460,7 +460,6 @@ upgradeDotfile() {
     rm -f ~/AppData/Roaming/Code/User/settings.json
     rm -f ~/AppData/Roaming/VSCodium/User/keybindings.json
     rm -f ~/AppData/Roaming/VSCodium/User/settings.json
-    rm -f ~/AppData/Roaming/helix/config.toml
     rm -f ~/.config/fish/config.fish
     rm -f ~/.config/starship.toml
     rm -f ~/.config/zed/settings.json
@@ -538,6 +537,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/startfish.toml ~/.config/startfish.toml
     ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.json
     ln -sf $HOME/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
+    ln -sf $HOME/dotfile/.helix.config.toml ~/.config/helix/config.toml
 
     case $OSTYPE in
     linux-gnu)
