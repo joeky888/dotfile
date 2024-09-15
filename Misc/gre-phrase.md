@@ -16,7 +16,7 @@
 | aid and abet                    | (助長與煽動)同謀作案       | [əˋbɛt]                          |
 | abate a little                  | 減弱、減少了一些           | [əˋbet]                          |
 | go into abeyance                | (進入)中止、擱置狀態       | [əˋbeəns] a-被擱置               |
-| abhor crime                     | 痛恨犯罪                   | [əbˋhɔr]                         |
+| abhor crime                     | 痛恨犯罪                   | [əbˋhɔr] exhort規勸              |
 | abhorrent crime                 | 可惡的、可憎的犯罪         | [͵æbnɪˋgeʃən]                    |
 | in complete abnegation          | 完全的自我克制、不縱欲     | [͵æbnɪˋgeʃən] negate否決         |
 | abnegation of responsibility    | 責任的放棄                 | [͵æbnɪˋgeʃən]                    |
@@ -100,7 +100,7 @@
 | apathetic about politics        | 冷漠的政治態度             | [͵æpəˋθɛtɪk]                     |
 | aphoristic warning              | 格言警句般的警告           | [͵æfəˋrɪstɪk] a一個-phor格言     |
 | popular aphorism                | 眾所皆知的格言警句         | [ˋæfə͵rɪzəm]                     |
-| do ... with aplomb              | 以泰然自若的態度           | [əˋplɑm]                         |
+| do ... with aplomb              | 以泰然自若的態度           | [əˋplɑm] 阿不會怎樣啦            |
 | an apocryphal story             | 虛構的、杜撰的故事         | [əˋpɑkrəfəl] apo遠離-cryp神秘    |
 | capture the apostate            | 抓住這叛徒                 | [əˋpɑstet]                       |
 | popular apothegm                | 眾所皆知的格言警句         | [ˋæpə͵θɛm]                       |
@@ -305,7 +305,6 @@
 | collusive activity              | 共謀的行動                 | [kəˋlusɪv]                       |
 | colossal failure                | 巨大的失敗                 |                                  |
 | passport was confiscated        | 護照被沒收                 | [ˋkɑnfɪs͵ket]                    |
-| convivial host                  | 愉悅友好的主人             | [kənˋvɪvɪəl]                     |
 | commendable bravery             | 值得讚揚的勇氣             | [kəˋmɛndəb!]                     |
 | pay is commensurate with skills | 與技能相稱的薪資           | [kəˋmɛnʃərɪt]                    |
 | concise compendium              | 精簡的概要、摘要           | [kəmˋpɛndɪəm]                    |
@@ -359,9 +358,9 @@
 | be construed as agreement       | 被理解成、解釋成是同意     | [kənˋstru]                       |
 | consummate liar                 | 技巧高超的騙子             | [ˋkɑnsə͵met] con-summate瞬美的   |
 | consummate model                | 完美的典範                 | [ˋkɑnsə͵met]                     |
-| contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv] 注意 l          |
-| contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 注意 t            |
-| contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 注意 t           |
+| contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv] 踢不破          |
+| contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 天兵喔            |
+| contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 天兵死了         |
 | contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs]                     |
 | contentious topic               | 爭議的議題                 | [kənˋtɛnʃəs]                     |
 | hotly contested election        | 非常激烈的選舉             |                                  |
@@ -373,6 +372,7 @@
 | contumacious conduct            | 反抗的行為                 | [͵kɑntjʊˋmeʃəs] con同tum腫脹驕傲 |
 | solve the conundrum             | 解決這難題                 | [kəˋnʌndrəm] under蒙在drum鼓裡   |
 | convergent policies             | 相容的政策                 |                                  |
+| convivial host                  | 愉悅友好的主人             | [kənˋvɪvɪəl]                     |
 | convivial atmosphere            | 歡樂的氣氛                 | [kənˋvɪvɪəl]                     |
 | be conversant in ten languages  | 精通十種語言的             | [ˋkɑnvɚsnt]                      |
 | convoluted sentence             | 錯綜複雜的句子             | [ˋkɑnvə͵lutɪd]                   |
@@ -595,7 +595,7 @@
 | excommunicated by the priest    | 被神父開除、流放           | [͵ɛkskəˋmjunə͵ket]               |
 | exhaustive account              | 詳盡的解釋                 | [ɪgˋzɔstɪv]                      |
 | exhaustive research             | 徹底的研究                 | [ɪgˋzɔstɪv]                      |
-| to exhort not to drink          | 規勸、告誡別再喝酒         | [ɪgˋzɔrt] ex出-hort鼓舞          |
+| to exhort not to drink          | 規勸、告誡別再喝酒         | [ɪgˋzɔrt] abhor痛恨              |
 | exhilarated crowd               | 振奮的群眾                 | [ɪgˋzɪlə͵retɪd]                  |
 | exigent problem                 | 緊急的問題                 | [ˋɛksədʒənt]                     |
 | exiguous salary                 | 微薄、稀少的薪水           | [ɛgˋzɪgjʊəs]                     |

@@ -381,9 +381,9 @@
 | --------------------------- | ----------------------------------- | ---------------------- |
 | substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed        |
 
-| 連鎖、連接 | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 |
-| ---------- | ----------- | -------- | ---------- |
-| linkage    | disjunction | barn     | landfill   |
+| 連鎖、連接    | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 |
+| ------------- | ----------- | -------- | ---------- |
+| linkage/hinge | disjunction | barn     | landfill   |
 
 ## Metallurgy 冶金學
 
