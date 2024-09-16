@@ -157,6 +157,7 @@
 | to aver by the speaker          | 講者聲稱、斷言             | [əˋvɝ] = assert                  |
 | to avert the spread of plague   | 防止瘟疫的散佈             | [əˋvɝt]                          |
 | axiomatic theory                | 不證自明的理論             | [͵æksɪəˋmætɪk]                   |
+| awry in                         | 錯誤的                     |                                  |
 | a becoming dress                | 合適相配的連衣裙           | [bɪˋkʌmɪŋ]                       |
 | to badger sb.                   | 困擾著、糾纏著某人         | [ˋbædʒɚ]                         |
 | baffling problem                | 令人困惑的問題             | [ˋbæf!ɪŋ]                        |
@@ -370,6 +371,7 @@
 | contrite apology                | 懺悔的道歉                 | [ˋkɑntraɪt]                      |
 | contrive a plan                 | 策劃、設計一個計劃         | [kənˋtraɪv]                      |
 | contumacious conduct            | 反抗的行為                 | [͵kɑntjʊˋmeʃəs] con同tum腫脹驕傲 |
+| concur                          | 同意                       |                                  |
 | solve the conundrum             | 解決這難題                 | [kəˋnʌndrəm] under蒙在drum鼓裡   |
 | convergent policies             | 相容的政策                 |                                  |
 | convivial host                  | 愉悅友好的主人             | [kənˋvɪvɪəl]                     |
@@ -547,6 +549,7 @@
 | empirical research              | 有實驗(經驗主義)的研究     | [ɛmˋpɪrɪk!]                      |
 | much-emulated paragon           | 備受仿效的楷模             | [ˋɛmjə͵let] [ˋpærəgən]           |
 | encumbered by external forces   | 受外力阻撓、阻礙           | [ɪnˋkʌmbɚ]                       |
+| encomium                        | 讚美 讚揚                  | [ɛnˋkomɪəm]                      |
 | encyclopedic professor          | 知識廣博的教授             | [ɪn͵saɪkləˋpidɪk]                |
 | endowed talent                  | 與生俱來的才能             | [ɪnˋdaʊ] en使-dow給予            |
 | enervated patient               | 虛弱無力的病患             | [ˋɛnɚ͵vetɪd] ener能量-vat被裝桶  |
@@ -593,7 +596,7 @@
 | much-exalted empire             | 備受吹捧讚揚的帝國         | [ɪgˋzɔltɪd]                      |
 | to exasperate the enemy         | 激怒敵人                   | [ɪgˋzæspə͵ret] ex出asper亞斯伯格 |
 | excommunicated by the priest    | 被神父開除、流放           | [͵ɛkskəˋmjunə͵ket]               |
-| exhaustive account              | 詳盡的解釋                 | [ɪgˋzɔstɪv]                      |
+| exhaustive account              | 詳盡的解釋                 | [ɪgˋzɔstɪv] = comprehensive      |
 | exhaustive research             | 徹底的研究                 | [ɪgˋzɔstɪv]                      |
 | to exhort not to drink          | 規勸、告誡別再喝酒         | [ɪgˋzɔrt] abhor痛恨              |
 | exhilarated crowd               | 振奮的群眾                 | [ɪgˋzɪlə͵retɪd]                  |
@@ -751,6 +754,7 @@
 | hermetic lifestyle              | 與世隔絕的生活型態         | [hɚˋmɛtɪk]                       |
 | hidebound policy                | 守舊迂腐的政策             | [ˋhaɪd͵baʊnd]                    |
 | hierarchical organization       | 階級分明的組織             |                                  |
+| high-minded                     | 高尚的 理想的              |                                  |
 | histrionic representations      | 戲劇性的表現               | [͵hɪstrɪˋɑnɪk]                   |
 | a hodgepodge of ideas           | 一堆點子的大雜燴、綜合體   | [ˋhɑdʒ͵pɑdʒ] 蝦菊扒雞大雜燴      |
 | homogeneous group               | 同質性的團體               | [͵homəˋdʒinɪəs]                  |
@@ -806,7 +810,7 @@
 | inadvertent incident            | 意外的事件                 | [͵ɪnədˋvɝtnt] inadequate不足     |
 | be incensed by the press        | 被媒體激怒                 | [ɪnˋsɛnst]                       |
 | incessant endeavor              | 不斷的努力                 | [ɪnˋsɛsnt] 殷勤廝殺              |
-| inchoate awareness              | 早期、初步的認知           | [ˋɪnko͵et]                       |
+| inchoate awareness              | 早期、初步的認知           | [ˋɪnko͵et] 應可吞                |
 | incongruous color               | 不適宜、不相稱的顏色       | [ɪnˋkɑŋgrʊəs] congruous一致的    |
 | incongruous story               | 前後矛盾的故事             | [ɪnˋkɑŋgrʊəs]                    |
 | inconsequential differences     | 不重要、無關緊要的差別     | [ɪn͵kɑnsəˋkwɛnʃəl]               |
@@ -966,6 +970,7 @@
 | lucrative business              | 可賺錢的生意               | [ˋlukrətɪv] 擼得出錢的           |
 | ludicrous idea                  | 荒唐愚蠢的想法             | [ˋludɪkrəs]                      |
 | lugubrious song                 | 悲傷的歌曲                 | [luˋgjubrɪəs] 擼個不出的         |
+| lull                            | 休息暫緩                   | = respite                        |
 | luminous explanation            | 清楚的解釋                 | [ˋlumənəs]                       |
 | luminous performance            | 出色的表現                 | [ˋlumənəs]                       |
 | lurid details                   | 毛骨悚然的細節             | [ˋlʊrɪd]                         |
@@ -1102,7 +1107,7 @@
 | obtrusive TV commercial         | 擾人的電視廣告             | [əbˋtrusɪv]                      |
 | obtuse angle                    | 鈍角                       | [əbˋtjus]                        |
 | obtuse pain                     | 隱隱的疼痛                 | [əbˋtjus]                        |
-| obviated need                   | 被排除、不需要的需求       | [ˋɑbvɪ͵et] ob-via途徑-ted踢掉    |
+| obviated need                   | 被排除、不需要的需求       | [ˋɑbvɪ͵et] 阿不要啦              |
 | occult power                    | 神秘的力量                 | [əˋkʌlt]                         |
 | odious crime                    | 可惡、可憎的罪行           | [ˋodɪəs] odi奧迪-ous很多->很討厭 |
 | offensive language              | 冒犯人的言語               |                                  |
@@ -1139,7 +1144,7 @@
 | overstated case                 | 被誇大的事件               | [ˋovɚˋstet]                      |
 | overt criticism                 | 公然的批評                 | [oˋvɝt] over過度-t提(公開)       |
 | overt hostility                 | 明顯的敵意                 | [oˋvɝt] = blatant                |
-| overweening ambition            | 自負的野心                 | [ˋovɚˋwinɪŋ] over過度-ween以為   |
+| overweening ambition            | 自負的野心                 | [ˋovɚˋwinɪŋ] over過度-ween威淫   |
 | overwhelming victory            | 壓倒性的勝利               |                                  |
 | overwrought parents             | 過度緊張的父母             | [ˋovɚˋrɔt] over過度-wrought工作  |
 | painstaking research            | 煞費苦心的調查             | [penz͵tekɪŋ] pains苦taking承受   |
@@ -1247,7 +1252,7 @@
 | prodigal lady                   | 揮霍的女子                 | [ˋprɑdɪg!]                       |
 | prodigal use of...              | 對...浪費的使用            | [ˋprɑdɪg!]                       |
 | a mind prodigal of ideas        | 大量豐富的點子             | [ˋprɑdɪg!]                       |
-| prodigious number of...         | 驚人的數量                 | [ˋprɑdɪg!]                       |
+| prodigious number of...         | 驚人的數量                 | [prəˋdɪdʒəs]                     |
 | prodigious talent               | 強大厲害的天分             | [prəˋdɪdʒəs]                     |
 | profligate life                 | 揮霍無度的人生             | [ˋprɑfləgɪt]                     |
 | profound effect                 | 深遠的影響                 |                                  |
@@ -1280,7 +1285,7 @@
 | quaint idea                     | 怪異有趣的想法             | [kwent]                          |
 | qualify the criticisms          | 限制、減緩批評             | (修飾文字使得合格)               |
 | have qualms about lying         | 為說謊感到焦慮、內疚       | [kwɔm]                           |
-| be in a quandary                | 身處困境中                 | [ˋkwɑndərɪ]                      |
+| be in a quandary                | 身處困境中                 | [ˋkwɑndərɪ] = dilemma            |
 | quarrelsome student             | 愛爭吵的學生               | [ˋkwɔrəlsəm]                     |
 | querulous customer              | 愛抱怨的顧客               | [ˋkwɛrələs]                      |
 | quiescent state                 | 平靜的狀態                 | [kwaɪˋɛsnt]                      |
@@ -1325,6 +1330,7 @@
 | be relegated to a junior job    | 降級分派到初級工作         | [ˋrɛlə͵get]                      |
 | relentless determination        | 堅定的決心                 | [rɪˋlɛntlɪslɪ]                   |
 | relentless financial problem    | 不斷持續的財務問題         | [rɪˋlɛntlɪslɪ]                   |
+| relish                          | 喜愛、享受                 | [ˋrɛlɪʃ]                         |
 | replete with aroma              | 充滿香氣                   | [rɪˋplit]                        |
 | reprehensible behavior          | 應受譴責的行為             | [͵rɛprɪˋhɛnsəb!]                 |
 | repressive measure              | 高壓的措施                 | [rɪˋprɛsɪv]                      |
@@ -1338,7 +1344,7 @@
 | accept situation in resignation | 屈服、順從現狀             | [͵rɛzɪgˋneʃən]                   |
 | resilient entrepreneur          | 高彈性、適應強的企業家     | [rɪˋzɪlɪənt]                     |
 | resilient firm                  | 有韌性的公司               | [rɪˋzɪlɪənt]                     |
-| have a respite                  | 暫時的休息、停工           | [ˋrɛspɪt] respire呼吸、喘口氣    |
+| have a respite                  | 暫時的休息、停工           | [ˋrɛspɪt] = lull 休息暫緩        |
 | resonate between two nations    | 兩國有了共鳴               | [ˋrɛzə͵net]                      |
 | restive populations             | 暴躁不安的人民             | [ˋrɛstɪv] 惡鄰                   |
 | resurgent inflation             | 復活的、再次發生的通膨     | [rɪˋsɝdʒənt]                     |
@@ -1372,7 +1378,7 @@
 | tech-savvy workers              | 非常了解技術的工人         | [ˋsævɪ]                          |
 | scant attention                 | 鮮少的理睬                 | [skænt]                          |
 | scanty evidence                 | 不足的證據                 | [ˋskæntɪ]                        |
-| scathing remark                 | 苛薄的言論                 | [ˋskeðɪŋ]                        |
+| scathing remark                 | 嚴厲苛薄的言論             | [ˋskeðɪŋ]                        |
 | screeds of analysis             | 單調冗長的分析文章         | [skrid]                          |
 | a ranting screed against ...    | 針對...的憤怒長篇大論      | [skrid]                          |
 | schematic diagram               | 示意圖，概要的圖表         | [skɪˋmætɪk]                      |
@@ -1384,6 +1390,7 @@
 | scrupulous detective            | 謹慎一絲不苟的警探         | [ˋskrupjələs] scruple憂慮        |
 | secular music                   | 世俗的音樂                 | [ˋsɛkjəlɚ]                       |
 | sedentary lifestyle             | 久坐的生活型態             | [ˋsɛdn͵tɛrɪ]                     |
+| seditious                       | 誘惑的                     |                                  |
 | seductive dress                 | 魅力誘人的連衣裙           |                                  |
 | be sedulously fostered          | 精心地培育                 | [ˋsɛdʒələslɪ]                    |
 | seminal influence               | 開創性的、重大的影響       | [ˋsɛmən!] 精液的                 |
@@ -1419,7 +1426,7 @@
 | sophisticated weapons           | 精密複雜的武器             | [səˋfɪstɪ͵ketɪd]                 |
 | sound advice                    | 有利的建議                 |                                  |
 | sound judgment                  | 良好的判斷力               |                                  |
-| specious argument               | 好看但華而不實的論點       | [ˋspiʃəs]                        |
+| specious argument               | 好看但華而不實的論點       | [ˋspiʃəs] 虛假的                 |
 | spiteful remark                 | 苛薄的言論                 | [ˋspaɪtfəl]                      |
 | a spendthrift reprobate         | 一個揮霍無度的惡棍         | [ˋspɛnd͵θrɪft] [ˋrɛprə͵bet]      |
 | a diabolical spendthrift        | 惡魔的、殘暴的敗家子       | [͵daɪəˋbɑlɪk!] [ˋspɛnd͵θrɪft]    |
@@ -1471,6 +1478,7 @@
 | sweeping change                 | 徹底的改變                 | [ˋswipɪŋ]                        |
 | sweeping conclusion             | 概括的結論                 | [ˋswipɪŋ]                        |
 | sycophantic journalist          | 阿諛奉承的新聞記者         | [͵sɪkəˋfæntɪk]                   |
+| synoptic                        | 概要的                     | [sɪˋnɑptɪk]                      |
 | synthetic material              | 合成的材料                 |                                  |
 | tacit agreement                 | 默許，默示的許可           | [ˋtæsɪt]                         |
 | taciturn introvert              | 沉默寡言的內向者           | [ˋtæsə͵tɝn]                      |
@@ -1528,7 +1536,7 @@
 | ubiquitous phenomenon           | 隨處可見的現象             |                                  |
 | unambiguous stance              | 堅定明確的立場             | [͵ʌnæmˋbɪgjʊəs]                  |
 | unanimous choice                | 一致的選擇                 | [jʊˋnænəməs]                     |
-| unassuming personality          | 謙遜的個性                 | [͵ʌnəˋsjumɪŋ]                    |
+| unassuming personality          | 低調謙遜的個性             | [͵ʌnəˋsjumɪŋ]                    |
 | unbounded energy                | 無窮的精力                 |                                  |
 | uncanny coincidence             | 神秘的巧合                 |                                  |
 | uncharted territory             | (地圖)未標的、未知的領域   | [ʌnˋtʃɑrtɪd]                     |
@@ -1603,7 +1611,7 @@
 | wanton woman                    | 淫亂的蕩婦                 | [ˋwɑntən] want想-on-上           |
 | warranted officers              | 有正當授權的警察           | [ˋwɔrənt] (有保固的)             |
 | be warranted to rule out        | 有正當理由的排除           | [ˋwɔrənt]                        |
-| wary                            | 小心謹慎的                 | [ˋwɛrɪ]                          |
+| wary                            | 小心謹慎的                 | [ˋwɛrɪ] awry錯誤的               |
 | weary journey                   | 無聊乏味的旅程             | [ˋwɪrɪ]                          |
 | whimsical idea                  | 異想天開的點子             | [ˋhwɪmzɪk!] whim衝動             |
 | whimsical personality           | 善變的個性                 | [ˋhwɪmzɪk!]                      |
