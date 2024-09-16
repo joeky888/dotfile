@@ -172,7 +172,7 @@ Mac (Hack-intosh)
 =====
 * https://github.com/sickcodes/Docker-OSX
 * Alacritty
-* iina plus fork - https://github.com/CarterLi/iina/actions
+* iina+
 * List of softwares don't install using homebrew
   * opera-beta
   * opera-gx

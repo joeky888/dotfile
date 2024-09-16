@@ -970,7 +970,7 @@
 | lucrative business              | 可賺錢的生意               | [ˋlukrətɪv] 擼得出錢的           |
 | ludicrous idea                  | 荒唐愚蠢的想法             | [ˋludɪkrəs]                      |
 | lugubrious song                 | 悲傷的歌曲                 | [luˋgjubrɪəs] 擼個不出的         |
-| lull                            | 休息暫緩                   | = respite                        |
+| lull                            | 休息暫緩                   | [lʌl] = respite                  |
 | luminous explanation            | 清楚的解釋                 | [ˋlumənəs]                       |
 | luminous performance            | 出色的表現                 | [ˋlumənəs]                       |
 | lurid details                   | 毛骨悚然的細節             | [ˋlʊrɪd]                         |
@@ -1011,7 +1011,7 @@
 | menial task                     | 低技術含量、卑賤低級的粗活 | [ˋmɪnɪəl] 迷你活                 |
 | mercenary scheme                | 斂財的計畫                 | [ˋmɝsn͵ɛrɪ]                      |
 | mercurial temperament           | 多變的性格                 | [mɝˋkjʊrɪəl]                     |
-| meretricious report             | 華而不實的報導             | [͵mɛrəˋtrɪʃəs]                   |
+| meretricious report             | 華而不實的報導             | [͵mɛrəˋtrɪʃəs] 虛假的            |
 | mesmerizing blue eyes           | 迷人的藍眼睛               | [ˈmez.mə.raɪ.zɪŋ]                |
 | metaphorical expression         | 隱喻的表達方式             | [͵mɛtəˋfɔrɪk!]                   |
 | methodical search               | 井然有序的搜查             | [məˋθɑdɪkəl]                     |
@@ -1039,7 +1039,7 @@
 | morbid obesity                  | 病態性的肥胖               |                                  |
 | mordant remark                  | 尖酸的言論                 | [ˋmɔrdnt]                        |
 | moribund career                 | 停滯、垂死的事業           | [ˋmɔrə͵bʌnd] stagnant停滯        |
-| morose expression               | 悶悶不樂的表情             | [məˋros]                         |
+| morose expression               | 悶悶不樂的表情             | [məˋros] 悶死了                  |
 | a motley collection of things   | 各式各樣的東西             | [ˋmɑtlɪ]                         |
 | mounting debts                  | 加劇的債務                 | [ˋmaʊntɪŋ]                       |
 | mounting excitement             | 增長的興奮                 | [ˋmaʊntɪŋ]                       |
