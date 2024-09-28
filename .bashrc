@@ -896,7 +896,8 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   else
     alias ls='ls -G'
   fi
-  alias sudoedit='sudo nvim'
+  alias sudoedit='echo dont do it'
+#   alias sudoedit='sudo nvim'
 
   for tool in /usr/local/opt/*/bin; do
     export PATH="$tool:$PATH"

@@ -456,6 +456,7 @@ Rephrasing 改變措辭 替代字語料小抄
 | 緊急救星 | it is a lifesaver                                  | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 有優有缺 | Everyone has their own strengths and weaknesses    | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 | 完美結果 | The endeavors have finally paid off                | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
+| 勝敗關頭 | is at stake                                        | The team finally achieved a thorough success with their groundbreaking invention.                                                                 |
 
 口說模版
 

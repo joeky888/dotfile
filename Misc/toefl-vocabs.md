@@ -247,9 +247,9 @@
 
 ## Myth 神話
 
-| 龐然大物 (聖經的河馬原型) | 學徒、使徒；死忠追隨者              | 異教徒(非基督教) |
-| ------------------------- | ----------------------------------- | ---------------- |
-| behemoth = big            | apprentice/pilgrim/apostle/adherent | pagan            |
+| 龐然大物 (聖經的河馬原型) | 學徒、使徒；死忠追隨者                       | 異教徒(非基督教) |
+| ------------------------- | -------------------------------------------- | ---------------- |
+| behemoth = big            | apprentice/pilgrim/apostle/adherent/aspirant | pagan            |
 
 ## 考古學 Archeology
 
@@ -377,9 +377,9 @@
 | -------------- | --------------------------- | ---------- | -------------- | ---- | --------- |
 | derrick        | corridor/hallway/passageway | railing    | a domed mosque | dam  | reservoir |
 
-| 下層結構/上層結構           | 破舊、老舊的城市                    | 毫髮無傷的、不受影響的 |
-| --------------------------- | ----------------------------------- | ---------------------- |
-| substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed        |
+| 下層結構/上層結構           | 破舊、老舊的城市                    | 毫髮無傷的、不受影響的    |
+| --------------------------- | ----------------------------------- | ------------------------- |
+| substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed/unscathed |
 
 | 連鎖、連接    | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 |
 | ------------- | ----------- | -------- | ---------- |
@@ -457,9 +457,9 @@
 
 ## Literature 文學
 
-| 精選集      | 悲歌、悼詩                            | 回憶錄 |
-| ----------- | ------------------------------------- | ------ |
-| anthologies | elegy/lament/requiem/dirge/condolence | memoir |
+| 精選集      | 悲歌、悼詩                                   | 回憶錄 |
+| ----------- | -------------------------------------------- | ------ |
+| anthologies | elegy/eulogy/lament/requiem/dirge/condolence | memoir |
 
 ## Life 生活
 

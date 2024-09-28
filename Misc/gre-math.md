@@ -73,6 +73,7 @@ chord 弦
 right angle 直角
 right triangle 直角三角形
 isosceles triangle 等腰三角形
+equilateral triangle 正三角形
 hypotenuse (直角三角形的)斜邊
 leg (直角三角形的)非斜邊的兩邊
 inscribe 內切
@@ -182,6 +183,7 @@ numerator分子/denominator分母
 What is x in terms of r = 以 r 來表示 x 比如 x = 2r + 1
 diagonal 對角線
 mixed numbers 帶分數 (整數帶了一個分數)
+球體公式 4/3πr³
 
 ...更多定義可以參考 OG P.138-P.141
 
