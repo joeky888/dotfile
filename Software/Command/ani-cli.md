@@ -36,8 +36,8 @@ Patch
 +        nohup am start --user 0 -a android.intent.action.VIEW -d $(yt-dlp $YTDLP_ARGS -f 'b' --get-url "$episode") -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity -e "title" "${allanime_title}Episode ${ep_no}"
 +    elif [[ "$episode" == *m3u8 ]]; then # Desktop m3u8: streamlink + mpv
 +        nohup bash -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '$episode'" >/dev/null 2>&1 &
-+    else # yt-dlp + mpv
-+        nohup bash -c "yt-dlp ${YTDLP_ARGS} -o - '$episode' | mpv --cache=yes --force-media-title='${allanime_title}Episode ${ep_no}' -" >/dev/null 2>&1 &
++    else
++        nohup bash -c "streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '--cache=yes' --title '${allanime_title}Episode ${ep_no}' --default-stream best '${episode/https/httpstream}'" >/dev/null 2>&1 &
 +    fi
 ```
 * $ `ANI_CLI_PLAYER=yt-dlp ./ani-cli --dub one punch`

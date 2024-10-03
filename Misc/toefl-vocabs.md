@@ -461,6 +461,14 @@
 | ----------- | -------------------------------------------- | ------ |
 | anthologies | elegy/eulogy/lament/requiem/dirge/condolence | memoir |
 
+| 讚揚、歌頌                                                                            |
+| ------------------------------------------------------------------------------------- |
+| encomium/eulogize/panegyric/laudatory/approbatory/accolade/acclaim/commendation/exalt |
+
+| 序章、序曲                                 |
+| ------------------------------------------ |
+| overture/prologue/prelude/preface/exordium |
+
 ## Life 生活
 
 | pram/stroller | warehouse/depot | houseware          | ventilator        | patio        | balcony          |

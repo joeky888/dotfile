@@ -62,7 +62,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 5. To sum up, although both [view A] and [view B] present valid arguments in the debate over [topic],
    [your view] ultimately offers the most balanced and effective approach.
    By addressing [key issue] and incorporating elements of both perspectives,
-   this stance provides a sustainable and pragmatic solution to the challenge at hand.
+   this stance provides a sustainable and pragmatic approach to the challenge at hand.
 
 ## 心裡學主義
 
@@ -158,9 +158,9 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | ------- | ------ | ---- | ------ | ------- | ------- | ---------- | ------- |
 | 壓抑    | 限制   | 限制 | 限制   | 阻礙    | 控制    | 規定的     | 受阻    |
 
-| refrain from | manacle | squelch |
-| ------------ | ------- | ------- |
-| 抑制         | 約束    | 遏制    |
+| refrain from | manacle | squelch | avert |
+| ------------ | ------- | ------- | ----- |
+| 抑制         | 約束    | 遏制    | 防止  |
 
 ## 阻礙、妨礙 (比完全禁止稍弱的詞，但比限制、抑制稍強的詞)
 
@@ -180,9 +180,9 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | ------------ | --------- | ------ | -------- | ---------- | ----- | ---- | ------- |
 | 先驅者；預兆 | 先驅者    | 先驅   | 預言     | 先驅、預兆 | 預言  | 預示 | 預兆    |
 
-| premonitory | presage | prescience | prescient | prognostication | prognosis |
-| ----------- | ------- | ---------- | --------- | --------------- | --------- |
-| 預兆的      | 預示    | 預知       | 有先見的  | 預知            | 預知      |
+| premonitory | presage | prescience | prescient | prognostication | prognosis | prefigure |
+| ----------- | ------- | ---------- | --------- | --------------- | --------- | --------- |
+| 預兆的      | 預示    | 預知       | 有先見的  | 預知            | 預知      | 預示      |
 
 | ominous    | presentiment | portentous | untoward | sinister |
 | ---------- | ------------ | ---------- | -------- | -------- |
@@ -197,6 +197,20 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | ephemeral | transitory | transient | momentary | evanescent | fleeting | fugitive         |
 | --------- | ---------- | --------- | --------- | ---------- | -------- | ---------------- |
 | 短暫的    | 短暫的     | 短暫的    | 短暫的    | 轉瞬即逝的 | 短暫的   | 短暫的；n.逃亡者 |
+
+## 否定、取消、放棄、抗議、廢除
+
+| repudiate | contradict | abnegation     | gainsay | veto | remonstrate | antagonistic |
+| --------- | ---------- | -------------- | ------- | ---- | ----------- | ------------ |
+| 否定      | 否認       | 自我克制；放棄 | 否認    | 反對 | 反對        | 反對的       |
+
+| averse | buck at | demur | deprecatory | disapprobation | veto | fulminate |
+| ------ | ------- | ----- | ----------- | -------------- | ---- | --------- |
+| 反對的 | 反對    | 反對  | 不贊同的    | 反對           | 反對 | 憤怒抗議  |
+
+| recant     | abrogate | rescind |
+| ---------- | -------- | ------- |
+| 取消、撤回 | 廢除     | 取消    |
 
 |                   |              |                                                         |                                                                    |
 | ----------------- | ------------ | ------------------------------------------------------- | ------------------------------------------------------------------ |
@@ -545,6 +559,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | cataclysm         | n.           | 大災難 大變動                                           | [ˋkætə͵klɪzəm]                                                     |
 | catalyst          | n.           | 促進因素 【化】催化劑                                   | [ˋkætəlɪst]                                                        |
 | catastrophic      | adj.         | 災難的；激變的；悲慘的                                  | [͵kætəˋstrɑfɪk]                                                    |
+| caterwaul         | n.           | 大叫                                                    |                                                                    |
 | catholic          | adj.         | 普遍的；廣泛的；寬容的 n.天主教徒                       | [ˋkæθəlɪk]                                                         |
 | causality         | n.           | 因果關係；原因                                          | [kɔˋzælətɪ]                                                        |
 | ponder            | vi.vt.       | 仔細考慮 沉思，默想                                     | [ˋpɑndɚ]                                                           |
@@ -675,6 +690,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | cynicism          | n.           | 譏笑；譏諷的言詞                                        | [ˋsɪnɪsɪzəm]                                                       |
 | damp              | vt.vi.       | 減弱，減少，降低；抑制                                  | [dæmp] adj.潮濕的，有濕氣的                                        |
 | daunting          | adj.         | 令人生畏的，令人氣餒的；艱難的                          | [ˋdɔntɪŋ]                                                          |
+| deadlock          | n.           | 僵局                                                    |                                                                    |
 | dearth            | n.           | 缺乏，不足；饑荒                                        | [dɝθ]                                                              |
 | debase            | vt.          | 貶低 降低 貶值                                          | [dɪˋbes]                                                           |
 | debacle           | n.           | 徹底的失敗、潰散；災害                                  | [deˋbɑk!]                                                          |
@@ -1541,6 +1557,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | prodigal          | adj.n.       | adj.揮霍的 n.敗家子                                     | [ˋprɑdɪg!] ⭐️                                                     |
 | prodigious        | adj.         | 巨大的，龐大的；驚人的，奇妙的                          | [prəˋdɪdʒəs]                                                       |
 | profess           | vi.vt.       | 公開宣稱；表示；承認                                    | [prəˋfɛs]                                                          |
+| profitmonger      | n.           | 暴利者                                                  |                                                                    |
 | profligate        | adj.         | adj.揮霍的 n.敗家子                                     | [ˋprɑfləgɪt]                                                       |
 | profound          | adj.         | 意義深遠的；完全的                                      | [prəˋfaʊnd]                                                        |
 | profuse           | adj.         | 豐富的；充沛的；大量的                                  | [prəˋfjus]                                                         |
@@ -1702,6 +1719,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | sever             | vi.vt.       | 切下，切斷；斷絕(關係，聯繫)；分離；分裂                | [ˋsɛvɚ]                                                            |
 | sham              | n.           | 欺騙；騙局                                              | [ʃæm]                                                              |
 | shirk             | vi.vt.       | 逃避，躲避(義務或責任)；偷懶；推脫                      | [ʃɝk]                                                              |
+| shriek            | vi.vt.       | 尖叫                                                    |                                                                    |
 | shrewd            | adj.         | 精明的；狡猾的；機靈的，敏銳的                          | [ʃrud]                                                             |
 | sidestep          | vt.          | 閃躲，閃避；迴避(話題)                                  | [ˋsaɪd͵stɛp]                                                       |
 | signify           | vi.vt.       | 表示；表明；示意                                        | [ˋsɪgnə͵faɪ]                                                       |
