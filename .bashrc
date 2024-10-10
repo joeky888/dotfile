@@ -227,6 +227,7 @@ if [[ -d "$HOME/.bun" ]]; then
 
   export BUN_INSTALL="$HOME/.bun"
   export PATH="$BUN_INSTALL/bin:$PATH"
+  alias upgradeBun="bun upgrade"
 fi
 
 export GOPATH=$HOME/go
