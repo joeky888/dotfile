@@ -37,6 +37,10 @@ Extension
   * Interaction Reminder (Subscribe) -> Auto Skip
   * Intermission/Intro Animation -> Auto Skip
   * Preview/Recap/Hook -> Show in seekbar
+* BilibiliSponsorBlock
+  * 无偿/自我推广 -> 自動跳過
+  * 三连/订阅提醒 -> 自動跳過
+  * 过场/开场动画 -> 自動跳過
 * Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * Violentmonkey (Open source)

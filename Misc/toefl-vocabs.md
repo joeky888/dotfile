@@ -91,9 +91,9 @@
 
 ## 植物學 Botany 真菌學 Mycology
 
-| 播種   | 灌溉     | 施肥；受精 | 隔熱的、絕緣的 | adj.稀缺的    | 繁榮的                | 植物、植被 | 農場；造林地 |
-| ------ | -------- | ---------- | -------------- | ------------- | --------------------- | ---------- | ------------ |
-| sowing | irrigate | fertilize  | insulated      | scarce/sparse | flourishing, thriving | vegetation | plantation   |
+| 播種   | 灌溉     | 施肥；受精 | 隔熱的、絕緣的 | 稀缺的        | 繁榮的               | 植物、植被 | 農場；造林地 |
+| ------ | -------- | ---------- | -------------- | ------------- | -------------------- | ---------- | ------------ |
+| sowing | irrigate | fertilize  | insulated      | scarce/sparse | flourishing/thriving | vegetation | plantation   |
 
 | 真菌類(菇類) | 藻類  | 高山植物      | 矮灌木叢    | 針葉樹  | 開花植物/被子植物 | 莖   | 傳花粉昆蟲 |
 | ------------ | ----- | ------------- | ----------- | ------- | ----------------- | ---- | ---------- |
@@ -381,9 +381,9 @@
 | --------------------------- | ----------------------------------- | ------------------------- |
 | substructure/superstructure | run-down/dilapidated/destitute city | intact/unharmed/unscathed |
 
-| 連鎖、連接    | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 |
-| ------------- | ----------- | -------- | ---------- |
-| linkage/hinge | disjunction | barn     | landfill   |
+| 連鎖、連接    | 分裂、分離  | 畜牧穀倉 | 垃圾掩埋場 | 破瓦殘礫            |
+| ------------- | ----------- | -------- | ---------- | ------------------- |
+| linkage/hinge | disjunction | barn     | landfill   | rubble/debris/ruins |
 
 ## Metallurgy 冶金學
 

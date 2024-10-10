@@ -225,6 +225,10 @@ Android
       * Intro -> Auto Skip
     * Violentmonkey
       * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
+    * B站空降助手 (bilisponsorblock)
+      * 无偿/自我推广 -> 自動跳過
+      * 三连/订阅提醒 -> 自動跳過
+      * 过场/开场动画 -> 自動跳過
     * MobiDevTools -- This one is not really useful
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
@@ -322,11 +326,15 @@ Android
   * MaterialOS Icon Pack
   * Barcode Scanner ZXing
   * Pipepipe (Newpipe alternative)
+    * Video and audio
+      * Show higher resolutions -> Check (... in order to download 4K)
     * SponsorBlock
-      * Unpaid/Self Promotion -> Auto Skip
-      * Interaction Reminder (Subscribe) -> Auto Skip
-      * Intermission/Intro Animation -> Auto Skip
-      * Preview/Recap/Hook -> Show in seekbar
+      * Skip Sponsors -> Check
+      * SponsorBlock Categories
+        * Unpaid/Self Promotion -> Auto Skip
+        * Interaction Reminder (Subscribe) -> Auto Skip
+        * Intermission/Intro Animation -> Auto Skip
+        * Preview/Recap/Hook -> Leave it unchecked
   * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block

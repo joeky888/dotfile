@@ -173,7 +173,7 @@
 | beatific smiles                 | 幸福的、天使般的笑容       | [͵biəˋtɪfɪk]                     |
 | befuddled brain                 | 昏沉的腦袋                 | [bɪˋfʌd!d]                       |
 | beguiling aroma                 | 誘人的氣味                 | [bɪˈgaɪlɪŋ] be陷入-guil欺騙      |
-| to begrudge the freedom         | 羨慕自由                   | [bɪˋgrʌdʒ]                       |
+| to begrudge the freedom         | 羨慕自由                   | [bɪˋgrʌdʒ] grudging不情願的      |
 | to begrudge paying so much      | 抱怨付太多錢               | [bɪˋgrʌdʒ]                       |
 | beholden to people's interest   | 蒙恩受惠於大眾利益         | [bɪˋholdən]                      |
 | it behoves you to ...           | 你應該、有義務要...        | [bɪˋhuv]                         |
@@ -359,7 +359,7 @@
 | be construed as agreement       | 被理解成、解釋成是同意     | [kənˋstru]                       |
 | consummate liar                 | 技巧高超的騙子             | [ˋkɑnsə͵met] con-summate瞬美的   |
 | consummate model                | 完美的典範                 | [ˋkɑnsə͵met]                     |
-| contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv] 踢不破          |
+| contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv]                 |
 | contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 天兵喔            |
 | contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 天兵死了         |
 | contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs]                     |
@@ -710,7 +710,7 @@
 | galling matter                  | 令人煩惱的事情             | [ˋgɔlɪŋ] 狗(血)淋(頭)煩惱        |
 | be galvanized by TV news        | 被電視新聞震驚而行動起來   | [ˋgælvə͵naɪz] 給咱們嚇死的       |
 | have a galvanizing effect       | 有激勵效果                 | [ˋgælvə͵naɪz]                    |
-| garrulous adviser               | 嘮叨、喋喋不休的顧問       | [ˋgærələs]                       |
+| garrulous adviser               | 嘮叨、喋喋不休的顧問       | [ˋgærələs] (話)多的要死          |
 | gauche teenager                 | 不善社交的、不圓滑的青少年 | [goʃ]                            |
 | gawky player                    | 資質笨拙的球員             | [ˋgɔkɪ] 狗騎                     |
 | genteel elegance                | 彬彬有禮的、高雅的高貴氣息 | [dʒɛnˋtil] 真體面                |
@@ -733,7 +733,7 @@
 | gripping plots                  | 吸引人的情節               | [ˋgrɪpɪŋ]                        |
 | groundbreaking invention        | 突破性的發明               |                                  |
 | groveling apology               | 卑躬屈膝的道歉             | [ˋgrɑvəlɪŋ] 跪了罰我             |
-| grudging respect                | 不情願的尊敬               | [ˋgrʌdʒɪŋ]                       |
+| grudging respect                | 不情願的尊敬               | [ˋgrʌdʒɪŋ] begrudge羨慕、抱怨    |
 | to guffaw with delight          | 高興地捧腹大笑             | [gʌˋfɔ] 高(興)飛                 |
 | political guile                 | 政治的欺騙、狡詐手段       | [gaɪl] 蓋我                      |
 | gullible teenager               | 易上當的青少年             | [ˋgʌləb!] 蓋了魄                 |
@@ -811,7 +811,7 @@
 | jazz improvisation              | 即興演奏的爵士樂           | [͵ɪmprəvaɪˋzeʃən]                |
 | require a little improvisation  | 臨時湊合一下               | [͵ɪmprəvaɪˋzeʃən]                |
 | imprudent decision              | 輕率的決定                 | [ɪmˋprudnt] frivolous輕率的      |
-| impudent child                  | 放肆無理的小孩             | [ˋɪmpjədnt]                      |
+| impudent child                  | 放肆無理的小孩             | [ˋɪmpjədnt] 應不等t              |
 | inadvertent incident            | 意外的事件                 | [͵ɪnədˋvɝtnt] inadequate不足     |
 | be incensed by the press        | 被媒體激怒                 | [ɪnˋsɛnst]                       |
 | incessant endeavor              | 不斷的努力                 | [ɪnˋsɛsnt] 殷勤廝殺              |
@@ -840,11 +840,11 @@
 | indignant letter                | 憤怒的信件                 | [ɪnˋdɪgnənt] dig挖-ant蟻         |
 | commit an indiscretion          | 做出無禮行為               | [͵ɪndɪˋskrɛʃən] discreet慎重周到 |
 | indispensable support           | 不可或缺的支持             |                                  |
-| indolent politician             | 懶惰的政客                 | in-dolan刀郎鴨                   |
+| indolent politician             | 懶惰的政客                 | in偷懶                           |
 | indomitable fighter             | 不服輸的鬥士               |                                  |
 | indubitable fact                | 不容質疑的事實             | [ɪnˋdjubɪtəb!]                   |
-| indulged in luxury              | 沉迷、放縱於奢華           | [ɪnˋdʌldʒ]                       |
-| indulgent parents               | 溺愛的父母                 | [ɪnˋdʌldʒənt]                    |
+| indulged in luxury              | 沉迷、放縱於奢華           | [ɪnˋdʌldʒ] in-Dodge道奇汽車      |
+| indulgent parents               | 溺愛的父母                 | [ɪnˋdʌldʒənt] in-多金            |
 | industrious student             | 勤勞的學生                 | [ɪnˋdʌstrɪəs]                    |
 | inept comment                   | 拙劣的評論                 | [ɪnˋɛpt]                         |
 | inept handling of...            | 對...不當的處理            | [ɪnˋɛpt]                         |
@@ -938,7 +938,7 @@
 | well-justified decision         | 相當合理的決定             |                                  |
 | keen table tennis player        | 對打桌球熱衷的人           |                                  |
 | kinetic energy                  | 動能                       | [kɪˋnɛtɪk]                       |
-| knotty problem                  | 棘手的問題                 | [ˋnɑtɪ]                          |
+| knotty problem                  | 棘手的問題                 | [ˋnɑtɪ] 很多結的                 |
 | laborious process               | 費力的過程                 | [ləˋborɪəs]                      |
 | labyrinthine plot               | 錯綜複雜的情節             | [læbəˋrɪnθɪn]                    |
 | lachrymose songs                | 感傷的歌曲                 | [ˋlækrə͵mos]                     |
@@ -966,7 +966,7 @@
 | much-lionized professor         | 備受尊崇的教授             | [ˋlaɪə͵naɪz]                     |
 | lithe body                      | 柔軟輕巧的身體             | [laɪð] blithe歡樂                |
 | be loath to admit mistake       | 不願承認錯誤的             | [loθ]                            |
-| lofty ideals                    | 崇高的理想                 | [ˋlɔftɪ]                         |
+| lofty ideals                    | 高尚的理想                 | [ˋlɔftɪ]                         |
 | long-winded explanation         | 冗長的解釋                 |                                  |
 | lopsided vote                   | 一面倒的投票結果           | [lɑpˋsaɪdɪd] lop下-side邊        |
 | loquacious host                 | 滔滔不絕的主持人           | [loˋkweʃəs]                      |
@@ -1059,7 +1059,7 @@
 | mutable policies                | 搖擺不定的政策             |                                  |
 | mutinous student                | 造反的學生                 | [ˋmjutnəs]                       |
 | myopic policymaker              | 目光短淺的政策制定者       | [maɪˋɑpɪk]                       |
-| a myriad of choices             | 無數的選擇                 | [ˋmɪrɪəd] stymie阻礙             |
+| myriad of choices               | 無數的選擇                 | [ˋmɪrɪəd] stymie阻礙             |
 | nascent industry                | 新興的產業                 | [ˋnæsnt]                         |
 | nascent problem                 | 剛出現的問題               | [ˋnæsnt]                         |
 | one's natal city                | 某人出生的城市             | [ˋnet!]                          |
@@ -1230,7 +1230,7 @@
 | ponderous writing style         | 冗長乏味的寫作風格         | [ˋpɑndərəs] ponder沉思           |
 | to posit an assumption          | 假設、假定一個猜想         | [ˋpɑzɪt] moot假定                |
 | pragmatic CEO                   | 務實的執行長               | [prægˋmætɪk]                     |
-| preachy                         | 愛囉嗦的                   |                                  |
+| preachy                         | 愛囉嗦的                   | 不離不棄的一直講話               |
 | precarious financial position   | 危險不穩定的財政局勢       | [prɪˋkɛrɪəs]                     |
 | precipitate decision            | 魯莽匆促的決定             | [prɪˋsɪpətɪt]                    |
 | precipitous fall                | 急劇地暴跌                 | [prɪˋsɪpətəs]                    |
@@ -1531,7 +1531,7 @@
 | transparent information         | 透明的資訊                 |                                  |
 | the industry is in travail      | 工業正處於艱辛勞動困境     | [ˋtrævel] tra摧-prevail戰勝      |
 | a travesty of history           | 對歷史的歪曲               | [ˋtrævɪstɪ] 摧歷史的             |
-| treacherous act                 | 背叛的行徑                 | [ˋtrɛtʃərəs]                     |
+| treacherous act                 | 背叛的行徑                 | [ˋtrɛtʃərəs] trator叛徒          |
 | trenchant critic                | 尖銳中肯的批評者           | [ˋtrɛntʃənt] trench深溝-chant頌  |
 | trifling thing                  | 微不足道的事物             | [ˋtraɪflɪŋ] thrifty節儉          |
 | thrifty housekeeper             | 節儉的家庭主婦             | [ˋθrɪftɪ] spendthrift揮霍        |
