@@ -221,6 +221,14 @@ if [[ -d "$HOME/.deno" ]]; then
   alias deno-simple-http="deno run --allow-net --allow-read jsr:@std/http/file-server"
 fi
 
+if [[ -d "$HOME/.bun" ]]; then
+  # bun completions
+  [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+  export BUN_INSTALL="$HOME/.bun"
+  export PATH="$BUN_INSTALL/bin:$PATH"
+fi
+
 export GOPATH=$HOME/go
 export GOBIN=$GOPATH/bin
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
@@ -1417,4 +1425,3 @@ OpenFileExplorer()
     true
   fi;
 }
-

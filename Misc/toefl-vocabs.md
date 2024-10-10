@@ -311,9 +311,9 @@
 | ------------------------- | ---------- | -------------------------------- | ------------ | ------------- |
 | flora植 and fauna動/biome | conception | conception control/contraception | nucleic acid | excrete       |
 
-| 喜好、傾向；親和力 |
-| ------------------ |
-| affinity           |
+| 喜好、傾向；親和力       |
+| ------------------------ |
+| affinity/rapport/harmony |
 
 ## 語言學 Linguistics / Etymology 語源學(詞源學)
 

@@ -703,7 +703,7 @@
 | thousands of fugitives          | 數以千計的逃亡難民         | [ˋfjudʒətɪv]                     |
 | fulsome praise                  | 過分的恭維                 | [ˋfʊlsəm]                        |
 | fungible assets                 | 易於交易的資產             | [ˋfʌndʒibl] 放了就走             |
-| furtive action                  | 偷偷摸摸的行為             | [ˋfɝtɪv]                         |
+| furtive action                  | 偷偷摸摸的行為             | [ˋfɝtɪv] 非偷不可                |
 | fusty professor                 | 古板的教授                 | [ˋfʌstɪ] 過時古板的法(律)試題    |
 | futile attempt                  | 白費的努力                 | [ˋfjut!]                         |
 | there's no gainsaying it        | 這無可否認                 | [genˋse] 常用於否定句            |
@@ -747,7 +747,7 @@
 | haphazard way                   | 無秩序的、雜亂無章的方法   | [͵hæpˋhæzɚd]                     |
 | a harangue about TV news        | 滔滔不絕地斥責電視新聞     | [həˋræŋ]                         |
 | hard-headed scientist           | 實事求是的科學家           |                                  |
-| harried businessman             | 被折磨的、不堪其擾的商人   | [ˈher.id]                        |
+| harried businessman             | 被折磨的、不堪其擾的商人   | [ˈher.id] 害累死的               |
 | harrowing story                 | 悲傷的故事                 | [ˈhærəʊɪŋ]                       |
 | haughty politician              | 自大傲慢的政客             | [ˋhɔtɪ] 吼啼傲慢                 |
 | hectic schedule                 | 極為忙碌的時程             | [ˋhɛktɪk] 黑客般地忙             |
@@ -927,7 +927,7 @@
 | irrevocable decision            | 無法改變的決定             | [ɪˋrɛvəkəb!]                     |
 | itinerant entertainer           | 巡迴表演的藝人             | [ɪˋtɪnərənt]                     |
 | jaded musician                  | 了無新意的音樂家           | [ˋdʒedɪd]                        |
-| jarring experience              | 痛苦的經歷                 | [ˈdʒɑːrɪŋ]                       |
+| jarring experience              | 痛苦的經歷                 | [ˈdʒɑːrɪŋ] 叫人啊                |
 | jejune class                    | 無趣的課程                 | [dʒɪˋdʒun] 極囧無趣              |
 | jettisoned old computer         | 淘汰的舊電腦               | [ˋdʒɛtəsn]                       |
 | jocular comment                 | 詼諧的評論                 | [ˋdʒɑkjəlɚ]                      |
