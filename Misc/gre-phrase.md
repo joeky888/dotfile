@@ -286,7 +286,7 @@
 | choleric old man                | 易怒、暴躁的老人           | [ˋkɑlərɪk]                       |
 | chortle at the news             | 被新聞逗得哈哈大笑         | [ˋtʃɔrt!]                        |
 | chronological order             | 依照時間順序的排列         | [͵krɑnəˋlɑdʒɪk!]                 |
-| churlish nature                 | 無禮魯莽的性情             | [ˋtʃɝlɪʃ]                        |
+| churlish nature                 | 無禮魯莽的性情             | [ˋtʃɝlɪʃ] 斥禮儀的               |
 | circuitous explanation          | 迂迴的解釋                 | [sɚˋkjuɪtəs]                     |
 | much-circumscribed role         | 備受限制的角色、職責       |                                  |
 | circumspect behavior            | 小心謹慎的行為             | [ˋsɝkəm͵spɛkt] circum周圍-spec看 |
@@ -703,7 +703,7 @@
 | thousands of fugitives          | 數以千計的逃亡難民         | [ˋfjudʒətɪv]                     |
 | fulsome praise                  | 過分的恭維                 | [ˋfʊlsəm]                        |
 | fungible assets                 | 易於交易的資產             | [ˋfʌndʒibl] 放了就走             |
-| furtive action                  | 偷偷摸摸的行為             | [ˋfɝtɪv] 非偷不可                |
+| furtive action                  | 偷偷摸摸的行為             | [ˋfɝtɪv] 非偷偷摸摸不可          |
 | fusty professor                 | 古板的教授                 | [ˋfʌstɪ] 過時古板的法(律)試題    |
 | futile attempt                  | 白費的努力                 | [ˋfjut!]                         |
 | there's no gainsaying it        | 這無可否認                 | [genˋse] 常用於否定句            |
