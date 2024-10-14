@@ -119,9 +119,9 @@
 | ------------------------ | ------------- | ------------------------------ | ---------------------------- |
 | grassland/savanna/pampas | bud/germinate | ramify/ramification/branch out | stratification/stratify into |
 
-| n.樹皮 | 大批(寄生蟲)侵擾          | (漣漪般地)散佈出去 | 木材               |
-| ------ | ------------------------- | ------------------ | ------------------ |
-| bark   | infestation/infested with | ripple through     | timber/lumber/wood |
+| n.樹皮 | 大批(寄生蟲)侵擾          | (漣漪般地)散佈出去 | 木材               | [ˋsuɚ]下水道；[ˋsoɚ]縫紉工 |
+| ------ | ------------------------- | ------------------ | ------------------ | -------------------------- |
+| bark   | infestation/infested with | ripple through     | timber/lumber/wood | sewer                      |
 
 ## 鳥類學 Ornithology /ˌɔːr.nəˈθɑː.lə.dʒi/
 
@@ -579,9 +579,9 @@
 | ---------------------------------- | ---------------------- | ---------------------- |
 | conglomerate/syndicate/syndication | intervene/intervention | imposition/retribution |
 
-| v.保釋 n.保釋金 |
-| --------------- |
-| bail            |
+| v.保釋 n.保釋金 | 喪親的(家屬)         |
+| --------------- | -------------------- |
+| bail            | bereaved/bereavement |
 
 ## Military 軍事
 

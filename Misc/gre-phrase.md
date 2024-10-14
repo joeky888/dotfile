@@ -8,6 +8,7 @@
 | take liberties                    | 自作主張                     |     |
 | give sb. the benefit of the doubt | 把某人往好處想(而不去怪罪他) |     |
 | argue for/argue against           | 支持/反對                    |     |
+| rull out                          | 排除                         |     |
 
 | GRE 學霸字彙--高頻搭配詞        |                            |                                  |
 | ------------------------------- | -------------------------- | -------------------------------- |
@@ -57,7 +58,7 @@
 | agile fingers                   | 靈巧的手指                 |                                  |
 | agile mind                      | 敏捷的思緒                 |                                  |
 | agreeable solution              | 令人欣然接受的解決方案     |                                  |
-| a alarmist                      | 大驚小怪、危言聳聽者       | [əˋlɑrmɪst]                      |
+| a alarmist                      | 大驚小怪、危言聳聽者       | [əˋlɑrmɪst] = scaremonger        |
 | allay the pain                  | 減緩痛苦                   | [əˋle]                           |
 | allegory novel                  | 充滿寓言、寓意的小說       | [ˋælə͵gorɪ]                      |
 | alleviate the pain              | 減緩痛苦                   | [əˋlivɪ͵et]                      |
@@ -295,7 +296,7 @@
 | clairvoyant power               | 預見未來的能力             | [klɛrˋvɔɪənt]                    |
 | clandestine operation           | (情報局等的)秘密、暗中行動 | [klænˋdɛstɪn] clan幫-destine注定 |
 | clannish family                 | 排外的家族                 | [ˋklænɪʃ]                        |
-| judge for clemency              | 從寬審判                   | [ˋklɛmənsɪ] cle說-mercy仁慈      |
+| judge for clemency              | 從寬審判                   | [ˋklɛmənsɪ] cle說-mercy慈        |
 | to show clemency towards ...    | 對某人仁慈                 | [ˋklɛmənsɪ]                      |
 | clerical work                   | 神職人員的工作             | [ˋklɛrɪk!]                       |
 | to coalesce into a syndication  | 合併成一個聯合組織         | [͵koəˋlɛs]                       |
@@ -362,7 +363,7 @@
 | contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv]                 |
 | contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 天兵喔            |
 | contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 天兵死了         |
-| contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs]                     |
+| contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs] content內容-有爭議  |
 | contentious topic               | 爭議的議題                 | [kənˋtɛnʃəs]                     |
 | hotly contested election        | 非常激烈的選舉             |                                  |
 | contiguous countries            | 相鄰的國家                 | [kənˋtɪgjʊəs]                    |
@@ -394,6 +395,7 @@
 | craven acts                     | 極懦弱的行為               | [ˋkrevən]                        |
 | to give credence                | 有可信度、能信任的         | [ˋkridəns]                       |
 | credulous child                 | 容易上當的孩子             | [ˋkrɛdʒʊləs] cred信任-ulous人    |
+| crude                           | 初級的、基本的             |                                  |
 | cryptic message                 | 隱晦難懂的信息             | [ˋkrɪptɪk]                       |
 | cupidity of mankind             | 人心的貪婪                 | [kjuˋpɪdətɪ]                     |
 | culminate in bankruptcy         | 以破產告終                 | [ˋkʌlmə͵net] culmination最高點   |
@@ -563,7 +565,7 @@
 | enlightened policy              | 開明的政策                 | [ɪnˋlaɪtnd]                      |
 | personal enmity                 | 私人的仇恨                 | [ˋɛnmətɪ]                        |
 | enormity of the crime           | 罪大惡極的犯罪             | [ɪˋnɔrmətɪ] atrocious罪大惡極    |
-| be entangled in the scandal     | 捲入醜聞                   | [ɪnˋtæŋg!] (量子)糾纏            |
+| be entangled in the scandal     | 捲入醜聞                   | [ɪnˋtæŋg!] intertwined糾纏       |
 | enthralling smile               | 迷人的笑容                 | [ɪnˋθrɔlɪŋ] en使-thrall無法自拔  |
 | enticing offer                  | 迷人的、誘人的條件         | [ɪnˋtaɪsɪŋ]                      |
 | entranced children              | 著迷入神的孩子             | [ɛnˋtrænst]                      |
@@ -625,6 +627,7 @@
 | extrinsic factor                | 外部的要素                 |                                  |
 | exuberant celebration           | 熱鬧有活力的慶典           | [ɪgˋzjubərənt]                   |
 | to fabricate an excuse          | 編織、捏造一個藉口         | [ˈfæb.rɪ.keɪt]                   |
+| fabulous                        | 傳奇的、神話般的           |                                  |
 | facetious remark                | (不合時宜)玩笑般的發言     | [fəˋsiʃəs]                       |
 | great facility in learning ..   | 有學習..的天分             | [fəˋsɪlətɪ]                      |
 | writes with facility            | 寫作靈巧流暢               | [fəˋsɪlətɪ]                      |
@@ -918,6 +921,7 @@
 | inviting smile                  | 迷人的微笑                 | [ɪnˋvaɪtɪŋ]                      |
 | involved plot                   | 混亂複雜的情節             | [ɪnˋvɑlvd] = convoluted (注意!)  |
 | irascible old man               | 易怒暴躁的老人             | [ɪˋræsəb!]                       |
+| irenic                          | 和平主義的                 |                                  |
 | irksome duties                  | 令人厭煩的職務             | [ˋɝksəm]                         |
 | ironic comment                  | 挖苦的評論                 | [aɪˋrɑnɪk]                       |
 | irreconcilable differences      | 無法化解的分歧             | [ɪˋrɛkən͵saɪləb!]                |
@@ -937,6 +941,7 @@
 | military junta                  | 軍政府                     | [ˋdʒʌntə]                        |
 | well-justified decision         | 相當合理的決定             |                                  |
 | keen table tennis player        | 對打桌球熱衷的人           |                                  |
+| kindle people's interest        | 激起人們的興趣             | rekindle重振                     |
 | kinetic energy                  | 動能                       | [kɪˋnɛtɪk]                       |
 | knotty problem                  | 棘手的問題                 | [ˋnɑtɪ] 很多結的                 |
 | laborious process               | 費力的過程                 | [ləˋborɪəs]                      |
@@ -953,7 +958,7 @@
 | heartbreaking lassitude         | 心碎的倦怠                 | [ˋlæsə͵tjud]                     |
 | latent talent                   | 潛在的才能                 | [ˋletnt]                         |
 | laudatory review                | 讚賞的評論                 | [ˋlɔdə͵torɪ]                     |
-| lavish consumption              | 揮霍的消費                 | [ˋlævɪʃ]                         |
+| lavish consumption              | 揮霍的消費                 | [ˋlævɪʃ] lavish大量豐富的        |
 | lax control                     | 馬虎寬鬆的控管             | [læks]                           |
 | a layperson                     | 一個門外漢                 | [ˋlepɝsən]                       |
 | be leery of outsiders           | 對外來者充滿戒心           | [ˋlɪrɪ] 裡銳利 leer斜看          |
@@ -1150,7 +1155,7 @@
 | overstated case                 | 被誇大的事件               | [ˋovɚˋstet]                      |
 | overt criticism                 | 公然的批評                 | [oˋvɝt] over過度-t提(公開)       |
 | overt hostility                 | 明顯的敵意                 | [oˋvɝt] = blatant                |
-| overweening ambition            | 自負的野心                 | [ˋovɚˋwinɪŋ] over過度-ween威淫   |
+| overweening ambition            | 自負的野心                 | [ˋovɚˋwinɪŋ] 過度威淫囂張        |
 | overwhelming victory            | 壓倒性的勝利               |                                  |
 | overwrought parents             | 過度緊張的父母             | [ˋovɚˋrɔt] over過度-wrought工作  |
 | painstaking research            | 煞費苦心的調查             | [penz͵tekɪŋ] pains苦taking承受   |
@@ -1397,7 +1402,7 @@
 | scholarly language              | 學術的用語                 | [ˋskɑlɚlɪ]                       |
 | scornful look                   | 輕蔑嘲笑的表情             | [ˋskɔrnfəl]                      |
 | scintillating talent            | 才華洋溢的天賦             | [ˋsɪnt!͵etɪŋ]                    |
-| scrupulous detective            | 謹慎一絲不苟的警探         | [ˋskrupjələs] scruple憂慮        |
+| scrupulous detective            | 謹慎一絲不苟的警探         | [ˋskrupjələs] (一)絲不苟的       |
 | secular music                   | 世俗的音樂                 | [ˋsɛkjəlɚ]                       |
 | sedentary lifestyle             | 久坐的生活型態             | [ˋsɛdn͵tɛrɪ]                     |
 | seditious                       | 誘惑的                     |                                  |
@@ -1571,7 +1576,7 @@
 | an unnerving experience         | 緊張不安的體驗             | [͵ʌnˋnɝvɪŋ]                      |
 | unparalleled strength           | 無可匹敵的優勢             | [ʌnˋpærə͵lɛld]                   |
 | unseemly prank                  | 不得體、不禮貌的惡作劇     | [ʌnˋsimlɪ]                       |
-| unscrupulous martial ethics     | 無恥的、不講武德           | [ʌnˋskrupjələs] 不死怪撲來       |
+| unscrupulous martial ethics     | 無恥的、不講武德           | [ʌnˋskrupjələs] scrupulous謹慎   |
 | unqualified support             | 全心全意的支持             | [ʌnˋkwɑlə͵faɪd] 全力未減的       |
 | unruly adolescents              | 難駕馭的，難管束的青少年   | [ʌnˋrulɪ]                        |
 | untapped potential              | 尚未開發的潛力             | [ʌnˋtæpt]                        |
