@@ -328,6 +328,8 @@ Android
   * Pipepipe (Newpipe alternative)
     * Video and audio
       * Show higher resolutions -> Check (... in order to download 4K)
+    * Content
+      * Show age restricted content -> Check
     * SponsorBlock
       * Skip Sponsors -> Check
       * SponsorBlock Categories

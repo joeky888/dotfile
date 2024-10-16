@@ -37,7 +37,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 
 寫作模板：
 
-1. The debate surrounding [topic] has become increasingly prevalent in recent years.
+1. Notwithstanding ..., the debate surrounding [topic] has become increasingly prevalent in recent years.
    While some advocate for [view A], others argue that [view B].
    From my vantage point, I endorse [A] that [view A].
    This essay will examine both perspectives before drawing my own conclusion on the matter.
@@ -1252,7 +1252,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | kowtow            | vi.          | 【東亞的漢人】叩頭；卑躬屈膝                            | [ˋkaʊˋtaʊ]                                                         |
 | laborious         | adj.         | 費力的，吃力的；勤勉的；辛苦的                          | [ləˋborɪəs]                                                        |
 | lacerate          | vt.          | 撕裂，割破；傷害（感情）；使痛苦                        | [ˋlæsə͵ret]                                                        |
-| lachrymose        | adj.         | 易落淚的；催淚的；悲哀的                                | [ˋlækrə͵mos]                                                       |
+| lachrymose        | adj.         | 易落淚的；催淚的；悲哀的                                | [ˋlækrə͵mos] 淚哭死的                                              |
 | laconic           | adj.         | 簡潔的，簡明的；言簡意賅的                              | [ləˋkɑnɪk]                                                         |
 | lambast           | vt.          | 猛烈抨擊;狠狠批評；痛斥                                 | [læmˋbæst] = lambaste                                              |
 | lament            | vt.vi.n      | (感到)悲痛 n.悲歌                                       | [ləˋmɛnt]                                                          |

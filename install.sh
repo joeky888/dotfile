@@ -402,8 +402,9 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
 
   termux-change-repo
   termux-setup-storage
+  pkg update
   # apt install -y --assume-yes git aria2
-  apt install -y --assume-yes aria2 fish fastfetch libxml2 libxslt fzf proot-distro 7zip helix helix-grammars gopls
+  apt install -y --assume-yes aria2 fish libxml2 libxslt fzf proot-distro 7zip helix helix-grammars gopls
   # InstallDotfile
   # ~/dotfile/app-fast/app-fast install -y man vim git tig zsh fish tmux curl file tar wget bash-completion htop openssh grep sed gawk ffmpeg proot-distro
   # ~/dotfile/app-fast/app-fast install -y clang autoconf automake bison bzip2 util-linux cmake coreutils diffutils flex gzip make patch perl silversearcher-ag
@@ -416,7 +417,7 @@ elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
   apt install python-pip -y
   pip install --upgrade --no-cache-dir https://github.com/yt-dlp/yt-dlp/archive/master.zip
   # Ref: https://stackoverflow.com/a/77604799
-  CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install --upgrade --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip
+#   CFLAGS="-Wno-error=incompatible-function-pointer-types -O0" pip install --upgrade --no-cache-dir https://github.com/streamlink/streamlink/archive/master.zip
 
 
 

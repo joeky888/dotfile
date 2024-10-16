@@ -362,7 +362,7 @@
 | consummate model                | 完美的典範                 | [ˋkɑnsə͵met]                     |
 | contemplative mood              | 沉思的表情                 | [ˋkɑntɛm͵pletɪv]                 |
 | contemptible coward             | 令人鄙視的膽小鬼           | [kənˋtɛmptəb!] 天兵喔            |
-| contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 天兵死了         |
+| contemptuous laugh              | 輕蔑鄙視的嘲笑             | [kənˋtɛmptʃʊəs] 天兵死了 鄙視你  |
 | contentious nature              | 愛爭吵的個性               | [kənˋtɛnʃəs] content內容-有爭議  |
 | contentious topic               | 爭議的議題                 | [kənˋtɛnʃəs]                     |
 | hotly contested election        | 非常激烈的選舉             |                                  |
@@ -512,6 +512,7 @@
 | downplayed role                 | 被刻意降低重要性的角色     | [ˋdaʊnple]                       |
 | draconian control               | (政府)嚴厲的控管           | [dreˋkonɪən] 最控你了            |
 | droll talk                      | 逗趣的言談                 | [drol]                           |
+| drudgery                        | 苦差事                     |                                  |
 | dubious practice                | 可疑的作為                 | [ˋdjubɪəs]                       |
 | be duped by drug smugglers      | 被毒販誘騙、欺騙的         | [djup] 毒騙                      |
 | an innocent dupe                | 無辜的受騙者               | [djup]                           |
@@ -1053,7 +1054,7 @@
 | a motley collection of things   | 各式各樣的東西             | [ˋmɑtlɪ]                         |
 | mounting debts                  | 加劇的債務                 | [ˋmaʊntɪŋ]                       |
 | mounting excitement             | 增長的興奮                 | [ˋmaʊntɪŋ]                       |
-| muddling situation              | 混亂的狀態                 | [ˋmʌdlɪŋ]                        |
+| muddling situation              | 混亂的狀態                 | [ˋmʌdlɪŋ] mettlesome精神抖擻的   |
 | multifaceted approach           | 多元的手段                 | [͵mʌltiˋfæsitid]                 |
 | multifarious factors            | 各式各樣的要素             | [͵mʌltəˋfɛrɪəs]                  |
 | multitudinous questions         | 極多的問題                 | [͵mʌltəˋtjudnəs]                 |
@@ -1224,7 +1225,7 @@
 | plastic material                | 具可塑性的材質             |                                  |
 | plausible pretext               | 貌似有理的藉口             | [ˋplɔzəb!] [ˋpritɛkst]           |
 | a plethora of regulations       | 大量的法規                 | [ˋplɛθərə] plenty多              |
-| plodding experiment             | 緩慢吃力的實驗             | [ˋplɑdɪŋ] p-loud沉重步伐         |
+| plodding experiment             | 緩慢刻苦的實驗             | [ˋplɑdɪŋ] p-loud沉重步伐         |
 | various ploys                   | 各種手段、花招             | [plɔɪ]                           |
 | plummeting price                | 暴跌的價錢                 | [ˋplʌmɪt]                        |
 | poignant image                  | 強烈深刻的刻板印象、形象   | [ˋpɔɪnənt] po-ig叫 > 諷刺        |
@@ -1314,7 +1315,7 @@
 | a raft of data                  | 大量的資料                 | [ræft]                           |
 | rakish spy                      | 灑脫俏皮的情報員           | [ˋrekɪʃ]                         |
 | rambling talk                   | 漫無目的的閒談             | [ˋræmblɪŋ]                       |
-| rancorous dispute               | 憤怒的爭吵                 | [ˋræŋkərəs]                      |
+| rancorous dispute               | 憤怒的爭吵                 | [ˋræŋkərəs] rancor敵意           |
 | rankle the hostile troops       | 激怒了敵軍                 | [ˋræŋk!] r扭-ankle腳踝           |
 | rapacious landlord              | 貪婪的房東                 | [rəˋpeʃəs]                       |
 | rarefied subjects               | 高深但曲高和寡的的主題     | [ˋrɛrə͵faɪd]                     |
@@ -1322,6 +1323,7 @@
 | rapt attention                  | 全神貫注的注意力           |                                  |
 | raucous atmosphere              | 喧鬧的氛圍                 | [ˋrɔkəs]                         |
 | ravenous appetite               | 餓極了的食慾               | [ˋrævɪnəs]                       |
+| ravished by her beauty          | 陶醉狂喜於她的美貌         | [ˋrævɪʃ]                         |
 | rebellious troop                | 反叛的軍隊                 | [rɪˋbɛljəs]                      |
 | be rebuked by teachers          | 被老師斥責                 | [rɪˋbjuk]                        |
 | recalcitrant student            | 頑皮不服管教的學生         | [rɪˋkælsɪtrənt]                  |
@@ -1435,7 +1437,7 @@
 | be snubbed by the manager       | 被上司冷落                 | [snʌb]                           |
 | sober reminder                  | 冷靜嚴肅的提醒             | [ˋsobɚ] so軍人-saber軍刀         |
 | sonorous voice                  | 宏亮的嗓音                 | [səˋnorəs]                       |
-| soporific effect                | 催眠的、令人想睡的效果     | [͵sopəˋrɪfɪk]                    |
+| soporific effect                | 催眠的、令人想睡的效果     | [͵sopəˋrɪfɪk] 睡剝離的           |
 | sordid business                 | 骯髒卑鄙的交易             | [ˋsɔrdɪd] sor抱歉-did做了        |
 | sophisticated businessman       | (有年紀)老練高超的商人     | [səˋfɪstɪ͵ketɪd]                 |
 | sophisticated weapons           | 精密複雜的武器             | [səˋfɪstɪ͵ketɪd]                 |
@@ -1463,7 +1465,7 @@
 | steadfast loyalty               | 堅定不移的忠誠             | [ˋstɛd͵fæst] 最忠貞              |
 | to stem inflation               | 抑制、阻止通膨             | [stɛm]                           |
 | sterling quality                | 純正優異的品質             | [ˋstɝlɪŋ]                        |
-| stilted performance             | 生硬、矯揉造作的演出       | [ˋstɪltɪd]                       |
+| stilted performance             | 生硬、矯揉造作的演出       | [ˋstɪltɪd] steel鐵一般生硬       |
 | the treaty was annulled         | 條約被廢除                 | [ˋtritɪ] [əˋnʌl]                 |
 | annul the drug's effect         | 無效化該藥的作用           | [əˋnʌl]                          |
 | to annul the criminal record    | 刪除(某人的)犯罪記錄       | [əˋnʌl]                          |
@@ -1479,7 +1481,7 @@
 | subtle difference               | 細微的差異                 |                                  |
 | subversive idea                 | 顛覆性的想法               | [səbˋvɝsɪv] subvert顛覆          |
 | sullen mood                     | 悶悶不樂的心情             | [ˋsʌlɪn]                         |
-| supine staff                    | 軟弱消極的員工             | [suˋpaɪn] 俗派                   |
+| supine staff                    | 軟弱消極的員工             | [suˋpaɪn] 超派                   |
 | be supplanted by AI             | 被 AI 取代                 | [səˋplænt]                       |
 | sumptuous feast                 | 奢華的盛宴                 | [ˋsʌmptʃʊəs]                     |
 | supercilious attitude           | 傲慢的態度                 | [͵supɚˋsɪlɪəs] super-cili睫毛    |
@@ -1566,7 +1568,7 @@
 | undue influence                 | 不恰當的影響               |                                  |
 | unexampled advantage            | 空前的優勢                 | [͵ʌnɪgˋzæmp!d]                   |
 | an unequivocal answer           | 明確的、毫不含糊回答       | [͵ʌnɪˋkwɪvək!]                   |
-| unfathomable                    | 深不可測的                 | [ʌnˋfæðəməb!]                    |
+| unfathomable                    | 深不可測的                 | [ʌnˋfæðəməb!] un飛死不到         |
 | unfeigned feelings              | 真誠無偽裝的情感           | [ʌnˋfend]                        |
 | unflinching                     | 不屈不撓的、堅定無畏的     |                                  |
 | unhinged person                 | 精神錯亂的人               | [ʌnˋhɪndʒd] hinge樞紐、鉸鏈      |
