@@ -216,7 +216,8 @@ Android
 * Firefox Beta ->
   * Home Page -> Click private window icon on the top right
   * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
-  * Setting -> External download manager -> Check
+  * Setting -> Privacy and security -> Data collection -> Uncheck all
+  * Setting -> Advanced -> External download manager -> Check
   * Add-ons -> Add-ons Manager
     * Dark Reader
     * uBlock Origin

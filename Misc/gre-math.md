@@ -93,7 +93,6 @@ sqare of an integer = 完全平方數
 multiple of A and B = A,B 的公倍數
 divisor(s) = factor = 因數
 
-\*\*\* Logic 邏輯
 Revenue (P (price) x Q (quantity)) - cost (expense) = profit
 
 # assmption vs. support vs. weaken
