@@ -7,6 +7,31 @@
 
 一題只有 105 秒，總共 27 題
 
+方程式：
+(a+b)(a-b)=a²-b²
+(a+b)²=a²+2ab+b²
+(a-b)²=a²-2ab+b²
+
+(a+b)³=a³+3a²b+3ab²+b³
+(a-b)³=a³-3a²b+3ab²-b³
+
+一元二次方程ax²+bx+c=0的解x₁,₂=(-b±√b²-4ac)/2a
+
+Interest利息 principal本金
+
+單利息 Simple Interest: A=P(1 + r% x t)
+
+複合利息 Compound Interest: A=P(1 + r%/n)^nt; A本利和，P=本金,r=利率,n=期數,t=時間。
+
+n多邊形內角和：(n-2)×180°
+總對角數：n(n-3)/2條，從每一個頂點印出的對角線=(n-3)条
+
+|                         | 體積   | 表面積                            |
+| ----------------------- | ------ | --------------------------------- |
+| Right Circular Cylinder | πr²h   | 2πrh + 2πr²                       |
+| Sphere                  | 4/3πr³ | 4πr²                              |
+| Right Circular Cone     | πr²h/3 | πr² + πrl(l為母線=圓錐體的斜邊長) |
+
 bar chart 長條圖，不會連在一起。x軸是離散的， 1 就是 1
 histogram 直方圖，會連在一起。x軸是連續的，0~1 接著是 1~2
 pie chart 圓餅圖，若一個圓心角，則會按比例作圖

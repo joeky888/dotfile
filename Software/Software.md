@@ -209,7 +209,7 @@ Android
     * Touch sounds -> Uncheck
     * Do Not Disturb -> Schedules -> Sleeping -> 1:00AM-8:00AM
   * Private DNS
-    * dns.adguard-dns.com (Adguard ipv4/ipv6)
+    * dns.adguard-dns.com (Recommanded) (Adguard ipv4/ipv6)
     * one.one.one.one
     * max.rethinkdns.com, sky.rethinkdns.com and rdns.deno.dev (rethinkdns opensource edge dns)
 * Backup IMEI code -> `*#06#`
