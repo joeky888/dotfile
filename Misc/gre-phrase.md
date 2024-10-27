@@ -9,6 +9,7 @@
 | give sb. the benefit of the doubt | 把某人往好處想(而不去怪罪他) |     |
 | argue for/argue against           | 支持/反對                    |     |
 | rull out                          | 排除                         |     |
+| stem from                         | 源自於                       |     |
 
 | GRE 學霸字彙--高頻搭配詞        |                            |                                  |
 | ------------------------------- | -------------------------- | -------------------------------- |
@@ -281,7 +282,7 @@
 | severe chastisement             | 嚴重的懲戒                 | [ˋtʃæstɪzmənt] chas追-tise到死   |
 | a checkered business career     | 好壞參半的職涯             | [ˋtʃɛkɚd] 黑白方格的             |
 | a checkered past                | 曲折的過去                 | [ˋtʃɛkɚd]                        |
-| political chicanery             | 政治欺騙、詭計             | [ʃɪˋkenərɪ]                      |
+| political chicanery             | 政治欺騙、詭計             | [ʃɪˋkenərɪ] 神棍一個             |
 | chimerical chimera              | 荒唐妄想的奇美拉合成體     | [kaɪˋmɛrɪkəl] [kaɪˈmɪərə]        |
 | chivalrous hero                 | 騎士般俠義體貼的英雄       | [ˋʃɪv!rəs]                       |
 | choleric old man                | 易怒、暴躁的老人           | [ˋkɑlərɪk]                       |
@@ -415,7 +416,8 @@
 | to debase the value             | 降低、貶低價值             | [dɪˋbes]                         |
 | debilitating disease            | 使人衰弱的疾病             | [dɪˋbɪlə͵tetɪŋ]                  |
 | debunked theory                 | 被揭露為誤的理論           |                                  |
-| decimated trees                 | 被大量摧毀的樹木           | [ˋdɛsə͵met] desiccated乾燥枯萎的 |
+| desiccated land                 | 乾燥的土地                 |                                  |
+| decimated trees                 | 被大量摧毀的樹木           | [ˋdɛsə͵met]                      |
 | decimation of a tribe           | 大批屠殺一個部落           | [͵dɛsəˋmeʃən]                    |
 | decisive leader                 | 果決的領導者               |                                  |
 | decorous behavior               | 得體端莊的行為             | [ˋdɛkərəs]                       |
@@ -663,7 +665,7 @@
 | figurative expression           | 比喻的表達方式             | [ˋfɪgjərətɪv]                    |
 | to finagle a promotion          | 耍花招騙取到了升遷         | [fɪˋneg!]                        |
 | finicky eater                   | 挑食者，吃東西過分挑剔的人 | [ˋfɪnɪkɪ]                        |
-| fitful progress                 | 斷斷續續的進展             | [ˋfɪtfəl] intermittent斷續的     |
+| fitful progress                 | 斷斷續續的進展             | [ˋfɪtfəl] 非要伏臥               |
 | flaccid performance             | 死氣沉沉的表演             | [ˋflæksɪd]                       |
 | flaccid state                   | (肌肉)鬆弛的狀態           | [ˋflæksɪd]                       |
 | flagging economy                | 疲軟的經濟                 | [ˋflægɪŋ]                        |
@@ -692,7 +694,7 @@
 | formidable money                | 巨大的金額                 | [ˋfɔrmɪdəb!]                     |
 | formidable rival                | 令人敬畏的、難對付的對手   | [ˋfɔrmɪdəb!]                     |
 | forthcoming conference          | 即將到來的會議             | [͵forθˋkʌmɪŋ]                    |
-| forthcoming attitude            | 樂於助人的態度             | [͵forθˋkʌmɪŋ]                    |
+| forthcoming attitude            | 樂於助人的態度             | [͵forθˋkʌmɪŋ] 這意思比較常考     |
 | forthcoming money               | 隨需、隨時可取得的金錢     | [͵forθˋkʌmɪŋ]                    |
 | forthright manner               | 率直的態度                 | [forθˋraɪt]                      |
 | fortuitous opportunity          | 偶然的、幸運的機會         | [fɔrˋtjuətəs]                    |
@@ -964,7 +966,7 @@
 | laudatory review                | 讚賞的評論                 | [ˋlɔdə͵torɪ]                     |
 | lavish consumption              | 揮霍的消費                 | [ˋlævɪʃ] lavish大量豐富的        |
 | lax control                     | 馬虎寬鬆的控管             | [læks]                           |
-| a layperson                     | 一個門外漢                 | [ˋlepɝsən]                       |
+| a layperson / laypeople         | (一個)門外漢               | [ˋlepɝsən]                       |
 | be leery of outsiders           | 對外來者充滿戒心           | [ˋlɪrɪ] 裡銳利 leer斜看          |
 | legitimate means                | 合法的手段                 | [lɪˋdʒɪtəmɪt]                    |
 | lenient law                     | 仁慈、不嚴格的法規         | [ˋlinjənt] 仁你的                |
@@ -1266,7 +1268,7 @@
 | probing question                | 追根究柢的問題             | [ˋprobɪŋ]                        |
 | problematic argument            | 有問題的論點               | [͵prɑbləˋmætɪk]                  |
 | problematic future              | 不確定的未來               | [͵prɑbləˋmætɪk]                  |
-| prodigal lady                   | 揮霍的女子                 | [ˋprɑdɪg!]                       |
+| prodigal lady                   | 揮霍的女子                 | [ˋprɑdɪg!] = lavish 揮霍；豐富   |
 | prodigal use of...              | 對...浪費的使用            | [ˋprɑdɪg!]                       |
 | a mind prodigal of ideas        | 大量豐富的點子             | [ˋprɑdɪg!]                       |
 | prodigious number of...         | 驚人的數量                 | [prəˋdɪdʒəs]                     |

@@ -338,7 +338,7 @@ Android
         * Interaction Reminder (Subscribe) -> Auto Skip
         * Intermission/Intro Animation -> Auto Skip
         * Preview/Recap/Hook -> Leave it unchecked
-  * Newpipe (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
+  * Newpipe nightly (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
     * Advanced -> Networks -> All Networks -> Use DNS -> Google
