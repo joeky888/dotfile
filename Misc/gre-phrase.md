@@ -10,6 +10,7 @@
 | argue for/argue against           | 支持/反對                    |     |
 | rull out                          | 排除                         |     |
 | stem from                         | 源自於                       |     |
+| keen on                           | 熱衷於                       |     |
 
 | GRE 學霸字彙--高頻搭配詞        |                            |                                  |
 | ------------------------------- | -------------------------- | -------------------------------- |
@@ -396,7 +397,7 @@
 | craven acts                     | 極懦弱的行為               | [ˋkrevən]                        |
 | to give credence                | 有可信度、能信任的         | [ˋkridəns]                       |
 | credulous child                 | 容易上當的孩子             | [ˋkrɛdʒʊləs] cred信任-ulous人    |
-| crude                           | 初級的、基本的             | 苦入的                           |
+| crude                           | 初級的；粗魯無禮；生的     | 苦入的                           |
 | cryptic message                 | 隱晦難懂的信息             | [ˋkrɪptɪk]                       |
 | cupidity of mankind             | 人心的貪婪                 | [kjuˋpɪdətɪ]                     |
 | culminate in bankruptcy         | 以破產告終                 | [ˋkʌlmə͵net] culmination最高點   |
