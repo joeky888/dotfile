@@ -99,6 +99,8 @@ Go
 Rust
 =====
 * All common libs are listed here https://blessed.rs/crates
+* Whirlwind - Async hashmap
+* toasty - Async ORM
 
 Java
 =====
