@@ -81,9 +81,9 @@
 | ----------- | --------------------------------- | ------------ | ------------ | --------------------- |
 | teat/tit(s) | implant/attach/fertilize/conceive | gregarious   | solitary     | infrasound            |
 
-| 發動攻擊、進攻  | 反捕食者效應(演化出特殊構造或本能來保護自己) |
-| --------------- | -------------------------------------------- |
-| onset/onslaught | antipredator                                 |
+| 發動攻擊、進攻  | 反捕食者效應(演化出特殊構造或本能來保護自己) | monogamy   | polygamy   |
+| --------------- | -------------------------------------------- | ---------- | ---------- |
+| onset/onslaught | antipredator                                 | 一夫一妻制 | 一夫多妻制 |
 
 | 隔代遺傳、返祖現象 |
 | ------------------ |
@@ -111,9 +111,9 @@
 | -------------- | -------------- | ---- | ------ | ---------- | ---------- | ----------- | ------ | ---- |
 | pollen         | spore          | fern | fallow | perennial  | annuals    | mildew/mold | artery | vein |
 
-| 纖維素    | v.發酵  | 葡萄糖  | 分泌/分泌物       | (動)卵巢/(植)子房 | 樹年輪       |
-| --------- | ------- | ------- | ----------------- | ----------------- | ------------ |
-| cellulose | ferment | glucose | secrete/secretion | ovary/ovaries     | tree ring(s) |
+| 纖維素    | v.發酵  | 葡萄糖  | (內)分泌/分泌物   | (外)排泄；分泌 | (動)卵巢/(植)子房 | 樹年輪       |
+| --------- | ------- | ------- | ----------------- | -------------- | ----------------- | ------------ |
+| cellulose | ferment | glucose | secrete/secretion | excrete        | ovary/ovaries     | tree ring(s) |
 
 | 草原                     | (植物)發芽    | (植物/學派)(橫向)分支          | 垂直分層                     |
 | ------------------------ | ------------- | ------------------------------ | ---------------------------- |
@@ -157,17 +157,17 @@
 | ------------ | ------------- | ------------ | ---------------------------- | ---- | --------- |
 | Deposition   | precipitation | Infiltration | Surface runoff/overland flow | hail | avalanche |
 
-| 水份、濕氣 | 雨量計      | 滲出 漏出               | 流出    | 湧入   | 浸濕、滲透  | 聖嬰現象 |
-| ---------- | ----------- | ----------------------- | ------- | ------ | ----------- | -------- |
-| moisture   | rain gauges | seep(n. v.) seepage(n.) | outflow | inflow | soak (into) | El Niño  |
+| 水份、濕氣 | 雨量計      | 滲出 漏出               | 流出    | 湧入   | 浸濕、滲透           | 聖嬰現象 |
+| ---------- | ----------- | ----------------------- | ------- | ------ | -------------------- | -------- |
+| moisture   | rain gauges | seep(n. v.) seepage(n.) | outflow | inflow | soak (into)/submerse | El Niño  |
 
 | 氣壓計    | 溫度計      | 地震儀      | 潮濕的 | 乾燥的          | 海水淡化(廠)              |
 | --------- | ----------- | ----------- | ------ | --------------- | ------------------------- |
 | barometer | thermometer | seismometer | damp   | arid/desiccated | desalt/desalination plant |
 
-| 暴風；風暴 |
-| ---------- |
-| squall     |
+| 暴風；風暴     |
+| -------------- |
+| squall/tempest |
 
 ## 地質學 Geology
 
@@ -235,9 +235,9 @@
 | ----------------- | ---------- | -------- | ---------- | ------------------------ | ------------------ | -------------- |
 | folktale/folklore | anecdote   | antidote | topple     | predominant/principal    | edifice            | staple         |
 
-| 一群人；同夥；支持者 | 禮儀               |
-| -------------------- | ------------------ |
-| cohort(s)            | etiquette/civility |
+| 一群人；同夥；支持者 | 禮儀               | tomahawk |
+| -------------------- | ------------------ | -------- |
+| cohort(s)            | etiquette/civility | 戰斧     |
 
 ## 農業
 
@@ -307,13 +307,13 @@
 
 ## 生理學 Physiology
 
-| (某個地帶的)植動物        | 懷孕、懷胎 | 節育、避孕                       | 核酸         | vt.排泄；分泌 |
-| ------------------------- | ---------- | -------------------------------- | ------------ | ------------- |
-| flora植 and fauna動/biome | conception | conception control/contraception | nucleic acid | excrete       |
+| (某個地帶的)植動物        | 懷孕、懷胎 | 節育、避孕                       | 核酸         |
+| ------------------------- | ---------- | -------------------------------- | ------------ |
+| flora植 and fauna動/biome | conception | conception control/contraception | nucleic acid |
 
-| 喜好、傾向；親和力       |
-| ------------------------ |
-| affinity/rapport/harmony |
+| 喜好、傾向；親和力       | 酸   | 鹼性   |
+| ------------------------ | ---- | ------ |
+| affinity/rapport/harmony | acid | alkali |
 
 ## 語言學 Linguistics / Etymology 語源學(詞源學)
 

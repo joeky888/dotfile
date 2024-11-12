@@ -271,6 +271,8 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | misnomer          | n.           | 誤稱、不準確的名稱                                      | [͵mɪsˋnomɚ]                                                        |
 | counteract        | vt.          | 抵消、對抗                                              | [͵kaʊntɚˋækt]                                                      |
 | counterargument   | n.           | 反對觀點                                                | [ˋkaʊntɚ͵ɑrgjʊmənt]                                                |
+| counteroffer      | n.           | 討價還價                                                |                                                                    |
+| countervailing    | adj.         | 對抗的                                                  | = opposed                                                          |
 | consolidation     | n.           | 鞏固，加強，強化[U]；聯合，統一；合併[C][U]             | [kən͵sɑləˋdeʃən] two firms consolidation 兩公司合併                |
 | contradict        | v.           | 反駁、否認、抵觸                                        | [͵kɑntrəˋdɪkt]                                                     |
 | testimony         | n.           | 證詞                                                    | [ˋtɛstə͵monɪ]                                                      |
@@ -893,6 +895,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | enjoin            | vt.          | 命令、囑咐；禁止                                        | [ɪnˋdʒɔɪn]                                                         |
 | enmity            | n.           | 敵意；不和；敵對                                        | [ˋɛnmətɪ]                                                          |
 | enormity          | n.           | 罪大惡極 窮兇極惡                                       | [ɪˋnɔrmətɪ]                                                        |
+| ensue             | v.           | 隨後發生                                                | = follow                                                           |
 | entangle          | vt.          | 纏住；使捲入，使陷入                                    | [ɪnˋtæŋg!]                                                         |
 | enthrall          | vt.          | 迷住 吸引                                               | [ɪnˋθrɔl]                                                          |
 | entice            | vt.          | 誘使；慫恿；引誘                                        | [ɪnˋtaɪs]                                                          |
@@ -1968,6 +1971,7 @@ Without condoning or condemning... I understand. 沒有縱容 沒有譴責 我�
 | vindicate         | vt.          | 辯護；證明無罪                                          | [ˋvɪndə͵ket]                                                       |
 | vindictive        | adj.         | 報復性的，懷恨的                                        | [vɪnˋdɪktɪv]                                                       |
 | virago            | n.           | 潑婦；悍婦；兇惡的女人                                  | [vəˋrego]                                                          |
+| virtually         | adv.         | 幾乎；實際上地                                          |                                                                    |
 | viscous           | adj.         | 黏稠的；黏性的                                          | [ˋvɪskəs]                                                          |
 | vitiate           | vi.          | 損害；汙染；破壞                                        | [ˋvɪʃɪ͵et]                                                         |
 | vitriol           | n.           | 【化】硫酸(鹽)；尖刻的批評，惡意                        | [ˋvɪtrɪəl]                                                         |
