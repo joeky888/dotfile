@@ -218,6 +218,7 @@ Android
   * Setting -> Privacy and security -> Private browsing -> Allow screenshots in private browsing
   * Setting -> Privacy and security -> Data collection -> Uncheck all
   * Setting -> Advanced -> External download manager -> Check
+  * Setting -> Site settings -> Always request desktop site -> Uncheck (Because it breaks sites when turned on)
   * Add-ons -> Add-ons Manager
     * Dark Reader
     * uBlock Origin
