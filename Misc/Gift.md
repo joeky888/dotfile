@@ -10,6 +10,7 @@ Minecraft 火炬夜燈
 熔岩燈
 三合一沐浴露
 Rugged phone 軍規三防手機/平板
+指針式溫濕度計(華氏/攝氏)
 
 JUMBO BEAR 巨大熊軟糖
 alcoholic chocolate / liqueur chocolate 酒心巧克力
