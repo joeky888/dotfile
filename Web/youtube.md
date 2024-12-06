@@ -1,3 +1,7 @@
+Bypass age restriction
+=====
+* https://www.youtube-nocookie.com/embed/P99qJGrPNLs?autoplay=1
+
 [[[[[[[[[[[[[[[[[[[Ideas
 =====
 * 深海巨大現象/伯格曼法則/高濃度氧氣生物巨大現象(Bonus: 一個假想的巨型生物星球)
