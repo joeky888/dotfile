@@ -1,3 +1,21 @@
+poetry and pyproject.toml
+=====
+```sh
+pip install poetry
+poetry new proj && cd proj
+poetry add opencv-python # import cv2
+poetry run python -i # test if it is ok
+poetry run proj hw01/__init__.py
+```
+
+
+Install jupyter lab (next-gen jupyter notebook)
+=====
+```sh
+pip install jupyterlab
+jupyter lab --NotebookApp.token='' # Don't require login
+```
+
 Unicode Json prettify
 =====
 * $ echo '{"foo": "lorem", "bar": "ipsum"}' | python3 -m json.tool
