@@ -2,12 +2,12 @@ Bypass age restriction
 =====
 * https://www.youtube-nocookie.com/embed/P99qJGrPNLs?autoplay=1
 
-[[[[[[[[[[[[[[[[[[[Ideas
+Ideas
 =====
 * 深海巨大現象/伯格曼法則/高濃度氧氣生物巨大現象(Bonus: 一個假想的巨型生物星球)
 * 《最後一個知識人：末日之後，擁有重建文明社會的器物》
 * 氫汽車/電動車/生物燃料/Alternative fuel vehicle
-*BBBBBBBBBBBBBBBBBBOB 人體自燃
+* 人體自燃
 * 國際禁用武器
 * 100年前人類對科技的想像，100年後的想像
 * 五次生物大滅絕
