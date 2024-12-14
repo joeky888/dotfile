@@ -28,6 +28,7 @@ Post-installed
 * System Settings > Keyboard >
     * Key Repeat > Set to Fastest
     * Delay Until Repeat > Set to Shortest
+* Safari -> Settings -> Advanced -> Show features for web developers -> Check
 * System Settings > General > Default web browser > Firefox
 * Finder -> View -> Show View Options -> Show icon preview -> Uncheck -> Use as Defaults
 * Enable Mojave dark theme
