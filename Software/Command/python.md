@@ -1,3 +1,12 @@
+uv and pyproject.toml
+=====
+```sh
+pip install uv
+uv init proj && cd proj
+uv add opencv-python # import cv2
+uv run python hello.py
+```
+
 poetry and pyproject.toml
 =====
 ```sh

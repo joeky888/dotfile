@@ -339,6 +339,7 @@ Android
         * Interaction Reminder (Subscribe) -> Auto Skip
         * Intermission/Intro Animation -> Auto Skip
         * Preview/Recap/Hook -> Leave it unchecked
+    * Andvanced -> Enable advanced formats -> Enable other formats
   * Newpipe nightly (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * YalpStore
   * Blokada - AD block
