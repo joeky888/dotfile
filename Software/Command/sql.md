@@ -7,6 +7,14 @@ Sqlite Query
 * $ .show                    # Print format
 * $ .explain on              # Turn on column names on query results
 
+Postgres Create a database and a user to it
+=====
+```sql
+create database mydb;
+create user myuser with encrypted password 'mypass';
+grant all privileges on database mydb to myuser;
+```
+
 MYSQL Query
 =====
 * See also ~/dotfile/Programming/RelationalDB.md
@@ -62,3 +70,4 @@ TRUNCATE `TABLENAME` RESTART IDENTITY CASCADE;
 ALTER SEQUENCE <TABLE_NAME>_<COLUMN_NAME>_seq RESTART WITH 4044007;
 -- For example ALTER SEQUENCE public.market_prices_history_id_seq RESTART WITH 4044007;
 ```
+
