@@ -161,8 +161,8 @@ S3 cors with cloudfront
 AWS SES
 =====
 * Go to ses aws console -> SMTP settings -> Create SMTP credentials -> enter "mail-user" -> Obtain the smtp user/password
-* Go to ses aws console and create new identity, enter domain "mail.example.com"
-* Finish DKIM verification
+* Go to ses aws console -> Identities -> Create identity, enter domain "mail.example.com"
+* Finish DKIM verification -> Using "Easy DKIM"
 * Use the access key from the "mail-user" and finish the php config
 ```yaml
 driver: smtp
