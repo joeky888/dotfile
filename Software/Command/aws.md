@@ -174,4 +174,5 @@ password: BXXXXXXXXXXXXXXXz # mail-user's smtp password # NOTE that this is not 
 encryption: tls
 from_name: Service
 ```
-
+* Note that this only enables sandbox mode, in order to send email to non-aws mail like gmail
+  * Goto aws ses console -> Get set up -> Request production access -> Compelete forms
