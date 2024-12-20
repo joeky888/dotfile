@@ -192,6 +192,9 @@
     "[typescript]": {
         "editor.defaultFormatter": "vscode.typescript-language-features"
     },
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+    },
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,

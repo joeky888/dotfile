@@ -39,6 +39,7 @@ Extension
 * fill-labs.dependi
 * ms-kubernetes-tools.vscode-kubernetes-tools
 * bradlc.vscode-tailwindcss
+* charliermarsh.ruff (python linter)
 
 Diff 2 file
 =====
