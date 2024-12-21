@@ -558,6 +558,7 @@ Ideas to be done
 * A zhihu clone -- Lemmy can do this
 * A Wikipedia/Fandom clone
   * Use edge server (Like hono) and edge db (Like turso/supabase)
+* Drone + VR glasses
 * Webmaster Tools (站長工具) using Edge servers
 * Gitlab/Wordpress/Mediawiki CVE auto exploit tool supports cli, android/ios and chrome extension (Like https://github.com/liamg/traitor)
 * Wireshark/TermShark using ImGui/Nuklear
