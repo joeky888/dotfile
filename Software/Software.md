@@ -221,7 +221,7 @@ Android
   * Setting -> Site settings -> Always request desktop site -> Uncheck (Because it breaks sites when turned on)
   * Add-ons -> Add-ons Manager
     * Dark Reader
-    * uBlock Origin
+    * AdGuard extension or uBlock Origin
     * Bypass Paywalls Clean
     * SponsorBlock
       * Intro -> Auto Skip
