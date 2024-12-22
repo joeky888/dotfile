@@ -23,6 +23,7 @@ Opera GX Only
 
 Extension
 =====
+* Adguard extension
 * uBlock Origin Development Build (cgbcahbpdhpcegmbfconppldiemgcoii) (MV2 will be disabled in mid 2024)
 * uBlock Origin Lite (ddkjiahejlhfcafbddmgiahcphecmpfh) (MV3)
 * Dark Reader
