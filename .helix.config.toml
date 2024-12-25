@@ -9,10 +9,11 @@ select = "bar"
 # prefered
 C-a = "goto_line_start"
 C-e = ["goto_line_end", "move_char_right"]
-C-v = [ "paste_clipboard_before", "move_char_right"]
+C-v = [ "delete_selection", "paste_clipboard_before", "move_char_right"]
 C-c = ["yank_to_clipboard", "collapse_selection", "insert_mode"]
 C-z = ["undo", "collapse_selection"]
 C-y = "redo"
+C-g = "select_all"
 
 
 # Muscle memory
@@ -102,7 +103,7 @@ esc = ["collapse_selection", "normal_mode"]
 C-c = ["yank_to_clipboard", "collapse_selection", "insert_mode"]
 C-a = "goto_line_start"
 C-e = ["goto_line_end", "move_char_right"]
-C-v = ["paste_clipboard_before"]
+C-v = ["delete_selection", "paste_clipboard_before"]
 C-z = ["undo", "collapse_selection"]
 C-y = "redo"
 
@@ -111,9 +112,10 @@ C-y = "redo"
 C-c = ["yank_to_clipboard", "collapse_selection", "insert_mode"]
 C-a = "goto_line_start"
 C-e = ["goto_line_end", "move_char_right"]
-C-v = ["move_char_left", "paste_clipboard_before"]
+# C-v = ["move_char_left", "paste_clipboard_before"]
 C-z = ["undo", "collapse_selection"]
 C-y = "redo"
+C-v = ["delete_selection", "paste_clipboard_before", "insert_mode"]
 
 
 # Muscle memory
