@@ -21,8 +21,8 @@ Post-installed
 * System Settings > Accessibility > Zoom > Use scroll gesture with modifier keys to zoom > Check
 * System Settings > Desktop & Dock > Recent documents, applications and servers > None
 * System Settings > Displays > Automatically adjust brightness > Uncheck
-* System Settings > Bluetooth > Show bluetooth in menu bar
-* System Settings > VPN > Show vpn in menu bar
+* System Settings > Search "Bluetooth" > Show bluetooth in menu bar
+* System Settings > Search "VPN" > Show vpn in menu bar
 * System Settings > Storage > Empty Trash automatically
 * System Settings > Keyboard > Shortcuts > Accessibility > enable "Invert colors" > reassign the shortcut to Cmd+Q
 * System Settings > Keyboard >
@@ -34,12 +34,12 @@ Post-installed
 * Enable Mojave dark theme
 * $ xcode-select --install
 * $ brew install neovim sevenzip go node fnm ripgrep fd erdtree fastfetch onefetch bottom mpv
-* $ brew tap homebrew/cask-versions
 * $ brew install --cask font-noto-sans-cjk font-twitter-color-emoji font-ubuntu-mono-nerd-font alacritty visual-studio-code iina+ docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput chatgpt
 * $ brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune=all && brew doctor
 
 App store
 =====
+* Line
 * Messenger
 * WPS Office (Login with QQ)
 
