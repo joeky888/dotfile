@@ -8,10 +8,7 @@ Post-installed
 * System Settings -> Network -> Wi-FI -> Advanced -> DNS -> + ->
 ```
 1.1.1.1
-8.8.4.4
-180.76.76.76
 8.8.8.8
-114.114.114.114
 ```
 * System Settings -> Dock -> Automatically hide and show the Dock -> Check
 * System Settings -> Battery -> Low Power Mode -> Only on Battery
@@ -34,14 +31,14 @@ Post-installed
 * Enable Mojave dark theme
 * $ xcode-select --install
 * $ brew install neovim sevenzip go node fnm ripgrep fd erdtree fastfetch onefetch bottom mpv
-* $ brew install --cask font-noto-sans-cjk font-twitter-color-emoji font-ubuntu-mono-nerd-font alacritty visual-studio-code iina+ docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta sogouinput chatgpt
+* $ brew install --cask font-noto-sans-cjk font-twitter-color-emoji font-ubuntu-mono-nerd-font alacritty visual-studio-code iina+ docker telegram-desktop dbeaver-community skype teamviewer the-unarchiver krita adobe-acrobat-reader android-platform-tools balenaetcher microsoft-remote-desktop-beta chatgpt
 * $ brew update && brew upgrade && brew upgrade --cask --greedy && brew cleanup -s --prune=all && brew doctor
 
 App store
 =====
 * Line
 * Messenger
-* WPS Office (Login with QQ)
+* WPS Office (QQ)
 
 Can not open an app due to "Unkown developer"
 =====
