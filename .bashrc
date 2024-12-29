@@ -172,8 +172,8 @@ function getCondaPath()
   )
   local Possible_Path=(   "Miniconda$1" \
                     "miniconda$1" \
-                    "Anaconda$1" \
-                    "anaconda$1"
+                    "Miniforge$1" \
+                    "miniforge$1"
   );
 
   for pre in "${Possible_Prefix[@]}" ; do
