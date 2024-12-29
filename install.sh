@@ -223,7 +223,7 @@ InstallPIP()
 #   echo y | $SUDO pip install streamlink
 }
 
-InstallMiniconda()
+InstallMiniforge()
 {
   ARCH=$(uname -m)
   [ -z $1 ] && return;
@@ -315,7 +315,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     $SUDO localectl set-locale LC_MEASUREMENT="en_US.UTF-8"
     $SUDO localectl set-locale LC_IDENTIFICATION="en_US.UTF-8"
   fi
-  InstallMiniconda Linux
+  InstallMiniforge Linux
 
 
 
@@ -339,7 +339,7 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
   #brew tap homebrew/cask-versions
   #brew tap beeftornado/rmtree
 #   brew tap homebrew/cask-drivers
-  InstallMiniconda MacOSX
+  InstallMiniforge MacOSX
 
 
 
