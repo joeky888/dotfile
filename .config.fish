@@ -309,6 +309,45 @@ function vlc-termux-streamlink-best-httpstream
   nohup am start --user 0 -a android.intent.action.VIEW -d "http://127.0.0.1:34567" -n org.videolan.vlc/org.videolan.vlc.gui.video.VideoPlayerActivity >/dev/null 2>&1 &
 end
 
+function getCondaPath
+  set -l Possible_Prefix "$HOME" \
+                           "/usr/local" \
+                           "/usr/local/homebrew"
+  set -l Possible_Path "Miniconda$argv[1]" \
+                         "miniconda$argv[1]" \
+                         "Miniforge$argv[1]" \
+                         "miniforge$argv[1]"
+
+  for pre in $Possible_Prefix
+    for pth in $Possible_Path
+      if test -d "$pre/$pth"
+        echo "$pre/$pth"
+        return
+      end
+    end
+  end
+  echo ""
+end
+
+set -l CONDA_3 (getCondaPath 3)
+if test -n "$CONDA_3"
+  set -x PATH "$CONDA_3/bin" $PATH
+  alias conda3="$CONDA_3/bin/conda"
+  alias pip3="$CONDA_3/bin/pip"
+
+  function upgradeConda3
+    "$CONDA_3/bin/conda" update --no-channel-priority --all --yes
+    "$CONDA_3/bin/conda" clean --yes --all
+  end
+
+  function upgradePip3
+    "$CONDA_3/bin/pip" install --upgrade pip setuptools
+    "$CONDA_3/bin/pip" install --upgrade (pip freeze -l | sed "s/==.*//")
+    "$CONDA_3/bin/pip" install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip
+    "$CONDA_3/bin/pip" install --upgrade https://github.com/requests/requests/archive/main.zip
+  end
+end
+
 
 # Load Nix config
 # Set up the per-user profile.
@@ -345,7 +384,6 @@ set -U fish_user_paths $NIX_LINK/bin $fish_user_paths
 if not test -e $HOME/.nix-channels
   echo 'http://nixos.org/channels/nixpkgs-unstable nixpkgs' > $HOME/.nix-channels
 end
-
 
 # Load grc and completions
 type -q helm; and helm completion fish 2>/dev/null | source
