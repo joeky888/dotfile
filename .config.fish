@@ -329,7 +329,7 @@ function getCondaPath
   echo ""
 end
 
-set -l CONDA_3 (getCondaPath 3)
+set CONDA_3 (getCondaPath 3)
 if test -n "$CONDA_3"
   set -x PATH "$CONDA_3/bin" $PATH
   alias conda3="$CONDA_3/bin/conda"
