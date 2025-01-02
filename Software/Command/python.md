@@ -61,7 +61,7 @@ poetry run proj hw01/__init__.py
 Install jupyter lab (next-gen jupyter notebook)
 =====
 ```sh
-pip install jupyterlab
+conda install jupyterlab
 jupyter lab --NotebookApp.token='' # Don't require login
 ```
 
