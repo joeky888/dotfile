@@ -1,3 +1,12 @@
+ANI CLI
+=====
+* $ ANI_CLI_PLAYER=android_vlc bash ./ani-cli --dub one punch
+
+Install numpy matplotlib pandas jupyter
+=====
+* Install miniforge3
+
+
 Install manjaro using proot
 =====
 ```sh
@@ -9,6 +18,31 @@ pd login manjaro --termux-home --shared-tmp -- /bin/fish
 pacman-mirrors --api --set-branch stable --protocols https --continent
 
 pd remove manjaro # Uninstall: Remove chroot
+```
+
+Install nodejs inside proot manjaro
+=====
+* Put `fnm` to ~/bin
+```
+fnm install --lts
+fnm use lts/latest
+```
+
+Install udocker and Cloudbeaver inside proot manjaro (Failed!!!)
+=====
+* Install bash `pacman -S bash` and make sure /bin/bash exists
+* Install miniforge3
+```sh
+conda install udocker
+
+# Note: dbeaver/cloudbeaver-ee:latest works
+#       dbeaver/cloudbeaver-ee:24.3.1 fails
+# So search tags first!!!
+udocker --allow-root search --list-tags dbeaver/cloudbeaver-ee # Pick a tag
+mkdir -p /cloudbeaver
+udocker --allow-root run -p 8080:8978 -v /cloudbeaver:/opt/cloudbeaver/workspace dbeaver/cloudbeaver-ee:pick-a-tag
+
+curl http://localhost:8080
 ```
 
 Manjaro with XFCE (Don't try this, UX is terrible)
@@ -61,13 +95,4 @@ proot-distro login manjaro --user joeky --shared-tmp -- /bin/bash -c "export DIS
 * Launch termux X11 in the background
 * Click termux widget on the desktop
   * If xfce4 panel (toolbar on the top of desktop) doesn't show up -> Open xfce terminal and run this command once $ xfce4-panel
-
-
-ANI CLI
-=====
-* $ ANI_CLI_PLAYER=android_vlc bash ./ani-cli --dub one punch
-
-Install numpy matplotlib pandas jupyter
-=====
-* Install miniforge3
 
