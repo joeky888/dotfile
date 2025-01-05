@@ -237,6 +237,7 @@ Android
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
     * browser.cache.disk.metadata_memory_limit: 1,000=1MB(Default: 256 = 250KB)
     * browser.cache.disk.smart_size.enabled: false
+    * dom.image-lazy-loading.root-margin.bottom: 100,000,000 # Set a high valus to disable lazy image loading
     * Enable DOH (https://www.reddit.com/r/firefox/comments/r8nc41)
       * network.trr.mode: 2
       * network.trr.uri: https://cloudflare-dns.com/dns-query
