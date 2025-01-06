@@ -52,7 +52,7 @@ services:
       - USER_GID=1000
       - GITEA__server__ROOT_URL=https://gitea.example.com
       - GITEA__server__SSH_DOMAIN=gitea.example.com
-      - GITEA__server__ENABLE_GZIP=true
+      - GITEA__server__ENABLE_GZIP=false # Let traefik determine compression algorithms
       - GITEA__database__DB_TYPE=postgres
       - GITEA__database__HOST=postgres:5432
       - GITEA__database__NAME=gitea
@@ -72,8 +72,9 @@ services:
       - "traefik.http.routers.gitea.tls.certresolver=letsencrypt"
       - 'traefik.http.routers.gitea.service=giteaservice'
       - 'traefik.http.services.giteaservice.loadbalancer.server.port=3000'
-      - "traefik.http.middlewares.gitea_gzip.compress=true"
-      - "traefik.http.routers.gitea.middlewares=gitea_gzip@docker"
+      - "traefik.http.middlewares.gitea_compress.compress.encodings=zstd,br"
+      - "traefik.http.middlewares.gitea_compress.compress.defaultEncoding=br"
+      - "traefik.http.routers.gitea.middlewares=gitea_compress@docker"
       # Block login api
       - "traefik.http.routers.gitea_login.rule=Host(`gitea.example.com`) && PathPrefix(`/user/login`)"
       - "traefik.http.routers.gitea_login.tls=true"
