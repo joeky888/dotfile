@@ -2,11 +2,6 @@ ANI CLI
 =====
 * $ ANI_CLI_PLAYER=android_vlc bash ./ani-cli --dub one punch
 
-Install numpy matplotlib pandas jupyter
-=====
-* Install miniforge3
-
-
 Install manjaro using proot
 =====
 ```sh
@@ -19,6 +14,11 @@ pacman-mirrors --api --set-branch stable --protocols https --continent
 
 pd remove manjaro # Uninstall: Remove chroot
 ```
+
+Install yt-dlp and streamlink
+=====
+* Install miniforge3 in proot
+
 
 Install nodejs inside proot manjaro
 =====

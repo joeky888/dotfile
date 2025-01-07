@@ -52,7 +52,7 @@ poetry and pyproject.toml
 ```sh
 pip install poetry
 poetry new proj && cd proj
-poetry add opencv-python # import cv2
+poetry add opencv-contrib-python # import cv2
 poetry run python -i # test if it is ok
 poetry run proj hw01/__init__.py
 ```
