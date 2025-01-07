@@ -223,7 +223,7 @@ Android
     * Dark Reader
     * AdGuard extension or uBlock Origin
     * Bypass Paywalls Clean
-    * Video Speed Controller
+    * Video Speed Controller for Android
     * SponsorBlock
       * Intro -> Auto Skip
     * Violentmonkey
