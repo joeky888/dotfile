@@ -341,8 +341,10 @@ Android
         * Interaction Reminder (Subscribe) -> Auto Skip
         * Intermission/Intro Animation -> Auto Skip
         * Preview/Recap/Hook -> Leave it unchecked
+    * Updates -> Show pre-release -> Check
     * Andvanced -> Enable advanced formats -> Enable other formats
   * Newpipe nightly (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
+  * RustDesk
   * YalpStore
   * Blokada - AD block
     * Advanced -> Networks -> All Networks -> Use DNS -> Google
