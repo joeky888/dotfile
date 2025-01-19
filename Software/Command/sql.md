@@ -12,7 +12,6 @@ Postgres Create a database and a user to it
 ```sql
 create database mydb;
 create user myuser with encrypted password 'mypass';
-GRANT ALL ON mydb TO myuser;
 GRANT ALL PRIVILEGES ON DATABASE mydb TO myuser;
 -- If above doesn't work
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO myuser;
