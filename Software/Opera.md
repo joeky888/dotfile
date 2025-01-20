@@ -55,6 +55,7 @@ Extension
 * Remove Google Redirection
 * Load Lazyload Images
 * Wappalyzer
+* YouTube LiveChat Flusher (Danmaku LiveChat)
 * bypass-paywalls-chrome
 * Get CRX
 * Enhanced Github
