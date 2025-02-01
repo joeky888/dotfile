@@ -37,7 +37,8 @@
         "deno",
         "emmet-language-server",
         "!typescript-language-server",
-        "!eslint"
+        "!eslint",
+        "tailwindcss-language-server"
       ]
     }
   }
