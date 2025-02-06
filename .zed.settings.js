@@ -7,6 +7,7 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
   "buffer_font_size": 20,
   "ui_font_family": "Noto Sans CJK TC",
