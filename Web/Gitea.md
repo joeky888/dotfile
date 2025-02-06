@@ -35,7 +35,6 @@ docker-compose up -d --build
 ```
 
 ```yaml
-version: "3.4"
 services:
   autoheal:
     restart: always
@@ -45,7 +44,7 @@ services:
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
   gitea:
-    image: gitea/gitea:1.16.1
+    image: gitea/gitea:1.23.3
     container_name: gitea
     environment:
       - USER_UID=1000 # Chage this by using `id` command for the user git
@@ -58,6 +57,7 @@ services:
       - GITEA__database__NAME=gitea
       - GITEA__database__USER=gitea
       - GITEA__database__PASSWD=gitea
+      - GITEA__database__SSL_MODE=require # This is required for aws rds
       - GITEA__cache__ENABLED=true
       - GITEA__cache__ADAPTER=memory
       - GITEA__service__DISABLE_REGISTRATION=true
@@ -101,8 +101,9 @@ services:
     ports:
       # - "3000:3000" # (Optional) Forwarding this port is for debugging purposes only, Caddy/Traefik uses docker network to access it
       - "127.0.0.1:2222:22" # 127.0.0.1:2222 This ensures port 2222 is not avaialbe from public internet
+
   postgres:
-    image: arm64v8/postgres:13.3-alpine
+    image: arm64v8/postgres:17.2-alpine
     restart: always
     volumes:
       - /home/gitea/gitea-db:/var/lib/postgresql/data/
@@ -113,7 +114,7 @@ services:
       TZ: "Asia/Taipei"
 
   traefik:
-    image: "traefik:v2.5"
+    image: "traefik:v3.3.3"
     container_name: "traefik"
     restart: always
     command:
@@ -131,9 +132,10 @@ services:
       #- "--certificatesresolvers.letsencrypt.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory"
       - "--certificatesresolvers.letsencrypt.acme.email=<ACME-EMAIL>"
       - "--certificatesresolvers.letsencrypt.acme.storage=/letsencrypt/acme.json"
-      # Enable http3, make sure aws security group has udp enabled on port 443
-      - "--experimental.http3=true"
-      - "--entrypoints.websecure.enablehttp3=true"
+      # Enable optional http3 support
+      - "--entrypoints.websecure.http3=true"
+      # - "--experimental.fastProxy"
+      - "--global.sendAnonymousUsage=false"
     healthcheck:
       test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:8080"]
       interval: 10s
@@ -149,19 +151,4 @@ services:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
     depends_on:
       - gitea
-#  caddy:
-#    image: caddy:2.4.0
-#    restart: always
-#    healthcheck:
-#      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost:2019/metrics"]
-#      interval: 60s
-#      timeout: 10s
-#      start_period: 45s
-#      retries: 5
-#    command: [caddy, reverse-proxy, --from, gitea.example.com, --to, gitea:3000]
-#    ports:
-#      - 80:80
-#      - 443:443
-#    depends_on:
-#      - gitea
 ```
