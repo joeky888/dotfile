@@ -72,7 +72,7 @@ Browser
 C and C++
 =====
 * Qt Creator
-* Cmake
+* Cmake and CPM
 * Hardware checking
   * `https://github.com/google/cpu_features`
 * Console interface
