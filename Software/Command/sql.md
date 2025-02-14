@@ -19,6 +19,12 @@ GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO myuser;
 ALTER DATABASE mydb OWNER TO myuser;
 ```
 
+Postgres move data to another empty db (搬家)
+=====
+```sql
+pg_dump -c -C -h localhost source_db | psql -h destination_host -U destination_user -p destination_port destination_db
+```
+
 MYSQL Query
 =====
 * See also ~/dotfile/Programming/RelationalDB.md
