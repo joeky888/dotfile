@@ -43,7 +43,7 @@
       ]
     },
     "Python": {
-      "language_servers": ["ruff"],
+      "language_servers": ["ruff", "!pyright"],
       "format_on_save": "on",
       "formatter": [
         {
