@@ -42,8 +42,9 @@
         "tailwindcss-language-server"
       ]
     },
+    // Use ruff as lsp
     "Python": {
-      "language_servers": ["ruff", "!pyright"],
+      "language_servers": ["ruff"],
       "format_on_save": "on",
       "formatter": [
         {
