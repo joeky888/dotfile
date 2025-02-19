@@ -325,6 +325,8 @@ alias yt-dlp-360="yt-dlp -f 'bestvideo[height<=360][fps<=30][vcodec!^=av01]+best
 alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best'"
 alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best'"
 alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best'"
+alias yt-dlp-2k="yt-dlp -f 'bestvideo[height<=1440][vcodec!^=av01]+bestaudio/best'"
+alias yt-dlp-4k="yt-dlp -f 'bestvideo[height<=2160][vcodec!^=av01]+bestaudio/best'"
 alias yt-dlp-playlist="yt-dlp --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
 alias yt-dlp-thumbnail="yt-dlp --write-thumbnail --write-all-thumbnails --skip-download"
 alias yt-dlp-filename-ascii="yt-dlp --restrict-filenames"
