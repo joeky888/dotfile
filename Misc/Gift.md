@@ -13,6 +13,7 @@ Rugged phone 軍規三防手機/平板
 指針式溫濕度計(華氏/攝氏)
 OTG內視鏡
 雷神 MIX Gaming MiniPC
+minipc + fydeos + 飛鼠鍵盤
 
 Jäger 野格酒(炸彈)
 JUMBO BEAR 巨大熊軟糖
