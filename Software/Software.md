@@ -227,7 +227,7 @@ Android
     * SponsorBlock
       * Intro -> Auto Skip
     * Violentmonkey
-      * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
+      * PTT Imgur Fix
     * B站空降助手 (bilisponsorblock)
       * 无偿/自我推广 -> 自動跳過
       * 三连/订阅提醒 -> 自動跳過

@@ -47,6 +47,7 @@ Extension
 * Violentmonkey (Open source)
   * https://github.com/the1812/Bilibili-Evolved (Download 720P bilibili videos)
     * Click toolbox on the left -> Click 組件 on the bottom left -> 在線 -> Install 合集包 (下載器、常用功能包)
+* PTT Imgur Fix (aka Ptt Media Preview)
 * RightToCopy
 * Elmo Chat - Your AI Web Copilot
 * Enable Copy by keakon.net
