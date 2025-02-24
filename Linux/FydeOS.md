@@ -1,4 +1,4 @@
-Install spark app store (星火軟件商店)
+Install spark app store (星火應用商店)
 =====
 * This is maintained by deepin community
 * This seems to not support archlinux yet
