@@ -1,3 +1,8 @@
+Install spark app store (星火軟件商店)
+=====
+* This is maintained by deepin community
+* This seems to not support archlinux yet
+
 Install Archlinux subsystem
 =====
 * Enable Linux subsystem and give it 30+GB space, as much as possible
