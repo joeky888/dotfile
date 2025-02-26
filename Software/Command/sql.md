@@ -21,8 +21,12 @@ ALTER DATABASE mydb OWNER TO myuser;
 
 Postgres move data to another empty db (搬家)
 =====
-```sql
-pg_dump -c -C -h localhost source_db | psql -h destination_host -U destination_user -p destination_port destination_db
+```sh
+# stdout
+pg_dump -c -C --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" | psql --dbname "postgresql://username:password@127.0.0.1:5432/newdatabase"
+# Or use zstd to dump file, this requires pg 16+
+pg_dump -c -C --format=custom --compress=zstd --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" > dump.zstd
+pg_restore --dbname  "postgresql://username:password@127.0.0.1:5432/newdatabase" dump.zstd
 ```
 
 MYSQL Query
