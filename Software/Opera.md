@@ -57,6 +57,9 @@ Extension
 * Load Lazyload Images
 * Wappalyzer
 * YouTube LiveChat Flusher (Danmaku LiveChat)
+* libredirect (This is not on the chrome web store)
+  * Enable twitter -> nitter, disable the rest
+  * Add custom twitter instance "https://nitter.net"
 * bypass-paywalls-chrome
 * Get CRX
 * Enhanced Github

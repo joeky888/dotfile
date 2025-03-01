@@ -232,6 +232,9 @@ Android
       * 无偿/自我推广 -> 自動跳過
       * 三连/订阅提醒 -> 自動跳過
       * 过场/开场动画 -> 自動跳過
+    * libredirect
+      * Enable twitter, disable the rest
+      * Add twitter instance "https://nitter.net"
     * MobiDevTools -- This one is not really useful
   * about:config (About:config is available in the Beta and Nightly versions and is only on non-private tabs) https://www.reddit.com/r/firefox/comments/11shvus
     * browser.cache.disk.capacity: 1,000,000=1GB (Default: 256,000 = 250MB)
