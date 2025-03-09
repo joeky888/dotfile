@@ -16,7 +16,8 @@ Manage key pairs (Create and Delete)
 Generate aws compatible key pairs using cli
 =====
 ```sh
-ssh-keygen -m PEM
+ssh-keygen -t ed25519 # New way
+ssh-keygen -m PEM # Old way
 ```
 
 AMI list with image name and id
