@@ -327,7 +327,7 @@ Android
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
 * AccuBattery - Battery health keeper
 * F-Droid
-  * OpenLauncher
+  * Neo Store (F-Droid + IzzyOnDroid + Guardian Project)
   * Termux
     * helix and LSPs
   * MaterialOS Icon Pack
