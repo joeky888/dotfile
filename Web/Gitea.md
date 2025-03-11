@@ -74,7 +74,6 @@ services:
       - 'traefik.http.services.giteaservice.loadbalancer.server.port=3000'
       - "traefik.http.middlewares.gitea_compress.compress.encodings=zstd,br"
       - "traefik.http.middlewares.gitea_compress.compress.defaultEncoding=br"
-      - "traefik.http.routers.gitea.middlewares=gitea_compress@docker"
       # Block login api
       - "traefik.http.routers.gitea_login.rule=Host(`gitea.example.com`) && PathPrefix(`/user/login`)"
       - "traefik.http.routers.gitea_login.tls=true"
@@ -88,8 +87,8 @@ services:
       - "traefik.http.middlewares.gitea_ratelimitper1sperip.ratelimit.burst=5"
       # Add whitelist and ratelimit to /user/login
       - "traefik.http.routers.gitea_login.middlewares=gitea_login_whitelist@docker,gitea_ratelimitper1sperip@docker"
-      # Add ratelimit to /
-      - "traefik.http.routers.gitea.middlewares=gitea_ratelimitper1sperip@docker"
+      # Add compress and ratelimit to /
+      - "traefik.http.routers.gitea.middlewares=gitea_compress@docker,gitea_ratelimitper1sperip@docker"
       - "traefik.http.routers.gitea_login.entrypoints=websecure"
     restart: always
     healthcheck:
