@@ -82,7 +82,14 @@ services:
       - 'traefik.http.services.gitea_loginservice.loadbalancer.server.port=3000'
       - "traefik.http.middlewares.gitea_login_whitelist.ipwhitelist.sourcerange=10.0.0.0/8,172.16.0.0/12,<OFFICE_IP>"
       # - "traefik.http.middlewares.gitea_login_whitelist.ipwhitelist.ipstrategy.depth=2"
-      - "traefik.http.routers.gitea_login.middlewares=gitea_login_whitelist@docker"
+      # rate limit per 1s per ip
+      - "traefik.http.middlewares.gitea_ratelimitper1sperip.ratelimit.average=100"
+      - "traefik.http.middlewares.gitea_ratelimitper1sperip.ratelimit.period=1s"
+      - "traefik.http.middlewares.gitea_ratelimitper1sperip.ratelimit.burst=5"
+      # Add whitelist and ratelimit to /user/login
+      - "traefik.http.routers.gitea_login.middlewares=gitea_login_whitelist@docker,gitea_ratelimitper1sperip@docker"
+      # Add ratelimit to /
+      - "traefik.http.routers.gitea.middlewares=gitea_ratelimitper1sperip@docker"
       - "traefik.http.routers.gitea_login.entrypoints=websecure"
     restart: always
     healthcheck:
