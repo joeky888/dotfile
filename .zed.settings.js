@@ -23,6 +23,9 @@
     "line_height": "standard",
     "font_size": 16
   },
+  "project_panel": {
+    "auto_fold_dirs": false
+  },
   // Deno is my default language server for zed
   "languages": {
     "TypeScript": {
