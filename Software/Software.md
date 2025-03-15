@@ -349,6 +349,8 @@ Android
   * Newpipe nightly (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * Xtra (Twitch)
   * AnimeTV (Download from https://github.com/amarullz/AnimeTV/wiki)
+    * Settings -> Prefer dub stream -> Check
+    * Settings -> Auto Skip Intro -> Check
   * RustDesk
   * YalpStore
   * Blokada - AD block
