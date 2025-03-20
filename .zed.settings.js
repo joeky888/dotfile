@@ -34,7 +34,8 @@
         "emmet-language-server",
         "!typescript-language-server",
         "!eslint"
-      ]
+      ],
+      "formatter": "language_server"
     },
     "TSX": {
       "language_servers": [
@@ -43,7 +44,8 @@
         "!typescript-language-server",
         "!eslint",
         "tailwindcss-language-server"
-      ]
+      ],
+      "formatter": "language_server"
     },
     // Use ruff as lsp
     "Python": {
