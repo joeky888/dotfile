@@ -60,6 +60,7 @@ if [[ "$(uname -a)" == *ndroid* ]] && [ $(command -v zellij) ] && [ $(command -v
   fi
 fi
 
+
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_EMU" == "java" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
   [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
@@ -71,23 +72,9 @@ if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU"
     export NO_TMUX=1
     exec zsh
   fi
-  # echo -e -n "\x1b[\x30 q" # changes to blinking block
-  # echo -e -n "\x1b[\x31 q" # changes to blinking block also
-  # echo -e -n "\x1b[\x32 q" # changes to steady block
-  # echo -e -n "\x1b[\x33 q" # changes to blinking underline
-  # echo -e -n "\x1b[\x34 q" # changes to steady underline
-  # echo -e -n "\x1b[\x35 q" # changes to blinking bar
-elif [ $(command -v fbterm) ] && [[ $whichTTY == tty3 ]] ; then
-  [ $(command -v zsh) ] && exec fbterm -- zsh -c 'TERM=fbterm exec zsh'
-  [ $(command -v bash) ] && exec fbterm -- bash -c 'TERM=fbterm exec bash'
 elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [ -z $TMUX ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
-  # Check if fbterm installed and x server isn't running
   cd ~
-  if [ $(command -v fbterm) ] && [[ $whichTTY == tty1 || $whichTTY == tty2 ]] ; then
-    TERM=fbterm exec fbterm -- bash -c '[[ -n $(tmux ls 2>/dev/null) ]] && TERM=fbterm exec tmux attach || TERM=fbterm exec tmux'
-  elif [[ $TERM != fbterm ]] ; then
-    [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
-  fi
+  [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
 elif [ -z $TMUX ] && [ $(command -v fish) ] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
   exec fish
 elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
