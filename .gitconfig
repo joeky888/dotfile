@@ -33,6 +33,8 @@
 	history = log -p
 	summary = log --stat
 	diff2   = diff --no-index # Compare 2 non-git files/folders
+	zip = "!git archive HEAD --prefix=\"$(basename \"$PWD\")\"/ -o \"$(basename \"$PWD\").zip\"" # This will respect .gitignore
+	tgz = "!git archive HEAD --prefix=\"$(basename \"$PWD\")\"/ -o \"$(basename \"$PWD\").tgz\"" # This will respect .gitignore
 [color "diff-highlight"]
 	oldNormal = red bold
 	oldHighlight = red bold 52
