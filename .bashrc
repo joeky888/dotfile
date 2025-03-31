@@ -440,6 +440,7 @@ upgradeDotfile() {
   rm -rf ~/.config/mpv/mpv.conf
   rm -rf ~/.config/mpv/input.conf
   rm -rf ~/.config/helix
+  rm -rf ~/.config/gitui/key_bindings.ron
   rm -rf ~/.hammerspoon/init.lua
 
   mkdir -p ~/.grc
@@ -454,6 +455,7 @@ upgradeDotfile() {
     mkdir -p ~/AppData/Roaming/Code/User
     mkdir -p ~/AppData/Roaming/VSCodium/User
     mkdir -p ~/AppData/Roaming/helix
+    mkdir -p ~/AppData/Roaming/gitui
     mkdir -p ~/Documents/WindowsPowerShell
     mkdir -p ~/.pip/
     mkdir -p ~/pip/
@@ -508,6 +510,7 @@ upgradeDotfile() {
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
     cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+    cygstart --action=runas cmd.exe /c mklink "%APPDATA%\gitui\key_bindings.ron" "%USERPROFILE%\dotfile\.gitui.key_bindings.ron"
     ;;
   *)
     mkdir -p ~/.config/fish/
@@ -518,6 +521,7 @@ upgradeDotfile() {
     mkdir -p ~/.config/mpv/script-opts
     mkdir -p ~/.config/zed
     mkdir -p ~/.config/helix
+    mkdir -p ~/.config/gitui
     mkdir -p ~/.pip/
     ln -sf $HOME/dotfile/.bashrc ~/.bashrc
     ln -sf $HOME/dotfile/.bashrc ~/.bash_profile
@@ -547,6 +551,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.json
     ln -sf $HOME/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
     ln -sf $HOME/dotfile/.helix.config.toml ~/.config/helix/config.toml
+    ln -sf $HOME/dotfile/.gitui.key_bindings.ron ~/.config/gitui/key_bindings.ron
 
     case $OSTYPE in
     linux-gnu)

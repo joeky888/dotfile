@@ -1,0 +1,16 @@
+// vim: syntax=typescript
+
+(
+    move_left: Some(( code: Char('h'), modifiers: "")),
+    move_right: Some(( code: Char('l'), modifiers: "")),
+    move_up: Some(( code: Char('u'), modifiers: "")),
+    move_down: Some(( code: Char('j'), modifiers: "")),
+
+    page_up: Some(( code: Char('u'), modifiers: "CONTROL")),
+    page_up: Some(( code: Up, modifiers: "CONTROL")),
+    page_down: Some(( code: Char('j'), modifiers: "CONTROL")),
+    page_down: Some(( code: Down, modifiers: "CONTROL")),
+
+    home: Some(( code: Char('a'), modifiers: "CONTROL")),
+    end: Some(( code: Char('e'), modifiers: "CONTROL")),
+)
