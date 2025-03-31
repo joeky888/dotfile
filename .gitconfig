@@ -45,6 +45,12 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+[fetch]
+	parallel = 8
+[submodule]
+	fetchJobs = 8
+[branch]
+	autosetuprebase = always
 [core]
 	editor = vim -c 'normal! gg'
 	autocrlf = false
@@ -80,13 +86,3 @@ echohl iBlueInfo | echon \"     Info     \" |\
 echohl Function    | echon \" \" . aaa . \" additions\" |\
 echohl Conditional | echon \" \" . ddd . \" deletions\" |\
 echohl None ' -
-[fetch]
-	parallel = 8
-[submodule]
-	fetchJobs = 8
-[branch]
-	autosetuprebase = always
-[credential "https://git.ttech.cc"]
-	provider = generic
-[url "git@git.ttech.cc:"]
-	insteadOf = https://git.ttech.cc/
