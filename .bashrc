@@ -307,13 +307,13 @@ alias yt-dlp-aria2c="yt-dlp --downloader aria2c --downloader-args 'aria2c:$DOWNL
 alias which='which -a'
 alias curl-status='curl -o /dev/null --fail -L -s -w "HTTP%{http_version}\nContent Type: %{content_type}\nCompression: %header{content-encoding}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
 alias curl3-status='curl3 --http3 -o /dev/null --fail -L -s -w "HTTP%{http_version}\nContent Type: %{content_type}\nCompression: %header{content-encoding}\nStatus Code: %{response_code}\nNumber of Redirects: %{num_redirects}\nSize: %{size_download}Bytes\nSpeed of Download: %{speed_download}Bytes/s\nServer IP: %{remote_ip}:%{remote_port}\nServer Final URL: %{url_effective}\n\nDNS Resolve: %{time_namelookup}s\nClient -> Server: %{time_connect}s\nServer Response: %{time_starttransfer}s\nTotal time: %{time_total}s\n"'
-alias yt-dlp-240="yt-dlp -f 'bestvideo[height<=240][fps<=30][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-360="yt-dlp -f 'bestvideo[height<=360][fps<=30][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-480="yt-dlp -f 'bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-720="yt-dlp -f 'bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-1080="yt-dlp -f 'bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-2k="yt-dlp -f 'bestvideo[height<=1440][vcodec!^=av01]+bestaudio/best'"
-alias yt-dlp-4k="yt-dlp -f 'bestvideo[height<=2160][vcodec!^=av01]+bestaudio/best'"
+alias yt-dlp-240="yt-dlp -f 'bv[height<=240][fps<=30][vcodec!^=av01]+ba/best'"
+alias yt-dlp-360="yt-dlp -f 'bv[height<=360][fps<=30][vcodec!^=av01]+ba/best'"
+alias yt-dlp-480="yt-dlp -f 'bv[height<=480][fps<=30][vcodec!^=av01]+ba/best'"
+alias yt-dlp-720="yt-dlp -f 'bv[height<=720][fps<=30][vcodec!^=av01]+ba/best'"
+alias yt-dlp-1080="yt-dlp -f 'bv[height<=1080][vcodec!^=av01]+ba/best'"
+alias yt-dlp-2k="yt-dlp -f 'bv[height<=1440][vcodec!^=av01]+ba/best'"
+alias yt-dlp-4k="yt-dlp -f 'bv[height<=2160][vcodec!^=av01]+ba/best'"
 alias yt-dlp-playlist="yt-dlp --yes-playlist -o '%(playlist_title)s/%(playlist_index)s-%(title)s.%(ext)s'"
 alias yt-dlp-thumbnail="yt-dlp --write-thumbnail --write-all-thumbnails --skip-download"
 alias yt-dlp-filename-ascii="yt-dlp --restrict-filenames"
@@ -333,22 +333,22 @@ alias streamlink-mpv-720p60="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --p
 alias streamlink-mpv-720="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 720p"
 alias streamlink-mpv-480="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 480p"
 alias streamlink-download="streamlink $STREAMLINK_ARGUMENTS --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4'"
-alias mpv-fast-4k="mpv --ytdl-format='bestvideo[height<=2160][vcodec!^=av01][protocol^=m3u]+bestaudio[protocol^=m3u]/bestvideo[height<=2160][vcodec!^=av01]+bestaudio/best[height<=2160][protocol^=m3u8]/best[height<=2160]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
-alias mpv-fast-2k="mpv --ytdl-format='bestvideo[height<=1440][vcodec!^=av01][protocol^=m3u]+bestaudio[protocol^=m3u]/bestvideo[height<=1440][vcodec!^=av01]+bestaudio/best[height<=1440][protocol^=m3u8]/best[height<=1440]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
-alias mpv-fast-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec!^=av01][protocol^=m3u]+bestaudio[protocol^=m3u]/bestvideo[height<=1440][vcodec!^=av01]+bestaudio/best[height<=1080][protocol^=m3u8]/best[height<=1080]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
-alias mpv-1080="mpv --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
-alias mpv-720="mpv --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
-alias mpv-480="mpv --ytdl-format='bestvideo[height<=480][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
-alias mpv-mute="mpv --mute=yes --ytdl-format='bestvideo[height<=720][fps<=30][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
+alias mpv-fast-4k="mpv --ytdl-format='bv[height<=2160][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=2160][vcodec!^=av01]+ba/best[height<=2160][protocol^=m3u8]/best[height<=2160]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-fast-2k="mpv --ytdl-format='bv[height<=1440][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1440][protocol^=m3u8]/best[height<=1440]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-fast-1080="mpv --ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-1080="mpv --ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
+alias mpv-720="mpv --ytdl-format='bv[height<=720][fps<=30][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
+alias mpv-480="mpv --ytdl-format='bv[height<=480][fps<=30][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
+alias mpv-mute="mpv --mute=yes --ytdl-format='bv[height<=720][fps<=30][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
 alias mpv-ass2srt="mpv --sub-ass-override=strip $PLAYER_ARGUMENTS"
 alias mpv-3Dto2D="mpv --vf=stereo3d=out=ml --hwdec=auto-copy $PLAYER_ARGUMENTS"
 alias mpv-4by3="mpv --video-aspect-override=4:3 $PLAYER_ARGUMENTS"
 alias mpv-16by9="mpv --video-aspect-override=16:9 $PLAYER_ARGUMENTS"
-alias mpv-1080-ontop="mpv --ontop --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS"
+alias mpv-1080-ontop="mpv --ontop --ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
 alias mpv-audio="mpv --no-video --keep-open=no --input-terminal=yes $PLAYER_ARGUMENTS"
 alias mpv-audio-loop20="mpv --loop=20 --no-video --volume=70 --keep-open=no --input-terminal=yes $PLAYER_ARGUMENTS"
-alias mpv-boost="mpv --video-sync=display-resample-desync --ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $PLAYER_ARGUMENTS" # Drop frames when video is accelerated, useful for 4k videos
-alias iina-1080="iina-cli --mpv-ytdl-format='bestvideo[height<=1080][vcodec!^=av01]+bestaudio/best' $IINA_ARGUMENTS"
+alias mpv-boost="mpv --video-sync=display-resample-desync --ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS" # Drop frames when video is accelerated, useful for 4k videos
+alias iina-1080="iina-cli --mpv-ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $IINA_ARGUMENTS"
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
@@ -386,11 +386,11 @@ proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 mpv-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" - ; }
 # https://github.com/mpv-player/mpv/issues/8655#issuecomment-1199733728
 # See also https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#output-template
-# mpv-fast-4k() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'bestaudio[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bestvideo[height<=2160][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
-# mpv-fast-2k() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'bestaudio[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bestvideo[height<=1440][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
-# mpv-fast-1080() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'bestaudio[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bestvideo[height<=1080][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+# mpv-fast-4k() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'ba[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bv[height<=2160][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+# mpv-fast-2k() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'ba[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bv[height<=1440][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+# mpv-fast-1080() { mpv --cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --audio-file=$(command yt-dlp --get-url -f 'ba[protocol^=m3u]' $1) $(command yt-dlp --write-sub --write-auto-sub --sub-format vtt --print %(requested_subtitles.:.url)j --sub-langs "en.*,zh.*" $1 | jq -r '[.[] | "--sub-file=" + .] | join(" ")') $(command yt-dlp --get-url -f 'bv[height<=1080][protocol^=m3u][vcodec!^=av01]' $1) --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
 iina-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ; }
-iina-fast-1080() { iina-cli --keep-running --mpv-cache=yes --mpv-demuxer-cache-dir=/tmp --mpv-cache-on-disk=yes --mpv-ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --mpv-audio-file="$(command yt-dlp --get-url -f 'bestaudio' $1)" $(command yt-dlp --get-url -f 'bestvideo[height<=1080][vcodec!^=av01][protocol^=m3u]/bestvideo[height<=1080][vcodec!^=av01]' $1) --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+iina-fast-1080() { iina-cli --keep-running --mpv-cache=yes --mpv-demuxer-cache-dir=/tmp --mpv-cache-on-disk=yes --mpv-ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --mpv-audio-file="$(command yt-dlp --get-url -f 'ba' $1)" $(command yt-dlp --get-url -f 'bv[height<=1080][vcodec!^=av01][protocol^=m3u]/bv[height<=1080][vcodec!^=av01]' $1) --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
 upgradeConda() {
   OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS
