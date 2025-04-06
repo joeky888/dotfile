@@ -352,6 +352,7 @@ Android
   * AnimeTV (Download from https://github.com/amarullz/AnimeTV/wiki)
     * Settings -> Prefer dub stream -> Check
     * Settings -> Auto Skip Intro -> Check
+  * Streamflix (Download from github)
   * RustDesk
   * YalpStore
   * Blokada - AD block
