@@ -72,8 +72,8 @@ services:
       - "traefik.http.routers.gitea.tls.certresolver=letsencrypt"
       - 'traefik.http.routers.gitea.service=giteaservice'
       - 'traefik.http.services.giteaservice.loadbalancer.server.port=3000'
-      - "traefik.http.middlewares.gitea_compress.compress.encodings=zstd,br"
-      - "traefik.http.middlewares.gitea_compress.compress.defaultEncoding=br"
+      - "traefik.http.middlewares.gitea_compress.compress.encodings=gzip,br,zstd"
+      - "traefik.http.middlewares.gitea_compress.compress.defaultEncoding=gzip" # zstd and br cause memory leak, use gzip
       # Block login api
       - "traefik.http.routers.gitea_login.rule=Host(`gitea.example.com`) && PathPrefix(`/user/login`)"
       - "traefik.http.routers.gitea_login.tls=true"
