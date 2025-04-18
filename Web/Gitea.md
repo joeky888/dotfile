@@ -8,8 +8,7 @@ docker-compose for arm64 on gitea.example.com
     * Otherwise, migration will fail
   * Port 22 is used for sshd on the host
   * gitea.example.com is registerd and pointed to the server address
-  * Server is arm64 based. Otherwise change the docker image tag
-  * No CDN is used, don't use cloudflare/cloudfront it will block port 22 forwarding
+  * No CDN is used, don't use cloudflare/cloudfront, it will block port 22 forwarding
   * Minimal ram is 512MB, but 1GB is recommended
   * Minimal cpu is 1 vcpu
   * Make sure "HostkeyAlgorithms" and "PubkeyAcceptedKeyTypes" is configured in ~/.ssh/config (https://github.com/go-gitea/gitea/issues/17798#issuecomment-1020592141)
