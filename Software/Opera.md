@@ -16,6 +16,7 @@ Setting
 * Chrome Dev tool -> ... -> Setting -> Theme -> Dark
 * Settings -> Enable DOH (DNS over https) and Add Custom DNS -> Enter "https://cloudflare-dns.com/dns-query" (Only this way it will respect /etc/hosts)
 * Settings -> Enable Battery saver
+* Settings -> Enable Lucid Mode (video upscaler)
 
 Opera GX Only
 =====
