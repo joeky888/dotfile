@@ -33,6 +33,7 @@
         "deno",
         "emmet-language-server",
         "!typescript-language-server",
+        "!vtsls",
         "!eslint"
       ],
       "formatter": "language_server"
@@ -42,6 +43,7 @@
         "deno",
         "emmet-language-server",
         "!typescript-language-server",
+        "!vtsls",
         "!eslint",
         "tailwindcss-language-server"
       ],
