@@ -56,7 +56,9 @@
       "formatter": [
         {
           "code_actions": {
+            // Organize imports
             "source.organizeImports.ruff": true,
+            // Fix all auto-fixable lint violations
             "source.fixAll.ruff": true
           }
         },
