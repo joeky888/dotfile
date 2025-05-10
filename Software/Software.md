@@ -354,6 +354,7 @@ Android
     * Settings -> Auto Skip Intro -> Check
   * Streamflix (Download from github)
   * RustDesk
+  * Seal (yt-dlp + aria2 frontend)
   * YalpStore
   * Blokada - AD block
     * Advanced -> Networks -> All Networks -> Use DNS -> Google
