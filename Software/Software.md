@@ -385,6 +385,7 @@ Android
   * Bilibilitv 修復版
     * Daily build -> https://github.com/qidian55/bilibilitv1.6.6-repair/blob/main/mybv.apk
     * Alternatives -> https://github.com/HCLonely/awesome-bilibili-extra#第三方客户端
+  * BV (bilibili for android tv)
   * BiglyBT
   * Background App Killer
 * Not an app but related to Android
