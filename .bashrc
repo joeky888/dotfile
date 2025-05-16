@@ -1148,7 +1148,7 @@ curlToYtDlp()
   done;
 }
 
-curlToMpv-fast()
+curlToMpv-fast-1080()
 {
   PARAMS=""
 
@@ -1158,14 +1158,15 @@ curlToMpv-fast()
   done
 
   # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--add-header/g" | sed "s/ '--compressed'//g" )
+  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H' /--http-header-fields-append=/g" | sed "s/ '--compressed'//g" )
 
   local count=0
   $(exit 1)
   while [ $? -ne 0 ]; do
     sleep 1
     echo "Retrying curlToMpv-fast ... $((count++))"
-    local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
+#     local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
+    local cmd="mpv $PARAMS --ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]' $PLAYER_ARGUMENTS '$1'"
     echo "$cmd"
     eval "$cmd"
   done;
