@@ -1,6 +1,7 @@
 Extensions
 ======
 * Deno
+* Pyrefly - Python lsp
 * Ruff - Python linter and language server
 * Emmet
 * SQL

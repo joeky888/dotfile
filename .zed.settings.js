@@ -49,9 +49,9 @@
       ],
       "formatter": "language_server"
     },
-    // Use ruff as lsp
+    // Use pyrefly as lsp, ruff as lint
     "Python": {
-      "language_servers": ["ruff"],
+      "language_servers": ["pyrefly", "ruff", "!pyright", "!pylsp"],
       "format_on_save": "on",
       "formatter": [
         {
