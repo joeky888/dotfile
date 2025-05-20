@@ -91,6 +91,9 @@ export PIP_USE_FEATURE=fast-deps # Enable pip parallel downloading
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --embed-metadata --sponsorblock-remove all --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
 export PLAYER_ARGUMENTS="--cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options=embed-metadata=,no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
+export PLAYER_FASTARG_1080="--ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1080][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]'"
+export PLAYER_FASTARG_2K="--ytdl-format='bv[height<=1440][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1440][protocol^=m3u8]/best[height<=1440]'"
+export PLAYER_FASTARG_4k="--ytdl-format='bv[height<=2160][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=2160][vcodec!^=av01]+ba/best[height<=2160][protocol^=m3u8]/best[height<=2160]'"
 export IINA_ARGUMENTS="--mpv-cache=yes --mpv-demuxer-cache-dir=/tmp --mpv-cache-on-disk=yes --mpv-ytdl-raw-options=no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 --content-disposition-default-utf8=true --check-certificate=false --max-tries=10 --max-concurrent-downloads=150 --max-connection-per-server=16 --split=16 --min-split-size=1M --http-accept-gzip=true --parameterized-uri=false" # aria2 & bypy
 export STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
@@ -333,9 +336,9 @@ alias streamlink-mpv-720p60="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --p
 alias streamlink-mpv-720="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 720p"
 alias streamlink-mpv-480="streamlink $STREAMLINK_ARGUMENTS --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 480p"
 alias streamlink-download="streamlink $STREAMLINK_ARGUMENTS --default-stream best -o 'out-{time:%Y%m%d%H%M%S}.mp4'"
-alias mpv-fast-4k="mpv --ytdl-format='bv[height<=2160][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=2160][vcodec!^=av01]+ba/best[height<=2160][protocol^=m3u8]/best[height<=2160]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
-alias mpv-fast-2k="mpv --ytdl-format='bv[height<=1440][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1440][protocol^=m3u8]/best[height<=1440]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
-alias mpv-fast-1080="mpv --ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]' --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-fast-4k="mpv $PLAYER_FASTARG_4k --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-fast-2k="mpv $PLAYER_FASTARG_2K --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
+alias mpv-fast-1080="mpv $PLAYER_FASTARG_1080 --title='\${media-title}-\${metadata/date}' $PLAYER_ARGUMENTS"
 alias mpv-1080="mpv --ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
 alias mpv-720="mpv --ytdl-format='bv[height<=720][fps<=30][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
 alias mpv-480="mpv --ytdl-format='bv[height<=480][fps<=30][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS"
@@ -1166,7 +1169,7 @@ curlToMpv-fast-1080()
     sleep 1
     echo "Retrying curlToMpv-fast ... $((count++))"
 #     local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
-    local cmd="mpv $PARAMS --ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]' $PLAYER_ARGUMENTS '$1'"
+    local cmd="mpv $PARAMS $PLAYER_FASTARG_1080 $PLAYER_ARGUMENTS '$1'"
     echo "$cmd"
     eval "$cmd"
   done;
