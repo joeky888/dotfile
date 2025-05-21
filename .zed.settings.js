@@ -17,6 +17,7 @@
   "autosave": "on_focus_change",
   "remove_trailing_whitespace_on_save": true,
   "theme": "Ayu Dark",
+  "minimap": { "show": "always" },
   "terminal": {
     "font_family": "UbuntuMono Nerd Font",
     "copy_on_select": true,
