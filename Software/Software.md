@@ -352,7 +352,7 @@ Android
   * AnimeTV (Download from https://github.com/amarullz/AnimeTV/wiki)
     * Settings -> Prefer dub stream -> Check
     * Settings -> Auto Skip Intro -> Check
-  * Streamflix (Download from github)
+  * Just (Video) Player - Play videos which vlc unable to play
   * RustDesk
   * Seal (yt-dlp + aria2 frontend)
   * YalpStore
