@@ -352,7 +352,6 @@ Android
   * AnimeTV (Download from https://github.com/amarullz/AnimeTV/wiki)
     * Settings -> Prefer dub stream -> Check
     * Settings -> Auto Skip Intro -> Check
-  * Just (Video) Player - Play videos which vlc unable to play
   * RustDesk
   * Seal (yt-dlp + aria2 frontend)
   * YalpStore
@@ -386,6 +385,7 @@ Android
     * Daily build -> https://github.com/qidian55/bilibilitv1.6.6-repair/blob/main/mybv.apk
     * Alternatives -> https://github.com/HCLonely/awesome-bilibili-extra#第三方客户端
   * BV (bilibili for android tv)
+  * Just (Video) Player - Play videos which vlc unable to play
   * BiglyBT
   * Background App Killer
 * Not an app but related to Android
