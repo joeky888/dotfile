@@ -31,6 +31,7 @@
   "languages": {
     "TypeScript": {
       "language_servers": [
+        "tsgo",
         "deno",
         "emmet-language-server",
         "!typescript-language-server",
