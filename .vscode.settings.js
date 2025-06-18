@@ -249,4 +249,5 @@
     "terraform.languageServer.enable": true,
     "terraform.languageServer.path": "",
     "editor.stickyScroll.enabled": false,
+    "docker.extension.enableComposeLanguageServer": false,
 }
