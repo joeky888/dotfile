@@ -57,6 +57,7 @@ Extension
 * Remove Google Redirection
 * Load Lazyload Images
 * Wappalyzer
+* Harper - Private Grammar Checking
 * YouTube LiveChat Flusher (Danmaku LiveChat)
 * libredirect (This is not on the chrome web store)
   * Enable twitter -> nitter, disable the rest
