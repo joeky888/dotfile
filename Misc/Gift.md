@@ -26,4 +26,5 @@ alcoholic chocolate / liqueur chocolate 酒心巧克力
 樂維根(蛋白粉)隨身包
 草莓大福
 麻糬餅
-【門市取貨】一之軒 提拉米蘇
+提拉米蘇
+Pierre Zero 的 Mocktail 無酒精雞尾酒
