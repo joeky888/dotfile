@@ -23,7 +23,7 @@ OTG內視鏡
 
 Jäger 野格酒(炸彈)
 JUMBO BEAR 巨大熊軟糖
-alcoholic chocolate / liqueur chocolate 酒心巧克力
+alcoholic chocolate / liqueur chocolate 酒心巧克力禮盒
 樂維根(蛋白粉)隨身包
 草莓大福
 麻糬餅
