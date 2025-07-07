@@ -90,7 +90,7 @@ export PYTHONHTTPSVERIFY=0
 export PIP_USE_FEATURE=fast-deps # Enable pip parallel downloading
 export JAVA_TOOL_OPTIONS=" -Dfile.encoding=UTF8 "
 export DL_ARGUMENTS="-o '%(title)s.%(ext)s' --write-sub --all-subs --embed-subs --embed-metadata --sponsorblock-remove all --concurrent-fragments 8 --hls-prefer-native --no-check-certificate --ignore-errors"
-export PLAYER_ARGUMENTS="--cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options-set=sponsorblock-mark=all,embed-metadata=,no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*' --ytdl-raw-options-append=extractor-args=youtube:player_client=default,-ios"
+export PLAYER_ARGUMENTS="--cache=yes --demuxer-cache-dir=/tmp --cache-on-disk=yes --ytdl-raw-options-set=sponsorblock-mark=all,embed-metadata=,no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*'"
 export PLAYER_FASTARG_1080="--ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1080][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]'"
 export PLAYER_FASTARG_2K="--ytdl-format='bv[height<=1440][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1440][vcodec!^=av01]+ba/best[height<=1440][protocol^=m3u8]/best[height<=1440]'"
 export PLAYER_FASTARG_4k="--ytdl-format='bv[height<=2160][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=2160][vcodec!^=av01]+ba/best[height<=2160][protocol^=m3u8]/best[height<=2160]'"
