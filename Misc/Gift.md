@@ -22,6 +22,7 @@ OTG內視鏡
 雷神 MIX Gaming MiniPC
 準系統/minipc + fydeos + 飛鼠鍵盤(Rii RK707三合一飛鼠遊戲搖桿鍵盤)
 LED mask/masquerade 發亮面具
+電動車行李箱
 
 Jäger 野格酒(炸彈)
 JUMBO BEAR 巨大熊軟糖
