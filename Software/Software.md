@@ -349,7 +349,7 @@ Android
     * Andvanced -> Enable advanced formats -> Enable other formats
   * Newpipe nightly (Use this repo https://newpipe.schabi.org/FAQ/tutorials/install-add-fdroid-repo)
   * Xtra (Twitch)
-  * AnimeTV (Download from https://github.com/amarullz/AnimeTV/wiki)
+  * AnimeTV (Download from https://github.com/amarullz/kaicodex/tree/main/generated/bin)
     * Settings -> Prefer dub stream -> Check
     * Settings -> Auto Skip Intro -> Check
   * RustDesk
