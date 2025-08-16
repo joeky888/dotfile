@@ -557,6 +557,7 @@ Ideas to be done
   * Picture in picture
   * Sponsorblock
   * Multi-thread video/audio Downloader
+  * Chromecast (Google) + Airplay (Apple)
 * Steam Deck + Tiny11 + FydeOS + Waydroid + BlackArch
 * `docker buildx` builds multi-arch docker images for Go and Rust with drone ci
 * EKS on the new aws local zone ap-northeast-1-tpe-1a
