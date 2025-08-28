@@ -327,6 +327,8 @@ Android
 * Serverless Bluetooth Keyboard/Mouse for PC / Phone
 * AccuBattery - Battery health keeper
 * Samsung sound assistant -> Change sound step to 1 or 2
+  * Change sound step to 1 or 2
+  * Multi sound (at the bottom of the menu) -> All APPs
 * F-Droid
   * Neo Store (F-Droid + IzzyOnDroid + Guardian Project)
   * Termux
