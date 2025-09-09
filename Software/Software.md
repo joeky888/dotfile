@@ -411,6 +411,7 @@ iOS
 * Install dot (TLS) profile https://github.com/paulmillr/encrypted-dns
 * VoiceTube Dictionary -- Offline Dictionary
 * UDictionary 有道詞典國際版 - Online Dictionary
+* Hiya - whoscall-like app for US
 
 TinyOS - List of small OSes
 =====
