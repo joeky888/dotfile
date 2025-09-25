@@ -626,6 +626,7 @@ Ideas to be done
   * Built-in default backend
   * Rate limit
   * Compressed by default
+* Build a new browser using tauri
 
 Fast or lightweight or clustering Alternatives
 =====
