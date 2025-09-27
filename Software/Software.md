@@ -583,6 +583,7 @@ Ideas to be done
 * Webmaster Tools (站長工具) using Edge servers
 * Wireshark/TermShark using ImGui/Nuklear
 * 藍新金流(line pay + 支付寶) 8591 system
+* TV box using rpi 500+ and fydeos
 * Rapid transaction system 大量訂單/搶票系統
   * Frontend: Multi-region s3
   * Backend: Edge server
