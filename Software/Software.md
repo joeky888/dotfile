@@ -622,6 +622,8 @@ Ideas to be done
   * Night vision
   * Simple state machine built-in
   * Livekit - https://github.com/livekit/livekit
+* 重製惡靈 + 捕魚機
+  * 2D/3D mixed
 * Ingress controller/Reverse proxy written in Rust
   * http/2 and http/3
   * Built-in default backend
