@@ -624,6 +624,7 @@ Ideas to be done
   * Livekit - https://github.com/livekit/livekit
 * 重製惡靈 + 捕魚機
   * 2D/3D mixed
+  * edge + webrtc
 * Ingress controller/Reverse proxy written in Rust
   * http/2 and http/3
   * Built-in default backend
