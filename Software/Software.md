@@ -623,8 +623,11 @@ Ideas to be done
   * Simple state machine built-in
   * Livekit - https://github.com/livekit/livekit
 * 重製惡靈 + 捕魚機
-  * 2D/3D mixed
-  * edge + webrtc
+  * 2D/3D mixed optimisation
+  * deno deploy front + webrtc
+  * cloudflare workers backend
+  * Turso
+  * Web + Android/iOS + TV
 * Ingress controller/Reverse proxy written in Rust
   * http/2 and http/3
   * Built-in default backend
