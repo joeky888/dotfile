@@ -577,7 +577,7 @@ Ideas to be done
 * A 4chan clone -- Lemmy can do this
 * A zhihu clone -- Lemmy can do this
 * A Wikipedia/Fandom clone
-* An ERP system using edge services
+* An ERP system using edge services and supports multiple db connections
 * A Shopline/Shopify clone
 * Drone + VR glasses
 * Webmaster Tools (站長工具) using Edge servers
