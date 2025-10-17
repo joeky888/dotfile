@@ -45,6 +45,7 @@ Extension
   * 三连/订阅提醒 -> 自動跳過
   * 过场/开场动画 -> 自動跳過
   * 鸣谢/结束画面 -> 自動跳過
+* Stay Focused Chrome Extension (https://github.com/MaherSaleem/stay-focused-chrome-extension)
 * Tampermonkey (Closed source)
   * https://github.com/syhyz1990/baiduyun (Secret: 94108)
 * Violentmonkey (Open source)
