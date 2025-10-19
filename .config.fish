@@ -2,8 +2,15 @@
 set fish_greeting
 
 # Docs: https://fishshell.com/docs/current/cmds/bind.html
-bind -k up history-prefix-search-backward
-bind -k down history-prefix-search-forward
+# fish >= 4.0.0
+if test (echo $FISH_VERSION | tr -d " |\-|.|[:alpha:]") -ge 400
+  bind up history-prefix-search-backward
+  bind down history-prefix-search-forward
+else
+  bind -k up history-prefix-search-backward
+  bind -k down history-prefix-search-forward
+end
+
 bind \eOA history-prefix-search-backward
 bind \eOB history-prefix-search-forward
 bind \e\[A history-prefix-search-backward
@@ -17,8 +24,13 @@ bind \e\[1\;5B history-prefix-search-forward
 bind \e\[1\;9A history-prefix-search-backward
 bind \e\[1\;9B history-prefix-search-forward
 bind \cr history-token-search-backward
-# bind \cZ undo # Available in fish >= 3.2.0
-# bind \cY redo # Available in fish >= 3.2.0
+
+# fish >= 3.2.0
+if test (echo $FISH_VERSION | tr -d " |\-|.|[:alpha:]") -ge 320
+  bind \cZ undo
+  bind \cY redo
+end
+
 
 set -U fish_user_paths ""
 set -U fish_user_paths $HOME/dotfile/app-fast $fish_user_paths
