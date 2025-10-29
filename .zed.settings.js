@@ -57,14 +57,7 @@
       "language_servers": ["pyrefly", "ruff", "!pyright", "!pylsp"],
       "format_on_save": "on",
       "formatter": [
-        {
-          "code_actions": {
-            // Organize imports
-            "source.organizeImports.ruff": true,
-            // Fix all auto-fixable lint violations
-            "source.fixAll.ruff": true
-          }
-        },
+        { "code_action": "source.organizeImports.ruff" },
         {
           "language_server": {
             "name": "ruff"
