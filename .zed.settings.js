@@ -18,6 +18,7 @@
   "remove_trailing_whitespace_on_save": true,
   "theme": "Ayu Dark",
   "minimap": { "show": "always" },
+  "use_system_window_tabs": true, // macOS native tab
   "terminal": {
     "font_family": "UbuntuMono Nerd Font",
     "copy_on_select": true,

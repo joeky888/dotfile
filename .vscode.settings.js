@@ -19,7 +19,7 @@
     "editor.cursorBlinking": "solid",
     "telemetry.telemetryLevel": "off",
     "editor.semanticHighlighting.enabled": true,
-    "window.nativeTabs": true,
+    "window.nativeTabs": true, // macOS native tab
     "window.customTitleBarVisibility": "never",
     "vscode_custom_css.imports": [
         "https://raw.githubusercontent.com/joeky888/dotfile/master/.vscode.monokai-neon-glow.css"
