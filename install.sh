@@ -224,7 +224,7 @@ InstallDotfileCygwin()
 InstallPIP()
 {
   curl 'https://bootstrap.pypa.io/get-pip.py' | $SUDO python3
-  echo y | $SUDO pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip https://github.com/yt-dlp/ejs/archive/master.zip
+#   echo y | $SUDO pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip https://github.com/yt-dlp/ejs/archive/master.zip
 #   echo y | $SUDO pip install streamlink
 }
 
@@ -234,7 +234,7 @@ InstallMiniforge()
   [ -z $1 ] && return;
   # rm -rf ~/Miniconda2 && aria2c "https://repo.anaconda.com/miniconda/Miniconda2-latest-$1-x86_64.sh" && chmod +x Miniconda2-latest-$1-x86_64.sh && bash Miniconda2-latest-$1-x86_64.sh -p ~/Miniconda2 -b -f && rm Miniconda2-latest-$1-x86_64.sh
   rm -rf ~/Miniforge3 && aria2c "https://github.com/conda-forge/miniforge/releases/latest/download/Miniforge3-$1-$ARCH.sh" -o Miniforge3.sh && bash Miniforge3.sh -b -f -p ~/Miniforge3 && rm Miniforge3.sh
-  ~/Miniforge3/bin/pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip https://github.com/yt-dlp/ejs/archive/master.zip
+#   ~/Miniforge3/bin/pip install --upgrade https://github.com/yt-dlp/yt-dlp/archive/master.zip https://github.com/yt-dlp/ejs/archive/master.zip
 }
 
 InstallAlpine()
