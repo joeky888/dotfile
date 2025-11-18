@@ -1,7 +1,7 @@
 Make Ctrl key work
 =====
 * System Settings -> Keyboard -> Keyboard Shortcuts -> Mission Control -> Uncheck "^←" "^↑" "^→" "^↓"
-* System Settings -> Keyboard -> Keyboard Shortcuts -> Mission Control -> Assign Ctrl-Shift-arrow keys to move between desktops (Mac mini)
+* System Settings -> Keyboard -> Keyboard Shortcuts -> Mission Control -> Assign Option+[ and Option+] keys to move between desktops (Mac mini)
 * Command + Option + D -> Hide dock
 
 Post-installed
