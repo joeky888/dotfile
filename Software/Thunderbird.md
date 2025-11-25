@@ -1,3 +1,7 @@
+Addons
+=====
+* Thunderbird Conversations - Gmail-like experience
+
 Asus Exchange setting Using ExQuilla (Closed source)
 =====
 * Press "Alt" key -> Tool -> Extensions -> Search "Exchange" -> install "ExQuilla"
