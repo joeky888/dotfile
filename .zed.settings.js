@@ -28,8 +28,19 @@
   "project_panel": {
     "auto_fold_dirs": false
   },
-  // Deno is my default language server for zed
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        }
+      }
+    }
+  },
   "languages": {
+    "Rust": {
+      "format_on_save": "on"
+    },
     "TypeScript": {
       "language_servers": [
         "deno",
