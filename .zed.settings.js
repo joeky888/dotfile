@@ -7,6 +7,14 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "agent": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4-5"
+    },
+    "always_allow_tool_actions": true,
+    "model_parameters": []
+  },
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
   "buffer_font_size": 20,
@@ -29,6 +37,29 @@
     "auto_fold_dirs": false
   },
   "lsp": {
+    "golangci-lint": {
+      "initialization_options": {
+        "command": [
+          "golangci-lint",
+          "run",
+          "--output.json.path",
+          "stdout",
+          "--show-stats=false",
+          "--output.text.path=",
+          "-E=govet",
+          "-E=ineffassign",
+          "-E=unused",
+          "-E=paralleltest",
+          "-E=staticcheck",
+          "-E=gocritic",
+          "-E=errchkjson",
+          "-E=rowserrcheck",
+          "-E=errcheck",
+          "-E=revive",
+          "--timeout=5m"
+        ]
+      }
+    },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
@@ -38,6 +69,9 @@
     }
   },
   "languages": {
+    "Go": {
+      "language_servers": ["gopls", "golangci-lint"]
+    },
     "Rust": {
       "format_on_save": "on"
     },

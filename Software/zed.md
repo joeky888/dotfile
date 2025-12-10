@@ -2,6 +2,7 @@ Extensions
 ======
 * Deno
 * Pyrefly - Python lsp
+* golangci-lint
 * Ruff - Python linter and language server
 * tsgo - TS Native (typescript-go) language server
 * Emmet
