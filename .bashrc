@@ -345,8 +345,6 @@ alias mpv-audio-loop20="mpv --loop=20 --no-video --volume=70 --keep-open=no --in
 alias mpv-boost="mpv --video-sync=display-resample-desync --ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $PLAYER_ARGUMENTS" # Drop frames when video is accelerated, useful for 4k videos
 alias iina-1080="iina-cli --mpv-ytdl-format='bv[height<=1080][vcodec!^=av01]+ba/best' $IINA_ARGUMENTS"
 alias aria2c-bt-qBittorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="qBittorrent/4.1.1" --peer-id-prefix="-qB4110-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
-alias aria2c-bt-uTorrent='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="uTorrent/341(109279400)(30888)" --peer-id-prefix="-UT341-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
-alias aria2c-bt-Transmission='aria2c $(echo $DOWNLOADER_ARGUMENTS) $(echo $TORRENT_ARGUMENTS) --user-agent="Transmission/2.77" --peer-id-prefix="-TR2770-" --bt-tracker=$(curl -s https://raw.githubusercontent.com/XIU2/TrackersListCollection/master/all.txt | tr -s "\n" | tr "\n" ",")'
 alias wine-optimize="WINEDEBUG=-all wine"
 alias scp='scp -v'
 alias ffmpeg='ffmpeg -err_detect ignore_err -protocol_whitelist file,http,https,tcp,tls,crypto'
