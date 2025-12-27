@@ -4,7 +4,7 @@ docker-compose for arm64 on gitea.example.com
 * Auto https cert via Caddy/Traefik
 * gitea ssh container port 22 forwards to host port 2222 (client -> host 22 -> host 2222 -> container 22)
 * Make sure
-  * Database and permissions are created according to doc https://docs.gitea.io/en-us/database-prep
+  * Database and permissions are created according to doc https://docs.gitea.com/next/installation/database-prep
     * Otherwise, migration will fail
   * Port 22 is used for sshd on the host
   * gitea.example.com is registerd and pointed to the server address
@@ -108,10 +108,10 @@ services:
       - "127.0.0.1:2222:22" # 127.0.0.1:2222 This ensures port 2222 is not avaialbe from public internet
 
   postgres:
-    image: arm64v8/postgres:17.2-alpine
+    image: postgres:18.1-alpine
     restart: always
     volumes:
-      - /home/gitea/gitea-db:/var/lib/postgresql/data/
+      - /home/gitea/gitea-db:/var/lib/postgresql/
     environment:
       POSTGRES_DB: gitea
       POSTGRES_USER: gitea
