@@ -23,14 +23,14 @@ Postgres move data to another empty db (搬家)
 =====
 ```sh
 # stdout
-pg_dump -c -C --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" | psql --dbname "postgresql://username:password@127.0.0.1:5432/newdatabase"
+pg_dump -c -C --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' | psql --dbname 'postgresql://username:password@127.0.0.1:5432/newdatabase'
 # Or use zstd to dump file, this requires pg 16+
 # If "-t table1 -t table2" is omitted, then all tables will be dumped to file
-pg_dump -c -C --format=custom --compress=zstd --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" -t table1 -t table2 > dump.zstd
-pg_restore --dbname  "postgresql://username:password@127.0.0.1:5432/newdatabase" dump.zstd
+pg_dump -c -C --format=custom --compress=zstd --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' -t table1 -t table2 > dump.zstd
+pg_restore --dbname  'postgresql://username:password@127.0.0.1:5432/newdatabase' dump.zstd
 # Or use a temporary docker container to dump and restore
-docker run --rm postgres:18.1-alpine pg_dump -c -C --format=custom --compress=zstd --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" > dump.zstd
-docker run -v ${PWD}/dump.zstd:/dump.zstd --rm postgres:18.1-alpine pg_restore --dbname "postgresql://username:password@127.0.0.1:5432/mydatabase" > /dump.zstd
+docker run --rm postgres:18.1-alpine pg_dump -c -C --format=custom --compress=zstd --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' > dump.zstd
+docker run -v ${PWD}/dump.zstd:/dump.zstd --rm postgres:18.1-alpine pg_restore --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' > /dump.zstd
 ```
 
 MYSQL Query
