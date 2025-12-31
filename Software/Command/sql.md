@@ -30,7 +30,7 @@ pg_dump -c -C --format=custom --compress=zstd --dbname 'postgresql://username:pa
 pg_restore --dbname  'postgresql://username:password@127.0.0.1:5432/newdatabase' dump.zstd
 # Or use a temporary docker container to dump and restore
 docker run --rm postgres:18.1-alpine pg_dump -c -C --format=custom --compress=zstd --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' > dump.zstd
-docker run -v ${PWD}/dump.zstd:/dump.zstd --rm postgres:18.1-alpine pg_restore --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' > /dump.zstd
+docker run -v ${PWD}/dump.zstd:/dump.zstd --rm postgres:18.1-alpine pg_restore --no-owner --dbname 'postgresql://username:password@127.0.0.1:5432/mydatabase' /dump.zstd
 ```
 
 MYSQL Query
