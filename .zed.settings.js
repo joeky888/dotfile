@@ -10,7 +10,7 @@
   "agent": {
     "default_model": {
       "provider": "zed.dev",
-      "model": "claude-sonnet-4-5"
+      "model": "gemini-3-flash"
     },
     "always_allow_tool_actions": true,
     "model_parameters": []
