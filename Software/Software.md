@@ -571,18 +571,8 @@ Ideas to be done
 * An ERP system using edge services and supports multiple db connections
 * A Shopline/Shopify clone
 * Drone + VR glasses
-* Webmaster Tools (站長工具) using Edge servers
-* Wireshark/TermShark using ImGui/Nuklear
 * 藍新金流(line pay + 支付寶) 8591 system
 * TV box using rpi 500+ and fydeos
-* Rapid transaction system 大量訂單/搶票系統
-  * Frontend: Multi-region s3
-  * Backend: Edge server
-  * Hot data: Turso
-  * Cold data: ReadySet + Clickhouse/Databend
-* Nomad as CI/CD cluster, use drone and drone runner to trigger nomad cluster
-  * The cluster is mixed with windows, macOS and docker
-  * Try to deploy non-containered job like Cocos creator
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
@@ -608,10 +598,8 @@ Ideas to be done
   * Flutter Webrtc (Mobile and Desktop)
 * 3D air combat game
   * Rust
-  * Cocos/Godot/O3DE(Open 3D Engine)
   * With all integer/float numbers capsulated by decimal types (Prevent cheat engine abusing)
   * Night vision
-  * Simple state machine built-in
   * Livekit - https://github.com/livekit/livekit
 * 重製惡靈 + 捕魚機
   * 2D/3D mixed optimisation
