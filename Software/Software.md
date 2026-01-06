@@ -573,6 +573,10 @@ Ideas to be done
 * Drone + VR glasses
 * 藍新金流(line pay + 支付寶) 8591 system
 * TV box using rpi 500+ and fydeos
+* Drone co-op life-saving amphibious PHEV
+  * SLAM
+  * Carla/AirSim
+  * Carplay/Android auto
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
