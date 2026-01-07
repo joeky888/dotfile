@@ -84,7 +84,6 @@ fi
 
 export VISUAL="nvim"
 export EDITOR="$VISUAL"
-export PYTHONIOENCODING="UTF-8" # Python2 UTF8
 export PYTHONUTF8=1 # Python3 UTF8
 export PYTHONHTTPSVERIFY=0
 export PIP_USE_FEATURE=fast-deps # Enable pip parallel downloading
@@ -367,7 +366,6 @@ alias opera-developer-ignoreCrt='opera-developer --ignore-certificate-errors'
 alias 7zzExtractToFolder='7zz -o* x'
 alias watch='watch --color'
 alias transmission-daemon-start-here='transmission-daemon -f -T -w $PWD --incomplete-dir $PWD -a "127.0.0.1,192.168.*.*"'
-alias python2-simple-http='python2 -m SimpleHTTPServer'
 alias python3-simple-http='python3 -m http.server'
 alias scrcpy-max-speed='scrcpy --max-size=1024 --max-fps=10'
 alias scrcpy-audio='scrcpy --no-video'
@@ -1261,60 +1259,6 @@ with zipfile.ZipFile(os.environ['zipfilename']) as file:
         fo.close
 file.close()
 
-END
-  unset zipfilename;
-}
-
-unzipToBig5py2()
-{
-  export zipfilename="$@"
-  export zipfilepwd=""
-
-  echo -n "Input zip password:"
-  read zipfilepwd
-
-  python2 <<END
-import os, sys, zipfile
-zipfilepwd = os.environ['zipfilepwd'] or ""
-file = zipfile.ZipFile(os.environ['zipfilename'],"r");
-for name in file.namelist():
-  utf8name = name.decode('big5')
-  pathname = os.path.dirname(utf8name)
-  if not os.path.exists(pathname) and pathname!= "":
-    os.makedirs(pathname)
-  data = file.read(name, zipfilepwd)
-  if not os.path.exists(utf8name):
-    fo = open(utf8name, "w")
-    fo.write(data)
-    fo.close
-file.close()
-END
-  unset zipfilename;
-}
-
-unzipToGBKpy2()
-{
-  export zipfilename="$@"
-  export zipfilepwd=""
-
-  echo -n "Input zip password:"
-  read zipfilepwd
-
-  python2 <<END
-import os, sys, zipfile
-zipfilepwd = os.environ['zipfilepwd'] or ""
-file = zipfile.ZipFile(os.environ['zipfilename'],"r");
-for name in file.namelist():
-  utf8name = name.decode('gbk')
-  pathname = os.path.dirname(utf8name)
-  if not os.path.exists(pathname) and pathname!= "":
-    os.makedirs(pathname)
-  data = file.read(name, zipfilepwd)
-  if not os.path.exists(utf8name):
-    fo = open(utf8name, "w")
-    fo.write(data)
-    fo.close
-file.close()
 END
   unset zipfilename;
 }
