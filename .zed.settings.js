@@ -8,12 +8,13 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
+    "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
-      "model": "gemini-3-flash"
+      "model": "gemini-3-flash",
     },
     "always_allow_tool_actions": true,
-    "model_parameters": []
+    "model_parameters": [],
   },
   "icon_theme": "Material Icon Theme",
   "ui_font_size": 16,
@@ -31,10 +32,10 @@
     "font_family": "UbuntuMono Nerd Font",
     "copy_on_select": true,
     "line_height": "standard",
-    "font_size": 16
+    "font_size": 16,
   },
   "project_panel": {
-    "auto_fold_dirs": false
+    "auto_fold_dirs": false,
   },
   "lsp": {
     "golangci-lint": {
@@ -56,24 +57,38 @@
           "-E=rowserrcheck",
           "-E=errcheck",
           "-E=revive",
-          "--timeout=5m"
-        ]
-      }
+          "--timeout=5m",
+        ],
+      },
     },
     "rust-analyzer": {
       "initialization_options": {
         "check": {
-          "command": "clippy"
-        }
-      }
-    }
+          "command": "clippy",
+        },
+      },
+    },
+    "yaml-language-server": {
+      "settings": {
+        "yaml": {
+          "format": {
+            "singleQuote": false,
+            "printWidth": 80,
+            "proseWrap": "never",
+          },
+        },
+      },
+    },
   },
   "languages": {
+    "YAML": {
+      "formatter": "language_server",
+    },
     "Go": {
-      "language_servers": ["gopls", "golangci-lint"]
+      "language_servers": ["gopls", "golangci-lint"],
     },
     "Rust": {
-      "format_on_save": "on"
+      "format_on_save": "on",
     },
     "TypeScript": {
       "language_servers": [
@@ -82,9 +97,9 @@
         "tsgo",
         "!typescript-language-server",
         "!vtsls",
-        "!eslint"
+        "!eslint",
       ],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     "TSX": {
       "language_servers": [
@@ -93,9 +108,9 @@
         "!typescript-language-server",
         "!vtsls",
         "!eslint",
-        "tailwindcss-language-server"
+        "tailwindcss-language-server",
       ],
-      "formatter": "language_server"
+      "formatter": "language_server",
     },
     // Use pyrefly as lsp, ruff as lint
     "Python": {
@@ -105,10 +120,10 @@
         { "code_action": "source.organizeImports.ruff" },
         {
           "language_server": {
-            "name": "ruff"
-          }
-        }
-      ]
-    }
-  }
+            "name": "ruff",
+          },
+        },
+      ],
+    },
+  },
 }

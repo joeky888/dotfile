@@ -577,6 +577,8 @@ Ideas to be done
   * SLAM
   * Carla/AirSim
   * Carplay/Android auto
+* Raspberry Pi AI HAT+
+  * Capstone
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
