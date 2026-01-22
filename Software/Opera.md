@@ -62,6 +62,7 @@ Extension
 * Wappalyzer
 * Harper - Private Grammar Checking
 * YouTube LiveChat Flusher (Danmaku LiveChat)
+* Twitch Chat Danmaku
 * libredirect (This is not on the chrome web store)
   * Enable twitter -> nitter, disable the rest
   * Add custom twitter instance "https://nitter.net"

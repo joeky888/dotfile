@@ -79,6 +79,14 @@
         },
       },
     },
+    "matlab-language-server": {
+      "settings": {
+        "installPath": "/Applications/MATLAB_R2025b.app/",
+        "indexWorkspace": true,
+        "matlabConnectionTiming": "onStart",
+        "telemetry": false,
+      },
+    },
   },
   "languages": {
     "YAML": {

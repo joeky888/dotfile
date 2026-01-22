@@ -250,4 +250,8 @@
     "terraform.languageServer.path": "",
     "editor.stickyScroll.enabled": false,
     "docker.extension.enableComposeLanguageServer": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "matlab.interrupt"
+    ],
+    "MATLAB.installPath": "/Applications/MATLAB_R2025b.app/",
 }
