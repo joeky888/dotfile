@@ -101,8 +101,8 @@
     "TypeScript": {
       "language_servers": [
         "deno",
-        "emmet-language-server",
-        "tsgo",
+        "!emmet-language-server",
+        "!tsgo",
         "!typescript-language-server",
         "!vtsls",
         "!eslint",
