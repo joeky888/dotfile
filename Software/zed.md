@@ -3,7 +3,6 @@ Extensions
 * Deno
 * Pyrefly - Python lsp
 * golangci-lint
-* Ruff - Python linter and language server
 * Emmet
 * SQL
 * HTML

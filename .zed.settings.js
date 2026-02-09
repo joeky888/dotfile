@@ -79,14 +79,6 @@
         },
       },
     },
-    "matlab-language-server": {
-      "settings": {
-        "installPath": "/Applications/MATLAB_R2025b.app/",
-        "indexWorkspace": true,
-        "matlabConnectionTiming": "onStart",
-        "telemetry": false,
-      },
-    },
   },
   "languages": {
     "YAML": {
@@ -120,9 +112,15 @@
       ],
       "formatter": "language_server",
     },
-    // Use pyrefly as lsp, ruff as lint
     "Python": {
-      "language_servers": ["ty", "ruff", "!pyright", "!pylsp"],
+      "language_servers": [
+        "pyrefly",
+        "!ty",
+        "ruff",
+        "!pyright",
+        "!basedpyright",
+        "!pylsp",
+      ],
       "format_on_save": "on",
       "formatter": [
         { "code_action": "source.organizeImports.ruff" },
