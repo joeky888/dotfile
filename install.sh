@@ -123,103 +123,100 @@ InstallDotfile()
   esac
 }
 
-InstallDotfileCygwin()
+InstallDotfileGitBash()
 {
-  rm -rf $Home/dotfile
+  rm -rf "$HOME/dotfile"
   rm -rf ~/.grc
-  git clone --depth=1 git@github.com:joeky888/dotfile.git $Home/dotfile
-  mkdir -p $Home/Documents/WindowsPowerShell
-  mkdir -p $Home/.config/fish/
-  mkdir -p $Home/.pip/
-  mkdir -p $Home/pip/
-  mkdir -p $Home/.grc/
-  mkdir -p $Home/AppData/Local/nvim
-  mkdir -p $Home/AppData/Roaming/mpv
-  mkdir -p $Home/AppData/Roaming/alacritty
-  mkdir -p $Home/AppData/Roaming/Code/User
-  mkdir -p $Home/AppData/Roaming/VSCodium/User
-  mkdir -p $Home/AppData/Roaming/helix
-  mkdir -p $Home/AppData/Roaming/gitui
-  mkdir -p $Home/scoop/apps/mpv/current/portable_config/scripts
-  mkdir -p $Home/scoop/apps/mpv/current/portable_config/script-opts
-  mkdir -p $Home/scoop/apps/mpv-git/current/portable_config/scripts
-  mkdir -p $Home/scoop/apps/mpv-git/current/portable_config/script-opts
-  rm -f $Home/.bashrc
-  rm -f $Home/.bash_profile
-  rm -f $Home/.tmux.conf
-  rm -f $Home/.zshrc
-  rm -f $Home/.nanorc
-  rm -f $Home/.minttyrc
-  rm -f $Home/.pythonrc
-  rm -f $Home/AppData/Local/nvim/init.vim
-  rm -f $Home/pip/pip.ini
-  rm -f $Home/.pip/pip.conf
-  rm -f $Home/.condarc
-  rm -f $Home/.npmrc
-  rm -f $Home/.yarnrc
-  rm -f $Home/.tigrc
-  rm -f $Home/.gitconfig
-  rm -f $Home/.gitmessage
-  rm -f $Home/.Xresources
-  rm -f $Home/.alacritty.toml
-  rm -f $Home/.myclirc
-  rm -f $Home/.config/fish/config.fish
-  rm -f $Home/.config/starship.toml
-  rm -f $Home/Documents/WindowsPowerShell/profile.ps1
-  rm -f $Home/scoop/apps/vscode/current/data/user-data/User/settings.json
-  rm -f $Home/scoop/apps/vscode/current/data/user-data/User/keybindings.json
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.nanorc" "%USERPROFILE%\dotfile\.nanorc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.config\starship.toml" "%USERPROFILE%\dotfile\starship.toml"
-  cd $Home/dotfile
-  git submodule update --init --remote
-  cd - ;
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\mpv\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
-  cygstart --action=runas cmd.exe /c mklink "%APPDATA%\gitui\key_bindings.ron" "%USERPROFILE%\dotfile\.gitui.key_bindings.ron"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
-  cygstart --action=runas cmd.exe /c mklink "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
-  cygstart --action=runas cmd.exe /c regedit /S "%USERPROFILE%\dotfile\install.reg"
-  ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
-  ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
+  git clone --depth=1 git@github.com:joeky888/dotfile.git "$HOME/dotfile"
+
+  mkdir -p "$HOME/Documents/WindowsPowerShell"
+  mkdir -p "$HOME/.config/fish/"
+  mkdir -p "$HOME/.pip/"
+  mkdir -p "$HOME/pip/"
+  mkdir -p "$HOME/.grc/"
+  mkdir -p "$HOME/AppData/Local/nvim"
+  mkdir -p "$HOME/AppData/Roaming/mpv"
+  mkdir -p "$HOME/AppData/Roaming/alacritty"
+  mkdir -p "$HOME/AppData/Roaming/Code/User"
+  mkdir -p "$HOME/AppData/Roaming/VSCodium/User"
+  mkdir -p "$HOME/AppData/Roaming/helix"
+  mkdir -p "$HOME/AppData/Roaming/gitui"
+  mkdir -p "$HOME/scoop/apps/mpv/current/portable_config/scripts"
+  mkdir -p "$HOME/scoop/apps/mpv/current/portable_config/script-opts"
+  mkdir -p "$HOME/scoop/apps/mpv-git/current/portable_config/scripts"
+  mkdir -p "$HOME/scoop/apps/mpv-git/current/portable_config/script-opts"
+
+  # Helper function to run elevated mklink in Git Bash
+  win_link() {
+    # Usage: win_link "target_link" "source_file"
+    powershell.exe -Command "Start-Process cmd -ArgumentList '/c mklink \"$1\" \"$2\"' -Verb RunAs"
+  }
+
+  rm -f "$HOME/.bashrc" "$HOME/.bash_profile" "$HOME/.tmux.conf" "$HOME/.zshrc" "$HOME/.nanorc" \
+        "$HOME/.minttyrc" "$HOME/.pythonrc" "$HOME/AppData/Local/nvim/init.vim" "$HOME/pip/pip.ini" \
+        "$HOME/.pip/pip.conf" "$HOME/.condarc" "$HOME/.npmrc" "$HOME/.yarnrc" "$HOME/.tigrc" \
+        "$HOME/.gitconfig" "$HOME/.gitmessage" "$HOME/.Xresources" "$HOME/.alacritty.toml" \
+        "$HOME/.myclirc" "$HOME/.config/fish/config.fish" "$HOME/.config/starship.toml" \
+        "$HOME/Documents/WindowsPowerShell/profile.ps1" \
+        "$HOME/scoop/apps/vscode/current/data/user-data/User/settings.json" \
+        "$HOME/scoop/apps/vscode/current/data/user-data/User/keybindings.json"
+
+  win_link "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+  win_link "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
+  win_link "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
+  win_link "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
+  win_link "%USERPROFILE%\.nanorc" "%USERPROFILE%\dotfile\.nanorc"
+  win_link "%USERPROFILE%\.minttyrc" "%USERPROFILE%\dotfile\Windows\.minttyrc"
+  win_link "%USERPROFILE%\.tigrc" "%USERPROFILE%\dotfile\.tigrc"
+  win_link "%USERPROFILE%\.gitconfig" "%USERPROFILE%\dotfile\.gitconfig"
+  win_link "%USERPROFILE%\.gitmessage" "%USERPROFILE%\dotfile\.gitmessage"
+  win_link "%USERPROFILE%\.pythonrc" "%USERPROFILE%\dotfile\.pythonrc"
+  win_link "%USERPROFILE%\.pip\pip.conf" "%USERPROFILE%\dotfile\.pip.ini"
+  win_link "%USERPROFILE%\pip\pip.ini" "%USERPROFILE%\dotfile\.pip.ini"
+  win_link "%USERPROFILE%\.condarc" "%USERPROFILE%\dotfile\.condarc"
+  win_link "%USERPROFILE%\.npmrc" "%USERPROFILE%\dotfile\.npmrc"
+  win_link "%USERPROFILE%\.yarnrc" "%USERPROFILE%\dotfile\.yarnrc"
+  win_link "%USERPROFILE%\.Xresources" "%USERPROFILE%\dotfile\.Xresources"
+  win_link "%USERPROFILE%\.alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
+  win_link "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
+  win_link "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
+  win_link "%USERPROFILE%\.config\starship.toml" "%USERPROFILE%\dotfile\starship.toml"
+
+  cd "$HOME/dotfile" && git submodule update --init --remote && cd - ;
+
+  win_link "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
+  win_link "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+  win_link "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
+  win_link "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  win_link "%APPDATA%\mpv\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+  win_link "%APPDATA%\Code\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+  win_link "%APPDATA%\VSCodium\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+  win_link "%APPDATA%\Code\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+  win_link "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+  win_link "%APPDATA%\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
+  win_link "%APPDATA%\gitui\key_bindings.ron" "%USERPROFILE%\dotfile\.gitui.key_bindings.ron"
+  win_link "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
+  win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
+  win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
+  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
+  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
+  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
+  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
+  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
+  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
+  win_link "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
+
+  # Run Registry import elevated
+  powershell.exe -Command "Start-Process reg -ArgumentList 'import \"%USERPROFILE%\\dotfile\\install.reg\"' -Verb RunAs"
+
+  ln -sf "$HOME/dotfile/grc/grc.conf" "$HOME/.grc/grc.conf"
+  ln -sf "$HOME/dotfile/grc/colourfiles/"* "$HOME/.grc/"
 }
+
 
 InstallPIP()
 {
@@ -349,55 +346,8 @@ elif echo "$OSTYPE" | grep -q "darwin"; then # macOS
 
 
 
-elif [[ "$OSTYPE" == "cygwin" ]]; then # Cygwin
-  if [[ ! $(command -v aria2c) ]]; then
-    echo "Please install aria2"
-    exit 1
-  fi
-#   export SUDO='cygstart --action=runas "$@" '
-  export SUDO=""
-  export Home=$(cygpath -u "$USERPROFILE")
-#   if ! [[ $(command -v choco) ]]; then # Don't reinstall chocolatey
-#     cygstart --action=runas cmd.exe /c RD /S /Q "%ALLUSERSPROFILE%\\chocolatey"
-#     cygstart --action=runas cmd.exe /c @powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))"
-#     [[ "$PATH" != *"chocolatey/bin"* ]] && cygstart --action=runas cmd.exe /c "setlocal EnableDelayedExpansion & setx /M PATH \"%PATH%;%ALLUSERSPROFILE%\\chocolatey\\bin\""
-#   fi
-  rm -rf /bin/apt-cyg
-  rm -rf /bin/setup-x86_64.exe
-  curl https://raw.githubusercontent.com/joeky888/apt-cyg/master/apt-cyg -o /bin/apt-cyg && chmod 777 /bin/apt-cyg
-  curl -LOC - 'https://cygwin.com/setup-x86_64.exe' && install setup-x86_64.exe /bin && rm setup-x86_64.exe
-  apt-cyg install wget curl aria2 git vim nano tmux zsh fish atool
-  InstallDotfileCygwin
-  grep -q -F '/cygdrive/c/Users /home none bind 0 0' /etc/fstab || echo '/cygdrive/c/Users /home none bind 0 0' >> /etc/fstab
-  grep -q -F 'none /tmp usertemp binary,posix=0 0 0' /etc/fstab || echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-#   sed -i 's/.*db_shell.*/db_shell: \/bin\/fish/' /etc/nsswitch.conf
-#   find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; > $Home/.nanorc
-
-  apt-cyg install openssh bind-utils bash-completion tig tar python3 python3-pip
-#   apt-cyg install cygport procps fontconfig fontforge ghostscript ImageMagick make automake cmake gcc-core gcc-g++
-#   apt-cyg install cygwin-devel doxygen python3-devel openssl-devel libevent-devel libncurses-devel libncursesw-devel libtool yasm yasm-devel binutils diffutils dos2unix libfontconfig-devel libiconv-devel libass-devel fribidi libfribidi-devel libfreetype-devel libopenjpeg-devel libopus-devel libvorbis-devel libvpx-devel libwebp-devel libbz2-devel libffi-devel gettext-devel
-  InstallPIP
-
-
-
-
-
-
-elif [[ "$OSTYPE" == "msys" ]]; then # Msys
-  export SUDO=''
-  export Home="$HOME"
-#   pacman -R catgets libcatgets --noconfirm
-  app-fast -Sy zsh git vim curl wget bash-completion base-devel msys2-devel mercurial cvs perl ruby python2 python3 python3-pip --noconfirm --needed
-#   sed -i '/XferCommand/d' /etc/pacman.conf
-#   sed -i '/\[options\]/a XferCommand = /mingw64/bin/aria2c -c -s16 -k1M -x16 %u' /etc/pacman.conf
-#   sed -i '/./d' /etc/fstab
-#   echo 'C:/Users /home ntfs binary,noacl,auto 1 1' >> /etc/fstab
-#   echo 'none /tmp usertemp binary,posix=0 0 0' >> /etc/fstab
-#   app-fast -S mingw-w64-x86_64-aria2 --noconfirm --needed
-#   pacman -S mingw-w64-x86_64-toolchain --noconfirm
-
-
-
+elif [[ "$OSTYPE" == "msys" ]]; then # Git bash
+  InstallDotfileGitBash
 
 
 elif [[ "$OSTYPE" == "linux-android" ]]; then # Android Termux
