@@ -544,7 +544,6 @@ win_link "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
     ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
     ln -sf $HOME/dotfile/.config.fish ~/.config/fish/config.fish
-    ln -sf $HOME/dotfile/startfish.toml ~/.config/startfish.toml
     ln -sf $HOME/dotfile/.zed.settings.js ~/.config/zed/settings.json
     ln -sf $HOME/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
     ln -sf $HOME/dotfile/.helix.config.toml ~/.config/helix/config.toml
