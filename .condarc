@@ -1,15 +1,8 @@
 ssl_verify: false
 show_channel_urls: true
 channels:
-  - defaults
   - conda-forge
-  # - main
-  # - free
-  # - bioconda
-  # - intel
-  # - conda-canary
-  # - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
-
+  - defaults
 solver: classic
 
 
