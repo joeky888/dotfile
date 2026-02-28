@@ -85,7 +85,6 @@ InstallDotfile()
   ln -sf $Home/dotfile/vimrc/.vimrc ~/.config/nvim/init.vim
   ln -sf $Home/dotfile/.pip.ini ~/.pip/pip.conf
   ln -sf $Home/dotfile/.config.fish ~/.config/fish/config.fish
-  ln -sf $Home/dotfile/starship.toml ~/.config/starship.toml
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
   ln -sf $Home/dotfile/.alacritty.toml ~/.config/alacritty/alacritty.toml
