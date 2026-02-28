@@ -155,7 +155,7 @@ InstallDotfileGitBash()
         "$HOME/.minttyrc" "$HOME/.pythonrc" "$HOME/AppData/Local/nvim/init.vim" "$HOME/pip/pip.ini" \
         "$HOME/.pip/pip.conf" "$HOME/.condarc" "$HOME/.npmrc" "$HOME/.yarnrc" "$HOME/.tigrc" \
         "$HOME/.gitconfig" "$HOME/.gitmessage" "$HOME/.Xresources" "$HOME/.alacritty.toml" \
-        "$HOME/.myclirc" "$HOME/.config/fish/config.fish" "$HOME/.config/starship.toml" \
+        "$HOME/.myclirc" "$HOME/.config/fish/config.fish" \
         "$HOME/Documents/WindowsPowerShell/profile.ps1" \
         "$HOME/scoop/apps/vscode/current/data/user-data/User/settings.json" \
         "$HOME/scoop/apps/vscode/current/data/user-data/User/keybindings.json"
