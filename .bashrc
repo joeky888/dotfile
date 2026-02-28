@@ -433,7 +433,7 @@ upgradeDotfile() {
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 
   case $OSTYPE in
-  cygwin)
+  msys)
     win_link() {
       # Usage: win_link "target_link" "source_file"
       powershell.exe -Command "Start-Process cmd -ArgumentList '/c mklink \"$1\" \"$2\"' -Verb RunAs"
