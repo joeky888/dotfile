@@ -459,6 +459,8 @@ upgradeDotfile() {
     rm -f ~/AppData/Roaming/Code/User/settings.json
     rm -f ~/AppData/Roaming/VSCodium/User/keybindings.json
     rm -f ~/AppData/Roaming/VSCodium/User/settings.json
+    rm -f ~/AppData/Roaming/Zed/settings.json
+    rm -f ~/AppData/Roaming/Zed/keymap.json
     rm -f ~/.config/fish/config.fish
     rm -f ~/.config/starship.toml
     rm -f ~/.config/zed/settings.json
@@ -482,7 +484,7 @@ win_link "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   win_link "%USERPROFILE%\.alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   win_link "%USERPROFILE%\.myclirc" "%USERPROFILE%\dotfile\.myclirc"
   win_link "%USERPROFILE%\.config\fish\config.fish" "%USERPROFILE%\dotfile\.config.fish"
-win_link "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
+  win_link "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\dotfile\powershell\profile.ps1"
   win_link "%USERPROFILE%\.vimrc" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   win_link "%USERPROFILE%\AppData\Local\nvim\init.vim" "%USERPROFILE%\dotfile\vimrc\.vimrc"
   win_link "%APPDATA%\mpv\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
@@ -493,6 +495,8 @@ win_link "%USERPROFILE%\Documents\WindowsPowerShell\profile.ps1" "%USERPROFILE%\
   win_link "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   win_link "%APPDATA%\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
   win_link "%APPDATA%\gitui\key_bindings.ron" "%USERPROFILE%\dotfile\.gitui.key_bindings.ron"
+  win_link "%APPDATA%\Zed\settings.json" "%USERPROFILE%\dotfile\.zed.settings.js"
+  win_link "%APPDATA%\Zed\keymap.json" "%USERPROFILE%\dotfile\.zed.keymap.js"
   win_link "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"

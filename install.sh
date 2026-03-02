@@ -158,7 +158,9 @@ InstallDotfileGitBash()
         "$HOME/.myclirc" "$HOME/.config/fish/config.fish" \
         "$HOME/Documents/WindowsPowerShell/profile.ps1" \
         "$HOME/scoop/apps/vscode/current/data/user-data/User/settings.json" \
-        "$HOME/scoop/apps/vscode/current/data/user-data/User/keybindings.json"
+        "$HOME/scoop/apps/vscode/current/data/user-data/User/keybindings.json" \
+        "$HOME/AppData/Zed/settings.json" \
+        "$HOME/AppData/Zed/keymap.json"
 
   win_link "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   win_link "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
@@ -194,6 +196,8 @@ InstallDotfileGitBash()
   win_link "%APPDATA%\VSCodium\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   win_link "%APPDATA%\helix\config.toml" "%USERPROFILE%\dotfile\.helix.config.toml"
   win_link "%APPDATA%\gitui\key_bindings.ron" "%USERPROFILE%\dotfile\.gitui.key_bindings.ron"
+  win_link "%APPDATA%\Zed\settings.json" "%USERPROFILE%\dotfile\.zed.settings.js"
+  win_link "%APPDATA%\Zed\keymap.json" "%USERPROFILE%\dotfile\.zed.keymap.js"
   win_link "%USERPROFILE%\AppData\Roaming\alacritty\alacritty.toml" "%USERPROFILE%\dotfile\.alacritty.toml"
   win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\keybindings.json" "%USERPROFILE%\dotfile\.vscode.keybindings.js"
   win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
