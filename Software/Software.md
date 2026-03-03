@@ -579,6 +579,8 @@ Ideas to be done
   * Carplay/Android auto
 * Raspberry Pi AI HAT+
   * Capstone
+  * Open source Limera
+  * Basic/三防ver
 * KCP/Websocket server
   * Crossplay
     * KCP for mobile
