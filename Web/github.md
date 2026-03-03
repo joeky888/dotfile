@@ -11,3 +11,7 @@ Pull request
 * Get diff
     * https://github.com/USER/REPO/pull/PRNUMBER.diff
     * https://github.com/linuxdeepin/qt5integration/pull/26.diff
+
+Install nightly mpv (or other apps)
+=====
+* https://nightly.link/mpv-player/mpv/workflows/build/master
