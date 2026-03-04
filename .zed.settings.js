@@ -8,12 +8,13 @@
 // from the command palette or from `Zed` application menu.
 {
   "agent": {
-    "default_profile": "ask",
     "default_model": {
       "provider": "zed.dev",
       "model": "gemini-3-flash",
     },
-    "always_allow_tool_actions": true,
+    "tool_permissions": {
+      "default": "allow",
+    },
     "model_parameters": [],
   },
   "icon_theme": "Material Icon Theme",
