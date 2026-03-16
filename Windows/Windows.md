@@ -80,7 +80,7 @@ PowerShellGet\Install-Module oh-my-posh -Scope CurrentUser
 PowerShellGet\Install-Module posh-docker -Scope CurrentUser
 PowerShellGet\Install-Module windows-screenfetch -Scope CurrentUser
 choco install miniforge3 cascadiamonopl 7zip git poshgit greenshot onlyoffice obs-studio krita -y
-choco install directx vcredist-all -y
+choco install directx vcredist-all visualstudio2022buildtools -y
 ```
 * Gaming dlls
   * $ choco install openal physx.legacy msxml6.sp1 gfwlive xna xna31 silverlight dotnet3.5 dotnet4.0 dotnet4.5 -y
