@@ -91,9 +91,6 @@ InstallDotfile()
   ln -sf $Home/dotfile/.alacritty.toml ~/.alacritty.toml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
   ln -sf $Home/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
-  ln -sf $Home/dotfile/.mpv_thumbnail_script.conf ~/.config/mpv/script-opts/mpv_thumbnail_script.conf
-  ln -sf $Home/dotfile/.mpv_thumbnail_script_client_osc.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_client_osc.lua
-  ln -sf $Home/dotfile/.mpv_thumbnail_script_server.lua ~/.config/mpv/scripts/.mpv_thumbnail_script_server.lua
   ln -sf $Home/dotfile/.zed.settings.js ~/.config/zed/settings.json
   ln -sf $Home/dotfile/.zed.keymap.js ~/.config/zed/keymap.json
   ln -sf $Home/dotfile/.helix.config.toml ~/.config/helix/config.toml
@@ -203,14 +200,8 @@ InstallDotfileGitBash()
   win_link "%USERPROFILE%\scoop\apps\vscode\current\data\user-data\User\settings.json" "%USERPROFILE%\dotfile\.vscode.settings.js"
   win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
-  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
-  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
-  win_link "%USERPROFILE%\scoop\apps\mpv\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
   win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\mpv.conf" "%USERPROFILE%\dotfile\.mpv.conf"
   win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\input.conf" "%USERPROFILE%\dotfile\.mpv.input.conf"
-  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_client_osc.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_client_osc.lua"
-  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\scripts\mpv_thumbnail_script_server.lua" "%USERPROFILE%\dotfile\.mpv_thumbnail_script_server.lua"
-  win_link "%USERPROFILE%\scoop\apps\mpv-git\current\portable_config\script-opts\mpv_thumbnail_script.conf" "%USERPROFILE%\dotfile\.mpv_thumbnail_script.conf"
   win_link "%USERPROFILE%\.wezterm.lua" "%USERPROFILE%\dotfile\.wezterm.lua"
 
   # Run Registry import elevated
