@@ -9,8 +9,11 @@
 {
   "agent_servers": {
     "claude-acp": {
-      "type": "registry"
-    }
+      "type": "registry",
+      "env": {
+        "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "true",
+      },
+    },
   },
   "agent": {
     "default_model": {
