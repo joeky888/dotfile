@@ -7,6 +7,9 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "outline_panel": {
+    "dock": "left"
+  },
   "agent_servers": {
     "claude-acp": {
       "type": "registry",
@@ -16,6 +19,8 @@
     },
   },
   "agent": {
+    "sidebar_side": "right",
+    "dock": "right",
     "default_model": {
       "provider": "zed.dev",
       "model": "gemini-3-flash",
@@ -44,6 +49,7 @@
     "font_size": 16,
   },
   "project_panel": {
+    "dock": "left",
     "auto_fold_dirs": false,
   },
   "lsp": {
