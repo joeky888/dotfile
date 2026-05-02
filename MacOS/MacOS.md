@@ -57,3 +57,13 @@ Wifi Troubleshooting
   * If it is a problem with mesh wifi, 1. connect to mesh master, and then 2. go to other mesh slave rooms
   * Wifi -> TCP/IP > Try "Using DHCP with Manual Address" > Enter a random address "192.168.0.xxx"
 
+Install latest mpv and ffmpeg
+=====
+
+```sh
+brew uninstall mpv
+brew uninstall ffmpeg
+brew install --HEAD mpv
+brew tap homebrew-ffmpeg/ffmpeg
+brew install homebrew-ffmpeg/ffmpeg/ffmpeg --with-rav1e --with-webp
+```
