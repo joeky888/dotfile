@@ -62,22 +62,22 @@ fi
 
 
 if [[ "$TERM_EMU" == "xterm" ]] || [[ "$TERM_EMU" == "luit" ]] || [[ "$TERM_EMU" == "code" ]] || [[ "$TERM_EMU" == "codium" ]] || [[ "$TERM_EMU" == "java" ]] || [[ "$TERM_PROGRAM" == "Apple_Terminal" ]]; then
-  [ $(command -v xrdb) ] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
+  [[ $(command -v xrdb) ]] && [ -f ~/.Xresources ] && xrdb -merge ~/.Xresources
   echo -e -n "\x1b[\x36 q" # changes to steady bar
   if [ $(command -v fish) ] && [ "$OSTYPE" = "cygwin" ] && [ -z "$FISH_VERSION" ]; then
     exec fish
   fi
-  if [ $(command -v zsh) ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+  if [[ $(command -v zsh) ]] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
     export ZSH_IS_RUNNING=1
     export NO_TMUX=1
     exec zsh
   fi
-elif [ $(command -v tmux) ] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [ -z $TMUX ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
+elif [[ $(command -v tmux) ]] && [ -z $NO_TMUX ] && [ -f ~/.tmux.conf ] && [ -z $TMUX ] && [[ $TERM != screen* ]] && [[ $whichTTY == pts* || $whichTTY == tty1 || $whichTTY == tty2 || $whichTTY == pty* || $whichTTY == ttyv0 || $whichTTY == ttys00* ]] ; then
   cd ~
   [[ -n $(tmux ls 2>/dev/null) ]] && exec tmux attach || exec tmux
-elif [ -z $TMUX ] && [ $(command -v fish) ] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
+elif [ -z $TMUX ] && [[ $(command -v fish) ]] && { [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] || [ "$OSTYPE" = "linux-android" ]; }; then
   exec fish
-elif [ -z $TMUX ] && [ $(command -v zsh) ] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
+elif [ -z $TMUX ] && [[ $(command -v zsh) ]] && [ -z "$ZSH_VERSION" ] && [ -z "$ZSH_IS_RUNNING" ] && [ -f ~/.zshrc ] ; then
   export ZSH_IS_RUNNING=1
   exec zsh
 fi
@@ -98,7 +98,7 @@ export DOWNLOADER_ARGUMENTS="--continue=true --timeout=12 --connect-timeout=12 -
 export STREAMLINK_ARGUMENTS="--loglevel debug --verbose-player --player-no-close --stream-segment-threads 10 --twitch-low-latency --http-no-ssl-verify --title '{title}' --stream-segment-attempts 1000 --stream-segment-timeout 10 --retry-open 10 --retry-max 10 --retry-streams 1"
 export TORRENT_ARGUMENTS="--enable-dht=true --enable-dht6=true --bt-enable-lpd=true --bt-max-peers=0 --bt-request-peer-speed-limit=100M --seed-ratio=0 --bt-detach-seed-only=true --seed-time=0 --enable-peer-exchange=true --bt-tracker-connect-timeout=10 --bt-tracker-timeout=5 --max-upload-limit=25K"
 export NIXPKGS_ALLOW_UNFREE=1
-if [ $(command -v aria2c) ]; then
+if [[ $(command -v aria2c) ]]; then
   if aria2c --version | grep -q "Async DNS" && [ -f /etc/resolv.conf ]; then
     export DOWNLOADER_ARGUMENTS="$DOWNLOADER_ARGUMENTS --async-dns-server=$(grep -oE '\b([0-9]{1,3}\.){3}[0-9]{1,3}\b' /etc/resolv.conf | tr '\n' ',' | sed 's/,$//')" # aria2 & bypy
   fi
@@ -273,7 +273,7 @@ fi
 
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
-[ $(command -v xterm) ] && alias xterm="xterm > /dev/null 2>&1 &!"
+[[ $(command -v xterm) ]] && alias xterm="xterm > /dev/null 2>&1 &!"
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
 alias base64-decode='perl -MMIME::Base64 -e "print decode_base64(@ARGV[0])"'
@@ -291,11 +291,11 @@ alias upgradeAnnie='go get -v github.com/iawia002/annie'
 alias upgradeMycli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/mycli/archive/master.zip'
 alias upgradeLitecli='pip3 install --upgrade --force-reinstall --no-cache-dir https://github.com/dbcli/litecli/archive/master.zip'
 alias you-getYouku='you-get -y proxy.uku.im:443'
-[ $(command -v wget) ] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
-[ $(command -v curl) ] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: zstd,br,gzip" -LC - '
-[ $(command -v curl3) ] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: zstd,br,gzip" -LC - '
-[ $(command -v aria2c) ] && alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
-[ $(command -v axel) ] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
+[[ $(command -v wget) ]] && alias wget='wget -c -e robots=off --tries=10 --connect-timeout=10 --read-timeout=10 --verbose'
+[[ $(command -v curl) ]] && alias curl='curl --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: zstd,br,gzip" -LC - '
+[[ $(command -v curl3) ]] && alias curl3='curl3 --http3 --retry 0 --connect-timeout 10 --max-time 10 --retry-delay 0 --retry-max-time 20 --compressed -H "Accept-Encoding: zstd,br,gzip" -LC - '
+[[ $(command -v aria2c) ]] && alias aria2c="aria2c $DOWNLOADER_ARGUMENTS"
+[[ $(command -v axel) ]] && alias axel='axel --num-connections=16 --no-clobber --alternate --timeout 10'
 alias yt-dlp="yt-dlp $DL_ARGUMENTS" # See also test_format_selection_string_ops in the repository
 alias yt-dlp-aria2c="yt-dlp --downloader aria2c --downloader-args 'aria2c:$DOWNLOADER_ARGUMENTS'"
 alias which='which -a'
@@ -360,7 +360,6 @@ alias ptt-telnet-23='telnet ptt.cc 23'
 alias ptt-wss='ws -o https://term.ptt.cc wss://ws.ptt.cc/bbs' # go get -u -v github.com/hashrocket/ws
 alias chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
 alias google-chrome-ignoreCrt='google-chrome --ignore-certificate-errors'
-[ $(command -v google-chrome-stable) ] && export CHROME_BIN="google-chrome-stable"
 alias opera-ignoreCrt='opera --ignore-certificate-errors'
 alias opera-developer-ignoreCrt='opera-developer --ignore-certificate-errors'
 alias 7zzExtractToFolder='7zz -o* x'
@@ -383,7 +382,7 @@ upgradeConda() {
   fi;
   ARCH="$(uname -m)"
   [ -d ~/Miniconda3 ] || aria2c "https://repo.anaconda.com/miniconda/Miniconda3-latest-$OS-$ARCH.sh" && chmod 777 Miniconda3-latest-$OS-$ARCH.sh && bash Miniconda3-latest-$OS-$ARCH.sh -p ~/Miniconda3 -b -f && rm Miniconda3-latest-$OS-$ARCH.sh
-  [ $(command -v conda) ] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
+  [[ $(command -v conda) ]] && conda update -n base conda -y && conda update --all --yes && conda clean --yes --all
 }
 upgradePip() { pip3 install --upgrade pip setuptools && pip3 install --upgrade $(pip freeze -l | sed "s/==.*//") && pip3 install --upgrade https://github.com/pyca/pyopenssl/archive/main.zip && pip3 install --upgrade https://github.com/requests/requests/archive/main.zip ;}
 dnslookup-google() { for rrtype in A AAAA CNAME NS HTTPS MX TXT SRV; do RRTYPE=$rrtype dnslookup $1 https://dns.google/dns-query | sed -e 's/^;; opcode: QUERY, status: //' -e 's/, id: .*$//' -e 's/^dnslookup.*//' -e 's/^;; flags.*//' -e 's/^;; .* SECTION://' -e '/^$/d' ; done }
