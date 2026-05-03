@@ -433,7 +433,7 @@ upgradeDotfile() {
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc/
 
   case $OSTYPE in
-  msys)
+  msys | cygwin)
     win_link() {
       # Usage: win_link "target_link" "source_file"
       powershell.exe -Command "Start-Process cmd -ArgumentList '/c mklink \"$1\" \"$2\"' -Verb RunAs"
@@ -465,7 +465,7 @@ upgradeDotfile() {
     rm -f ~/.config/starship.toml
     rm -f ~/.config/zed/settings.json
     rm -f ~/.config/zed/keymap.json
-win_link "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
+  win_link "%USERPROFILE%\.bashrc" "%USERPROFILE%\dotfile\.bashrc"
   win_link "%USERPROFILE%\.bash_profile" "%USERPROFILE%\dotfile\.bashrc"
   win_link "%USERPROFILE%\.tmux.conf" "%USERPROFILE%\dotfile\.tmux.conf"
   win_link "%USERPROFILE%\.zshrc" "%USERPROFILE%\dotfile\.bashrc"
