@@ -149,7 +149,7 @@ APP_FAST_PATH=$(getModulePath app-fast)
 DIFF_HIGHLIGHT_PATH=$(getModulePath diff-highlight)
 OHMYZSH_PATH=$(getModulePath oh-my-zsh ohmyzsh)
 
-[ -n "$GRC_PATH" ]            && export PATH=$GRC_PATH:$PATH
+[ -n "$GRC_PATH" ]            && export PATH="$GRC_PATH:$PATH"
 [ -n "$APP_FAST_PATH" ]       && export PATH=$APP_FAST_PATH:$PATH
 [ -n "$DIFF_HIGHLIGHT_PATH" ] && export PATH=$DIFF_HIGHLIGHT_PATH:$PATH
 
@@ -807,7 +807,7 @@ elif [[ -n "$BASH_VERSION" ]]; then # Bash
     done
   fi
   # [ $(command -v pip) ] && eval "`pip completion --bash --disable-pip-version-check` | tr -d '\r'"
-  [ $(command -v kubectl) ] && source <(kubectl completion bash)
+  [[ $(command -v kubectl) ]] && source <(kubectl completion bash)
   [ $(command -v helm) ] && source <(helm completion bash 2>/dev/null)
   [ $(command -v kubeadm) ] && source <(kubeadm completion bash)
   export HISTCONTROL=ignoredups:erasedups # Ignore duplicate entries in .bash_history
@@ -1061,11 +1061,11 @@ if [ $(command -v grc) ] ; then
 
   # Set alias for available commands.
   for cmd in "${cmds[@]}" ; do
-    if [[ -n "$ZSH_VERSION" ]] && [ $(command -v $cmd) ] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
+    if [[ -n "$ZSH_VERSION" ]] && [[ $(command -v $cmd) ]] && [[ $(type compdef &>/dev/null) -eq 0 ]] && type _$cmd &>/dev/null ; then
       eval "function $cmd { grc -es $(command -v $cmd) \"\$@\" }"
       eval "compdef _$cmd $cmd"
     else
-      [ $(command -v $cmd) ] && alias $cmd="grc -es $(command -v $cmd)"
+      [[ $(command -v $cmd) ]] && alias $cmd="grc -es $(command -v $cmd)"
     fi
   done
 
