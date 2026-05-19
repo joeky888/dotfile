@@ -40,6 +40,7 @@ Extension
 * ms-kubernetes-tools.vscode-kubernetes-tools
 * bradlc.vscode-tailwindcss
 * charliermarsh.ruff (python linter)
+* meta.pyrefly
 
 Diff 2 file
 =====

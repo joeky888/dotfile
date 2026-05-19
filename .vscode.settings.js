@@ -255,4 +255,5 @@
     ],
     "MATLAB.installPath": "/Applications/MATLAB_R2025b.app/",
     "MATLAB.startDebuggerAutomatically": true,
+    "python.languageServer": "Default",
 }
