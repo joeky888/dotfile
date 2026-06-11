@@ -12,6 +12,12 @@
     "dock": "left"
   },
   "agent_servers": {
+    "codex-acp": {
+      "default_config_options": {
+        "reasoning_effort": "high"
+      },
+      "type": "registry"
+    },
     "claude-acp": {
       "type": "registry",
       "env": {
