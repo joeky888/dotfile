@@ -666,6 +666,10 @@ if [[ -n "$ZSH_VERSION" ]]; then # Zsh
     add-zsh-hook preexec update_prompt
     add-zsh-hook precmd update_prompt
   fi
+  # Neovim (>=0.12) leaves a steady block cursor on exit; re-assert the steady
+  # bar before every prompt so it's restored when returning from nvim.
+  _restore_cursor_shape() { printf '\e[6 q' }
+  add-zsh-hook precmd _restore_cursor_shape
   zle_highlight=(none)
   if [ -n "$ZSH_SYNTAX_PATH" ]; then
     source $ZSH_SYNTAX_PATH/zsh-syntax-highlighting.zsh
