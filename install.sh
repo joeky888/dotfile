@@ -26,6 +26,7 @@ InstallDotfile()
   rm -rf ~/AppData/Local/nvim/init.vim
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.toml
+  rm -rf ~/.config/ghostty/config.ghostty
   rm -rf ~/.alacritty.toml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
@@ -67,6 +68,7 @@ InstallDotfile()
   cd - ;
   mkdir -p $Home/.config/nvim/
   mkdir -p $Home/.config/alacritty/
+  mkdir -p $Home/.config/ghostty/
   mkdir -p $Home/.config/mpv/
   mkdir -p $Home/.config/mpv/scripts
   mkdir -p $Home/.config/mpv/script-opts
@@ -88,6 +90,7 @@ InstallDotfile()
   ln -sf ~/dotfile/grc/grc.conf ~/.grc/grc.conf
   ln -sf ~/dotfile/grc/colourfiles/* ~/.grc
   ln -sf $Home/dotfile/.alacritty.toml ~/.config/alacritty/alacritty.toml
+  ln -sf $Home/dotfile/.config.ghostty ~/.config/ghostty/config.ghostty
   ln -sf $Home/dotfile/.alacritty.toml ~/.alacritty.toml
   ln -sf $Home/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
   ln -sf $Home/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
