@@ -418,6 +418,7 @@ upgradeDotfile() {
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.toml
   rm -rf ~/.config/ghostty/config.ghostty
+  rm -rf ~/.config/ghostty/shaders/*
   rm -rf ~/.alacritty.toml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
@@ -511,6 +512,7 @@ upgradeDotfile() {
     mkdir -p ~/.config/nvim/
     mkdir -p ~/.config/alacritty/
     mkdir -p ~/.config/ghostty/
+    mkdir -p ~/.config/ghostty/shaders
     mkdir -p ~/.config/mpv/
     mkdir -p ~/.config/mpv/scripts
     mkdir -p ~/.config/mpv/script-opts
@@ -539,6 +541,7 @@ upgradeDotfile() {
     ln -sf $HOME/dotfile/.alacritty.toml ~/.config/alacritty/alacritty.toml
     ln -sf $HOME/dotfile/.alacritty.toml ~/.alacritty.toml
     ln -sf $HOME/dotfile/.config.ghostty ~/.config/ghostty/config.ghostty
+    ln -sf $HOME/dotfile/.config.ghostty.noise.glsl ~/.config/ghostty/shaders/noise.glsl
     ln -sf $HOME/dotfile/.myclirc ~/.myclirc
     ln -sf $HOME/dotfile/.mpv.conf ~/.config/mpv/mpv.conf
     ln -sf $HOME/dotfile/.mpv.input.conf ~/.config/mpv/input.conf
