@@ -1,3 +1,5 @@
+// https://dev.to/0xkoji/ghostty-use-fragment-shader-as-terminal-background-11g3
+
 float random(in vec2 st) {
     return fract(sin(dot(st.xy, vec2(12.9898, 78.233))) * 43758.5453123);
 }
