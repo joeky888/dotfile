@@ -9,16 +9,20 @@
 {
   "cli_default_open_behavior": "existing_window",
   "outline_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
-        "reasoning_effort": "high"
+        "mode": "auto",
+        "reasoning_effort": "high",
       },
-      "type": "registry"
+      "type": "registry",
     },
     "claude-acp": {
+      "default_config_options": {
+        "mode": "auto"
+      },
       "type": "registry",
       "env": {
         "CLAUDE_CODE_DISABLE_AUTO_MEMORY": "true",
@@ -34,6 +38,11 @@
     },
     "tool_permissions": {
       "default": "allow",
+      "tools": {
+        "terminal": {
+          "default": "allow",
+        },
+      },
     },
     "model_parameters": [],
   },
