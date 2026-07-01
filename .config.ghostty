@@ -34,7 +34,7 @@ font-size = 18
 cursor-style = bar
 
 # Window
-background-opacity = 0.9
+# background-opacity = 0.9
 window-width = 130
 window-height = 30
 
