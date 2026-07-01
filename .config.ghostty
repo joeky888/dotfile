@@ -44,6 +44,6 @@ clipboard-write = allow
 copy-on-select = true
 
 # Theme
-custom-shader = ~/.config/ghostty/shaders/noise.glsl
+# custom-shader = ~/.config/ghostty/shaders/noise.glsl
 # custom-shader = ~/.config/ghostty/shaders/water.glsl
 custom-shader-animation = true

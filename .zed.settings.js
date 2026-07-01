@@ -14,7 +14,7 @@
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
-        "mode": "auto",
+        "mode": "agent-full-access",
         "reasoning_effort": "high",
       },
       "type": "registry",
