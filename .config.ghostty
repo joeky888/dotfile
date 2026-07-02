@@ -34,7 +34,7 @@ font-size = 18
 cursor-style = bar
 
 # Window
-# background-opacity = 0.9
+background-opacity = 0.9
 window-width = 130
 window-height = 30
 
@@ -44,6 +44,6 @@ clipboard-write = allow
 copy-on-select = true
 
 # Theme
-# custom-shader = ~/.config/ghostty/shaders/noise.glsl
+custom-shader = ~/.config/ghostty/shaders/noise.glsl
 # custom-shader = ~/.config/ghostty/shaders/water.glsl
 custom-shader-animation = true
