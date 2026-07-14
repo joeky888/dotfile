@@ -916,6 +916,9 @@ elif echo "$OSTYPE" | grep -q "darwin" ; then # macOS
   for tool in /usr/local/opt/*/bin; do
     export PATH="$tool:$PATH"
   done
+  for tool in /opt/*/bin; do
+    export PATH="$tool:$PATH"
+  done
   for tool in /opt/homebrew/opt/*/bin; do
     export PATH="$tool:$PATH" # Arm64 macOS
   done
