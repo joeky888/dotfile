@@ -2,6 +2,10 @@
 macos-titlebar-proxy-icon = hidden
 title = " "
 
+# Keys override
+keybind = ctrl+enter=unbind
+keybind = command+enter=unbind
+
 # Colors - Primary
 background = 1a1a1a
 foreground = c4c5b5
