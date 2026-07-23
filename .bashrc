@@ -274,6 +274,7 @@ fi
 
 # [ $(command -v xterm) ] && alias xterm="xterm -bg black -fg white -fa 'Monospace' -fs 14 > /dev/null 2>&1 &!"
 [[ $(command -v xterm) ]] && alias xterm="xterm > /dev/null 2>&1 &!"
+[[ $(command -v zellij) ]] && alias zellij="zellij --no-pane-frames"
 alias calc="perl -E 'eval \"say (@ARGV)\"'"
 alias calc2="python -c 'import sys,math; print(eval(\"\".join(sys.argv[1:])))'"
 alias base64-decode='perl -MMIME::Base64 -e "print decode_base64(@ARGV[0])"'
