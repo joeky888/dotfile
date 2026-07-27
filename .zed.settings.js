@@ -21,6 +21,8 @@
     },
     "claude-acp": {
       "default_config_options": {
+        "effort": "high",
+        "model": "default",
         "mode": "auto"
       },
       "type": "registry",
