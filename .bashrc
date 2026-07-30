@@ -374,7 +374,16 @@ proxyYouku() { export http_proxy="proxy.uku.im:443" && export https_proxy="$http
 proxyUnset() { unset http_proxy && unset https_proxy && unset ftp_proxy ;}
 mpv-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | mpv --cache=yes --force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" - ; }
 iina-fast() { command yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - $@ | iina-cli --stdin --keep-running --mpv-cache=yes --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ; }
-iina-fast-1080() { iina-cli --keep-running --mpv-cache=yes --mpv-demuxer-cache-dir=/tmp --mpv-cache-on-disk=yes --mpv-ytdl-raw-options=no-check-certificate=,concurrent-fragments=8 --mpv-audio-file="$(command yt-dlp --get-url -f 'ba' $1)" $(command yt-dlp --get-url -f 'bv[height<=1080][vcodec!^=av01][protocol^=m3u]/bv[height<=1080][vcodec!^=av01]' $1) --mpv-force-media-title="$(yt-dlp --print '%(title)s - %(upload_date>%Y/%m/%d)s' $1)" ;}
+iina-fast-1080() {
+  iina-cli --keep-running \
+    --mpv-cache=yes \
+    --mpv-demuxer-cache-dir=/tmp \
+    --mpv-cache-on-disk=yes \
+    --mpv-ytdl-format='bv[height<=1080][vcodec!^=av01][protocol^=m3u]+ba[protocol^=m3u]/bv[height<=1080][vcodec!^=av01]+ba/best[height<=1080][protocol^=m3u8]/best[height<=1080]' \
+    --mpv-ytdl-raw-options=sponsorblock-mark=all,embed-metadata=,no-check-certificate=,concurrent-fragments=8,yes-playlist=,hls-prefer-native=,ignore-errors=,write-auto-sub=,write-sub=,sub-lang='(en|zh).*' \
+    --mpv-force-media-title='${media-title}-${metadata/date}' \
+    "$1"
+}
 upgradeConda() {
   OS="Linux"
   if echo "$OSTYPE" | grep -q "darwin"; then # macOS

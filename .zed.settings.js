@@ -14,6 +14,7 @@
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
+        "fast-mode": false,
         "mode": "agent-full-access",
         "reasoning_effort": "high",
       },
