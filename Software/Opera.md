@@ -28,6 +28,7 @@ Extension
 * uBlock Origin Development Build (cgbcahbpdhpcegmbfconppldiemgcoii) (MV2 will be disabled in mid 2024)
 * uBlock Origin Lite (ddkjiahejlhfcafbddmgiahcphecmpfh) (MV3)
 * Dark Reader
+* Turbo Download Manager
 * Search by Image (by Google)
 * Not yet, AV1
 * Stylish / Stylus
