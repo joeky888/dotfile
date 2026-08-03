@@ -177,3 +177,13 @@ from_name: Service
 ```
 * Note that this only enables sandbox mode, in order to send email to non-aws mail like gmail
   * Goto aws ses console -> Get set up -> Request production access -> Compelete forms
+
+AWS Cloudwatch auto-reboot for an ec2 that not using IaC
+=====
+* Click the ec2 -> Status and alarms -> Create
+* Alarm action -> Check -> Reboot
+* Alarm thresholds -> Group samples by "Maximum"
+  Type of data to sample -> "Status check failed: either"
+  Consecutive period -> 1
+  Period -> 5 Min
+
