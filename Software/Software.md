@@ -219,6 +219,7 @@ Android
   * Setting -> Privacy and security -> Data collection -> Uncheck all
   * Setting -> Advanced -> External download manager -> Check
   * Setting -> Site settings -> Always request desktop site -> Uncheck (Because it breaks sites when turned on)
+  * Setting -> Site settings -> DRM-controlled content -> Allowed (Make it always allowed)
   * Add-ons -> Add-ons Manager
     * Dark Reader
     * AdGuard extension or uBlock Origin
