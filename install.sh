@@ -27,7 +27,7 @@ InstallDotfile()
   rm -rf ~/.grc
   rm -rf ~/.config/alacritty/alacritty.toml
   rm -rf ~/.config/ghostty/config.ghostty
-  rm -rf ~/.config/ghostty/shaders/*
+#   rm -rf ~/.config/ghostty/shaders/*
   rm -rf ~/.alacritty.toml
   rm -rf ~/.myclirc
   rm -rf ~/.config/fish/config.fish
