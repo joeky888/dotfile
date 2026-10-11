@@ -66,7 +66,7 @@ Extension
 * Twitch Chat Danmaku
 * libredirect (This is not on the chrome web store)
   * Enable twitter -> nitter, disable the rest
-  * Add custom twitter instance "https://nitter.net"
+  * Add custom twitter instance "https://xxcancel.com" # Note that it's 2 X'es
 * bypass-paywalls-chrome
 * Get CRX
 * Enhanced Github
