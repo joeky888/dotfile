@@ -413,7 +413,7 @@ iOS
 * VoiceTube Dictionary -- Offline Dictionary
 * UDictionary 有道詞典國際版 - Online Dictionary
 * Hiya - whoscall-like app for US
-* Orion browser - with extensions support
+* Orion browser - ublock origin + dark reader
 
 TinyOS - List of small OSes
 =====
