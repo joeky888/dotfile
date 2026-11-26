@@ -1115,121 +1115,115 @@ vman() {
   MANPAGER=cat man $@ | col -bx | nvim +"setlocal buftype=nofile" +"set filetype=man" - # buftype=nofile Make it read only and quit easily
 }
 
+# Convert the arguments of Chrome's "Copy as cURL" into arguments of another tool.
+# Usage: _curlConvert aria2|ytdlp|mpv|streamlink [curl arguments...]
+# Prints a shell-quoted string for eval. Unknown arguments are passed through.
+_curlConvert()
+{
+  local target="$1" opt="" val="" header="" name=""
+  shift
+
+  while [ $# -gt 0 ]; do
+    opt="$1"
+    shift
+
+    case "$opt" in
+      --url=*)
+        printf '%q ' "${opt#--url=}"
+        continue ;;
+      --compressed|--insecure|-k|--globoff|-g)
+        continue ;;
+      --url|-H|--header|-b|--cookie|-A|--user-agent|-e|--referer|-X|--request|--data|--data-raw|--data-binary)
+        if [ $# -eq 0 ]; then
+          echo "Missing value for $opt" >&2
+          return 1
+        fi
+        val="$1"
+        shift ;;
+      *)
+        printf '%q ' "$opt"
+        continue ;;
+    esac
+
+    case "$opt" in
+      --url)           printf '%q ' "$val"; continue ;;
+      -H|--header)     header="$val" ;;
+      -b|--cookie)     header="Cookie: $val" ;;
+      -A|--user-agent) header="User-Agent: $val" ;;
+      -e|--referer)    header="Referer: $val" ;;
+      *)
+        echo "Warning: $opt is not supported, ignored" >&2
+        continue ;;
+    esac
+
+    case "$header" in
+      [Rr][Aa][Nn][Gg][Ee]:*) continue ;; # Always request the whole file
+      *:*) ;;
+      *\;) header="${header%?}:" ;; # curl's syntax for an empty header
+    esac
+
+    case "$target" in
+      aria2) printf '%q ' --header "$header" ;;
+      ytdlp) printf '%q ' --add-header "$header" ;;
+      mpv)   printf '%q ' "--http-header-fields-append=$header" ;;
+      streamlink)
+        name="${header%%:*}"
+        val="${header#*:}"
+        printf '%q ' --http-header "$name=${val# }" ;;
+    esac
+  done
+}
+
+# Usage: _curlRetry name command_string
+_curlRetry()
+{
+  local count=0
+  echo "$2"
+  until eval "$2"; do
+    sleep 1
+    echo "Retrying $1 ... $((count++))"
+  done
+}
+
 curlToAria2()
 {
-  PARAMS=""
-
-  for PARAM in "$@"
-  do
-    PARAMS="${PARAMS} '${PARAM}'"
-  done
-
-  # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--header/g" | sed "s/ '--compressed'//g" )
+  local params
+  params=$(_curlConvert aria2 "$@") || return
 
   local DOWNLOADER_ARGUMENTS='-c -s16 -k1M -x16 -j16 -t2 --connect-timeout=2 --file-allocation=none' # 3s timeout for faster retrying
-  local count=0
-  $(exit 1)
-  while [ $? -ne 0 ]; do
-    sleep 1
-    echo "Retrying curlToAria2 ... $((count++))"
-    local cmd="aria2c ${DOWNLOADER_ARGUMENTS} ${PARAMS}"
-    echo "$cmd"
-    eval "$cmd"
-  done;
+  _curlRetry curlToAria2 "aria2c ${DOWNLOADER_ARGUMENTS} ${params}"
 }
 
 curlToYtDlp()
 {
-  PARAMS=""
+  local params
+  params=$(_curlConvert ytdlp "$@") || return
 
-  for PARAM in "$@"
-  do
-    PARAMS="${PARAMS} '${PARAM}'"
-  done
-
-  # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--add-header/g" | sed "s/ '--compressed'//g" )
-
-  local count=0
-  $(exit 1)
-  while [ $? -ne 0 ]; do
-    sleep 1
-    echo "Retrying curlToYtDlp ... $((count++))"
-    local cmd="yt-dlp $DL_ARGUMENTS ${PARAMS}"
-    echo "$cmd"
-    eval "$cmd"
-  done;
+  _curlRetry curlToYtDlp "yt-dlp $DL_ARGUMENTS ${params}"
 }
 
 curlToMpv-fast-1080()
 {
-  PARAMS=""
+  local params
+  params=$(_curlConvert mpv "$@") || return
 
-  for PARAM in "$@"
-  do
-    PARAMS="${PARAMS} '${PARAM}'"
-  done
-
-  # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H' /--http-header-fields-append=/g" | sed "s/ '--compressed'//g" )
-
-  local count=0
-  $(exit 1)
-  while [ $? -ne 0 ]; do
-    sleep 1
-    echo "Retrying curlToMpv-fast ... $((count++))"
-#     local cmd="yt-dlp $DL_ARGUMENTS --no-playlist -f best -o - ${PARAMS} | mpv --cache=yes --force-media-title='$(yt-dlp --get-title $1)' -"
-    local cmd="mpv $PARAMS $PLAYER_FASTARG_1080 $PLAYER_ARGUMENTS '$1'"
-    echo "$cmd"
-    eval "$cmd"
-  done;
+  _curlRetry curlToMpv-fast "mpv $PLAYER_FASTARG_1080 $PLAYER_ARGUMENTS ${params}"
 }
 
 curlToStreamlink-mpv()
 {
-  PARAMS=""
+  local params
+  params=$(_curlConvert streamlink "$@") || return
 
-  for PARAM in "$@"
-  do
-    PARAMS="${PARAMS} '${PARAM}'"
-  done
-
-  # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)'/ \1='\2' /g" | sed "s/ '--compressed'//g" )
-
-  local count=0
-  $(exit 1)
-  while [ $? -ne 0 ]; do
-    sleep 1
-    echo "Retrying curlToStreamlink ... $((count++))"
-    local cmd="streamlink $STREAMLINK_ARGUMENTS --title "{url}" --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream best ${PARAMS}"
-    echo "$cmd"
-    eval "$cmd"
-  done;
+  _curlRetry curlToStreamlink "streamlink $STREAMLINK_ARGUMENTS --title '{url}' --player 'mpv' --player-args=$(printf '%q' "$PLAYER_ARGUMENTS") --default-stream best ${params}"
 }
 
 curlToStreamlink1080p-mpv()
 {
-  PARAMS=""
+  local params
+  params=$(_curlConvert streamlink "$@") || return
 
-  for PARAM in "$@"
-  do
-    PARAMS="${PARAMS} '${PARAM}'"
-  done
-
-  # Need to be updated
-  PARAMS=$( echo $PARAMS | sed s/"Range: bytes.\+\-"/A:b/g | sed "s/'-H'/--http-header/g" | sed "s/ '\([a-zA-Z-]*\): \([^']*\)'/ \1='\2' /g" | sed "s/ '--compressed'//g" )
-
-  local count=0
-  $(exit 1)
-  while [ $? -ne 0 ]; do
-    sleep 1
-    echo "Retrying curlToStreamlink ... $((count++))"
-    local cmd="streamlink $STREAMLINK_ARGUMENTS --title "{url}" --player 'mpv' --player-arg '$PLAYER_ARGUMENTS' --default-stream 1080p ${PARAMS}"
-    echo "$cmd"
-    eval "$cmd"
-  done;
+  _curlRetry curlToStreamlink "streamlink $STREAMLINK_ARGUMENTS --title '{url}' --player 'mpv' --player-args=$(printf '%q' "$PLAYER_ARGUMENTS") --default-stream 1080p ${params}"
 }
 
 unzipToBig5py3()
