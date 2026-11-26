@@ -14,7 +14,7 @@
   "agent_servers": {
     "codex-acp": {
       "default_config_options": {
-        "model": "gpt-6.1-sol",
+        "model": "gpt-6.2-sol",
         "fast-mode": false,
         "mode": "agent-full-access",
         "reasoning_effort": "high",
